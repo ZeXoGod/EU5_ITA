@@ -24,7 +24,7 @@ Vi preghiamo di supportarci nell'acquisto dei nuovi DLC. Quello che per voi è u
 Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 
 ## Stato - DLC
-|DLC | STATO|
+| DLC                         | Stato                             |
 |-----------|
 
 ---
