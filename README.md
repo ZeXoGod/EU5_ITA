@@ -1,4 +1,4 @@
-<img src="asset/banner.jpeg" alt="CK3 banner" width="800">
+<img src="asset/assets/Europa-Universalis-V-Ann_05-08-25.jpg" alt="CK3 banner" width="800">
 
 <p align="center">
   <a href="https://steamcommunity.com/workshop/filedetails/?id=2262243033">
