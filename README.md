@@ -23,7 +23,8 @@ Patch della mod: Settembre v.5
 Vi preghiamo di supportarci nell'acquisto dei nuovi DLC. Quello che per voi è un semplice caffè per noi significa molto, poiché ci permette di tenere vivo questo progetto.
 Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 
-## stato - DLC
+## Stato - DLC
 | DLC                         | Stato                             |
 |-----------------------------|-----------------------------------|
 |||
+---
