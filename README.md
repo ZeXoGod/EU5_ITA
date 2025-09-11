@@ -1,3 +1,5 @@
+<img src="asset/banner.jpeg" alt="CK3 banner" width="800">
+
 <p align="center">
   <a href="https://steamcommunity.com/workshop/filedetails/?id=2262243033">
     <img alt="Steam Workshop" src="https://img.shields.io/badge/Steam_Workshop-Subscribe-1b2838?style=for-the-badge&logo=steam&logoColor=white">
