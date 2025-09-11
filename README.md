@@ -26,8 +26,9 @@ Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 ## Stato - DLC
 | DLC                         | Stato                             |
 |-----------------------------|-----------------------------------|
-|              |                     |
-
+|Fate of the Phoenix          |                                   |
+|Across the Pillars           |                                   |
+|The Auld Alliance            |                                   |
 ---
 
 ## Guida per l’installazione
