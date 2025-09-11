@@ -25,7 +25,8 @@ Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 
 ## Stato - DLC
 | DLC                         | Stato                             |
-|-----------|
+|-----------------------------|-----------------------------------|
+| Northern Lords              | ✅ Completato                     |
 
 ---
 
