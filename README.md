@@ -34,9 +34,8 @@ Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 ---
 
 ## Guida per l’installazione
-1.s
-2.
-3.
+1. Ciao
+2. 
 
 ---
 
