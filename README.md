@@ -42,7 +42,7 @@ Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 ---
 
 ## Elenco traduttori
-ZeXoGod,
+ZeXoGod, Darmac, Maurizuc, Zero
 
 ---
 
