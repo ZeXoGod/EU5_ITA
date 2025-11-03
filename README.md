@@ -10,7 +10,7 @@
   <a href="https://www.facebook.com/profile.php?id=100028543285650">
     <img alt="Facebook" src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white">
   </a>
-  <a href="[https://ko-fi.com/woldren93](https://ko-fi.com/zexogod)">
+  <a href="[https://ko-fi.com/zexogod]">
     <img alt="Ko-fi" src="https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white">
   </a>
 </p>
