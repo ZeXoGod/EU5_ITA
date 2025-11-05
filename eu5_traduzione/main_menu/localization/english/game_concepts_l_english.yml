@@ -1684,8 +1684,8 @@
  game_concept_liberty_desire: "Liberty Desire"
  game_concept_liberty_desire_desc: "Liberty Desire represents a [subject|e]'s current drive for independence from its [overlord|e], and it affects [subject_loyalty|e].\n\nIts value is from -100 to +100, but it has a monthly decay towards 0.\n\nThe value is also used as a currency in some Subject Interactions."
 
- game_concept_societal_value: "Valore Sociale"
- game_concept_societal_values: "Valori Sociali"
+ game_concept_societal_value: "Societal Value"
+ game_concept_societal_values: "Societal Values"
  game_concept_societal_value_upper_desc: "The Societal Values define the social and political structure of a [country|e], the customs of its people and the characteristics of its legal body. Its effects can have a profound impact on how the country is played, and some advanced [government_reforms|e] require specific combinations of [societal_values] to be enacted. Societal Values also play an important role in [diplomacy|e], as [countries] with affine Societal Values will tend to have a higher [opinion|e] of each other.\n\nEach Societal Value is an axis with two opposite poles that can reach up to 100. A Country's position on the axis is primarily influenced by [laws|e], [estate_privileges|e], and [cabinet_actions|e], and it drifts slowly over time towards one of the two poles. However, progress towards one pole will stall at a maximum, determined by the total amount of factors pushing it in that direction. The higher a Societal Value, the more factors are needed to push it further."
  game_concept_societal_value_list_title: "List of Societal Values"
  game_concept_societal_value_desc: "$game_concept_societal_value_upper_desc$\n\n[ShowDatabase('societal_values')]"
@@ -2269,7 +2269,7 @@
  game_concept_trade_range: "Trade Range" 
  game_concept_trade_range_desc: "This determines the maximum distance at which a [country|e] can conduct [trade|e] between two [markets|e], calculated from their [market_centers|e]. As long as a [country] has [merchant_capacity|e] in a [market], it will be able to [trade] with all [markets] within $game_concept_trade_range$.\n\n$game_concept_trade_range$ can be increased primarily through [advances|e], although some [laws|e], [privileges|e] and [reforms|e] may affect it too."
 
- game_concept_parliament: "Parlamento" 
+ game_concept_parliament: "Parliament" 
  game_concept_parliament_desc: "A [country|e] can call its [estates|e] into a session of $game_concept_parliament$, to solve any [parliament_issue|e] they may have, while also giving the opportunities to create a [casus_belli|e], raise [taxes|e], increase [army_levies|e] and [navy_levies|e], or change any of the current [laws|e]. Any [estate|e] may have a [parliament_agenda|e] to resolve before they will pledge their support.\n\n$game_concept_parliament$ may take place in the [capital|e] or another [location|e] which receives some small benefits. If the [location] becomes [occupied|e], the $game_concept_parliament$ will fail.\n\n[international_organizations|e] such as the [GetUniqueInternationalOrganization('hre').GetName] can have a $game_concept_parliament$, too. However, the parliament system depends on the type of Organization as some require the support of [members|e] of a specific [special_status|e] and their [special_status_power|e] to pass."
 
  game_concept_parliament_seat: "Parliament Seat"
