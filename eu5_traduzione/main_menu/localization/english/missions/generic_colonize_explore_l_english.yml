@@ -1,0 +1,60 @@
+﻿l_english:
+
+#Misc
+  generic_colonize_explore: "Avventurarsi nell’Ignoto"
+  generic_colonize_explore_DESCRIPTION: "Il richiamo di orizzonti lontani e terre non reclamate risveglia le nostre ambizioni. Dobbiamo mappare gli oceani, scoprire nuovi territori, ed espandere la nostra influenza per assicurare la futura prosperità del nostro regno."
+  generic_colonize_explore_CRITERIA_DESCRIPTION: "Abbiamo iniziato ad esplorare acque sconosciute oppure stabilito le fondamenta per una espansione coloniale."
+  generic_colonize_explore_BUTTON_TOOLTIP: "L’ignoto offre un potenziale illimitato di crescita, ricchezza e prestigio. Dobbiamo accettarlo."
+  generic_colonize_explore_BUTTON_DETAILS: "Il vasto mondo oltre i nostri confini è ricco di misteri e opportunità. Esplorando regioni sconosciute e fondando colonie, possiamo assicurarci un posto nella storia e plasmare il destino del nostro regno!"
+
+#Missions
+  mission_hire_explorer: "Arruolare Esploratori"
+  mission_hire_explorer_desc: "Abbiamo bisogno di esploratori abili per sfruttare adeguatamente l’ignoto."
+  mission_chart_horizon: "Mappare l’Orizzonte"
+  mission_chart_horizon_desc: "Spedizioni di avventurieri per terra e per mare si dirigeranno verso l’orizzonte, esplorando e creando mappe di terre mai viste prima dal nostro popolo."
+  mission_new_maps: "Nuove Mappe"
+  mission_new_maps_desc: "Per comprendere appieno la potenza delle nuove scoperte, dobbiamo spingere affinché le spedizioni completino la mappatura di quei territori."
+  mission_overseas_efforts: "Overseas Efforts"
+  mission_overseas_efforts_desc: "È diventato evidente che ci troviamo sull’orlo di una nuova era. Avanzare e rivendicare terre sconosciute significa incidere il nostro nome negli annali della storia per i secoli a venire."
+  mission_settle_horizon: "Settle the Horizon"
+  mission_settle_horizon_desc: "La necessità di espandersi ha portato i nostri consiglieri a sostenere l’idea di inviare persone verso potenziali colonie. L’afflusso di coloni porterà senza dubbio alla diffusione della conoscenza e all’adozione di nuove tecnologie e materie prime."
+  mission_colonial_ambitions: "Ambizioni Coloniali"
+  mission_colonial_ambitions_desc: "Colonizzare lidi stranieri e utilizzare le loro risorse è un ottimo modo per ampliare la nostra portata mercantile e, di conseguenza, il nostro potere. A tal scopo, dobbiamo cercare di stabilire stati clienti coloniali, pronti a servirci e a promuovere i nostri interessi."
+
+
+#Tooltips
+  land_explo_key: "Se completiamo la missione con almeno #Y 1#! terra [exploration|e]:"
+  yes_land_explo_bonus_tt: "@trigger_yes! $land_explo_key$"
+  no_land_explo_bonus_tt: "@trigger_no! $land_explo_key$"
+  sea_explo_key: "Se completiamo la missione con almeno #Y 1#! mare [exploration|e]:"
+  yes_sea_explo_bonus_tt: "@trigger_yes! $sea_explo_key$"
+  no_sea_explo_bonus_tt: "@trigger_yes! $sea_explo_key$"
+  mission_colonial_ambitions_tt: "Uno dei nostri [subjects|e] coloniali riceverà una #G riduzione#! del suo [liberty_desire|e]"
+  mission_settle_horizon_tt: "[events|e] mensili riguardanti i nostri insediamenti coloniali potrebbero verificarsi mentre questa [mission_task|e] è attiva"
+  
+ 
+
+#Events
+
+  generic_colonial_exploration_events.1.title: "Avventurieri Rivali"
+  generic_colonial_exploration_events.1.desc: "La grande era delle esplorazioni ha portato alla luce una generazione di abili navigatori e avventurieri desiderosi di scoprire l’ignoto. Tra loro, molti esploratori rinomati come [target_character_1.GetName] e [target_character_2.GetName] sono saliti alla ribalta, ciascuno desideroso di farsi un nome. \n\nLa loro natura competitiva ha spinto entrambi a raggiungere traguardi sempre più alti, sforzandosi di superarsi a vicenda in abilità e ambizione. Mentre la loro rivalità si intensifica, uno di loro ha iniziato a distinguersi, e il suo talento eccezionale brilla più che mai, pronto a guidare il nostro popolo verso una gloria ancora maggiore."
+  generic_colonial_exploration_events.1.a: "Favorisci [target_character_1.GetNameWithNoTooltip]."
+  generic_colonial_exploration_events.1.b: "[target_character_2.GetNameWithNoTooltip] ci porterà alla gloria!"
+  generic_colonial_exploration_events.1.c: "Che ne dici di [target_character_3.GetNameWithNoTooltip]?"
+  generic_colonial_exploration_events.1.d: "Una tale grandezza non può essere contenuta in semplici individui!"
+  next_completed_exploration_will_fire_event_tt: "La prossima [exploration|e] che completeremo entro #Y 10#! anni scatenerà un [event|e]"
+
+  generic_colonial_exploration_events.2.title: "Il Futuro dell’Esplorazione"
+  generic_colonial_exploration_events.2.desc: "Dopo mesi di viaggi pericolosi e mappature meticolose, i nostri esploratori sono ritornati con racconti dettagliati di terre lontane e acque inesplorate. Le loro scoperte sono straordinarie, e offrono sia opportunità immediate per ulteriori spedizioni, sia intuizioni che potrebbero far progredire la scienza della navigazione.\n\nTuttavia, il [ROOT.GetCountry.GetGovernment.GetCourtTitle] è diviso su come utilizzare al meglio i frutti di questa conoscenza. Alcuni sostengono che sia opportuno dare potere all’esploratore più promettente affinché continui a spingersi oltre i limiti, mentre altri sostengono che queste scoperte debbano essere incanalate nel progresso tecnologico a beneficio delle generazioni future. La decisione plasmerà sicuramente il corso degli sforzi esplorativi del nostro popolo."
+  generic_colonial_exploration_events.2.a: "Finanzia future ricerche."
+  generic_colonial_exploration_events.2.b: "Supporta i nostri esploratori adesso."
+
+  generic_colonial_exploration_events.3.title: "Il Futuro dell’Esplorazione"
+  generic_colonial_exploration_events.3.desc: "I coloni in [target_charter.GetName] hanno proposto un piano per convertire i nativi locali alla religione [ROOT.GetCountry.GetReligion.GetName] e conseguentemente alla cultura [ROOT.GetCountry.GetCulture.GetName], convinti che tali sforzi non solo porterebbero all’illuminazione spirituale ma favorirebbero anche una più stretta integrazione con la colonia.\n\nAccogliendo le nostre usanze, i nativi potrebbero contribuire più direttamente alla crescita e alla prosperità della colonia. Tuttavia, tale sforzo richiederebbe un significativo supporto economico da parte di [ROOT.GetCountry.GetCapital.GetName] per finanziare missionari e programmi culturali. Mentre alcuni lo vedono come un investimento vitale per il futuro della colonia, altri avvertono che interferire con lo stile di vita dei nativi potrebbe distruggere il fragile equilibrio nella provincia."
+  generic_colonial_exploration_events.3.a: "Finanzieremo questi tentativi."
+  generic_colonial_exploration_events.3.b: "Non disturbiamo lo status quo."
+  natives_left_undisturbed_tt: "#italic I nativi a [target_charter.GetNameWithNoTooltip] rimarranno indisturbati#!"
+
+  generic_colonial_exploration_events.4.title: "La Colonia Accelera"
+  generic_colonial_exploration_events.4.desc: "Voci riguardanti le vaste terre e le promettenti opportunità in [target_charter.GetName] hanno iniziato a diffondersi attraverso la madrepatria. Mercanti, contadini e famiglie avventurose sono affascinati dai racconti di prosperità e libertà in questo nuovo mondo.\n\nIncoraggiati dai successi dei primi coloni, molti si stanno ora preparando per affrontare il viaggio attraverso gli oceani in cerca di una vita migliore. Questa ondata di interesse promette di rafforzare la popolazione della colonia e di accelerarne lo sviluppo, trasformandola in un fiorente centro di attività e crescita."
+  generic_colonial_exploration_events.4.a: "Possiamo soltanto sperare che questa tendenza continui."

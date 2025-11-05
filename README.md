@@ -1,7 +1,7 @@
 <img src="asset/banner.jpg" alt="EU5 banner" width="800">
 
 <p align="center">
-  <a href="https://steamcommunity.com/workshop/filedetails/">
+  <a href="https://steamcommunity.com/workshop/filedetails/?id=3599908727">
     <img alt="Steam Workshop" src="https://img.shields.io/badge/Steam_Workshop-Subscribe-1b2838?style=for-the-badge&logo=steam&logoColor=white">
   </a>
   <a href="https://discord.com/invite/MkQs9sSB32">
@@ -17,8 +17,8 @@
 
 > **Traduzione realizzata dal gruppo di traduttori amatoriali TWR**
 
-**Versione della mod:**  
-**Patch della mod:**
+**Versione della mod: 0.1**  
+**Patch della mod: 1.0.0**
 
 È possibile seguire lo stato di completamento della traduzione su Discord, nel canale [#stato-traduzione](https://discordapp.com/channels/409048447468175370/1376322996381290536).
 
@@ -34,18 +34,17 @@ Ko-fi: [Ko-fi.com/ZeXoGod](https://ko-fi.com/zexogod)
 ---
 
 ## Guida per l’installazione
-1. Ciao
-2. 
+Una volta sottoscritta la mod, assicurati che sia abilitata, la lingua impostata dovrà essere "English", andando su "Mod & DLC" in alto a destra, poi cliccate Applica, dopo il caricamento il gioco sarà in Italiano.
 
 ---
 
 ## Elenco traduttori
-ZeXoGod, Darmac, Maurizuc, Zero
+ZeXoGod, Darmac, Maurizuc, Zero, Toma, Litore
 
 ---
 
 ## Link utili
-- Steam Workshop:
+- Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3599908727>
 - Discord: <https://discord.com/invite/MkQs9sSB32>  
 - Facebook: <https://www.facebook.com/profile.php?id=100028543285650>
 - Ko-fi: <https://ko-fi.com/zexogod>
