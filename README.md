@@ -1,7 +1,7 @@
 <img src="asset/banner.jpg" alt="EU5 banner" width="800">
 
 <p align="center">
-  <a href="https://steamcommunity.com/workshop/filedetails/">
+  <a href="https://steamcommunity.com/workshop/filedetails/?id=3599908727">
     <img alt="Steam Workshop" src="https://img.shields.io/badge/Steam_Workshop-Subscribe-1b2838?style=for-the-badge&logo=steam&logoColor=white">
   </a>
   <a href="https://discord.com/invite/MkQs9sSB32">
