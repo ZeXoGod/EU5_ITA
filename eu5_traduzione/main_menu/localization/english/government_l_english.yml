@@ -2,7 +2,7 @@
  #
  # Custom Tags
  cannot_be_transferred: "Cannot be transferred"
- empty_heir_religion_law: "Independent from [ShowLawName('heir_religion_law')]"
+ empty_heir_religion_law: "Independent of [ShowLawName('heir_religion_law')]"
  FULL_RULER_NAME: "$TITLE$ $NAME$"
  GOV_USES_POWER: "[government_power|e] is $POWER$"
  CABINET_CURRENT_STATS: "Current Stats:"
@@ -66,7 +66,7 @@
  tribal_oldest_male: "Tribal Oldest Male"
  tribal_matrilineal: "Tribal Matriarchal"
  tribal_matrilineal_desc: "It is a type of [heir_selection|e] of a Tribe in which the [ruler|e] is the oldest female child of the previous [ruler]."
- matrilineal_non_exclusive: "Matrilineal Non Exclusive"
+ matrilineal_non_exclusive: "Matrilineal Non-Exclusive"
  matrilineal_non_exclusive_desc: "It is a type of [heir_selection|e] of a realm in which the new [ruler|e] is the most capable person in the dynasty of the previous [ruler]."
  bank_selection: "Selection of the new Bank Executive"
  elective_succession: "Elective Succession"
@@ -195,6 +195,9 @@
  HEIR_SELECTION_LEGALLY_MALE_DESC: "• Score for [legally_male|e]"
  HEIR_SELECTION_RANDOM_DESC: "• Candidate gets random score (from #Y 0.00#! up to #G +200.00#!)"
  HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC: "• Is unsuited to Rule"
+ HEIR_SELECTION_IS_RULER_SON_DESC: "• Is Son of the [ruler|e]"
+ HEIR_SELECTION_IS_RULER_GRANDSON_DESC: "• Is grandson of the [ruler|e]"
+ HEIR_SELECTION_IS_RULER_DESC: "• Is a [ruler|e]"
  FORMAT_NO_VALUE: "$KEY$"
  HEIR_SELECTION_ADMIRAL_DESC: "• Score for [admiral|e]"
  HEIR_SELECTION_GENERAL_DESC: "• Score for [general|e]"
@@ -233,11 +236,11 @@
 
  #
  # Ranks
- RANK_HOW: "To become a [COUNTRY_RANK.GetNameWithNoTooltip], the following must be true:\n$HOW$"
+ RANK_HOW: "To become a new [COUNTRY_RANK.GetNameWithNoTooltip], the following must be true:\n$HOW$"
  RANK_LEVEL_TITLE: "[COUNTRY_RANK.GetNameWithNoTooltip] is a Rank $NUM|Y$ $game_concept_country_rank$."
- COUNTRY_RANK_NO: "It is not possible to become a [COUNTRY_RANK.GetName] due to:\n$WHY$"
- CHANGE_COUNTRY_RANK_COST: "Changing our Country to become a [COUNTRY_RANK.GetName] will cost us $COST$"
- CHANGE_COUNTRY_RANK_ALREADY: "@trigger_no! We are already a [COUNTRY_RANK.GetName]"
+ COUNTRY_RANK_NO: "It is not possible to become a new [COUNTRY_RANK.GetName] due to:\n$WHY$"
+ CHANGE_COUNTRY_RANK_COST: "Changing our Country to become a new [COUNTRY_RANK.GetName] will cost us $COST$"
+ CHANGE_COUNTRY_RANK_ALREADY: "@trigger_no! We already have [COUNTRY_RANK.GetName] rank"
  CHANGE_COUNTRY_RANK_NO_DOWNGRADE: "@trigger_no! We cannot downgrade to a lesser Rank. [COUNTRY_RANK.GetName] is a higher Rank than [COUNTRY.GetRank.GetName]"
  CHANGE_COUNTRY_RANK_SUBJECT_RESTRICTED: "@trigger_no! A [SUBJECT_TYPE.GetName] is not allowed to change ranks."
  #
@@ -297,7 +300,7 @@
  MONTHLY_CONTROL_TT_TEXT: "The change is due to:"
  MAX_CONTROL_TT_HEADER: "Maximum Control"
  MAX_CONTROL_TT_TEXT: "Max Control is due to:"
- ABOVE_MAX_CONTROL: "Currently declining due to current [control|e] being above the [max_control|e]."
+ ABOVE_MAX_CONTROL: "Currently, declining due to current [control|e] being above the [max_control|e]."
  
  
  TARGET_SATISFACTION_HEADER: "The [estate_satisfaction|e] of the [ESTATE.GetName] is moving towards $VALUE|2V%$ due to:"
@@ -403,7 +406,7 @@
  INTEGRATE_AMOUNT: "There are $VAL|V0$ [locations|e] to be integrated in [PROVINCE.GetName]."
  ESTIMATED_INTEGRATION: "Integration should be done on $DATE|Y$. It increases by $VAL|+=2$ each month due to:\n$WHY$"
  ESTIMATED_INTEGRATION_LOCATION_ENTRY_TITLE: "Integrating [LOCATION.GetName]"
- ESTIMATED_INTEGRATION_LOCATION_ENTRY: "[LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=$#!"
+ ESTIMATED_INTEGRATION_LOCATION_ENTRY: "[LOCATION.GetRank.GetIcon]  [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=$#!"
  INTEGRATE_CULTURE_WAR: "[CULTURE.GetName] [cultural_influence|e] vs [TARGET_CULTURE.GetName] [cultural_tradition|e]: $VAL|+=%2$"
  INTEGRATE_SAME_CULTURE: "[CULTURE.GetName] is the [dominant_culture|e]: $VAL|+=2%$"
  ASSIMILATE_CULTURE_WAR: "[CULTURE.GetName] [cultural_influence|e] vs [TARGET_CULTURE.GetName] [cultural_tradition|e]: $VAL|+=2%$"
@@ -731,7 +734,7 @@
  integrate_province_action_progress_long_wordier: "@province_integration_speed! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!"
  integrate_province_action_progress_tooltip: "[integration|e] at #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nIntegration should be done on [SCOPE.sProvince('target').GetIntegrationETA|Y]"
  integrate_province_action_progress_tooltip_1: "The Province progress growth is [SCOPE.sProvince('target').GetIntegrationModifiers|+=2] each month due to:\n[SCOPE.sProvince('target').GetIntegrationModifiersBreakdown]"
- integrate_province_action_progress_tooltip_2: "Progress growth in [SCOPE.sProvince('target').GetNumIntegrationLocations|V0] locations:\n[SCOPE.sProvince('target').GetNumIntegrationLocationsBreakdown]"
+ integrate_province_action_progress_tooltip_2: "Progress growth in [SCOPE.sProvince('target').GetNumIntegrationLocations|V0] [locations]:\n[SCOPE.sProvince('target').GetNumIntegrationLocationsBreakdown]"
 
  integrate_area: "Integrate Area"
  integrate_area_desc: "When we have conquered an [area|e], we need to [integrate|e] it before it will be a part of our [country|e]. If it does not become integrated, the [pops|e] in the area may [rebel|e]."
@@ -758,7 +761,7 @@
  recovery_effort_action: "Help [SCOPE.sProvince('target').GetName] Recover.\n\n[SCOPE.sProvince('target').GetAverageProsperityInfo]"
  recovery_effort_select_province: "Select the [province|e] to increase [prosperity|e] in:"
  recovery_effort_active: "Helping [SCOPE.sProvince('target').GetNameWithHighlightOnly] Recover"
- recovery_effort_action_progress: "[SCOPE.sProvince('target').GetAverageProsperity|V2]"
+ recovery_effort_action_progress: "[SCOPE.sProvince('target').GetAverageProsperity|%V2]"
  recovery_effort_action_progress_wordier: "Average [prosperity|e] of [SCOPE.sProvince('target').GetNameWithNoTooltip]: [SCOPE.sProvince('target').GetAverageProsperity|%V2]"
  recovery_effort_action_progress_long_wordier: "@prosperity! [SCOPE.sProvince('target').GetAverageProsperity|%V2]"
  recovery_effort_action_progress_tooltip: "[SCOPE.sProvince('target').GetAverageProsperityInfo]"
