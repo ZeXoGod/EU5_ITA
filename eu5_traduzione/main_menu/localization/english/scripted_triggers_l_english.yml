@@ -1,6 +1,6 @@
 ﻿l_english:
  reformation_is_enabled_tt: "The #Y Reformation#! has started"
- casus_belli_forbids_non_french_location_conquest_tt: "The 'Hundred Years War' [war_goal|e] only permits taking land within the [ShowRegionName('france_region')] [region|e]"
+ casus_belli_forbids_non_french_location_conquest_tt: "The 'Hundred Years War' [war_goal|e] only permits taking land within the [ShowRegionName('france_region')] [region|e] or land owned by either a [subject|e] of [GetCountry('FRA').GetNameWithNoTooltip] or [GetCountry('ENG').GetNameWithNoTooltip]"
  casus_belli_forbids_location_conquest_tt: "This war forbids us to conquer any [location|e] directly"
  casus_belli_forbids_normal_subjugation_tt: "This war forbids us to [subjugate|e] our enemy normally"
  casus_belli_forbids_normal_subjugation_tributary_tt: "$casus_belli_forbids_normal_subjugation_tt$\nTo establish a [ShowSubjectTypeName('tributary')] use the [ShowPeaceTreatyTypeName('force_tributary')] [peace_treaty|e]"
