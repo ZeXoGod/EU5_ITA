@@ -40,7 +40,7 @@ Una volta sottoscritta la mod, assicurati che sia abilitata, la lingua impostata
 ---
 
 ## Elenco traduttori
-ZeXoGod, Darmac, Maurizuc, Zero, Toma, Litore, Turk975
+ZeXoGod, Darmac, Maurizuc, Zero, Toma, Litore, Turk975, Robisan
 
 ---
 
