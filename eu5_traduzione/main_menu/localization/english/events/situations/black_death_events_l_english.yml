@@ -1,181 +1,225 @@
 ﻿l_english:
- black_death.1.title: "The [ShowSituationNameWithNoTooltip('black_death')] in [GetDisease('bubonic_plague').GetOrigin.GetNameWithNoTooltip]"
- black_death.1.desc: "Disturbing news has reached us from [GetDisease('bubonic_plague').GetOrigin.GetName], as we recently received the following report from there.\n\nAlas! our ships enter the port, but of a thousand sailors hardly ten are spared. We reach our homes; our kindred and our neighbors come from all parts to visit us. Woe to us for we cast at them the darts of death! Whilst we spoke to them, whilst they embraced us and kissed us, we scattered the poison from our lips. Going back to their homes, they in turn soon infected their whole families, who in three days succumbed, and were buried in one common grave. Priests and doctors visiting the sick returned from their duties ill, and soon were numbered with the dead. O death! cruel, bitter, impious death! which thus breaks the bonds of affection and divides father and mother, brother and sister, husband and wife. Lamenting our misery, we feared to fly, yet we dared not remain."
- black_death.1.a: "Rats!"
- black_death.1.a.tt: "[ShowSituationName('black_death')] has begun its spread from [GetDisease('bubonic_plague').GetOrigin.GetName]"
+ black_death.1.title: "La [ShowSituationNameWithNoTooltip('black_death')] a [GetDisease('bubonic_plague').GetOrigin.GetNameWithNoTooltip]"
+ black_death.1.desc: "Provengono notizie allarmanti da [GetDisease('bubonic_plague').GetOrigin.GetName], contenute in un resoconto che abbiamo appena ricevuto.\n\nAhimè! Le nostre navi entrano nel porto, ma di mille marinai se ne salvano a malapena dieci. Raggiungiamo le nostre case; la nostra parentela e vicini vengono a farci visita da ogni parte. Che ci maledicano, poiché lanciamo a tutti loro i dardi della morte! Mentre ci parlavano, abbracciavano e baciavano, diffondevamo il veleno con le nostre labbra. Tornando a casa loro, infettarono le loro famiglie, che perirono in tre giorni, e furono seppellite in una fossa comune. Preti e dottori che fanno visita ai malati tornano a casa ammalati a loro volta, aggiungendosi poco dopo al numero dei morti. O Morte! Crudele, amara, empia Morte! Che rompi in tal modo i legami d'affetto separando padre e madre, fratello e sorella, marito e moglie. Piangendo della nostra miseria, avevamo paura di scappare, eppure non osavamo rimanere."
+ black_death.1.a: "Ratti!"
+ black_death.1.a.tt: "[ShowSituationName('black_death')] ha cominciato a diffondersi da [GetDisease('bubonic_plague').GetOrigin.GetName]"
 
- black_death.1026.title: "Another one bites the dust..."
- black_death.1026.desc: "Rich men, trust not in wealth,\nGold cannot buy you health;\nPhysic himself must fade.\nAll things to end are made,\nThe plague full swift goes by;\nI am sick, I must die."
- black_death.1026.a: "Lord, have mercy on us!"
+ black_death.1026.title: "Un altro mangia la polvere..."
+ black_death.1026.desc: "Uomini ricchi, non confidate nella ricchezza,\nL'oro non può comprarvi la salute;\nAnche il fisico stesso è destinato a svanire.\nTutte le cose sono fatte per finire,\nLa peste passa veloce;\nSono malato, devo morire."
+ black_death.1026.a: "Signore, abbi pietà di noi!"
 
- black_death.2.title: "Black Death Spreads!"
- black_death.2.desc: "The black death, the killer of mankind, the punishment for our sins, has arrived inside our country! What can we do other than pray?"
+ black_death.2.title: "La Peste Nera si Diffonde!"
+ black_death.2.desc: "La peste nera, l'assassina dell'umanità, la punizione per i nostri peccati, è arrivata nel nostro Paese! Cosa possiamo fare se non pregare?"
  black_death.2.a: "$common_string_what_can_we_do$"
 
- black_death.100.title: "End of the Black Death"
- black_death.100.desc: "It seems that the last remnants of the plague have finally disappeared. Are those of us that survived the cursed or the blessed?"
- black_death.100.a: "Did anyone survive?"
- total_death_toll_tt: "Throughout the [ShowSituationName('black_death')] [situation|e], the #R Reaper#! claimed the souls of [ROOT.GetVariable('bd_total_death_toll_variable').GetValue|V0] #Y K#! of our [pops|e]"
+ black_death.100.title: "Fine della Peste Nera"
+ black_death.100.desc: "Sembra che gli ultimi residui della peste siano finalmente scomparsi. Noi che siamo sopravvissuti siamo maledetti o benedetti?"
+ black_death.100.a: "Qualcuno è sopravvissuto?"
+ total_death_toll_tt: "Durante la [ShowSituationName('black_death')] [situation|e], il #R Reaper#! ha reclamato le anime di [ROOT.GetVariable('bd_total_death_toll_variable').GetValue|V0] #Y K#! dei nostri [pops|e]"
 
- black_death.101.t: "Plague-as-Punishment"
- black_death.101.desc: "The end times are upon us! Or at least, so claim the ever-growing groups of flagellants that wander throughout the countryside processioning and preaching of apocalyptic events to come as punishment for our pride, which only through Christ's ire as flagellation we can dispel.\n\nWhile originally having the support of the Church, these groups have strayed too far from doctrine to be sanctioned anymore. The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] believe that they must be stamped out to prevent them from undermining stability."
- black_death.101.a: "Instruct local garrisons to disperse any flagellant gatherings."
- black_death.101.b: "Never mind the Church, they might be onto something!"
- plague_lessen_spread_piss_off_peasants_tt: "Every [location|e] we own in [target_province.GetName] will have the spread of the [GetDisease('bubonic_plague').GetName] reduced by #G -5%#! at the expense of [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] for its peasants"
+ black_death.101.t: "La Peste come Punizione"
+ black_death.101.desc: "La fine dei tempi è vicina! O almeno così sostengono i gruppi sempre più numerosi di flagellanti che vagano per le campagne in processione predicando gli eventi apocalittici che stanno per arrivare come punizione per il nostro orgoglio, che solo attraverso l'ira di Cristo sotto forma di flagellazione possiamo dissipare.\ n\nSebbene in origine godessero del sostegno della Chiesa, questi gruppi si sono allontanati troppo dalla dottrina per poter essere ancora tollerati. Il [ROOT.GetCountry.GetGovernment.GetEstateName(‘clergy_estate’)] ritiene che debbano essere eliminati per impedire che minino la stabilità."
+ black_death.101.a: "Ordinate alle guarnigioni locali di disperdere eventuali raduni di flagellanti."
+ black_death.101.b: "Lasciate perdere la Chiesa, potrebbero aver ragione!"
+ plague_lessen_spread_piss_off_peasants_tt: "Ogni [location|e] che possediamo in [target_province.GetName] beneficerà di una diffusione della [GetDisease('bubonic_plague').GetName] ridotta del #G -5%#! a spese di [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] per i suoi paesani."
 
- black_death.102.t: "The Plague of Wage Fixing"
- black_death.102.desc: "Naturally, guilds wield great power over the economy. Generally, they are a positive force for society, providing the public with confidence in products, ensuring the market remains stable, and controlling the growth of competition, among other things. Now that plague has seeped into our nation, spreading throughout the land, it is more important than ever that guilds ensure that prices remain stable and work continues to be supplied.\n\nHowever, to ensure this, guilds have been controlling wages, keeping them as they have always been in spite of the labor shortage caused by the death around us. Many guild members have become greatly disgruntled, knowing that they could be earning more, but would be crushed by the guild if they went independent. We are now at a tipping point, and must decide between a stable market or appeasing the laborers."
- black_death.102.a: "The ungrateful laborers must be shown their place."
- black_death.102.b: "Trading market for societal stability is acceptable."
- plague_every_pop_in_province_30_satisfaction_tt: "[target_location.GetName] and every owned neighboring [location|e] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+ black_death.102.t: "La Piaga della Fissazione dei Salari"
+ black_death.102.desc: "Naturalmente, le corporazioni esercitano un grande potere sull'economia. In generale, sono una forza positiva per la società, poiché garantiscono al pubblico la fiducia nei prodotti, assicurano la stabilità del mercato e controllano la crescita della concorrenza, tra le altre cose. Ora che la peste si è diffusa nella nostra nazione, è più importante che mai che le corporazioni garantiscano la stabilità dei prezzi e la continuità dell'offerta di lavoro. \n\nTuttavia, per garantire ciò, le corporazioni hanno controllato i salari, mantenendoli invariati nonostante la carenza di manodopera causata dalla morte che ci circonda. Molti membri delle corporazioni sono diventati molto scontenti, sapendo che potrebbero guadagnare di più, ma che sarebbero schiacciati dalla corporazione se diventassero indipendenti. Ora siamo a un punto di svolta e dobbiamo decidere tra un mercato stabile o placare i lavoratori".
+ black_death.102.a: "A questi lavoratori ingrati bisogna far capire qual è il loro posto."
+ black_death.102.b: "Sacrificare il mercato per la stabilità sociale è accettabile"
+ plague_every_pop_in_province_30_satisfaction_tt: "[target_location.GetName] e ogni [location|e] vicina perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
 
- black_death.103.t: "Learning From The Plague"
- black_death.103.desc: "Court doctors and university intelligentsia believe that we should standardize successful plague treatment and prevention techniques to help alleviate the situation. At the moment, plague treatment and prevention is handled by a decentralized network of local plague doctors and medical practitioners, making it an expensive although potentially worthwhile endeavor to ensure all our doctors have the latest equipment and methodology. Things such as the wearing of robes and gloves, herb bags, and ready accessibility to mercury and arsenic could help ensure some of our people stay safe and healthy."
- black_death.103.a: "Push for standardization."
- black_death.103.b: "Each doctor should get to choose."
+ black_death.103.t: "Imparare dalla Peste"
+ black_death.103.desc: "I medici di corte e l'intellighenzia universitaria ritengono che dovremmo standardizzare le tecniche di trattamento e prevenzione della peste che hanno dato buoni risultati, al fine di contribuire ad alleviare la 
+situazione. Al momento, il trattamento e la prevenzione della peste sono gestiti da una rete decentralizzata di medici locali specializzati nella peste e di professionisti sanitari, il che rende costoso, sebbene 
+potenzialmente utile, garantire che tutti i nostri medici dispongano delle attrezzature e delle metodologie più recenti. Cose come l'uso di camici e guanti, sacchetti di erbe e la pronta 
+accessibilità al mercurio e all'arsenico potrebbero contribuire a garantire che parte della nostra popolazione rimanga sana e salva."
+ black_death.103.a: "Promuovete la standardizzazione."
+ black_death.103.b: "Ogni dottore ha il diritto di scegliere."
 
- black_death.1001.t: "Countryside Escape"
- black_death.1001.desc: "Terrified of death which is rapidly spreading throughout our population centers, the people have begun a mass exodus from urban settings into the rural, hoping to seal themselves away from the world and the disease that is ravaging it.\n\nWhile this response may be acceptable for the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the other high classes of society, the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] are the lifeblood of our country, and their departure from production centers would wreak havoc on the economy! Perhaps drastic measures are necessary to protect our economy."
- black_death.1001.a: "Allow them. They just want to be safe."
- black_death.1001.b: "Seal the cities, nobody leaves without a pass!"
- STATIC_MODIFIER_NAME_black_death_exodus_ruralization_attraction: "Rural Exodus"
- STATIC_MODIFIER_NAME_fleeing_pops_modifier: "Fleeing the Black Death"
+ black_death.1001.t: "Fuga in Campagna"
+ black_death.1001.desc: "Terrorizzati dalla morte che si sta rapidamente diffondendo nei nostri centri abitati, le persone hanno iniziato un esodo di massa dalle aree urbane verso quelle rurali, 
+nella speranza di isolarsi dal mondo e dalla malattia che lo sta devastando.\ n\nSebbene questa reazione possa essere accettabile per la 
+[ROOT.GetCountry.GetGovernment.GetEstateName(‘nobles_estate’)] e le altre classi sociali elevate, i [ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] sono la 
+linfa vitale del nostro Paese e la loro fuga dai centri di produzione causerebbe il collasso dell'economia! Forse sono necessarie misure drastiche per proteggere la nostra economia".
+ black_death.1001.a: "Permetteteglielo. Vogliono solo sentirsi al sicuro."
+ black_death.1001.b: "Chiudete le città, nessuno esce senza un lasciapassare!"
+ STATIC_MODIFIER_NAME_black_death_exodus_ruralization_attraction: "Esodo Rurale"
+ STATIC_MODIFIER_NAME_fleeing_pops_modifier: "In Fuga dalla Peste Nera"
 
- black_death.1002.t: "Conflict of Fads"
- black_death.1002.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] alike are currently waging a war of culture over the best behavior to ward off the plague. Some lock themselves away at home, eating little and praying much, hoping that austerity will save them. Others break into abandoned houses, drink like the plague will take them tomorrow, and indulge in sin until sunrise.\n\nWe do not know if either of these behaviors will actually alleviate the plague, but supporting one of them might prove beneficial for the state."
- black_death.1002.a: "Austerity will keep us pious and safe!"
- black_death.1002.b: "Self-indulgence will keep us happy and safe!"
- STATIC_MODIFIER_NAME_black_death_austerity_movement: "Austerity Movement"
- plague_satisfaction_and_spread_tt: "Every [location|e] we own in [target_province.GetName] that has not already overcome the disease, will have the spread of the [GetDisease('bubonic_plague').GetName] increased by #R 10%#! while increasing the [pop_satisfaction|e] of its peasants by #G 10%#!"
+ black_death.1002.t: "Conflitto di Mode"
+ black_death.1002.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName(‘nobles_estate’)] e [ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] stanno attualmente 
+combattendo una guerra culturale sul comportamento migliore da adottare per scongiurare la peste. Alcuni si rinchiudono in casa, mangiano poco e pregano molto, sperando che l'austerità li salvi. 
+Altri irrompono nelle case abbandonate, bevono come se la peste li portasse via domani e si abbandonano al peccato fino all'alba.\n\nNon sappiamo se uno di questi comportamenti possa effettivamente 
+alleviare la peste, ma sostenerne uno potrebbe rivelarsi vantaggioso per lo Stato".
+ black_death.1002.a: "L'austerità ci manterrà devoti e al sicuro!"
+ black_death.1002.b: "L'autoindulgenza ci manterrà felici e al sicuro!"
+ STATIC_MODIFIER_NAME_black_death_austerity_movement: "Movimento di Austerità"
+ plague_satisfaction_and_spread_tt: "Ogni [location|e] che possediamo in [target_province.GetName] che non ha già debellato la malattia subirà una diffusione della [GetDisease('bubonic_plague').GetName] aumentata del #R 10%#!, mentre la [pop_satisfaction|e] dei suo paesani incrementerà di #G 10%#!"
 
- black_death.1003.t: "Black Death Claims the Throne"
- black_death.1003.desc: "[target_portrait_character.GetName] has been hiding the symptoms for some time. But alas, on their deathbed, it is clear that they too had fallen to this terrible ailment that haunts the [ROOT.GetCountry.GetFlavorRank].\n\nNot much can be done for [target_portrait_character.GetHerHim] now, only darkness awaits, for [target_portrait_character.GetHerHim], and us."
- black_death.1003.a: "Rest in peace..."
- black_death.1003.b: "Gather every doctor in the capital!"
+ black_death.1003.t: "La Peste Nera Reclama il Trono"
+ black_death.1003.desc: "[target_portrait_character.GetName] ha nascosto i sintomi per un po' di tempo. Ma ahimè, sul letto di morte, è chiaro che anche lui era stato colpito da questo terribile male che affligge [ROOT.GetCountry.GetFlavorRank].\n\nNon c'è più molto da fare per [target_portrait_character.GetHerHim] ora, solo l'oscurità attende, per [target_portrait_character.GetHerHim] e per noi."
+ black_death.1003.a: "Riposi in pace..."
+ black_death.1003.b: "Radunate ogni dottore della capitale!"
 
- black_death.1004.t: "The Dire Death"
- black_death.1004.desc: "Villagers from all around [target_location.GetName] have begun to organize efforts to plug the holes in the ground from which the plague miasma originates, systematically sealing gaps big and small all across their land.\n\nThe villagers are certain that this will remedy the issue, but experts in [ROOT.GetCountry.GetCapital.GetName] warn that this will only harm the soil quality of the region."
- black_death.1004.a: "Fill every hole!"
- black_death.1004.b: "Cease! The soil must remain arable!"
- STATIC_MODIFIER_NAME_damaged_soil: "Damaged Soil"
+ black_death.1004.t: "La Morte Terribile"
+ black_death.1004.desc: "Gli abitanti dei villaggi circostanti [target_location.GetName] hanno iniziato a organizzare gli sforzi per tappare le fosse nel terreno da cui proviene il miasma della peste,
+ sigillando sistematicamente le fessure grandi e piccole in tutto il loro territorio. n\nGli abitanti sono certi che questo risolverà il problema, ma gli esperti di 
+[ROOT.GetCountry.GetCapital.GetName] avvertono che ciò danneggerà solo la qualità del suolo della regione."
+ black_death.1004.a: "Riempite ogni buco!"
+ black_death.1004.b: "Fermatevi! Il terreno deve rimanere arabile!"
+ STATIC_MODIFIER_NAME_damaged_soil: "Terreno Danneggiato"
 
- black_death.1005.t: "In Hunt for a Cause"
- black_death.1005.desc: "The anger and fear in the population has reached the point at which it can no longer be contained inward, and must be projected outward onto others. Someone needs to become the cause for the plague, and that someone must pay.\n\nBe it the poor, the ugly, or any number of minorities, the masses demand that a group be hunted and prosecuted for bringing the wrath of god down on us. We can either help organize this event and control it, or try to stop violence across castes only for it to be directed at us."
- black_death.1005.a: "Organize a hunt!"
- black_death.1005.b: "Do not blame divine punishment on others!"
- plague_masses_appeased_tt: "The masses will be appeased, for now..."
+ black_death.1005.t: "In Cerca di una Causa"
+ black_death.1005.desc: "La rabbia e la paura della popolazione hanno raggiunto un punto tale da non poter più essere contenute al loro interno e devono essere proiettate all'esterno, sugli altri. 
+Qualcuno deve diventare la causa della peste e quel qualcuno deve pagare.\n\nChe si tratti dei poveri, dei brutti o di qualsiasi minoranza, le masse esigono che un gruppo venga perseguitato 
+e processato per aver scatenato l'ira di Dio su di noi. Possiamo aiutare a organizzare questo evento e controllarlo, oppure cercare di fermare la violenza tra le caste solo per far sì che venga diretta 
+contro di noi."
+ black_death.1005.a: "Organizzate una caccia!"
+ black_death.1005.b: "Non attribuite la punizione divina agli altri!"
+ plague_masses_appeased_tt: "Le masse saranno placate, per ora..."
 
- black_death.1006.t: "The Maid Draft"
- black_death.1006.desc: "The fear of catching the plague while serving a sick nobleman is too great for the lower classes to handle, no matter how much the wages may be raised!\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are now demanding the right to draft the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] into service, forcing them to risk illness in order to tend to their needs."
- black_death.1006.a: "Institute the draft!"
- black_death.1006.b: "Ridiculous! Clean your own properties!"
+ black_death.1006.t: "L'Arruolamento delle Cameriere"
+ black_death.1006.desc: "La paura di contrarre la peste mentre si assiste un nobile malato è troppo grande per le classi inferiori, indipendentemente dall'ammontare del salario 
+! n\nI [ROOT.GetCountry.GetGovernment.GetEstateName(‘nobles_estate’)] ora chiedono il diritto di arruolare i 
+[ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] al loro servizio, costringendoli a rischiare la malattia per soddisfare le loro esigenze."
+ black_death.1006.a: "Istituite l'arruolamento!"
+ black_death.1006.b: "Ridicolo! Pulite voi stessi le vostre proprietà!"
 
- black_death.1007.t: "Delhi's Dilemma"
- black_death.1007.desc: "Our [ROOT.GetCountry.GetLongName] is like a fine rug sown together by its many ethnicities and religious groups who all work in unison, but with the arrival of this cataclysmic disaster, this rug is beginning to come apart at its seams...\n\nThe various religious groups in our [ROOT.GetCountry.GetFlavorRank] are now at each other's throats, blaming one another, and their deities for the outbreak. If this is not controlled soon, it will lead to a bloodbath."
- black_death.1007.a: "They dare?"
- black_death.1007.b: "Entrust local religious leaders to resolve the issue"
- black_death.1007.b.tl: "An attempt is made to quell the unrest by ceding control to local religious leaders."
- black_death.1007.c: "Impose strict military oversight as a threat"
+ black_death.1007.t: "Il Dilemma di Dehli"
+ black_death.1007.desc: "Il nostro [ROOT.GetCountry.GetLongName] è come un raffinato tappeto tessuto insieme dalle sue numerose etnie e gruppi religiosi che lavorano all'unisono, ma con l'
+arrivo di questo disastro catastrofico, questo tappeto sta cominciando a sfilacciarsi...\ n\nI vari gruppi religiosi nel nostro [ROOT.GetCountry.GetFlavorRank] sono ora ai ferri corti ,
+ incolpando l'un l'altro e le loro divinità per l'epidemia. Se la situazione non verrà controllata al più presto, si arriverà a un bagno di sangue."
+ black_death.1007.a: "Come osano?"
+ black_death.1007.b: "Affidate il problema ai capi religiosi locali."
+ black_death.1007.b.tl: "Si cercherà di sedare i disordini cedendo il controllo ai capi religiosi locali."
+ black_death.1007.c: "Imponete una rigorosa supervisione militare come minaccia."
 
- black_death.1008.t: "Ghost Ship Washes Ashore"
- black_death.1008.desc: "On the shores of [target_location.GetName], a ghost ship has washed ashore. This merchant vessel arrived one night and has remained there ever since, untouched by the locals.\n\nThe townsfolk are too afraid that the vessel may be infested by the plague to approach it. The contents and remains of the crew remain intact. They've asked the [ROOT.GetCountry.GetFlavorRank] to burn the ship for safety."
- black_death.1008.a: "Burn the accursed vessel!"
- black_death.1008.b: "It smells of booty, search it for loot!"
- custom_tooltip_generic_nothing_happens: "Nothing happens..."
+ black_death.1008.t: "Una Nave Fantasma si Arena sulla Costa"
+ black_death.1008.desc: "Sulle rive di [target_location.GetName], una nave fantasma è stata portata a riva. Questa nave mercantile è arrivata una notte e da allora è rimasta lì, 
+senza essere toccata dalla popolazione locale.\n\nGli abitanti del paese hanno troppa paura che la nave possa essere infestata dalla peste per avvicinarsi. Il contenuto e i resti dell'equipaggio sono rimasti intatti. Hanno 
+chiesto al [ROOT.GetCountry.GetFlavorRank] di bruciare la nave per motivi di sicurezza."
+ black_death.1008.a: "Bruciate il vascello maledetto!"
+ black_death.1008.b: "C'è odore di bottino, perquisitelo!"
+ custom_tooltip_generic_nothing_happens: "Non accade nulla..."
 
- black_death.1009.t: "Campaign Woes"
- black_death.1009.desc: "Disease has broken out amongst the rank and file at one of our fielded armies. Plague doctors warn that if the army is not disbanded for treatment, the whole unit may fall to the perils of disease.\n\nOf course, disbanding an active unit may be a tactically unsavvy maneuver, so we must weigh the value of our soldiers' lives against the value of their honorable deaths for the sake of the [ROOT.GetCountry.GetFlavorRank]."
- black_death.1009.a: "Disease or not, we march on!"
- black_death.1009.b: "Surely the people of [target_location.GetNameWithNoTooltip] are keen to donate..."
+ black_death.1009.t: "I Guai della Campagna"
+ black_death.1009.desc: "Una malattia si è diffusa tra i soldati semplici di uno dei nostri eserciti schierati sul campo. I medici della peste avvertono che se l'esercito non viene sciolto per essere sottoposto a cure, l'
+intera unità potrebbe soccombere alla malattia.\n\nNaturalmente, sciogliere un'unità attiva potrebbe essere una manovra tatticamente poco saggia, quindi dobbiamo valutare il valore delle vite dei nostri soldati 
+rispetto al valore della loro morte onorevole per il bene del [ROOT.GetCountry.GetFlavorRank]."
+ black_death.1009.a: "Malattia o no, continuiamo a marciare!"
+ black_death.1009.b: "Sicuramente gli abitanti di [target_location.GetNameWithNoTooltip] sono desiderosi di fare una donazione..."
 
- black_death.1010.t: "Armenian Mud"
- black_death.1010.desc: "Doctors from across the East have all become convinced that there is but one effective cure for this terrible disease that is plaguing us all: mud extracted from the lands of [ShowAreaName('armenia_area')|U].\n\nUnfortunately, other sovereign states have also become aware of this, we must stock large quantities of mud before they can, or we will risk being left without any..."
- black_death.1010.a: "Import the mud, at any cost!"
- black_death.1010.b: "Mud? Nay, we will import real medicine!"
- black_death.1010.c: "Nothing can cure it, we import nothing!"
+ black_death.1010.t: "Fango Armeno"
+ black_death.1010.desc: "I medici di tutto l'Oriente sono ormai convinti che esista un solo rimedio efficace contro questa terribile malattia che affligge tutti noi: il fango 
+estratto dalle terre d'[ShowAreaName(‘armenia_area’)|U].\ n\nPurtroppo, anche altri Stati sovrani ne sono venuti a conoscenza, quindi dobbiamo fare scorta di grandi quantità di fango 
+prima che possano farlo loro, altrimenti rischiamo di rimanere senza..."
+ black_death.1010.a: "Importate il fango, a qualsiasi costo!"
+ black_death.1010.b: "Fango? No, importeremo medicine vere!"
+ black_death.1010.c: "Nulla può curarla, non importeremo proprio niente!"
 
- black_death.1011.t: "Refugees at the Gates"
- black_death.1011.desc: "Refugees fleeing from the plague have arrived in large numbers at [target_location.GetName]. They are desperate and hungry, seeking the safety of a location as of yet to be touched by the dire death.\n\nTaking them in will increase our population, a valuable resource in a time with so much loss, but they also introduce the risk of carrying the sickness straight into the city. Most would turn them away, but their desperation may lead them to rash action. Either way, something must be done about this horde of refugees."
- black_death.1011.a: "Take in the refugees."
- black_death.1011.b: "Set up plague camps for the refugees."
- black_death.1011.c: "Turn away the refugees."
- pops_lose_10_satisfaction_tt: "Our [pops|e] in [target_location.GetNameWithNoTooltip] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+ black_death.1011.t: "Rifugiati alle Porte"
+ black_death.1011.desc: "I rifugiati in fuga dalla peste sono arrivati in gran numero a [target_location.GetName]. Sono disperati e affamati, alla ricerca della sicurezza di un 
+luogo non ancora toccato dalla morte terribile.\n\nAccoglierli aumenterà la nostra popolazione, una risorsa preziosa in un momento di così tante perdite, ma comporta anche il 
+rischio di portare la malattia direttamente in città. La maggior parte li respingerebbe, ma la loro disperazione potrebbe spingerli ad azioni avventate. In ogni caso, bisogna fare qualcosa per questa 
+orda di rifugiati."
+ black_death.1011.a: "Fate entrare i rifugiati."
+ black_death.1011.b: "Allestite dei campi per i rifugiati."
+ black_death.1011.c: "Allontanate i rifugiati"
+ pops_lose_10_satisfaction_tt: "I nostri [pops|e] a [target_location.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
 
- black_death.1012.t: "Papal Warning"
- black_death.1012.desc: "News has arrived of an official decree by [target_character.GetName] warning rulers and community leaders to avoid fuelling hatred against minorities. The Black Death is without a doubt an act of god. Anyone who claims otherwise is committing blasphemy and could be excommunicated.\n\nUnfortunately, minorities make for great scapegoats and targets for anger when great tragedy strikes. Whether we choose to continue to benefit from this, or heed the papal warning is up to us."
- black_death.1012.a: "Agreed, it is an act of God!"
- black_death.1012.b: "The minorities must be controlling [target_character.GetHerHim]!"
+ black_death.1012.t: "Avvertimento dal Pontefice"
+ black_death.1012.desc: "È giunta notizia di un decreto ufficiale emanato da [target_character.GetName] che ammonisce i governanti e i capi delle comunità a evitare di alimentare l'odio contro le minoranze. La 
+Peste Nera è senza dubbio un atto di Dio. Chiunque affermi il contrario commette blasfemia e potrebbe essere scomunicato.\n\nPurtroppo, le minoranze sono ottimi 
+capri espiatori e bersagli della rabbia quando si verifica una grande tragedia. Sta a noi decidere se continuare a trarne vantaggio o prestare ascolto all'avvertimento papale."
+ black_death.1012.a: "Ha ragione, si tratta di un atto di Dio!"
+ black_death.1012.b: "Le minoranze controllano [target_character.GetHerHim]!"
 
- black_death.1013.t: "Plague Tax Strain"
- black_death.1013.desc: "The strain caused by the plague around the rural villages in [target_location.GetName] has led them to stop paying their taxes. Those that have not yet succumbed to the plague struggle to meet their own needs, let alone the demands of the [ROOT.GetCountry.GetFlavorRank].\n\nOf course, the woes of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] are hardly comparable to the damage that a lack of funds could do to the population as a whole, so our tax collectors have been quite aggressive in reminding the locals to pay their dues. Unfortunately, this was responded in kind."
- black_death.1013.a: "Angry mob or not, payment is due!"
- black_death.1013.b: "During hard times, taxes should be lowered..."
- black_death.1013.c: "No taxes for anyone suffering!"
- every_pop_25_satisfaction_loss_tt: "Our [pops|e] in [target_location.GetName] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
- every_pop_10_satisfaction_gain_tt: "Our [pops|e] in the [target_location.GetName] [location|e] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
+ black_death.1013.t: "La Pressione Fiscale della Peste"
+ black_death.1013.desc: "La pressione fiscale causata dalla peste nei villaggi rurali di [target_location.GetName] li ha portati a smettere di pagare le tasse. Coloro che non hanno ancora 
+ceduto alla peste lottano per soddisfare i propri bisogni, figuriamoci le richieste del [ROOT.GetCountry.GetFlavorRank].\ n\nNaturalmente, le sofferenze dei 
+[ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] sono difficilmente paragonabili al danno che la mancanza di fondi potrebbe causare alla popolazione nel suo complesso, quindi i nostri esattori delle tasse 
+sono stati piuttosto aggressivi nel ricordare alla popolazione locale di pagare i propri debiti. Purtroppo, la risposta è stata altrettanto aggressiva."
+ black_death.1013.a: "Folla arrabbiata o meno, è ora di pagare!"
+ black_death.1013.b: "Durante i periodi difficili, le tasse dovrebbero essere abbassate..."
+ black_death.1013.c: "Nessuna tassa per chi soffre!"
+ every_pop_25_satisfaction_loss_tt: "I nostri [pops|e] a [target_location.GetName] perderanno [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+ every_pop_10_satisfaction_gain_tt: "I nostri [pops|e] nella [location|e] di [target_location.GetName]  guadagneranno [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
 
- black_death.1014.t: "Epidemic Overextension"
- black_death.1014.desc: "[target_country.GetLongName] is vast and proud. But our size makes it hard to respond to epidemic outbreaks in different corners of our [ROOT.GetCountry.GetFlavorRank] simultaneously;\n\nBefore us lie two options. We can either maintain centralized control over the response, which will be less effective, or we can empower local authorities to deal with their own outbreaks. Either way, the [ROOT.GetCountry.GetFlavorRank] will survive, we must simply make peace with the question of whether a sacrifice of blood or political power is best in these dark times."
- black_death.1014.a: "We must maintain central control at all costs!"
- black_death.1014.b: "We can allow some local autonomy..."
- far_away_locations_with_plague_loses_10_control_tt: "Our [locations|e] that reside the furthest from [ROOT.GetCountry.GetCapital.GetName], such as [target_location.GetName], will have their [control|e] decreased by #R -10%#!"
- STATIC_MODIFIER_NAME_enforced_central_control_modifier: "Enforced Plague Measures"
+ black_death.1014.t: "Sovraestensione Epidemica"
+ black_death.1014.desc: "[target_country.GetLongName] è vasto e orgoglioso. Ma le nostre dimensioni rendono difficile rispondere alle epidemie che colpiscono contemporaneamente diversi angoli del nostro 
+[ROOT.GetCountry.GetFlavorRank];\n\nAbbiamo due opzioni davanti a noi. Possiamo mantenere un controllo centralizzato sulla risposta, che sarà meno efficace, oppure 
+possiamo dare alle autorità locali il potere di gestire le epidemie che colpiscono il loro territorio. In entrambi i casi, [ROOT.GetCountry.GetFlavorRank] sopravviverà, dobbiamo semplicemente accettare la questione 
+se in questi tempi bui sia meglio sacrificare vite umane o potere politico."
+ black_death.1014.a: "Dobbiamo mantenere il controllo a tutti i costi!"
+ black_death.1014.b: "Possiamo concedere dell'autonomia locale..."
+ far_away_locations_with_plague_loses_10_control_tt: "Le nostre [locations|e] più lontane da [ROOT.GetCountry.GetCapital.GetName], come [target_location.GetName], avranno il proprio [control|e] ridotto di #R -10%#!"
+ STATIC_MODIFIER_NAME_enforced_central_control_modifier: "Misure Coercitive per la Peste"
 
 
- black_death.1015.t: "Expired [ShowGoodsNameWithNoTooltip('medicaments')]"
- black_death.1015.desc: "Doctors and other experts in the field of sanitation have begun to warn that nearly half of the [ShowGoodsName('medicaments')] in our markets are expired or contaminated by filler material meant to increase the net weight sold.\n\nThese expired goods pose not only a health risk, but could also result in the further spread of the black death. There is only one solution, we must burn or otherwise destroy all expired [ShowGoodsNameWithNoTooltip('medicaments')] in our stocks."
- black_death.1015.a: "Burn the expired medicine!"
- black_death.1015.b: "Allow the medicine to remain..."
- black_death.1015.c: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] will pay for the expired goods."
- black_death.1015.b.nospamtooltip: "Every owned location with more than #N 20%#! [GetDisease('bubonic_plague').GetName] presence has a #V 50%#! chance of gaining an additional #N 50%#! [GetDisease('bubonic_plague').GetName]"
- every_location_with_plague_gets_10_more_tt: "The presence of the [GetDisease('bubonic_plague').GetNameWithNoTooltip] in already afflicted [locations|e] will be increased by #R +10%#!"
- reduce_plague_by_10_in_every_location_tt: "The presence of [GetDisease('bubonic_plague').GetName] will be reduced by #G -5%#! in every owned [location|e] in [ROOT.GetCountry.GetCapital.GetRegion.GetName]"
+ black_death.1015.t: "[ShowGoodsNameWithNoTooltip('medicaments')] Scaduti"
+ black_death.1015.desc: "I medici e altri esperti nel campo dell'igiene hanno iniziato ad avvertire che quasi la metà dei [ShowGoodsName(‘medicaments’)] presenti nei nostri mercati sono scaduti o contaminati da materiale di riempimento destinato ad aumentare il peso netto venduto.\n\nQuesti prodotti scaduti non solo rappresentano un rischio per la salute, ma potrebbero anche causare un'ulteriore diffusione della peste nera. C'è solo una soluzione: dobbiamo bruciare o distruggere in altro modo tutti i [ShowGoodsNameWithNoTooltip(‘medicaments’)] scaduti presenti nelle nostre scorte."
+ black_death.1015.a: "Bruciate le medicine scadute!"
+ black_death.1015.b: "Consentite di tenere le medicine..."
+ black_death.1015.c: "I [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] pagheranno per i beni scaduti."
+ black_death.1015.b.nospamtooltip: "Ogni [location|e] posseduta con più di #N 20%#! presenza della [GetDisease('bubonic_plague').GetName] ha una probabilità del #V 50%#! di ottenere un altro #N 50%#! di [GetDisease('bubonic_plague').GetName]"
+ every_location_with_plague_gets_10_more_tt: "La presenza della [GetDisease('bubonic_plague').GetNameWithNoTooltip] nelle [locations|e] già affette sarà incrementata del #R +10%#!"
+ reduce_plague_by_10_in_every_location_tt: "La presenza della [GetDisease('bubonic_plague').GetName] sarà ridotta del #G -5%#! in ogni [location|e] posseduta in [ROOT.GetCountry.GetCapital.GetRegion.GetName]"
 
- black_death.1016.t: "Social Cravings"
- black_death.1016.desc: "Ever since the arrival of the plague, many have avoided large gatherings and public festivals out of fear. But over time, even the most asocial individuals will eventually crave interacting with others.\n\nThe grumbles and complaints of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] are growing louder by the day. Withholding and discouraging festivities any further could cause quite a lot of social upheaval."
- black_death.1016.a: "Maintaining social order comes before sanitation."
- black_death.1016.b: "We cannot risk the spread!"
+ black_death.1016.t: "Bisogni Sociali"
+ black_death.1016.desc: "Da quando è arrivata la peste, molti hanno evitato i grandi raduni e le feste pubbliche per paura. Ma col tempo, anche gli individui più asociali 
+finiscono per desiderare l'interazione con gli altri.\n\nI brontolii e le lamentele dei [ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] diventano 
+ogni giorno più forti. Continuare a impedire e scoraggiare le feste potrebbe causare un notevole sconvolgimento sociale."
+ black_death.1016.a: "Il mantenimento dell'ordine sociale viene prima dell'igiene."
+ black_death.1016.b: "Non possiamo rischiare di diffonderla!"
 
- black_death.1017.t: "Plague Pits"
- black_death.1017.desc: "The terror inflicted upon our people by the deathly grip of the [GetDisease('bubonic_plague').GetName] has had a captivating effect on our medical professionals in [target_location.GetName]. Pioneers who don robes and gloves are ready to push our medical knowledge to new heights. Their only request is that they be given access to an innumerable number of test subjects from our recently deceased..."
- black_death.1017.a: "Very well, grant them access..."
- black_death.1017.b: "No good will come from this!"
+ black_death.1017.t: "Fosse Comuni"
+ black_death.1017.desc: "Il terrore inflitto al nostro popolo dalla morsa mortale della [GetDisease(‘bubonic_plague’).GetName] ha avuto un effetto affascinante sui nostri professionisti medici 
+a [target_location.GetName]. I pionieri che indossano camici e guanti sono pronti a portare le nostre conoscenze mediche a nuovi livelli. La loro unica richiesta è quella di avere 
+accesso a un numero infinito di soggetti da testare tra i nostri defunti recenti..."
+ black_death.1017.a: "Molto bene, consentite loro l'accesso..."
+ black_death.1017.b: "Ciò non porterebbe a nulla di buono!"
 
- black_death.1018.t: "Foreign Aid"
- black_death.1018.desc: "Recently, a confraternity has been buying bulk goods in our markets to bring into [charity_target.GetName].\n\nOddly enough, however, they seem to be buying more goods than their donations should be capable of affording; More importantly, extracting such a large number of goods could make our [ROOT.GetCountry.GetFlavorRank] vulnerable if the 'dire death' gets any more dire..."
- black_death.1018.a: "Let them do as they please."
- black_death.1018.b: "Forbid the charity from exporting aid."
- black_death.1018.c: "Expropriate the foreign aid."
+ black_death.1018.t: "Aiuti Stranieri"
+ black_death.1018.desc: "Recentemente, una confraternita ha acquistato grandi quantità di merci nei nostri mercati per portarle a [charity_target.GetName].\ n\nStranamente, però, sembra che stiano 
+acquistando più merci di quante le loro donazioni dovrebbero consentire; cosa ancora più importante, l'estrazione di una quantità così grande di merci potrebbe rendere il nostro [ROOT.GetCountry.GetFlavorRank] 
+vulnerabile se la “morte terribile” diventasse ancora più terribile..."
+ black_death.1018.a: "Che facciano come vogliono.
+ black_death.1018.b: "Vietate a questa beneficenza di esportare aiuti."
+ black_death.1018.c: "Espropriate gli aiuti stranieri."
 
- black_death.1020.t: "Plague Scapegoats"
- black_death.1020.desc: "The people are growing unwieldy, the trauma from losing so many loved ones, the fear of knowing they may be next, and anger at the lack of causes and remedies are pushing them over the edge, even as far as shoving the blame on the shoulders of our [target_culture.GetName] subjects.\n\nThere is no other way to put it, the [ROOT.GetCountry.GetFlavorRank] is a powder keg, ready for the smallest of sparks to set it off. It is hard to say if we have the strength to survive such an eventuality, but we could consider taking pre-emptive measures by re-directing the fear and anger against an oppressed minority, in places such as [target_location.GetName]..."
- black_death.1020.a: "We cannot use my subjects as scapegoats."
- black_death.1020.b: "Spread rumors and accusations against minorities."
- STATIC_MODIFIER_NAME_minorities_used_as_scapegoats: "Minorities Used As Scapegoats"
- every_location_with_target_culture_receives_changes_tt: "Our [pops|e] that follow the [target_culture.GetName] [culture|e] will gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e] while our pops that follow the [ROOT.GetCountry.GetCulture.GetName] culture will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] in [locations|e] that host both cultures"
- every_location_with_target_culture_receives_changes2_tt: "We will allow the persecution of [target_culture.GetName] minorities. Our [pops|e] that follow the [ROOT.GetCountry.GetCulture.GetName] [culture|e] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] while our pops that follow the [target_culture.GetNameWithNoTooltip] culture will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] in [locations|e] that host both cultures"
+ black_death.1020.t: "Capri Espiatori per la Peste"
+ black_death.1020.desc: "La gente sta diventando ingestibile, il trauma di aver perso così tanti cari, la paura di sapere che potrebbero essere i prossimi e la rabbia per la mancanza di cause e 
+rimedi li sta spingendo oltre il limite, fino al punto di addossare la colpa sui nostri sudditi [target_culture.GetName]. n\nNon c'è altro modo per dirlo, il 
+[ROOT.GetCountry.GetFlavorRank] è una polveriera, pronta a esplodere alla minima scintilla. È difficile dire se abbiamo la forza di sopravvivere a una simile eventualità, ma potremmo 
+prendere in considerazione l'adozione di misure preventive, reindirizzando la paura e la rabbia contro una minoranza oppressa, in luoghi come [target_location.GetName]...".
+ black_death.1020.a: "I miei sudditi non saranno usati come capri espiatori."
+ black_death.1020.b: "Diffondete voci e accuse contro le minoranze."
+ STATIC_MODIFIER_NAME_minorities_used_as_scapegoats: "Minoranze Usate come Capri Espiatori"
+ every_location_with_target_culture_receives_changes_tt: "I nostri [pops|e] appartenenti alla [culture|e] [target_culture.GetName] guadagneranno [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e], mentre i nostri Pops che seguono la cultura [ROOT.GetCountry.GetCulture.GetName] perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] nelle [locations|e] che contengono entrambe le culture."
+ every_location_with_target_culture_receives_changes2_tt: "Consentiremo la persecuzione delle minoranze di cultura [target_culture.GetName]. I nostri [pops|e] di [culture|e] [ROOT.GetCountry.GetCulture.GetName] guadagneranno [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] mentre i nostri pops della cultura [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] nelle [locations|e] che contengono entrambe le culture."
 
- black_death.1021.t: "Plague Profiteers"
- black_death.1021.desc: "Lately, a group of [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] have been buying all the stock for essential goods like medicine, spices, and preserved foods.\n\nThere is no explicit law which forbids this behavior, but allowing them to extort and starve the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] could lead to the plague spreading further..."
- black_death.1021.a: "We'll repossess their hoard!"
- black_death.1021.b: "Let them keep it..."
- black_death.1021.c: "Apply a temporary tax on hoarding goods."
+ black_death.1021.t: "Profittatori della Peste"
+ black_death.1021.desc: "Ultimamente, un gruppo di [ROOT.GetCountry.GetGovernment.GetEstateName(‘burghers_estate’)] ha acquistato tutte le scorte di beni di prima necessità come medicine, spezie e alimenti conservati.\ n\nNon esiste una legge esplicita che vieti questo comportamento, ma permettere loro di estorcere e affamare i [ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] potrebbe portare a un'ulteriore diffusione della peste..."
+ black_death.1021.a: "Ci riapproprieremo delle loro scorte!"
+ black_death.1021.b: "Lasciate che le tengano..."
+ black_death.1021.c: "Applicate una tassa temporanea sui beni accumulati."
 
- black_death.1023.t: "Everyone's a Risk"
- black_death.1023.desc: "As the plague continues to grow at an uncontrollable rate, [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] all across our [ROOT.GetCountry.GetFlavorRank] begin to request the right to form and retain part of their militias to protect their estates and safety. They seem to believe some sort of fantasy that the sick masses will assault their homes to infect and possibly even murder them out of jealousy for being healthy and well-fed. One such example is [target_location.GetName], whose [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] seem to threaten the local power brokers with open violence.\n\nOf course, this is mostly ridiculous, and indulging their request would weaken the military. But more than ever, the support of the nobles is paramount for stability..."
- black_death.1023.a: "Allow them..."
- black_death.1023.b: "Forbid it!"
+ black_death.1023.t: "Ognuno è un Pericolo"
+ black_death.1023.desc: "Mentre la peste continua a diffondersi a un ritmo incontrollabile, i [ROOT.GetCountry.GetGovernment.GetEstateName(‘nobles_estate’)] in tutto il nostro [ROOT.GetCountry.GetFlavorRank] iniziano a richiedere il diritto di formare e mantenere parte delle loro milizie per proteggere le loro proprietà e la loro sicurezza. Sembrano credere in una sorta di fantasia secondo cui le masse malate assalteranno le loro case per infettarli e forse persino ucciderli per invidia del fatto che sono sani e ben nutriti. Un esempio è [target_location.GetName], dove i [ROOT.GetCountry.GetGovernment.GetEstateName(‘peasants_estate’)] sembrano minacciare i potenti locali con violenze aperte.\n\nNaturalmente, tutto questo è per lo più ridicolo e assecondare la loro richiesta indebolirebbe l'esercito. Ma ora più che mai, il sostegno dei nobili è fondamentale per la stabilità..."
+ black_death.1023.a: "Consentitelo..."
+ black_death.1023.b: "Proibitelo!"
 
- black_death.1024.t: "[ShowGoodsNameWithNoTooltip('silk')] Road Crisis"
- black_death.1024.desc: "The number of caravans that dare tread the [ShowGoodsName('silk')] Road is growing lesser and lesser as disease ravages the region. Death crosses every path, and hides in every village. No fortune could be large enough during the plague to convince merchants to keep the flow of goods through our markets. If we do not take steps to reinvigorate trade, our economy could very well collapse...\n\nSponsoring caravans could help alleviate the issue, but attempting to find alternative routes that safeguard against disease may be a better long-term solution."
- black_death.1024.a: "Allow alternative routes."
- black_death.1024.b: "Why trade externally when our [ShowGoodsNameWithNoTooltip('silk')] is superior?"
- STATIC_MODIFIER_NAME_open_silk_trade_modifier: "Open Silk Trade Practices"
- STATIC_MODIFIER_NAME_state_textiles_modifier: "Favored Production"
+ black_death.1024.t: "Crisi della Via della [ShowGoodsNameWithNoTooltip('silk')]"
+ black_death.1024.desc: "Il numero di carovane che osano percorrere la Via della [ShowGoodsName('silk')] sta diminuendo sempre più a causa delle malattie che devastano la regione. La morte attraversa ogni sentiero e si nasconde in ogni villaggio. Nessuna fortuna potrebbe essere abbastanza grande durante la peste da convincere i mercanti a mantenere il flusso di merci attraverso i nostri mercati. Se non prendiamo provvedimenti per rinvigorire il commercio, la nostra economia potrebbe benissimo collassare...\n\nFinanziare le carovane potrebbe aiutare ad alleviare il problema, ma cercare di trovare rotte alternative che proteggano dalle malattie potrebbe essere una soluzione migliore a lungo termine."
+ black_death.1024.a: "Permettete l'uso di vie alternative."
+ black_death.1024.b: "Perché commerciare esternamente quando la nostra [ShowGoodsNameWithNoTooltip('silk')] è superiore?"
+ STATIC_MODIFIER_NAME_open_silk_trade_modifier: "Pratiche Aperte nel Commercio di Seta"
+ STATIC_MODIFIER_NAME_state_textiles_modifier: "Produzione Promossa"
 
- black_death.1025.t: "Plague Unrest"
- black_death.1025.desc: "The outbreak has been handled too incompetently. The disease is running rampant, killing the friends and loved ones of those lucky enough to remain.\n\nIf we do not take an immediate corrective course, the populations of our most affected areas will rise in revolt and put our [ROOT.GetCountry.GetFlavorRank] to the torch. We must quell their anger or at the very least re-direct it to something else!"
- black_death.1025.a: "We will deal with the rebels directly."
- black_death.1025.b: "Quickly, print our propaganda!"
- black_death.1025.c: "Blame the [blame_target.GetAdjectiveWithNoTooltip] people."
- every_location_with_plague_scaling_satisfaction_loss_tt: "[pops|e] that inhabit [location|e] currently afflicted with [GetDisease('bubonic_plague').GetNameWithNoTooltip] will suffer reduced [pop_satisfaction|e] based on the presence of the disease"
+ black_death.1025.t: "Disordini per la Peste"
+ black_death.1025.desc: "L'epidemia è stata gestita in modo troppo incompetente. La malattia sta dilagando, uccidendo gli amici e i cari di coloro che hanno avuto la fortuna di sopravvivere.\n\nSe non intraprendiamo immediatamente una linea correttiva, le popolazioni delle zone più colpite insorgeranno e metteranno a ferro e fuoco il nostro [ROOT.GetCountry.GetFlavorRank]. Dobbiamo placare la loro rabbia o almeno reindirizzarla verso qualcos'altro!"
+ black_death.1025.a: "Affronteremo i ribelli direttamente."
+ black_death.1025.b: "Presto, preparate la propaganda!"
+ black_death.1025.c: "Scaricate la colpa sulle minoranze di cultura [blame_target.GetAdjectiveWithNoTooltip]."
+ every_location_with_plague_scaling_satisfaction_loss_tt: "I [pops|e] che abitano una [location|e] al momento afflitta dalla [GetDisease('bubonic_plague').GetNameWithNoTooltip] soffriranno di una ridotta [pop_satisfaction|e] in base alla presenza della malattia."
