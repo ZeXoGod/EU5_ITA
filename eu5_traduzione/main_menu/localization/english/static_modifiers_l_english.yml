@@ -91,6 +91,7 @@
  STATIC_MODIFIER_NAME_giving_support_military: "Giving Military Support"
  STATIC_MODIFIER_NAME_receiving_support_military: "Receiving Military Support"
  STATIC_MODIFIER_NAME_receiving_scutage: "Receiving Scutage"
+ STATIC_MODIFIER_NAME_receiving_rein_in_junior_diplomacy: "Reined in Junior Diplomacy"
  STATIC_MODIFIER_NAME_giving_support_loyalists: "Giving Loyalists Support"
  STATIC_MODIFIER_NAME_receiving_support_loyalists: "Receiving Loyalists Support"
  STATIC_MODIFIER_NAME_receiving_divert_trade: "Receiving Divert Trade"
@@ -755,13 +756,15 @@
  #Bohemia 
  STATIC_MODIFIER_NAME_hussite_heresy_modifier: "Hussite Heresy"
  STATIC_MODIFIER_DESC_hussite_heresy_modifier: "[ShowReligionName('hussite')] is recently on the rise, with its followers claiming for reforms within the [ShowReligionAdjective('catholic')] Church."
+ STATIC_MODIFIER_NAME_expanded_mines_modifier: "Expanded Mines"
 
  #Aztec Modifiers
  STATIC_MODIFIER_NAME_good_omen_modifier: "Good Omens"
  STATIC_MODIFIER_DESC_good_omen_modifier: "A period of renewal in conjunction with tame weather and ample food are some of the good signs set forth, the Gods are pleased."
 
  #Ottomans
-
+ STATIC_MODIFIER_NAME_coins_in_our_name_modifier: "Coins in Our Name"
+ STATIC_MODIFIER_NAME_influence_of_the_old_capital_modifier: "Influence of the Old Capital"
  STATIC_MODIFIER_NAME_osmans_dream_modifier: "Osman's Dream"
  STATIC_MODIFIER_DESC_osmans_dream_modifier: "It is our destiny to rule an empire that will last until the End of Days."
  STATIC_MODIFIER_NAME_ahi_bureaucrats: "Ahi Bureaucrats"
@@ -825,6 +828,8 @@
  STATIC_MODIFIER_DESC_austere_court: "A joyless climate of austerity characterize the court life and bureaucratic culture of this country."
  STATIC_MODIFIER_NAME_ostentatious_court: "Ostentatious Court"
  STATIC_MODIFIER_DESC_ostentatious_court: "The otherwise refined court life of this country is currently characterized by decadent spectacles and wanton displays of wealth — but it does seem to impress visitors a great deal."
+ STATIC_MODIFIER_NAME_tur_public_cats: "Public Cat Property"
+ STATIC_MODIFIER_DESC_tur_public_cats: "The cats in this location have been turned into public property, protecting them from any misconduct that may occur. This especially increases the number of rats being hunted, ensuring that no deadly diseases appear."
 
  #Byzantium
 
@@ -1094,7 +1099,7 @@
  STATIC_MODIFIER_NAME_fra_appeasing_norman_lords: "Appeasing Disloyal Norman Lords"
  STATIC_MODIFIER_NAME_fra_disloyal_norman_lords_appeased: "Disloyal Lords Appeased"
  STATIC_MODIFIER_NAME_fra_loyal_nrm_lands: "Autonomous Royal Domain of Normandy"
- STATIC_MODIFIER_NAME_fra_success_of_the_praguerie_faction: "Sucess of the Praguerie Faction"
+ STATIC_MODIFIER_NAME_fra_success_of_the_praguerie_faction: "Success of the Praguerie Faction"
  STATIC_MODIFIER_NAME_fra_royal_expenditure_managed: "Royal Expenditure Managed"
  STATIC_MODIFIER_NAME_fra_enterprising_nobles: "Enterprising Nobles"
  STATIC_MODIFIER_NAME_fra_louis_legal_reforms: "Legal Reform of the French Bureaucracy"
@@ -1103,6 +1108,7 @@
  STATIC_MODIFIER_NAME_fra_birth_of_college_de_france: "Birth of the College de France"
  STATIC_MODIFIER_NAME_fra_routiers_looted_province: "Robber Barons"
  STATIC_MODIFIER_NAME_fra_estates_general_halts_support: "General-Estates Halts Support"
+ STATIC_MODIFIER_NAME_fra_recognized_marcel_in_parliament: "Recognized Marcel in the Estates-General"
  STATIC_MODIFIER_NAME_fra_marcel_tax_embargo: "Burghers Tax Embargo"
  STATIC_MODIFIER_NAME_fra_burghers_broken_by_marcel_death: "Burghers Greatly Weakened"
  STATIC_MODIFIER_NAME_fra_lavish_gifts_to_cadet_branches: "Lavishing Cadet Branches"
@@ -1272,6 +1278,7 @@
  STATIC_MODIFIER_NAME_iro_matriarchal_agriculture: "Matriarchal Agriculture"
 
 #Scotland
+ STATIC_MODIFIER_NAME_sbl_heir_of_empty_coat: "Heir of Empty Coat"
  STATIC_MODIFIER_NAME_sco_civil_war_aggressive: "Aggressive Push into Balliol Lands"
  STATIC_MODIFIER_NAME_sco_civil_war_defensive: "Forcing Balliol's Hand"
  STATIC_MODIFIER_NAME_sbl_english_backing: "Backing of the English Crown"
@@ -1821,6 +1828,8 @@
  STATIC_MODIFIER_NAME_curbed_peasants_power_modifier: "Curbed Peasant Power"
  STATIC_MODIFIER_NAME_cnc_local_authority_asserted: "Local Authority Asserted"
  STATIC_MODIFIER_NAME_cnc_refused_to_pay_taxes: "Tax Exemption"
+ STATIC_MODIFIER_NAME_absolutist_influences_government_modifier: "Absolutist Influences in the Government"
+ STATIC_MODIFIER_NAME_liberal_influences_government_modifier: "Liberal Influences in the Government"
 
 #Aspiration for Liberty
  STATIC_MODIFIER_NAME_reinstated_the_parliament_modifier: "Reinstated the Legislative Assemblies"
@@ -1978,6 +1987,7 @@
 #Nahua Reform
  STATIC_MODIFIER_NAME_major_push_for_reform: "Major Push for Reform"
  STATIC_MODIFIER_NAME_nahuatl_temple_expansion_modifier: "Temple Expansion"
+ nahuatl_temple_expansion_modifier: "[ShowModifier('nahuatl_temple_expansion_modifier')]"
 
 #Muscovy
  STATIC_MODIFIER_NAME_siege_artillery_engineer: "Employing Artillery Commander"
@@ -2042,6 +2052,7 @@
  STATIC_MODIFIER_NAME_reduced_payment_obligations: "Reduced Payment Obligations"
  STATIC_MODIFIER_NAME_appanage_diplomatic_betrayal_modifier: "Diplomatic Betrayal"
  STATIC_MODIFIER_DESC_appanage_diplomatic_betrayal_modifier: "We have decided to exchange our abstinence from the political situation between our overlord and the [GetCountry('ENG').GetLongName] for ample gold."
+ STATIC_MODIFIER_NAME_victory_in_the_hyw_modifier: "Victory in the $hundred_years_war$"
 
 #Western Schism
  STATIC_MODIFIER_NAME_ws_show_unity_of_faith: "Show Unity of Faith"
@@ -2132,6 +2143,7 @@
  
  #Denmark
  STATIC_MODIFIER_NAME_dan_integrating_scania: "Integrating Scania"
+ STATIC_MODIFIER_NAME_royal_dowry_modifier: "Royal Dowry"
 
  # Haudenosaunee/Iroquois
  STATIC_MODIFIER_NAME_iro_shikellamy_pennsylvania: "Administration of Pennsylvania"
