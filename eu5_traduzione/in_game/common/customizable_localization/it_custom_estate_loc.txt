@@ -1,0 +1,5555 @@
+﻿IT_CROWN_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_IL_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_IL_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_IL_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_IL_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_IL_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_IL_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_IL fallback = yes }
+}
+
+IT_NOBLES_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_IL_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_IL fallback = yes }	
+}
+
+IT_BURGHERS_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_IL_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_IL fallback = yes }	
+}
+
+IT_CLERGY_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_IL_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_IL fallback = yes }	
+}
+
+IT_PEASANTS_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_IL_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_IL fallback = yes }	
+}
+
+IT_DHIMMI_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_IL_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_IL_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_IL_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_IL_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_IL_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_IL fallback = yes }	
+}
+
+IT_TRIBES_IL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_IL_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_IL_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_IL_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_IL_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_IL_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_IL fallback = yes }	
+}
+
+################################################################################################
+
+IT_CROWN_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_DEL_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_DEL_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_DEL_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_DEL_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_DEL_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_DEL_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_DEL fallback = yes }
+}
+
+IT_NOBLES_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_DEL_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_DEL fallback = yes }	
+}
+
+IT_BURGHERS_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DEL_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_DEL fallback = yes }	
+}
+
+IT_CLERGY_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_DEL_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_DEL fallback = yes }	
+}
+
+IT_PEASANTS_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DEL_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_DEL fallback = yes }	
+}
+
+IT_DHIMMI_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_DEL_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DEL_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DEL_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DEL_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DEL_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_DEL fallback = yes }	
+}
+
+IT_TRIBES_DEL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_DEL_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DEL_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DEL_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DEL_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_DEL_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_DEL fallback = yes }	
+}
+
+################################################################################################
+
+IT_CROWN_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_AL_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_AL_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_AL_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_AL_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_AL_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_AL_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_AL fallback = yes }
+}
+
+IT_NOBLES_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_AL_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_AL fallback = yes }	
+}
+
+IT_BURGHERS_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_AL_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_AL fallback = yes }	
+}
+
+IT_CLERGY_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_AL_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_AL fallback = yes }	
+}
+
+IT_PEASANTS_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_AL_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_AL fallback = yes }	
+}
+
+IT_DHIMMI_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_AL_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_AL_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_AL_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_AL_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_AL_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_AL fallback = yes }	
+}
+
+IT_TRIBES_AL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_AL_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_AL_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_AL_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_AL_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_AL_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_AL fallback = yes }	
+}
+
+################################################################################################
+
+IT_CROWN_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_DAL_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_DAL_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_DAL_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_DAL_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_DAL_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_DAL_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_DAL fallback = yes }
+}
+
+IT_NOBLES_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_DAL_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_DAL fallback = yes }	
+}
+
+IT_BURGHERS_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_DAL_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_DAL fallback = yes }	
+}
+
+IT_CLERGY_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_DAL_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_DAL fallback = yes }	
+}
+
+IT_PEASANTS_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_DAL_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_DAL fallback = yes }	
+}
+
+IT_DHIMMI_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_DAL_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DAL_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DAL_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DAL_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_DAL_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_DAL fallback = yes }	
+}
+
+IT_TRIBES_DAL = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_DAL_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DAL_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DAL_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_DAL_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_DAL_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_DAL fallback = yes }	
+}
+
+###########################################################################
+
+IT_CROWN_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_STA_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_STA_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_STA_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_STA_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_STA_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_STA_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_STA fallback = yes }
+}
+
+IT_NOBLES_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_STA_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_STA fallback = yes }	
+}
+
+IT_BURGHERS_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_STA_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_STA fallback = yes }	
+}
+
+IT_CLERGY_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_STA_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_STA fallback = yes }	
+}
+
+IT_PEASANTS_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_STA_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_STA fallback = yes }	
+}
+
+IT_DHIMMI_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_STA_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_STA_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_STA_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_STA_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_STA_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_STA fallback = yes }	
+}
+
+IT_TRIBES_STA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_STA_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_STA_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_STA_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_STA_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_STA_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_STA fallback = yes }	
+}
+
+###########################################################################
+
+IT_CROWN_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_HA_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_HA_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_HA_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_HA_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_HA_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_HA_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_HA fallback = yes }
+}
+
+IT_NOBLES_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_HA_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_HA fallback = yes }	
+}
+
+IT_BURGHERS_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_HA_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_HA fallback = yes }	
+}
+
+IT_CLERGY_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_HA_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_HA fallback = yes }	
+}
+
+IT_PEASANTS_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_HA_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_HA fallback = yes }	
+}
+
+IT_DHIMMI_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_HA_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_HA_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_HA_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_HA_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_HA_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_HA fallback = yes }	
+}
+
+IT_TRIBES_HA = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_HA_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_HA_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_HA_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_HA_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_HA_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_HA fallback = yes }	
+}
+
+##########################################################################
+
+IT_CROWN_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CROWN_SONO_crown_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = { localization_key = IT_CROWN_SONO_crown_estate_brethren 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		} }
+	text = { localization_key = IT_CROWN_SONO_crown_estate_derbfine 
+			trigger = {
+			has_reform = government_reform:celtic_traditions_reform
+			OR = {
+				culture.language = language:gaelic_language
+				court_language = language:gaelic_language
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_SONO_crown_estate_republic 
+			trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = { localization_key = IT_CROWN_SONO_crown_estate_clan 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_CROWN_SONO_crown_estate_kronan 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = null_IT_CROWN_SONO fallback = yes }
+}
+
+IT_NOBLES_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_captains 
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_ghazi 
+			trigger = {
+			has_estate_privilege = estate_privilege:ghazi_privilege
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_maori 
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_chieftains 
+			trigger = {
+			OR = {
+				has_reform = government_reform:celtic_traditions_reform
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_patriziato 
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_patricians 
+			trigger = {
+			government_type = government_type:republic
+			NOT = { culture = { has_culture_group = culture_group:russian_group } }
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_szlachta 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_bajorai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_znat 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_boyars 
+			trigger = {
+			OR = {
+				culture = { has_culture_group = culture_group:russian_group }
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_lords 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+			modifier:has_a_parliamentary_system = yes
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_barons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_adeln 
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_samurai 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:shogunate
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_bushi 
+			trigger = {
+			culture.language = language:japanese_language
+			OR = {
+				has_reform = government_reform:daimyo
+				has_reform = government_reform:japanese_clan
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_kuge 
+			trigger = {
+			culture.language = language:japanese_language
+			has_reform = government_reform:japanese_imperial_family
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_yukatchu 
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_rangatira 
+			trigger = {
+			culture.language = language:maori_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_lairds 
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_uchelwyr 
+			trigger = {
+			culture = culture:welsh
+			court_language = language:brythonic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_hawaii 
+			trigger = {
+			culture = culture:kanaka_maoli_culture
+			court_language = language:olelo_hawaii_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_noblesse 
+			trigger = {
+			court_language = language:french_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_ricahombria 
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_adel 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_almehenoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_dzayya_yya 
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_makuannent 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_pipiltin 
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_vlastela 
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_yangban 
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_mankari 
+			trigger = {
+			court_language = language:marathi_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_nair 
+			trigger = {
+			court_language = language:malayalam_language
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_amir 
+			trigger = {
+			religion.group = religion_group:muslim
+			country_rank_level >= 3
+		}
+	}
+	text = { localization_key = IT_NOBLES_SONO_nobles_estate_kshatriya 
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = null_IT_NOBLES_SONO fallback = yes }	
+}
+
+IT_BURGHERS_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_greek 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_cittadini
+			trigger = {
+			OR = {
+				tag = VEN			
+				any_overlord_or_above = {
+					tag = VEN
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_smugglers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_wangara
+			trigger = {
+			culture.language = language:mande_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_traders
+			trigger = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:steppe_horde
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_burgesses
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_commissioners
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_borgarstanden
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_bourgeoisie
+			trigger = {
+			OR = {
+				court_language = language:french_language
+				culture.language = language:french_language
+				court_language = language:occitan_language
+				culture.language = language:occitan_language
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_burguesia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_naggade
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_pochteca
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_mestanstvo
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_jungin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_vaishya
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_chounin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_horodiany
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_meschanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_mieszczanstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_miestieciai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_BURGHERS_SONO_burghers_estate_burgerij 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_BURGHERS_SONO fallback = yes }	
+}
+
+IT_CLERGY_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_holy_order #!
+			trigger = {
+			has_reform = government_reform:military_order_reform
+		} 
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_tohunga 
+			trigger = {
+			culture.language = language:maori_language
+		} }
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_maori
+			trigger = {
+			culture = culture:maori_culture
+			religion = religion:tapu_religion
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_dukhovenstvo
+			trigger = {
+			religion = religion:orthodox
+			culture.language = language:east_slavic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_klir
+			trigger = {
+			religion = religion:orthodox
+			OR = {
+				culture.language = language:ruthenian_language
+				culture = { has_culture_group = culture_group:slavic_group }
+			}
+			NOT = { court_language = language:serbo_croatian_language }
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_pastors 
+			trigger = {
+			is_protestant = yes
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_ulama 
+			trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_brahmin
+			trigger = {
+			religion = religion:hindu
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_granthis
+			trigger = {
+			religion = religion:sikhism
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_chaplains
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_prelates
+			trigger = {
+			culture = culture:scottish
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_clerge
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_clerecia
+			trigger = {
+			court_language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_kahenat
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_teopixque
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_kler
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_prest
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_bateren
+			trigger = {
+			culture.language = language:japanese_language
+			religion.group = religion_group:christian
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_souryo
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_kaminchu
+			trigger = {
+			culture.language = language:ryukyu_language
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_shona
+			trigger = {
+			culture = culture:shona_culture
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_duchowienstwo 
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_dvasininkai 
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_geestelijken 
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = IT_CLERGY_SONO_clergy_estate_ah_kinoob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_CLERGY_SONO fallback = yes }	
+}
+
+IT_PEASANTS_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_greek
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_buccaneers
+			trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_yeomanry
+			trigger = {
+			has_estate_privilege = estate_privilege:peasants_yeomanry
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_commons 
+			trigger = {
+			OR = {
+				culture = culture:english
+				culture = culture:anglo_irish
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_bondestandet
+			trigger = {
+			culture = culture:swedish
+		}
+	}
+	text = { localization_key = peasants_estate_gebbar 
+			trigger = {
+			court_language = language:ethiopic_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_macehualtin
+			trigger = {
+			court_language = language:nahuatl_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_sebri
+			trigger = {
+			court_language = language:serbo_croatian_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_sangmin
+			trigger = {
+			court_language = language:korean_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_sudra
+			trigger = {
+			religion.group = religion_group:dharmic
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_noumin
+			trigger = {
+			culture.language = language:japanese_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_prostoliud 
+			trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_tay_nuu
+			trigger = {
+			OR = {
+				court_language = language:eastern_otomanguean_language
+				court_language = language:otopamean_language
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_krestyanstvo
+			trigger = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_petit_peuple
+			trigger = {
+			culture.language = language:french_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_comun
+			trigger = {
+			culture.language = language:spanish_language
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_chlopstwo
+			trigger = {
+			OR = {
+				culture = culture:greater_polish
+				culture = culture:lesser_polish
+				culture = culture:mazovian
+				AND = {
+					overlord ?= {
+						OR = {
+							culture = culture:greater_polish
+							culture = culture:lesser_polish
+							culture = culture:mazovian
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_valstieciai
+			trigger = {
+			culture = { has_culture_group = culture_group:lithuanian_group }
+		}
+	}
+	text = { localization_key = IT_PEASANTS_SONO_peasants_estate_boeren
+			trigger = {
+			culture.dialect = dialect:dutch_dialect
+		}
+	}
+	text = { localization_key = null_IT_PEASANTS_SONO fallback = yes }	
+}
+
+IT_DHIMMI_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_DHIMMI_SONO_dhimmi_estate_persian
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:iranic_language_family } 
+				court_language ?= { language_family ?= language_family:iranic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_SONO_dhimmi_estate_malay
+			trigger = {
+			OR = {
+				culture.language = language:malay_language
+				court_language = language:malay_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_SONO_dhimmi_estate_urdu
+			trigger = {
+			OR = {
+				culture.language = { language_family ?= language_family:indic_language_family } 
+				court_language ?= { language_family ?= language_family:indic_language_family } 
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_SONO_dhimmi_estate_arabic
+			trigger = {
+			OR = {
+				culture.language = language:arabic_language
+				court_language = language:arabic_language
+			}
+		}
+	}
+	text = { localization_key = IT_DHIMMI_SONO_dhimmi_estate_turkish
+			trigger = {
+			OR = {
+				culture.language = language:turkish_language
+				court_language = language:turkish_language
+			}
+		}
+	}
+	text = { localization_key = null_IT_DHIMMI_SONO fallback = yes }	
+}
+
+IT_TRIBES_SONO = {
+	type = country
+	log_loc_errors = no
+	text = { localization_key = IT_TRIBES_SONO_tribes_estate_gaelic 
+			trigger = {			
+			any_primary_or_accepted_culture = {
+				has_culture_group = culture_group:celtic_group
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_SONO_tribes_estate_qizilbash 
+			trigger = {
+			OR = {
+				culture.language = language:persian_language
+				court_language = language:persian_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_SONO_tribes_estate_barbaroi 
+			trigger = {
+			OR = {
+				court_language = language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
+	text = { localization_key = IT_TRIBES_SONO_tribes_estate_plemena 
+			trigger = {			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	text = { localization_key = IT_TRIBES_SONO_tribes_estate_chibaloob 
+			trigger = {
+			court_language = language:maya_language
+		}
+	}
+	text = { localization_key = null_IT_TRIBES_SONO fallback = yes }
+}
