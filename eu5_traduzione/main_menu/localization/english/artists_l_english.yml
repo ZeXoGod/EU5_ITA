@@ -43,40 +43,40 @@
  #
  # Work of Arts
  painting: "Dipinto"
- painting_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ painting_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
  painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$"
  painting_name_1: "$ADJECTIVE|U$ $FEMALE|U$"
  painting_name_scandinavian_language_0: "Vackra Drottning $FEMALE|U$"
 
  miniature_painting: "Miniatura"
  miniature_painting_desc: "Le miniature sono piccole illustrazioni usate per decorare manoscritti e libri. Sebbene molte siano integrate nelle opere degli scrittori, alcune miniature sono create indipendentemente da qualsiasi testo, diventando così opere d’arte autonome."
- miniature_painting_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ miniature_painting_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
  miniature_painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$"
 
  icon: "Icona"
- icon_name_0: "L’Icona di $ADJECTIVE|U$ $SAINT|U$"
+ icon_name_0: "L’Icona del $ADJECTIVE|U$ $SAINT|U$"
  icon_name_1: "L’Icona di $SAINT|U$ il $ADJECTIVE|U$"
 
- scripture: "Scrittura Sacra"
- scripture_name_0: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ scripture: "Scrittura"
+ scripture_name_0: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
  scripture_name_1: "Libro $ADJECTIVE|U$"
  scripture_name_2: "Scrittura $ADJECTIVE|U$"
  scripture_name_3: "Vangelo $ADJECTIVE|U$"
 
  statue: "Statua"
- statue_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ statue_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  motet: "Mottetto"
- motet_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ motet_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  symphony: "Sinfonia"
- symphony_name: "La $NUM$$SUFFIX$ Sinfonia di $LASTNAME|U$"
+ symphony_name: "$NUM$ Sinfonia $SUFFIX$ di $LASTNAME|U$"
 
  hymnal: "Innario"
- hymnal_name: "L’Innario $NUM$$SUFFIX$ di $LASTNAME|U$"
+ hymnal_name: "$NUM$ Innario $SUFFIX$ di $LASTNAME|U$"
 
  novel: "Romanzo"
- novel_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ novel_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  chronicle: "Cronaca"
  chronicle_name_0: "Le Cronache di $ORIGIN$"
@@ -90,10 +90,10 @@
  poem_name_2: "Ode a $FIRST_NOUN|U$"
 
  play: "Opera Teatrale"
- play_name: "$ADJECTIVE|U$ $FIRST_NOUN|U$"
+ play_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  monument: "Monumento"
- monument_name: "La Colonna di $ADJECTIVE|U$ $FIRST_NOUN|U$"
+ monument_name: "La Colonna di $FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  mansion: "Magione"
  mansion_name: "La Magione $ADJECTIVE|U$ di $ORIGIN|U$"
@@ -106,9 +106,9 @@
  #
  treatise: "Trattato"
  treatise_name_0: "Un’Analisi del $ADJECTIVE|U$"
- treatise_name_1: "Una Critica al $FIRST_NOUN|U$ $ADJECTIVE|U$"
- treatise_name_2: "In Lode di $FIRST_NOUN|U$"
- treatise_name_3: "Elogio di $FIRST_NOUN|U$"
+ treatise_name_1: "Critica di $FIRST_NOUN|U$ $ADJECTIVE|U$"
+ treatise_name_2: "Lode a $FIRST_NOUN|U$"
+ treatise_name_3: "Elogio a $FIRST_NOUN|U$"
  #
  weapon: "Arma"
  weapon_name_0: "$FEMALE|U$ $ADJECTIVE|U$"
@@ -135,7 +135,7 @@
  regalia_name_10: "Mantello di $ORIGIN$"
  #
  prayer_book: "Libro di Preghiere"
- prayer_book_name_0: "Libro di Preghiere di $FIRSTNAME$ $LASTNAME$ $NUM$"
+ prayer_book_name_0: "$NUM$ Libro di Preghiere di $FIRSTNAME$ $LASTNAME$"
  prayer_book_name_1: "La Raccolta di Preghiere di $LASTNAME$"
  #
  oral_traditions: "Tradizioni Orali"
@@ -164,11 +164,11 @@
  
  
  #
- art_quality_bad: "Conosciuta Localmente" #0-11
- art_quality_below_average: "Ben Nota Localmente" #12-24
- art_quality_average: "Ben Nota nell’Area" #25-36
+ art_quality_bad: "Popolarità Locale" #0-11
+ art_quality_below_average: "Grande Popolarità Locale" #12-24
+ art_quality_average: "Popolare nell’Area" #25-36
  art_quality_above_average: "Rinomata nell’Area" #37-49
- art_quality_good: "Ben Nota nella Regione" #50-61
+ art_quality_good: "Molto Popolare nella Regione" #50-61
  art_quality_very_good: "Rinomata nella Regione" #62-74
  art_quality_great: "Capolavoro" #75-86
  art_quality_best: "Magnum Opus" #87-100
@@ -186,7 +186,7 @@
  WORK_OF_ART_LOCATION_MODS: "In ogni [location|e], se questa è la migliore [work_of_art|e] presente, si applica quanto segue:"
  WORK_OF_ART_MODIFIER_SCALE: "Tutti i modificatori sono scalati di $VAL|%+=Y$:"
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Da [art_quality|e]: $VAL|%+=Y$"
- WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Da [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!"
+ WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Dal [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!"
  CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y]."
  CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]"
  CHAR_WORK_OF_ART_HEADER_S: "Ha creato un’opera chiamata"
@@ -341,13 +341,13 @@
  cartes_de_cassini: "La Mappa dei Cassini"
  cartes_de_cassini_desc: "Compilata dai membri della famiglia Cassini, la Mappa dei Cassini fu la prima mappa topografica completa del Regno di Francia, richiedendo quasi sei decenni di lavoro."
  the_brus: "Il Bruce"
- the_brus_desc: "Un poema narrativo basato su [GetCharacter('sco_robert_the_bruce').GetName] e sulla [GetCharacter('sco_robert_the_bruce').GetHisHer] lotta per l’indipendenza [GetCountry('SCO').GetAdjective] contro [GetCountry('ENG').GetNameWithNoTooltip]."
+ the_brus_desc: "Un poema narrativo basato su [GetCharacter('sco_robert_the_bruce').GetName] e sulla [GetCharacter('sco_robert_the_bruce').GetHisHer] lotta per l’indipendenza [GetCountry('SCO').GetAdjective] contro l'[GetCountry('ENG').GetNameWithNoTooltip]."
  sco_true_law: "La Vera Legge delle Monarchie Libere"
  sco_true_law_desc: "Proponendo le basi del Diritto Divino dei Re, il $sco_true_law$ sostiene che l’autorità del sovrano è assoluta e divinamente ordinata."
  sco_basilikon: "Basilikon Doron"
  sco_basilikon_desc: "Il $sco_basilikon$ raccoglie le linee guida che ogni sovrano dovrebbe seguire per governare efficacemente, dalla gestione dei sudditi alla composizione del proprio consiglio."
  sco_divine_art_of_poesie: "L’Arte Divina della Poesia"
- sco_divine_art_of_poesie_desc: "Nel $sco_divine_art_of_poesie$ si trovano le basi della poesia [ShowCultureName('scottish')] moderna. Pur essendo scritto in [ShowCultureNameWithNoTooltip('scottish')], la sua brillantezza ha attirato lettori anche oltre la lingua [ShowLanguageName('gaelic_language')]."
+ sco_divine_art_of_poesie_desc: "Nel $sco_divine_art_of_poesie$ si trovano le basi della poesia [ShowCultureName('scottish')] moderna. La sua brillantezza ha attirato lettori anche oltre la lingua [ShowLanguageName('gaelic_language')]."
  treatise_of_human_nature: "Trattato sulla Natura Umana"
  treatise_of_human_nature_desc: "Un [ShowWorkOfArtTypeName('treatise')|U] scritto da [GetCharacter('david_hume').GetName], nel quale vengono dettagliate ricerche sulle emozioni e altri aspetti della natura umana. L’opera di [GetCharacter('david_hume').GetLastNameWithNoTooltip] ha già ottenuto ampio riconoscimento nel mondo filosofico."
  the_great_bell_tower: "La Grande Torre Campanaria"
@@ -423,14 +423,14 @@
  yuanshi: "Storia degli Yuán"
  yuanshi_desc: "Lo $yuanshi$ è una delle opere ufficiali delle cronache delle dinastie del [ShowCultureGroupName('chinese_group')]. È composto da 210 capitoli che registrano la storia della dinastia [GetCountry('YUA').GetName], dal regno di $genghis_khan_name$ fino alla sua caduta."
  huolongjing: "Huǒlóngjīng"
- huolongjing_desc: "Lo $huolongjing$, o #italic Fire Dragon Manual#!, è un [ShowWorkOfArtTypeName('treatise')] militare sull’uso delle armi basate sulla [ShowAdvanceName('gunpowder_advance')]. Il manuale descrive il loro impiego durante le [ShowSituationName('red_turban_rebellions')], testimoniando le profonde tradizioni militari delle dinastie del [ShowCultureGroupName('chinese_group')]."
+ huolongjing_desc: "Lo $huolongjing$, o #italic Fire Dragon Manual#!, è un [ShowWorkOfArtTypeName('treatise')] militare sull’uso delle armi basate sulla [ShowAdvanceName('gunpowder_advance')]. Il manuale descrive il loro impiego durante le [ShowSituationName('red_turban_rebellions')], testimoniando le profonde tradizioni militari delle dinastie Cinesi."
  yuanmingyuan: "Yuánmíngyuán"
  yuanmingyuan_desc: "Lo $yuanmingyuan$ è un complesso di palazzi e giardini all’avanguardia che incarna magnificamente lo splendore del [GetInternationalOrganizationType('middle_kingdom').GetName]."
  TEU_swords_of_grunwald: "Spade di Grunwald"
  chronica_provinz_lyfflandt: "Cronaca di Livonia"
- chronica_provinz_lyfflandt_desc: "La $chronica_provinz_lyfflandt$ narra la storia dell’area [ShowAreaName('baltic_area')] dalla metà del XII secolo alla metà del XVI, concentrandosi in particolare sugli annali di [GetCountry('LIV').GetName]."
+ chronica_provinz_lyfflandt_desc: "La $chronica_provinz_lyfflandt$ narra la storia del [ShowAreaName('baltic_area')] dalla metà del XII secolo alla metà del XVI, concentrandosi in particolare sugli annali della [GetCountry('LIV').GetName]."
  chronik_des_land_preussens: "Cronaca della Terra di Prussia"
- chronik_des_land_preussens_desc: "La $chronik_des_land_preussens$ descrive gli eventi accaduti in [GetCountry('TEU').GetName] e nell’area [ShowAreaName('prussia_area')] durante gran parte della seconda metà del XIV secolo."
+ chronik_des_land_preussens_desc: "La $chronik_des_land_preussens$ descrive gli eventi accaduti ai [GetCountry('TEU').GetName] e in [ShowAreaName('prussia_area')] durante gran parte della seconda metà del XIV secolo."
  on_miracles_signs_and_revelations: "Sui Miracoli, i Segni e le Rivelazioni"
  astronomiae_instauratae_progymnasmata: "Astronomiae Instauratae Progymnasmata"
  gesta_danorum: "Gesta Danorum"
@@ -446,7 +446,7 @@
  esmeraldo_do_situ_orbis: "Esmeraldo de Situ Orbis"
  esmeraldo_do_situ_orbis_desc: "#italic $esmeraldo_do_situ_orbis$#! è un trattato di cosmografia ed esplorazione realizzato da esploratori portoghesi. Il suo dettaglio minuzioso sulle tecniche e sui ricchi commerci portoghesi lo rese un segreto di stato per secoli."
  por_geral_de_espanha: "Crónica Geral de Espanha"
- por_geral_de_espanha_desc: "La #italic $por_geral_de_espanha$#! è un’ampia cronaca che narra la Reconquista dell’[ShowRegionName('iberia_region')] e il ruolo di [GetCountry('POR').GetName] in quella vittoria."
+ por_geral_de_espanha_desc: "La #italic $por_geral_de_espanha$#! è un’ampia cronaca che narra la Reconquista dell’[ShowRegionName('iberia_region')] e il ruolo del [GetCountry('POR').GetName] in quella vittoria."
  livro_das_cantigas: "Livro das Cantigas"
  livro_das_cantigas_desc: "#italic $livro_das_cantigas$#! è una ricca raccolta musicale contenente varie #italic cantigas#! nate al termine della loro epoca d’oro."
  gatchina_palace: "Palazzo di Gatčina"
@@ -533,7 +533,7 @@
  vladislav_hall_desc: "La Sala Vladislav è una grande sala cerimoniale nota per la sua impressionante architettura tardo-gotica e per la sua importanza storica negli eventi reali cechi."
  crown_st_wenceslas_key_desc: "Una corona d’oro riccamente decorata con varie pietre preziose, tra cui zaffiri ed smeraldi, simbolo della sovranità di $BOH$."
  voynich_manuscript_desc: "Il #italic Manoscritto Voynich#! è un enigmatico libro indecifrato, pieno di illustrazioni misteriose e testo scritto in una lingua o codice sconosciuto."
- hexabiblos_desc: "Una compilazione di fonti legali $BYZ_ADJ$, che servirà come base del codice civile e legale per tutti i paesi sotto l’influenza di $BYZ$."
+ hexabiblos_desc: "Una compilazione di fonti legali Bizantine, che servirà come base del codice civile e legale per tutti i paesi sotto l’influenza di $BYZ$."
  acritic_songs_desc: "Una raccolta di Canti Acritici. Contengono racconti di eroi come Digenes Akritas e Andronico, uomini delle Guerre Arabo-Bizantine, impegnati in avventure contro gli invasori arabi, proteggendo la frontiera bizantina e ottenendo gloria personale."
  reforms_of_the_peloponnese_desc: "Il concetto di Plethon per un Impero Bizantino perfetto. Invece di affidarsi al Codice di Giustiniano, propone un ritorno a una società più classica, ispirata ai Peloponnesiaci. Trasformando la penisola in un paradiso culturale, propone anche il rogo degli omosessuali e dei devianti sessuali, direttamente ispirato alla #italic Repubblica#! di Platone."
  nomoi_desc: "Sebbene gran parte dei suoi scritti sia andata perduta, restano ancora frammenti della società ideale di Plethon. Molto rimane sconosciuto, ma è plausibile che sia ispirato direttamente dallo Zoroastrismo e dallo Stoicismo."
@@ -557,13 +557,13 @@
  canterbury_tales_desc: "Una raccolta di racconti composta in medio inglese e considerata uno dei più grandi esempi della sua letteratura. Ogni storia è un racconto diverso e i generi variano ampiamente, spesso con temi religiosi."
  revelations_of_divine_love_desc: "Un libro sulla mistica $christian_ADJ$, che descrive le visioni mistiche vissute dall’autrice, che la portarono a guarire da una grave malattia. Scritto in Medio Inglese, poiché le donne raramente erano istruite in latino, è più facilmente interpretabile come diario spirituale che come trattato teologico."
  wycliffe_bible_desc: "Una traduzione medioinglese della Vulgata latina, è un testo ortodosso della Bibbia, con parti tradotte parola per parola e altre rese più liberamente. Le aggiunte successive di testi di John Wycliffe la resero molto comune tra i seguaci del $lollardy_ADJ$."
- hampton_court_desc: "Un magnifico palazzo barocco che diventerà una delle residenze preferite dei monarchi $ENG_ADJ$, rivaleggiando con gli altri grandi palazzi d’$europe$."
- the_ambassadors_desc: "Raffigura due ambasciatori $FRA_ADJ$ presso la corte $ENG_ADJ$ ed è ricco di oggetti disposti come una natura morta, inclusi strumenti scientifici. Contiene anche la figura di un teschio visibile solo da una certa angolazione."
- whitehall_desc: "Pensato per essere la residenza principale dei monarchi $ENG_ADJ$, mira a superare tutti gli altri palazzi d’$europe$, diventando il più grande di tutti."
+ hampton_court_desc: "Un magnifico palazzo barocco che diventerà una delle residenze preferite dei monarchi Inglesi, rivaleggiando con gli altri grandi palazzi d’$europe$."
+ the_ambassadors_desc: "Raffigura due ambasciatori Francesi presso la corte $ENG_ADJ$ ed è ricco di oggetti disposti come una natura morta, inclusi strumenti scientifici. Contiene anche la figura di un teschio visibile solo da una certa angolazione."
+ whitehall_desc: "Pensato per essere la residenza principale dei monarchi Inglesi, mira a superare tutti gli altri palazzi d’$europe$, diventando il più grande di tutti."
  spem_in_alium_desc: "Considerato una composizione corale monumentale e un vertice della polifonia rinascimentale, è un mottetto composto da otto cori di cinque voci ciascuno. Un esempio eccellente della musica corale $ENG_ADJ$."
  tamburlaine_the_great_desc: "Basato sulla figura di Tamerlano, nome popolare di [GetCharacter('chg_timur_lame_borjigin').GetName], racconta $tamburlaine_the_great_common$"
  tamburlaine_the_great_common: "l’ascesa di Tamburlaine, un umile pastore che diventa un potente conquistatore. È noto per i suoi discorsi, le battaglie drammatiche e l’intensa rappresentazione del protagonista."
- romeo_and_juliet_desc: "Considerata un capolavoro e una delle opere $ENG_ADJ$ più popolari, narra la storia tragica d’amore tra due giovani appartenenti a due famiglie rivali del gruppo culturale $italian_group$. Essendo una delle più rappresentate, i suoi personaggi sono diventati sinonimo di amore giovanile."
+ romeo_and_juliet_desc: "Considerata un capolavoro e una delle opere Inglesi più popolari, narra la storia tragica d’amore tra due giovani appartenenti a due famiglie rivali del gruppo culturale $italian_group$. Essendo una delle più rappresentate, i suoi personaggi sono diventati sinonimo di amore giovanile."
  st_pauls_desc: "Un esempio del barocco $ENG_ADJ$, la sua cupola è un’icona visiva e una delle più grandi al mondo. Il sito è dedicato a San Paolo dal VII secolo e questa nuova struttura sarà un monumento alla fede per secoli."
  the_principia_desc: "Una delle più grandi opere della scienza, nonché una delle più influenti, spiega le leggi del moto e la legge della gravitazione universale."
  robinson_crusoe_desc: "La vita e le straordinarie e sorprendenti avventure di Robinson Crusoe, di York, marinaio: il quale visse ventotto anni completamente solo in un’isola deserta sulla costa dell’America, vicino alla foce del grande fiume Orinoco; dopo essere stato gettato a riva da un naufragio in cui perirono tutti gli uomini eccetto lui. Con un resoconto di come fu infine liberato in modo altrettanto sorprendente da pirati. Scritto da lui stesso."
@@ -583,7 +583,7 @@
  theuerdank_desc: "Ispirato fortemente al corpus arturiano, è un poema che narra una versione romanzata del viaggio dell’imperatore verso $BUR$ per sposare la sua futura moglie e governare. La storia è incentrata sul viaggio, ricco di prove e ostacoli."
  theoricae_novae_planetarum_desc: "Uno sviluppo della astronomia tolemaica secondo il modello geocentrico, tenta di spiegare il moto dei pianeti e le cause delle eclissi. È pensato come strumento didattico per rendere l’astronomia più accessibile."
  danse_macabre_art_desc: "Un memento della morte che accomuna tutti, raffigura figure scheletriche — la Morte — che danzano insieme a persone di ogni classe sociale, dai Papi agli Imperatori fino al popolo comune."
- chronica_hungarorum_desc: "Trattando la storia dell’$HUN$ dai tempi antichi, segue la tradizione secondo cui il popolo del gruppo $hungarian_group$ discende dagli Unni e da Attila, che viene presentato come modello ideale per i governanti."
+ chronica_hungarorum_desc: "Trattando la storia dell’$HUN$ dai tempi antichi, segue la tradizione secondo cui la popolazione $hungarian_group$ discende dagli Unni e da Attila, che viene presentato come modello ideale per i governanti."
  illuminated_chronicle_desc: "Il #italic $illuminated_chronicle$#! è un manoscritto riccamente illustrato di $HUN$, che narra la sua storia e i suoi sovrani con vivide miniature e testo in $latin_language$."
  goryeosa_desc: "Seguendo lo stile delle cronache del gruppo $chinese_group$, documenta in modo estensivo la storia della dinastia $KOR_ADJ$, includendo re, politica, società, economia, funzionari e cronologia."
  veritable_records_of_joseon: "Annali Veritieri di Joseon"
@@ -591,23 +591,23 @@
  kor_cloud_dream_of_nine: "Il Sogno delle Nove Nuvole"
  kor_cloud_dream_of_nine_desc: "$kor_cloud_dream_of_nine$ è un romanzo ambientato tematicamente nell’antica dinastia Táng del $china$. Romanzo fantastico scritto in [ShowAdvanceName('kor_hangeul_alphabet')], sfidò tutte le convenzioni sociali e artistiche del suo tempo. Pur non usando gli ideogrammi #italic Hanja#!, è considerato un’opera letteraria eccellente."
  tongguk_tonggam: "Dongguk Tonggam"
- tongguk_tonggam_desc: "$tongguk_tonggam$ è una cronaca che narra la storia della penisola [ShowRegionName('korea_region')] dalle ere antiche fino al regno della dinastia $KOR$."
+ tongguk_tonggam_desc: "$tongguk_tonggam$ è una cronaca che narra la storia della penisola della [ShowRegionName('korea_region')] dalle ere antiche fino al regno della dinastia $KOR$."
  chronicle_of_egypt_desc: "Con il nome completo #italic Al-Nujūm al-Zāhira fī Mulūk Miṣr wa-al-Qāhira#!, è una storia completa dell’$egypt_region$ e del $mamluk$ $rank_kingdom_muslim$ dall’epoca della conquista islamica."
  theodicee_desc: "Con il titolo completo #italic Essais de Théodicée sur la bonté de Dieu, la liberté de l'homme et l'origine du mal#!, giustifica la fede in Dio nonostante l’esistenza del male nel mondo. Descrive Dio come essere infinitamente perfetto e sostiene che il male esista per un bene maggiore."
  sorrows_of_young_werther_desc: "Scritto in forma epistolare, il romanzo narra l’amore non corrisposto di un giovane uomo, culminando in un finale tragico. Il suo impatto fu enorme, venne letto in tutta l’$europe$ e diede origine a imitazioni di abiti, usi, e persino del tragico destino del protagonista."
  faust_desc: "Il dramma narra la storia di Faust, un alchimista, astrologo e mago del gruppo $german_group$, talmente assetato di conoscenza da stringere un patto con il demone Mefistofele. Racconta della sua anima data in pegno in cambio di 24 anni di servizio del demonio, della vita di piaceri che ne seguì, e del suo pentimento finale quando il demonio venne a riscuotere."
  old_town_hall_leipzig_desc: "$flavor_mei.100.historical_info$"
  dalai_al_khayarat_desc: "#italic Dalā'il al-Ḵayrāt wa-šawāriq al-anwār fī dhikr al-ṣalāt 'alā al-Nabī al-muḵtār#!, che significa #italic Segni dei Benefici e lo Splendente Scoppio di Luci nel Ricordo delle Benedizioni sul Profeta Prescelto#!, è una raccolta di preghiere e benedizioni per il profeta Muḥammad."
- holy_trinity_st_sergius_lavra_desc: "Centro di spiritualità per la Chiesa $russian_group$ $orthodox_ADJ$, è un monastero dedicato alla Santissima Trinità. Nel tempo, venne ampliato rispetto alle sue umili origini in legno, attirando fedeli da ogni dove."
+ holy_trinity_st_sergius_lavra_desc: "Centro di spiritualità per la Chiesa Slava Orientale $orthodox_ADJ$, è un monastero dedicato alla Santissima Trinità. Nel tempo, venne ampliato rispetto alle sue umili origini in legno, attirando fedeli da ogni dove."
  st_sergius_relics_desc: "$flavor_mos.7.historical_info$"
  holy_trinity_desc: "Considerata una delle meraviglie dell’arte $russian_group$, raffigura i tre angeli che visitarono Abramo secondo il Libro della Genesi, ma può anche essere interpretata come simbolo della Santissima Trinità."
  uspensky_sobor_desc: "Significa 'Cattedrale della Dormizione' ed è anche chiamata 'Cattedrale dell’Assunzione'. La $uspensky_sobor$ è dedicata all’ascesa della Vergine Maria al Cielo. Pilastro della Chiesa $russian_group$ $orthodox_ADJ$, è il cuore spirituale della fede."
  tale_of_the_princes_of_vladimir_desc: "È una genealogia letteraria della famiglia regnante di $MOS$ e $VLR$, non solo fino a Rurik ma fino a un certo Prus, che si dice fosse fratello di Cesare Augusto. Stabilisce così la base della coronazione del sovrano $russian_group$ come $rank_empire_tsar_ruler_male$."
  monomakhs_cap_desc: "Simbolo del dominio e dell’autorità $russian_group$, è una calotta decorata con oro, pietre preziose e bordata di zibellino. La sua connessione con l’Impero $BYZ_ADJ$ conferisce legittimità ai sovrani $russian_group$ come eredi di $rome$."
  the_great_bell_tower_desc: "Costruita in mattoni e imbiancata a calce, possiede due campanili e un’altezza tale da superare qualsiasi altro edificio circostante. La sua altezza eccezionale le permette anche di fungere da punto di osservazione contro potenziali minacce alla città."
- st_basil_cathedral_desc: "Simbolo della cultura e dell’identità $russian_group$, è anche interpretata come rappresentazione terrena dei Cieli. Sebbene appartenga alla tradizione $BYZ_ADJ$ $orthodox_ADJ$, se ne discosta poiché composta da nove cupole disposte per ricordare le fiamme di un falò."
+ st_basil_cathedral_desc: "Simbolo della cultura e dell’identità $russian_group$, è anche interpretata come rappresentazione terrena dei Cieli. Sebbene appartenga alla tradizione $orthodox_ADJ$ Bizantina, se ne discosta poiché composta da nove cupole disposte per ricordare le fiamme di un falò."
  the_soyembika_tower_desc: "Nonostante le opinioni divergenti sulla sua data di costruzione e sul suo scopo originale, resta un punto di riferimento indiscusso della città, dominandone il paesaggio e infondendo rispetto tra gli abitanti."
- lady_of_kazan_desc: "Rappresentazione della Vergine Maria, venerata come protettrice di tutta la $russian_region$. Ritrovata miracolosamente dopo essere stata perduta per oltre un secolo, il suo impatto culturale e religioso sul popolo $russian_group$ $orthodox_ADJ$ è immenso."
+ lady_of_kazan_desc: "Rappresentazione della Vergine Maria, venerata come protettrice di tutta la $russian_region$. Ritrovata miracolosamente dopo essere stata perduta per oltre un secolo, il suo impatto culturale e religioso sul popolo $russian_group$ Ortodosso è immenso."
  winter_palace_desc: "Residenza ufficiale della dinastia regnante, è un fulgido esempio di architettura Barocca $russian_group$. Già imponente alla sua costruzione originaria, ulteriori ampliamenti e ristrutturazioni l’hanno trasformata in una visione davvero monumentale."
  magia_naturalis_desc: "#italic $magia_naturalis$#! è una straordinariamente popolare raccolta di osservazioni curiose provenienti da ogni tipo di scienza, tra cui geologia, metallurgia, magnetismo, ottica, medicina e molte altre."
  catherine_palace_desc: "Residenza estiva della dinastia regnante, è un raffinato palazzo Rococò circondato da ampi giardini. Le sue sale decorate in alabastro offrono un luogo di riposo e svago per la famiglia reale e la corte."
@@ -641,7 +641,7 @@
  brandenburger_tor_desc: "Costruita al centro della città per celebrare una vittoria in battaglia, è in stile neoclassico, con numerosi rilievi raffiguranti scene della mitologia romana. In cima, una quadriga bronzea rappresenta la dea Vittoria, sebbene inizialmente dovesse essere Eirene, dea greca della pace."
  the_prize_essay_desc: "Chiamato #italic Inquiry Concerning the Distinctness of the Principles of Natural Theology and Morality#!, o nell’originale $german_language$ #italic Untersuchung über die Deutlichkeit der Grundsätze der natürlichen Theologie und der Moral#!, fu presentato all’Accademia Reale delle Scienze che gli assegnò un premio, da cui deriva il nome $the_prize_essay$."
  prutenic_tables_desc: "Quest’opera, chiamata anche Tavole Prussiane, si basa sui lavori di Copernico, ma riconduce il suo lavoro matematico a un sistema geocentrico."
- praxis_pietatis_melica_desc: "Significante #italic Pratica della Pietà nel Canto#!, è un innario $lutheran_ADJ$ destinato all’uso sia nelle chiese sia in ambito privato. Contiene numerosi inni, la cui popolarità li ha resi parte integrante della vita religiosa."
+ praxis_pietatis_melica_desc: "Significante #italic Pratica della Pietà nel Canto#!, è un innario Luterano destinato all’uso sia nelle chiese sia in ambito privato. Contiene numerosi inni, la cui popolarità li ha resi parte integrante della vita religiosa."
  phaedon_desc: "Difesa dell’immortalità dell’anima, è presentata come una serie di dialoghi di Socrate, che si prepara alla propria morte e giustifica la semplicità — e quindi immortalità — dell’anima."
  teaching_nova_methodo_desc: "Composto dagli insegnamenti presenti nelle lezioni successive dell’autore, è una revisione e uno sviluppo delle sue prime idee. Difende il concetto di autocoscienza come fenomeno intrinsecamente sociale, poiché ogni individuo necessita degli altri per confrontarsi e riconoscersi."
  joys_of_young_werther_desc: "Parodia satirica di #italic $sorrows_of_young_werther$#!, è una critica al suicidio romantico rappresentato nel primo lavoro. Sebbene molto apprezzato, fu criticato da parte dei seguaci dello #italic Sturm und Drang#! per la caricatura dei protagonisti."
@@ -663,10 +663,10 @@
  shahnameh_desc: "$ira_shahnameh_desc$"
  chronicle_of_morea_desc: "Il #italic $chronicle_of_morea$#! è una cronaca del XIV secolo che descrive l’instaurazione della #italic Frankokratia#! in Grecia dopo la Quarta Crociata. Gran parte dell’opera è dedicata al Principato d’Acaia."
  the_prince_desc: "Il libro tratta della politica del governare, non solo dei principi ereditari ma anche dei nuovi reggenti. Spiega come mantenere il potere e governare con successo i territori conquistati. Il fine giustifica i mezzi."
- cronica_universalis_desc: "La #italic $cronica_universalis$#! offre una visione sugli sviluppi politici, sui mutamenti culturali e sui cambiamenti sociali dell’epoca, contribuendo alla comprensione dell’$europe$ medievale. La pubblicazione includeva anche sommarie descrizioni di una terra lontana a occidente, citando i viaggi e le spedizioni di pescatori provenienti da oltre [ShowAreaName('greenland_area')]."
+ cronica_universalis_desc: "La #italic $cronica_universalis$#! offre una visione sugli sviluppi politici, sui mutamenti culturali e sui cambiamenti sociali dell’epoca, contribuendo alla comprensione dell’$europe$ medievale. La pubblicazione includeva anche sommarie descrizioni di una terra lontana a occidente, citando i viaggi e le spedizioni di pescatori provenienti da oltre la [ShowAreaName('greenland_area')]."
  liber_gestorum_in_lombardy_desc: "Storia generale dell’Italia Settentrionale, la regione nota come $lombardy_area$, si concentra soprattutto su $milano$ sotto la dinastia $visconti_dynasty$."
  arca_di_san_pietro_martire_desc: "Sontuoso sarcofago decorato, contiene le reliquie di San Pietro da Verona. I suoi rilievi rappresentano episodi della vita del santo, con un'intensa simbologia morale e teologica."
- milan_cathedral_desc: "L’iconica struttura, con il suo complesso stile gotico, domina la skyline di [ShowLocationName('milano')]. Le rifiniture finali, comprese guglie ed elementi decorativi, elevano la cattedrale a capolavoro architettonico. Simbolo della grandezza religiosa e culturale della città, accresce la gloria di Dio e della nazione."
+ milan_cathedral_desc: "L’iconica struttura, con il suo complesso stile gotico, domina dall'alto [ShowLocationName('milano')]. Le rifiniture finali, comprese guglie ed elementi decorativi, elevano la cattedrale a capolavoro architettonico. Simbolo della grandezza religiosa e culturale della città, accresce la gloria di Dio e della nazione."
  equestrian_statue_desc: "Concepita per essere la più grande statua equestre mai realizzata, furono svolti studi approfonditi sui cavalli, poiché la dimensione e il peso della statua rappresentavano una sfida tecnica notevole."
  palazzo_reale_di_milano_desc: "Sede del governo cittadino per secoli, forse sin dai tempi romani, è stato costantemente ampliato e rinnovato. Le sue ampie sale e numerosi cortili lo rendono il vero centro del potere di $milano$."
  mlo_historia_patria_desc: "#italic $mlo_historia_patria$#! è una cronaca che narra la storia di Milano dalle origini al XV secolo. È una delle prime opere di questo tipo scritte in italiano anziché in latino."
@@ -682,7 +682,7 @@
  pol_threnodies_desc: "Le #italic Threnodies#!, o #italic Lamenti#!, sono un insieme di diciannove elegie in netto contrasto con le altre opere dell’autore. Dedicati a un parente defunto, rivelano il dolore e la crisi di un familiare in lutto."
  pol_annals_of_poland_desc: "La #italic $pol_annals_of_poland$#! è una cronaca che descrive la storia del Regno di Polonia dalle sue fondazioni leggendarie fino ai giorni nostri. L’opera è divisa in dodici volumi che trattano differenti capitoli della storia polacca."
  pol_brief_discussion_desc: "Il #italic $pol_brief_discussion$#! è un dialogo che commenta le molte questioni sociali contemporanee alla vita dell’autore, scritto nello spirito dell’anticlericalismo nobiliare."
- the_lusiads_desc: "I Lusiadi sono una raccolta di poemi epici, scritti in stile omerico, che narrano i viaggi $POR_ADJ$ che portarono alle grandi scoperte del XV e XVI secolo. Scritti durante l’esilio di Camões a Macao, collegano il popolo $POR_ADJ$ ai Lusitani, gli antichi abitanti della Penisola Iberica occidentale."
+ the_lusiads_desc: "I Lusiadi sono una raccolta di poemi epici, scritti in stile omerico, che narrano i viaggi Portoghesi che portarono alle grandi scoperte del XV e XVI secolo. Scritti durante l’esilio di Camões a Macao, collegano il popolo $POR_ADJ$ ai Lusitani, gli antichi abitanti della Penisola Iberica occidentale."
  batalha_monastery_desc: "Il monastero fu costruito in un periodo di 131 anni, sotto la supervisione di ben 15 architetti diversi, combinando molti stili artistici ed è considerato uno dei più belli e importanti del $POR$."
  TEU_swords_of_grunwald_desc: "Le due #italic $TEU_swords_of_grunwald$#! furono presentate al re di Polonia prima della Battaglia di Grunwald come provocazione. Le spade vennero accettate e, dopo la vittoria, entrarono a far parte dei gioielli regali."
  zafarnama_desc: "Significando #italic Libro delle Vittorie#!, è una cronaca che loda la vita e le imprese di [GetCharacter('chg_timur_lame_borjigin').GetName]. Vi sono esaltate tutte le sue abilità militari e di comando, risultando estremamente influente nella diffusione della sua fama."
@@ -707,7 +707,7 @@
  chiesa_san_gottardo_in_corte_tower_desc: "La torre di San Gottardo in Corte a [ShowLocationName('milano')] fu costruita nel 1336 sotto il dominio di [GetCharacter('mlo_azzone_i_visconti').GetName], il primo Signore di Milano della dinastia [ShowDynastyName('visconti_dynasty')]. La torre ospita uno dei primi orologi pubblici della regione e la sua costruzione fu parte del progetto dei Visconti per rafforzare le infrastrutture di $MLO$."
  torrazzo_di_cremona_desc: "Il $torrazzo_di_cremona$, completato nel 1309, è uno dei più alti campanili in muratura d’Europa e sorge accanto al Duomo di Cremona. È un importante punto di riferimento sia civile che religioso. Il suo orologio astronomico, installato nel XIV secolo, è uno dei più grandi del suo genere."
  lalibela_cross_desc: "La $lalibela_cross$, realizzata durante il regno della dinastia Zagwe (XII–XIII secolo), è un capolavoro dell’oreficeria etiopica. La croce ha avuto un ruolo centrale nelle pratiche liturgiche della Chiesa Ortodossa Etiopica."
- kebra_nagast_desc: "Il $kebra_nagast$, scritto nel XIV secolo, è un testo fondamentale $ETH_ADJ$ che narra le origini della dinastia [ShowDynastyName('solomonid_dynasty')]. Rivendicando una discendenza da Re Salomone e dalla Regina di Saba, offre una giustificazione divina al potere dei sovrani $ETH_ADJ$ e rafforza l’identità cristiana del paese."
+ kebra_nagast_desc: "Il $kebra_nagast$, scritto nel XIV secolo, è un testo fondamentale $ETH_ADJ$ che narra le origini della dinastia [ShowDynastyName('solomonid_dynasty')]. Rivendicando una discendenza da Re Salomone e dalla Regina di Saba, offre una giustificazione divina al potere dei sovrani Etiopi e rafforza l’identità cristiana del paese."
  lalibela_church_st_george_desc: "La Chiesa di San Giorgio, scolpita durante il regno del re Lalibela nel XII secolo, rappresenta l’apice dell’architettura monolitica etiope. Realizzata in risposta al desiderio di creare una #italic Nuova Gerusalemme#!, riflette le aspirazioni religiose dell’epoca e il patrimonio cristiano distintivo di $ETH$."
  king_ezana_stele_desc: "La $king_ezana_stele$, eretta nel IV secolo, è un monumentale stele dell’Impero di Axum. Riflette la ricchezza e la potenza del regno nel suo periodo di massimo splendore. La conversione al cristianesimo del re Ezana, anch’essa documentata da iscrizioni, rese Axum uno dei primi stati cristiani della storia."
  lanterna_di_genoa_desc: "La $lanterna_di_genoa$, costruita originariamente nel XII secolo, servì come faro cruciale per il porto di [ShowLocationName('genoa')]. Essendo uno dei fari più antichi e più alti del mondo, la sua luce guidò per secoli le navi verso il porto. La Lanterna servì anche da fortificazione, contribuendo alla difesa della città da minacce navali."
@@ -719,23 +719,23 @@
  annunciation_ustyug_desc: "L’icona $annunciation_ustyug$, dipinta nel XII secolo, è uno dei più antichi esempi sopravvissuti di iconografia ortodossa russa. Riflette l’influenza bizantina sull’arte della Rus’ di Kiev e la diffusione dell’insegnamento cristiano."
  saint_george_in_yuriev_desc: "Il Monastero di Yuriev, fondato nel 1030 da [GetCharacter('kie_yaroslav_the_wise_rurikovich').GetName], è uno dei monasteri più antichi della Russia. Fu fondamentale nella cristianizzazione della regione di Novgorod e rimane un simbolo della crescita dell’Ortodossia nella Rus’ settentrionale."
  palma_cathedral_desc: "La costruzione del $palma_cathedral$ iniziò nel 1229 sotto il re [GetCharacter('ara_jacme_i_arago').GetName], dopo la conquista di Maiorca durante la Reconquista. Edificata sul sito di una precedente moschea, la cattedrale gotica riflette le influenze architettoniche dell’Europa continentale. I lavori si protrassero per secoli."
- ripoll_abbey_desc: "Fondata nell’888 da [GetCharacter('cat_guifre_i_barcelona').GetName], divenne il centro culturale e spirituale della cultura [ShowCultureName('catalan')] e dei suoi sovrani, e rimane un luogo cruciale per l’identità $CAT_ADJ$."
+ ripoll_abbey_desc: "Fondata nell’888 da [GetCharacter('cat_guifre_i_barcelona').GetName], divenne il centro culturale e spirituale della cultura [ShowCultureName('catalan')] e dei suoi sovrani, e rimane un luogo cruciale per l’identità Catalana."
  montserrat_abbey_desc: "Situata sulla montagna di Montserrat, custodisce la [ShowWorkOfArtName('moreneta_key')] ed è un importantissimo centro di spiritualità e pellegrinaggio. È inoltre un simbolo centrale dell’identità culturale [ShowCultureName('catalan')]."
  poblet_abbey_desc: "Un imponente complesso monastico costruito nel XII secolo, è il pantheon dei re [ShowCultureName('catalan')] fin dai tempi di [GetCharacter('ara_jacme_i_arago').GetName]."
  basilica_pilar_desc: "Dedicata alla Vergine Maria, la Basilica del Pilar avrebbe avuto origine da un’apparizione della Vergine a San Giacomo Apostolo durante la sua predicazione del $christian$ nella Penisola Iberica. La chiesa venne ampliata nel tempo e la struttura romanica iniziò a essere edificata dopo la conquista di [ShowLocationName('zaragoza')] nel XII secolo."
- moreneta_key_desc: "Raffigurante la Vergine Maria, è custodita nella [ShowWorkOfArtName('montserrat_abbey')]. Secondo la leggenda, la statua fu trovata da alcuni pastori in una grotta di Montserrat. Quando tentarono di trasportarla in città, il carro si bloccò: interpretarono l’evento come un segno che la Vergine desiderasse restare sulla montagna, dando così origine all’abbazia."
+ moreneta_key_desc: "Raffigurante la Vergine Maria, è custodita nell'[ShowWorkOfArtName('montserrat_abbey')]. Secondo la leggenda, la statua fu trovata da alcuni pastori in una grotta di Montserrat. Quando tentarono di trasportarla in città, il carro si bloccò: interpretarono l’evento come un segno che la Vergine desiderasse restare sulla montagna, dando così origine all’abbazia."
  girgam_desc: "La cronaca reale di $KBO$, contiene la lista dei suoi re con date e durate dei rispettivi regni."
- djenne_mosque_desc: "Presente come moschea fin dal XIII secolo, il suo edificio in adobe ha contribuito per generazioni alla diffusione e al prestigio del [ShowReligionGroupName('muslim')] in $MAL$."
- sankore_madrasa_desc: "Uno dei più importanti centri di studio [ShowReligionGroupAdjective('muslim')] di $MAL$, segue una lunga tradizione d’insegnamento $muslim_ADJ$ nel $guinea_region$."
- djinguereber_mosque_desc: "Uno dei principali centri di apprendimento [ShowReligionGroupAdjective('muslim')] di $MAL$, la sua fondazione è attribuita a [GetCharacter('mal_musa_keita').GetName]."
- sachsenspiegel_desc: "Una compilazione del diritto consuetudinario e delle sentenze di tutto il $hre$, è una delle più importanti raccolte legislative dell’Impero, oltre a essere la prima redatta in [ShowLanguageName('german_language')] invece che in [ShowLanguageName('latin_language')]."
- terrae_prussiae_desc: "Una cronaca in [ShowLanguageName('latin_language')] dell’Ordine $TEU_ADJ$ nel [ShowAreaName('prussia_area')], che descrive il loro arrivo nella regione e le guerre contro le tribù pagane locali."
- codex_marianus_desc: "Scritto in [ShowLanguageName('church_slavonic_language')], questo libro dei Vangeli è uno dei fondamenti dei testi $slavic_group$ $orthodox_ADJ$."
+ djenne_mosque_desc: "Presente come moschea fin dal XIII secolo, il suo edificio in adobe ha contribuito per generazioni alla diffusione e al prestigio dell'[ShowReligionGroupName('muslim')] in $MAL$."
+ sankore_madrasa_desc: "Uno dei più importanti centri di studio della fede [ShowReligionGroupAdjective('muslim')] di $MAL$, segue una lunga tradizione d’insegnamento in $guinea_region$."
+ djinguereber_mosque_desc: "Uno dei principali centri di apprendimento della fede [ShowReligionGroupAdjective('muslim')] di $MAL$, la sua fondazione è attribuita a [GetCharacter('mal_musa_keita').GetName]."
+ sachsenspiegel_desc: "Una compilazione del diritto consuetudinario e delle sentenze di tutto il $hre$, è una delle più importanti raccolte legislative dell’Impero, oltre a essere la prima redatta in lingua [ShowLanguageName('german_language')] invece che in lingua [ShowLanguageName('latin_language')]."
+ terrae_prussiae_desc: "Una cronaca in lingua [ShowLanguageName('latin_language')] dell’Ordine $TEU_ADJ$ in [ShowAreaName('prussia_area')], che descrive il loro arrivo nella regione e le guerre contro le tribù pagane locali."
+ codex_marianus_desc: "Scritto in lingua [ShowLanguageName('church_slavonic_language')], questo libro dei Vangeli è uno dei testi fondamentali della cultura Slava Orientale $orthodox_ADJ$."
  white_angel_desc: "Considerata una delle migliori opere dell’arte $serbian$, raffigura gli eventi successivi alla crocifissione di Gesù, con l’Angelo del Signore che mostra alle mirofore il luogo in cui Cristo è risorto."
  zica_studenica_monasteries_desc: "Coppia di monasteri costruiti tra il XII e il XIII secolo, sono tra i più grandi e importanti monasteri $serbian$."
- gesta_hungarorum_desc: "Un testo che celebra le gesta del popolo [ShowCultureName('hungarian')], narrandone le origini — identificate con gli Sciti o gli Unni — e concentrandosi sulla conquista del Bacino dei Carpazi."
- basilica_of_the_assumption_virgin_mary_desc: "Edificata dal primo re di $HUN$, è il luogo dell’incoronazione dei monarchi $HUN_ADJ$ sin dal Medioevo. Pur non essendo episcopale, è una delle chiese principali legate alla regalità."
- holy_crown_of_hungary_desc: "Utilizzata come corona dei re di $HUN$ fin dal XII secolo, è simbolo della loro legittimità. Donata dal $BYZ_ADJ$, possiede uno stile marcatamente $BYZ_ADJ$, anche se la tradizione [ShowReligionAdjective('catholic')] portò molti a credere che provenisse dal Papa."
+ gesta_hungarorum_desc: "Un testo che celebra le gesta della popolazione [ShowCultureName('hungarian')], narrandone le origini — identificate con gli Sciti o gli Unni — e concentrandosi sulla conquista del Bacino dei Carpazi."
+ basilica_of_the_assumption_virgin_mary_desc: "Edificata dal primo re di $HUN$, è il luogo dell’incoronazione dei monarchi Ungheresi sin dal Medioevo. Pur non essendo episcopale, è una delle chiese principali legate alla regalità."
+ holy_crown_of_hungary_desc: "Utilizzata come corona dei re di $HUN$ fin dal XII secolo, è simbolo della loro legittimità. Donata dai Bizantini, possiede marcatamente quello stile, anche se la tradizione [ShowReligionAdjective('catholic')] portò molti a credere che provenisse dal Papa."
  kusanagi_no_tsurugi_desc: "Una spada leggendaria che si dice sia stata trovata da Susanoo nella coda di Yamata-no-Orochi dopo averlo ucciso. In seguito fu presentata alla dea Amaterasu, che la donò al nipote Ninigi-no-Mikoto — antenato della linea imperiale — quando fu inviato sulla terra. Per questo la spada è simbolo di legittimità, coraggio e potere dell’Imperatore."
  yata_no_kagami_desc: "Uno specchio leggendario utilizzato per attirare fuori Amaterasu dalla caverna in cui si era nascosta. Fa parte delle insegne imperiali perché donato a Ninigi-no-Mikoto, antenato della linea imperiale. Rappresenta la saggezza dell’imperatore e la sua idoneità a governare."
  yasakani_no_magatama_desc: "Uno dei tre tesori delle insegne imperiali, si dice sia stato usato insieme allo [ShowWorkOfArtName('yata_no_kagami')] per far emergere la dea Amaterasu dalla caverna. Consegnato poi a Ninigi-no-Mikoto, rappresenta la benevolenza della linea imperiale."
@@ -759,7 +759,7 @@
  canzoniere: "Canzoniere"
  canzoniere_desc: "Il $canzoniere$ è una raccolta di poesie liriche di Francesco Petrarca, composta principalmente da sonetti dedicati alla sua musa, Laura. Unendo temi di amore, bellezza e introspezione a influenze classiche, è una delle opere più influenti della poesia rinascimentale."
  alcobaca_monastery_desc: "L’$alcobaca_monastery$ è un complesso cistercense in $POR$, famoso per la sua sobria eleganza e per le tombe reali. È il primo esempio di architettura gotica del regno e il suo monastero più influente."
- hagia_irene_desc: "L’$hagia_irene$ è una delle prime chiese $BYZ_ADJ$ di [ShowLocationName('constantinople')], caratterizzata da una sorprendente semplicità in contrasto con la vicina $hagia_sophia$. Ricostruita nel 548 dopo essere stata incendiata durante la Rivolta di Nika del 532, rappresenta un esempio precoce dell’innovazione architettonica cristiana."
+ hagia_irene_desc: "L’$hagia_irene$ è una delle prime chiese Bizantine di [ShowLocationName('constantinople')], caratterizzata da una sorprendente semplicità in contrasto con la vicina $hagia_sophia$. Ricostruita nel 548 dopo essere stata incendiata durante la Rivolta di Nika del 532, rappresenta un esempio precoce dell’innovazione architettonica cristiana."
  hagia_sophia_desc: "L’$hagia_sophia$ fu originariamente costruita intorno al 346 durante il regno di Costanzo II, poi bruciata nella Rivolta di Nika del 532, e completamente ricostruita e consacrata nel 537 da Giustiniano. Divenne la più grande cattedrale della cristianità. Progettata da Antemio di Tralles e Isidoro di Mileto, è celebre per l’enorme cupola, le tecniche ingegneristiche innovative e i mosaici che rappresentano il culmine della spiritualità ortodossa."
  paris_psalter_desc: "Il $paris_psalter$, creato nel X secolo durante la #italic Rinascenza Macedone#!, è un sontuoso manoscritto $BYZ_ADJ$ contenente 14 illustrazioni a piena pagina a corredo dei Salmi. Il suo stile classico riflette la rinascita delle tradizioni artistiche greco-romane nell’arte $BYZ_ADJ$."
  syntagma_canonum_desc: "Il $syntagma_canonum$ è una compilazione $BYZ_ADJ$ di leggi ecclesiastiche che regolano la struttura e le pratiche della Chiesa. Riflette l’integrazione tra il diritto canonico e la società $BYZ_ADJ$."
@@ -785,7 +785,7 @@
  codex_calixtinus_desc: "Creato come guida per i pellegrini del Cammino di Santiago, il $codex_calixtinus$ è un’enciclopedia illustrata che tratta dei popoli che abitano la rotta, delle opere d’arte lungo il percorso e di questioni religiose."
  tablas_alfonsies_desc: "Le #italic $tablas_alfonsies$#! sono tabelle astronomiche di grande importanza per calcolare la posizione dei corpi celesti — il sole, la luna e gli altri pianeti — rispetto alle stelle fisse."
  libros_saber_astrologia_desc: "Una serie di trattati che descrivono i corpi celesti e gli strumenti astronomici dell’epoca. Questi libri hanno avuto un ruolo fondamentale nell’astronomia e nell’astrologia medievale, fornendo materiali utili persino per la redazione di oroscopi."
- libro_de_los_juegos_desc: "Un trattato [ShowCultureName('castilian')] su scacchi, tavole e giochi di dadi. Il #italic $libro_de_los_juegos$#! raccoglie la conoscenza [ShowLanguageName('arabic_language')] sui giochi da tavolo e la combina con quella [ShowLanguageName('latin_language')]."
+ libro_de_los_juegos_desc: "Una disamina [ShowCultureName('castilian')] su scacchi, tavole e giochi di dadi. Il #italic $libro_de_los_juegos$#! raccoglie la conoscenza [ShowLanguageName('arabic_language')] sui giochi da tavolo e la combina con quella [ShowLanguageName('latin_language')]."
  marienkapelle_desc: "La $marienkapelle$ è una chiesa romanica costruita a [ShowLocationName('munich')] che funge da luogo di sepoltura per la dinastia [ShowDynastyName('wittelsbach_dynasty')], da quando [GetCharacter('ubv_ludwig_iv_wittelsbach').GetName] lo stabilì."
  sahib_ata_kulliyesi_desc: "Il $sahib_ata_kulliyesi$ è un complesso costruito a [ShowLocationName('konya')] per ospitare le spoglie di Sahip Ata Fahrettin Ali e della sua famiglia, comprendente anche un hammam e una moschea."
  gokmedrese_desc: "Questa madrasa a due piani è il principale centro educativo di [ShowLocationName('sivas')] dalla sua commissione nel XIII secolo da parte di Sahip Ata Fahrettin Ali, visir del sultano selgiuchide. Il nome deriva dalle piastrelle turchesi ('del cielo') che ne ornano la facciata."
@@ -797,8 +797,8 @@
  al_nasir_mosque_desc: "Costruita da [GetCharacter('mam_an_nasir_bahri').GetName] come moschea reale nella cittadella di [ShowLocationName('cairo')], la $al_nasir_mosque$ è unica per i suoi due minareti con sezioni bulbose, probabilmente ispirati allo stile $farsi_culture$."
  al_karimi_mosque_desc: "La $al_karimi_mosque$, edificio del XIV secolo, si erge nel centro di [ShowLocationName('damascus')] ed è considerata uno dei migliori esempi di arte $mamluk$ nella regione."
  rawd_al_qirtas_desc: "Questa [ShowWorkOfArtTypeName('chronicle')] descrive lo sviluppo della città di [ShowLocationName('fez')] e i sovrani del [ShowAreaName('morocco_area')], dagli Idrisidi alla dinastia [ShowDynastyName('marinid_dynasty')]."
- ait_ben_haddou_desc: "Il #italic ksar#! o #italic ighrem#! ('villaggio fortificato' in arabo e amazigh, rispettivamente) di $ait_ben_haddou$ si trova lungo un'importante rotta commerciale che unisce le terre al di là del Sahara con il cuore di [ShowAreaName('morocco_area')]."
- kutubiyya_mosque_desc: "Moschea costruita due volte in [ShowLocationName('marrakesh')], la $kutubiyya_mosque$ è un esempio eminente dell’architettura almoravide ed è un importante punto di riferimento nel centro della città. Il nome di questa moschea deriva dai librai che commerciavano attorno all'edificio."
+ ait_ben_haddou_desc: "Il #italic ksar#! o #italic ighrem#! ('villaggio fortificato' in arabo e amazigh, rispettivamente) di $ait_ben_haddou$ si trova lungo un'importante rotta commerciale che unisce le terre al di là del Sahara con il cuore del [ShowAreaName('morocco_area')]."
+ kutubiyya_mosque_desc: "Moschea costruita due volte a [ShowLocationName('marrakesh')], la $kutubiyya_mosque$ è un esempio eminente dell’architettura almoravide ed è un importante punto di riferimento nel centro della città. Il nome di questa moschea deriva dai librai che commerciavano attorno all'edificio."
  song_of_armouris_desc: "Il racconto di uno dei più grandi Akritai. La #italic $song_of_armouris$#! è la più famosa di queste storie cavalleresche bizantine, seguendo Armouris Armouropoulos, un uomo dalla forza erculea che uccise migliaia di Saraceni per vendicare suo padre."
  gediminas_cap_desc: "Questa magnifica corona è stata consacrata come la più importante [ShowWorkOfArtTypeName('regalia')] del reame [GetCountry('LIT').GetAdjective], dal fondatore della dinastia [ShowDynastyName('gediminid_dynasty')] [GetCharacter('lit_gediminas_gediminids').GetName]."
  chronica_jutensis_desc: "La #italic Chronica Jutensis#! è una cronaca danese che fornisce una narrazione della storia della Danimarca, focalizzandosi in particolare sul Jutland."
@@ -808,13 +808,13 @@
  dai_viet_su_ky_desc: "Il $dai_viet_su_ky$ è la storiografia ufficiale della dinastia $Tran$. Contiene i resoconti della storia di $DAI$ e offre una panoramica sullo sviluppo del paese negli ultimi secoli."
  dai_an_nam_chi_luoc_desc: "Il $dai_an_nam_chi_luoc$ racconta la storia e molti altri aspetti di $DAI$ dalle sue origini fino al regime della dinastia $Tran$."
  kilwa_chronicle: "$ZAN$ Chronicle"
- kilwa_chronicle_desc: "La $kilwa_chronicle$ è un documento storico che narra la storia del popolo $ZAN_ADJ$. Scritta in [ShowLanguageName('arabic_language')], la cronaca fonde tradizioni orali locali con resoconti storici, offrendo un approfondimento sulla storia politica e culturale dell’intera [ShowRegionName('swahili_coast_region')]."
+ kilwa_chronicle_desc: "La $kilwa_chronicle$ è un documento storico che narra la storia del popolo $ZAN_ADJ$. Scritta in lingua [ShowLanguageName('arabic_language')], la cronaca fonde tradizioni orali locali con resoconti storici, offrendo un approfondimento sulla storia politica e culturale dell’intera [ShowRegionName('swahili_coast_region')]."
  preah_khan_reach: "Preah Khan Reach"
  preah_khan_reach_desc: "La Spada della Vittoria è una lama d'acciaio cesellata, custodita in un fodero d’oro e gioielli. Insieme alla $preah_lompeng_chey$, conferisce legittimità al sovrano del popolo [ShowCultureName('khmer_culture')]."
  preah_lompeng_chey: "Preah Lompeng Chey"
  preah_lompeng_chey_desc: "La Lancia della Vittoria commemora l’ascesa di [GetCharacter('khm_trasak_paem').GetName] e, insieme alla $preah_khan_reach$, funge da regalia reale del popolo [ShowCultureName('khmer_culture')]."
  emerald_buddha: "Emerald Buddha"
- emerald_buddha_desc: "Scolpito in diaspro, l’$emerald_buddha$ è venerato per il suo significato spirituale nei paesi [ShowReligionGroupAdjective('buddhist')]."
+ emerald_buddha_desc: "Scolpito in diaspro, l’$emerald_buddha$ è venerato per il suo significato spirituale nei paesi di fede [ShowReligionGroupAdjective('buddhist')]."
 
  imperial_crown_hre: "Corona Imperiale"
  imperial_crown_hre_desc: "Forgiata da 8 placche d’oro decorate con varie pietre preziose, l’$imperial_crown_hre$ è utilizzata come corona dell’incoronazione sin dai tempi di Ottone I."
@@ -842,7 +842,7 @@
  damarwulan_desc: "La storia di $damarwulan_hero$ è rappresentata in molte rappresentazioni locali di burattini note come #italic wayang klitik#!. L’eroe è presentato come il salvatore del regno $MAJ$, che inizialmente s’innamora della figlia del Primo Ministro e viene imprigionato per questo amore giovanile. Scoppia una guerra, e $damarwulan_hero$ ottiene la possibilità di dimostrarsi degno. L’eroe riesce poi a guadagnarsi la fiducia delle concubine del re nemico e infine decapita il sovrano avversario."
 
  statenbijbel: "Statenbijbel"
- statenbijbel_desc: "La Statenbijbel – #italic States Bible#!, commissionata dal Sinodo di [ShowLocationName('dordrecht')], è la prima traduzione della Bibbia [ShowDialectName('dutch_dialect')] realizzata direttamente dalle lingue originali [ShowLanguageName('hebrew_language')], [ShowLanguageName('aramaic_language')] e [ShowLanguageName('greek_language')], finanziata dal governo."
+ statenbijbel_desc: "La Statenbijbel – #italic States Bible#!, commissionata dal Sinodo di [ShowLocationName('dordrecht')], è la prima traduzione della Bibbia in [ShowDialectName('dutch_dialect')] realizzata direttamente dall'originale in lingua [ShowLanguageName('hebrew_language')], [ShowLanguageName('aramaic_language')] e [ShowLanguageName('greek_language')], finanziata dal governo."
 
  tarikh_al_sudan: "Tārīkh as-Sūdān"
  tarikh_al_sudan_desc: "Scritto per preservare la storia della [ShowRegionName('guinea_region')], il $tarikh_al_sudan$ contiene dettagli sull’Impero del Mali, sui popoli [ShowCultureName('tuareg')] e sulle imprese dei Songhai."
@@ -926,7 +926,7 @@
  kaiserhymne_desc: "La $kaiserhymne$ è un inno patriottico composto da Joseph Haydn, con testi di Lorenz Leopold Haschka. Celebra l’Austria e il suo sovrano, simbolizzando unità nazionale e orgoglio."
  # Ethiopia
  the_book_of_the_mysteries_of_the_heavens_and_the_earth: "Mashafa Mestira Samay Wamedr"
- the_book_of_the_mysteries_of_the_heavens_and_the_earth_desc: "Spiegando come tutto sia stato creato secondo [ShowReligionName('miaphysite')], il $the_book_of_the_mysteries_of_the_heavens_and_the_earth$ ha rafforzato la teologia della nazione."
+ the_book_of_the_mysteries_of_the_heavens_and_the_earth_desc: "Spiegando come tutto sia stato creato secondo il [ShowReligionName('miaphysite')], il $the_book_of_the_mysteries_of_the_heavens_and_the_earth$ ha rafforzato la teologia della nazione."
  book_of_light_nativity_and_trinity_shared: "Parte dei tre libri che promuovono riforme ecclesiastiche e difendono le visioni religiose dello scrittore, fungono da forza contrapposta al clero."
  book_of_light: "Mashafa Berhan"
  book_of_light_desc: "$book_of_light_nativity_and_trinity_shared$"
@@ -935,7 +935,7 @@
  books_of_trinity: "Mashafa Selassie"
  books_of_trinity_desc: "$book_of_light_nativity_and_trinity_shared$"
  confession_of_faith: "Confessione di Fede"
- confession_of_faith_desc: "Scritto per difendere la fede [ShowReligionAdjective('miaphysite')], questo libro sostiene il rafforzamento delle idee religiose, come l’osservanza del Sabato e il divieto del consumo di carne di maiale."
+ confession_of_faith_desc: "Scritto in difesa della fede [ShowReligionAdjective('miaphysite')], questo libro sostiene il rafforzamento delle idee religiose, come l’osservanza del Sabato e il divieto del consumo di carne di maiale."
 
  # Orissa
  kapilesvara_siva_temple: "Tempio Kapilesvara di [ShowGodNameWithNoTooltip('shiva_god')]"
@@ -945,7 +945,7 @@
 
  # Bengal
  firoz_minar: "Firoz Minar"
- firoz_minar_desc: "Costruito per mostrare il prestigio di [ShowLocationName('gaur')], il $firoz_minar$ è una delle più grandi torri dell’[ShowRegionName('bengal_region')]. Si dice che la sua prima versione non fosse abbastanza grande, spingendo il sovrintendente dei lavori a gettare l’architetto dalla cima."
+ firoz_minar_desc: "Costruito per mostrare il prestigio di [ShowLocationName('gaur')], il $firoz_minar$ è una delle più grandi torri del [ShowRegionName('bengal_region')]. Si dice che la sua prima versione non fosse abbastanza grande, spingendo il sovrintendente dei lavori a gettare l’architetto dalla cima."
  dakhil_darwaza: "Dakhil Darwaza"
  dakhil_darwaza_desc: "Il $dakhil_darwaza$ fu costruito per proteggere [ShowLocationName('gaur')] dalle invasioni straniere. È una delle più grandi porte dell’$india$."
  kusumba_mosque: "Moschea di Kusumba"
@@ -967,7 +967,7 @@
  gur_e_amir: "Gūr-i Amīr"
  gur_e_amir_desc: "Costruito come tomba di [GetCharacter('chg_timur_lame_borjigin').GetName], questo mausoleo serve anche come luogo di sepoltura familiare per i successori."
  goharshad_mosque: "Moschea di Goharshad"
- goharshad_mosque_desc: "La $goharshad_mosque$ è un esempio eccellente dell’architettura [ShowCultureName('farsi_culture')] durante l’era $TIM_ADJ$ nella regione [ShowRegionName('persia_region')]."
+ goharshad_mosque_desc: "La $goharshad_mosque$ è un esempio eccellente dell’architettura [ShowCultureName('farsi_culture')] durante l’era $TIM_ADJ$ in [ShowRegionName('persia_region')]."
  majma_al_tawarikh: "Mojmal al-Tawārīkh"
  majma_al_tawarikh_desc: "Il $majma_al_tawarikh$ è una cronaca dello stato $TIM_ADJ$ e dei paesi vicini, contenente le loro storie e geografie."
 
@@ -976,16 +976,16 @@
  taj_mahal_desc: "Luogo di riposo del suo committente, il $taj_mahal$ è forse uno dei più grandiosi mausolei mai costruiti. Ispirato al Gūr-i Amīr di Samarcanda, ha superato la sua funzione commemorativa per Shāh Jahān e sua moglie, affermandosi come una delle sette grandi meraviglie del mondo."
 
  peacock_throne: "Trono del Pavone"
- peacock_throne_desc: "Un trono decorato dello stato $MUG_ADJ$, simbolo del potere nella regione [ShowRegionName('hindustan_region')]."
+ peacock_throne_desc: "Un trono decorato dello stato $MUG_ADJ$, simbolo del potere nell'[ShowRegionName('hindustan_region')]."
  # Morocco
  el_badi_palace: "Palazzo el-Badi'"
- el_badi_palace_desc: "Un grandioso palazzo costruito con materiali provenienti dalla [ShowRegionName('italy_region')] fino alla [ShowRegionName('guinea_region')], è una delle strutture più ornate del [ShowRegionName('maghreb_region')]."
+ el_badi_palace_desc: "Un grandioso palazzo costruito con materiali provenienti dall'[ShowRegionName('italy_region')] fino alla [ShowRegionName('guinea_region')], è una delle strutture più ornate del [ShowRegionName('maghreb_region')]."
 
  ben_youssef_mosque: "Moschea Ibn Yūsuf"
  ben_youssef_mosque_desc: "Una moschea costruita durante l’era almoravide, uno dei pochi simboli rimasti del loro dominio nel [ShowRegionName('maghreb_region')]."
  # Sikhism
  guru_granth_sahib: "Guru Granth Sahib"
- guru_granth_sahib_desc: "Considerato il $guru$ eterno dai fedeli [ShowReligionName('sikhism')], fu compilato ed espanso da vari $guru$ attraverso i secoli e contiene tutti gli insegnamenti che guidano i fedeli [ShowReligionAdjective('sikhism')]."
+ guru_granth_sahib_desc: "Considerato il $guru$ eterno dai fedeli del [ShowReligionName('sikhism')], fu compilato ed espanso da vari $guru$ attraverso i secoli e contiene tutti gli insegnamenti che guidano i credenti [ShowReligionAdjective('sikhism')]."
  # USA
  common_sense: "Common Sense"
  common_sense_desc: "Un opuscolo creato durante le lotte del $colonial_revolution$, il $common_sense$ è un’opera fondamentale per le idee di governo egualitario e di resistenza all’oppressione coloniale."
@@ -995,11 +995,11 @@
  genealogy_osman_dynasty_desc: "Una cronaca di un’incredibilmente influente dinastia, con pagine adornate d’oro e iscrizioni che la collegano ai giorni dell’Oghuz $rank_empire_horde_ruler_suffix_male$, figura mitica tra le tribù turciche."
  
  gabriel_the_archangel: "L’Arcangelo Gabriele"
- gabriel_the_archangel_desc: "Un’icona di $gabriel_the_archangel$, santo delle fedi [ShowReligionGroupAdjective('christian')], e simbolo religioso per [ShowLocationName('kyiv')]."
+ gabriel_the_archangel_desc: "Un’icona di $gabriel_the_archangel$, santo della fede [ShowReligionGroupAdjective('christian')], e simbolo religioso per [ShowLocationName('kyiv')]."
  st_andrew_church: "Chiesa di Sant’Andrea"
  st_andrew_church_desc: "Una chiesa dedicata a Sant’Andrea, conosciuto come l’Apostolo della Rus’."
  kie_collection_of_paintings_from_anton_losenko: "Collezione di ritratti neoclassici"
- kie_collection_of_paintings_from_anton_losenko_desc: "Realizzati specificamente per i governanti di [ShowRegionName('ruthenia_region')], questi ritratti coprono l’intera corte del governo locale."
+ kie_collection_of_paintings_from_anton_losenko_desc: "Realizzati specificamente per i governanti della [ShowRegionName('ruthenia_region')], questi ritratti coprono l’intera corte del governo locale."
  kleinody: "Kleinody"
  kleinody_desc: "Le insegne del potere dell’élite cosacca. Rappresentano il loro dominio sui guerrieri sotto il loro comando."
 
@@ -1016,13 +1016,13 @@
  history_of_the_hospitallers_desc: "Questa cronaca di grande valore è una dettagliata raccolta che narra la storia, le battaglie e l’eredità dei Cavalieri Ospitalieri, dalle loro origini fino al loro dominio su Malta."
 
  sulaymaniyya_takiyya: "Şam Süleymaniye Külliyesi"
- sulaymaniyya_takiyya_desc: "Una moschea situata in [ShowLocationName('damascus')], progettata con una combinazione di elementi [ShowCultureName('turkish_culture')] e [ShowCultureName('syriac_culture')]."
+ sulaymaniyya_takiyya_desc: "Una moschea situata a [ShowLocationName('damascus')], progettata con una combinazione di elementi della cultura [ShowCultureName('turkish_culture')] e [ShowCultureName('syriac_culture')]."
 
  blue_mosque: "Moschea Blu"
  blue_mosque_desc: "Una moschea decorata in maniera estremamente ricca, con le pareti dipinte di blu per farla risaltare."
 
  church_of_saint_nicholas: "Chiesa di San Nicola"
- church_of_saint_nicholas_desc: "Una delle prime chiese costruite durante la conversione di [ShowLocationName('vilnius')] al [ShowReligionGroupName('christian')], rimane il luogo dove ogni devoto [ShowReligionGroupAdjectiveWithNoTooltip('christian')] si reca a pregare."
+ church_of_saint_nicholas_desc: "Una delle prime chiese costruite durante la conversione di [ShowLocationName('vilnius')] al [ShowReligionGroupName('christian')], rimane il luogo dove ogni devoto cristiano si reca a pregare."
 
  artis_magnae_artilleriae: "Artis Magnae Artilleriae"
  artis_magnae_artilleriae_desc: "Un trattato concepito come manuale sull’artiglieria, la razziologia e la pirotecnica."
@@ -1031,7 +1031,7 @@
  tale_of_the_palemonids_desc: "La cronaca dei Palemonidi, che spiega come essi fuggirono da [ShowLocationName('rome')] durante l’invasione di Attila l’Unno, e come raggiunsero $LIT$."
 
  simple_words_of_catechism: "Parole semplici di catechismo"
- simple_words_of_catechism_desc: "Uno dei primi libri scritti in [ShowDialectName('lithuanian_dialect')], con l’obiettivo di insegnare al popolo i valori [ShowReligionAdjective('lutheran')]."
+ simple_words_of_catechism_desc: "Uno dei primi libri scritti in [ShowDialectName('lithuanian_dialect')], con l’obiettivo di insegnare al popolo i valori della fede [ShowReligionAdjective('lutheran')]."
  dynastic_history_of_the_dynasty: "Cronaca dinastica"
  dynastic_history_of_the_dynasty_desc: "Le pagine dorate della storia adornano la nostra ascesa al potere. Con opulenza e ricchezza, abbiamo redatto un passato elaborato che lega saldamente la nostra dinastia all’autorità che deteniamo. Quest’opera d’arte è la prova che la nostra legittimità non può essere contestata da alcun pretendente che tenti di rubarci il posto al sole."
 
@@ -1040,7 +1040,7 @@
 
  #Japan
  hana_no_gosho_palace: "Hana-no-Gosho"
- hana_no_gosho_palace_desc: "Istituito come simbolo del prestigio e dello splendore $ASK_ADJ$, $hana_no_gosho_palace$ è uno dei palazzi più elaborati presenti in [ShowLocationName('kyoto')]."
+ hana_no_gosho_palace_desc: "Istituito come simbolo del prestigio e dello splendore $ASK_ADJ$, $hana_no_gosho_palace$ è uno dei palazzi più elaborati presenti a [ShowLocationName('kyoto')]."
  kinkaku_ji: "Kinkaku-ji"
  kinkaku_ji_desc: "Rivestito d’oro per simboleggiare la purificazione di ogni negatività, il Kinkaku-ji rappresenta allo stesso tempo un simbolo spirituale e uno dei massimi esempi dell’architettura $ASK_ADJ$."
  jinno_shotoki_chronicle: "Jinnō Shōtōki"
@@ -1048,7 +1048,7 @@
  shokoku_ji: "Shōkoku-ji"
  shokoku_ji_desc: "Un grande tempio costruito a [ShowLocationName('kyoto')] per servire sia funzioni spirituali sia necessità cerimoniali per i banchetti $ASK_ADJ$."
  catfish_with_a_gourd: "Catturare un pesce gatto con una zucca"
- catfish_with_a_gourd_desc: "Una delle prime pitture a inchiostro #italic suiboku#!, $catfish_with_a_gourd$ rappresenta un esempio della crescita di questo stile pittorico in tutta [ShowRegionNameWithNoTooltip('japan_region')]."
+ catfish_with_a_gourd_desc: "Una delle prime pitture a inchiostro #italic suiboku#!, $catfish_with_a_gourd$ rappresenta un esempio della crescita di questo stile pittorico in tutto il [ShowRegionNameWithNoTooltip('japan_region')]."
  reading_in_a_bamboo_grove: "Lettura in un boschetto di bambù"
  reading_in_a_bamboo_grove_desc: "Un’altra prima pittura #italic suiboku#!. $reading_in_a_bamboo_grove$ mostra l’evoluzione dell’inchiostrazione nel corso della vita di [GetCharacter('tensho_shubun').GetName]."
  jap_winter_landscape: "Paesaggio invernale"
@@ -1071,10 +1071,10 @@
 
  #Generic
  radziwilli_bible: "Bibbia dei Radziwiłł"
- radziwilli_bible_desc: "Commissionata da un potente nobile [ShowReligionAdjective('calvinist')], questa Bibbia è diventata fondamentale nella diffusione degli insegnamenti [ShowReligionNameWithNoTooltip('calvinist')] tra le masse [ShowReligionAdjective('catholic')]. Un’opera letteraria sofisticata, la sua creazione riveste grande importanza nei campi della linguistica e della pietà."
+ radziwilli_bible_desc: "Commissionata da un potente nobile [ShowReligionAdjective('calvinist')], questa Bibbia è diventata fondamentale nella diffusione degli insegnamenti della fede [ShowReligionNameWithNoTooltip('calvinist')] tra la popolazione [ShowReligionAdjective('catholic')]. Un’opera letteraria sofisticata, la sua creazione riveste grande importanza nei campi della linguistica e della pietà."
 
  #Austria
- melk_abbey: "$ORIGIN$ Abbey"
+ melk_abbey: "Abbazia di $ORIGIN$"
  melk_abbey_desc: "L’Abbazia di Melk, fondata nel 1089 lungo il Danubio in Austria, divenne uno dei più influenti monasteri benedettini dell’Europa centrale. Ospitò una grande biblioteca ricca di manoscritti medievali e opere teologiche, riflettendo secoli di studio e devozione."
 
  #Vladimir
@@ -1086,8 +1086,8 @@
  ivanovsky_monastery_desc: "Fondato alla fine del XIII secolo, il Monastero di Ivanovsky a Pskov svolse un ruolo importante nella vita religiosa e difensiva della città. Situato vicino al fiume Pskova, faceva parte del sistema fortificato della città, tipico delle istituzioni monastiche nella frontiera nordoccidentale della Rus’. Il monastero divenne noto per le sue severe tradizioni ascetiche e per i suoi santi locali. Le sue strutture medievali riflettono l’architettura lapidea distintiva della scuola di Pskov."
 
  #Kyiv
- kyiv_pechersk_lavra: "$ORIGIN$-Pechersk Lavra"
- kyiv_pechersk_lavra_desc: "Fondata nel 1051 dai monaci Antonio e Teodosio, la Kyiv Pechersk Lavra, o #italic Monastero delle Grotte#!, è uno dei più antichi e importanti centri del cristianesimo ortodosso orientale. Costruita in parte nel sottosuolo, le sue grotte fungevano sia da abitazioni monastiche sia da luoghi di sepoltura. Nel tempo, si sviluppò in un vasto complesso religioso e culturale, dedicato allo studio teologico e alla produzione di manoscritti. Entro il XIV secolo, la Lavra era un elemento centrale della spiritualità e dell’apprendimento della Rus' di Kiev."
+ kyiv_pechersk_lavra: "Pechersk Lavra di $ORIGIN$"
+ kyiv_pechersk_lavra_desc: "Fondata nel 1051 dai monaci Antonio e Teodosio, la Pechersk Lavra di Kyiv, o #italic Monastero delle Grotte#!, è uno dei più antichi e importanti centri del cristianesimo ortodosso orientale. Costruita in parte nel sottosuolo, le sue grotte fungevano sia da abitazioni monastiche sia da luoghi di sepoltura. Nel tempo, si sviluppò in un vasto complesso religioso e culturale, dedicato allo studio teologico e alla produzione di manoscritti. Entro il XIV secolo, la Lavra era un elemento centrale della spiritualità e dell’apprendimento della Rus' di Kiev."
 
  #China
  art_of_war: "L’Arte della Guerra"

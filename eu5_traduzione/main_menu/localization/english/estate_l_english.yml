@@ -15,7 +15,7 @@
  tribes_estate_desc: "Questo ceto rappresenta le diverse tribù e clan presenti nel nostro [country|e]. Sono tradizionalmente organizzati in gruppi di lignaggio e parentela e dispersi principalmente nelle zone rurali. Questi diversi gruppi vivono e lavorano in modi molto diversi, e la loro distanza e relativa indipendenza dai principali centri di potere li rende difficili da governare. Le loro usanze uniche tipicamente danno loro anche una reputazione di guerrieri temibili e imprevedibili.\n$estate_common_crown_ending$"
  cossacks_estate: "Cosacchi"
  cossacks_estate_desc: "Questo ceto rappresenta diversi gruppi all'interno della popolazione [ShowCultureName('cossack_culture')] presenti nel nostro [country|e]. Organizzati in gruppi semi-nomadi e semi-militarizzati, vivono ai margini di altre nazioni, ma possono essere convinti a servirle fedelmente e essere di grande utilità se forniti degli incentivi appropriati.\n$estate_common_crown_ending$"
- estate_common_crown_ending: "In generale, è meglio che il ceto governativo abbia più potere degli altri stati."
+ estate_common_crown_ending: "In generale, è meglio che il ceto governativo abbia più potere degli altri Ceti."
  
  
  crown_estate_holy_order: "Capitolo"
@@ -154,7 +154,7 @@
  building_rights: "Diritti Edilizi"
  building_rights_desc: "Sviluppare i nostri insediamenti e città è un'impresa costosa. Concedendo i diritti edilizi alla popolazione locale, ridurremo alla fine il costo complessivo finale dello sviluppo. Tuttavia, concedere alla gente un tale permesso ne aumenterà notevolmente l'influenza."
  burghers_royal_burgh_commissioners: "Commissari dei Borghi Reali"
- burghers_royal_burgh_commissioners_desc: "I Commissari dei Borghi Reali, che rappresentano i borghi autorizzati dalla [ShowEstateTypeName('crown_estate')] di [GetCountry('SCO').GetName], si riuniscono regolarmente per salvaguardare i loro privilegi, regolamentare il commercio e consigliare il sovrano della nazione. Attraverso la loro autorità collettiva nella Convenzione dei Borghi Reali, assicurano che le comunità commerciali di [GetCountry('SCO').GetNameWithNoTooltip] rimangano vitali per il governo, l'economia e la legge, fungendo da contrappeso al potere dellà $nobles_estate$ e del [ShowEstateTypeName('clergy_estate')]."
+ burghers_royal_burgh_commissioners_desc: "I Commissari dei Borghi Reali, che rappresentano i borghi autorizzati dalla [ShowEstateTypeName('crown_estate')] di [GetCountry('SCO').GetName], si riuniscono regolarmente per salvaguardare i loro privilegi, regolamentare il commercio e consigliare il sovrano della nazione. Attraverso la loro autorità collettiva nella Convenzione dei Borghi Reali, assicurano che le comunità commerciali della [GetCountry('SCO').GetNameWithNoTooltip] rimangano vitali per il governo, l'economia e la legge, fungendo da contrappeso al potere dellà $nobles_estate$ e del [ShowEstateTypeName('clergy_estate')]."
  burghers_land_rights: "Diritti Fondiari della $burghers_estate$"
  burghers_land_rights_desc: "Le leggi riguardanti la proprietà terriera sono state recentemente oggetto di accesi dibattiti a corte. Espanderemo i diritti di proprietà terriera della nostra [ShowEstateTypeName('burghers_estate')], con l'obiettivo di rendere le varie gilde amministrative più acquiescenti in cambio di un maggiore potere."
  commercial_advisory_council: "Consiglio Consultivo Commerciale"
@@ -247,7 +247,7 @@
  reduced_from_military_obligations_desc: "In cambio della loro lealtà alla nostra autorità centrale, possiamo ridurre o eliminare gli obblighi militari per coloro che abbracciano una vita di fede nelle braccia del divino."
 
  office_of_the_sankar_zouma_privilege: "Ufficio del Sankar-Zouma"
- office_of_the_sankar_zouma_privilege_desc: "Il Sankar-Zouma è una prestigiosa carica concessa ai [GetCountry('MAL').GetGovernment.GetEstateName('nobles_estate')] dalla più alta autorità del paese. Il suo ruolo, molto simile al Farima-Soura, ruota attorno all'esercizio dell'autorità lungo tutte le rotte commerciali attraverso il confine meridionale."
+ office_of_the_sankar_zouma_privilege_desc: "Il Sankar-Zouma è una prestigiosa carica concessa [ROOT.GetCountry.Custom('IT_NOBLES_L')][GetCountry('MAL').GetGovernment.GetEstateName('nobles_estate')] dalla più alta autorità del paese. Il suo ruolo, molto simile al Farima-Soura, ruota attorno all'esercizio dell'autorità lungo tutte le rotte commerciali attraverso il confine meridionale."
 
  office_of_the_farima_soura_privilege: "Ufficio del Farima-Soura"
  office_of_the_farima_soura_privilege_desc: "Incaricato di sorvegliare il confine settentrionale, il Farima-Soura monitora il traffico attraverso il confine sahariano e supervisiona la sicurezza e il rapido passaggio di tutto il traffico mercantile in entrata e uscita dai nostri confini."
@@ -274,7 +274,7 @@
  peasants_no_poll_tax_privilege_desc: "In seguito alla rivolta di Wat Tyler, la punitiva tassa di capitazione è abolita e vengono date assicurazioni che non sarà reintrodotta."
 
  land_owning_farmers: "Contadini Proprietari Terrieri"
- land_owning_farmers_desc: "I contadini [GetCountry('SWE').GetAdjective] detengono una posizione insolitamente forte rispetto ai loro pari in gran parte dell'[ShowContinentName('europe')] feudale. Posseggono la loro terra direttamente, pagano le tasse direttamente alla corona e spesso hanno voce nelle assemblee locali, dando loro un certo grado di autonomia e protezione legale. Questi agricoltori non erano servi; molti sono armati e servono nelle leve. I loro diritti sono radicati nell'antico diritto consuetudinario e la loro relativa indipendenza è un elemento fondamentale della società rurale svedese."
+ land_owning_farmers_desc: "I contadini [GetCountry('SWE').Custom('IT_ADJ_MP')] detengono una posizione insolitamente forte rispetto ai loro pari in gran parte dell'[ShowContinentName('europe')] feudale. Posseggono la loro terra direttamente, pagano le tasse direttamente alla corona e spesso hanno voce nelle assemblee locali, dando loro un certo grado di autonomia e protezione legale. Questi agricoltori non erano servi; molti sono armati e servono nelle leve. I loro diritti sono radicati nell'antico diritto consuetudinario e la loro relativa indipendenza è un elemento fondamentale della società rurale svedese."
  
 #Aragon      
  general_privilege: "Privilegio Generale di [GetCountry('ARA').GetNameWithNoTooltip]"
@@ -308,7 +308,7 @@
  powerful_italian_families_desc: "L'anarchia e la disobbedienza nella città di [ShowLocationName('rome')] e nelle altre località italiane sono aumentate notevolmente dopo che il [GetCountry('PAP').GetGovernment.GetRulerTitle] ha spostato la corte ad [ShowLocationName('avignon')]. Ora quei territori sono sotto il controllo di potenti famiglie italiane come i Colonna e gli [ShowDynastyName('orsini_dynasty')], che sono quasi completamente indipendenti dal [GetCountry('PAP').GetGovernment.GetRulerTitle]."
 
  french_cardinals: "Cardinali Francesi"
- french_cardinals_desc: "Dalla morte di [GetCharacter('pap_boniface_viii').GetName] e il trasferimento della corte ad [ShowLocationName('avignon')], la maggior parte dei cardinali che vi affluiscono sono di origine [ShowCultureGroupName('french_group')] e sotto l'influenza del [GetCountry('FRA').GetGovernment.GetRulerTitle] di [GetCountry('FRA').GetName], la cui presa sul [GetCountry('PAP').GetName] non permetterà un ritorno a [ShowLocationName('rome')]."
+ french_cardinals_desc: "Dalla morte di [GetCharacter('pap_boniface_viii').GetName] e il trasferimento della corte ad [ShowLocationName('avignon')], la maggior parte dei cardinali che vi affluiscono sono di origine [ShowCultureGroupName('french_group')] e sotto l'influenza del [GetCountry('FRA').GetGovernment.GetRulerTitle] di [GetCountry('FRA').GetName], la cui presa sullo [GetCountry('PAP').GetName] non permetterà un ritorno a [ShowLocationName('rome')]."
 
  cardinal_lead_guilds: "Gilde Guidate da Cardinali"
  cardinal_lead_guilds_desc: "Le gilde e altre associazioni di mercanti e commercianti sono un male necessario. Mettendo un pio cardinale a capo di esse, ci assicureremo che nessuna organizzazione si allontani dal sentiero di Dio e che il peccato dell'avidità non offuschi la mente della nostra [ShowEstateTypeName('burghers_estate')]."
@@ -716,7 +716,7 @@
  residence_in_versailles_desc: "La famiglia [GetCountry('FRA').GetGovernment.GetAdjective] ha esteso un'offerta di residenza per i membri delle dinastie prominenti della [ShowEstateTypeName('nobles_estate')] di vivere nel palazzo di Versailles."
 
  permanent_residence_in_versailles: "Residenza Permanente a Versailles"
- permanent_residence_in_versailles_desc: "Sono state fatte espansioni a Versailles che permettono ai membri della [GetCountry('FRA').GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] di prendere residenza permanente nel palazzo insieme alla famiglia [GetCountry('FRA').GetGovernment.GetAdjective]. Mentre coloro che non sono della famiglia [GetCountry('FRA').GetGovernment.GetAdjective] godono dei lussi del palazzo, ciò è avvenuto al costo di un'influenza politica notevolmente diminuita, per mantenere il favore del [GetCountry('FRA').GetGovernment.GetRulerTitle]. Questo abbandono delle loro tenute personali ha anche lasciato meno spazio per intrighi e complotti politici, rendendoli dipendenti dal governo di Versailles."
+ permanent_residence_in_versailles_desc: "Sono state fatte espansioni a Versailles che permettono ai membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][GetCountry('FRA').GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] di prendere residenza permanente nel palazzo insieme alla famiglia [GetCountry('FRA').GetGovernment.GetAdjective]. Mentre coloro che non sono della famiglia [GetCountry('FRA').GetGovernment.GetAdjective] godono dei lussi del palazzo, ciò è avvenuto al costo di un'influenza politica notevolmente diminuita, per mantenere il favore del [GetCountry('FRA').GetGovernment.GetRulerTitle]. Questo abbandono delle loro tenute personali ha anche lasciato meno spazio per intrighi e complotti politici, rendendoli dipendenti dal governo di Versailles."
  
  great_offices_of_the_crown_of_france: "Grandi Uffici della Corona di [GetCountry('FRA').GetNameWithNoTooltip]"
  great_offices_of_the_crown_of_france_desc: "Gli uffici governativi più importanti all'interno della nostra amministrazione centrale sono riservati alla [ShowEstateTypeName('nobles_estate')] all'interno del nostro regno."
@@ -731,7 +731,7 @@
  fra_marcel_compromise_ordinance_desc: "Un accordo di compromesso tra la [ShowEstateTypeName('crown_estate')] e Étienne Marcel, dove la $crown_estate$ cede potere a Marcel. In cambio, gli Stati Generali hanno concesso la richiesta di riscuotere più tasse."
  
  fra_papacy_pragmatic_sanctions: "Sanzione Pragmatica di [ShowLocationNameWithNoTooltip('bourges')]"
- fra_papacy_pragmatic_sanctions_desc: "Attraverso queste sanzioni, la Chiesa [ShowReligionAdjective('catholic')] in [GetCountry('FRA').GetName] ottiene una maggiore indipendenza amministrativa da [GetCountry('PAP').GetName], poiché permette la nomina elettiva a uffici ecclesiastici attraverso i mezzi di un concilio generale della Chiesa. Sebbene queste sanzioni compiacciano il [ShowEstateTypeName('clergy_estate')], la nostra influenza e relazione con la Santa Sede potrebbero soffrire."
+ fra_papacy_pragmatic_sanctions_desc: "Attraverso queste sanzioni, la Chiesa [ShowReligionAdjective('catholic')] in [GetCountry('FRA').GetName] ottiene una maggiore indipendenza amministrativa dallo [GetCountry('PAP').GetName], poiché permette la nomina elettiva a uffici ecclesiastici attraverso i mezzi di un concilio generale della Chiesa. Sebbene queste sanzioni compiacciano il [ShowEstateTypeName('clergy_estate')], la nostra influenza e relazione con la Santa Sede potrebbero soffrire."
 
  #India                                                 
  vij_tamil_trading_rights: "Diritti Commerciali [ShowCultureNameWithNoTooltip('tamil')]"
@@ -823,7 +823,7 @@
 
 #Songhai        
  promotion_of_muslim_scholars: "Promozione degli Studiosi Musulmani"
- promotion_of_muslim_scholars_desc: "Per elevare ulteriormente la [ROOT.GetCountry.GetName] come centro di apprendimento della fede [ShowReligionGroupAdjective('muslim')], dobbiamo assicurarci che più studiosi entrino nella nostra amministrazione, nonostante le alleanze che potrebbero avere."
+ promotion_of_muslim_scholars_desc: "Per elevare ulteriormente [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] come centro di apprendimento della fede [ShowReligionGroupAdjective('muslim')], dobbiamo assicurarci che più studiosi entrino nella nostra amministrazione, nonostante le alleanze che potrebbero avere."
 
  #Persia        
  ira_iranian_art_patronage: "Patrocinio Artistico [ShowCultureGroupNameWithNoTooltip('iranian_group')]"
