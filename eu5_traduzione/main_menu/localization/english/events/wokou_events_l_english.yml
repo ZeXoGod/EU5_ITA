@@ -4,7 +4,7 @@
  wokou_name_wokou: "Wōkòu"
 
  wokou_events.1.title: "Raid [ROOT.GetCountry.Custom('GetWokouName')|U]!"
- wokou_events.1.desc: "I temibili [ROOT.GetCountry.Custom('GetWokouName')] hanno appena lanciato un attacco alla nostra provincia di [target_province.GetName], e specialmente al porto di [target_location.GetName]. Sebbene vorremmo poter dire di aver respinto quegli invasori, la verità è molto più grave. Sfortunatamente, la nostra guarnigione locale non è stata semplicemente in grado di rispondere in tempo, portando a molta distruzione in [target_province.GetNameWithNoTooltip]. Case bruciate, famiglie ridotte in schiavitù, beni rubati, tutta quella miseria è stata scatenata sul povero Stato [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Dobbiamo far pagare quei pirati."
+ wokou_events.1.desc: "I temibili [ROOT.GetCountry.Custom('GetWokouName')] hanno appena lanciato un attacco alla nostra provincia di [target_province.GetName], e specialmente al porto di [target_location.GetName]. Sebbene vorremmo poter dire di aver respinto quegli invasori, la verità è molto più grave. Sfortunatamente, la nostra guarnigione locale non è stata semplicemente in grado di rispondere in tempo, portando a molta distruzione in [target_province.GetNameWithNoTooltip]. Case bruciate, famiglie ridotte in schiavitù, beni rubati, tutta quella miseria è stata scatenata sul poveri popolani. Dobbiamo far pagare quei pirati."
  wokou_events.1.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
 
  wokou_events.2.title: "Il Nostro Raid su [target_province.GetNameWithNoTooltip]"
@@ -12,8 +12,8 @@
  wokou_events.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  wokou_amount_of_slaves_gained: "Un totale di [SCOPE.GetLocalVariable('slaves_amount').GetValue|0] [ShowPopTypeName('slaves')] sono stati guadagnati in [ROOT.GetCountry.GetCapital.GetName]."
 
- wokou_events.3.title: "I [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Fuggono verso [target_country.GetNameWithNoTooltip]"
- wokou_events.3.desc: "Non tutti i cittadini [ROOT.GetCountry.GetAdjective] sono fortunati come i nostri cortigiani o lo Stato [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] che vivono tutti vite molto appaganti. Molti, specialmente lo Stato [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] di [target_location.GetName], vivono in condizioni deplorevoli o addirittura pietose. Non sorprende quindi che molti di loro si rivolgano al crimine per sfuggire alla povertà. Molti dei [target_pop.GetName], ad esempio, sembrano essere fuggiti dalle loro case per unirsi al [target_country.GetLongName]."
+ wokou_events.3.title: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Fuggono verso [target_country.GetNameWithNoTooltip]"
+ wokou_events.3.desc: "Non tutti i cittadini [ROOT.GetCountry.Custom('IT_ADJ_MP')] sono fortunati come i nostri cortigiani o [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] che vivono tutti vite molto appaganti. Molti, specialmente [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] di [target_location.GetName], vivono in condizioni deplorevoli o addirittura pietose. Non sorprende quindi che molti di loro si rivolgano al crimine per sfuggire alla povertà. Molti dei [target_pop.GetName], ad esempio, sembrano essere fuggiti dalle loro case per unirsi al [target_country.GetLongName]."
  wokou_events.3.a: "Le loro vite sono abbastanza buone! La loro fuga è vera codardia."
 
  wokou_events.4.title: "La Disgrazia di [target_location.GetNameWithNoTooltip]"

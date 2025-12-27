@@ -14,7 +14,7 @@
  lots_of_hussites_tt: "Molti [pops|e] nelle nostre [locations|e] nella [region|e] [ROOT.GetCountry.GetCapital.GetRegion.GetName] si convertiranno all'[ShowReligionName('hussite')]"
 
  western_schism.5.title: "Erosione della Fede"
- western_schism.5.desc: "La confusione causata dal conflitto tra [target_schism_pope_cardinal.GetName] e [target_schism_opponent_cardinal.GetName] ha avuto un impatto grave sulla stabilità [ROOT.GetCountry.Custom('IT_DEL_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. L'incertezza sull'occupazione della Santa Sede sta diffondendo dubbi sul corretto servizio religioso e sta lentamente erodendo la fede della gente."
+ western_schism.5.desc: "La confusione causata dal conflitto tra [target_schism_pope_cardinal.GetName] e [target_schism_opponent_cardinal.GetName] ha avuto un impatto grave sulla stabilità [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. L'incertezza sull'occupazione della Santa Sede sta diffondendo dubbi sul corretto servizio religioso e sta lentamente erodendo la fede della gente."
  western_schism.5.a: "Pregheremo per una rapida fine dei loro litigi."
  western_schism.5.b: "Forse la nostra gente dovrebbe valutare delle alternative."
 
@@ -27,9 +27,9 @@
  western_schism_resolution_impact_negative.tt: "La parte prescelta perderà un certo sostegno nello $western_schism$"
 
  western_schism.7.title: "Il Fiorente Commercio in [ShowRegionNameWithNoTooltip('italy_region')]"
- western_schism.7.desc: "Grazie agli sforzi di [target_schism_pope_cardinal.GetName] in [ShowRegionName('italy_region')], il commercio con la regione sta fiorendo. La nostra [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] è molto soddisfatta di questa situazione e della tutela dei suoi interessi nella regione."
+ western_schism.7.desc: "Grazie agli sforzi di [target_schism_pope_cardinal.GetName] in [ShowRegionName('italy_region')], il commercio con la regione sta fiorendo. [ROOT.GetCountry.Custom('IT_BURGHERS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_BURGHERS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] molto soddisfatt[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] di questa situazione e della tutela dei propri interessi nella regione."
  western_schism.7.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- italian_trade: "Legami con [ShowRegionNameWithNoTooltip('italy_region')]"
+ italian_trade: "Legami con l'[ShowRegionNameWithNoTooltip('italy_region')]"
 
  western_schism_8_10_common_string: "La nostra posizione nello [GetSituationByKey('western_schism').GetName] ha suscitato proteste popolari in alcune parti del nostro Paese. La popolazione di [target_location.GetName] ha iniziato ad armarsi e a chiedere il nostro sostegno alla fazione di"
 
@@ -106,7 +106,7 @@
  western_schism.1300.a.tt: "Ogni membro della fede [THIS.GetReligion.GetName] cambia la propria opinione su [ROOT.GetCountry.GetName] di [ShowBiasValue('schism_called_council')|+=0]"
 
  western_schism.1301.title: "Il Consiglio di [target_location.GetNameWithNoTooltip]"
- western_schism.1301.desc: "I diplomatici di [council_country.GetName] sono arrivati ​​nel nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle], convocando i rappresentanti del nostro [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] per partecipare a un consiglio a [target_location.GetName]. Sebbene la legittimità del concilio sia già stata messa in discussione dagli oppositori, potrebbe rappresentare una tappa importante nella risoluzione dello [ShowSituationName('western_schism')].
+ western_schism.1301.desc: "I diplomatici di [council_country.GetName] sono arrivati ​​nel nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle], convocando i rappresentanti [ROOT.GetCountry.Custom('IT_CLERGY_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] per partecipare a un consiglio a [target_location.GetName]. Sebbene la legittimità del concilio sia già stata messa in discussione dagli oppositori, potrebbe rappresentare una tappa importante nella risoluzione dello [ShowSituationName('western_schism')].
  western_schism.1301.a: "Partecipiamo al concilio per sostenerlo."
  western_schism.1301.b: "Dobbiamo riconoscere l'autorità del concilio."
  western_schism.1301.c: "Respingiamo l'audacia di questi impostori."

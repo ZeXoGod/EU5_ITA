@@ -11,7 +11,7 @@
  great_pestilence.2.a: "Il tempo non migliorerà la nostra condizione..."
  
  great_pestilence.3.title: "Qualcuno è da Incolpare!"
- great_pestilence.3.desc: "La crudeltà della [ShowSituationName('great_pestilence')] sta uccidendo la nostra gente e sta facendo impazzire di dolore coloro che sopravvivono.\n\nUn gruppo di contadini sopravvissuti provenienti da [location_scope.GetName] ha perso completamente la ragione e ha attaccato e ucciso un gruppo di membri del nostro [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] per non aver impedito questo disastro placando [ROOT.GetCountry.GetReligion.GetGodName] in tempo.\n\nUn altro gruppo dei più devoti tra i loro vicini li ha attaccati per vendetta, per assicurarsi che non avessero attirato l'ira di [ROOT.GetCountry.GetReligion.GetGodName] con questa dimostrazione di violenza contro i loro inviati, e ne è seguito il caos."
+ great_pestilence.3.desc: "La crudeltà della [ShowSituationName('great_pestilence')] sta uccidendo la nostra gente e sta facendo impazzire di dolore coloro che sopravvivono.\n\nUn gruppo di contadini sopravvissuti provenienti da [location_scope.GetName] ha perso completamente la ragione e ha attaccato e ucciso un gruppo di membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] per non aver impedito questo disastro placando [ROOT.GetCountry.GetReligion.GetGodName] in tempo.\n\nUn altro gruppo dei più devoti tra i loro vicini li ha attaccati per vendetta, per assicurarsi che non avessero attirato l'ira di [ROOT.GetCountry.GetReligion.GetGodName] con questa dimostrazione di violenza contro i loro inviati, e ne è seguito il caos."
  great_pestilence.3.a: "Inviate delle guardie a punire gli aggressori."
  great_pestilence.3.b: "Meglio non intervenire."
 
@@ -32,6 +32,6 @@
  great_pestilence.6.c: "Nessuna tassa per chi soffre!"
 
  great_pestilence.7.t: "Persi per Sempre"
- great_pestilence.7.desc: "L'ira della [ShowSituationName('great_pestilence')] sta decimando tutte le caste di [target_location.GetName], persino i più devoti del nostro [ROOT.GetCountry.GetGovernment.GetEstateName(‘clergy_estate’)] non sono al riparo dalla malattia.\n\nLa loro perdita è doppia, poiché molti villaggi non hanno più nessuno che possa officiare i riti funebri appropriati, condannando i nuovi defunti a vagare persi come spiriti vendicativi e incapaci di passare nell'aldilà."
- great_pestilence.7.a: "Aiuteremo il [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ great_pestilence.7.desc: "L'ira della [ShowSituationName('great_pestilence')] sta decimando tutte le caste di [target_location.GetName], persino i più devoti [ROOT.GetCountry.Custom('IT_CLERGY_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')] [ROOT.GetCountry.GetGovernment.GetEstateName(‘clergy_estate’)] non sono al riparo dalla malattia.\n\nLa loro perdita è doppia, poiché molti villaggi non hanno più nessuno che possa officiare i riti funebri appropriati, condannando i nuovi defunti a vagare persi come spiriti vendicativi e incapaci di passare nell'aldilà."
+ great_pestilence.7.a: "Aiuteremo [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  great_pestilence.7.b: "Non possiamo fare niente."

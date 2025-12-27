@@ -1,10 +1,10 @@
 ﻿l_english:
  building.1.title: "Università di [new_university.GetNameWithNoTooltip]"
- building.1.desc: "Dopo una serie di accesi dibattiti degenerati in violenza, alcuni studiosi dell'Università di [old_university.GetName] sono fuggiti a [new_university.GetName] per fondarvi un'istituzione accademica rivale.\n\nGli ex studenti di [old_university.GetNameWithNoTooltip] costituiscono una parte considerevole del [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e ci stanno chiedendo di reprimere questa ribellione educativa."
+ building.1.desc: "Dopo una serie di accesi dibattiti degenerati in violenza, alcuni studiosi dell'Università di [old_university.GetName] sono fuggiti a [new_university.GetName] per fondarvi un'istituzione accademica rivale.\n\nGli ex studenti di [old_university.GetNameWithNoTooltip] costituiscono una parte considerevole [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_ADJ_FS')] e ci stanno chiedendo di reprimere questa ribellione educativa."
  building.1.a: "Incoraggia questa nuova istituzione accademica."
  building.1.b: "Ordina ai rifugiati di tornare a [old_university.GetNameWithNoTooltip]."
  #
  building.2.title: "Città e Accademia"
- building.2.desc: "Gli studenti dell'Università di [university.GetName] sono sotto la protezione del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e, in quanto tali, godono di diritti diversi rispetto agli abitanti della città. La convivenza tra le due comunità spesso genera diffidenza, ma di recente questa diffidenza è sfociata in violente rivolte."
+ building.2.desc: "Gli studenti dell'Università di [university.GetName] sono sotto la protezione [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e, in quanto tali, godono di diritti diversi rispetto agli abitanti della città. La convivenza tra le due comunità spesso genera diffidenza, ma di recente questa diffidenza è sfociata in violente rivolte."
  building.2.a: "Sostieni l'Università."
  building.2.b: "Sostieni i Cittadini."

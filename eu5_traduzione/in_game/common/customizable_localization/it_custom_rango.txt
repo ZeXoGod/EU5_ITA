@@ -546,6 +546,8 @@ IT_AL_TITOLO = {
     }
 }
 
+######################################################################
+
 IT_SUL_TITOLO = {
     type = character
     
@@ -760,6 +762,8 @@ IT_ART_RANGO = {
     }
 }
 
+###################################################################
+
 IT_DEL_RANGO = {
 	type = country
 	
@@ -834,6 +838,8 @@ IT_DEL_RANGO = {
         localization_key = "IT_ART_DEL"
     }
 }
+
+########################################################################################
 
 IT_DAL_RANGO = {
 	type = country
@@ -910,6 +916,8 @@ IT_DAL_RANGO = {
     }
 }
 
+#########################################################################
+
 IT_AL_RANGO = {
 	type = country
 	
@@ -984,6 +992,8 @@ IT_AL_RANGO = {
         localization_key = "IT_ART_AL"
     }
 }
+
+##########################################################################
 
 IT_SUL_RANGO = {
 	type = country
@@ -1060,6 +1070,8 @@ IT_SUL_RANGO = {
     }
 }
 
+###########################################################################
+
 IT_NEL_RANGO = {
 	type = country
 	
@@ -1134,6 +1146,8 @@ IT_NEL_RANGO = {
         localization_key = "IT_ART_NEL"
     }
 }
+
+############################################################################################
 
 IT_OA_RANGO = {
 	type = country
@@ -1306,4 +1320,387 @@ IT_DEL_LOCATION = {
 			}
 			localization_key = "IT_ART_DELL"	# Dell'Insediamento Rurale
 		}
+}
+
+########################################################
+
+IT_ART_NOSTRO_RANGO = {
+	type = country
+	
+	text = {
+		trigger = { 
+		is_elector = yes 
+		NOT = { government_type = government_type:theocracy }
+		}
+		localization_key = "IT_ART_NOSTRO_L"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
+		has_reform = government_reform:irish_earldom_reform
+		}
+		localization_key = "IT_ART_NOSTRO_L"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		government_type = government_type:theocracy
+		religion.group = religion_group:christian	
+		}
+		localization_key = "IT_ART_NOSTRO_IL"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_county }
+		localization_key = "IT_ART_NOSTRO_LA"
+	}
+	
+	text = {
+		trigger = { government_type = government_type:republic }
+		localization_key = "IT_ART_NOSTRO_LA"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_kingdom 
+		OR = {
+			TAG = CAS
+			TAG = ARA
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_LA"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:shogunate }
+		localization_key = "IT_ART_NOSTRO_LO"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_empire
+		is_leader_of_international_organization = international_organization:middle_kingdom	
+		}
+		localization_key = "IT_ART_NOSTRO_LA"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NOSTRO_L"
+	}
+	
+	text = {
+        trigger = { 
+            always = yes 
+        }
+        localization_key = "IT_ART_NOSTRO_IL"
+    }
+}
+
+IT_DEL_NOSTRO_RANGO = {
+	type = country
+	
+	text = {
+		trigger = { 
+		is_elector = yes 
+		NOT = { government_type = government_type:theocracy }
+		}
+		localization_key = "IT_ART_NOSTRO_DELL"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
+		has_reform = government_reform:irish_earldom_reform
+		}
+		localization_key = "IT_ART_NOSTRO_DELL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		government_type = government_type:theocracy
+		religion.group = religion_group:christian	
+		}
+		localization_key = "IT_ART_NOSTRO_DEL"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_county }
+		localization_key = "IT_ART_NOSTRO_DELLA"
+	}
+	
+	text = {
+		trigger = { government_type = government_type:republic }
+		localization_key = "IT_ART_NOSTRO_DELLA"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_kingdom 
+		OR = {
+			TAG = CAS
+			TAG = ARA
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_DELLA"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:shogunate }
+		localization_key = "IT_ART_NOSTRO_DELLO"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_empire
+		is_leader_of_international_organization = international_organization:middle_kingdom	
+		}
+		localization_key = "IT_ART_NOSTRO_DELLA"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NOSTRO_DELL"
+	}
+	
+	text = {
+        trigger = { 
+            always = yes 
+        }
+        localization_key = "IT_ART_NOSTRO_DEL"
+    }
+}
+
+##########################################################
+
+IT_NEL_NOSTRO_RANGO = {
+	type = country
+	
+	text = {
+		trigger = { 
+		is_elector = yes 
+		NOT = { government_type = government_type:theocracy }
+		}
+		localization_key = "IT_ART_NOSTRO_NELL"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
+		has_reform = government_reform:irish_earldom_reform
+		}
+		localization_key = "IT_ART_NOSTRO_NELL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		government_type = government_type:theocracy
+		religion.group = religion_group:christian	
+		}
+		localization_key = "IT_ART_NOSTRO_NEL"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_county }
+		localization_key = "IT_ART_NOSTRO_NELLA"
+	}
+	
+	text = {
+		trigger = { government_type = government_type:republic }
+		localization_key = "IT_ART_NOSTRO_NELLA"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_kingdom 
+		OR = {
+			TAG = CAS
+			TAG = ARA
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_NELLA"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:shogunate }
+		localization_key = "IT_ART_NOSTRO_NELLO"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_empire
+		is_leader_of_international_organization = international_organization:middle_kingdom	
+		}
+		localization_key = "IT_ART_NOSTRO_NELLA"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NOSTRO_NELL"
+	}
+	
+	text = {
+        trigger = { 
+            always = yes 
+        }
+        localization_key = "IT_ART_NOSTRO_NEL"
+    }
+}
+
+##############################################################################
+
+IT_AL_NOSTRO_RANGO = {
+	type = country
+	
+	text = {
+		trigger = { 
+		is_elector = yes 
+		NOT = { government_type = government_type:theocracy }
+		}
+		localization_key = "IT_ART_NOSTRO_ALL"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
+		has_reform = government_reform:irish_earldom_reform
+		}
+		localization_key = "IT_ART_NOSTRO_ALL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		government_type = government_type:theocracy
+		religion.group = religion_group:christian	
+		}
+		localization_key = "IT_ART_NOSTRO_AL"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_county }
+		localization_key = "IT_ART_NOSTRO_ALLA"
+	}
+	
+	text = {
+		trigger = { government_type = government_type:republic }
+		localization_key = "IT_ART_NOSTRO_ALLA"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_kingdom 
+		OR = {
+			TAG = CAS
+			TAG = ARA
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_ALLA"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:shogunate }
+		localization_key = "IT_ART_NOSTRO_ALLO"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_empire
+		is_leader_of_international_organization = international_organization:middle_kingdom	
+		}
+		localization_key = "IT_ART_NOSTRO_ALLA"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NOSTRO_ALL"
+	}
+	
+	text = {
+        trigger = { 
+            always = yes 
+        }
+        localization_key = "IT_ART_NOSTRO_AL"
+    }
+}
+
+####################################################################
+
+IT_SUL_NOSTRO_RANGO = {
+	type = country
+	
+	text = {
+		trigger = { 
+		is_elector = yes 
+		NOT = { government_type = government_type:theocracy }
+		}
+		localization_key = "IT_ART_NOSTRO_SULL"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
+		has_reform = government_reform:irish_earldom_reform
+		}
+		localization_key = "IT_ART_NOSTRO_SULL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		government_type = government_type:theocracy
+		religion.group = religion_group:christian	
+		}
+		localization_key = "IT_ART_NOSTRO_SUL"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_county }
+		localization_key = "IT_ART_NOSTRO_SULLA"
+	}
+	
+	text = {
+		trigger = { government_type = government_type:republic }
+		localization_key = "IT_ART_NOSTRO_SULLA"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_kingdom 
+		OR = {
+			TAG = CAS
+			TAG = ARA
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_SULLA"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:shogunate }
+		localization_key = "IT_ART_NOSTRO_SULLO"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_empire
+		is_leader_of_international_organization = international_organization:middle_kingdom	
+		}
+		localization_key = "IT_ART_NOSTRO_SULLA"
+	}
+	
+	text = {
+		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NOSTRO_SULL"
+	}
+	
+	text = {
+        trigger = { 
+            always = yes 
+        }
+        localization_key = "IT_ART_NOSTRO_SUL"
+    }
 }

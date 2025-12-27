@@ -5,7 +5,7 @@
  revolutionary_chaos_sided_with_monarchists_tt: "#Y Gli effetti sopra indicati si verificano perché ci siamo schierati con il $monarchists_side$#!\n"
  
  revolutionary_chaos.1.title: "Caos nel [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- revolutionary_chaos.1.desc: "Coloro che pensavano che la Rivoluzione e il [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] sarebbero state le risposte all'instabilità [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] sono sempre più disillusi. Il crescente tumulto che affligge la nostra nazione sta causando una sofferenza diffusa tra i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] e la [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] allo stesso modo.\n\nGli entusiasti della Rivoluzione sono diventati sempre più zelanti, incolpando i fallimenti del nuovo regime sugli 'Nemici della Rivoluzione', indipendentemente dalla loro effettiva affiliazione al pensiero conservatore. Nel frattempo, il movimento controrivoluzionario guidato dai resti della vecchia [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] mira a restaurare la vecchia [ShowGovernmentTypeName('monarchy')]."
+ revolutionary_chaos.1.desc: "Coloro che pensavano che la Rivoluzione e il [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] sarebbero state le risposte all'instabilità [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] sono sempre più disillusi. Il crescente tumulto che affligge la nostra nazione sta causando una sofferenza diffusa tra [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] e [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] allo stesso modo.\n\nGli entusiasti della Rivoluzione sono diventati sempre più zelanti, incolpando i fallimenti del nuovo regime sugli 'Nemici della Rivoluzione', indipendentemente dalla loro effettiva affiliazione al pensiero conservatore. Nel frattempo, il movimento controrivoluzionario guidato dai vecchi membri restanti [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] mira a restaurare la vecchia [ShowGovernmentTypeName('monarchy')]."
  revolutionary_chaos.1.a: "La Rivoluzione deve prevalere!"
  revolutionary_chaos.1.a.tt: "Ci schiereremo con la #Y $revolution_side$#!, abilitando [events|e] che riguardano l'opposizione al $monarchists_side$"
  revolutionary_chaos.1.b: "Adottare un approccio più conservatore alla nostra situazione."
@@ -17,7 +17,7 @@
  revolutionary_chaos.2.b: "Tollerare tutti i credi."
  
  revolutionary_chaos.3.title: "$serfdom_focus$"
- revolutionary_chaos.3.desc: "Il malcontento sta crescendo tra i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] della nostra società a causa del pesante fardello posto sulle loro spalle. Il loro dissenso contro il sistema signorile, le tasse elevate e la carenza di cibo ha provocato diverse rivolte in tutta la nazione."
+ revolutionary_chaos.3.desc: "Il malcontento sta crescendo tra [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] della nostra società a causa del pesante fardello posto sulle loro spalle. Il loro dissenso contro il sistema signorile, le tasse elevate e la carenza di cibo ha provocato diverse rivolte in tutta la nazione."
  revolutionary_chaos.3.a: "Limitare la $serfdom_focus$."
  revolutionary_chaos.3.a.tt: "I [ShowPopTypeName('peasants')] e i [ShowPopTypeName('laborers')] nella [ROOT.GetCountry.GetCapital.GetRegion.GetName] si uniscono a [target_rebel.GetName] e perdono [target_pop_for_loc.MakeScope.ScriptValue('pop_satisfaction_ultimate_penalty')|+2%] di [pop_satisfaction|e]"
  revolutionary_chaos.3.b: "Mantenere le masse in catene."
@@ -80,7 +80,7 @@
  revolutionary_chaos.104.a: "Alla ghigliottina con loro. Facile e veloce."
  
  revolutionary_chaos.201.title: "Repubblicanesimo in Discussione"
- revolutionary_chaos.201.desc: "Le vie conservatrici di [target_character.GetName] potrebbero aver trovato l'apprezzamento della [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], ma hanno portato grande delusione ai membri dell'ex Terzo Stato. Molti si chiedono se il nostro stato sia ancora veramente un [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]."
+ revolutionary_chaos.201.desc: "Le vie conservatrici di [target_character.GetName] potrebbero aver trovato l'apprezzamento [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], ma hanno portato grande delusione ai membri dell'ex Terzo Stato. Molti si chiedono se il nostro stato sia ancora veramente un [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]."
  revolutionary_chaos.201.a: "Ma certo che lo siamo!"
  
  revolutionary_chaos.202.title: "I Rivoluzionari di [target_province.GetName]"
@@ -91,8 +91,8 @@
  rev_rebellion_might_start_tt: "Tutti i [ShowPopTypeName('burghers')] e i [ShowPopTypeName('peasants')] di [target_province.GetName] si uniscono a [target_rebel.GetName] e perdono [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] di [pop_satisfaction|e]"
  revolutionary_rebels: "Ribelli Rivoluzionari"
  
- revolutionary_chaos.203.title: "Ascesa della [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
- revolutionary_chaos.203.desc: "Attraverso gli sforzi collettivi dell'Assemblea Nazionale per mantenere l'ordine, la vecchia gerarchia sociale ha iniziato a riprendersi dagli orrori della Rivoluzione. La [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in particolare promette la sua lealtà a [target_character.GetName]."
+ revolutionary_chaos.203.title: "Ascesa [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ revolutionary_chaos.203.desc: "Attraverso gli sforzi collettivi dell'Assemblea Nazionale per mantenere l'ordine, la vecchia gerarchia sociale ha iniziato a riprendersi dagli orrori della Rivoluzione. [ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in particolare promette la sua lealtà a [target_character.GetName]."
  revolutionary_chaos.203.a: "Che questo porti a una rapida ripresa dello stato."
  
  revolutionary_chaos.204.title: "I Rivoluzionari Lasciano il Paese"
@@ -113,7 +113,7 @@
  
  revolutionary_chaos.1001.title: "La Rivolta Controrivoluzionaria"
  revolutionary_chaos.1001.title.FRA: "La Rivolta degli Chouan"
- revolutionary_chaos.1001.desc: "L'insoddisfazione per la direzione che ha preso la Rivoluzione è giunta al culmine con l'esecuzione del precedente regnante. Molti ora si pentono di aver rovesciato il vecchio regime, che offriva relativa stabilità, se non libertà. I membri della [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e della [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] in [target_area.GetName] si sono uniti per lanciare una rivolta su larga scala contro il regime attuale in un subdolo piano per rovesciare il [ROOT.GetCountry.GetLongName]!"
+ revolutionary_chaos.1001.desc: "L'insoddisfazione per la direzione che ha preso la Rivoluzione è giunta al culmine con l'esecuzione del precedente regnante. Molti ora si pentono di aver rovesciato il vecchio regime, che offriva relativa stabilità, se non libertà. I membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] in [target_area.GetName] si sono uniti per lanciare una rivolta su larga scala contro il regime attuale in un subdolo piano per rovesciare il [ROOT.GetCountry.GetLongName]!"
  revolutionary_chaos.1001.a: "Li schiacceremo."
  rev_revolting_area_tt: "Tutta la popolazione tranne i [ShowPopTypeName('burghers')] a [target_area.GetName] si unisce a [target_rebel.GetName] e perde [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] di [pop_satisfaction|e]"
  
@@ -123,7 +123,7 @@
  revolutionary_chaos.1100.a: "Assistiamo ai [target_character.GetHerHis] successi!"
  
  revolutionary_chaos.1101.title: "L'[ShowGovernmentReformNameWithNoTooltip('revolutionary_autocracy')]"
- revolutionary_chaos.1101.desc: "L'attuale [ShowDisasterName('revolutionary_chaos')] ha lasciato il [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] ferito e segnato. Ci sono state molte voci contro gli ideali rivoluzionari; molti tentativi di restaurare l' #italic ancien régime#!\n\nNel frattempo, [target_character.GetName] continua a servire il [ROOT.GetCountry.GetLongName] non solo con lealtà, ma anche con risultati eccezionali. [target_character.GetSheHe|U] ottiene sempre più sostenitori all'interno della [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e nell'esercito, garantendogli/le un'influenza politica imprevista. Un [target_character.GetWomanMan] come [target_character.GetName] coglierà certamente l'opportunità di prendere il potere dello stato."
+ revolutionary_chaos.1101.desc: "L'attuale [ShowDisasterName('revolutionary_chaos')] ha lasciato il [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] ferito e segnato. Ci sono state molte voci contro gli ideali rivoluzionari; molti tentativi di restaurare l' #italic ancien régime#!\n\nNel frattempo, [target_character.GetName] continua a servire il [ROOT.GetCountry.GetLongName] non solo con lealtà, ma anche con risultati eccezionali. [target_character.GetSheHe|U] ottiene sempre più sostenitori all'interno [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e nell'esercito, garantendogli/le un'influenza politica imprevista. Un [target_character.GetWomanMan] come [target_character.GetName] coglierà certamente l'opportunità di prendere il potere dello stato."
  revolutionary_chaos.1101.a: "E così sia! Che [target_character.GetShortNameWithNoTooltip] regni su [ROOT.GetCountry.GetNameWithNoTooltip]!"
  revolutionary_chaos.1101.b: "Non abbiamo bisogno di un altro Cesare!"
  bonaparte_rebels: "Ribelli del Colpo di Stato"
@@ -144,7 +144,7 @@
  revolutionary_chaos.300.title: "Tempi più Calmi"
  revolutionary_chaos.300.desc.rev_republic: "Il tempo delle rivolte e della costante instabilità sembra essere alle nostre spalle. La Rivoluzione è riuscita a trasformare la nostra società, spazzando via il vecchio e rinnovando lo stato. Le cose non saranno mai più come prima. Il [ROOT.GetCountry.GetLongName] prevale in un mondo dominato dalle monarchie assolute!"
  revolutionary_chaos.300.desc.rev_autocracy: "Il grande [ROOT.GetCountry.GetLongName] è stato finalmente liberato dalla sua instabilità politica ed economica grazie alle riforme radicali e all'autorità di [target_character.GetName]. Sebbene alcuni possano dire che c'è poca differenza tra [target_character.GetShortNameWithNoTooltip] e un normale Monarca assoluto, i [target_character.GetHerHis] risultati parlano per la [target_character.GetHerHis] competenza come capo del popolo [ROOT.GetCountry.GetAdjectiveWithNoTooltip]."
- revolutionary_chaos.300.desc.failed_rev: "Il tempo delle rivolte e della costante instabilità sembra essere alle nostre spalle. La Rivoluzione è stata un fallimento totale poiché solo pochi dei vecchi problemi del terzo stato sono stati veramente risolti, mentre la sofferenza della [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] è stata ampiamente ignorata. A causa di fallimenti interni ed esterni, gli ideali della Rivoluzione non esistono più e molti dei nostri cittadini stanno rispolverando i simboli dell'ancien régime"
+ revolutionary_chaos.300.desc.failed_rev: "Il tempo delle rivolte e della costante instabilità sembra essere alle nostre spalle. La Rivoluzione è stata un fallimento totale poiché solo pochi dei vecchi problemi del terzo stato sono stati veramente risolti, mentre la sofferenza [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] è stata ampiamente ignorata. A causa di fallimenti interni ed esterni, gli ideali della Rivoluzione non esistono più e molti dei nostri cittadini stanno rispolverando i simboli dell'ancien régime"
  revolutionary_chaos.300.desc: "Le rivolte hanno finalmente trovato la loro fine. Sebbene il danno all'attuale [ROOT.GetCountry.GetLongName] debba ancora essere misurato, il conflitto tra rivoluzionari e reazionari ci ha lasciato in una posizione vulnerabile per molti anni a venire."
  revolutionary_chaos.300.a: "Lunga vita al [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip]!"
  revolutionary_chaos.300.b: "Salute a [target_character.GetShortNameWithNoTooltip]!"

@@ -4,8 +4,8 @@
  hussite_flavor.1.a: "I suoi servizi ci saranno utili."
  hussite_flavor.1.b: "Non possiamo permetterci la spesa."
 
- hussite_flavor.2.title: "Membri Prominenti del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] criticano le nostre politiche"
- hussite_flavor.2.desc: "Guidare il nostro popolo non è un compito semplice. Per questo motivo, molti membri del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno tentato di scalare la nostra gerarchia amministrativa per correggere, a loro dire, la rotta delle nostre azioni. Si ritiene ampiamente che diverse nostre politiche non siano applicate correttamente o siano addirittura in contrasto con i principi Ussiti."
+ hussite_flavor.2.title: "Membri Prominenti [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] criticano le nostre politiche"
+ hussite_flavor.2.desc: "Guidare il nostro popolo non è un compito semplice. Per questo motivo, molti membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno tentato di scalare la nostra gerarchia amministrativa per correggere, a loro dire, la rotta delle nostre azioni. Si ritiene ampiamente che diverse nostre politiche non siano applicate correttamente o siano addirittura in contrasto con i principi Ussiti."
  hussite_flavor.2.a: "Dobbiamo correggere la rotta."
  hussite_flavor.2.b: "Staranno in silenzio."
 
@@ -18,7 +18,7 @@
  hussite_flavor.4.title: "Fuori Sintonia con il Divino"
  hussite_flavor.4.desc: "Non abbiamo forse pregato abbastanza di recente? La comunione è forse diventata un compito frivolo a cui il nostro popolo partecipa come fosse una semplice incombenza? Sembra che abbiamo banalizzato i rituali legati alla pratica degli insegnamenti di [GetCharacter('boh_jan_hus').GetName] e nel processo perso l’essenza di ciò che rende la nostra pietà un’intima connessione con il divino. Di conseguenza, molti popolani di [target_location.GetName] hanno preso le armi contro la decadenza che ha infettato i nostri affari clericali…"
  hussite_flavor.4.a: "Non possiamo che biasimare noi stessi…"
- hussite_flavor.4.b: "Colpa della debole leadership del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ hussite_flavor.4.b: "Colpa della debole leadership [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  target_character_dies_very_violently_tt: "[target_character.GetName] subirà una morte violenta per mano della folla"
 
 #New Events
@@ -34,7 +34,7 @@
  hussite_flavor.6.title: "Cooperazione Interreligiosa"
  hussite_flavor.6.desc: "Ci sono stati molti sussurri e discussioni nel nostro dominio riguardo l’impiego di consiglieri eretici, specialmente in ruoli influenti all’interno del nostro gabinetto. Nonostante il pettegolezzo, [target_character.GetName] si è ripetutamente dimostrato parte indispensabile del nostro governo. Le sue politiche ci hanno aiutato a plasmare il nostro dominio e a mantenere un saldo controllo sugli affari interni ed esteri."
  hussite_flavor.6.a: "Deve essere bandito dal gabinetto!"
- hussite_flavor.6.b: "Lascia che il [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] si lamenti della sua nomina."
+ hussite_flavor.6.b: "Lascia che [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] si lamenti della sua nomina."
  hussite_flavor.6.c: "La cooperazione è la chiave della nostra prosperità!"
 
  hussite_flavor.7.title: "Sermoni Cantati a [target_location.GetNameWithNoTooltip]"
@@ -44,9 +44,9 @@
  hussite_flavor.7.c: "Cantino la resilienza e la prosperità del nostro popolo."
 
  hussite_flavor.8.title: "Tumulto Religioso a [target_location.GetNameWithNoTooltip]"
- hussite_flavor.8.desc: "I dibattiti riguardo le questioni religiose non sono estranei a momenti accesi. Una recente discussione tra minoranze in [target_location.GetName] e rappresentanti del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] ha portato questi ultimi a fuggire per timore della loro vita. Di conseguenza, abbiamo ricevuto pressanti richieste d’intervento a [target_location.GetNameWithNoTooltip] per porre fine a quella che potrebbe diventare una pericolosa ribellione…"
+ hussite_flavor.8.desc: "I dibattiti riguardo le questioni religiose non sono estranei a momenti accesi. Una recente discussione tra minoranze in [target_location.GetName] e rappresentanti [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] ha portato questi ultimi a fuggire per timore della loro vita. Di conseguenza, abbiamo ricevuto pressanti richieste d’intervento a [target_location.GetNameWithNoTooltip] per porre fine a quella che potrebbe diventare una pericolosa ribellione…"
  hussite_flavor.8.a: "Dobbiamo intervenire."
- hussite_flavor.8.b: "Gli affari del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] non ci riguardano."
+ hussite_flavor.8.b: "Gli affari [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] non ci riguardano."
 
  hussite_flavor.9.title: "Gli Insegnamenti di Jan Hus si Diffondono"
  hussite_flavor.9.desc: "Un vento di cambiamento soffia attraverso le terre, portando con sé gli insegnamenti rivoluzionari di Jan Hus e della fede hussita. Gli oppressi e i disillusi trovano conforto e ispirazione in queste credenze trasformative, riunendosi in sfida all’ordine costituito.\n\nIl fervore del movimento hussita si diffonde come un incendio, avvolgendo i cuori e le menti del popolo. La semplicità e la franchezza degli insegnamenti di Hus risuonano profondamente, offrendo un’alternativa all’opulenza e alla corruzione della Chiesa cattolica. È un tempo di sconvolgimento, mentre gli individui si liberano dalle catene della tradizione e abbracciano una nuova visione della spiritualità."
@@ -72,7 +72,7 @@
  hussite_flavor.11.a: "Musica per le nostre orecchie!"
 
  hussite_flavor.13.title: "Un Predicatore Esemplare"
- hussite_flavor.13.desc: "Un predicatore carismatico nelle file Ussite a [target_location.GetName] ha iniziato a diffondere idee che si discostano più del solito dai nostri insegnamenti. Alcuni vedono in [target_character.GetHerHim] un visionario, altri temono che [target_character.GetSheHe] possa causare uno scisma tra le nostre fila. I membri del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono stati molto vocali riguardo la questione, ma esiste il timore che la popolazione locale possa insorgere se interveniamo contro una figura tanto influente."
+ hussite_flavor.13.desc: "Un predicatore carismatico nelle file Ussite a [target_location.GetName] ha iniziato a diffondere idee che si discostano più del solito dai nostri insegnamenti. Alcuni vedono in [target_character.GetHerHim] un visionario, altri temono che [target_character.GetSheHe] possa causare uno scisma tra le nostre fila. I membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono stati molto vocali riguardo la questione, ma esiste il timore che la popolazione locale possa insorgere se interveniamo contro una figura tanto influente."
  hussite_flavor.13.a: "Le sue capacità oratorie potrebbero esserci utili."
  hussite_flavor.13.b: "Fate sparire [target_character.GetHerHim]."
  hussite_flavor.13.c: "È tempo di purgare questi eretici a [target_location.GetNameWithNoTooltip]"

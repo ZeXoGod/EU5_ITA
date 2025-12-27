@@ -307,7 +307,7 @@
  CURRENT_RESEARCH_TITLE: "Ricerca Attuale"
  SIZE_DUE_TO: "Limite di Costruzione è $VAL|0V$"
  ONLY_X_UNITS_DET: "Limitato a $VAL|0V$ dovuto a"
- WARSCORE_IS_DUE_TO: "Current Warscore is due to"
+ WARSCORE_IS_DUE_TO: "Il Punteggio di Guerra attuale è dovuto a"
  MORALE_CHANGE_DET: "Cambiamento Morale dovuto a"
  MAX_MORALE_DET: "Morale Massimo"
  BOMBARD_DET: "Ripartizione Bonus Artiglieria\nVantaggio Artiglieria : [Siege.GetArtilleryImpact|V] dovuto a"
@@ -419,7 +419,7 @@
  SCROLL_UP_MARKET_FILTER: "Seleziona Mercato Precedente"
  SCROLL_CAPITAL_MARKET_FILTER: "Seleziona Capitale di Mercato"
  SCROLL_DOWN_MARKET_FILTER: "Seleziona Mercato Successivo"
- CANNOT_SCROLL_DOWN_MARKET_FILTER: "No more Markets where we have presence."
+ CANNOT_SCROLL_DOWN_MARKET_FILTER: "Nessun altro Mercato dove siamo presenti."
  CANNOT_SCROLL_UP_MARKET_FILTER: "Questa è la nostra Capitale di Mercato"
  CHANGE_FILTER: "Cambia Filtro"
  MARKETS_FILTER: "Filtro Mercati"
@@ -1365,7 +1365,7 @@
  FOREIGN_REL_UNIT_STRENGTH_ITEM: "$UNIT_NAME$: $STRENGTH|0$"
  FOREIGN_REL_MANPOWER: "[manpower] Massima [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
  FOREIGN_REL_SAILORS: "[sailors] Massima [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
- REL_ARMY_LEVY_POWER: "Dimensione degli [army_levies] [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]""
+ REL_ARMY_LEVY_POWER: "Dimensione degli [army_levies] [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
  FOREIGN_REL_NAVY_LEVY_POWER: "[navy_levies] [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
  FOREIGN_REL_INCOME: "[income] [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
 
@@ -6596,9 +6596,9 @@
  ACTIVE_PRODUCTION_METHOD: "Utilizzati da [ActiveProductionMethod.GetMethod.GetName]:"
  
  TRADE_NOT_YET_ACTIVE: "@trigger_no! Il commercio non è ancora attivo, si attiverà alla fine del mese."
- EXPORTING_THROUGH: "$BULLET_WITH_TAB$[exporting|e] attraverso #italic [Location.GetNameWithNoTooltip]#!"
+ EXPORTING_THROUGH: "$BULLET_WITH_TAB$[exporting|e] passante attraverso #italic [Location.GetNameWithNoTooltip]#!"
  MERCHANT_CAPACITY_USAGE: "Usando #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2L$#! [merchant_capacity|e]"
- IMPORTING_THROUGH: "$BULLET_WITH_TAB$[importing|e] attraverso #italic [Location.GetNameWithNoTooltip]#!"
+ IMPORTING_THROUGH: "$BULLET_WITH_TAB$[importing|e] passante attraverso #italic [Location.GetNameWithNoTooltip]#!"
  TRADE_EFFICENCY_DETAILS: "Il [trade|e] è ad un'Efficienza del [Trade.GetEfficiency|2%Y], poiché questa rotta ha richiesto [Trade.GetAssignedMerchantCapacity|Y], e [Trade.GetOwner.GetLongNameWithFlag] ha una capacità di [Trade.GetCapacityMarket.GetMerchantTotalCapacity(Trade.GetOwner)|Y] in [Trade.GetCapacityMarket.GetName]."
  TRADE_PATH: "Rotta Commerciale"
  OPEN_TRADE_OVERVIEW: "Apri $THE_TRADE_OVERVIEW_TITLE$"
@@ -6663,7 +6663,7 @@
  LOCKED_TRADE_TOOLTIP_ACTION: "Attiva/Disattiva"
  
  TRADE_OWNER_LABEL: "Questo [trade|e] appartiene a [Trade.GetOwner.GetLongNameWithFlag]."
- OUTCOMPETED_INFO: "@trigger_no! $WHO$ sta commerciando [GOODS.GetIcon][GOODS.GetName] in [TRADE.GetFromMarket.GetName]. Il loro maggiore [merchant_power] ci impedisce di garantire una quantità sufficiente per questo [trade|e], rendendo il nostro [trade|e] inefficiente."
+ OUTCOMPETED_INFO: "@trigger_no! $WHO$ sta commerciando [GOODS.GetIcon][GOODS.GetName] dal [TRADE.GetFromMarket.GetName]. Il loro maggiore [merchant_power] ci impedisce di garantire una quantità sufficiente per questo [trade|e], rendendo il nostro [trade|e] inefficiente."
 
  CONTROL_GROUPS_TT_EMPTY: "Premere Ctrl + 0-9 per assegnare un elemento selezionato a un gruppo di controllo."
  CONTROL_GROUPS_TT_UNIT_LEFT_CLICK: "Seleziona questa [unit|e] e vai alla sua [location|e]"
