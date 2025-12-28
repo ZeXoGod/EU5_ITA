@@ -12,14 +12,14 @@
  csd_every_pop_satisfaction_tt: "Tutte le popolazioni a [target_province.GetName]:\nPerdono il [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] di [pop_satisfaction|e]\nSi uniscono a [rival_branch_sayfawa_scope.GetName]"
  
  crisis_of_the_sayfawa_dynasty.3.title: "Lotte Interne alla Famiglia"
- crisis_of_the_sayfawa_dynasty.3.desc: "Non è raro che la [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e coloro di stirpe [ROOT.GetCountry.GetGovernment.GetAdjective] litighino e si battano per scarti di potere. È diventata quasi una tradizione per un principe di stirpe nobile prendere le armi contro un fratello, specialmente durante gli attuali tempi turbolenti. Questo palese disprezzo dell'etichetta [ROOT.GetCountry.GetGovernment.GetAdjective] ci ha fatto apparire incivili e in decadenza agli occhi del mondo.\n\nSe non riusciremo a rimettere in riga la nostra famiglia, di certo ne subiremo le conseguenze in futuro. La nostra casata [ROOT.GetCountry.GetGovernment.GetAdjective] deve riconquistare il suo antico splendore e liberarsi di lagnanze meschine e di buffoni affamati di potere."
+ crisis_of_the_sayfawa_dynasty.3.desc: "Non è raro che [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e coloro di stirpe [ROOT.GetCountry.GetGovernment.GetAdjective] litighino e si battano per scarti di potere. È diventata quasi una tradizione per un principe di stirpe nobile prendere le armi contro un fratello, specialmente durante gli attuali tempi turbolenti. Questo palese disprezzo dell'etichetta [ROOT.GetCountry.GetGovernment.GetAdjective] ci ha fatto apparire incivili e in decadenza agli occhi del mondo.\n\nSe non riusciremo a rimettere in riga la nostra famiglia, di certo ne subiremo le conseguenze in futuro. La nostra casata [ROOT.GetCountry.GetGovernment.GetAdjective] deve riconquistare il suo antico splendore e liberarsi di lagnanze meschine e di buffoni affamati di potere."
  crisis_of_the_sayfawa_dynasty.3.a: "Dobbiamo rimetterli al loro posto."
  crisis_of_the_sayfawa_dynasty.3.b: "Sono pur sempre famiglia..."
  
  crisis_of_the_sayfawa_dynasty.4.title: "Forza Attraverso l'Unità"
  crisis_of_the_sayfawa_dynasty.4.desc: "[ROOT.GetCountry.GetReligion.GetName] ha preso piede nella nostra regione negli ultimi secoli. Attraverso essa, ci sono state insegnate le vie della divinità e siamo arrivati ad apprezzare la bella sensazione di abbracciare la vera fede. Mentre cadiamo più a fondo nel nostro attuale periodo caotico, molti suggeriscono che dobbiamo cercare forza nella nostra fede, poiché sarà essa il pilastro per sostenere la nostra ascensione e salvezza."
  crisis_of_the_sayfawa_dynasty.4.a: "La nostra fede ci guiderà."
- crisis_of_the_sayfawa_dynasty.4.b: "Il nostro servizio è verso il popolo, non verso il [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ crisis_of_the_sayfawa_dynasty.4.b: "Il nostro servizio è verso il popolo, non verso [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  crisis_of_the_sayfawa_dynasty.4.c: "Non possiamo permetterci la moneta..."
  
  crisis_of_the_sayfawa_dynasty.5.title: "Un Guerriero Si Erge"

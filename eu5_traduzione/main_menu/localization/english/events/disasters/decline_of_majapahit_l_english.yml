@@ -15,7 +15,7 @@
  decline_of_majapahit.3.b: "Concentrarsi sui nostri problemi interni."
  
  decline_of_majapahit.4.title: "Malcontento Locale"
- decline_of_majapahit.4.desc: "I [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] a [target_province.GetName] sono in armi, in lotta con le forze dell'Adipati locale. La guarnigione locale non è in grado di contenere la ribellione e la provincia è in uno stato di caos."
+ decline_of_majapahit.4.desc: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] a [target_province.GetName] sono in armi, in lotta con le forze dell'Adipati locale. La guarnigione locale non è in grado di contenere la ribellione e la provincia è in uno stato di caos."
  decline_of_majapahit.4.a: "Aspettare che si esaurisca."
  decline_of_majapahit.4.b: "Placare i ribelli con l'oro."
  
@@ -26,7 +26,7 @@
  maj_every_pop_in_capital_province: "Ogni [pop|e] nella [province|e] della [capital|e], [ROOT.GetCountry.GetCapital.GetProvince.GetName]:"
  
  decline_of_majapahit.6.title: "Fuga [target_religion.GetAdjectiveWithNoTooltip] a [target_province.GetNameWithNoTooltip]"
- decline_of_majapahit.6.desc: "L'establishment [target_religion.GetAdjective] viene lentamente sradicato dall'invasione dei mercanti [target_religion2.GetAdjective]. Ogni giorno, sempre più gente comune si converte al [target_religion2.GetGroup.GetName] e all'interno di [ROOT.GetCountry.GetName], non è più il [target_religion.GetNameWithNoTooltip] a costituire la maggioranza. Il processo ha avuto un impatto senza precedenti sul [ROOT.GetCountry.GetFlavorRank] e sulla sua società, causando ansia diffusa nella [ROOT.GetCountry.GetGovernment.GetCourtTitle] [target_religion.GetAdjectiveWithNoTooltip]. Molti del [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] definiscono questo la fine del dominio [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fuggendo a [target_province.GetName]."
+ decline_of_majapahit.6.desc: "L'establishment [target_religion.GetAdjective] viene lentamente sradicato dall'invasione dei mercanti [target_religion2.GetAdjective]. Ogni giorno, sempre più gente comune si converte al [target_religion2.GetGroup.GetName] e all'interno di [ROOT.GetCountry.GetName], non è più il [target_religion.GetNameWithNoTooltip] a costituire la maggioranza. Il processo ha avuto un impatto senza precedenti sul [ROOT.GetCountry.GetFlavorRank] e sulla sua società, causando ansia diffusa nella [ROOT.GetCountry.GetGovernment.GetCourtTitle] [target_religion.GetAdjectiveWithNoTooltip]. Molti [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] definiscono questo la fine del dominio [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fuggendo a [target_province.GetName]."
  decline_of_majapahit.6.a: "È questo il crollo dell'impero?"
  
  decline_of_majapahit.7.title: "L'Adipati di [target_location.GetNameWithNoTooltip] si Converte"

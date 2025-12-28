@@ -1,11 +1,11 @@
 ﻿l_english:
  
  artist_events.1.title: "Le Opere Teologiche di [target_character.GetNameWithNoTooltip]"
- artist_events.1.desc: "Personalità già nota per le sue capacità narrative, [target_character.GetName] ha recentemente intrapreso una serie di opere liturgiche e teologiche, intrecciando il divino con la commedia e la satira. Queste opere, sebbene caustiche nei confronti della posizione dei [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nella nostra società, hanno provocato un'ondata di [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] con un interesse per la cultura e le arti scritte. La pressione è aumentata, motivata dalla situazione del colpito [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')], per liberare il nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] da [target_character.GetNameWithNoTooltip] affinché non rischiamo l'ira di [ROOT.GetCountry.GetReligion.GetGodName]."
+ artist_events.1.desc: "Personalità già nota per le sue capacità narrative, [target_character.GetName] ha recentemente intrapreso una serie di opere liturgiche e teologiche, intrecciando il divino con la commedia e la satira. Queste opere, sebbene caustiche nei confronti della posizione [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nella nostra società, hanno provocato un'ondata [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] con un interesse per la cultura e le arti scritte. La pressione è aumentata, sostenuta [ROOT.GetCountry.Custom('IT_CLERGY_DAL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] colpito, per liberare il nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] da [target_character.GetNameWithNoTooltip] affinché non rischiamo l'ira di [ROOT.GetCountry.GetReligion.GetGodName]."
  artist_events.1.a: "Tutto è lecito nell'arte e nella creazione."
- artist_events.1.b: "Concedi a [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] i diritti di censura sui suoi scritti."
- artist_events.1.c: "Il nostro [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] ha ragione, tagliate loro la testa!"
- artist_events.1.d: "Non ci faremo intimidire da individui promiscui, [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] or otherwise!"
+ artist_events.1.b: "Concedi [ROOT.GetCountry.Custom('IT_CLERGY_AL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] i diritti di censura sui suoi scritti."
+ artist_events.1.c: "[ROOT.GetCountry.Custom('IT_CLERGY_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_HA')] ragione, tagliate loro la testa!"
+ artist_events.1.d: "Non ci faremo intimidire da individui promiscui, [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] o meno!"
 
  artist_events.2.title: "Le Scarse Competenze di [target_character.GetNameWithNoTooltip]"
  artist_events.2.desc: "Una folla che ride di fronte al dramma? Lacrime e urla di fronte a una commedia allegra? Nessuno avrebbe potuto fallire meglio di [target_character.GetName]! In effetti, la sua abilità nell'insultare tramite l'intrattenimento non ha eguali. Le sue ultime opere dovevano essere un'ode al nostro grande popolo, ma sono finite per essere una risposta tagliente, che elenca i nostri difetti e i nostri più grandi fallimenti!"
@@ -141,7 +141,7 @@
  artist_events.27.a: "Una lettura interessante."
  
  artist_events.28.title: "Provocare l'Ira Divina"
- artist_events.28.desc: "Il lavoro di filosofi come [target_character.GetName] spesso si muove su una linea sottile tra arroganza ed eresia. Riflettere sulle domande più profonde della vita ed esaminare da vicino la natura divina è un compito che incute timore alla maggior parte delle persone. Pertanto, le recenti domande e ricerche di [target_character.GetNameWithNoTooltip] sembrano aver suscitato una forte reazione da parte delle nostre autorità all'interno del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
+ artist_events.28.desc: "Il lavoro di filosofi come [target_character.GetName] spesso si muove su una linea sottile tra arroganza ed eresia. Riflettere sulle domande più profonde della vita ed esaminare da vicino la natura divina è un compito che incute timore alla maggior parte delle persone. Pertanto, le recenti domande e ricerche di [target_character.GetNameWithNoTooltip] sembrano aver suscitato una forte reazione da parte delle nostre autorità all'interno [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
  artist_events.28.a: "Oh no."
  artist_events.28.b: "Non riescono a riconoscere l'ingegno dietro il lavoro di [target_character.GetNameWithNoTooltip]!"
 
@@ -149,21 +149,21 @@
  artist_events.29.desc: "Secondo [target_character.GetName], mettere in discussione la fede e porre domande provocatorie è l'essenza e l'emblema di una vita buona e intellettuale. Tuttavia, le sue recenti pubblicazioni hanno suscitato l'ira degli abitanti di [target_location.GetName], che considerano le sue opere nient'altro che arroganza."
  artist_events.29.a: "Non riescono proprio a capire."
 
- artist_events.30.title: "Un [ROOT.GetCountry.GetGovernment.GetCourtTitle] Molto Intellettuale"
- artist_events.30.desc: "Le nostre residenze [ROOT.GetCountry.GetGovernment.GetAdjective] sono famose per la loro illustre presenza, ricche di artisti vivaci e brulicanti di ricchezza e benessere. Artisti, filosofi e altri ancora bussano alla nostra porta per avere la possibilità di mostrare le loro capacità e guadagnare fama e fortuna, mentre cercano di immortalare il proprio nome nei libri di storia."
- artist_events.30.a: "Il nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] è la culla dell'innovazione!"
+ artist_events.30.title: "Una [ROOT.GetCountry.GetGovernment.GetCourtTitle] Molto Intellettuale"
+ artist_events.30.desc: "I nostri edifici governativi sono famose per il loro splendore, ricche di artisti vivaci e brulicanti di ricchezza e benessere. Artisti, filosofi e altri ancora bussano alla nostra porta per avere la possibilità di mostrare le loro capacità e guadagnare fama e fortuna, mentre cercano di immortalare il proprio nome nei libri di storia."
+ artist_events.30.a: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] è la culla dell'innovazione!"
 
  artist_events.31.title: "L'Iconografia di [target_character.GetNameWithNoTooltip]"
  artist_events.31.desc: "La luce colpisce il ritratto con un'angolazione tale che il santo sembra quasi vivo in primo piano, con la tunica e l'aureola che risplendono di colori vivaci. L'arte e l'abilità di [target_character.GetName] traspaiono dalla tela, esaltando le numerose figure divine della nostra fede."
  artist_events.31.a: "Le opere di [target_character.GetNameWithNoTooltip] sono una benedizione."
 
  artist_events.32.title: "La Mostra della Nuova Iconografia a [target_location.GetNameWithNoTooltip]"
- artist_events.32.desc: "Le opere d'arte e di fede esercitano un'influenza e un potere considerevoli all'interno dei nostri confini. Di conseguenza, quando [target_character.GetName] ha presentato la nuova linea di icone [target_character.GetHerHis], i fedeli della religione [ROOT.GetCountry.GetReligion.GetAdjective] di [target_location.GetName] hanno gioito alla vista di tanta straordinaria bellezza."
+ artist_events.32.desc: "Le opere d'arte e di fede esercitano un'influenza e un potere considerevoli all'interno dei nostri confini. Di conseguenza, quando [target_character.GetName] ha presentato le sue nuove icone, i fedeli della religione [ROOT.GetCountry.GetReligion.GetAdjective] di [target_location.GetName] hanno gioito alla vista di tanta straordinaria bellezza."
  artist_events.32.a: "È solo un segno del nostro intelletto artistico e della nostra profonda forza di fede."
- artist_events.32.tt: "Tutti i [ROOT.GetCountry.GetReligion.GetAdjective] [pops|e] in [target_location.GetName] otterranno [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]"
+ artist_events.32.tt: "Tutti i [pops|e] di fede [ROOT.GetCountry.GetReligion.GetAdjective] in [target_location.GetName] otterranno [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]"
 
  artist_events.33.title: "Incaricare le Persone Sbagliate"
- artist_events.33.desc: "I membri facoltosi del nostro [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno recentemente commissionato una serie di icone a [target_character.GetName]. Nonostante i lavori siano stati completati con un certo anticipo, essi hanno espresso con grande enfasi la loro insoddisfazione per la mancanza di cura, professionalità e competenza che traspare chiaramente dall'opera dell'iconografo. La loro ira potrebbe portare a conseguenze imprevedibili, dato il loro grande peso nelle questioni religiose all'interno della nostra società."
+ artist_events.33.desc: "I membri facoltosi [ROOT.GetCountry.Custom('IT_CLERGY_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno recentemente commissionato una serie di icone a [target_character.GetName]. Nonostante i lavori siano stati completati con un certo anticipo, essi hanno espresso con grande enfasi la loro insoddisfazione per la mancanza di cura, professionalità e competenza che traspare chiaramente dall'opera dell'iconografo. La loro ira potrebbe portare a conseguenze imprevedibili, dato il loro grande peso nelle questioni religiose all'interno della nostra società."
  artist_events.33.a: "Possiamo coprire le spese dell'iconografo al posto loro"
  artist_events.33.b: "È solo una parte del piano di [ROOT.GetCountry.GetReligion.GetGodName], chi siamo noi per interferire?"
 
@@ -173,7 +173,7 @@
  artist_events.34.b: "Non ci interessano queste frivolezze."
 
  artist_events.35.title: "Tutto Ciò che Luccica"
- artist_events.35.desc: "Nei suoi tentativi dilettanteschi di catturare l'essenza divina del nostro ensemble di santi, [target_character.GetName] ha prodotto una serie di icone di pessima fattura, dalle proporzioni innaturali e dai volti dipinti con colori dorati tra i più brillanti e inquietanti. La loro bruttezza è tale che molti [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] hanno reagito lanciando vari tipi di frutta sia all'artista che alle opere d'arte in questione, uno spettacolo davvero imbarazzante."
+ artist_events.35.desc: "Nei suoi tentativi dilettanteschi di catturare l'essenza divina del nostro ensemble di santi, [target_character.GetName] ha prodotto una serie di icone di pessima fattura, dalle proporzioni innaturali e dai volti dipinti con colori dorati tra i più brillanti e inquietanti. La loro bruttezza è tale che molt[ROOT.GetCountry.Custom('IT_PEASANTS_OAI')] tra [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] hanno reagito lanciando vari tipi di frutta sia all'artista che alle opere d'arte in questione, uno spettacolo davvero imbarazzante."
  artist_events.35.a: "Che imbarazzo!"
 
  artist_events.36.title: "Affinando le Abilità"
@@ -208,7 +208,7 @@
  strain_harder_at_the_forge_tt: "Lo stress lavorativo influirà negativamente sull'aspettativa di vita di [target_character.GetShortNameWithNoTooltip]"
 
  artist_events.41.title: "A Difesa dei Meno Fortunati"
- artist_events.41.desc: "Negli ultimi mesi è circolata a [ROOT.GetCountry.GetCapital.GetName] della letteratura riguardo lo sfruttamento del [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], diffondendo malcontento e instabilità tra il [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e i meno fortunati. Alcuni dei nostri consulenti sostengono che questi scritti provocatori siano opera nientemeno che di [target_character.GetName], le cui esperienze di vita hanno portato a un odio feroce nei confronti del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]. Questo è ampiamente percepito come una minaccia al nostro [ROOT.GetCountry.GetFlavorRank] e, per estensione, a [target_character_2.GetName]."
+ artist_events.41.desc: "Negli ultimi mesi è circolata a [ROOT.GetCountry.GetCapital.GetName] della letteratura riguardo lo sfruttamento [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], diffondendo malcontento e instabilità tra [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e i meno fortunati. Alcuni dei nostri consulenti sostengono che questi scritti provocatori siano opera nientemeno che di [target_character.GetName], le cui esperienze di vita hanno portato a un odio feroce nei confronti [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]. Questo è ampiamente percepito come una minaccia al nostro [ROOT.GetCountry.GetFlavorRank] e, per estensione, a [target_character_2.GetName]."
  artist_events.41.a: "Lasciate che continui a scrivere."
  artist_events.41.b: "Fate in modo che la smetta."
 
@@ -250,7 +250,7 @@
  artist_events.47.c: "È chiaro che [target_art.GetNameWithNoTooltip] dovrà essere sostituito."
 
  artist_events.48.title: "Un Irriverente [target_artist.GetArtistType.GetNameWithNoTooltip]"
- artist_events.48.desc: "Sebbene [ROOT.GetCountry.GetReligion.GetName] scoraggi chiaramente le rappresentazioni artistiche di persone e animali per evitare l'idolatria, esse non sono esplicitamente vietate. Spesso gli artisti hanno trovato un modo per evitare le raffigurazioni di queste utilizzando la composizione calligrafica stessa per suggerire l'idea delle immagini piuttosto che disegnarle esplicitamente. Ciò ha più di una volta suscitato qualche perplessità tra i più zelanti del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Tuttavia, alcune linee non devono mai essere superate. \n\n[target_artist.GetName] ha suscitato più di qualche perplessità con il suo lavoro, che evoca le immagini più vivide non solo di persone e animali, ma anche di profeti e messaggeri divini e dello stesso Maometto, la pace sia con lui. Ciò ha causato l'ira della maggior parte del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')], che chiedono una condanna severa."
+ artist_events.48.desc: "Sebbene [ROOT.GetCountry.GetReligion.GetName] scoraggi chiaramente le rappresentazioni artistiche di persone e animali per evitare l'idolatria, esse non sono esplicitamente vietate. Spesso gli artisti hanno trovato un modo per evitare le raffigurazioni di queste utilizzando la composizione calligrafica stessa per suggerire l'idea delle immagini piuttosto che disegnarle esplicitamente. Ciò ha più di una volta suscitato qualche perplessità tra i più zelanti [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Tuttavia, alcune linee non devono mai essere superate. \n\n[target_artist.GetName] ha suscitato più di qualche perplessità con il suo lavoro, che evoca le immagini più vivide non solo di persone e animali, ma anche di profeti e messaggeri divini e dello stesso Maometto, la pace sia con lui. Ciò ha causato l'ira della maggior parte [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')], che chiedono una condanna severa."
  artist_events.48.a: "Proibisci a [target_artist.GetNameWithNoTooltip] di creare nuovamente simili immagini."
  artist_events.48.b: "Non causano alcun danno reale."
  artist_events.48.c: "[target_artist.GetNameWithNoTooltip] non è più il benvenuto in [ROOT.GetCountry.GetNameWithNoTooltip]."
@@ -272,7 +272,7 @@
  artist_events.51.b: "Abbiamo già uno standard, non ce n'è bisogno di uno nuovo."
 
  artist_events.52.title: "Meditazione Scritta"
- artist_events.52.desc: "[target_artist.GetName] lavora sempre sodo, ma sua la tecnica ha suscitato l'interesse di un gruppo particolare. Alcuni tra il [ROOT.GetCountry. GetGovernment.GetEstateName('clergy_estate')] vedono il suo modo di lavorare silenzioso e concentrato come una forma di meditazione in movimento e vogliono promuoverlo tra il resto del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] come un altro modo per aiutare a seguire il sentiero del Buddha."
+ artist_events.52.desc: "[target_artist.GetName] lavora sempre sodo, ma sua la tecnica ha suscitato l'interesse di un gruppo particolare. Alcuni tra il [ROOT.GetCountry. GetGovernment.GetEstateName('clergy_estate')] vedono il suo modo di lavorare silenzioso e concentrato come una forma di meditazione in movimento e vogliono promuoverlo tra il resto [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] come un altro modo per aiutare a seguire il sentiero del Buddha."
  artist_events.52.a: "È davvero un'attività molto spirituale."
  artist_events.52.b: "È un modo per creare splendida arte, niente di più."
 

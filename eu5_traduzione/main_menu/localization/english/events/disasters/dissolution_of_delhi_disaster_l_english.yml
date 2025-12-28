@@ -8,8 +8,8 @@
  
  dissolution_of_delhi.2.title: "Questioni Provinciali"
  dissolution_of_delhi.2.desc: "Il popolo di [target_location.GetName] ha dimenticato l'aria di autorità e comando che la nostra bandiera era solita ispirare. Discorsi di autonomia e indipendenza riempiono l'aria mentre il dominio scivola lentamente via dalla nostra presa. Il pagamento delle tasse locali, il reclutamento di milizie e la raccolta di merci sono alcuni degli aspetti più importanti del possesso di [target_location.GetNameWithNoTooltip]. È diventato chiaro che i nostri amministratori devono ricevere istruzioni e assistenza se vogliono mantenere, almeno nominalmente, il controllo su queste terre."
- dissolution_of_delhi.2.a: "Permettere al [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] di amministrare [target_location.GetNameWithNoTooltip]."
- dissolution_of_delhi.2.b: "Lasciare che sia il [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] a gestirla."
+ dissolution_of_delhi.2.a: "Permettere [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] di amministrare [target_location.GetNameWithNoTooltip]."
+ dissolution_of_delhi.2.b: "Lasciare che sia [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] a gestirla."
  dissolution_of_delhi.2.c: "Se non riusciamo a gestirla da soli, non la meritiamo!"
  
  dissolution_of_delhi.3.title: "Sussurri a Corte"
@@ -17,8 +17,8 @@
  dissolution_of_delhi.3.a: "Forse questo dono li placerebbe?"
  dissolution_of_delhi.3.b: "Questo è al di sotto di noi!"
  
- dissolution_of_delhi.4.title: "Lamentele del [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]"
- dissolution_of_delhi.4.desc: "I [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] di [target_province.GetName] si sono fatti avanti con una richiesta. Secondo il loro messaggero, il loro popolo soffre di sostentamento di scarsa qualità e carenze dietetiche. Dice che, sebbene la provincia non soffra di una carenza di cibo, le opzioni disponibili sono sia scadenti che poco invitanti. Se ci motivassimo a concedere loro una qualche forma di sollievo, forse potremmo guadagnarci il favore degli abitanti locali?"
+ dissolution_of_delhi.4.title: "Lamentele [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]"
+ dissolution_of_delhi.4.desc: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] di [target_province.GetName] si sono fatti avanti con una richiesta. Secondo il loro messaggero, il loro popolo soffre di sostentamento di scarsa qualità e carenze dietetiche. Dice che, sebbene la provincia non soffra di una carenza di cibo, le opzioni disponibili sono sia scadenti che poco invitanti. Se ci motivassimo a concedere loro una qualche forma di sollievo, forse potremmo guadagnarci il favore degli abitanti locali?"
  dissolution_of_delhi.4.a: "Organizzare un trasferimento di vari prodotti da [target_province2.GetNameWithNoTooltip]!"
  dissolution_of_delhi.4.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
  target_province_peasants_get_20_satisfaction_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [pops|e] a [target_province.GetNameWithNoTooltip] guadagneranno [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]"
@@ -28,7 +28,7 @@
  target_province_peasants_lose_25_satisfaction_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [pops|e] a [target_province.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
  
  dissolution_of_delhi.5.title: "Abuso di Potere"
- dissolution_of_delhi.5.desc: "Notizie sono giunte a [ROOT.GetCountry.GetCapital.GetName] riguardo agli intrighi e agli affari della [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] intorno a [target_province.GetName]. Sembra che abbiano sciolto le assemblee locali e abbiano stabilito la loro legge nel tentativo di scavalcare la nostra autorità centrale, in risposta alle recenti difficoltà che il nostro dominio sta affrontando. I nostri consiglieri sostengono l'idea di passare a fil di spada la [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] locale, come avvertimento a qualsiasi altra provincia che desideri interferire con il nostro modo di agire..."
+ dissolution_of_delhi.5.desc: "Notizie sono giunte a [ROOT.GetCountry.GetCapital.GetName] riguardo agli intrighi e agli affari [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] intorno a [target_province.GetName]. Sembra che abbiano sciolto le assemblee locali e abbiano stabilito la loro legge nel tentativo di scavalcare la nostra autorità centrale, in risposta alle recenti difficoltà che il nostro dominio sta affrontando. I nostri consiglieri sostengono l'idea di passare a fil di spada [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] locale, come avvertimento a qualsiasi altra provincia che desideri interferire con il nostro modo di agire..."
  dissolution_of_delhi.5.a: "Che siano ghigliottinati!"
  dissolution_of_delhi.5.b: "Abbiamo bisogno di loro."
  

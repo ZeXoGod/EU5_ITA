@@ -1,7 +1,7 @@
 ﻿l_english:
  black_death.1.title: "La [ShowSituationNameWithNoTooltip('black_death')] a [GetDisease('bubonic_plague').GetOrigin.GetNameWithNoTooltip]"
  black_death.1.desc: "Provengono notizie allarmanti da [GetDisease('bubonic_plague').GetOrigin.GetName], contenute in un resoconto che abbiamo appena ricevuto.\n\nAhimè! Le nostre navi entrano nel porto, ma di mille marinai se ne salvano a malapena dieci. Raggiungiamo le nostre case; la nostra parentela e vicini vengono a farci visita da ogni parte. Che ci maledicano, poiché lanciamo a tutti loro i dardi della morte! Mentre ci parlavano, abbracciavano e baciavano, diffondevamo il veleno con le nostre labbra. Tornando a casa loro, infettarono le loro famiglie, che perirono in tre giorni, e furono seppellite in una fossa comune. Preti e dottori che fanno visita ai malati tornano a casa ammalati a loro volta, aggiungendosi poco dopo al numero dei morti. O Morte! Crudele, amara, empia Morte! Che rompi in tal modo i legami d'affetto separando padre e madre, fratello e sorella, marito e moglie. Piangendo della nostra miseria, avevamo paura di scappare, eppure non osavamo rimanere."
- black_death.1.a: "Ratti!"
+ black_death.1.a: "Dannati ratti!"
  black_death.1.a.tt: "[ShowSituationName('black_death')] ha cominciato a diffondersi da [GetDisease('bubonic_plague').GetOrigin.GetName]"
 
  black_death.1026.title: "Un altro mangia la polvere..."
@@ -18,7 +18,7 @@
  total_death_toll_tt: "Durante la [situation|e] della [ShowSituationName('black_death')], il #R Mietitore#! ha reclamato [ROOT.GetVariable('bd_total_death_toll_variable').GetValue|V0] #Y Mila#! anime dei nostri [pops|e]"
 
  black_death.101.t: "La Peste come Punizione"
- black_death.101.desc: "La fine dei tempi è vicina! O almeno così sostengono i gruppi sempre più numerosi di flagellanti che vagano per le campagne in processione predicando gli eventi apocalittici che stanno per arrivare come punizione per il nostro orgoglio, che solo attraverso l'ira di Cristo sotto forma di flagellazione possiamo dissipare.\n\nSebbene in origine godessero del sostegno della Chiesa, questi gruppi si sono allontanati troppo dalla dottrina per poter essere ancora tollerati. Il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] ritiene che debbano essere eliminati per impedire che minino la stabilità."
+ black_death.101.desc: "La fine dei tempi è vicina! O almeno così sostengono i gruppi sempre più numerosi di flagellanti che vagano per le campagne in processione predicando gli eventi apocalittici che stanno per arrivare come punizione per il nostro orgoglio, che solo attraverso l'ira di Cristo sotto forma di flagellazione possiamo dissipare.\n\nSebbene in origine godessero del sostegno della Chiesa, questi gruppi si sono allontanati troppo dalla dottrina per poter essere ancora tollerati. [ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] ritiene che debbano essere eliminati per impedire che minino la stabilità."
  black_death.101.a: "Ordinate alle guarnigioni locali di disperdere eventuali raduni di flagellanti."
  black_death.101.b: "Lasciate perdere la Chiesa, potrebbero aver ragione!"
  plague_lessen_spread_piss_off_peasants_tt: "Ogni [location|e] che possediamo in [target_province.GetName] beneficerà di una diffusione della [GetDisease('bubonic_plague').GetName] ridotta del #G -5%#! a spese di [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] per i suoi paesani."
@@ -35,7 +35,7 @@
  black_death.103.b: "Ogni dottore ha il diritto di scegliere."
 
  black_death.1001.t: "Fuga in Campagna"
- black_death.1001.desc: "Terrorizzati dalla morte che si sta rapidamente diffondendo nei nostri centri abitati, le persone hanno iniziato un esodo di massa dalle aree urbane verso quelle rurali, nella speranza di isolarsi dal mondo e dalla malattia che lo sta devastando.\n\nSebbene questa reazione possa essere accettabile per la [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e le altre classi sociali elevate, i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sono la linfa vitale del nostro Paese e la loro fuga dai centri di produzione causerebbe il collasso dell'economia! Forse sono necessarie misure drastiche per proteggere la nostra economia."
+ black_death.1001.desc: "Terrorizzati dalla morte che si sta rapidamente diffondendo nei nostri centri abitati, le persone hanno iniziato un esodo di massa dalle aree urbane verso quelle rurali, nella speranza di isolarsi dal mondo e dalla malattia che lo sta devastando.\n\nSebbene questa reazione possa essere accettabile per [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e le altre classi sociali elevate, [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ROOT.GetCountry.Custom('IT_PEASANTS_SONO')] la linfa vitale del nostro Paese e la fuga dai centri di produzione causerebbe il collasso dell'economia! Forse sono necessarie misure drastiche per proteggere la nostra economia."
  black_death.1001.a: "Permetteteglielo. Vogliono solo sentirsi al sicuro."
  black_death.1001.b: "Chiudete le città, nessuno esce senza un lasciapassare!"
  STATIC_MODIFIER_NAME_black_death_exodus_ruralization_attraction: "Esodo Rurale"
@@ -66,7 +66,7 @@
  plague_masses_appeased_tt: "Le masse saranno placate, per ora..."
 
  black_death.1006.t: "L'Arruolamento delle Cameriere"
- black_death.1006.desc: "La paura di contrarre la peste mentre si assiste un nobile malato è troppo grande per le classi inferiori, indipendentemente dall'ammontare del salario!\n\nI [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] ora chiedono il diritto di arruolare i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] al loro servizio, costringendoli a rischiare la malattia per soddisfare le loro esigenze."
+ black_death.1006.desc: "La paura di contrarre la peste mentre si assiste un nobile malato è troppo grande per le classi inferiori, indipendentemente dall'ammontare del salario!\n\n[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] ora chiedono il diritto di arruolare [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] al loro servizio, costringendoli a rischiare la malattia per soddisfare le loro esigenze."
  black_death.1006.a: "Istituite l'arruolamento!"
  black_death.1006.b: "Ridicolo! Pulite voi stessi le vostre proprietà!"
 
@@ -107,7 +107,7 @@
  black_death.1012.b: "Le minoranze controllano [target_character.GetHerHim]!"
 
  black_death.1013.t: "La Pressione Fiscale della Peste"
- black_death.1013.desc: "La pressione fiscale causata dalla peste nei villaggi rurali di [target_location.GetName] li ha portati a smettere di pagare le tasse. Coloro che non hanno ancora ceduto alla peste lottano per soddisfare i propri bisogni, figuriamoci le richieste del [ROOT.GetCountry.GetFlavorRank].\n\nNaturalmente, le sofferenze dei [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sono difficilmente paragonabili al danno che la mancanza di fondi potrebbe causare alla popolazione nel suo complesso, quindi i nostri esattori delle tasse sono stati piuttosto aggressivi nel ricordare alla popolazione locale di pagare i propri debiti. Purtroppo, la risposta è stata altrettanto aggressiva."
+ black_death.1013.desc: "La pressione fiscale causata dalla peste nei villaggi rurali di [target_location.GetName] li ha portati a smettere di pagare le tasse. Coloro che non hanno ancora ceduto alla peste lottano per soddisfare i propri bisogni, figuriamoci le richieste del [ROOT.GetCountry.GetFlavorRank].\n\nNaturalmente, le sofferenze [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sono difficilmente paragonabili al danno che la mancanza di fondi potrebbe causare alla popolazione nel suo complesso, quindi i nostri esattori delle tasse sono stati piuttosto aggressivi nel ricordare alla popolazione locale di pagare i propri debiti. Purtroppo, la risposta è stata altrettanto aggressiva."
  black_death.1013.a: "Folla arrabbiata o meno, è ora di pagare!"
  black_death.1013.b: "Durante i periodi difficili, le tasse dovrebbero essere abbassate..."
  black_death.1013.c: "Nessuna tassa per chi soffre!"
@@ -126,13 +126,13 @@
  black_death.1015.desc: "I medici e altri esperti nel campo dell'igiene hanno iniziato ad avvertire che quasi la metà dei [ShowGoodsName('medicaments')] presenti nei nostri mercati sono scaduti o contaminati da materiale di riempimento destinato ad aumentare il peso netto venduto.\n\nQuesti prodotti scaduti non solo rappresentano un rischio per la salute, ma potrebbero anche causare un'ulteriore diffusione della peste nera. C'è solo una soluzione: dobbiamo bruciare o distruggere in altro modo tutti i [ShowGoodsNameWithNoTooltip('medicaments')] scaduti presenti nelle nostre scorte."
  black_death.1015.a: "Bruciate le medicine scadute!"
  black_death.1015.b: "Consentite di tenere le medicine..."
- black_death.1015.c: "La [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] pagherà per i beni scaduti."
+ black_death.1015.c: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] pagherà per i beni scaduti."
  black_death.1015.b.nospamtooltip: "Ogni [location|e] posseduta con più di #N 20%#! presenza della [GetDisease('bubonic_plague').GetName] ha una probabilità del #V 50%#! di ottenere un altro #N 50%#! di [GetDisease('bubonic_plague').GetName]"
  every_location_with_plague_gets_10_more_tt: "La presenza della [GetDisease('bubonic_plague').GetNameWithNoTooltip] nelle [locations|e] già affette sarà incrementata del #R +10%#!"
  reduce_plague_by_10_in_every_location_tt: "La presenza della [GetDisease('bubonic_plague').GetName] sarà ridotta del #G -5%#! in ogni [location|e] posseduta in [ROOT.GetCountry.GetCapital.GetRegion.GetName]"
 
  black_death.1016.t: "Bisogni Sociali"
- black_death.1016.desc: "Da quando è arrivata la peste, molti hanno evitato i grandi raduni e le feste pubbliche per paura. Ma col tempo, anche gli individui più asociali finiscono per desiderare l'interazione con gli altri.\n\nI brontolii e le lamentele dei [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] diventano ogni giorno più forti. Continuare a impedire e scoraggiare le feste potrebbe causare un notevole sconvolgimento sociale."
+ black_death.1016.desc: "Da quando è arrivata la peste, molti hanno evitato i grandi raduni e le feste pubbliche per paura. Ma col tempo, anche gli individui più asociali finiscono per desiderare l'interazione con gli altri.\n\nI brontolii e le lamentele [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] diventano ogni giorno più forti. Continuare a impedire e scoraggiare le feste potrebbe causare un notevole sconvolgimento sociale."
  black_death.1016.a: "Il mantenimento dell'ordine sociale viene prima dell'igiene."
  black_death.1016.b: "Non possiamo rischiare di diffonderla!"
 
@@ -156,13 +156,13 @@
  every_location_with_target_culture_receives_changes2_tt: "Consentiremo la persecuzione delle minoranze di cultura [target_culture.GetName]. I nostri [pops|e] di [culture|e] [ROOT.GetCountry.GetCulture.GetName] guadagneranno [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] mentre i nostri pops della cultura [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] nelle [locations|e] che contengono entrambe le culture."
 
  black_death.1021.t: "Profittatori della Peste"
- black_death.1021.desc: "Ultimamente, un gruppo di [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] ha acquistato tutte le scorte di beni di prima necessità come medicine, spezie e alimenti conservati.\n\nNon esiste una legge esplicita che vieti questo comportamento, ma permettere loro di estorcere e affamare i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] potrebbe portare a un'ulteriore diffusione della peste..."
+ black_death.1021.desc: "Ultimamente, un gruppo appartenente [ROOT.GetCountry.Custom('IT_BURGHERS_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] [ROOT.GetCountry.Custom('IT_BURGHERS_HA')] acquistato tutte le scorte di beni di prima necessità come medicine, spezie e alimenti conservati.\n\nNon esiste una legge esplicita che vieti questo comportamento, ma permettere loro di estorcere e affamare [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] potrebbe portare a un'ulteriore diffusione della peste..."
  black_death.1021.a: "Ci riapproprieremo delle loro scorte!"
  black_death.1021.b: "Lasciate che le tengano..."
  black_death.1021.c: "Applicate una tassa temporanea sui beni accumulati."
 
  black_death.1023.t: "Ognuno è un Pericolo"
- black_death.1023.desc: "Mentre la peste continua a diffondersi a un ritmo incontrollabile, i [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in tutto il nostro [ROOT.GetCountry.GetFlavorRank] iniziano a richiedere il diritto di formare e mantenere parte delle loro milizie per proteggere le loro proprietà e la loro sicurezza. Sembrano credere in una sorta di fantasia secondo cui le masse malate assalteranno le loro case per infettarli e forse persino ucciderli per invidia del fatto che sono sani e ben nutriti. Un esempio è [target_location.GetName], dove i [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sembrano minacciare i potenti locali con violenze aperte.\n\nNaturalmente, tutto questo è per lo più ridicolo e assecondare la loro richiesta indebolirebbe l'esercito. Ma ora più che mai, il sostegno dei nobili è fondamentale per la stabilità..."
+ black_death.1023.desc: "Mentre la peste continua a diffondersi a un ritmo incontrollabile, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in tutto [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] iniziano a richiedere il diritto di formare e mantenere parte delle loro milizie per proteggere le loro proprietà e la loro sicurezza. Sembrano credere in una sorta di fantasia secondo cui le masse malate assalteranno le loro case per infettarli e forse persino ucciderli per invidia del fatto che sono sani e ben nutriti. Un esempio è [target_location.GetName], dove [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sembrano minacciare i potenti locali con violenze aperte.\n\nNaturalmente, tutto questo è per lo più ridicolo e assecondare la loro richiesta indebolirebbe l'esercito. Ma ora più che mai, il sostegno dei nobili è fondamentale per la stabilità..."
  black_death.1023.a: "Consentitelo..."
  black_death.1023.b: "Proibitelo!"
 
