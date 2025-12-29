@@ -594,7 +594,7 @@
  call_order_to_crusade: "Chiama l'Ordine Militare alla Crociata"
  dip_call_order_to_crusade_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
  call_order_to_crusade_act: "Chiamate alle armi l'Ordine Militare nella nostra guerra contro gli infedeli."
- call_order_to_crusade_desc: "Chiameremo alle armi l'Ordine Militare nella nostra [war|e] contro un paese [heathen|e]."
+ call_order_to_crusade_desc: "Chiameremo alle armi l'Ordine Militare patrocinato nella nostra [war|e] contro un paese [heathen|e]."
  call_order_to_crusade_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] chiamerà alle armi [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] in una [war|e] in corso contro un paese [heathen|e]."
  call_order_to_crusade_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha chiamato alle armi [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] in una [war|e] in corso contro un paese [heathen|e]."
  call_order_to_crusade_reject_effect_text: "$generic_reject_request_effect_string$"
@@ -605,7 +605,7 @@
  #
  mil_order_request_funds: "Richiedi Fondi"
  dip_mil_order_request_funds_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
- mil_order_request_funds_act: "Chiedi oro [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]. Poiché ci sostengono, saranno più propensi ad accettare la nostra richiesta."
+ mil_order_request_funds_act: "Chiedi dell'oro [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]. Poiché ci patrocinano, saranno più propensi ad accettare la nostra richiesta."
  mil_order_request_funds_desc: "Chiederemo loro di aiutarci con una donazione moderata."
  mil_order_request_funds_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ottiene oro [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]."
  mil_order_request_funds_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha ottenuto oro [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]."
@@ -616,7 +616,7 @@
  #
  mil_order_request_men: "Richiedi Soldati"
  dip_mil_order_request_men_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
- mil_order_request_men_act: "Chiedi riserve [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]. Poiché ci sostengono, saranno più propensi ad accettare la nostra richiesta."
+ mil_order_request_men_act: "Chiedi delle riserve [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]. Poiché ci patrocinano, saranno più propensi ad accettare la nostra richiesta."
  mil_order_request_men_desc: "Chiederemo loro di aiutarci, fornendoci ulteriori riserve per le nostre forze."
  mil_order_request_men_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ottiene riserve [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]."
  mil_order_request_men_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha ottenuto riserve [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]."
