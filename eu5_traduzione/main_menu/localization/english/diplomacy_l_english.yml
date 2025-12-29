@@ -1190,7 +1190,7 @@
  PEACE_TREATY_CANT_TAKE_ALL_RELEASED_LOCATIONS: "@trigger_no!La Località ceduta si sovrapporrebbe ai trattati di rilascio. Rimuovi prima il trattato di rilascio"
  PEACE_TREATY_REVOLTER_WAR_CEDE: "@trigger_no![COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] è un rivoltoso e non siamo il leader della guerra"
  PEACE_TREATY_NO_TO_RIVAL: "@trigger_no![TARGET_COUNTRY.Custom('IT_ART_RANGO')|U][TARGET_COUNTRY.GetLongName] è un nostro [rival|e]; non vogliamo imparentarci con la loro [dynasty|e]."
- PEACE_TREATY_NO_SLAVES_TO_LIBERATE: "@trigger_no![TARGET_COUNTRY.Custom('IT_ART_RANGO')|U][TARGET_COUNTRY.GetLongName] non ha schiavi con la [primary_or_accepted_culture|e] [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][COUNTRY.GetLongName]."
+ PEACE_TREATY_NO_SLAVES_TO_LIBERATE: "@trigger_no![TARGET_COUNTRY.Custom('IT_ART_RANGO')|U][TARGET_COUNTRY.GetLongName] non ha schiavi con la [primary_or_accepted_culture|e] [COUNTRY.Custom('IT_DEL_RANGO')][COUNTRY.GetLongName]."
 
  BASE_REASON_WITH_BREAKDOWN: "Base: #TOOLTIP:$BREAKDOWN_TAG$ $VALUE|-=2$#!\n"
  TOTAL_POPULATION: "[population|e] Totale nell'[international_organization|e]"
@@ -1349,7 +1349,7 @@
 
 
 
- SUBJECT_OF_HEADER_TT: "[Country.Custom('IT_La')|U][Country.GetNameWithNoTooltip] è un [SubjectType.GetNameWithNoTooltip] [Country.Custom('IT_DEL_RANGO')][Country.GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip]"
+ SUBJECT_OF_HEADER_TT: "[Country.Custom('IT_La')|U][Country.GetNameWithNoTooltip] è un [SubjectType.GetNameWithNoTooltip] [Country.GetDiplomacy.GetOverlord.Custom('IT_DEL_RANGO')][Country.GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip]"
 
 
 
