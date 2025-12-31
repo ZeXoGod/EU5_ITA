@@ -115,11 +115,11 @@
  random_event.28.a: "Negiamogli i vecchi diritti!"
  random_event.28.b: "Accettiamo le loro richieste."
  random_event.29.title: "Mancata Applicazione delle Ordinanze"
- random_event.29.desc: "Sebbene [target_ruler.GetName] emani molte ordinanze, [target_ruler.GetHeSheFormal] è, in pratica, quasi impotente a farle rispettare. L'applicazione dipende invece dai poteri locali - [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] regional[ROOT.GetCountry.Custom('IT_NOBLES_OAI')] e cittadini - che non sono sempre vigili come vorremmo. Di recente, abbiamo scoperto che le nostre autorità in [target_province.GetName] sono particolarmente reticenti nel far rispettare la volontà [ROOT.GetCountry.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle].
+ random_event.29.desc: "Sebbene [target_ruler.GetName] emani molte ordinanze, [target_ruler.GetHeSheFormal] è, in pratica, quasi impotente a farle rispettare. L'applicazione dipende invece dai poteri locali - [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] regional[ROOT.GetCountry.Custom('IT_NOBLES_OAI')] e cittadini - che non sono sempre vigili come vorremmo. Di recente, abbiamo scoperto che le nostre autorità in [target_province.GetName] sono particolarmente reticenti nel far rispettare la volontà [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle].
  random_event.29.a: "Lasciamo che se ne occupino loro."
  random_event.29.b: "Aumentiamo i tentativi di applicazione!"
  random_event.30.title: "Richiesta di Privilegi [ROOT.GetCountry.Custom('IT_BURGHERS_DAL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')|U]"
- random_event.30.desc: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] sempre più risentit[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] del potere [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e, in particolare della carenza di opportunità nei ranghi più alti del governo. La loro unica via per arrivare al potere è sposarsi con persone povere ma benestanti, o cercare di ottenere posizioni vacanti negli ambienti governativi chiedendo maggiori privilegi [ROOT.GetCountry.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle].
+ random_event.30.desc: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] sempre più risentit[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] del potere [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e, in particolare della carenza di opportunità nei ranghi più alti del governo. La loro unica via per arrivare al potere è sposarsi con persone povere ma benestanti, o cercare di ottenere posizioni vacanti negli ambienti governativi chiedendo maggiori privilegi [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle].
  random_event.30.a: "Concediamogli [target_privilege.GetNameWithNoTooltip]."
  random_event.30.b: "Tali privilegi sono riservati [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
  random_event.31.title: "Architetto Italiano"
@@ -336,7 +336,7 @@
  random_event.81.a: "La spada è più forte del libro."
  random_event.82.title: "Diplomazia Competente!"
  random_event.82.desc: "Dopo aver profuso qualche sforzo nel comunicare con i suoi colleghi, il duro lavoro di [target_ruler.GetName] ha dato i suoi frutti. La nostra reputazione diplomatica è aumentata grazie alla sua lingua vellutata.
- random_event.82.a: "Ci si può sempre fidare [ROOT.GetCountry.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]!"
+ random_event.82.a: "Ci si può sempre fidare [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]!"
  random_event.83.title: "Diplomazia Incompetente!"
  random_event.83.desc: "È quasi inconcepibile quanto [target_ruler.GetName] sia incompetente nel gestire la diplomazia. Non sappiamo come abbia fatto me è riuscito a danneggiare la nostra reputazione diplomatica nel mondo con una singola lettera di scuse a un ambasciatore."
  random_event.83.a: "Com'è possibile?"

@@ -486,9 +486,11 @@ IT_AL_TITOLO = {
     text = {
         trigger = {
             any_ruling_countries = { 
-			country_rank = country_rank:rank_empire 
+			country_rank = country_rank:rank_empire
+			OR = {
+				TAG = CHI
+			} 
 			NOR = { 
-			TAG = CHI
 			has_reform = government_reform:shogunate			
 				}
 			}

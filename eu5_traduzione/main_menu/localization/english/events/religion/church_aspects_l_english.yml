@@ -1,15 +1,15 @@
 ﻿l_english:
  church_aspects.1.title: "I Pacifisti Contestano la Guerra"
- church_aspects.1.desc: "Un crescente movimento pacifista sta prendendo piede tra il popolo [ROOT.GetCountry.GetAdjective] ed è stato persino sostenuto, in parte, dallo Stato. Nonostante ciò, ci ritroviamo in una guerra d’aggressione. Sebbene avessimo certamente ottime ragioni per attaccare, i pacifisti contestano il conflitto e si rifiutano di combattere."
+ church_aspects.1.desc: "Un crescente movimento pacifista sta prendendo piede tra il popolo [ROOT.GetCountry.GetAdjective] ed è stato persino sostenuto, in parte, dallo Stato. Nonostante ciò, ci ritroviamo in una guerra d'aggressione. Sebbene avessimo certamente ottime ragioni per attaccare, i pacifisti contestano il conflitto e si rifiutano di combattere."
  church_aspects.1.a: "Rispetteremo le loro convinzioni."
  church_aspects.1.b: "Tutti coloro che vengono chiamati devono servire."
 
  church_aspects.2.title: "Beati i Pacificatori"
- church_aspects.2.desc: "Anni di pace hanno favorito la crescita di un movimento pacifista all’interno della fede [ROOT.GetCountry.GetReligion..Custom('IT_REL_FS')] in [ROOT.GetCountry.GetName]. Un rinomato teologo pacifista ha parlato al popolo in sostegno del nostro benevolo governo, esortando tutti i veri cristiani a seguire l’esempio virtuoso [ROOT.GetCountry.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ church_aspects.2.desc: "Anni di pace hanno favorito la crescita di un movimento pacifista all'interno della fede [ROOT.GetCountry.GetReligion..Custom('IT_REL_FS')] in [ROOT.GetCountry.GetName]. Un rinomato teologo pacifista ha parlato al popolo in sostegno del nostro benevolo governo, esortando tutti i veri cristiani a seguire l'esempio virtuoso [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]."
  church_aspects.2.a: "Siamo tutti figli di Dio."
 
  church_aspects.3.title: "Voti di Povertà"
- church_aspects.3.desc: "Molte sette [ROOT.GetCountry.GetReligion.Custom('IT_REL_FP')] rifiutano l’accumulo di ricchezze clericali, associandolo alla decadente e peccaminosa corruzione della Chiesa Cattolica. I voti di povertà tra i sacerdoti stanno diventando sempre più comuni, e la Chiesa [ROOT.GetCountry.GetAdjective] si limita sempre più agli affari spirituali, evitando di interferire nelle questioni temporali dello Stato."
+ church_aspects.3.desc: "Molte sette [ROOT.GetCountry.GetReligion.Custom('IT_REL_FP')] rifiutano l'accumulo di ricchezze clericali, associandolo alla decadente e peccaminosa corruzione della Chiesa Cattolica. I voti di povertà tra i sacerdoti stanno diventando sempre più comuni, e la Chiesa [ROOT.GetCountry.GetAdjective] si limita sempre più agli affari spirituali, evitando di interferire nelle questioni temporali dello Stato."
  church_aspects.3.a: "Incoraggiamo i voti di povertà."
  church_aspects.3.b: "Una Chiesa potente ha comunque i suoi meriti."
 
@@ -19,7 +19,7 @@
  church_aspects.4.b: "Facciamo che la punizione sia puramente simbolica."
 
  church_aspects.5.title: "Avarizia"
- church_aspects.5.desc: "Alcuni membri della nostra Chiesa di Stato hanno sofferto pesantemente a causa di tassi d’interesse eccessivamente alti. Si diffondono voci e pamphlet che condannano 'Usura e Frode', sostenendo che vi siano strozzini ovunque.\n\nLo Stato e la sua Chiesa ritengono che richiedere interessi sia compatibile con l’essere buoni cristiani, ma in alcuni casi ciò può portare a eccessi. Forse sarebbe meglio ridurre il limite consentito, per contenere gli abusi peggiori."
+ church_aspects.5.desc: "Alcuni membri della nostra Chiesa di Stato hanno sofferto pesantemente a causa di tassi d'interesse eccessivamente alti. Si diffondono voci e pamphlet che condannano 'Usura e Frode', sostenendo che vi siano strozzini ovunque.\n\nLo Stato e la sua Chiesa ritengono che richiedere interessi sia compatibile con l'essere buoni cristiani, ma in alcuni casi ciò può portare a eccessi. Forse sarebbe meglio ridurre il limite consentito, per contenere gli abusi peggiori."
  church_aspects.5.a: "Ignoriamo questi lamentosi."
  church_aspects.5.b: "Riduciamo i tassi per un periodo."
 
@@ -29,8 +29,8 @@
  church_aspects.6.b: "Ordiniamo una nuova traduzione."
 
  church_aspects.7.title: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] Investe i Propri Profitti"
- church_aspects.7.desc: "La nostra audace deviazione dalla dottrina generale [ShowReligionGroupAdjective('christian')] per permettere l’usura ha dato grandi frutti. [ROOT.GetCountry.Custom('IT_BURGHERS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_BURGHERS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] si [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] arrichit[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] che mai e [ROOT.GetCountry.Custom('IT_BURGHERS_HANNO')] aumentato la prosperità grazie agli interessi che applicati. Come segno di gratitudine verso [target_ruler.GetName], ha deciso di finanziare un progetto a [target_location.GetName]."
- church_aspects.7.a: "Una nuova [ShowBuildingTypeNameWithNoTooltip('university')] sarà un’ottima aggiunta."
+ church_aspects.7.desc: "La nostra audace deviazione dalla dottrina generale [ShowReligionGroupAdjective('christian')] per permettere l'usura ha dato grandi frutti. [ROOT.GetCountry.Custom('IT_BURGHERS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_BURGHERS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] si [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] arrichit[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] che mai e [ROOT.GetCountry.Custom('IT_BURGHERS_HANNO')] aumentato la prosperità grazie agli interessi che applicati. Come segno di gratitudine verso [target_ruler.GetName], ha deciso di finanziare un progetto a [target_location.GetName]."
+ church_aspects.7.a: "Una nuova [ShowBuildingTypeNameWithNoTooltip('university')] sarà un'ottima aggiunta."
  church_aspects.7.b: "Una nuova [ShowBuildingTypeNameWithNoTooltip('cathedral')] compiacerà sicuramente [ROOT.GetCountry.GetReligion.GetGodName]."
 
  church_aspects.8.title: "Predicare nella Povertà"
@@ -39,7 +39,7 @@
  church_aspects.8.b: "Lodiamo questi predicatori per il loro lavoro."
 
  church_aspects.9.title: "Punizione Uguale per Tutti"
- church_aspects.9.desc: "La punizione dei peccatori, indipendentemente dalla loro posizione sociale, ha fatto guadagnare grande prestigio [ROOT.GetCountry.Custom('IT_CLERGY_AL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Grazie al nostro servizio religioso, il popolo di [ROOT.GetCountry.GetName] si sente uguale davanti a Dio. Con un po’ di guida, questa sensazione potrebbe ridurre le barriere sociali."
+ church_aspects.9.desc: "La punizione dei peccatori, indipendentemente dalla loro posizione sociale, ha fatto guadagnare grande prestigio [ROOT.GetCountry.Custom('IT_CLERGY_AL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Grazie al nostro servizio religioso, il popolo di [ROOT.GetCountry.GetName] si sente uguale davanti a Dio. Con un po' di guida, questa sensazione potrebbe ridurre le barriere sociali."
  church_aspects.9.a: "Possiamo trarre vantaggio da questa situazione."
  church_aspects.9.b: "Questo porterà stabilità a [ROOT.GetCountry.GetNameWithNoTooltip]."
 
@@ -61,7 +61,7 @@
  church_aspects.13.title: "Fallimento delle Scritture"
  church_aspects.13.desc: "La nostra dottrina di [ShowReligiousAspectName('sola_scriptura')] è inutile se il popolo non è in grado di leggere la Bibbia. Senza istruzione adeguata, i nostri sudditi non possono fare affidamento sul Libro Sacro. Come sovrani, dobbiamo affrontare questo problema."
  church_aspects.13.a: "Diamo la colpa [ROOT.GetCountry.Custom('IT_CLERGY_AL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
- church_aspects.13.b: "Investiamo nell’istruzione."
+ church_aspects.13.b: "Investiamo nell'istruzione."
 
  church_aspects.14.title: "Gli Adamiti nella Società"
  church_aspects.14.desc: "Tra le molte sette riformiste, gli Adamiti sono considerati tra i più radicali. Oltre al rifiuto degli indumenti, il loro ripudio della comunione e del sacerdozio ha il potenziale per generare conflitti interni e con potenze straniere. Eppure, abbracciare coraggiosamente questa dottrina porta alcuni benefici: i loro riti nudi e la loro vita comunitaria erodono lo status individuale e favoriscono una comprensione comune."
@@ -69,7 +69,7 @@
  church_aspects.14.b: "Formiamo una comunità accogliente."
 
  church_aspects.15.title: "Declino della Produttività"
- church_aspects.15.desc: "La nostra ampia accettazione delle Comunità Adamite in [ROOT.GetCountry.GetName] ha provocato un declino dell’economia della nostra capitale e il radicarsi di un approccio più tradizionale alla produzione."
+ church_aspects.15.desc: "La nostra ampia accettazione delle Comunità Adamite in [ROOT.GetCountry.GetName] ha provocato un declino dell'economia della nostra capitale e il radicarsi di un approccio più tradizionale alla produzione."
  church_aspects.15.a: "Dobbiamo accettarlo."
  church_aspects.15.b: "Contrastiamo questa tendenza."
 
@@ -90,7 +90,7 @@
  church_aspects.19.title: "Etica Lavorativa Ascetica"
  church_aspects.19.desc: "Pur avendo abbandonato la maggior parte delle antiche pratiche, [ShowReligiousAspectName('asceticism')] rimane al centro della nostra fede. [ROOT.GetCountry.Custom('IT_PEASANTS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_PEASANTS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ROOT.GetCountry.Custom('IT_PEASANTS_HA')] integrato questi insegnamenti nella vita quotidiana e lavora con zelo e rigore."
  church_aspects.19.a: "Questo plasmerà certamente la nostra società."
- church_aspects.19.b: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] radicherà l’astinenza nella nostra società."
+ church_aspects.19.b: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] radicherà l'astinenza nella nostra società."
 
  church_aspects.20.title: "Reazione Contro le Comunità Ascetiche"
  church_aspects.20.desc: "Dalla creazione dell'[ShowReligiousAspectName('asceticism')] nella Chiesa [ROOT.GetCountry.Custom('IT_ADJ_FS')], sono sorti conflitti minori tra le sette ascetiche e le altre comunità della nostra fede. Membri [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] si scontrano, accusandosi reciprocamente di seguire un culto sbagliato. Dobbiamo agire rapidamente per non apparire deboli agli occhi dei nostri sudditi."
@@ -98,14 +98,14 @@
  church_aspects.20.b: "[ROOT.GetCountry.Custom('IT_CROWN_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] si assumerà la responsabilità."
 
  church_aspects.21.title: "[location_monastery.GetNameWithNoTooltip] Beneficia del [ShowBuildingTypeNameWithNoTooltip('monastery')]"
- church_aspects.21.desc: "La nostra amministrazione locale in [location_monastery.GetName] ha riportato una crescita dell'industria locale. La reintroduzione dei monasteri nel nostro paese sembra favorire la produzione di materie prime e aiuta l’economia locale a prosperare."
+ church_aspects.21.desc: "La nostra amministrazione locale in [location_monastery.GetName] ha riportato una crescita dell'industria locale. La reintroduzione dei monasteri nel nostro paese sembra favorire la produzione di materie prime e aiuta l'economia locale a prosperare."
  church_aspects.21.a: "Lasciamo che questi monaci continuino qui."
  church_aspects.21.b: "Il popolo dovrebbe seguire il loro esempio."
 
  church_aspects.22.title: "Timore dei Cripto-Cattolici"
- church_aspects.22.desc: "L’istituzione di un nuovo [ShowBuildingTypeName('monastery')] è vista con sospetto dalla nostra Chiesa. Queste istituzioni potrebbero portare a una regressione degli sforzi riformisti di [ROOT.GetCountry.GetName] e a una rinascita delle credenze [ShowReligionAdjective('catholic')]. Se non agiamo con attenzione e non sorvegliamo da vicino queste comunità, la situazione potrebbe peggiorare ulteriormente."
+ church_aspects.22.desc: "L'istituzione di un nuovo [ShowBuildingTypeName('monastery')] è vista con sospetto dalla nostra Chiesa. Queste istituzioni potrebbero portare a una regressione degli sforzi riformisti di [ROOT.GetCountry.GetName] e a una rinascita delle credenze [ShowReligionAdjective('catholic')]. Se non agiamo con attenzione e non sorvegliamo da vicino queste comunità, la situazione potrebbe peggiorare ulteriormente."
  church_aspects.22.a: "Limitiamo i diritti del [ShowBuildingTypeNameWithNoTooltip('monastery')]."
- church_aspects.22.b: "Non c’è motivo di preoccuparsi."
+ church_aspects.22.b: "Non c'è motivo di preoccuparsi."
 
  church_aspects.23.title: "[target_country.GetNameWithNoTooltip] Segue il Nostro Esempio"
  church_aspects.23.desc: "Un tipografo in [target_country.GetName] ha pubblicato la sua versione della Bibbia. Per questo arduo lavoro ha utilizzato la nostra come base, traducendo dal nostro precedente risultato. Questo è un grande onore per i nostri traduttori e sottolinea il nostro ruolo nel movimento della Riforma."
@@ -140,7 +140,7 @@
  church_aspects.28.b: "Rimuoviamoli da [target_location.GetNameWithNoTooltip]."
 
  church_aspects.29.title: "Un Credo si Diffonde"
- church_aspects.29.desc: "La nostra decisione di permettere a ogni credente di scegliere il proprio credo ha prodotto una confessione molto importante. Proveniente da [target_location.GetName], una nuova professione di fede si è rapidamente diffusa ispirando il nostro popolo. Sebbene promuoviamo la libertà individuale, questa confessione ha rafforzato la fede in [ROOT.GetCountry.GetName] come poche altre cose prima d’ora."
+ church_aspects.29.desc: "La nostra decisione di permettere a ogni credente di scegliere il proprio credo ha prodotto una confessione molto importante. Proveniente da [target_location.GetName], una nuova professione di fede si è rapidamente diffusa ispirando il nostro popolo. Sebbene promuoviamo la libertà individuale, questa confessione ha rafforzato la fede in [ROOT.GetCountry.GetName] come poche altre cose prima d'ora."
  church_aspects.29.a: "Celebriamo il risultato del nostro popolo."
  church_aspects.29.b: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
@@ -149,7 +149,7 @@
  church_aspects.30.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  church_aspects.31.title: "La Tradizione Sfida [target_ruler.GetNameWithNoTooltip]"
- church_aspects.31.desc: "Uno dei nostri pastori in [target_location.GetName] sembra essersi allontanato molto dalla dottrina stabilita. Sebbene promuoviamo altre fonti di verità divina oltre alla Bibbia, [target_character.GetSheHe] sembra scartarla completamente nei suoi sermoni, concentrandosi invece su altri argomenti. A meno che non vogliamo rischiare la diffusione dell’eresia, probabilmente dovremmo rimuovere [target_character.GetHerHim] dal suo incarico."
+ church_aspects.31.desc: "Uno dei nostri pastori in [target_location.GetName] sembra essersi allontanato molto dalla dottrina stabilita. Sebbene promuoviamo altre fonti di verità divina oltre alla Bibbia, [target_character.GetSheHe] sembra scartarla completamente nei suoi sermoni, concentrandosi invece su altri argomenti. A meno che non vogliamo rischiare la diffusione dell'eresia, probabilmente dovremmo rimuovere [target_character.GetHerHim] dal suo incarico."
  church_aspects.31.a: "[target_character.GetSheHe|U] è chiaramente un eretico!"
  church_aspects.31.b: "[target_character.GetSheHe|U] potrebbe rivelarsi utile."
 
