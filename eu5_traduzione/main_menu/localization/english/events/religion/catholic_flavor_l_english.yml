@@ -5,28 +5,28 @@
  catholic_flavor.1.b: "Diventerà un ottimo vescovo."
 
  catholic_flavor.2.title: "Un [ShowBuildingTypeNameWithNoTooltip('monastery')] Prospero"
- catholic_flavor.2.desc: "Il [ShowBuildingTypeName('monastery')] di [target_location.GetName] ha vissuto un periodo di grande prosperità, attirando anche rinomati studiosi Cattolici. Questo successo influenza positivamente il resto di [target_location.GetNameWithNoTooltip], portando nuova ricchezza all’area. Una visita di [target_ruler.GetName] sarebbe opportuna e rappresenterebbe un grande onore per il [ShowBuildingTypeNameWithNoTooltip('monastery')]."
+ catholic_flavor.2.desc: "Il [ShowBuildingTypeName('monastery')] di [target_location.GetName] ha vissuto un periodo di grande prosperità, attirando anche rinomati studiosi Cattolici. Questo successo influenza positivamente il resto di [target_location.GetNameWithNoTooltip], portando nuova ricchezza all'area. Una visita di [target_ruler.GetName] sarebbe opportuna e rappresenterebbe un grande onore per il [ShowBuildingTypeNameWithNoTooltip('monastery')]."
  catholic_flavor.2.a: "[target_ruler.GetNameWithNoTooltip] dovrebbe visitare [target_location.GetNameWithNoTooltip] [target_ruler.GetHerselfHimself]."
  catholic_flavor.2.b: "Meglio lasciarli alle loro attività."
 
  catholic_flavor.3.title: "Un [ShowBuildingTypeNameWithNoTooltip('monastery')] in Difficoltà"
- catholic_flavor.3.desc: "Un [ShowBuildingTypeName('monastery')] abitato dai nostri monaci è caduto in disgrazia. La mancanza sia di fondi che di nuovi seguaci ha ridotto il monastero a un’ombra di ciò che era un tempo. I monaci ci implorano di aiutarli con una generosa donazione, senza la quale non saranno più in grado di sostenere la popolazione locale come in passato."
+ catholic_flavor.3.desc: "Un [ShowBuildingTypeName('monastery')] abitato dai nostri monaci è caduto in disgrazia. La mancanza sia di fondi che di nuovi seguaci ha ridotto il monastero a un'ombra di ciò che era un tempo. I monaci ci implorano di aiutarli con una generosa donazione, senza la quale non saranno più in grado di sostenere la popolazione locale come in passato."
  catholic_flavor.3.a: "Faremo una donazione."
  catholic_flavor.3.b: "Non è un nostro problema."
 
  catholic_flavor.4.title: "Simonia?"
- catholic_flavor.4.desc: "C'è una posizione vacante nell'alta amministrazione ecclesiastica di [ROOT.GetCountry.GetName]. Un ecclesiastico di una famiglia ricca, [target_character.GetName], ci ha fatto un’offerta allettante: se approviamo e sosteniamo la sua elezione, riceveremo un’ingente somma di denaro. Alcuni devoti sostengono che questa pratica sia un peccato chiamato simonia... ma cosa ne sanno loro?"
+ catholic_flavor.4.desc: "C'è una posizione vacante nell'alta amministrazione ecclesiastica di [ROOT.GetCountry.GetName]. Un ecclesiastico di una famiglia ricca, [target_character.GetName], ci ha fatto un'offerta allettante: se approviamo e sosteniamo la sua elezione, riceveremo un'ingente somma di denaro. Alcuni devoti sostengono che questa pratica sia un peccato chiamato simonia... ma cosa ne sanno loro?"
  catholic_flavor.4.a: "Abbiamo bisogno di quei soldi!"
  catholic_flavor.4.b: "La simonia è un peccato!"
 
  catholic_flavor.5.title: "Vendita delle Indulgenze"
- catholic_flavor.5.desc: "$flavor_pap.1701.a$\n\nLa pratica di garantire l’assoluzione dai peccati terreni in cambio di denaro è molto diffusa tra i seguaci Cattolici, o almeno tra quelli che possono permetterselo. Vengono perdonati senza neanche rinunciare ai loro vizi! Tuttavia, questa pratica desta preoccupazione tra [ROOT.GetCountry.Custom('IT_CLERGY_OAI')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName], che non gradisce l’idea che il [GetCountry('PAP').GetGovernment.GetRulerTitle] arricchisca la [GetInternationalOrganization('catholic_church').GetName] in questo modo. Essi sostengono invece che i Cristiani debbano mostrare sincero pentimento.\n\nCon l’avanzare dell’età di [target_ruler.GetName], la questione diventa sempre più personale. Anche [target_ruler.GetSheHe|U] ha peccato, come qualsiasi [ROOT.GetCountry.GetGovernment.GetRulerTitle] per mantenere il potere. Come dovrebbe quindi ottenere il perdono?"
+ catholic_flavor.5.desc: "$flavor_pap.1701.a$\n\nLa pratica di garantire l'assoluzione dai peccati terreni in cambio di denaro è molto diffusa tra i seguaci Cattolici, o almeno tra quelli che possono permetterselo. Vengono perdonati senza neanche rinunciare ai loro vizi! Tuttavia, questa pratica desta preoccupazione tra [ROOT.GetCountry.Custom('IT_CLERGY_OAI')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName], che non gradisce l'idea che il [GetCountry('PAP').GetGovernment.GetRulerTitle] arricchisca la [GetInternationalOrganization('catholic_church').GetName] in questo modo. Essi sostengono invece che i Cristiani debbano mostrare sincero pentimento.\n\nCon l'avanzare dell'età di [target_ruler.GetName], la questione diventa sempre più personale. Anche [target_ruler.GetSheHe|U] ha peccato, come qualsiasi [ROOT.GetCountry.GetGovernment.GetRulerTitle] per mantenere il potere. Come dovrebbe quindi ottenere il perdono?"
  catholic_flavor.5.a: "Organizziamo una donazione al [GetCountry('PAP').GetGovernment.GetRulerTitle]."
  catholic_flavor.5.b: "Le indulgenze sono una scorciatoia; meglio il pentimento sincero."
  catholic_obstructing_church: "Rifiuto di pagare le indulgenze"
 
  catholic_flavor.6.title: "Venerazione delle Reliquie"
- catholic_flavor.6.desc: "Dal più alto nobile al più umile contadino, tutti credono che venerare le reliquie riduca il tempo da trascorrere in purgatorio. Tuttavia, un trattato che critica questa pratica è stato trovato affisso alla porta di una delle nostre chiese di [unrest_province.GetName], nota per il suo vasto tesoro di reliquie. C’è forse del vero in quelle accuse, o si tratta solo delle parole di eretici che vogliono danneggiare l’unità del [GetInternationalOrganization('catholic_church').GetName], la nostra unica via alla salvezza?"
+ catholic_flavor.6.desc: "Dal più alto nobile al più umile contadino, tutti credono che venerare le reliquie riduca il tempo da trascorrere in purgatorio. Tuttavia, un trattato che critica questa pratica è stato trovato affisso alla porta di una delle nostre chiese di [unrest_province.GetName], nota per il suo vasto tesoro di reliquie. C'è forse del vero in quelle accuse, o si tratta solo delle parole di eretici che vogliono danneggiare l'unità del [GetInternationalOrganization('catholic_church').GetName], la nostra unica via alla salvezza?"
  catholic_flavor.6.a: "Ma abbiamo appena comprato una fiala del latte della Vergine Maria!"
  catholic_flavor.6.b: "Il perdono può venire solo da [ROOT.GetCountry.GetReligion.GetGodName]."
  catholic_flavor.6.b.tt: "Questo renderà scontenta la popolazione di [unrest_province.GetName] che segue la fede [ShowReligionName('catholic')]."
@@ -38,12 +38,12 @@
  opinion_denying_the_holy_mother: "Negazione della Santa Madre"
 
  catholic_flavor.8.title: "La dottrina del Giudizio Particolare"
- catholic_flavor.8.desc: "Come sappiamo, alla morte [ROOT.GetCountry.GetReligion.GetGodName] giudica immediatamente ogni anima, decidendone il destino fino al Giudizio Universale.\n\nTuttavia, un monaco di [unrest_location_scope.GetName] ha avviato una disputa dottrinale prossima all’eresia, sostenendo che il purgatorio non esiste e che le preghiere per i defunti non aiutano la loro ascesa al cielo.\n\nQueste dispute stanno minacciando l’unità del [GetInternationalOrganization('catholic_church').GetName]."
+ catholic_flavor.8.desc: "Come sappiamo, alla morte [ROOT.GetCountry.GetReligion.GetGodName] giudica immediatamente ogni anima, decidendone il destino fino al Giudizio Universale.\n\nTuttavia, un monaco di [unrest_location_scope.GetName] ha avviato una disputa dottrinale prossima all'eresia, sostenendo che il purgatorio non esiste e che le preghiere per i defunti non aiutano la loro ascesa al cielo.\n\nQueste dispute stanno minacciando l'unità del [GetInternationalOrganization('catholic_church').GetName]."
  catholic_flavor.8.a: "Probabilmente è un eretico."
  catholic_flavor.8.b: "I morti non possono essere aiutati."
 
  catholic_flavor.9.title: "Una Nuova Confessione di Fede"
- catholic_flavor.9.desc: "Alcuni riformatori hanno proposto una nuova confessione di fede, con differenze minori ma significative rispetto agli insegnamenti Cattolici. Il [GetInternationalOrganization('catholic_church').GetName] sostiene che sfiori l’eresia, mentre altri ritengono che questa confessione potrebbe portare la Chiesa e il suo apparato amministrativo sotto un controllo più stretto."
+ catholic_flavor.9.desc: "Alcuni riformatori hanno proposto una nuova confessione di fede, con differenze minori ma significative rispetto agli insegnamenti Cattolici. Il [GetInternationalOrganization('catholic_church').GetName] sostiene che sfiori l'eresia, mentre altri ritengono che questa confessione potrebbe portare la Chiesa e il suo apparato amministrativo sotto un controllo più stretto."
  catholic_flavor.9.a: "Promuoviamola, anche se alcuni sudditi si allontaneranno."
  catholic_flavor.9.b: "No: condannerebbe tutti alla dannazione."
 
@@ -57,13 +57,13 @@
  catholic_flavor.11.a: "Te Deum!"
 
  catholic_flavor.12.title: "Sublimis Deus"
- catholic_flavor.12.desc: "[pope_scope.GetName] decreta che i popoli nativi delle Colonie non devono essere ridotti in schiavitù. L’idea che essi siano esseri inferiori, incapaci di ricevere la grazia di [ROOT.GetCountry.GetReligion.GetGodName], è – scrive – una menzogna infame diffusa dal nemico del genere umano. Al contrario, essendo esseri dotati di anima, essi desiderano la luce di [ROOT.GetCountry.GetReligion.GetGodName], e i principi pii devono impegnarsi a diffondere la fede Cattolica tra di loro."
+ catholic_flavor.12.desc: "[pope_scope.GetName] decreta che i popoli nativi delle Colonie non devono essere ridotti in schiavitù. L'idea che essi siano esseri inferiori, incapaci di ricevere la grazia di [ROOT.GetCountry.GetReligion.GetGodName], è – scrive – una menzogna infame diffusa dal nemico del genere umano. Al contrario, essendo esseri dotati di anima, essi desiderano la luce di [ROOT.GetCountry.GetReligion.GetGodName], e i principi pii devono impegnarsi a diffondere la fede Cattolica tra di loro."
  catholic_flavor.12.a: "Faremo rispettare la volontà del [GetCountry('PAP').GetGovernment.GetRulerTitle]."
  opinion_sublimis_deus: "Sublimis Deus"
  catholic_flavor.12.b: "Ciò che il [GetCountry('PAP').GetGovernment.GetRulerTitle] ignora non potrà fargli del male."
 
  catholic_flavor.13.title: "Lo [ShowBuildingTypeNameWithNoTooltip('scriptorium')] Diffonde Eresia"
- catholic_flavor.13.desc: "Lo [ShowBuildingTypeNameWithNoTooltip('scriptorium')] di [target_location.GetName] ha commesso un grave errore durante la copiatura di alcuni testi religiosi, suggerendo un’interpretazione del tutto eretica. Se non agiamo immediatamente, tali testi potrebbero minare la fiducia del nostro popolo nella vera fede."
+ catholic_flavor.13.desc: "Lo [ShowBuildingTypeNameWithNoTooltip('scriptorium')] di [target_location.GetName] ha commesso un grave errore durante la copiatura di alcuni testi religiosi, suggerendo un'interpretazione del tutto eretica. Se non agiamo immediatamente, tali testi potrebbero minare la fiducia del nostro popolo nella vera fede."
  catholic_flavor.13.a: "Fermiamo la diffusione a ogni costo."
  catholic_flavor.13.b: "La situazione si risolverà da sola col tempo."
 
@@ -82,7 +82,7 @@
  catholic_flavor.15.d: "Nominate il campanaro di [ShowLocationNameWithNoTooltip('paris')]."
 
  catholic_flavor.16.title: "In Lode degli Scribi"
- catholic_flavor.16.desc: "L’arte di trascrivere i testi è un compito difficile e spesso ingrato. Tuttavia, il [ShowBuildingTypeNameWithNoTooltip('scriptorium')] di [target_location.GetName] ha ricevuto la lode di un abate, che celebra gli scribi con queste parole: #italic Lo scriba devoto, oggetto del nostro trattato, non mancherà mai di lodare Dio, compiacere gli angeli, fortificare i giusti, convertire i peccatori, raccomandare gli umili, confermare i buoni, confondere i superbi e rimproverare gli ostinati.#!"
+ catholic_flavor.16.desc: "L'arte di trascrivere i testi è un compito difficile e spesso ingrato. Tuttavia, il [ShowBuildingTypeNameWithNoTooltip('scriptorium')] di [target_location.GetName] ha ricevuto la lode di un abate, che celebra gli scribi con queste parole: #italic Lo scriba devoto, oggetto del nostro trattato, non mancherà mai di lodare Dio, compiacere gli angeli, fortificare i giusti, convertire i peccatori, raccomandare gli umili, confermare i buoni, confondere i superbi e rimproverare gli ostinati.#!"
  catholic_flavor.16.a: "Un eccellente esempio della nostra devozione."
  catholic_flavor.16.b: "Gli scribi hanno meritato tale elogio."
 

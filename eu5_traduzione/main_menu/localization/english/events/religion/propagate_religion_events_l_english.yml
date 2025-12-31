@@ -5,13 +5,13 @@
  propagate_religion_events.1.b: "No, devono restare dove possiamo controllarli."
 
  propagate_religion_events.2.title: "Missionari [target_country.GetReligion.GetAdjectiveWithNoTooltip]"
- propagate_religion_events.2.desc: "Un gruppo di missionari [target_country.GetReligion.GetAdjective] provenienti da [target_country.GetName] è giunto da noi chiedendo di stabilirsi a [target_location.GetName] per fondarvi una nuova comunità per sé e per i propri convertiti. Cooperano con le autorità locali e non si oppongono al nostro dominio, ma la loro presenza con tutta probabilità accelererà la diffusione della loro religione in tutta l’area."
- propagate_religion_events.2.a: "Non possiamo permettere che l’autorità scivoli verso gruppi esterni come questo."
+ propagate_religion_events.2.desc: "Un gruppo di missionari [target_country.GetReligion.GetAdjective] provenienti da [target_country.GetName] è giunto da noi chiedendo di stabilirsi a [target_location.GetName] per fondarvi una nuova comunità per sé e per i propri convertiti. Cooperano con le autorità locali e non si oppongono al nostro dominio, ma la loro presenza con tutta probabilità accelererà la diffusione della loro religione in tutta l'area."
+ propagate_religion_events.2.a: "Non possiamo permettere che l'autorità scivoli verso gruppi esterni come questo."
  propagate_religion_events.2.b: "Saranno una gradita aggiunta alla nostra società."
  location_pops_convert_to_muslim.tt: "#Y 1%#! dei [pops|e] di [target_location.GetName] si [convertiranno|e] a [target_country.GetReligion.GetName]"
 
  propagate_religion_events.3.title: "Marinai [ShowReligionGroupAdjectiveWithNoTooltip('muslim')]"
- propagate_religion_events.3.desc: "Dai mari più orientali alle acque più calde spinte dai monsoni, un’infinità di navi solca costantemente i molti porti del mondo, dai piccoli dau alle grandi galee. Nel loro insieme, queste rotte commerciali forniscono beni e approvvigionamenti a più della metà della popolazione mondiale. Ciò che molte di queste galee hanno in comune è l’essere equipaggiate da marinai [ShowReligionGroupAdjective('muslim')] provenienti da [ShowContinentName('africa')] o dal [ShowSubContinentName('middle_east')], affiancati da locali convertiti."
+ propagate_religion_events.3.desc: "Dai mari più orientali alle acque più calde spinte dai monsoni, un'infinità di navi solca costantemente i molti porti del mondo, dai piccoli dau alle grandi galee. Nel loro insieme, queste rotte commerciali forniscono beni e approvvigionamenti a più della metà della popolazione mondiale. Ciò che molte di queste galee hanno in comune è l'essere equipaggiate da marinai [ShowReligionGroupAdjective('muslim')] provenienti da [ShowContinentName('africa')] o dal [ShowSubContinentName('middle_east')], affiancati da locali convertiti."
  propagate_religion_events.3.a: "Incoraggiamo questi marinai a cercare i nostri porti!"
  propagate_religion_events.3.b: "Non abbiamo bisogno di fedi straniere sulle nostre navi."
 
@@ -21,14 +21,14 @@
  propagate_religion_events.4.b: "Invitiamo questo [target_character.GetWomanMan] a [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
 
  propagate_religion_events.5.title: "Moschea Fondata a [target_location.GetNameWithNoTooltip]"
- propagate_religion_events.5.desc: "I fedeli [target_location.GetDominantReligion.GetAdjective] di [target_location.GetName] hanno fondato un nuovo luogo destinato al loro culto. La moschea è ora il chiaro centro della comunità e probabilmente attirerà un numero crescente di nuovi abitanti. Faciliterà inoltre la conversione locale dell’intera area.\n\nVi sono chiari indizi che la nuova moschea sia in parte finanziata dai numerosi mercanti [target_country.GetAdjective] attivi nella regione, e nel nostro governo alcuni temono che ciò possa condurre a un’influenza indebita da parte loro e della loro religione."
+ propagate_religion_events.5.desc: "I fedeli [target_location.GetDominantReligion.GetAdjective] di [target_location.GetName] hanno fondato un nuovo luogo destinato al loro culto. La moschea è ora il chiaro centro della comunità e probabilmente attirerà un numero crescente di nuovi abitanti. Faciliterà inoltre la conversione locale dell'intera area.\n\nVi sono chiari indizi che la nuova moschea sia in parte finanziata dai numerosi mercanti [target_country.GetAdjective] attivi nella regione, e nel nostro governo alcuni temono che ciò possa condurre a un'influenza indebita da parte loro e della loro religione."
  propagate_religion_events.5.a: "Non possiamo permetterlo."
  propagate_religion_events.5.b: "Forniamo loro il supporto necessario per costruire una comunità migliore."
  propagate_religion.5.b.tt: "Ogni [location|e] in [target_location.GetArea.GetName] perderà [ShowNamedValue('control_severe_penalty')|+=2%] [control|e] e otterrà [ShowModifier('mosque_of_x')] per #Y 10#! anni"
 
  propagate_religion_events.6.title: "$rank_kingdom_muslim$ di [ROOT.GetCountry.GetNameWithNoTooltip]?"
- propagate_religion_events.6.desc: "Con l’aumento del peso del [ShowReligionGroupName('muslim')] all’interno del nostro [ROOT.GetCountry.GetFlavorRank], molti nostri funzionari, membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e vari notabili hanno iniziato ad adottare nozioni islamiche e [ShowLanguageName('arabic_language')] riguardanti regalità, nomi e titoli. Alcuni hanno persino iniziato a riferirsi al [ROOT.GetCountry.GetFlavorRank] come un $rank_kingdom_muslim$, nonostante la nostra religione ufficiale sia ancora [ROOT.GetCountry.GetReligion.GetName]. Alcuni consiglieri di [target_ruler.GetName] suggeriscono che potremmo trarre vantaggio dal seguire questa tendenza: se iniziassimo a chiamare noi stessi un $rank_kingdom_muslim$, potremmo migliorare i rapporti con i molti paesi [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] nel mondo."
- propagate_religion_events.6.a: "È un’idea sensata."
+ propagate_religion_events.6.desc: "Con l'aumento del peso del [ShowReligionGroupName('muslim')] all'interno del nostro [ROOT.GetCountry.GetFlavorRank], molti nostri funzionari, membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e vari notabili hanno iniziato ad adottare nozioni islamiche e [ShowLanguageName('arabic_language')] riguardanti regalità, nomi e titoli. Alcuni hanno persino iniziato a riferirsi al [ROOT.GetCountry.GetFlavorRank] come un $rank_kingdom_muslim$, nonostante la nostra religione ufficiale sia ancora [ROOT.GetCountry.GetReligion.GetName]. Alcuni consiglieri di [target_ruler.GetName] suggeriscono che potremmo trarre vantaggio dal seguire questa tendenza: se iniziassimo a chiamare noi stessi un $rank_kingdom_muslim$, potremmo migliorare i rapporti con i molti paesi [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] nel mondo."
+ propagate_religion_events.6.a: "È un'idea sensata."
  sultan_titles_for_non_muslims_tooltip: "Adotteremo titoli [ShowReligionGroupAdjective('muslim')], migliorando le relazioni di #G 75#! con tutti i [countries|e] [ShowReligionGroupAdjective('muslim')] conosciuti."
  propagate_religion_events.6.b: "No, dobbiamo difendere i valori tradizionali del [ROOT.GetCountry.GetLongNameWithNoTooltip]!"
 
@@ -40,10 +40,10 @@
  propagate_religion_events.8.title: "Studioso Itinerante"
  propagate_religion_events.8.desc: "Un dotto [target_character.GetWomanMan] dalla terra di [target_country.GetName] è giunto a [ROOT.GetCountry.GetCapital.GetName]. [target_character.GetSheHe|U] sostiene di aver studiato presso studiosi di molte città famose, ed è competente sia nella politica del vasto mondo [ShowReligionGroupAdjective('muslim')] sia in intricate questioni di teologia."
  propagate_religion_events.8.a: "Offriamogli un posto al nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
- propagate_religion_events.8.b: "Impariamo ciò che possiamo sulla situazione all’estero."
+ propagate_religion_events.8.b: "Impariamo ciò che possiamo sulla situazione all'estero."
 
  propagate_religion_events.9.title: "Capitani [ShowReligionGroupAdjectiveWithNoTooltip('muslim')]"
- propagate_religion_events.9.desc: "Nell’entroterra [ROOT.GetCountry.GetAdjective], molti capi governano piccoli domini con scarsa interferenza dal potere centrale. Tuttavia, benché non possano esercitare grande potere, alcuni coltivano ambizioni più alte. Alcuni capi locali di [target_location.GetName] hanno dato forma a tali pretese iniziando a definirsi sultani e cercando di rivendicare legittimità convertendo la loro popolazione al [ShowReligionGroupName('muslim')]."
+ propagate_religion_events.9.desc: "Nell'entroterra [ROOT.GetCountry.GetAdjective], molti capi governano piccoli domini con scarsa interferenza dal potere centrale. Tuttavia, benché non possano esercitare grande potere, alcuni coltivano ambizioni più alte. Alcuni capi locali di [target_location.GetName] hanno dato forma a tali pretese iniziando a definirsi sultani e cercando di rivendicare legittimità convertendo la loro popolazione al [ShowReligionGroupName('muslim')]."
  propagate_religion_events.9.a: "Ridicolo."
 
  propagate_religion_events.10.title: "Sincretismo [ShowReligionGroupAdjectiveWithNoTooltip('muslim')]"
