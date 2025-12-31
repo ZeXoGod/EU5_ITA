@@ -13,10 +13,10 @@
  make_regent_ruler: "Prendi il Trono"
  make_regent_ruler_concept: "[ruler|e]"
  make_regent_ruler_act: "$make_regent_ruler$"
- make_regent_ruler_desc_specific: "Dai il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName] a [SCOPE.sCharacter('recipient').GetName], in modo che diventi [SCOPE.sCountry('actor').Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle]."
+ make_regent_ruler_desc_specific: "Dai il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName] a [SCOPE.sCharacter('recipient').GetName], in modo che diventi [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle]."
  make_regent_ruler_desc: "Il [character|e] diventerà il nuovo [ruler|e] del [country|e]."
- make_regent_ruler_past: "[SCOPE.sCharacter('recipient').GetName] è diventato il nuovo [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle]!"
- make_regent_ruler_act_past: "[SCOPE.sCharacter('recipient').GetName] ha ottenuto il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetNameWithNoTooltip], ed è ora [SCOPE.sCountry('actor').Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName]."
+ make_regent_ruler_past: "[SCOPE.sCharacter('recipient').GetName] è diventato [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nuov[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_O_A')] [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle]!"
+ make_regent_ruler_act_past: "[SCOPE.sCharacter('recipient').GetName] ha ottenuto il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetNameWithNoTooltip], ed è ora [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName]."
 
 
 
@@ -25,7 +25,7 @@
  resign_as_grand_master_act: "$resign_as_grand_master$"
  resign_as_grand_master_desc_specific: "[SCOPE.sCharacter('recipient').GetName] rassegnerà le dimissioni come [ruler|e] di [SCOPE.sCountry('actor').GetName]."
  resign_as_grand_master_desc: "Il [character|e] rassegnerà le dimissioni come [ruler|e] del [country|e]."
- resign_as_grand_master_past: "[SCOPE.sCountry('actor').Custom('IT_ART_TITOLO')|U][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] rassegna le dimissioni!"
+ resign_as_grand_master_past: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] rassegna le dimissioni!"
  resign_as_grand_master_act_past: "[SCOPE.sCharacter('recipient').GetName] ha rassegnato le dimissioni come [ruler|e] [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetName]."
  
  dismiss_prince: "Destituisci Principe"
@@ -146,7 +146,7 @@
  abdicate_desc_specific: "[recipient.GetName] abdicherà al trono."
  abdicate_desc: "Il [character|e] abdicherà al trono."
  abdicate_past: "Abdicato!"
- abdicate_act_past: "[recipient.GetName] ha abdicato. [actor.GetGovernment.GetHeir.GetName] è [actor.Custom('IT_ART_TITOLO')] nuov[actor.Custom('IT_ART_O_A')] [actor.GetGovernment.GetFutureRulerTitle|w]."
+ abdicate_act_past: "[recipient.GetName] ha abdicato. [actor.GetGovernment.GetHeir.GetName] è [actor.GetGovernment.GetFutureRuler.Custom('IT_ART_TITOLO')] nuov[actor.GetGovernment.GetFutureRuler.Custom('IT_ART_O_A')] [actor.GetGovernment.GetFutureRulerTitle|w]."
  
  choose_theologian_duelist: "Scegli Teologo Dibattente"
  choose_theologian_duelist_concept: "[character|e]"
@@ -175,7 +175,7 @@
  prefection_common_desc: "sarà promossa allo status di #italic praefecta#! —[legal_male|e]— consentendole di essere un [heir|e] idoneo in determinate condizioni e garantendo l'accesso a interazioni di nicchia che sono limitate ai personaggi maschili."
  prefection_desc_specific: "[SCOPE.sCharacter('recipient').GetName] $prefection_common_desc$"
  prefection_desc: "Il [character|e] $prefection_common_desc$"
- prefection_past: "[[SCOPE.sCountry('actor').Custom('IT_ART_TITOLO')|U] [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] ha onorato [SCOPE.sCharacter('recipient').GetName] con lo status di #italic praefecta#!!"
+ prefection_past: "[[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U] [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] ha onorato [SCOPE.sCharacter('recipient').GetName] con lo status di #italic praefecta#!!"
  prefection_act_past: "[SCOPE.sCharacter('recipient').GetName] è ora idoneo come [heir|e] per alcune [heir_selections|e] e [character_interactions|e] di nicchia."
  
  join_foreign_order_of_chivalry: "Unisciti a Ordine di Cavalleria Straniero"
@@ -268,7 +268,7 @@
  select_area_for_governship: "Seleziona [area|e] su cui concedere il Governatorato"
  select_area_for_governship_no_area: "@trigger_no! Nessuna [area|e] disponibile."
  assign_governor_past: "A [SCOPE.sCharacter('recipient').GetName] è stata concessa la proprietà di [target_area.GetName]"
- assign_governor_act_past: "Per decreto [SCOPE.sCountry('actor').GetGovernment.Custom('IT_DEL_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle], [SCOPE.sCharacter('recipient').GetName] è stato nominato governatore di [target_area.GetName], come [target_reform.GetName]"
+ assign_governor_act_past: "Per decreto [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle], [SCOPE.sCharacter('recipient').GetName] è stato nominato governatore di [target_area.GetName], come [target_reform.GetName]"
  tim_normal_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] ottenga [events|e] positivi che aumenteranno la [prosperity|e] e il [development|e] dell'[area|e] a seconda dell'[total_ability|e] del [character|e].\n\nL'[area|e] sarà annessa da noi dopo la morte di [SCOPE.sCharacter('recipient').GetName]."
  tim_banished_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] non potrà diventare [SCOPE.sCharacter('recipient').Custom('IT_ART_IL_LA')] nostr[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [heir|e], ma [SCOPE.sCharacter('recipient').GetSheHe] potrebbe ottenere [events|e] per raccogliere supporto contro di noi.\n\nL'[area|e] potrebbe essere ereditata dall'[heir|e] di [SCOPE.sCharacter('recipient').GetName] dopo la sua morte."
  tim_educational_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] otterrà più [total_ability|e] da [events|e], ma l'[area|e] potrebbe perdere [development|e] e [prosperity|e] nel processo.\n\nL'[area|e] potrebbe essere ereditata dopo che [SCOPE.sCharacter('recipient').GetName] avrà governato l'[area|e] per #Y 10#! anni, oppure [SCOPE.sCharacter('recipient').GetSheHe] potrebbe diventare un [ShowGovernmentReformName('soyurghal_governor_effective_governor_reform')]."

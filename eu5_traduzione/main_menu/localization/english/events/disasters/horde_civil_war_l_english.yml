@@ -23,8 +23,8 @@
  horde_civil_war.4.a: "Un altro avvoltoio che cerca di rivendicare il trono."
  horde_civil_war.4.b: "La nostra autorità è quasi completamente ripristinata!"
  
- horde_civil_war.5.title: "Sconfitta [target_character.Custom('IT_ART_TITOLO')|U][target_country.GetGovernment.GetRulerTitle]!"
- horde_civil_war.5.desc: "Nonostante i migliori sforzi di [target_ruler.GetName], i guerrieri irrequieti di [target_character.GetName] erano troppi per [target_ruler.GetHerHim] da gestire. Alla fine, [target_country.Custom('IT_ART_RANGO')][target_country.GetLongName], un tempo grande, è caduto sotto l'assalto implacabile dei suoi pretendenti, ponendo fine alla Guerra Civile [target_country.Custom('IT_ADJ_FS')] con una sonora sconfitta per [target_character.Custom('IT_ART_TITOLO')][target_country.GetGovernment.GetRulerTitle]..."
+ horde_civil_war.5.title: "Sconfitta [target_country.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U][target_country.GetGovernment.GetRulerTitle]!"
+ horde_civil_war.5.desc: "Nonostante i migliori sforzi di [target_ruler.GetName], i guerrieri irrequieti di [target_character.GetName] erano troppi per [target_ruler.GetHerHim] da gestire. Alla fine, [target_country.Custom('IT_ART_RANGO')][target_country.GetLongName], un tempo grande, è caduto sotto l'assalto implacabile dei suoi pretendenti, ponendo fine alla Guerra Civile [target_country.Custom('IT_ADJ_FS')] con una sonora sconfitta per [target_character.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][target_country.GetGovernment.GetRulerTitle]..."
  horde_civil_war.5.a: "Possa questo vile pretendente soffocare nel suo orgoglio."
  horde_civil_war.5.b: "Questa è la fine di [target_country.GetNameWithNoTooltip]..."
  
@@ -74,7 +74,7 @@
  horde_civil_war.1002.b.tt: "Ogni [location|e] posseduta che confina con [from_country.Custom('IT_La')][from_country.GetName] guadagna [ShowModifier('recovering_from_raids')] per #Y 4 anni#!, dando i seguenti effetti:\n[ShowModifierEffect('recovering_from_raids')]"
  
  horde_civil_war.100.title: "Fine della Crisi di Successione del [ShowGovernmentTypeNameWithNoTooltip('steppe_horde')]"
- horde_civil_war.100.desc.no_horde: "Le vecchie leggi delle orde non esistono più! [target_ruler.GetName] ha istituito [target_country.Custom('IT_La')][target_country.GetLongName], abolendo molte vecchie tradizioni del [ShowGovernmentTypeName('steppe_horde')] e consolidando la posizione [target_character.Custom('IT_DEL_TITOLO')][target_country.GetGovernment.GetRulerTitle]. Di conseguenza, la vecchia crisi di successione dei nostri giorni nomadi è stata risolta."
+ horde_civil_war.100.desc.no_horde: "Le vecchie leggi delle orde non esistono più! [target_ruler.GetName] ha istituito [target_country.Custom('IT_La')][target_country.GetLongName], abolendo molte vecchie tradizioni del [ShowGovernmentTypeName('steppe_horde')] e consolidando la posizione [target_character.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][target_country.GetGovernment.GetRulerTitle]. Di conseguenza, la vecchia crisi di successione dei nostri giorni nomadi è stata risolta."
  horde_civil_war.100.desc: "Finalmente, il periodo di lotta interna e guerre civili ha trovato la sua fine. Sotto il fermo governo di [target_ruler.GetName], [target_country.Custom('IT_La')][target_country.GetLongName] si è stabilizzato in un regno che può resistere alla prova del tempo."
- horde_civil_war.100.a: "Lunga vita [target_country.Custom('IT_DEL_TITOLO')][target_country.GetGovernment.GetRulerTitle]!"
+ horde_civil_war.100.a: "Lunga vita [target_country.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][target_country.GetGovernment.GetRulerTitle]!"
  horde_civil_war.100.a.tt: "In base al nostro [crown_power|e] guadagneremo quanto segue:"
