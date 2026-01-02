@@ -1,6 +1,6 @@
 ﻿l_english:
- flavor_jol.1.title: "Conversione dei [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ flavor_jol.1.title: "Conversione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
  flavor_jol.1.desc: "Con la nostra crescente influenza all'interno della [ShowRegionName('guinea_region')], siamo riusciti ad adattarci a gran parte delle richieste dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] nelle terre conquistate, eppure non si sono ancora pienamente integrati ai valori [ROOT.GetCountry.GetReligion.GetAdjective] né a quelli [ROOT.GetCountry.GetCulture.GetName]. Forse possiamo lanciare una campagna per aiutare in tal senso."
  flavor_jol.1.a: "Per stabilizzare il [ROOT.GetCountry.GetNameWithNoTooltip]!"
- flavor_jol.1.b: "Non c'è bisogno di inimicarsi i [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
- jol_convert_nobility_tt: "Il #Y 15%#! dei nostri [pops|e] dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si convertirà alla cultura [ROOT.GetCountry.GetCulture.GetName] e alla religione [ROOT.GetCountry.GetReligion.GetName]"
+ flavor_jol.1.b: "Non c'è bisogno di inimicarsi [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
+ jol_convert_nobility_tt: "Il #Y 15%#! dei nostri [pops|e] [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si convertirà alla cultura [ROOT.GetCountry.GetCulture.GetName] e alla religione [ROOT.GetCountry.GetReligion.GetName]"
