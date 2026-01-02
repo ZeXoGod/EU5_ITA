@@ -1728,6 +1728,13 @@
  THIRD_CULTURE_GROUP_POPULATION_TRIGGER: "$GEOGRAPHY$ ha $COMPARATOR$ $NUM|V0$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_V0$"
  NOT_THIRD_CULTURE_GROUP_POPULATION_TRIGGER: "$GEOGRAPHY$ NON ha $COMPARATOR$ $NUM|V0$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_V0$"
  
+ NONE_CULTURE_GROUP_PERCENTAGE_TRIGGER: "$NONE_GEOGRAPHY$ ha $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName]"
+ NOT_NONE_CULTURE_GROUP_PERCENTAGE_TRIGGER: "$NONE_GEOGRAPHY$ does NOT have $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName]"
+ CULTURE_GROUP_POPULATION_PERCENTAGE_TRIGGER: "Has $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_2percentY$"
+ NOT_CULTURE_GROUP_POPULATION_PERCENTAGE_TRIGGER: "Does NOT have $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_2percentY$"
+ THIRD_CULTURE_GROUP_POPULATION_PERCENTAGE_TRIGGER: "$GEOGRAPHY$ has $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_2percentY$"
+ NOT_THIRD_CULTURE_GROUP_POPULATION_PERCENTAGE_TRIGGER: "$GEOGRAPHY$ does NOT have $COMPARATOR$ $NUM|%Y$ di pop di cultura [TARGET_CULTURE_GROUP.GetName] $current_value_2percentY$"
+ 
  RAW_MATERIAL_AMOUNT_TRIGGER: "Ha un totale di occorrenze di [raw_material|e] [TARGET_GOODS.GetName] $COMPARATOR$ $NUM|V0$ $current_value_V0$"
  NOT_RAW_MATERIAL_AMOUNT_TRIGGER: "NON ha un totale di occorrenze di [raw_material|e] [TARGET_GOODS.GetName] $COMPARATOR$ $NUM|V0$ $current_value_V0$"
  THIRD_RAW_MATERIAL_AMOUNT_TRIGGER: "$GEOGRAPHY$ ha un totale di occorrenze di [raw_material|e] [TARGET_GOODS.GetName] $COMPARATOR$ $NUM|V0$ $current_value_V0$"
@@ -4792,11 +4799,14 @@
  THIRD_LANGUAGE_IN_COUNTRY_TRIGGER: "$COMPARATOR|U$ $NUM|Y2%$ della [population|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] parla [TARGET_LANGUAGE.GetName] $current_value_2percentY$"
  NOT_THIRD_LANGUAGE_IN_COUNTRY_TRIGGER: "$COMPARATOR|U$ $NUM|Y2%$ della [population|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] NON parla [TARGET_LANGUAGE.GetName] $current_value_2percentY$"
  
- NONE_HAS_DIPLOMACY_WITH_TRIGGER: "Il [country|e] ha la seguente relazione con il bersaglio:\n→$TABDIPLOMACY$" NOT_NONE_HAS_DIPLOMACY_WITH_TRIGGER: "Il [country|e] NON ha la seguente relazione con il bersaglio:\n→$TABDIPLOMACY$"
- HAS_DIPLOMACY_WITH_TRIGGER: "Ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$" NOT_HAS_DIPLOMACY_WITH_TRIGGER: "NON ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$"
+ NONE_HAS_DIPLOMACY_WITH_TRIGGER: "Il [country|e] ha la seguente relazione con il bersaglio:\n→$TABDIPLOMACY$" 
+ NOT_NONE_HAS_DIPLOMACY_WITH_TRIGGER: "Il [country|e] NON ha la seguente relazione con il bersaglio:\n→$TABDIPLOMACY$"
+ HAS_DIPLOMACY_WITH_TRIGGER: "Ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$" 
+ NOT_HAS_DIPLOMACY_WITH_TRIGGER: "NON ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$"
  FIRST_HAS_DIPLOMACY_WITH_TRIGGER: "Abbiamo la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$" 
  NOT_FIRST_HAS_DIPLOMACY_WITH_TRIGGER: "NON abbiamo la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$"
- THIRD_HAS_DIPLOMACY_WITH_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$" NOT_THIRD_HAS_DIPLOMACY_WITH_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] NON ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$"
+ THIRD_HAS_DIPLOMACY_WITH_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$" 
+ NOT_THIRD_HAS_DIPLOMACY_WITH_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] NON ha la seguente relazione con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]:\n→$TABDIPLOMACY$"
  
  NONE_HAS_PRESENCE_IN_TRIGGER: "Il [country|e] ha una presenza in $GEOGRAPHY$"
  NOT_NONE_HAS_PRESENCE_IN_TRIGGER: "Il [country|e] NON ha una presenza in $GEOGRAPHY$"
