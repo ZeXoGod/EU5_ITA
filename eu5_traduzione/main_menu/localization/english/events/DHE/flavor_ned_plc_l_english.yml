@@ -1,10 +1,10 @@
 ﻿l_english:
- flavor_ned_plc.1.title: "[target_country.GetAdjectiveWithNoTooltip] Merchants in [target_location.GetNameWithNoTooltip]"
- flavor_ned_plc.1.desc: "The interests of the [receiving_country.GetLongName] and the [target_country.GetLongName] align in many different ways. Every year, many of their [target_country.GetGovernment.GetEstateName('burghers_estate')] arrive in the ports of the [target_market.GetName] and especially the [target_good.GetName] Entrepôt of [target_location.GetName]. On the other side, the [receiving_country.GetGovernment.GetEstateName('nobles_estate')] of [receiving_country.GetNameWithNoTooltip] are clearly benefitting from this partnership, being able to trade their excess [target_good.GetNameWithNoTooltip] for the luxurious goods brought by the merchants."
- flavor_ned_plc.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- plc_dutch_ships: "Dutch Trade"
+ flavor_ned_plc.1.title: "Mercanti [target_country.Custom('IT_ADJ_MP')] a [target_location.GetNameWithNoTooltip]"
+ flavor_ned_plc.1.desc: "Gli interessi [receiving_country.Custom('IT_DEL_RANGO')][receiving_country.GetLongName] e [target_country.Custom('IT_DEL_RANGO')][target_country.GetLongName] si allineano in molti modi diversi. Ogni anno, molti [target_country.Custom('IT_BURGHERS_DEL')]loro [target_country.GetGovernment.GetEstateName('burghers_estate')] arriva nei porti del [target_market.GetName] e specialmente nell'emporio di [target_good.GetName] di [target_location.GetName]. Dall'altro lato, [receiving_country.Custom('IT_NOBLES_IL')][receiving_country.GetGovernment.GetEstateName('nobles_estate')] [receiving_country.Custom('IT_Della')][receiving_country.GetNameWithNoTooltip] sta chiaramente beneficiando di questa partnership, essendo in grado di scambiare il loro [target_good.GetNameWithNoTooltip] in eccesso con i beni di lusso portati dai mercanti."
+ flavor_ned_plc.1.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ plc_dutch_ships: "Commercio olandese"
 
  flavor_ned_plc.2.title: "$flavor_ned_plc.1.title$"
  flavor_ned_plc.2.desc: "$flavor_ned_plc.1.desc$"
- flavor_ned_plc.2.a: "Pour extra funds into the bulk trades."
+ flavor_ned_plc.2.a: "Versate fondi extra nel commercio all'ingrosso."
  flavor_ned_plc.2.b: "[ROOT.GetCountry.Custom('common_string_positive')]"
