@@ -1,14 +1,17 @@
 ﻿l_english:
 
 #####RANGO E TITOLO
-# [target_character.Custom('IT_ART_TITOLO')]
-# |U -> Lettera maiuscola, es. [target_character.Custom('IT_ART_TITOLO')|U] Re: Il Re
+# [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')]
+# |U -> Lettera maiuscola, es. [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U] Re: Il Re
 
-#[target_character.Custom('IT_DEL_TITOLO')] del Re
+#[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] del Re
 
-#[target_character.Custom('IT_DAL_TITOLO')] dal Re
+#[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DAL_TITOLO')] dal Re
 
-#[target_character.Custom('IT_AL_TITOLO')] al Re
+#[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')] al Re
+
+#[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')]nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle]
+# il nostro Re
 
 
 ###########################################################################################################
@@ -32,30 +35,50 @@
 
 #IT_ART_LOCATION 
 
-#[target_character.Custom('IT_ART_LOCATION')] Il/La/L' Borgo/Città/Insediamento Rurale
+#[target_location.Custom('IT_ART_LOCATION')] Il/La/L' Borgo/Città/Insediamento Rurale
 
 #IT_SUL_LOCATION
 
-#[target_character.Custom('IT_SUL_LOCATION')] Sul/Sulla/Sull' Borgo/Città/Insediamento Rurale
+#[target_location.Custom('IT_SUL_LOCATION')] Sul/Sulla/Sull' Borgo/Città/Insediamento Rurale
 
 #IT_NEL_LOCATION
 
-#[target_character.Custom('IT_NEL_LOCATION')] Nel/Nella/Nell' Borgo/Città/Insediamento Rurale
+#[target_location.Custom('IT_NEL_LOCATION')] Nel/Nella/Nell' Borgo/Città/Insediamento Rurale
 
 #IT_DEL_LOCATION
 
-#[target_character.Custom('IT_DEL_LOCATION')] Del/Della/Dell' Borgo/Città/Insediamento Rurale
+#[target_location.Custom('IT_DEL_LOCATION')] Del/Della/Dell' Borgo/Città/Insediamento Rurale
+
+#IT_SUL_NOSTRO_LOCATION 
+
+#[target_location.Custom('IT_SUL_NOSTRO_LOCATION')]nostr[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetName] 
+#Sul nostro Borgo/Sulla nostra Citta/Sul nostro Insediamento
+
+#IT_NEL_NOSTRO_LOCATION
+
+#[target_location.Custom('IT_SUL_NOSTRO_LOCATION')]nostr[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetName] 
+#Nel nostro Borgo/Nella nostra Citta/Nel nostro Insediamento
+
+#IT_DEL_NOSTRO_LOCATION
+
+#[target_location.Custom('IT_DEL_NOSTRO_LOCATION')]nostr[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetName]
+#Del nostro Borgo/Della nostra Città/Del nostro Insediamento
+
+#IT_OA_LOCATION
+
+#nostr[target_location.Custom('IT_OA_LOCATION')] nostro/a
 
 ###########################################################################################################
 
 #IT_OA_RANGO
 
-#[target_character.Custom('IT_OA_RANGO')] nostro/a
+#[target_location.Custom('IT_OA_RANGO')] nostro/a
 
 
 # ESEMPIO
 
-# [target_character.Custom('IT_ART_RANGO')]nostr[target_character.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] Il nostro Regno/La nostra Contea 
+# [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] Il nostro Regno/La nostra Contea
+# [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] del nostro Regno/della nostra Repubblica
 
 ###########################################################################################################
 
