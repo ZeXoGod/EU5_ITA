@@ -49,6 +49,12 @@
 
 #[target_location.Custom('IT_DEL_LOCATION')] Del/Della/Dell' Borgo/Città/Insediamento Rurale
 
+#IT_ART_NOSTRO_LOCATION
+
+##[target_location.Custom('IT_ART_NOSTRO_LOCATION')]nostr[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetName] 
+#Il nostro Borgo/La nostra Città/Il nostro Insediamento
+
+
 #IT_SUL_NOSTRO_LOCATION 
 
 #[target_location.Custom('IT_SUL_NOSTRO_LOCATION')]nostr[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetName] 
@@ -79,6 +85,7 @@
 
 # [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] Il nostro Regno/La nostra Contea
 # [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] del nostro Regno/della nostra Repubblica
+# [ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] al nostro Regno/ alla nostra Repubblica
 
 ###########################################################################################################
 
