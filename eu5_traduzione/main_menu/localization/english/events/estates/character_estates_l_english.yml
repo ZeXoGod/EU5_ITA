@@ -1,25 +1,25 @@
 ﻿l_english:
  character_estates.1.title: "[target_character.GetNameWithNoTooltip] Perde la sua Fortuna"
- character_estates.1.desc: "Dopo una serie di pessimi investimenti, [target_character.GetName] è rimasto senza un soldo. Come membro della nostra corte, [target_character.GetHeShe] ci ha inviato una supplica disperata affinché gli concediamo un aiuto finanziario per rimettersi in piedi, altrimenti [target_character.GetHeShe] rischia di trascorrere i suoi giorni per strada."
+ character_estates.1.desc: "Dopo una serie di pessimi investimenti, [target_character.GetName] è rimasto senza un soldo. Come membro della nostra corte, ci ha inviato una supplica disperata affinché gli concediamo un aiuto finanziario per rimettersi in piedi, altrimenti rischia di trascorrere i suoi giorni per strada."
  character_estates.1.a: "Le fortune private non sono affar nostro."
  character_estates.1.b: "Dobbiamo intervenire e salvarlo."
 
  character_estates.2.title: "Un Erede Inatteso"
- character_estates.2.desc: "Un membro con proprietà terriere [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] è morto senza alcun erede diretto. I nostri araldi hanno stabilito che, secondo le leggi [ROOT.GetCountry.GetAdjectiveWithNoTooltip], il titolo rimasto vacante dovrebbe passare al semplice [target_character.GetName], un parente molto lontano.\n\nNonostante la parentela di sangue, [target_character.GetHeShe] non appartiene chiaramente alla nobiltà, quindi potrebbe essere preferibile incorporare il titolo tra i possedimenti [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]."
+ character_estates.2.desc: "Un membro con proprietà terriere [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] è morto senza alcun erede diretto. I nostri araldi hanno stabilito che, secondo le leggi [ROOT.GetCountry.Custom('IT_ADJ_FP')], il titolo rimasto vacante dovrebbe passare all'umile [target_character.GetName], un parente molto lontano.\n\nNonostante la parentela di sangue, [target_character.GetHeShe] non appartiene chiaramente alla nobiltà, quindi potrebbe essere preferibile incorporare il titolo tra i possedimenti [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]."
  character_estates.2.a: "Investiamo il nuovo nobile."
- character_estates.2.b: "Usurpiamo noi stessi il titolo."
+ character_estates.2.b: "Usurpiamo il titolo per noi stessi."
 
  character_estates.3.title: "Un Contadino Fortunato"
- character_estates.3.desc: "Grazie alle conoscenze che [target_character.GetHeShe] ha stretto alla nostra corte e ad alcune accorte decisioni economiche, il contadino [target_character.GetName] è riuscito ad accumulare una fortuna considerevole, pari a quella dei più prosperi tra [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')].\n\nMolti ormai danno per scontato che egli appartenga a tale classe, ma è davvero questo il messaggio che vogliamo lanciare?"
+ character_estates.3.desc: "Grazie alle conoscenze che ha stretto alla nostra corte e ad alcune accorte decisioni economiche, un contadino, [target_character.GetName], è riuscito ad accumulare una fortuna considerevole, pari a quella dei più prosperi membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')].\n\nMolti ormai danno per scontato che egli appartenga a tale classe, ma è davvero questo il messaggio che vogliamo lanciare?"
  character_estates.3.a: "Inviategli le nostre congratulazioni."
  character_estates.3.b: "Un contadino ricco resta pur sempre un contadino."
 
  character_estates.4.title: "La Chiamata di Dio"
- character_estates.4.desc: "Come molti devoti in cerca di una vita spirituale, il nostro cortigiano [target_character.GetName] ha deciso di unirsi a un ordine religioso [ROOT.GetCountry.GetReligion.GetAdjective].\n\n[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sarà naturalmente lieto di accogliere una persona di tale prestigio politico tra le proprie file, ma possiamo impedire il processo se ciò non rientra nei nostri piani."
+ character_estates.4.desc: "Come molti devoti in cerca di una vita spirituale, il nostro cortigiano [target_character.GetName] ha deciso di unirsi a un ordine religioso [ROOT.GetCountry.GetReligion.Custom('IT_REL_MS')].\n\n[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_SONO')] naturalmente liet[ROOT.GetCountry.Custom('IT_CLERGY_OAI')] di accogliere una persona di tale prestigio politico tra le proprie file, ma possiamo impedire il processo se ciò non rientra nei nostri piani."
  character_estates.4.a: "Permettiamoglielo."
  character_estates.4.b: "Proibiamolo."
 
  character_estates.5.title: "Promozione Militare"
- character_estates.5.desc: "Tutti, nobili e gente comune, concordano sul fatto che [target_character.GetName] abbia servito con grande distinzione nel [target_character.GetUnitPointer.GetName]. In modo insolito, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_SONO')] ansios[ROOT.GetCountry.Custom('IT_NOBLES_OAI')] di legare il proprio nome al suo valore, e raccomanda che gli vengano concessi i più alti onori aristocratici."
+ character_estates.5.desc: "Tutti, nobili e gente comune, concordano sul fatto che [target_character.GetName] abbia servito con grande distinzione nella [target_character.GetUnitPointer.GetName]. In modo insolito, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_SONO')] ansios[ROOT.GetCountry.Custom('IT_NOBLES_OAI')] di legare il proprio nome al suo valore, e [ROOT.GetCountry.Custom('IT_NOBLES_HA')] chiesto che gli vengano concessi i più alti onori aristocratici."
  character_estates.5.a: "Concedetegli un titolo."
  character_estates.5.b: "Non dovremmo elargire ricompense alla soldataglia con leggerezza."
