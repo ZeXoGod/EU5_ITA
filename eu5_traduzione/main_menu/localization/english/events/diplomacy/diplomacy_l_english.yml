@@ -1,19 +1,19 @@
 ﻿l_english:
- diplomatic_annex.1.title: "Annessione di [target.GetNameWithNoTooltip]"
- diplomatic_annex.1.desc: "La nostra integrazione di [target.GetLongName] ha richiesto un bel po' di tempo, ma ora che [target.GetCapital.GetName] è un [target.GetCapital.GetRank.GetNameWithNoTooltip] [ROOT.GetCountry.GetAdjective] raggiungerà il suo pieno potenziale e farà prosperare ancora di più la nostra nazione.\n\nCi sono altri paesi che non hanno apprezzato questa espansione del nostro territorio."
+ diplomatic_annex.1.title: "Annessione [target.Custom('IT_Della')][target.GetNameWithNoTooltip]"
+ diplomatic_annex.1.desc: "La nostra integrazione [target.Custom('IT_DEL_RANGO')][target.GetLongName] ha richiesto un bel po' di tempo, ma ora che [target.GetCapital.GetName] è un città [ROOT.GetCountry.Custom('IT_ADJ_FS')], raggiungerà il suo pieno potenziale e farà prosperare ancora di più la nostra nazione.\n\nCi sono altri paesi che non hanno apprezzato questa espansione del nostro territorio."
  diplomatic_annex.1.a: "Oderint dum metuant!"
- every_subject_hates_us_tt: "I nostri [subjects|e] cambiano la loro [opinion|e] su [ROOT.GetCountry.GetLongName] di [ShowBiasValue('opinion_annexed_other_subject')|+=0]"
- every_annex_target_neighbor_hates_us_tt: "Ogni vicino [country|e] di [target.GetName] cambia la sua opinion|e] su [ROOT.GetCountry.GetLongName] di [ShowBiasValue('opinion_annexed_neighbor')|+=0]"
+ every_subject_hates_us_tt: "I nostri [subjects|e] cambiano la loro [opinion|e] nei confronti [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] di [ShowBiasValue('opinion_annexed_other_subject')|+=0]"
+ every_annex_target_neighbor_hates_us_tt: "Ogni [country|e] vicino [target.Custom('IT_Della')][target.GetName] cambia la sua [opinion|e] nei confronti [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] di [ShowBiasValue('opinion_annexed_neighbor')|+=0]"
 
  opinion_annexed_neighbor: "Vicino Annesso"
  opinion_annexed_other_subject: "Annesso un altro [subject|e]"
 
- historical_rival_events.1.title: "Rivalità tra [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.GetAdjectiveWithNoTooltip]"
- historical_rival_events.1.desc: "Anni di conflitti, rivalità e competizione ostile hanno portato all'inevitabile sviluppo di un rancore permanente tra [rivalling_country.GetLongName] e [target_country.GetName]. Solo il tempo dirà se i rapporti tra [rivalling_country.GetAdjectiveWithNoTooltip] e [target_country.GetAdjectiveWithNoTooltip] si rimargineranno o peggioreranno sul campo di battaglia..."
+ historical_rival_events.1.title: "Rivalità [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.Custom('IT_ADJ_FS')]"
+ historical_rival_events.1.desc: "Anni di conflitti, rivalità e competizione ostile hanno portato all'inevitabile sviluppo di un rancore permanente tra [rivalling_country.Custom('IT_ART_RANGO')][rivalling_country.GetLongName] e [target_country.Custom('IT_La')][target_country.GetName]. Solo il tempo dirà se i rapporti si rimargineranno o peggioreranno sul campo di battaglia..."
  historical_rival_events.1.a: "Occhio per occhio, dente per dente!"
  historical_rival_events.1.b: "Uno sfortunato sviluppo..."
 
- historical_rival_events.2.title: "Fine della rivalità tra [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.GetAdjectiveWithNoTooltip]"
- historical_rival_events.2.desc: "Molti anni fa, il governante [rivalling_country.GetAdjective] e quello [target_country.GetAdjective] potevano comunicare solo con insulti e minacce, mentre le rispettive nazioni si scontravano sui campi di battaglia, nei mercati, nelle ambasciate e quant'altro. Oggi, però, questi conflitti hanno perso il loro significato e [rivalling_country.GetNameWithNoTooltip] ha abbandonato i rancori di un tempo contro di noi."
+ historical_rival_events.2.title: "Fine della rivalità [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.Custom('IT_ADJ_FS')]"
+ historical_rival_events.2.desc: "Molti anni fa, il governante [rivalling_country.GetAdjective] e quello [target_country.GetAdjective] potevano comunicare solo con insulti e minacce, mentre le rispettive nazioni si scontravano sui campi di battaglia, nei mercati, nelle ambasciate e quant'altro. Oggi, però, questi conflitti hanno perso il loro significato e [rivalling_country.Custom('IT_La')][rivalling_country.GetNameWithNoTooltip] ha abbandonato i rancori di un tempo contro di noi."
  historical_rival_events.2.a: "È ora di andare avanti."
- historical_rival_events.2.b: "Non dimenticare mai. Non perdonare mai."
+ historical_rival_events.2.b: "Mai dimenticare. Mai perdonare."

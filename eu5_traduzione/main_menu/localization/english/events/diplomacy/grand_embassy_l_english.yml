@@ -1,34 +1,34 @@
 ﻿l_english:
  grand_embassy.1.title: "Grande Ambasciata"
  grand_embassy.1.desc: "A corte è stata avanzata l'idea di inviare [ROOT.GetCountry.GetGovernment.GetRuler.GetName] in un viaggio attraverso l'Europa insieme a una grande delegazione - una Grande Ambasciata - per cercare di migliorare le relazioni con gli altri leader europei, in particolare quelli che condividono con noi nemici comuni. Un altro vantaggio potrebbe essere l'opportunità di studiare i progressi tecnologici compiuti in [ShowSubContinentName('western_europe')] per aiutarci a modernizzarci."
- grand_embassy.1.a: "Intraprendi un viaggio attraverso l'Europa"
+ grand_embassy.1.a: "Intraprendiamo un viaggio attraverso l'Europa"
  grand_embassy.1.b: "Il nostro Paese possiede la conoscenza di cui abbiamo bisogno"
  
  grand_embassy.2.title: "La Grande Ambasciata arriva a [ROOT.GetCountry.GetCapital.GetName]"
- grand_embassy.2.desc: "Una Grande Ambasciata è arrivata da [from.GetName] guidata da [from.GetGovernment.GetRuler.GetName] [from.GetGovernment.GetRuler.GetHerselfHimself]. [from.GetGovernment.GetRuler.GetSheHeCap] sta viaggiando per il continente per garantire migliori relazioni con gli altri stati europei, in particolare quelli che condividono un nemico comune. Come dovremmo accogliere [from.GetGovernment.GetRuler.GetHerHim]?"
- grand_embassy.2.a: "Invita [from.GetGovernment.GetRuler.GetHerHim] a rimanere"
- received_grand_embassy: "Grande Ambasciata aCCOLTA"
- grand_embassy.2.b: "Allontana gentilmente [from.GetGovernment.GetRuler.GetHerHim]"
+ grand_embassy.2.desc: "Una Grande Ambasciata è arrivata [from.Custom('IT_Dalla')][from.GetName] guidata da [from.GetGovernment.GetRuler.GetName] in persona. [from.GetGovernment.GetRuler.GetSheHeCap] sta viaggiando per il continente per garantire migliori relazioni con gli altri stati europei, in particolare quelli che condividono un nemico comune. Come dovremmo accoglierl[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')]?"
+ grand_embassy.2.a: "Invitatel[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] a rimanere"
+ received_grand_embassy: "Grande Ambasciata Accolta"
+ grand_embassy.2.b: "Allontanatel[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] gentilmente "
  rejected_grand_embassy: "Grande Ambasciata Rifiutata"
- grand_embassy.2.c: "Manda [from.GetGovernment.GetRuler.GetHerHim] a fare le valigie!"
+ grand_embassy.2.c: "Dite [from.GetGovernment.GetRuler.GetHerHim] che può fare le valigie!"
  
  
  grand_embassy.3.title: "Grande Ambasciata in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
- grand_embassy.3.desc: "Sorpreso dal nostro caloroso benvenuto, [from.GetGovernment.GetRuler.GetName] ci ha informato che desidera prolungare la sua visita in [ROOT.GetCountry.GetCapital.GetName]. Nel suo [from.GetGovernment.GetRuler.GetHerHis] impegno per modernizzare [from.GetLongName], [from.GetGovernment.GetRuler.GetSheHe] è ansioso di avere la possibilità di studiare i progressi tecnologici di [ShowSubContinentName('western_europe')]."
- grand_embassy.3.a: "Invita [from.GetGovernment.GetRuler.GetHerHim] a rimanere e studiare le nostre istituzioni governative"
+ grand_embassy.3.desc: "Sorpreso dal nostro caloroso benvenuto, [from.GetGovernment.GetRuler.GetName] ci ha informato che desidera prolungare la sua visita a [ROOT.GetCountry.GetCapital.GetName]. Nel suo impegno per modernizzare [from.Custom('IT_ART_RANGO')][from.GetLongName], [from.GetGovernment.GetRuler.GetSheHe] è ansios[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] di avere la possibilità di studiare i progressi tecnologici dell'[ShowSubContinentName('western_europe')]."
+ grand_embassy.3.a: "Invitatel[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] a rimanere e studiare le nostre istituzioni governative"
  grand_embassy.3.a.tt: "[from.GetGovernment.GetRuler.GetName] scoprirà di più sulle nostre istituzioni governative"
  invited_to_study_institutions: "Invitato a Studiare le Istituzioni"
- grand_embassy.3.b: "Invita [from.GetGovernment.GetRuler.GetHerHim] a rimanere e studiare il nostro esercito"
+ grand_embassy.3.b: "Invitatel[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] a rimanere e studiare il nostro esercito"
  grand_embassy.3.b.tt: "[from.GetGovernment.GetRuler.GetName] scoprirà di più sull'organizzazione del nostro esercito"
- grand_embassy.3.c: "Invita [from.GetGovernment.GetRuler.GetHerHim] a rimanere e studiare la nostra flotta militare"
+ grand_embassy.3.c: "Invitatel[from.GetGovernment.GetRuler.Custom('IT_ART_O_A')] a rimanere e studiare la nostra flotta militare"
  grand_embassy.3.c.tt: "[from.GetGovernment.GetRuler.GetName] scoprirà di più sulla nostra organizzazione navale"
- grand_embassy.3.d: "[from.GetGovernment.GetRuler.GetSheHe|U] ha superato il limite [from.GetGovernment.GetRuler.GetHerHis] come benvenuto..."
+ grand_embassy.3.d: "Ha abusato della nostra ospitalità..."
  
  
  
  grand_embassy.4.title: "Generosa Offerta di Soggiorno"
- grand_embassy.4.desc: "Dopo aver appreso delle riforme di [ROOT.GetCountry.GetGovernment.GetRuler.GetName] per modernizzare [ROOT.GetCountry.GetLongName], [embassy_country.GetName] ci ha gentilmente invitato a prolungare il nostro soggiorno a [embassy_country.GetCapital.GetName] per cogliere l'opportunità di studiare i loro progressi tecnologici."
- grand_embassy.4.a: "Restiamo a studiare [target_institution.GetNameWithNoTooltip]"
+ grand_embassy.4.desc: "Dopo aver appreso delle riforme di [ROOT.GetCountry.GetGovernment.GetRuler.GetName] per modernizzare [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName], [embassy_country.Custom('IT_La')][embassy_country.GetName] ci ha gentilmente invitato a prolungare il nostro soggiorno a [embassy_country.GetCapital.GetName] per cogliere l'opportunità di studiare i loro progressi tecnologici."
+ grand_embassy.4.a: "Restiamo a studiare l'istituzione [target_institution.GetNameWithNoTooltip]"
  grand_embassy.4.b: "Restiamo a studiare il loro esercito"
  grand_embassy.4.c: "Restiamo a studiare la loro flotta militare"
  grand_embassy.4.d: "No, abbiamo altri paesi da visitare"
@@ -36,12 +36,12 @@
  
  
  grand_embassy.5.title: "Richiesta di Soggiorno Respinta"
- grand_embassy.5.desc: "Nei nostri tentativi di modernizzare [ROOT.GetCountry.GetName], lo studio dei progressi tecnologici in [ShowSubContinentName('western_europe')] potrebbe essere prezioso. Purtroppo, per farlo, una richiesta di prolungare il nostro soggiorno in [embassy_country.GetCapital.GetName] è stata respinta."
+ grand_embassy.5.desc: "Nei nostri tentativi di modernizzare [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], lo studio dei progressi tecnologici in [ShowSubContinentName('western_europe')] potrebbe essere prezioso. Purtroppo, la richiesta di prolungare il nostro soggiorno a [embassy_country.GetCapital.GetName] per poterlo fare è stata respinta."
  grand_embassy.5.a: "Bene, abbiamo altri paesi da visitare"
  grand_embassy.5.b: "È giunto il momento di tornare a casa"
  
  
- grand_embassy.6.title: "Una Visita Prolungata Paga"
+ grand_embassy.6.title: "La Visita Prolungata Ripaga"
  grand_embassy.6.desc: "La visita prolungata di [ROOT.GetCountry.GetGovernment.GetRuler.GetName] a [embassy_country.GetCapital.GetName] per studiare personalmente i loro progressi tecnologici sembra essere valsa la pena."
  grand_embassy.6.a: "Le nostre istituzioni governative ne trarranno beneficio!"
  grand_embassy.6.b: "Le nostre forze armate ne trarranno beneficio!"
@@ -49,6 +49,6 @@
  
  
  grand_embassy.7.title: "Grande Ambasciata di Successo"
- grand_embassy.7.desc: "La nostra visita a [embassy_country.GetCapital.GetCapitalName] è stata un successo, ma è giunto il momento di andare avanti. La domanda è: dove andare?"
+ grand_embassy.7.desc: "La nostra visita a [embassy_country.GetCapital.GetCapitalName] è stata un successo, ma è giunto il momento di andare avanti. La domanda è: dove?"
  grand_embassy.7.a: "Abbiamo ancora altri paesi da visitare"
  grand_embassy.7.b: "È giunto il momento di tornare a casa"
