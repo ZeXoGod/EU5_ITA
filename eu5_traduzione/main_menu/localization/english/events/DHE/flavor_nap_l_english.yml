@@ -38,7 +38,7 @@
  flavor_nap.10.a: "Veramente, la perfezione della filosofia naturale e della scienza più elevata."
 
  flavor_nap.11.title: "Simpatizzanti dei Fraticelli"
- flavor_nap.11.desc: "Oggi è arrivata un'altra lettera del [the_pope.GetName] che ancora una volta implora [target_character.GetName] di smettere di provare simpatia per gli eretici Fraticelli. Sebbene le lettere precedenti abbiano avuto risultati contrastanti, forse questa volta, [[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] cambierà idea."
+ flavor_nap.11.desc: "Oggi è arrivata un'altra lettera del [the_pope.GetName] che ancora una volta implora [target_character.GetName] di smettere di provare simpatia per gli eretici Fraticelli. Sebbene le lettere precedenti abbiano avuto risultati contrastanti, forse questa volta, [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] cambierà idea."
  flavor_nap.11.desc_with_felip: "$flavor_nap.11.desc$ Al centro del conflitto c'è il fratello della [GetCharacter('nap_sancha_aragon').GetName], [brother_of_queen.GetName], che è un fervente sostenitore dei Fraticelli."
  flavor_nap.11.historical_info: "Sotto il regno di Re Roberto d'Anjou, il Regno di Napoli era un rifugio sicuro per i Fraticelli. Il Papa inviò diverse lettere a Roberto nel 1325, 1327, 1330 e 1331, ma nessuna di esse riuscì a convincere il Re a imprigionare o limitare la libertà dei Fraticelli nel suo dominio. Uno dei cortigiani napoletani, Filippo di Maiorca, era apertamente solidale con i francescani spirituali e condannava apertamente il papato."
  flavor_nap.11.a: "Ignora le lettere."
@@ -53,7 +53,7 @@
  STATIC_MODIFIER_NAME_nap_state_of_the_presidi: "Stato dei Presidi"
 
  flavor_nap.200.title: "Il Testamento di [target_character.GetNameWithNoTooltip]"
- flavor_nap.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U]nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sta invecchiando e purtroppo tutti i suoi discendenti maschi sono morti..\n\nLa tradizione vuole che il ramo della famiglia di [ROOT.GetCountry.GetGovernment.GetHeir.GetName] sia il prossimo [ROOT.GetCountry.GetGovernment.GetRulerTitle], ma cedere il paese a uno straniero farà infuriare la nobiltà locale e potrebbe porre fine alla stabilità che [target_character.GetShortName] ha impiegato una vita a costruire.. In alternativa, [alternative_heir.GetName] potrebbe essere una ipotesi da prendere in considerazione..."
+ flavor_nap.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U]nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sta invecchiando e purtroppo tutti i suoi discendenti maschi sono morti.\n\nLa tradizione vuole che il ramo della famiglia di [ROOT.GetCountry.GetGovernment.GetHeir.GetName] sia il prossimo [ROOT.GetCountry.GetGovernment.GetRulerTitle], ma cedere il paese a uno straniero farà infuriare la nobiltà locale e potrebbe porre fine alla stabilità che [target_character.GetShortName] ha impiegato una vita a costruire. In alternativa, [alternative_heir.GetName] potrebbe essere una ipotesi da prendere in considerazione..."
  flavor_nap.200.a: "Non cederemo [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip], [alternative_heir.GetShortNameWithNoTooltip] governerà."
  flavor_nap.200.b: "Rispetteremo la tradizione, [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] erediterà."
 
@@ -159,7 +159,7 @@
  flavor_nap.290.b: "Dategli quello che vuole."
  flavor_nap.290.c: "È il Principe Consorte, non si può fare nulla."
 
- flavor_nap.300.title: "La Volontà [GetCountry('NAP').Custom('IT_DEL_RANGO')]Nostr[GetCountry('NAP').Custom('IT_OA_RANGO')] [GetCountry('NAP').GetGovernment.GetRulerTitle]"
+ flavor_nap.300.title: "La Volontà [GetCountry('NAP').Custom('IT_DEL_TITOLO')]Nostr[GetCountry('NAP').Custom('IT_ART_O_A')] [GetCountry('NAP').GetGovernment.GetRulerTitle]"
  flavor_nap.300.desc: "[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_IL_LA')|U] nostr[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_O_A')] car[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_O_A')] [GetCountry('NAP').GetGovernment.GetRuler.GetName] sta sentendo il peso dei lunghi anni di servizio a [GetCountry('NAP').GetName] sulle sue spalle, proprio come suo nonno, il Vecchio [old_king.GetName], ed è pronta a dimettersi, ma teme che la sua eredità possa andare sprecata, poiché non ha figli viventi da nominare come eredi indiscussi al trono. Considera il resto della sua famiglia come opportunisti e avvoltoi che distruggeranno [GetCountry('NAP').GetNameWithNoTooltip] nella loro lotta per la corona."
  flavor_nap.300.a: "[GetCountry('NAP').GetGovernment.GetHeir.GetNameWithNoTooltip] sarà [GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_IL_LA')] nostr[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')] nuov[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')] sovran[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')]."
  flavor_nap.300.b: "[queen_sister_spouse.GetNameWithNoTooltip] è la migliore successore possibile."

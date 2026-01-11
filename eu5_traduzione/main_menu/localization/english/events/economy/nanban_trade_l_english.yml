@@ -1,24 +1,24 @@
 ﻿l_english:
 
  nanban_trade.1.title: "Nanban Bōeki"
- nanban_trade.1.desc: "Stranieri dai modi rozzi, privi di igiene e incapaci di comprendere la scrittura [ROOT.GetCountry.GetCulture.GetLanguage.GetName] sono sbarcati nella terra di [ROOT.GetCountry.GetName] da luoghi che, a loro dire, hanno nomi ridicoli come [target_nanban.GetName]. Questi stranieri portano con sé esploratori, missionari e mercanti, e la loro presenza ha già iniziato a influenzare la nostra gente."
+ nanban_trade.1.desc: "Stranieri dai modi rozzi, privi di igiene e incapaci di comprendere la scrittura [ROOT.GetCountry.GetCulture.GetLanguage.GetName] sono sbarcati nella terra [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] da luoghi che, a loro dire, hanno nomi ridicoli come [target_nanban.GetName]. Questi stranieri portano con sé esploratori, missionari e mercanti, e la loro presenza ha già iniziato a influenzare la nostra gente."
  nanban_trade.1.a: "Benvenuti a questi commercianti."
  nanban_trade.1.b: "Chissà cosa porterà la loro presenza."
  enable_kirishitan_monks.tt: "Ora abbiamo accesso alla [religious_faction|e] dei $kirishitan_monks$"
 
  nanban_trade.2.title: "$nanban_trade.1.title$"
- nanban_trade.2.desc: "Abbiamo ricevuto la notizia che alcuni strani stranieri sono sbarcati sulle coste di [target_country.GetName]. Affermano di provenire dalla terra di [target_nanban.GetName] e apparentemente promettono commerci redditizi a chiunque interagisca con loro. Tuttavia, le loro maniere e la loro cultura sono chiaramente carenti e potrebbero avere una cattiva influenza sull'intera [GetUniqueInternationalOrganization('japanese_shogunate').GetName]."
+ nanban_trade.2.desc: "Abbiamo ricevuto la notizia che alcuni stranieri sono sbarcati sulle coste [ROOT.GetCountry.Custom('IT_Della')][target_country.GetName]. Affermano di provenire dalla terra di [target_nanban.GetName] e apparentemente promettono commerci redditizi a chiunque interagisca con loro. Tuttavia, le loro maniere e la loro cultura sono chiaramente carenti e potrebbero avere una cattiva influenza sull'intero [GetUniqueInternationalOrganization('japanese_shogunate').GetName]."
  nanban_trade.2.a: "$nanban_trade.1.a$"
  nanban_trade.2.b: "$nanban_trade.1.b$"
 
  nanban_trade.3.title: "Arrivo dei Mercanti Europei"
- nanban_trade.3.desc: "Con l'arrivo delle navi da ovest, stiamo assistendo a un afflusso di merci molto ricercate, non solo da [ShowContinentName('europe')], ma anche dai vari angoli di [ShowContinentName('asia')] frequentati dai commercianti occidentali. Grandi navi stanno diventando una vista sempre più comune lungo le nostre coste e, per chiunque le accolga, promettono grandi ricchezze.\n\nIl capitano di una di queste navi è recentemente arrivato a [nanban_traders_here.GetName], chiedendoci di consentirgli di attraccare periodicamente in un porto vicino per commercializzare merci occidentali."
+ nanban_trade.3.desc: "Con l'arrivo delle navi da ovest, stiamo assistendo a un afflusso di merci molto ricercate, non solo dall'[ShowContinentName('europe')], ma anche dai vari angoli dell'[ShowContinentName('asia')] frequentati dai commercianti occidentali. Grandi navi stanno diventando una vista sempre più comune lungo le nostre coste e, per chiunque le accolga, promettono grandi ricchezze.\n\nIl capitano di una di queste navi è recentemente arrivato a [nanban_traders_here.GetName], chiedendoci di consentirgli di attraccare periodicamente in un porto vicino per commercializzare merci occidentali."
  nanban_trade.3.a: "Incoraggiamoli a farne una tappa permanente."
  nanban_trade.3.b: "Accetteremo le loro merci, ma non offriremo alcuna garanzia per il futuro."
  nanban_trade.3.c: "Applicheremo regole severe su chi possono incontrare o con chi possono fare affari."
 
  nanban_trade.4.title: "Duplicità tra i Mercanti Europei"
- nanban_trade.4.desc: "Fin dall'arrivo degli occidentali, alcuni li guardano con diffidenza. Le loro tasche sono ricche, le loro armi potenti e, ad alcuni, la loro cultura sembra affascinante. Chi ha a che fare con questi commercianti, tuttavia, riferisce che gli europei complottano costantemente gli uni contro gli altri. Non passa quasi mai un incontro con emissari stranieri in cui non ci avvertano di qualche complotto o macchinazione dei loro avversari. È chiaro che non abbiamo a che fare con uomini di cui ci si può fidare.\n\nPoiché un nuovo gruppo di commercianti ci chiede di aumentare i loro privilegi, i nostri consiglieri ci avvertono di considerare attentamente l'offerta."
+ nanban_trade.4.desc: "Fin dall'arrivo degli occidentali, alcuni li hanno guardati con diffidenza. Le loro tasche sono piene, le loro armi potenti e, ad alcuni, la loro cultura sembra affascinante. Chi ha a che fare con questi commercianti, tuttavia, riferisce che gli europei complottano costantemente gli uni contro gli altri. Non passa quasi mai un incontro con emissari stranieri in cui non ci avvertano di qualche complotto o macchinazione dei loro avversari. È chiaro che non abbiamo a che fare con uomini di cui ci si può fidare.\n\nPoiché un nuovo gruppo di commercianti ci chiede di aumentare i loro privilegi, i nostri consiglieri ci avvertono di considerare attentamente l'offerta."
  nanban_trade.4.a: "Permetteremo loro di espandere la loro presenza."
  nanban_trade.4.b: "Limitare la loro influenza a qualche porto."
  nanban_trade.4.c: "I loro affari devono essere limitati a [nanban_traders_here.GetNameWithNoTooltip]."
@@ -34,7 +34,7 @@
  nanban_trade.6.b: "Un ottimo investimento!"
 
  nanban_trade.7.title: "Tanegashima Teppō"
- nanban_trade.7.desc: "Gli stranieri che arrivano nelle nostre terre portano con sé alcune armi particolari. Di recente, quando due avventurieri occidentali a bordo di una nave [ShowCultureGroupName('chinese_group')] sono stati costretti da una tempesta ad attraccare sull'isola di Tanegashima in [target_location.GetName], i pescatori locali sono rimasti sorpresi quando uno degli occidentali ha sparato in aria. Le autorità locali sono riuscite ad acquistare quelle armi dagli occidentali prima del loro viaggio di ritorno, e i fabbri ne stanno già studiando la produzione.\n\nSebbene la polvere da sparo e le armi da fuoco siano note da tempo, il meccanismo di sparo a miccia di questo modello occidentale rappresenta un grande miglioramento rispetto ai cannoni portatili [ShowCultureGroupNameWithNoTooltip('chinese_group')] e si rivelerà molto più comodo da usare."
+ nanban_trade.7.desc: "Gli stranieri che arrivano nelle nostre terre portano con sé alcune armi particolari. Di recente, quando due avventurieri occidentali a bordo di una nave [ShowCultureGroupName('chinese_group')] sono stati costretti da una tempesta ad attraccare sull'isola di Tanegashima in [target_location.GetName], i pescatori locali sono rimasti sorpresi quando uno degli occidentali ha sparato in aria. Le autorità locali sono riuscite ad acquistare quelle armi dagli occidentali prima del loro viaggio di ritorno, e i fabbri ne stanno già studiando la produzione.\n\nSebbene la polvere da sparo e le armi da fuoco siano note da tempo, il meccanismo di sparo a miccia di questo modello occidentale rappresenta un grande miglioramento rispetto ai cannoni a mano cinesi e si rivelerà molto più comodo da usare."
  nanban_trade.7.a: "Proviamo a replicarlo."
  nanban_trade.8.title: "$nanban_trade.7.title$"
  nanban_trade.8.desc: "$nanban_trade.7.desc$"
@@ -42,17 +42,17 @@
  nanban_trade.8.b: "Sicuramente non sono valide quanto le nostre armi."
 
  nanban_trade.9.title: "Accesso alle Armi da Fuoco"
- nanban_trade.9.desc: "Con l'arrivo dei commercianti occidentali, I loro archibugi a miccia sono arrivati ​​al nostro [ROOT.GetCountry.GetFlavorRank]. Queste armi rappresentano un notevole miglioramento rispetto alle armi a polvere da sparo precedentemente conosciute qui e promettono di rivoluzionare la guerra se dovessero diffondersi. Tuttavia. acquisirne un numero sufficiente non è così semplice come potrebbe sembrare. Gli archibugi sono molto richiesti tra coloro che ne hanno sperimentato la potenza, ma la prospettiva di ciò che potrebbero fare nelle mani dei nostri nemici, o persino di una comunità contadina ribelle, è piuttosto inquietante. Quando inizieremo a produrre e istruire i nostri soldati all'uso di queste armi, dovremo decidere chi ne avrà accesso e quante ne produrremo.
+ nanban_trade.9.desc: "Con l'arrivo dei commercianti occidentali, i loro archibugi a miccia sono arrivati ​​[ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Queste armi rappresentano un notevole miglioramento rispetto alle armi a polvere da sparo precedentemente conosciute qui e promettono di rivoluzionare la guerra se dovessero diffondersi. Tuttavia. acquisirne un numero sufficiente non è così semplice come potrebbe sembrare. Gli archibugi sono molto richiesti tra coloro che ne hanno sperimentato la potenza, ma la prospettiva di ciò che potrebbero fare nelle mani dei nostri nemici, o persino di una comunità contadina ribelle, è piuttosto inquietante. Quando inizieremo a produrre e istruire i nostri soldati all'uso di queste armi, dovremo decidere chi ne avrà accesso e quante ne produrremo.
  nanban_trade.9.a: "L'unione fa la forza! Produciamone il più possibile."
  nanban_trade.9.b: "Ne produrremo appena il necessario per una piccola forza di uomini fidati."
 
- nanban_trade.10.title: "Diffusione di Armi da Fuoco"
+ nanban_trade.10.title: "Diffusione delle Armi da Fuoco"
  nanban_trade.10.desc: "Gli archibugi a miccia portati dagli stranieri si sono dimostrati più facili da produrre in serie di quanto avremmo potuto sperare. Man mano che un numero sempre maggiore di nostre truppe potrà essere equipaggiato con queste armi, è chiaro che non saremo in grado di limitarne la diffusione né ai nostri nemici né alla gente comune in modo molto efficace. Se vogliamo davvero ridurre le armi da fuoco in circolazione, dovremo intervenire con fermezza al più presto."
  nanban_trade.10.a: "Farlo non farebbe altro che indebolire i nostri eserciti."
- nanban_trade.10.b: "Vietare completamente l'uso delle armi da fuoco per i cittadini comuni."
+ nanban_trade.10.b: "Vietiamo completamente l'uso delle armi da fuoco per i cittadini comuni."
 
  nanban_trade.11.title: "Evoluzione delle Armi"
- nanban_trade.11.desc: "Con le armi da fuoco in costante aumento, è diventato chiaro che è necessario un miglioramento costante se vogliamo rimanere al top. Attraverso l'addestramento, potremmo sicuramente aumentarne l'efficienza, e alcuni dei nostri fabbri hanno anche suggerito modi per migliorare le armi stesse. Altri sostengono che dovremmo dedicare il tempo sia dei nostri fabbri che dei nostri soldati ad armi più tradizionali. Lance e archi non sono ancora del tutto scomparsi dai campi di battaglia, e forse faremmo bene a mantenere le nostre truppe ben addestrate anche a usarli.
+ nanban_trade.11.desc: "Con le armi da fuoco in costante aumento, è diventato chiaro che è necessario un miglioramento costante se vogliamo rimanere al vertice. Attraverso l'addestramento, potremmo sicuramente aumentarne l'efficienza, e alcuni dei nostri fabbri hanno anche suggerito modi per migliorare le armi stesse. Altri sostengono che dovremmo dedicare il tempo sia dei nostri fabbri che dei nostri soldati ad armi più tradizionali. Lance e archi non sono ancora del tutto scomparsi dai campi di battaglia, e forse faremmo bene a mantenere le nostre truppe ben addestrate anche a usarli.
  nanban_trade.11.a: "Abbiamo bisogno di armi migliori!"
  nanban_trade.11.b: "I nostri eserciti sono ancora efficaci con le lance."
 

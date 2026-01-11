@@ -61,7 +61,7 @@
  NORMALPOWER_TITLE_HEADER: "[Country.GetLongNameWithNoTooltip]"
  POWER_TEXT: "[Country.Custom('IT_La')|U][Country.GetName] è la #V ##[Country.GetGreatPowerRank]#! Potenza Mondiale con [Country.GetGreatPowerScore|V]." 
  GREATPOWER_BENEFITS: "Essere la ##[Country.GetGreatPowerRank] Grande Potenza comporta i seguenti vantaggi:"
- GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[Country.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[Country.GetGreatPowerRank]#! con un [great_power_score|e] di $VAL|0V$."
+ GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[Country.GetGreatPowerRank]#! con un [great_power_score|e] di $VAL|0V$."
  
  GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[Country.GetGreatPowerRank]#! con $VAL|0V$ [great_power_score|e].\n#H Attualmente abbiamo bisogno di più di $THRESHOLD|0V$ [great_power_score|e] per raggiungere lo status di [great_power|e].#!"
 
@@ -1717,13 +1717,13 @@
  REQUEST_tusi_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
  # Appanage
- OFFER_appanage_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')[TARGET_COUNTRY.GetName] diventi un Appannaggio"
+ OFFER_appanage_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un Appannaggio"
  OFFER_appanage_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Appannaggio"
- REQUEST_appanage_TOOLTIP_HEADER: "Chiedi di diventare un Appannaggio [TARGET_COUNTRY.Custom('IT_Della')[TARGET_COUNTRY.GetName]"
+ REQUEST_appanage_TOOLTIP_HEADER: "Chiedi di diventare un Appannaggio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  REQUEST_appanage_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un Appannaggio di un [country|e]"
  CANCEL_appanage_TOOLTIP_HEADER: "Revoca lo Status di Appannaggio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_appanage_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di Appannaggio di un [country|e]"
- BREAK_appanage_TOOLTIP_HEADER: "Rifiuta di diventare lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')[TARGET_COUNTRY.GetName]"
+ BREAK_appanage_TOOLTIP_HEADER: "Rifiuta di diventare lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_appanage_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di diventare lo [subject|e] di un [country|e]"
  OFFER_appanageTITLE: "Chiedi loro di diventare un nostro Appannaggio"
  REQUEST_appanageTITLE: "Chiedi di diventare un loro Appannaggio"
@@ -1928,7 +1928,7 @@
  OFFER_state_bank_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $state_bank$"
  REQUEST_state_bank_TOOLTIP_HEADER: "Richiedi di diventare una $state_bank$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  REQUEST_state_bank_TOOLTIP_HEADER_NO_TARGET: "Richiedere di diventare una $state_bank$ di un [country|e]"
- CANCEL_state_bank_TOOLTIP_HEADER: "Fai sì che [TARGET_COUNTRY.Custom('IT_La')] smetta di essere una $state_bank$"
+ CANCEL_state_bank_TOOLTIP_HEADER: "Fai sì che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] smetta di essere una $state_bank$"
  CANCEL_state_bank_TOOLTIP_HEADER_NO_TARGET: "Fai sì che un [country|e] smetta di essere una $state_bank$"
  BREAK_state_bank_TOOLTIP_HEADER: "Rifiuta di essere una $state_bank$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_state_bank_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere una $state_bank$ di un [country|e]"
