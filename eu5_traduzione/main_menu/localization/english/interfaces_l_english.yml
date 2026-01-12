@@ -2,7 +2,7 @@
 
  choose_colonial_charter: "Scegli Carta Coloniale"
 
- CLOSEST_DISTANCE_IS_FROM: "Il più vicino è a $VAL|0V$ da [AREA.GetName]"
+ CLOSEST_DISTANCE_IS_FROM: "Il punto più vicino è a $VAL|0V$ da [AREA.GetName]"
  DIPLO_RANGE_NEIGHBOR: "I paesi sono vicini"
  DIPLO_RANGE_DEPENDENCY: "Ha una relazione di dipendenza"
  DIPLO_RANGE_INTERNATIONAL_ORGANIZATION: "Entrambi sono membri di un'organizzazione internazionale."
@@ -1819,16 +1819,16 @@
  DISEASE_OUTBREAK_AFFECTED_COUNTRIES_TITLE: "Paesi colpiti da [PossibleDisease.GetName]"
  DISEASE_OUTBREAK_AMOUNT_DEATH: "Numero totale di decessi causati dall'epidemia di questa malattia"
  DISEASE_OUTBREAK_AMOUNT_DEATH_TITLE: "Totale dei decessi causati da [PossibleDisease.GetName]"
- OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH: "Numero totale di decessi in [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] causati da questa epidemia."
+ OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH: "Numero totale di decessi [Player.Custom('IT_In')][Player.GetFlagIcon] [Player.GetNameWithNoTooltip] causati da questa epidemia."
  OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH_TITLE: "Morti per [PossibleDisease.GetName] in [Player.GetNameWithNoTooltip]"
- DISEASE_OUTBREAK_COUNTRY_AMOUNT: "Numero totale di epidemie di questa malattia che hanno colpito [Player.GetFlagIcon] [Player.GetNameWithNoTooltip]."
- DISEASE_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Epidemia di [PossibleDisease.GetName] in [Player.GetNameWithNoTooltip]"
+ DISEASE_OUTBREAK_COUNTRY_AMOUNT: "Numero totale di epidemie di questa malattia che hanno colpito [Player.Custom('IT_La')][Player.GetFlagIcon] [Player.GetNameWithNoTooltip]."
+ DISEASE_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Epidemia di [PossibleDisease.GetName] [Player.Custom('IT_In')][Player.GetNameWithNoTooltip]"
  OUTBREAK_AMOUNT_COUNTRY_UNITS_DEATH: "Numero totale di decessi nel nostro Paese causati da questa epidemia"
  ENVIRONMENTAL_DISEASE: "[disease|e] Ambientale."
- DISEASE_CHART_MIN: "La $game_concept_population$ minima di [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] nel corso dell'intera storia dell'esistenza del [country|E]."
- DISEASE_CHART_MIN_TITLE: "$game_concept_population$ Minima di [Player.GetNameWithNoTooltip]"
- DISEASE_CHART_MAX: "La $game_concept_population$ massima di [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] nel corso dell'intera storia dell'esistenza del [country|E]."
- DISEASE_CHART_MAX_TTILE: "$game_concept_population$ Massima di [Player.GetNameWithNoTooltip]"
+ DISEASE_CHART_MIN: "La $game_concept_population$ minima [Player.Custom('IT_Della')][Player.GetFlagIcon] [Player.GetNameWithNoTooltip] nel corso dell'intera storia dell'esistenza del [country|E]."
+ DISEASE_CHART_MIN_TITLE: "$game_concept_population$ Minima [Player.Custom('IT_Della')][Player.GetNameWithNoTooltip]"
+ DISEASE_CHART_MAX: "La $game_concept_population$ massima [Player.Custom('IT_Della')][Player.GetFlagIcon] [Player.GetNameWithNoTooltip] nel corso dell'intera storia dell'esistenza del [country|E]."
+ DISEASE_CHART_MAX_TTILE: "$game_concept_population$ Massima [Player.Custom('IT_Della')][Player.GetNameWithNoTooltip]"
 
  # Exploration
  SORT_EXPLORATION_NAME: "Area"
@@ -6920,7 +6920,7 @@
  ATTACKER_HAS_LOST: "[BattleResultMessage.GetBattleResult.GetAttacker.GetMainParticipant.GetName] ha perso."
  DEFENDER_HAS_WON: "[BattleResultMessage.GetBattleResult.GetDefender.GetMainParticipant.GetName] ha vinto!"
  DEFENDER_HAS_LOST: "[BattleResultMessage.GetBattleResult.GetDefender.GetMainParticipant.GetName] ha perso."
- OVERALL_CHANGE: "Cambiamento Generale"
+ OVERALL_CHANGE: "Cambiamento Complessivo"
 
  BANKRUPTCY_UNTIL: "Fino al [Country.GetBankruptcyEndDate|V] i seguenti effetti"
  IN_BANKRUPTCY: "Siamo in bancarotta!"
