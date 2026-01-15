@@ -5,7 +5,7 @@
  church_aspects.1.b: "Tutti coloro che vengono chiamati devono servire."
 
  church_aspects.2.title: "Beati i Pacificatori"
- church_aspects.2.desc: "Anni di pace hanno favorito la crescita di un movimento pacifista all'interno della fede [ROOT.GetCountry.GetReligion..Custom('IT_REL_FS')] in [ROOT.GetCountry.GetName]. Un rinomato teologo pacifista ha parlato al popolo in sostegno del nostro benevolo governo, esortando tutti i veri cristiani a seguire l'esempio virtuoso [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ church_aspects.2.desc: "Anni di pace hanno favorito la crescita di un movimento pacifista all'interno della fede [ROOT.GetCountry.GetReligion.GetAdjective] [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName]. Un rinomato teologo pacifista ha parlato al popolo in sostegno del nostro benevolo governo, esortando tutti i veri cristiani a seguire l'esempio virtuoso [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]."
  church_aspects.2.a: "Siamo tutti figli di Dio."
 
  church_aspects.3.title: "Voti di Povertà"
@@ -24,12 +24,12 @@
  church_aspects.5.b: "Riduciamo i tassi per un periodo."
 
  church_aspects.6.title: "Critiche alla Bibbia Ufficiale"
- church_aspects.6.desc: "Una traduzione della Bibbia approvata dallo Stato ha unificato molto la fede [ROOT.GetCountry.GetReligion..Custom('IT_REL_FS')] nel nostro Paese, e la maggior parte del popolo e dei teologi la ritiene più fedele alle origini della nostra religione.\n\nTuttavia, alcuni trovano la versione ufficiale assai carente. Per alcuni è semplicemente obsoleta, altri ritengono che favorisca troppo lo Stato e serva a mantenere docili i sudditi; altri ancora credono che non sia abbastanza radicale e che mantenga molti errori delle versioni precedenti."
+ church_aspects.6.desc: "Una traduzione della Bibbia approvata dallo Stato ha unificato molto la fede [ROOT.GetCountry.GetReligion.GetAdjective] nel nostro Paese, e la maggior parte del popolo e dei teologi la ritiene più fedele alle origini della nostra religione.\n\nTuttavia, alcuni trovano la versione ufficiale assai carente. Per alcuni è semplicemente obsoleta, altri ritengono che favorisca troppo lo Stato e serva a mantenere docili i sudditi; altri ancora credono che non sia abbastanza radicale e che mantenga molti errori delle versioni precedenti."
  church_aspects.6.a: "Difendiamo la versione attuale."
  church_aspects.6.b: "Ordiniamo una nuova traduzione."
 
  church_aspects.7.title: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] Investe i Propri Profitti"
- church_aspects.7.desc: "La nostra audace deviazione dalla dottrina generale [ShowReligionGroupAdjective('christian')] per permettere l'usura ha dato grandi frutti. [ROOT.GetCountry.Custom('IT_BURGHERS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_BURGHERS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] si [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] arrichit[ROOT.GetCountry.Custom('IT_BURGHERS_OAI')] che mai e [ROOT.GetCountry.Custom('IT_BURGHERS_HANNO')] aumentato la prosperità grazie agli interessi che applicati. Come segno di gratitudine verso [target_ruler.GetName], ha deciso di finanziare un progetto a [target_location.GetName]."
+ church_aspects.7.desc: "La nostra audace deviazione dalla dottrina generale [ShowReligionGroupAdjective('christian')] per permettere l'usura ha dato grandi frutti. I membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_BURGHERS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] si sono arrichiti come non mai e hanno aumentato la loro prosperità grazie agli interessi applicati. Come segno di gratitudine verso [target_ruler.GetName], ha deciso di finanziare un progetto a [target_location.GetName]."
  church_aspects.7.a: "Una nuova [ShowBuildingTypeNameWithNoTooltip('university')] sarà un'ottima aggiunta."
  church_aspects.7.b: "Una nuova [ShowBuildingTypeNameWithNoTooltip('cathedral')] compiacerà sicuramente [ROOT.GetCountry.GetReligion.GetGodName]."
 
@@ -103,7 +103,7 @@
  church_aspects.21.b: "Il popolo dovrebbe seguire il loro esempio."
 
  church_aspects.22.title: "Timore dei Cripto-Cattolici"
- church_aspects.22.desc: "L'istituzione di un nuovo [ShowBuildingTypeName('monastery')] è vista con sospetto dalla nostra Chiesa. Queste istituzioni potrebbero portare a una regressione degli sforzi riformisti di [ROOT.GetCountry.GetName] e a una rinascita delle credenze [ShowReligionAdjective('catholic')]. Se non agiamo con attenzione e non sorvegliamo da vicino queste comunità, la situazione potrebbe peggiorare ulteriormente."
+ church_aspects.22.desc: "L'istituzione di un nuovo [ShowBuildingTypeName('monastery')] è vista con sospetto dalla nostra Chiesa. Queste istituzioni potrebbero portare a una regressione degli sforzi riformisti [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] e a una rinascita della fede [ShowReligionAdjective('catholic')]. Se non agiamo con attenzione e non sorvegliamo da vicino queste comunità, la situazione potrebbe peggiorare ulteriormente."
  church_aspects.22.a: "Limitiamo i diritti del [ShowBuildingTypeNameWithNoTooltip('monastery')]."
  church_aspects.22.b: "Non c'è motivo di preoccuparsi."
 
@@ -114,12 +114,12 @@
  source_of_translation: "Pionieri della traduzione"
 
  church_aspects.24.title: "Conversioni di Massa in [target_province.GetNameWithNoTooltip]"
- church_aspects.24.desc: "La nostra pratica del battesimo degli adulti sembra aver spinto più persone di [target_province.GetName] a compiere il passo finale verso la conversione a [ROOT.GetCountry.GetReligion.GetName]. La nostra insistenza nel battezzare solo chi è responsabile della propria professione di fede rende più semplice convincere pacificamente le persone a unirsi alla nostra Chiesa."
+ church_aspects.24.desc: "La nostra pratica del battesimo degli adulti sembra aver spinto più persone di [target_province.GetName] a compiere il passo finale verso la conversione alla fede [ROOT.GetCountry.GetReligion.GetAdjective]. La nostra insistenza nel battezzare solo chi è responsabile della propria professione di fede rende più semplice convincere pacificamente le persone a unirsi alla nostra Chiesa."
  church_aspects.24.a: "Promuoviamola ulteriormente in [target_province.GetNameWithNoTooltip]."
  church_aspects.24.b: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  church_aspects.25.title: "Reietti della Riforma [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip]"
- church_aspects.25.desc: "La nostra posizione sul battesimo dei credenti è molto impopolare in altre regioni della Riforma [ROOT.GetCountry.GetReligion.GetAdjective]. Altri paesi diventano ostili appena apprendono del nostro rifiuto di battezzare gli infanti, assumendo una posizione più dura di quella che riserverebbero persino agli sciocchi [ShowReligionAdjective('catholic')]."
+ church_aspects.25.desc: "La nostra posizione sul battesimo dei credenti è molto impopolare in altre regioni della Riforma [ROOT.GetCountry.GetReligion.GetAdjective]. Altri paesi diventano ostili appena apprendono del nostro rifiuto di battezzare gli infanti, assumendo una posizione più dura di quella che riserverebbero persino agli sciocchi cattolici."
  church_aspects.25.a: "Sempre avanti, mai indietro!"
  church_aspects.25.b: "Dovremo trovare un compromesso."
  too_radical_reformation: "Riformatori radicali"
@@ -130,12 +130,12 @@
  church_aspects.26.b: "Non possiamo fermare il lavoro ora."
 
  church_aspects.27.title: "Una Fede Senza Guida"
- church_aspects.27.desc: "La mancanza di un leader nel nostro paese sta compromettendo gravemente la capacità della nostra Chiesa di funzionare. La forte centralizzazione degli affari ecclesiastici sotto il [ROOT.GetCountry.GetGovernment.GetRulerTitle] ora ci perseguita poiché siamo senza guida. Senza investimenti, la fede del popolo potrebbe vacillare, a meno che non ne rafforziamo la determinazione."
+ church_aspects.27.desc: "La mancanza di un leader nel nostro paese sta compromettendo gravemente la capacità della nostra Chiesa di funzionare. La forte centralizzazione degli affari ecclesiastici sotto [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] ora ci perseguita poiché siamo senza guida. Senza investimenti, la fede del popolo potrebbe vacillare, a meno che non ne rafforziamo la determinazione."
  church_aspects.27.a: "Dobbiamo agire."
  church_aspects.27.b: "Si risolverà da sé."
 
  church_aspects.28.title: "Un Credo Contro [target_ruler.GetNameWithNoTooltip]"
- church_aspects.28.desc: "Un gruppo di persone in [target_location.GetName] ha pubblicato un nuovo credo, che termina con una dichiarazione di non conformità alle disposizioni del [ROOT.GetCountry.GetGovernment.GetRulerTitle] in materia religiosa. Se non interveniamo, il loro credo potrebbe diffondersi in [target_location.GetNameWithNoTooltip] e indebolire il nostro controllo."
+ church_aspects.28.desc: "Un gruppo di persone in [target_location.GetName] ha pubblicato un nuovo credo, che termina con una dichiarazione di non conformità alle disposizioni [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] in materia religiosa. Se non interveniamo, il loro credo potrebbe diffondersi in [target_location.GetNameWithNoTooltip] e indebolire il nostro controllo."
  church_aspects.28.a: "Lasciamo che facciano come vogliono."
  church_aspects.28.b: "Rimuoviamoli da [target_location.GetNameWithNoTooltip]."
 

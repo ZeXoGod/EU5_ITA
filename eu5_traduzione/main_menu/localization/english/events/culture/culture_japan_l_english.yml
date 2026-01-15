@@ -1,21 +1,21 @@
 ﻿l_english:
  culture_japan.1.title: "O-Ie Sōdō"
  culture_japan.1.desc: "Negli ultimi tempi, le dispute tra le diverse famiglie [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si sono fatte sempre più accese, fino a provocare persino morti tra di loro. Se continueranno, potrebbero rappresentare una seria minaccia per la stabilità del sistema politico e vanno quindi trattate con la massima attenzione.\n\nQueste faide sono ormai talmente radicate nella cultura che la gente ha iniziato a chiamarle 'la contesa delle case', o #italic O-Ie Sōdō#!. Finché non li tocca direttamente, la popolazione considera questi conflitti come eventi normali, persino come una forma di intrattenimento.\n\nOra sembra che [target_character.GetName] [target_character.GetHerselfHimself] sia rimastə coinvolto in una di queste dispute, e il popolo chiede la sua testa su un piatto."
- culture_japan.1.a: "[target_character.GetSheHe|U] avrebbe dovuto sapere meglio!"
+ culture_japan.1.a: "[target_character.GetSheHe|U] avrebbe dovuto sapere!"
  culture_japan.1.b: "Rifiuta di cedere alle loro richieste."
  
- culture_japan.2.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] indisciplinati"
+ culture_japan.2.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] Indisciplinati"
  culture_japan.2.desc: "La pace degli ultimi anni ha lasciato molti appartenenti alla casta [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] senza alcuna occupazione. Queste mani oziose si sono ora dedicate a sfruttare e opprimere la popolazione [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Dovremo occuparcene."
  culture_japan.2.a: "È solo il loro modo per mantenere affilate le abilità di combattimento."
  culture_japan.2.b: "Saranno severamente puniti."
 
  culture_japan.3.title: "Senza Eredi"
- culture_japan.3.desc: "Poiché [target_ruler.GetName] non è riuscitə a garantire al nostro [ROOT.GetCountry.GetFlavorRank] un adeguato [ROOT.GetCountry.GetGovernment.GetHeirTitle], le speculazioni sul futuro della nazione si sono fatte insistenti. Queste discussioni minacciano di indebolire la nostra posizione. [target_ruler.GetShortNameWithNoTooltip] potrebbe adottare [target_character.GetName] come propriə [target_character.GetDaughterSon] e [ROOT.GetCountry.GetGovernment.GetHeirTitle], ma ciò potrebbe essere visto come un segno di debolezza."
+ culture_japan.3.desc: "Poiché [target_ruler.GetName] non è riuscitə a garantire [ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] un adeguato [ROOT.GetCountry.GetGovernment.GetHeirTitle], le speculazioni sul futuro della nazione si sono fatte insistenti. Queste discussioni minacciano di indebolire la nostra posizione. [target_ruler.GetShortNameWithNoTooltip] potrebbe adottare [target_character.GetName] come propriə [target_character.GetDaughterSon] e [ROOT.GetCountry.GetGovernment.GetHeirTitle], ma ciò potrebbe essere visto come un segno di debolezza."
  culture_japan.3.a: "La forza nella consolazione."
  culture_japan.3.b: "Adotta e legittima [target_character.GetNameWithNoTooltip]."
  
  culture_japan.4.title: "Perdita di Prestigio"
- culture_japan.4.desc: "L'instabilità del nostro [ROOT.GetCountry.GetFlavorRank] ha portato molti a dubitare della nostra capacità di mantenere la coesione nazionale. La leadership e le doti gestionali di [target_character.GetName] sono costantemente messe in discussione. Ammettere che la situazione ci è in parte sfuggita di mano sarebbe un duro colpo alla nostra autorità e influenza."
+ culture_japan.4.desc: "L'instabilità [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] ha portato molti a dubitare della nostra capacità di mantenere la coesione nazionale. La leadership e le doti gestionali di [target_character.GetName] sono costantemente messe in discussione. Ammettere che la situazione ci è in parte sfuggita di mano sarebbe un duro colpo alla nostra autorità e influenza."
  culture_japan.4.a: "Ammettiamo che la situazione non è delle migliori."
  culture_japan.4.b: "Insistiamo: tutto va per il meglio!"
 
@@ -36,12 +36,12 @@
  culture_japan.7.b: "Abbiamo bisogno di denaro più di ogni altra cosa!"
 
  culture_japan.8.title: "Colpo di Stato Fallito!"
- culture_japan.8.desc: "Pare che il clima politico nel [ROOT.GetCountry.GetLongName] non sia stabile quanto si credeva. Durante un viaggio, [target_ruler.GetName] si era fermatə a riposare in un tempio vicino alle proprie truppe, quando il generale dell'esercito vide un'occasione e circondò il complesso con le proprie forze, affermando che 'il nemico era all'interno'. Solo l'azione rapida e decisa delle truppe lealiste permise di salvare il [ROOT.GetCountry.GetGovernment.GetRulerTitle] e catturare il traditore.\n\nLe motivazioni del generale non sono chiare, e [target_character.GetSheHe] potrebbe essere statə mosso da vendetta o da sete di potere. L'incidente ha rafforzato il controllo di [target_ruler.GetShortNameWithNoTooltip] sull'esercito, ma la breve schermaglia ha causato la morte di molti valorosi uomini. Sarà necessario concentrarsi di nuovo sulla politica interna per evitare che accada ancora."
+ culture_japan.8.desc: "Pare che il clima politico nel [ROOT.GetCountry.GetLongName] non sia stabile quanto si credeva. Durante un viaggio, [target_ruler.GetName] si era fermatə a riposare in un tempio vicino alle proprie truppe, quando il generale dell'esercito vide un'occasione e circondò il complesso con le proprie forze, affermando che 'il nemico era all'interno'. Solo l'azione rapida e decisa delle truppe lealiste permise di salvare [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] e catturare il traditore.\n\nLe motivazioni del generale non sono chiare, e [target_character.GetSheHe] potrebbe essere statə mosso da vendetta o da sete di potere. L'incidente ha rafforzato il controllo di [target_ruler.GetShortNameWithNoTooltip] sull'esercito, ma la breve schermaglia ha causato la morte di molti valorosi uomini. Sarà necessario concentrarsi di nuovo sulla politica interna per evitare che accada ancora."
  culture_japan.8.a: "Nessuna pietà per questo atto disonorevole!"
  culture_japan.8.b: "L'ambizione, dopotutto, merita una ricompensa."
 
  culture_japan.9.title: "Diffusione dei $jap_jokamachi$"
- culture_japan.9.desc: "Il nostro vicino [target_neighbor.GetName] ha iniziato a costruire nuove fortezze, attorno alle quali sorgono i #italic $jap_jokamachi$#!, i 'Borghi del Castello'. Questi insediamenti, abitati [ROOT.GetCountry.Custom('IT_BURGHERS_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], non presentano separazioni sociali né suddivisioni regolari, permettendo così al [ROOT.GetCountry.GetGovernment.GetRulerTitle] di mantenere un saldo controllo sulla classe nobiliare.\n\nLe altre classi, unite all'istituzione di mercati liberi e corporazioni aperte, stimolano il commercio e la prosperità. I $jap_jokamachi$ potrebbero dunque diventare uno strumento per il [ROOT.GetCountry.GetGovernment.GetRulerTitle] per rafforzare il controllo sia militare che economico, aumentando al contempo la ricchezza del dominio."
+ culture_japan.9.desc: "Il nostro vicino [target_neighbor.GetName] ha iniziato a costruire nuove fortezze, attorno alle quali sorgono i #italic $jap_jokamachi$#!, i 'Borghi del Castello'. Questi insediamenti, abitati [ROOT.GetCountry.Custom('IT_BURGHERS_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], non presentano separazioni sociali né suddivisioni regolari, permettendo così [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] di mantenere un saldo controllo sulla classe nobiliare.\n\nLe altre classi, unite all'istituzione di mercati liberi e corporazioni aperte, stimolano il commercio e la prosperità. I $jap_jokamachi$ potrebbero dunque diventare uno strumento per [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] per rafforzare il controllo sia militare che economico, aumentando al contempo la ricchezza del dominio."
  culture_japan.9.a: "Dovremmo incoraggiare lo sviluppo di questi borghi fortificati."
  culture_japan.9.b: "Abbiamo questioni più urgenti a cui pensare."
   
@@ -66,12 +66,12 @@
  culture_japan.13.b: "Imponiamo restrizioni a chi può trasferirsi a [target_location.GetNameWithNoTooltip]."
  
  culture_japan.14.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] migrano a [target_location.GetNameWithNoTooltip]"
- culture_japan.14.desc: "Con l'aumento della popolazione nelle campagne, le dimensioni dei poderi di ogni contadino si sono ridotte a ogni eredità. Sebbene i raccolti siano cresciuti, alcuni agricoltori non riescono comunque a vivere della propria terra. Molti si sono quindi trasferiti nella capitale, aggravando i dolori della crescita di [target_location.GetName].\n\nI proprietari terrieri si lamentano e ci implorano di imporre un maggiore ordine sociale. Suggeriscono con forza di emanare leggi che limitino la libertà di movimento all'interno del nostro [ROOT.GetCountry.GetFlavorRank]."
+ culture_japan.14.desc: "Con l'aumento della popolazione nelle campagne, le dimensioni dei poderi di ogni contadino si sono ridotte a ogni eredità. Sebbene i raccolti siano cresciuti, alcuni agricoltori non riescono comunque a vivere della propria terra. Molti si sono quindi trasferiti nella capitale, aggravando i dolori della crescita di [target_location.GetName].\n\nI proprietari terrieri si lamentano e ci implorano di imporre un maggiore ordine sociale. Suggeriscono con forza di emanare leggi che limitino la libertà di movimento all'interno [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
  culture_japan.14.a: "Decreta che nessun uomo possa spostarsi senza permesso."
  culture_japan.14.b: "Non possiamo fermare la crescita delle città."
 
  culture_japan.15.title: "Monopoli Commerciali"
- culture_japan.15.desc: "La crescita delle città ha portato le antiche corporazioni commerciali Za del nostro paese ad accrescere rapidamente il proprio potere. La situazione caotica generale del nostro [ROOT.GetCountry.GetFlavorRank] le ha spinte a contare sempre più sui propri mezzi per la sicurezza. Le corporazioni hanno ora legato a sé templi, proprietari terrieri e [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ma si sono anche guadagnate dei nemici.\n\nAlcuni implorano il nostro [ROOT.GetCountry.GetGovernment.GetRulerTitle] di prendere posizione contro le corporazioni e aprire l'economia a chiunque abbia le capacità. Altri sostengono che dovremmo almeno concedere monopoli e privilegi ad altri oltre che alle corporazioni."
+ culture_japan.15.desc: "La crescita delle città ha portato le antiche corporazioni commerciali Za del nostro paese ad accrescere rapidamente il proprio potere. La situazione caotica generale [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] le ha spinte a contare sempre più sui propri mezzi per la sicurezza. Le corporazioni hanno ora legato a sé templi, proprietari terrieri e [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ma si sono anche guadagnate dei nemici.\n\nAlcuni implorano [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] di prendere posizione contro le corporazioni e aprire l'economia a chiunque abbia le capacità. Altri sostengono che dovremmo almeno concedere monopoli e privilegi ad altri oltre che alle corporazioni."
  culture_japan.15.a: "Aboliremo le vecchie regolamentazioni che le alimentano!"
  culture_japan.15.b: "I monopoli funzionano, ma non dovremmo concederli per sola tradizione."
  culture_japan.15.c: "Dobbiamo proteggere gli accordi dei nostri antenati."
@@ -106,7 +106,7 @@
  culture_japan.20.b: "Il [target_country.GetLongNameWithNoTooltip] è debole e privo di volontà."
 
  culture_japan.21.title: "Sorge una Nuova Dinastia"
- culture_japan.21.desc: "Con l'ascesa al potere di [new_ruler.GetName], il dominio della vecchia dinastia [old_ruler.GetDynasty.GetName] è giunto al termine. Si apre così una nuova era per il nostro [ROOT.GetCountry.GetFlavorRank], in cui persino la nostra identità potrebbe essere messa in discussione. Alla fine, possiamo davvero definirci ancora [ROOT.GetCountry.GetLongName] senza la dinastia [old_ruler.GetDynasty.GetNameWithNoTooltip]?"
+ culture_japan.21.desc: "Con l'ascesa al potere di [new_ruler.GetName], il dominio della vecchia dinastia [old_ruler.GetDynasty.GetName] è giunto al termine. Si apre così una nuova era per [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], in cui persino la nostra identità potrebbe essere messa in discussione. Alla fine, possiamo davvero definirci ancora [ROOT.GetCountry.GetLongName] senza la dinastia [old_ruler.GetDynasty.GetNameWithNoTooltip]?"
  culture_japan.21.a: "L'alba di un nuovo [ROOT.GetCountry.GetFlavorRank]."
  culture_japan.21.b: "In realtà, [old_ruler.GetShortNameWithNoTooltip] adottò [new_ruler.GetShortNameWithNoTooltip] nel proprio testamento."
 
@@ -134,7 +134,7 @@
  culture_japan.1100.d: "Non è necessario coinvolgere i clan."
 
  culture_japan.1101.title: "$culture_japan.1100.title$"
- culture_japan.1101.desc: "Lo [target_shogunate.GetLongName] ha comunicato che [target_ruler.GetName] è atteso a servire come funzionario [target_shogunate.GetGovernment.GetAdjective]. Data la sincerità della richiesta, un rifiuto sarebbe impensabile e potrebbe essere visto come un segno di ribellione o disonore. È anche un modo per ottenere prestigio e influenza per il [ROOT.GetCountry.GetFlavorRank], ma si tratta di un onore pericoloso. Il [target_shogunate.GetFlavorRank] ha recentemente cambiato funzionari con una frequenza allarmante. Non contento di riservare gli alti uffici ai suoi sostenitori e fedeli, ora rimuove chiunque non soddisfi le aspettative del [target_shogunate.GetGovernment.GetRulerTitle]. Per alcuni, questo è un sistema meritocratico; per molti altri, significa vivere costantemente nel timore di essere scrutinati."
+ culture_japan.1101.desc: "Lo [target_shogunate.GetLongName] ha comunicato che [target_ruler.GetName] è atteso a servire come funzionario [target_shogunate.GetGovernment.GetAdjective]. Data la sincerità della richiesta, un rifiuto sarebbe impensabile e potrebbe essere visto come un segno di ribellione o disonore. È anche un modo per ottenere prestigio e influenza per [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank], ma si tratta di un onore pericoloso. Il [target_shogunate.GetFlavorRank] ha recentemente cambiato funzionari con una frequenza allarmante. Non contento di riservare gli alti uffici ai suoi sostenitori e fedeli, ora rimuove chiunque non soddisfi le aspettative del [target_shogunate.GetGovernment.GetRulerTitle]. Per alcuni, questo è un sistema meritocratico; per molti altri, significa vivere costantemente nel timore di essere scrutinati."
  culture_japan.1101.a: "Dobbiamo servire lo [target_shogunate.GetGovernment.GetRulerTitle]."
  culture_japan.1101.a.tt: "[target_shogunate.GetName] potrebbe usare questo pretesto per limitare la nostra influenza e ridurre i nostri possedimenti."
  culture_japan.1101.b: "Non parteciperemo a questa farsa, rifiutiamo la nomina."
@@ -166,7 +166,7 @@
  culture_japan.1106.a: "Una situazione tutt'altro che ideale."
 
  culture_japan.1200.title: "Il Potere in Declino dello [target_shogunate.GetLongNameWithNoTooltip]"
- culture_japan.1200.desc: "In questi tempi difficili, l'autorità del nostro [ROOT.GetCountry.GetFlavorRank] è minacciata. Il nostro nome non incute più il rispetto dovuto e i nostri ordini vengono spesso contestati o ignorati. È in tali momenti che dobbiamo affidarci ai clan più leali, affinché compiano il loro dovere e ci sostengano. Tuttavia, potrebbero voler qualcosa in cambio."
+ culture_japan.1200.desc: "In questi tempi difficili, l'autorità [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] è minacciata. Il nostro nome non incute più il rispetto dovuto e i nostri ordini vengono spesso contestati o ignorati. È in tali momenti che dobbiamo affidarci ai clan più leali, affinché compiano il loro dovere e ci sostengano. Tuttavia, potrebbero voler qualcosa in cambio."
  culture_japan.1200.a: "Chiediamo aiuto ai [target_clan_1.GetLongNameWithNoTooltip]."
  culture_japan.1200.b: "Facciamo affidamento sui [target_clan_2.GetLongNameWithNoTooltip]."
  culture_japan.1200.c: "Sicuramente i [target_clan_3.GetLongNameWithNoTooltip] ci aiuteranno."
@@ -211,13 +211,13 @@
 
  culture_japan.1300.title: "$culture_japan.1200.title$"
  culture_japan.1300.desc: "L'autorità dello [target_shogunate.GetLongName] non è più quella di un tempo, e la sua debolezza è ormai evidente a tutti. Potremmo approfittare di questo declino per costringerli a concederci nuove terre o ulteriori privilegi."
- culture_japan.1300.a: "Richiedi più terre per la nostra [ROOT.GetCountry.GetFlavorRank]."
+ culture_japan.1300.a: "Richiedi più terre per [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
  culture_japan.1300.a.tt: "Invieremo una petizione per ottenere più terre"
  culture_japan.1300.b: "Costringili a riconoscere la nostra supremazia."
  culture_japan.1300.c: "Non approfitteremo della loro debolezza."
 
  culture_japan.1301.title: "[target_clan.GetNameWithNoTooltip] chiede terre"
- culture_japan.1301.desc: "Il [target_clan.GetLongName], convinto che la nostra guida sia troppo debole per reagire, è giunto da noi chiedendo i diritti su nuove terre. La loro sfrontatezza non ha precedenti, ma è vero che la nostra [ROOT.GetCountry.GetFlavorRank] non è forte come vorremmo. Forse qualche concessione ora potrebbe evitarci problemi in futuro."
+ culture_japan.1301.desc: "Il [target_clan.GetLongName], convinto che la nostra guida sia troppo debole per reagire, è giunto da noi chiedendo i diritti su nuove terre. La loro sfrontatezza non ha precedenti, ma è vero che [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] non è forte come vorremmo. Forse qualche concessione ora potrebbe evitarci problemi in futuro."
  culture_japan.1301.a: "Come osano avanzare simili pretese?"
  culture_japan.1301.b: "Calmiamo le tensioni con altre promesse."
  culture_japan.1301.c: "Molto bene, concedi loro i diritti su [target_location.GetNameWithNoTooltip]."

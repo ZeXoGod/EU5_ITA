@@ -1,6 +1,6 @@
 ﻿l_english:
  lutheranism_events.1.title: "Il Riformatore Cerca un Rifugio Sicuro"
- lutheranism_events.1.desc: "[reformer.GetName], uno dei massimi teologi della nostra epoca, ha dovuto lasciare la sua patria, [reformer_fleeing_from_here.GetLongName], poiché teme per la propria incolumità. In quanto paese [ShowReligionAdjective('lutheran')], è nostro dovere offrirgli un rifugio sicuro, e farlo rafforzerebbe indubbiamente la posizione della nostra Chiesa di Stato, almeno finché questo riformatore sarà d'accordo con le nostre politiche."
+ lutheranism_events.1.desc: "[reformer.GetName], uno dei massimi teologi della nostra epoca, ha dovuto lasciare la sua patria, [reformer_fleeing_from_here.GetLongName], poiché teme per la propria incolumità. In quanto paese di fede [ShowReligionAdjective('lutheran')], è nostro dovere offrirgli un rifugio sicuro, e farlo rafforzerebbe indubbiamente la posizione della nostra Chiesa di Stato, almeno finché questo riformatore sarà d'accordo con le nostre politiche."
  lutheranism_events.1.a: "Accogliamo questo grande uomo!"
  lutheranism_events.1.a.tt: "Finché il Riformatore vivrà entro i nostri confini, potrà decidere di criticare o approvare le politiche della nostra Chiesa di Stato."
  protected_reformer: "Ha dato rifugio al Riformatore"
@@ -8,7 +8,7 @@
  did_not_protect_reformer: "Ha rifiutato di dare rifugio al Riformatore"
  
  lutheranism_events.2.title: "Il Riformatore Cerca Rifugio in [from.GetLongNameWithNoTooltip]"
- lutheranism_events.2.desc: "Uno dei più prominenti sostenitori della Riforma nel nostro paese, [reformer.GetName], è partito per [from.GetLongName], sostenendo di temere persecuzioni da parte delle autorità [ShowReligionAdjective('catholic')] locali. Non contento di essersene semplicemente andato, l'uomo trascorre ora il suo tempo producendo pamphlet per deridere non solo la Chiesa Cattolica, ma anche la sua vecchia patria."
+ lutheranism_events.2.desc: "Uno dei più prominenti sostenitori della Riforma nel nostro paese, [reformer.GetName], è partito per [from.GetLongName], sostenendo di temere persecuzioni da parte dell'autorità [ShowReligionAdjective('catholic')] locale. Non contento di essersene semplicemente andato, l'uomo trascorre ora il suo tempo producendo pamphlet per deridere non solo la Chiesa Cattolica, ma anche la sua vecchia patria."
  lutheranism_events.2.a: "Oltraggioso!"
  
  lutheranism_events.3.title: "[reformer.GetNameWithNoTooltip] Critica la Chiesa di Stato"
@@ -48,12 +48,12 @@
  lutheranism_events.11.c: "Che sfortuna…"
  
  lutheranism_events.12.title: "Pensatore Cattolico a Corte"
- lutheranism_events.12.desc: "[target_character.GetName] è famoso per il suo acume intellettuale e la sua presenza a corte conferisce un certo prestigio al nostro nome. Tuttavia, [target_character.GetNameWithNoTooltip] è anche un fervente [ShowReligionName('catholic')] e gli è stato permesso di praticare la sua fede liberamente per mantenerlo qui. Sarebbe impensabile per la Chiesa di [ROOT.GetCountry.GetName] criticare direttamente [ROOT.GetCountry.GetGovernment.GetRuler.GetName], ma nelle strade di [ROOT.GetCountry.GetCapital.GetName] si mormora che [target_character.GetNameWithNoTooltip] stia cercando di instillare idee cattoliche sovversive nella mente di [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]."
+ lutheranism_events.12.desc: "[target_character.GetName] è famoso per il suo acume intellettuale e la sua presenza a corte conferisce un certo prestigio al nostro nome. Tuttavia, [target_character.GetNameWithNoTooltip] è anche un fervente seguace della fede [ShowReligionAdjective('catholic')] e gli è stato permesso di praticare la sua fede liberamente per mantenerlo qui. Sarebbe impensabile per la Chiesa [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] criticare direttamente [ROOT.GetCountry.GetGovernment.GetRuler.GetName], ma nelle strade di [ROOT.GetCountry.GetCapital.GetName] si mormora che [target_character.GetNameWithNoTooltip] stia cercando di instillare idee cattoliche sovversive nella mente di [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]."
  lutheranism_events.12.a: "Che parlino pure."
  lutheranism_events.12.b: "Allontanatelo dalla corte."
  
  lutheranism_events.13.title: "Influenza del Calvinismo"
- lutheranism_events.13.desc: "Si vocifera che [minister.GetName], un consigliere stretto di [ROOT.GetCountry.GetGovernment.GetRuler.GetName], stia in realtà coltivando segrete convinzioni [ShowReligionAdjective('calvinist')]. Alcune recenti leggi proposte da questo consigliere sono state interpretate come tentativi nascosti di avvicinare il nostro paese agli ideali delle Chiese Riformate."
+ lutheranism_events.13.desc: "Si vocifera che [minister.GetName], un consigliere stretto di [ROOT.GetCountry.GetGovernment.GetRuler.GetName], stia in realtà coltivando una segreta convinzione [ShowReligionAdjective('calvinist')]. Alcune recenti leggi proposte da questo consigliere sono state interpretate come tentativi nascosti di avvicinare il nostro paese agli ideali delle Chiese Riformate."
  lutheranism_events.13.a: "Respingiamo queste dicerie come sciocchezze."
  lutheranism_events.13.b: "Prendiamo pubblicamente le distanze da [minister.GetNameWithNoTooltip]."
  
@@ -70,7 +70,7 @@
  STATIC_MODIFIER_DESC_tolerant_monarch: "Il nostro sovrano è noto per la grande comprensione delle altre fedi, e le minoranze religiose sotto il suo regno godono di privilegi che altrimenti non avrebbero."
 
  lutheranism_events.16.title: "La Coscienza di [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]"
- lutheranism_events.16.desc: "Sono passati anni e [ROOT.GetCountry.GetGovernment.GetRuler.GetName] si è dimostrato un sovrano giusto ed equo. Il clero non teme più un improvviso colpo di mano cattolico e il suo odio verso il Papismo è stato attenuato dalla comprensione che [ROOT.GetCountry.GetGovernment.GetRuler.GetName] ha della religione.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself], tuttavia, è tormentato. Col passare degli anni, [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] ha realizzato che la sua fede personale è molto più vicina a quella dei cattolici che [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] ha fatto tanto per proteggere, e non a quella della dogmatica Chiesa di Stato di [ROOT.GetCountry.GetName]."
+ lutheranism_events.16.desc: "Sono passati anni e [ROOT.GetCountry.GetGovernment.GetRuler.GetName] si è dimostrato un sovrano giusto ed equo. Il clero non teme più un improvviso colpo di mano cattolico e il suo odio verso il Papismo è stato attenuato dalla comprensione che [ROOT.GetCountry.GetGovernment.GetRuler.GetName] ha della religione.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself], tuttavia, è tormentato. Col passare degli anni, ha realizzato che la sua fede personale è molto più vicina a quella dei cattolici che [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] ha fatto tanto per proteggere, e non a quella della dogmatica Chiesa di Stato [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]."
  lutheranism_events.16.a: "L'abdicazione personale è l'unica soluzione."
  lutheranism_events.16.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] dovrà andare avanti con la coscienza tormentata."
  STATIC_MODIFIER_NAME_plagued_conscience: "Coscienza Tormentata"

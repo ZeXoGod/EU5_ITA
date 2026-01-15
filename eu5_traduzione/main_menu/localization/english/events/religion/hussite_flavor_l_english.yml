@@ -54,17 +54,17 @@
  hussite_flavor.9.b: "Ai nostri vicini."
 
  hussite_flavor.10.title: "Carri da Guerra e Tattiche Militari"
- hussite_flavor.10.desc: "Durante le [ShowSituationName('hussite_wars')], l'uso dei carri da guerra si rivelò fondamentale per la sopravvivenza degli eserciti [ShowReligionAdjective('hussite')]. Queste strutture difensive mobili e fortificate permisero a fanterie composte in gran parte da contadini di respingere le devastanti cariche di cavalleria di nemici meglio equipaggiati. L'innovazione non fu solo una risposta alla mancanza di cavalleria tradizionale, ma un brillante adattamento delle risorse disponibili per superare svantaggi tecnologici e tattici.\n\nTuttavia, i tempi sono cambiati e l'introduzione delle armi da fuoco, insieme a nuove tattiche, ha mutato il campo di battaglia. Gli eserciti ora dipendono da potenti sbarramenti e formazioni agili, introducendo nuovi fattori di cui dobbiamo tener conto. Molti dei nostri teorici militari sostengono l'adozione di nuove tecniche offensive a discapito della difesa tradizionale."
+ hussite_flavor.10.desc: "Durante le [ShowSituationName('hussite_wars')], l'uso dei carri da guerra si rivelò fondamentale per la sopravvivenza degli eserciti ussiti. Queste strutture difensive mobili e fortificate permisero a fanterie composte in gran parte da contadini di respingere le devastanti cariche di cavalleria di nemici meglio equipaggiati. L'innovazione non fu solo una risposta alla mancanza di cavalleria tradizionale, ma un brillante adattamento delle risorse disponibili per superare svantaggi tecnologici e tattici.\n\nTuttavia, i tempi sono cambiati e l'introduzione delle armi da fuoco, insieme a nuove tattiche, ha mutato il campo di battaglia. Gli eserciti ora dipendono da potenti sbarramenti e formazioni agili, introducendo nuovi fattori di cui dobbiamo tener conto. Molti dei nostri teorici militari sostengono l'adozione di nuove tecniche offensive a discapito della difesa tradizionale."
  hussite_flavor.10.a: "Non possiamo tradire le nostre tradizioni!"
  hussite_flavor.10.b: "Non possiamo dipendere da tattiche obsolete, serve una riforma!"
  reform_hussite_army_tt: "Finché il [ShowModifier('hussite_military_reform_modifier')] [modifier|e] è attivo, avremo accesso al [ShowParliamentIssueType('hussite_army_reform')] [parliament_issue|e]"
  stability_loss_depends_on_defensive_sv_tt: "La perdita di [stability|e] dipende dal nostro [ShowSocietyDirectionName('defensive')] [societal_value|e]"
- event_may_reoccur_after_20_years_tt: "Questo [event|e] potrebbe ripresentarsi dopo #Y 20#! anni se seguiamo ancora il [ShowReligionName('hussite')]"
+ event_may_reoccur_after_20_years_tt: "Questo [event|e] potrebbe ripresentarsi dopo #Y 20#! anni se seguiamo ancora l'[ShowReligionName('hussite')]"
 
  hussite_flavor.12.title: "Fanatici Ussiti a [target_province.GetNameWithNoTooltip]"
  hussite_flavor.12.desc: "Nonostante i nostri migliori tentativi di bilanciare i bisogni e le richieste dei fedeli all'interno [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank], ci sono sempre coloro che pretendono di più, la cui fame di persecuzione non può essere placata. È il caso dei fanatici Ussiti di [target_province.GetName], le cui richieste di perseguire gli eretici hanno portato solo sacrilegio e instabilità nella provincia. Le loro pretese possono facilmente essere descritte come insensate, tuttavia dovremmo trattare la questione con la massima cautela per evitare di trasformarli in martiri!"
  hussite_flavor.12.a: "Assecondiamo le loro richieste, per ora."
- every_hussite_in_target_province_10_sat_tt: "Ogni [pop|e] [ShowReligionAdjectiveWithNoTooltip('hussite')] a [target_province.GetNameWithNoTooltip] guadagnerà [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] di [pop_satisfaction|e]"
+ every_hussite_in_target_province_10_sat_tt: "Ogni [pop|e] [ShowReligionAdjectiveWithNoTooltip('hussite')] a [target_province.GetNameWithNoTooltip] guadagnerà il [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] di [pop_satisfaction|e]"
  hussite_flavor.12.b: "Non negoziamo con gli sciocchi!"
 
  hussite_flavor.11.title: "Inni dei Fedeli"

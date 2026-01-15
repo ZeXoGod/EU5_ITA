@@ -68,14 +68,14 @@
  catholic_flavor.13.b: "La situazione si risolverà da sola col tempo."
 
  catholic_flavor.14.title: "Il [target_country.GetLongNameWithNoTooltip] Guarisce lo Scisma"
- catholic_flavor.14.desc: "Il Vescovo di [ShowLocationName('rome')], [target_character.GetName], ha dichiarato concluso il Grande Scisma, una dichiarazione sostenuta dai suoi compiacenti nuovi burattini ecclesiastici a [ShowLocationName('constantinople')] e [ShowLocationName('moscow')]. Sebbene potremmo continuare sulle nostre vecchie strade, le vittorie di [target_country.GetName] suggeriscono che [ROOT.GetCountry.GetReligion.GetGodName] possa davvero essere dalla parte dei [ShowReligionAdjective('catholic')]."
+ catholic_flavor.14.desc: "Il Vescovo di [ShowLocationName('rome')], [target_character.GetName], ha dichiarato concluso il Grande Scisma, una dichiarazione sostenuta dai suoi compiacenti nuovi burattini ecclesiastici a [ShowLocationName('constantinople')] e [ShowLocationName('moscow')]. Sebbene potremmo continuare sulle nostre vecchie strade, le vittorie [target_country.Custom('IT_Della')][target_country.GetName] suggeriscono che [ROOT.GetCountry.GetReligion.GetGodName] possa davvero essere dalla parte della fede [ShowReligionAdjective('catholic')]."
  catholic_flavor.14.a: "Abbracceremo la fede [ShowReligionNameWithNoTooltip('catholic')]."
  catholic_flavor.14.a.tt: "Una larga parte della nostra popolazione si convertirà alla fede [ShowReligionName('catholic')]."
  catholic_flavor.14.b: "Finché pronunceranno 'Filioque', noi seguiremo la fede [ShowReligionNameWithNoTooltip('orthodox')]!"
  catholic_flavor.14.b.tt: "Una piccola parte della nostra popolazione si convertirà alla fede [ShowReligionName('catholic')]."
 
  catholic_flavor.15.title: "La Festa dei Folli"
- catholic_flavor.15.desc: "La Festa dei Folli è arrivata!\n\nVestito con abiti demoniaci, è stato eletto un nuovo 'vescovo'. La gente beve, ride e danza mentre il falso vescovo si prende gioco dei rituali ecclesiastici, una parodia del culto [ShowReligionGroupName('christian')] apprezzata da tutti tranne che [ROOT.GetCountry.Custom('IT_CLERGY_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], che insiste affinché le festività vengano sospese immediatamente per il bene del [ROOT.GetCountry.GetGovernment.GetRulerTitle] e del paese."
+ catholic_flavor.15.desc: "La Festa dei Folli è arrivata!\n\nVestito con abiti demoniaci, è stato eletto un nuovo 'vescovo'. La gente beve, ride e danza mentre il falso vescovo si prende gioco dei rituali ecclesiastici, una parodia del culto del [ShowReligionGroupName('christian')] apprezzata da tutti tranne che [ROOT.GetCountry.Custom('IT_CLERGY_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], che insiste affinché le festività vengano sospese immediatamente per il bene [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] e del paese."
  catholic_flavor.15.a: "Lasciate che i festeggiamenti continuino."
  catholic_flavor.15.b: "Non si può tollerare una simile derisione delle nostre sacre istituzioni!"
  catholic_flavor.15.c: "Nominate un cavallo come papa, per scherzo."
@@ -87,7 +87,7 @@
  catholic_flavor.16.b: "Gli scribi hanno meritato tale elogio."
 
  catholic_flavor.100.title: "Cardinale-Nipote"
- catholic_flavor.100.desc: "Esiste una lunga tradizione [ROOT.GetCountry..Custom('IT_ADJ_FS')] di nominare parenti del [ROOT.GetCountry.GetGovernment.GetRulerTitle] nel Collegio dei Cardinali. Sebbene alcuni lo chiamino nepotismo, i Cardinali-Nipoti hanno un ruolo consolidato nella Curia."
+ catholic_flavor.100.desc: "Esiste una lunga tradizione [ROOT.GetCountry..Custom('IT_ADJ_FS')] di nominare parenti [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] nel Collegio dei Cardinali. Sebbene alcuni lo chiamino nepotismo, i Cardinali-Nipoti hanno un ruolo consolidato nella Curia."
  catholic_flavor.100.desc.a: "$catholic_flavor.100.desc$ Ora che è tempo di nominare un nuovo cardinale [cardinal_nephew_country.Custom('IT_In')][cardinal_nephew_country.GetName], [ROOT.GetCountry.GetGovernment.GetRuler.GetName] deve decidere se un parente sia idoneo a risiedere in [cardinal_nephew_province.GetName]."
  catholic_flavor.100.desc.b: "$catholic_flavor.100.desc$ Ora che è tempo di nominare un nuovo cardinale [cardinal_nephew_country.Custom('IT_In')][cardinal_nephew_country.GetName], [ROOT.GetCountry.GetGovernment.GetRuler.GetName] deve decidere se un parente sia adatto ai compiti richiesti."
  catholic_flavor.100.a: "No, una tradizione che dovremmo abbandonare."
@@ -101,12 +101,12 @@
  catholic_flavor.101.b: "Non favoriremo il nepotismo nella Chiesa."
 
  catholic_flavor.102.title: "Cardinale-Nipote Accettato"
- catholic_flavor.102.desc: "[cardinal_nephew_country.GetName] ha accettato il nipote del [ROOT.GetCountry.GetGovernment.GetRulerTitle] come nuovo cardinale in [cardinal_nephew_province.GetName]."
+ catholic_flavor.102.desc: "[cardinal_nephew_country.GetName] ha accettato il nipote [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] come nuovo cardinale in [cardinal_nephew_province.GetName]."
  catholic_flavor.102.a: "Perfetto!"
  opinion_cardinal_nephew: "Cardinale Nipote"
 
  catholic_flavor.103.title: "Cardinale-Nipote Rifiutato"
- catholic_flavor.103.desc: "[cardinal_nephew_country.GetName] ha rifiutato di nominare il nipote del [ROOT.GetCountry.GetGovernment.GetRulerTitle] a Cardinale in [cardinal_nephew_province.GetName]."
+ catholic_flavor.103.desc: "[cardinal_nephew_country.GetName] ha rifiutato di nominare il nipote [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] a Cardinale in [cardinal_nephew_province.GetName]."
  catholic_flavor.103.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
 
  catholic_flavor.1000.title: "Un [ShowBuildingTypeNameWithNoTooltip('seat_of_cardinal')] per [SCOPE.sCountry('actor').GetNameWithNoTooltip]"
