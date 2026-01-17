@@ -220,13 +220,13 @@
  flavor_flo.59.title: "Istituita una Nuova Filiale"
  flavor_flo.59.desc: "Abbiamo stretto una partnership con un collega banchiere a [target_location.GetName] per stabilire una nuova filiale della nostra famosa [ROOT.GetCountry.GetName]. Speriamo che grandi ricchezze derivino da questa collaborazione."
  flavor_flo.59.a: "La valorizzeremo negli anni a venire!"
- flo_good_business: "Buoni affari"
+ flo_good_business: "Buoni Affari"
 
  flavor_flo.60.title: "Invito di [target_character.GetNameWithNoTooltip]"
- flavor_flo.60.desc: "I recenti problemi economici [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] tormentano i cittadini da tempo. Cercando un personaggio di spicco che ci salvi dal caos, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_HA')] trovato un candidato eccellente in [target_character.GetName]. Sebbene l'invito di [target_character.GetShortName] dovesse essere temporaneo, [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] [ROOT.GetCountry.Custom('IT_BURGHERS_SONO')] più che felici di lasciarlo governare a vita."
- flavor_flo.60.a: "Sostieni questa mozione."
- flavor_flo.60.b: "Non sanno nulla."
- STATIC_MODIFIER_NAME_flo_harsh_economic_policies: "Dure politiche economiche"
+ flavor_flo.60.desc: "I recenti problemi economici [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] tormentano i cittadini da tempo. Cercando un personaggio di spicco che ci salvi dal caos, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_HA')] trovato un candidato eccellente con [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][target_character.GetName]. Sebbene il suo invito dovesse essere temporaneo, i membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] sono più che felici di lasciarlo governare a vita."
+ flavor_flo.60.a: "Sostenete questa mozione."
+ flavor_flo.60.b: "Loro non sanno niente."
+ STATIC_MODIFIER_NAME_flo_harsh_economic_policies: "Dure Politiche Economiche"
 
  flavor_flo.61.title: "Governo Dispotico di [target_character.GetNameWithNoTooltip]"
  flavor_flo.61.desc: "Il governo di [target_character.GetName] si è rivelato autocratico, ma efficace. Nessuno può contestare il successo di sue politiche economiche, ma va riconosciuto che loro attuazione ha sottratto molte libertà [ROOT.GetCountry.Custom('IT_BURGHERS_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], cosa intollerabile [ROOT.GetCountry.Custom('IT_NEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Pertanto, i cittadini di [capital_location.GetName] hanno iniziato a cospirare per sbarazzarsi di lui."

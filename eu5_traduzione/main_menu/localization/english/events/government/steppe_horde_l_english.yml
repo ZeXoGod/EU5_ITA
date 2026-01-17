@@ -13,7 +13,7 @@
  steppe_horde.2.a: "Dobbiamo rispettare i nostri antenati."
  STATIC_MODIFIER_NAME_ancestral_temple: "Tempio Ancestrale"
  STATIC_MODIFIER_DESC_ancestral_temple: "Abbiamo scoperto un antico santuario del nostro popolo."
- steppe_horde.2.b: "Eresia, brucialo!"
+ steppe_horde.2.b: "Eresia, bruciatelo!"
  
  steppe_horde.3.desc.common: "Uno sciamano di [target_location.GetName] si è presentato nella tenda di [target_ruler.GetName]. È venuto ad annunciare che benedirà i nostri soldati"
  steppe_horde.3.title: "Drago Blu"
@@ -21,7 +21,7 @@
  steppe_horde.3.a: "Seguiremo il suo consiglio."
  STATIC_MODIFIER_NAME_blue_dragon: "Drago Blu"
  STATIC_MODIFIER_DESC_blue_dragon: "La nostra orda è stata benedetta e ora possiamo reclamare ciò che è veramente nostro."
- steppe_horde.3.b: "Non soccomberemo alla stregoneria, uccidil[target_character.Custom('IT_ART_O_A')]."
+ steppe_horde.3.b: "Non soccomberemo alla stregoneria, uccidetel[target_character.Custom('IT_ART_O_A')]."
  
  steppe_horde.4.title: "Tigre Bianca"
  steppe_horde.4.desc: "$steppe_horde.3.desc.common$, perché una tigre bianca è apparsa a [target_character.GetHerHim] tra le stelle per fornire alla nostra devota orda una presenza intimidatoria.\n\nÈ in questi tempi di pace che dobbiamo prepararci per ciò che verrà."
@@ -33,53 +33,53 @@
  steppe_horde.5.title: "Il Silenzio degli Innocenti"
  steppe_horde.5.desc: "Mesi e anni erano trascorsi sotto queste stelle incrollabili, i nostri agnelli gli unici animali che avrebbero sfamato le nostre bocche erranti, la polvere l'unica traccia di vita che potevamo seguire.\n\nE poi qualcosa si è fermato. Il nostro bestiame ha iniziato a cadere uno a uno, le loro schiene innocue rivolte a terra come un tappeto nelle nostre tende. Si sono diffuse rapidamente voci di maledizioni, incantesimi, malefici.\n\nL'unica cosa certa è che la morte ha preso ciò che apparteneva alla vita. Senza la carne del nostro bestiame, la nostra gente seguirà presto il suo destino. Potremmo provare a risolvere il problema facendo appello ai nostri contatti diplomatici o assicurandoci fonti di carne "alternative" da altre terre."
  steppe_horde.5.a: "Un destino crudele incombe su di noi."
- STATIC_MODIFIER_NAME_the_silence_of_the_lambs: "Il silenzio degli innocenti"
- STATIC_MODIFIER_DESC_the_silence_of_the_lambs: "La nostra carenza di bestiame non può sfamare i nostri soldati."
+ STATIC_MODIFIER_NAME_the_silence_of_the_lambs: "Il Silenzio degli Innocenti"
+ STATIC_MODIFIER_DESC_the_silence_of_the_lambs: "La carenza di bestiame non ci permette di nutrire adeguatamente i nostri soldati."
  steppe_horde.5.b: "Proviamo a contattare qualcuno."
- STATIC_MODIFIER_NAME_contact_modifier: "Contatta"
+ STATIC_MODIFIER_NAME_contact_modifier: "Contatto"
  STATIC_MODIFIER_DESC_contact_modifier: "I nostri contatti diplomatici ci permettono di risolvere la nostra carenza di cibo, a costo di apparire deboli."
  steppe_horde.5.c: "Cercate altri animali, la carne è carne."
  STATIC_MODIFIER_NAME_the_elephant_man: "L'Uomo degli Elefanti"
  STATIC_MODIFIER_DESC_the_elephant_man: "Qualche losco individuo ci ha procurato una fonte alternativa di carne sotto forma di elefanti portati da terre lontane. Per qualche ragione, avere elefanti che vagano per le steppe non sembra poi così strano."
  
  steppe_horde.6.title: "Mente Corrotta"
- steppe_horde.6.desc: "[target_ruler.GetName] ha l'abitudine di vagare nei pressi del suo palazzo, perdendosi nel parco alla ricerca di un po' di pace. Ma oggi, [target_ruler.GetSheHe] è tornato... leggermente cambiato. Quando stamattina [target_ruler.GetNameWithNoTooltip] è arrivato a palazzo , i suoi occhi erano rosso vivo, la bocca era secca come una landa desolata, la voce si è incrinata quando ha affermato che avrebbe mangiato da terra i frammenti del cuore del suo amante come un cane affamato.\n\nUn gruppo di esploratori, preoccupati della sua sanità mentale,  ha seguito le sue orme ed ha trovato una risposta convincente e inquietante: dei fumi nocivi provenivano da una caverna vicina.
+ steppe_horde.6.desc: "[target_ruler.GetName] ha l'abitudine di vagare nei pressi del suo palazzo, perdendosi nel parco alla ricerca di un po' di pace. Ma oggi, è tornato... leggermente cambiat[target_ruler.Custom('IT_ART_O_A')]. Quando stamattina [target_ruler.GetNameWithNoTooltip] è arrivat[target_ruler.Custom('IT_ART_O_A')] a palazzo , i suoi occhi erano rosso vivo, la bocca era secca come una landa desolata, la voce si è incrinata quando ha affermato che avrebbe mangiato da terra i frammenti del cuore del suo amante come un cane affamato.\n\nUn gruppo di esploratori, preoccupati della sua sanità mentale, ha seguito le sue orme ed ha trovato una risposta convincente e inquietante: dei fumi nocivi provenivano da una caverna vicina.
  steppe_horde.6.a: "Non è possibile!"
- steppe_horde.6.b: "In realtà, [target_ruler.GetNameWithNoTooltip] non è poi così diverso."
+ steppe_horde.6.b: "In realtà, [target_ruler.GetNameWithNoTooltip] non è poi così divers[target_ruler.Custom('IT_ART_O_A')]."
  steppe_horde.6.c: "Sigilliamo quella caverna."
  
  steppe_horde.7.title: "Sede del Potere"
- steppe_horde.7.desc: "Essendo una civiltà errante, la fonte del nostro potere non è in un luogo fisso, ma emana dalla figura di [target_ruler.GetName] e quindi è ovunque si trovi [target_ruler.GetSheHe]. Tuttavia, anche il più potente [ROOT.GetCountry.GetGovernment.GetRulerTitle] non può vagare all'infinito, e l'istituzione di una base permanente ha sempre i suoi vantaggi. [ROOT.GetCountry.GetGovernment.GetRulerTitle] trova [target_ruler.GetHerselfHimself] in [target_location.GetName] abbastanza spesso, quindi una sede più permanente lì non nuocerebbe, ma dovrà proteggere le sue difese.
- steppe_horde.7.a: "Rinforziamolo!"
- STATIC_MODIFIER_NAME_seat_of_power: "Sede del potere"
+ steppe_horde.7.desc: "Essendo una civiltà errante, la fonte del nostro potere non è in un luogo fisso, ma emana dalla figura di [target_ruler.GetName] e quindi è ovunque [target_ruler.GetSheHe] si trovi. Tuttavia, anche [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] più potente [ROOT.GetCountry.GetGovernment.GetRulerTitle] non può vagare all'infinito, e l'istituzione di una base permanente ha sempre i suoi vantaggi. [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U][ROOT.GetCountry.GetGovernment.GetRulerTitle] si trova spesso a [target_location.GetName], quindi una sede più permanente lì non nuocerebbe, ma sarà necessario garantire le sue difese.
+ steppe_horde.7.a: "Rinforziamola!"
+ STATIC_MODIFIER_NAME_seat_of_power: "Sede del Potere"
  STATIC_MODIFIER_DESC_seat_of_power: "I nostri forti sono stati rafforzati."
- steppe_horde.7.b: "Vagaremo."
+ steppe_horde.7.b: "Vageremo."
  
  steppe_horde.8.title: "Il Miglior Addestramento"
- steppe_horde.8.desc: "Il sublime addestramento del nostro popolo nei terreni di caccia ha sempre garantito ai nostri [ROOT.GetCountry.GetFlavorRank] una buona dose di esperienza per i nostri soldati. L'addomesticamento degli uccelli rapaci ha fatto sì che un giovane [target_character.GetWomanMan] si distinguesse da tutti i suoi compagni e mostrasse una grande dimostrazione della sua abilità.
+ steppe_horde.8.desc: "Il sublime addestramento del nostro popolo nei terreni di caccia ha sempre garantito [ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] una buona dose di esperienza per i nostri soldati. L'addomesticamento degli uccelli rapaci ha fatto sì che un[target_character.Custom('IT_ART_NULL_A')] giovane [target_character.GetWomanMan] si distinguesse tra tutti i suoi compagni e desse grande prova delle sue capacità.
  steppe_horde.8.a: "Buona caccia."
  
  steppe_horde.9.title: "Luna Bianca"
- steppe_horde.9.desc: "Una luna bianca è apparsa nel cielo, i suoi contorni sfocati inondati di luce. Molti nel nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] hanno messo in guardia [target_ruler.GetName] dai pericoli di non onorarla come si dovrebbe. Si celebrerà una festa per ammirare questo raro fenomeno, persone da tutta la nazione verranno e si rallegreranno con il luccichio opaco della luna. E potremmo anche estendere l'invito ad alcuni dignitari stranieri."
+ steppe_horde.9.desc: "Una luna bianca è apparsa nel cielo, i suoi contorni sfocati inondati di luce. Molti alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] hanno messo in guardia [target_ruler.GetName] dai pericoli di non onorarla come si dovrebbe. Si celebrerà una festa per ammirare questo raro fenomeno, persone da tutta la nazione verranno e si rallegreranno con il luccichio opaco della luna. E potremmo anche estendere l'invito ad alcuni dignitari stranieri."
  steppe_horde.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- opinion_lunar_new_year: "Celebrato il Capodanno lunare"
+ opinion_lunar_new_year: "Celebrato il Capodanno Lunare"
  steppe_horde.9.b: "Questo unirà la nostra gente."
  
  steppe_horde.10.title: "Domare le Province"
  steppe_horde.10.desc: "L'avvicinarsi di un'orda è qualcosa che la maggior parte delle nazioni desidera evitare. La nostra ferocia è ben nota tra i nostri sudditi e il loro desiderio di compiacerci è ormai quasi assoluto, o almeno il desiderio di mantenere le loro case."
  steppe_horde.10.a: "Meglio temuti che amati."
- STATIC_MODIFIER_NAME_taming_provinces: "Domare le province"
+ STATIC_MODIFIER_NAME_taming_provinces: "Domare le Province"
  STATIC_MODIFIER_DESC_taming_provinces: "Nessuno vuole sentire i nostri cavalli."
  steppe_horde.10.b: "Proviamo l'approccio diplomatico."
- STATIC_MODIFIER_NAME_diplomatic_approach: "Approccio diplomatico"
+ STATIC_MODIFIER_NAME_diplomatic_approach: "Approccio Diplomatico"
  STATIC_MODIFIER_DESC_diplomatic_approach: "A volte la penna è più potente della spada."
  
  steppe_horde.11.title: "Nati dalla Sella"
- steppe_horde.11.desc: "Dalla guerra veniamo, per la guerra battono i nostri cuori. Noi, figli delle pianure infinite, non siamo fatti per stare inerti. Il nostro recente periodo senza guerre sta già iniziando a mostrare gli effetti dell'irrequietezza tra la nostra popolazione, in particolare tra [ROOT.GetCountry.Custom('IT_NOBLES_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], che vede questo come una perdita di opportunità."
+ steppe_horde.11.desc: "Dalla guerra veniamo, per la guerra battono i nostri cuori. Noi, figli delle pianure infinite, non siamo fatti per stare inerti. Il nostro recente periodo senza guerre sta già iniziando a causare un senso di irrequietezza tra la nostra popolazione, in particolare tra i membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], che vedono questo come una perdita di opportunità."
  steppe_horde.11.a: "In ogni caso, il nostro Paese ha bisogno di riposo."
  steppe_horde.11.b: "La pace ha anche i suoi benefici."
- steppe_horde.12.title: "La Stanchezza è per i Deboli"
  
+ steppe_horde.12.title: "La Stanchezza è per i Deboli"
  steppe_horde.12.desc: "Mentre i coloni si riparano dietro le loro alte mura e muoiono di fame per la paura, il nostro padrone è il nostro popolo. Le orde non temono la guerra, le orde vivono per la guerra."
  steppe_horde.12.a: "Forza attraverso l'unità."
  steppe_horde.12.b: "Unità attraverso la forza."
@@ -95,31 +95,31 @@
  steppe_horde.14.b: "Siamo già abbastanza forti."
  
  steppe_horde.15.title: "Nomadi Irrequieti"
- steppe_horde.15.desc: "Infuriati per l'attuale stato di pace e la mancanza di incursioni e saccheggi, un intero clan, composto principalmente da guerrieri e cacciatori di grande esperienza, sta progettando di lasciare il nostro [ROOT.GetCountry.GetFlavorRank], sostenendo che se non gli offriamo opportunità, dovranno cercarle da soli."
+ steppe_horde.15.desc: "Infuriati per l'attuale stato di pace e la mancanza di incursioni e saccheggi, un intero clan, composto principalmente da guerrieri e cacciatori di grande esperienza, sta progettando di lasciare [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], sostenendo che se non gli offriamo opportunità, dovranno cercarle da soli."
  steppe_horde.15.a: "Feccia traditrice!"
- steppe_horde.15.b: "Compromesso con i clan."
+ steppe_horde.15.b: "Raggiungiamo un compromesso con i clan."
  
  steppe_horde.16.title: "Faida Tribale"
- steppe_horde.16.desc: "Durante il culmine delle festività estive nella nostra capitale, i membri di due clan rivali hanno deciso di darsi battaglia in pubblico e di fronte all'intera leadership politica e religiosa del nostro [ROOT.GetCountry.GetFlavorRank]! La violenza che ne è seguita è stata così feroce che non solo i membri dei clan rivali hanno perso la vita, ma anche innumerevoli passanti e persino membri della guardia [ROOT.GetCountry.GetGovernment.GetAdjective]."
+ steppe_horde.16.desc: "Durante il culmine delle festività estive nella nostra capitale, i membri di due clan rivali hanno deciso di darsi battaglia in pubblico e di fronte all'intera leadership politica e religiosa [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]! La violenza che ne è seguita è stata così feroce che non solo i membri dei clan rivali hanno perso la vita, ma anche innumerevoli passanti e persino membri della guardia [ROOT.GetCountry.GetGovernment.Custom('IT_ADJ_FS')]."
  steppe_horde.16.a: "Vile gentaglia! Come osano!"
- steppe_horde.16.b: "Questo è il modo di fare dei [ROOT.GetCountry.GetFlavorRank]."
+ steppe_horde.16.b: "Questo è il modo di fare [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]."
  
  steppe_horde.17.title: "Incidente di Caccia"
- steppe_horde.17.desc: "Durante una battuta di caccia, [target_heir.GetName] e le sue guardie sono stati attaccati da una banda di assassini sconosciuti. In inferiorità numerica e attaccati alle spalle, tutti tranne uno sono caduti sul colpo. Sebbene ferito da una freccia avvelenata, è sopravvissuto abbastanza a lungo da raccontarci dell'ultima coraggiosa resistenza di [target_heir.GetShortNameWithNoTooltip]. Alto e possente, [target_heir.GetSheHe] si ergeva, tagliando una a una le creature della notte mentre circondavano [target_heir.GetHerHim], finché l'ultima delle sue   guardie del corpo non soccombette. Scosso e in lutto, il nostro popolo celebra l'eredità di [target_heir.GetNameWithNoTooltip] mentre [target_heir.GetSheHe] raggiunge l'immortalità in loro memoria."
+ steppe_horde.17.desc: "Durante una battuta di caccia, [target_heir.GetName] e le sue guardie sono stati attaccati da una banda di assassini sconosciuti. In inferiorità numerica e attaccati alle spalle, tutti tranne uno sono caduti sul colpo. Sebbene ferito da una freccia avvelenata, è sopravvissuto abbastanza a lungo da raccontarci dell'ultima coraggiosa resistenza di [target_heir.GetShortNameWithNoTooltip]. Alt[target_heir.Custom('IT_ART_O_A')] e possente, si ergeva, tagliando una a una le creature della notte mentre [target_heir.Custom('IT_ART_LO_LA')] circondavano, finché l'ultima delle sue guardie del corpo non soccombette. Scosso e in lutto, il nostro popolo celebra l'eredità di [target_heir.GetNameWithNoTooltip] mentre [target_heir.GetSheHe] raggiunge l'immortalità nella loro memoria."
  steppe_horde.17.a: "Date la caccia agli assassini!"
  
- steppe_horde_small_armies_common_desc: "I nostri eserciti sono così piccoli e patetici"
- steppe_horde.18.title: "Sembrano Deboli"
- steppe_horde.18.desc: "$steppe_horde_small_armies_common_desc$ non solo gli anziani, ma persino i governanti dei clan locali osano infangare il nome del nostro [ROOT.GetCountry.GetFlavorRank]."
+ steppe_horde_small_armies_common_desc: "I nostri eserciti sono così piccoli e patetici che"
+ steppe_horde.18.title: "Sembriamo Deboli"
+ steppe_horde.18.desc: "$steppe_horde_small_armies_common_desc$ non solo gli anziani, ma persino i governanti dei clan locali osano infangare il nome [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
  steppe_horde.18.a: "Ignorate la plebe, can che abbaia non morde."
  steppe_horde.18.b: "Abbiamo chiaramente visto giorni migliori."
  
  steppe_horde.19.title: "Autorità Minata"
- steppe_horde.19.desc: "$steppe_horde_small_armies_common_desc$ molti capi clan e anziani mettono apertamente in dubbio la capacità di [target_ruler.GetName] di guidarci, sostenendo che [target_heir.GetName] sarebbe un [ROOT.GetCountry.GetGovernment.GetRulerTitle] molto migliore."
+ steppe_horde.19.desc: "$steppe_horde_small_armies_common_desc$ molti capi clan e anziani mettono apertamente in dubbio la capacità di [target_ruler.GetName] di guidarci, sostenendo che [target_heir.GetName] sarebbe un[target_heir.Custom('IT_ART_NULL_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] molto migliore."
  steppe_horde.19.a: "Le loro parole non significano nulla."
  steppe_horde.19.b: "Forse hanno ragione."
  
- steppe_horde.20.title: "Il Disprezzo della Tradizione Militare"
+ steppe_horde.20.title: "Tradizione Militare Disprezzata"
  steppe_horde.20.desc: "$steppe_horde_small_armies_common_desc$ i nostri comandanti stanno iniziando a chiedersi se il loro servizio abbia davvero senso."
  steppe_horde.20.a: "Oh, gente di poca fede."
  steppe_horde.20.b: "È vero, non abbiamo bisogno di loro."
@@ -131,15 +131,15 @@
  
  steppe_horde.22.title: "Guerra, a Cosa Serve?"
  steppe_horde.22.desc: "Mentre erano in cima a una collina, osservando le nostre onnipotenti schiere marciare verso la terra nemica, non sono pochi a riflettere sulla utilità della guerra. Qual è il senso di questi continui saccheggi e massacri, a cosa servono? La risposta è chiara come il sole: "Assolutamente a tutto"
- steppe_horde.22.a: "Sì, certo."
+ steppe_horde.22.a: "Sì, infatti."
  
  steppe_horde.1000.title: "Giochi di Guerra"
  steppe_horde.1000.desc: "Un evento enorme nella vita quotidiana degli abitanti della steppa sta per aver luogo. Guerrieri provenienti da luoghi vicini e lontani si riuniranno nella nostra capitale per partecipare a una dimostrazione di abilità. Si terranno gare di tiro con l'arco a cavallo, gare di forza e sfide di agilità, che potrebbero dare vita a nuovi campioni e leggende.
  steppe_horde.1000.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
  
- steppe_horde.1001.title: "Glorioso [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- steppe_horde.1001.desc: "Rallegratevi! Il nostro glorioso [target_ruler.GetName] ha vinto la gara di combattimento ravvicinato. Le sue abilità marziali sono senza precedenti e un esempio da seguire per tutti."
- steppe_horde.1001.a: "Seguiremo tutti [target_ruler.GetHerHim]!"
+ steppe_horde.1001.title: "Glorios[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ steppe_horde.1001.desc: "Gioite! Il nostro glorioso [target_ruler.GetName] ha vinto la gara di combattimento ravvicinato. Le sue abilità marziali sono senza precedenti e un esempio da seguire per tutti."
+ steppe_horde.1001.a: "[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_LO_LA')|U] seguiremo tutti!"
  steppe_horde.1001.b: "[target_ruler.GetSheHe|U] ci condurrà alla gloria!"
  
  steppe_horde.1002.title: "Competizioni di Successo"
@@ -148,8 +148,8 @@
  
  steppe_horde.1003.title: "Competizioni Rovinose"
  steppe_horde.1003.desc: "Oh, orrore! All'inizio delle gare di combattimento, due clan in lotta hanno scatenato una lite che è sfuggita al controllo e si è trasformata in una rissa di massa. Prima che le nostre guardie di palazzo potessero fermarli, l'arena è stata danneggiata e due grandi edifici sono stati incendiati, rovinando il resto dell'evento!"
- steppe_horde.1003.a: "Queste gare disatrosa saranno difficili da dimenticare."
+ steppe_horde.1003.a: "Queste gare disatrose saranno difficili da dimenticare."
  
  steppe_horde.1004.title: "Competizioni Leggendarie"
- steppe_horde.1004.desc: "L'intero evento è andato meglio di quanto avremmo mai potuto sperare! Ogni singola gara si è rivelata una sfida di accanita rivalità, con avversari di pari livello che si sono sfidati. I nostri anziani sono rimasti così colpiti che, dopo l'evento, persino i più anziani tra loro non riuscivano a ricordare partite più riuscite!"
+ steppe_horde.1004.desc: "L'intero evento è andato meglio di quanto avremmo mai potuto sperare! Ogni singola gara si è rivelata una sfida di accanita rivalità, con avversari di pari livello che si sono sfidati. I nostri anziani sono rimasti così colpiti che, dopo l'evento, persino i più vecchi tra loro non riuscivano a ricordare gare più riuscite!"
  steppe_horde.1004.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

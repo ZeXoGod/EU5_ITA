@@ -13,7 +13,7 @@
  societal_values.103.desc: "Uno degli aspetti positivi della servitù della gleba è che, garantendo che [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] non possano spostarsi, diventano più facili da tassare. Tuttavia, alcuni di loro sembrano avere problemi con questa politica giusta e naturale..."
  societal_values.103.a: "Questo non è l'ideale..."
  societal_values.104.title: "Attrarre le Persone Giuste"
- societal_values.104.desc: "Aiutando [ROOT.GetCountry.Custom('IT_NOBLES_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a confinare i servi della gleba nelle loro terre, abbiamo notevolmente arricchito l'aristocrazia terriera. Un membro ricco [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] è una persona che può dedicare tempo alle più alte aspirazioni della vita e i figli minori di qualsiasi casata di tutto rispetto annoveranno tra i loro rampolli un gran numero di artisti, amministratori o altri uomini di qualità, leali e capaci. Alcuni sono ansiosi di ricambiare il favore dello Stato per il servizio reso alle loro famiglie. Uno di questi, [target_character.GetName], è recentemente arrivato ad essere [ROOT.GetCountry.GetGovernment.GetCourtTitle] per offrire i sui servizi a [ROOT.GetCountry.GetFlavorRank].
+ societal_values.104.desc: "Aiutando [ROOT.GetCountry.Custom('IT_NOBLES_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a confinare i servi della gleba nelle loro terre, abbiamo notevolmente arricchito l'aristocrazia terriera. Un membro ricco [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] è una persona che può dedicare tempo alle più alte aspirazioni della vita e i figli minori di qualsiasi casata di tutto rispetto annoveranno tra i loro rampolli un gran numero di artisti, amministratori o altri uomini di qualità, leali e capaci. Alcuni sono ansiosi di ricambiare il favore dello Stato per il servizio reso alle loro famiglie. Uno di questi, [target_character.GetName], è recentemente arrivato a [ROOT.GetCountry.GetGovernment.GetCourtTitle] per offrire i sui servizi [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetFlavorRank].
  societal_values.104.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  societal_values.105.title: "Grande Rivolta"
  societal_values.105.desc: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL_NOSTRO')|U][ROOT.GetCountry.Custom('IT_PEASANTS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ROOT.GetCountry.Custom('IT_PEASANTS_SONO')] profondamente turbat[ROOT.GetCountry.Custom('IT_PEASANTS_OAI')] dalla notizia che la propria libertà di movimento sarà ulteriormente limitata. In effetti, ci sono state massicce rivolte in tutto il nostro Paese a causa di questo... Forse se si prendessero il tempo di prendersi cura della propria igiene personale, non sarebbero così ribelli?"
@@ -32,7 +32,7 @@
  societal_values.108.desc: "Una delegazione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] è venuta da noi oggi per ringraziarci per averla favorita nel governo. In effetti, sono così grati che è stato versato un piccolo contributo volontario al tesoro."
  societal_values.108.a: "La ringraziamo per il loro dono."
  societal_values.109.title: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] si lamenta"
- societal_values.109.desc: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], che rappresenta la classe emergente dei mercanti e degli abitanti delle città, ha espresso la sua lamentela riguardo al chiaro favoritismo verso [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] mostrata dal nostro [ROOT.GetCountry.GetFlavorRank]. Sostengono che le politiche a sostegno dei privilegi tradizionali dell'[ShowSocietyDirectionName('aristocracy')] va a scapito della fiorente economia urbana, soffocando il commercio, l'innovazione e la crescita delle città.\n\nQueste lamentele sono diventate più forti, con membri di spicco dei borghesi che sottolineano lo squilibrio come una minaccia alla prosperità dei [ROOT.GetCountry.GetFlavorRank]. Con l'aumento delle tensioni, dobbiamo decidere se continuare a placare [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] o modificare le nostre politiche per rispondere alle richieste [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')], rischiando di attirare l'ira della [ShowSocietyDirectionNameWithNoTooltip('aristocracy')] nel processo."
+ societal_values.109.desc: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], che rappresenta la classe emergente dei mercanti e degli abitanti delle città, ha espresso la sua lamentela riguardo al chiaro favoritismo verso [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] mostrata d[ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Sostengono che le politiche a sostegno dei privilegi tradizionali dell'[ShowSocietyDirectionName('aristocracy')] va a scapito della fiorente economia urbana, soffocando il commercio, l'innovazione e la crescita delle città.\n\nQueste lamentele sono diventate più forti, con membri di spicco dei borghesi che sottolineano lo squilibrio come una minaccia alla prosperità [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Con l'aumento delle tensioni, dobbiamo decidere se continuare a placare [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] o modificare le nostre politiche per rispondere alle richieste [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')], rischiando di attirare l'ira della [ShowSocietyDirectionNameWithNoTooltip('aristocracy')] nel processo."
  societal_values.109.a: "Nessuna fatica, nessun guadagno."
  societal_values.109.b: "Forse possiamo aiutare."
  societal_values.110.title: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] sostiene lo Stato"
@@ -98,7 +98,7 @@
  societal_values.214.desc: "Non abbiamo bisogno di lottare per i nostri diritti, i principi plutocratici del nostro governo li sanciscono e li proteggono. Questo è qualcosa che vale la pena difendere e custodire."
  societal_values.214.a: "Ottime notizie!"
  societal_values.215.title: "In Difesa dell'Interesse Mercantile"
- societal_values.215.desc: "L'interesse mercantile è il fondamento dell'ideale plutocratico del nostro grande [ROOT.GetCountry.GetFlavorRank]. Dobbiamo garantire che le nostre leggi difendano adeguatamente gli interessi dei nostri commercianti dalla concorrenza straniera sleale."
+ societal_values.215.desc: "L'interesse mercantile è il fondamento dell'ideale plutocratico [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] grande [ROOT.GetCountry.GetFlavorRank]. Dobbiamo garantire che le nostre leggi difendano adeguatamente gli interessi dei nostri commercianti dalla concorrenza straniera sleale."
  societal_values.215.a: "È giusto e corretto"
  societal_values.216.title: "Boom Agricolo"
  societal_values.216.desc: "Le nostre aziende agricole, in particolare quelle che producono diversi tipi di cereali, stanno vivendo un boom di produttività, il che a sua volta sta dando una spinta a tutti i settori della nostra economia. Questo è positivo perché c'è più da tassare."
@@ -111,7 +111,7 @@
  STATIC_MODIFIER_NAME_tolerance_for_all: "Tolleranza per tutti!"
  STATIC_MODIFIER_DESC_tolerance_for_all: "Le persone di tutte le fedi sono tollerate dal governo, purché abbiano denaro."
  societal_values.218.title: "Sosteniamo i Nostri Colori"
- societal_values.218.desc: "Con la guerra in corso, i patrioti di tutto il mondo si stanno riversando sotto i nostri colori per garantire che il nostro orgoglioso [ROOT.GetCountry.GetFlavorRank] sia difeso dai nemici della libertà ovunque."
+ societal_values.218.desc: "Con la guerra in corso, i patrioti di tutto il mondo si stanno riversando sotto i nostri colori per garantire che [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] orgoglioso [ROOT.GetCountry.GetFlavorRank] sia difeso dai nemici della libertà ovunque."
  societal_values.218.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  STATIC_MODIFIER_NAME_to_the_colors: "Sosteniamo i Nostri Colori"
  societal_values.300.title: "Si Stanno Diffondendo Idee Pericolose!"
@@ -127,7 +127,7 @@
  societal_values.303.desc: "Il nostro continuo mecenatismo per le arti ha portato alla produzione delle più grandi opere che il mondo abbia mai visto. In particolare, il [target_work.GetName] di [target_artist.GetName] porta grande gloria alla nostra nazione."
  societal_values.303.a: "Ci crogioliamo nella gloria."
  societal_values.304.title: "Nessuna Arte è Degna di Essere Patrocinata"
- societal_values.304.desc: "Sebbene siamo noti per essere mecenati delle arti, al momento gli artisti che sosteniamo non producono buona arte. Il nostro [ROOT.GetCountry.GetGovernment.GetRulerTitle] sembra un po'ingenuo."
+ societal_values.304.desc: "Sebbene siamo noti per essere mecenati delle arti, al momento gli artisti che sosteniamo non producono buona arte. [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sembra un po'ingenuo."
  societal_values.304.a: "Sono sicuro che le cose cambieranno."
  societal_values.305.title: "La Rivoluzione Scientifica Continua"
  societal_values.305.desc: "La nostra rivoluzione scientifica continua a portare benefici e i nostri scienziati stanno apportando ulteriori sviluppi. Essendo un Paese innovativo, possiamo ottenere infiniti possibili benefici!"
@@ -158,14 +158,14 @@
  societal_values.401.desc: "Non tutti sono d'accordo con la nostra dottrina religiosa. Alcuni si lamentano a gran voce, definendo il nostro approccio alle idee moderne ottuso e sostenendo che aggrapparsi alla filosofia antica sia un'assurdità regressiva."
  societal_values.401.a: "Ahimè, alcuni potrebbero dover bruciare..."
  societal_values.402.title: "È Arrivata una Persona Santa"
- societal_values.402.desc: "[target_character.GetName], un chierico di un ordine sacro di [target_country.GetLongName], è arrivato oggi al nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetHeShe|U] è profondamente colpito dalla nostra severa ma divina punizione per i non credenti e ha chiesto un incarico come consigliere. Dopotutto, un [ROOT.GetCountry.GetFlavorRank] che prega unito rimarrà unito."
+ societal_values.402.desc: "[target_character.GetName], un chierico di un ordine sacro [target_country.Custom('IT_DEL_RANGO')][target_country.GetLongName], è arrivato oggi alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetHeShe|U] è profondamente colpito dalla nostra severa ma divina punizione per i non credenti e ha chiesto un incarico come consigliere. Dopotutto, se  [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] prega unito, rimarrà unito."
  societal_values.402.a: "Benvenuto al sacerdote."
  societal_values.402.b: "Non siamo governati dalla Chiesa."
  societal_values.403.title: "Sostegno alla Guerra"
  societal_values.403.desc: "Dopo aver dichiarato che avremmo dichiarato guerra ai nostri nemici religiosi, la gente ha appoggiato lo sforzo bellico."
  societal_values.403.a: "Deus Vult!"
  societal_values.404.title: "Promesse non Mantenute"
- societal_values.404.desc: "Abbiamo spesso chiarito che la fede [ROOT.GetCountry.GetReligion.GetAdjective] è l'unica vera fede, rassicurando il nostro popolo che, considerando le nostre differenze religiose, una guerra contro [infidel_neighbor.GetLongName] è imminente. Tuttavia, molti dei nostri sudditi sono attualmente delusi da noi perché non siamo riusciti a intraprendere alcun tipo di guerra contro i nostri vicini, [infidel_neighbor.GetNameWithNoTooltip]. Alcuni scendono in piazza per mostrare il loro malcontento."
+ societal_values.404.desc: "Abbiamo spesso chiarito che la fede [ROOT.GetCountry.GetReligion.GetAdjective] è l'unica vera fede, rassicurando il nostro popolo che, considerando le nostre differenze religiose, una guerra contro [infidel_neighbor.Custom('IT_ART_RANGO')][infidel_neighbor.GetLongName] è imminente. Tuttavia, molti dei nostri sudditi sono attualmente delusi da noi perché non siamo riusciti a intraprendere alcun tipo di guerra contro i nostri vicini, [infidel_neighbor.Custom('IT_La')][infidel_neighbor.GetNameWithNoTooltip]. Alcuni scendono in piazza per mostrare il loro malcontento."
  societal_values.404.a: "Non siamo ancora pronti."
  societal_values.404.b: "Se è una lotta che vogliono, la avranno!"
  societal_values.405.title: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] Mobilita la Popolazione"
@@ -187,14 +187,14 @@
  societal_values.408.a: "Sono solo chiacchiere inutili di anime inquiete."
  societal_values.408.b: "Bisogna affrontare questi dissidenti!"
  societal_values.409.title: "L'Unità della Fede"
- societal_values.409.desc: "Da quando il governo del nostro [ROOT.GetCountry.GetFlavorRank] ha ufficialmente iniziato a incoraggiare il culto e a focalizzare la vita sulla vera fede [ROOT.GetCountry.GetReligion.GetAdjective], la nostra gente si sente più sicura nella vita quotidiana e tra di noi."
+ societal_values.409.desc: "Da quando il governo [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] ha ufficialmente iniziato a incoraggiare il culto e a focalizzare la vita sulla vera fede [ROOT.GetCountry.GetReligion.GetAdjective], la nostra gente si sente più sicura nella vita quotidiana e tra di noi."
  societal_values.409.a: "Dove c'è fede, c'è fiducia."
  societal_values.410.title: "Liberali Arrabbiati"
  societal_values.410.desc: "Le parti della nostra società più liberali e di libero pensiero sono turbate dalla mancanza di innovazione negli atteggiamenti del governo."
  societal_values.410.a: "L'innovazione non è nulla in confronto alla tradizione."
  societal_values.410.b: "Meritano di essere ascoltati."
  societal_values.411.title: "Devozione Religiosa"
- societal_values.411.desc: "Il fuoco della fede è forte nel nostro [ROOT.GetCountry.GetFlavorRank]! Ogni giorno, le persone accorrono in massa per unirsi o in qualche modo sostenere i nostri missionari, che cercano di promuovere uno stile di vita [ROOT.GetCountry.GetReligion.GetAdjective] in tutte le nostre terre. Coloro che cerchiamo di convertire non possono fare a meno di essere colpiti dallo zelo dei nostri sudditi."
+ societal_values.411.desc: "Il fuoco della fede è forte [ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]! Ogni giorno, le persone accorrono in massa per unirsi o in qualche modo sostenere i nostri missionari, che cercano di promuovere uno stile di vita [ROOT.GetCountry.GetReligion.GetAdjective] in tutte le nostre terre. Coloro che cerchiamo di convertire non possono fare a meno di essere colpiti dallo zelo dei nostri sudditi."
  societal_values.411.a: "Diffondi la parola!"
  societal_values.412.title: "Guerra Santa"
  societal_values.412.desc: "La guerra per la fede è una guerra giusta e vera. Importanti monaci e altri membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] stanno già predicando alle masse l'importanza di questa guerra. La gente si sta mobilitando per garantire la vittoria."
@@ -206,7 +206,7 @@
  societal_values.414.desc: "La gente di [convert_location.GetName], avendo visto il potere della nostra fede, ha spontaneamente scelto di abbracciarla. È un giorno di orgoglio per noi, poiché sempre più anime vengono salvate."
  societal_values.414.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  societal_values.415.title: "Guida Divina"
- societal_values.415.desc: "L'attuale periodo di incertezza sta logorando la mente della gente comune. Tuttavia, da quando i nostri leader religiosi hanno recentemente preso posizione, dichiarando che questi tempi difficili sono una prova per la nostra fede, la situazione si è stabilizzata. Le persone in tutto il nostro [ROOT.GetCountry.GetFlavorRank] ora trovano conforto nella loro comunità religiosa."
+ societal_values.415.desc: "L'attuale periodo di incertezza sta logorando la mente della gente comune. Tuttavia, da quando i nostri leader religiosi hanno recentemente preso posizione, dichiarando che questi tempi difficili sono una prova per la nostra fede, la situazione si è stabilizzata. Le persone in tutto [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] ora trovano conforto nella loro comunità religiosa."
  societal_values.415.a: "Traiamo forza gli uni dagli altri."
  societal_values.416.title: "La Forza della Fede"
  societal_values.416.desc: "In materia di fede non siamo secondi a nessuno. Il nostro sostegno alla nostra religione e la devozione che mostriamo impressionano le persone che ci circondano."
@@ -800,7 +800,7 @@
  arrogant_administrators: "$societal_values.1807.title$"
  spy_ring_busted: "Anello di spie smantellato"
  societal_values.1808.title: "$spy_ring_busted$"
- societal_values.1808.desc: "Alcuni dei nostri diplomatici sono stati implicati in una grande operazione di spionaggio nel [target.GetLongName].\n\nOra ogni ambasciatore o emissario che inviamo è sospettato di essere una spia ed è soggetto ai più severi esami al termine delle missioni assegnate. Ci vorrà del tempo per ripristinare la nostra reputazione."
+ societal_values.1808.desc: "Alcuni dei nostri diplomatici sono stati implicati in una grande operazione di spionaggio [target.Custom('IT_NEL_RANGO')][target.GetLongName].\n\nOra ogni ambasciatore o emissario che inviamo è sospettato di essere una spia ed è soggetto ai più severi esami al termine delle missioni assegnate. Ci vorrà del tempo per ripristinare la nostra reputazione."
  societal_values.1808.a: "Questa è una deludente mancanza di fiducia."
  STATIC_MODIFIER_NAME_suspected_diplomats: "Diplomatici Sospetto" 
  STATIC_MODIFIER_DESC_suspected_diplomats: "Alcuni dei nostri diplomatici sono stati coinvolti in una grande operazione di spionaggio e ora vengono attentamente esaminati."
@@ -928,7 +928,7 @@
  societal_values.2013.b: "Vietare gli acquisti non autorizzati di terreni."
  
  societal_values.2014.t: "Giustizia Professionista"
- societal_values.2014.desc: "Poiché la nostra società si allontana dai valori del giudizio tenuto dalla comunità, i tribunali popolati da persone comuni vengono lentamente sostituiti da giudici professionisti . Mentre in passato la giustizia veniva amministrata in base alle usanze e alle tradizioni di una comunità e alla saggezza dei suoi membri più importanti, una maggiore consapevolezza dei diritti individuali ha portato a un aumento dei giudici che agiscono per conto [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] per mediare le controversie. Sebbene questo cambiamento garantisca una migliore standardizzazione della giustizia in tutto il [ROOT.GetCountry.GetFlavorRank], ha portato le comunità a distaccarsi dal processo, rimpiangendo i giorni in cui la giustizia era una responsabilità condivisa dall'intera città."
+ societal_values.2014.desc: "Poiché la nostra società si allontana dai valori del giudizio tenuto dalla comunità, i tribunali popolati da persone comuni vengono lentamente sostituiti da giudici professionisti . Mentre in passato la giustizia veniva amministrata in base alle usanze e alle tradizioni di una comunità e alla saggezza dei suoi membri più importanti, una maggiore consapevolezza dei diritti individuali ha portato a un aumento dei giudici che agiscono per conto [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] per mediare le controversie. Sebbene questo cambiamento garantisca una migliore standardizzazione della giustizia in tutto [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank], ha portato le comunità a distaccarsi dal processo, rimpiangendo i giorni in cui la giustizia era una responsabilità condivisa dall'intera città."
  societal_values.2014.a: "Accogliere giudici professionisti."
  societal_values.2014.b: "Incoraggiare la giustizia comunitaria."
  
@@ -957,8 +957,8 @@
  societal_values.2019.a: "Tutti amano la famiglia."
  
  societal_values.2020.t: "Opportunità per degli Emissari"
- societal_values.2020.desc: "Dato che la nostra nazione si concentra sulla politica estera, si è presentata l'opportunità di inviare emissari a [target_country.GetName]. Trasmetteranno i nostri desideri al loro governo, creando un'opportunità per avvicinare le nostre nazioni o separarci, se lo desideriamo."
- societal_values.2020.a: "Portiamo i nostri saluti a [target_country.GetAdjectiveWithNoTooltip]."
+ societal_values.2020.desc: "Dato che la nostra nazione si concentra sulla politica estera, si è presentata l'opportunità di inviare emissari [target_country.Custom('IT_In')][target_country.GetName]. Trasmetteranno i nostri desideri al loro governo, creando un'opportunità per avvicinare le nostre nazioni o separarci, se lo desideriamo."
+ societal_values.2020.a: "Portiamo i nostri saluti al popolo [target_country.GetAdjectiveWithNoTooltip]."
  societal_values.2020.b: "Meritano di essere insultati!"
  
  societal_values.2021.t: "Fiera Internazionale"
@@ -991,13 +991,13 @@
  STATIC_MODIFIER_DESC_infrastructure_focus: "I nostri sforzi nazionali per migliorare le infrastrutture stanno riducendo i costi."
  
  societal_values.2026.t: "Rinascimento Culturale"
- societal_values.2026.desc: "Concentrarci su noi stessi ci ha portato a comprendere quanto sia importante la nostra cultura. Chi siamo? Sicuramente più di una semplice serie di scarabocchi su una mappa, o di una lingua, o di una moneta.\n\nNo, siamo un popolo, un popolo legato e guidato dalle nostre culture. Questa attenzione quasi narcisistica su noi stessi ha portato a una rinascita della nostra cultura, tutti nel nostro paese sanno di essere orgogliosi di essere [ROOT.GetCountry.GetAdjective]."
+ societal_values.2026.desc: "Concentrarci su noi stessi ci ha portato a comprendere quanto sia importante la nostra cultura. Chi siamo? Sicuramente più di una semplice serie di scarabocchi su una mappa, o di una lingua, o di una moneta.\n\nNo, siamo un popolo, un popolo legato e guidato dalle nostre culture. Questa attenzione quasi narcisistica su noi stessi ha portato a una rinascita della nostra cultura, tutti nel nostro paese sono orgogliosi di essere [ROOT.GetCountry.Custom('IT_ADJ_MP')]."
  societal_values.2026.a: "La nostra cultura comanda!"
  societal_values.2026.b: "Forse dovremmo imparare anche dagli altri..."
  STATIC_MODIFIER_NAME_growing_families: "Famiglie in crescita"
  
  societal_values.2027.t: "Protezionismo"
- societal_values.2027.desc: "I nostri commercianti non devono lottare. All'interno dei nostri confini, all'interno dei nostri mercati, governiamo tutto senza fare domande. Perché i commercianti [ROOT.GetCountry.GetAdjective] dovrebbero lottare nel loro stesso mercato? Perché le loro attività dovrebbero essere sostituite da iniziative imprenditoriali straniere? Per il bene dello Stato, abbiamo l'opportunità di attuare una breve e moderata esplosione di regole di mercato protezionistiche per dare potere ai nostri commercianti e prosperare economicamente senza rischi. Naturalmente, se non adottiamo queste regole protezionistiche, forse ci sarà un guadagno economico più immediato..."
+ societal_values.2027.desc: "I nostri commercianti non devono lottare. All'interno dei nostri confini, all'interno dei nostri mercati, governiamo tutto senza fare domande. Perché i commercianti [ROOT.GetCountry.Custom('IT_ADJ_MP')] dovrebbero lottare nel loro stesso mercato? Perché le loro attività dovrebbero essere sostituite da iniziative imprenditoriali straniere? Per il bene dello Stato, abbiamo l'opportunità di attuare una breve e moderata esplosione di regole di mercato protezionistiche per dare potere ai nostri commercianti e prosperare economicamente senza rischi. Naturalmente, se non adottiamo queste regole protezionistiche, forse ci sarà un guadagno economico più immediato..."
  societal_values.2027.a: "I nostri commercianti vengono prima di tutto."
  societal_values.2027.b: "Il denaro è denaro..."
  
@@ -1019,7 +1019,7 @@
  STATIC_MODIFIER_DESC_research_is_unholy: "Esaminare e interrogare il mondo che ci circonda significa fare lo stesso con il divino, non dovremmo mettere in discussione la divinità o cercare risposte nella creazione."
  
  societal_values.2031.t: "Rivelazioni Divine"
- societal_values.2031.desc: "Riflettendo sui modi spirituali della nostra società, [loc_leader_char.GetName] ha momentaneamente raggiunto un livello di coscienza superiore e ha ottenuto una visione divina che mostra che [loc_leader_char.GetSheHe] deve migliorare prima che il paese migliori.\n\n[loc_leader_char.GetSheHe|U] non è più chi era una volta, questa esperienza spirituale ha spinto [loc_leader_char.GetHerHim] a diventare migliore, poiché deve realizzare la sua visione affichè [ROOT.GetCountry.GetLongName] si elevi."
+ societal_values.2031.desc: "Riflettendo sui modi spirituali della nostra società, [loc_leader_char.GetName] ha momentaneamente raggiunto un livello di coscienza superiore e ha ottenuto una visione divina che mostra che [loc_leader_char.GetSheHe] deve migliorare prima che il paese migliori.\n\nOrmai non è più chi era una volta, questa esperienza spirituale ha spinto [loc_leader_char.GetName] a diventare migliore, poiché deve realizzare la sua visione affichè [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName] si elevi."
  societal_values.2031.a: "Che il cielo ci benedica!"
  societal_values.2031.b: "Ignorate questa follia."
  
@@ -1053,7 +1053,7 @@
  societal_values.2037.desc: "Il clima sociale nella nostra regione, unito ai valori umanistici del nostro popolo, ha portato a una svolta diplomatica.\n\nLe nazioni confinanti hanno concordato che ogni stato sovrano dovrebbe avere il diritto di decidere su come gestire la propria fede, indipendentemente da quanto sia sbagliata o eretica. Questo ha appianato le relazioni diplomatiche con i nostri vicini, gettando le basi per ulteriori iniziative diplomatiche."
  societal_values.2037.a: "A ciascuno il suo."
  societal_values.2037.b: "Sciocchezze! I nostri confinanti sono tutti eretici!"
- every_neighbor_country_gets_opinion_diplomatic_move_on_us: "Ogni [country|e] confinante otterrà [ShowBiasValue('opinion_diplomatic_move')|+=0] opinione di [ROOT.GetCountry.GetLongName]."
+ every_neighbor_country_gets_opinion_diplomatic_move_on_us: "Ogni [country|e] confinante otterrà [ShowBiasValue('opinion_diplomatic_move')|+=0] opinione nei confornti [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName]."
  
  societal_values.2038.t: "Società Scientifiche"
  societal_values.2038.desc: "I nostri valori umanistici hanno portato molte persone istruite a formare piccole società scientifiche, dove discutono una varietà di concetti e argomenti pratici e non.\n\nNon hanno particolare importanza singolarmente, ma nel complesso, questa moda potrebbe portare alla realizzazione di ricerche scientifiche di cui lo Stato può trarre vantaggio."
@@ -1070,7 +1070,7 @@
  societal_values.2040.a: "Sono solo un peso."
  
  societal_values.2100.title: "Il Primo Servitore dello Stato"
- societal_values.2100.desc: "Il [ROOT.GetCountry.GetLongName] ha vissuto un periodo di buon governo, lasciandoci una popolazione felice e un paese stabile. Tutto questo grazie al nostro impegno a governare come un despota illuminato che alimenta le menti dei nostri sudditi coltivando la loro moralità e rendendoli felici come più si addice alla natura umana."
+ societal_values.2100.desc: "[ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName] ha vissuto un periodo di buon governo, lasciandoci una popolazione felice e un paese stabile. Tutto questo grazie al nostro impegno a governare come un despota illuminato che alimenta le menti dei nostri sudditi coltivando la loro moralità e rendendoli felici come più si addice alla natura umana."
  societal_values.2100.a: "Il benessere dello Stato deve rimanere la nostra priorità assoluta."
  
  societal_values.2101.title: "Un Costo Necessario"
@@ -1078,7 +1078,7 @@
  societal_values.2101.a: "Certo, questo è solo per la loro protezione!"
  
  societal_values.2102.title: "Supporto Filosofico"
- societal_values.2102.desc: "Un rinomato filosofo del suo paese d'origine, [target_artist.GetName], ha avviato una corrispondenza con [target_ruler.GetName] su questioni di governance. Durante questi scambi, [target_artist.GetNameWithNoTooltip] ha affermato di essere infelice nel suo paese d'origine e di essere alla ricerca di un ambiente meno restrittivo in cui scrivere. Grazie al buon rapporto instaurato tra [target_ruler.GetNameWithNoTooltip] e [target_artist.GetNameWithNoTooltip], il nostro [ROOT.GetCountry.GetGovernment.GetRulerTitle] ha invitato [target_artist.GetHerHim] a risiedere in [ROOT.GetCountry.GetName]."
+ societal_values.2102.desc: "Un rinomato filosofo del suo paese d'origine, [target_artist.GetName], ha avviato una corrispondenza con [target_ruler.GetName] su questioni di governance. Durante questi scambi, [target_artist.GetNameWithNoTooltip] ha affermato di essere infelice nel suo paese d'origine e di essere alla ricerca di un ambiente meno restrittivo in cui scrivere. Grazie al buon rapporto instaurato tra [target_ruler.GetNameWithNoTooltip] e [target_artist.GetNameWithNoTooltip], [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] ha invitato [target_artist.GetHerHim] a risiedere in [ROOT.GetCountry.GetName]."
  societal_values.2102.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  
  societal_values.2103.title: "Vittoria Assoluta"
@@ -1086,7 +1086,7 @@
  societal_values.2103.a: "Ora è il momento di agire."
  
  societal_values.2104.title: "Centro della Cultura"
- societal_values.2104.desc: "Il nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [ROOT.GetCountry.GetCapital.GetName] è famoso oltre i nostri confini per il suo splendore e la sua abile design. Il [ROOT.GetCountry.GetGovernment.GetCourtTitle] è stato fonte di ispirazione per molti altri paesi e dovremmo considerarlo una vittoria per la Cultura di [ROOT.GetCountry.GetCulture.GetName]!"
+ societal_values.2104.desc: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [ROOT.GetCountry.GetCapital.GetName] è famoso oltre i nostri confini per il suo splendore e la sua abile design. La [ROOT.GetCountry.GetGovernment.GetCourtTitle] è stato fonte di ispirazione per molti altri paesi e dovremmo considerarlo una vittoria per la cultura [ROOT.GetCountry.GetCulture.GetName]!"
  societal_values.2104.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  
  societal_values.2105.title: "Protesta degli Stati"
@@ -1116,11 +1116,11 @@
  societal_values.2109.b: "Cercate di alleviare la loro situazione."
  
  societal_values.2110.title: "Cultura [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] Non Rispettata"
- societal_values.2110.desc: "La cultura [ROOT.GetCountry.GetCulture.GetName] ha subito un duro colpo negli ultimi anni, poiché non impieghiamo abbastanza artisti per intrattenere i nostri [ROOT.GetCountry.GetGovernment.GetCourtTitle] secondo gli elevati standard che ci si aspetta da un [ROOT.GetCountry.GetGovernment.GetRulerTitle] assolutista. Fortunatamente [target_artist.GetName] dimostra talento con la sua arte e potrebbe migliorare la nostra reputazione culturale, se decidessimo di assumere [target_artist.GetHimHer]."
+ societal_values.2110.desc: "La cultura [ROOT.GetCountry.GetCulture.GetName] ha subito un duro colpo negli ultimi anni, poiché non impieghiamo abbastanza artisti per intrattenere la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] secondo gli elevati standard che ci si aspetta da un governo assolutista. Fortunatamente, [target_artist.GetName] dimostra talento con la sua arte e potrebbe migliorare la nostra reputazione culturale, se decidessimo di assumerl[target_artist.Custom('IT_ART_O_A')]."
  societal_values.2110.a: "Investiamo di più nei nostri artisti."
  societal_values.2110.b: "In ogni caso, che valore ha l'arte?"
  
- societal_values.2111.title: "Erosione la Fede"
+ societal_values.2111.title: "Erodere la Fede"
  societal_values.2111.desc: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_SONO')] scontent[ROOT.GetCountry.Custom('IT_CLERGY_OAI')] dei nostri sforzi per ristrutturare lo Stato. L'accusa è di erodere la fede del popolo e la fiducia nella divinità del nostro governo. La fonte di questa preoccupazione potrebbe essere la paura di un esclusione dal nuovo Stato, quindi potrebbe essere utile rassicurare sulla loro importanza."
  societal_values.2111.a: "Si abitueranno!"
  societal_values.2111.b: "Sicuramente il loro sostegno può essere comprato."
@@ -1148,7 +1148,7 @@
  societal_values.2201.a: "Un processo raffinato e corretto."
  
  societal_values.2202.title: "Paradiso per i Filosofi"
- societal_values.2202.desc: "La nostra società attribuisce grande importanza alla libertà individuale e alla libertà di parola, e queste libertà sono tutelate dal nostro solido sistema giuridico. Negli ultimi decenni si sono sviluppati circoli dedicati alla discussione di argomenti filosofici e alla natura dell'umanità. Alcuni di questi individui più qualificati sono anche disposti a collaborare a stretto contatto con lo Stato, come [target_artist.GetName] che ha preso residenza nel nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ societal_values.2202.desc: "La nostra società attribuisce grande importanza alla libertà individuale e alla libertà di parola, e queste libertà sono tutelate dal nostro solido sistema giuridico. Negli ultimi decenni si sono sviluppati circoli dedicati alla discussione di argomenti filosofici e alla natura dell'umanità. Alcuni di questi individui più qualificati sono anche disposti a collaborare a stretto contatto con lo Stato, come [target_artist.GetName] che ha preso residenza nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  societal_values.2202.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  
  societal_values.2203.title: "In Accordo con il Governo"
@@ -1181,7 +1181,7 @@
  societal_values.2209.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  
  societal_values.2210.title: "Critica al Governo"
- societal_values.2210.desc: "Uno dei membri più stimati del nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_artist.GetName], ha scritto sui principi del liberalismo e su quanto il nostro governo si collochi rispetto a questi alti ideali. Sfortunatamente, [target_artist.GetSheHe] ha evidenziato diverse gravi carenze, che potrebbero destabilizzare il nostro governo, se fossero pubblicate. Potremmo ancora impedire le pubblicazioni, ma dovremmo agire in fretta."
+ societal_values.2210.desc: "Uno dei membri più stimati della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_artist.GetName], ha scritto sui principi del liberalismo e su quanto il nostro governo si collochi rispetto a questi alti ideali. Sfortunatamente, [target_artist.GetSheHe] ha evidenziato diverse gravi carenze, che potrebbero destabilizzare il nostro governo, se fossero pubblicate. Potremmo ancora impedire le pubblicazioni, ma dovremmo agire in fretta."
  societal_values.2210.a: "Sopprimiamo questi scritti."
  societal_values.2210.b: "Lascia che [target_artist.GetHerHim] continui."
  
@@ -1196,12 +1196,12 @@
  societal_values.2212.b: "Cercheremo di farle rispettare comunque."
  
  societal_values.2213.title: "L'Opera di [target_artist.GetNameWithNoTooltip]"
- societal_values.2213.desc: "[target_artist.GetName], un artista affermato nel nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle], ha criticato l'operato del nostro governo negli ultimi anni. [target_artist.GetSheHe|U] si concentra in particolare sulla funzione del sovrano come istituzione al di sopra di ogni controllo, idealizzando le tendenze assolutiste di altri paesi.
+ societal_values.2213.desc: "[target_artist.GetName], un artista affermato nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], ha criticato l'operato del nostro governo negli ultimi anni. [target_artist.GetSheHe|U] si concentra in particolare sulla funzione del sovrano come istituzione al di sopra di ogni controllo, idealizzando le tendenze assolutiste di altri paesi.
  societal_values.2213.a: "Forse [target_artist.GetSheHe] ha ragione su alcune cose."
  societal_values.2213.b: "Suggerisco che [target_artist.GetSheHe] possa sempre lasciare il paese."
  
  societal_values.2214.title: "Governo Diviso"
- societal_values.2214.desc: "La direzione del nostro governo rimane ancora indecisa, ci troviamo di fronte all'opportunità di plasmarla a nostro vantaggio. Mentre un governo in accordo con le idee del liberalismo danneggerebbe il nostro potere per grazia di [ROOT.GetCountry.GetReligion.GetGodName], un governo assoluto di [ROOT.GetCountry.GetGovernment.GetRulerTitle] destabilizzerebbe i nostri rapporti con alcuni degli altri membri del nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ societal_values.2214.desc: "La direzione del nostro governo rimane ancora indecisa, ci troviamo di fronte all'opportunità di plasmarla a nostro vantaggio. Mentre un governo in accordo con le idee del liberalismo danneggerebbe il nostro potere per grazia di [ROOT.GetCountry.GetReligion.GetGodName], un governo assoluto [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] destabilizzerebbe i nostri rapporti con alcuni degli altri membri della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  societal_values.2214.a: "Stabiliamo la rotta verso il liberalismo."
  societal_values.2214.b: "Perseguiamo un ideale assolutista."
  
@@ -1209,32 +1209,32 @@
 #Sinicization / Unsinicization Events
 
  societal_values.2300.title: "La Posizione di [target_character.GetNameWithNoTooltip]"
- societal_values.2300.desc: "Sembra che la cultura mostrata da [target_character.GetName], che attualmente è il nostro [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle], si sia discostata dalle norme Sinificate previste all'interno di [GetInternationalOrganization('middle_kingdom').GetName]. In effetti, secondo i nostri consulenti, il suo palese disprezzo dell'etichetta potrebbe mettere a repentaglio l'intero [ROOT.GetCountry.GetFlavorRank]. Non siamo estranei alle tensioni culturali e faremmo bene a non lasciare che questa situazione degeneri in qualcosa di più serio."
- societal_values.2300.a: "Banditelo [target_character.GetHerHim]!"
- societal_values.2300.b: "[target_character.GetSheHe|U] diventerà [target_culture.GetNameWithNoTooltip]!"
+ societal_values.2300.desc: "Sembra che la cultura mostrata da [target_character.GetName], che attualmente è un nostro [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle], si sia discostata dalle norme sinificate previste all'interno del [GetInternationalOrganization('middle_kingdom').GetName]. In effetti, secondo i nostri consiglieri, il suo palese disprezzo dell'etichetta potrebbe mettere a repentaglio [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank]. Non siamo estranei alle tensioni culturali e faremmo bene a non lasciare che questa situazione degeneri in qualcosa di più serio."
+ societal_values.2300.a: "Banditel[target_character.Custom('IT_ART_O_A')]!"
+ societal_values.2300.b: "[target_character.GetSheHe|U] sarà assimilat[target_character.Custom('IT_ART_O_A')] alla nostra cultura [target_culture.GetNameWithNoTooltip]!"
  societal_values.2300.c: "Non interverremo."
- scale_with_sinicized_unsinicized_key: "scala in base ai nostri [ShowSocietyDirectionName('sinicized')] e [ShowSocietyDirectionName('unsinicized')] [societal_values|e]"
+ scale_with_sinicized_unsinicized_key: "scala in base ai nostri [societal_values|e] [ShowSocietyDirectionName('sinicized')] e [ShowSocietyDirectionName('unsinicized')]"
  stability_cost_scales_with_sinicized_vs_unsinicized_tt: "La [stability|e] $scale_with_sinicized_unsinicized_key$"
- legitimacy_cost_scales_with_sinicized_vs_unsinicized_tt: "La [government_power|e] $scale_with_sinicized_unsinicized_key$"
- between_3_5_become_chinese_tt: "Alcuni dei nostri [pops|e] in [target_province.GetName] abbracceranno la [target_culture.GetName] [culture|e]"
+ legitimacy_cost_scales_with_sinicized_vs_unsinicized_tt: "Il [government_power|e] $scale_with_sinicized_unsinicized_key$"
+ between_3_5_become_chinese_tt: "Alcuni dei nostri [pops|e] in [target_province.GetName] abbracceranno la [culture|e] [target_culture.GetName]"
  
  societal_values.2301.title: "Onda di Sinizzazione"
- societal_values.2301.desc: "La nostra presenza nella sfera di influenza di [GetInternationalOrganization('middle_kingdom').GetName] è una relazione complicata tra [target_character1.GetName] e [target_character2.GetName]. Il contatto tra i nostri due regni ha creato scintille di Sinizzazione. Infatti, [target_sinicized_pop_scope.GetName] ha recentemente iniziato a mostrare elementi di influenza della cultura [target_culture.GetName], in spregio alle nostre norme."
+ societal_values.2301.desc: "La nostra presenza nella sfera di influenza del [GetInternationalOrganization('middle_kingdom').GetName] è una relazione complicata tra [target_character1.GetName] e [target_character2.GetName]. Il contatto tra i nostri due regni ha creato scintille di Sinizzazione. Infatti, [target_sinicized_pop_scope.GetName] ha recentemente iniziato a mostrare elementi di influenza della cultura [target_culture.GetName], in spregio alle nostre norme."
  societal_values.2301.a: "Non può derivarne alcun male."
  societal_values.2301.b: "Non dimentichiamo le nostre radici!"
  
  societal_values.2302.title: "Lotte tra Fazioni"
- societal_values.2302.desc: "Le tensioni all'interno del nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] hanno raggiunto il punto di ebollizione. [target_character1.GetName], un convinto difensore delle usanze [target_native_culture.GetName], e [target_character2.GetName], la cui adesione alle usanze [target_culture.GetName] è diventata nota, hanno iniziato a scontrarsi apertamente. La loro disputa ha diviso i nostri consiglieri in due fazioni rivali: una che chiede legami più stretti con la [GetInternationalOrganization('middle_kingdom').GetName], l'altra che ci chiede di rifiutare tale influenza straniera e riaffermare le nostre tradizioni. Entrambe le fazioni sono seguite da membri capaci del nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] come [target_sinophile.GetName] o [target_nativist.GetName]."
+ societal_values.2302.desc: "Le tensioni all'interno della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] hanno raggiunto il punto di ebollizione. [target_character1.GetName], un convinto difensore della tradizione [target_native_culture.GetName], e [target_character2.GetName], la cui adesione alle usanze ella cultura [target_culture.GetName] è diventata nota, hanno iniziato a scontrarsi apertamente. La loro disputa ha diviso i nostri consiglieri in due fazioni rivali: una che chiede legami più stretti con il [GetInternationalOrganization('middle_kingdom').GetName], l'altra che ci chiede di rifiutare tale influenza straniera e riaffermare le nostre tradizioni. Entrambe le fazioni sono seguite da membri capaci della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come [target_sinophile.GetName] o [target_nativist.GetName]."
  societal_values.2302.a: "Favorisci la fazione sinizzata di [target_character1.GetShortNameWithNoTooltip]."
  societal_values.2302.b: "Ascolta [target_character2.GetShortNameWithNoTooltip] e la fazione nativa."
  societal_values.2302.c: "Lascia che risolvano la questione tra loro."
  
- societal_values.2303.title: "La Sfida di [target_country.GetNameWithNoTooltip]"
- societal_values.2303.desc: "La nostra posizione di leader della [GetInternationalOrganization('middle_kingdom').GetName] comporta il dovere di mantenere l'armonia tra i suoi membri. [target_character1.GetName] ha ricevuto segnalazioni secondo cui [target_character2.GetName], [target_country.GetGovernment.GetRulerTitle] di [target_country.GetName], ha apertamente disprezzato le norme sinificate della [GetInternationalOrganization('middle_kingdom').GetName] e ignorato l'etichetta che unisce la nostra sfera. Se non affrontata, questo sfida potrebbe indebolire il nostro prestigio e incoraggiare altri a seguirne l'esempio."
+ societal_values.2303.title: "La Sfida [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]"
+ societal_values.2303.desc: "La nostra posizione di leader del [GetInternationalOrganization('middle_kingdom').GetName] comporta il dovere di mantenere l'armonia tra i suoi membri. [target_character1.GetName] ha ricevuto segnalazioni secondo cui [target_character2.GetName], [target_country.GetGovernment.GetRulerTitle] [target_country.Custom('IT_Di')][target_country.GetName], ha apertamente disprezzato le norme sinificate del [GetInternationalOrganization('middle_kingdom').GetName] e ignorato l'etichetta che unisce la nostra sfera. Se non affrontata, questo sfida potrebbe indebolire il nostro prestigio e incoraggiare altri a seguirne l'esempio."
  societal_values.2303.a: "Ricorda loro qual è il loro posto."
  
  societal_values.2304.title: "Gli Avvertimenti di [target_character1.GetNameWithNoTooltip]"
- societal_values.2304.desc: "Un messaggero arriva da [target_mkio_leader.GetName], leader del [GetInternationalOrganization('middle_kingdom').GetName], condannando il nostro allontanamento dalle norme sinificate e chiedendo una correzione immediata. L'obbedienza ripristinerebbe l'armonia finale a costo di perdere, nel breve termine, prestigio e autorità in patria. La ribellione, tuttavia, rischia di essere censurata e sanzionata, isolando il nostro [ROOT.GetCountry.GetFlavorRank]."
+ societal_values.2304.desc: "Un messaggero arriva da [target_mkio_leader.GetName], leader del [GetInternationalOrganization('middle_kingdom').GetName], condannando il nostro allontanamento dalle norme sinificate e chiedendo una correzione immediata. L'obbedienza ripristinerebbe l'armonia finale a costo di perdere, nel breve termine, prestigio e autorità in patria. La ribellione, tuttavia, rischia di essere censurata e sanzionata, isolando [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
  societal_values.2304.a: "Obbliga il [target_mkio_leader.GetGovernment.GetRulerTitle]."
  societal_values.2304.b: "Minacce vuote!"
  
@@ -1243,7 +1243,7 @@
  societal_values.2305.a: "Capiranno col tempo."
  
  societal_values.2306.title: "Le Politiche [ShowSocietyDirectionNameWithNoTooltip('unsinicized')] Generano Reazioni Negative"
- societal_values.2306.desc: "Il nostro rifiuto delle norme sinificate ha iniziato a pesare pesantemente sul [ROOT.GetCountry.GetFlavorRank]. I cortigiani sussurrano di una legittimità in declino, i ministri litigano tra loro e gli studiosi si lamentano della stagnazione mentre la cultura straniera viene emarginata. Ciò che un tempo sembrava una fiera difesa del nostro patrimonio ora rischia di indebolire il nostro Stato e di erodere il nostro posto tra i nostri vicini."
+ societal_values.2306.desc: "Il nostro rifiuto delle norme sinificate ha iniziato a pesare pesantemente [ROOT.GetCountry.Custom('IT_SUL_RANGO')][ROOT.GetCountry.GetFlavorRank]. I cortigiani sussurrano di una legittimità in declino, i ministri litigano tra loro e gli studiosi si lamentano della stagnazione mentre la cultura straniera viene emarginata. Ciò che un tempo sembrava una fiera difesa del nostro patrimonio ora rischia di indebolire il nostro Stato e di erodere il nostro posto tra i nostri vicini."
  
  societal_values.2307.title: "I [ShowSocietyDirectionNameWithNoTooltip('sinicized')]  Valori Producono Benefici"
  societal_values.2307.desc: "La nostra crescente adesione ai riti e agli insegnamenti sinificati ha prodotto risultati tangibili. Infatti, le cerimonie di corte si svolgono con una nuova precisione, gli studiosi condividono metodi tratti dal [GetInternationalOrganization('middle_kingdom').GetName] e i ministri formati in una raffinata arte di governo elevano la governance. Che si tratti di province più tranquille, rapidi progressi nella conoscenza o il miglioramento dei nostri funzionari di vertice, i benefici di questo allineamento sono evidenti."
@@ -1259,14 +1259,14 @@
  pops_in_target_province_resist_sinicization_tt: "I nostri [pops|e] in [target_province.GetName] perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] nel tentativo di opporsi alle nostre politiche [ShowSocietyDirectionName('sinicized')]"
  
  societal_values.2310.title: "Le Politiche di [target_estate.GetNameWithNoTooltip] Resistenza [ShowSocietyDirectionNameWithNoTooltip('unsinicized')]"
- societal_values.2310.desc: "Il nostro allontanamento dalle norme sinificate non è passato inosservato al [ROOT.GetCountry.GetGovernment.GetCourtTitle] di [ROOT.GetCountry.GetCapital.GetName]. I [target_estate.GetName] sostengono che rifiutare l'etichetta consolidata indebolirà la nostra posizione e eroderà il prestigio del nostro [ROOT.GetCountry.GetFlavorRank]. Insistono affinché riconsideriamo la nostra linea di condotta prima che la loro influenza e lealtà vadano perse."
+ societal_values.2310.desc: "Il nostro allontanamento dalle norme sinificate non è passato inosservato alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] di [ROOT.GetCountry.GetCapital.GetName]. I [target_estate.GetName] sostengono che rifiutare l'etichetta consolidata indebolirà la nostra posizione e eroderà il prestigio [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Insistono affinché riconsideriamo la nostra linea di condotta prima che la loro influenza e lealtà vadano perse."
  societal_values.2310.a: "Il [target_estate.GetNameWithNoTooltip] non detta le nostre politiche!"
  societal_values.2310.b: "Ascoltiamo le preoccupazioni degli Stati."
  
  societal_values.2311.title: "Militarizzazione della Corte"
- societal_values.2311.desc: "Il crescente predominio delle voci nativiste all'interno del nostro [ROOT.GetCountry.GetFlavorRank] ha spostato l'equilibrio del [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Gli amministratori civili vengono messi da parte, mentre generali e ministri bellicosi assumono un ruolo sempre più importante, spingendoci ad abbracciare una direzione più marziale per lo Stato.
+ societal_values.2311.desc: "Il crescente predominio delle voci nativiste all'interno [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] ha spostato l'equilibrio della [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Gli amministratori civili vengono messi da parte, mentre generali e ministri bellicosi assumono un ruolo sempre più importante, spingendoci ad abbracciare una direzione più marziale per lo Stato.
  societal_values.2311.a: "Mettiamo i soldati al centro della governance."
- societal_values.2311.b: "Manteniamo l'autorità del potere civile [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ societal_values.2311.b: "Manteniamo l'autorità della [ROOT.GetCountry.GetGovernment.GetCourtTitle] civile."
  
  societal_values.2312.title: "Miglioramenti nella Burocrazia"
  societal_values.2312.desc: "Le nostre pratiche amministrative e le procedure giudiziarie perfezionate hanno iniziato a dare i loro frutti. Seguendo l'esempio di [target_character.GetName], i nostri ministeri hanno semplificato le loro procedure, i registri sono più chiari e i funzionari adottano standard più rigorosi, mutuati dalla governance sinificata.
@@ -1282,48 +1282,48 @@
  gains_depend_on_scope_target_character_total_abilities: "I vantaggi per la nostra [culture|e] dipenderanno dalla [total_ability|e] di [target_character.GetName]"
  
  societal_values.2315.title: "I Migranti Arrivano da [target_province_origin.GetNameWithNoTooltip]"
- societal_values.2315.desc: "Gruppi di famiglie hanno iniziato a lasciare [target_province_origin.GetName], attraversando le nostre terre da [target_country.GetName]. Attratti da nuove opportunità o dal malcontento nei confronti dell'amministrazione locale, questi migranti si stabiliscono ora a [target_province_destination.GetName], portando con sé usanze e competenze che potrebbero alterare l'equilibrio della nostra società, avvicinandoci sempre di più al [GetInternationalOrganization('middle_kingdom').GetName].
+ societal_values.2315.desc: "Gruppi di famiglie hanno iniziato a lasciare [target_province_origin.GetName], attraversando le nostre terre [target_country.Custom('IT_Dalla')][target_country.GetName]. Attratti da nuove opportunità o dal malcontento nei confronti dell'amministrazione locale, questi migranti si stabiliscono ora a [target_province_destination.GetName], portando con sé usanze e competenze che potrebbero alterare l'equilibrio della nostra società, avvicinandoci sempre di più al [GetInternationalOrganization('middle_kingdom').GetName].
  
- societal_values.2316.title: "Le Molte Mani di [target_country.GetNameWithNoTooltip]"
- societal_values.2316.desc: "Gli inviati di [target_country.GetName], leader del [GetInternationalOrganization('middle_kingdom').GetName], arrivano alle nostre porte portando sontuosi tributi e doni simbolici. Accettarli significa riconoscere il prestigio della loro posizione e avvicinarsi alla loro orbita, mentre rifiutare sarebbe visto come un atto di orgogliosa sfida, rischiando disordini e Stati indisciplinati."
+ societal_values.2316.title: "Le Molte Mani [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]"
+ societal_values.2316.desc: "Gli inviati [target_country.Custom('IT_Della')][target_country.GetName], leader del [GetInternationalOrganization('middle_kingdom').GetName], arrivano alle nostre porte portando sontuosi tributi e doni simbolici. Accettarli significa riconoscere il prestigio della loro posizione e avvicinarsi alla loro orbita, mentre rifiutare sarebbe visto come un atto di orgogliosa sfida, rischiando disordini e Stati indisciplinati."
  societal_values.2316.a: "Rifiutiamo i loro doni."
  societal_values.2316.b: "Solo uno sciocco li rifiuterebbe."
  
  societal_values.2317.title: "Scontri Culturali in [target_province.GetNameWithNoTooltip]"
- societal_values.2317.desc: "I migranti [target_culture.GetName] hanno messo radici in [target_province.GetName] e la loro crescente presenza solleva ora interrogativi difficili. Alcuni membri del [ROOT.GetCountry.GetGovernment.GetCourtTitle] ci esortano a imporre limiti più severi ai loro diritti, temendo slealtà ed un indebolimento culturale, mentre altri sostengono che mostrare tolleranza rafforzerebbe il nostro prestigio e ci farebbe guadagnare la lealtà di questi nuovi sudditi.
+ societal_values.2317.desc: "La comunità [target_culture.GetName] ha ormai messo radici in [target_province.GetName] e la loro crescente presenza solleva ora interrogativi difficili. Alcuni membri della [ROOT.GetCountry.GetGovernment.GetCourtTitle] ci esortano a imporre limiti più severi ai loro diritti, temendo slealtà ed un indebolimento culturale, mentre altri sostengono che mostrare tolleranza rafforzerebbe il nostro prestigio e ci farebbe guadagnare la lealtà di questi nuovi sudditi.
  societal_values.2317.a: "Reprimiamo i loro diritti."
  societal_values.2317.b: "Questa è una linea che non oltrepasseremo."
  every_location_in_target_province_cracked_down_on_minorities_modifier: "Le nostre [location|e] in [target_province.GetName] otterranno [ShowModifier('cracked_down_on_minorities_modifier')] per #Y 10#! anni"
  
- societal_values.2318.title: "La [ShowPopTypeNameWithNoTooltip('burghers')] [target_country.GetAdjectiveWithNoTooltip] Insediata in [target_location_destination.GetNameWithNoTooltip]"
- societal_values.2318.desc: "La [ShowPopTypeName('burghers')] proveniente da [target_country.GetName] ha iniziato a stabilirsi attorno a [target_location_destination.GetName], costruendo reti che collegano più strettamente il nostro commercio a [GetInternationalOrganization('middle_kingdom').GetName]. La loro presenza promette nuovi beni e prosperità, ma alcuni avvertono che darà ai commercianti stranieri un'influenza indebita sulla nostra economia.
+ societal_values.2318.title: "La [ShowPopTypeNameWithNoTooltip('burghers')] [target_country.Custom('IT_ADJ_FS')] Insediata in [target_location_destination.GetNameWithNoTooltip]"
+ societal_values.2318.desc: "La [ShowPopTypeName('burghers')] proveniente [target_country.Custom('IT_Dalla')][target_country.GetName] ha iniziato a stabilirsi attorno a [target_location_destination.GetName], costruendo reti che collegano più strettamente il nostro commercio al [GetInternationalOrganization('middle_kingdom').GetName]. La loro presenza promette nuovi beni e prosperità, ma alcuni avvertono che darà ai commercianti stranieri un'influenza indebita sulla nostra economia.
  societal_values.2318.a: "Un afflusso di [ShowPopTypeNameWithNoTooltip('burghers')] è una buona cosa, vero?"
  
- societal_values.2319.title: "Il [target_religion.GetNameWithNoTooltip] Mette Radici a [target_province.GetNameWithNoTooltip]"
- societal_values.2319.desc: "La nostra vicinanza a [target_country.GetName] ha notevolmente giovato al nostro [ROOT.GetCountry.GetFlavorRank]. Recentemente, questa relazione ha prodotto un nuovo sviluppo. I [target_country.GetAdjectiveWithNoTooltip] hanno portato la loro fede [target_religion.GetName] a [target_province.GetName], dove ora inizia a trovare seguaci tra la popolazione. Alcuni vedono questo come una pericolosa intrusione che mina le nostre tradizioni, mentre altri sostengono che potrebbe rafforzare i legami con [GetInternationalOrganization('middle_kingdom').GetName].
+ societal_values.2319.title: "La Fede [target_religion.GetAdjectiveWithNoTooltip] Mette Radici a [target_province.GetNameWithNoTooltip]"
+ societal_values.2319.desc: "La nostra vicinanza [target_country.Custom('IT_Alla')][target_country.GetName] ha notevolmente giovato [ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Recentemente, questa relazione ha prodotto un nuovo sviluppo. La popolazione [target_country.Custom('IT_ADJ_FS')] ha portato la sua fede [target_religion.GetAdjective] a [target_province.GetName], dove ora inizia a trovare seguaci tra la popolazione. Alcuni vedono questo come una pericolosa intrusione che mina le nostre tradizioni, mentre altri sostengono che potrebbe rafforzare i legami con il [GetInternationalOrganization('middle_kingdom').GetName].
  societal_values.2319.a: "Tolleriamo il loro culto."
  societal_values.2319.b: "Sradichiamo questa eresia."
- approximately_10_percent_pop_target_province_convert_target_religion_tt: "Circa #Y 10%#! dei nostri [pops|e] che seguono [our_religion_scope.GetName] in [target_province.GetName] verranno convertiti in [target_religion.GetName]"
+ approximately_10_percent_pop_target_province_convert_target_religion_tt: "Circa il #Y 10%#! dei nostri [pops|e] che seguono la fede [our_religion_scope.GetAdjective] in [target_province.GetName] verranno convertiti alla religione [target_religion.GetAdjective]"
  
- societal_values.2320.title: "Condivisione della Conoscenza nella Sfera di [target_country.GetNameWithNoTooltip]"
- societal_values.2320.desc: "Come leader della [GetInternationalOrganization('middle_kingdom').GetName], [target_country.GetName] ha già abbracciato istituzioni assenti nel nostro [ROOT.GetCountry.GetFlavorRank]. I loro studiosi e inviati si offrono di condividere con noi metodi, tecnologie e pratiche, promettendo di ridurre il divario tra i nostri stati, sebbene con qualche cautela sul fatto che tali doni hanno il prezzo di una dipendenza più profonda."
+ societal_values.2320.title: "Condivisione della Conoscenza nella Sfera [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]"
+ societal_values.2320.desc: "Come leader del [GetInternationalOrganization('middle_kingdom').GetName], [target_country.Custom('IT_La')][target_country.GetName] ha già abbracciato istituzioni assenti [ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. I loro studiosi e inviati si offrono di condividere con noi metodi, tecnologie e pratiche, promettendo di ridurre il divario tra i nostri stati, sebbene con qualche cautela sul fatto che tali doni hanno il prezzo di una dipendenza più profonda."
  societal_values.2320.a: "Un investimento nella conoscenza paga i migliori interessi."
  societal_values.2320.b: "Non abbiamo bisogno di ingerenze straniere."
  gain_in_institutions_depends_on_monthly_towards_sinicized_tt: "I progressi [institution|e] ottenuti e il numero di [location|e] interessate dipenderanno dal nostro [ShowModifierTypeName('monthly_towards_sinicized')]"
  
- societal_values.2321.title: "L'Architettura di [target_country.GetNameWithNoTooltip]"
- societal_values.2321.desc: "Dai grandi palazzi di [target_country.GetLongName] ai suoi templi e giardini, gli architetti di [target_country.GetAdjectiveWithNoTooltip] hanno perfezionato uno stile che fonde maestosità e armonia. Delegati e costruttori provenienti da lontano ora portano la conoscenza di questi progetti al nostro [ROOT.GetCountry.GetFlavorRank]. Dobbiamo decidere se adottare i loro insegnamenti o esaltare le nostre tradizioni native."
+ societal_values.2321.title: "L'Architettura [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]"
+ societal_values.2321.desc: "Dai grandi palazzi [target_country.Custom('IT_DEL_RANGO')][target_country.GetLongName] ai suoi templi e giardini, gli architetti [target_country.Custom('IT_ADJ_MP')] hanno perfezionato uno stile che fonde maestosità e armonia. Delegati e costruttori provenienti da lontano ora portano la conoscenza di questi progetti [ROOT.GetCountry.Custom('IT_AL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Dobbiamo decidere se adottare i loro insegnamenti o esaltare le nostre tradizioni native."
  societal_values.2321.a: "Impariamo dai loro ingegneri."
  societal_values.2321.b: "Eleveremo i nostri stili."
  
  
  societal_values.2322.title: "Controversia sull'Integrazione"
- societal_values.2322.desc: "In [target_province.GetName], le comunità di soggetti [target_culture.GetName] sono cresciute abbastanza da attirare l'attenzione del [ROOT.GetCountry.GetGovernment.GetCourtTitle]. I magistrati discutono su quale sia la strada giusta: offrire riconoscimento e aiuto per accelerare la loro integrazione, o applicare misure più severe per riaffermare le usanze autoctone.
+ societal_values.2322.desc: "In [target_province.GetName], la comunità [target_culture.GetName] è cresciuta abbastanza da attirare l'attenzione della [ROOT.GetCountry.GetGovernment.GetCourtTitle]. I magistrati discutono su quale sia la strada giusta: offrire riconoscimento e aiuto per accelerare la loro integrazione, o applicare misure più severe per riaffermare le usanze autoctone.
  societal_values.2322.a: "Unità per accelerare i nostri sforzi."
- societal_values.2322.b: "Ameranno essere [our_culture_scope.GetNameWithNoTooltip]."
+ societal_values.2322.b: "Ameranno essere [our_culture_scope.Custom('IT_CUL_MP')]."
  
- societal_values.2323.title: "Il Futuro del Nostro [ROOT.GetCountry.GetFlavorRank]"
- societal_values.2323.desc: "Con [target_heir.GetName] ancora giovane, il [ROOT.GetCountry.GetGovernment.GetCourtTitle] discute su chi dovrebbe essere il suo tutore. Un celebre mentore nativo, [target_tutor1.GetName], è pronto a plasmare [target_heir.GetHerHim] secondo i nostri costumi, mentre [target_tutor2.GetName], un eminente istruttore di [target_birth_location.GetName] — esperto nei riti e negli insegnamenti del [GetInternationalOrganization('middle_kingdom').GetName] — offre un corso di arte di governo sinificata.
+ societal_values.2323.title: "Il Futuro [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]"
+ societal_values.2323.desc: "Con [target_heir.GetName] ancora giovane, la [ROOT.GetCountry.GetGovernment.GetCourtTitle] discute su chi dovrebbe essere il suo tutore. Un celebre mentore nativo, [target_tutor1.GetName], è pronto a plasmarl[target_heir.Custom('IT_ART_O_A')] secondo i nostri costumi, mentre [target_tutor2.GetName], un eminente istruttore di [target_birth_location.GetName] — esperto nei riti e negli insegnamenti del [GetInternationalOrganization('middle_kingdom').GetName] — offre un corso di arte di governo sinificata.
  societal_values.2323.a: "[target_heir.GetSheHe|U] sarà istruito da [target_tutor2.GetShortNameWithNoTooltip]."
  societal_values.2323.b: "[target_tutor1.GetShortNameWithNoTooltip] ci sarà utile."
  societal_values.2323.c: "[target_heir.GetShortNameWithNoTooltip] non studierà ulteriormente."
