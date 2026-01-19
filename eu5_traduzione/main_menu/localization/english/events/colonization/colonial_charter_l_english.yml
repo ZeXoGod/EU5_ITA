@@ -1,11 +1,11 @@
 ﻿l_english:
  colonial_charter.1.title: "La Compagnia di [SCOPE.sLocation('new_colony').GetNameWithNoTooltip]"
- colonial_charter.1.desc: "La nostra nazione è circondata da territori che non sono stati ancora rivendicati da nessuno dei nostri rivali. La nostra ambizione di espandere i territori appartenenti alla corona ha messo radici tra la nostra gente sotto forma di fervore nazionalistico, e una nuova società privata si è costituita con l'intenzione di portare coloni nelle terre di [SCOPE.sLocation('new_colony').GetName] per rivendicare il territorio per la gloria, l'oro, [ROOT.GetCountry.GetGovernment.GetRulerTitle], e la loro Compagnia. Se permettiamo la loro espansione, porteranno un gran numero di coloni nella provincia e espanderanno rapidamente l'influenza [ROOT.GetCountry.Custom('IT_ADJ_FS')] nella zona."
+ colonial_charter.1.desc: "La nostra nazione è circondata da territori che non sono stati ancora rivendicati da nessuno dei nostri rivali. La nostra ambizione di espandere i territori appartenenti alla corona ha messo radici tra la nostra gente sotto forma di fervore nazionalistico, e una nuova società privata si è costituita con l'intenzione di portare coloni nelle terre di [SCOPE.sLocation('new_colony').GetName] per rivendicare il territorio per la gloria, l'oro, [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], e la loro Compagnia. Se permettiamo la loro espansione, porteranno un gran numero di coloni nella provincia e espanderanno rapidamente l'influenza [ROOT.GetCountry.Custom('IT_ADJ_FS')] nella zona."
  colonial_charter.1.a: "Questo non può che farci bene. Lasciamoli fare."
  colonial_charter.1.b: "Imponiamo loro costi aggiuntivi!"
  
  colonial_charter.3.title: "Ondata di Immigrazione"
- colonial_charter.3.desc: "Una delle nostre colonie, [target.GetName], ha ricevuto un afflusso di immigrati in cerca di fortuna nelle nostre terre d'oltremare. Diventerà presto una città autosufficiente in grado di fornire grande ricchezza al nostro reame."
+ colonial_charter.3.desc: "Una delle nostre colonie, [target.Custom('IT_La')][target.GetName], ha ricevuto un afflusso di immigrati in cerca di fortuna nelle nostre terre d'oltremare. Diventerà presto una città autosufficiente in grado di fornire grande ricchezza al nostro reame."
  colonial_charter.3.a: "Una buona notizia."
 
  colonial_charter.4.title: "Disastro Coloniale"
@@ -14,11 +14,11 @@
  colonial_charter.4.b: "Nessuno sforzo deve essere risparmiato nel sostenere la colonia."
 
 
- colonial_charter.5.title: "Amicizia con i Nnativi"
+ colonial_charter.5.title: "Amicizia con i Nativi"
  colonial_charter.5.desc: "I nostri coloni sono riusciti a stabilire un'intesa con i nativi del luogo. Questo accordo consente a [SCOPE.sColonialCharter('target').GetName] maggiori possibilità di crescita senza rischiare di irritarli."
  colonial_charter.5.a: "Questo merita una celebrazione!"
 
- colonial_charter.6.title: "Portare Donne da Sposare"
+ colonial_charter.6.title: "Donne da Sposare"
  colonial_charter.6.desc: "Una colonia pionieristica è solitamente un luogo dominato dagli uomini, ma con lo sviluppo della colonia si mira più alla crescita tramite le nascite che tramite l'emigrazione. La compagnia coloniale responsabile di [SCOPE.sColonialCharter('target').GetName] ha organizzato il trasferimento di un gruppo di donne da sposare, perlopiù vedove, affinché possano formare nuove famiglie."
  colonial_charter.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
@@ -46,13 +46,13 @@
  #
  colonial_charter.100.title: "La Colonia di [SCOPE.sProvince('target').GetNameWithNoTooltip]"
  colonial_charter.100.desc: "La compagnia fondata per colonizzare [SCOPE.sProvince('target').GetName] ha ormai compiuto la sua missione e la colonia è pienamente operativa. Dobbiamo decidere come amministrare questo territorio."
- colonial_charter.100.a: "Crea un nuovo Suddito coloniale."
- colonial_charter.100.b: "Lascia che si unisca a [SCOPE.sCountry('potential_join_1').GetNameWithNoTooltip]."
- colonial_charter.100.c: "Lascia che si unisca a [SCOPE.sCountry('potential_join_2').GetNameWithNoTooltip]."
- colonial_charter.100.d: "Mantienila come parte di [ROOT.GetCountry.GetNameWithNoTooltip] per ora."
+ colonial_charter.100.a: "Creiamo un nuovo Stato Cliente Coloniale."
+ colonial_charter.100.b: "Lasciate che si unisca [SCOPE.sCountry('potential_join_1').Custom('IT_Alla')][SCOPE.sCountry('potential_join_1').GetNameWithNoTooltip]."
+ colonial_charter.100.c: "Lasciate che si unisca [SCOPE.sCountry('potential_join_2').Custom('IT_Alla')][SCOPE.sCountry('potential_join_2').GetNameWithNoTooltip]."
+ colonial_charter.100.d: "Mantenetela per ora parte [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetNameWithNoTooltip]."
  colonial_charter.100.e: "Perché non iniziare una nuova vita nelle colonie?"
- colonial_charter.100.f: "Lascia che si unisca a [SCOPE.sCountry('potential_join_big_regional_subject').GetNameWithNoTooltip]."
- colonial_charter.100.e.tt: "Passa a Giocare il Nuovo Suddito Coloniale."
+ colonial_charter.100.f: "Lasciate che si unisca [SCOPE.sCountry('potential_join_big_regional_subject').Custom('IT_Alla')][SCOPE.sCountry('potential_join_big_regional_subject').GetNameWithNoTooltip]."
+ colonial_charter.100.e.tt: "Gioca come il Nuovo Stato Cliente Coloniale."
 
  colonial_charter.200.title: "La Colonia Fallita di [target.GetNameWithNoTooltip]"
  colonial_charter.200.desc: "La carta fondata per colonizzare [target.GetNameWithNoTooltip] ha completamente fallito. [attacker.GetLongName] è riuscito a prevalere, respingendo ogni nostro tentativo."

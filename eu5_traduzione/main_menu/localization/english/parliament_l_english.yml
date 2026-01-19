@@ -1,12 +1,12 @@
 ﻿l_english:
 
  #Generic Code
- PARLIAMENT_MARKER_DURATION_TXT: "#T [Player.GetGovernment.GetParliament.GetName] in Sessione#!\nDibatterà [Player.GetGovernment.GetParliament.GetCurrentDebateName] per altri [Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] giorni in @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]." #MOD OLD
- PARLIAMENT_DURATION_TXT: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] giorni rimasti in @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]"
+ PARLIAMENT_MARKER_DURATION_TXT: "#T [Player.GetGovernment.GetParliament.GetName] in Sessione#!\nDibatterà [Player.GetGovernment.GetParliament.GetCurrentDebateName] per altri [Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] giorni a @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]." 
+ PARLIAMENT_DURATION_TXT: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] giorni rimasti a @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]"
  PARLIAMENT_DURATION_TXT_NO_LOCATION: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] giorni rimasti"
- IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] in Sessiono#!\nnDibatterà [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebateName] per altri [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] giorni in @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]." #MOD OLD
- PARLIAMENT_ISSUE_WILL_FAIL: "#T Fallimento della Proposta#!\n@trigger_no! Il [Player.GetGovernment.GetParliament.GetName] #R NON#! passerà [Player.GetGovernment.GetParliament.GetCurrentDebateName]." #MOD OLD
- PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Adozione della Proposta#!\nIl [Player.GetGovernment.GetParliament.GetName] adotterà [Player.GetGovernment.GetParliament.GetCurrentDebateName]." #MOD OLD
+ IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] in Sessione#!\nDibatterà [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebateName] per altri [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] giorni a @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]." #MOD OLD
+ PARLIAMENT_ISSUE_WILL_FAIL: "#T Fallimento della Proposta#!\n@trigger_no! Il [Player.GetGovernment.GetParliament.GetName] #R NON#! passerà [Player.GetGovernment.GetParliament.GetCurrentDebateName]." 
+ PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Adozione della Proposta#!\nIl [Player.GetGovernment.GetParliament.GetName] adotterà [Player.GetGovernment.GetParliament.GetCurrentDebateName]." 
  HOSTILE_PARLIAMENT_MARKER: "#T [ParliamentMarker.GetCountry.GetGovernment.GetParliament.GetName] Ostile in Sessione#!\nPuò essere interrotto [Concept('occupying', 'occupando')|e] la [location|e]."
 
  PARLIAMENT_NEVER_CALLED: "Il $NAME$ non è stato convocato."
@@ -18,7 +18,7 @@
  
  EXTRA_SUPPORT_INFO_FOR_ISSUE_NONE: "#T Proposta della $crown_estate$#!\nSi tratta di una proposta che favorisce il raggiungimento degli obiettivi della $crown_estate$ quindi non ci sarà ulteriore supporto in [parliament|e] per la presentazione della proposta."
  
- EXTRA_SUPPORT_INFO_FOR_ISSUE: "#T Proposta [PARLIAMENT_ISSUE.GetEstateType.GetNameWithNoTooltip]#!\nSelezionando questa proposta verrà aggiunto un $VAL|2+=%$ al sostegno parlamentare, dato che [PARLIAMENT_ISSUE.GetEstateType.GetName] sta sostenendo questa proposta."
+ EXTRA_SUPPORT_INFO_FOR_ISSUE: "#T Proposta del Ceto [PARLIAMENT_ISSUE.GetEstateType.GetNameWithNoTooltip]#!\nSelezionando questa proposta verrà aggiunto un $VAL|2+=%$ al sostegno parlamentare, dato che [PARLIAMENT_ISSUE.GetEstateType.GetName] sta sostenendo questa proposta."
 
  BASE_SPECIAL_STATUS_SUPPORT: "Supporto dello Status"
  EXTRA_SUPPORT_INFO_FOR_IO_ISSUE: "#T Proposta [PARLIAMENT_ISSUE.GetSpecialStatus.GetNameWithNoTooltip]#!\nSelezionando questa proposta verrà aggiunto un $VAL|2+=%$ al sostegno parlamentare, dato che i membri di [PARLIAMENT_ISSUE.GetSpecialStatus.GetName] stanno sostenendo questa proposta."
@@ -446,10 +446,10 @@
  pa_move_towards_belligerent_simple: "Supportare la Fazione Belligerante"
  pa_move_towards_belligerent_desc: "$entrench_desc$ mostrare il nostro atteggiamento bellicoso."
 
- pa_push_towards_conciliatory: "Movimento Conciliante"
+ pa_push_towards_conciliatory: "Movimento Conciliatorio"
  pa_push_towards_conciliatory_simple: "Preservare la Conciliazione"
  pa_push_towards_conciliatory_desc: "$push_towards_desc$ abbracciare la nostra natura conciliante."
- pa_move_towards_conciliatory: "Supporto Conciliante"
+ pa_move_towards_conciliatory: "Supporto Conciliatorio"
  pa_move_towards_conciliatory_simple: "Supportare la Conciliazione"
  pa_move_towards_conciliatory_desc: "$entrench_desc$ lottare verso valori conciliatori."
 

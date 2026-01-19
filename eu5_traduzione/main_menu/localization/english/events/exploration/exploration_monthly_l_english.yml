@@ -5,36 +5,36 @@
  exploration_monthly.1.b: "Proponiamo loro un accordo fraudolento."
 
  exploration_monthly.2.title: "Nativi Ostili"
- exploration_monthly.2.desc: "La nostra spedizione si è imbattuta in nativi ostili provenienti da [ROOT.GetExploration.GetLocation.GetName] e ciò li ha fatti scappare.\n\nAlcuni marinai erano sbarcati con delle scialuppe per rifornirsi di acqua potabile e stavano tornando alla nave quando sono apparse cinque canoe [pop.GetCulture.GetName] con sopra degli uomini armati.\n\nLa ciurma [ROOT.GetExploration.GetOwner.Custom('IT_ADJ_FS')] ha subito girato i tacchi ed è tornata remando furiosamente verso la nave con le canoe alle calcagna. Una delle canoe aveva aveva quasi raggiunto l'imbarcazione, ma mentre i nostri uomini si preparavano a dover combattere, la canoa ha rallentato per aspettare le altre.\n\nLa nave è riuscita a mettersi in salvo, ma alcuni marinai sono rimasti feriti: una freccia avvelenata ha colpito alla gamba uno dei nostri uomini e anche se abbiamo disinfettato la ferita con urina e olio d'oliva, non sappiamo se riuscirà a sopravvivere."
+ exploration_monthly.2.desc: "La nostra spedizione si è imbattuta in nativi ostili provenienti da [ROOT.GetExploration.GetLocation.GetName] e ciò li ha fatti scappare.\n\nAlcuni marinai erano sbarcati con delle scialuppe per rifornirsi di acqua potabile e stavano tornando alla nave quando sono apparse cinque canoe [pop.GetCulture.Custom('IT_CUL_FP')] con sopra degli uomini armati.\n\nLa ciurma [ROOT.GetExploration.GetOwner.Custom('IT_ADJ_FS')] ha subito girato i tacchi ed è tornata remando furiosamente verso la nave con le canoe alle calcagna. Una delle canoe aveva aveva quasi raggiunto l'imbarcazione, ma mentre i nostri uomini si preparavano a dover combattere, la canoa ha rallentato per aspettare le altre.\n\nLa nave è riuscita a mettersi in salvo, ma alcuni marinai sono rimasti feriti: una freccia avvelenata ha colpito alla gamba uno dei nostri uomini e anche se abbiamo disinfettato la ferita con urina e olio d'oliva, non sappiamo se riuscirà a sopravvivere."
  exploration_monthly.2.a: "Magari qualche cianfrusaglia placherà i nativi."
  exploration_monthly.2.b: "Tornate là, uccidete i nativi e prendere il loro oro!"
 
- exploration_monthly.3.title: "Straniero in terra straniera"
- exploration_monthly.3.desc: "Mentre la nostra nave si avvicina a [ROOT.GetExploration.GetLocation.GetName], molte canoe piene di doni iniziano a seguirla. Gli indigeni hanno approcciato senza paura alcuna la nostra imbarcazione e due individui dall'aria importante stanno cercando di convincere [ROOT.GetExploration.GetCharacter.GetName] a seguirli a [tribal_nation.GetCapital.GetName].\n\nNon sembrano avere cattive intenzioni, e dai nostri traduttori riusciamo a capire che siamo arrivati giusto in tempo per quella che pare essere una festività locale.\n\nA quanto pare la forma degli alberi, delle vele e delle sartie delle nostre navi assomiglia ad alcuni artefatti considerati importanti dai nativi, ed il tragitto che stavamo percorrendo attorno all'isola rispecchiava il sentiero che le loro processioni seguono durante questa festività. Questo ha convinto i nativi del nostro venire in pace—ma basta un passo falso e tutto potrebbe cambiare..."
+ exploration_monthly.3.title: "Straniero in Terra Straniera"
+ exploration_monthly.3.desc: "Mentre la nostra nave si avvicina a [ROOT.GetExploration.GetLocation.GetName], molte canoe piene di doni iniziano a seguirla. Gli indigeni hanno approcciato senza paura alcuna la nostra imbarcazione e due individui dall'aria importante stanno cercando di convincere [ROOT.GetExploration.GetCharacter.GetName] a seguirli a [tribal_nation.GetCapital.GetName].\n\nNon sembrano avere cattive intenzioni, e dai nostri traduttori riusciamo a capire che siamo arrivati giusto in tempo per quella che pare essere una festività locale.\n\nA quanto pare la forma degli alberi, delle vele e delle sartie delle nostre navi assomiglia ad alcuni artefatti considerati importanti dai nativi, ed il tragitto che stavamo percorrendo attorno all'isola rispecchiava il sentiero che le loro processioni seguono durante questa festività. Questo ha convinto i nativi del nostro venire in pace, ma basta un passo falso e tutto potrebbe cambiare..."
  exploration_monthly.3.a: "Accettate le loro tradizioni primitive."
  opinion_good_first_impression: "Buona Prima Impressione"
  exploration_monthly.3.b: "State lontano da loro e non sbarcate!"
  
  exploration_monthly.4.title: "La Via della Gloria"
- exploration_monthly.4.desc: "La vedetta aveva riferito di abitazioni sporadiche, ma senza nativi, fino a che non è stato avvistato un villaggio a [ROOT.GetExploration.GetLocation.GetName].\n\nSiamo sbarcati con una piccola avanguardia che è stata accolta caldamente dai [native_pop.GetCulture.GetName], probabilmente perché stupiti da tre marinai [explorers_pop.GetCulture.GetName] che sono alti e con una folta barba. I nativi erano sbarbati e, anche se con un po di difficoltà, ci hanno comunicato che nei loro miti è predetto che le loro divinità barbute arriveranno dal mare per visitarli.\n\nI nativi ci hanno donato cibo e tesori, e questo ha indicato a [target_character.GetName] che questo territorio è prospero e potrebbe diventare molto importante per noi."
+ exploration_monthly.4.desc: "La vedetta aveva riferito di abitazioni sporadiche, ma senza nativi, fino a che non è stato avvistato un villaggio a [ROOT.GetExploration.GetLocation.GetName].\n\nSiamo sbarcati con una piccola avanguardia che è stata accolta caldamente dalla popolazione [native_pop.GetCulture.GetName], probabilmente perché stupiti da tre marinai [explorers_pop.GetCulture.Custom('IT_CUL_MP')], alti e con una folta barba. I nativi erano sbarbati e, anche se con un po di difficoltà, ci hanno comunicato che nei loro miti è predetto che le loro divinità barbute arriveranno dal mare per visitarli.\n\nI nativi ci hanno donato cibo e tesori, e questo ha indicato a [target_character.GetName] che questo territorio è prospero e potrebbe diventare molto importante per noi."
  exploration_monthly.4.a: "Questa terra promette bene!"
 
  exploration_monthly.5.title: "La Nave verso l'Estate"
  exploration_monthly.5.desc: "Le parole di Cristoforo Colombo descrivono perfettamente la tribù che abbiamo trovato: 'Hanno commerciato con noi e ci hanno dato tutto quello che avevano, senza remora alcuna... si sforzavano continuamente di compiacerci... Sono molto mansueti e non conoscono la malvagità, né sanno rubare o uccidere... Vostra Altezza deve credermi quando dico che in tutto il mondo non esiste un popolo migliore... Amano il loro prossimo come loro stessi, sanno lusingare come nessun altro e sono miti, sempre contenti immersi nelle loro risate.'"
  exploration_monthly.5.a: "Approfittatevi di loro!"
- angry_natives: "Ci avete sfruttato!"
+ angry_natives: "Sfruttati!"
  exploration_monthly.5.b: "Assecondate la loro gentilezza."
  friendly_natives: "Incontro Amichevole"
 
  exploration_monthly.6.title: "Passeggero Indesiderato"
- exploration_monthly.6.desc: "Il villaggio vicino a [ROOT.GetExploration.GetLocation.GetName] è abbandonato da diverso tempo, i campi aridi mostrano i segni di una siccità che ha duramente colpito questa terra.\n\nMentre la spedizione stava tornando alla loro nave, sono rimasti impietriti alla vista di uno dei più grandi orsi che avessero mai visto che cercava di salire sopra a barca!\n\nI marinai hanno deciso di catturare la bestia, che stava morendo di fame, sperando di riuscire a portarla indietro con loro al [ROOT.GetExploration.GetOwner.GetLongName].\n\nLo aggiogarono e portarono a bordo, ma l'orso riuscì a liberarsi dai legacci e l'equipaggio non ebbe altra scelta che ucciderlo. Questo attacco e lo stato di devastazione in cui abbiamo trovato [ROOT.GetExploration.GetLocation.GetProvince.GetName] ha fatto giungere [target_character.GetName] alla conclusione che questa parte di [ROOT.GetExploration.GetArea.GetName] è una causa persa."
+ exploration_monthly.6.desc: "Il villaggio vicino a [ROOT.GetExploration.GetLocation.GetName] è abbandonato da diverso tempo, i campi aridi mostrano i segni di una siccità che ha duramente colpito questa terra.\n\nMentre la spedizione stava tornando alla loro nave, sono rimasti impietriti alla vista di uno dei più grandi orsi che avessero mai visto che cercava di salire sopra a barca!\n\nI marinai hanno deciso di catturare la bestia, che stava morendo di fame, sperando di riuscire a portarla indietro con loro [ROOT.GetExploration.GetOwner.Custom('IT_NEL_RANGO')][ROOT.GetExploration.GetOwner.GetLongName].\n\nLo aggiogarono e portarono a bordo, ma l'orso riuscì a liberarsi dai legacci e l'equipaggio non ebbe altra scelta che ucciderlo. Questo attacco e lo stato di devastazione in cui abbiamo trovato [ROOT.GetExploration.GetLocation.GetProvince.GetName] ha fatto giungere [target_character.GetName] alla conclusione che questa parte di [ROOT.GetExploration.GetArea.GetName] è una causa persa."
  exploration_monthly.6.a: "Questo è un vero peccato."
 
  exploration_monthly.7.title: "Le Verdi Colline di [ROOT.GetExploration.GetLocation.GetNameWithNoTooltip]"
  exploration_monthly.7.desc: "I nativi a [ROOT.GetExploration.GetLocation.GetName] sono rimasti affascinati dalle perline di vetro, campane d'ottone e dai vestiti che [target_character.GetName] ha scambiato con loro per carne di cervo e pesce fresco. Le persone sembravano molto povere e miti.\n\nHanno lasciato tutti le loro case per una notte, permettendo ai membri della spedizione di esplorare il villaggio. Non abbiamo trovato molto, ma un piccolo sonaglio d'oro che era nascosto tra le reti da pesca ci dice che [ROOT.GetExploration.GetArea.GetName] potrebbe avere del potenziale per noi."
  exploration_monthly.7.a: "Bene!"
 
- exploration_monthly.8.title: "Al di là di questo Orizzonte"
+ exploration_monthly.8.title: "Al di Là di Questo Orizzonte"
  exploration_monthly.8.desc: "Mentre la nostra nave stava ormeggiata sulla costa di [ROOT.GetExploration.GetLocation.GetName], una coppia di nativi [ROOT.GetExploration.GetLocation.GetDominantCulture.GetName] si è avvicinata con le loro canoe alla barca.\n\nL'equipaggio li ha invitati a bordoo dopo che si sono scambiati segnali di intenzioni pacifiche reciproche, offrendo poi cibo e bevande ai nativi prima che questi tornassero indietro con la loro canoa.\n\nIncoraggiati dal resoconto di questo primo incontro pacifico, altre sei canoe si sono poi avvicinate alla caravella."
  exploration_monthly.8.a: "Ci hanno dato molte informazioni!"
 
@@ -47,25 +47,25 @@
  exploration_monthly.10.a: "Prendete ciò che riuscite ed andatevene!"
 
  exploration_monthly.11.title: "[ROOT.GetExploration.GetNameWithNoTooltip]"
- exploration_monthly.11.desc: "Durante i lunghi mesi che abbiamo speso sondando il terreno attorno a [marriage_location.GetName], il nostro esploratore [ROOT.GetExploration.GetCharacter.GetName] si è molto avvicinato ad una famiglia di popolani [bride_pop.GetCulture.GetName], ed in particolare alla loro figlia, [bride.GetName], che non è ancora sposata.\n\nDiventare parte di una famiglia autoctona aiuterà certamente la spedizione."
+ exploration_monthly.11.desc: "Durante i lunghi mesi che abbiamo speso sondando il terreno attorno a [marriage_location.GetName], il nostro esploratore [ROOT.GetExploration.GetCharacter.GetName] si è molto avvicinato ad una famiglia [bride_pop.GetCulture.GetName] di popolani, ed in particolare alla loro figlia, [bride.GetName], che non è ancora sposata.\n\nDiventare parte di una famiglia autoctona aiuterà certamente la spedizione."
  exploration_monthly.11.a: "Il cappellano della spedizione officerà il matrimonio."
- exploration_monthly.11.b: "Segui le usanze di matrimonio locali."
+ exploration_monthly.11.b: "SeguiTE le usanze di matrimonio locali."
  exploration_monthly.11.c: "Non è il momento di innamorarsi."
 
  exploration_monthly.12.title: "Esploratore Ubriaco"
- exploration_monthly.12.desc: "Uno dei membri della nostra spedizione, proprio [target_character.GetName] tra tutti, si è messo in una situazione tremendamente imbarazzante [target_character.GetHerselfHimself] quando ha sovrastimato la sua capacità di reggere il liquore fruttato che i nativi di [ROOT.GetExploration.GetLocation.GetName] distillano.\n\nI dettagli peggiori non saranno discussi in questa relazione, ma [target_character.GetHeShe] è stato davvero male per molto tempo. I nativi hanno pensato che fosse una cosa divertente, prendendosi gioco della sua condizione, ma le dicerie nate sull'accaduto hanno raggiunto le orecchie dell'alta società di [ROOT.GetExploration.GetOwner.GetName] che non tollera questo tipo di comportamento."
- exploration_monthly.12.a: "Liquore alla frutta? Ne hai portato un po' indietro?"
+ exploration_monthly.12.desc: "Uno dei membri della nostra spedizione, proprio [target_character.GetName] tra tutti, si è messo in una situazione tremendamente imbarazzante quando ha sovrastimato la sua capacità di reggere il liquore fruttato che i nativi di [ROOT.GetExploration.GetLocation.GetName] distillano.\n\nI dettagli peggiori non saranno discussi in questa relazione, ma [target_character.GetHeShe] è stato davvero male per molto tempo. I nativi hanno pensato che fosse una cosa divertente, prendendosi gioco della sua condizione, ma le dicerie nate sull'accaduto hanno raggiunto le orecchie dell'alta società [ROOT.GetExploration.GetOwner.Custom('IT_Di')][ROOT.GetExploration.GetOwner.GetName] che non tollera questo tipo di comportamento."
+ exploration_monthly.12.a: "Liquore alla frutta? Ne avete portato un po' indietro?"
  STATIC_MODIFIER_NAME_drunken_explorer: "Esploratore Ubriaco"
 
  
  exploration_monthly.16.title: "Saccheggiatore di Templi"
- exploration_monthly.16.desc: "Dopo essere stato invitato ad un sito religioso di [ROOT.GetExploration.GetLocation.GetName], la cupidigia di [target_character.GetName] ha preso il sopravvento.\n\nNel momento in cui i sacerdoti [pop.GetReligion.GetName] hanno distolto lo sguardo, si è messo il loro prezioso artefatto nella sua giacca ed è scappato ancora prima che loro si rendessero conto della sua scomparsa."
+ exploration_monthly.16.desc: "Dopo essere stato invitato ad un sito religioso di [ROOT.GetExploration.GetLocation.GetName], la cupidigia di [target_character.GetName] ha preso il sopravvento.\n\nNel momento in cui i sacerdoti hanno distolto lo sguardo, si è messo la loro preziosa reliquia [pop.GetReligion.GetAdjective] nella giacca ed è scappato ancora prima che loro si rendessero conto della sua scomparsa."
  exploration_monthly.16.a: "$common_string_it_belongs_in_a_museum$"
 
  
  exploration_monthly.17.title: "Un Passaggio in Canoa"
- exploration_monthly.17.desc: "Un gruppo di cacciatori [pop.GetCulture.GetName] ha aiutato la spedizione di [target_character.GetName] a [ROOT.GetExploration.GetArea.GetName] trasportando il suo equipaggio sopra alcune strane canoe, sia sul fiume che lungo la linea costiera."
- exploration_monthly.17.a: "E' sempre meglio esplorare assieme ai nativi!"
+ exploration_monthly.17.desc: "Un gruppo di cacciatori [pop.GetCulture.Custom('IT_CUL_MP')] ha aiutato la spedizione di [target_character.GetName] a [ROOT.GetExploration.GetArea.GetName] trasportando il suo equipaggio sopra alcune strane canoe, sia sul fiume che lungo la linea costiera."
+ exploration_monthly.17.a: "È sempre meglio esplorare assieme ai nativi!"
 
  
  exploration_monthly.18.title: "Mare Piatto"
@@ -74,18 +74,18 @@
 
  
  exploration_monthly.19.title: "Scoperta Naturale"
- exploration_monthly.19.desc: "Mentre viaggiava per [ROOT.GetExploration.GetArea.GetName] il nostro esploratore, lo scienziato naturale [target_character.GetName] dice che ha fatto una scoperta significativa sulla flora autoctona.\n\nNon è esattamente chiaro di cosa si tratti al momento, ma ciò che è certo è che gli serve molto più tempo per scrivere una relazione dettagliata."
+ exploration_monthly.19.desc: "Mentre viaggiava per [ROOT.GetExploration.GetArea.GetName], il nostro esploratore, lo scienziato naturale [target_character.GetName], dice di aver fatto una scoperta significativa sulla flora autoctona.\n\nNon è esattamente chiaro di cosa si tratti al momento, ma ciò che è certo è che gli serve molto più tempo per scrivere una relazione dettagliata."
  exploration_monthly.19.a: "Questo farà progredire le scienze naturali."
  exploration_monthly.19.b: "Dobbiamo seguire gli ordini e i tempi della spedizione."
 
  exploration_monthly.20.title: "Voci nella Notte"
- exploration_monthly.20.desc: "Mentre viaggiavamo per [ROOT.GetExploration.GetArea.GetName], tra i membri della spedizione c'era un dubbio sull'abilità di [target_character.GetName] di orientarsi. Persino i nativi [pop.GetCulture.GetName] di [ROOT.GetExploration.GetLocation.GetName] hanno detto che i loro spiriti ancestrali li hanno avvisati di non andare nella direzione in cui stiamo andando.\n\nQueste voci sono state messe a tacere all'inzio, ma poi si è svegliato dicendo che gli spiriti in persona lo hanno visitato durante la notte, intimandogli di cambiare rotta. Non possiamo negare i segni a questo punto, ma ci servirebbero altri fondi per proseguire con una rotta diversa, che sarebbe più difficile da percorrere e necessita di ulteriori provviste ed equipaggiamento."
+ exploration_monthly.20.desc: "Mentre viaggiavamo per [ROOT.GetExploration.GetArea.GetName], tra i membri della spedizione c'era un dubbio sull'abilità di [target_character.GetName] di orientarsi. Persino la popolazione nativa [pop.GetCulture.GetName] di [ROOT.GetExploration.GetLocation.GetName] hanno detto che i loro spiriti ancestrali li hanno avvisati di non andare nella direzione in cui stiamo andando.\n\nQueste voci sono state messe a tacere all'inzio, ma poi si è svegliato dicendo che gli spiriti in persona lo hanno visitato durante la notte, intimandogli di cambiare rotta. Non possiamo negare i segni a questo punto, ma ci servirebbero altri fondi per proseguire con una rotta diversa, che sarebbe più difficile da percorrere e necessita di ulteriori provviste ed equipaggiamento."
  exploration_monthly.20.a: "I suoi istinti non ci hanno mai tradito fino ad ora."
  exploration_monthly.20.b: "Voci degli spiriti? Non siamo ridicoli."
 
  exploration_monthly.21.title: "Traduttore Talentuoso"
- exploration_monthly.21.desc: "L'esplorazione in [ROOT.GetExploration.GetArea.GetName] è rimasta in stallo, ma di recente l'accampamento di [ROOT.GetExploration.GetCharacter.GetName] è stato raggiunto da un membro dei [pop.GetCulture.GetName], che parlava un [ROOT.GetExploration.GetOwner.GetCulture.GetLanguage.GetName] ancora stentato, ma comprensibile. Dice che una persona [ROOT.GetExploration.GetOwner.GetCulture.GetName] ha visitato il suo villaggio molti anni fa quando era piccolo, e ha imparato la lingua in quel periodo. Si offre di aiutarci a stabilire ulteriori contatti con il suo popolo e dice che potrebbe aiutarci a creare un dizionario della sua lingua, dicendo che sarebbe uno strumento molto utile per noi."
- exploration_monthly.21.a: "Sostieni il dizionario."
+ exploration_monthly.21.desc: "L'esplorazione in [ROOT.GetExploration.GetArea.GetName] è rimasta in stallo, ma di recente l'accampamento di [ROOT.GetExploration.GetCharacter.GetName] è stato raggiunto da un membro della popolazione [pop.GetCulture.GetName], che parlava una lingua [ROOT.GetExploration.GetOwner.GetCulture.GetLanguage.GetName] ancora stentata, ma comprensibile. Dice che una persona [ROOT.GetExploration.GetOwner.GetCulture.GetName] ha visitato il suo villaggio molti anni fa quando era piccolo, e ha imparato la lingua in quel periodo. Si offre di aiutarci a stabilire ulteriori contatti con il suo popolo e dice che potrebbe aiutarci a creare un dizionario della sua lingua, dicendo che sarebbe uno strumento molto utile per noi."
+ exploration_monthly.21.a: "Aiutate con il dizionario."
  exploration_monthly.21.b: "Non ce n'è bisogno."
  exploration_monthly.21.c: "Quel traduttore ci servirebbe in patria."
  exploration_monthly.21.b.tt: "[translator.GetName] si unirà alla nostra corte."
@@ -95,7 +95,7 @@
  exploration_monthly.22.a: "Salpate!"
 
  exploration_monthly.23.title: "Collina del Vento"
- exploration_monthly.23.desc: "Esplorando [ROOT.GetExploration.GetArea.GetName], [target_leader.GetName] ha trovato una collina a [target_location.GetName] con una vetta abbastanza piatta. Dice che dalla cima c'è una postazione molto vantaggiosa per tenere sotto controllo tutta l'area circostante. E' anche un buon punto dove stabilire un campo base e servirebbe sia come punto di guardia sia come un punto di riferimento facile da individuare. [target_leader.GetNameWithNoTooltip] ha detto che se gli diamo le giuste risorse costruirà una struttura permanente che serva come torre di guardia. Dice che la capacità di vedere tutta l'area circostante da lassù migliorerebbe di molto anche la sua logistica."
+ exploration_monthly.23.desc: "Esplorando [ROOT.GetExploration.GetArea.GetName], [target_leader.GetName] ha trovato una collina a [target_location.GetName] con una vetta abbastanza piatta. Dice che dalla cima c'è una postazione molto vantaggiosa per tenere sotto controllo tutta l'area circostante. È anche un buon punto dove stabilire un campo base e servirebbe sia come punto di guardia sia come un punto di riferimento facile da individuare. [target_leader.GetNameWithNoTooltip] ha detto che se gli diamo le giuste risorse costruirà una struttura permanente che serva come torre di guardia. Dice che la capacità di vedere tutta l'area circostante da lassù migliorerebbe di molto anche la sua logistica."
  exploration_monthly.23.a: "Costruiamo la torre di guardia."
  exploration_monthly.23.b: "Non ce n'è bisogno."
 
@@ -107,7 +107,7 @@
  exploration_monthly.24.b.tt: "[explorer.GetNameWithNoTooltip] si prenderà cura del cane, forse pure troppo."
  STATIC_MODIFIER_NAME_friendly_dog: "Cane Amichevole"
 
- exploration_monthly.25.title: "Il Mare più Calmo"
+ exploration_monthly.25.title: "Un Mare più Calmo"
  exploration_monthly.25.desc: "[target_explorer.GetName] e la sua nave sono bloccate nel mare di [ROOT.GetExploration.GetArea.GetName] da diverso tempo, senza venti o correnti a spingerli. I viveri cominciano a scarseggiare e l'equipaggio inizia ad agitarsi sempre di più. Alcuni degli animali che avevano con loro sono gia stati mangiati o buttati fuori bordo per ridurre il consumo d'acqua. Se non cambia la situazione, non sappiamo quanto tempo riusciranno a resistere."
  exploration_monthly.25.a: "Dobbiamo affidarci ad un potere più grande."
  exploration_monthly.25.b: "Deve esserci qualcosa che possiamo fare, provate la qualunque."
@@ -118,25 +118,25 @@
  exploration_monthly.26.b: "I gabbiano volano verso il mare per andarci a morire, no?"
 
  exploration_monthly.27.title: "Ammutinamento!"
- exploration_monthly.27.desc: "Tensioni tra [target_explorer.GetName] e la sua ciurma sono aumentate ultimamente. Lo scontento generale per la leadership di [target_explorer.GetShortNameWithNoTooltip] si è intensificato, tra sussurri e sguardi sotto-coperta. Il suo disinteresse per la situazione si è rivelata la sua rovina, perché l'equipaggio si è organizzato in un vero e proprio ammutinamento."
- exploration_monthly.27.a: "Cammina pure sull'asse!"
- exploration_monthly.27.b: "Migliora le condizioni dell'equipaggio."
- exploration_monthly.27.c: "Risolvi la situazione diplomaticamente."
+ exploration_monthly.27.desc: "Le tensioni tra [target_explorer.GetName] e la sua ciurma sono aumentate ultimamente. Lo scontento generale per la leadership di [target_explorer.GetShortNameWithNoTooltip] si è intensificato, tra sussurri e sguardi sotto-coperta. Il suo disinteresse per la situazione si è rivelata la sua rovina, perché l'equipaggio si è organizzato in un vero e proprio ammutinamento."
+ exploration_monthly.27.a: "Questa è l'asse che fa per voi!"
+ exploration_monthly.27.b: "Miglioriamo le condizioni dell'equipaggio."
+ exploration_monthly.27.c: "Risolviamo la situazione diplomaticamente."
  exploration_monthly.27.d: "Se volete un bagno di sangue, lo avrete."
 
  exploration_monthly.28.title: "Competizione di Pesca"
- exploration_monthly.28.desc: "La ciurma che sta navigando a [ROOT.GetExploration.GetArea.GetName] ha sviluppato una distrazione curiosa. E' normale che i marinai peschino mentre sono in viaggio per recuperare qualche razione in più, ma quelli che accompagnano [target_explorer.GetName] lo hanno trasformato in una vera e propria competizione.\n\nTengono una classifica che non dipende solo dalla quantità, ma anche del peso del pesce pescato, e perfino del suo tipo. Specie differenti danno ammontari differenti di punti, e non sempre il più grande vale di più. Tengono una tavola sul ponte dove sono segnati i punteggi, e alla fine di ogni settimana ci sono dei premi. Chi ha il punteggio più alto potrà sceglie per primo le razioni della settimana.\n\nMentre è importante tenere alto il morale, non si può negare che ci stiano dedicando più tempo di quanto dovrebbero, ed il funzionamento della spedizione stessa potrebbe risentirne."
- exploration_monthly.28.a: "Lasciali divertire."
+ exploration_monthly.28.desc: "La ciurma che sta navigando a [ROOT.GetExploration.GetArea.GetName] ha sviluppato una distrazione curiosa. È normale che i marinai peschino mentre sono in viaggio per recuperare qualche razione in più, ma quelli che accompagnano [target_explorer.GetName] lo hanno trasformato in una vera e propria competizione.\n\nTengono una classifica che non dipende solo dalla quantità, ma anche del peso del pesce pescato, e perfino del suo tipo. Specie differenti danno ammontari differenti di punti, e non sempre il più grande vale di più. Tengono una tavola sul ponte dove sono segnati i punteggi, e alla fine di ogni settimana ci sono dei premi. Chi ha il punteggio più alto potrà sceglie per primo le razioni della settimana.\n\nMentre è importante tenere alto il morale, non si può negare che ci stiano dedicando più tempo di quanto dovrebbero, ed il funzionamento della spedizione stessa potrebbe risentirne."
+ exploration_monthly.28.a: "Lasciateli divertire."
  exploration_monthly.28.b: "Finche continuano a lavorare."
- exploration_monthly.28.c: "Proibisci ogni tipo di competizione di pesca."
+ exploration_monthly.28.c: "Proibite ogni tipo di competizione di pesca."
 
  exploration_monthly.29.title: "Lezioni di Nuoto"
  exploration_monthly.29.desc: "Esplorando la costa di [ROOT.GetExploration.GetArea.GetName], è stato presentato a [target_explorer.GetName] un problema. Anche se stanno molto tempo in mare, molti marinai non sanno nuotare e al contrario sono abituati alla vista di corpi annegati. Per questo, la paura di annegare regna sovrana.\n\nPer affrontarla, considerato che le spiagge di [ROOT.GetExploration.GetArea.GetNameWithNoTooltip] offrono un'ottima opportunità di fare pratica, uno dei membri dell'equipaggio che sa nuotare ha offerto a [target_explorer.GetShortNameWithNoTooltip] la possibilità di tenere lezioni di nuoto. Nonostante i ritardi che comporterebbe nellaa spedizione, queste lezioni garantirebbero la sicurezza della ciurma, almeno nelle loro teste."
- exploration_monthly.29.a: "Fai tenere le lezioni."
- exploration_monthly.29.b: "E' una perdita di tempo."
+ exploration_monthly.29.a: "Procedete con le lezioni."
+ exploration_monthly.29.b: "È una perdita di tempo."
 
  exploration_monthly.30.title: "Delfini a [ROOT.GetExploration.GetArea.GetNameWithNoTooltip]"
- exploration_monthly.30.desc: "Esplorando [ROOT.GetExploration.GetArea.GetName] la ciurma ha ricevuto una sorpresa. Un pod di delfini ha cominciato a seguire la nave, accompagnandola mentre navigava. Se non è strano per i delfini nuotare attorno alle navi, questo pod nello specifico sta seguendo la spedizione da diverso tempo, stando vicino alla barca da molti giorni. I marinai hanno iniziato anche ad indentificare i vari membri del pod e chiamarli per nome."
+ exploration_monthly.30.desc: "Esplorando [ROOT.GetExploration.GetArea.GetName] la ciurma ha ricevuto una sorpresa. Un branco di delfini ha cominciato a seguire la nave, accompagnandola mentre navigava. Se non è strano per i delfini nuotare attorno alle navi, questo branco nello specifico sta seguendo la spedizione da diverso tempo, stando vicino alla barca da molti giorni. I marinai hanno iniziato anche ad indentificare i vari membri del branco e chiamarli per nome."
  exploration_monthly.30.a: "Ci porteranno sicuramente fortuna."
  exploration_monthly.30.b: "Sarà facile cacciarli per la carne."
 
@@ -155,11 +155,11 @@
  exploration_monthly.33.title: "Cartografo a Bordo"
  exploration_monthly.33.desc: "La spedizione di [target_explorer.GetName] a [ROOT.GetExploration.GetArea.GetName] procede come previsto, ma pensa che la sua attitudine nel disegnare mappe non stia venendo utilizzata del tutto. Ci ha mandato una petizione per aumentare i suoi fondi,  così che possa darci in campio mappe migliori e più dettagliate."
  exploration_monthly.33.a: "Con piacere, ci fa piacere avere mappe migliori."
- exploration_monthly.33.b: "E' troppo costoso."
+ exploration_monthly.33.b: "È troppo costoso."
 
  exploration_monthly.34.title: "Rocce Pericolose"
  exploration_monthly.34.desc: "Esplorando [ROOT.GetExploration.GetArea.GetName], la nave di [target_explorer.GetName] ha trovato una sezione di costa protetta da rocce basse e taglienti. Potrebbero essere evitate facilmente, ma vorrebbe dire deviare il percorso di molto per non incrociarle, ritardando la spedizione. Tuttavia, è improbabile che la nave esca illesa da una traversata attraverso quelle acque pericolose."
- exploration_monthly.34.a: "E' meglio cercare di aggirarle."
+ exploration_monthly.34.a: "È meglio cercare di aggirarle."
  exploration_monthly.34.b: "Navighiamoci sopra, ripareremo i danni più tardi."
 
  exploration_monthly.35.title: "Vecchio Relitto"
@@ -177,16 +177,16 @@
  exploration_monthly.37.a: "Le storie di fantasmi non hanno senso."
  exploration_monthly.37.b: "Stiamo attenti in ogni caso."
 
- exploration_monthly.38.title: "Scoperta di un Mondo Nuovo!"
+ exploration_monthly.38.title: "Scoperta di un Nuovo Mondo!"
  exploration_monthly.38.desc: "Dopo un lungo e faticoso viaggio, una delle nostre spedizioni è tornata a [target_root_country.GetName] con un messaggio miracoloso. Sono sbarcati su una piccola isola dove hanno incontrato persone che indossavano ornamenti d'oro e parlavano lingue sconosciute. Secondo i loro rapporti, potrebbe essere una rotta alternativa verso le Indie, ma alcuni hanno cominciato a discutere se possa essere un continente sconosciuto. Potremmo iniziare a stabilire alcuni avamposti su quelle isole per creare i primi passi verso una colonia e ulteriori esplorazioni nell'area."
  exploration_monthly.38.a: "[target_root_country.Custom('common_string_positive')]"
 
  exploration_monthly.39.title: "Insetti Infernali"
  exploration_monthly.39.desc: "Gli incessanti attacchi da sciami di moschere nere hanno costretto la spedizione a tornare da [ROOT.GetExploration.GetLocation.GetName].\n\nI nostri esploratori hanno trovato una grande pianura con diversi fiumi e torrenti che fluiscono in una gigantesca baia d'acqua salata.\n\nPer loro sfortuna, quando si sono avvicinati alla costa sono stati assaliti da degli infiniti sciami di moscerini che li mordevano per succhiarne il sangue. Dopo molte punture sono stati costretti a ritirarsi e adesso chiedono di poter esplorare una strada diversa per poter proseguire."
  exploration_monthly.39.a: "[target_root_country.Custom('common_string_positive')]"
- exploration_monthly.39.b: "Torna subito lì!"
+ exploration_monthly.39.b: "Tornate subito lì!"
 
- exploration_monthly.40.desc: "Guidati dalla ricerca di nuove terre e di misteri irrisolti, esploratori provenienti da [target_root_country.GetName] sono arrivati su coste lontane. Queste terre sono abitate da indigeni, che parlano lingue sconosciute e sono adornati con ornamenti particolari. Questa scoperta porta a più domande che risposte e potrebbe cambiare il corso della storia in modo inaaspettato. Un nuovo mondo aspetta, pieno di potenziale e di sfide ancora coperte nel mistero."
+ exploration_monthly.40.desc: "Guidati dalla ricerca di nuove terre e di misteri irrisolti, esploratori provenienti target_root_country.Custom('IT_Dalla')][target_root_country.GetName] sono arrivati su coste lontane. Queste terre sono abitate da indigeni, che parlano lingue sconosciute e sono adornati con ornamenti particolari. Questa scoperta porta a più domande che risposte e potrebbe cambiare il corso della storia in modo inaaspettato. Un nuovo mondo aspetta, pieno di potenziale e di sfide ancora coperte nel mistero."
  exploration_monthly.40.a: "Non potevo vivere in un momento migliore!"
  exploration_monthly.40.historical_info: "Nel 1492, Cristoforo Colombo è salpato sperando di trovare una nuova rotta per l'Asia. Invece, è finito nelle Americhe, una terra che era la casa di milioni di indigeni. Questo momento ha significato l'inizio delle esplorazione e colonizzazione europea del #italic Nuovo Mondo#!, cambiando per sempre la storia del mondo. Portò nuove opportunità, ma anche devastazione, poiché le popolazioni native dovettero affrontare la conquista, le malattie e la distruzione culturale. Questa scoperta porterà alla connessione di due mondi, trasformando le società e la bilancia globale del potere in modi mai visti prima."
 
