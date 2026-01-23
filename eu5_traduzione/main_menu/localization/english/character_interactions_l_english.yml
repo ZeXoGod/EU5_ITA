@@ -56,10 +56,10 @@
  marry_lowborn: "Sposa un Popolano"
  marry_lowborn_concept: "[marriage|E]"
  marry_lowborn_act: "$marry_lowborn$"
- marry_lowborn_desc_specific: "[SCOPE.sCharacter('recipient').GetName] sposerà un [lowborn|e], con disonore per il [actor.GetFlavorRank]."
+ marry_lowborn_desc_specific: "[SCOPE.sCharacter('recipient').GetName] sposerà un personaggio [lowborn|e], con grande vergogna per [actor.Custom('IT_ART_RANGO')][actor.GetFlavorRank]."
  marry_lowborn_desc: "Il [character|e] sposerà una persona [lowborn|e]."
  marry_lowborn_past: "[SCOPE.sCharacter('recipient').GetName] ha disonorato [SCOPE.sCharacter('recipient').GetHerselfHimself]!"
- marry_lowborn_act_past: "[SCOPE.sCharacter('recipient').GetName] ha sposato un [lowborn|e]."
+ marry_lowborn_act_past: "[SCOPE.sCharacter('recipient').GetName] ha sposato una persona [lowborn|e]."
  
  tribal_arrange_marriage: "Matrimonio Combinato"
  tribal_arrange_marriage_concept: "[marriage|E]"

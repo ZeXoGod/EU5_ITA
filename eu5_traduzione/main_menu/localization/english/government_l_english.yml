@@ -741,7 +741,7 @@
  strengthen_government_action_progress_tooltip: "Dà [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect] @[SCOPE.sCountry('actor').GetGovernmentPowerKey]! [SCOPE.sCountry('actor').GetGovernmentPowerConcept] ogni mese, con un cambiamento totale di [SCOPE.sCountry('actor').GetCurrencyBalance('government_power')|+=2].\nCi vorrebbero #W [SCOPE.sCountry('actor').GetCurrencyMonthsToMax('government_power')]#! mesi per raggiungere il massimo."
 
  integrate_province: "Integrare la Provincia"
- integrate_province_desc: "Quando abbiamo conquistato una [province|e], dobbiamo [Concept('integrate', 'Integrarla')|e] prima che diventi parte del nostro [country|e]. Se non viene integrata, i [pops|e] nella provincia potrebbero [Concept('rebel', 'Ribellarsi')|e]."
+ integrate_province_desc: "Quando conquistiamo una [province|e], dobbiamo [Concept('integrate', 'Integrarla')|e] prima che diventi parte del nostro [country|e]. Se non viene integrata, i [pops|e] nella provincia potrebbero [Concept('rebel', 'Ribellarsi')|e]."
  integrate_province_action: "Integra [SCOPE.sProvince('target').GetNameWithNoTooltip]."
  integrate_province_select_province: "Seleziona la [province|e] da [integrate|e]:"
  integrate_province_active: "Integrazione di [SCOPE.sProvince('target').GetNameWithHighlightOnly]"
@@ -753,7 +753,7 @@
  integrate_province_action_progress_tooltip_2: "Crescita del progresso in [SCOPE.sProvince('target').GetNumIntegrationLocations|V0] [locations]:\n[SCOPE.sProvince('target').GetNumIntegrationLocationsBreakdown]"
 
  integrate_area: "Integrare l'Area"
- integrate_area_desc: "Quando abbiamo conquistato un'[area|e], dobbiamo [Concept('integrate', 'Integrarla')|e] la prima che diventi parte del nostro [country|e]. Se non viene integrata, i [pops|e] nell'area potrebbero [Concept('rebel', 'Ribellarsi')|e]."
+ integrate_area_desc: "Quando conquistiamo un'[area|e], dobbiamo [Concept('integrate', 'Integrarla')|e] la prima che diventi parte del nostro [country|e]. Se non viene integrata, i [pops|e] nell'area potrebbero [Concept('rebel', 'Ribellarsi')|e]."
  integrate_area_action: "Integra [SCOPE.sArea('target').GetNameWithNoTooltip]"
  integrate_area_select_area: "Seleziona l'[area|e] da [integrate|e]:"
  integrate_area_active: "Integrazione di [SCOPE.sArea('target').GetNameWithHighlightOnly]"

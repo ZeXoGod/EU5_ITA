@@ -48,13 +48,13 @@
  VEGETATION_MODIFIER: "[vegetation|e] $VEGETATION$"
  TOPOGRAPHY_MODIFIER: "[topography|e] $TOPOGRAPHY$"
  CLIMATE_MODIFIER: "[climate|e] $CLIMATE$"
- LOCATION_RANK_MODIFIER: "[location_rank|e] $LOCATION_RANK$"
+ LOCATION_RANK_MODIFIER: "$LOCATION_RANK$ ([location_rank|e])"
  SUBJECT_TYPE_OVERLORD_MODIFIER_LOC: "[subjects|e] $SUBJECT_TYPE$"
  SUBJECT_TYPE_IS_SUBJECT_MODIFIER_LOC: "È uno $SUBJECT_TYPE$ [subject_type|e]"
 
  RELIGIONGROUP_MODIFIER: "[religion_group|e]: $NAME$"
 
- CULTURE_TOTAL_WORSHIPPERS: "Attualmente ci sono [Culture.GetTotalPopulation|G] [pops|e] [Culture.GetNameWithNoTooltip] nel mondo."
+ CULTURE_TOTAL_WORSHIPPERS: "Attualmente ci sono [Culture.GetTotalPopulation|G] [pops|e] [Culture.Custom('IT_CUL_MP')] nel mondo."
  COUNTRY_TOOLTIP_CULTURE_PRIMARY: "[CULTURE.GetNameWithNoTooltip] è la [primary_culture|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetNameWithFlag]"
  COUNTRY_TOOLTIP_CULTURE_ACCEPTED: "[CULTURE.GetNameWithNoTooltip] è una [accepted_culture|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetNameWithFlag]"
  COUNTRY_TOOLTIP_CULTURE_TOLERATED: "[CULTURE.GetNameWithNoTooltip] è una [tolerated_culture|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetNameWithFlag]"
@@ -159,8 +159,8 @@
  #########
 
   DIALECT_AND_LANGUAGE: "$DIALECT$ ($LANGUAGE$)"
- LANGUAGE_AND_DIALECT: "$LANGUAGE$ ($DIALECT$ [dialect|e])"
- DIALECT_TT_LANGUAGE: "[dialect|e] della [Dialect.GetLanguage.GetName] [language|e]"
+ LANGUAGE_AND_DIALECT: "$LANGUAGE$ ([dialect|e] $DIALECT$)"
+ DIALECT_TT_LANGUAGE: "[dialect|e] della [language|e] [Dialect.GetLanguage.GetName]"
  LANGUAGE_POWER_TT: "[language_power|E]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2L%$#!"
  THE_CULTURE_OVERVIEW_TITLE: "[culture|e] [CountryCultureLateralView.GetCountry.Custom('IT_In')][CountryCultureLateralView.GetCountry.GetNameWithNoTooltip]"
  COUNTRIES_WITH_CULTURE_LABEL: "Paesi con [culture|e] [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip]"
