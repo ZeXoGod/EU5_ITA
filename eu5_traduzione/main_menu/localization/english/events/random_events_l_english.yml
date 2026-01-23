@@ -154,7 +154,7 @@
  random_event.37.desc: "Alcuni membri locali [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in [uppity_peasants.GetName] hanno talmente turbato e maltrattato i loro sudditi che una delegazione [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] si è presentata davanti [target_ruler.Custom('IT_AL_TITOLO')][target_ruler.GetName] per chiedere un risarcimento. Soddisfare questa richiesta sarebbe ben accetto [ROOT.GetCountry.Custom('IT_PEASANTS_DAL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')], ma sarebbe visto [ROOT.GetCountry.Custom('IT_NOBLES_DAL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] come una violazione della propria autorità."
  random_event.37.a: "Accettiamo la petizione."
  random_event.37.b: "Rifiutiamo la petizione."
- random_event.37.b.tt: "Questo farà sì che [ROOT.GetCountry.Custom('IT_PEASANTS_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_PEASANTS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] in [uppity_peasants.GetName] perda il [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] di [pop_satisfaction|e]."
+ random_event.37.b.tt: "Questo farà perdere [ROOT.GetCountry.Custom('IT_PEASANTS_AL_NOSTRO')][ROOT.GetCountry.Custom('IT_PEASANTS_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] in [uppity_peasants.GetName] il [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] di [pop_satisfaction|e]."
  random_event.38.title: "Una Famiglia Prestigiosa Chiede Aiuto"
  random_event.38.desc: "Una delle famiglie più potenti [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], appartenente [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], nonostante la sua vasta ricchezza terriera, è riuscita ad accumulare debiti significativi che sta trovando difficile ripagare. Si sono rivolti [target_ruler.Custom('IT_AL_TITOLO')][target_ruler.GetName] per chiedere aiuto, sperando che la loro lunga storia di lealtà alla famiglia [target_ruler.GetDynasty.GetName] e le loro promesse di supporto eterno l[target_ruler.Custom('IT_ART_O_A')] convincano ad aiutarli nel momento del bisogno."
  random_event.38.a: "Concediamo loro aiuto."
@@ -336,7 +336,7 @@
  random_event.81.a: "La spada è più forte del libro."
  random_event.82.title: "Diplomazia Competente!"
  random_event.82.desc: "Dopo aver profuso qualche sforzo nel comunicare con i suoi colleghi, il duro lavoro [target_ruler.Custom('IT_DEL_TITOLO')][target_ruler.GetName] ha dato i suoi frutti. La nostra reputazione diplomatica è aumentata grazie alla sua lingua vellutata.
- random_event.82.a: "Ci si può sempre fidare [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]!"
+ random_event.82.a: "Ci si può sempre fidare [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]!"
  random_event.83.title: "Diplomazia Incompetente!"
  random_event.83.desc: "È quasi inconcepibile quanto [target_ruler.Custom('IT_ART_TITOLO')][target_ruler.GetName] sia incompetente nel gestire la diplomazia. Non sappiamo come abbia fatto me è riuscito a danneggiare la nostra reputazione diplomatica nel mondo con una singola lettera di scuse a un ambasciatore."
  random_event.83.a: "Com'è possibile?"
