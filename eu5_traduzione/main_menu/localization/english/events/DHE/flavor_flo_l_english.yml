@@ -233,8 +233,8 @@
  flavor_flo.61.a: "Linciatelo! Espelletelo! Portatelo via di qui!"
  flavor_flo.61.b: "Dobbiamo fermare questa cospirazione!"
 
- flavor_flo.62.title: "Un banchiere influente"
- flavor_flo.62.desc: "Il leader di [target_country.GetName], nostro onorevole cittadino [target_character.GetName], si è presentato come un gestore capace e un abile politico, le cui tasche profonde gli hanno procurato molti alleati [ROOT.GetCountry.Custom('IT_NEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Se non si interviene, sarà certamente eletto [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_flo.62.title: "Un Banchiere Influente"
+ flavor_flo.62.desc: "Il leader [target_country.Custom('IT_Della')][target_country.GetName], nostro onorevole cittadino [target_character.GetName], si è presentato come un gestore capace e un abile politico, le cui tasche profonde gli hanno procurato molti alleati [ROOT.GetCountry.Custom('IT_NEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Se non si interviene, sarà certamente eletto [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
  flavor_flo.62.historical_info: "Cosimo de' Medici fu il politico più influente nella Firenze della metà del XV secolo. Centrale per sua influenza fu il Banco dei Medici, fondato da suo padre Giovanni nel 1397. Grazie a sua ricchezza e ai matrimoni accorti, il banchiere divenne Signore di Firenze."
  flavor_flo.62.a: "Accogliamo [target_character.GetNameWithNoTooltip] a braccia aperte."
  flavor_flo.62.b: "Una tasca piena non è una base per un sistema di governo."
@@ -244,7 +244,7 @@
  flavor_flo.63.a: "Assumilo."
  flavor_flo.63.b: "Nostre tasche non sono abbastanza profonde."
 
- flavor_vlt.1.title: "Una nuova Signoria"
+ flavor_vlt.1.title: "Una Nuova Signoria"
  flavor_vlt.1.desc_expel: "La cittadinanza, irritata dal governo di [expelled_ruler.GetName] e della sua famiglia, ha deciso che i [expelled_ruler.GetLastName] debbano essere espulsi. Successivamente, hanno deciso che [belforti_candidate.GetName] e sua famiglia dei [belforti_candidate.GetDynasty.GetName] debbano governare lo stato sotto un sistema diverso: la [ShowGovernmentReformName('dynastic_signoria_reform')]."
  flavor_vlt.1.desc_signoria: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] hanno recentemente espulso una famiglia che aveva causato molte preoccupazioni. Al loro posto sono stati scelti nuovi uomini per governare sotto la [ShowGovernmentReformName('dynastic_signoria_reform')]."
  flavor_vlt.1.historical_info: "Nel 1340 i cittadini di Volterra espulsero gli Allegretti e il controllo passò ai Belforti come signori. Sotto Ottaviano e poi suo figlio Bocchino, che tentò di vendere la città ai Pisani, scoppiò una rivolta che portò all'intervento di Firenze. La città godette di autonomia fino al 1427."
@@ -257,10 +257,10 @@
  flavor_vlt.2.a: "Impiccatelo!" 
  flavor_vlt.2.b: "I tumulti gli avranno dato una lezione."
  
- flavor_vlt.3.title: "Caos a [target_country.GetNameWithNoTooltip]"
- flavor_vlt.3.desc_consul_dead: "I cittadini [target_country.Custom('IT_Della')][target_country.GetName] sono sul piede di guerra contro [target_country.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')] loro [target_country.GetGovernment.GetRulerTitle] dopo che ha cercato di vendere il paese. Al momento [target_character.GetName] è morto e lo stato è senza legge."
- flavor_vlt.3.desc: "I cittadini [target_country.Custom('IT_Della')][target_country.GetName] sono sul piede di guerra contro [target_country.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')] loro [target_country.GetGovernment.GetRulerTitle] dopo che ha cercato di vendere il paese a noi! Per fortuna [target_character.GetName] è sopravvissuto e la protezione di sua volontà è motivo sufficiente per invadere il paese."
- flavor_vlt.3.a: "Entriamo."
+ flavor_vlt.3.title: "Caos [target_country.Custom('IT_In')][target_country.GetNameWithNoTooltip]"
+ flavor_vlt.3.desc_consul_dead: "I cittadini [target_country.Custom('IT_Della')][target_country.GetName] sono sul piede di guerra contro [target_country.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] loro [target_country.GetGovernment.GetRulerTitle] dopo che ha cercato di vendere il paese. Al momento [target_character.GetName] è morto e lo stato è di fatto senza legge."
+ flavor_vlt.3.desc: "I cittadini [target_country.Custom('IT_Della')][target_country.GetName] sono sul piede di guerra contro [target_country.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] loro [target_country.GetGovernment.GetRulerTitle] dopo che ha cercato di vendere il paese a noi! Per fortuna [target_character.GetName] è sopravvissuto e la protezione di sua volontà è motivo sufficiente per invadere il paese."
+ flavor_vlt.3.a: "Andiamo."
 
  #Custom Tooltips
  FLO_this_will_cease_existing: "[THIS.GetCountry.GetName] cesserà di esistere."

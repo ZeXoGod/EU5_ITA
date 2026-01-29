@@ -548,7 +548,7 @@
  INVITE_COALITION_ALREADY: "Questa [INTERNATIONAL_ORGANIZATION_TYPE.GetName] ha i seguenti membri:\n$LIST$"
  INVITE_COALITIONREQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] offre di unirsi a noi in un $IO_NAME$. $OTHER$"
  INVITE_EXISTING_IOREQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] offre di unirsi a noi [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][INTERNATIONAL_ORGANIZATION.GetName]. $OTHER$"
- INVITE_IOTITLE: "Forma una Nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetNameWithNoTooltip]"
+ INVITE_IOTITLE: "Nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetNameWithNoTooltip]"
  INVITE_IOTITLE_IO: "Invita in [INTERNATIONAL_ORGANIZATION.GetNameWithNoTooltip]"
  INVITE_IO_TARGETTING: " contro [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithNoTooltip]"
  INVITE_IO_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
@@ -577,7 +577,7 @@
  ASKJOIN_COALITION: "Chiedi [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] se possiamo unirci alla loro [INTERNATIONAL_ORGANIZATION.GetName] con noi, dove ci difenderemo insieme contro i [countries|e] [hostile|e]. $OTHER$"
  ASKJOIN_COALITION_TOOLTIP_HEADER: "Chiedi [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] se possiamo unirci a [INTERNATIONAL_ORGANIZATION.GetName]"
  ASKJOIN_COALITION_TOOLTIP_HEADER_NO_TARGET: "Chiedi se possiamo unirci a [INTERNATIONAL_ORGANIZATION.GetName]"
- CREATE_IO_TARGETTINGTITLE: "Crea una nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetNameWithNoTooltip] contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetNameWithNoTooltip]"
+ CREATE_IO_TARGETTINGTITLE: "[INTERNATIONAL_ORGANIZATION_TYPE.GetNameWithNoTooltip] contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetNameWithNoTooltip]"
  CREATE_IO_TARGETTING_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  CREATE_IO_TARGETTING_TOOLTIP_HEADER: "Crea una nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetName] contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  CREATE_IO_TARGETTING_TOOLTIP_HEADER_NO_TARGET: "Crea una nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetName] che ha come bersaglio un [country|e]"
@@ -1099,14 +1099,14 @@
  PEACE_TREATY_SELECT_LOCATION: "Aggiungi $NAME$ al Trattato di Pace"
  PEACE_TREATY_DESELECT_LOCATION: "Rimuovi $NAME$ dal Trattato di Pace"
 
- PEACE_TREATY_RELEASE: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlag] da [COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
- PEACE_TREATY_RELEASE_short: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlagWithNoTooltip] da [COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
+ PEACE_TREATY_RELEASE: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlag] [COUNTRY.GetCapital.GetOwner.Custom('IT_Dalla')][COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
+ PEACE_TREATY_RELEASE_short: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlagWithNoTooltip][COUNTRY.GetCapital.GetOwner.Custom('IT_Dalla')][COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
 
  PEACE_TREATY_RELEASE_AREA: "Libera l'area [AREA.GetName]"
  PEACE_TREATY_RELEASE_AREA_short: "Libera l'area [AREA.GetNameWithNoTooltip]"
 
- PEACE_TREATY_CEDE_PROVINCE: "[PROVINCE.GetCountry.GetFlagIcon] [province|e] [PROVINCE.GetDefinition.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]"
- PEACE_TREATY_CEDE_PROVINCE_short: "@[PROVINCE.GetCountry.GetFlag]! [Localize('game_concept_province')] [PROVINCE.GetDefinition.GetNameWithNoTooltip]"
+ PEACE_TREATY_CEDE_PROVINCE: "La [PROVINCE.GetCountry.GetFlagIcon] [province|e] di [PROVINCE.GetDefinition.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]"
+ PEACE_TREATY_CEDE_PROVINCE_short: "@[PROVINCE.GetCountry.GetFlag]! [Localize('game_concept_province')] di [PROVINCE.GetDefinition.GetNameWithNoTooltip]"
 
  PEACE_TREATY_CEDE_AREA: "La Parte [COUNTRY.Custom('IT_ADJ_FP')] [COUNTRY.GetFlagIcon] di [AREA.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]"
  PEACE_TREATY_CEDE_AREA_short: "[AREA.GetNameWithNoTooltip] @[COUNTRY.GetFlag]! [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]"
@@ -2282,7 +2282,7 @@
  #
  ECONOMIC_SUPPORT_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
  CANCEL_ECONOMIC_SUPPORT_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
- ECONOMIC_SUPPORTTITLE: "Fornisci Supporto Economico"
+ ECONOMIC_SUPPORTTITLE: "Supporto Economico"
  CANCEL_ECONOMIC_SUPPORTTITLE: "Annulla il Supporto Economico"
  ECONOMIC_SUPPORT_TOOLTIP_HEADER: "Fornisci Supporto Economico [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
  ECONOMIC_SUPPORT_TOOLTIP_HEADER_NO_TARGET: "Fornisci Supporto Economico a un [country|e]"
