@@ -874,7 +874,7 @@
  CHARACTER_MARRIAGE_CONCEPT: "[marriage|E]"
  SU_VALUE: "Valore"
  SUBUNIT_UPKEEP: "[SubUnitType.GetCurrencyUpkeep]"
- SUBUNIT_RAW_GOLD_COST_MAINTENANCE: "[maintenance|e] mensile Base dell'[gold|e]#!: [SubUnitType.GetRawCost('maintenance', 'gold')]@gold!"
+ SUBUNIT_RAW_GOLD_COST_MAINTENANCE: "[maintenance|e] Base mensile in [gold|e]#!: [SubUnitType.GetRawCost('maintenance', 'gold')]@gold!"
  CONSTRUCTION_UNITTYPE: "Requisiti per [construction|e]"
  MAINTENANCE_UNITTYPE: "[maintenance|e] Mensile (per #W 1,000#! uomini)"
  MAINTENANCE_UNITTYPE_SHIP: "[maintenance|e] Mensile (al #W 100%#! della [strength])"
@@ -1607,7 +1607,7 @@
  ADM_SCORE: "Punteggio Amministrativo"
  DIP_SCORE: "Punteggio Diplomatico"
  LOCATIONS_TAB: "Località"
- LEVY_UNIT_ENTRY: "$VAL|2%Y$ dei [pops|e] validi verrà dispiegato come [SUBUNITDEFINITION.GetName]"
+ LEVY_UNIT_ENTRY: "Il $VAL|2%Y$ dei [pops|e] validi verrà dispiegato come [SUBUNITDEFINITION.GetName]"
  LEVY_ALLOWED_POP_TYPES_HEADER: "I seguenti pop sono validi per essere dispiegati come [SUBUNITDEFINITION.GetName]:" 
  SELECT_NAVAL_DOCTRINE_TITLE: "Seleziona Dottrina Navale"
  CULTURE_LATERAL_VIEW_WORKS_OF_ART_DESC: "Abbiamo [CountryCultureLateralView.GetCountry.GetNumWorksOfArt|Y] [works_of_art|e]"
@@ -2892,7 +2892,7 @@
  SOC_VAL_ITEM_POS_INFO: "L'Impatto Attuale di $VAL|G$ verso $NAME$ è"
  SOC_VAL_ITEM_POS_INFO_NDIR: "Perfettamente equilibrato tra $NAME$\nAl momento non vi è alcun impatto."
  SOCVAL_SCALES: "Adeguato ai valori sociali attuali:\n$EFFECT$"
- SOCVAL_ONE_SIDE: "Quando $NAME|Y$ è dominante, raggiunge:\n$EFFECT$"
+ SOCVAL_ONE_SIDE: "Quando $NAME|Y$ è dominante, fornisce fino a:\n$EFFECT$"
  SOCIETAL_VALUE_CHANGE: "@trigger_yes!Cambiamento Sociale Mensile: $VAL|+=2$"
  EXTEND_REGENCY_COST: "Estendi al $game_concept_regency$ per altri $VAL|Y$ anni.\n$COST$"
  NO_REGENCY_NO_EXTEND: "@trigger_no! Non c'è nessuna [regency|e] da estendere."
@@ -4272,7 +4272,7 @@
  BUILD_COST_BREAKDOWNS_DET: "Cost for [BUILDING_TYPE.GetNameWithNoTooltip] in Mercati Diversi\nIl costo indicato è al netto di eventuali modificatori locali applicati in base alla località effettiva dell'edificio."
  BUILDTYPE_COST_IN_LOCATION: "Costi di Costruzione a [BuildingItem.GetLocationFilter.GetName]: [BuildingItem.GetCost]"
 
- BUILDTYPE_RGO_TIME: "Tempo di Costruzione: $TIME|YL$#L $DAYS_LONG_LOC$#!"
+ BUILDTYPE_RGO_TIME: "Tempo di Costruzione: $TIME|YL$ #L $DAYS_LONG_LOC$#!"
  BUILDTYPE_RGO_COST: "Costi di Costruzione: $COST$"
  
  PRODUCTION_METHOD_TOTAL_PROFIT_ENTRY_BRK_TT: "[BUILDING.GetNameWithNoTooltip] a [BUILDING.GetLocation.GetNameWithNoTooltip]\n"
@@ -4566,7 +4566,7 @@
  CANT_DESTROY_ESTATE_BUILD: "@trigger_no! Non possiamo distruggere un [building|e] posseduto da un [estate|E] mentre abbiamo meno del $VAL|Y%$ di controllo del territorio in cui è presente. Attualmente, abbiamo solo [LOCATION.GetControl|Y%] [control|E] di [LOCATION.GetName]"
  ESTATE_WILL_BE_UNHAPPY: "Distruggendo [BUILDING.GetName], il [ESTATE.GetName] perderà $CHANGE$ soddisfazione."
  CONSTRUCTION_LACKING_INPUT: "Non è possibile comprare abbastanza [goods|e] sul [market|e] per progredire."
- CONSTRUCTION_RESOURCES_LACK: "@trigger_no! Non ci sono abbastanza $INFO$ nel [market|e] di [MARKET.GetName] per farlo."
+ CONSTRUCTION_RESOURCES_LACK: "@trigger_no! Non ci sono abbastanza $INFO$ nel [MARKET.GetName] per farlo."
  BUILDING_UNEMPLOYED_DUE_TO_STARVATION: "#n Questa [province|e] sta attualmente [Concept('starving', 'Morendo di Fame')|e]! Gli [buildings|e] potrebbero non essere in grado di [employ|e] gli [pops|e]. Considerate di espandere la produzione di [food|e] invece.#!"
  #
  UPGRADE_BUILDING_SHIFT: "Shift + Clic sinistro per costruire quanti più edifici possibili."
@@ -7252,7 +7252,7 @@
 
  INVALID_TARGET: "@trigger_no! Obiettivo non Valido"
  
- DAYS_SHORT_LOC: "d"
+ DAYS_SHORT_LOC: "g"
  DAYS_LONG_LOC: "giorni"
  UNIT_DEBUG_TOOLTIP: "#D DEBUG:#!\nID: [UNIT.GetID|Y]\nAttività: [UNIT.GetActivity.GetActivityDesc]"
 WAR_DEBUG_TOOLTIP: "#D DEBUG:#!\nID: [WAR.GetID|Y]\nPotenziali Località di Battaglia: [WAR.GetPotentialBattleLocations]"
