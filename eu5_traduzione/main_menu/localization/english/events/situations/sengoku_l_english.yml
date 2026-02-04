@@ -14,9 +14,9 @@
  sengoku.2.b: "Nemmeno la Famiglia Imperiale può sfidare la nostra autorità."
 
  sengoku.3.title: "Espansione [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]"
- sengoku.3.desc: "Il paese è in un periodo di sconvolgimenti. Molti clan hanno iniziato a stabilire il proprio dominio indipendentemente dall'autorità del [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]. È chiaro che la corte di [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderCountry.GetCapital] non ha abbastanza potere per costringere i clan a sottomettersi a loro. Potremmo approfittare di questa situazione ed espandere la nostra autonomia come [ROOT.GetCountry.GetFlavorRank], diventando di fatto padroni di noi stessi, ma rischiamo di incorrere nelle ire del [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
+ sengoku.3.desc: "Il paese è in un periodo di sconvolgimenti. Molti clan hanno iniziato a stabilire il proprio dominio indipendentemente dall'autorità del [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]. È chiaro che la corte di [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderCountry.GetCapital] non ha abbastanza potere per costringere i clan a sottomettersi a loro. Potremmo approfittare di questa situazione ed espandere la nostra autonomia come [ROOT.GetCountry.GetFlavorRank], diventando di fatto padroni di noi stessi, ma rischiamo di incorrere nelle ire dello [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
  sengoku.3.a: "Ci faremo strada da soli."
- sengoku.3.b: "Non possiamo rischiare l'ira del [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
+ sengoku.3.b: "Non possiamo rischiare l'ira dello [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
 
  sengoku.4.title: "Un Momento di Debolezza"
  sengoku.4.desc: "È un periodo di conflitto costante. [target_enemy.Custom('IT_La')|U][target_enemy.GetLongName] ha recentemente cercato di espandere la sua influenza a spese di altri clan, ma hanno anche mostrato la loro giusta dose di debolezza. Potremmo approfittare di tale debolezza e sfruttarla a nostro vantaggio, espandendo al contempo il nostro territorio. In tempi come questi, con l'intero paese in guerra, chi si lamenterebbe se ne iniziassimo un'altra?"
@@ -28,79 +28,79 @@
  sengoku.5.b: "Non guadagneremo nulla dall'andare contro di loro."
 
  sengoku.6.title: "[actor.GetLongNameWithNoTooltip] Chiede la Pace"
- sengoku.6.desc: "Il nostro conflitto nella [target_war.GetName] ha attirato l'attenzione [actor.GetGovernment.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][actor.GetGovernment.GetRulerTitle] a [actor.GetCapital.GetName]. Abbiamo ricevuto una missiva ufficiale da [actor.GetGovernment.GetAdjective] che ci esorta a cessare tutti i combattimenti, sostenendo di voler mantenere la pace e la stabilità nel Paese. Sebbene l'autorità [actor.GetGovernment.Custom('IT_DEL_TITOLO')][actor.GetGovernment.GetRulerTitle] sia indiscutibile, speriamo comunque di trarre vantaggio da questo conflitto."
+ sengoku.6.desc: "Il nostro conflitto nella [target_war.GetName] ha attirato l'attenzione [actor.GetGovernment.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][actor.GetGovernment.GetRulerTitle] a [actor.GetCapital.GetName]. Abbiamo ricevuto una missiva [actor.GetGovernment.GetAdjective] ufficiale che ci esorta a cessare tutti i combattimenti, sostenendo di voler mantenere la pace e la stabilità nel Paese. Sebbene l'autorità [actor.GetGovernment.Custom('IT_DEL_TITOLO')][actor.GetGovernment.GetRulerTitle] sia indiscutibile, speriamo comunque di trarre vantaggio da questo conflitto."
  sengoku.6.a: "Non possiamo fare altro che obbedire."
  sengoku.6.b: "Diciamo loro che abbiamo bisogno di tempo per esaminare la petizione."
 
- sengoku.7.title: "[target_country.GetLongNameWithNoTooltip] ha accettato la nostra petizione"
- sengoku.7.desc: "[target_country.GetLongName] ha dimostrato di essere un vero difensore del [ROOT.GetCountry.GetGovernment.GetRulerTitle], avendo accettato la nostra missiva [ROOT.GetCountry.GetGovernment.GetAdjective] e ascoltato la nostra richiesta di fermare il loro inutile spargimento di sangue."
+ sengoku.7.title: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongNameWithNoTooltip] ha Accettato la Nostra Petizione"
+ sengoku.7.desc: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongName] ha dimostrato di essere un vero difensore [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], avendo accettato la nostra missiva [ROOT.GetCountry.GetGovernment.GetAdjective] e ascoltato la nostra richiesta di fermare il loro inutile spargimento di sangue."
  sengoku.7.a: "Come dovrebbe essere."
 
- sengoku.8.title: "[target_country.GetLongNameWithNoTooltip] Rifiuta la Nostra Petizione"
- sengoku.8.desc: "[target_country.GetLongName] si è dimostrato un traditore dell'autorità dei [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Affermano di stare valutando attentamente la nostra petizione [ROOT.GetCountry.GetGovernment.GetAdjective] per porre fine al loro conflitto, ma è chiaramente uno stratagemma per ignorarla sfacciatamente.
+ sengoku.8.title: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongNameWithNoTooltip] Rifiuta la Nostra Petizione"
+ sengoku.8.desc: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongName] si è dimostrato un traditore dell'autorità [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]. Affermano di stare valutando attentamente la nostra petizione [ROOT.GetCountry.GetGovernment.GetAdjective] per porre fine al loro conflitto, ma è chiaramente uno stratagemma per ignorarla sfacciatamente.
  sengoku.8.a: "Siamo circondati da traditori."
 
  sengoku.9.title: "Petizione per [target_location.GetNameWithNoTooltip]"
- sengoku.9.desc: "Gli [actor.GetLongNameWithNoTooltip] si sono rivolti a noi con la richiesta più audace. Facendo leva sulla loro autorità di governanti dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName], ci è stato chiesto di restituire i nostri diritti sulla terra di [target_location.GetName] nelle mani di [actor.GetNameWithNoTooltip]. Questo è chiaramente un'offesa all'autorità [actor.GetGovernment.GetAdjective], e dovremmo riflettere attentamente su come rispondere."
- sengoku.9.a: "Dobbiamo obbedire a [actor.GetFlavorRank]."
+ sengoku.9.desc: "[actor.Custom('IT_ART_RANGO')|U][actor.GetLongNameWithNoTooltip] si è rivolto a noi con la richiesta più audace. Facendo leva sulla loro autorità di governanti dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName], ci è stato chiesto di restituire i nostri diritti sulla terra di [target_location.GetName] nelle mani di [actor.GetNameWithNoTooltip]. Questo è chiaramente un'offesa all'autorità [actor.GetGovernment.GetAdjective], e dovremmo riflettere attentamente su come rispondere."
+ sengoku.9.a: "Dobbiamo obbedire [actor.Custom('IT_AL_RANGO')][actor.GetFlavorRank]."
  sengoku.9.b: "Queste terre sono nostre di diritto!"
 
  sengoku.10.title: "$sengoku.7.title$"
- sengoku.10.desc: "[target_country.GetName] ha dimostrato di avere solide motivazioni e ha accettato la nostra richiesta di restituzione di parte delle loro terre alla nostra autorità, inchinandosi alla nostra leadership."
+ sengoku.10.desc: "[target_country.Custom('IT_La')][target_country.GetName] ha dimostrato di avere solide motivazioni e ha accettato la nostra richiesta di restituzione di parte delle loro terre alla nostra autorità, inchinandosi alla nostra leadership."
  sengoku.10.a: "Come dovrebbero."
 
  sengoku.11.title: "$sengoku.8.title$"
- sengoku.11.desc: "Gli sfacciati di [target_country.GetName] hanno contestato la nostra richiesta di terra, sostenendo di avere i diritti legittimi su di essa e rifiutandosi di cederla. Una così palese mancanza di rispetto nei confronti della nostra autorità [ROOT.GetCountry.GetGovernment.GetAdjective] non può essere ignorata."
+ sengoku.11.desc: "In maniera sfacciata, [target_country.Custom('IT_La')][target_country.GetName] ha contestato la nostra richiesta di terra, sostenendo di avere i diritti legittimi su di essa e rifiutandosi di cederla. Una così palese mancanza di rispetto nei confronti della nostra autorità [ROOT.GetCountry.GetGovernment.GetAdjective] non può essere ignorata."
  sengoku.11.a: "Dovremo imporci con la forza."
 
- sengoku.12.title: "[actor.GetLongNameWithNoTooltip] Chiede la Sottomissione"
- sengoku.12.desc: "Le autorità di [actor.GetLongNameWithNoTooltip] si sono rivolte a noi con una petizione estrema. Dobbiamo rinunciare alla nostra autonomia e tutte le nostre terre torneranno ad essere di proprietà diretta di [actor.GetFlavorRank], con noi come semplici funzionari nominati sotto la loro guida. Questo limiterebbe tutti i nostri obiettivi individuali sul [ROOT.GetCountry.GetFlavorRank], ma contribuirebbe sicuramente alla stabilità del territorio."
+ sengoku.12.title: "[actor.Custom('IT_ART_RANGO')|U][actor.GetLongNameWithNoTooltip] Chiede la Sottomissione"
+ sengoku.12.desc: "Le autorità [actor.Custom('IT_DEL_RANGO')][actor.GetLongNameWithNoTooltip] si sono rivolte a noi con una petizione estrema. Dobbiamo rinunciare alla nostra autonomia e tutte le nostre terre torneranno ad essere di proprietà diretta [actor.Custom('IT_DEL_RANGO')][actor.GetFlavorRank], con noi come semplici funzionari nominati sotto la loro guida. Questo limiterebbe tutti i nostri obiettivi individuali [ROOT.GetCountry.Custom('IT_SUL_RANGO')][ROOT.GetCountry.GetFlavorRank], ma contribuirebbe sicuramente alla stabilità del territorio."
  sengoku.12.a: "$sengoku.9.a$"
  sengoku.12.b: "$sengoku.9.b$"
 
  sengoku.13.title: "Offerta di un Ostaggio"
- sengoku.13.desc: "Gli inviati di [actor.GetLongNameWithNoTooltip] ci hanno contattato, offrendoci [target_character.GetName] come ostaggio. Avere [target_character.GetHerHim] sotto la nostra cura contribuirebbe a rafforzare i rapporti e la fiducia tra i nostri clan finché [target_character.GetSheHe] vivrà tra noi, ma questo alla fine potrebbe anche rivelarsi un'arma a doppio taglio."
+ sengoku.13.desc: "Gli inviati [actor.Custom('IT_DEL_RANGO')][actor.GetLongNameWithNoTooltip] ci hanno contattato, offrendoci [target_character.GetName] come ostaggio. Averl[target_character.Custom('IT_ART_O_A')] sotto la nostra cura contribuirebbe a rafforzare i rapporti e la fiducia tra i nostri clan finché [target_character.GetSheHe] vivrà tra noi, ma questo alla fine potrebbe anche rivelarsi un'arma a doppio taglio."
  sengoku.13.a: "[target_character.GetNameWithNoTooltip] sarà sotto la nostra cura."
- sengoku.13.b: "Purtroppo, non possiamo ospitare [target_character.GetHerHim]."
+ sengoku.13.b: "Purtroppo, non possiamo ospitarl[target_character.Custom('IT_ART_O_A')]."
 
- sengoku.14.title: "[target_country.GetNameWithNoTooltip] Accetta [target_character.GetNameWithNoTooltip]"
- sengoku.14.desc: "[target_country.Custom('IT_La')|U][target_country.GetLongName] accettano di promuovere legami più stretti tra i nostri clan e hanno accettato di ospitare [target_character.GetName] tra di loro. Finché [target_character.GetSheHe] sarà sotto la loro cura, entrambi i clan condivideranno stretti legami di fiducia e amicizia."
+ sengoku.14.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Accetta [target_character.GetNameWithNoTooltip]"
+ sengoku.14.desc: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongName] ha accettato di promuovere legami più stretti tra i nostri clan e hanno accettato di ospitare [target_character.GetName] tra di loro. Finché [target_character.GetSheHe] sarà sotto la loro cura, entrambi i clan condivideranno stretti legami di fiducia e amicizia."
  sengoku.14.a: "Un'occasione gioiosa."
 
- sengoku.15.title: "[target_country.GetNameWithNoTooltip] Rifiuta [target_character.GetNameWithNoTooltip]"
- sengoku.15.desc: "Gli inviati [target_country.GetAdjective] tornano da noi con una brutta notizia, poiché hanno rifiutato l'offerta di ospitare [target_character.GetName] tra di loro. Sostenendo di non avere i mezzi per ospitare [target_character.GetHerHim] al momento, il loro rifiuto significa chiaramente che non sono disposti a stabilire stretti legami con noi."
+ sengoku.15.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Rifiuta [target_character.GetNameWithNoTooltip]"
+ sengoku.15.desc: "Gli inviati [target_country.Custom('IT_ADJ_MP')] tornano da noi con una brutta notizia, poiché hanno rifiutato l'offerta di ospitare [target_character.GetName] tra di loro. Sostenendo di non avere i mezzi per ospitarl[target_character.Custom('IT_ART_O_A')] al momento, il loro rifiuto significa chiaramente che non sono disposti a stabilire stretti legami con noi."
  sengoku.15.a: "Questa è una loro perdita."
 
  sengoku.16.title: "Petizione per un Ostaggio"
- sengoku.16.desc: "Degli inviati [actor.Custom('IT_Della')][actor.GetLongNameWithNoTooltip] ci hanno contattato, chiedendoci se potevano farci l'onore di ospitare [target_character.GetName] tra loro. Dicono di voler offrire a [target_character.GetHerHim] ospitalità e intrattenimento in segno di rispetto e apprezzamento per il nostro [ROOT.GetCountry.GetFlavorRank]. Naturalmente, ci garantiscono la sua sicurezza e assicurano che questo servirà a stabilire relazioni più strette e maggior fiducia tra i nostri due clan."
+ sengoku.16.desc: "Degli inviati [actor.Custom('IT_DAL_RANGO')][actor.GetLongNameWithNoTooltip] ci hanno contattato, chiedendoci se potevano farci l'onore di ospitare [target_character.GetName] tra loro. Dicono di voler offrire a [target_character.GetHerHim] ospitalità e intrattenimento in segno di rispetto e apprezzamento per [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Naturalmente, ci garantiscono la sua sicurezza e assicurano che questo servirà a stabilire relazioni più strette e maggior fiducia tra i nostri due clan."
  sengoku.16.a: "Inviamogli [target_character.GetNameWithNoTooltip]."
  sengoku.16.b: "Come osano chiederci una cosa del genere?"
 
- sengoku.17.title: "[target_country.GetNameWithNoTooltip] Accetta la Nostra Petizione"
- sengoku.17.desc: "[target_country.Custom('IT_La')|U][target_country.GetLongNameWithNoTooltip] hanno accettato di stabilire relazioni più strette tra i nostri clan, e hanno quindi acconsentito a inviare [target_character.GetName] sotto la nostra cura. Questo aumenterà la fiducia tra le nostre famiglie e ci unirà, finché [target_character.GetSheHe] sarà al sicuro tra noi."
+ sengoku.17.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Accetta la Nostra Petizione"
+ sengoku.17.desc: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongNameWithNoTooltip] hanno accettato di stabilire relazioni più strette tra i nostri clan, e hanno quindi acconsentito a inviare [target_character.GetName] sotto la nostra cura. Questo aumenterà la fiducia tra le nostre famiglie e ci unirà, finché [target_character.GetSheHe] sarà al sicuro tra noi."
  sengoku.17.a: "$sengoku.14.a$"
 
- sengoku.18.title: "[target_country.GetNameWithNoTooltip] Rifiuta la Nostra Petizione"
- sengoku.18.desc: "[target_country.GetLongName] ha ricevuto la nostra petizione per ospitare [target_character.GetName] nel nostro [ROOT.GetCountry.GetFlavorRank] e l'ha interpretata come uno stratagemma da parte nostra per ottenere un vantaggio su di loro. Purtroppo, i nostri sinceri tentativi di promuovere relazioni più strette e fiducia tra i nostri clan sembrano aver causato più danni che benefici."
+ sengoku.18.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Rifiuta la Nostra Petizione"
+ sengoku.18.desc: "[target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongName] ha ricevuto la nostra petizione per ospitare [target_character.GetName] [ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] e l'ha interpretata come uno stratagemma da parte nostra per ottenere un vantaggio su di loro. Purtroppo, i nostri sinceri tentativi di promuovere relazioni più strette e fiducia tra i nostri clan sembrano aver causato più danni che benefici."
  sengoku.18.a: "$sengoku.15.a$"
 
- sengoku.19.title: "Convocazione del [actor.GetGovernment.GetCourtTitle] [actor.GetGovernment.GetAdjective]"
- sengoku.19.desc: "È chiaro che la presa di [actor.GetLongName] sul territorio sta cedendo, poiché sempre più clan agiscono indipendentemente dalla propria autorità. Nel tentativo di contenere i clan, [actor.GetFlavorRank] non ha altra scelta che convocare i capi clan nella capitale per chiedere giustificazioni concrete delle loro azioni. Tale convocazione è giunta ora per [target_ruler.GetName], chiedendo a [target_ruler.GetHerHim] di comparire davanti al [actor.GetGovernment.GetCourtTitle][actor.GetGovernment.GetAdjective]. È nostro dovere obbedire, ma questo metterebbe sicuramente una macchia nera sulla nostra autorità."
+ sengoku.19.title: "Convocazione della [actor.GetGovernment.GetCourtTitle] [actor.GetGovernment.Custom('IT_ADJ_FS')]"
+ sengoku.19.desc: "È chiaro che la presa [actor.Custom('IT_DEL_RANGO')][actor.GetLongName] sul territorio sta cedendo, poiché sempre più clan agiscono indipendentemente dalla propria autorità. Nel tentativo di contenere i clan, [actor.Custom('IT_ART_RANGO')][actor.GetFlavorRank] non ha altra scelta che convocare i capi clan nella capitale per chiedere giustificazioni concrete delle loro azioni. Tale convocazione è giunta ora per [target_ruler.GetName], chiedendo a [target_ruler.GetHerHim] di comparire davanti alla [actor.GetGovernment.GetCourtTitle] [actor.GetGovernment.Custom('IT_ADJ_FS')]. È nostro dovere obbedire, ma questo metterebbe sicuramente una macchia nera sulla nostra autorità."
  sengoku.19.a: "Non abbiamo altra scelta che obbedire."
  sengoku.19.b: "Sì... prima o poi andremo..."
 
- sengoku.20.title: "[target_country.GetNameWithNoTooltip] Accetta la Convocazione"
- sengoku.20.desc: "[target_ruler.GetName] [target_country.Custom('IT_Della')][target_country.GetLongName] ha ascoltato la nostra convocazione ed è venuto davanti a noi per spiegare le azioni del suo [target_country.GetFlavorRank]. Ciò rende chiaro che la nostra autorità si estende ancora ai clan, nonostante i loro tentativi di agire in modo indipendente."
+ sengoku.20.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Accetta la Convocazione"
+ sengoku.20.desc: "[target_ruler.Custom('IT_ART_TITOLO')|U][target_ruler.GetName] [target_country.Custom('IT_DEL_RANGO')][target_country.GetLongName] ha ascoltato la nostra convocazione ed è venuto davanti a noi per spiegare le azioni [target_country.Custom('IT_DEL_NOSTRO_RANGO')]su[target_country.Custom('IT_OA_RANGO')] [target_country.GetFlavorRank]. Ciò rende chiaro che la nostra autorità si estende ancora ai clan, nonostante i loro tentativi di agire in modo indipendente."
  sengoku.20.a: "Siamo comunque il loro sovrano."
 
- sengoku.21.title: "[target_country.GetNameWithNoTooltip] Rifiuta la Convocazione"
- sengoku.21.desc: "[target_ruler.GetName] [target_country.Custom('IT_Della')][target_country.GetLongName] ha dimostrato la sua stoltezza e slealtà rifiutandosi di ottemperare alla nostra convocazione per la sua presenza davanti al [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Sebbene ci assicuri che [target_ruler.GetSheHe] si sta sicuramente preparando per il viaggio, ma che i preparativi richiederanno un po' di tempo, il suo ritardo indica chiaramente la sua riluttanza e ribellione. Un disprezzo così palese per la nostra autorità non deve essere tollerato."
- sengoku.21.a: "Dovremo mettere [target_country.GetNameWithNoTooltip] al loro posto."
+ sengoku.21.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Rifiuta la Convocazione"
+ sengoku.21.desc: "[target_ruler.Custom('IT_ART_TITOLO')|U][target_ruler.GetName] [target_country.Custom('IT_DEL_RANGO')][target_country.GetLongName] ha dimostrato la sua stoltezza e slealtà rifiutandosi di ottemperare alla nostra convocazione per la sua presenza davanti alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Sebbene ci assicuri che [target_ruler.GetSheHe] si sta sicuramente preparando per il viaggio, ma che i preparativi richiederanno un po' di tempo, il suo ritardo indica chiaramente la sua riluttanza e ribellione. Un disprezzo così palese per la nostra autorità non deve essere tollerato."
+ sengoku.21.a: "Dovremo mettere [target_country.Custom('IT_La')][target_country.GetNameWithNoTooltip] al suo posto."
 
- sengoku.22.title: "[actor.Custom('IT_La')|U][actor.GetLongNameWithNoTooltip] Si Ribellano Contro il [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]"
- sengoku.22.desc: "Il ruolo del [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle] è quello di governare il paese in nome del [ShowSpecialStatusName('japanese_emperor')], liberando il Trono del Crisantemo dall'onere del governo diretto. Tuttavia, il [actor.GetLongName] ha approfittato di questi tempi turbolenti e ha raccolto abbastanza sostegno per condannare la nostra autorità e tentare di ripristinare il potere diretto sotto la linea imperiale. Siamo stati bollati come traditori e ribelli contro il vero sovrano del [ShowRegionName('japan_region')]."
+ sengoku.22.title: "[actor.Custom('IT_ART_RANGO')|U][actor.GetLongNameWithNoTooltip] Si Ribellano Contro lo [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]"
+ sengoku.22.desc: "Il ruolo dello [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle] è quello di governare il paese in nome dell'[ShowSpecialStatusName('japanese_emperor')], liberando il Trono del Crisantemo dall'onere del governo diretto. Tuttavia, [actor.Custom('IT_ART_RANGO')][actor.GetLongName] ha approfittato di questi tempi turbolenti e ha raccolto abbastanza sostegno per condannare la nostra autorità e tentare di ripristinare il potere diretto sotto la linea imperiale. Siamo stati bollati come traditori e ribelli contro il vero sovrano del [ShowRegionName('japan_region')]."
  sengoku.22.a: "Siamo noi i malvagi?"
 
  sengoku.23.title: "$sengoku.22.title$"
- sengoku.23.desc: "Questi sono tempi davvero turbolenti. Anche se dovremmo essere il faro dell'ordine per tutta il [ShowRegionName('japan_region')], sempre più clan dubitano della nostra autorità. L'ultimo affronto è quello di [actor.GetName], che si è presentato in aperta sfida al nostro dominio e ha dichiarato le proprie terre indipendenti. Questo non può essere tollerato, poiché dobbiamo mettere al loro posto qualsiasi clan che pensi di non avere alcun diritto nei nostri confronti, altrimenti vedremo noi stessi e il nostro paese sprofondare in un caos ancora maggiore."
+ sengoku.23.desc: "Questi sono tempi davvero turbolenti. Anche se dovremmo essere il faro dell'ordine per tutta il [ShowRegionName('japan_region')], sempre più clan dubitano della nostra autorità. L'ultimo affronto è quello [actor.Custom('IT_Della')][actor.GetName], che si è presentato in aperta sfida al nostro dominio e ha dichiarato le proprie terre indipendenti. Questo non può essere tollerato, poiché dobbiamo mettere al loro posto qualsiasi clan che pensi di non avere alcun diritto nei nostri confronti, altrimenti vedremo noi stessi e il nostro paese sprofondare in un caos ancora maggiore."
  sengoku.23.a: "Il chiodo che sporge deve essere piantato."

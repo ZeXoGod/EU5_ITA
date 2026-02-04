@@ -1,6 +1,6 @@
 ﻿l_english:
  colonial_revolution.1.title: "Nessuna Tassazione Senza Rappresentanza"
- colonial_revolution.1.desc: "Da quando è stato istituito il nostro territorio, siamo esistiti solo per arricchire [target_country.GetName] oltreoceano. Purtroppo, non abbiamo ricevuto una rappresentanza equa né nelle questioni [target_country.GetAdjectiveWithNoTooltip] né in quelle relative alle nostre terre. Alcuni dei nostri compatrioti più stimati, ispirati dall'[ShowInstitutionName('enlightenment')], stanno discutendo delle possibili opzioni per esercitare pressioni sul nostro sovrano affinché rescinda il potere, il che potrebbe degenerare in un conflitto."
+ colonial_revolution.1.desc: "Da quando è stato istituito il nostro territorio, siamo esistiti solo per arricchire [target_country.Custom('IT_La')][target_country.GetName] oltreoceano. Purtroppo, non abbiamo ricevuto una rappresentanza equa né nelle questioni [target_country.Custom('IT_ADJ_FP')] né in quelle relative alle nostre terre. Alcuni dei nostri compatrioti più stimati, ispirati dall'[ShowInstitutionName('enlightenment')], stanno discutendo delle possibili opzioni per esercitare pressioni sul nostro sovrano affinché rescinda il potere, il che potrebbe degenerare in un conflitto."
  colonial_revolution.1.a: "Le idee dell'[ShowInstitutionNameWithNoTooltip('enlightenment')] prevarranno!"
  colonial_revolution.1.a.tt: "In questa situazione, uno [subject|e] coloniale può formare un'[international_organization|e] di colonie dalle simili idee, provando a mettere pressione sul proprio signore così da costringerlo a rescindere il controllo o ad ottenere direttamente l'indipendenza."
 
@@ -9,13 +9,13 @@
  colonial_revolution.2.a: "Possiamo solo provare compassione per queste persone che rifiutano il nostro dominio."
 
  colonial_revolution.3.title: "In Cerca di Libertà"
- colonial_revolution.3.desc: "Dopo un lungo periodo di amministrazione incompetente, abbiamo raggiunto uno stato di divergenza. Differenze culturali, sociali e politiche e il continuo sfruttamento hanno fatto perdere ai coloni ogni fiducia nel loro padrone, [target_overlord.GetName]. Le differenze tra i gruppi che supportano [target_overlord.Custom('GetMotherlandFatherland')] e i coloni che preferiscono un governo libero dal controllo d'oltreoceano si stanno inasprendo e consolidando, rendendo la possibilità di un conflitto sempre più concreta."
+ colonial_revolution.3.desc: "Dopo un lungo periodo di amministrazione incompetente, abbiamo raggiunto uno stato di divergenza. Differenze culturali, sociali e politiche e il continuo sfruttamento hanno fatto perdere ai coloni ogni fiducia nel loro padrone, [target_overlord.GetName]. Le differenze tra i gruppi che supportano la madrepatria e i coloni che preferiscono un governo libero dal controllo d'oltreoceano si stanno inasprendo e consolidando, rendendo la possibilità di un conflitto sempre più concreta."
  colonial_revolution.3.a: "Questo è un serio problema."
- colonial_revolution.3.b: "Essere leali a [target_overlord.Custom('GetMotherlandFatherland')] ci tornerà utile."
+ colonial_revolution.3.b: "Essere leali alla madrepatria ci tornerà utile."
 
  colonial_revolution.4.title: "Restrizioni sul Commercio"
- colonial_revolution.4.desc: "I rapporti con le nostre colonie sono instabili da tempo. Le esigenze economiche di [ROOT.GetCountry.GetName] non possono essere ignorate e richiedono un flusso costante di merci da oltreoceano. Tuttavia, il nostro tentativo di affermare un rigido controllo economico sui nostri sudditi ha incontrato una forte resistenza. Alcuni coloni ci hanno chiesto di allentare la severità del nostro controllo sulle merci in entrata e in uscita dai loro mercati e di concedere loro un maggiore controllo locale."
- colonial_revolution.4.a: "Dovrebbero discutere della questione nel [ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
+ colonial_revolution.4.desc: "I rapporti con le nostre colonie sono instabili da tempo. Le esigenze economiche [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] non possono essere ignorate e richiedono un flusso costante di merci da oltreoceano. Tuttavia, il nostro tentativo di affermare un rigido controllo economico sui nostri sudditi ha incontrato una forte resistenza. Alcuni coloni ci hanno chiesto di allentare la severità del nostro controllo sulle merci in entrata e in uscita dai loro mercati e di concedere loro un maggiore controllo locale."
+ colonial_revolution.4.a: "Dovrebbero discutere della questione [ROOT.GetCountry.Custom('IT_PARL_NEL')][ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
  colonial_revolution.4.b: "Cedete alle loro richieste."
 
  colonial_revolution.5.title: "Voci di Ribellione"
@@ -24,46 +24,46 @@
  colonial_revolution.5.b: "Non hanno il diritto di deciderlo!"
 
  colonial_revolution.6.title: "La Voce di [target_character.GetNameWithNoTooltip]"
- colonial_revolution.6.desc: "[target_character.GetName], un abile oratore e figura influente, ha iniziato a fomentare disordini in [target_country.GetName]. Attraverso discorsi, lettere e istigazioni del pubblico a richiedere una maggiore rappresentanza, [target_character.GetSheHe] mette in discussione la nostra autorità e incita gli altri a cercare l'indipendenza dal [target_overlord.GetLongName]. Sebbene [target_character.GetSheHe] non abbia ancora apertamente invitato alla rivolta, la sua influenza cresce di giorno in giorno."
- colonial_revolution.6.a: "Esigete che le autorità coloniali effettuino l'estradizione di [target_character.GetHerHis]."
- colonial_revolution.6.b: "Lasciate che [target_character.GetHerHim] parli. Le sue parole non possono abbatterci."
+ colonial_revolution.6.desc: "[target_character.GetName], un abile oratore e figura influente, ha iniziato a fomentare disordini [target_country.Custom('IT_In')][target_country.GetName]. Attraverso discorsi, lettere e istigazioni del pubblico a richiedere una maggiore rappresentanza, [target_character.GetSheHe] mette in discussione la nostra autorità e incita gli altri a cercare l'indipendenza [target_overlord.Custom('IT_DAL_RANGO')][target_overlord.GetLongName]. Sebbene non abbia ancora apertamente invitato alla rivolta, la sua influenza cresce di giorno in giorno."
+ colonial_revolution.6.a: "Esigete che le autorità coloniali effettuino la sua estradizione."
+ colonial_revolution.6.b: "Lasciate che parli. Le sue parole non possono abbatterci."
  colonial_revolution.6.c: "Organizzate un assassinio, con discretezza."
  assassination_of_target_character_tt: "Tenteremo di assassinare [target_character.GetName]"
 
  
- colonial_revolution.7.title: "[target_overlord.GetNameWithNoTooltip] Esige l'Estradizione di [target_character.GetLastNameWithNoTooltip]"
- colonial_revolution.7.desc: "È giunta una richiesta formale da parte di [target_overlord.GetName]. Chiedono l'immediata estradizione di [target_character.GetName], citando sedizione e incitamento contro il [target_overlord.GetFlavorRank]. Certe voci suggeriscono che il vero scopo sia quello di giustiziare [target_character.GetHerHim] in modo rapido e pubblico. I nostri consiglieri sono divisi, alcuni vedono [target_character.GetHerHim] come un agitatore e un pericolo per la colonia, altri come una voce della libertà."
+ colonial_revolution.7.title: "[target_overlord.Custom('IT_La')|U][target_overlord.GetNameWithNoTooltip] Esige l'Estradizione di [target_character.GetLastNameWithNoTooltip]"
+ colonial_revolution.7.desc: "È giunta una richiesta formale da parte [target_overlord.Custom('IT_Della')][target_overlord.GetName]. Chiedono l'immediata estradizione di [target_character.GetName], citando sedizione e incitamento contro [target_overlord.Custom('IT_ART_RANGO')][target_overlord.GetFlavorRank]. Certe voci suggeriscono che il vero scopo sia quello di giustiziarl[target_character.Custom('IT_ART_O_A')] in modo rapido e pubblico. I nostri consiglieri sono divisi, alcuni  [target_character.Custom('IT_ART_LO_LA')] vedono come un agitatore e un pericolo per la colonia, altri come una voce della libertà."
  colonial_revolution.7.a: "Dobbiamo assecondarli, per ora."
  colonial_revolution.7.b: "Giammai!"
  
- colonial_revolution.8.title: "[target_overlord.GetNameWithNoTooltip] Agisce Contro la nostra Sovranità"
- colonial_revolution.8.desc: "[target_character.GetName] è morto, ucciso in quello che all'inizio sembrava un atto di violenza casuale. Tuttavia, sono emerse prove che collegano il complotto ad agenti al servizio di [target_overlord.GetName]. La rivelazione ha scioccato tutto il[target_country.GetFlavorRank], dove [target_character.GetSheHe] era diventato un simbolo di rilievo nel [ROOT.GetCountry.GetGovernment.GetCabinetTitle|U]. Il martirio sta ora alimentando ancor di più quel movimento che cercavano di mettere a tacere."
- colonial_revolution.8.a: "Quegli idioti di [target_overlord.GetNameWithNoTooltip]!"
+ colonial_revolution.8.title: "[target_overlord.Custom('IT_La')|U][target_overlord.GetNameWithNoTooltip] Agisce Contro la nostra Sovranità"
+ colonial_revolution.8.desc: "[target_character.GetName] è mort[target_character.Custom('IT_ART_O_A')], uccis[target_character.Custom('IT_ART_O_A')] in quello che all'inizio sembrava un atto di violenza casuale. Tuttavia, sono emerse prove che collegano il complotto ad agenti al servizio [target_overlord.Custom('IT_Della')][target_overlord.GetName]. La rivelazione ha scioccato tutt[target_country.Custom('IT_OA_RANGO')] [target_country.Custom('IT_ART_RANGO')][target_country.GetFlavorRank], dove [target_character.GetSheHe] era diventato un simbolo di rilievo nel [ROOT.GetCountry.GetGovernment.GetCabinetTitle|U]. Il martirio sta ora alimentando ancor di più quel movimento che cercavano di mettere a tacere."
+ colonial_revolution.8.a: "Quegli idioti [target_overlord.Custom('IT_Della')][target_overlord.GetNameWithNoTooltip]!"
  
  colonial_revolution.9.title: "Il Tentato Assassinio di [target_character.GetLastNameWithNoTooltip]"
- colonial_revolution.9.desc: "È stato compiuto un attentato alla vita di [target_character.GetName], ma fortunamente non è andato a buon fine. Il colpevole è stato catturato e, sotto interrogatorio, ha confessato di avere legami con agenti di [target_overlord.GetName], i nostri padroni! Il complotto ha solo rafforzato l'influenza di [target_character.GetShortNameWithNoTooltip], che è adesso una leggenda vivente, e dipinto [target_overlord.GetNameWithNoTooltip] come un tiranno agli occhi di molti all'interno del [target_country.GetFlavorRank]."
+ colonial_revolution.9.desc: "È stato compiuto un attentato alla vita di [target_character.GetName], ma fortunamente non è andato a buon fine. Il colpevole è stato catturato e, sotto interrogatorio, ha confessato di avere legami con agenti [target_overlord.Custom('IT_Della')][target_overlord.GetName], i nostri signori! Il complotto ha solo rafforzato l'influenza di [target_character.GetShortNameWithNoTooltip], che è adesso una leggenda vivente, e dipinto [target_overlord.Custom('IT_La')][target_overlord.GetNameWithNoTooltip] come un tiranno agli occhi di molti all'interno [target_country.Custom('IT_DEL_RANGO')][target_country.GetFlavorRank]."
 
  colonial_revolution.10.title: "Una Richiesta di Rimozione"
-  colonial_revolution.10.desc: "Una fazione in crescita all'interno del nostro [ROOT.GetCountry.GetFlavorRank] ha chiesto la rimozione di [target_character.GetName], un membro del [ROOT.GetCountry.GetGovernment.GetCabinetTitle] considerato eccessivamente fedele a [target_overlord.GetName] e ostile all'autonomia locale. Le accuse citano corruzione e vero e proprio spionaggio. La richiesta è chiara: [target_character.GetSheHe] deve essere destituito e consegnato a [target_overlord.GetName]."
+ colonial_revolution.10.desc: "Una fazione in crescita all'interno [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] ha chiesto la rimozione di [target_character.GetName], un membro del [ROOT.GetCountry.GetGovernment.GetCabinetTitle] considerato eccessivamente fedele [ROOT.GetCountry.Custom('IT_Alla')][target_overlord.GetName] e ostile all'autonomia locale. Le accuse citano corruzione e vero e proprio spionaggio. La richiesta è chiara: [target_character.GetSheHe] deve essere destituito e consegnato [target_overlord.Custom('IT_Alla')][target_overlord.GetName]."
  colonial_revolution.10.a: "Inviate una lettera con la nostra richiesta."
  colonial_revolution.10.b: "Risolveremo la questione internamente."
 
- colonial_revolution.11.title: "[target_country.GetNameWithNoTooltip] Richiede l'Estradizione di [target_character.GetLastNameWithNoTooltip]"
- colonial_revolution.11.desc: "È giunta una richiesta formale da [target_country.GetName]. Chiedono l'immediata estradizione di [target_character.GetName], citando sedizione e incitamento contro il [target_country.GetFlavorRank]. Certe voci suggeriscono che il vero scopo sia quello di sbarazzarsi rapidamente di [target_character.GetHerHim] nel tentativo di diffondere il sentimento rivoluzionario. I nostri consiglieri sono divisi, alcuni vedono [target_character.GetHerHim] come un governatore importante, altri cercano di placare i nostri sudditi coloniali."
+ colonial_revolution.11.title: "[target_country.Custom('IT_La')][target_country.GetNameWithNoTooltip] Richiede l'Estradizione di [target_character.GetLastNameWithNoTooltip]"
+ colonial_revolution.11.desc: "È giunta una richiesta formale [target_country.Custom('IT_Dalla')][target_country.GetName]. Chiedono l'immediata estradizione di [target_character.GetName], citando sedizione e incitamento contro [target_country.Custom('IT_ART_RANGO')][target_country.GetFlavorRank]. Certe voci suggeriscono che il vero scopo sia quello di sbarazzarsi rapidamente di [target_character.GetHerHim] nel tentativo di diffondere il sentimento rivoluzionario. I nostri consiglieri sono divisi, alcuni [target_character.Custom('IT_ART_LO_LA')] vedono come un governatore importante, altri cercano di placare i nostri sudditi coloniali."
  colonial_revolution.11.a: "Procedete con l'estradizione."
  colonial_revolution.11.b: "Non prenderemo in considerazione le richieste di una semplice colonia!"
  scales_with_character_abilities_tt: "La perdità di [government_power|e] scalerà in base all'influenza e all'[total_ability|e] di [target_character.GetName]"
 
  colonial_revolution.12.title: "Governo Popolare"
- colonial_revolution.12.desc: "Mentre il mondo è preso d'assalto dal desiderio d'indipendenza delle colonie, il governo stabile e deciso di [ROOT.GetCountry.GetGovernment.GetRuler.GetName] non è passato inosservato ai nostri sudditi. L'ammirazione suscitata da [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim] nei nostri sudditi fa sì che molti siano soddisfatti del nostro governo."
+ colonial_revolution.12.desc: "Mentre il mondo è preso d'assalto dal desiderio d'indipendenza delle colonie, il governo stabile e deciso [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.GetName] non è passato inosservato ai nostri sudditi. L'ammirazione suscitata da [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim] nei nostri sudditi fa sì che molti siano soddisfatti del nostro governo."
  colonial_revolution.12.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  colonial_revolution.13.title: "Senza un Leader"
- colonial_revolution.13.desc: "Di solito, i nostri sudditi trovano terreno comune dietro la figura unificante del nostro sovrano. Purtroppo, dalla morte di [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] siamo rimasti senza una leadership chiara e i nostri sudditi rischiano di farsi idee pericolose sulla libertà e la sovranità."
+ colonial_revolution.13.desc: "Di solito, i nostri sudditi trovano terreno comune dietro la figura unificante del nostro sovrano. Purtroppo, dalla morte [ROOT.GetCountry.GetGovernment.GetPreviousRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] siamo rimasti senza una leadership chiara e i nostri sudditi rischiano di farsi idee pericolose sulla libertà e la sovranità."
  colonial_revolution.13.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
 
  colonial_revolution.14.title: "Un Percorso Pacifico verso il Futuro"
- colonial_revolution.14.desc: "Nell'era della [ShowSituationName('colonial_revolution')], i conflitti tra signori e sudditi sono all'ordine del giorno e minacciano di scatenare nuovi spargimenti di sangue ad ogni occasione. Un gruppo di persone, composto sia da coloni di [target_colony.GetName] che delle nostre terre, ha avanzato una proposta per risparmiare entrambi i nostri paesi da questo terribile futuro. Liberando [target_colony.GetNameWithNoTooltip] dai propri obblighi e firmando una dichiarazione ufficiale di alleanza, possiamo garantire un futuro prospero sia a noi che a [target_colony.GetNameWithNoTooltip]."
+ colonial_revolution.14.desc: "Nell'era della [ShowSituationName('colonial_revolution')], i conflitti tra signori e sudditi sono all'ordine del giorno e minacciano di scatenare nuovi spargimenti di sangue ad ogni occasione. Un gruppo di persone, composto sia da coloni di [target_colony.GetName] che delle nostre terre, ha avanzato una proposta per risparmiare entrambi i nostri paesi da questo terribile futuro. Liberando [target_colony.Custom('IT_La')][target_colony.GetNameWithNoTooltip] dai propri obblighi e firmando una dichiarazione ufficiale di alleanza, possiamo garantire un futuro prospero sia a noi che [ROOT.GetCountry.Custom('IT_Alla')][target_colony.GetNameWithNoTooltip]."
  colonial_revolution.14.a: "Affronteremo il futuro insieme."
  colonial_revolution.14.b: "Preferiremmo mantenere le relazioni nel loro stato attuale."
 
@@ -76,7 +76,7 @@
  colonial_revolution.15.b: "La posizione di [target_character_2.GetNameWithNoTooltip] ci ha convinto."
 
  colonial_revolution.1000.title: "La Libertà Richiede Supporto"
- colonial_revolution.1000.desc: "La nostra lotta per la libertà non può essere vinta da sola e richiede fondi importanti. Fortunatamente, [target_overlord.GetLongName], nella sua meschinità, ha accumulato molti nemici. Uno di questi, [target_rival.GetName], è pronto a investire nella rovina dei propri rivali. Con un po' di persuasione, potremmo ottenere fondi significativi per i nostri interessi. "
+ colonial_revolution.1000.desc: "La nostra lotta per la libertà non può essere vinta da sola e richiede fondi importanti. Fortunatamente, [target_overlord.Custom('IT_ART_RANGO')][target_overlord.GetLongName], nella sua meschinità, ha accumulato molti nemici. Uno di questi, [target_rival.Custom('IT_La')][target_rival.GetName], è pronto a investire nella rovina dei propri rivali. Con un po' di persuasione, potremmo ottenere fondi significativi per i nostri interessi. "
  colonial_revolution.1000.a: "I soldi sono la risorsa di cui abbiamo più bisogno."
  colonial_revolution.1000.b: "Servono altre truppe che combattano per la nostra libertà."
  colonial_revolution.1000.c: "Dovrebbero unirsi ai nostri sforzi bellici."
@@ -85,13 +85,13 @@
  ar_gain_manpower_tt: "Se accetteranno, riceveremo una porzione delle loro riserve"
  ar_gain_alliance_tt: "Se accetteranno, stipuleremo un'alleanza con loro"
 
- colonial_revolution.1001.title: "[target_colony.GetNameWithNoTooltip] Richiede Assistenza"
- colonial_revolution.1001.desc: "Il povero popolo di [target_colony.GetName] sta soffrendo sotto il dominio tirannico di [target_overlord.GetName]. Una delegazione diplomatica di [target_colony.GetNameWithNoTooltip] ci ha ora chiesto di sostenere i loro sforzi per l'indipendenza, ma le loro richieste sono ingenti e non siamo ancora sicuri di poterli sostenere."
+ colonial_revolution.1001.title: "[target_colony.Custom('IT_La')|U][target_colony.GetNameWithNoTooltip] Richiede Assistenza"
+ colonial_revolution.1001.desc: "Il povero popolo [target_colony.Custom('IT_Di')][target_colony.GetName] sta soffrendo sotto il dominio tirannico [target_overlord.Custom('IT_Della')][target_overlord.GetName]. Una delegazione diplomatica [target_colony.Custom('IT_Della')][target_colony.GetNameWithNoTooltip] ci ha ora chiesto di sostenere i loro sforzi per l'indipendenza, ma le loro richieste sono ingenti e non siamo ancora sicuri di poterli sostenere."
  colonial_revolution.1001.a: "Cosa non si fa per indebolare i propri rivali."
  colonial_revolution.1001.b: "No, non vogliamo che le loro idee di libertà si diffondano anche qui."
 
- colonial_revolution.1002.title: "La Risposta di [target_rival.GetNameWithNoTooltip]"
- colonial_revolution.1002.desc.common: "I diplomatici di [target_rival.GetNameWithNoTooltip] hanno consegnato una risposta alla nostra richiesta di sostegno."
+ colonial_revolution.1002.title: "La Risposta [target_rival.Custom('IT_Della')][target_rival.GetNameWithNoTooltip]"
+ colonial_revolution.1002.desc.common: "I diplomatici [target_rival.Custom('IT_Della')][target_rival.GetNameWithNoTooltip] hanno consegnato una risposta alla nostra richiesta di sostegno."
  colonial_revolution.1002.accepted.desc: "$colonial_revolution.1002.desc.common$ Hanno promesso di schierarsi al nostro fianco nella nostra lotta contro [target_overlord.GetName]. Insieme, distruggeremo le catene dell'oppressione che ci legano al nostro signore."
  colonial_revolution.1002.desc: "$colonial_revolution.1002.desc.common$ I codardi si rifiutano di darci il loro sostegno e ci hanno lasciati soli nella nostra lotta contro l'oppressione [target_overlord.GetAdjective]."
  colonial_revolution.1002.a: "Sono un alleato prezioso per la nostra causa."
