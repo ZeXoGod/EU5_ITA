@@ -1,6 +1,6 @@
 ﻿l_english:
 
- flavor_chk.1.title: "Il tramonto di [ShowLocationNameWithNoTooltip('cahokia')]"
+ flavor_chk.1.title: "Il Tramonto di [ShowLocationNameWithNoTooltip('cahokia')]"
  flavor_chk.1.desc: "Sebbene [ShowLocationName('cahokia')] sia servita a lungo come capitale centrale per la nostra gente, i secoli recenti le hanno portato un grande declino. Le tentacolari dimore attraverso i boschi e i progetti di costruzione su larga scala sono lentamente sbiaditi nell'oscurità negli ultimi secoli, e la popolazione centrale principale di [ShowLocationNameWithNoTooltip('cahokia')] è tutto ciò che rimane.\n\nNegli ultimi anni, poiché una parte crescente della popolazione di [ShowLocationNameWithNoTooltip('cahokia')] ha iniziato ad andarsene, alcuni hanno incoraggiato il suo [our_ruler.GetName] a indire ufficialmente una migrazione di massa per reinsediarsi altrove, sebbene altri ritengano che, con un notevole sforzo, la vecchia gloria di [ShowLocationNameWithNoTooltip('cahokia')] possa essere ripristinata."
  flavor_chk.1.a: "È tempo di abbandonare i resti di questa città un tempo gloriosa."
  flavor_chk.1.b: "La nostra età dell'oro non è ancora finita, possiamo resuscitare la sofferente [ShowLocationNameWithNoTooltip('cahokia')]!"
@@ -9,38 +9,36 @@
  cahokia_conditions_to_gain_golden_age: "Mantenere la [stability|e] e il [prestige|e] sopra #G +50.00#! insieme al ripristino di [ShowLocationName('cahokia')] a 35.000 [pops|e] e 15.00 di [development|e] permetterà l'inaugurazione di una nuova età dell'oro."
  cahokia_conditions_to_avoid_migrations: "Qualora [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] dovesse subire ulteriore instabilità scendendo sotto #R -15.00#! di [stability|e], #R 60.00#! di [tribal_cohesion|e] o l'evento [dynamic_historical_event|e] $flavor_chk.35.title$, vaste fette di [pops|e] potrebbero [migrate|e] dalle nostre [locations|e]."
 
- flavor_chk.2.title: "Ricostruzione parziale dei Woodhenges"
+ flavor_chk.2.title: "Ricostruzione Parziale dei Woodhenges"
  flavor_chk.2.desc: "Sebbene in gran parte abbandonata negli ultimi decenni, all'interno di [ShowLocationName('cahokia')] rimane uno dei centri usati dalle grandi menti del passato, una collezione di Woodhenges. Sebbene la pratica sia cessata in tempi recenti, i nostri antenati usavano un cerchio completo per mappare la direzione in cui il sole sorgeva e tramontava.\n\nSe dovessimo impegnarci per ricostruire i Woodhenges, individui dalle grandi menti potrebbero riprendere tale pratica."
  flavor_chk.2.a: "Fornite il necessario per restaurare i Woodhenges."
  flavor_chk.2.b: "Sarebbe uno sforzo sprecato."
 
-
-
- flavor_chk.3.title: "Espansione dei Woodhenges restaurati"
+ flavor_chk.3.title: "Espansione dei Woodhenges Restaurati"
  flavor_chk.3.desc: "In seguito al restauro dei Woodhenges, alcuni all'interno di [ShowLocationName('cahokia')] hanno ripreso a studiare il cielo. Sebbene il ritorno della pratica abbia stupito altri all'interno [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')]su[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetFlavorRank], insieme al fatto che l'allineamento del Woodhenge ora influenzi le date pianificate per le cerimonie, i ricercatori hanno presentato una richiesta al suo [our_ruler.GetName]. Sebbene la ricostruzione abbia permesso un rinnovato studio del cielo, alcuni ritengono che la capacità attuale sia insufficiente e hanno richiesto il supporto [ROOT.GetCountry.GetGovernment.GetAdjective] per espandere notevolmente i Woodhenges esistenti."
  flavor_chk.3.a: "Accogliete la loro richiesta ed espandete i Woodhenges."
  flavor_chk.3.b: "La dimensione del restauro è più che sufficiente!"
 
- flavor_chk.4.title: "Inondazione nei boschi [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
+ flavor_chk.4.title: "Inondazione nei Boschi [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
  flavor_chk.4.desc: "Recenti mutamenti nelle stagioni hanno portato con sé piogge terribili, mai viste da generazioni, e una grande inondazione ha colpito i boschi di [ShowLocationName('cahokia')]. Sebbene gran parte della zona interna di [ShowLocationNameWithNoTooltip('cahokia')] sia stata risparmiata, le porzioni esterne sono state gravemente danneggiate, con molti dei restanti abitanti che indicano questo evento come un altro segno che [ShowLocationNameWithNoTooltip('cahokia')] stia diventando un luogo tutt'altro che ospitale in cui vivere."
  flavor_chk.4.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
 
- flavor_chk.5.title: "In preparazione di future inondazioni"
- flavor_chk.5.desc: "La recente catastrofica inondazione avvenuta a [ShowLocationName('cahokia')] ha riacceso ancora una volta il dibattito per proteggere il [target_location.GetRank.GetName] da future alluvioni. Sebbene gran parte delle porzioni interne sia stata risparmiata, i confini esterni di [ShowLocationNameWithNoTooltip('cahokia')] sono stati gravemente danneggiati, costringendo molti di coloro che vivevano nelle regioni esterne a spostarsi verso l'interno. Due fazioni in lotta all'interno della cerchia ristretta del suo [our_ruler.GetName] hanno proposto di raddoppiare gli sforzi per fortificare le porzioni interne per la popolazione rimanente, mentre altri hanno suggerito di compiere grandi sforzi per erigere barricate più forti nelle regioni colpite, permettendo il graduale insediamento delle porzioni esterne di [ShowLocationNameWithNoTooltip('cahokia')]."
+ flavor_chk.5.title: "In Preparazione di Future Inondazioni"
+ flavor_chk.5.desc: "La recente catastrofica inondazione avvenuta a [ShowLocationName('cahokia')] ha riacceso ancora una volta il dibattito per proteggere [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] da future alluvioni. Sebbene gran parte delle porzioni interne sia stata risparmiata, i confini esterni di [ShowLocationNameWithNoTooltip('cahokia')] sono stati gravemente danneggiati, costringendo molti di coloro che vivevano nelle regioni esterne a spostarsi verso l'interno. Due fazioni in lotta all'interno della cerchia ristretta del suo [our_ruler.GetName] hanno proposto di raddoppiare gli sforzi per fortificare le porzioni interne per la popolazione rimanente, mentre altri hanno suggerito di compiere grandi sforzi per erigere barricate più forti nelle regioni colpite, permettendo il graduale insediamento delle porzioni esterne di [ShowLocationNameWithNoTooltip('cahokia')]."
  flavor_chk.5.a: "Dovremmo adottare misure per fortificare il centro contro future inondazioni!"
  flavor_chk.5.b: "Impegnatevi a erigere le barricate esterne nella speranza di reinsediare la zona esterna di [ShowLocationNameWithNoTooltip('cahokia')]."
 
- flavor_chk.6.title: "Rivitalizzazione dell'élite [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
+ flavor_chk.6.title: "Rivitalizzazione dell'Èlite [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
  flavor_chk.6.desc: "Mentre il suo [our_ruler.GetName] ha mantenuto una stretta presa sulla struttura del potere di [ShowLocationName('cahokia')], molte delle fazioni [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] che hanno assistito [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] in passato sono in gran parte svanite in tempi recenti.\n\nTuttavia, la recente crescita di [ShowLocationNameWithNoTooltip('cahokia')] ha visto una rivitalizzazione di queste sbiadite élite [ROOT.GetCountry.GetAdjective], che ora cercano di collaborare con il suo [our_ruler.GetNameWithNoTooltip] per inaugurare una nuova era [ROOT.GetCountry.GetAdjectiveWithNoTooltip]."
  flavor_chk.6.a: "Un'élite rafforzata è segno di un futuro più solido."
 
- flavor_chk.7.title: "Peggioramento delle condizioni alimentari"
+ flavor_chk.7.title: "Peggioramento delle Condizioni Alimentari"
  flavor_chk.7.desc: "Sebbene [ShowLocationName('cahokia')] abbia mantenuto una popolazione relativamente numerosa, recenti variazioni nelle rese agricole hanno portato costantemente a una diminuzione della produzione alimentare complessiva, con alcune colture come il [ShowGoodsName('maize')] che sono diventate troppo prevalenti, portando a un declino della salute nutrizionale della popolazione. Tali cambiamenti hanno condotto a un notevole calo della salute della popolazione, oltre alla fame per altri.\n\nMolti tra la popolazione hanno esortato il suo [our_ruler.GetName] a inviare bande di guerra nelle terre selvagge per razziare altre tribù in cerca di cibo, sebbene tali azioni porterebbero indubbiamente a delle ripercussioni."
  flavor_chk.7.a: "Inviate le bande di guerra a razziare le tribù vicine per il cibo."
  flavor_chk.7.b: "Questa scarsità di cibo passerà entro la prossima stagione."
  chk_stealing_of_foods: "Scorte alimentari rubate"
 
- flavor_chk.8.title: "Incuria dei fiumi dei boschi"
+ flavor_chk.8.title: "Incuria dei Fiumi dei Boschi"
  flavor_chk.8.desc: "I fiumi che scorrono nei boschi intorno a [ShowLocationName('cahokia')] hanno beneficiato a lungo la nostra gente. Tuttavia, con la crescita del [target_location.GetRank.GetName], è cresciuta anche l'incuria verso quelle stesse fonti d'acqua. Poiché la principale fonte d'acqua per [ShowLocationNameWithNoTooltip('cahokia')] sta ora facendo ammalare la nostra popolazione, il suo [our_ruler.GetName] ha delegato diverse pattuglie di ricognizione per cercare una fonte d'acqua più salubre, sebbene il trasporto della nuova fonte sarà difficile."
  flavor_chk.8.a: "Dovremo cercare una nuova fonte d'acqua."
 
@@ -50,69 +48,69 @@
  flavor_chk.9.b: "Sforzatevi per un ritorno a questa pratica."
  chk_reliance_on_maize: "Popolazione dipendente dal mais"
 
- flavor_chk.10.title: "Reintroduzione del [ShowGoodsNameWithNoTooltip('maize')] nixtamalizzato"
+ flavor_chk.10.title: "Reintroduzione del [ShowGoodsNameWithNoTooltip('maize')] Nixtamalizzato"
  flavor_chk.10.desc: "Nonostante una certa resistenza iniziale da parte della popolazione di [ShowLocationName('cahokia')], la reintroduzione del [ShowGoodsName('maize')] nixtamalizzato si è rivelata piuttosto efficace, con crescenti segni di miglioramento della salute in tutta la popolazione. Tuttavia, alcuni tra la popolazione hanno anche espresso risentimento, poiché il processo ha portato a una notevole diminuzione della quantità di [ShowGoodsNameWithNoTooltip('maize')] disponibile."
  flavor_chk.10.a: "Speriamo che questo porti a una popolazione rinvigorita."
- chk_nixtamalized_maize_demand: "Mais nixtamalizzato"
+ chk_nixtamalized_maize_demand: "Mais Nixtamalizzato"
 
- flavor_chk.11.title: "Rinnovato rifiuto del [ShowGoodsNameWithNoTooltip('maize')] nixtamalizzato"
- flavor_chk.11.desc: "Sebbene la reintroduzione del [ShowGoodsName('maize')] nixtamalizzato abbia rappresentato un miglioramento per il benessere generale della popolazione di [ShowLocationName('cahokia')], il risentimento verso l'adozione forzata del processo ha ora portato a un'ondata di disordini in tutto il [target_location.GetRank.GetName]. Sebbene il processo abbia migliorato la salute di coloro che lo hanno adottato, la riduzione della disponibilità del suo [ShowGoodsNameWithNoTooltip('maize')] ha raggiunto il punto di ebollizione."
+ flavor_chk.11.title: "Rinnovato Rifiuto del [ShowGoodsNameWithNoTooltip('maize')] Nixtamalizzato"
+ flavor_chk.11.desc: "Sebbene la reintroduzione del [ShowGoodsName('maize')] nixtamalizzato abbia rappresentato un miglioramento per il benessere generale della popolazione di [ShowLocationName('cahokia')], il risentimento verso l'adozione forzata del processo ha ora portato a un'ondata di disordini in tutt[target_location.Custom('IT_OA_LOCATION')] [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName]. Sebbene il processo abbia migliorato la salute di coloro che lo hanno adottato, la riduzione della disponibilità del suo [ShowGoodsNameWithNoTooltip('maize')] ha raggiunto il punto di ebollizione."
  flavor_chk.11.a: "Rifiutate di abbandonare la pratica."
  flavor_chk.11.b: "Cedete alle richieste della popolazione e proibite ulteriore [ShowGoodsNameWithNoTooltip('maize')] nixtamalizzato."
  chk_maize_cravings: "Bramosia di mais"
 
- flavor_chk.12.title: "Venerazione del suo [our_ruler.GetName]"
+ flavor_chk.12.title: "Venerazione di [our_ruler.GetName]"
  flavor_chk.12.desc: "Durante il suo governo, il suo [our_ruler.GetName] ha sviluppato un seguito quasi religioso tra la gente di [ShowLocationName('cahokia')]. Attraverso i suoi sforzi per restaurare porzioni del [target_location.GetRank.GetName], gettando al contempo le basi per facilitare il ritorno dei legami commerciali perduti, il suo [our_ruler.GetNameWithNoTooltip] ha visto solo crescere il suo seguito. Lodare l'improvvisa rinascita del [target_location.GetRank.GetNameWithNoTooltip], che era stato in forte declino, ha spinto molti a vedere il suo [our_ruler.GetNameWithNoTooltip] come il suo salvatore."
  flavor_chk.12.a: "Accettate gli atti di culto."
  flavor_chk.12.b: "Il suo [our_ruler.GetNameWithNoTooltip] non ha salvato [ShowLocationNameWithNoTooltip('cahokia')], ma piuttosto la sua gente."
 
- flavor_chk.20.title: "Ripopolamento della zona esterna di [ShowLocationNameWithNoTooltip('cahokia')]"
+ flavor_chk.20.title: "Ripopolamento della Zona Esterna di [ShowLocationNameWithNoTooltip('cahokia')]"
  flavor_chk.20.desc: "La rinascita della crescita all'interno di [ShowLocationName('cahokia')] ha portato all'emergere di una nuova discussione all'interno della cerchia ristretta del suo [our_ruler.GetName] riguardo al ripopolamento delle regioni esterne di [ShowLocationNameWithNoTooltip('cahokia')]. Sebbene queste regioni ospitassero un tentacolare [target_location.GetRank.GetName] in passato, nelle ultime generazioni sono diventate poco più di un'estensione del limite del [target_location.GetRank.GetNameWithNoTooltip]. Sebbene incoraggiare il reinsediamento della zona esterna di [ShowLocationNameWithNoTooltip('cahokia')] possa portare il [target_location.GetRank.GetNameWithNoTooltip] a reclamare frammenti della sua vecchia gloria, potrebbe anche rivelarsi un compito costoso."
  flavor_chk.20.a: "Incoraggiate il reinsediamento nella zona esterna di [ShowLocationNameWithNoTooltip('cahokia')]."
  flavor_chk.20.b: "Concentrate la popolazione nel [target_location.GetRank.GetNameWithNoTooltip] principale."
 
- flavor_chk.21.title: "Ricostruzione della regione esterna di [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.21.desc: "Con la ricrescita di [ShowLocationName('cahokia')] che ha raggiunto nuovi livelli, gli insediamenti esistenti ai confini esterni di [ShowLocationNameWithNoTooltip('cahokia')] sono stati ora in gran parte ripopolati. Sebbene la regione sia stata soggetta in passato a pericoli ambientali, come le inondazioni, molti hanno chiesto al suo [our_ruler.GetName] che la crescente rinascita della popolazione di [ShowLocationNameWithNoTooltip('cahokia')] ponga le basi per ricostruire il [target_location.GetRank.GetName] esterno."
+ flavor_chk.21.title: "Ricostruzione della Regione Esterna di [ShowLocationNameWithNoTooltip('cahokia')]"
+ flavor_chk.21.desc: "Con la ricrescita di [ShowLocationName('cahokia')] che ha raggiunto nuovi livelli, gli insediamenti esistenti ai confini esterni di [ShowLocationNameWithNoTooltip('cahokia')] sono stati ora in gran parte ripopolati. Sebbene la regione sia stata soggetta in passato a pericoli ambientali, come le inondazioni, molti hanno chiesto al suo [our_ruler.GetName] che la crescente rinascita della popolazione di [ShowLocationNameWithNoTooltip('cahokia')] ponga le basi per ricostruire [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] esterno."
  flavor_chk.21.a: "Iniziate la ricostruzione della regione esterna."
  flavor_chk.21.b: "Risparmiate le risorse per altri progetti."
 
- flavor_chk.22.title: "Un centro di culture tribali"
+ flavor_chk.22.title: "Un Centro di Culture Tribali"
  flavor_chk.22.desc: "Mentre il declino di [ShowLocationName('cahokia')] ha visto nel tempo gran parte della sua diversificata popolazione andarsene, la crescente rinascita del [target_location.GetRank.GetName] ha ora visto i popoli delle tribù vicine tornare a insediarsi ancora una volta. Il ritorno dei mercanti dal [target_migration_source.GetName] a [ShowLocationNameWithNoTooltip('cahokia')] suggerisce che il [target_location.GetRank.GetNameWithNoTooltip] possa nuovamente risorgere come un centro primario all'interno dei boschi orientali."
  flavor_chk.22.a: "Una società di nuovo prospera!"
 
- flavor_chk.23.title: "Riemergere del commercio [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
+ flavor_chk.23.title: "Riemergere del Commercio [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
  flavor_chk.23.desc: "Sebbene le ultime generazioni abbiano visto il crescente declino di [ShowLocationName('cahokia')] come hub principale del commercio in tutti i boschi orientali, in tempi recenti tale declino si è trasformato in una graduale rinascita. Grazie agli sforzi del suo [our_ruler.GetName], [ShowLocationNameWithNoTooltip('cahokia')], con la sua popolazione rinascente e i suoi progetti infrastrutturali, ha attirato popoli da varie tribù distanti affinché tornino ancora una volta a [ShowLocationNameWithNoTooltip('cahokia')] per impegnarsi nel commercio regionale."
  flavor_chk.23.a: "[ShowLocationNameWithNoTooltip('cahokia')] siede ancora una volta come un centro di commercio primario!"
  chk_center_of_trade: "Centro di commercio regionale"
 
- flavor_chk.24.title: "Una nuova età dell'oro [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
+ flavor_chk.24.title: "Una Nuova Età dell'Oro [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
  flavor_chk.24.desc: "Un tempo creduta un [target_location.GetRank.GetName] nei suoi ultimi giorni, grazie agli sforzi del suo [our_ruler.GetName] e dei suoi seguaci, [ShowLocationName('cahokia')] si erge ora come un faro del mondo nordamericano. Sebbene le ultime generazioni siano state un'epoca oscura per [ShowLocationNameWithNoTooltip('cahokia')], essa è ora entrata in una nuova era dorata di innovazione e stabilità!"
  flavor_chk.24.a: "[ShowLocationNameWithNoTooltip('cahokia')] non vacillerà mai più!"
 
- flavor_chk.30.title: "Fortificare il centro"
+ flavor_chk.30.title: "Fortificare il Centro"
  flavor_chk.30.desc: "In seguito alle recenti incursioni da parte del [cahokia_raider.GetName], gran parte delle regioni esterne di [ShowLocationName('cahokia')] è stata gravemente danneggiata, con una parte maggiore della popolazione rimanente che si è ritirata verso l'interno. Per combattere la crescente ascesa dei predoni di altre tribù vicine, alcuni hanno suggerito al suo [our_ruler.GetName] di fortificare il centro del [target_location.GetRank.GetName], sebbene tale progetto porterebbe a un abbandono sempre maggiore della regione esterna di [ShowLocationNameWithNoTooltip('cahokia')]."
  flavor_chk.30.a: "Fortificate il centro di [ShowLocationNameWithNoTooltip('cahokia')] per proteggerlo dalle incursioni tribali."
  flavor_chk.30.b: "Dovremmo invece portare la battaglia al [cahokia_raider.GetNameWithNoTooltip]!"
 
- flavor_chk.31.title: "Costruzione selettiva"
+ flavor_chk.31.title: "Costruzione Selettiva"
  flavor_chk.31.desc: "Mentre le generazioni del passato popolo [ROOT.GetCountry.GetAdjective] furono eminenti costruttori di tumuli, con estesi progetti edilizi, la popolazione in declino di [ShowLocationName('cahokia')] ha reso tali progetti irrealizzabili. Sebbene i progetti continuino ancora, il suo [our_ruler.GetName] è stato incoraggiato dalla sua cerchia ristretta a perseguire progetti più selettivi, secondo necessità, per mantenere il benessere del [target_location.GetRank.GetName]."
  flavor_chk.31.a: "Limitate i progetti di costruzione per preservare le entrate."
  flavor_chk.31.b: "Impegnatevi nuovamente per l'espansione di [ShowLocationNameWithNoTooltip('cahokia')]!"
 
- flavor_chk.32.title: "La piaga di [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.32.desc: "In seguito all'aumento del peggioramento delle condizioni all'interno di [ShowLocationName('cahokia')], una fetta crescente della popolazione ha deciso di abbandonare il [target_location.GetRank.GetName] per sempre, scegliendo il [cahokia_migration.GetName] per insediarsi e stabilire un nuovo villaggio. Con la dimensione crescente di questo esodo da [ShowLocationNameWithNoTooltip('cahokia')], che include parte della sua popolazione più qualificata, coloro che fanno parte della cerchia ristretta del suo [our_ruler.GetName] temono che questi possano essere gli ultimi giorni della gloria di [ShowLocationNameWithNoTooltip('cahokia')]."
+ flavor_chk.32.title: "La Piaga di [ShowLocationNameWithNoTooltip('cahokia')]"
+ flavor_chk.32.desc: "In seguito all'aumento del peggioramento delle condizioni all'interno di [ShowLocationName('cahokia')], una fetta crescente della popolazione ha deciso di abbandonare [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] per sempre, scegliendo il [cahokia_migration.GetName] per insediarsi e stabilire un nuovo villaggio. Con la dimensione crescente di questo esodo da [ShowLocationNameWithNoTooltip('cahokia')], che include parte della sua popolazione più qualificata, coloro che fanno parte della cerchia ristretta del suo [our_ruler.GetName] temono che questi possano essere gli ultimi giorni della gloria di [ShowLocationNameWithNoTooltip('cahokia')]."
  flavor_chk.32.a: "Un segno preoccupante di ciò che verrà."
 
- flavor_chk.33.title: "Declino della vecchia gloria commerciale"
+ flavor_chk.33.title: "Declino della Vecchia Gloria Commerciale"
  flavor_chk.33.desc: "In seguito a generazioni di crescente declino nell'attività commerciale, i vari gruppi tribali che arrivavano a [ShowLocationName('cahokia')] per condividere i beni della loro tribù hanno smesso del tutto. Convinti che questi mercanti non torneranno mai più a [ShowLocationNameWithNoTooltip('cahokia')], diversi membri della popolazione hanno iniziato a frugare tra i resti delle case commerciali un tempo usate da questi mercanti. Alcuni hanno esortato il suo [our_ruler.GetName] a prendere una posizione sulla questione poiché, se i mercanti tornassero un giorno, il saccheggio dei loro beni scatenerebbe probabilmente indignazione."
  flavor_chk.33.a: "Permettete il recupero dei resti dalle case commerciali abbandonate."
  flavor_chk.33.b: "Sarebbe meglio lasciare queste case indisturbate nella speranza che tornino."
 
- flavor_chk.34.title: "Perdita dei legami culturali condivisi"
- flavor_chk.34.desc: "Con il crescente declino della gloria di [ShowLocationName('cahokia')] come insediamento in cui molte tribù distanti arrivavano per commerciare e condividere pratiche, il [target_location.GetRank.GetName] ha iniziato a perdere una delle sue identità fondamentali come centro di legami culturali. Con molti all'interno di [ShowLocationNameWithNoTooltip('cahokia')] che mantengono una visione cupa del futuro, alcuni si chiedono se non sia meglio concentrarsi sulla nostra identità prima che anch'essa vada perduta con il [target_location.GetRank.GetNameWithNoTooltip]."
+ flavor_chk.34.title: "Perdita dei Legami Culturali Condivisi"
+ flavor_chk.34.desc: "Con il crescente declino della gloria di [ShowLocationName('cahokia')] come insediamento in cui molte tribù distanti arrivavano per commerciare e condividere pratiche, [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] ha iniziato a perdere una delle sue identità fondamentali come centro di legami culturali. Con molti all'interno di [ShowLocationNameWithNoTooltip('cahokia')] che mantengono una visione cupa del futuro, alcuni si chiedono se non sia meglio concentrarsi sulla nostra identità prima che anch'essa vada perduta con il [target_location.GetRank.GetNameWithNoTooltip]."
  flavor_chk.34.a: "Dovremmo invece concentrarci sulla nostra conservazione."
  flavor_chk.34.b: "Col tempo, questi legami comunitari torneranno a [ShowLocationNameWithNoTooltip('cahokia')]."
 
- flavor_chk.35.title: "L'ombra su [ShowLocationNameWithNoTooltip('cahokia')]"
+ flavor_chk.35.title: "L'Ombra su [ShowLocationNameWithNoTooltip('cahokia')]"
  flavor_chk.35.desc: "Sebbene siano stati fatti tentativi dal suo [our_ruler.GetName] e da molti altri all'interno di [ShowLocationName('cahokia')], la crescente instabilità della regione, insieme alla crescente natura inospitale dovuta ai falliti raccolti e al peggioramento delle condizioni del fiume, hanno spinto molti ad abbandonare [ShowLocationNameWithNoTooltip('cahokia')] per sempre. Mentre il suo [our_ruler.GetNameWithNoTooltip] e una parte dell'élite [ROOT.GetCountry.GetAdjective] hanno scelto di restare per ora, i giorni di gloria del [target_location.GetRank.GetName] sono ormai svaniti da tempo."
  flavor_chk.35.a: "I nostri giorni di gloria non sono che un'ombra del passato."
