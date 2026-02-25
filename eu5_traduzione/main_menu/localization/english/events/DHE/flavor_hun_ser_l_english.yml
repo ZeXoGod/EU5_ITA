@@ -1,22 +1,22 @@
-l_english:
+﻿l_english:
  flavor_hun_ser.1000.title: "Un'Offerta per [target_location.GetNameWithNoTooltip]"
- flavor_hun_ser.1000.desc: "Nel corso dei secoli, [target_location.GetName] è passata di mano molte volte. Diversi paesi hanno a volte controllato questa [target_location.GetRank.GetName] strategicamente importante, il che ha permesso loro di stringere la presa sulla regione più ampia intorno al Danubio. Il controllo [ROOT.GetCountry.GetAdjective] di [target_location.GetNameWithNoTooltip] si concluse nel 1319, quando la [target_location.GetRank.GetNameWithNoTooltip] fu sequestrata da [target_country.GetName]. Ora che abbiamo forgiato un'alleanza con loro, forse potremmo inviare a [target_country.GetNameWithNoTooltip] un'offerta - oro in cambio di [target_location.GetNameWithNoTooltip]. Molti sperano che ci sia una possibilità di negoziare il ritorno di [target_location.GetNameWithNoTooltip], poiché cederla a un alleato non comprometterà la sicurezza di [target_country.GetNameWithNoTooltip]."
+ flavor_hun_ser.1000.desc: "Nel corso dei secoli, [target_location.GetName] è passata di mano molte volte. Diversi paesi hanno a volte controllato questa [target_location.GetRank.GetName] strategicamente importante, il che ha permesso loro di stringere la presa sulla regione più ampia intorno al Danubio. Il controllo [ROOT.GetCountry.GetAdjective] di [target_location.GetNameWithNoTooltip] si concluse nel 1319, quando la [target_location.GetRank.GetNameWithNoTooltip] fu sequestrata [target_country.Custom('IT_Dalla')][target_country.GetName]. Ora che abbiamo forgiato un'alleanza con loro, forse potremmo inviare [target_country.Custom('IT_Alla')][target_country.GetNameWithNoTooltip] un'offerta - oro in cambio di [target_location.GetNameWithNoTooltip]. Molti sperano che ci sia una possibilità di negoziare il ritorno di [target_location.GetNameWithNoTooltip], poiché cederla a un alleato non comprometterà la sicurezza [target_country.Custom('IT_Di')][target_country.GetNameWithNoTooltip]."
  flavor_hun_ser.1000.a: "Non abbiamo nulla da perdere."
  flavor_hun_ser.1000.b: "Non facciamolo."
- flavor_hun_ser.1000.a.tt: "Invieremo un'offerta a [target_country.GetNameWithNoTooltip], richiedendo [target_location.GetNameWithNoTooltip] in cambio di oro. Se accettano, accadrà quanto segue:"
+ flavor_hun_ser.1000.a.tt: "Invieremo un'offerta [target_country.Custom('IT_Alla')][target_country.GetNameWithNoTooltip], richiedendo [target_location.GetNameWithNoTooltip] in cambio di oro. Se accettano, accadrà quanto segue:"
  
  flavor_hun_ser.1001.title: "Un'Offerta per [target_location.GetNameWithNoTooltip]"
- flavor_hun_ser.1001.desc: "Un'interessante offerta dai nostri alleati [from_country.GetAdjective] è appena giunta alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [from_country.GetNameWithNoTooltip] richiede che la [target_location.GetRank.GetName] di [target_location.GetName] e l'area circostante sia trasferita di nuovo a [from_country.GetNameWithNoTooltip], poiché la [target_location.GetRank.GetNameWithNoTooltip] era appartenuta a loro prima del 1319, e si vedono ancora come i suoi legittimi proprietari. Sostengono che cedere la [target_location.GetRank.GetNameWithNoTooltip] a un alleato non comprometterà la sicurezza della nostra nazione."
+ flavor_hun_ser.1001.desc: "Un'interessante offerta dai nostri alleati [from_country.GetAdjective] è appena giunta alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [from_country.GetNameWithNoTooltip] richiede che [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] di [target_location.GetName] e l'area circostante sia trasferita di nuovo [from_country.Custom('IT_Alla')][from_country.GetNameWithNoTooltip], poiché la [target_location.GetRank.GetNameWithNoTooltip] era appartenuta a loro prima del 1319, e si vedono ancora come i suoi legittimi proprietari. Sostengono che cedere la [target_location.GetRank.GetNameWithNoTooltip] a un alleato non comprometterà la sicurezza della nostra nazione."
  flavor_hun_ser.1001.a: "Sembra un buon accordo."
  flavor_hun_ser.1001.b: "Fuori discussione!"
- flavor_hun_ser.1001.a.tt: "Trasferiremo il controllo di [target_location.GetNameWithNoTooltip] a [from_country.GetNameWithNoTooltip]."
+ flavor_hun_ser.1001.a.tt: "Trasferiremo il controllo di [target_location.GetNameWithNoTooltip] [from_country.Custom('IT_Alla')][from_country.GetNameWithNoTooltip]."
  
  flavor_hun_ser_response_common: "Una risposta alla nostra offerta di scambiare [target_location.GetName] con oro è appena giunta alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [ROOT.GetCountry.GetCapital.GetName]."
- flavor_hun_ser.1002.title: "[target_country.GetNameWithNoTooltip] Accetta di Restituire [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1002.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Accetta di Restituire [target_location.GetNameWithNoTooltip]"
  flavor_hun_ser.1002.desc: "$flavor_hun_ser_response_common$ I nostri alleati [target_country.GetAdjective] hanno fortunatamente accettato l'offerta, e così [target_location.GetNameWithNoTooltip] è nuovamente sotto controllo [ROOT.GetCountry.GetAdjective]."
  flavor_hun_ser.1002.a: "Meraviglioso!"
  
- flavor_hun_ser.1003.title: "[target_country.GetNameWithNoTooltip] Rifiuta di Restituire [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1003.title: "[target_country.Custom('IT_La')|U][target_country.GetNameWithNoTooltip] Rifiuta di Restituire [target_location.GetNameWithNoTooltip]"
  flavor_hun_ser.1003.desc: "$flavor_hun_ser_response_common$ I nostri alleati [target_country.GetAdjective] hanno sfortunatamente rifiutato l'offerta, e così [target_location.GetNameWithNoTooltip] rimane sotto il loro controllo."
  flavor_hun_ser.1003.a: "Almeno ci abbiamo provato..."
  flavor_hun_ser.1003.b: "Prenderemo [target_location.GetNameWithNoTooltip] con la forza!"
