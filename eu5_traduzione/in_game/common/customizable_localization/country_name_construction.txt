@@ -1,9 +1,35 @@
 ﻿country_name_construction = {
 	type = country
 	text = { #ITA
-		localization_key = country_name_construction_ottomani
+		localization_key = country_name_construction_degli_beilic
 		trigger = {
+				OR = {
 					tag = TUR
+					tag = ERE
+					tag = HMD
+					tag = AYD
+					tag = AHI
+					tag = INA
+					tag = ALY
+					tag = HCI
+				}
+		}
+	}
+	text = { #ITA
+		localization_key = country_name_construction_dei_beilic
+		trigger = {
+				OR = {
+					tag = MEN
+					tag = SRU
+					tag = KAR
+					tag = KRD
+					tag = KBD
+					tag = TDJ
+					tag = CND
+					tag = DUL
+					tag = GRM
+				}
+					
 		}
 	}
 	text = { #ITA
@@ -47,7 +73,58 @@
 				AND = {
 					tag = USA
 					}
-				}
+				
+				OR = {
+					tag = HOL #Olanda
+					tag = ENG #Inghilterra
+					tag = HUN #Ungheria
+					tag = HAB #Austria
+					tag = HES #Assia
+					tag = ITA #Italia
+					tag = ATH #Atene
+					tag = HAM #Amburgo
+					tag = ASD #Alessandria
+					tag = ALE #Alencon
+					tag = ALB #Albania
+					tag = AQN #Aquitania
+					tag = AMG #Armagnac
+					tag = ARS #Artois
+					tag = ASC #Ascoli
+					tag = ARG #Argos
+					tag = ARM #Armenia
+					tag = AMA #Armagh
+					tag = ANR #Andorra
+					tag = ANJ #Angiò
+					tag = AOS #Aosta
+					tag = ATI #Asti
+					tag = AUV #Auvergne
+					tag = AST #Astarac
+					tag = AGC #Augusta
+					tag = AUG #Augusta Vindelicorum
+					tag = AUD #Arundel
+					tag = ATQ #Artuqidi
+					tag = ORE #Oreshek
+					tag = ICE #Islanda
+					tag = ORT #Ortenburg
+					tag = ACH #Acaia
+					tag = ABA #Alba
+					tag = ANC #Ancona
+					tag = ARB #Arborea
+					tag = ARZ #Arezzo
+					tag = IMO #Imola
+					tag = ORK #Orkney
+					tag = URB #Urbino
+					tag = GBR_ireland_and_great_britain #Irlanda e Gran Bretagna
+					tag = ADU #Andalusia
+					tag = AIA #Arabia
+					tag = ACT #Alcántara
+					tag = ALG #Algeri
+					tag = ANG #Angoulême
+					tag = ORL #Orleans
+					tag = EPI #Epiro
+					}
+				
+			}
 		}
 	}
 	text = { #ITA
@@ -65,7 +142,21 @@
 	text = { #ITA
 		localization_key = country_name_construction_fla
 		trigger = {
-					tag = FLA
+				OR = {
+					AND = {
+						tag = FLA
+					}
+				}
+		}
+	}
+	text = { #ITA
+		localization_key = country_name_construction_tws
+		trigger = {
+				OR = {
+					AND = {
+						tag = TWS
+					}
+				}
 		}
 	}
 	
@@ -194,7 +285,6 @@
 
 			country_rank_is_kingdom = yes
 			OR = {
-				tag = ARA
 				tag = CAS
 				tag = POL
 				AND = {
@@ -205,7 +295,16 @@
 			}
 		}
 	}
+	text = {
+		localization_key = country_name_construction_crown_aragona
+		trigger = {
 
+			country_rank_is_kingdom = yes
+			OR = {
+				tag = ARA
+			}
+		}
+	}
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name
 		fallback = yes

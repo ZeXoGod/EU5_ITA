@@ -714,7 +714,7 @@ IT_ART_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_IL"
+		localization_key = "IT_ART_LO"
 	}
 	
 	text = {
@@ -757,6 +757,11 @@ IT_ART_RANGO = {
 	}
 	
 	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
+		localization_key = "IT_ART_L"
+	}
+	
+	text = {
         trigger = { 
             always = yes 
         }
@@ -791,7 +796,7 @@ IT_DEL_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_DEL"
+		localization_key = "IT_ART_DELLO"
 	}
 	
 	text = {
@@ -834,6 +839,11 @@ IT_DEL_RANGO = {
 	}
 	
 	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
+		localization_key = "IT_ART_DELL"
+	}
+	
+	text = {
         trigger = { 
             always = yes 
         }
@@ -868,7 +878,7 @@ IT_DAL_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_DAL"
+		localization_key = "IT_ART_DALLO"
 	}
 	
 	text = {
@@ -911,6 +921,11 @@ IT_DAL_RANGO = {
 	}
 	
 	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
+		localization_key = "IT_ART_DALL"
+	}
+	
+	text = {
         trigger = { 
             always = yes 
         }
@@ -945,7 +960,7 @@ IT_AL_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_AL"
+		localization_key = "IT_ART_ALLO"
 	}
 	
 	text = {
@@ -988,6 +1003,11 @@ IT_AL_RANGO = {
 	}
 	
 	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
+		localization_key = "IT_ART_ALL"
+	}
+	
+	text = {
         trigger = { 
             always = yes 
         }
@@ -1022,7 +1042,7 @@ IT_SUL_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_SUL"
+		localization_key = "IT_ART_SULLO"
 	}
 	
 	text = {
@@ -1065,6 +1085,11 @@ IT_SUL_RANGO = {
 	}
 	
 	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
+		localization_key = "IT_ART_SULL"
+	}
+	
+	text = {
         trigger = { 
             always = yes 
         }
@@ -1099,7 +1124,7 @@ IT_NEL_RANGO = {
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
-		localization_key = "IT_ART_NEL"
+		localization_key = "IT_ART_NELLO"
 	}
 	
 	text = {
@@ -1138,6 +1163,11 @@ IT_NEL_RANGO = {
 	
 	text = {
 		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_ART_NELL"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
 		localization_key = "IT_ART_NELL"
 	}
 	
@@ -1215,6 +1245,11 @@ IT_OA_RANGO = {
 	
 	text = {
 		trigger = { country_rank = country_rank:rank_empire }
+		localization_key = "IT_RANGO_O"
+	}
+	
+	text = {
+		trigger = { has_reform = government_reform:judicate_reform }
 		localization_key = "IT_RANGO_O"
 	}
 	
@@ -1321,6 +1356,146 @@ IT_DEL_LOCATION = {
 				 location_rank = location_rank:rural_settlement 
 			}
 			localization_key = "IT_ART_DELL"	# Dell'Insediamento Rurale
+		}
+}
+
+IT_DAL_LOCATION = {
+	type = location 
+	log_loc_errors = no
+		text = {
+			trigger = {
+				 location_rank = location_rank:town 
+			}
+			localization_key = "IT_ART_DAL"	# Del Borgo
+		}
+		
+		text = {
+			trigger = {
+				 location_rank = location_rank:city 
+			}
+			localization_key = "IT_ART_DALLA"	# Della Città
+		}
+		text = {
+			trigger = {
+				 location_rank = location_rank:rural_settlement 
+			}
+			localization_key = "IT_ART_DALL"	# Dell'Insediamento Rurale
+		}
+}
+
+IT_ART_NOSTRO_LOCATION = {
+	type = location 
+	log_loc_errors = no
+		text = {
+			trigger = {
+				 location_rank = location_rank:town 
+			}
+			localization_key = "IT_ART_IL"	# Il Borgo
+		}
+		
+		text = {
+			trigger = {
+				 location_rank = location_rank:city 
+			}
+			localization_key = "IT_ART_LA"	# La Città
+		}
+		text = {
+			trigger = {
+				 location_rank = location_rank:rural_settlement 
+			}
+			localization_key = "IT_ART_IL"	# L'Insediamento Rurale
+		}
+}
+
+IT_SUL_NOSTRO_LOCATION = {
+	type = location 
+	log_loc_errors = no
+		text = {
+			trigger = {
+				 location_rank = location_rank:town 
+			}
+			localization_key = "IT_ART_SUL"	# Sul nostro Borgo
+		}
+		
+		text = {
+			trigger = {
+				 location_rank = location_rank:city 
+			}
+			localization_key = "IT_ART_SULLA"	# Sulla nostra Città
+		}
+		text = {
+			trigger = {
+				 location_rank = location_rank:rural_settlement 
+			}
+			localization_key = "IT_ART_SUL"	# Sul nostro Insediamento Rurale
+		}
+}
+
+IT_NEL_NOSTRO_LOCATION = {
+	type = location 
+	log_loc_errors = no
+		text = {
+			trigger = {
+				 location_rank = location_rank:town 
+			}
+			localization_key = "IT_ART_NEL"	# Nel nostro Borgo
+		}
+		
+		text = {
+			trigger = {
+				 location_rank = location_rank:city 
+			}
+			localization_key = "IT_ART_NELLA"	# Nella nostra Città
+		}
+		text = {
+			trigger = {
+				 location_rank = location_rank:rural_settlement 
+			}
+			localization_key = "IT_ART_NEL"	# Nel nostro Insediamento Rurale
+		}
+}
+
+IT_DEL_NOSTRO_LOCATION = {
+	type = location 
+	log_loc_errors = no
+		text = {
+			trigger = {
+				 location_rank = location_rank:town 
+			}
+			localization_key = "IT_ART_DEL"	# Del nostro Borgo
+		}
+		
+		text = {
+			trigger = {
+				 location_rank = location_rank:city 
+			}
+			localization_key = "IT_ART_DELLA"	# Della nostra Città
+		}
+		text = {
+			trigger = {
+				 location_rank = location_rank:rural_settlement 
+			}
+			localization_key = "IT_ART_DEL"	# Del nostro Insediamento Rurale
+		}
+}
+
+IT_OA_LOCATION = {
+	type = location
+	log_loc_errors = no
+		text = {
+			trigger = {
+				OR = {
+				 location_rank = location_rank:town
+				 location_rank = location_rank:rural_settlement
+				}
+			}
+			localization_key = "IT_RANGO_O"	# O
+		}
+		text = {
+			trigger = {
+				location_rank = location_rank:city
+			}
+			localization_key = "IT_RANGO_A" # A
 		}
 }
 
