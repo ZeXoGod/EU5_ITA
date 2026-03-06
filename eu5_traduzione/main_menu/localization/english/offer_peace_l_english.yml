@@ -56,7 +56,10 @@
  CORES_CATEGORY: "Trattati Località Centrali"
  MISC_CATEGORY: "Altri Trattati"
  BECOME_SUBJECT: "Diventa Stato Cliente"
- PEACE_OFFER_DESC: "Invia un'offerta di pace [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]. Una [truce|e] sarà in vigore fino al $DATE|Y$."
+ #PEACE_OFFER_DESC: "Invia un'offerta di pace [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]. Una [truce|e] sarà in vigore fino al $DATE|Y$." #OLD ITA
+ PEACE_OFFER_DESC: "Send a peace offer to [TARGET_COUNTRY.GetName]." #NEW
+ #PEACE_OFFER_DESC: "Send a peace offer to [TARGET_COUNTRY.GetName]. A [truce|e] will be in effect until $DATE|Y$." #OLD ENG
+ PEACE_OFFER_WITH_DATE_DESC: "Send a peace offer to [TARGET_COUNTRY.GetName]. A [truce|e] will be in effect until $DATE|Y$." #NEW
  PEACE_OFFER_DANGER_WARNINGS: "#R Questa offerta di pace ha effetti pericolosi:#!"
  PEACE_OFFER_GAME_OVER_TITLE: "Fine della Partita"
  PEACE_OFFER_GAME_OVER_INFO: "Questa offerta di pace causerà la Fine della Partita."
@@ -120,6 +123,10 @@
  stop_pirating_me: "Cessa la Pirateria"
  stop_pirating_me_entry: "Cessa la Pirateria a [target.GetName]"
  stop_pirating_me_entry_short: "Cessa la Pirateria a [target.GetNameWithNoTooltip]"
+ steal_maps_treaty: "Take Maps" #NEW
+ steal_maps_treaty_entry: "Take Maps of [target.GetName]" #NEW
+ steal_maps_treaty_entry_short: "Take Maps of [target.GetNameWithNoTooltip]" #NEW
+ steal_maps_treaty_desc: "We shall take their knowledge of far away lands to use for our own gain." #NEW
 
  steal_pops: "Rapisci Popolazione"
  steal_pops_entry: "Cattura Pop da [target.GetName]"
@@ -128,6 +135,8 @@
  sound_toll_exemption: "Richiedi Esenzione dal Pedaggio dello Stretto"
  sound_toll_exemption_entry: "Esenzione dai [sound_tolls|e] in [TARGET_COUNTRY.GetNameWithFlag]"
  sound_toll_exemption_entry_short: "Esenzione dai [sound_tolls|e] in [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]"
+ SOUND_TOLL_EXEMPTION_NO_MERCHANTS: "No relevant sound toll" #NEW
+ SOUND_TOLL_EXEMPTION_COALITION: "Coalition war" #NEW
 
  cancel_debt: "Cancella Debito"
  cancel_debt_entry: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetNameWithFlag] cancellerà il nostro [debt|e]"
@@ -137,7 +146,9 @@
  peace_take_shogunate_entry: "Prendi lo Shogunato [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetNameWithFlag]"
  peace_take_shogunate_entry_short: "Prendi lo Shogunato [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]"
 
- peace_gain_clan_autonomy: "Riforma in un $daimyo$"
+ #peace_gain_clan_autonomy: "Riforma in un $daimyo$" #OLD ITA
+ peace_gain_clan_autonomy: "Gain Clan Autonomy" #NEW
+ #peace_gain_clan_autonomy: "Reform into a $daimyo$" #OLD ENG
  peace_gain_clan_autonomy_entry: "$peace_gain_clan_autonomy$"
  peace_gain_clan_autonomy_entry_short: "$peace_gain_clan_autonomy$"
 
@@ -162,6 +173,22 @@
  high_kingship_overthrow: "Rovescia il Re Supremo"
  high_kingship_overthrow_entry: "$high_kingship_overthrow$"
  high_kingship_overthrow_entry_short: "$high_kingship_overthrow$"
+ hegemon_demand_force_embargo: "$force_embargo$" #NEW
+ hegemon_demand_force_embargo_entry: "$force_embargo$ for [TARGET_COUNTRY.GetNameWithFlag]" #NEW
+ hegemon_demand_force_embargo_entry_short: "$force_embargo$ for [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" #NEW
+ hegemon_demand_force_embargo_desc: "We will enforce our demands as the Hegemon through military means." #NEW
+ hegemon_demand_violate_sovereignty: "$violate_sovereignty$" #NEW
+ hegemon_demand_violate_sovereignty_entry: "$violate_sovereignty$ of [TARGET_COUNTRY.GetNameWithFlag]" #NEW
+ hegemon_demand_violate_sovereignty_entry_short: "$violate_sovereignty$ of [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" #NEW
+ hegemon_demand_violate_sovereignty_desc: "We will enforce our demands as the Hegemon through military means." #NEW
+ hegemon_demand_force_change_court_language: "$force_change_court_language$" #NEW
+ hegemon_demand_force_change_court_language_entry: "$force_change_court_language$ of [TARGET_COUNTRY.GetNameWithFlag]" #NEW
+ hegemon_demand_force_change_court_language_entry_short: "$force_change_court_language$ of [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" #NEW
+ hegemon_demand_force_change_court_language_desc: "We will enforce our demands as the Hegemon through military means." #NEW
+ hegemon_demand_force_divert_trade: "$force_divert_trade$" #NEW
+ hegemon_demand_force_divert_trade_entry: "$force_divert_trade$ of [TARGET_COUNTRY.GetNameWithFlag]" #NEW
+ hegemon_demand_force_divert_trade_entry_short: "$force_divert_trade$ of [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" #NEW
+ hegemon_demand_force_divert_trade_desc: "We will enforce our demands as the Hegemon through military means." #NEW
 
  peace_claim_confederation_leadership: "Rivendica la Leadership della Confederazione"
  peace_claim_confederation_leadership_entry: "$peace_claim_confederation_leadership$"
@@ -313,6 +340,7 @@
  force_revolution: "Forza la Rivoluzione"
  force_revolution_entry: "Dai il potere al popolo [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetNameWithFlag]"
  force_revolution_entry_short: "$force_revolution_entry$" 
+ relative_mil_strength_tt: "[military_strength|e] of [loser.GetName] compared to us" #NEW
 
  crush_the_revolution_cb: "Schiaccia la Rivoluzione"
  crush_the_revolution_cb_desc: "Non possiamo permettere che un torrente di idee spregevoli si diffonda attraverso i nostri confini, per non rischiare di perdere anche la nostra corona."
@@ -406,7 +434,9 @@
  peace_expand_clan_influence_desc: "Il nostro clan ascenderà ancora più in alto, rivendicando nuovi diritti e terre a spese di coloro che si sono opposti a noi."
  peace_force_renounce_ilkhan_claim_desc: "I nostri nemici dovranno abbandonare ogni pretesa di dominio sull'[GetUniqueInternationalOrganization('ilkhanate').GetName], rinunciando all'eredità che falsamente rivendicavano come propria."
  force_revolution_desc: "Il vecchio ordine sarà spazzato via. Con questo trattato li costringeremo ad abbracciare i fuochi della rivoluzione." 
- peace_gain_clan_autonomy_desc: "Il nostro clan camminerà più liberamente, la sua autorità riconosciuta e protetta da questo trattato."
+ #peace_gain_clan_autonomy_desc: "Il nostro clan camminerà più liberamente, la sua autorità riconosciuta e protetta da questo trattato." #OLD ITA
+ peace_gain_clan_autonomy_desc: "We will establish ourselves as an independent domain, no longer will our territory be ruled by other clans." #NEW
+ #peace_gain_clan_autonomy_desc: "Our clan shall walk more freely, their authority recognized and protected by this treaty." #OLD ENG
  high_kingship_overthrow_desc: "La leadership dell'[GetInternationalOrganizationType('high_kingship').GetName] dovrà cambiare. Non potranno più rivendicare il dominio sull'isola!" 
  supress_hussite_faith_desc: "L'eresia sarà messa a tacere con la spada. Con questo trattato, li costringiamo a sradicare la fede [ShowReligionAdjective('hussite')] ovunque essa persista."
  league_of_public_weal_appanage_victory_desc: "I principi otterranno la loro vittoria, costringendo la corona a piegarsi e a cedere il suo potere."

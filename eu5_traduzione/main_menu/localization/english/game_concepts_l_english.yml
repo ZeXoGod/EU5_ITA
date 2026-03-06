@@ -73,6 +73,9 @@
 
  game_concept_diplomacy: "Diplomazia"
  game_concept_diplomacy_desc: "La diplomazia è un'interazione tra due [countries|e] all'interno della [diplomatic_range|e] l'uno dell'altro.\nÈ promossa dai [diplomats|e].\n\nCopre tutto, da [alliances|e], [treaties|e], [subjects|e], e [overlords|e] e governa [war|e] e [peace|e].\nUn alto [prestige|e] facilita la diplomazia, mentre un alto [antagonism|e] la rende più difficile."
+ game_concept_threat: "Minaccia" 
+ game_concept_threatening: "Minaccioso" 
+ game_concept_threat_desc: "Questo descrive quanto un [country|e] sia preoccupato per un altro paese. Un vicino più potente avrà un livello di minaccia elevato." 
 
  game_concept_war_enthusiasm: "Entusiasmo per la Guerra"
  game_concept_war_enthusiasm_desc: "Questo descrive la volontà di un [country|e] a proseguire una [war|e]."
@@ -125,8 +128,10 @@
  game_concept_provinces: "Province"
  game_concept_province_desc: "Una provincia è un gruppo di [locations|e] [owned|e] dello stesso [country|e]. La provincia condivide e distribuisce [food|e] tra le sue località, e le [army_levies|e] e le [navy_levies|e] vengono reclutati dall'intera provincia nel suo complesso. Diverse [cabinet_actions|e] riguardano una provincia."
  game_concept_province_definition: "Definizione di Provincia"
+ game_concept_province_definitions: "Definizioni di Provincia" 
  game_concept_province_definition_desc: "Una Definizione di Provincia è un gruppo predeterminato di [locations|e] che determina il modo in cui le [provinces|e] vengono create nel corso del gioco.\n\nLe [areas_with_icon|e] sono divise in Definizioni di Provincia, che a loro volta contengono [locations_with_icon|e]. Tutte le [locations] nella stessa Definizione di Provincia che sono [owned|e] dallo stesso [country_with_icon|e] apparterranno alla stessa [province|e].\n\nSe più [countries] [owns] [locations] nella stessa Definizione di Provincia, ci saranno altrettante [provinces] diverse, ognuno con la propria [province_capital_with_icon|e] e [food_stockpile_with_icon|e]."
  game_concept_province_capital: "Capitale di Provincia"
+ game_concept_province_capitals: "Capitali di Provincia"
  game_concept_province_capital_desc: "La Capitale di Provincia è la [location|e] designata a rappresenta il cuore simbolico della sua [province|e]. La [location] più popolata o sviluppata in una [province] sarà automaticamente selezionata come Capitale di Provincia. Quando questa [location] viene [occupied|e] durante una [war|e], le altre [locations] della [province] cadono automaticamente nelle mani dell'invasore entro un breve periodo di tempo.\n\nLa Capitale di Provincia determina anche il [market|e] da cui l'intera [province|e] compra e vende [food|e]."
  game_concept_location: "Località"
  game_concept_locations: "Località"
@@ -162,6 +167,9 @@
  game_concept_continent: "Continente"
  game_concept_continents: "Continenti"
  game_concept_continent_desc: "Il mondo è diviso in alcuni continenti e questi continenti sono poi divisi in [sub_continents|e]."
+ game_concept_geographical_term: "Termine Geografico" 
+ game_concept_geographical_terms: "Termini Geografici" 
+ game_concept_geographical_term_desc: "Una raccolta arbitraria di concetti geografici come [continents|e], [sub_continents|e], [regions|e], [areas|e], [provinces|e] e [locations|e]."
 
  game_concept_men: "Uomini"
  game_concept_men_i: "@army_strength!"
@@ -198,12 +206,13 @@
  game_concept_dominant_country_desc: "Il [country|e] che ha la [population|e] maggiore di una [primary_culture|e] diventa il [dominant_country|e] di quella [culture|e]. Un Paese non può essere $game_concept_dominant_country_dominant$ se il suo [overlord|e] è della stessa $game_concept_culture$."
 
  game_concept_merged_culture_group: "Gruppo Culturale Unificato"
+ game_concept_merged_culture_groups: "Gruppi Culturali Unificati" 
  game_concept_merged_culture_group_merged: "Unificato"
  game_concept_merged_culture_group_merge: "Unificare"
  game_concept_merged_culture_group_merges: "Unificati"
  game_concept_merged_culture_group_merged_culture: "Cultura Unificata"
  game_concept_merged_culture_group_merging: "Unificare"
- game_concept_merged_culture_group_desc: "Alcuni [culture_groups|e] possono essere $game_concept_merged_culture_group_merges$ in un unica [culture|e].\n\nUn Paese può $game_concept_merged_culture_group_merge$ uno dei suoi [culture_groups] della [primary_culture|e], cosa che causerà la creazione di una nuova [culture]. I [pops|e] della vecchia [primary_culture|e] e quelli delle [accepted_cultures|e] che si trovano nello stesso [culture_group_short] e utilizzano lo stesso [language|e] saranno immediatamente assimilati.\n\nUn [culture_group] può essere $game_concept_merged_culture_group_merged$ una sola volta."
+ game_concept_merged_culture_group_desc: "Alcuni [culture_groups|e] possono essere $game_concept_merged_culture_group_merges$ in un unica [culture|e].\n\nUn Paese può $game_concept_merged_culture_group_merge$ uno dei suoi [culture_groups] della [primary_culture|e], cosa che causerà la creazione di una nuova [culture]. I [pops|e] della vecchia [primary_culture|e] e quelli delle [accepted_cultures|e] che si trovano nello stesso [culture_group_short] e utilizzano lo stesso [language|e] saranno immediatamente assimilati.\n\n$game_concept_merged_culture_groups$ hanno un bonus significativo all'[assimilating|e] delle Culture di quel $game_concept_culture_group$.\n\nUn [culture_group] può essere $game_concept_merged_culture_group_merged$ una sola volta."
 
  game_concept_dominant_religion: "Religione Dominante"
  game_concept_dominant_religion_desc: "La Religione Dominante è quella [religion|e] con il maggior numero di [pops|e] che la praticano in una [location|e] o in un [country|e].\nQuesto non significa necessariamente che sia la maggioranza."
@@ -311,7 +320,7 @@
  game_concept_assimilated: "Assimilato"
  game_concept_assimilation: "Assimilazione"
  game_concept_assimilation_rate: "Tasso di Assimilazione"
- game_concept_assimilate_desc: "Questo è il processo per cui i [pops|e] di una [culture|e] cambiano nel tempo nella [primary_culture|e] del [country|e] di appartenenza.\n\nAccelera se la [primary_culture] ha una [culture_war_power|e] più alta rispetto al [pop|e].\n\nAlcune [cultures|e] specifiche sono direttamente legate alla loro [faith|e], quindi non potranno essere assimilate se prima non sono [Concept('convert', 'convertite')|e]."
+ game_concept_assimilate_desc: "Questo è il processo per cui i [pops|e] di una [culture|e] cambiano nel tempo nella [primary_culture|e] del [country|e] di appartenenza.\n\nAccelera se la [primary_culture] ha una [culture_war_power|e] più alta rispetto al [pop|e].\n\nAlcune [cultures|e] specifiche sono direttamente legate alla loro [faith|e], quindi non potranno essere assimilate se prima non sono [Concept('convert', 'convertite')|e].\n\nUna cultura deve essere presente in un paese o avere un'opinione neutra o superiore del giocatore per poter essere selezionata."
 
  game_concept_occupation: "Occupazione"
  game_concept_occupations: "Occupazioni"
@@ -372,6 +381,9 @@
  game_concept_unit: "Unità"
  game_concept_units: "Unità"
  game_concept_unit_desc: "Un'unità può essere un [army|e] o una [navy|e]. È composta da [sub_units|e]."
+ game_concept_unit_template: "Template di Unità" 
+ game_concept_unit_templates: "Template di Unità" 
+ game_concept_unit_template_desc: "Un template di unità è una raccolta di [unit_types|e] che può essere utilizzato per reclutare direttamente diverse [units|e]. Può essere utilizzato per creare sia [regiments|e] che [ships|e]." 
 
  game_concept_sub_unit: "Subunità"
  game_concept_sub_units: "Subunità"
@@ -388,6 +400,8 @@
 
  game_concept_food_source: "Fonte di Cibo"
  game_concept_food_source_desc: "Un [army|e] raccoglierà il cibo da una [province|e] dove ha [food_access|e], un [supply_depot|e] amico o una [navy|e] che effettua [distributing_food|e]."
+ game_concept_food_decay: "Deperimento del Cibo"
+ game_concept_food_decay_desc: "Il [Food|e] non dura per sempre e alcuni prodotti vanno a male ogni mese."
 
 
  game_concept_logistics_distance: "Distanza Logistica"
@@ -439,12 +453,12 @@
  game_concept_importing: "Importazione"
  game_concept_imported: "Importato"
  game_concept_imports: "Importazioni"
- game_concept_import_desc: "Un'importazione è un [trade|e] che sposta [goods|e] in un [market|e], aumentando la [supply|e] di quel bene in quel mercato."
+ game_concept_import_desc: "Un'Importazione è un [trade|e] che sposta [goods|e] in un [market|e], aumentandone così la [supply|e] in quel [market]."
  game_concept_export: "Esportazione"
  game_concept_exporting: "Esportazione"
  game_concept_exported: "Esportato"
  game_concept_exports: "Esportazioni"
- game_concept_export_desc: "Un'esportazione è un [trade|e] che sposta [goods|e] fuori da un [market|e], aumentando la [demand|e] di quei beni in quel mercato.\n\nSe ci sono più commerci che cercano di esportare gli stessi beni, i beni vengono dati in ordine di [merchant_power|e]."
+ game_concept_export_desc: "Un'Esportazione è un [trade|e] che sposta [goods|e] fuori da un [market|e], aumentandone così la [demand|e] in quel [market].\n\nSe ci sono più commerci che cercano di esportare gli stessi beni, i beni vengono dati in ordine di [merchant_power|e]."
  game_concept_trade_income: "Entrate Commerciali"
  game_concept_trade_income_desc: "Questo è il denaro guadagnato dal [trades_with_icon|e] quando vende [goods_with_icon|e] a un [markets_with_icon|e].\n\nLe entrate commerciali vengono suddivise tra la Corona e i [estates_with_icon|e] in base al loro [estate_power_with_icon|e]. Solo la percentuale relativa al [crown_power_with_icon|e] va nel [treasury|e]."
  game_concept_trade_expense: "Spese Commerciali"
@@ -532,7 +546,7 @@
  game_concept_common_language_desc: "Questa è la [language|e] della [primary_culture|e] in un [country|e]. Se questa è la [court_language|e] allora i [ShowEstateTypeName('peasants_estate')] saranno felici."
 
  game_concept_market_language: "Lingua del Mercato"
- game_concept_market_language_desc: "Questa è la [language|e] parlata dalla maggior parte dei [ShowPopTypeName('burghers')] nel [market_center|e]."
+ game_concept_market_language_desc: "Questa è la [language|e] parlata dalla maggior parte dei [ShowPopTypeName('burghers')] nel [market_center|e].\n\nI [ShowPopTypeNameWithNoTooltip('burghers')] che parlano la loro $game_concept_market_language$ locale non saranno [Concept('assimilate', 'Assimilati')|e] in una [culture|e] che non usa quella $game_concept_market_language$."
 
  game_concept_foreign_language: "Lingua Straniera"
  game_concept_foreign_language_desc: "Una [language|e] che non è né la [common_language|e] né la [liturgical_language|e] di un [country|e] sarà considerata un $game_concept_foreign_language$."
@@ -801,6 +815,8 @@
  game_concept_available: "Disponibili"
  game_concept_available_population: "Popolazione Disponibile"
  game_concept_unemploy_desc: "I [pops|e] possono essere [Concept('employed', 'Impiegati')|e] sia in un [building|e] che nelle [rgo|e]. Quelli che non lo sono vengono considerati $game_concept_available$."
+ game_concept_peasant_enfranchisement: "$MODIFIER_TYPE_NAME_global_peasant_enfranchisment$" 
+ game_concept_peasant_enfranchisement_desc: "$MODIFIER_TYPE_DESC_global_peasant_enfranchisment$\n\nL'Affrancamento dipende principalmente dal [societal_value_with_icon|e] [ShowSocietyDirectionName('free_subjects')]. [towns_and_cities|e] hanno un livello più alto rispetto alle [rural_locations|e], e alcuni [buildings|e] possono aumentarlo o diminuirlo."
 
 
  game_concept_foreign: "Estero"
@@ -909,6 +925,9 @@
  game_concept_stability: "Stabilità"
  game_concept_stability_i: "@stability!"
  game_concept_stability_desc: "La stabilità è una misura della pace interna di un [country|e]. Se è negativa, rappresenta il tumulto, mentre se è positiva, la tranquillità. Nel tempo, la stabilità tenderà verso lo #Y 0#!, a meno che altri fattori non la influenzino. Avviare [wars|e] è una delle azioni che riducono la stabilità di un Paese."
+ game_concept_complacency: "Compiacimento" 
+ game_concept_complacency_i: "@complacency!"
+ game_concept_complacency_desc: "Questo dimostra quanto sia diventato compiacente il popolo di un [country|e] quando non ha minacce esterne di cui preoccuparsi." 
  game_concept_prestige: "Prestigio"
  game_concept_prestige_i: "@prestige!"
  game_concept_prestige_desc: "Il prestigio di un [country|e] rappresenta quanto esso è ben visto. L'[cultural_influence|e] della sua [primary_culture|e] è aumentata da esso e facilita la [diplomacy|e]."
@@ -931,6 +950,8 @@
  game_concept_recruit: "Reclutamento"
  game_concept_recruiting: "Reclutamento"
  game_concept_recruit_desc: "Il reclutamento è un processo che permette di schierare le [manpower|e] come [units|e] sulla mappa. Questo di solito ha un costo in [gold|e] e una [demand|e] di [goods|e] collegata. Dopo tutto, un cavaliere senza cavallo può a malapena essere chiamato cavaliere."
+ game_concept_unit_formation_preference: "Preferenza Formazione Unità" 
+ game_concept_unit_formation_preference_desc: "TODO" 
  game_concept_recruitment_method: "Metodo di Reclutamento"
  game_concept_recruitment_methods: "Metodi di Reclutamento"
  game_concept_recruitment_method_desc: "Possiamo decidere se vogliamo dedicare più tempo all'addestramento delle nostre truppe per aumentare la loro [experience|e], o se vogliamo che il [regiment|e] sia pronto più velocemente, ma con una [maximum_strength|e] inferiore."
@@ -1263,7 +1284,20 @@
  game_concept_import_market_desc: "Questo è il [market|e] dove vengono venduti i [goods|e] in uno scambio, creando un'[import|e]."
  game_concept_market: "Mercato"
  game_concept_markets: "Mercati"
- game_concept_market_desc: "Un Mercato è il luogo in cui i [goods|e] vengono acquistati e venduti.\nHa sede in un [market_center|e], ma include altre sedi in base al loro [market_access|e] e al [protectionism|e].\nTutte queste sedi acquisteranno e venderanno esclusivamente alle [stockpile|e] di questo Mercato.\n\nI [markets] sono colorate in base alla loro rilevanza:\n\n$BULLET$ #G [market] Verde#!: Possiedi località in questo [market], e quindi devi preoccuparti dei sui [pop_needs|e].\n\n$BULLET$ #E [market] Blu#!: Non possiedi [locations|e], ma hai [merchant_capacity|e], e quindi puoi [Concept('trade', 'Commerciare')|e] con esso.\n\n$BULLET$ #L [market] Marrone#!: Non possiedi nessuna [location|e] ne hai [merchant_capacity|e].\n\n$BULLET$ [market] Grigio: [markets] che sono fuori dal [trade_range|e] e quindi non puoi interagire con essi."
+ game_concept_market_desc: "Un Mercato è il luogo in cui i [goods|e] vengono acquistati e venduti.\nHa sede in un [market_center|e], ma include altre sedi in base al loro [market_access|e] e al [protectionism|e].\nTutte queste sedi acquisteranno e venderanno esclusivamente alle [stockpile|e] di questo Mercato.\n\nI [markets] sono colorate in base alla loro rilevanza:\n\nA seconda delle tue relazioni con loro, i [markets] possono essere [domestic_markets], [trading_markets], [foreign_markets], o [distant_markets]." 
+
+ game_concept_domestic_market: "Mercato Interno" 
+ game_concept_domestic_markets: "Mercati Interni" 
+ game_concept_domestic_market_desc: "Un $game_concept_domestic_market$ è un [market_with_icon|e] in cui si possiedono [locations_with_icon|e]. Le [locations] dipendono dal loro [market] per acquistare tutto ciò di cui hanno bisogno, sia che si tratti di [construction_with_icon|e] governative, [buildings_with_icon|e], [pop_needs_with_icon|e], o [food_with_icon|e].\n\nGarantire la fornitura di [goods] nel $game_concept_domestic_markets$ è fondamentale per il funzionamento del [country], poiché si potrebbe non essere in grado di costruire [buildings] o reclutare [regiments|e] se mancano i [goods] necessari." 
+ game_concept_trading_market: "Mercato di Scambio" 
+ game_concept_trading_markets: "Mercati di Scambio" 
+ game_concept_trading_market_desc: "Un $game_concept_trading_market$ è un [market_with_icon|e] in cui non si [own|e] alcun territorio, ma si ha [merchant_capacity_with_icon|e] dai propri [foreign_buildings_with_icon|e].\n\nCiò significa che non è necessario preoccuparsi dei [good_with_icon|e] necessari di quel [market], del suo rifornimento di [food|e], o della sua [population|e], ma è possibile utilizzare la propria [merchant_capacity] per realizzare un profitto o per rifornire il proprio [domestic_markets_with_icon|e]." 
+ game_concept_foreign_market: "Mercato Estero" 
+ game_concept_foreign_markets: "Mercati Esteri" 
+ game_concept_foreign_market_desc: "Un $game_concept_foreign_market$ è un [market_with_icon|e] in cui non si [own|e] alcun territorio, né si ha alcuna [merchant_capacity_with_icon|e]. Ciò significa che non è possibile condurre un [trade_with_icon|e] da loro, ma è comunque possibile effettuare scambi con loro utilizzando la propria [merchant_capacity] in altri [markets] all'interno della [trade_range_with_icon|e]." 
+ game_concept_distant_market: "Mercato Lontano" 
+ game_concept_distant_markets: "Mercati Lontani" 
+ game_concept_distant_market_desc: "Un $game_concept_distant_market$ è un [market_with_icon|e] che si trova oltre la [trade_range_with_icon|e] di tutti i propri [domestic_markets_with_icon|e], quindi non è possibile effettuare alcun [trade_with_icon|e] con loro."
  SUBTAB_TRADING_TT_TEXT: "In questa Scheda è possibile gestire i  [trades|e] se si dispone di [merchant_capacity|e] in qualsiasi [market|e]."
  game_concept_protectionism: "Protezione del Mercato"
  game_concept_trade_protection: "Protezione del mercato"
@@ -1350,10 +1384,10 @@
  game_concept_relation_type_desc: "Si tratta di relazioni che possiamo instaurare con un [country|e]. Questo avviene attraverso la [diplomacy|e] o interagendo con uno [subject|e].\n\nGli esempi includono [ShowRelationTypeName('embargo_nation')], [ShowRelationTypeName('sound_toll_exemption')] o [ShowRelationTypeName('scutage')]."
  game_concept_army_levy: "Leva dell'Esercito"
  game_concept_army_levies: "Leve dell'Esercito"
- game_concept_army_levy_desc: "Una Leva dell'Esercito è un [regiment|e] che è stato reclutato direttamente dai [pops|e]. Quando l'unità viene reclutata, i [pops] vengono ridotti, e quando l'unità viene sciolta, gli eventuali sopravvissuti tornano ai [pops]. Queste persone sono meno addestrate di un [army|e] regolare reclutato dalle [manpower|e], e non possono rinforzarsi.\nUn [regiment|e] di leva ha anche il seguente effetto:\n[ShowModifierEffect('is_army_levy')]"
+ game_concept_army_levy_desc: "Una Leva dell'Esercito è un [regiment|e] che è stato reclutato direttamente dai [pops|e]. Quando l'unità viene reclutata, i [pops] vengono ridotti, e quando l'unità viene sciolta, gli eventuali sopravvissuti tornano ai [pops]. Queste persone sono meno addestrate di un [army|e] regolare reclutato dalle [manpower|e], e non possono rinforzarsi.\n\nUn [regiment|e] di leva ha anche il seguente effetto:\n\n[ShowModifierEffect('is_army_levy')]"
  game_concept_navy_levy: "Leva Navale"
  game_concept_navy_levies: "Leve Navali"
- game_concept_navy_levy_desc: "Una leva navale è una [ship|e] da trasporto che è stata requisita direttamente dai [pops|e]. Quando l'unità viene reclutata, i [pops] proprietari della nave e il loro equipaggio vengono prelevati dai [pops] nella [locations|e], e quando l'unità viene sciolta, i sopravvissuti tornano ai [pops]. Queste navi sono generalmente più fragili di una [navy|e] composta da [sailors|e], e dovrebbero essere protette da navi armate con cannoni.\nUna [ship|e] di leva ha anche il seguente effetto:\n[ShowModifierEffect('is_navy_levy')]"
+ game_concept_navy_levy_desc: "Una leva navale è una [ship|e] da trasporto che è stata requisita direttamente dai [pops|e]. Quando l'unità viene reclutata, i [pops] proprietari della nave e il loro equipaggio vengono prelevati dai [pops] nella [locations|e], e quando l'unità viene sciolta, i sopravvissuti tornano ai [pops]. Queste navi sono generalmente più fragili di una [navy|e] composta da [sailors|e], e dovrebbero essere protette da navi armate con cannoni.\n\nUna [ship|e] di leva ha anche il seguente effetto:\n\n[ShowModifierEffect('is_navy_levy')]"
 
  game_concept_levy: "Leva"
  game_concept_levies: "Leve"
@@ -1504,23 +1538,20 @@
  game_concept_min_tax_desc: "Questa è la percentuale minima di [taxes|e] che può essere riscossa da un [estate|e]."
 
  game_concept_profit: "Profitto"
- game_concept_profit_desc: "Si tratta di quanto un [building|e] o un [rgo|e] contribuisce alla [tax_base|e] della sua [location], tenendo già in considerazione il [control|e]. In altre parole, sono i [gold|e] che vengono effettivamente creati dall'[building]."
-
- game_concept_potential_profit: "Profitto Potenziale"
- game_concept_potential_profit_desc: "Si tratta della differenza tra le entrate e le uscite di un [building|e], senza tenere conto del [control|e].\n\nSe è negativo, l'edificio sarà considerato non redditizio e smetterà di funzionare."
+ game_concept_profit_desc: "Si tratta di quanto un [building|e] o un [rgo|e] contribuisce alla [wealth|e] della sua [location]. In altre parole, sono i [gold|e] che vengono effettivamente creati dall'[building].\n\nSe è negativo, l'edificio sarà considerato non redditizio e smetterà di funzionare."
+ game_concept_taxable_profit: "Utile Imponibile"
+ game_concept_taxable_profit_desc: "Questo è la quantità di [gold|e] creati da un [building] o un [rgo] che è soggetta alle [taxes|e], tenendo conto del [control|e]." 
 
  game_concept_tax: "Imposta"
  game_concept_taxes: "Imposte"
- game_concept_tax_desc: "Possiamo scegliere di riscuotere le imposte dai nostri [estates|e]. Questo aumenterà il nostro [treasury|e], ma imposte più alte diminuiranno la loro [estate_satisfaction|e].\n\nL'ammontare delle imposte che si possono riscuotere dipende dal [control|e] delle [locations|e] che generano ricchezza per gli Stati."
+ game_concept_tax_desc: "Possiamo scegliere di riscuotere le imposte dai nostri [estates|e]. Questo aumenterà il nostro [treasury|e], ma imposte più alte diminuiranno la loro [estate_satisfaction|e].\n\nL'ammontare della [wealth|e] che può essere tassata dipende dal [control|e] delle [locations|e] che generano [wealth] per i [estates]."
 
  game_concept_tax_base: "Base Fiscale"
- game_concept_tax_base_desc: "Si tratta dell'importo totale di [gold|e] generato in una [location|e] ogni mese, che deriva dal profitto dei suoi [rgo|e] e [buildings|e] moltiplicato per il [control|e].\n\nOgni [estate|e] in una [location] riceve una [tax_base_share|e] e ne paga una parte al [treasury|e] in base all'[tax_rate|e] imposta loro."
-
- game_concept_max_tax_base: "Base Fiscale Potenziale"
- game_concept_max_tax_base_desc: "La Base Fiscale Potenziale di una [location|e] è il profitto combinato dei suoi [rgo|e] e [buildings|e] generato dalla vendita dei loro [goods|e] al [market|e]. Se ci sono [ShowPopTypeName('burghers')] presenti nella [location], il [burgher_trade|e] può anche aumentare la Base Fiscale Potenziale.\n\nLa Base Fiscale Potenziale moltiplicata per il [control|e] dà la [tax_base|e] di una [location], che rappresenta i [gold|e] che vengono effettivamente creati e distribuiti tra gli [estates|e]."
-
- game_concept_tax_base_share: "Quota della Base Fiscale"
- game_concept_tax_base_share_desc: "La [tax_base|e] di una [location|e] è distribuita tra gli [estates|e] in base alla loro [population|e] relativa nella [location]. I [ShowPopTypeName('nobles')] ricevono una quota pro capite molto più grande dei [ShowPopTypeName('burghers')], che a loro volta ricevono una quota pro capite molto più grande dei [ShowPopTypeName('peasants')]."
+ game_concept_tax_base_desc: "La Base Fiscale è la quantità totale di [wealth|e] che può essere soggetta alle [taxes|e] in una [location], e dipende direttamente dal suo [control|e]. La Ricchezza senza [control] va direttamente ai [estates], e non può essere tassata.\n\nLa [wealth] è suddivisa tra i [estates] secondo la loro [wealth_share|e] nella [location]. Ogni [estate] quindi versa una parte di tale Base Fiscale al [treasury|e] secondo l'[tax_rate|e] imposta loro." 
+ game_concept_wealth: "Ricchezza" 
+ game_concept_wealth_desc: "La Ricchezza di una [location|e] è il profitto combinato delle sue [rgo|e] e [buildings|e] derivante dalla vendita dei loro [goods|e] al [market|e]. Se ci sono [ShowPopTypeName('burghers')] presenti nella [location], anche il [burgher_trade|e] può aumentare la Ricchezza della località.\n\nLa Ricchezza di una [location] è suddivisa tra i [estates|e] secondo la loro [wealth_share] nella [location]. La Ricchezza della località moltiplicata per il [control|e] forma la [tax_base|e] di una [location], che rappresenta i [gold|e] che possono essere tassati dal governo. La Ricchezza senza [control] va direttamente ai [estates], e non può essere tassata."
+ game_concept_wealth_share: "Quota di Ricchezza" 
+ game_concept_wealth_share_desc: "La [wealth|e] di una [location|e] è suddivisa tra i [estates|e] in base alla loro [population|e] relativa nella [location]. I [ShowPopTypeName('nobles')] ottenere una quota pro capite molto maggiore rispetto ai [ShowPopTypeName('burghers')], che a loro volta ottengono una quota pro capite molto maggiore rispetto ai [ShowPopTypeName('peasants')].\n\nA seconda dell'[ShowModifierTypeName('local_peasant_enfranchisment')] in una [location], una percentuale della quota dei [ShowEstateTypeName('peasants_estate')] viene trasferita alla [ShowEstateTypeName('nobles_estate')]."
 
  game_concept_bankrupt: "Bancarotta"
  game_concept_bankruptcy: "Bancarotta"
@@ -1547,9 +1578,12 @@
  game_concept_rebellion: "Ribellione"
  game_concept_rebellions: "Ribellioni"
  game_concept_rebel_movement_desc: "Un Movimento Ribelle è un gruppo di [pops|e] che si uniscono contro il loro governo a causa della loro scarsa [pop_satisfaction].\n\nEsistono vari tipi di Movimenti Ribelli. Per esempio, [pops|e] di una diversa [culture|e] o [religion|e] tenteranno una [revolt|e], mentre un [estate|e] infelice cercherà di avviare una [civil_war|e]."
+ game_concept_minor_revolt: "Rivolta Minore" 
+ game_concept_minor_revolts: "Rivolte Minori" 
+ game_concept_minor_revolt_desc: "Se un [rebel_movement|e] non è riuscito a raccogliere abbastanza sostegno quando raggiunge il #W 100%#!, non si solleverà in aperta [revolt|e], ma causerà una [ShowModifier('minor_rebel_uprising')] nelle [locations|e] coinvolte, con le seguenti penalità:\n\n[ShowModifierEffect('minor_rebel_uprising')]."
 
- game_concept_estate_rebels: "Stati Ribelli"
- game_concept_estate_rebels_desc: "I Ribelli sono una fazione che può essere costituita o da [pops|e] di un altra [culture|e] o [religion|e] che sta tentando una [revolt|e] o un [estate|e] infelice che sta cercando di forzare una [civil_war|e]."
+ game_concept_estate_rebels: "Ceti Ribelli"
+ game_concept_estate_rebels_desc: "I Ribelli sono una fazione che può essere costituita o da [pops|e] di un altra [culture|e] o [religion|e] che sta tentando una [revolt|e] o da un [estate|e] infelice che sta cercando di forzare una [civil_war|e]."
 
  game_concept_nationalist_rebels: "Ribelli Nazionalisti"
  game_concept_nationalist_rebels_desc: "I Ribelli sono una fazione che può essere costituita o da [pops|e] di un altra [culture|e] o [religion|e] che sta tentando una [revolt|e] o un [estate|e] infelice che sta cercando di forzare una [civil_war|e]."
@@ -1566,7 +1600,7 @@
  game_concept_disloyal_subjects: "Stati Clienti Sleali"
  game_concept_disloyal_subject: "Stato Cliente Sleale"
  game_concept_disloyal_subjects_short: "Sleale"
- game_concept_disloyal_subjects_desc: "Quando uno [subject] ha una [subject_loyalty|e] verso il suo [overlord|e] inferiore a [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')], diventa uno Stato Cliente Sleale.\n\nQuando si trova in questo stato, non si unirà più alle [wars|e] del suo [overlord] e non potrà essere [annexed|e]."
+ game_concept_disloyal_subjects_desc: "Quando uno [subject] ha una [subject_loyalty|e] verso il suo [overlord|e] inferiore a [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')], diventa uno Stato Cliente Sleale.\n\nQuando si trova in questo stato, non aiuterà più nelle [wars|e] del suo [overlord] e non potrà essere [annexed|e]."
 
  game_concept_loyal_subjects: "Stati Clienti Leali"
  game_concept_loyal_subject: "Stato Cliento Leale"
@@ -1745,7 +1779,7 @@
  game_concept_self_control_desc: "L'Autocontrollo è una misura di come un [country|e] e il suo [ruler|e] rinunciano ai piaceri e ai beni materiali, e di come seguono il sentiero dello Yoga.\n\nAvere un valore positivo di $self_control$ significherà che tendono all'ascetismo, cosa che fornisce benefici a [stability|e], [migration|e], [annexation|e], e una riduzione del consumo di [food|e], mentre avere un $self_control$ negativo significa che tendono alla depravazione, portando a un aumento delle [tax|e] e al consumo di [food|e], ma riducendo la [war_exhaustion|e]. Avere un $self_control$ equilibrato fornisce a sua volta una maggiore velocità di [research|e], [prestige|e] e [estate_satisfaction|e]."
  game_concept_doom: "Rovina"
  game_concept_doom_i: "@doom!"
- game_concept_doom_desc: "La Rovina è una valuta speciale utilizzata dai [countries|e] con la [religion|e] [ShowReligionAdjective('nahuatl')].\n\nPossedere [locations|e]- soprattutto [towns_and_cities|e]- aumenta passivamente la Rovina.\n\nAvere un valore elevato di Rovina diminuisce la [ShowModifierTypeName('loyalty_to_overlord')] e aumenta il [ShowModifierTypeName('stability_decay')], ma aumenta anche la [ShowModifierTypeName('global_estate_target_satisfaction')].\n\nCi sono diversi modi per diminuire il Destino, tra cui:\n- Uccidere truppe [Concept('enemy', 'nemiche')|e] in [combat|e]\n- Saccheggiare [locations] con un valore di [development|e] elevato\n\nQuando si raggiunge la Rovina massima, il [ruler|e] e l'intera [dynasty|e] vengono sacrificati e sostituiti con un nuovo [ruler]."
+ game_concept_doom_desc: "La Rovina è una valuta speciale utilizzata dai [countries|e] con la [religion|e] [ShowReligionAdjective('nahuatl')].\n\nPossedere [locations|e]- soprattutto [towns_and_cities|e]- aumenta passivamente la Rovina.\n\nAvere un valore elevato di Rovina diminuisce la [ShowModifierTypeName('subject_loyalty')] e la [ShowModifierTypeName('global_estate_target_satisfaction')] ma aumenta il [ShowModifierTypeName('stability_decay')].\n\nCi sono diversi modi per diminuire il Destino, tra cui:\n- Uccidere truppe [Concept('enemy', 'nemiche')|e] in [combat|e]\n- Saccheggiare [locations] con un valore di [development|e] elevato\n\nQuando si raggiunge la Rovina massima, il [ruler|e] e l'intera [dynasty|e] vengono sacrificati e sostituiti con un nuovo [ruler]."
 
  game_concept_religious_reform: "Riforma Religiosa"
  game_concept_religious_reform_desc: "Una Riforma Religiosa è talvolta richiesta o abbracciata per il miglior esito di un [religion|e], rappresentando il costante adattamento dei riti e della fede a causa dei desideri dei suoi credenti e delle sue istituzioni."
@@ -1881,7 +1915,9 @@
  game_concept_flanking_ability: "Abilità di Fiancheggiamento"
  game_concept_flanking_ability_desc: "Questa determina la quantità di danni che può infliggere alle unità di un altra [section|e] in combattimento."
  game_concept_secure_flanks: "Fianchi Sicuri"
- game_concept_secure_flanks_desc: "Questo fornisce un bonus difensivo quando ci sono truppe [friendly|e] in una [section|e] vicina. Se entrambi i fianchi sono sicuri, il bonus viene raddoppiato. "
+ game_concept_secure_flanks_defense: "Difesa Fianchi Sicuri" 
+ game_concept_secure_flanks_desc: "Questo fornisce un bonus difensivo quando ci sono truppe [friendly|e] in una [section|e] vicina. Se entrambi i fianchi sono sicuri, il bonus viene raddoppiato."
+ game_concept_secure_flanks_defense_desc: "$game_concept_secure_flanks_desc$"
  game_concept_combat_power: "Potenza di Combattimento"
  game_concept_combat_power_desc: "Questo è l'attributo di danno diretto di un [regiment|e] in [combat|e]. Viene moltiplicato per la [strength|e] del [regiment] per determinare l'entità del danno."
  game_concept_frontage: "Larghezza del Fronte"
@@ -1937,9 +1973,8 @@
  game_concept_engage: "Ingaggiare"
  game_concept_engaged: "Ingaggiato"
  game_concept_engagement_desc: "Quando inizia un [combat_with_icon|e], i [regiments_with_icon|e] nelle [sections_with_icon|e] anteriori tirano per l'[initiative_with_icon|e] ogni ora fino a quando non diventano ingaggiati. Quando un [regiment] è ingaggiato in [combat], infligge danni. Quando un'unità si ritira, smette di essere ingaggiata e non si riunirà allo stesso [combat].\n\nSolo una certa quantità di [frontage_with_icon|e] può essere ingaggiata contemporaneamente in una [section]."
-
- game_concept_d6: "D6"
- game_concept_d6_desc: "Un D6 è un lancio di dadi a sei facce utilizzato nel [combat|e], per determinare quanto bene si sta comportando uno schieramento."
+ game_concept_d10: "D10" 
+ game_concept_d10_desc: "Un D10 è un lancio di dado a dieci facce utilizzato in [combat|e], per determinare quanto sta andando bene uno schieramento." 
 
  game_concept_d20: "D20"
  game_concept_d20_desc: "Un D20 è un lancio di dadi a venti facce utilizzato in [combat|e], quando un [regiment|e] o una [ship|e] lascia le [reserves|e]."
@@ -1949,7 +1984,7 @@
 
  game_concept_dice: "Dadi"
  game_concept_dice_upper_desc: "I dadi vengono spesso lanciati per determinare l'esito di un'azione, come le [phases|e] di un [siege|e] o di una [battle|e]. "
- game_concept_dice_desc: "$game_concept_dice_upper_desc$\n[d6|e]\n[d20|e]\n[d100|e]"
+ game_concept_dice_desc: "$game_concept_dice_upper_desc$\n[d10|e]\n[d20|e]\n[d100|e]" #NEW
 
  game_concept_combat_speed: "Velocità di Combattimento"
  game_concept_combat_speed_desc: "Si tratta della capacità di spostarsi dalle [reserves|e] a qualsiasi altra [section|e] all'interno di una [battle|e]. Per le [ships|e] ha anche un impatto sulla velocità con cui una danneggiata può lasciare la [section|e] attuale per ritirarsi."
@@ -2023,6 +2058,8 @@
 
  game_concept_military_tactics: "Tattiche Militari"
  game_concept_military_tactics_desc: "Queste riducono i [damage_taken|e] di un [regiment|e] in [combat|e]."
+ game_concept_combined_arms: "Armi Combinate" 
+ game_concept_combined_arms_desc: "Indica quanto sia eterogeneo l'esercito che sta combattendo attualmente. Avere una varietà di diverse [unit_categories|e] aumenta questo valore, comprese le varianti leggere o pesanti."
 
  game_concept_adult: "Adulto"
  game_concept_adults: "Adulti"

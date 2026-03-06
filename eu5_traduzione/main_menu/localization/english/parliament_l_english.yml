@@ -51,7 +51,9 @@
 
  #Actions
  call_parliament: "Convoca il Parlamento"
- call_parliament_desc: "Questo convocherà il Parlamento nel tentativo di ottenere sostegno per risolvere una [parliament_issue|e], cambiare le [policies|e] delle nostre [laws|e], creare un [casus_belli|e], aumentare le [taxes|e] o ottenere più [army_levies|e] e [navy_levies|e].\nDurante questa sessione otterremo i seguenti effetti:\n[ShowModifierEffect('parliament_in_session')]" #MOD OLD
+ #call_parliament_desc: "Questo convocherà il Parlamento nel tentativo di ottenere sostegno per risolvere una [parliament_issue|e], cambiare le [policies|e] delle nostre [laws|e], creare un [casus_belli|e], aumentare le [taxes|e] o ottenere più [army_levies|e] e [navy_levies|e].\nDurante questa sessione otterremo i seguenti effetti:\n[ShowModifierEffect('parliament_in_session')]" #OLD ITA
+ call_parliament_desc: "This will call in the Parliament in an attempt to get support to resolve a [parliament_issue|e], change [policies|e] in our [laws|e], creating a [casus_belli|e], raising higher [taxes|e] or larger [army_levies|e] and [navy_levies|e].\n\nDuring this session we will get the following effects: [ShowModifier('parliament_in_session')], [ShowModifier('parliament_location')]; and either [ShowModifier('parliament_in_capital')] or [ShowModifier('parliament_outside_capital')] depending on selected [location|e]." #NEW
+ #call_parliament_desc: "This will call in the Parliament in an attempt to get support to resolve a [parliament_issue|e], change [policies|e] in our [laws|e], creating a [casus_belli|e], raising higher [taxes|e] or larger [army_levies|e] and [navy_levies|e].\nDuring this session we will get the following effects:\n[ShowModifierEffect('parliament_in_session')]" #OLD ENG
  
  request_more_taxes: "Richiedi Imposte Aggiuntive"
  request_more_taxes_desc: "Richiesta [Player.Custom('IT_PARL_AL')][Player.GetGovernment.GetParliament.GetName] di consentirci di riscuotere più [taxes|e] dai [estates|e]."
@@ -227,6 +229,8 @@
  support_religious_education: "Sostenere l'Educazione Religiosa"
  support_religious_education_desc: "La fiducia che il nostro Stato ripone nei servitori della fede può essere una grande risorsa per l'istruzione della nostra popolazione. Ciò accelererebbe i nostri progressi scientifici aumentando al contempo la fedeltà dei nostri devoti seguaci."
  support_religious_education_passed.tt: "Tutti i [ShowPopTypeName('clergy')] e i [ShowPopTypeName('peasants')] che seguono la nostra fede ottengono [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] di [pop_satisfaction|e]."
+ improve_relations_with_the_faith: "Foster Religious Relations" #NEW
+ improve_relations_with_the_faith_desc: "The relations between our faith and our state can be strained by many decision, especially if the faith itself is split on a specific issue. Acting as a mediator between different factions and forcing them to negotiate could prevent any further, severe split." #NEW
 
  #Revolution Issues
  curb_central_authority: "Contrastare l'Autorità Centrale"
@@ -270,7 +274,8 @@
  new_model_army_pi_desc: "Le devastazioni causate dalla guerra civile in corso contro i Realisti hanno dimostrato che il nostro esercito ha un disperato bisogno di una riforma totale."
  edict_of_nantes_issue: "Editto di Nantes"
  edict_of_nantes_issue_desc: "Dopo anni di conflitti religiosi, è giunto il momento di promuovere l'unità attraverso la convivenza e porre fine a inutili spargimenti di sangue."
- end_the_french_wars_of_religion_tt: "Il [disaster|e] [ShowDisasterName('french_wars_religion')] terminerà"
+ end_the_french_wars_religion_tt: "The [ShowDisasterName('french_wars_religion')] [disaster|e] will end" #NEW
+ #end_the_french_wars_of_religion_tt: "Il [disaster|e] [ShowDisasterName('french_wars_religion')] terminerà" #DELETE
  mug_promote_rajput_officials: "Promuovere Ufficiali $rajasthani_language$"
  mug_promote_rajput_officials_desc: "Promuovendo la popolazione $rajasthani_language$ nella nazione, possiamo assicurarci di avere un numero di funzionari militaristi su cui poter contare."
  promote_rajput_officials_passed_tt: "Apparirà un membro competente di [language|e] [ShowLanguageName('rajasthani_language')]."
@@ -660,6 +665,8 @@
  pa_resist_industrialization_desc: "$pa_resist_institution_desc$ dell'$industrialization$ $pa_rest_institution_end_desc$"
  pa_resist_levee_en_masse: "Arginare le $levee_en_masse$"
  pa_resist_levee_en_masse_desc: "$pa_resist_institution_desc$ delle $levee_en_masse$ $pa_rest_institution_end_desc$"
+ pa_remove_free_village: "Address $free_village$ Complaints" #NEW
+ pa_remove_free_village_desc: "We will remove any [ShowBuildingTypeNameWithNoTooltip('free_village')] $pa_remove_building_middle_desc$ the [ShowEstateTypeName('nobles_estate')]." #NEW
 
  #Building related Agendas
  #remove Buildings of other estates

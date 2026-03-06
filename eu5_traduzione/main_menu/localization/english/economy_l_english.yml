@@ -14,6 +14,7 @@
  war_exhaustion: "Stanchezza da Guerra"
  karma: "Karma"
  yanantin: "Yanantin"
+ complacency: "Complacency" #NEW
  righteousness: "Rettitudine"
  harmony: "Armonia"
  self_control: "Autocontrollo"
@@ -145,6 +146,7 @@
  FORMAT_CURRENCY_karma: "$VAL|2$"
  FORMAT_CURRENCY_purity: "$VAL|2$"
  FORMAT_CURRENCY_yanantin: "$VAL|2$"
+ FORMAT_CURRENCY_complacency: "$VAL|2$" #NEW
  FORMAT_CURRENCY_righteousness: "$VAL|2$"
  FORMAT_CURRENCY_harmony: "$VAL|2$"
  FORMAT_CURRENCY_self_control: "$VAL|2$"
@@ -182,6 +184,7 @@
  FORMAT_CURRENCY_SHORT_karma: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_purity: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_yanantin: "$VAL|0$"
+ FORMAT_CURRENCY_SHORT_complacency: "$VAL|0$" #NEW
  FORMAT_CURRENCY_SHORT_righteousness: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_harmony: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_self_control: "$VAL|0$"
@@ -218,6 +221,7 @@
  FORMAT_CURRENCY_karma_change: "$VAL|+=2$"
  FORMAT_CURRENCY_purity_change: "$VAL|+=2$"
  FORMAT_CURRENCY_yanantin_change: "$VAL|+=2$"
+ FORMAT_CURRENCY_complacency_change: "$VAL|-=2$" #NEW
  FORMAT_CURRENCY_righteousness_change: "$VAL|+=2$"
  FORMAT_CURRENCY_harmony_change: "$VAL|+=2$"
  FORMAT_CURRENCY_self_control_change: "$VAL|+=2$"
@@ -249,6 +253,7 @@
  FORMAT_CURRENCY_EFFECT_karma: "$VAL|+=2$ [karma|e]"
  FORMAT_CURRENCY_EFFECT_purity: "$VAL|+=2$ [purity|e]"
  FORMAT_CURRENCY_EFFECT_yanantin: "$VAL|+=2$ [yanantin|e]"
+ FORMAT_CURRENCY_EFFECT_complacency: "$VAL|-=2$ [complacency|e]" #NEW
  FORMAT_CURRENCY_EFFECT_righteousness: "$VAL|+=2$ [righteousness|e]"
  FORMAT_CURRENCY_EFFECT_harmony: "$VAL|+=2$ [harmony|e]"
  FORMAT_CURRENCY_EFFECT_self_control: "$VAL|+=2$ [self_control|e]"
@@ -278,6 +283,7 @@
  FORMAT_CURRENCY_EFFECT_karma_INV: "$VAL|-=2$ [karma|e]"
  FORMAT_CURRENCY_EFFECT_purity_INV: "$VAL|-=2$ [purity|e]"
  FORMAT_CURRENCY_EFFECT_yanantin_INV: "$VAL|-=2$ [yanantin|e]"
+ FORMAT_CURRENCY_EFFECT_complacency_INV: "$VAL|+=2$ [complacency|e]" #NEW
  FORMAT_CURRENCY_EFFECT_righteousness_INV: "$VAL|-=2$ [righteousness|e]"
  FORMAT_CURRENCY_EFFECT_harmony_INV: "$VAL|-=2$ [harmony|e]"
  FORMAT_CURRENCY_EFFECT_honor_INV: "$VAL|-=2$ [honor|e]"
@@ -308,6 +314,7 @@
  FORMAT_CURRENCY_TRIGGER_karma: "$VAL|2Y$ [karma|e]"
  FORMAT_CURRENCY_TRIGGER_purity: "$VAL|2Y$ [purity|e]"
  FORMAT_CURRENCY_TRIGGER_yanantin: "$VAL|2Y$ [yanantin|e]"
+ FORMAT_CURRENCY_TRIGGER_complacency: "$VAL|2Y$ [complacency|e]" #NEW
  FORMAT_CURRENCY_TRIGGER_righteousness: "$VAL|2Y$ [righteousness|e]"
  FORMAT_CURRENCY_TRIGGER_harmony: "$VAL|2Y$ [harmony|e]"
  FORMAT_CURRENCY_TRIGGER_self_control: "$VAL|2Y$ [self_control|e]"
@@ -334,6 +341,7 @@
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_karma: "$VAL|Y%2$ [karma|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_purity: "$VAL|Y%2$ [purity|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_yanantin: "$VAL|Y%2$ [yanantin|e]"
+ FORMAT_CURRENCY_TRIGGER_PERCENTAGE_complacency: "$VAL|Y%2$ [complacency|e]" #NEW
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_righteousness: "$VAL|Y%2$ [righteousness|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_harmony: "$VAL|Y%2$ [harmony|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_self_control: "$VAL|Y%2$ [self_control|e]"
@@ -363,6 +371,7 @@
  CURRENCY_ENTRY_karma: "$VAL|+=2$ [$ICON$_i]"
  CURRENCY_ENTRY_purity: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_yanantin: "$VAL|Y2$ [$ICON$_i]"
+ CURRENCY_ENTRY_complacency: "$VAL|Y2$ [$ICON$_i]" #NEW
  CURRENCY_ENTRY_righteousness: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_harmony: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_self_control: "$VAL|Y2$ [$ICON$_i]"
@@ -520,6 +529,7 @@
  navy_transport_build: "Costo Costruzione Trasporto"
  navy_transport_reinforce: "Costo Rinforzo Trasporto"
  navy_transport_maintenance: "Costo Mantenimento Trasporto"
+ template_maintenance: "Template Maintenance Cost" #NEW
  subject_pays_vassal: "Il Vassallo paga il Signore"
  subject_pays_samanta: "La $samanta$ paga il Signore"
  subject_pays_maha_samanta: "La $maha_samanta$ paga il Signore"
@@ -557,10 +567,13 @@
  corrupt_officials_monthly_cost: "Costo Mensile $corrupt_officials_relation$"
  commission_art_price: "Costo Commissione Artistica"
  abdicate_price: "Costo Abdicazione"
+ improve_our_cultural_view_price: "$improve_our_cultural_view$ Cost" #NEW
+ transfer_subject_price: "$transfer_subject$ Cost" #NEW
  rtr_grant_titles_price: "Costo $rtr_grant_titles$"
  rtr_negotiate_with_rebels_price: "Costo $rtr_negotiate_with_rebels$"
  rtr_appease_the_court_price: "Costo $rtr_appease_the_court$"
  rtr_rein_in_area_price: "Costo $rtr_rein_in_area$"
+ rtr_demand_annexation_price: "$rtr_demand_annexation$ Cost" #NEW
  change_employment_system_price: "Costo $change_employment_system$"
  restrict_peranakan_trading_rights_price: "Costo $restrict_peranakan_trading_rights$"
  ban_conversion_of_adipatis_price: "Costo $ban_conversion_of_adipatis$"
@@ -575,6 +588,7 @@
  peasants_war_actions_price: "Costo Azioni Principali $peasants_war$"
  religious_turmoil_actions_price: "Costo Azioni Principali $religious_turmoil$"
  change_government_type_price: "Costo Cambio $game_concept_government_type$"
+ provoke_rebels_price: "$provoke_rebels$ Main Actions Price" #NEW
 
  #Special Units
  n_panokseon_build: "Costo Costruzione $n_panokseon$"
@@ -613,6 +627,7 @@
  TOTAL_PRODUCTION: "Produzione totale nel [country|e]"
  GOOD_PRODUCTION: "Produzione [GOODS.GetName]"
  SELECT_LOCATION: "Seleziona Località"
+ SELECT_ALL_LOCATIONS: "Select All Locations" #NEW
  EXPAND_PRODUCTION_SORT_NAME: "Ordina per nome della [location|e]"
  EXPAND_PRODUCTION_SORT_PRICE: "Ordina per prezzo in ogni [market|e]"
  EXPAND_PRODUCTION_SORT_PROD: "Ordina per produzione in ogni [location|e]"
@@ -631,6 +646,8 @@
  GOODS_NOT_BUILD_IN_THIS_MARKET: "@trigger_no! Non ci sono [locations|e] possibili che [Concept('own', 'possediamo')|e] per costruire un $INFO$ nel [MARKET.GetName]"
  SORT_BY_NAME_ECO_NEEDS_TT: "Ordina per Quantità"
  SORT_BY_NAME_ECO_MARKET_TT: "Ordina per nome del [market|e]"
+ SORT_BY_MARKET_RELEVANCE_TT: "Sort by Market Relevance" #NEW
+ SORT_BY_MERCHANT_RANKING_TT: "Sort by our position amongst all trading countries in the [market|e]" #NEW
  SORT_BY_PRICE_ECO_TT: "Ordina per [price|e] del [good|e]"
  SORT_BY_FOOD_BALANCE_TT: "Ordina per il bilancio del [food|e] nel [market|e]"
  SORT_BY_MARKET_VALUE_TT: "Ordina per il valore totale scambiato nel [market|e]"
@@ -644,7 +661,9 @@
  SORT_BY_PROFIT_TT: "Ordina per profitto dell'operazione"
  BUILD_BUILD_SELECT_TITLE: "Seleziona edificio per produrre più [GOODS.GetName]"
  BUILD_LOC_SELECT_TITLE: "Seleziona dove costruire [BUILDING_TYPE.GetName]"
- CURRENT_NEEDS_TITLE: "#T Le nostre necessità di [GOODS.GetNameWithNoTooltip] nel [MARKET.GetNameWithNoTooltip]#!"
+ #CURRENT_NEEDS_TITLE: "#T Le nostre necessità di [GOODS.GetNameWithNoTooltip] nel [MARKET.GetNameWithNoTooltip]#!" #OLD ITA
+ CURRENT_NEEDS_TITLE: "#T Our [GOODS.GetNameWithNoTooltip] needs at the [MARKET.GetName]#!" #NEW
+ #CURRENT_NEEDS_TITLE: "#T Our [GOODS.GetNameWithNoTooltip] needs at the [MARKET.GetNameWithNoTooltip]#!" #OLD ENG
  CURRENT_NEEDS_ENTRY: "$BULLET_WITH_TAB$$NAME$: $VAL|<+=2$"
  CURRENT_NEEDS_EXTRA: "... e altri $VAL|+=2$ da $NUM$ fonti."
  NO_POSSIBLE_BUILDINGTYPES: "Nessuno Possibile"

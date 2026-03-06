@@ -134,6 +134,7 @@
  hre_has_not_direct_free_city_subjects_tt: "Le [free_cities|e] NON sono [subjects|e] di tipo [ShowSubjectTypeName('direct_imperial_free_city')] dell'[hre_emperor|e]"
 
  hre_country_fulfills_imperial_religion_requirement_tt: "La [religion|e] del paese è allineata con la [imperial_religion|e]"
+ hre_character_fulfills_imperial_religion_requirement_tt: "The [religion|e] of the character aligns with the [imperial_religion|e]" #NEW
  hre_is_perpetual_diet_location_tt: "Ospita la #Y Dieta Perpetua#!"
 
  #Celestial Authority 
@@ -794,6 +795,18 @@
  PAST_LOCK_RESOLUTION_EFFECT: "Ha bloccato la [resolution|e] [RESOLUTION.GetName]"
  PAST_WE_LOCK_RESOLUTION_EFFECT: "Abbiamo bloccato la [resolution|e] [RESOLUTION.GetName]"
  PAST_THIRD_LOCK_RESOLUTION_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha bloccato la [resolution|e] [RESOLUTION.GetName]"
+ LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across in the [capital|e] [region|e] will convert from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ FIRST_LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across our [locations|e] in the [COUNTRY.GetCapital.GetRegion.GetName] [region|e] will convert from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ THIRD_LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across the [locations|e] of [COUNTRY.GetName] in the [COUNTRY.GetCapital.GetRegion.GetName] [region|e] will convert from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ PAST_LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across in the [capital|e] [region|e] have converted from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ PAST_FIRST_LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across our [locations|e] in the [COUNTRY.GetCapital.GetRegion.GetName] [region|e] have converted from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ PAST_THIRD_LOTS_OF_RELIGION_EFFECT: "Many [pops|e] across the [locations|e] of [COUNTRY.GetName] in the [COUNTRY.GetCapital.GetRegion.GetName] [region|e] have converted from [RELIGION.GetName] to [TARGET_RELIGION.GetName]" #NEW
+ UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither an [ally|e] nor a [subject|e] of Country will worsen their [opinion|e] of them" #NEW
+ FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither our [ally|e] nor our [subject|e] will worsen their [opinion|e] of us" #NEW
+ THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither an [ally|e] nor a [subject|e] of [COUNTRY.GetName] will worsen their [opinion|e] of them" #NEW
+ PAST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither an [ally|e] nor a [subject|e] of Country has worsened their [opinion|e] of them" #NEW
+ PAST_FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither our [ally|e] nor our [subject|e] has worsened their [opinion|e] of us" #NEW
+ PAST_THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Every [country|e] in [TARGET_RELIGION.GetName] which is neither an [ally|e] nor a [subject|e] of [COUNTRY.GetName] has worsened their [opinion|e] of them" #NEW
 
  UNLOCK_GLOBAL_LAW_EFFECT: "Sblocca la [law|e] [LAW.GetName] #Y globalmente#!"
  WE_UNLOCK_GLOBAL_LAW_EFFECT: "Sblocchiamo la [law|e] [LAW.GetName] #Y globalmente#!"
@@ -897,12 +910,12 @@
  PAST_FIRST_APPLY_SOCIETAL_VALUE_PUSH_MODIFIERS_EFFECT: "Abbiamo ottenuto [modifiers|e] che spingono i nostri [societal_values|e] ad allinearsi maggiormente con quelli [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $VALUE|0Y$ anni"
  PAST_THIRD_APPLY_SOCIETAL_VALUE_PUSH_MODIFIERS_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto [modifiers|e] che spingono i loro [societal_values|e] ad allinearsi maggiormente con quelli [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $VALUE|0Y$ anni"
 
- HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "Imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
- FIRST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "L'[international_organization|e] imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
- THIRD_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
- PAST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "Ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
- PAST_FIRST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "L'[international_organization|e] ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
- PAST_THIRD_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$"
+ #HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "Imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
+ #FIRST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "L'[international_organization|e] imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
+ #THIRD_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] imposta il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
+ #PAST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "Ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
+ #PAST_FIRST_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "L'[international_organization|e] ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
+ #PAST_THIRD_HRE_ON_REFORM_LEVEL_PASSED_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha impostato il [hre_law_level|e] di [TARGET_LAW.GetName] a $VALUE|Y0$" #DELETE
 
  MOVE_BUILDING: "L'[building|e] [BUILDING_TYPE.GetName] si sposta a [LOCATION.GetName] da [TARGET_LOCATION.GetName]"
  PAST_MOVE_BUILDING: "L'[building|e] [BUILDING_TYPE.GetName] si è spostato a [LOCATION.GetName] da [TARGET_LOCATION.GetName]"

@@ -232,7 +232,9 @@
  promote_to_head_of_cabinet: "Promuovi a Capo di Gabinetto"
  promote_to_head_of_cabinet_concept: "[cabinet|e]"
  promote_to_head_of_cabinet_act: "$promote_to_head_of_cabinet$"
- promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCharacter('recipient').Custom('GetHeadOfCabinetName')] [SCOPE.sCharacter('recipient').GetName] diventa [head_of_the_cabinet|e] fino alla sua morte o alla sua rimozione dal [cabinet|e]."
+ #promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCharacter('recipient').Custom('GetHeadOfCabinetName')] [SCOPE.sCharacter('recipient').GetName] diventa [head_of_the_cabinet|e] fino alla sua morte o alla sua rimozione dal [cabinet|e]." #OLD ITA
+ promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCountry('actor').GetGovernment.GetCabinetMemberTitle] [SCOPE.sCharacter('recipient').GetName] becomes [head_of_the_cabinet|e] until [SCOPE.sCharacter('recipient').GetHisHer] death or removal from the [cabinet|e]." #NEW
+ #promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCharacter('recipient').Custom('GetHeadOfCabinetName')] [SCOPE.sCharacter('recipient').GetName] becomes [head_of_the_cabinet|e] until [SCOPE.sCharacter('recipient').GetHisHer] death or removal from the [cabinet|e]." #OLD ENG
  promote_to_head_of_cabinet_desc: "Il [character|e] diventerà [head_of_the_cabinet|e] fino alla morte o alla rimozione dal [cabinet|e]."
  promote_to_head_of_cabinet_past: "[SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] Promosso"
  promote_to_head_of_cabinet_act_past: "[SCOPE.sCharacter('recipient').GetName] è stat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] promoss[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] a [head_of_the_cabinet|e] fino alla sua morte o rimozione dal [cabinet|e]."

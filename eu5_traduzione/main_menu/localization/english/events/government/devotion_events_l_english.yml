@@ -20,8 +20,8 @@
  devotion_events.5.a: "La vanità è un peccato, anche se è per un forte!"
  devotion_events.5.b: "Sicuramente i nostri sudditi apprezzeranno le loro tasse destinate a tanta bellezza!"
  devotion_events.6.title: "La Ricerca della Libertà Religiosa"
- devotion_events.6.desc: "Un gruppo noto per le sue idee radicali in materia di riforme religiose sta condannando le nostre dottrine [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e quelle [ROOT.GetCountry.GetReligion.Custom('IT_ADJ_FP') nel suo raduno pubblico. Ciò ha portato a diffuse lamentele e richieste di libertà religiosa da parte dei nostri cittadini non così leali di [target_location.GetName]."
- devotion_events.6.a: "Il nostro Paese è [ROOT.GetCountry.GetReligion.Custom('IT_REL_MS')] e sarà sempre [ROOT.GetCountry.GetReligion.Custom('IT_REL_MS')]!"
+ devotion_events.6.desc: "Un gruppo noto per le sue idee radicali in materia di riforme religiose sta condannando le nostre dottrine [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e quelle [ROOT.GetCountry.Custom('IT_ADJ_FP') nel suo raduno pubblico. Ciò ha portato a diffuse lamentele e richieste di libertà religiosa da parte dei nostri cittadini non così leali di [target_location.GetName]."
+ devotion_events.6.a: "Il nostro Paese è [ROOT.GetCountry.Custom('IT_REL_MS')] e sarà sempre [ROOT.GetCountry.Custom('IT_REL_MS')]!"
  devotion_events.6.b: "Concedete loro piena libertà religiosa."
  devotion_events.7.title: "False Credenze"
  devotion_events.7.desc: "Uno degli scopi [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] è diffondere la fede [ROOT.GetCountry.GetReligion.GetAdjective] e proteggerla dall'eresia. È una causa nobile, ma che vergogna quando l'eresia colpisce nel cuore del nostro Paese. [target_location.Custom('IT_ART_LOCATION')|U][target_location.GetRank.GetName] di [target_location.GetName] non segue la fede [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] e, se questa situazione non verrà affrontata al più presto, ci porterà grande vergogna."
@@ -82,7 +82,7 @@
  devotion_events.23.a: "Ignoriamo l'immoralità di [target_ruler.GetNameWithNoTooltip]."
  devotion_events.23.b: "Cerchiamo di cambiare le cose."
  devotion_events.24.title: "Volontari per la Guerra Santa"
- devotion_events.24.desc: "Ispirati dalla nostra santa causa, volontari da tutto il mondo [ROOT.GetCountry.GetReligion.Custom('IT_REL_MS')] sono arrivati ​​per aiutarci a combattere gli infedeli e diffondere la vera fede!"
+ devotion_events.24.desc: "Ispirati dalla nostra santa causa, volontari da tutto il mondo [ROOT.GetCountry.Custom('IT_REL_MS')] sono arrivati ​​per aiutarci a combattere gli infedeli e diffondere la vera fede!"
  devotion_events.24.a: "Meraviglioso! Un'iniziativa davvero grandiosa."
  devotion_events.100.title: "Conflitto tra [target_location.GetRank.GetNameWithNoTooltip|U] e [ROOT.GetCountry.GetFlavorRank]"
  devotion_events.100.desc: "La lunga rivalità tra [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] e [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] di [target_location.GetName] ha danneggiato per molti anni i nostri rapporti. [target_location.Custom('IT_ART_LOCATION')|U][target_location.GetRank.GetNameWithNoTooltip] sta cercando di liberarsi dall'autorità di [target_ruler.GetName] e non ha voluto proteggere [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] e i suoi predecessori durante i periodi di disordini e guerre."
@@ -148,7 +148,7 @@
  devotion_events.207.desc: "Ogni governatore ha i propri beni finanziari e altri dettagli registrati prima di essere nominato. Questi vengono poi conservati in un ufficio speciale, solo per essere esaminati ogni anno quando vengono controllati per eventuali discrepanze nelle finanze. Questo serve a evitare corruzione e tangenti, ma a volte il sistema fallisce."
  devotion_events.207.a: "Rimuovete le nomine dei governatori più corrotti."
  devotion_events.208.title: "Un Kāfir nella Nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle|U]"
- devotion_events.208.desc: "[minister.GetName] ha irritato il [ROOT.GetCountry.GetReligion.Custom('IT_REL_MS')] sbagliata con una dichiarazione che potrebbe essere interpretata come se [minister.GetSheHe] avesse consapevolmente abbandonato l'[ShowReligionGroupName('muslim')]. Prima che potessimo interrompere la discussione e forse salvare [minister.GetNameWithNoTooltip] da qualsiasi accusa, erano già state mosse accuse di essere un kāfir, un miscredente.
+ devotion_events.208.desc: "[minister.GetName] ha irritato il [ROOT.GetCountry.Custom('IT_REL_MS')] sbagliata con una dichiarazione che potrebbe essere interpretata come se [minister.GetSheHe] avesse consapevolmente abbandonato l'[ShowReligionGroupName('muslim')]. Prima che potessimo interrompere la discussione e forse salvare [minister.GetNameWithNoTooltip] da qualsiasi accusa, erano già state mosse accuse di essere un kāfir, un miscredente.
  devotion_events.208.a: "Ignoratelo, scusatelo, dimenticatelo."
  devotion_events.208.b: "Cercate di trovare una soluzione a tutto questo."
  devotion_events.208.c: "Licenziate [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle]."

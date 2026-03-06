@@ -125,10 +125,12 @@
  PRICE_SCALED_VALUE_FROM_RECIPIENT_RAW: "Oro Scalato dal Ricevente: $VAL|Y$ [$ICON$_i]"
  PRICE_CAP_MAX: "Limite Massimo: $VAL|Y$ [$ICON$_i]"
  PRICE_CAP_MIN: "Limite Minimo: $VAL|Y$ [$ICON$_i]"
+ PRICE_SCALED_MONTHLY_GOLD: "$VAL|2Y%$ of [$ICON$_i] [economical_base|e]" #NEW
  PRICE_SCALED_MONTHLY: "$VAL|2Y%$ dell'entrate [$ICON$_i]"
  PRICE_COST_INFLATION: "[inflation|e]: $VALUE|-=%V2$"
  PRICE_COST_GOODS_IMPACT: "Costo di $GOODS$ nel [MARKET.GetName] : $VALUE|=-%2$"
  PRICE_GOLD_PER_POP: "$VAL|2Y$ [$ICON$_i] per pop"
+ PRICE_NO_VALUE: "0" #NEW
  BASE_COST: "Costo Base"
  GENERAL_CAP_MIN_PERCENT: "Limite Minimo: $VAL|2%Y$"
  DRAG_TO_HERE: "Trascina Qui"
@@ -246,6 +248,7 @@
  SCOPE_DEBUG_MISSION: "Missione '$NAME$' ($ID$)"
  SCOPE_DEBUG_MISSION_TASK: "Compito della Missione '$NAME$' ($ID$)"
  SCOPE_DEBUG_RECRUITMENT_METHOD: "Metodo di Reclutamento '$NAME$' ($ID$)"
+ SCOPE_DEBUG_UNIT_FORMATION_PREFERENCE: "Unit Formation Preference '$NAME$' ($ID$)" #NEW
  SCOPE_DEBUG_UNIT_ABILITY: "Abilità dell'Unità '$NAME$' ($ID$)"
  SCOPE_DEBUG_SOCIETAL_VALUE: "Valore Sociale '$NAME$' ($ID$)"
  SCOPE_DEBUG_ROAD_TYPE: "Tipo di Strada '$NAME$' ($ID$)"
@@ -268,6 +271,7 @@
  SCOPE_DEBUG_EMPLOYMENT_SYSTEM: "Sistema di Impiego '$NAME$' ($ID$)"
  SCOPE_DEBUG_SUBJECT_MILITARY_STANCE: "Approccio Militare dello Stato Cliente '$NAME$' ($ID$)"
  SCOPE_DEBUG_SCRIPTABLE_HINT_DEFINITION: "Definizione di Suggerimento Scritturabile '$NAME$' ($ID$)"
+ SCOPE_DEBUG_SCRIPTED_GEOGRAPHY: "Scripted Geography '$NAME$' ($ID$)" #NEW
  CHARACTER_TRAITS: "Tratti: $TRAITS|V$"
  YES: "Sì"
  NO: "No"
@@ -386,11 +390,13 @@
  MULTIPLAYER_LAGGING_BEHIND: "Alcuni giocatori sono in ritardo. Il gioco li aspetterà per sincronizzarsi."
  GAME_DLC_TOOLTIP_OWNED: "Posseduto: [Select_CString(GameDLC.IsOwned,'Sì','No')]"
  GAME_DLC_TOOLTIP_INSTALLED: "Installato: [Select_CString(GameDLC.IsInstalled,'Sì','No')]"
+ GAME_DLC_TOOLTIP_MOUNTED: "Mounted: [Select_CString(GameDLC.IsMounted,'yes','no')]" #NEW
  GAME_DLC_TOOLTIP_ACTIVATED: "Attivato: [Select_CString(GameDLC.IsActivated,'Sì','No')]"
  GAME_DLC_TOOLTIP: "[GameDLC.GetName]\n[GameDLC.GetDesc]\n$GAME_DLC_TOOLTIP_OWNED$\n$GAME_DLC_TOOLTIP_INSTALLED$\n$GAME_DLC_TOOLTIP_ACTIVATED$"
  GAME_DLC_KEY_VALUE: "$KEY$: $VALUE$"
  GAME_DLC_IS_OWNED: "È Posseduto"
  GAME_DLC_IS_INSTALLED: "È Installato"
+ GAME_DLC_IS_MOUNTED: "Is Mounted" #NEW
  GAME_DLC_IS_ACTIVATED: "È Attivato"
  GAME_DLC_OWNED_CLICK: "Clicca per gestire i DLC"
  GAME_DLC_NOT_OWNED_CLICK: "Clicca per visitare lo Store"

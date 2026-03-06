@@ -1,4 +1,10 @@
 ﻿l_english:
+ balanced_army: "Esercito Bilanciato" #NEW
+ balanced_army_desc: "Questo consentirà di creare un esercito bilanciata con [regiments|e] di tipo simile sia al [center|e] che ai [flanks|e]." #NEW
+ cav_inf_cav: "Cavalleria sui Fianchi" #NEW
+ cav_inf_cav_desc: "Questo metterà [ShowUnitCategoryName('army_cavalry')] sui [flanks|e] con [ShowUnitCategoryName('army_infantry')] al [center|e]." #NEW
+ balanced_navy: "Marina Bilanciata" #NEW
+ balanced_navy_desc: "Questo consentirà di creare una marina bilanciata con [ships|e] di tipo simile sia al [center|e] che ai [flanks|e]." #NEW
  # Reggimento
  subunit_structure_army_roman: "$TYPE$ $ROMAN$"
  subunit_structure_army_roman_nickname: "$TYPE$ $ROMAN$ $NICKNAME$"
@@ -77,6 +83,11 @@
  subunit_type_army_infantry_levies_breton: "Luioù"
  subunit_type_army_infantry_levies_welsh: "Lluoedd"
  subunit_type_army_infantry_levies_polish: "Pospolite Ruszenie"
+ subunit_type_army_infantry_levies_finnish: "Leviitit" #NEW
+ subunit_type_army_infantry_levies_icelandic: "Kallsmenn" #NEW
+ subunit_type_army_infantry_levies_danish: "Uppbud" #NEW
+ subunit_type_army_infantry_levies_swedish: "Uppbåd" #NEW
+ subunit_type_army_infantry_levies_norwegian: "Utbud" #NEW
  subunit_type_army_infantry_levies_french: "Levées"
  subunit_type_army_infantry_levies_spanish: "Levas"
  subunit_type_army_infantry_levies_english: "Levies"
@@ -104,6 +115,8 @@
  subunit_type_army_infantry_czech: "Pěchota"
  subunit_type_army_infantry_polish: "Piechota"
  subunit_type_army_infantry_dutch: "Infanterie"
+ subunit_type_army_infantry_swedish: "Infanteri" #NEW
+ subunit_type_army_infantry_icelandic: "Infanterí" #NEW
  subunit_type_army_infantry_frisian: "Ynfantery"
  subunit_type_army_infantry_low_german: "Infantrie"
  subunit_type_army_infantry_high_german: "Infanterie"
@@ -128,6 +141,9 @@
  subunit_type_army_cavalry_knights_german: "Ritter"
  subunit_type_army_cavalry_knights_scottish_gaelic: "Ridirean"
  subunit_type_army_cavalry_knights_irish: "Ridirí"
+ subunit_type_army_cavalry_knights_finnish: "Ritarit" #NEW
+ subunit_type_army_cavalry_knights_icelandic: "Riddarar" #NEW
+ subunit_type_army_cavalry_knights_danish: "Riddere" #NEW
  subunit_type_army_cavalry_knights_swedish: "Riddare"
  subunit_type_army_cavalry_knights_czech: "Rytíři"
  subunit_type_army_cavalry_knights_polish: "Rycerze"
@@ -163,6 +179,9 @@
  subunit_type_army_cavalry_czech: "Kavalerie"
  subunit_type_army_cavalry_russian: "Kavaleriyskiy"
  subunit_type_army_cavalry_ukrainian: "Kavaleriya"
+ subunit_type_army_cavalry_finnish: "Kavalleria" #NEW
+ subunit_type_army_cavalry_norwegian: "Kavaleri" #NEW
+ subunit_type_army_cavalry_swedish: "Kavalleri" #NEW
  subunit_type_army_cavalry_dutch: "Cavalerie"
  subunit_type_army_cavalry_frisian: "Kavallerij"
  subunit_type_army_cavalry_german: "Kavallerie"
@@ -197,6 +216,8 @@
  subunit_type_army_artillery_polish: "Artyleria"
  subunit_type_army_artillery_russian: "Artilleriyskiy"
  subunit_type_army_artillery_ukrainian: "Artyleriya"
+ subunit_type_army_artillery_icelandic: "Artillerí" #NEW
+ subunit_type_army_artillery_swedish: "Artilleri" #NEW
  subunit_type_army_artillery_dutch: "Artillerie"
  subunit_type_army_artillery_frisian: "Artillerij"
  subunit_type_army_artillery_low_german: "Artillerie"
@@ -626,7 +647,7 @@
  a_feudal_levy_desc: "Una $a_feudal_levy$ è composta da contadini arruolati in tempo di guerra in adempimento dei doveri verso il signore feudale, con un minimo addestramento militare. Col tempo andranno sostituite da eserciti professionali."
  a_camp_followers: "Vivandieri"
  a_camp_followers_desc: "Un eterogeneo seguito di mercanti e famiglie della soldatesca, i $a_camp_followers$ forniscono servizi informali alle bande di guerra in marcia."
- a_houfnice_desc: "Si ritiene che gli obici moderni traggano il nome dall'artiglieria Houfnice sviluppata dagli Ussiti nel XV secolo. Questi cannoni a canna corta erano montati su carri e impiegati in battaglia per sparare palle incendiarie e mitraglia a supporto della fanteria."
+ a_houfnice_desc: "Si ritiene che gli obici moderni traggano il nome dall'artiglieria Houfnice sviluppata dagli Ussiti nel XV secolo. Questi cannoni a canna corta erano montati su carri e utilizzati sul campo di battaglia per sparare palle e proiettili a sostegno della fanteria."
  a_serbian_hussars: "Ussari Serbi"
  a_serbian_hussars_desc: "Gli Ussari sono cavalleria leggera la cui origine si ricollega a bande di guerrieri serbi a cavallo. Armatura leggera e cavalli veloci consentono loro di superare in manovra altri reparti, aprendo la strada a tattiche innovative."
 
@@ -655,6 +676,7 @@
  a_wagon_train_desc: "La crescita degli eserciti nell'[ShowAgeName('age_5_absolutism')] complica la logistica, rendendo ogni armata dipendente dal proprio $a_wagon_train$ per mantenere l'efficienza in battaglia."
  a_wagenburg: "Wagenburg"
  a_wagenburg_desc: "$wagenburg_desc$"
+ EFFECTIVE_ARMORY_BUILDINGS: "Edifici [ShowBuildingTypeName('armory')] Efficaci" #NEW
  a_genoese_crossbowmen: "Balestrieri Genovesi"
  a_genoese_crossbowmen_desc: "I $a_genoese_crossbowmen$ sono un'unità di grande reputazione, impiegata dai Genovesi dalla Prima crociata in poi. Armati di balestra genovese e pavese, questi fanti difendono le loro città e servono come mercenari in tutta Europa."
  a_footmen_desc: "Spina dorsale di ogni esercito, i fanti costituiscono la maggior parte delle nostre truppe in marcia, pronti a reggere la prima linea e a difendere la patria da potenziali invasori."
@@ -985,6 +1007,7 @@
 
  REINF_REGULARS: "@trigger_no!Non può rinforzare [levies|e] o [mercenaries|e]."
  UARAR_RETREATING: "@trigger_no![UNIT.GetNameWithNoTooltip] è in [Concept('retreating', 'Ritirata')|e]!"
+ UARAR_COMBAT: "@trigger_no![UNIT.GetNameWithNoTooltip] è in [combat|e]!" #NEW
  UARAR_LOADED: "@trigger_no![UNIT.GetNameWithNoTooltip] è caricata su una [navy|e]!"
  UARAR_ATTRITION_LOSSES: "@trigger_no![UNIT.GetNameWithNoTooltip] sta subendo [attrition_losses|e]!"
  UARAR_MOTHBALLED: "@trigger_no![UNIT.GetNameWithNoTooltip] è [mothballed|e]!"
@@ -1006,6 +1029,17 @@
  REPAIR_SHIP_ENTRY: "[SUBUNIT.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2%$#!"
  REPAIR_REGIMENT_NO_ACCESS_ENTRY: "[SUBUNIT.GetName]: (nessun accesso)"
  REPAIR_NONE: "Nulla possibile in [LOCATION.GetName]"
+ CANNOT_CREATE_UNNAMED_UNIT_TEMPLATE: "@trigger_no! Impossibile creare un [unit_template|e] senza nome." #NEW
+ CANNOT_CREATE_EMPTY_UNIT_TEMPLATE: "@trigger_no! Impossibile creare un [unit_template|e] senza unità." #NEW
+ UNIT_TEMPLATE_DEFAULT_NAME: "UNIT TEMPLATE $NUM$" #NEW
+ CREATE_ARMY_TEMPLATE: "Crea template esercito" #NEW
+ CREATE_NAVY_TEMPLATE: "Crea template marina" #NEW
+ EDIT_ARMY_TEMPLATE: "Modifica [UnitTemplateLateralView.GetUnitTemplate.GetNameWithNoTooltip]" #NEW
+ EDIT_NAVY_TEMPLATE: "Modifica [UnitTemplateLateralView.GetUnitTemplate.GetNameWithNoTooltip]" #NEW
+ CREATE_UNIT_TEMPLATE: "Crea template unità" #NEW
+ FINISH_EDIT_UNIT_TEMPLATE: "Modifica template unità" #NEW
+ EDIT_UNIT_TEMPLATE: "Modifica [UnitTemplate.GetNameWithNoTooltip]" #NEW
+ DELETE_UNIT_TEMPLATE: "Elimina [UnitTemplate.GetNameWithNoTooltip]" #NEW
 
 
  SHOW_UNIT_TYPE: "Mostra tipo di unità"
@@ -1020,7 +1054,6 @@
  GO_TO_UNIT_LOCATION: "Panoramica sulla località dell'unità"
  UNIT_LOCATION_STATUS: "[Unit.GetStatus] in [Location.GetNameWithNoTooltip|L]"
 
- REPAIR_AT_PORT: "In [port|e]: $VAL|G%$"
  UNIT_GOODS_ACCESS: "Accesso ai [goods|e]: x$HOW|2$"
  REINFORCE_GOODS_BASE: "Base: $VAL|V2%$"
  REINFORCE_GOODS_ACCESS: "Accesso Completo ai [goods|e]: #V 100%#!"
@@ -1041,7 +1074,7 @@
  COMBATSIDE_MORALE_DEFENDER: "#T Morale [COUNTRY.GetAdjectiveWithNoTooltip]#!\n[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] è il [defender|e] in questa [battle|e]."
  MORALE_LAND_FLAVOR: "#F Solo i [regiments|e] attualmente in prima linea sono considerati. Quelli in riserva o quelli che sono già fuggiti non sono presi in considerazione.#!"
  MORALE_NAVAL_FLAVOR: "#F Solo le [ships|e] attualmente in prima linea sono considerate. Quelle in riserva o quelle che sono già fuggite non sono prese in considerazione.#!"
- COMBATSIDE_MORALE_DATA: "Il [morale|e] [COUNTRY.GetAdjective] delle unità attualmente in combattimento è $CURR|V2$ su $MAX|V2$"
+ COMBATSIDE_MORALE_DATA: "Il [morale|e] [COUNTRY.GetAdjective] di: \n• #G unità [Concept('engaged', 'Ingaggiate')|e] sono: $CURR|2$#! \n Con un massimo di: $MAX|V2$"
 
  MORALE_SIEGE_TT: "#T Morale Attuale#!\nIl [morale|e] medio dell'assediante è $CURR|Y2$ di $MAX|2V$"
  MORALE_C_TT: "#T Morale Attuale#!\nIl [morale|e] medio di questa [section|e] è $CURR|Y2$ di $MAX|2V$"
@@ -1090,7 +1123,7 @@
 
  EXPERIENCE_TOOLTIP_STACK: "#T Esperienza#!\nL'[experience|e] media è $VALUE|V/%$ che riduce il [damage_taken|e] in combattimento del #G -$FACTOR|2%$#!"
  XP_DECAY_HEAD: "#T Decadimento dell'Esperienza#!\nIl decadimento del $PERC|-=2%$ dell'[experience|e] attuale di $CURR|Y%V2$ è dovuto a"
- XP_DECAY_NUM: "Decadimento dell'Esperienza: #TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|L%+=$#!"
+ XP_DECAY_NUM: "Decadimento dell'Esperienza: #TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|L/%+=$#!"
  XP_DECAY_GOODS_ACCESS: "Accesso a Beni: $NUM|Y2%$"
  UNIT_NAME: "#T $NAME$#!"
  REGIMENT_SIZE: "#Y $SIZE$#! uomini\n"
@@ -1341,6 +1374,7 @@
  CT_IMPACT_ON_LEVY_VS_REGULAR: "$VAL|+=%$ [levy|e] vs [regulars|e]: $DAMAGE$"
  CT_IMPACT_ON_EXPERIENCE: "$VAL|+=%$ [experience|e] di [TARGET_SUBUNIT.GetName]: $DAMAGE$"
  CT_IMPACT_ON_CATEGORY_TAKEN: "$VAL|+=%$ del bersaglio sono [TARGET_SUBUNIT.GetDefinition.GetCategory.GetName]: $DAMAGE$"
+ CT_IMPACT_ON_COMBINED_ARMS: "$VAL|+=%$ [combined_arms|e]: $DAMAGE$"
  CT_IMPACT_ON_MIL_TAC: "$VAL|+=%$ [military_tactics|e] di [TARGET_SUBUNIT.GetController.GetName]: $DAMAGE$"
  CT_IMPACT_ON_GUNS_VS_HULL: "$VAL|+=%$ [cannons|e] vs [hull_size|e]: $DAMAGE$"
  CT_IMPACT_ON_NAVAL_DAMAGE_TAKEN: "$VAL|+=%$ Danni Navali Subiti: $DAMAGE$"
@@ -1450,7 +1484,7 @@
  SIEGE_NONE: "Nessuno Status"
  SIEGE_BREACH_EXPLANATION: "In ogni fase di assedio, l'attaccante può aprire una breccia nelle mura. La breccia fornisce un bonus di $BREACHBONUS|=+$ al tiro di assedio."
  SIEGE_OUTCOME_LABEL: "Risultato della Fase di Assedio"
- SIEGE_CHANCE_SHORT: "A ogni fase si lancia un dado tra $MIN|Y$ e $MAX|Y$, poi modificato da $MODIFIERS|+=L$."
+ SIEGE_CHANCE_SHORT: "A ogni Fase si lancia un dado tra $MIN|Y$ e $MAX|Y$, (Raggio dei Dadi) poi modificato da #R $MODIFIERS|L+$#!."
  FALL_CHANCE_TITLE: "\"Possibili Risultati\";\"Intervallo del Dado\";\"Probabilità\""
  SIEGE_CHANCE_EXPLANATION: "A ogni fase di assedio si lancia un dado ($MIN|Y$–$MAX|Y$). Il tiro viene quindi sommato ai modificatori d'assedio ($MODIFIERS|+=$). Con un 1 naturale gli attaccanti subiscono una Epidemia che riduce del $VAL|R%$ la loro [maximum_strength|e]"
  SIEGE_CHANCE_LINE: "\"#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!";\"$RANGE$\";\"$CHANCE$\""
@@ -1497,16 +1531,16 @@
  FORT_LEVEL_TT: "#T Livello Forte#!\n$WHY$\n\n#F Un forte può variare da una semplice palizzata di legno a un imponente edificio di pietra. Questo valore indica il livello di fortificazione di questo territorio.#!"
  SIEGE_MODIFIER_ARTILLERY: "Artiglieria"
  SIEGE_ARTILLERY_EXPLANATION: "#italic L'artiglieria conferisce un bonus al tiro di [siege|e]. Il bonus dipende dalla quantità di [regiments|e] e dal loro [artillery_barrage|e] in rapporto al livello del [fort|e].#!"
- BOMBARD_ENTRY_IN_SIEGE: "Il bonus di artiglieria in questo assedio è #TOOLTIP:$BREAKDOWN_TAG$ [Siege.GetArtilleryImpact|L]#!.\n"
+ BOMBARD_ENTRY_IN_SIEGE: "#T Bonus di Artiglieria vs Forte in [LOCATION.GetNameWithNoTooltip]#!\nBonus di Artiglieria in questo assedio: #TOOLTIP:$BREAKDOWN_TAG$ [Siege.GetArtilleryImpact|L]#!\n"
  SIEGE_CULTURE_WAR: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|+=2%$"
  SIEGE_CULTURE_WAR_ON_US: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|-=2%$"
  LOOT_MAP_TEXT: "Saccheggiato $VAL|=$ oro"
  NO_REGIMENTS_THAT_CAN_BOMBARD: "@trigger_no! Nessun [regiments|e] con Forza di Bombardamento."
  BOMBARD_SUBUNIT_ENTRY: "[SUBUNIT.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L2$#!"
- SUBUNIT_ARTILLERY_BREAKDOWN: "\nBonus Artiglieria di [SUBUNIT.GetName]\nBonus Artiglieria Effettivo di $VAL$ a causa di:\n[artillery_barrage|e]: $ARTILLERY_BONUS|+$\nLivello Forte: $FORT_LVL|+$"
+ SUBUNIT_ARTILLERY_BREAKDOWN: "\n#T Bonus Artiglieria di [SUBUNIT.GetName]\nBonus Artiglieria Effettivo di $VAL$ a causa di:\n[artillery_barrage|e]: $ARTILLERY_BONUS|+$\nLivello Forte: $FORT_LVL|+$"
  SUBUNIT_FORT_MAX: "Il livello del forte non può mai essere superiore a $MAX|0$ per questo calcolo, anche se è $VAL|0$ in questa [location|e]."
  SIEGE_REGIMENTS_FORT_ARTILLERY: "Questo è ulteriormente diviso per $VAL|V$ poiché è il numero di [regiments|e] richiesti per ogni [artillery_barrage|e]."
- MAXIMUM_ARTILLERY_BONUS: "Il nostro $MODIFIER$ massimo è #TOOLTIP:$BREAKDOWN_TAG$ $VALUE|2L$#!."
+ MAXIMUM_ARTILLERY_BONUS: "$MODIFIER$ Massimo: #TOOLTIP:$BREAKDOWN_TAG$ $VALUE|2L$#!"
  ARTILLERY_BONUS_VS_FORT_BREAKDOWN: "\nBonus Artiglieria vs Danneggiamento del Forte\nValore massimo di $VALUE$ a causa di:"
 
  NO_DAMAGED_SUBUNITS_ARMY: "[regiments|e] al di sotto della [maximum_strength|e]\nQuesta [section|e] non ha [regiments] al di sotto della [maximum_strength]."
@@ -1591,17 +1625,26 @@
  MERC_UNIT_HAS_ARMY_LEVY: "@trigger_no![UNIT.GetName] contiene [army_levies|E] quindi non può diventare un'unità mercenaria."
  MERC_UNIT_HAS_NAVY_LEVY: "@trigger_no![UNIT.GetName] contiene [navy_levies|E] quindi non può diventare un'unità mercenaria."
  BECOME_MERCENARY: "Rendi disponibile per l'ingaggio"
- BECOME_MERCENARY_WAR: "#R Non possibile in guerra. #!"
- BECOME_MERCENARY_INFO: "Consente all'[army|e] di essere assoldato da un altro [country|e] come banda di [mercenaries|e]. Riceveremo un reddito dall'operazione."
+ BECOME_ARMY_MERCENARY: "Offri l'Esercito come Mercenario" #NEW
+ BECOME_NAVY_MERCENARY: "Offri la Marina come Mercenario" #NEW
+ BECOME_MERCENARY_WAR: "@trigger_no!#R Non possibile in guerra. #!"
+ BECOME_MERCENARY_INFO: "Consente a [Select_CString(UNIT.IsArmy, 'army', 'navy')] di essere assoldato da un altro [country|e] come banda di [mercenaries|e]. Riceveremo un reddito dall'operazione."
  BECOME_MERCENARY_HEADER: "Numero di [armies|e] assoldati da un altro [country|e] come banda di [mercenaries|e]."
  BECOME_MERCENARY_CTA: "Clicca per assoldare [armies|e] come Mercenari."
  CONTAINS_MERCENARIES: "#T Mercenari Presenti#!\nQuest'[unit|e] comprende dei [mercenaries|e]."
+ OFFERED_MERCENARIES: "#T Unità Offerta in Affitto#!\nQuest'[unit|e] è disponibile per essere assunta come [mercenaries|e]." #NEW
  #
  # Balance Army
  BALANCE_ARMY_IN_COMBAT: "@trigger_no! Non è possibile bilanciare un'unità impegnata in combattimento."
  BALANCE_ARMY: "Bilancia Unità"
  BALANCE_ARMY_INFO: "Ridistribuisce i [regiments|e] all'interno dell'unità, in modo da riempire uniformemente le quattro posizioni (centro, sinistra, destra e riserve)."
  BALANCE_ARMY_CTA: "Bilancia l'unità."
+ FORTIFY_LEFT_FLANK: "Rafforza Fianco Sinistro" #NEW
+ FORTIFY_CENTER_FLANK: "Rafforza Fianco Centrale" #NEW
+ FORTIFY_RIGHT_FLANK: "Rafforza Fianco Destro" #NEW
+ FORTIFY_LEFT_RIGHT_FLANK: "Rafforza Fianco Sinistro e Destro" #NEW
+ AUTO_BALANCE_FLANKS: "Bilanciamento Automatico dei Fianchi" #NEW
+ DEACTIVATE_AUTO_BALANCE_FLANKS: "Disattiva il Bilanciamento Automatico dei Fianchi" #NEW
  #
  # Disband
  DISBAND_ARMY_CONFIRM_TITLE: "Conferma Smobilitazione"
@@ -1661,6 +1704,12 @@
  SIEGE_ODDS_WEAK: "@warning_icon! Probabilmente falliremo un assalto."
  SIEGE_ODDS_RISKY: "$BULLET$ Questo assalto è rischioso!"
  SIEGE_ODDS_POSSIBLE: "@trigger_yes! Abbiamo una possibilità di vincere questo assalto!"
+ TOGGLE_RETURN_HOME_AT_WAR_ON: "Non tornare al porto quando sei in guerra" #NEW
+ TOGGLE_RETURN_HOME_AT_WAR_OFF: "Ritorna al porto in caso di guerra" #NEW
+ TOGGLE_RETURN_HOME_AT_WAR_ON_INFO: "Questa [navy|e] NON cercherà un porto amico quando saremo in [war|e]." #NEW
+ TOGGLE_RETURN_HOME_AT_WAR_OFF_INFO: "Questa [navy|e] cercherà un porto amico quando saremo in [war|e]." #NEW
+ TOGGLE_RETURN_HOME_AT_WAR_ON_CTA: "Imposta la [navy|e] per tornare in porto in caso di guerra" #NEW
+ TOGGLE_RETURN_HOME_AT_WAR_OFF_CTA: "Impedire alla [navy|e] di tornare in porto durante la guerra" #NEW
  #
  # Attach to Units
  TOGGLE_ATTACH_OFF: "Aggregazione Consentita"
@@ -1680,7 +1729,9 @@
  ATTACH_TO_UNIT_CTA: "Aggrega a $UNIT_NAME$."
  UW_UNITS_ATTACHED: "Le seguenti unità sono aggregate a $UNIT_NAME$:"
  DETACH_SUBUNIT_FROM: "Separa [SubUnitCategory.GetNameWithNoTooltip] dall'Unità"
+ DETACH_SUBUNIT_FROM_AND_SELECT: "Stacca [SubUnitCategory.GetNameWithNoTooltip] da Unità e seleziona" #NEW
  DETACH_HALF_SUBUNIT_FROM: "Separa metà delle [SubUnitCategory.GetNameWithNoTooltip] dall'Unità"
+ DETACH_HALF_SUBUNIT_FROM_AND_SELECT: "Separa metà delle [SubUnitCategory.GetNameWithNoTooltip] da Unità e seleziona" #NEW
  DETACH_FROM: "Separa dall'Unità"
  DETACH_FROM_INFO: "Questo impedirà all'unità di seguire automaticamente un'altra unità."
  DETACH_FROM_CTA: "Separa da $NAME$."
@@ -1783,6 +1834,11 @@
  DETACH_SIEGE_NO_RETR: "@trigger_no! Non possiamo separare forze d'assedio mentre siamo in ritirata."
  DETACH_SIEGE_NO_SIEGE: "@trigger_no! Non c'è alcun assedio qui!"
  DETACH_SIEGE_NO_COMBAT: "@trigger_no! Finisci prima la battaglia, poi prova a separare."
+ DETACH_BLOCKADE: "Rimuovi il Blocco" #NEW
+ DETACH_BLOCKADE_INFO: "Questo consentirà di distaccare un numero sufficiente di [units|e] per bloccare tutti i porti in questa [seazone|e], lasciando gli altri liberi di dedicarsi ad altre attività." #NEW
+ DETACH_BLOCKADE_CTA: "Distaccare una flotta da blocco." #NEW
+ DETACH_BLOCKADE_NO_PORTS: "@trigger_no! Questa [seazone|e] non ha porti da bloccare." #NEW
+ DETACH_BLOCKADE_NO_SHIPS: "@trigger_no! Questa [navy|e] non ha abbastanza [units|e] da staccare." #NEW
  #
  # Reorganize/CreateNewUnit
  NEW_UNIT: "Crea Nuova Unità"
@@ -1815,7 +1871,7 @@
  #
  # Moving
  TARGET_PROVINCE_IS_IMPASSABLE: "@trigger_no! Non può muoversi qui in quanto il terreno è invalicabile."
- UNIT_CAN_ONLY_DISEMBARK_ADJACENT: "@trigger_no! Non può muoversi qui poiché è possibile sbarcare solo nelle città adiacenti."
+ UNIT_CAN_ONLY_DISEMBARK_ADJACENT: "@trigger_no! Non può muoversi qui poiché è possibile sbarcare solo nelle località adiacenti."
  UNIT_CANNOT_RETREAT_INTO_OWN_LOCATION: "@trigger_no! Non può ritirarsi nella [location|e] in cui si sta combattendo."
  UNIT_LACKS_ACCESS_TO_TARGET_PROVINCE: "@trigger_no! Non può muoversi qui in quanto l'unità manca dell'accesso."
  MOVEMENT_LOCKED: "#T Movimento Bloccato#!\nQuesta unità ha percorso oltre metà della tratta verso la prossima [location|e] e il movimento non può essere interrotto."
@@ -1861,7 +1917,8 @@
  LOAD_ON_SHIP_IS_RETREATING: "@trigger_no! $NAME$ ($VAL|Y$ [ships|e]) è in ritirata."
  LOAD_ON_SHIP_IS_MOVING: "@trigger_no! $NAME$ ($VAL|Y$ [ships|e]) si sta muovendo."
  LOAD_ON_SHIP_IN_COMBAT: "@trigger_no! $NAME$ ($VAL|Y$ [ships|e]) è in combattimento."
- LOAD_ON_SHIP_IS_TOO_SMALL_USED: "@trigger_no! $NAME$ trasporta già [Multiply_CFixedPoint('(CFixedPoint)$USED$', '(CFixedPoint)1000')|0R] [regiments|e] e ha una [transport_capacity|e] di solo [Multiply_CFixedPoint('(CFixedPoint)$CAPACITY$', '(CFixedPoint)1000')|0Y], mentre questo [army|e] richiede [Multiply_CFixedPoint('(CFixedPoint)$NEED$', '(CFixedPoint)1000')|0R] [transport_capacity]."
+ LOAD_ON_SHIP_IS_TOO_SMALL_USED: "$NAME$ trasporta già [Multiply_CFixedPoint('(CFixedPoint)$USED$', '(CFixedPoint)1000')|0R] [regiments|e] e ha una [transport_capacity|e] di solo [Multiply_CFixedPoint('(CFixedPoint)$CAPACITY$', '(CFixedPoint)1000')|0Y], mentre questo [army|e] richiede [Multiply_CFixedPoint('(CFixedPoint)$NEED$', '(CFixedPoint)1000')|0R] [transport_capacity]."
+ LOAD_ON_SHIP_IS_FULL: "@trigger_no!$NAME$ è alla sua massima [transport_capacity]."
  LOAD_ON_SHIP_IS_TOO_SMALL: "@trigger_no! $NAME$ è troppo piccolo e ha una [transport_capacity|e] di solo [Multiply_CFixedPoint('(CFixedPoint)$CAPACITY$', '(CFixedPoint)1000')|0Y], mentre questo [army|e] richiede [Multiply_CFixedPoint('(CFixedPoint)$NEED$', '(CFixedPoint)1000')|0R] [transport_capacity]."
  LOAD_ON_SHIP_MISMATCHING_OBJECTIVE: "@trigger_no! $NAME$ ($VAL|Y$ [ships|e]) è in una missione diversa!"
  LOAD_ON_SHIP_CAN_LOAD: "@trigger_yes! $NAME$ ($VAL|Y$ [ships|e]) può caricare questo [army|e]!"
@@ -1990,7 +2047,7 @@
  BRIBE_MERCENARIES_UNIT_UNKNOWN: "@trigger_no! [UNIT.GetName] si trova in una [location|e] sconosciuta."
  BRIBE_MERCENARIES_UNIT_COMBAT: "@trigger_no! [UNIT.GetName] è in [combat|e]."
  BRIBE_MERCENARIES_UNIT_LOCKED: "@trigger_no! [UNIT.GetName] è bloccata in movimento."
- BRIBE_MERCENARIES_NOT_NEARBY: "@trigger_no! [UNIT.GetName] non è adiacente a una nostra [locations|e] controllata."
+ BRIBE_MERCENARIES_NOT_NEARBY: "@trigger_no!Questo mercenario non è adiacente a una nostra [locations|e] controllata."
  #
  # Upgrade Fleet
  UPGRADE_FLEET: "Aggiorna la Flotta"
@@ -2019,7 +2076,7 @@
  UPGRADE_ARMY_MERCS_ARENT_YOURS: "@trigger_no! Non è possibile migliorare i [mercenaries|e]."
  #
  # Upgrade SubUnit
- UPGRADE_SUBUNIT: "Aggiorna [SubUnit.GetName]"
+ UPGRADE_SUBUNIT: "Aggiorna [SubUnit.GetName] per [GetUpgradeSubUnitCostValue(SubUnit.Self)]@gold!"
  #
  # Refill Garrison
  REFILL_GARRISON: "Reintegrare Guarnigione"
@@ -2112,6 +2169,7 @@
  UNIT_CATEGORY_NAVY_ENTRY: ""$COUNT|V$@naval_regular!";"[SUBUNITDEFINITION.GetName]""
  UNIT_CATEGORY_ARMY_ENTRY: ""$COUNT|V$@regular!";"[SUBUNITDEFINITION.GetName]";"$MEN|V$@army_strength!""
  LOSSES_FRIENDLY: "Perdite Attuali"
+ UNIT_CATEGORY_TYPE: "Tipo"
 
  WAR_LOSSES_HEADER_DET: ""Tipo"#T#M;"Battaglia";"Logoramento";"Catturati";"Totale""
  WAR_LOSSES_ARMY_ENTRY: ""[SUBUNITCATEGORY.GetIcon][SUBUNITCATEGORY.GetName]";"$BATTLE|V$";"$ATTRITION|V$";"$CAPTURE|V$";"$TOTAL|V$""
@@ -2244,4 +2302,23 @@
  a_dahomey_amazons_desc: "Reggimento femminile originario della [ShowRegionName('guinea_region')], incute timore nelle file nemiche e può infliggere danni devastanti."
  
  a_esho_cavalry_oyo: "Cavalleria Esho"
- a_esho_cavalry_oyo_desc: "Reggimenti professionali di capi minori della nazione: questi cavalieri sono scelti per merito, non per legami personali, e costituiscono una cavalleria affidabile ed efficace."
+ a_esho_cavalry_oyo_desc: "Reggimenti professionali di capi minori della nazione: questi cavalieri sono scelti per merito, non per legami personali, e costituiscono una cavalleria affidabile ed efficace." 
+ 
+ a_saxon_defensioner: "Difensore Sassone" #NEW
+ a_saxon_defensioner_desc: "Il #italic Difensore#! sono truppe veterane delle nostre terre impervie ai confini con i territori Boemi. Incaricate di garantire la sicurezza sui passi dei Monti Metalliferi, queste unità ci saranno di grande aiuto nelle battaglie su terreni accidentati." #NEW
+ a_prussian_grenadiers: "Granatieri Prussiani" #NEW
+ a_prussian_grenadiers_desc: "I $a_prussian_grenadiers$ sono truppe d'élite dell'esercito Prussiano. Il loro ruolo di avanguardia negli assedi e negli assalti richiede che siano truppe impavide, reclutate tra gli uomini più forti del nostro paese." #NEW
+ a_bavarian_jager: "Jäger Bavarese" #NEW
+ a_bavarian_jager_desc: "Reggimenti di cacciatori e guardie forestali esperti. Queste unità non avranno rivali nei terreni boschivi e saranno in grado di occupare e tormentare i nostri nemici se oseranno entrare nelle nostre foreste." #NEW
+ a_hesse_jager: "Jäger Hessian" #NEW
+ a_hesse_jager_desc: "Cacciatori esperti stanno formando queste truppe leggere d'élite. La loro conoscenza del nostro territorio aumenterà la nostra capacità di combattere nei terreni boschivi, anche se il loro equipaggiamento non è adatto a combattimenti prolungati." #NEW
+ a_austrian_grenzhussar: "Grenzhussar" #NEW
+ a_austrian_grenzhussar_desc: "Di stanza nelle guarnigioni di frontiera, questi reggimenti di ussari saranno in grado di pattugliare e proteggere i confini più remoti del nostro Paese, senza gravare eccessivamente sulle nostre finanze." #NEW
+ a_pandur: "Fanteria Pandur" #NEW
+ a_pandur_desc: "Reclutate dalle nostre terre Slovene e Croate, queste truppe leggere sono ben equipaggiate per garantire la pace nelle nostre regioni di confine. La loro conoscenza della patria le renderà un avversario temibile per qualsiasi invasore." #NEW
+ a_austrian_grenzer: "Fanteria Grenzer" #NEW
+ a_austrian_grenzer_desc: "$a_pandur_desc$" #NEW
+ a_gebirgsschutzen_infantry: "Gebirgsschützen" #NEW
+ a_gebirgsschutzen_infantry_desc: "Questi tiratori di montagna non hanno rivali nell'attraversamento dei territori alpini e nel sconfiggere i nostri nemici sul terreno insidioso dei nostri passi di montagna. Il loro equipaggiamento leggero e la loro organizzazione flessibile li rendono perfettamente equipaggiati per il combattimento ad alta quota." #NEW
+ a_grenadiers: "Granatieri" #NEW
+ a_grenadiers_desc: "Evolutisi dalle prime unità equipaggiate con esplosivi, questi $a_grenadiers$ fungono da avanguardia d'élite per i nostri eserciti. Sebbene le granate, che hanno dato loro il nome, non siano più il loro unico scopo, il loro addestramento superiore li rende eccellenti truppe d'assalto." #NEW

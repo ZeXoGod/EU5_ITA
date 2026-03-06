@@ -13,7 +13,7 @@
  WARGOAL_TICKED_ENOUGH_DAYS_PEACE: "Sono trascorsi più di $NEED|Y$ giorni con $NAME|Y$ completamente difeso, $WHO|Y$ può ora imporre una pace bianca!"
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS: "Quando saranno trascorsi $NEED|Y$ giorni, senza che l'obiettivo di guerra sia contestato e quando sarà completamente controllato, $WHO|Y$ potrà ottenere $NAME|Y$ in una pace imposta.\nAttualmente sono trascorsi $DAYS|G$ giorni."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_INDEPENDENCE: "Quando saranno trascorsi $NEED|Y$ giorni, senza che l'obiettivo di guerra sia contestato, e quando sarà completamente controllato, $WHO|Y$ potrà ottenere la propria indipendenza in una pace imposta.\nAttualmente sono trascorsi $DAYS|G$ giorni."
- WARGOAL_TICKED_ENOUGH_DAYS: "Sono trascorsi più di $NEED|Y$ giorni da quando $NAME|Y$ è stato completamente controllato da $WHO|Y$, che può ora imporre una pace per conquistarlo!"
+ WARGOAL_TICKED_ENOUGH_DAYS: "Sono trascorsi più di $NEED|Y$ giorni e $NAME|Y$ è completamente controllato da by $WHO|Y$, che può ora imporre una pace per conquistarlo!" #NEW
  WARGOAL_TICKED_ENOUGH_DAYS_INDEPENDENCE: "Sono trascorsi più di $NEED|Y$ giorni da quando $NAME|Y$ è stato completamente controllato da $WHO|Y$, che può ora imporre una pace per ottenere la propria indipendenza!"
  WARGOAL_NOT_FULLY_OCCUPIED: "@trigger_no! L'Obiettivo di Guerra $NAME|Y$ non è ancora stato completamente controllato dagli attaccanti!"
  WARGOAL_NOT_FULLY_SAFE: "@trigger_no! L'Obiettivo di Guerra $NAME|Y$ è completamente controllato dagli attaccanti!"
@@ -38,6 +38,10 @@
 
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetLosses|Y]@army_strength!"
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE_NAVAL: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetNavalLosses|Y]@navy_strength!"
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_ARMY: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@army_strength!" #NEW
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_NAVAL: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@navy_strength!" #NEW
+ WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER: "Suddivisione Perdite per [attrition|e]" #NEW
+ WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER_ENTRY: "[COUNTRY.GetNameWithFlag]: $VAL|V$" #NEW
 
  WAR_OVERVIEW_ATTACKERS_LEADER: "Leader degli Attaccanti"
  WAR_OVERVIEW_DEFENDERS_LEADER: "Leader dei Difensori"
@@ -127,6 +131,8 @@
  JOIN_WAR_REASON_DESC_Overlord: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è il signore [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  JOIN_WAR_REASON_SupportRevolt: "Sostiene i Ribelli"
  JOIN_WAR_REASON_DESC_SupportRevolt: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sostiene la rivolta [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
+ JOIN_WAR_REASON_SupportRevoltToReunite: "Sostenere i nostri Ribelli Secessionisti" #NEW
+ JOIN_WAR_REASON_DESC_SupportRevoltToReunite: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] vuole che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] si separi e si unisca a loro." #NEW
  JOIN_WAR_REASON_Intervene: "Intervento"
  JOIN_WAR_REASON_DESC_Intervene: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta intervenendo per conto [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  JOIN_WAR_REASON_InternationalOrganization: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')|U][INTERNATIONAL_ORGANIZATION.GetType.GetName] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"

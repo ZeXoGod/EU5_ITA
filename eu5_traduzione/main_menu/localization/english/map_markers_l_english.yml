@@ -43,7 +43,9 @@
  UNIT_HAS_ARMIES_DISEMBARKING: "#R Questa [navy|e] ha [armies|e] imbarcati che stanno [Concept('disembark', 'Sbarcando')|e], non può muoversi al momento.#!"
  PORT_TOOLTIP: ""
  PORT_TOOLTIP_NEW: "Il Porto di [PortMarker.GetLocation.GetNameWithNoTooltip]"
- PORT_TOOLTIP_TEXT: "[PortMarker.GetShipsInfo]"
+ #PORT_TOOLTIP_TEXT: "[PortMarker.GetShipsInfo]" #OLD ITA
+ PORT_TOOLTIP_TEXT: "This [port|e] is located in the [PortMarker.GetPortSeaZone.GetName] [seazone|e].\n\n[PortMarker.GetShipsInfo]" #NEW
+ #PORT_TOOLTIP_TEXT: "[PortMarker.GetShipsInfo]" #OLD ENG
  NO_SHIPS_IN_PORT: "Attualmente, non ci sono [ships|e] nel porto."
  OCCUPATION_X_DAYS_LEFT: "$VAL|Y$ giorno/i rimanenti"
  OCCUPATION_X_DAYS_LEFT_SHORT: "$VAL|Y$g"

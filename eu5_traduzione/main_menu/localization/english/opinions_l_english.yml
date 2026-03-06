@@ -40,6 +40,7 @@
  ANTAGONISM_ENTRY_WITH_BREAKDOWN: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-=1$#!\n"
  ANTAGONISM_ENTRY: "$NAME$: $VAL|1=-$"
  ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ ($CHANGE|2=-$ annuale)"
+ ANTAGONISM_ENTRY_CHANGE_THEM: "[COUNTRY.GetName] $MODIFIER$: $VAL|-=$ yearly" #NEW
  OPINION_SAME_CULTURE_ENTRY: "Entrambi hanno la [primary_culture|e] [CULTURE.GetName]: $VAL|0=+$\n"
  OPINION_CULTURE_ENTRY: "Opinione [CULTURE.GetName] della cultura [TARGET_CULTURE.GetName]: $VAL|0=+$\n"
  OPINION_SHARED_CULTURE_GROUPS: "$NUM$ su $TOTAL$ [culture_groups|e] Condivisi: $VAL|=+$\n"
@@ -76,6 +77,7 @@
  opinion_same_common_language: "[common_language|e] in Comune"
  opinion_same_common_language_family: "[common_language|e] della stessa [language_family_short|e]"
  opinion_enforced_peace: "Pace Imposta"
+ opinion_enforced_peace_when_losing: "Enforced Peace when Losing a War" #NEW
  opinion_royal_marriage: "Matrimonio Reale"
  opinion_same_dynasty: "Stessa [dynasty|e]"
  opinion_promised_land_unfulfilled: "Promessa Territoriale Inadempiuta"
@@ -92,6 +94,7 @@
  opinion_they_helped_us: "Aiutato in Precedenza"
  opinion_destroyed_building: "Distruzione dei Nostri Edifici"
  opinion_caught_spying: "Colto a Spiarci"
+ opinion_dynasties_marrying: "Nobles Marrying" #NEW
  opinion_giving_guarantee: "Li Garantiamo"
  opinion_receiving_guarantee: "Ci Garantiscono"
  opinion_receiving_food_access: "Riceve Accesso al Cibo"
@@ -154,9 +157,12 @@
  opinion_liberated_us: "Ci ha Liberati"
  opinion_gift: "Dono Inviato"
  opinion_rival: "Rivale"
+ opinion_threatening_rival: "Threatening Rival" #NEW
  opinion_enemy: "Nemico"
  opinion_defending_our_rival: "Difende il Nostro Rivale"
  opinion_enemy_of_my_enemy: "Nemico del Mio Nemico"
+ opinion_rival_of_my_rival: "Rival of my Rival" #NEW
+ opinion_defended_our_land: "Defended our land" #NEW
  opinion_diplomatic_move: "Mossa Diplomatica"
  opinion_receiving_fleet_basing_rights: "Diritti di Ormeggio"
  opinion_decline_fleet_basing_rights: "Diritti di Ormeggio Rifiutati"
@@ -457,6 +463,7 @@
  opinion_historical_rival_target_ccw: "Richieste Irragionevoli"
  opinion_granted_electorship: "Elettorato Concesso"
  opinion_rescinded_electorship: "Elettorato Revocato"
+ opinion_demanded_unlawful_territory: "Demanded Unlawful Territory" #NEW
  hre_emperor_defends_empire: "Difesa Imperiale"
  opinion_added_land_to_hre: "Aggiunto territorio al [GetUniqueInternationalOrganization('hre').GetName]"
  opinion_removed_land_from_hre: "Rimosso territorio dal [GetUniqueInternationalOrganization('hre').GetName]"
@@ -469,6 +476,7 @@
  opinion_hre_passed_opposed_law: ""Ha Emanato una [law|e] del [GetUniqueInternationalOrganization('hre').GetName] favorevole all'Imperatore"
  opinion_hre_passed_rebellious_law: ""Ha Emanato una [law|e] del [GetUniqueInternationalOrganization('hre').GetName] molto favorevole all'Imperatore"
  opinion_decline_ask_to_vote_for_me_as_emperor: "Ha Rifiutato la Concessione del Voto Imperiale"
+ opinion_gave_away_our_lands: "Gave away our lands" #NEW
  opinion_forced_landfriede_upon: "Ci ha Imposto il Landfriede"
  opinion_overruled_imperial_diet: "Dieta Imperiale Scavalcata"
  opinion_elevated_country: "Paese Elevato"
@@ -504,9 +512,14 @@
  opinion_denied_sinicization_modifier: "Negata la Sinizzazione"
  opinion_released_from_unlawful_territory: "Ci ha Liberati dal Territorio Illegittimo"
  opinion_donated_gold_to_io: "Oro Donato alla nostra Organizzazione"
+ opinion_disobeyed_hegemon_demand: "Disobeyed Hegemon Demand" #NEW
  opinion_eclipsed_in_union: "Eclissati nell'Unione"
  opinion_enforced_succession_law_changes: "Cambiamenti Forzati alla Legge di Successione"
  anatolian_struggle_modifier: "Lotta Anatolica"
+ opinion_enforced_religion: "Enforced their Religion on us" #NEW
+ opinion_enforced_culture: "Enforced their Culture on us" #NEW
+ opinion_tried_enforced_religion: "Tried to enfoce their Religion on us" #NEW
+ opinion_tried_enforced_culture: "Tried to enfoce their Culture on us" #NEW
  #Italian Wars
  member_same_league: "Membro della stessa Lega"
  opinion_weakened_our_league: "Ha Indebolito la Nostra Lega"
@@ -708,10 +721,15 @@
  antagonism_declared_war_on_subject: "Ha Dichiarato [war|e] ad un proprio [subject|e]"
  antagonism_released_nation_in_peace: "Ha Rilasciato un [country|e] nel [peace_treaty|e]"
  antagonism_released_nation_in_peace_scope: "Rilascio [ROOT.GetLocation.GetOwner.Custom('IT_Della')][ROOT.GetLocation.GetOwner.GetName] nel [peace_treaty|e]"
+ antagonism_gave_up_locations_in_peace: "Gave up [locations|e] in [peace_treaty|e]" #NEW
+ antagonism_gave_up_locations_in_peace_scope: "Gave up [locations|e] in [peace_treaty|e]" #NEW
+ antagonism_peace_treaty_demands: "Peace Treaty Demands" #NEW
  antagonism_taking_land: "Ha Preso [locations|e] nel [peace_treaty|e]"
  antagonism_taking_land_scope: "Prese [ROOT.GetLocation.GetName] nel [peace_treaty|e]"
  antagonism_subjugated_nation: "Ha Soggiogato un [country|e] in un [peace_treaty|e]"
  antagonism_subjugated_nation_scope: "[ROOT.GetLocation.GetOwner.GetName] Soggiogata in un [peace_treaty|e]"
+ antagonism_took_subjugated_nation: "Took an already-subjugated [country|e] in a [peace_treaty|e]" #NEW
+ antagonism_took_subjugated_nation_scope: "Took subject [ROOT.GetLocation.GetOwner.GetName] in a [peace_treaty|e]" #NEW
  antagonism_forced_ruler_change: "Ha imposto un cambio di [ruler|e] in un [peace_treaty|e]"
  antagonism_forced_ruler_change_scope: "Costringe [ROOT.GetLocation.GetOwner.Custom('IT_La')][ROOT.GetLocation.GetOwner.GetName] a cambiare [ruler|e] in un [peace_treaty|e]"
  antagonism_violate_treaty_of_tordesillas: "Ha Deciso di Ignorare il $treaty_of_tordesillas$"
@@ -739,6 +757,7 @@
  antagonism_established_dominance_in_middle_kingdom: "Ha affermato il suo dominio nel [GetInternationalOrganization('middle_kingdom').GetName]"
  antagonism_opened_war_path: "Ha provocato una guerra"
  antagonism_planned_invasion: "Ha pianificata un'invasione"
+ antagonism_started_invasion: "Started an invasion" #NEW
  antagonism_refused_to_end_war: "Ha rifiutato di porre Fine alla Guerra"
  antagonism_pushed_towards_belligerent: "Si è spinto verso la belligeranza"
  antagonism_pushed_away_from_belligerent: "Si è allontanato dalla belligeranza"
@@ -776,6 +795,8 @@
  antagonism_broke_subject_union: "Ha rotto l'Unione dello Stato Cliente"
  antagonism_peace_rtr_demand_all_occupied_territories: "Richiede Tutti i Territori Occupati"
  antagonism_anti_scaligeri_league: "Lega Anti-Scaligera"
+ antagonism_ordered_me_to_annul_treaties: "Ordered us to annul treaties with another [country|e]" #NEW
+ antagonism_ordered_someone_to_annul_treaties_with_us: "Ordered another [country|e] to annul treaties with us" #NEW
 
  #Portugal
  por_shared_letters_with_persian_shah: "Scambio Epistolare"

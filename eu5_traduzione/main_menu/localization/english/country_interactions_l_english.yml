@@ -59,6 +59,9 @@
  force_embargo_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha forzato [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] a imporre un embargo [SCOPE.sCountry('target').Custom('IT_Alla')][SCOPE.sCountry('target').GetName]"
  force_embargo_select_title: "Seleziona il paese che [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] deve mettere sotto Embargo"
  PROPOSE_force_embargo: "Vogliamo richiedere [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] di imporre un embargo [SCOPE.sCountry('target').Custom('IT_Alla')][SCOPE.sCountry('target').GetName]?\n\n$INFO$"
+ INCOMING_OFFER_force_embargo: "$ACTOR$ demands from us to embargo one of their enemies. Do we wish to comply?\n\n$INFO$" #NEW
+ force_embargo_reject_effect_text: "$generic_reject_demand_effect_string$" #NEW
+ force_embargo_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" #NEW
  #
  violate_sovereignty: "Viola la Sovranità"
  dip_violate_sovereignty_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -67,6 +70,9 @@
  violate_sovereignty_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] forza [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] a fornire loro [military_access|e] e [food_access|e]"
  violate_sovereignty_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha forzato [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] a fornire loro [military_access|e] e [food_access|e]"
  PROPOSE_violate_sovereignty: "Vogliamo richiedere [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] di fornirci [military_access|e] e [food_access|e]?\n\n$INFO$"
+ INCOMING_OFFER_violate_sovereignty: "$ACTOR$ demands [military_access|e] from us. Do we wish to comply?\n\n$INFO$" #NEW
+ violate_sovereignty_reject_effect_text: "$generic_reject_demand_effect_string$" #NEW
+ violate_sovereignty_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" #NEW
  #
  force_change_court_language: "Imponi il Cambio della Lingua della Corte"
  dip_force_change_court_language_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS"
@@ -75,6 +81,9 @@
  force_change_court_language_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] forza [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] ad usare la lingua [SCOPE.sCountry('actor').GetCourtDialect.GetName] come loro [court_language|e]"
  force_change_court_language_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha forzato [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] ad usare la lingua [SCOPE.sCountry('actor').GetCourtDialect.GetName] come loro [court_language|e]"
  PROPOSE_force_change_court_language: "Vogliamo richiedere [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] di cambiare la propria [court_language|e] con quella [SCOPE.sCountry('actor').GetCourtDialect.GetName]?\n\n$INFO$"
+ INCOMING_OFFER_force_change_court_language: "$ACTOR$ demands from us to change our [court_language|e] to theirs. Do we wish to comply?\n\n$INFO$" #NEW
+ force_change_court_language_reject_effect_text: "$generic_reject_demand_effect_string$" #NEW
+ force_change_court_language_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" #NEW
  #
  influence_nation: "Influenza Nazione"
  dip_influence_nation_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS"
@@ -121,10 +130,18 @@
  break_others_alliance: "Isola dagli Alleati"
  dip_break_others_alliance_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  break_others_alliance_act: "Isola [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] da un Alleato"
- break_others_alliance_desc: "Questo li costringerà a rompere l'alleanza con un'altra nazione, senza poterla riallacciare in tempi brevi."
- break_others_alliance_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] isola [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] da un Alleato"
- break_others_alliance_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha isolato [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] da un Alleato"
- PROPOSE_break_others_alliance: "Vogliamo chiedere a $RECIPIENT$ di rompere un'alleanza?\n\n$INFO$"
+ #break_others_alliance_desc: "Questo li costringerà a rompere l'alleanza con un'altra nazione, senza poterla riallacciare in tempi brevi." #OLD ITA
+ break_others_alliance_desc: "This will force them to break relations with another nation, and unable to regain that ally any time soon." #NEW
+ #break_others_alliance_desc: "This will force them to break an alliance with another nation, and unable to regain that ally any time soon. " #OLD ENG
+ #break_others_alliance_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] isola [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] da un Alleato" #OLD ITA
+ break_others_alliance_effect_text: "[SCOPE.sCountry('actor').GetName] isolate [SCOPE.sCountry('recipient').GetName] from [SCOPE.sCountry('target').GetName]" #NEW
+ #break_others_alliance_effect_text: "[SCOPE.sCountry('actor').GetName] isolate [SCOPE.sCountry('recipient').GetName] from an Ally" #OLD ENG
+ #break_others_alliance_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha isolato [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] da un Alleato" #OLD ITA
+ break_others_alliance_effect_text_past: "[SCOPE.sCountry('actor').GetName] isolated [SCOPE.sCountry('recipient').GetName] from [SCOPE.sCountry('target').GetName]" #NEW
+ #break_others_alliance_effect_text_past: "[SCOPE.sCountry('actor').GetName] isolated [SCOPE.sCountry('recipient').GetName] from an Ally" #OLD ENG
+ #PROPOSE_break_others_alliance: "Vogliamo chiedere a $RECIPIENT$ di rompere un'alleanza?\n\n$INFO$" #OLD ITA
+ PROPOSE_break_others_alliance: "Would we like to ask $RECIPIENT$ to break relations with [SCOPE.sCountry('target').GetName]?\n\n$INFO$" #NEW
+ #PROPOSE_break_others_alliance: "Would we like to ask $RECIPIENT$ to break an alliance?\n\n$INFO$" #OLD ENG
  break_others_alliance_SELECT_TITLE: "Seleziona l'Alleato da cui vogliamo isolarli"
  #
  break_subject_union: "Rottura dall'Unione"
@@ -327,7 +344,9 @@
  #
  demand_unlawful_territory: "Richiedi Territorio Illegittimo"
  dip_demand_unlawful_territory_CATEGORY: "CATEGORY_HRE_ACTIONS"
- demand_unlawful_territory_no_hre_province: "@trigger_no! [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] NON possiede nessuna [location|e] non-centrale nel [GetUniqueInternationalOrganization('hre').GetName]"
+ #demand_unlawful_territory_no_hre_province: "@trigger_no! [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] NON possiede nessuna [location|e] non-centrale nel [GetUniqueInternationalOrganization('hre').GetName]" #OLD ITA
+ demand_unlawful_territory_no_hre_province: "@trigger_no! [SCOPE.sCountry('recipient').GetName] does NOT own any [conquered|e] [location|e] in the [GetUniqueInternationalOrganization('hre').GetName]" #NEW
+ #demand_unlawful_territory_no_hre_province: "@trigger_no! [SCOPE.sCountry('recipient').GetName] does NOT own any non-core [location|e] in the [GetUniqueInternationalOrganization('hre').GetName]" #OLD ENG
  demand_unlawful_territory_act: "Richiedi Territorio Illegittimo [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName], costringendoli a restituire [SCOPE.sProvince('target').GetName] al precedente proprietario."
  demand_unlawful_territory_desc: "Chiederemo che restituiscano il Territorio Illegittimo all'interno del [GetUniqueInternationalOrganization('hre').GetName] al suo precedente proprietario. Se rifiutano, otterremo un [casus_belli|e] [ShowCasusBelliName('cb_following_through_on_threat')] contro di loro."
  demand_unlawful_territory_effect_text: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] restituisce [SCOPE.sProvince('target').GetName] al precedente proprietario."
@@ -397,6 +416,14 @@
  lordship_of_ireland_surrender_and_regrant_reject_effect_text_past: "$generic_reject_demand_effect_string_past$"
  PROPOSE_lordship_of_ireland_surrender_and_regrant: "Vogliamo offrire a $RECIPIENT$ sottomissione e reinvestitura?\n\n$INFO$"
  INCOMING_OFFER_lordship_of_ireland_surrender_and_regrant: "$ACTOR$ ci ha offerto sottomissione e reinvestitura. Vogliamo accettare?\n\n$INFO$"
+ give_subject_location_to_other_subject: "Transfer Location to other Subject" #NEW
+ give_subject_location_to_other_subject_act: "Transfer Location from [SCOPE.sCountry('recipient').GetName] to another [subject|e]" #NEW
+ give_subject_location_to_other_subject_desc: "We will reorganise our subjects' lands." #NEW
+ give_subject_location_to_other_subject_effect_text: "[SCOPE.sCountry('recipient').GetName] cede [SCOPE.sLocation('target_location').GetName] to [SCOPE.sCountry('country_that_gets_the_location').GetName]" #NEW
+ give_subject_location_to_other_subject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] ceded [SCOPE.sLocation('target_location').GetName] to [SCOPE.sCountry('country_that_gets_the_location').GetName]" #NEW
+ PROPOSE_give_subject_location_to_other_subject: "Transfer [SCOPE.sLocation('target_location').GetName] to [SCOPE.sCountry('country_that_gets_the_location').GetName]?\n$INFO$." #NEW
+ select_a_subject_to_receive_a_location: "Select a subject to transfer land to:" #NEW
+ select_a_location_to_give_to_other_subject: "Select a location that we should transfer:" #NEW
  # 
  give_location_to_subject: "Cedi la Località"
  give_location_to_subject_act: "Cedi la Località [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
@@ -504,7 +531,7 @@
  veche_has_not_been_dismissed_tt: "Non è stata #R Respinta#! in passato [SCOPE.sCountry('actor').Custom('IT_Dalla')|U][SCOPE.sCountry('actor').GetName]"
  #
  invite_royal_family: "Invita Famiglia Reale"
- dip_invite_royal_family_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS"
+ #dip_invite_royal_family_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS" #DELETE
  invite_royal_family_act: "Invita un parente stretto del nostro governante [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]"
  invite_royal_family_desc: "Inviteremo uno dei parenti stretti del nostro governante nel nostro Paese."
  invite_royal_family_effect_text: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] invita [SCOPE.sCharacter('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName] [SCOPE.sCountry('actor').Custom('IT_In')|U][SCOPE.sCountry('actor').GetName]."
@@ -521,6 +548,19 @@
  pay_off_debt_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] paga il [debt|e] [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  pay_off_debt_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha pagato il [debt|e] [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  PROPOSE_pay_off_debt: "Estingui il Debito di $RECIPIENT$?\n$INFO$."
+ place_relative_on_throne: "Place Relative on Throne" #NEW
+ place_relative_on_throne_act: "Place [SCOPE.sCharacter('target').GetName] on the throne of [SCOPE.sCountry('recipient').GetName]" #NEW
+ place_relative_on_throne_desc: "We will place a [character|e] who is a relative to our [ruler|e] on their throne." #NEW
+ place_relative_on_throne_effect_text: "[SCOPE.sCountry('actor').GetName] places [SCOPE.sCharacter('target').GetName] on the throne of [SCOPE.sCountry('recipient').GetName]" #NEW
+ place_relative_on_throne_effect_text_past: "[SCOPE.sCountry('actor').GetName] has placed [SCOPE.sCharacter('target').GetName] on the throne of [SCOPE.sCountry('recipient').GetName]" #NEW
+ place_relative_on_throne_SELECT_TITLE: "Select a [character|e] to placer on their throne" #NEW
+ place_relative_on_throne_no_characters: "@trigger_no! There is no relative of our [ruler|e] who is eligible to be placed on their throne" #NEW
+ PROPOSE_place_relative_on_throne: "Would we like to to place a relative of our ruler on $RECIPIENT$?\n\n$INFO$" #NEW
+ INCOMING_OFFER_place_relative_on_throne: "$ACTOR$ wishes to place one of their relatives on our throne to replace their ruler. Do we wish to accept?\n\n$INFO$" #NEW
+ place_relative_on_throne_reject_effect_text: "$generic_reject_request_effect_string$" #NEW
+ place_relative_on_throne_reject_effect_text_past: "$generic_reject_request_effect_string_past$" #NEW
+ is_neither_ruler_nor_heir_tt: "Is neither a [ruler|e] nor an [heir|e]" #NEW
+ is_eligible_heir_tt: "Is an eligible to be an [heir|e] in [SCOPE.sCountry('recipient').GetName]" #NEW
  #
  press_sailors: "Richiedi Marinai"
  press_sailors_act: "Richiedi [sailors|e] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
@@ -744,6 +784,15 @@
  PROPOSE_share_maps: "Fornire delle mappe a $RECIPIENT$?\n$INFO$."
  INCOMING_OFFER_share_maps: "$ACTOR$ si è offerta di condividere le mappe con noi. Vogliamo accettare?"
  share_maps_select_title: "Scegli un'[area|e] di cui fornire una mappa:"
+ transfer_occupation: "$TRANSFER_OCCUPATION$s" #NEW
+ dip_transfer_occupation_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" #NEW
+ transfer_occupation_act: "Transfer occupation to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_occupation_desc: "We will transfer control of one of our occupied [locations|e] to [SCOPE.sCountry('recipient').GetName]." #NEW
+ transfer_occupation_effect_text: "[SCOPE.sCountry('actor').GetName] transferred occupation of [SCOPE.sLocation('target').GetName] to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_occupation_effect_text_past: "[SCOPE.sCountry('actor').GetName] transferred occupation of [SCOPE.sLocation('target').GetName] to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_occupation_select_title: "Transfer the selected occupied [locations|e]" #NEW
+ transfer_occupation_no_locations: "@trigger_no!There are no occupied [locations|e] you can transfer to this [country|e]." #NEW
+ PROPOSE_transfer_occupation: "Transfer occupation to $RECIPIENT$?\n\n$INFO$" #NEW
  #
  steal_maps: "Ruba Mappe"
  dip_steal_maps_CATEGORY: "CATEGORY_COVERT_ACTIONS"
@@ -761,6 +810,21 @@
  steal_technology_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ruba una tecnologia [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
  steal_technology_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha rubato una tecnologia [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
  PROPOSE_steal_technology: "Rubare una Tecnologia a $RECIPIENT$?\n$INFO$."
+ transfer_subject: "Transfer Subject" #NEW
+ transfer_subject_select_title: "Select Subject to transfer to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_subject_no_countries: "$no_valid_countries$" #NEW
+ transfer_subject_act: "Offer one of our [subjects|e] to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_subject_desc: "We will offer them the chance to take one of our subjects in exchange for gold" #NEW
+ transfer_subject_effect_text: "[SCOPE.sCountry('actor').GetName] transfer [SCOPE.sCountry('target_subject').GetName] to [SCOPE.sCountry('recipient').GetName]" #NEW
+ transfer_subject_effect_text_past: "[SCOPE.sCountry('actor').GetName] transferred [SCOPE.sCountry('target_subject').GetName] to [SCOPE.sCountry('recipient').GetName]" #NEW
+ PROPOSE_transfer_subject: "Ask $RECIPIENT$ to buy [SCOPE.sCountry('target_subject').GetName]?\n$INFO$." #NEW
+ dip_transfer_subject_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" #NEW
+ INCOMING_OFFER_transfer_subject: "$ACTOR$ wishes to transfer [SCOPE.sCountry('target_subject').GetName] to us for [SCOPE.GetValue('sale_price')|2][gold_i]. Do we wish to accept?\n\n$INFO$" #NEW
+ transfer_subject_reject_effect_text: "$generic_reject_demand_effect_string$" #NEW
+ transfer_subject_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" #NEW
+ select_a_subject_to_transfer: "Select one of our subjects to transfer to them" #NEW
+ select_a_price: "Select a price" #NEW
+ choose_a_target_first: "@trigger_no! Select a target first" #NEW
  #
  subject_embargo_rival: "Embargo sul Rivale"
  subject_embargo_rival_select_title: "Seleziona un Rivale da far mettere sotto Embargo [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
@@ -999,11 +1063,40 @@
  negotiate_succession_law_bt: "Modifica anche la [ShowLawName('heir_religion_law')] del paese bersaglio in [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] se la loro politica NON è bloccata"
  negotiate_succession_law_dt: "@trigger_no! #Y [SCOPE.sCountry('actor').GetGovernment.GetHeirSelection.GetName] non può essere applicata [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]#!"
  negotiate_succession_law_et: "@trigger_no! #Y [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] non può essere applicata [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]#!"
- dip_negotiate_succession_law_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS"
+ #dip_negotiate_succession_law_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS" #DELETE
  PROPOSE_negotiate_succession_law: "Negozia con $RECIPIENT$ per adottare la nostra [heir_selection|e] e potenzialmente la [ShowLawName('heir_religion_law')]?"
  INCOMING_OFFER_negotiate_succession_law: "$ACTOR$ vuole che adottiamo la loro [heir_selection|e]. Vogliamo accettare?\n\n$INFO$"
  negotiate_succession_law_reject_effect_text: "$generic_reject_request_effect_string$"
  negotiate_succession_law_reject_effect_text_past: "$generic_reject_request_effect_string_past$"
  negotiate_succession_law_act: "Negozia con [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] per adottare la nostra [heir_selection|e] e potenzialmente la [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName]"
  negotiate_succession_law_effect_text: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] adotta la [heir_selection|e] [SCOPE.sCountry('actor').GetHeirSelection.GetName] e potenzialmente la [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] [SCOPE.sCountry('actor').Custom('IT_Della')|U][SCOPE.sCountry('actor').GetName]"
- negotiate_succession_law_effect_text_past: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha adottato la [heir_selection|e] [SCOPE.sCountry('actor').GetHeirSelection.GetName] e potenzialmente la [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] [SCOPE.sCountry('actor').Custom('IT_Della')|U][SCOPE.sCountry('actor').GetName]"
+ negotiate_succession_law_effect_text_past: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha adottato la [heir_selection|e] [SCOPE.sCountry('actor').GetHeirSelection.GetName] e potenzialmente la [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] [SCOPE.sCountry('actor').Custom('IT_Della')|U][SCOPE.sCountry('actor').GetName]" 
+ rtr_demand_annexation: "Demmand Annexation" #NEW
+ rtr_demand_annexation_desc: "The Empire, long divided, must unite. They shall all bow to our rule!" #NEW
+ rtr_demand_annexation_tt: "The targetted [country|e] will be [annexed|e]" #NEW
+ dip_rtr_demand_annexation_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" #NEW
+ PROPOSE_rtr_demand_annexation: "Negotiate with $RECIPIENT$ to demand that they are [annexed|e] by us?" #NEW
+ INCOMING_OFFER_rtr_demand_annexation: "$ACTOR$ demands our [annexation|e]. Do we wish to accept?\n\n$INFO$" #NEW
+ rtr_demand_annexation_reject_effect_text: "$generic_reject_request_effect_string$" #NEW
+ rtr_demand_annexation_reject_effect_text_past: "$generic_reject_request_effect_string_past$" #NEW
+ rtr_demand_annexation_act: "Negotiate with [SCOPE.sCountry('recipient').GetName] to demand that they are [annexed|e] by us." #NEW
+ rtr_demand_annexation_effect_text: "[SCOPE.sCountry('recipient').GetName] will be [annexed|e] by [SCOPE.sCountry('actor').GetName]" #NEW
+ rtr_demand_annexation_effect_text_past: "[SCOPE.sCountry('recipient').GetName] has been [annexed|e] by [SCOPE.sCountry('actor').GetName]" #NEW
+ union_enforce_religion: "$enforce_religion$" #NEW
+ union_enforce_religion_act: "$enforce_religion_act$" #NEW
+ union_enforce_religion_desc: "$enforce_religion_desc$" #NEW
+ union_enforce_religion_effect_text: "$enforce_religion_effect_text$" #NEW
+ union_enforce_religion_effect_text_past: "$enforce_religion_effect_text_past$" #NEW
+ PROPOSE_union_enforce_religion: "$PROPOSE_enforce_religion$" #NEW
+ union_enforce_religion_reject_effect_text: "$generic_reject_offer_effect_string$" #NEW
+ union_enforce_religion_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" #NEW
+ INCOMING_OFFER_union_enforce_religion: "$ACTOR$ tries to enforce their [religion|e] on us. Do we accept it to happen?\n\n$INFO$" #NEW
+ union_enforce_culture: "$enforce_culture$" #NEW
+ union_enforce_culture_act: "$enforce_culture_act$" #NEW
+ union_enforce_culture_desc: "$enforce_culture_desc$" #NEW
+ union_enforce_culture_effect_text: "$enforce_culture_effect_text$" #NEW
+ union_enforce_culture_effect_text_past: "$enforce_culture_effect_text_past$" #NEW
+ PROPOSE_union_enforce_culture: "$PROPOSE_enforce_culture$" #NEW
+ union_enforce_culture_reject_effect_text: "$generic_reject_offer_effect_string$" #NEW
+ union_enforce_culture_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" #NEW
+ INCOMING_OFFER_union_enforce_culture: "$ACTOR$ tries to enforce their [primary_culture|e] on us. Do we accept it to happen?\n\n$INFO$" #NEW
