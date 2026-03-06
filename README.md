@@ -17,8 +17,8 @@
 
 > **Traduzione realizzata dal gruppo di traduttori amatoriali TWR**
 
-**Versione della mod: 1.0.5**  
-**Patch della mod: 1.0.11**
+**Versione della mod: 1.0.6**  
+**Patch della mod: 1.1.9**
 
 È possibile seguire lo stato di completamento della traduzione su Discord, nel canale [#stato-traduzione](https://discordapp.com/channels/409048447468175370/1376322996381290536).
 
