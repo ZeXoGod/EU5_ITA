@@ -248,9 +248,9 @@
   ROT_TIMURS_ALLIES: "Alleato [GetCountry('TIM').GetName]"
   ROT_TIMURS_SUBJECTS: "Stato Cliente [GetCountry('TIM').GetName]"
   ROT_CURRENTLY_INVADED: "Attualmente invaso dai [GetCountry('TIM').Custom('IT_ADJ_MP')]"
-  ROT_FUTURE_INVASION_TARGET: "Potenziale obiettivo di invasione futura  [GetCountry('TIM').GetName]"
+  ROT_FUTURE_INVASION_TARGET: "Potenziale obiettivo di invasione futura [GetCountry('TIM').GetName]"
   ROT_END_CONDITIONS: "Condizioni per il Termine"
- ROT_CONQUEST_AMBITION: "Conquest Ambition Target of [GetCountry('TIM').GetNameWithNoTooltip]" #NEW
+  ROT_CONQUEST_AMBITION: "Obiettivo di Conquista Ambiziosa [GetCountry('TIM').GetNameWithNoTooltip]" #NEW
   KILL_COUNTER: "Contatore Uccisioni"
   KILL_COUNTER_DESC: "Gli eserciti predatori [GetCountry('TIM').Custom('IT_DEL_RANGO')][GetCountry('TIM').GetLongName] hanno ucciso #Y [SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('timur_total_kill_counter').GetValue]#! persone in totale."
   TOTAL_KILLS: "Uccisioni Totali"
@@ -407,7 +407,7 @@
  betray_our_allegiance_desc: "Le maree della guerra cambiano. Sebbene abbiamo promesso di aiutare i nostri alleati con le armi durante il conflitto in corso, dobbiamo fare i conti con la realtà e perseguire una diversa linea diplomatica, nel tentativo di risparmiare alla nostra gente gli orrori della guerra e della sottomissione."
  eng_leads_one_side_france_another_tt: "Uno schieramento della [war|e] è guidato dall'[GetCountry('ENG').GetName], mentre l'altro è guidato dalla [GetCountry('FRA').GetName]"
  choose_war_tt: "Scegli una [war|e]"
- war_goal_owned_by_us_tt: "The [war_goal|e] is NOT a [location|e] or a [province|e] that we own" #NEW
+ war_goal_owned_by_us_tt: "L'[war_goal|e] NON è una [location|e] o una [province|e] che possediamo" #NEW
 
  procure_core_claim: "Ottenere ua Rivendicazione su una Località Centrale"
  procure_core_claim_desc: "Non possiamo più ignorare la nostra legittima rivendicazione su certe terre. Affermando la proprietà su ciò che è giustamente nostro, poniamo le basi per la guerra per reclamare il nostro territorio perduto."
@@ -701,9 +701,7 @@
  NOT_GOOD_RELATIONS_WITH_DEFENDER: "Cattive Relazioni e Guerra Difensiva"
  FIGHTING_OUR_FOE_TOOLTIP: "Combattere il nostro [enemy|e] o [rival|e]"
  NUM_LOANS_TOOLTIP: "Numero di [loans|e]"
- #IW_BALANCE_OF_POWER: "Equilibrio di Potere" #OLD ITA
- IW_BALANCE_OF_POWER: "Size of the Foreign League" #NEW
- #IW_BALANCE_OF_POWER: "Balance of Power" #OLD ENG
+ IW_BALANCE_OF_POWER: "Dimensioni della Lega Straniera"
   FOREIGN_LEAGUE: "La Nostra Lega è Straniera"
   ALREADY_MEMBER_OF_LEAGUE: "Già [member|e] di una Lega"
  IO_HOSTS_FRIENDS: "I nostri [allies|e] in questa Lega"

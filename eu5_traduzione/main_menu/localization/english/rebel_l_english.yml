@@ -17,13 +17,13 @@
  REBEL_STALLED_CIVIL_WAR: "Bloccato a causa della [civil_war|e]."
  REBEL_STALLED_NOT_ENOUGH: "Bloccato perché non ha abbastanza sostenitori."
  REBEL_PROGRESS_ESTATE: "[estate_power|e]: $VAL|2-=%$"
- REBEL_PROGRESS_POPULATION: "Support from $POP|V$@population!: $VAL|2-=%$" #NEW
+ REBEL_PROGRESS_POPULATION: "Supporto da parte di $POP|V$@population!: $VAL|2-=%$" #NEW
  REBEL_NATIONALISM_SOURCE: "Nazionalismo\nNazionalismo di Base: $VAL|2=-%$"
  REBEL_NATIONALISM_CULTURE_WAR: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|-=2%$"
- REBEL_LACK_OF_INTEGRATION: "Lack of [integration|e]: $VAL|2=-%$" #NEW
+ REBEL_LACK_OF_INTEGRATION: "Mancanza di [integration|e]: $VAL|2=-%$" #NEW
  
  RSI_HEADER: "Motivi per cui i [pops|e] sostengono questi ribelli."
- RSI_ESTATE: "$BULLET$[estate|e] [ESTATE.GetNameWithNoTooltip] reasons" #NEW
+ RSI_ESTATE: "$BULLET$Motivi del [estate|e] [ESTATE.GetNameWithNoTooltip]" #NEW
  RSI_ENTRY: "$NAME$: $VAL|2+=%$"
  rsi_separatism: "[separatism|e]"
  rsi_culture: "[cultural_opinion|e]"
@@ -55,25 +55,15 @@
  REBEL_SUPPORT_COUNTRY_TT: "#T Sostegno Straniero#!\nSono sostenuti dai seguenti [countries|e]"
  REBEL_COUNTRY_SUPPORT_NONE: "Nessun paese al momento."
  
- #REBELS_CATEGORY_estate_DESC: "Questi ribelli lavorano per promuovere gli interessi trascurati del ceto [ESTATE_TYPE.GetName] e avvieranno una [civil_war|e] quando saranno pronti." #OLD ITA
- REBELS_CATEGORY_estate_DESC: "These rebels are working to further the neglected interests of the [ESTATE_TYPE.GetName], and will start a [civil_war_with_icon|e] when they are ready." #NEW
- #REBELS_CATEGORY_estate_DESC: "These rebels are working to further the neglected interests of the [ESTATE_TYPE.GetName], and will start a [civil_war|e] when they are ready." #OLD ENG
- #REBELS_CATEGORY_nationalist_DESC: "Questi ribelli lavorano per l'indipendenza della cultura [CULTURE.GetName]. Creeranno una [revolt|e] quando saranno pronti." #OLD ITA
- REBELS_CATEGORY_nationalist_DESC: "These rebels are working towards [CULTURE.GetName] independence. They will create a [revolt_with_icon|e] when they are ready." #NEW
- #REBELS_CATEGORY_nationalist_DESC: "These rebels are working towards [CULTURE.GetName] independence. They will create a [revolt|e] when they are ready." #OLD ENG
- #REBELS_CATEGORY_pretender_DESC: "Questi ribelli lavorano per sostituire il [ruler|e] [REBEL.GetOwner.Custom('IT_Della')][REBEL.GetOwner.GetName] e avvieranno una [civil_war|e] quando saranno pronti." #OLD ITA
- REBELS_CATEGORY_pretender_DESC: "These rebels are working to replace the [ruler|e] of [REBEL.GetOwner.GetName], and will start a [civil_war_with_icon|e] when they are ready." #NEW
- #REBELS_CATEGORY_pretender_DESC: "These rebels are working to replace the [ruler|e] of [REBEL.GetOwner.GetName], and will start a [civil_war|e] when they are ready." #OLD ENG
- #REBELS_CATEGORY_religious_DESC: "Questi ribelli lavorano per l'indipendenza della religione [RELIGION.GetName]. Creeranno una [revolt|e] quando saranno pronti." #OLD ITA
- REBELS_CATEGORY_religious_DESC: "These rebels are working towards [RELIGION.GetName] independence. They will create a [revolt_with_icon|e] when they are ready." #NEW
- #REBELS_CATEGORY_religious_DESC: "These rebels are working towards [RELIGION.GetName] independence. They will create a [revolt|e] when they are ready." #OLD ENG
- #REBELS_CATEGORY_religious_DESC_CONVERT: "Questi ribelli tenteranno di avviare una [civil_war|e] per cambiare la [primary_religion|e] [REBEL.GetOwner.Custom('IT_Della')][REBEL.GetOwner.GetName] in [RELIGION.GetName]." #OLD ITA
- REBELS_CATEGORY_religious_DESC_CONVERT: "These rebels will attempt to start a [civil_war_with_icon|e] to change the [primary_religion|e] of [REBEL.GetOwner.GetName] to [RELIGION.GetName]." #NEW
- #REBELS_CATEGORY_religious_DESC_CONVERT: "These rebels will attempt to start a [civil_war|e] to change the [primary_religion|e] of [REBEL.GetOwner.GetName] to [RELIGION.GetName]." #OLD ENG
+ REBELS_CATEGORY_estate_DESC: "Questi ribelli lavorano per promuovere gli interessi trascurati del ceto [ESTATE_TYPE.GetName] e avvieranno una [civil_war_with_icon|e] quando saranno pronti."
+ REBELS_CATEGORY_nationalist_DESC: "Questi ribelli lavorano per l'indipendenza della cultura [CULTURE.GetName]. Creeranno una [revolt_with_icon|e] quando saranno pronti."
+ REBELS_CATEGORY_pretender_DESC: "Questi ribelli lavorano per sostituire il [ruler|e] [REBEL.GetOwner.Custom('IT_Della')][REBEL.GetOwner.GetName] e avvieranno una [civil_war_with_icon|e] quando saranno pronti."
+ REBELS_CATEGORY_religious_DESC: "Questi ribelli lavorano per l'indipendenza della religione [RELIGION.GetName]. Creeranno una [revolt_with_icon|e] quando saranno pronti."
+ REBELS_CATEGORY_religious_DESC_CONVERT: "Questi ribelli tenteranno di avviare una [civil_war_with_icon|e] per cambiare la [primary_religion|e] [REBEL.GetOwner.Custom('IT_Della')][REBEL.GetOwner.GetName] in [RELIGION.GetName]."
  REBELS_CATEGORY_slave_DESC: "Gli [ShowPopTypeName('slaves')] ne hanno avuto abbastanza e vogliono essere liberi, a qualunque costo."
- REBEL_TT_TEXT_MINOR_REVOLT: "[minor_revolt_icon] These Rebels will start a [minor_revolt|e] when their progress reaches #W 100%#!." #NEW
- REBEL_TT_TEXT_REVOLT: "[civil_war_icon] These Rebels will start a [civil_war|e] when their progress reaches #W 100%#!." #NEW
- REBEL_TT_TEXT_CIVIL_WAR: "[revolt_icon] These Rebels will start a [revolt|e] when their progress reaches #W 100%#!." #NEW
+ REBEL_TT_TEXT_MINOR_REVOLT: "[minor_revolt_icon] Questi Ribelli daranno inizio a una [minor_revolt|e] quando i loro progressi raggiungono il #W 100%#!." #NEW
+ REBEL_TT_TEXT_REVOLT: "[civil_war_icon] Questi Ribelli daranno inizio a una [civil_war|e] quando i loro progressi raggiungono il #W 100%#!." #NEW
+ REBEL_TT_TEXT_CIVIL_WAR: "[revolt_icon] Questi Ribelli daranno inizio a una [revolt|e] quando i loro progressi raggiungono il #W 100%#!." #NEW
  
  horde_civil_war_pretender: "Signore della Guerra Rivale [COUNTRY.Custom('IT_Della')][COUNTRY.GetNameWithNoTooltip]"
  horde_civil_war_pretender_country: "Signore della Guerra Rivale $ADJ$ "

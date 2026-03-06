@@ -834,7 +834,6 @@
 
  placitum_regium: "Placitum Regium"
  placitum_regium_desc: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] si è intromesso negli affari del nostro paese per troppo tempo. L'autorità della corona non dovrebbe piegare il ginocchio davanti alla sede [GetCountry('PAP').GetAdjective]! La [papal_bull|e] sarà in vigore solo quando il nostro governo darà la sua approvazione."
- #once_per_ruler: "Questa azione è fattibile solo una volta nella vita di un [ruler|e]." #DELETE
 
  request_cardinal_seat: "Richiedi Sede Cardinalizia"
  request_cardinal_seat_desc: "Il Collegio dei Cardinali chiaramente manca di rappresentanza della nostra intuizione. Dovremmo richiedere che una nuova [ShowBuildingTypeName('seat_of_cardinal')] sia concessa a una [ShowBuildingTypeName('cathedral')] all'interno del nostro territorio, per garantire che la nostra influenza non diminuisca."
@@ -848,13 +847,13 @@
  invite_foreign_cleric: "Invita Chierico Straniero"
  invite_foreign_cleric_desc: "Ci verrà inviato un chierico esperto proveniente da un altro Paese. Ciò susciterà l'ira del [actor.GetGovernment.GetEstateName('clergy_estate')] locale, ma la competenza di questo chierico straniero potrebbe rivelarsi preziosa."
  invite_foreign_cleric_tt: "Un [character|e] straniero di fede [actor.GetReligion.GetAdjective] del [ShowEstateTypeName('clergy_estate')] con [adm|e] alta, [dip|e] media e [mil|e] bassa arriverà nel nostro [country|e]."
- invite_foreign_cleric_no_countries_tt: "Another [recipient.GetAdjective] [country|e] in [diplomatic_range|e]" #NEW
- anti_reformation: "Repudiating of the Reformation" #NEW
- anti_reformation_severe: "In complete opposition to the Reformation" #NEW
- harsh_policy: "Harsh treatment of Protestants" #NEW
- pro_reformation: "Concession to the Reformation" #NEW
- pro_reformation_severe: "In accordance to the demands of the Reformation" #NEW
- conciliatory_policy: "Conciliatory treatment of Protestants" #NEW
+ invite_foreign_cleric_no_countries_tt: "Un altro [country|e] [recipient.GetAdjective] nel [diplomatic_range|e]" #NEW
+ anti_reformation: "Rifiuto della Riforma" #NEW
+ anti_reformation_severe: "In totale opposizione alla Riforma" #NEW
+ harsh_policy: "Trattamento severo nei confronti dei Protestanti" #NEW
+ pro_reformation: "Concessione alla Riforma" #NEW
+ pro_reformation_severe: "In conformità con le richieste della Riforma" #NEW
+ conciliatory_policy: "Trattamento conciliante nei confronti dei Protestanti" #NEW
 
 #Catholic Church Laws and Policies
  cc_indulgences: "L'Acquisto dell'Indulgenza"
@@ -945,9 +944,9 @@
  tunupa_god: "Tunupa"
  viracocha_desc: "[ShowGodName('viracocha')] è il dio creatore del popolo delle [ShowRegionName('andes_region')]."
  illapa_god: "Illapa"
+ illapa_god_desc: "[ShowGodName('illapa_god')] è il dio della pioggia e del tuono del popolo delle [ShowRegionName('andes_region')]."
  supay_god: "Supay" #NEW
- supay_god_desc: "[ShowGodName('supay_god')] is the god of the underworld for the people of the [ShowRegionName('andes_region')]." #NEW
- illapa_god_desc: "[ShowGodName('illapa_god')] è il dio della pioggia e del tuono del popolo della [ShowRegionName('andes_regiondelle
+ supay_god_desc: "[ShowGodName('supay_god')] è il dio degli inferi per il popolo delle [ShowRegionName('andes_region')]." #NEW
  mamaquilla: "Mamaquilla"
  mamaquilla_desc: "[ShowGodName('mamaquilla')] è la dea della luna del popolo delle [ShowRegionName('andes_region')]."
  pachamama: "Pachamama"
@@ -1392,28 +1391,26 @@
  salishan_totemism_desc: "Il $salishan_totemism$ $common_folk_religion_desc$"
  sanamahism_desc: "Il $sanamahism$ $common_folk_religion_desc$"
  sapmi_shamanism_desc: "Le pratiche religiose tradizionali del popolo $sapmi$, contiene una moltitudine di spiriti naturali e animali, così come venerazione dei morti. Alcuni animali sono particolarmente riveriti, come renne e orsi."
- #muinaisusko_desc: "Le credenze tradizionali dei popoli di lingua $finnish_language$, contiene una moltitudine di divinità, essendo la più prevalente il dio timido e del tuono Ukko. Contiene anche venerazione dei morti e pratiche sciamanistiche, mentre condivide anche alcune caratteristiche con altre religioni vicine." #OLD ITA
- muinaisusko_desc: "The traditional beliefs of the $finnish_language$ peoples, it contains a multitude of deities, being the most prevalent one the sky and thunder god Ukko. It also contains veneration of the dead and shamanistic practices, while also sharing some features with other nearby religions." #NEW
- #muinaisusko_desc: "The traditional beliefs of the $finnish_language$ peoples, it contains a multitude of deities, being the most prevalant one the shy and thunder god Ukko. It also contains veneration of the dead and shamanistic practices, while also sharing some features with other nearby religions." #OLD ENG
+ muinaisusko_desc: "Le credenze tradizionali dei popoli di lingua $finnish_language$, contiene una moltitudine di divinità, essendo la più prevalente il dio del cielo e del tuono Ukko. Contiene anche venerazione dei morti e pratiche sciamanistiche, mentre condivide anche alcune caratteristiche con altre religioni vicine." #OLD ITA
  satsana_phi_desc: "Il $satsana_phi$ $common_folk_religion_desc$"
  shamanism_desc: "Un insieme condiviso di pratiche e credenze che si concentrano sulla figura dello sciamano, e individuo capace di interagire con il mondo spirituale e accedere agli spiriti o all'energia spirituale per influenzare il mondo fisico. I suoi specifici di spiriti, dei o rituali possono variare, ma il concetto centrale del mondo spirituale e le sue interazioni con il mondo materiale rimane in tutte le pratiche $shamanism_ADJ$."
  tengri_desc: "$tengri$ è un tipo di credenze $shamanism_ADJ$ dei popoli $turkic_group$ e $mongolian_group$, centrato attorno alla presenza del dio del cielo $tengri_god_name$, che è adorato come una personificazione dell'universo. Tuttavia, include anche altre divinità, poiché riverisce la natura e le divinità che vi abitano, così come gli antenati."
  tengri_god: "Kök Teŋri" #NEW
- tengri_god_desc: "[ShowGodName('tengri_god')] is the god of heaven of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ tengri_god_desc: "[ShowGodName('tengri_god')] è il dio del cielo dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  umay_god: "Umay" #NEW
- umay_god_desc: "[ShowGodName('umay_god')] is the goddess of fertility of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ umay_god_desc: "[ShowGodName('umay_god')] è la dea della fertilità dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  ulgen_god: "Ülgen" #NEW
- ulgen_god_desc: "[ShowGodName('ulgen_god')] is the god of goodness of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ ulgen_god_desc: "[ShowGodName('ulgen_god')] è il dio della bontà dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  erlik_god: "Erlik" #NEW
- erlik_god_desc: "[ShowGodName('erlik_god')] is the god of death and the underworld of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ erlik_god_desc: "[ShowGodName('erlik_god')] è il dio della morte e degli inferi dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  kayra_god: "Kayra" #NEW
- kayra_god_desc: "[ShowGodName('kayra_god')] is the god of creation of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ kayra_god_desc: "[ShowGodName('kayra_god')] è il dio della creazione dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  bai_baianai_god: "Bai Baianai" #NEW
- bai_baianai_god_desc: "[ShowGodName('bai_baianai_god')] is the goddess of forests and wildlife of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ bai_baianai_god_desc: "[ShowGodName('bai_baianai_god')] è la dea delle foreste e della fauna selvatica dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  ak_ana_god: "Ak Ana" #NEW
- ak_ana_god_desc: "[ShowGodName('ak_ana_god')] is the goddess of water of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ ak_ana_god_desc: "[ShowGodName('ak_ana_god')] è la dea dell'acqua dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  mergen_god: "Mergen" #NEW
- mergen_god_desc: "[ShowGodName('mergen_god')] is the god of abundance and wisdom of the [ShowCultureGroupName('turkic_group')] people." #NEW
+ mergen_god_desc: "[ShowGodName('mergen_god')] è il dio dell'abbondanza e della saggezza dei popoli di cultura [ShowCultureGroupName('turkic_group')]." #NEW
  worship_tengri_god: "$worship_title1$ $tengri_god$ $worship_title2$" #NEW
  worship_tengri_god_desc: "$worship_desc1$ [ShowGodName('tengri_god')] $worship_desc2$" #NEW
  worship_umay_god: "$worship_title1$ $umay_god$ $worship_title2$" #NEW

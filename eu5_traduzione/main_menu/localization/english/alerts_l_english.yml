@@ -2,265 +2,163 @@
  ALERT_CTA: "\n\nClick Sinistro per aprire; Click Destro per Ignorare"
  ALERT_CTA_CYCLE: "\n\nClick Sinistro per Scorrere; Click Destro per Ignorare"
  ALERT_CTA_LEFT_CLICK: "Aprire"
- ALERT_HIDE: "Hide alert" #NEW
- ALERT_HIDE_AND_MUTE: "Hide and mute alert" #NEW
- ALERT_SHOW: "Restore alert" #NEW
- #ALERT_CTA_RIGHT_CLICK: "Ignora avviso" #OLD ITA
- ALERT_CTA_RIGHT_CLICK: "Discard permanently" #NEW
- #ALERT_CTA_RIGHT_CLICK: "Discard alert" #OLD ENG
- ALERT_CTA_DECLINE_RIGHT_CLICK: "Decline Offer" #NEW
+ ALERT_HIDE: "Nascondi avviso" #NEW
+ ALERT_HIDE_AND_MUTE: "Nascondi e silenzia avviso" #NEW
+ ALERT_SHOW: "Ripristina avviso" #NEW
+ ALERT_CTA_RIGHT_CLICK: "Ignora definitivamente" #NEW
+ ALERT_CTA_DECLINE_RIGHT_CLICK: "Rifiuta l'Offerta" #NEW
  ALERT_CTA_CYCLE_LEFT_CLICK: "Scorrere"
- CANNOT_ALERT_CTA_CYCLE_LEFT_CLICK: "@trigger_no!Nessuna istanza multipla per questo avviso."
+ CANNOT_ALERT_CTA_CYCLE_LEFT_CLICK: "@trigger_no! Nessuna istanza multipla per questo avviso."
  ALERT_CTA_CYCLE_MARKETS_LEFT_CLICK: "Scorrere tra i Mercati"
  ALERT_TRIGGER_YES: "@trigger_yes!"
  ALERT_TRIGGER_NO: "@trigger_no!"
- ALERT_WAR_EXHAUSTION_TITLE: "High War Exhaustion" #NEW
- #ALERT_WAR_EXHAUSTION: "#T Stanchezza di Guerra Elevata#!\nAbbiamo una [war_exhaustion|e] di $VAL|2R$. Ciò comprometterà gravemente la nostra possibilità di combattere [wars|e], e se questa raggiunge [COUNTRY.GetModifierValue('max_war_exhaustion')], perderemo tutto il [war_score|e] e saremo costretti a capitolare." #OLD ITA
- ALERT_WAR_EXHAUSTION: "We have a [war_exhaustion|e] of $VAL|2R$. This will severely impact our possibility to fight [wars|e], and if it reaches [COUNTRY.GetModifierValue('max_war_exhaustion')], we will lose all [war_score|e] and be forced to capitulate." #NEW
- #ALERT_WAR_EXHAUSTION: "#T High War Exhaustion#!\nWe have a [war_exhaustion|e] of $VAL|2R$. This will severely impact our possibility to fight [wars|e], and if it reaches [COUNTRY.GetModifierValue('max_war_exhaustion')], we will lose all [war_score|e] and be forced to capitulate." #OLD ENG
- ALERT_DOOM_TITLE: "High Doom" #NEW
- #ALERT_DOOM: "#T Destino Elevato#!\nAbbiamo un [doom|e] di $VAL|2R$. Raggiungere un valore di 100 avrà effetti catastrofici sul Paese e sulla famiglia regnante." #OLD ITA
- ALERT_DOOM: "We have a [doom|e] of $VAL|2R$. Reaching [doom|e] of 100 will bring catastrophic effects to the country and its ruling family." #NEW
- #ALERT_DOOM: "#T High Doom#!\nWe have a [doom|e] of $VAL|2R$. Reaching [doom|e] of 100 will bring catastrophic effects to the country and its ruling family." #OLD ENG
- ALERT_HAS_DOOM_TITLE: "Has Doom" #NEW
- #ALERT_HAS_DOOM: "#T Destino Disponibile#!\nAbbiamo un [doom|e] di $VAL|2R$. Raggiungere un valore di 100 avrà effetti catastrofici sul Paese e sulla famiglia regnante." #OLD ITA
- ALERT_HAS_DOOM: "We have a [doom|e] of $VAL|2R$. Reaching [doom|e] of 100 will bring catastrophic effects to the country and its ruling family." #NEW
- #ALERT_HAS_DOOM: "#T Has Doom#!\nWe have a [doom|e] of $VAL|2R$. Reaching [doom|e] of 100 will bring catastrophic effects to the country and its ruling family." #OLD ENG
+ ALERT_WAR_EXHAUSTION_TITLE: "Stanchezza da Guerra Elevata" #NEW
+ ALERT_WAR_EXHAUSTION: "Abbiamo una [war_exhaustion|e] di $VAL|2R$. Ciò comprometterà gravemente la nostra possibilità di combattere [wars|e], e se raggiunge [COUNTRY.GetModifierValue('max_war_exhaustion')], perderemo tutto il [war_score|e] e saremo costretti a capitolare." #NEW
+ ALERT_DOOM_TITLE: "Rovina Elevata" #NEW
+
+ ALERT_DOOM: "Abbiamo una [doom|e] di $VAL|2R$. Raggiungere una [doom|e] di 100 avrà effetti catastrofici sul Paese e sulla famiglia regnante." #NEW
+ ALERT_HAS_DOOM_TITLE: "Rovina Disponibile" #NEW
+ ALERT_HAS_DOOM: "Abbiamo una [doom|e] di $VAL|2R$. Raggiungere un valore di 100 avrà effetti catastrofici sul Paese e sulla famiglia regnante." #NEW
  ALERT_AT_WAR_WITH: "#T Guerra#!\nAl momento siamo in [war|e] con $DATA$."
  ALERT_CIVIL_WAR: "#T Guerra Civile#!\nAttualmente stiamo combattendo una [civil_war|e]. Ogni territorio conquistato entrerà automaticamente a far parte dello schieramento avversario!"
  ALERT_CALL_ALLY: "#T Chiamare gli Alleati#!\nPossiamo chiamare $DATA$ nelle nostre [wars|e]."
- ALERT_BREAKING_IO_TITLE: "Breaking International Organization" #NEW
- #ALERT_BREAKING_IO: "#T Rottura dell'Organizzazione Internazionale #!\nLe seguenti rischiano di disgregarsi a causa del deterioramento delle relazioni al loro interno [international_organizations|e] are in danger of breaking up as relations within them deteriorate:" #OLD ITA
- ALERT_BREAKING_IO: "The following [international_organizations|e] are in danger of breaking up as relations within them deteriorate:" #NEW
- #ALERT_BREAKING_IO: "#T Breaking International Organization #!\nThe following [international_organizations|e] are in danger of breaking up as relations within them deteriorate:" #OLD ENG
- ALERT_NO_LEADER_TITLE: "Lack of Commander" #NEW
- #ALERT_NO_LEADER: "#T Mancanza di un Comandante#!\nLe seguenti [units|e] mancano di un [commander|e]:" #OLD ITA
- ALERT_NO_LEADER: "The following [units|e] lack a [commander|e]:" #NEW
- #ALERT_NO_LEADER: "#T Lack of Commander#!\nThe following [units|e] lack a [commander|e]:" #OLD ENG
- ALERT_RELATION_ABOUT_TO_BE_BROKEN_TITLE: "Breaking Relations" #NEW
- #ALERT_RELATION_ABOUT_TO_BE_BROKEN: "#T Relazioni Interrotte #!\nLe seguenti relazioni con noi stanno per essere interrotte da altri paesi:" #OLD ITA
- ALERT_RELATION_ABOUT_TO_BE_BROKEN: "The following relations with us are about to be broken by other countries:" #NEW
- #ALERT_RELATION_ABOUT_TO_BE_BROKEN: "#T Breaking Relations #!\nThe following relations with us are about to be broken by other countries:" #OLD ENG
- ALERT_RELATION_ABOUT_TO_BE_BROKEN_ENTRY: "[COUNTRY.GetName] interrompe [RELATION_TYPE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+2$#!"
- ALERT_VERY_LOW_FOOD_TITLE: "Serious Lack of Food" #NEW
- #ALERT_VERY_LOW_FOOD: "#T Grave Carenza di Cibo#!\nI seguenti [armies|e] sono a corto di [food|e]. Le scorte alimentari sono a livelli critici, inizieranno a subire [attrition|e]:" #OLD ITA
- ALERT_VERY_LOW_FOOD: "The following [armies|e] lack [food|e] and their food supply is critical, they will start to take [attrition|e]:" #NEW
- #ALERT_VERY_LOW_FOOD: "#T Serious Lack of Food#!\nThe following [armies|e] lack [food|e] and their food supply is critical, they will start to take [attrition|e]:" #OLD ENG
- ALERT_LOW_FOOD_TITLE: "Lack of Food" #NEW
- #ALERT_LOW_FOOD: "#T Carenza di Cibo#!\nI seguenti [armies|e] sono a corto di [food|e] e le loro scorte alimentari stanno diminuendo, potrebbero presto iniziare a subire [attrition|e]:" #OLD ITA
- ALERT_LOW_FOOD: "The following [armies|e] lack [food|e] and their food supply is dwindling, they may soon start to take [attrition|e]:" #NEW
- #ALERT_LOW_FOOD: "#T Lack of Food#!\nThe following [armies|e] lack [food|e] and their food supply is dwindling, they may soon start to take [attrition|e]:" #OLD ENG
- ALERT_CBS_TITLE: "Unpressed Casus Belli" #NEW
- #ALERT_CBS: "#T Casus Belli Non Esercitato#!\nIl seguente [casus_bellis|e] non è stato esercitato:" #OLD ITA
- ALERT_CBS: "The following [casus_bellis|e] have not been pressed:" #NEW
- #ALERT_CBS: "#T Unpressed Casus Belli#!\nThe following [casus_bellis|e] have not been pressed:" #OLD ENG
+ ALERT_BREAKING_IO_TITLE: "Scioglimento dell'Organizzazione Internazionale" #NEW
+ ALERT_BREAKING_IO: "Le seguenti [international_organizations|e] rischiano di sciogliersi a causa del deterioramento delle relazioni al loro interno:" #NEW
+ ALERT_NO_LEADER_TITLE: "Mancanza di un Comandante" #NEW
+ ALERT_NO_LEADER: "Le seguenti [units|e] mancano di un [commander|e]:" #NEW
+ ALERT_RELATION_ABOUT_TO_BE_BROKEN_TITLE: "Rottura delle Relazioni" #NEW
+ ALERT_RELATION_ABOUT_TO_BE_BROKEN: "Le seguenti relazioni stanno per essere interrotte da altri paesi:" #NEW
+ ALERT_RELATION_ABOUT_TO_BE_BROKEN_ENTRY: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] interrompe [RELATION_TYPE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+2$#!"
+ ALERT_VERY_LOW_FOOD_TITLE: "Grave Carenza di Cibo" #NEW
+ ALERT_VERY_LOW_FOOD: "I seguenti [armies|e] mancano di [food|e] e le lore scorte di cibo sono critiche, inizieranno quindi a subire [attrition|e]:" #NEW
+ ALERT_LOW_FOOD_TITLE: "Carenza di Cibo" #NEW
+ ALERT_LOW_FOOD: "I seguenti [armies|e] mancano di [food|e] e le loro scorte di cibo stanno diminuendo, potrebbero presto iniziare a subire [attrition|e]:" #NEW
+ ALERT_CBS_TITLE: "Casus Belli Non Esercitato" #NEW
+ ALERT_CBS: "I seguenti [casus_bellis|e] non sono stati esercitati:" #NEW
  ALERT_CB_ENTRY: "[CASUS_BELLI.GetName] contro [COUNTRY.Custom('IT_La')][COUNTRY.GetName] (scade il $EXPIRATION_DATE|Y$)"
  ALERT_CB_ENTRY_NO_EXPIRE: "[CASUS_BELLI.GetName] contro [COUNTRY.Custom('IT_La')][COUNTRY.GetName]"
  ALERT_SUBJECT_CB_ENTRY: "[CASUS_BELLI.GetName] contro [COUNTRY.Custom('IT_La')][COUNTRY.GetName] per conto di [subject_icon]$SUBJECT$ (scade il $EXPIRATION_DATE|Y$) "
  ALERT_SUBJECT_CB_ENTRY_NO_EXPIRE: "[CASUS_BELLI.GetName] contro [COUNTRY.Custom('IT_La')][COUNTRY.GetName] per conto di [subject_icon]$SUBJECT$"
- ALERT_OUTSIDE_OF_NAVAL_RANGE_TITLE: "Outside Naval Range" #NEW
- #ALERT_OUTSIDE_OF_NAVAL_RANGE: "#T Fuori dalla Portata Navale#!\nLe seguenti Unità sono fuori dalla portata navale:" #OLD ITA
- ALERT_OUTSIDE_OF_NAVAL_RANGE: "The following Units are outside naval range:" #NEW
- #ALERT_OUTSIDE_OF_NAVAL_RANGE: "#T Outside Naval Range#!\nThe following Units are outside naval range:" #OLD ENG
- #ALERT_DEFICIT: "#T Rischio di Bancarotta#!" #OLD ITA
- ALERT_DEFICIT: "Risk of Bankruptcy" #NEW
- #ALERT_DEFICIT: "#T Risk of Bankruptcy#!" #OLD ENG
+ ALERT_OUTSIDE_OF_NAVAL_RANGE_TITLE: "Fuori dalla Portata Navale" #NEW
+ ALERT_OUTSIDE_OF_NAVAL_RANGE: "Le seguenti Unità sono fuori dalla portata navale:" #NEW
+ ALERT_DEFICIT: "Rischio di Bancarotta" #NEW
  DEFICIT_WHEN: "Con la spesa attuale andremo in [bankrupt|e] verso il $WHEN|V$"
  ALERT_STARVING_POPS: "#T Pop Affamati#!\nI Pop stanno morendo nei seguenti territori:\n"
- ALERT_OVER_RELATIONS_TITLE: "Too many Relations" #NEW
- #ALERT_OVER_RELATIONS: "#T Troppe Relazioni#!\n[COUNTRY.GetDiplomacy.GetActiveRelationsInfo]" #OLD ITA
+ ALERT_OVER_RELATIONS_TITLE: "Troppe Relazioni" #NEW
  ALERT_OVER_RELATIONS: "[COUNTRY.GetDiplomacy.GetActiveRelationsInfo]" #NEW
- #ALERT_OVER_RELATIONS: "#T Too many Relations#!\n[COUNTRY.GetDiplomacy.GetActiveRelationsInfo]" #OLD ENG
- #HAS_OVER_ACCEPTED_CULTURE_LIMIT_TITLE: "#T Oltre il Limite di Capacità Culturale#!" #OLD ITA
- HAS_OVER_ACCEPTED_CULTURE_LIMIT_TITLE: "Over Cultural Capacity limit" #NEW
- #HAS_OVER_ACCEPTED_CULTURE_LIMIT_TITLE: "#T Over Cultural Capacity limit#!" #OLD ENG
- ALERT_BLOCKADED_PORTS_TITLE: "Blockaded Ports" #NEW
- #ALERT_BLOCKADED_PORTS: "#T Porti Bloccati#!\nI seguenti porti sono [Concept('blockaded', 'Bloccati')|e]:\n" #OLD ITA
- ALERT_BLOCKADED_PORTS: "The following ports are [blockaded|e]:\n" #NEW
- #ALERT_BLOCKADED_PORTS: "#T Blockaded Ports#!\nThe following ports are [blockaded|e]:\n" #OLD ENG
- ALERT_LOW_ARMY_MAINTENANCE_TITLE: "Low Army Maintenance" #NEW
- #ALERT_LOW_ARMY_MAINTENANCE: "#T Basso Mantenimento dell'Esercito#!\nAttualmente hai un livello molto basso di [army_maintenance|e], mentre sei in [war|e]! Questo non è consigliabile se vuoi vincere le guerre." #OLD ITA
- ALERT_LOW_ARMY_MAINTENANCE: "You currently have a very low [army_maintenance|e], while at [war|e]! This is not recommended if you want to win wars." #NEW
- #ALERT_LOW_ARMY_MAINTENANCE: "#T Low Army Maintenance#!\nYou currently have a very low [army_maintenance|e], while at [war|e]! This is not recommended if you want to win wars." #OLD ENG
- ALERT_LOW_NAVY_MAINTENANCE_TITLE: "Low Navy Maintenance" #NEW
- #ALERT_LOW_NAVY_MAINTENANCE: "#T Basso Mantenimento della Marina#!\nAttualmente hai un livello molto basso di [navy_maintenance|e], mentre sei in [war|e]! Questo non è consigliabile se vuoi vincere le guerre." #OLD ITA
- ALERT_LOW_NAVY_MAINTENANCE: "You currently have a very low [navy_maintenance|e], while at [war|e]! This is not recommended if you want to win wars." #NEW
- #ALERT_LOW_NAVY_MAINTENANCE: "#T Low Navy Maintenance#!\nYou currently have a very low [navy_maintenance|e], while at [war|e]! This is not recommended if you want to win wars." #OLD ENG
- ALERT_EXILED_UNITS_TITLE: "Exiled Armies" #NEW
- #ALERT_EXILED_UNITS: "#T Eserciti Esiliati#!\nI seguenti [armies|e] sono [Concept('exiled', 'esiliati')|e] in territorio straniero e devono tornare in territorio amico prima di poter combattere di nuovo:" #OLD ITA
- ALERT_EXILED_UNITS: "The following [armies|e] are [exiled|e] in foreign territory, and need to get back home before they can fight again:" #NEW
- #ALERT_EXILED_UNITS: "#T Exiled Armies#!\nThe following [armies|e] are [exiled|e] in foreign territory, and need to get back home before they can fight again:" #OLD ENG
- ALERT_ARMIES_ON_ICE_TITLE: "Armies On Ice" #NEW
- #ALERT_ARMIES_ON_ICE: "#T Eserciti sul Ghiaccio#!\nI seguenti [armies|e] sono su acque [Concept('frozen', 'ghiacciate')|e] e dovrebbero cercare di tornare sulla terraferma prima che si sciolga:" #OLD ITA
- ALERT_ARMIES_ON_ICE: "The following [armies|e] are on [frozen|e] water and should look to get back to dry land before the ice thaws:" #NEW
- #ALERT_ARMIES_ON_ICE: "#T Armies On Ice#!\nThe following [armies|e] are on [frozen|e] water and should look to get back to dry land before the ice thaws:" #OLD ENG
- ALERT_NAVIES_STUCK_IN_ICE_TITLE: "Navies Stuck In Ice" #NEW
- #ALERT_NAVIES_STUCK_IN_ICE: "#T Navi Bloccate nel Ghiaccio#!\nLe seguenti [navies|e] sono bloccate in acque [Concept('frozen', 'ghiacciate')|e] subendo un graduale logoramento e non potendo muoversi finché il ghiaccio non si scioglie:" #OLD ITA
- ALERT_NAVIES_STUCK_IN_ICE: "The following [navies|e] are stuck in [frozen|e] water taking gradual attrition and cannot move until the ice thaws:" #NEW
- #ALERT_NAVIES_STUCK_IN_ICE: "#T Navies Stuck In Ice#!\nThe following [navies|e] are stuck in [frozen|e] water taking gradual attrition and cannot move until the ice thaws:" #OLD ENG
- ALERT_NAVY_ATTRITION_TITLE: "Navies With Attrition" #NEW
- #ALERT_NAVY_ATTRITION: "#T Navi con Attrito#!\nLe seguenti [navies|e] stanno subendo [attrition|e]:" #OLD ITA
- ALERT_NAVY_ATTRITION: "The following [navies|e] have some [attrition|e]:" #NEW
- #ALERT_NAVY_ATTRITION: "#T Navies With Attrition#!\nThe following [navies|e] have some [attrition|e]:" #OLD ENG
- ALERT_WE_CAN_ENFORCE_PEACE_TITLE: "Peace Imminent" #NEW
- #ALERT_WE_CAN_ENFORCE_PEACE: "#T Pace Imminente#!\nPotremmo ottenere il raggiungimento automatico del nostro [war_goal|e] nelle seguenti [wars|e]." #OLD ITA
- ALERT_WE_CAN_ENFORCE_PEACE: "We may get our [war_goal|e] automatically enforced in the following [wars|e]." #NEW
- #ALERT_WE_CAN_ENFORCE_PEACE: "#T Peace Imminent#!\nWe may get our [war_goal|e] automatically enforced in the following [wars|e]." #OLD ENG
- ALERT_THEY_CAN_ENFORCE_PEACE_TITLE: "Peace Imminent" #NEW
- #ALERT_THEY_CAN_ENFORCE_PEACE: "#T Pace Imminente#!\nPotremmo ritrovarci con un [war_goal|e] che ci viene imposto automaticamente nelle seguenti [wars|e]." #OLD ITA
- ALERT_THEY_CAN_ENFORCE_PEACE: "We may get a [war_goal|e] automatically enforced on us in the following [wars|e]." #NEW
- #ALERT_THEY_CAN_ENFORCE_PEACE: "#T Peace Imminent#!\nWe may get a [war_goal|e] automatically enforced on us in the following [wars|e]." #OLD ENG
- ALERT_CAN_WHITE_PEACE_TITLE: "White Peace Imminent" #NEW
- #ALERT_WE_CAN_WHITE_PEACE: "#T Pace Bianca Imminente#!\nUna [white_peace|e] può essere applicata, poiché abbiamo difeso l'[war_goal|e] abbastanza a lungo nelle seguenti guerre:" #OLD ITA
- ALERT_WE_CAN_WHITE_PEACE: "[white_peace|e] may be enforced, as we have defended the [war_goal|e] for long enough in the following wars:" #NEW
- #ALERT_WE_CAN_WHITE_PEACE: "#T White Peace Imminent#!\n[white_peace|e] may be enforced, as we have defended the [war_goal|e] for long enough in the following wars:" #OLD ENG
- #ALERT_THEY_CAN_WHITE_PEACE: "#T Pace Bianca Imminente#!\nUna [white_peace|e] può essere applicata, poiché non siamo riusciti a impedire l'occupazione dell'[war_goal|e] nelle seguenti guerre:" #OLD ITA
- ALERT_THEY_CAN_WHITE_PEACE: "[white_peace|e] may be enforced, as we have failed to challenge occupation of the [war_goal|e] in the following wars:" #NEW
- #ALERT_THEY_CAN_WHITE_PEACE: "#T White Peace Imminent#!\n[white_peace|e] may be enforced, as we have failed to challenge occupation of the [war_goal|e] in the following wars:" #OLD ENG
- ALERT_WE_CAN_WHITE_PEACE_STALLED: "We will be able to enforce [white_peace|e] in the following stalled wars:" #NEW
- ALERT_THEY_CAN_WHITE_PEACE_STALLED: "[white_peace|e] may be enforced on us in the following stalled wars:" #NEW
- STALLED_WAR_ENTRY_ALERT: "$BULLET_WITH_TAB$$NAME|Y$ $ICON$ (from $DATE|Y$)" #NEW
- ALERT_CALL_FOR_PEACE_TITLE: "Call for Peace" #NEW
- #ALERT_CALL_FOR_PEACE: "#T Appello alla Pace#!\nSe una [war|e] è durata più di $VAL|Y$ mesi, e la stiamo vincendo, il popolo vorrà che la [war|e] sia vinta. Questa situazione si applica alle seguenti guerre:\n$WHY$\nGli effetti continueranno ad aumentare fino alla firma della pace, e il nostro appello alla pace sta attualmente avendo il seguente effetto:\n$HOW$" #OLD ITA
- ALERT_CALL_FOR_PEACE: "If a [war|e] has gone on longer than $VAL|Y$ months, and we are winning it, the people will want the [war|e] to be won. The following wars are going that well for us:\n$WHY$\nThe effects will only increase until peace is signed, and our call for peace is currently having the following effect.\n$HOW$" #NEW
- #ALERT_CALL_FOR_PEACE: "#T Call for Peace#!\nIf a [war|e] has gone on longer than $VAL|Y$ months, and we are winning it, the people will want the [war|e] to be won. The following wars are going that well for us:\n$WHY$\nThe effects will only increase until peace is signed, and our call for peace is currently having the following effect.\n$HOW$" #OLD ENG
+ HAS_OVER_ACCEPTED_CULTURE_LIMIT_TITLE: "Oltre il Limite di Capacità Culturale" #NEW
+ ALERT_BLOCKADED_PORTS_TITLE: "Porti Bloccati" #NEW
+ ALERT_BLOCKADED_PORTS: "I seguenti porti sono [Concept('blockaded', 'Bloccati')|e]:\n" #NEW
+ ALERT_LOW_ARMY_MAINTENANCE_TITLE: "Basso Mantenimento dell'Esercito" #NEW
+ ALERT_LOW_ARMY_MAINTENANCE: "Attualmente abbiamo un livello molto basso di [army_maintenance|e], mentre siamo in [war|e]! Questo non è consigliabile se si vuole vincere le guerre." #NEW
+ ALERT_LOW_NAVY_MAINTENANCE_TITLE: "Basso Mantenimento della Marina" #NEW
+ ALERT_LOW_NAVY_MAINTENANCE: "Attualmente abbiamo un livello molto basso di [navy_maintenance|e], mentre siamo in [war|e]! Questo non è consigliabile se si vuole vincere le guerre." #NEW
+ ALERT_EXILED_UNITS_TITLE: "Eserciti Esiliati" #NEW
+ ALERT_EXILED_UNITS: "I seguenti [armies|e] sono [Concept('exiled', 'Esiliati')|e] in territorio straniero e devono tornare in territorio amico prima di poter combattere di nuovo:" #NEW
+ ALERT_ARMIES_ON_ICE_TITLE: "Eserciti sul Ghiaccio" #NEW
+ ALERT_ARMIES_ON_ICE: "I seguenti [armies|e] sono su acque [Concept('frozen', 'ghiacciate')|e] e dovrebbero cercare di tornare sulla terraferma prima che si sciolga:" #NEW
+ ALERT_NAVIES_STUCK_IN_ICE_TITLE: "Flotte Bloccate nel Ghiaccio" #NEW
+ ALERT_NAVIES_STUCK_IN_ICE: "I seguenti [navies|e] are stuck in [frozen|e] sono bloccate in acque [Concept('frozen', 'ghiacciate')|e] subendo un graduale attrito e non potendo muoversi finché il ghiaccio non si scioglie:" #NEW
+ ALERT_NAVY_ATTRITION_TITLE: "Flotte con Attrito" #NEW
+ ALERT_NAVY_ATTRITION: "Le seguenti [navies|e] stanno subendo [attrition|e]:" #NEW
+ ALERT_WE_CAN_ENFORCE_PEACE_TITLE: "Pace Imminente" #NEW
+ ALERT_WE_CAN_ENFORCE_PEACE: "Il nostro [war_goal|e] potrebbe essere imposto automaticamente nelle seguenti [wars|e]." #NEW
+ ALERT_THEY_CAN_ENFORCE_PEACE_TITLE: "Pace Imminente" #NEW
+ ALERT_THEY_CAN_ENFORCE_PEACE: "Potremmo avere un [war_goal|e] imposto automaticamente su di noi nelle seguenti [wars|e]." #NEW
+ ALERT_CAN_WHITE_PEACE_TITLE: "Pace Bianca Imminente" #NEW
+ ALERT_WE_CAN_WHITE_PEACE: "Una [white_peace|e] può essere imposta, poiché abbiamo difeso l'[war_goal|e] abbastanza a lungo nelle seguenti guerre:" #NEW
+ ALERT_THEY_CAN_WHITE_PEACE: "Una [white_peace|e] può essere imposta, poiché non siamo riusciti a impedire l'occupazione dell'[war_goal|e] nelle seguenti guerre:" #NEW
+ ALERT_WE_CAN_WHITE_PEACE_STALLED: "Siamo in grado di imporre una [white_peace|e] nelle seguenti guerre in fase di stallo:" #NEW
+ ALERT_THEY_CAN_WHITE_PEACE_STALLED: "Una [white_peace|e] può essere imposta a noi nelle seguenti guerre in fase di stallo:" #NEW
+ STALLED_WAR_ENTRY_ALERT: "$BULLET_WITH_TAB$$NAME|Y$ $ICON$ (da $DATE|Y$)" #NEW
+ ALERT_CALL_FOR_PEACE_TITLE: "Appello alla Pace" #NEW
+ ALERT_CALL_FOR_PEACE: "Se una [war|e] è durata più di $VAL|Y$ mesi, e la stiamo vincendo, il popolo vorrà che la [war|e] sia vinta. Questa situazione si applica alle seguenti guerre:\n$WHY$\nGli effetti continueranno ad aumentare fino alla firma della pace, e il nostro appello alla pace sta attualmente avendo il seguente effetto:\n$HOW$" #NEW
  LIST_OF_POTENTIAL_COALITION_COUNTRIES_TT: "I seguenti paesi potrebbero aderire a una [GetInternationalOrganizationType('coalition').GetName] contro di noi:"
  POTENTIAL_COALITION_COUNTRIES_EXTRA_NUM: " e $VAL|V$ altri [members|e]..."
  WAR_ENTRY_ALERT: "\n$BULLET_WITH_TAB$$NAME|Y$ $ICON$\n$WHY$"
  ALERT_WAR_CALL_PEACE_ENTRY: "[WAR.GetName]: $WARSCORE|Y$\n"
  UNIT_NO_FOOD_ALERT_ENTRY: "[UNIT.GetName]: [UNIT.GetFoodPercentage|Y%/2]"
- ALERT_WEATHER_SYSTEM_TITLE: "Wayward Weather" #NEW
- #ALERT_WEATHER_SYSTEM: "#T Tempo Instabile#!\nI [weather_systems|e] stanno attualmente interessando il nostro [country|e]." #OLD ITA
- ALERT_WEATHER_SYSTEM: "[weather_systems|e] are currently affecting our [country|e]." #NEW
- #ALERT_WEATHER_SYSTEM: "#T Wayward Weather#!\n[weather_systems|e] are currently affecting our [country|e]." #OLD ENG
+ ALERT_WEATHER_SYSTEM_TITLE: "Tempo Instabile" #NEW
+ ALERT_WEATHER_SYSTEM: "Dei [weather_systems|e] stanno attualmente interessando il nostro [country|e]." #NEW
  ALERT_WEATHER_SYSTEM_ENTRY: "$VAL$:" # Supportare [LOCATION.GetName] e [TARGET_LOCATION.GetName]
  ALERT_RAISED_REBELS: "#T Ribelli in Rivolta#!\nAlcuni [rebels|e] si sono sollevati nel nostro [country|e]:"
  ALERT_RAISED_REBELS_ENTRY: "$VAL$ [rebels|e] in [LOCATION.GetName]"
- ALERT_POSSIBLE_REVOLTS_TITLE: "Rebel Movements" #NEW
- #ALERT_POSSIBLE_REVOLTS: "#T Movimenti Ribelli#!\nCi sono [rebels|e] nel nostro [country|e]." #OLD ITA
- ALERT_POSSIBLE_REVOLTS: "There are [rebels|e] in our [country|e]." #NEW
- #ALERT_POSSIBLE_REVOLTS: "#T Rebel Movements#!\nThere are [rebels|e] in our [country|e]." #OLD ENG
+ ALERT_POSSIBLE_REVOLTS_TITLE: "Movimenti Ribelli" #NEW
+ ALERT_POSSIBLE_REVOLTS: "Ci sono [rebels|e] nel nostro [country|e]." #NEW
  ALERT_REVOLT_ENTRY: "[REBEL.GetTextIcon] [REBEL.GetName]: [REBEL.GetProgress|2Y%] ([REBEL.GetMonthlyChange|<-=2%])"
- #ALERT_RESOLUTION_TITLE: "#T Risoluzioni da Votare#!" #OLD ITA
- ALERT_RESOLUTION_TITLE: "Resolutions to vote on" #NEW
- #ALERT_RESOLUTION_TITLE: "#T Resolutions to vote on#!" #OLD ENG
+ ALERT_RESOLUTION_TITLE: "Risoluzioni da Votare" #NEW
  ALERT_RESOLUTION_VOTE: "[RESOLUTION.GetName] è oggetto di dibattito:"
  ALERT_RESOLUTION_VOTE_ENTRY: "$EFFECT_LIST_BULLET$ $NUM$ voti per $VOTE$"
- ALERT_RULER_INCOMPETENT_TITLE: "Incompetent Ruler" #NEW
- #ALERT_RULER_INCOMPETENT: "#T Governante Incompetente#!\nIl nostro attuale [ruler|e] [CHARACTER.GetName] ha un'[ability|e] notevolmente bassa:\n[Character.GetTotalAbility]." #OLD ITA
- ALERT_RULER_INCOMPETENT: "Our current [ruler|e] [CHARACTER.GetName] has remarkably low [ability|e]:\n[Character.GetTotalAbility]." #NEW
- #ALERT_RULER_INCOMPETENT: "#T Incompetent Ruler#!\nOur current [ruler|e] [CHARACTER.GetName] has remarkably low [ability|e]:\n[Character.GetTotalAbility]." #OLD ENG
- ALERT_HEIR_INCOMPETENT_TITLE: "Incompetent Heir" #NEW
- #ALERT_HEIR_INCOMPETENT: "#T Erede Incompetente#!\nIl nostro attuale [heir|e] [CHARACTER.GetName] ha un'[ability|e] notevolmente bassa:\n[Character.GetTotalAbility]." #OLD ITA
- ALERT_HEIR_INCOMPETENT: "Our current [heir|e] [CHARACTER.GetName] has remarkably low [ability|e]:\n[Character.GetTotalAbility]." #NEW
- #ALERT_HEIR_INCOMPETENT: "#T Incompetent Heir#!\nOur current [heir|e] [CHARACTER.GetName] has remarkably low [ability|e]:\n[Character.GetTotalAbility]." #OLD ENG
- ALERT_HEIR_UNDERAGE_TITLE: "Underage Heir" #NEW
- #ALERT_HEIR_UNDERAGE: "#T Erede Minorenne#!\nIl nostro attuale [heir|e] [CHARACTER.GetName] è solo un [child|e] di [CHARACTER.GetAgeInYears] anni, non potrà diventare [ruler|e] fino all'età [Concept('adult', 'adulta')|e]. Potremmo essere governati da una [regency|e] fino a quel momento." #OLD ITA
- ALERT_HEIR_UNDERAGE: "Our current [heir|e] [CHARACTER.GetName] is a mere [child|e] of [CHARACTER.GetAgeInYears], but [CHARACTER.GetHeSheFormal] cannot become the [ruler|e] until [CHARACTER.GetSheHe] is an [adult|e]. We may be ruled by a [regency|e] until that time." #NEW
- #ALERT_HEIR_UNDERAGE: "#T Underage Heir#!\nOur current [heir|e] [CHARACTER.GetName] is a mere [child|e] of [CHARACTER.GetAgeInYears], but [CHARACTER.GetHeSheFormal] cannot become the [ruler|e] until [CHARACTER.GetSheHe] is an [adult|e]. We may be ruled by a [regency|e] until that time." #OLD ENG
+ ALERT_RULER_INCOMPETENT_TITLE: "Governante Incompetente" #NEW
+ ALERT_RULER_INCOMPETENT: "Il nostro attuale [ruler|e] [CHARACTER.GetName] ha un'[ability|e] notevolmente bassa:\n[Character.GetTotalAbility]." #NEW
+ ALERT_HEIR_INCOMPETENT_TITLE: "Erede Incompetente" #NEW
+ ALERT_HEIR_INCOMPETENT: "Il nostro attuale [heir|e] [CHARACTER.GetName] ha un'[ability|e] notevolmente bassa:\n[Character.GetTotalAbility]." #NEW
+ ALERT_HEIR_UNDERAGE_TITLE: "Erede Minorenne" #NEW
+ ALERT_HEIR_UNDERAGE: "Il nostro attuale [heir|e] [CHARACTER.GetName] è solo un [child|e] di [CHARACTER.GetAgeInYears], non potrà diventare il [ruler|e] finchè non sarà [adult|e]. Potremmo essere governati da una [regency|e] fino a quel momento." #NEW
  ALERT_CHILD_UNEDUCATED: "I Bambini Possono Avere un'Istruzione Migliore"
  ALERT_CHILD_UNEDUCATED_PLURAL: "Bambini Coinvolti"
  ALERT_CHILD_UNEDUCATED_TEXT: "Uno o più bambini della nostra dinastia stanno seguendo un'[education|e] Bilanciata. Possiamo cambiarla per concentrarci maggiormente sull'[adm|e], sull'[dip|e] o sull'[mil|e]."
- ALERT_HEIR_UNMARRIED_TITLE: "Unmarried Adult Heir" #NEW
- #ALERT_HEIR_UNMARRIED: "#T Erede Adulto non Sposato#!\nL'attuale [heir|e] [CHARACTER.GetName] è attualmente un [adult|e] e non è [married|e]. È ora che le cose cambino. Possiamo o organizzare un [royal_marriage|e] con un altro [country|e] o combinare un matrimonio con un nobile o qualcuno [lowborn|e] nel nostro Paese." #OLD ITA
- ALERT_HEIR_UNMARRIED: "The current [heir|e] [CHARACTER.GetName] is currently an [adult|e] and not [married|e]. It is time for [CHARACTER.GetHimHerFormal] to get married. We can either arrange a [royal_marriage|e] with another [country|e], or arrange a marriage with a noble or [lowborn|e] from our own country." #NEW
- #ALERT_HEIR_UNMARRIED: "#T Unmarried Adult Heir#!\nThe current [heir|e] [CHARACTER.GetName] is currently an [adult|e] and not [married|e]. It is time for [CHARACTER.GetHimHerFormal] to get married. We can either arrange a [royal_marriage|e] with another [country|e], or arrange a marriage with a noble or [lowborn|e] from our own country." #OLD ENG
- ALERT_RULER_UNMARRIED_TITLE: "Unmarried [Player.GetGovernment.GetRulerTitle]" #NEW
- #ALERT_RULER_UNMARRIED: "#T [COUNTRY.GetGovernment.GetRulerTitle] Non Sposato#!\n[COUNTRY.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][COUNTRY.GetGovernment.GetFullRulerName] è attualmente un [adult|e] e non è [married|e]. È ora che le cose cambino. Possiamo organizzare un [royal_marriage|e] con un altro [country|e] o combinare un matrimonio con un nobile o qualcuno [lowborn|e] nel nostro Paese." #OLD ITA
- ALERT_RULER_UNMARRIED: "[COUNTRY.GetGovernment.GetFullRulerName] is currently an [adult|e] and not [married|e]. It is time for [CHARACTER.GetHimHerFormal] to get married. We can either arrange a [royal_marriage|e] with another [country|e], or arrange a marriage with a noble or [lowborn|e] from our own country." #NEW
- #ALERT_RULER_UNMARRIED: "#T Unmarried [COUNTRY.GetGovernment.GetRulerTitle]#!\n[COUNTRY.GetGovernment.GetFullRulerName] is currently an [adult|e] and not [married|e]. It is time for [CHARACTER.GetHimHerFormal] to get married. We can either arrange a [royal_marriage|e] with another [country|e], or arrange a marriage with a noble or [lowborn|e] from our own country." #OLD ENG
+ ALERT_HEIR_UNMARRIED_TITLE: "Erede Adulto non Sposato" #NEW
+ ALERT_HEIR_UNMARRIED: "L'attuale [heir|e] [CHARACTER.GetName] è un [adult|e] e attualmente non è [married|e]. È ora che lo faccia. Possiamo o organizzare un [royal_marriage|e] con un altro [country|e] o combinare un matrimonio con un nobile o qualcuno [lowborn|e] nel nostro Paese." #NEW
+ ALERT_RULER_UNMARRIED_TITLE: "[Player.GetGovernment.GetRulerTitle] Non Sposat[Player.GetGovernment.GetRuler.Custom('IT_ART_O_A')]" #NEW
+ ALERT_RULER_UNMARRIED: "[COUNTRY.GetGovernment.GetFullRulerName] è un [adult|e] e attualmente non è [married|e]. È ora che lo faccia. Possiamo o organizzare un [royal_marriage|e] con un altro [country|e] o combinare un matrimonio con un nobile o qualcuno [lowborn|e] nel nostro Paese." #NEW
  ALERT_MERCENARY_ENTRY: "Il contratto con [MERCENARY.GetName] termina tra $MONTHS|Y$ mesi."
- #ALERT_CONTRACTS: "#T Contratti Mercenari in Scadenza#!" #OLD ITA
- ALERT_CONTRACTS: "Mercenary contracts expiring" #NEW
- #ALERT_CONTRACTS: "#T Mercenary contracts expiring#!" #OLD ENG
- #ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO: "#T Vicini all'Essere Bersaglio di un'Organizzazione Internazionale#!" #OLD ITA
- ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO: "Close to being target of International Organization" #NEW
- #ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO: "#T Close to being target of International Organization#!" #OLD ENG
+ ALERT_CONTRACTS: "Contratti Mercenari in scadenza" #NEW
+ ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO: "Vicini all'Essere Bersaglio di un'Organizzazione Internazionale" #NEW
  ALERT_CAN_BE_TARGET_OF_IO_ENTRY: "Possiamo diventare il bersaglio di un [INTERNATIONAL_ORGANIZATION_TYPE.GetName]."
  ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO_ENTRY: "Siamo vicini all'essere il bersaglio di una [INTERNATIONAL_ORGANIZATION_TYPE.GetName]."
- #ALERT_CAN_JOIN_TARGETTED_IO: "#T Possiamo Aderire a un'Organizzazione Internazionale#!" #OLD ITA
- ALERT_CAN_JOIN_TARGETTED_IO: "We can join an International Organization" #NEW
- #ALERT_CAN_JOIN_TARGETTED_IO: "#T We can join an International Organization#!" #OLD ENG
+ ALERT_CAN_JOIN_TARGETTED_IO: "Possiamo Aderire a un'Organizzazione Internazionale" #NEW
  ALERT_CAN_JOIN_TARGETTED_IO_ENTRY: "[INTERNATIONAL_ORGANIZATION.GetName]"
- #ALERT_UNPROFITABLE_TRADE: "#T Commerci non Redditizi#!" #OLD ITA
- ALERT_UNPROFITABLE_TRADE: "Unprofitable Trades" #NEW
- #ALERT_UNPROFITABLE_TRADE: "#T Unprofitable Trades#!" #OLD ENG
+ ALERT_UNPROFITABLE_TRADE: "Commerci non Redditizi" #NEW
  ALERT_TRADE_ENTRY: "[TRADE.GetName]: [TRADE.GetProfit|+=2][gold_i]"
  ALERT_TRADE_EXTRA_NUM: "... e $VAL|V$ altri [trades|e]."
- #ALERT_NO_SUPPLIES_TRADE: "#T Il Commercio ha Esaurito le Scorte#!" #OLD ITA
- ALERT_NO_SUPPLIES_TRADE: "Trade has run out of Supply" #NEW
- #ALERT_NO_SUPPLIES_TRADE: "#T Trade has run out of Supply#!" #OLD ENG
+ ALERT_NO_SUPPLIES_TRADE: "Il Commercio ha esaurito le Scorte" #NEW
  ALERT_NO_SUPPLIES_ENTRY_SELF: "[TRADE.GetName] ha esaurito le scorte, poiché stiamo già utilizzando tutto il disponibile per altre [exports|e]."
  ALERT_NO_SUPPLIES_ENTRY_DEFAULT: "[TRADE.GetName] ha esaurito le scorte, poiché non c'è nulla di disponibile per l'[export|e]."
  ALERT_NO_SUPPLIES_ENTRY: "[TRADE.GetName] sta perdendo terreno rispetto a $WHO$ chi ha un [merchant_power|e] più alto nel [TRADE.GetFromMarket.GetName]."
- ALERT_CAN_HAVE_MORE_REFORMS_TITLE: "Possible Reforms" #NEW
- #ALERT_CAN_HAVE_MORE_REFORMS: "#T Possibili Riforme#!\nÈ possibile aggiungere $VAL|Y$ altre [government_reforms|e]." #OLD ITA
- ALERT_CAN_HAVE_MORE_REFORMS: "You can add $VAL|Y$ more [government_reforms|e]." #NEW
- #ALERT_CAN_HAVE_MORE_REFORMS: "#T Possible Reforms#!\nYou can add $VAL|Y$ more [government_reforms|e]." #OLD ENG
- ALERT_CAN_UPGRADE_COUNTRY_RANK_TITLE: "We can upgrade Country Rank" #NEW
- #ALERT_CAN_UPGRADE_COUNTRY_RANK: "#T Possiamo Migliorare il Rango del Paese#!\nI seguenti miglioramenti del [country_rank|e] sono disponibili:\n\n$RANKS$." #OLD ITA
- ALERT_CAN_UPGRADE_COUNTRY_RANK: "The following [country_rank|e] upgrades are available:\n\n$RANKS$." #NEW
- #ALERT_CAN_UPGRADE_COUNTRY_RANK: "#T We can upgrade Country Rank#!\nThe following [country_rank|e] upgrades are available:\n\n$RANKS$." #OLD ENG
+ ALERT_CAN_HAVE_MORE_REFORMS_TITLE: "Possibili Riforme" #NEW
+ ALERT_CAN_HAVE_MORE_REFORMS: "È possibile aggiungere $VAL|Y$ altre [government_reforms|e]." #NEW
+ ALERT_CAN_UPGRADE_COUNTRY_RANK_TITLE: "Possiamo migliorare il Rango del Paese" #NEW
+ ALERT_CAN_UPGRADE_COUNTRY_RANK: "I seguenti miglioramenti del [country_rank|e] sono disponibili:\n\n$RANKS$." #NEW
  ALERT_CAN_UPGRADE_COUNTRY_RANK_ENTRY: "[COUNTRY_RANK.GetLevel] - [COUNTRY_RANK.GetNameWithNoTooltip]"
- ALERT_POSSIBLE_LAWS_TITLE: "Laws not Codified" #NEW
- #ALERT_POSSIBLE_LAWS: "#T Leggi non Codificate#!\nLe seguenti [laws|e] non sono state redatte:" #OLD ITA
- ALERT_POSSIBLE_LAWS: "The following [laws|e] have not been written:" #NEW
- #ALERT_POSSIBLE_LAWS: "#T Laws not Codified#!\nThe following [laws|e] have not been written:" #OLD ENG
+ ALERT_POSSIBLE_LAWS_TITLE: "Leggi non Codificate" #NEW
+ ALERT_POSSIBLE_LAWS: "Le seguenti [laws|e] non sono state redatte:" #NEW
  ALERT_LAW_ENTRY: "$BULLET_WITH_TAB$[LAW.GetName]"
- ALERT_POSSIBLE_GOV_ACTION_TITLE: "Possible Cabinet Actions" #NEW
- #ALERT_POSSIBLE_GOV_ACTION: "#T Possibili Azioni del Gabinetto#!\nAttualmente abbiamo la capacità di richiedere al nostro [cabinet|e] a compiere più [cabinet_actions|e]." #OLD ITA
- ALERT_POSSIBLE_GOV_ACTION: "We currently have the capacity to instruct our [cabinet|e] to do more [cabinet_actions|e]." #NEW
- #ALERT_POSSIBLE_GOV_ACTION: "#T Possible Cabinet Actions#!\nWe currently have the capacity to instruct our [cabinet|e] to do more [cabinet_actions|e]." #OLD ENG
- ALERT_MAX_DIPLOMATS_AVAILABLE_TITLE: "Possible Diplomatic Actions" #NEW
- #ALERT_MAX_DIPLOMATS_AVAILABLE: "#T Possibili Azioni Diplomatiche#!\nAttualmente abbiamo raggiunto la nostra capacità massima di [diplomats|e], che possiamo usare per [diplomatic_actions|e]." #OLD ITA
- ALERT_MAX_DIPLOMATS_AVAILABLE: "We are currently at our maximum capacity of [diplomats|e], which we can use on [diplomatic_actions|e]." #NEW
- #ALERT_MAX_DIPLOMATS_AVAILABLE: "#T Possible Diplomatic Actions#!\nWe are currently at our maximum capacity of [diplomats|e], which we can use on [diplomatic_actions|e]." #OLD ENG
- ALERT_RELIGIOUS_ASPECT_AVAILABLE_TITLE: "Possible Religious Aspect" #NEW
- #ALERT_RELIGIOUS_ASPECT_AVAILABLE: "#T Possibile Aspetto Religioso#!\nAttualmente abbiamo la possibilità di aggiungere un nuovo [religious_aspect|e]." #OLD ITA
- ALERT_RELIGIOUS_ASPECT_AVAILABLE: "We currently have the option to add a new [religious_aspect|e]." #NEW
- #ALERT_RELIGIOUS_ASPECT_AVAILABLE: "#T Possible Religious Aspect#!\nWe currently have the option to add a new [religious_aspect|e]." #OLD ENG
- ALERT_RELIGIOUS_FOCUS_AVAILABLE_TITLE: "Possible Religious Focus" #NEW
- #ALERT_RELIGIOUS_FOCUS_AVAILABLE: "#T Possibile Focus Religioso#!\nPossiamo aggiungere un nuovo [religious_focus|e] alla coda di ricerca." #OLD ITA
- ALERT_RELIGIOUS_FOCUS_AVAILABLE: "We can add a new [religious_focus|e] to research queue." #NEW
- #ALERT_RELIGIOUS_FOCUS_AVAILABLE: "#T Possible Religious Focus#!\nWe can add a new [religious_focus|e] to research queue." #OLD ENG
- ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE_TITLE: "Possible [Localize('game_concept_religious_influence')] [Localize('game_concept_actions')]" #NEW
- #ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "#T Possibili [Localize('game_concept_actions')] d'[Localize('game_concept_religious_influence')]#!\nPossiamo utilizzare la nostra [religious_influence|e] sulle seguenti [actions|e]:" #OLD ITA
- ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "We can spend our [religious_influence|e] on the following [actions|e]:" #NEW
- #ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "#T Possible [Localize('game_concept_religious_influence')] [Localize('game_concept_actions')]#!\nWe can spend our [religious_influence|e] on the following [actions|e]:" #OLD ENG
+ ALERT_POSSIBLE_GOV_ACTION_TITLE: "Possibili Azioni del Gabinetto" #NEW
+ ALERT_POSSIBLE_GOV_ACTION: "Attualmente abbiamo la capacità di richiedere al nostro [cabinet|e] di compiere più [cabinet_actions|e]." #NEW
+ ALERT_MAX_DIPLOMATS_AVAILABLE_TITLE: "Possibili Azioni Diplomatiche" #NEW
+ ALERT_MAX_DIPLOMATS_AVAILABLE: "Attualmente abbiamo raggiunto la nostra capacità massima di [diplomats|e] che possiamo usare per [diplomatic_actions|e]." #NEW
+ ALERT_RELIGIOUS_ASPECT_AVAILABLE_TITLE: "Possibile Aspetto Religioso" #NEW
+ ALERT_RELIGIOUS_ASPECT_AVAILABLE: "ttualmente abbiamo la possibilità di aggiungere un nuovo [religious_aspect|e]." #NEW
+ ALERT_RELIGIOUS_FOCUS_AVAILABLE_TITLE: "Possibile Focus Religioso" #NEW
+ ALERT_RELIGIOUS_FOCUS_AVAILABLE: "Possiamo aggiungere un nuovo [religious_focus|e] alla coda di ricerca." #NEW
+ ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE_TITLE: "
+ #ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "#T Possibili [Localize('game_concept_actions')] d'[Localize('game_concept_religious_influence')]" #NEW
+ ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "Possiamo utilizzare la nostra [religious_influence|e] sulle seguenti [actions|e]:" #NEW
  ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE_ENTRY: "$BULLET_WITH_TAB$$ACTION_NAME$"
- ALERT_INTERVENE_RIVAL_WAR_AVAILABLE_TITLE: "Intervene in Rival War" #NEW
- #ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "#T Intervenire nella Guerra tra Rivali#!\nPossiamo intervenire in una guerra contro uno dei nostri [rivals|e]." #OLD ITA
- ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "We can intervene in a war against one of our [rivals|e]." #NEW
- #ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "#T Intervene in Rival War#!\nWe can intervene in a war against one of our [rivals|e]." #OLD ENG
+ ALERT_INTERVENE_RIVAL_WAR_AVAILABLE_TITLE: " Intervenire nella Guerra del Rivale" #NEW
+ ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "Possiamo intervenire in una guerra contro uno dei nostri [rivals|e]." #NEW
  ALERT_INTERVENE_RIVAL_WAR_ENTRY: "[WAR.GetName]: Intervenire contro [COUNTRY.Custom('IT_La')][COUNTRY.GetName]."
- ALERT_ACTION_LACK_CHAR_TITLE: "Cabinet lacks Member" #NEW
- #ALERT_ACTION_LACK_CHAR: "#T Il Gabinetto è Privo di Membri#!\nLe seguenti [cabinet_actions|e] mancano di un [character|e] per condurle:" #OLD ITA
- ALERT_ACTION_LACK_CHAR: "The following [cabinet_actions|e] lack a [character|e] to lead them:" #NEW
- #ALERT_ACTION_LACK_CHAR: "#T Cabinet lacks Member#!\nThe following [cabinet_actions|e] lack a [character|e] to lead them:" #OLD ENG
+ ALERT_ACTION_LACK_CHAR_TITLE: "Gabinetto privo di Membri" #NEW
+ ALERT_ACTION_LACK_CHAR: "Le seguenti [cabinet_actions|e] mancano di un [character|e] per condurle:" #NEW
  ALERT_CABINET_ENTRY: "$BULLET_WITH_TAB$[CABINET.GetName]"
- ALERT_NO_CURRENT_RESEARCH_TITLE: "No Current Research" #NEW
- ALERT_NO_CURRENT_RESEARCH: "Al momento non stiamo conducendo alcuna ricerca sui [advance|e]."
- ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Reaching Research Capacity" #NEW
- #ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "#T Raggiungimento della Capacità di Ricerca #!\nAttualmente abbiamo $AMOUNT|2Y$ [stored_research|e] su un massimo possibile di $MAX|2Y$. Qualsiasi progresso di ricerca in eccesso rispetto al progresso massimo sarà scartato, valuta la possibilità di spendere la ricerca accumulata per ricercare un [advance|e]." #OLD ITA
- ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "We currently have $AMOUNT|2Y$ of [stored_research|e] out of a possible maximum of $MAX|2Y$. Any excess research progress above maximum progress is discarded, consider spending the stored research on researching an [advance|e]." #NEW
- #ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "#T Reaching Research Capacity #!\nWe currently have $AMOUNT|2Y$ of [stored_research|e] out of a possible maximum of $MAX|2Y$. Any excess research progress above maximum progress is discarded, consider spending the stored research on researching an [advance|e]." #OLD ENG
- ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Research Capacity Reached" #NEW
- #ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "#T Capacità di Ricerca Raggiunta #!\nAttualmente abbiamo $AMOUNT|2Y$ [stored_research|e] e non è possibile immagazzinarne altra. Qualsiasi uletriore progresso nella ricerca viene scartato, valuta la possibilità di spendere la ricerca accumulata per ricercare un [advance|e]." #OLD ITA
- ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "We currently have $AMOUNT|2Y$ of [stored_research|e] and cannot store any more of it. Any research progress is discarded, consider spending the stored research on researching an [advance|e]." #NEW
- #ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "#T Research Capacity Reached #!\nWe currently have $AMOUNT|2Y$ of [stored_research|e] and cannot store any more of it. Any research progress is discarded, consider spending the stored research on researching an [advance|e]." #OLD ENG
- ALERT_EMBRACE_INST_TITLE: "Possible Institutions" #NEW
- #ALERT_EMBRACE_INST: "#T Possibili Istituzioni#!\nPossiamo [embrace|e] le seguenti [institutions|e]:" #OLD ITA
- ALERT_EMBRACE_INST: "We can [embrace|e] the following [institutions|e]:" #NEW
- #ALERT_EMBRACE_INST: "#T Possible Institutions#!\nWe can [embrace|e] the following [institutions|e]:" #OLD ENG
+ ALERT_NO_CURRENT_RESEARCH_TITLE: "Nessuna Ricerca in Corso" #NEW
+ ALERT_NO_CURRENT_RESEARCH: "Al momento non stiamo ricercando alcun [advance|e]." #NEW
+ ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Raggiungimento della Capacità di Ricerca" #NEW
+ ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Attualmente abbiamo $AMOUNT|2Y$ [stored_research|e] su un massimo possibile di $MAX|2Y$. Qualsiasi progresso di ricerca in eccesso rispetto al progresso massimo sarà scartato, valuta la possibilità di spendere la ricerca accumulata per ricercare un [advance|e]." #NEW
+ ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Capacità di Ricerca Raggiunta" #NEW
+ ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Attualmente abbiamo $AMOUNT|2Y$ [stored_research|e] e non è possibile immagazzinarne altra. Qualsiasi uletriore progresso nella ricerca viene scartato, valuta la possibilità di spendere la ricerca accumulata per ricercare un [advance|e]." #NEW
+ ALERT_EMBRACE_INST_TITLE: "Possibili Istituzioni" #NEW
+ ALERT_EMBRACE_INST: "Possiamo [embrace|e] le seguenti [institutions|e]:" #NEW
  ALERT_INSTITUTION_ENTRY: "$BULLET_WITH_TAB$[INSTITUTION.GetName]: $PRICE$ (per una diffusione del $VAL|2%$)"
- ALERT_PARLIAMENT_IN_SESSION_TITLE: "Parliament in Session" #NEW
+ ALERT_PARLIAMENT_IN_SESSION_TITLE: "Parlamento in Seduta" #NEW
  #ALERT_PARLIAMENT_IN_SESSION: "#T Parlamento in Seduta!#!\nIl nostro [parliament|e] è in seduta e ci rimarrà per altri [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] giorni." #OLD ITA
  ALERT_PARLIAMENT_IN_SESSION: "Your [parliament|e] is in session and has [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] days left." #NEW
  #ALERT_PARLIAMENT_IN_SESSION: "#T Parliament in Session!#!\nYour [parliament|e] is in session and has [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] days left." #OLD ENG
  ALERT_PARLIAMENT_ISSUE: "Attualmente stanno dibattendo su [COUNTRY.GetGovernment.GetParliament.GetCurrentDebateName]. Il supporto è al [COUNTRY.GetGovernment.GetParliament.GetParliamentIssueSupport|%Y]."
  ALERT_PARLIAMENT_NO_ISSUE: "Al momento non c'è nulla in discussione."
  #ALERT_UNPROFITABLE_BUILDINGS: "#T Edifici non Redditizi#!" #OLD ITA
- ALERT_UNPROFITABLE_BUILDINGS: "Unprofitable Buildings" #NEW
+ ALERT_UNPROFITABLE_BUILDINGS: "Edifici non Redditizi" #NEW
  #ALERT_UNPROFITABLE_BUILDINGS: "#T Unprofitable Buildings#!" #OLD ENG
  ALERT_UNPROFITABLE_BUILDINGS_TEXT: "Degli [buildings|e] non sono redditizi nei seguenti [markets|e]:"
  #ALERT_UNPROFITABLE_BUILDINGS_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName] : [BUILDING.GetNetProfitValuePerLevel|+=2][gold_i]" #OLD ITA
@@ -269,14 +167,14 @@
  ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP: "#T Edifici non Redditizi in [UnprofitableBuildingsEntry.GetMarket.GetName]#!"
  ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP_TEXT: "I seguenti [buildings|e] non sono redditizi:"
  #ALERT_BUILDINGS_MISSING_INPUT: "#T Edifici senza Beni in Ingresso#!" #OLD ITA
- ALERT_BUILDINGS_MISSING_INPUT: "Buildings Missing Inputs" #NEW
+ ALERT_BUILDINGS_MISSING_INPUT: "Edifici senza Beni in Ingresso" #NEW
  #ALERT_BUILDINGS_MISSING_INPUT: "#T Buildings Missing Inputs#!" #OLD ENG
  ALERT_BUILDINGS_MISSING_INPUT_TEXT: "Gli [buildings|e] mancano di [goods|e] in entrata nei seguenti [markets|e]:"
  ALERT_BUILDINGS_MISSING_INPUT_MARKET: "[MARKET.GetName]:"
  ALERT_BUILDINGS_MISSING_INPUT_GOODS: "  @[GOODS.GetKey]![GOODS.GetName]:"
  ALERT_BUILDINGS_MISSING_INPUT_BUILDING: "$BULLET_WITH_TAB$ $GOODS_AMOUNT$ mancanti per $BUILDING_AMOUNT|0$ $BUILDING_NAME$"
  #ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "#T Edifici senza Impiegati#!" #OLD ITA
- ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "Buildings missing Employees" #NEW
+ ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "Edifici senza Impiegati" #NEW
  #ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "#T Buildings missing Employees#!" #OLD ENG
  ALERT_BUILDINGS_MISSING_EMPLOYEES: "Alcuni dei nostri [buildings|e] mancano di impiegati."
  ALERT_BUILDINGS_MISSING_EMPLOYEES_LOCATION: "[LOCATION.GetName] (Velocità di promozione [LOCATION.GetPromote]):"
@@ -297,7 +195,7 @@
  ALERT_RGO_MISSING_EMPLOYEES_LOCATION: "[SBuildingWithMissingEmployees.GetMissingEmployees] per [SBuildingWithMissingEmployees.GetLocation.GetRawMaterial.GetIcon] in [SBuildingWithMissingEmployees.GetLocation.GetName]:"
  ALERT_RGO_MISSING_EMPLOYEES_LARGE: "Da $NUM$ altre località: $VAL|Y$@population!"
  ALERT_INFLATION_RATE: "#T Inflazione in Aumento#!\nLa nostra inflazione è $INFLATION|V2%$, ma sta aumentando del $CHANGE|<V2%R$ al mese."
- ALERT_HIGH_INFLATION_TITLE: "High Inflation" #NEW
+ ALERT_HIGH_INFLATION_TITLE: "Inflazione Elevata" #NEW
  #ALERT_HIGH_INFLATION_RISING: "#T Inflazione Elevata#!\nLa nostra inflazione è al $INFLATION|V2%R$ e aumenta di $CHANGE|<V2%R$ al mese." #OLD ITA
  ALERT_HIGH_INFLATION_RISING: "Our Inflation is high at $INFLATION|V2%R$ and rising by $CHANGE|<V2%R$ per month." #NEW
  #ALERT_HIGH_INFLATION_RISING: "#T High Inflation#!\nOur Inflation is high at $INFLATION|V2%R$ and rising by $CHANGE|<V2%R$ per month." #OLD ENG
@@ -311,80 +209,80 @@
  ALERT_CONSTRUCTIONS_MISSING_INPUT: "Constructions missing inputs" #NEW
  #ALERT_CONSTRUCTIONS_MISSING_INPUT: "#T Constructions missing inputs#!" #OLD ENG
  ALERT_CONSTRUCTIONS_MISSING_INPUT_TEXT: "Le [constructions|e] mancano di [goods|e] nei seguenti [markets|e]:"
- ALERT_STARVING_PROVINCES_TITLE: "Starving Provinces" #NEW
+ ALERT_STARVING_PROVINCES_TITLE: "Province Affamate" #NEW
  #ALERT_STARVING_PROVINCES: "#T Province Affamate#!\nLe seguenti [provinces|e] stanno [Concept('starving', 'Morendo di Fame')|e]:\n" #OLD ITA
- ALERT_STARVING_PROVINCES: "The following [provinces|e] are [starving|e]:\n" #NEW
- #ALERT_STARVING_PROVINCES: "#T Starving Provinces#!\nThe following [provinces|e] are [starving|e]:\n" #OLD ENG
- ALERT_RISK_STARVING_PROVINCES_TITLE: "Risk Starving Provinces" #NEW
+ ALERT_STARVING_PROVINCES: "I seguenti [provinces|e] are [starving|e]:\n" #NEW
+ #ALERT_STARVING_PROVINCES: "#T Starving Provinces#!\nI seguenti [provinces|e] are [starving|e]:\n" #OLD ENG
+ ALERT_RISK_STARVING_PROVINCES_TITLE: "Province a Rischio Carestia" #NEW
  #ALERT_RISK_STARVING_PROVINCES: "#T Province a Rischio Carestia#!\nLe seguenti [provinces|e] sono a rischio di [Concept('starving', 'Morendo di Fame')|e]:\n" #OLD ITA
- ALERT_RISK_STARVING_PROVINCES: "The following [provinces|e] are in risk of [starving|e]:\n" #NEW
- #ALERT_RISK_STARVING_PROVINCES: "#T Risk Starving Provinces#!\nThe following [provinces|e] are in risk of [starving|e]:\n" #OLD ENG
+ ALERT_RISK_STARVING_PROVINCES: "I seguenti [provinces|e] are in risk of [starving|e]:\n" #NEW
+ #ALERT_RISK_STARVING_PROVINCES: "#T Risk Starving Provinces#!\nI seguenti [provinces|e] are in risk of [starving|e]:\n" #OLD ENG
  ALERT_BUILDING_ENTRY: "[BUILDING.GetName] in [LOCATION.GetName]: [BUILDING.GetProfitLabel]"
  ALERT_BUILDING_LARGE: "Da $NUM$ altri edifici: $VAL|+=2$[gold_i]"
  ALERT_CONSTRUCTION_ENTRY: "[CONSTRUCTION.GetName]: [CONSTRUCTION.GetMissingGoodsInfo]"
  ALERT_STARVING_PROVINCE_ENTRY: "@province! [PROVINCE.GetName]: [PROVINCE.GetMonthlyFoodWithLabel]@food!"
- ALERT_UNINTEGRATED_PROVINCES_TITLE: "Non-Integrated Provinces" #NEW
+ ALERT_UNINTEGRATED_PROVINCES_TITLE: "Province non Integrate" #NEW
  #ALERT_UNINTEGRATED_PROVINCES: "#T Province non Integrate#!\nLe seguenti [provinces|e] non sono [Concept('integrated', 'Integrate')|e]:" #OLD ITA
- ALERT_UNINTEGRATED_PROVINCES: "The following [provinces|e] are not being [integrated|e]:" #NEW
- #ALERT_UNINTEGRATED_PROVINCES: "#T Non-Integrated Provinces#!\nThe following [provinces|e] are not being [integrated|e]:" #OLD ENG
+ ALERT_UNINTEGRATED_PROVINCES: "I seguenti [provinces|e] are not being [integrated|e]:" #NEW
+ #ALERT_UNINTEGRATED_PROVINCES: "#T Non-Integrated Provinces#!\nI seguenti [provinces|e] are not being [integrated|e]:" #OLD ENG
  ALERT_UNINTEGRATED_PROVINCE_ENTRY: "@province! [PROVINCE.GetName]"
- ALERT_PRIVATEERS_TITLE: "Hostile Pirates" #NEW
+ ALERT_PRIVATEERS_TITLE: "Pirati Ostili" #NEW
  #ALERT_PRIVATEERS: "#T Pirati Ostili#!\nCi sono [privateers|e] ostili e/o [pirates|e] in $INFO$." #OLD ITA
- ALERT_PRIVATEERS: "There are hostile [privateers|e] and/or [pirates|e] in the following [locations|e]." #NEW
+ ALERT_PRIVATEERS: "There are hostile [privateers|e] and/or [pirates|e] in I seguenti [locations|e]." #NEW
  #ALERT_PRIVATEERS: "#T Hostile Pirates#!\nThere are hostile [privateers|e] and/or [pirates|e] in $INFO$." #OLD ENG
  ALERT_PRIVATEERS_COLUMN: "[privateers|e] Power" #NEW
  ALERT_PIRATES_COLUMN: "[pirates|e] Power" #NEW
- ALERT_DISEASE_OUTBREAK_TITLE: "Disease affecting our Country" #NEW
+ ALERT_DISEASE_OUTBREAK_TITLE: "Le Malattie affliggono il Paese" #NEW
  #ALERT_DISEASE_OUTBREAK: "#T Le Malattie Affliggono il Paese#!\nQueste [diseases|e] stanno affliggendo il nostro Paese: $INFO$." #OLD ITA
  ALERT_DISEASE_OUTBREAK: "These [diseases|e] are affecting our country: $INFO$." #NEW
  #ALERT_DISEASE_OUTBREAK: "#T Disease affecting our Country#!\nThese [diseases|e] are affecting our country: $INFO$." #OLD ENG
- ALERT_AVAILABLE_MARKETS_TITLE: "Unused Trade Capacity" #NEW
+ ALERT_AVAILABLE_MARKETS_TITLE: "Capacità Commerciale Inutilizzata" #NEW
  #ALERT_AVAILABLE_MARKETS: "#T Capacità Commerciale Inutilizzata #!\nAbbiamo [merchant_capacity|e] non utilizzata nei seguenti [markets|e]:" #OLD ITA
- ALERT_AVAILABLE_MARKETS: "We have unused [merchant_capacity|e] in the following [markets|e]:" #NEW
- #ALERT_AVAILABLE_MARKETS: "#T Unused Trade Capacity #!\nWe have unused [merchant_capacity|e] in the following [markets|e]:" #OLD ENG
+ ALERT_AVAILABLE_MARKETS: "We have unused [merchant_capacity|e] in I seguenti [markets|e]:" #NEW
+ #ALERT_AVAILABLE_MARKETS: "#T Unused Trade Capacity #!\nWe have unused [merchant_capacity|e] in I seguenti [markets|e]:" #OLD ENG
  ALERT_MARKET_ENTRY: "@market! [MARKET.GetName] : $VAL|2+=$ @trade_capacity!"
- ALERT_POSSIBLE_RIVALS_TITLE: "Possible Rivals" #NEW
+ ALERT_POSSIBLE_RIVALS_TITLE: "Possibili Rivali" #NEW
  #ALERT_POSSIBLE_RIVALS: "#T Possibili Rivali#!\nUlteriori [countries|e] che possiamo avere come nostri [rivals|e]: $NUM|Y$\nQuesto ha attualmente il seguente impatto:\n$EFFECT$" #OLD ITA
- ALERT_POSSIBLE_RIVALS: "We can have $NUM|Y$ more [countries|e] as our [rival|e].\nThis currently has the following impact:\n$EFFECT$" #NEW
- #ALERT_POSSIBLE_RIVALS: "#T Possible Rivals#!\nWe can have $NUM|Y$ more [countries|e] as our [rival|e].\nThis currently has the following impact:\n$EFFECT$" #OLD ENG
- ALERT_UNHAPPY_ESTATES_TITLE: "Unhappy Estates" #NEW
+ ALERT_POSSIBLE_RIVALS: "We can have $NUM|Y$ more [countries|e] as our [rival|e].\nThis currently has I seguenti impact:\n$EFFECT$" #NEW
+ #ALERT_POSSIBLE_RIVALS: "#T Possible Rivals#!\nWe can have $NUM|Y$ more [countries|e] as our [rival|e].\nThis currently has I seguenti impact:\n$EFFECT$" #OLD ENG
+ ALERT_UNHAPPY_ESTATES_TITLE: "Ceti Infelici" #NEW
  #ALERT_UNHAPPY_ESTATES_TT: "#T Ceti Infelici#!\nI seguenti [estates|e] sono infelici; questo è dannoso per il nostro [country|e]:" #OLD ITA
- ALERT_UNHAPPY_ESTATES_TT: "The following [estates|e] are unhappy; this is a detriment to our [country|e]:" #NEW
- #ALERT_UNHAPPY_ESTATES_TT: "#T Unhappy Estates#!\nThe following [estates|e] are unhappy; this is a detriment to our [country|e]:" #OLD ENG
+ ALERT_UNHAPPY_ESTATES_TT: "I seguenti [estates|e] are unhappy; this is a detriment to our [country|e]:" #NEW
+ #ALERT_UNHAPPY_ESTATES_TT: "#T Unhappy Estates#!\nI seguenti [estates|e] are unhappy; this is a detriment to our [country|e]:" #OLD ENG
  ALERT_UNHAPPY_ESTATE_ENTRY: "$BULLET_WITH_TAB$[ESTATE.GetName]: [ESTATE.GetSatisfaction|V2%]([ESTATE.GetMonthlySatisfactionChange|<+2%=])"
- ALERT_REBEL_ESTATES_TITLE: "Rebellious Estates" #NEW
+ ALERT_REBEL_ESTATES_TITLE: "Ceti Ribelli" #NEW
  #ALERT_REBEL_ESTATES_TT: "#T Ceti Ribelli#!\nI seguenti [estates|e] hanno troppa poca [estate_satisfaction|e] e si stanno unendo ai [rebels|e]:" #OLD ITA
- ALERT_REBEL_ESTATES_TT: "The following [estates|e] have too low [estate_satisfaction|e] and are joining [rebels|e]:" #NEW
- #ALERT_REBEL_ESTATES_TT: "#T Rebellious Estates#!\nThe following [estates|e] have too low [estate_satisfaction|e] and are joining [rebels|e]:" #OLD ENG
+ ALERT_REBEL_ESTATES_TT: "I seguenti [estates|e] have too low [estate_satisfaction|e] and are joining [rebels|e]:" #NEW
+ #ALERT_REBEL_ESTATES_TT: "#T Rebellious Estates#!\nI seguenti [estates|e] have too low [estate_satisfaction|e] and are joining [rebels|e]:" #OLD ENG
  ALERT_REBEL_ESTATE_ENTRY: "$BULLET_WITH_TAB$[ESTATE.GetName]: [ESTATE.GetSatisfaction|V2%]([ESTATE.GetMonthlySatisfactionChange|<+2%=]@satisfaction!)"
- ALERT_POSSIBLE_FORMABLE_COUNTRIES_TITLE: "Formable Country" #NEW
+ ALERT_POSSIBLE_FORMABLE_COUNTRIES_TITLE: "Paese Formabile" #NEW
  #ALERT_POSSIBLE_FORMABLE_COUNTRIES: "#T Paese Formabile#!\nI seguenti [formable_countries|e] sono disponibili per noi:" #OLD ITA
- ALERT_POSSIBLE_FORMABLE_COUNTRIES: "The following [formable_countries|e] are available to us:" #NEW
- #ALERT_POSSIBLE_FORMABLE_COUNTRIES: "#T Formable Country#!\nThe following [formable_countries|e] are available to us:" #OLD ENG
+ ALERT_POSSIBLE_FORMABLE_COUNTRIES: "I seguenti [formable_countries|e] are available to us:" #NEW
+ #ALERT_POSSIBLE_FORMABLE_COUNTRIES: "#T Formable Country#!\nI seguenti [formable_countries|e] are available to us:" #OLD ENG
  ALERT_POSSIBLE_FORMABLE_COUNTRY_ENTRY: "[FORMABLE_COUNTRY.GetTag]: [FORMABLE_COUNTRY.GetName|Y] (Tier [FORMABLE_COUNTRY.GetRankNum|W0])"
- ALERT_HELP_INFORMATION_TITLE: "Welcome to Europa Universalis V" #NEW
+ ALERT_HELP_INFORMATION_TITLE: "Benvenuto in Europa Universalis V" #NEW
  #ALERT_HELP_INFORMATION: "#T Benvenuti in Europa Universalis V#!\n\nTi consigliamo di dare un'occhiata all'@agenda! #high Agenda#! prima di iniziare la tua campagna. Vedrai il contesto storico e i suggerimenti adattati alla situazione iniziale del tuo [country|e].\n\nPuoi anche dare un'occhiata al [Link('hints', '', '@hint! Pannello dei Suggerimenti')] per visualizzare l'elenco completo dei Suggerimenti." #OLD ITA
  ALERT_HELP_INFORMATION: "We recommend you take a look at the @agenda! #high Agenda#! before starting your campaign. You will see Historical context and Hints adapted to the starting situation of your [country|e].\n\nYou can also take a look at the [Link('hints', '', '@hint! Hint Panel')] to see the full list of Hints." #NEW
  #ALERT_HELP_INFORMATION: "#T Welcome to Europa Universalis V#!\n\nWe recommend you take a look at the @agenda! #high Agenda#! before starting your campaign. You will see Historical context and Hints adapted to the starting situation of your [country|e].\n\nYou can also take a look at the [Link('hints', '', '@hint! Hint Panel')] to see the full list of Hints." #OLD ENG
- ALERT_NON_EXPERT_WELCOME_TITLE: "Starting Advice for [Player.GetNameWithNoTooltip]" #NEW
+ ALERT_NON_EXPERT_WELCOME_TITLE: "Consigli Iniziali per [Player.Custom('IT_La')][Player.GetNameWithNoTooltip]" #NEW
  #ALERT_NON_EXPERT_WELCOME: "#T Consigli iniziali per [Player.Custom('IT_La')][Player.GetNameWithNoTooltip] V#!\n\nSe vuoi sapere come iniziare con il tuo Paese, ti consigliamo di leggere il suggerimento iniziale." #OLD ITA
  ALERT_NON_EXPERT_WELCOME: "If you want to know how to start with your country, we recommend you to read the starting hint." #NEW
  #ALERT_NON_EXPERT_WELCOME: "#T Starting Advice for [Player.GetNameWithNoTooltip] V#!\n\nIf you want to know how to start with your country, we recommend you to read the starting hint." #OLD ENG
  ALERT_POPS_WITH_NEEDS: "Pop con Bisogni"
  ALERT_POPS_WITH_NEEDS_TEXT: "I [pops|e] mancano di [goods|e] nei seguenti [markets|e], cosa che abbassa la loro [Concept('pop_satisfaction', 'Soddisfazione')|e]. Non dovrebbe preoccuparci più di tanto, purché non si [Concept('rebel', 'Ribellino')|e]."
  ALERT_POPS_WITH_NEEDS_ENTRY: "$BULLET_WITH_TAB$Lack $MISSINGGOODS$ in [MARKET.GetName]"
- CONTROL_GROUPS_ALERT_ADVICE_TITLE: "Possible Control Groups" #NEW
+ CONTROL_GROUPS_ALERT_ADVICE_TITLE: "Possibili Gruppi di Controllo" #NEW
  #CONTROL_GROUPS_ALERT_ADVICE: "#T Possibili Gruppi di Controllo#!\nÈ possibile creare collegamenti rapidi ad alcune entità premendo Ctrl+Numero con l'entità selezionata:\n$BULLET$[markets|e]\n$BULLET$[locations|e]\n$BULLET$[units|e]\n$BULLET$[characters|e]\n$BULLET$[goods|e]\n$BULLET$[international_organizations|e]\n$BULLET$[countries|e]" #OLD ITA
  CONTROL_GROUPS_ALERT_ADVICE: "You can create shortcuts to some entities by pressing Ctrl+Number with the entity selected:\n$BULLET$[markets|e]\n$BULLET$[locations|e]\n$BULLET$[units|e]\n$BULLET$[characters|e]\n$BULLET$[goods|e]\n$BULLET$[international_organizations|e]\n$BULLET$[countries|e]" #NEW
  #CONTROL_GROUPS_ALERT_ADVICE: "#T Possible Control Groups#!\nYou can create shortcuts to some entities by pressing Ctrl+Number with the entity selected:\n$BULLET$[markets|e]\n$BULLET$[locations|e]\n$BULLET$[units|e]\n$BULLET$[characters|e]\n$BULLET$[goods|e]\n$BULLET$[international_organizations|e]\n$BULLET$[countries|e]" #OLD ENG
- CALL_PARLIAMENT_ALERT_TITLE: "[Player.GetGovernment.GetParliament.GetName] possible" #NEW
+ CALL_PARLIAMENT_ALERT_TITLE: "[Player.GetGovernment.GetParliament.GetName] possibile" #NEW
  #CALL_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] possible#!\nPossiamo convocare i nostri [estates|e] all'interno del [Player.GetGovernment.GetParliament.GetName], per risolvere qualsiasi [parliament_issue|e] che potrebbero avere, fornendo al contempo l'opportunità di creare un [casus_belli|e], alzare le [taxes|e] o ottenere maggiori [army_levies|e] e [navy_levies|e]." #OLD ITA
  CALL_PARLIAMENT_ALERT: "We can now call in our [estates|e] to the [Player.GetGovernment.GetParliament.GetName], to resolve any [parliament_issue|e] they may have, while also giving the opportunities to create a [casus_belli|e], raise [taxes|e] or gain larger [army_levies|e] and [navy_levies|e]." #NEW
  #CALL_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] possible#!\nWe can now call in our [estates|e] to the [Player.GetGovernment.GetParliament.GetName], to resolve any [parliament_issue|e] they may have, while also giving the opportunities to create a [casus_belli|e], raise [taxes|e] or gain larger [army_levies|e] and [navy_levies|e]." #OLD ENG
- ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT_TITLE: "[Player.GetGovernment.GetParliament.GetName] Requested" #NEW
+ ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT_TITLE: "Richiesta di [Player.GetGovernment.GetParliament.GetName]" #NEW
  #ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] Requested#!\nI nostri [estates|e] sono arrabbiati perché sono passati $VAL|0Y$ mesi dall'ultima convocazione del [parliament|e]. Attualmente, questo ha i seguenti effetti:\n$HOW$" #OLD ITA
- ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "Our [estates|e] are upset because it has been $VAL|0Y$ months since the [parliament|e] was last called. Currently, it has the following effects:\n$HOW$" #NEW
- #ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] Requested#!\nOur [estates|e] are upset because it has been $VAL|0Y$ months since the [parliament|e] was last called. Currently, it has the following effects:\n$HOW$" #OLD ENG
+ ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "Our [estates|e] are upset because it has been $VAL|0Y$ months since the [parliament|e] was last called. Currently, it has I seguenti effects:\n$HOW$" #NEW
+ #ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] Requested#!\nOur [estates|e] are upset because it has been $VAL|0Y$ months since the [parliament|e] was last called. Currently, it has I seguenti effects:\n$HOW$" #OLD ENG
  #ALERT_HAS_DISLOYAL_SUBJECTS: "Alcuni dei nostri [subjects|e] hanno una bassa [subject_loyalty|e] e non si uniranno alle nostre [wars|e]:" #OLD ITA
  ALERT_HAS_DISLOYAL_SUBJECTS: "Some of our [subjects|e] have low [subject_loyalty|e] and will not help in our [wars|e]:" #NEW
  #ALERT_HAS_DISLOYAL_SUBJECTS: "Some of our [subjects|e] have low [subject_loyalty|e] and will not join our [wars|e]:" #OLD ENG
@@ -393,7 +291,7 @@
  #ALERT_HAS_REBELLIOUS_SUBJECTS: "Some of our [subjects|e] have very low [subject_loyalty|e] and will not join our [wars|e]:\n" #OLD ENG
  ALERT_DISLOYAL_SUBJECTS_ENTRY: "$BULLET_WITH_TAB$[COUNTRY.GetName]: $LOYALTY$"
  ALERT_DISLOYAL_SUBJECTS_EXTRA_NUM: " e $VAL|V$ altri [subjects|e]..."
- ALERT_HAS_UNRAISED_LEVIES_TITLE: "Unraised Levies" #NEW
+ ALERT_HAS_UNRAISED_LEVIES_TITLE: "Leve non Radunate" #NEW
  #ALERT_HAS_UNRAISED_LEVIES: "#T Leve non Radunate#!\nPossiamo radunare delle [levies|e] per combattere nelle nostre [wars|e].\n\n" #OLD ITA
  ALERT_HAS_UNRAISED_LEVIES: "We can raise [levies|e] to fight in our [wars|e].\n\n" #NEW
  #ALERT_HAS_UNRAISED_LEVIES: "#T Unraised Levies#!\nWe can raise [levies|e] to fight in our [wars|e].\n\n" #OLD ENG
@@ -403,31 +301,31 @@
  #ALERT_HAS_UNRAISED_NAVY_LEVIES: "#T Leve della Marina non Radunate#!\nPossiamo radunare delle [navy_levies|e] per combattere nelle nostre [wars|e].\n\n" #OLD ITA
  ALERT_HAS_UNRAISED_NAVY_LEVIES: "We can raise [navy_levies|e] to fight in our [wars|e].\n\n" #NEW
  #ALERT_HAS_UNRAISED_NAVY_LEVIES: "#T Unraised Navy Levies#!\nWe can raise [navy_levies|e] to fight in our [wars|e].\n\n" #OLD ENG
- ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE_TITLE: "Army Levies Raised in Peace" #NEW
+ ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE_TITLE: "Leve dell'Esercito Radunate in Pace" #NEW
  #ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE: "#T Leve dell'Esercito Radunate in Pace#!\nAbbiamo [levies|e] dell'esercito radunate in tempo di [peace|e]!\n\n" #OLD ITA
  ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE: "We have raised army [levies|e] while in [peace|e]!\n\n" #NEW
  #ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE: "#T Army Levies Raised in Peace#!\nWe have raised army [levies|e] while in [peace|e]!\n\n" #OLD ENG
- ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE_TITLE: "Navy Levies Raised in Peace" #NEW
+ ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE_TITLE: "Leve della Marina Radunate in Pace" #NEW
  #ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE: "#T Leve della Marina in Pace#!\nAbbiamo [levies|e] della marina radunate in tempo di [peace|e]!\n\n" #OLD ITA
  ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE: "We have raised navy [levies|e] while in [peace|e]!\n\n" #NEW
  #ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE: "#T Navy Levies Raised in Peace#!\nWe have raised navy [levies|e] while in [peace|e]!\n\n" #OLD ENG
  ALERT_BEING_ANNEXED_LOYAL: "#T Annessione in Corso#!\nIl nostro [overlord|e] $OVERLORD$ ha iniziato ad [Concept('annex', 'Annetterci')|e] diplomaticamente.\n\nPoiché non siamo uno [disloyal_subject|e], progrediranno ogni mese. Alla fine riusciranno in circa $TIME$.\n\nSe saremo annessi, la partita finirà!\n\nPossiamo rallentare pacificamente il loro progresso con le [cabinet_actions|e] [ShowCabinetActionName('frustrate_annexation')] e [ShowCabinetActionName('sow_disloyalty')], o dichiarare loro [war|e] con il nostro [casus_belli|e] [ShowCasusBelliName('cb_resist_annexation')]!\n\n"
  ALERT_BEING_ANNEXED_DISLOYAL: "#T Annessione in Corso#!\nIl nostro [overlord|e] $OVERLORD$ ha iniziato ad [Concept('annex', 'Annetterci')|e].\n\nTuttavia, finché rimaniamo uno [disloyal_subject|e] non progrediranno. Se ci riescono, la partita finirà!\n\nPossiamo dichiarare loro [war|e] con il nostro [casus_belli|e] [ShowCasusBelliName('cb_resist_annexation')]!\n\n"
- ALERT_ANNEXING_DISLOYAL_SUBJECT_TITLE: "Annexing Disloyal Subject" #NEW
+ ALERT_ANNEXING_DISLOYAL_SUBJECT_TITLE: "Annessione Stati Clienti Sleali" #NEW
  #ALERT_ANNEXING_DISLOYAL_SUBJECT: "#T Annessione di Stati Clienti Sleali#!\nStiamo cercando di [Concept('annex', 'Annettere')|e] uno [subject|e], ma finché rimangono uno [disloyal_subject|e] non faremo progressi. Si tratta di un grave spreco di risorse.\n$SUBJECTS$\n\n" #OLD ITA
  ALERT_ANNEXING_DISLOYAL_SUBJECT: "nWe are attempting to [annex|e] a [subject|e], but while they remain a [disloyal_subject|e] we will not make progress. This is a tragic waste of resources.\n$SUBJECTS$\n\n" #NEW
  #ALERT_ANNEXING_DISLOYAL_SUBJECT: "#T Annexing Disloyal Subject#!\nWe are attempting to [annex|e] a [subject|e], but while they remain a [disloyal_subject|e] we will not make progress. This is a tragic waste of resources.\n$SUBJECTS$\n\n" #OLD ENG
- ALERT_HAS_BAD_ACTORS_TITLE: "Bad Actors" #NEW
+ ALERT_HAS_BAD_ACTORS_TITLE: "Attori Malevoli" #NEW
  #ALERT_HAS_BAD_ACTORS: "#T Attori Malevoli#!\nAl momento siamo oggetto di attività dannose. Dovremmo provare a usare il controspionaggio per sradicarle!\n$INFO$\n\n" #OLD ITA
  ALERT_HAS_BAD_ACTORS: "We are currently the target of some nefarious activity. We should try to use Counterespionage to root it out!\n$INFO$\n\n" #NEW
  #ALERT_HAS_BAD_ACTORS: "#T Bad Actors#!\nWe are currently the target of some nefarious activity. We should try to use Counterespionage to root it out!\n$INFO$\n\n" #OLD ENG
  ALERT_HAS_BAD_ACTORS_ENTRY: "$WHAT|Y$: da $HOW_MANY|Y$ Attoro(i) Malevolo(i)"
- ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_TITLE: "Markets with Low Food Stockpile" #NEW
+ ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_TITLE: "Mercati con Riserve Alimentari Ridotte" #NEW
  #ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "#T Mercati con Riserve Alimentari Ridotte#!\nLe [food_stockpile|e] si esauriranno nei prossimi [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] mesi nei seguenti [markets|e]:\n" #OLD ITA
- ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "[food_stockpile|e] is due to run out in the next [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] months in the following [markets|e]:\n" #NEW
- #ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "#T Markets with Low Food Stockpile#!\n[food_stockpile|e] is due to run out in the next [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] months in the following [markets|e]:\n" #OLD ENG
+ ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "[food_stockpile|e] is due to run out in the next [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] months in I seguenti [markets|e]:\n" #NEW
+ #ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "#T Markets with Low Food Stockpile#!\n[food_stockpile|e] is due to run out in the next [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] months in I seguenti [markets|e]:\n" #OLD ENG
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_ENTRY: "@market! [Market.GetName]: [Market.GetFoodStockpile|2Y]@food! ([Market.GetMonthlyFoodWithLabel])"
- ALERT_NO_PARLIAMENT_DEBATE_TITLE: "No Parliament Debate" #NEW
+ ALERT_NO_PARLIAMENT_DEBATE_TITLE: "Nessun Dibattito Parlamentare" #NEW
  #ALERT_NO_PARLIAMENT_DEBATE: "#T Nessun Dibattito Parlamentare#!\nIl [COUNTRY.GetGovernment.GetParliament.GetName] è attivo, ma non sta venendo dibattuta alcuna [parliament_issue|e].\n\nÈ meglio dare loro qualcosa da fare!\n\n" #OLD ITA
  ALERT_NO_PARLIAMENT_DEBATE: "The [COUNTRY.GetGovernment.GetParliament.GetName] is active, but they are not debating any [parliament_issues|e].\n\nWe had better give them something to do!\n\n" #NEW
  #ALERT_NO_PARLIAMENT_DEBATE: "#T No Parliament Debate#!\nThe [COUNTRY.GetGovernment.GetParliament.GetName] is active, but they are not debating any [parliament_issues|e].\n\nWe had better give them something to do!\n\n" #OLD ENG
@@ -437,7 +335,7 @@
  ALERT_DEPOPULATING_LOCATIONS: "Alcune [locations|e] stanno perdendo la loro [population|e] rapidamente!"
  ALERT_DEPOPULATING_LOCATIONS_ENTRY: "@location! [LOCATION.GetName]: [LOCATION.GetPopulationChangeLabel]@population!"
  ALERT_DEPOPULATING_LOCATIONS_LARGE: "Da $NUM$ altre località: $VAL$@population!"
- ALERT_TRUCE_EXPIRES_TITLE: "We have truces that are expiring soon" #NEW
+ ALERT_TRUCE_EXPIRES_TITLE: "Abbiamo delle tregue che stanno per terminare" #NEW
  #ALERT_TRUCE_EXPIRES: "#T Abbiamo delle tregue che stanno per terminare#!\nQuando una [truce|e] termina, la guerra potrebbe essere dichiarata ancora una volta!\n$COUNTRIES$\n\n" #OLD ITA
  ALERT_TRUCE_EXPIRES: "When [truce|e] ends, the war may be declared once again!\n$COUNTRIES$\n\n" #NEW
  #ALERT_TRUCE_EXPIRES: "#T We have truces that are expiring soon#!\nWhen [truce|e] ends, the war may be declared once again!\n$COUNTRIES$\n\n" #OLD ENG
@@ -446,20 +344,20 @@
  ALERT_CAN_CALL_ALLY_SPECIFIC: "#T Possibilità di Chiamare un Alleato#!\nPossiamo chiamare il nostro alleato [COUNTRY.GetName] per aiutarci nella [WAR.GetName]"
  EMBRACE_ALL_INSTITUTIONS: "Adotta tutte le [institutions|e] disponibili"
  ALERT_IO_NO_ACTIVE_POLICY: "#T Nessuna Politica Attiva#!\nLa [law|e] $LAW$ in $INTERNATIONAL_ORGANIZATION$ non ha nessuna [policy|e] attiva!\n"
- ALERT_MISSING_EXPLORER_TITLE: "Missing Explore" #NEW
+ ALERT_MISSING_EXPLORER_TITLE: "Esploratore Mancante" #NEW
  #ALERT_MISSING_EXPLORER: "#T Esploratore Mancante#!\nLe [explorations|e] mancano di un [explorer|e] nelle seguenti [areas|e]:\n" #OLD ITA
- ALERT_MISSING_EXPLORER: "[explorations|e] are missing an [explorer|e] in the following [areas|e]:\n" #NEW
- #ALERT_MISSING_EXPLORER: "#T Missing Explorer#!\n[explorations|e] are missing an [explorer|e] in the following [areas|e]:\n" #OLD ENG
+ ALERT_MISSING_EXPLORER: "[explorations|e] are missing an [explorer|e] in I seguenti [areas|e]:\n" #NEW
+ #ALERT_MISSING_EXPLORER: "#T Missing Explorer#!\n[explorations|e] are missing an [explorer|e] in I seguenti [areas|e]:\n" #OLD ENG
  ALERT_CONSTRUCTION_MISSING_EXPLORER_ENTRY: "[CONSTRUCTION.GetExplorationArea.GetName]"
  ALERT_EXPLORATION_MISSING_EXPLORER_ENTRY: "[EXPLORATION.GetArea.GetName]"
  ALERT_MISSING_EXPLORER_LEFT_CLICK: "Apri scheda [explorations|e]"
- ALERT_HAS_UNMARRIED_CHILDREN_TITLE: "Unmarried Children" #NEW
+ ALERT_HAS_UNMARRIED_CHILDREN_TITLE: "Figli non Sposati" #NEW
  #ALERT_HAS_UNMARRIED_CHILDREN: "#T Figli non Sposati#!\n[COUNTRY.GetGovernment.GetFullRulerName] ha figli non sposati:\n" #OLD ITA
  ALERT_HAS_UNMARRIED_CHILDREN: "[COUNTRY.GetGovernment.GetFullRulerName] has unmarried children:\n" #NEW
  #ALERT_HAS_UNMARRIED_CHILDREN: "#T Unmarried Children#!\n[COUNTRY.GetGovernment.GetFullRulerName] has unmarried children:\n" #OLD ENG
  ALERT_HAS_UNMARRIED_CHILDREN_ENTRY: "[CHARACTER.GetName] ([CHARACTER.GetAgeInYears])"
  ALERT_HAS_UNMARRIED_CHILDREN_LEFT_CLICK: "Apri la Ricerca di Matrimonio"
- ALERT_CAN_REQUEST_AID_TITLE: "Can Request Aid" #NEW
+ ALERT_CAN_REQUEST_AID_TITLE: "Possibilità di Richiedere Aiuto" #NEW
  #ALERT_CAN_REQUEST_AID: "#T Possibilità di Richiedere Aiuto#!\nPossiamo richiedere aiuto al [pope|e]." #OLD ITA
  ALERT_CAN_REQUEST_AID: "We can request aid from the [pope|e]." #NEW
  #ALERT_CAN_REQUEST_AID: "#T Can Request Aid#!\nWe can request aid from the [pope|e]." #OLD ENG
@@ -472,30 +370,30 @@
  ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION_AND_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ their [heir_selection|e]: [COUNTRY.GetGovernment.GetHeirSelection.GetName] e dei loro [modifiers|e]: $MODIFIER$"
  ALERT_HAS_MEMBER_LEAVING_ENTRY_FALLBACK: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ del fatto che [COUNTRY.GetGovernment.GetHeir.GetName] è stato designato come [heir|e] da forze al di sopra della legge"
  ALERT_HAS_MEMBER_LEAVING_LEFT_CLICK: "Apri visuale [union|e]"
- ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION_TITLE: "Heir Can Have Better Education" #NEW
+ ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION_TITLE: "L'Erede Può Avere un'Istruzione Migliore" #NEW
  #ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION: "#T L'Erede Può Avere un'Istruzione Migliore#!\nIl nostro attuale [heir|e] sta attualmente seguendo $EDUCATION$. Possiamo selezionare una migliore [education|e] per migliorare ulteriormente le sue competenze." #OLD ITA
  ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION: "Our current [heir|e] is currently following $EDUCATION$. We can select better [education|e] to boost their skills further." #NEW
  #ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION: "#T Heir Can Have Better Education#!\nOur current [heir|e] is currently following $EDUCATION$. We can select better [education|e] to boost their skills further." #OLD ENG
- ALERT_INEFFICIENT_MINTING_TITLE: "Inefficient Minting" #NEW
+ ALERT_INEFFICIENT_MINTING_TITLE: "Coniazione Inefficiente" #NEW
  #ALERT_INEFFICIENT_MINTING: "#T Coniazione Inefficiente#!\nLa nostra efficienza di conio è solo del $EFFICIENCY|V2%R$ a causa della mancanza di accesso ai beni necessari, e sta diminuendo la quantità di denaro che otteniamo dalla coniazione." #OLD ITA
  ALERT_INEFFICIENT_MINTING: "Our minting efficiency is only $EFFICIENCY|V2%R$ due to lack of access to needed goods, and it is decreasing the amount of money we get from minting." #NEW
  #ALERT_INEFFICIENT_MINTING: "#T Inefficient Minting#!\nOur minting efficiency is only $EFFICIENCY|V2%R$ due to lack of access to needed goods, and it is decreasing the amount of money we get from minting." #OLD ENG
- ALERT_CLAN_CAN_SETTLE_TITLE: "Clan Can Settle" #NEW
+ ALERT_CLAN_CAN_SETTLE_TITLE: "Il Clan può Stabilirsi" #NEW
  #ALERT_CLAN_CAN_SETTLE: "#T Il Clan può Stabilirsi#!\nI seguenti [members|e] possono [Concept('settled', 'Insediarsi')|e], prendere il controllo della nostra [locations|e] così facendo:\n[building_based|e] : [opinion|e]\n" #OLD ITA
- ALERT_CLAN_CAN_SETTLE: "The following [members|e] can become [settled|e], taking control of our [locations|e] by doing so:\n[building_based|e] : [opinion|e]\n" #NEW
- #ALERT_CLAN_CAN_SETTLE: "#T Clan Can Settle#!\nThe following [members|e] can become [settled|e], taking control of our [locations|e] by doing so:\n[building_based|e] : [opinion|e]\n" #OLD ENG
+ ALERT_CLAN_CAN_SETTLE: "I seguenti [members|e] can become [settled|e], taking control of our [locations|e] by doing so:\n[building_based|e] : [opinion|e]\n" #NEW
+ #ALERT_CLAN_CAN_SETTLE: "#T Clan Can Settle#!\nI seguenti [members|e] can become [settled|e], taking control of our [locations|e] by doing so:\n[building_based|e] : [opinion|e]\n" #OLD ENG
  ALERT_CLAN_CAN_SETTLE_ENTRY: "[COUNTRY.GetName] : $OPINION|+=$"
  ALERT_CLAN_CAN_SETTLE_LEFT_CLICK: "Scorri tra i [countries|e]"
  #ALERT_HAS_LOW_PURITY: "#T Bassa Purezza#!" #OLD ITA
  ALERT_HAS_LOW_PURITY: "Low Purity" #NEW
  #ALERT_HAS_LOW_PURITY: "#T Low Purity#!" #OLD ENG
  ALERT_HAS_LOW_PURITY_TEXT: "Abbiamo una [purity|e] al di sotto di [GetDefine('NEconomy','LOW_PURITY_THRESHOLD')|w], il che ci fornisce i seguenti effetti:"
- ALERT_CAN_JOIN_SECT_TITLE: "Can Join Sect" #NEW
+ ALERT_CAN_JOIN_SECT_TITLE: "Possibilità di Unirsi a una Setta" #NEW
  #ALERT_CAN_JOIN_SECT: "#T Possibilità di Unirsi ad una Setta#!\nPossiamo unirci ad una [sect|e]." #OLD ITA
  ALERT_CAN_JOIN_SECT: "We can join a [sect|e]." #NEW
  #ALERT_CAN_JOIN_SECT: "#T Can Join Sect#!\nWe can join a [sect|e]." #OLD ENG
  ALERT_CAN_ACTIVATE_AVATAR: "#T Possibilità di Attivare l'Avatar#!\nPossiamo attivare un [avatar|e]."
- ALERT_CAN_INVITE_RELIGIOUS_FIGURE_TITLE: "Can Invite Religious Figure" #NEW
+ ALERT_CAN_INVITE_RELIGIOUS_FIGURE_TITLE: "Possibilità di Invitare una Figura Religiosa" #NEW
  #ALERT_CAN_INVITE_RELIGIOUS_FIGURE: "#T Possibilità di Invitare una Figura Religiosa#!\nPossiamo invitare una [religious_figure|e]." #OLD ITA
  ALERT_CAN_INVITE_RELIGIOUS_FIGURE: "We can invite a [religious_figure|e]." #NEW
  #ALERT_CAN_INVITE_RELIGIOUS_FIGURE: "#T Can Invite Religious Figure#!\nWe can invite a [religious_figure|e]." #OLD ENG
@@ -514,12 +412,12 @@
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TEXT: "Le [ships|e] vengono riparate lentamente a causa della mancanza di [goods|e] nei seguenti [markets|e]:"
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP: "#T Mancanza di [goods|e] per le riparazioni nel [LackingGoodsForRepairEntry.GetMarket.GetName]#!"
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP_TEXT: "I seguenti [goods|e] sono necessari per la riparazione delle [ships|e]:"
- ALERT_IS_AT_FORT_LIMIT_TITLE: "Is At Fort Limit" #NEW
+ ALERT_IS_AT_FORT_LIMIT_TITLE: "Raggiunto il Limite dei Forti" #NEW
  #ALERT_IS_AT_FORT_LIMIT: "#T Raggiunto il Limite dei Forti#!\nAbbiamo raggiunto il limite di $LIMIT|w$ per i nostri [buildings|e] [fortifications|e]. Il completamento della costruzione dei seguenti edifici comporterà un [fort_maintenance|e] del $VALUE|-=2%$:" #OLD ITA
- ALERT_IS_AT_FORT_LIMIT: "We are at the limit of our [fortification|e] [buildings|e] score of $LIMIT|w$. Finishing construction of the following buildings will result in $VALUE|-=2%$ [fort_maintenance|e]:" #NEW
- #ALERT_IS_AT_FORT_LIMIT: "#T Is At Fort Limit#!\nWe are at the limit of our [fortification|e] [buildings|e] score of $LIMIT|w$. Finishing construction of the following buildings will result in $VALUE|-=2%$ [fort_maintenance|e]:" #OLD ENG
+ ALERT_IS_AT_FORT_LIMIT: "We are at the limit of our [fortification|e] [buildings|e] score of $LIMIT|w$. Finishing construction of I seguenti buildings will result in $VALUE|-=2%$ [fort_maintenance|e]:" #NEW
+ #ALERT_IS_AT_FORT_LIMIT: "#T Is At Fort Limit#!\nWe are at the limit of our [fortification|e] [buildings|e] score of $LIMIT|w$. Finishing construction of I seguenti buildings will result in $VALUE|-=2%$ [fort_maintenance|e]:" #OLD ENG
  ALERT_IS_AT_FORT_LIMIT_ENTRY: "$BULLET_WITH_TAB$[BUILDING_TYPE.GetName] in [LOCATION.GetName]"
- ALERT_IS_OVER_FORT_LIMIT_TITLE: "Is Over Fort Limit" #NEW
+ ALERT_IS_OVER_FORT_LIMIT_TITLE: "Oltre il Limite dei Forti" #NEW
  #ALERT_IS_OVER_FORT_LIMIT: "#T Oltre il Limite dei Forti#!\nSiamo $OVER_LIMIT|w$ oltre il nostro [fort_limit_with_icon|e] di $LIMIT|w$ e subiamo un aumento di [fort_maintenance_with_icon|e] del $VALUE|-=2%$." #OLD ITA
  ALERT_IS_OVER_FORT_LIMIT: "We are $OVER_LIMIT|w$ over our [fort_limit_with_icon|e] score of $LIMIT|w$ and getting $VALUE|-=2%$ increased [fort_maintenance_with_icon|e]." #NEW
  #ALERT_IS_OVER_FORT_LIMIT: "#T Is Over Fort Limit#!\nWe are $OVER_LIMIT|w$ over our [fort_limit_with_icon|e] score of $LIMIT|w$ and getting $VALUE|-=2%$ increased [fort_maintenance_with_icon|e]." #OLD ENG
@@ -527,10 +425,10 @@
  
  ALERT_ENTRY_INC_ESTATE_TAX: "$BULLET$Potremmo ridurre le [taxes|e] per il ceto [ESTATE.GetName]."
  ALERT_ENTRY_INC_ESTATE_PRIV: "$BULLET$Potremmo concedere al ceto [ESTATE.GetName] un [estate_privilege|e] come $INFO$."
- ALERT_CAN_USE_RELIGIOUS_ACTION_TITLE: "Possible Religious [Localize('game_concept_actions')]" #NEW
+ ALERT_CAN_USE_RELIGIOUS_ACTION_TITLE: "Possibili [Localize('game_concept_actions')] Religiose" #NEW
  #ALERT_CAN_USE_RELIGIOUS_ACTION: "#T Possibili [Localize('game_concept_actions')] Religiose#!\nPossiamo usare le seguenti [actions|e] Religiose:" #OLD ITA
- ALERT_CAN_USE_RELIGIOUS_ACTION: "We can use the following Religious [actions|e]:" #NEW
- #ALERT_CAN_USE_RELIGIOUS_ACTION: "#T Possible Religious [Localize('game_concept_actions')]#!\nWe can use the following Religious [actions|e]:" #OLD ENG
+ ALERT_CAN_USE_RELIGIOUS_ACTION: "We can use I seguenti Religious [actions|e]:" #NEW
+ #ALERT_CAN_USE_RELIGIOUS_ACTION: "#T Possible Religious [Localize('game_concept_actions')]#!\nWe can use I seguenti Religious [actions|e]:" #OLD ENG
  ALERT_CAN_USE_RELIGIOUS_ACTION_ENTRY: "$BULLET_WITH_TAB$$ACTION_NAME$"
  #ALERT_HAS_LESS_POWER_IN_UNION: "#T Status di [Localize('senior_partner')] Minacciato #!" #OLD ITA
  ALERT_HAS_LESS_POWER_IN_UNION: "[Localize('senior_partner')] Status Threatened" #NEW
@@ -549,42 +447,42 @@
  ALERT_CAN_CODIFY_NEW_POLICIES: "New [Localize('Policies')] are Available" #NEW
  #ALERT_CAN_CODIFY_NEW_POLICIES: "#T New [Localize('Policies')] are Available #!" #OLD ENG
  ALERT_CAN_CODIFY_NEW_POLICIES_TEXT: "Le seguenti [laws|e] possono essere codificate usando nuove [policies|e]:"
- ALERT_CAN_USE_COUNTRY_ACTION_TITLE: "Country [Localize('game_concept_action')] Is Off Cooldown" #NEW
+ ALERT_CAN_USE_COUNTRY_ACTION_TITLE: "[Localize('game_concept_action')] del Paese di Nuovo Disponibile" #NEW
  
  #ALERT_CAN_USE_COUNTRY_ACTION: "#T L'[Localize('game_concept_action')] del Paese è di Nuovo Disponibile#!\nL'[action|e] del Paese $ACTION_NAME$ può essere utilizzata di nuovo." #OLD ITA
  ALERT_CAN_USE_COUNTRY_ACTION: "The $ACTION_NAME$ Country [action|e] can be used again." #NEW
  #ALERT_CAN_USE_COUNTRY_ACTION: "#T Country [Localize('game_concept_action')] Is Off Cooldown#!\nThe $ACTION_NAME$ Country [action|e] can be used again." #OLD ENG
  ALERT_COUNTRY_ACTION_COMING_OFF_COOLDOWN: "#T Country [Localize('game_concept_action')] Soon Available#!\nThe $ACTION_NAME$ Country [action|e] can be used in $MONTHS|W$ months." #NEW
  ALERT_ASK_FOR_MONEY_HINT: "This action requires $FAVORS_AMOUNT|0W$@favors! to execute. Curry [favors|e] in advance with one or more [countries|e]." #NEW
- ALERT_STATIC_MODIFIER_TITLE: "Penalties active" #NEW
- ALERT_STATIC_MODIFIER: "The following modifiers are affecting us:" #NEW
+ ALERT_STATIC_MODIFIER_TITLE: "Penalità attive" #NEW
+ ALERT_STATIC_MODIFIER: "I seguenti modifiers are affecting us:" #NEW
  ALERT_STATIC_MODIFIER_ALWAYS_ACTIVE: "always active" #NEW
- ALERT_STATIC_MODIFIER_ENTRY: "$STATIC_MODIFIER$ is giving the following effects:\n$STATIC_MODIFIER_EFFECTS$\n\nThe modifier is active due to:\n$STATIC_MODIFIER_TRIGGERS$" #NEW
- ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS_TITLE: "Great Power Status Threatened" #NEW
+ ALERT_STATIC_MODIFIER_ENTRY: "$STATIC_MODIFIER$ is giving I seguenti effects:\n$STATIC_MODIFIER_EFFECTS$\n\nThe modifier is active due to:\n$STATIC_MODIFIER_TRIGGERS$" #NEW
+ ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS_TITLE: "Status di Grande Potenza Minacciato" #NEW
  ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS: "We are close to losing our status as a [great_power|e] on the #Y $EXPIRATION_DATE$#!!" #NEW
- ALERT_ABOUT_TO_LOSE_HEGEMONY_TITLE: "Hegemony Threatened" #NEW
+ ALERT_ABOUT_TO_LOSE_HEGEMONY_TITLE: "Egemonia Minacciata" #NEW
  ALERT_ABOUT_TO_LOSE_HEGEMONY: "The [hegemonies|e] is at danger to be lost:" #NEW
  ALERT_ABOUT_TO_LOSE_HEGEMONY_ALWAYS_ACTIVE: "always active" #NEW
  ALERT_ABOUT_TO_LOSE_HEGEMONY_ENTRY: "$HEGEMONY$ on the #Y $EXPIRATION_DATE$#! due to\n$HEGEMONY_TRIGGERS$" #NEW
  ALERT_ABOUT_TO_LOSE_HEGEMONY_REPLACED_ENTRY: "Other [great_powers|e] will be able to take $HEGEMONY$ from us from #Y $EXPIRATION_DATE$#! onwards. We are at risk due to\n$HEGEMONY_TRIGGERS$" #NEW
- ALERT_HAS_UPGRADEABLE_BUILDINGS_TITLE: "Buildings Can Be Upgraded" #NEW
- ALERT_UPGRADEABLE_BUILDINGS_TEXT: "[buildings|e] can be upgraded in the following [markets|e]:" #NEW
+ ALERT_HAS_UPGRADEABLE_BUILDINGS_TITLE: "Degli Edifici Possono Essere Migliorati" #NEW
+ ALERT_UPGRADEABLE_BUILDINGS_TEXT: "[buildings|e] can be upgraded in I seguenti [markets|e]:" #NEW
  ALERT_UPGRADEABLE_BUILDINGS_TOOLTIP: "#T Upgradeable Buildings in [MarketUpgradeableBuildings.GetMarket.GetName]#!" #NEW
- ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TITLE: "Important Buildings Missing Inputs" #NEW
- ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TEXT: "Important [buildings|e] are missing input [goods|e] in the following [markets|e]:" #NEW
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TITLE: "Edifici Importanti Mancano di Beni in Entrata" #NEW
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TEXT: "Important [buildings|e] are missing input [goods|e] in I seguenti [markets|e]:" #NEW
  ALERTS_SETTINGS_TOGGLE: "Toggle Alerts Menu" #NEW
- ALERTS_SETTINGS_TITLE: "Alerts Menu" #NEW
+ ALERTS_SETTINGS_TITLE: "Menu Avvisi" #NEW
  DISCARDED_ALERTS: "Discarded Alerts" #NEW
  HIDDEN_ALERTS: "Hidden Alerts" #NEW
  ALERT_UNMUTE: "Unmute" #NEW
  ALERT_MUTE: "Mute" #NEW
- ALERT_MUTE_TITLE: "Muted alert" #NEW
- ALERT_UNMUTE_TITLE: "Unmuted alert" #NEW
+ ALERT_MUTE_TITLE: "Avviso silenziato" #NEW
+ ALERT_UNMUTE_TITLE: "Avviso non silenziato" #NEW
  ALERT_MUTED_TT: "This alert will not automatically return to the alert bar, even if its content changes." #NEW
  ALERT_UNMUTED_TT: "This alert will automatically return to the alert bar if its content changes." #NEW
- ALERT_DISCARD_TITLE: "Discard alert" #NEW
+ ALERT_DISCARD_TITLE: "Avviso ignorato" #NEW
  ALERT_DISCARD_TT: "Discarded alerts will not show on hidden alerts" #NEW
- ALERT_UNDISCARD: "Undiscard" #NEW
+ ALERT_UNDISCARD: "Non ignorato" #NEW
  ALERT_SETTINGS_TOGGLE_VISIBILITY: "Toggle hidden visibility" #NEW
  ALERT_SETTINGS_TOGGLE_VISIBILITY_UNACTIVE: "Toggle visibility of unactive alerts" #NEW
  

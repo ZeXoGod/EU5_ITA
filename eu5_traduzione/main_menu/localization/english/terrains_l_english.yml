@@ -47,17 +47,15 @@
  
  #Misc
  TERRAIN_MOVEMENT_COST: "Costo di movimento per [units|e]: $VALUE|-=%V$"
- #TERRAIN_PROXIMITY_COST: "Impatto della prossimità: $VALUE|-=%$" #OLD ITA
- TERRAIN_PROXIMITY_COST: "Proximity Speed Impact: $VALUE|+=%$" #NEW
- #TERRAIN_PROXIMITY_COST: "Proximity impact: $VALUE|-=%$" #OLD ENG
+ #TERRAIN_PROXIMITY_COST: "Impatto Velocità di Prossimità: $VALUE|+=%$" #OLD ITA
  TERRAIN_ATTACKER_PENALTY: "Penalità per l'Attaccante in [combat|e]: $VALUE|-=$"
  TERRAIN_ATTACKER_PENALTY_TT: "Questa [location|e] infligge una penalità di [Location.GetAttackerPenalty|-=] all'[attacker|e] in [combat|e]."
  TERRAIN_CAN_FREEZE_OVER: "Può gelare d'inverno, bloccando il movimento delle [ships|e] e permettendo il passaggio alle [armies|e]"
  TERRAIN_BLOCKS_IN_WINTER: "Le [armies|e] non possono entrare durante $STATIC_MODIFIER_NAME_winter_normal$ o $STATIC_MODIFIER_NAME_winter_severe$."
  TERRAIN_COLONIAL_MIGRATION: "[colonial_migration|e]: $VALUE|+=%$" #NEW
- COLO_CLIMATE_IMP: "$NUM|V$ [CLIMATE.GetName] [locations|e]: $VAL|+=%$" #NEW
- COLO_VEGETATION_IMP: "$NUM|V$ [VEGETATION.GetName] [locations|e]: $VAL|+=%$" #NEW
- COLO_TOPOGRAPHY_IMP: "$NUM|V$ [TOPOGRAPHY.GetName] [locations|e]: $VAL|+=%$" #NEW
+ COLO_CLIMATE_IMP: "$NUM|V$ [locations|e] [CLIMATE.GetName]: $VAL|+=%$" #NEW
+ COLO_VEGETATION_IMP: "$NUM|V$ [locations|e] [VEGETATION.GetName]: $VAL|+=%$" #NEW
+ COLO_TOPOGRAPHY_IMP: "$NUM|V$ [locations|e] [TOPOGRAPHY.GetName]: $VAL|+=%$" #NEW
 
  flatland_desc: "La pianura è un terreno privo di dislivelli significativi, pertanto non pone ostacoli né al movimento dell'[army|e] né allo sviluppo degli [buildings|e]."
  mountains_desc: "Il terreno montano presenta altitudine elevata e pendii ripidi, con pochi e stretti passaggi. Attraversarlo e combattervi è arduo per le [armies|e], e anche lo sviluppo è fortemente ostacolato."

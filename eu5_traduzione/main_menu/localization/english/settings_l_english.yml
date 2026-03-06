@@ -33,33 +33,15 @@
 
  # Audio Volume Settings
  SETTING_Master: "Master"
- #SETTING_Music: "     Musica" #OLD ITA
- SETTING_Music: "@setting_immediatly!Music" #NEW
- #SETTING_Music: "     Music" #OLD ENG
- #SETTING_UI: "     Interfaccia" #OLD ITA
- SETTING_UI: "@setting_immediatly!Interface" #NEW
- #SETTING_UI: "     Interface" #OLD ENG
- #SETTING_Ui_Clock: "           Tic Velocità di Gioco" #OLD ITA
- SETTING_Ui_Clock: "@setting_immediatly!Game Speed Clock Tick" #NEW
- #SETTING_Ui_Clock: "          Game Speed Clock Tick" #OLD ENG
- #SETTING_Effects: "     Mondo" #OLD ITA
- SETTING_Effects: "@setting_immediatly!World" #NEW
- #SETTING_Effects: "     World" #OLD ENG
- #SETTING_Ambient_Map: "         Mappa" #OLD ITA
- SETTING_Ambient_Map: "@setting_immediatly!Map" #NEW
- #SETTING_Ambient_Map: "          Map" #OLD ENG
- #SETTING_Armies: "               Eserciti e armate" #OLD ITA
- SETTING_Armies: "@setting_immediatly!Armies and Navies" #NEW
- #SETTING_Armies: "               Armies and Navies" #OLD ENG
- #SETTING_Ambient_Map_Background: "               Sfondo della mappa ambientale" #OLD ITA
- SETTING_Ambient_Map_Background: "@setting_immediatly!Ambient Map Background" #NEW
- #SETTING_Ambient_Map_Background: "               Ambient Map Background" #OLD ENG
- #SETTING_Ambient_Objects: "               Oggetti della mappa ambientale" #OLD ITA
- SETTING_Ambient_Objects: "@setting_immediatly!Ambient Map Objects" #NEW
- #SETTING_Ambient_Objects: "               Ambient Map Objects" #OLD ENG
- #SETTING_Ambient_Panel: "           Illustrazioni ambientali" #OLD ITA
- SETTING_Ambient_Panel: "@setting_immediatly!Ambient Illustrations" #NEW
- #SETTING_Ambient_Panel: "          Ambient Illustrations" #OLD ENG
+ SETTING_Music: "@setting_immediatly!Musica" #OLD ITA
+ SETTING_UI: " @setting_immediatly!Interfaccia" #OLD ITA
+ SETTING_Ui_Clock: " @setting_immediatly!Tic Velocità di Gioco" #OLD ITA
+ SETTING_Effects: "@setting_immediatly!Mondo" #OLD ITA
+ SETTING_Ambient_Map: " @setting_immediatly!Mappa" #OLD ITA
+ SETTING_Armies: "@setting_immediatly!Eserciti e Flotte" #OLD ITA
+ SETTING_Ambient_Map_Background: "@setting_immediatly!Sfondo della Mappa Ambientale" #OLD ITA
+ SETTING_Ambient_Objects: "@setting_immediatly!Oggetti della Mappa Ambientale" #OLD ITA
+ SETTING_Ambient_Panel: "@setting_immediatly!Illustrazioni Ambientali"
  SETTING_Master_TOOLTIP: "#T Volume Generale\n#!Determina il volume di tutti i suoni del gioco."
  SETTING_Music_TOOLTIP: "#T Volume della Musica\n#!Determina il volume di tutta la musica del gioco."
  SETTING_UI_TOOLTIP: "#T Volume dell'Interfaccia\n#!Determina il volume dei suoni dell'interfaccia utente."
@@ -70,7 +52,7 @@
  SETTING_Ambient_Map_Background_TOOLTIP: "#T Volume ambientale\n#!Determina il volume di tutti i suoni ambientali di sottofondo sulla mappa."
  SETTING_Ambient_Objects_TOOLTIP: "#T Volume degli Oggetti della Mappa Ambientale\n#!Determina il volume di tutti i suoni provenienti da oggetti della mappa, come insediamenti e animali."
  SETTING_Ambient_Panel_TOOLTIP: "#T Volume delle Illustrazioni Ambientali\n#!Determina il volume di tutti i suoni ambientali correlati a pannelli e illustrazioni."
- SETTING_MUSIC_CATEGORY: "Music" #NEW
+ SETTING_MUSIC_CATEGORY: "Musica" #NEW
 
  # Audio Profiles Settings
  #SETTING_AUDIO_DEBUG_LOG_LEVEL: "Debug Log Level"
@@ -90,24 +72,24 @@
  SETTING_AUDIO_OPTION_NIGHTMODE_TOOLTIP: "#T $SETTING_AUDIO_OPTION_NIGHTMODE$\n#!Profilo audio che attenua il volume per giocare di notte. Riduce la gamma dinamica in tutte le frequenze per migliorare la chiarezza a volumi bassi e attenua leggermente i bassi per minimizzare i fastidi."
 
  # Audio Music Settings
- SETTING_Music_Density: "Densità musicale"
+ SETTING_Music_Density: "Densità Musicale"
  SETTING_Music_Density_TOOLTIP: "#T Impostazione della densità musicale\n#!Determina la durata delle pause tra le tracce musicali, da pause lunghe a una riproduzione quasi continua. Il valore predefinito è 20."
-SETTING_Music_Intensity: "Music Intensity" #NEW
-SETTING_Music_Intensity_TOOLTIP: "#T Music Intensity\n#!Controls the overall intensity of static music mixes. Only available for static cinematic or static cultural music modes." #NEW
-SETTING_MUSIC_SYSTEM_TYPE: "Music System Type" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE$\n#!Choose how the music system should behave: fully dynamic playlists, more curated cinematic or cultural selections, static playlists, or no music at all." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL: "Dynamic - All" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL$\n#!Uses the fully dynamic music system with access to all tracks." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC: "Dynamic - Cinematic" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC$\n#!Uses the dynamic music system, focusing on more cinematic tracks." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL: "Dynamic - Cultural" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL$\n#!Uses the dynamic music system, focusing on tracks matching cultural context." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC: "Static - Cinematic" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC$\n#!Uses a more static, less reactive playlist biased toward cinematic tracks." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL: "Static - Cultural" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL$\n#!Uses a more static, less reactive playlist biased toward cultural context." #NEW
-SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC: "No Music" #NEW
-SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC$\n#!Disables the music system." #NEW
+SETTING_Music_Intensity: "Intensità Musicale" #NEW
+SETTING_Music_Intensity_TOOLTIP: "#T Intensità Musicale\n#!Controlla l'intensità complessiva dei mix musicali statici. Disponibile solo per le modalità musicali cinematografiche statiche o culturali statiche." #NEW
+SETTING_MUSIC_SYSTEM_TYPE: "Tipo di Sistema Musicale" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE$\n#!Scegli come deve comportarsi il sistema musicale: playlist completamente dinamiche, selezioni cinematografiche o culturali più curate, playlist statiche o nessuna musica." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL: "Dinamico - Tutti" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL$\n#!Utilizza il sistema musicale completamente dinamico con accesso a tutti i brani." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC: "Dinamico - Cinematografico" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani più cinematografici." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL: "Dinamico - Culturale" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani che si adattano al contesto culturale." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC: "Statico - Cinematografico" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC$\n#!Utilizza una playlist più statica e meno reattiva, orientata verso brani cinematografici." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL: "Statico - Culturale" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL$\n#!Utilizza una playlist più statica e meno reattiva, orientata al contesto culturale." #NEW
+SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC: "Nessuna Musica" #NEW
+SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC$\n#!Disattiva il sistema musicale." #NEW
 
  # Game
  SETTING_DEBUG_SAVES: "Numero di salvataggi automatici"
@@ -197,7 +179,7 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  SETTING_INPUT_ACTION_UNPAUSE: "Togli Pausa"
  SETTING_INPUT_ACTION_RESUME: "Riprendi"
  SETTING_INPUT_ACTION_REPORT_ISSUE: "Comunica problema"
- SETTING_INPUT_ACTION_TOGGLE_ALERT_STASH: "Toggle Alert Menu" #NEW
+ SETTING_INPUT_ACTION_TOGGLE_ALERT_STASH: "Attiva/Disattiva Menu Avvisi" #NEW
  SETTING_INPUT_ACTION_INCREASE_SPEED: "Aumenta Velocità"
  SETTING_INPUT_ACTION_DECREASE_SPEED: "Riduci Velocità"
  SETTING_INPUT_ACTION_SPEED_ONE: "Velocità 1"
@@ -205,8 +187,8 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  SETTING_INPUT_ACTION_SPEED_THREE: "Velocità 3"
  SETTING_INPUT_ACTION_SPEED_FOUR: "Velocità 4"
  SETTING_INPUT_ACTION_SPEED_FIVE: "Velocità 5"
- SETTING_INPUT_ACTION_SPEED_SIX: "Speed 6" #NEW
- SETTING_INPUT_ACTION_SPEED_SEVEN: "Speed 7" #NEW
+ SETTING_INPUT_ACTION_SPEED_SIX: "Velocità 6" #NEW
+ SETTING_INPUT_ACTION_SPEED_SEVEN: "Velocità 7" #NEW
  SETTING_INPUT_ACTION_SHOW_MENU: "Mostra Menu"
  SETTING_INPUT_ACTION_CAMERA_UP: "Telecamera Sù"
  SETTING_INPUT_ACTION_CAMERA_DOWN: "Telecamera Giù"
@@ -227,7 +209,7 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW: "Finestra Precedente"
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW_LEFT: "Finestra Sinistra Precedente"
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW_RIGHT: "Finestra Destra Precedente"
- SETTING_INPUT_ACTION_TOGGLE_WINDOW_COLLAPSE: "Toggle Window Collapse" #NEW
+ SETTING_INPUT_ACTION_TOGGLE_WINDOW_COLLAPSE: "Attiva/Disattiva Comprimi Finestra" #NEW
  SETTING_INPUT_ACTION_NEXT_WINDOW: "Finestra Successiva"
  SETTING_INPUT_ACTION_NEXT_WINDOW_LEFT: "Finestra Sinistra Successiva"
  SETTING_INPUT_ACTION_NEXT_WINDOW_RIGHT: "Finestra Destra Successiva"
@@ -353,9 +335,7 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  SETTING_FLATMAP_MODE_ALWAYS: "Sempre"
  SETTING_FLATMAP_MODE_NEVER: "Mai"
  SETTING_MAXIMIZE_TICK_SPEED: "Massimizza Velocità di Tic"
- #SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizza l'uso della CPU per la velocità di tic quando il gioco è a velocità massima, invece di mantenere una frequenza dei fotogrammi stabile. Attivandolo, la velocità 4 funzionerà come la velocità 5 quando è disattivato." #OLD ITA
- SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritize CPU usage for tick speed when at maximum game speed instead of keeping a smooth framerate. When activated will also make speed 6 act as speed 7 when deactivated." #NEW
- #SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritize CPU usage for tick speed when at maximum game speed instead of keeping a smooth framerate. When activated will also make speed 4 act as speed 5 when deactivated." #OLD ENG
+ SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizza l'uso della CPU per la velocità di tic quando il gioco è a velocità massima, invece di mantenere una frequenza dei fotogrammi stabile. Attivandolo, la velocità 6 funzionerà come la velocità 7 quando è disattivato." #OLD ITA
  SETTING_DISABLE_3D_TERRAIN: "Disattiva Terreno 3D"
  SETTING_DISABLE_3D_TERRAIN_TOOLTIP: "#T $SETTING_DISABLE_3D_TERRAIN$#!\nDisattiva il caricamento del terreno 3D per aumentare le prestazioni."
  SETTING_FILL_IN_IMPASSABLE_TERRAIN: "Riempi terreno invalicabile"
@@ -373,12 +353,8 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  MAPNAME_MODE_ALWAYS_OFF: "Sempre disattivo"
  SETTING_SUBJECTS_USE_OVERLORD_NAME: "Gli Stati Clienti usano il nome del sovrano"
  SETTING_SUBJECTS_USE_OVERLORD_NAME_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_NAME$#!\nDetermina se gli Stati Clienti mostrano il nome del loro sovrano quando si allontana lo zoom della mappa politica."
- #SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No" #OLD ITA
- SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No (Default)" #NEW
- #SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No" #OLD ENG
- #SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Sì (predefinito)" #OLD ITA
- SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Yes" #NEW
- #SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Yes (Default)" #OLD ENG
+ SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No (Default)" #OLD ITA
+ SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Sì" #OLD ITA
  SETTING_SUBJECTS_USE_OVERLORD_COLOR: "Gli Stati Clienti usano il colore del sovrano"
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_COLOR$#!\nDetermina come gli Stati Clienti mostrano il colore del loro sovrano sulla mappa politica."
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_NO: "No"
@@ -414,27 +390,18 @@ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSI
  SETTING_GAME_SPEED_ON_WAR_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_WAR$#!\nDetermina come la velocità del gioco viene influenzata dall'entrata in guerra del nostro paese."
  SETTING_GAME_SPEED_ON_WAR_LEAVE: "Senza cambiamenti"
  SETTING_GAME_SPEED_ON_WAR_1: "Velocità Minima"
- #SETTING_GAME_SPEED_ON_WAR_2: "Velocità Bassa" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_2: "Lower Speed" #NEW
- #SETTING_GAME_SPEED_ON_WAR_2: "Low Speed" #OLD ENG
- #SETTING_GAME_SPEED_ON_WAR_3: "Velocità Media" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_3: "Low Speed" #NEW
- #SETTING_GAME_SPEED_ON_WAR_3: "Medium Speed" #OLD ENG
- #SETTING_GAME_SPEED_ON_WAR_4: "Velocità Alta" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_4: "Medium Speed" #NEW
- #SETTING_GAME_SPEED_ON_WAR_4: "High Speed" #OLD ENG
- #SETTING_GAME_SPEED_ON_WAR_5: "Velocità Massima" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_5: "High Speed" #NEW
- #SETTING_GAME_SPEED_ON_WAR_5: "Highest Speed" #OLD ENG
- SETTING_GAME_SPEED_ON_WAR_6: "Higher Speed" #NEW
- SETTING_GAME_SPEED_ON_WAR_7: "Highest Speed" #NEW
+ SETTING_GAME_SPEED_ON_WAR_2: "Velocità Inferiore" #OLD ITA
+ SETTING_GAME_SPEED_ON_WAR_3: "Velocità Bassa" #OLD ITA
+ SETTING_GAME_SPEED_ON_WAR_4: "Velocità Media" #OLD ITA
+ SETTING_GAME_SPEED_ON_WAR_5: "Velocità Alta" #OLD ITA
+ SETTING_GAME_SPEED_ON_WAR_6: "Velocità Superiore" #NEW
+ SETTING_GAME_SPEED_ON_WAR_7: "Velocità Massima" #NEW
  SETTING_GAME_SPEED_ON_UNIT_SELECT: "Velocità di gioco quando l'unità selezionata entra in battaglia"
  SETTING_GAME_SPEED_ON_UNIT_SELECT_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_UNIT_SELECT$#!\nDetermina come la velocità del gioco viene influenzata dalla selezione di un'unità che entra in un combattimento."
  SETTING_ENABLE_PARTICLES: "Attiva Particelle"
  SETTING_ENABLE_PARTICLES_TOOLTIP: "#T $SETTING_ENABLE_PARTICLES$#!\nPermette di disattivare gli effetti particellari per migliorare le prestazioni."
  SETTING_GUI_TEXTURE_STREAMING: "Streaming di Texture della GUI"
  SETTING_GUI_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_GUI_TEXTURE_STREAMING$\n#!Attiva o disattiva la trasmissione di elementi dell'interfaccia grafica utente.\nQuesta opzione riduce l'uso di VRAM, ma può abbassare temporaneamente la qualità."
- SETTING_WARNING_PLAYSET: "Show dialog to warn about playset errors" #NEW
  
  #Playsets
- #SETTINGS_WARNING_PLAYSET: "Mostra finestra di dialogo per avvisare degli errori del playset" #DELETE
+ SETTING_WARNING_PLAYSET: "Mostra finestra di dialogo per avvisare degli errori del playset"

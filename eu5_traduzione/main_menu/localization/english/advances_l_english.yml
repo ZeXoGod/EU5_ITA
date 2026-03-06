@@ -1,9 +1,9 @@
 ﻿l_english:
  BASE_SPREAD: "Base: $VALUE|Y$"
  INSTITUTION_SPREAD_WAS_POSSIBLE_SPAWN: "Avrebbe potuto dare origine a un'istituzione: $VAL|+=2$"
- INSTITUTION_SPREAD_DIPLOMACY: "From [alliances|e]: $VAL|+=2$" #NEW
- INSTITUTION_SPREAD_OVERLORD: "From [overlord|e]: $VAL|+=2$" #NEW
- INSTITUTION_SPREAD_SUBJECTS: "From [subjects|e]: $VAL|+=2$" #NEW
+ INSTITUTION_SPREAD_DIPLOMACY: "Da [alliances|e]: $VAL|+=2$" #NEW
+ INSTITUTION_SPREAD_OVERLORD: "Dal [overlord|e]: $VAL|+=2$" #NEW
+ INSTITUTION_SPREAD_SUBJECTS: "Dagli [subjects|e]: $VAL|+=2$" #NEW
  INSTITUTION_SPREAD_FRIENDLY_COASTAL: "[locations|e] vicine dove il [owner|e] ha un'[opinion|e] positiva: $VAL|+=2$"
  INSTITUTION_SPREAD_ANY_COASTAL: "[locations|e] vicine: $VAL|+=2$"
  INSTITUTION_SPREAD_IMPORTS: "[import|e] dalle [locations|e] con [INSTITUTION.GetNameWithNoTooltip]: $VAL|+=2$"
@@ -11,7 +11,7 @@
  INSTITUTION_SPREAD_OWNER_CONTROL: "[control|e] della [location|e] dove [COUNTRY.GetNameWithNoTooltip] ha [Concept('embraced', 'adottato')|e] [INSTITUTION.GetNameWithNoTooltip]: $VAL|+=2$"
  INSTITUTION_SPREAD_EMBRACED_TO_CAPITAL: "Presenza nella [capital|e] del [country|e]: $VAL|+=2$"
  INSTITUTION_SPREAD_FROM_MARKET_CENTER: "Presente nel [market_center|e]: $VAL|+=2$"
- INSTITUTION_SPREAD_SIZE: "Size of [location|e]: $VAL|+=%2$" #NEW
+ INSTITUTION_SPREAD_SIZE: "Dimensioni della [location|e]: $VAL|+=%2$" #NEW
  #
  UNLOCKS_DEFAULT: "Sblocca:"
 
@@ -93,12 +93,10 @@
  UNLOCKS_ROAD_TYPE_NO_TT: "$ICON$ Sblocca [ROAD_TYPE.GetName]"
  
  ADVANCE_FOR_AGE: "Disponibile nell'[AGE.GetName]"
- ADVANCE_FOR_AGE_CHOICE: " by picking #T $CHOICE$.#!" #NEW
+ ADVANCE_FOR_AGE_CHOICE: " selezionando #T $CHOICE$.#!" #NEW
  ADVANCE_FOR_ADVANCE: "Richiede [ADVANCE_DEFINITION.GetName]"
  ADVANCE_ONLY_FOR_GOV: "Solo per [GOVERNMENT_TYPE.GetName]"
- #ADVANCE_NOT_IN_QUEUE: "Non nella Coda di Ricerca" #OLD ITA
- ADVANCE_NOT_IN_QUEUE: "Not in Research Queue" #NEW
- #ADVANCE_NOT_IN_QUEUE: "Not in research queue" #OLD ENG
+ ADVANCE_NOT_IN_QUEUE: "Non nella Coda di Ricerca"
  ADD_TO_RESEARCH_QUEUE: "Aggiungi alla Coda di Ricerca"
  RESEARCH_COST: "#TOOLTIP:$BREAKDOWN_TAG$ $NUM$#! [research_progress|e]"
  REMOVE_FROM_RESEARCH_QUEUE: "Rimuovi dalla Coda di Ricerca"
@@ -118,17 +116,11 @@
  age_format_age_6_revolutions: "Età delle $age_6_revolutions$"
  
  age_1_traditions: "Tradizioni"
- #age_1_traditions_desc: "Nel corso dei secoli e dei millenni, in tutto il mondo sono state fondate diverse società, le cui basi possono essere ricondotte a tradizioni quali il Legalismo, la Meritocrazia o il Feudalesimo." #OLD ITA
- age_1_traditions_desc: "Different societies have been established all over the world for thousands of years, and their foundations can be framed in traditions such as $legalism$, $meritocracy$, or $feudalism$." #NEW
- #age_1_traditions_desc: "Different societies have been established throughout the world for hundreds and thousands of years, and their foundations can be framed in traditions such as Legalism, Meritocracy, or Feudalism." #OLD ENG
+ age_1_traditions_desc: "Da migliaia di anni in tutto il mondo sono state fondate diverse società, le cui fondamenta possono essere inquadrate in tradizioni quali $legalism$, $meritocracy$ o $feudalism$." #NEW
  age_2_renaissance: "Rinascimento"
- #age_2_renaissance_desc: "Una nuova era di conoscenza, arte e progresso sta emergendo grazie alle crescenti interazioni e istituzioni nelle società medievali influenzate dalla Pax Mongolica, dall'Età dell'Oro Islamica e dal Rinascimento Europeo." #OLD ITA
- age_2_renaissance_desc: "Societies affected by the $mge_pax_mongolica$, $islamic_golden_age$, and $renaissance$ in $europe$ are witnessing the emergence of a new era of knowledge, art, and innovation as a result of increased foreign interactions and the establishment of new institutions." #NEW
- #age_2_renaissance_desc: "A new era of knowledge, arts, and progress is emerging due to growing interactions and institutions in the medieval societies affected by Pax Mongolica, the Islamic Golden Age, and the European Renaissance." #OLD ENG
+ age_2_renaissance_desc: "Le società influenzate dalla $mge_pax_mongolica$, dall'$islamic_golden_age$ e dal $renaissance$ in $europe$ stanno assistendo alla nascita di una nuova era di conoscenza, arte e innovazione grazie all'aumento delle interazioni con l'estero e alla creazione di nuove istituzioni." #NEW
  age_3_discovery: "Scoperte"
- #age_3_discovery_desc: "All'alba dell'era moderna vengono mappati nuovi continenti, mentre la società feudale sta lentamente cedendo il passo a stati centralizzati.\nPer uno stato intraprendente, questa epoca può vedere la fondazione di un impero mondiale." #OLD ITA
- age_3_discovery_desc: "As the Early Modern Era dawns, new continents are being mapped, while feudal society is slowly giving way to centralized states.\nFor an enterprising leader, this age is the perfect time to build the foundations of a globe-spanning empire..." #NEW
- #age_3_discovery_desc: "At the dawn of the Early Modern era new continents are being mapped while feudal society is slowly giving way to centralized states.\nFor an enterprising state this age can see the foundation of a worldwide empire." #OLD ENG
+ age_3_discovery_desc: "Con l'avvento dell'età moderna, vengono mappati nuovi continenti, mentre la società feudale sta lentamente cedendo il passo a Stati centralizzati.\nPer un leader intraprendente, questa epoca è il momento perfetto per gettare le basi di un impero che abbraccia tutto il globo..." #NEW
  age_4_reformation: "Riforme"
  #age_4_reformation_desc: "Da est a ovest, questa è l'epoca delle convinzioni religiose, dei dibattiti e dei movimenti di massa. In Europa, le chiese Protestanti sono consolidate, mentre il millenarismo prende piede in Iran e il sincretismo religioso plasma la società indiana." #OLD ITA
  age_4_reformation_desc: "From East to West, this is the age of religious conviction, debate, and mass movements. $protestant$ churches are entrenched in $europe$, millenarianism has taken hold of Iran, and $religious_syncretism$ shapes society in $india$." #NEW
@@ -3420,7 +3412,7 @@
  alberghi_28_advance: "$alberghi_28$"
  alberghi_28_advance_desc: "$alberghi_28_desc$"
  #genoese_banking_traditions: "Tradizioni Bancarie Genovesi" #OLD ITA
- genoese_banking_traditions: "$GEN_ADJ$ Banking Traditions" #NEW
+ genoese_banking_traditions: "Tradizioni Bancarie Genovesi" #NEW
  #genoese_banking_traditions: "Genoese Banking Traditions" #OLD ENG
  #genoese_banking_traditions_desc: "L'ascesa di Genova come uno dei principali centri commerciali dell'Italia medievale portò allo sviluppo precoce di nuove forme di credito e di alcune delle prime istituzioni bancarie al mondo." #OLD ITA
  genoese_banking_traditions_desc: "The rise of $GEN$ as a main commercial center of medieval $ITA$ led to the early development of new forms of credit and some of the world's earliest banking institutions." #NEW
@@ -3456,13 +3448,13 @@
  italian_galleass: "$n_italian_galleass$"
  italian_galleass_desc: "$n_italian_galleass_desc$"
  #genoese_flexibility: "Flessibilità Genovese" #OLD ITA
- genoese_flexibility: "$GEN_ADJ$ Flexibility" #NEW
+ genoese_flexibility: "Flessibilità $GEN_ADJ$" #NEW
  #genoese_flexibility: "Genoese Flexibility" #OLD ENG
  #genoese_flexibility_desc: "A differenza dell'esercito, la marina militare dello Stato può servire a molteplici scopi invece di essere solo un'arma da guerra. Grazie alle nostre conoscenze ed esperienze, possiamo trasformare le nostre galee da guerra in galee mercantili e viceversa in pochissimo tempo." #OLD ITA
  genoese_flexibility_desc: "Our state navy can serve multiple purposes instead of just being a weapon for war. With our knowledge and experience, we can repurpose our war galleys to merchant galleys — and vice-versa, if need be — in no time." #NEW
  #genoese_flexibility_desc: "Unlike the military, the navy of the state can serve multiple purposes instead of just being a weapon for war. With our knowledge and experience, we can repurpose our war galleys to merchant galleys and vice versa in no time." #OLD ENG
  #genoese_school: "Scuola Genovese" #OLD ITA
- genoese_school: "$GEN_ADJ$ School" #NEW
+ genoese_school: "Scuola $GEN_ADJ$" #NEW
  #genoese_school: "Genoese School" #OLD ENG
  #genoese_school_desc: "La pittura rinascimentale è una tradizione italiana. Non sorprende quindi che uno Stato ricco e stimato come quello di Genova abbia aperto una propria scuola d'arte genovese." #OLD ITA
  genoese_school_desc: "Painting, and the visual arts in general, has flourished in $ITA$ since the $renaissance$. It is therefore hardly surprising that a rich and esteemed state such as $GEN$ opens its own $GEN_ADJ$ School of Art." #NEW
@@ -3567,7 +3559,7 @@
  free_thinkers_desc: "The belief that every man is entitled to both freedom of thought and freedom of speech is widely held in our colonies. Without these rights in place, there could be no such thing as civil liberty." #NEW
  #free_thinkers_desc: "The ideas that freedom of thought and freedom of speech is the right of every man were strong in the colonies. That without it there could be no such thing as public liberty." #OLD ENG
  #liberty_heroes: "Eroi della Libertà" #OLD ITA
- liberty_heroes: "Sons of Liberty" #NEW
+ liberty_heroes: "Figli della Libertà" #NEW
  #liberty_heroes: "Liberty Heroes" #OLD ENG
  #liberty_heroes_desc: "Molti dei leader delle guerre d'indipendenza del Nuovo Mondo non possedevano solo le necessarie abilità militari, ma anche il carisma necessario per incoraggiare il morale e tenere insieme l'esercito, oltre a essere una guida ispiratrice per il popolo." #OLD ITA
  liberty_heroes_desc: "Many leaders of the New World independence wars possessed not only the necessary military skills, but also the charisma needed to encourage morale, hold the army together, and be an inspiration to the people." #NEW
@@ -5211,25 +5203,25 @@
 
  #Songhai
  #stories_of_the_gao_empire: "Storie dell'Impero di Gao" #OLD ITA
- stories_of_the_gao_empire: "Stories of the $gao$ Empire" #NEW
+ stories_of_the_gao_empire: "Storie dell'Impero di $gao$" #NEW
  #stories_of_the_gao_empire: "Stories of the Gao Empire" #OLD ENG
  #stories_of_the_gao_empire_desc: "Prima che l'Impero del Mali dominasse l'Africa occidentale, la città di Gao era la capitale di un impero a sé stante. Sebbene non esistano quasi documenti scritti sull'impero di Gao, la sua eredità vive nelle nostre tradizioni orali, ispirando gli uomini che vogliono raggiungere la grandezza un giorno." #OLD ITA
  stories_of_the_gao_empire_desc: "Before the $MAL_ADJ$ Empire came to dominate $west_africa$, the city of $gao$ was the capital of an empire in its own right. Although there are barely any written records of the $gao$ Empire, its legacy lives on in our oral traditions, inspiring all who want to achieve greatness one day." #NEW
  #stories_of_the_gao_empire_desc: "Before the Mali Empire dominated West Africa, the city of Gao was the capital of an empire in its own right. Although there are barely any written records of the Gao empire, its legacy lives on in our oral traditions, inspiring the men who want to achieve greatness one day." #OLD ENG
  #malian_military_tactics: "Tattiche Militari Maliane" #OLD ITA
- malian_military_tactics: "$MAL_ADJ$ Military Tactics" #NEW
+ malian_military_tactics: "Tattiche Militari Maliane" #NEW
  #malian_military_tactics: "Malian Military Tactics" #OLD ENG
  #malian_military_tactics_desc: "Durante il periodo in cui siamo stati sudditi dell'Impero del Mali, il nostro popolo ha imparato dai loro comandi militari e dai loro modi di combattere sul campo di battaglia. Questa conoscenza aiuterà la nostra fanteria per le battaglie a venire." #OLD ITA
  malian_military_tactics_desc: "During our time as subjects of $MAL$, our people learned much from their military command and combat tactics. This knowledge shall help our own infantry in battles to come." #NEW
  #malian_military_tactics_desc: "During our time as subjects of the Mali Empire, our people learned from their military command and their ways to fight on the battlefield. This knowledge shall help our own infantry for the battles to come." #OLD ENG
  #gold_to_salt_trade: "Commercio di Oro e Sale" #OLD ITA
- gold_to_salt_trade: "$golds_goods$ to $salt$ Trade" #NEW
+ gold_to_salt_trade: "Commercio di $golds_goods$ e $salt$" #NEW
  #gold_to_salt_trade: "Gold To Salt Trade" #OLD ENG
  #gold_to_salt_trade_desc: "Alcuni dicono che il sale vale il suo peso in oro... forse sarebbe più corretto dire che l'oro vale il suo peso in sale. In ogni caso, scambiando queste due merci, abbiamo creato delle reti commerciali fiorenti." #OLD ITA
  gold_to_salt_trade_desc: "Some say that $salt$ is worth its weight in $golds_goods$... perhaps it would be more accurate to say that $golds_goods$ is worth its weight in $salt$. Either way, by exchanging these two commodities, we have established thriving trade networks." #NEW
  #gold_to_salt_trade_desc: "Some say that salt is worth its weight in gold... perhaps it would be more accurate to say that gold is worth its weight in salt. Either way, by exchanging these two commodities, we have set up thriving trade networks." #OLD ENG
  #independence_from_mali: "Indipendenza dal Mali" #OLD ITA
- independence_from_mali: "Independence from $MAL$" #NEW
+ independence_from_mali: "Indipendenza dal $MAL$" #NEW
  #independence_from_mali: "Independence from Mali" #OLD ENG
  #independence_from_mali_desc: "Per molti anni siamo stati soggetti al Sultanato del Mali. Mentre il potere del Mali si è indebolito, il nostro è cresciuto, e ora possiamo affermare di essere completamente indipendenti dalla sovranità maliana. Prendiamo provvedimenti per assicurarci di rimanere tali." #OLD ITA
  independence_from_mali_desc: "For many years, we were a subject of $MAL$. As $MAL$'s power has weakened, ours has grown, and we can now claim to be fully independent of $MAL_ADJ$ overlordship. Let us take steps to make sure we remain so." #NEW
@@ -5264,7 +5256,7 @@
  #Naples
  
  #university_naples: "L'Università di Napoli" #OLD ITA
- university_naples: "The University of $NAP$" #NEW
+ university_naples: "L'Università di $NAP$" #NEW
  #university_naples: "The University of Naples" #OLD ENG
  #university_naples_desc: "Fondata nel 1224 dall'imperatore Federico II, l'Università di Napoli è una delle più antiche istituzioni pubbliche italiane. Abbracciando un'etica laica, ha fornito a generazioni di studenti un'istruzione completa e ha contribuito al progresso intellettuale in vari campi." #OLD ITA
  university_naples_desc: "Founded in 1224 by Emperor Frederick II, the University of $NAP$ is one of $ITA$'s oldest public institutions. Embracing a secular ethos, it has provided generations of students with a comprehensive education and contributed to intellectual advancements across various fields." #NEW
@@ -5302,17 +5294,17 @@
  institutional_reorganization_desc: "By abolishing the Collateral Council and establishing the #italic Real Camera di Santa Chiara#!, we will implement important legal reforms in $NAP$. Ongoing projects will aim to reorganize the legislative complex, consolidate laws into the #italic Codice Carolino#!, and implement the #italic Onciario Cadastre#! for tax reform." #NEW
  #institutional_reorganization_desc: "By abolishing the Collateral Council and establishing the Real Camera di Santa Chiara, we will implement important legal reforms in the Kingdom of Naples. Ongoing projects will aim to reorganize the legislative complex, consolidate laws into the Codice Carolino, and implement the Onciario Cadastre for tax reform." #OLD ENG
  #a_central_power: "Una Potenza Centrale nel Mediterraneo" #OLD ITA
- a_central_power: "A Central Mediterranean Power" #NEW
+ a_central_power: "Una Potenza del Mediterraneo Centrale" #NEW
  #a_central_power: "A Central Power in the Mediterranean" #OLD ENG
  a_central_power_desc: "La nostra vantaggiosa posizione centrale nel Mediterraneo ci consente di raggiungere facilmente qualsiasi costa. Dovremmo sfruttare questo vantaggio per cercare alleanze, stringere nuove amicizie ed espandere i nostri confini. Con il mare come porta d'accesso, le opportunità di crescita e prosperità abbondano nella nostra ricerca di maggiore influenza e sicurezza."
  #neapolitan_industrialization: "Industrializzazione Napoletana" #OLD ITA
- neapolitan_industrialization: "$NAP_ADJ$ Industrialization" #NEW
+ neapolitan_industrialization: "Industrializzazione Napoletana" #NEW
  #neapolitan_industrialization: "Neapolitan Industrialization" #OLD ENG
  #neapolitan_industrialization_desc: "A partire dal XVIII secolo, il Regno di Napoli assistette a un graduale processo di industrializzazione. Settori chiave come quello tessile, navale e siderurgico conobbero una crescita alimentata dagli investimenti e dai progressi tecnologici. Questo passaggio all'industrializzazione avrebbe svolto un ruolo significativo nella trasformazione di Napoli in un importante centro economico." #OLD ITA
  neapolitan_industrialization_desc: "$NAP$ has witnessed a gradual industrialization process over the past decades. Key sectors such as textiles, shipbuilding, and ironworks have experienced significant growth, fueled by investments and technological advancements. This shift towards industrialization will play a significant role in transforming $NAP$ into a major economic center." #NEW
  #neapolitan_industrialization_desc: "Starting in the 18th century, the Kingdom of Naples witnessed a gradual process of industrialization. Key sectors such as textiles, shipbuilding, and ironworks experienced growth, fueled by investments and technological advancements. This shift towards industrialization will play a significant role in transforming Naples into a major economic center." #OLD ENG
  #neapolitan_army_reforms: "Riforme dell'Esercito Napoletano" #OLD ITA
- neapolitan_army_reforms: "$NAP_ADJ$ Army Reforms" #NEW
+ neapolitan_army_reforms: "Riforme dell'Esercito $NAP_ADJ$" #NEW
  #neapolitan_army_reforms: "Neapolitan Army Reforms" #OLD ENG
  neapolitan_army_reforms_desc: "La nostra nazione ha bisogno di intraprendere profonde riforme militari, modernizzando le proprie forze armate per affrontare le sfide di un campo di battaglia in continua evoluzione. Queste riforme rafforzeranno le capacità tattiche, snelliranno le strutture di comando e miglioreranno i programmi di addestramento, posizionandoci come una forza formidabile nella nostra regione."
 
@@ -5348,21 +5340,21 @@
  #a_land_of_banks_desc: "Tuscany is the center of European banking, being home to many powerful institutions based on the main Tuscan cities. From their headquarters, their tentacles extend across the Italian Peninsula and even into the rest of Europe." #OLD ENG
 
  #florentine_citizen_militia: "Milizia Cittadina Fiorentina" #OLD ITA
- florentine_citizen_militia: "$FLO_ADJ$ Citizen Militia" #NEW
+ florentine_citizen_militia: "Milizia Cittadina Fiorentina" #NEW
  #florentine_citizen_militia: "Florentine Citizen Militia" #OLD ENG
  #florentine_citizen_militia_desc: "Se il nostro popolo deve resistere alla prova del tempo, deve essere pronto a mobilitarsi rapidamente per difendere i nostri ideali! La formazione di una milizia cittadina, pari per esperienza e ferocia ad altri eserciti in Europa, sarà sicuramente di aiuto nella protezione del nostro dominio." #OLD ITA
  florentine_citizen_militia_desc: "If our people are to flourish well into the future, they must be ready to mobilize and defend our ideals and homeland! Forming a citizen militia, equal in experience and ferocity to other armies in $europe$, will greatly aid us in protecting our domain." #NEW
  #florentine_citizen_militia_desc: "If our people are to stand the test of time, they must be ready to quickly mobilize in the defense of our ideals! Forming a citizen militia, equal in experience and ferocity to other armies in Europe, will surely assist in the protection of our domain." #OLD ENG
 
  #birthplace_of_renaissance: "Luogo di Nascita del Rinascimento" #OLD ITA
- birthplace_of_renaissance: "Birthplace of the $renaissance$" #NEW
+ birthplace_of_renaissance: "Luogo di Nascita del $renaissance$" #NEW
  #birthplace_of_renaissance: "Birthplace of Renaissance" #OLD ENG
  #birthplace_of_renaissance_desc: "La nostra attenzione per le belle arti, la coltivazione dei talenti e il pensiero innovativo ci hanno portato a essere considerati come una delle avanguardie del pensiero e del progresso scientifico!" #OLD ITA
  birthplace_of_renaissance_desc: "Our dedication to fine arts, cultivating artistic talent, and innovative thought have led us to be regarded as one of the foremost leaders of cultural, philosophical, and scientific advancements worldwide!" #NEW
  #birthplace_of_renaissance_desc: "Our attention to fine arts, the cultivation of talent, and innovative thought have led us to be regarded as one of the forefronts of thought and scientific advancement!" #OLD ENG
 
  #florentine_school: "Scuola Fiorentina" #OLD ITA
- florentine_school: "$FLO_ADJ$ School" #NEW
+ florentine_school: "Scuola Fiorentina" #NEW
  #florentine_school: "Florentine School" #OLD ENG
  #florentine_school_desc: "Una delle scuole d'arte più influenti, l'impatto delle tecniche artistiche fiorentine e l'attenzione per i dettagli ci porteranno in prima linea nelle manifestazioni culturali e di ricchezza dell'arte magnanima!" #OLD ITA
  florentine_school_desc: "As one of the most influential contemporary schools of art, $FLO_ADJ$ techniques and fine details have established us as the cultural leader of $europe$, producing masterworks that define the $renaissance$." #NEW
@@ -5374,7 +5366,7 @@
  #tuscan_uffizi_desc: "Originally meant to consolidate the administration of several guilds and agencies, the Uffizi is a valuable source of centralized power whilst preserving and displaying various works of art as a sign of cultural superiority and an exhibition of affluence." #OLD ENG
 
  #medici_porcelain: "Porcellana Medicea" #OLD ITA
- medici_porcelain: "Medici $porcelain$" #NEW
+ medici_porcelain: "$porcelain$ dei Medici" #NEW
  #medici_porcelain: "Medici Porcelain" #OLD ENG
  #medici_porcelain_desc: "Negli ultimi decenni sono stati fatti molti tentativi per replicare le proprietà della vera porcellana, poiché si ritiene che sia un bene esotico proveniente dall'Estremo Oriente. Con l'aiuto di alchimisti esperti e la conoscenza delle scienze, siamo certi di produrre porcellana di grande qualità." #OLD ITA
  medici_porcelain_desc: "Many attempts have been made during the last few decades to replicate the properties of true $porcelain$, an exotic good from the Far East. With the help of experienced alchemists and thorough scientific knowledge, we will surely be able to produce $porcelain$ of great quality." #NEW
@@ -5391,21 +5383,21 @@
  #accademia_cimento_desc: "The Accademia del Cimento was a scientific society established in Florence in 1657. It was one of the first of its kind, founded by students of Galileo and funded by Prince Leopold and his brother, Grand Duke Ferdinando II.\nWhile it was never an official institution, it was important for the development of the scientific principles of experimentation. The society had the motto 'Try and try again' and published the Saggi, a book that would become the standard laboratory manual of the 18th century." #OLD ENG
 
  #tuscan_municipal_reforms: "Riforme Comunali Toscane" #OLD ITA
- tuscan_municipal_reforms: "$TUS_ADJ$ Municipal Reforms" #NEW
+ tuscan_municipal_reforms: "Riforme Comunali Toscane" #NEW
  #tuscan_municipal_reforms: "Tuscan Municipal Reforms" #OLD ENG
  #tuscan_municipal_reforms_desc: "Mentre entriamo nell'era dell'assolutismo e dell'autorità suprema centralizzata, dobbiamo rivedere la nostra amministrazione locale e riformare i nostri sistemi in modo appropriato, se vogliamo sfruttare le nostre capacità normative." #OLD ITA
  tuscan_municipal_reforms_desc: "As we enter the era of absolutism and supreme centralized authority, we must reform local administration accordingly by establishing uniform procedures and transforming  local systems into instruments of central power." #NEW
  #tuscan_municipal_reforms_desc: "As we enter the era of absolutism and supreme centralized authority, we must revisit our local administration and reform our systems appropriately if we are to harness our regulatory capabilities." #OLD ENG
 
  #tuscan_physiocratic_reforms: "Riforme Fisiocratiche Toscane" #OLD ITA
- tuscan_physiocratic_reforms: "$TUS_ADJ$ Physiocratic Reforms" #NEW
+ tuscan_physiocratic_reforms: "Riforme Fisiocratiche Toscane" #NEW
  #tuscan_physiocratic_reforms: "Tuscan Physiocratic Reforms" #OLD ENG
  #tuscan_physiocratic_reforms_desc: "Rafforzando i nostri settori agricoli e prendendoci cura della nostra gente, assicureremo senza dubbio una solida base per i nostri sistemi economici recentemente modernizzati." #OLD ITA
  tuscan_physiocratic_reforms_desc: "By strengthening our agricultural sectors and taking better care of our people, we will undoubtedly secure a strong foundation for our newly modernized economic systems." #NEW
  #tuscan_physiocratic_reforms_desc: "By strengthening our agricultural sectors and taking good care of our people, we will undoubtedly secure a strong foundation for our newly modernized economic systems." #OLD ENG
 
  #tuscan_new_trade_system: "Nuovo Sistema Commerciale Toscano" #OLD ITA
- tuscan_new_trade_system: "New $TUS_ADJ$ Trade System" #NEW
+ tuscan_new_trade_system: "Nuovo Sistema Commerciale $TUS_ADJ$" #NEW
  #tuscan_new_trade_system: "New Tuscan Trade System" #OLD ENG
  #tuscan_new_trade_system_desc: "L'era delle nostre gilde commerciali sta lentamente volgendo al termine, poiché la loro influenza diminuisce di fronte a un potere centralizzato assoluto. Riformando la loro amministrazione e spostando gran parte del loro controllo ai nostri capi di Stato, siamo certi di aumentare i profitti." #OLD ITA
  tuscan_new_trade_system_desc: "The era of trade guild supremacy is slowly coming to an end as their influence wanes in the face of absolute centralized power. By reforming their administration and shifting much of their control to our heads of state, we are sure to increase profits." #NEW
@@ -7614,7 +7606,7 @@
  seljuk_roots_desc: "We are surrounded by enemies on all sides, making a strong military an absolute necessity. Fortunately, we are not weak people. From the irregular Ġuzāt and the Akıncılar raiders to the Sipâhi of the $TUR$, the world has come to fear and respect our military might. Let us build an army worthy of an empire, inspired by our glorious traditions and history, honing our might through the ages." #NEW
  #seljuk_roots_desc: "We have enemies in all directions, making a strong army a necessity for a state such as ours. Fortunately, we are not a weak people. From the irregular Ġuzāt and the Akıncılar raiders to the Sipâhi of the Ottoman Empire, the world has come to know the military might of the Turkish people. Let us build an army for an Empire, taking inspiration from our glorious traditions and history, refining our might through the ages." #OLD ENG
  #heirs_of_rum: "Eredi di Rûm" #OLD ITA
- heirs_of_rum: "Scions of Rûm" #NEW
+ heirs_of_rum: "Discendenti di Rûm" #NEW
  #heirs_of_rum: "Heirs of Rûm" #OLD ENG
  #heirs_of_rum_desc: "Dopo un periodo turbolento e la lotta per prevalere sugli altri Beylik confinanti, è giunto il momento di assumerci il compito di restaurare i confini dell'antico e glorioso Sultanato di Rûm." #OLD ITA
  heirs_of_rum_desc: "After surviving a turbulent period, and winning the struggle to dominate our neighboring Beyliks, the time has finally come for us to restore the borders of the once-great Sultanate of Rûm!" #NEW
@@ -10140,14 +10132,14 @@
 
 #Smolensk
  #diocese_of_smolensk: "Diocesi di Smolensk" #OLD ITA
- diocese_of_smolensk: "Diocese of $SMO$" #NEW
+ diocese_of_smolensk: "Diocesi di $SMO$" #NEW
  #diocese_of_smolensk: "Diocese of Smolensk" #OLD ENG
  #diocese_of_smolensk_desc: "Un tempo roccaforte spirituale del Cristianesimo ortodosso e sede di uno dei vescovadi più antichi della regione, la Diocesi di Smolensk incarna la fede incrollabile del nostro popolo." #OLD ITA
  diocese_of_smolensk_desc: "Once a spiritual stronghold of $orthodox_ADJ$ $christian$ and home to one of the oldest bishoprics in the region, the Diocese of $SMO$ embodies our people's unshakable faith." #NEW
  #diocese_of_smolensk_desc: "Once a spiritual stronghold of Orthodox Christianity and home to one of the oldest bishoprics in the region, the Diocese of Smolensk embodies our people's unshakable faith." #OLD ENG
 
  #smolenskian_resolve: "Determinazione di Smolensk" #OLD ITA
- smolenskian_resolve: "$SMO_ADJ$ Resolve" #NEW
+ smolenskian_resolve: "Determinazione Smolenskiana" #NEW
  #smolenskian_resolve: "Smolenskian Resolve" #OLD ENG
  #smolenskian_resolve_desc: "Per secoli, Smolensk è stata una terra divisa da estranei — duchi lituani, re polacchi e principi moscoviti. Per sopravvivere, ci siamo aggrappati a ciò che ci univa: la nostra fede e la nostra forza d'animo. Se mai dovessimo risorgere, dobbiamo scacciare le divisioni e radunarci attorno all'idea sacra che, soprattutto, c'è solo Smolensk." #OLD ITA
  smolenskian_resolve_desc: "For centuries, $SMO$ has been a land carved up by outsiders — $LIT_ADJ$ dukes, $POL_ADJ$ kings, and $MOS_ADJ$ princes. To survive, we clung to what united us: our faith and our fortitude. If we are ever to rise again, we must cast off divisions and rally around the sacred idea that, above all, there is only $SMO$." #NEW
@@ -10164,7 +10156,7 @@
  #hub_of_militarism_desc: "Long has war defined our fate, but now it shall define our strength. From the ruinous embrace of warfare and siege, Smolensk rises as a center of military production — cannons, firearms, powder and doctrine flow outward from our armories. Let the world see us not as a prize to be taken, but as a hammer to be feared, ready to strike the anvil of foreign conquerors." #OLD ENG
 
  #armories_of_smolensk: "Le Armerie di Smolensk" #OLD ITA
- armories_of_smolensk: "The Armories of $SMO$" #NEW
+ armories_of_smolensk: "Le Armerie di $SMO$" #NEW
  #armories_of_smolensk: "The Armories of Smolensk" #OLD ENG
  #armories_of_smolensk_desc: "Dopo decenni di guerra su ogni confine, abbiamo imparato a combattere con armi sia dell'est che dell'ovest. Mescolando la grinta moscovita con la precisione occidentale, le nostre armerie ora producono artiglieria d'élite e tattiche ineguagliate dai nostri rivali. Dalle nostre fucine viene la potenza di fuoco — e dalla potenza di fuoco, dominio e perseveranza." #OLD ITA
  armories_of_smolensk_desc: "After decades of warfare on every border, we learned to fight with weapons of both east and west. Blending $MOS_ADJ$ grit with western precision, our armories now produce elite artillery and tactics unmatched by our rivals. From our forges comes firepower — and from firepower, domination and perseverance." #NEW
@@ -10172,7 +10164,7 @@
  
 #Provence
  #capetian_house_of_anjou: "Casa Capetingia d'Angiò" #OLD ITA
- capetian_house_of_anjou: "Capetian House of $ANJ$" #NEW
+ capetian_house_of_anjou: "Casa Capetingia d'$ANJ$" #NEW
  #capetian_house_of_anjou: "Capetian House of Anjou" #OLD ENG
  #capetian_house_of_anjou_desc: "La fusione della dignità capetingia e dell'ambizione angioina scorre nel nostro sangue. Sebbene non indossiamo più la corona di Gerusalemme, rimaniamo eredi di un'eredità di regalità che un tempo si estendeva dall'Angiò all'Albania. Con attenta diplomazia e pianificazione, potremmo ancora far rivivere la grandezza dei nostri avi e rivendicare ciò che ci fu ingiustamente sottratto." #OLD ITA
  capetian_house_of_anjou_desc: "A potent mix of Capetian dignity and Angevin ambition courses through our blood. Though we no longer wear the crown of Jerusalem, we remain heirs to a legacy of kingship that once stretched from $ANJ$ to $ALB$. With careful diplomacy and planning, we may yet revive the grandeur of our forefathers and claim what was unjustly taken from us." #NEW
@@ -10195,7 +10187,7 @@
  statutes_of_aix_desc: "Una serie di leggi e statuti vagamente consolidati formano la spina dorsale legale del nostro governo. Questi statuti mescolano la giurisprudenza romana con costumi locali e tradizione angioina, permettendoci di gestire un mosaico di regioni come un unico dominio coeso: una vera monarchia composita, dove le parti sono diverse, ma la corona è indivisibile."
 
  #rade_of_toulon: "Rada di Tolone" #OLD ITA
- rade_of_toulon: "Rade of $toulon$" #NEW
+ rade_of_toulon: "Rada di $toulon$" #NEW
  #rade_of_toulon: "Rade of Toulon" #OLD ENG
  #rade_of_toulon_desc: "Il porto naturale di Tolone offre la base ideale per le nostre ambizioni navali. Mentre Marsiglia prospera come nostro gioiello commerciale, Tolone sarà l'arsenale della Provenza, il punto di lancio di una futura potenza marittima." #OLD ITA
  rade_of_toulon_desc: "$toulon$'s natural harbor offers the ideal staging ground for our naval ambitions. While $marseille$ thrives as our commercial jewel, $toulon$ shall be the armory of $PRO$, and the launching point of a future maritime power." #NEW
@@ -10216,14 +10208,14 @@
  #orm_a_vast_emporium_desc: "It has been said that Hormuz is 'a vast emporium where there were peoples and goods of every description from all parts of the world' or that 'If all the world were a golden ring, Hormuz would be the jewel in it'. Our realm's identity is inseparable from commerce. Indeed, ships from Gujarat, Arabia, and even China alike anchor in our ports, exchanging spices, gems, silk, and stories." #OLD ENG
 
  #hormuz_toll: "Pedaggio di Hormuz" #OLD ITA
- hormuz_toll: "$ORM$ Toll" #NEW
+ hormuz_toll: "Pedaggio di $ORM$" #NEW
  #hormuz_toll: "Hormuz Toll" #OLD ENG
  #hormuz_toll_desc: "Nel punto più stretto del Golfo Persico si erge Hormuz, il guardiano del commercio marittimo Est-Ovest. Nessun vascello passa senza la nostra conoscenza o la nostra tariffa. Per secoli, questo pedaggio non solo ci ha arricchito, ma ha plasmato la nostra diplomazia e proiezione di potere attraverso i vasti mari." #OLD ITA
  hormuz_toll_desc: "At the narrowest point of the $persian_gulf$ stands $ORM$, the gatekeeper of east-west maritime trade. No vessel passes without our knowledge — or without paying our fee. For centuries, this toll has not just made us richer, but shaped our diplomacy and how we project power across the vast seas." #NEW
  #hormuz_toll_desc: "At the narrowest point of the Persian Gulf stands Hormuz, the gatekeeper to East-West maritime trade. No vessel passes without our knowledge or our fee. For centuries, this toll has not just enriched us, but shaped our diplomacy and power projection across the vast seas." #OLD ENG
 
  #gate_of_the_persian_gulf: "Porta del Golfo Persico" #OLD ITA
- gate_of_the_persian_gulf: "Gate of the $persian_gulf$" #NEW
+ gate_of_the_persian_gulf: "GPorta del $persian_gulf$" #NEW
  #gate_of_the_persian_gulf: "Gate of the Persian Gulf" #OLD ENG
  #gate_of_the_persian_gulf_desc: "Hormuz controlla lo stretto che collega l'Oceano Indiano all'interno dell'Asia. Chi detiene questo passaggio vitale detta il ritmo del traffico marittimo. Il nostro comando di queste acque deve essere assoluto, affinché la nostra influenza non sia diminuita." #OLD ITA
  gate_of_the_persian_gulf_desc: "$ORM$ controls the strait that links the $indian_ocean_continent$ to the interior of $asia$. Whoever holds this vital passage dictates the rhythm of maritime traffic. Our command of these waters must be absolute, lest our influence be diminished." #NEW
@@ -10235,14 +10227,14 @@
  #moqarrariya_desc: "For generations, our realm maintained peace with the mainland through the ancient tribute system known as Moqarrariya. Rather than depend on custom and negotiation, let us codify these tributes into formal pacts — securing fresh water, overland safety, and long-term stability through reliable diplomacy." #OLD ENG
 
  #develop_qeshm_and_ormuz: "Investire in Qeshm e Hormuz" #OLD ITA
- develop_qeshm_and_ormuz: "Invest in Qeshm and $ORM$" #NEW
+ develop_qeshm_and_ormuz: "Investire in Qeshm e $ORM$" #NEW
  #develop_qeshm_and_ormuz: "Invest in Qeshm and Hormuz" #OLD ENG
  #develop_qeshm_and_ormuz_desc: "Sebbene aride e rocciose, le isole di Qeshm e Hormuz hanno sostenuto la vita urbana grazie a un'attenta provvista e un ricco commercio. Con un investimento adeguato, i loro porti e laboratori possono prosperare ulteriormente, trasformandoli da hub logistici in centri di innovazione e produttività." #OLD ITA
  develop_qeshm_and_ormuz_desc: "Though dry and rocky, the islands of Qeshm and $ORM$ have sustained urban life thanks to careful provisioning and rich trade. With proper investment, their ports and workshops can flourish further, turning them from logistical hubs into centers of innovation and productivity." #NEW
  #develop_qeshm_and_ormuz_desc: "Though dry and rocky, the islands of Qeshm and Hormuz have sustained urban life thanks to careful provisioning and rich trade. With proper investment, their ports and workshops can flourish further, turning them from logistical hubs into centers of innovation and productivity." #OLD ENG
 
  #ormuzi_navy: "La Marina Ormuzi" #OLD ITA
- ormuzi_navy: "The $ORM_ADJ$ Navy" #NEW
+ ormuzi_navy: "La Marina $ORM_ADJ$" #NEW
  #ormuzi_navy: "The Ormuzi Navy" #OLD ENG
  #ormuzi_navy_desc: "Il Golfo ha a lungo dipeso dalle nostre flotte — siano esse mercantili, di pattuglia o scorte armate. Ma per eguagliare le ambizioni di coloro che invidiano la nostra posizione, dobbiamo espandere e modernizzare. Che Hormuz diventi non solo un posto commerciale, ma l'arsenale marittimo del mare." #OLD ITA
  ormuzi_navy_desc: "The $persian_gulf$ is crossed daily by our fleets — be they traders, patrols, or armed escorts. But to match the ambitions of those who envy our position, we must expand and modernize. Let $ORM$ become more than just a trading post: a maritime arsenal." #NEW
@@ -10276,14 +10268,14 @@
  #sav_embrace_the_vaudois_desc: "We have embraced the teachings of the Waldensian movement and are dedicated to protect this faith from the vicious Catholic Church, who desires to eradicate its ideas." #OLD ENG
 
  #sav_alpine_pass_control: "Controllo sui Passi" #OLD ITA
- sav_alpine_pass_control: "Control Over the Passes" #NEW
+ sav_alpine_pass_control: "Controllo sui Passi" #NEW
  #sav_alpine_pass_control: "Control over the Passes" #OLD ENG
  #sav_alpine_pass_control_desc: "Il passaggio attraverso le Alpi è problematico nel migliore dei casi, e può essere del tutto impossibile con carrozze o un seguito più grande. Mantenendo buoni percorsi, rifugi e stazioni di sosta, saremo in grado di dominare il terreno difficile e assicurare uno scambio costante di mercanti tra le nostre terre." #OLD ITA
  sav_alpine_pass_control_desc: "The passage over the Alps is troublesome at the best of times, and can be outright impossible with carriages or a larger entourage. By maintaining good pathways, shelters, and waystations, we will be able to dominate the difficult terrain and ensure a steady exchange of merchants throughout our territory." #NEW
  #sav_alpine_pass_control_desc: "The passage over the Alps is troublesome at the best of times, and can be outright impossible with carriages or a larger entourage. By maintaining good pathways, shelter, and waystations, we will be able to dominate the difficult terrain and ensure a steady exchange of merchants between our lands." #OLD ENG
 
  #sav_the_shroud_of_turin: "Pellegrinaggio alla Sacra Sindone" #OLD ITA
- sav_the_shroud_of_turin: "Holy Shroud Pilgrimage" #NEW
+ sav_the_shroud_of_turin: "Pellegrinaggio alla Sacra Sindone" #NEW
  #sav_the_shroud_of_turin: "Pilgrimage to the Holy Shroud" #OLD ENG
  #sav_the_shroud_of_turin_desc: "La nostra terra è in possesso di un artefatto sacrosanto, un pezzo di stoffa che porta il volto di Gesù di Nazareth. Naturalmente, ha attratto molti pellegrini a visitare e venerare questa sacra sindone. Questo flusso costante di pellegrini porta molta ricchezza alle nostre terre, che potremmo sfruttare." #OLD ITA
  sav_the_shroud_of_turin_desc: "Our realm is in the possession of a most holy artifact, a piece of cloth that bears the face of Jesus of Nazareth. Naturally, it has attracted numerous pilgrims, all clamoring to see and venerate this extraordinary relic. This constant stream of pilgrimage brings a great deal of wealth into our territory — which is all very much to our advantage." #NEW
@@ -11125,25 +11117,25 @@
 
  ita_attractive_migration: "Paesaggio Affascinante"
  ita_attractive_migration_desc: "La terra fertile e mite della nostra penisola è una meta molto ambita dalle persone provenienti dai paesi confinanti che cercano fortuna. Sebbene molte delle nostre città facciano già affidamento sulla manodopera dei migranti stagionali, dovremmo intensificare i nostri sforzi per far sì che queste persone si stabiliscano definitivamente nelle nostre terre."
- kol_peace_in_the_city: "Peace in the City" #NEW
+ kol_peace_in_the_city: "Pace nella Città" #NEW
  kol_peace_in_the_city_desc: "Not so long ago, our city was nearly torn apart in the struggle between our burghers and our clergy. We must ensure that this conflict cannot repeat itself, and that every member of both our court and the city council cooperate in preserving Cologne as a central hub on the Rhine." #NEW
- kol_school_of_painting: "Cologne School of Painting" #NEW
+ kol_school_of_painting: "Scuola di Pittura di Colonia" #NEW
  kol_school_of_painting_desc: "Our city is home to many capable painters and craftsmen skilled in the art of bringing images to life through the media of wood, stone, and especially glass. With the support of a strongly established artists' guild, they will thrive under our sponsorship and illuminate our city to new glory." #NEW
- tri_balance_the_landstande: "Balance the Landstände" #NEW
+ tri_balance_the_landstande: "Bilanciare il Landstände" #NEW
  tri_balance_the_landstande_desc: "Our territory is both home to many urban areas and castles of many imperial knights. Balancing them and their often opposing interests is no easy task. Only if they cooperate with us and the cathedral chapter, we can ensure the functionality of our government." #NEW
- hes_form_the_militia_army: "Professional Army Core" #NEW
+ hes_form_the_militia_army: "Nucleo dell'Esercito Professionale" #NEW
  hes_form_the_militia_army_desc: "Our strategic position within the Empire makes us an attractive staging ground for other princes' armies whenever outside threats arise. However, hosting foreign troops hurts our finances. To prevent this costly burden, we must raise our own troops and put them into service of the Empire." #NEW
- noble_society_baden_palatine: "Society with the Donkey" #NEW
+ noble_society_baden_palatine: "Società con l'Asino" #NEW
  noble_society_baden_palatine_desc: "Founded to protect knightly interests within the Empire, the #italic Gesellschaft mit dem Esel#! has entrenched itself in the lands surrounding $heidelberg$. Their expertise in governance, as well as their ability to sponsor tourneys, will improve our cultural standing." #NEW
- noble_society_nassau: "Society with the Lion" #NEW
+ noble_society_nassau: "Società con il Leone" #NEW
  noble_society_nassau_desc: "Founded in the woes of the $western_schism$, the #italic Löwenbund#! is sworn to protect our lands from heretical revolts. We should grant them our official sponsorship and incorporate them into our court to further our cause." #NEW
- noble_society_mainz: "Bengler Society" #NEW
+ noble_society_mainz: "Società Bengler" #NEW
  noble_society_mainz_desc: "The #italic Klüppelgesellschaft#! has been founded by a group of knights concerned about the erosion of our power within the Holy Roman Empire. It would be wise of us to sponsor those willing to fight for our status." #NEW
- noble_society_franconia: "Fürspang Society" #NEW
+ noble_society_franconia: "Società Fürspang Society"
  noble_society_franconia_desc: "The #italic Gesellschaft mit dem Fürspang#! is an order of knights formed to defend their interests and provide assistance to those who sponsor them. Providing them with extensive funds will grant us significantly more political prowess within our region and within the Holy Roman Empire." #NEW
  noble_society_tyrol: "Elefantenbund" #NEW
  noble_society_tyrol_desc: "Our lands are at risk of invasion from hostile neighbors, who desire the riches of our valleys. Creating and funding an order of knights, ready to defend our lands, allows us to draw on greater forces if the need ever arises." #NEW
- noble_society_cologne: "Order of Saint Hubert" #NEW
+ noble_society_cologne: "Ordine di Sant'Uberto" #NEW
  noble_society_cologne_desc: "The #italic Hubertusorden#! will serve as a glorious reminder of our knights prowess in combat! The order will be a reward for our loyal knights, and its members will show our glory for all to see." #NEW
  saxon_defensioner: "$a_saxon_defensioner$" #NEW
  saxon_defensioner_desc: "$a_saxon_defensioner_desc$" #NEW

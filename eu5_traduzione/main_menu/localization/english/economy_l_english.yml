@@ -14,7 +14,7 @@
  war_exhaustion: "Stanchezza da Guerra"
  karma: "Karma"
  yanantin: "Yanantin"
- complacency: "Complacency" #NEW
+ complacency: "Compiacimento" #NEW
  righteousness: "Rettitudine"
  harmony: "Armonia"
  self_control: "Autocontrollo"
@@ -529,7 +529,7 @@
  navy_transport_build: "Costo Costruzione Trasporto"
  navy_transport_reinforce: "Costo Rinforzo Trasporto"
  navy_transport_maintenance: "Costo Mantenimento Trasporto"
- template_maintenance: "Template Maintenance Cost" #NEW
+ template_maintenance: "Costo Mantenimento Template" #NEW
  subject_pays_vassal: "Il Vassallo paga il Signore"
  subject_pays_samanta: "La $samanta$ paga il Signore"
  subject_pays_maha_samanta: "La $maha_samanta$ paga il Signore"
@@ -567,13 +567,13 @@
  corrupt_officials_monthly_cost: "Costo Mensile $corrupt_officials_relation$"
  commission_art_price: "Costo Commissione Artistica"
  abdicate_price: "Costo Abdicazione"
- improve_our_cultural_view_price: "$improve_our_cultural_view$ Cost" #NEW
- transfer_subject_price: "$transfer_subject$ Cost" #NEW
+ improve_our_cultural_view_price: "Costo $improve_our_cultural_view$" #NEW
+ transfer_subject_price: "Costo $transfer_subject$" #NEW
  rtr_grant_titles_price: "Costo $rtr_grant_titles$"
  rtr_negotiate_with_rebels_price: "Costo $rtr_negotiate_with_rebels$"
  rtr_appease_the_court_price: "Costo $rtr_appease_the_court$"
  rtr_rein_in_area_price: "Costo $rtr_rein_in_area$"
- rtr_demand_annexation_price: "$rtr_demand_annexation$ Cost" #NEW
+ rtr_demand_annexation_price: "Costo $rtr_demand_annexation$" #NEW
  change_employment_system_price: "Costo $change_employment_system$"
  restrict_peranakan_trading_rights_price: "Costo $restrict_peranakan_trading_rights$"
  ban_conversion_of_adipatis_price: "Costo $ban_conversion_of_adipatis$"
@@ -588,7 +588,7 @@
  peasants_war_actions_price: "Costo Azioni Principali $peasants_war$"
  religious_turmoil_actions_price: "Costo Azioni Principali $religious_turmoil$"
  change_government_type_price: "Costo Cambio $game_concept_government_type$"
- provoke_rebels_price: "$provoke_rebels$ Main Actions Price" #NEW
+ provoke_rebels_price: "Costo Azioni Principali $provoke_rebels$" #NEW
 
  #Special Units
  n_panokseon_build: "Costo Costruzione $n_panokseon$"
@@ -627,7 +627,7 @@
  TOTAL_PRODUCTION: "Produzione totale nel [country|e]"
  GOOD_PRODUCTION: "Produzione [GOODS.GetName]"
  SELECT_LOCATION: "Seleziona Località"
- SELECT_ALL_LOCATIONS: "Select All Locations" #NEW
+ SELECT_ALL_LOCATIONS: "Seleziona Tutte le Località" #NEW
  EXPAND_PRODUCTION_SORT_NAME: "Ordina per nome della [location|e]"
  EXPAND_PRODUCTION_SORT_PRICE: "Ordina per prezzo in ogni [market|e]"
  EXPAND_PRODUCTION_SORT_PROD: "Ordina per produzione in ogni [location|e]"
@@ -646,8 +646,8 @@
  GOODS_NOT_BUILD_IN_THIS_MARKET: "@trigger_no! Non ci sono [locations|e] possibili che [Concept('own', 'possediamo')|e] per costruire un $INFO$ nel [MARKET.GetName]"
  SORT_BY_NAME_ECO_NEEDS_TT: "Ordina per Quantità"
  SORT_BY_NAME_ECO_MARKET_TT: "Ordina per nome del [market|e]"
- SORT_BY_MARKET_RELEVANCE_TT: "Sort by Market Relevance" #NEW
- SORT_BY_MERCHANT_RANKING_TT: "Sort by our position amongst all trading countries in the [market|e]" #NEW
+ SORT_BY_MARKET_RELEVANCE_TT: "Ordina per Rilevanza di Mercato" #NEW
+ SORT_BY_MERCHANT_RANKING_TT: "Ordina in base alla nostra posizione tra tutti i paesi commerciali nel [market|e]" #NEW
  SORT_BY_PRICE_ECO_TT: "Ordina per [price|e] del [good|e]"
  SORT_BY_FOOD_BALANCE_TT: "Ordina per il bilancio del [food|e] nel [market|e]"
  SORT_BY_MARKET_VALUE_TT: "Ordina per il valore totale scambiato nel [market|e]"
@@ -661,9 +661,7 @@
  SORT_BY_PROFIT_TT: "Ordina per profitto dell'operazione"
  BUILD_BUILD_SELECT_TITLE: "Seleziona edificio per produrre più [GOODS.GetName]"
  BUILD_LOC_SELECT_TITLE: "Seleziona dove costruire [BUILDING_TYPE.GetName]"
- #CURRENT_NEEDS_TITLE: "#T Le nostre necessità di [GOODS.GetNameWithNoTooltip] nel [MARKET.GetNameWithNoTooltip]#!" #OLD ITA
- CURRENT_NEEDS_TITLE: "#T Our [GOODS.GetNameWithNoTooltip] needs at the [MARKET.GetName]#!" #NEW
- #CURRENT_NEEDS_TITLE: "#T Our [GOODS.GetNameWithNoTooltip] needs at the [MARKET.GetNameWithNoTooltip]#!" #OLD ENG
+ CURRENT_NEEDS_TITLE: "#T Le nostre necessità di [GOODS.GetNameWithNoTooltip] nel [MARKET.GetName]#!"
  CURRENT_NEEDS_ENTRY: "$BULLET_WITH_TAB$$NAME$: $VAL|<+=2$"
  CURRENT_NEEDS_EXTRA: "... e altri $VAL|+=2$ da $NUM$ fonti."
  NO_POSSIBLE_BUILDINGTYPES: "Nessuno Possibile"

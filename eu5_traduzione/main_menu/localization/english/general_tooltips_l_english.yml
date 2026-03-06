@@ -449,9 +449,7 @@
  DISEASE_PRESENCE_SUB_UNIT_TOOLTIP: "[SUBUNIT.GetName]: [DISEASE.GetName]: Presenza $PRESENCE|%$, Resistenza $RESISTANCE|%$"
  DISEASE_PRESENCE_UNIT_TOOLTIP: "[UNIT.GetName]: $NUM|Y$ sotto-unità influenzate con una Presenza media del $PRESENCE|%$ e Resistenza del $RESISTANCE|%$"
  CLOSEST_PORT_LOCATION_TOOLTIP: "Il [port|e] più vicino per [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName] è [LOCATION.GetName]"
- #AI_CONQUER_DESIRE_TOOLTIP: "Il desiderio [COUNTRY.Custom('IT_Della')][COUNTRY.GetLongName] di conquistare [LOCATION.GetName] è $SCORE|Y$, il valore in cache è $CACHE|Y$.\n" #OLD ITA
- AI_CONQUER_DESIRE_TOOLTIP: "The [COUNTRY.GetLongName] calculated desire to conquer [LOCATION.GetName] is $SCORE|2Y$, cached value is $CACHE|Y$.\n" #NEW
- #AI_CONQUER_DESIRE_TOOLTIP: "The [COUNTRY.GetLongName] calculated desire to conquer [LOCATION.GetName] is $SCORE|Y$, cached value is $CACHE|Y$.\n" #OLD ENG
+ AI_CONQUER_DESIRE_TOOLTIP: "Il desiderio [COUNTRY.Custom('IT_DEL_RANGO')][COUNTRY.GetLongName] di conquistare [LOCATION.GetName] è $SCORE|2Y$, il valore in cache è $CACHE|Y$.\n"
  AI_CONTROLLER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di controllo con altri $NUMBER$ località.\nIl controllore è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
  AI_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di proprietà con altri $NUMBER$ località.\nIl proprietario è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
  AI_MAP_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di proprietà sulla mappa con altri $NUMBER$ località.\nIl proprietario della mappa è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
@@ -483,15 +481,15 @@
  CONTINENT_MEMBERS_HEADER: "I [sub_continents|e] di [CONTINENT.GetNameWithNoTooltip]"
  CONTINENT_MEMBERS_ENTRY: "[SUB_CONTINENT.GetName]: [SUB_CONTINENT.GetNumRegions]"
  SCRIPTED_GEOGRAPHY_TITLE_TT: "[ScriptedGeography.GetName]" #NEW
- SCRIPTED_GEOGRAPHY_NUM_OF_LOCATIONS: "[ScriptedGeography.GetName] has [ScriptedGeography.GetNumberOfLocationsForScriptedGeography] [locations|e] in total." #NEW
- GEOGRAPHY_IN_SCRIPTED_GEOGRAPHY: "[ScriptedGeography.GetName] consists of:" #NEW
- GEOGRAPHY_SUFFIX: ", and $NUM$ others" #NEW
- GEOGRAPHY_LOCATION: "$BULLET$$NUM$ [locations|e], including $ENTRIES$." #NEW
- GEOGRAPHY_PROVINCE_DEFINITION: "$BULLET$$NUM$ [province_definitions|e], including $ENTRIES$." #NEW
- GEOGRAPHY_AREA: "$BULLET$$NUM$ [areas|e], including $ENTRIES$." #NEW
- GEOGRAPHY_REGION: "$BULLET$$NUM$ [regions|e], including $ENTRIES$." #NEW
- GEOGRAPHY_SUB_CONTINENT: "$BULLET$$NUM$ [sub_continents|e], including $ENTRIES$." #NEW
- GEOGRAPHY_CONTINENT: "$BULLET$$NUM$ [continents|e], including $ENTRIES$." #NEW
+ SCRIPTED_GEOGRAPHY_NUM_OF_LOCATIONS: "[ScriptedGeography.GetName] ha [ScriptedGeography.GetNumberOfLocationsForScriptedGeography] [locations|e] in totale." #NEW
+ GEOGRAPHY_IN_SCRIPTED_GEOGRAPHY: "[ScriptedGeography.GetName] è composto da:" #NEW
+ GEOGRAPHY_SUFFIX: ", e altri $NUM$" #NEW
+ GEOGRAPHY_LOCATION: "$BULLET$$NUM$ [locations|e], compreso $ENTRIES$." #NEW
+ GEOGRAPHY_PROVINCE_DEFINITION: "$BULLET$$NUM$ [province_definitions|e], compreso $ENTRIES$." #NEW
+ GEOGRAPHY_AREA: "$BULLET$$NUM$ [areas|e], compreso $ENTRIES$." #NEW
+ GEOGRAPHY_REGION: "$BULLET$$NUM$ [regions|e], compreso $ENTRIES$." #NEW
+ GEOGRAPHY_SUB_CONTINENT: "$BULLET$$NUM$ [sub_continents|e], compreso $ENTRIES$." #NEW
+ GEOGRAPHY_CONTINENT: "$BULLET$$NUM$ [continents|e], compreso $ENTRIES$." #NEW
  GEOGRAPHY_ENTRY_LOCATION: "#L [LOCATION.GetName]#!" #NEW
  GEOGRAPHY_ENTRY_PROVINCE_DEFINITION: "#L [PROVINCE_DEFINITION.GetName]#!" #NEW
  GEOGRAPHY_ENTRY_AREA: "#L [AREA.GetName]#!" #NEW
@@ -525,7 +523,7 @@
 
  LOCATION_CLICK_IMPORT_EXPORT_LATERALVIEW: "Click sinistro per selezionare questo [market|e] per avviare una $IMPORT$"
  LOCATION_CLICK_RECRUIT_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare un reclutamento\nClick destro per selezionare questa [location|e] per annullare un reclutamento in corso"
- LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Left-click to select this [location|e] to start a [unit_template|e] recruiment\nRight click to select this [location|e] to remove an ongoing recruiment" #NEW
+ LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [unit_template|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso" #NEW
  LOCATION_CLICK_RISE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [levies|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso"
  LOCATION_CLICK_HIRE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [mercenaries|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso"
 
@@ -566,20 +564,13 @@
  LOCATION_SUPPLY_MISSING_STRENGTH: "Alcune [units] mancano di [strength]\n$BULLET$Peso a piena Forza: $VAL|R$"
  UNIT_WEIGHT_HEADER: "#T Pesi Unità#!"
  UNIT_WEIGHT_ENTRY: "[SUBUNIT.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2LV$#!"
- #ATTRITION_DUE_TO: "#T Penalità [food_consumption]#!\nLa Penalità al [food_consumption|e] del $VAL|R2%$ è dovuta a" #OLD ITA
- ATTRITION_DUE_TO: "#T [attrition]#!\nThe $VAL|R2%$ [attrition|e] is due to" #NEW
- #ATTRITION_DUE_TO: "#T [food_consumption] Penalty#!\nThe $VAL|R2%$ [food_consumption|e] Penalty is due to" #OLD ENG
+ ATTRITION_DUE_TO: "#T [attrition]#!\nIl $VAL|R2%$ [attrition|e] è dovuto a"
  ARMY_TOO_LARGE: "Sopra il [supply_limit|e]: $VAL|-=2$"
- #LEADING_TO_ATTRITION: "#R Penalità [food_consumption]#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" #OLD ITA
  LEADING_TO_ATTRITION: "#R [attrition]#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" #NEW
- #LEADING_TO_ATTRITION: "#R [food_consumption] Penalty#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" #OLD ENG
- FOOD_CONSUMPTION_PENALTY_DUE_TO: "#R Food Consumption Penalty#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" #NEW
- FOOD_CONSUMPTION_PENALTY_TO_WEIGHT: "#T Food Consumption Penalty#!\n$VAL|2%$ due to Lack of Supply in [LOCATION.GetName]\n[supply_limit]: $SUPPLY_LIMIT|2V$\nNeeded: $NEED|2V$" #NEW
+ FOOD_CONSUMPTION_PENALTY_DUE_TO: "#R Penalità Consumo di Cibo#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" #NEW
+ FOOD_CONSUMPTION_PENALTY_TO_WEIGHT: "#T Penalità Consumo di Cibo#!\n$VAL|2%$ a causa della Mancanza di Forniture in [LOCATION.GetName]\n[supply_limit]: $SUPPLY_LIMIT|2V$\nNecessario: $NEED|2V$" #NEW
  ATTRITION_TOOLTIP_HEADER: "#R Attrition#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" #NEW
- #ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Attualmente nessun penalità al [food_consumption]." #OLD ITA
- ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Currently not taking any attrition." #NEW
- #ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Currently not taking any penalties to [food_consumption]." #OLD ENG
- #ATTRITION_DUE_TO_WEIGHT: "[supply_limit] vs Rifornimento Necessario: $VAL|V$" #DELETE
+ ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Attualmente nessuna perdita per attrito." #NEW
  OUTSIDE_OF_NAVAL_RANGE_ATTRITION: "Fuori dalla portata navale: $VALUE|2/-=$"
  FROZEN_ATTRITION: "Mare [Concept('frozen', 'Ghiacciato')|e]: $VALUE|2-=$"
  NAVY_FROZEN_ATTRITION: "Bloccata nel Mare [Concept('frozen', 'Ghiacciato')|e]: $VALUE|2/-=$"
@@ -617,9 +608,7 @@
  HOLY_SITE_TT_INFO: "[holy_site_type_short|e]: [HOLY_SITE.GetType.GetName]\n[location|e]: [LOCATION.GetName]"
  NO_AVAILABLE_TARGETS_WITH_REASON: "@trigger_no! $REASON$"
  NO_AVAILABLE_TARGETS: "@trigger_no! Nessun bersaglio disponibile"
- #PROXIMITY_ADJACENT_DISTANCE: "#V Il Costo di Prossimità di questo segmento è $DISTANCE|+=$, a causa di:#!\n$BREAKDOWN$" #OLD ITA
- PROXIMITY_ADJACENT_DISTANCE: "#V Segment cost ([LOCATION.GetName]@button_simple_smaller![TARGET_LOCATION.GetName]) is $DISTANCE|+=$ due to:#!\n$BREAKDOWN$" #NEW
- #PROXIMITY_ADJACENT_DISTANCE: "#V Proximity cost of this segment is $DISTANCE|+=$ due to:#!\n$BREAKDOWN$" #OLD ENG
+ PROXIMITY_ADJACENT_DISTANCE: "#V Costo del Segmento ([LOCATION.GetName]@button_simple_smaller![TARGET_LOCATION.GetName]) è $DISTANCE|+=$ a causa di:#!\n$BREAKDOWN$" #NEW
  PROXIMITY_ADJACENT_DISTANCE_NUM: "Costo di Prossimità di questo segmento: $DISTANCE$"
  PROXIMITY_ADJACENT_DISTANCE_TEXT: "La costruzione di [roads|e] o l'aumento della [maritime_presence|e] ridurrà il Costo di Prossimità tra le [locations|e]."
  PROXIMITY_ADJACENT_NAME: "Costo di Prossimità tra le [game_concept_locations]"
