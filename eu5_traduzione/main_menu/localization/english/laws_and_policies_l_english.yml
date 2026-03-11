@@ -2,7 +2,7 @@
  ASSIGN_LAW_POLICY_TITLE: "Assegna una Politica di Legge $STRING$"
  # Custom Tags
  forbids_no_policy: "È necessario avere una qualsiasi Politica"
- no_ai_propose_cd: "Can be proposed without cooldown penalty" #NEW
+ no_ai_propose_cd: "Può essere proposto senza penalità di tempo di recupero" #NEW
  # 
  # Monarchy Laws
  #
@@ -40,8 +40,8 @@
  itinerant_court_policy_desc: "Per gestire meglio l'estensione del nostro regno, la corte reale non è vincolata a un'unica sede. Può spostarsi attraverso il territorio e amministrarlo localmente."
  military_court_policy: "Corte Militare"
  military_court_policy_desc: "Spendere denaro per la corte oltre allo stretto necessario è un'assurdità che incoraggia solo pigrizia e compiacenza. Il monarca vivrà in modo frugale e dedicherà una parte maggiore del bilancio all'esercito."
- humanist_court_policy: "Humanist Court" #NEW
- humanist_court_policy_desc: "Our court and our ruler must strive towards humanist ideals. We must become a prime destination for aspiring artists and philosophers." #NEW
+ humanist_court_policy: "Corte Umanista" #NEW
+ humanist_court_policy_desc: "La nostra corte e il nostro sovrano devono tendere verso ideali umanistici. Dobbiamo diventare una destinazione privilegiata per aspiranti artisti e filosofi." #NEW
  timurid_court_policy: "Corte Timuride"
  timurid_court_policy_desc: "Sebbene la guerra sia il sangue vitale dello stato, musica, arte e poesia sono altrettanto essenziali alla grandezza del nostro paese. Le tradizioni culturali delle terre conquistate non saranno più considerate estranee, ma diventeranno parte del nostro arricchimento culturale."
  valide_sultan_court_policy: "Valide Sultan"
@@ -325,24 +325,24 @@
  regulated_gold_export_desc: "Il commercio dei nostri [ShowGoodsName('goods_gold')] e [ShowGoodsName('silver')] viene gestito con grande attenzione. Questo approccio bilanciato limita la quantità esportabile, mantenendo la maggior parte della ricchezza entro i nostri confini. Una scelta prudente per chi cerca stabilità finanziaria senza rinunciare all'influenza regionale."
  unlimited_gold_export: "Esportazione Illimitata"
  unlimited_gold_export_desc: "Apriremo completamente il commercio dei nostri [ShowGoodsName('goods_gold')] e [ShowGoodsName('silver')]. Questo passo audace potrebbe generare immense ricchezze tramite il commercio internazionale, ma espone i nostri tesori al rischio di dispersione e alle mire dei rivali."
- coin_laws: "Coinage Law" #NEW
- coin_laws_desc: "This law determines the resources our country will use to mint its currency. The most common coins are made of gold, silver, and copper, with different mixtures of each material and also different monetary values. However, other exchange systems exist throughout the world that do not depend on this type of currency, but rather on other materials, such as livestock, cloth, shells, cacao, etc." #NEW
- gold_and_silver_coins: "Gold and Silver Coins" #NEW
- gold_and_silver_coins_desc: "The metals selected for the coinage of our currency are gold and silver, for two different sets of coins." #NEW
- gold_coins: "Gold Coins Only" #NEW
- gold_coins_desc: "We only use gold as the metal selected for the coinage of our currency." #NEW
- silver_coins: "Silver Coins Only" #NEW
- silver_coins_desc: "We only use silver as the metal selected for the coinage of our currency." #NEW
+ coin_laws: "Legge sulla Coniazione" #NEW
+ coin_laws_desc: "Questa legge stabilisce le risorse che il nostro Paese utilizzerà per coniare la propria moneta. Le monete più comuni sono realizzate in oro, argento e rame, con diverse miscele di ciascun materiale e anche diversi valori monetari. Tuttavia, esistono altri sistemi di scambio in tutto il mondo che non dipendono da questo tipo di valuta, ma piuttosto da altri materiali, come bestiame, tessuti, conchiglie, cacao, ecc." #NEW
+ gold_and_silver_coins: "Monete d'Oro e d'Argento" #NEW
+ gold_and_silver_coins_desc: "I metalli selezionati per il conio della nostra moneta sono l'oro e l'argento, per due diverse serie di monete." #NEW
+ gold_coins: "Solo Monete d'Oro" #NEW
+ gold_coins_desc: "Utilizziamo solo oro come metallo selezionato per il conio della nostra moneta." #NEW
+ silver_coins: "Solo Monete d'Argento" #NEW
+ silver_coins_desc: "Utilizziamo solo argento come metallo selezionato per il conio della nostra moneta." #NEW
  copper_coins: "$swedish_copper_coins$" #NEW
  copper_coins_desc: "$swedish_copper_coins_desc$" #NEW
  custom_union_of_the_rhine_policy: "$custom_union_of_the_rhine$" #NEW
  custom_union_of_the_rhine_policy_desc: "$custom_union_of_the_rhine_desc$" #NEW
  hanseatic_coins_policy: "$lub_hanseatic_coins$" #NEW
  hanseatic_coins_policy_desc: "$lub_hanseatic_coins_desc$" #NEW
- bullion_coins: "Bullion Coins" #NEW
- bullion_coins_desc: "The metals selected for the coinage of our currency are silver and copper, using different mixtures." #NEW
- barter_exchange: "Barter Exchange" #NEW
- barter_exchange_desc: "Different goods and materials, such as livestock, cloth, shells, cacao, etc., may be used as a common currency for trade." #NEW
+ bullion_coins: "Monete in Lingotti" #NEW
+ bullion_coins_desc: "I metalli selezionati per il conio della nostra moneta sono l'argento e il rame, utilizzando diverse miscele." #NEW
+ barter_exchange: "Scambio Baratto" #NEW
+ barter_exchange_desc: "Diversi beni e materiali, come bestiame, tessuti, conchiglie, cacao, ecc., possono essere utilizzati come moneta comune per il commercio." #NEW
 
  #
  # Estates specific
@@ -548,9 +548,7 @@
  clan_council_policy_desc: "La fiducia tra il popolo e i suoi leader è fondamentale. Eleggere un consiglio formato da membri di dedizione indiscutibile garantisce che il potere non cada mai nelle mani di una sola persona e che le necessità della nostra gente siano sempre soddisfatte."
  steppe_warbands_policy: "Bande delle Steppe"
  steppe_warbands_policy_desc: "La tribù è governata da un consiglio di capi di guerra che reclutano continuamente guerrieri esperti per le loro bande."
- #jurchen_council: "Consiglio [ShowCultureNameWithNoTooltip('jurchen_culture')]" #OLD ITA
- jurchen_council: "[ShowCultureGroupNameWithNoTooltip('jurchen_group')] Council" #NEW
- #jurchen_council: "[ShowCultureNameWithNoTooltip('jurchen_culture')] Council" #OLD ENG
+ jurchen_council: "Consiglio [ShowCultureGroupNameWithNoTooltip('jurchen_group')]"
  jurchen_council_desc: "Un consiglio di nobili signori della cavalleria e clan locali, questa amministrazione fluida mira a mantenere i nostri possedimenti e a difenderci dalle clan rivali."
  #
  tribal_religious_values_law: "Valori Religiosi Tribali"
@@ -726,9 +724,7 @@
  cultural_traditions_law: "Tradizioni Culturali"
  cultural_traditions_law_desc: "Le antiche tradizioni sono le fondamenta di molte culture e civiltà. Pur essendo il progresso ciò che ci condurrà alla grandezza, le tradizioni rimarranno per noi un promemoria delle nostre origini e una fonte di unità."
  martial_society: "Società Marziale"
- #martial_society_desc: "I valori marziali sono sempre stati importanti nella nostra società, e man mano che espandiamo i nostri confini, la necessità di una maggiore militarizzazione diventa evidente. Dobbiamo continuare su questa strada e costruire una nazione forte, con il potere militare al suo centro." #OLD ITA
- martial_society_desc: "Martial values have always been important in our society, but as we expand our borders, the need for militarization becomes ever more apparent. We must continue this trend, and build a strong nation with military might at its core." #NEW
- #martial_society_desc: "Martial values have always been important in our societyy, but as we expand our borders, the need for militarization becomes ever more apparent. We must continue this trend, and build a strong nation with military might at its core." #OLD ENG
+ martial_society_desc: "I valori marziali sono sempre stati importanti nella nostra società, e man mano che espandiamo i nostri confini, la necessità di una maggiore militarizzazione diventa evidente. Dobbiamo continuare su questa strada e costruire una nazione forte, con il potere militare al suo centro." #OLD ITA
  civil_society: "Società Civile"
  civil_society_desc: "Una grande nazione non si costruisce solo con la forza militare — serve una società civile dinamica, dove artigiani, mercanti, clerici e istituzioni possano prosperare, generando ricchezza, mantenendo l'ordine e contribuendo allo sviluppo di uno stato sofisticato."
  pietism_society: "Virtù Prussiane"
@@ -979,9 +975,7 @@
  dop_law_navarrese_courts: "Cortes de Navarra"
  dop_law_navarrese_courts_desc: "I [ShowEstateTypeName('nobles_estate')], il [ShowEstateTypeName('clergy_estate')] e i [ShowEstateTypeName('burghers_estate')] hanno formato un'assemblea deliberativa chiamata #italic $dop_law_navarrese_courts$#!, incaricata di approvare leggi e tasse e indagare sulle trasgressioni legali. Sebbene tutti discutano insieme, ciascuno dei tre stati vota separatamente. Per giungere a una decisione, tutte e tre le assemblee devono essere concordi. Il loro potere è tale da permettere persino di deporre o eleggere sovrani quando necessario."
  dop_law_governing_senate: "Senato Direttivo"
- #dop_law_governing_senate_desc: "Il $dop_law_governing_senate$ è il più alto organo governativo dello Stato [GetCountry('RUS').GetAdjective], creato in sostituzione della Duma dei boiardi. Riunendo funzioni legislative, giudiziarie ed esecutive, il Senato è un'istituzione potente, subordinata solo al sovrano." #OLD ITA
- dop_law_governing_senate_desc: "The $dop_law_governing_senate$ is the highest governmental body of the $RUS_ADJ$ State, and has been created as a replacement of the Boyar Duma. Combining the roles of the legislative, judicial, and executive powers, the Senate is a powerful institution which is subordinate to none but the rulers themselves." #NEW
- #dop_law_governing_senate_desc: "The $dop_law_governing_senate$ is the highest governmental body of the [GetCountry('RUS').GetAdjective] State, and has been created as a replacement of the Boyar Duma. Combining the roles of the legislative, judicial, and executive powers, the Senate is a powerful institution which is subordinate to none but the rulers themselves." #OLD ENG
+ dop_law_governing_senate_desc: "Il $dop_law_governing_senate$ è il più alto organo governativo dello Stato $RUS_ADJ$, creato in sostituzione della Duma dei boiardi. Riunendo funzioni legislative, giudiziarie ed esecutive, il Senato è un'istituzione potente, subordinata solo al sovrano."
  dop_law_estates_general: "Stati Generali"
  dop_law_estates_general_desc: "Gli $dop_law_estates_general$ sono l'assemblea del governo feudale [GetCountry('FRA').GetAdjective]. Hanno ruolo legislativo e consultivo, e rappresentano i tre stati del paese: la [ShowEstateTypeName('nobles_estate')], il [ShowEstateTypeName('clergy_estate')] e la [ShowEstateTypeName('peasants_estate')] (che ingloba anche i [ShowEstateTypeName('burghers_estate')]). Diversamente da altre assemblee, la loro approvazione per modifiche legali, come gli aumenti delle tasse, è facoltativa."
  dop_law_assemblee_nationale: "Assemblée Nationale"
@@ -995,14 +989,10 @@
  dop_favor_the_clergy: "Favorire il $clergy_estate$"
  dop_favor_the_clergy_desc: "La nostra fede ha mantenuto unita la società più volte nel corso della storia, grazie alla guida saggia del [ShowEstateTypeName('clergy_estate')]. $dop_last_sentence$"
  dop_favor_the_commoners: "Favorire la Gente Comune"
- #dop_favor_the_commoners_desc: "I [ShowEstateTypeName('peasants_estate')] sono coloro che lavorano ogni giorno per produrre le risorse essenziali di cui tutti abbiamo bisogno. Nessuno più di loro desidera vedere il nostro dominio prosperare. $dop_last_sentence$" #OLD ITA
- dop_favor_the_commoners_desc: "The [ShowEstateTypeName('peasants_estate')] are the ones who toil daily to provide the basic resources, such as food, that everyone needs regardless of their social status. They, perhaps more than anyone, wish to raise our domain to new heights of prosperity and greatness. $dop_last_sentence$" #NEW
- #dop_favor_the_commoners_desc: "The [ShowEstateTypeName('peasants_estate')] have are the ones who toil daily to provide the basic resources, such as food, that everyone needs regardless of their social status. They, perhaps more than anyone, wish to raise our domain to new heights of prosperity and greatness. $dop_last_sentence$" #OLD ENG
+ dop_favor_the_commoners_desc: "I [ShowEstateTypeName('peasants_estate')] sono coloro che lavorano ogni giorno per produrre le risorse essenziali di cui tutti abbiamo bisogno. Nessuno più di loro desidera vedere il nostro dominio prosperare. $dop_last_sentence$"
  dop_last_sentence: "Faremmo bene a coltivare la loro influenza."
  dop_law_state_council: "Consiglio di Stato"
- #dop_law_state_council_desc: "Il $dop_law_state_council$ è il supremo organo consultivo dello stato [GetCountry('RUS').GetGovernment.GetName], creato come ponte tra il regime autocratico e le Dume regionali introdotte dalla riforma [ShowGovernmentReformName('speransky_liberalization_reform')]. Il Consiglio esamina le proposte di legge e supervisiona il bilancio, ma non può proporre cambiamenti: fornisce raccomandazioni basate sulla situazione corrente." #OLD ITA
- dop_law_state_council_desc: "The $dop_law_state_council$ is the supreme state advisory body of [GetFormableCountry('RUS').GetName], created to act as a mediating party between the autocratic regime and the regional Dumas introduced by the [ShowGovernmentReformName('speransky_liberalization_reform')] reform. The State Council examines proposed laws and oversees the budget and state expenditures, although it lacks the authority to propose changes. Instead, it makes recommendations based on the current situation." #NEW
- #dop_law_state_council_desc: "The $dop_law_state_council$ is the supreme state advisory body of [GetCountry('RUS').GetGovernment.GetName], and was created to act as a mediating party between the autocratic regime and the regional Dumas introduced by the [ShowGovernmentReformName('speransky_liberalization_reform')] reform. The Council examines proposed laws and oversees the budget and state expenditures, but lacks authority to propose changes. Instead, it makes recommendations based on the current situation." #OLD ENG
+ dop_law_state_council_desc: "Il $dop_law_state_council$ è il supremo organo consultivo della [GetFormableCountry('RUS').GetName], creato come ponte tra il regime autocratico e le Dume regionali introdotte dalla riforma [ShowGovernmentReformName('speransky_liberalization_reform')]. Il Consiglio di Stato esamina le proposte di legge e supervisiona il bilancio e le spese statali, sebbene non abbia l'autorità di proporre modifiche. Esso formula invece raccomandazioni basate sulla situazione attuale."
  dop_law_castilian_courts: "Cortes de Castilla"
  dop_law_castilian_courts_desc: "Le #italic $dop_law_castilian_courts$#! rappresentano gli stati e varie città con diritto di voto nel [GetCountry('CAS').GetLongName]."
  dop_law_castilian_courts_reinforced: "Cortes de Castilla Rafforzate"
@@ -1179,9 +1169,7 @@
  electorate_religion_law: "Legge Religiosa dell'Elettorato"
  electorate_religion_law_desc: "La religione è un pilastro fondamentale del [GetUniqueInternationalOrganization('hre').GetName], sia per gli Imperatori che per gli [ShowSpecialStatusNamePlural('elector')]."
  only_imperial_religion_policy: "Solo Religione Imperiale"
- #only_imperial_religion_policy_desc: "Gli [ShowSpecialStatusNamePlural('elector')] sono tenuti a seguire la religione imperiale per mantenere il loro status." #OLD ITA
- only_imperial_religion_policy_desc: "[ShowSpecialStatusNamePlural('elector')] are required to follow the Imperial religion in order to maintain their status." #NEW
- #only_imperial_religion_policy_desc: "[ShowSpecialStatusNamePlural('elector')] are requied follow the Imperial religion in order to maintain their status." #OLD ENG
+ only_imperial_religion_policy_desc: "Gli [ShowSpecialStatusNamePlural('elector')] sono tenuti a seguire la religione imperiale per mantenere il loro status."
  only_imperial_religion_group_policy: "Solo Gruppo Religioso Imperiale"
  only_imperial_religion_group_policy_desc: "Gli [ShowSpecialStatusNamePlural('elector')] possono aderire liberamente a qualunque denominazione della nostra religione di stato. Questo però non include la tolleranza verso i pagani, che non sarà accettata."
 
@@ -1197,9 +1185,7 @@
  no_emperor_allegiance_policy_desc: "Le Città Libere non ricevono più protezione dal [GetUniqueInternationalOrganization('hre').GetLeaderTitle] quando devono difendersi da principi ambiziosi."
  no_free_cities_policy: "Città Libere Abolite"
  no_free_cities_policy_desc: "Le Città Imperiali Libere non esistono più. Nessuna città o borgo sarà sotto la protezione del [GetUniqueInternationalOrganization('hre').GetLeaderTitle]."
- #free_city_subjugation_antagonism_tt: "Ogni [ShowSpecialStatusName('free_city')] guadagna [average_free_city_antagonism.GetValue|R2] d'[antagonism|e] verso [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]" #OLD ITA
- free_city_subjugation_antagonism_tt: "Every [ShowSpecialStatusName('free_city')] gains [SCOPE.GetValue('average_free_city_antagonism')|R2] [antagonism|e] towards [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]" #NEW
- #free_city_subjugation_antagonism_tt: "Every [ShowSpecialStatusName('free_city')] gains [average_free_city_antagonism.GetValue|R2] [antagonism|e] towards [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]" #OLD ENG
+ free_city_subjugation_antagonism_tt: "Ogni [ShowSpecialStatusName('free_city')] guadagna [SCOPE.GetValue('average_free_city_antagonism')|R2] d'[antagonism|e] verso [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
 
  free_city_rights_law: "Diritti delle Città Libere"
  free_city_rights_law_desc: "Ottenere lo status di [ShowSpecialStatusName('free_city')] non è semplice. Questo titolo esclusivo deve essere conferito dal [GetUniqueInternationalOrganization('hre').GetLeaderTitle]."
@@ -2187,9 +2173,7 @@
  union_organized_diplomats_policy_desc: "I diplomatici dell'[GetInternationalOrganizationType('union').GetName] non servono un singolo vessillo, ma l'intera $union$. Ogni membro ha accesso alle loro capacità e può utilizzarle per i propri affari esteri."
 
  union_legislature_law: "Legislatura dell'Unione"
- #union_legislature_law_desc: "L'amministrazione della [GetInternationalOrganizationType('union').GetName] richiede un assetto coerente. Un sistema unitario e approvato di legislazione è indispensabile per garantire la stabilità dell'$union$." #OLD ITA
- union_legislature_law_desc: "The adminstration of the [GetInternationalOrganizationType('union').GetName] requires a cohesive design. An approved, unitary system of a legislature is imperative to ensure the stability of the $union$." #NEW
- #union_legislature_law_desc: "The adminstration of the [GetInternationalOrganizationType('union').GetName] rqeuires a cohesive design. An approved, unitary system of a legislature is imperative to ensure the stability of the $union$." #OLD ENG
+ union_legislature_law_desc: "L'amministrazione della [GetInternationalOrganizationType('union').GetName] richiede un assetto coerente. Un sistema unitario e approvato di legislazione è indispensabile per garantire la stabilità dell'$union$."
  union_aligned_legislature_policy: "Legislatura Allineata"
  union_aligned_legislature_policy_desc: "Per mantenere coesione amministrativa e coerenza all'interno della [GetInternationalOrganizationType('union').GetName], tutte le leggi e le politiche devono essere allineate a quelle del [ShowSpecialStatusName('senior_partner')]."
  union_aligned_legislature_policy_at: "Ogni membro dell'[GetInternationalOrganizationType('union').GetName], se possibile, adotta le [government_reforms|e] e le [policies|e] implementate dal [ShowSpecialStatusName('senior_partner')]"

@@ -19,12 +19,12 @@
  UNLOCK_ONGOING_RELATION: "Sblocca Diplomazia in Corso"
  LOCK_ONGOING_RELATION_DESC: "Impedisce all'automazione di cambiare questa [diplomatic_action]."
  UNLOCK_ONGOING_RELATION_DESC: "Consente all'automazione di cambiare questa [diplomatic_action]."
- SELECT_THIS_CABINET: "Select this Cabinet Slot" #NEW
+ SELECT_THIS_CABINET: "Seleziona questo Posto del Gabinetto" #NEW
  
  POLICY_IS_PART_OF_LAW: "Questa è una [policy|e] della [law|e] [LAW.GetName]."
- ESTATE_TYPE_GIVE_TAX_TO_OTHER: "$BULLET_WITH_TAB$Depending on [ShowModifierTypeName('global_peasant_enfranchisment')] income will go to [ESTATE_TYPE.GetName]." #NEW
+ ESTATE_TYPE_GIVE_TAX_TO_OTHER: "$BULLET_WITH_TAB$A seconda dell'[ShowModifierTypeName('global_peasant_enfranchisment')], il reddito andrà a [ESTATE_TYPE.GetName]." #NEW
  TAX_BASE_PEASANT_ENFRANCH: "[peasant_enfranchisement|e]: [Location.GetPeasantEnfranchisment|2G%] [peasant_enfranchisement_icon]" #NEW
- PEASANT_ENFRANCHISMENT: "Min $MIN|2%$ and Max is $MAX|2%$" #NEW
+ PEASANT_ENFRANCHISMENT: "Minimo $MIN|2%$ e il Massimo è $MAX|2%$" #NEW
  PEASANT_ENFRANCHISMENT_TITLE: "#T $MODIFIER_TYPE_NAME_global_peasant_enfranchisment$#!" #NEW
  #
  # Powers
@@ -176,7 +176,10 @@
  CURRENT_REGENCY_TOOLTIP_NAME: "$REGENCY$"
  CURRENT_REGENCY_TOOLTIP_DESC: "Siamo attualmente governati da una $REGENCY$ nel nostro paese fino al #V $DATE$#!, il che ci conferisce i seguenti effetti:\n\n$EFFECTS$"
  CURRENT_REGENCY_INDEFINITELY_TOOLTIP_DESC: "Siamo governati da una $REGENCY$ nel nostro paese #V a tempo indeterminato#!, il che ci conferisce i seguenti effetti:\n\n$EFFECTS$"
- supported_heirs_rule: "• Characters must be supported by a foreign country using [ShowCountryInteractionName('support_heir_interaction')] or is favored by us through [ShowCharacterInteractionName('favor_heir')]" #NEW
+ 
+ #
+ # Heir Selection custom rules
+ supported_heirs_rule: "• I personaggi devono essere sostenuti da un paese straniero utilizzando [ShowCountryInteractionName('support_heir_interaction')] o è da noi preferito attraverso [ShowCharacterInteractionName('favor_heir')]" #NEW
 
  #
  # Heir Selection Calculation Descriptions
@@ -258,9 +261,7 @@
  ESTATE_OPINION_ENTRY_FORMAT: "$KEY$: $VALUE|+=2$"
  ESTATE_OPINION_OF: "[ESTATE.GetNameWithNoTooltip] ha un opinione di $VAL$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithNoTooltip]"
  GRANT_PRIVILEDGE_ALREADY: "@trigger_no! Abbiamo già concesso [ESTATE_PRIVILEGE.GetName] a [ESTATE.GetName]"
- #GRANT_PRIVILEDGE_TT: "Questa concessione a [ESTATE.GetName] costa $COST$ e fornisce:\n$VAL|+=2%$ immediatamente alla loro [estate_satisfaction|e]\n$OTHER$\n[ESTATE_PRIVILEGE.GetEffectText]" #OLD ITA
- GRANT_PRIVILEDGE_TT: "Granting to [ESTATE.GetName] at a cost of $COST$ gives\n[ESTATE_PRIVILEGE.GetEffectText]\n\nAnd will have the following impact on [estate_satisfaction|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$" #NEW
- #GRANT_PRIVILEDGE_TT: "Granting to [ESTATE.GetName] at a cost of $COST$ gives:\nImmediate $VAL|+=2%$ to their [estate_satisfaction|e]\n$OTHER$\n[ESTATE_PRIVILEGE.GetEffectText]" #OLD ENG
+ GRANT_PRIVILEDGE_TT: "Questa concessione a [ESTATE.GetName] costa $COST$ e fornisce\n[ESTATE_PRIVILEGE.GetEffectText]\n\nE avrà il seguente impatto sulla [estate_satisfaction|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$"
  ANNOY_OTHER_ESTATE: "[ESTATE.GetName]: $VAL|+=2%$ ([ESTATE.GetSatisfaction|%]@satisfaction!)"
  ESTATE_SATISFACTION_CHANGE_INITIAL: "[ESTATE.GetName]: $PRE_POST_HIT_TEXT$" #NEW
  ESTATE_SATISFACTION_PRE_HIT: "$VAL|%$@satisfaction_neutral!" #NEW
@@ -325,9 +326,7 @@
  REFORM_SOCIAL_VALUE_TITLE: "#T Requisito Speciale per [GOVERNMENT_REFORM.GetNameWithNoTooltip]#!"
  REFORM_SOCIAL_VALUE_ENTRY: "Almeno $VAL|G$ verso $NAME$"
  
- #MONTHLY_CONTROL_TT_HEADER: "Cambiamento Mensile del Controllo:" #OLD ITA
- MONTHLY_CONTROL_TT_HEADER: "Monthly Control Change" #NEW
- #MONTHLY_CONTROL_TT_HEADER: "Monthly Control Change:" #OLD ENG
+ MONTHLY_CONTROL_TT_HEADER: "Cambiamento Mensile del Controllo"
  MONTHLY_CONTROL_TT_TEXT: "Il cambiamento è dovuto a:"
  MAX_CONTROL_TT_HEADER: "Controllo Massimo"
  MAX_CONTROL_TT_TEXT: "Il Controllo Massimo è dovuto a:"
@@ -420,7 +419,7 @@
  MODIFIER_PROVINCE_TITLE: "Su ogni [province|e]:"
  MODIFIER_COUNTRY_TITLE: "Su ogni [country|e]:"
  MODIFIER_INTERNATIONAL_ORGANIZATION_TITLE: "Sull'[international_organization|e]:"
- MODIFIER_REBEL_TITLE: "On the [rebels|e]:" #NEW
+ MODIFIER_REBEL_TITLE: "Sui [rebels|e]:" #NEW
  MODIFIER_WHILE_RESEARCHING: "Durante la ricerca:"
  SET_LAW_ACTION: "Codificare [POLICY.GetName] per la legge [LAW.GetName] costerà $COST$"
  SET_LAW_ALREADY: "@trigger_no! Abbiamo già codificato [POLICY.GetName] per la legge [LAW.GetName]"
@@ -443,24 +442,24 @@
  ESTIMATED_INTEGRATION_LOCATION_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=$#!"
  INTEGRATE_CULTURE_WAR: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|+=%2$"
  INTEGRATE_SAME_CULTURE: "La cultura [CULTURE.GetName] è la [dominant_culture|e]: $VAL|+=2%$"
- INTEGRATE_DIFFERENT_CULTURE: "[TARGET_CULTURE.GetName] is the [dominant_culture|e]: $VAL|+=2%$" #NEW
+ INTEGRATE_DIFFERENT_CULTURE: "La cultura [TARGET_CULTURE.GetName] è la [dominant_culture|e]: $VAL|+=2%$" #NEW
  ASSIMILATE_CULTURE_WAR: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|+=2%$"
  ASSIMILATE_SAME_CULTURE: "La cultura [CULTURE.GetName] è la [dominant_culture|e]: $VAL|+=%2$"
- ASSIMILATE_DIFFERENT_CULTURE: "[TARGET_CULTURE.GetName] is the [dominant_culture|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_MERGED_CULTURE_GROUP: "[CULTURE.GetName] is a [merged_culture_group|e] of [TARGET_CULTURE.GetName]: $VAL|+=%2$" #NEW
- ASSIMILATE_TARGET_OPINION_OF_OWNER: "[TARGET_CULTURE.GetName] has $OPINION$ [cultural_opinion_short|e] of [CULTURE.GetName]: $VAL|+=%2$" #NEW
- ASSIMILATE_OWNER_OPINION_OF_TARGET: "[CULTURE.GetName] has $OPINION$ [cultural_opinion_short|e] of [TARGET_CULTURE.GetName]: $VAL|+=%2$" #NEW
- ASSIMILATE_ACCEPTED_CULTURE: "[TARGET_CULTURE.GetName] is an [accepted_culture|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_TOLERATED_CULTURE: "[TARGET_CULTURE.GetName] is a [tolerated_culture|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_SAME_LANGUAGE: "Both use the [LANGUAGE.GetName] [language|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_SAME_LANGUAGE_FAMILY: "Both use a [language|e] from the [LANGUAGE.GetFamily.GetName] [language_family_short|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_ACTOR_AND_TARGET_HAVE_MARKET_LANGUAGE: "[LANGUAGE.GetName] [market_language|e] is used by both ([LOCATION.GetMarketAccess|%V] [market_access|e]): $VAL|+=%2$" #NEW
- ASSIMILATE_ACTOR_HAS_MARKET_LANGUAGE: "[LANGUAGE.GetName] [market_language|e] is used by [CULTURE.GetName] ([LOCATION.GetMarketAccess|%V] [market_access|e]): $VAL|+=%2$" #NEW
- ASSIMILATE_TARGET_HAS_MARKET_LANGUAGE: "[LANGUAGE.GetName] [market_language|e] is used by [TARGET_CULTURE.GetName] ([LOCATION.GetMarketAccess|2%V]): $VAL|+=%2$" #NEW
- ASSIMILATE_SHARED_CULTURE_GROUPS: "$NUM$ of $TOTAL$ Shared [culture_groups|e]: $VAL|+=%2$" #NEW
- ASSIMILATE_ALREADY_CULTURE: "[CULTURE.GetName] is already the only [culture|e] in [LOCATION.GetName]" #NEW
+ ASSIMILATE_DIFFERENT_CULTURE: "La cultura [TARGET_CULTURE.GetName] è la [dominant_culture|e]: $VAL|+=%2$" #NEW
+ ASSIMILATE_MERGED_CULTURE_GROUP: "La cultura [CULTURE.GetName] è un [merged_culture_group|e] della cultura [TARGET_CULTURE.GetName]: $VAL|+=%2$" #NEW
+ ASSIMILATE_TARGET_OPINION_OF_OWNER: "La cultura [TARGET_CULTURE.GetName] ha $OPINION$ [cultural_opinion_short|e] della cultura [CULTURE.GetName]: $VAL|+=%2$" #NEW
+ ASSIMILATE_OWNER_OPINION_OF_TARGET: "La cultura [CULTURE.GetName] ha $OPINION$ [cultural_opinion_short|e] della cultura [TARGET_CULTURE.GetName]: $VAL|+=%2$" #NEW
+ ASSIMILATE_ACCEPTED_CULTURE: "La cultura [TARGET_CULTURE.GetName] è una [accepted_culture|e]: $VAL|+=%2$" #NEW
+ ASSIMILATE_TOLERATED_CULTURE: "La cultura [TARGET_CULTURE.GetName] è una [tolerated_culture|e]: $VAL|+=%2$" #NEW
+ ASSIMILATE_SAME_LANGUAGE: "Entrambi utilizzano la [language|e] [LANGUAGE.GetName]: $VAL|+=%2$" #NEW
+ ASSIMILATE_SAME_LANGUAGE_FAMILY: "Entrambi utilizzano una [language|e] dalla [language_family_short|e] [LANGUAGE.GetFamily.GetName]: $VAL|+=%2$" #NEW
+ ASSIMILATE_ACTOR_AND_TARGET_HAVE_MARKET_LANGUAGE: "La [market_language|e] [LANGUAGE.GetName] è utilizzato da entrambi ([LOCATION.GetMarketAccess|%V] [market_access|e]): $VAL|+=%2$" #NEW
+ ASSIMILATE_ACTOR_HAS_MARKET_LANGUAGE: "La [market_language|e] [LANGUAGE.GetName] è utilizzata dalla cultura [CULTURE.GetName] ([LOCATION.GetMarketAccess|%V] [market_access|e]): $VAL|+=%2$" #NEW
+ ASSIMILATE_TARGET_HAS_MARKET_LANGUAGE: "La [market_language|e] [LANGUAGE.GetName] è utilizzata dalla cultura [TARGET_CULTURE.GetName] ([LOCATION.GetMarketAccess|2%V]): $VAL|+=%2$" #NEW
+ ASSIMILATE_SHARED_CULTURE_GROUPS: "$NUM$ su $TOTAL$ [culture_groups|e] Condivisi: $VAL|+=%2$" #NEW
+ ASSIMILATE_ALREADY_CULTURE: "[CULTURE.GetName] è già l'unica [culture|e] in [LOCATION.GetName]" #NEW
  INTEGRATE_BLOCKED_BY_OCCUPATION: "@trigger_no![LOCATION.GetName] è attualmente occupata, quindi l'integrazione è stata bloccata."
- ASSIMILATE_CULTURE_INDIVIDUAL: "[TARGET_CULTURE.GetName] [pops|e] Assimilating to [CULTURE.GetName]: $VAL|+=2$" #NEW
+ ASSIMILATE_CULTURE_INDIVIDUAL: "[pops|e] di cultura [TARGET_CULTURE.GetName] si assimilano alla cultura [CULTURE.GetName]: $VAL|+=2$" #NEW
  #
  # Societal Values
  #
@@ -586,19 +585,13 @@
  assimilate_area_select_area: "Seleziona Area da Assimilare"
  assimilate_area_no_areas: "@trigger_no! Non ci sono [areas|e] disponibili da assimilare."
  assimilate_area: "Assimilare l'Area"
- #assimilate_area_desc: "Come [ShowHegemonyName('cultural_hegemon')] possiamo promuovere la nostra cultura su un'area più vasta del Paese in una sola volta." #OLD ITA
- assimilate_area_desc: "As a [ShowHegemonyName('cultural_hegemon')] we can promote a culture over a larger area of the country at once." #NEW
- #assimilate_area_desc: "As a [ShowHegemonyName('cultural_hegemon')] we can promote our culture over a larger area of the country at once." #OLD ENG
+ assimilate_area_desc: "Come [ShowHegemonyName('cultural_hegemon')] possiamo promuovere una cultura su un'area più vasta del Paese contemporaneamente."
  assimilate_area_active: "Assimilazione di [SCOPE.sArea('target').GetNameWithHighlightOnly]"
  assimilate_area_action: "Assimila [SCOPE.sArea('target').GetNameWithNoTooltip]"
- #assimilate_area_action_progress: "[SCOPE.sArea('target').GetPrimaryCulturePercentage(SCOPE.sCountry('actor'))|2%]" #OLD ITA
- assimilate_area_action_progress: "[SCOPE.sArea('target').GetCulturePercentage(SCOPE.sCountry('actor'),SCOPE.sCulture('target_culture'))|2%]" #NEW
- #assimilate_area_action_progress: "[SCOPE.sArea('target').GetPrimaryCulturePercentage(SCOPE.sCountry('actor'))|2%]" #OLD ENG
+ assimilate_area_action_progress: "[SCOPE.sArea('target').GetCulturePercentage(SCOPE.sCountry('actor'),SCOPE.sCulture('target_culture'))|2%]"
  assimilate_area_action_progress_wordier: "[cultural_unity|e] di [SCOPE.sArea('target').GetNameWithNoTooltip] è $assimilate_area_action_progress$"
  assimilate_area_action_progress_long_wordier: "@culture!: $assimilate_area_action_progress$"
- #assimilate_area_action_progress_tooltip: "[SCOPE.sArea('target').GetPrimaryCulturePercentageInfo(SCOPE.sCountry('actor'))]" #OLD ITA
- assimilate_area_action_progress_tooltip: "[SCOPE.sArea('target').GetCulturePercentageInfo(SCOPE.sCountry('actor'),SCOPE.sCulture('target_culture'))]" #NEW
- #assimilate_area_action_progress_tooltip: "[SCOPE.sArea('target').GetPrimaryCulturePercentageInfo(SCOPE.sCountry('actor'))]" #OLD ENG
+ assimilate_area_action_progress_tooltip: "[SCOPE.sArea('target').GetCulturePercentageInfo(SCOPE.sCountry('actor'),SCOPE.sCulture('target_culture'))]"
 
 
  reduced_paperwork_select_area: "$select_area_to_benefit$"
@@ -754,15 +747,11 @@
  pop_promote_action: "Incoraggiare l'Urbanizzazione"
  pop_promote_action_desc: "Questo farà in modo che la nostra [population|e] venga [promoted|e] più velocemente."
  pop_promote_action_action: "Incoraggia Urbanizzazione"
- #pop_promote_action_active: "Incoraggiamento dell'Urbanizzazione" #OLD ITA
- pop_promote_action_active: "Urbanizing [SCOPE.sProvince('target').GetNameWithHighlightOnly]" #NEW
- #pop_promote_action_active: "Encouraging Urbanization" #OLD ENG
+ pop_promote_action_active: "Urbanizzazione in [SCOPE.sProvince('target').GetNameWithHighlightOnly]" #NEW
  pop_promote_action_action_progress: "[SCOPE.sProvince('target').GetMissingWorkers]"
  pop_promote_action_action_progress_wordier: "[SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]"
  pop_promote_action_action_progress_long_wordier: "@population! [SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]\n@employees! [SCOPE.sProvince('target').GetMissingWorkers]"
- #pop_promote_action_action_progress_tooltip: "[SCOPE.sCountry('actor').GetDoubleDescriptionFor('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]\nDipendenti mancanti: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!" #OLD ITA
- pop_promote_action_action_progress_tooltip: "Urbanization of @province! [SCOPE.sProvince('target').GetName]:\n@local_pop_promotion_speed_positive! [Localize('MODIFIER_TYPE_NAME_local_pop_promotion_speed')]: [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect]\nMissing employees: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!" #NEW
- #pop_promote_action_action_progress_tooltip: "[SCOPE.sCountry('actor').GetDoubleDescriptionFor('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]\nMissing empolyees: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!" #OLD ENG
+ pop_promote_action_action_progress_tooltip: "Urbanizzazione in @province! [SCOPE.sProvince('target').GetName]:\n@local_pop_promotion_speed_positive! [Localize('MODIFIER_TYPE_NAME_local_pop_promotion_speed')]: [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect]\nDipendenti mancanti: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!"
 
 
  stabilize_country: "Stabilizzare il Paese"
@@ -857,9 +846,7 @@
  promote_culture: "Assimilare i Pop alla nostra Cultura"
  promote_culture_desc: "Questo convertirà la [population|e] locale alla [culture|e] bersaglio."
  promote_culture_select_culture: "Seleziona la [culture|e] verso cui spostarsi:"
- #promote_culture_select_province: "Seleziona la [province|e] in cui promuovere la [culture|e]:" #OLD ITA
- promote_culture_select_province: "Select the [province|e] to assimilate [pops|e] into our [culture|e]:" #NEW
- #promote_culture_select_province: "Select the [province|e] to promote [culture|e] to:" #OLD ENG
+ promote_culture_select_province: "Seleziona la [province|e] per assimilare i [pops|e] nella nostra [culture|e]:"
  promote_culture_action: "Assimila [SCOPE.sProvince('target_1').GetNameWithNoTooltip]"
  promote_culture_active: "Assimilazione di [SCOPE.sProvince('target_1').GetNameWithHighlightOnly]"
  promote_culture_action_progress: "[SCOPE.sProvince('target_1').GetCulturePercentage(SCOPE.sCulture('target'))|V2%]"
@@ -885,21 +872,21 @@
  alleviate_concerns_action_progress_wordier: "[antagonism|e] da [SCOPE.sCountry('actor').GetDiplomacy.GetNumberOfCountriesWithTimedAntagonismTowardsUs] Paesi"
  alleviate_concerns_action_progress_long_wordier: "@antagonism! [SCOPE.sCountry('actor').GetDiplomacy.GetNumberOfCountriesWithTimedAntagonismTowardsUs]"
  alleviate_concerns_action_progress_tooltip: "Ci sono attualmente [SCOPE.sCountry('actor').GetDiplomacy.GetNumberOfCountriesWithTimedAntagonismTowardsUs] [countries|e] per i quali possiamo ridurre l'Antagonismo di [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect]\n[SCOPE.sCountry('actor').GetDiplomacy.GetAllCountriesTimedAntagonismDescription]"
- appease_estate: "Appease Estate" #NEW
- appease_estate_desc: "This will increase the [estate|e]'s [estate_satisfaction|e]." #NEW
- appease_estate_action: "Appease Estates" #NEW
- appease_estate_active: "Appeasing Estates" #NEW
+ appease_estate: "Ceto Placato" #NEW
+ appease_estate_desc: "Questo aumenterà la [estate_satisfaction|e]." #NEW
+ appease_estate_action: "Ceti Placati" #NEW
+ appease_estate_active: "Appagare i Ceti" #NEW
  appease_estate_action_progress: "[SCOPE.sEstate('target').GetSatisfaction|2%]" #NEW
- appease_estate_action_progress_wordier: "[estate_satisfaction|e] is [SCOPE.sEstate('target').GetSatisfaction|2%]" #NEW
- appease_estate_action_progress_long_wordier: "[estate_satisfaction|e] of [SCOPE.sEstate('target').GetName] is [SCOPE.sEstate('target').GetSatisfaction|2%]" #NEW
- appease_estate_action_progress_tooltip: "The [SCOPE.sEstate('target').GetName] [estate|e] currently has [SCOPE.sEstate('target').GetSatisfaction|2%] [estate_satisfaction|e] with a target of [SCOPE.sEstate('target').GetTargetSatisfaction|2%]" #NEW
- if_nobles_estate_selected: "If the [ShowEstateTypeName('nobles_estate')] is selected:" #NEW
- if_clergy_estate_selected: "If the [ShowEstateTypeName('clergy_estate')] is selected:" #NEW
- if_burghers_estate_selected: "If the [ShowEstateTypeName('burghers_estate')] is selected:" #NEW
- if_peasants_estate_selected: "If the [ShowEstateTypeName('peasants_estate')] is selected:" #NEW
- if_dhimmi_estate_selected: "If the [ShowEstateTypeName('dhimmi_estate')] is selected:" #NEW
- if_tribes_estate_selected: "If the [ShowEstateTypeName('tribes_estate')] is selected:" #NEW
- if_cossacks_estate_selected: "If the [ShowEstateTypeName('cossacks_estate')] is selected:" #NEW
+ appease_estate_action_progress_wordier: "La [estate_satisfaction|e] è [SCOPE.sEstate('target').GetSatisfaction|2%]" #NEW
+ appease_estate_action_progress_long_wordier: "La [estate_satisfaction|e] [SCOPE.sEstate('target').GetName] è [SCOPE.sEstate('target').GetSatisfaction|2%]" #NEW
+ appease_estate_action_progress_tooltip: "Il [estate|e] [SCOPE.sEstate('target').GetName] attualmente ha [SCOPE.sEstate('target').GetSatisfaction|2%] [estate_satisfaction|e] con un obiettivo del [SCOPE.sEstate('target').GetTargetSatisfaction|2%]" #NEW
+ if_nobles_estate_selected: "Se la [ShowEstateTypeName('nobles_estate')] è selezionata:" #NEW
+ if_clergy_estate_selected: "Se il [ShowEstateTypeName('clergy_estate')] è selezionato:" #NEW
+ if_burghers_estate_selected: "Se la [ShowEstateTypeName('burghers_estate')] è selezionata:" #NEW
+ if_peasants_estate_selected: "Se i [ShowEstateTypeName('peasants_estate')] sono selezionati:" #NEW
+ if_dhimmi_estate_selected: "Se i [ShowEstateTypeName('dhimmi_estate')] sono selezionati:" #NEW
+ if_tribes_estate_selected: "Se le [ShowEstateTypeName('tribes_estate')] sono selezionate:" #NEW
+ if_cossacks_estate_selected: "Se i [ShowEstateTypeName('cossacks_estate')] sono selezionati:" #NEW
 
  encourage_migration: "Incoraggiare la Migrazione"
  encourage_migration_desc: "Questo renderà la [pops|e] più propensa a [migrate|e] in questa [location|e]."
@@ -1063,165 +1050,89 @@
  aid_constantinople_action_progress_tooltip: "Aiuto alla Popolazione"
 
  pru_deal_with_robber_barons: "Occuparsi dei Baroni Ladri"
- #pru_deal_with_robber_barons_desc: "I baroni predoni locali sono una minaccia al nostro controllo sulla provincia e ancora di più al nostro prestigio. Dobbiamo liberarcene per il bene del nostro splendore! E forse anche per il bene dei contadini locali." #OLD ITA
- pru_deal_with_robber_barons_desc: "The local Robber Barons are a threat to our hold over the province and to our prestige even more. We must get rid of them for the good of our splendor! And perhaps for the good of the local peasantry, too." #NEW
- #pru_deal_with_robber_barons_desc: "The local robber barons are a threat to our hold over the province and to our prestige even more. We must get rid of them for the good of our splendor! And perhaps for the good of the local peasantry, too." #OLD ENG
+ pru_deal_with_robber_barons_desc: "I Baroni Ladri locali sono una minaccia al nostro controllo sulla provincia e ancora di più al nostro prestigio. Dobbiamo liberarcene per il bene del nostro splendore! E forse anche per il bene dei contadini locali."
  pru_deal_with_robber_barons_active: "Occupati dei Baroni Ladri"
  pru_deal_with_robber_barons_action: "Occuparsi dei Baroni Ladri"
- #pru_deal_with_robber_barons_action_progress: "Occupati dei Baroni Ladri" #OLD ITA
- pru_deal_with_robber_barons_action_progress: "[SCOPE.sCabinet('cabinet').GetDaysUntilFullyImplementedInDays]" #NEW
- #pru_deal_with_robber_barons_action_progress: "Dealing with the Robber Barons" #OLD ENG
+ pru_deal_with_robber_barons_action_progress: "[SCOPE.sCabinet('cabinet').GetDaysUntilFullyImplementedInDays]"
  pru_deal_with_robber_barons_action_progress_wordier: "Occupati dei Baroni Ladri"
- #pru_deal_with_robber_barons_action_progress_tooltip: "Occupati dei Baroni Ladri" #OLD ITA
- pru_deal_with_robber_barons_action_progress_tooltip: "Dealing with the Robber Barons at #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nShould be done in [SCOPE.sCabinet('cabinet').GetDaysUntilFullyImplementedInDays], on [SCOPE.sCabinet('cabinet').GetFullyImplementedDateString]" #NEW
- #pru_deal_with_robber_barons_action_progress_tooltip: "Dealing with the Robber Barons" #OLD ENG
- pru_deal_with_robber_barons_action_progress_tooltip_1: "[SCOPE.sCabinet('cabinet').GetAction().GetModifiers()]" #NEW
-
+ pru_deal_with_robber_barons_action_progress_tooltip: "Affrontare i Baroni Ladri al #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nDovrebbe essere fatto in [SCOPE.sCabinet('cabinet').GetDaysUntilFullyImplementedInDays], su [SCOPE.sCabinet('cabinet').GetFullyImplementedDateString]"
+ pru_deal_with_robber_barons_action_progress_tooltip_1: "[SCOPE.sCabinet('cabinet').GetAction().GetModifiers()]"
+ 
 #Muscovy/Russia Cabinet Actions
  posolsky: "Posolsky"
  posolsky_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz degli affari esteri, migliorando l'integrazione dei soggetti e assicurando buone relazioni con gli altri [countries|e]."
- #posolsky_action: "$posolsky$" #OLD ITA
- posolsky_action: "Managing $posolsky$ prikaz" #NEW
- #posolsky_action: "$posolsky$" #OLD ENG
- #posolsky_active: "Prikaz $posolsky$" #OLD ITA
- posolsky_active: "Managing $posolsky$ prikaz" #NEW
- #posolsky_active: "$posolsky$ Prikaz" #OLD ENG
- posolsky_active_action_title: "Managing $posolsky$ prikaz" #NEW
- #posolsky_action_progress: "Prikaz $posolsky$" #OLD ITA
- posolsky_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]" #NEW
- #posolsky_action_progress: "$posolsky$ Prikaz" #OLD ENG
- #posolsky_action_progress_wordier: "Prikaz $posolsky$" #OLD ITA
- posolsky_action_progress_wordier: "[diplomatic_reputation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')] [annexation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]" #NEW
- #posolsky_action_progress_wordier: "$posolsky$ Prikaz" #OLD ENG
- posolsky_action_progress_long_wordier: "@diplomatic_reputation! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')]\n  @annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]" #NEW
- #posolsky_action_progress_tooltip: "Prikaz $posolsky$" #OLD ITA
- posolsky_action_progress_tooltip: "Improves $MODIFIER_TYPE_NAME_diplomatic_reputation$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_reputation')]" #NEW
- #posolsky_action_progress_tooltip: "$posolsky$ Prikaz" #OLD ENG
- posolsky_action_progress_tooltip_1: "Reduces $MODIFIER_TYPE_NAME_diplomatic_annexation_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_annexation_cost')]" #NEW
+ posolsky_action: "Gestione del $posolsky$ prikaz"
+ posolsky_active: "Gestione del $posolsky$ prikaz"
+ posolsky_active_action_title: "Gestione del $posolsky$ prikaz"
+ posolsky_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
+ posolsky_action_progress_wordier: "[diplomatic_reputation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')] [annexation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
+ posolsky_action_progress_long_wordier: "@diplomatic_reputation! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')]\n  @annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
+ posolsky_action_progress_tooltip: "Migliora $MODIFIER_TYPE_NAME_diplomatic_reputation$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_reputation')]"
+ posolsky_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_diplomatic_annexation_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_annexation_cost')]"
 
  razryadny: "Razryadny"
  razryadny_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz degli affari militari, supervisionando la distribuzione di rifornimenti e armi militari e l'organizzazione dell'[army|e]."
- #razryadny_action: "$razryadny$" #OLD ITA
- razryadny_action: "Managing $razryadny$ prikaz" #NEW
- #razryadny_action: "$razryadny$" #OLD ENG
- #razryadny_active: "Prikaz $razryadny$" #OLD ITA
- razryadny_active: "Managing $razryadny$ prikaz" #NEW
- #razryadny_active: "$razryadny$ Prikaz" #OLD ENG
- razryadny_active_action_title: "Managing $razryadny$ prikaz" #NEW
- #razryadny_action_progress: "Prikaz $razryadny$" #OLD ITA
+ razryadny_action: "Gestione del $razryadny$ prikaz"
+ razryadny_active: "Gestione del $razryadny$ prikaz"
+ razryadny_active_action_title: "Gestione del $razryadny$ prikaz"
  razryadny_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('army_tradition_decay')]" #NEW
- #razryadny_action_progress: "$razryadny$ Prikaz" #OLD ENG
- #razryadny_action_progress_wordier: "Prikaz $razryadny$" #OLD ITA
  razryadny_action_progress_wordier: "[army_tradition|e]: [SCOPE.sCountry('actor').GetModifierValue('army_tradition_decay')] [supply_depot|e]: [SCOPE.sCountry('actor').GetModifierValue('supply_depot_capacity')]" #NEW
- #razryadny_action_progress_wordier: "$razryadny$ Prikaz" #OLD ENG
  razryadny_action_progress_long_wordier: "@army_tradition! [SCOPE.sCountry('actor').GetModifierValue('army_tradition_decay')]\n @supply_depot_capacity! [SCOPE.sCountry('actor').GetModifierValue('supply_depot_capacity')]" #NEW
- #razryadny_action_progress_tooltip: "Prikaz $razryadny$" #OLD ITA
- razryadny_action_progress_tooltip: "Reduces $MODIFIER_TYPE_NAME_army_tradition_decay$\n[SCOPE.sCountry('actor').GetDescriptionFor('army_tradition_decay')]" #NEW
- #razryadny_action_progress_tooltip: "$razryadny$ Prikaz" #OLD ENG
- razryadny_action_progress_tooltip_1: "Improves $MODIFIER_TYPE_NAME_supply_depot_capacity$\n[SCOPE.sCountry('actor').GetDescriptionFor('supply_depot_capacity')]" #NEW
+ razryadny_action_progress_tooltip: "Riduce $MODIFIER_TYPE_NAME_army_tradition_decay$\n[SCOPE.sCountry('actor').GetDescriptionFor('army_tradition_decay')]" #NEW
+ razryadny_action_progress_tooltip_1: "Migliora $MODIFIER_TYPE_NAME_supply_depot_capacity$\n[SCOPE.sCountry('actor').GetDescriptionFor('supply_depot_capacity')]" #NEW
 
  streltsy: "Streltsy"
  streltsy_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz dei moschettieri, che include la supervisione del loro reclutamento, addestramento, organizzazione e le loro responsabilità per la sicurezza interna e l'applicazione della legge."
- #streltsy_action: "$streltsy$" #OLD ITA
- streltsy_action: "Managing $streltsy$ prikaz" #NEW
- #streltsy_action: "$streltsy$" #OLD ENG
- #streltsy_active: "Prikaz $streltsy$" #OLD ITA
- streltsy_active: "Managing $streltsy$ prikaz" #NEW
- #streltsy_active: "$streltsy$ Prikaz" #OLD ENG
- streltsy_active_action_title: "Managing $streltsy$ prikaz" #NEW
- #streltsy_action_progress: "Prikaz $streltsy$" #OLD ITA
+ streltsy_action: "Gestione dello $streltsy$ prikaz" #NEW
+ streltsy_active: "Gestione dello $streltsy$ prikaz" #NEW
+ streltsy_active_action_title: "Gestione dello $streltsy$ prikaz" #NEW
  streltsy_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]" #NEW
- #streltsy_action_progress: "$streltsy$ Prikaz" #OLD ENG
- #streltsy_action_progress_wordier: "Prikaz $streltsy$" #OLD ITA
  streltsy_action_progress_wordier: "[army_tradition|e]: [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')] @spy_network!: [SCOPE.sCountry('actor').GetModifierValue('counter_espionage')]" #NEW
- #streltsy_action_progress_wordier: "$streltsy$ Prikaz" #OLD ENG
  streltsy_action_progress_long_wordier: "@army_tradition! [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]\n      @spy_network! [SCOPE.sCountry('actor').GetModifierValue('counter_espionage')]" #NEW
- #streltsy_action_progress_tooltip: "Prikaz $streltsy$" #OLD ITA
- streltsy_action_progress_tooltip: "Increases $MODIFIER_TYPE_NAME_monthly_army_tradition$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_army_tradition')]" #NEW
- #streltsy_action_progress_tooltip: "$streltsy$ Prikaz" #OLD ENG
- streltsy_action_progress_tooltip_1: "Improves $MODIFIER_TYPE_NAME_counter_espionage$\n[SCOPE.sCountry('actor').GetDescriptionFor('counter_espionage')]" #NEW
+ streltsy_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_monthly_army_tradition$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_army_tradition')]" #NEW
+ streltsy_action_progress_tooltip_1: "Migliora $MODIFIER_TYPE_NAME_counter_espionage$\n[SCOPE.sCountry('actor').GetDescriptionFor('counter_espionage')]" #NEW
 
  ispolneniya_zakonov: "Ispolneniya Zakonov"
  ispolneniya_zakonov_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz delle questioni giudiziarie e dell'applicazione della legge, ottimizzando l'attuazione delle decisioni legali e delle sentenze, oltre a mantenere la legge e l'ordine."
- #ispolneniya_zakonov_action: "$ispolneniya_zakonov$" #OLD ITA
- ispolneniya_zakonov_action: "Managing $ispolneniya_zakonov$ prikaz" #NEW
- #ispolneniya_zakonov_action: "$ispolneniya_zakonov$" #OLD ENG
- #ispolneniya_zakonov_active: "Prikaz $ispolneniya_zakonov$" #OLD ITA
- ispolneniya_zakonov_active: "Managing $ispolneniya_zakonov$ prikaz" #NEW
- #ispolneniya_zakonov_active: "$ispolneniya_zakonov$ Prikaz" #OLD ENG
- ispolneniya_zakonovy_active_action_title: "Managing $ispolneniya_zakonov$ prikaz" #NEW
- #ispolneniya_zakonov_action_progress: "Prikaz $ispolneniya_zakonov$" #OLD ITA
+ ispolneniya_zakonov_action: "Gestione dell'$ispolneniya_zakonov$ prikaz" #NEW
+ ispolneniya_zakonov_active: "Gestione dell'$ispolneniya_zakonov$ prikaz" #NEW
+ ispolneniya_zakonovy_active_action_title: "Gestione dell'$ispolneniya_zakonov$ prikaz" #NEW
  ispolneniya_zakonov_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('legislative_efficiency')]" #NEW
- #ispolneniya_zakonov_action_progress: "$ispolneniya_zakonov$ Prikaz" #OLD ENG
- #ispolneniya_zakonov_action_progress_wordier: "Prikaz $ispolneniya_zakonov$" #OLD ITA
  ispolneniya_zakonov_action_progress_wordier: "[legislative_efficiency|e]: [SCOPE.sCountry('actor').GetModifierValue('legislative_efficiency')] @monthly_control!: [SCOPE.sCountry('actor').GetModifierValue('global_monthly_control')]" #NEW
- #ispolneniya_zakonov_action_progress_wordier: "$ispolneniya_zakonov$ Prikaz" #OLD ENG
  ispolneniya_zakonov_action_progress_long_wordier: " @legislative_efficiency! [SCOPE.sCountry('actor').GetModifierValue('legislative_efficiency')]\n@monthly_control! [SCOPE.sCountry('actor').GetModifierValue('global_monthly_control')]" #NEW
- #ispolneniya_zakonov_action_progress_tooltip: "Prikaz $ispolneniya_zakonov$" #OLD ITA
- ispolneniya_zakonov_action_progress_tooltip: "Increases $MODIFIER_TYPE_NAME_legislative_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('legislative_efficiency')]" #NEW
- #ispolneniya_zakonov_action_progress_tooltip: "$ispolneniya_zakonov$ Prikaz" #OLD ENG
- ispolneniya_zakonov_action_progress_tooltip_1: "Increases $MODIFIER_TYPE_NAME_global_monthly_control$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_monthly_control')]" #NEW
+ ispolneniya_zakonov_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_legislative_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('legislative_efficiency')]" #NEW
+ ispolneniya_zakonov_action_progress_tooltip_1: "Aumenta $MODIFIER_TYPE_NAME_global_monthly_control$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_monthly_control')]" #NEW
 
  kazenny: "Kazenny"
  kazenny_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz del tesoro, razionalizzando la riscossione delle tasse e tenendo sotto controllo le spese statali."
- #kazenny_action: "$kazenny$" #OLD ITA
- kazenny_action: "Managing $kazenny$ prikaz" #NEW
- #kazenny_action: "$kazenny$" #OLD ENG
- #kazenny_active: "Prikaz $kazenny$" #OLD ITA
- kazenny_active: "Managing $kazenny$ prikaz" #NEW
- #kazenny_active: "$kazenny$ Prikaz" #OLD ENG
- kazenny_active_action_title: "Managing $kazenny$ prikaz" #NEW
- #kazenny_action_progress: "Prikaz $kazenny$" #OLD ITA
+ kazenny_action: "Gestione del $kazenny$ prikaz" #NEW
+ kazenny_active: "Gestione del $kazenny$ prikaz" #NEW
+ kazenny_active_action_title: "Gestione del $kazenny$ prikaz" #NEW
  kazenny_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]" #NEW
- #kazenny_action_progress: "$kazenny$ Prikaz" #OLD ENG
- #kazenny_action_progress_wordier: "Prikaz $kazenny$" #OLD ITA
  kazenny_action_progress_wordier: "@tax_efficiency!: [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')] @proximity_cost!: [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" #NEW
- #kazenny_action_progress_wordier: "$kazenny$ Prikaz" #OLD ENG
  kazenny_action_progress_long_wordier: "@tax_efficiency! [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]\n  @proximity_cost! [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" #NEW
- #kazenny_action_progress_tooltip: "Prikaz $kazenny$" #OLD ITA
- kazenny_action_progress_tooltip: "Increases $MODIFIER_TYPE_NAME_tax_income_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" #NEW
- #kazenny_action_progress_tooltip: "$kazenny$ Prikaz" #OLD ENG
- kazenny_action_progress_tooltip_1: "Reduces $MODIFIER_TYPE_NAME_global_distance_from_capital_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_cost_modifier')]" #NEW
+ kazenny_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_tax_income_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" #NEW
+ kazenny_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_global_distance_from_capital_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_cost_modifier')]" #NEW
 
  aptekarsky: "Aptekarsky"
  aptekarsky_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz delle questioni sanitarie e mediche, consentendo una migliore distribuzione dei medicinali e una rapida diffusione di qualsiasi conoscenza relativa a potenziali trattamenti."
- #aptekarsky_action: "$aptekarsky$" #OLD ITA
- aptekarsky_action: "Managing $aptekarsky$ prikaz" #NEW
- #aptekarsky_action: "$aptekarsky$" #OLD ENG
- #aptekarsky_active: "Prikaz $aptekarsky$" #OLD ITA
- aptekarsky_active: "Managing $aptekarsky$ prikaz" #NEW
- #aptekarsky_active: "$aptekarsky$ Prikaz" #OLD ENG
- aptekarsky_active_action_title: "Managing $aptekarsky$ prikaz" #NEW
- #aptekarsky_action_progress: "Prikaz $aptekarsky$" #OLD ITA
+ aptekarsky_action: "Gestione dell'$aptekarsky$ prikaz" #NEW
+ aptekarsky_active: "Gestione dell'$aptekarsky$ prikaz" #NEW
+ aptekarsky_active_action_title: "Gestione dell'$aptekarsky$ prikaz" #NEW
  aptekarsky_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('global_disease_resistance')]" #NEW
- #aptekarsky_action_progress: "$aptekarsky$ Prikaz" #OLD ENG
- #aptekarsky_action_progress_wordier: "Prikaz $aptekarsky$" #OLD ITA
  aptekarsky_action_progress_wordier: "@disease_resistance!: [SCOPE.sCountry('actor').GetModifierValue('global_disease_resistance')]" #NEW
- #aptekarsky_action_progress_wordier: "$aptekarsky$ Prikaz" #OLD ENG
  aptekarsky_action_progress_long_wordier: "@disease_resistance! [SCOPE.sCountry('actor').GetModifierValue('global_disease_resistance')]" #NEW
- #aptekarsky_action_progress_tooltip: "Prikaz $aptekarsky$" #OLD ITA
- aptekarsky_action_progress_tooltip: "Increases $MODIFIER_TYPE_NAME_global_disease_resistance$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_disease_resistance')]" #NEW
- #aptekarsky_action_progress_tooltip: "$aptekarsky$ Prikaz" #OLD ENG
+ aptekarsky_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_global_disease_resistance$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_disease_resistance')]" #NEW
 
  bolshogo_dvortsa: "Bolshogo Dvortsa"
  bolshogo_dvortsa_desc: "Questo permetterà al nostro gabinetto di concentrarsi sulla manutenzione dei palazzi e sulla riduzione delle spese legate alla corte. Vengono anche supervisionati i monasteri religiosi per garantire che siano allineati con la dottrina statale e che rispettino la legge."
- #bolshogo_dvortsa_action: "$bolshogo_dvortsa$" #OLD ITA
- bolshogo_dvortsa_action: "Managing $bolshogo_dvortsa$ prikaz" #NEW
- #bolshogo_dvortsa_action: "$bolshogo_dvortsa$" #OLD ENG
- #bolshogo_dvortsa_active: "Prikaz $bolshogo_dvortsa$" #OLD ITA
- bolshogo_dvortsa_active: "Managing $bolshogo_dvortsa$ prikaz" #NEW
- #bolshogo_dvortsa_active: "$bolshogo_dvortsa$ Prikaz" #OLD ENG
- #bolshogo_dvortsa_action_progress: "Prikaz $bolshogo_dvortsa$" #OLD ITA
+ bolshogo_dvortsa_action: "Gestione del $bolshogo_dvortsa$ prikaz" #NEW
+ bolshogo_dvortsa_active: "Gestione del $bolshogo_dvortsa$ prikaz" #NEW
  bolshogo_dvortsa_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]" #NEW
- #bolshogo_dvortsa_action_progress: "$bolshogo_dvortsa$ Prikaz" #OLD ENG
- #bolshogo_dvortsa_action_progress_wordier: "Prikaz $bolshogo_dvortsa$" #OLD ITA
  bolshogo_dvortsa_action_progress_wordier: "@religious_influence!: [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n@court_spending!: [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" #NEW
- #bolshogo_dvortsa_action_progress_wordier: "$bolshogo_dvortsa$ Prikaz" #OLD ENG
  bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" #NEW
- #bolshogo_dvortsa_action_progress_tooltip: "Prikaz $bolshogo_dvortsa$" #OLD ITA
- bolshogo_dvortsa_action_progress_tooltip: "Increases $MODIFIER_TYPE_NAME_monthly_religious_influence$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_religious_influence')]" #NEW
- #bolshogo_dvortsa_action_progress_tooltip: "$bolshogo_dvortsa$ Prikaz" #OLD ENG
- bolshogo_dvortsa_action_progress_tooltip_1: "Reduces $MODIFIER_TYPE_NAME_court_spending_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('court_spending_cost')]" #NEW
+ bolshogo_dvortsa_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_monthly_religious_influence$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_religious_influence')]" #NEW
+ bolshogo_dvortsa_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_court_spending_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('court_spending_cost')]" #NEW
 
 #China Cabinet Actions
  gaituguiliu_policy: "Politica del Gǎitǔguīliú"

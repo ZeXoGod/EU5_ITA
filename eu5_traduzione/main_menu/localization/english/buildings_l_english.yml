@@ -1,7 +1,7 @@
 ﻿l_english:
- local_governor_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] [ShowBuildingTypeName('local_governor')] [SCOPE.sCountry('actor').Custom('IT_In')][SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V])." #NEW
- naval_governor_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] [ShowBuildingTypeName('naval_governor')] [SCOPE.sCountry('actor').Custom('IT_In')][SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])." #NEW
- local_bailiff_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] [ShowBuildingTypeName('bailiff')] [SCOPE.sCountry('actor').Custom('IT_In')][SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])." #NEW
+ local_governor_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] edifici [ShowBuildingTypeName('local_governor')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V])." 
+ naval_governor_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] edifici [ShowBuildingTypeName('naval_governor')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])." 
+ local_bailiff_tt: "Se ci sono meno di [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] edifici [ShowBuildingTypeName('bailiff')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])." 
  colonial_category: "Edifici Coloniali"
  colonial_category_desc: "Si tratta di edifici che possono essere costruiti in località straniere non occupate e che aiutano a espandere la propria influenza in quelle zone."
  cultural_category: "Edifici Culturali"
@@ -21,8 +21,8 @@
 
  trade_company_building: "Edificio della Compagnia Commerciale"
  satellite_trade_building: "Edificio Commerciale Satellite"
- free_village: "Villaggio Libero" #NEW
- free_village_desc: "Una comunità di contadini liberi fondata senza gli obblighi tipici della società rurale nei confronti dei proprietari terrieri." #NEW
+ free_village: "Villaggio Libero" 
+ free_village_desc: "Una comunità di contadini liberi fondata senza gli obblighi tipici della società rurale nei confronti dei proprietari terrieri." 
 
 
 
@@ -204,10 +204,10 @@
  peasants_hunting_grounds: "Terreni di Caccia dei Contadini"
  local_schools: "Scuole Locali"
  local_newspaper: "Giornale Locale"
- naval_governor: "Governatore Navale" #NEW
- naval_governor_desc: "$local_governor_desc$" #NEW
- local_governor: "Governatore Locale" #NEW
- local_governor_desc: "Una sede dell'autorità regionale che estende il raggio d'azione dello Stato alle sue terre più lontane, espandendo la sua influenza oltre i confini immediati. Quando sono collegate alla capitale dalla rete stradale, fungono da centri nevralgici per il governo e l'amministrazione." #NEW
+ naval_governor: "Governatore Navale" 
+ naval_governor_desc: "$local_governor_desc$" 
+ local_governor: "Governatore Locale" 
+ local_governor_desc: "Una sede dell'autorità regionale che estende il raggio d'azione dello Stato alle sue terre più lontane, espandendo la sua influenza oltre i confini immediati. Quando sono collegate alla capitale dalla rete stradale, fungono da centri nevralgici per il governo e l'amministrazione." 
  #
  #
  horse_breeders: "Allevamento di Cavalli"
@@ -1148,8 +1148,8 @@
 
  #Tlemcen
  qalat_al_mashwar: "Qal'at al-Mashwār"
- qalat_al_mashwar_desc: "Nel cuore di $tlemcen$ si trova un complesso palaziale fortificato e splendidamente illustre. Simbolo del potere e della prosperità locale, il palazzo reale funge anche da centro amministrativo della dinastia regnante. Oltre alla sua impareggiabile bellezza, serve anche come struttura difensiva contro le minacce straniere e i conquistatori in cerca di fortuna."
- german_river_toll_castle: "Castello del Pedaggio sul Fiume" #NEW
- german_river_toll_castle_desc: "Un piccolo castello situato lungo il fiume facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota vitale delle entrate commerciali locali." #NEW
- german_mountain_toll_castle: "Castello del Pedaggio di Montagna" #NEW
- german_mountain_toll_castle_desc: "Un piccolo castello situato su un importante passo di montagna facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota fondamentale delle entrate commerciali locali." #NEW
+ qalat_al_mashwar_desc: "Nel cuore di $tlemcen$ si trova un complesso di palazzi fortificati e splendidamente illustri. Simbolo del potere e della prosperità locale, il palazzo reale funge anche da centro amministrativo della dinastia regnante. Oltre alla sua bellezza senza pari, funge anche da struttura difensiva contro le minacce straniere e i potenziali conquistatori.." 
+ german_river_toll_castle: "Castello Doganale Fluviale" 
+ german_river_toll_castle_desc: "Un piccolo castello situato lungo il fiume facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota vitale delle entrate commerciali locali." 
+ german_mountain_toll_castle: "Castello Doganale Montano" 
+ german_mountain_toll_castle_desc: "Un piccolo castello situato su un importante passo di montagna facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota fondamentale delle entrate commerciali locali." 

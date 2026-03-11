@@ -10,9 +10,7 @@
  landgraviate_desc: "Un [ShowGovernmentReformName('landgraviate')], che prende il nome da un #italic Landgraf#!, agisce come giurisdizione immediata del [GetInternationalOrganization('hre').GetName] nelle contee altrimenti frammentate. Il Langravio è un rappresentante diretto della legge dell'[GetInternationalOrganization('hre').GetLeaderTitle] nelle terre del [ShowGovernmentReformNameWithNoTooltip('landgraviate')] e il titolo è paragonabile a quello di un Duca per potere e responsabilità."
  french_feudal_nobility: "Nobiltà Feudale [GetCountry('FRA').GetAdjectiveWithNoTooltip]"
  french_feudal_nobility_desc: "Il feudalesimo ha una stretta presa sugli affari della corte [GetCountry('FRA').GetAdjective]. I nobili potenti e i sudditi autonomi e decentrati hanno una quantità di libertà e di voce in capitolo senza precedenti nella nostra amministrazione interna."
- #fra_removed_when_no_appanages_tt: "Questa [government_reform|e] sarà rimosso una volta che non esisterà più alcun [ShowSubjectTypeName('appanage')] come nostro [subject|e]" #OLD ITA
- fra_removed_when_no_appanages_tt: "This [government_reform|e] can only be removed through the $flavor_fra.1103.title$ [dynamic_historical_event|e], which can occur when there are no remaining [ShowSubjectTypeName('appanage')] [subjects|e]." #NEW
- #fra_removed_when_no_appanages_tt: "This [government_reform|e] will be removed once no [ShowSubjectTypeName('appanage')] exists as our [subject|e]" #OLD ENG
+ fra_removed_when_no_appanages_tt: "This [government_reform|e] può essere rimosso solo tramite l'[dynamic_historical_event|e] $flavor_fra.1103.title$, che può verificarsi quando non ci sono più [subjects|e] di tipo [ShowSubjectTypeName('appanage')]."
  french_appanage_reform: "Appannaggio [GetCountry('FRA').GetAdjectiveWithNoTooltip]"
  french_appanage_reform_desc: "In quanto Principi del Sangue, i titolari di appannaggi godono di una posizione più elevata tra i sudditi della [GetCountry('FRA').GetName], oltre che di maggiori privilegi. Inoltre, il monarca [GetCountry('FRA').GetAdjective] è tenuto a portare loro un adeguato rispetto in cambio della loro assistenza negli affari diplomatici."
  french_ducal_vassal_reform: "Ducato [GetCountry('FRA').GetAdjectiveWithNoTooltip]"
@@ -404,9 +402,7 @@
  haudenosaunee_clan_mothers: "Madri del Clan Haudenosaunee"
  haudenosaunee_clan_mothers_desc: "Le Madri del Clan Haudenosaunee, chiamate #italic Iakoianes#!, detengono la maggiore autorità all'interno dei clan. Sono responsabili del funzionamento interno della tribù e dell'elezione delle loro controparti maschili, chiamate Royaner, per rappresentare gli interessi del clan al consiglio di tutte le tribù Haudenosaunee."
  andean_monarchy: "Monarchia Andina"
- #andean_monarchy_desc: "Una riforma governativa comune tra i popoli delle [ShowAreaName('andes_area')]. Le credenze spirituali sono intessute nelle leggi di successione, obbligando i nuovi governanti a iniziare il loro regno senza possedere alcun bene terreno." #OLD ITA
- andean_monarchy_desc: "A government reform common among the people of the [ShowRegionName('andes_region')]. Spiritual beliefs are woven into the succession laws, forcing new rulers to start their reigns owning no worldly possessions whatsoever." #NEW
- #andean_monarchy_desc: "A government reform common among the people of the [ShowAreaName('andes_area')]. Spiritual beliefs are woven into the succession laws, forcing new rulers to start their reigns owning no worldly possessions whatsoever." #OLD ENG
+ andean_monarchy_desc: "Una riforma governativa comune tra i popoli delle [ShowRegionName('andes_region')]. Le credenze spirituali sono intessute nelle leggi di successione, obbligando i nuovi governanti a iniziare il loro regno senza possedere alcun bene terreno."
  tawantinsuyu_monarchy: "Monarchia Tawantinsuyu"
  tawantinsuyu_monarchy_desc: "Una riforma del governo dell'Impero $INC_ADJ$, adattata ed evoluta dalle sue origini monarchiche. Le credenze religiose sono inesorabilmente intrecciate con le leggi di successione, il che porta i nuovi governanti a iniziare il loro regno senza possedere nulla."
  reformed_tawantinsuyu_government: "Governo Tawantinsuyu Riformato"
@@ -423,9 +419,7 @@
  representative_parliament_reform: "Parlamento Rappresentativo"
  representative_parliament_reform_desc: "L'introduzione di un $representative_parliament_reform$ segna un cambiamento significativo nelle dinamiche politiche, garantendo l'opportunità a persone provenienti da ambienti umili, come i [ShowPopTypeName('peasants')], di assicurarsi un seggio in Parlamento. Questo privilegio è stato tradizionalmente dominio esclusivo dell'élite e delle classi privilegiate."
 
- #japanese_imperial_family: "Famiglia Imperiale [GetCountry('JAP').GetAdjectiveWithNoTooltip]" #OLD ITA
- japanese_imperial_family: "$JAP_ADJ$ Imperial Family" #NEW
- #japanese_imperial_family: "[GetCountry('JAP').GetAdjectiveWithNoTooltip] Imperial Family" #OLD ENG
+ japanese_imperial_family: "Famiglia Imperiale $JAP_ADJ$"
  japanese_imperial_family_desc: "Sostenendo di discendere dalla dea del sole Amaterasu, la dinastia [ShowDynastyName('yamato_dynasty')] siede da secoli sul Trono del Crisantemo."
  japanese_clan: "Clan Giapponese"
  japanese_clan_desc: "Come risultato dell'incapacità della famiglia imperiale di controllare efficacemente le campagne, i numerosi clan di samurai hanno stabilito le proprie basi di potere. La struttura militare del governo sotto lo Shōgun è un terreno fertile per le costanti lotte di potere tra di loro."
@@ -495,22 +489,12 @@
  livonian_confederation_desc: "Le terre del [ShowAreaName('baltic_area')] sono state a lungo disunite, frammentate in molti vescovati e vassalli diversi. Invece di cercare di unire la Terra Mariana in uno Stato centralizzato, abbracceremo questa decentralizzazione."
 
 #Jurchen
- #haixi_jurchen_reform: "[ShowCultureNameWithNoTooltip('jurchen_culture')] Haixi" #OLD ITA
- haixi_jurchen_reform: "Haixi [ShowCultureGroupNameWithNoTooltip('jurchen_group')]" #NEW
- #haixi_jurchen_reform: "Haixi [ShowCultureNameWithNoTooltip('jurchen_culture')]" #OLD ENG
- #haixi_jurchen_reform_desc: "Gli $haixi_jurchen_reform$ sono un gruppo di persone [ShowCultureName('jurchen_culture')] che si concentrano principalmente sulla pastorizia invece che sull'agricoltura, il che li differenzia dai $jianzhou_jurchen_reform$. Sono anche noti per l'adozione di molte tradizioni mongole." #OLD ITA
- haixi_jurchen_reform_desc: "The $haixi_jurchen_reform$ are a group of [ShowCultureGroupName('jurchen_group')] people who are primarily focused on pastoralism rather than agriculture, which differentiates them from $jianzhou_jurchen_reform$. They are also known for their adoption of many [ShowCultureName('mongolian_culture')] traditions." #NEW
- #haixi_jurchen_reform_desc: "The $haixi_jurchen_reform$ are a group of [ShowCultureName('jurchen_culture')] people who are primarily focused on pastoralism rather than agriculture, which differentiates them from $jianzhou_jurchen_reform$. They are also known for their adoption of many [ShowCultureName('mongolian_culture')] traditions." #OLD ENG
+ haixi_jurchen_reform: "[ShowCultureGroupNameWithNoTooltip('jurchen_group')] Haixi"
+ haixi_jurchen_reform_desc: "Gli $haixi_jurchen_reform$ sono un gruppo di persone [ShowCultureGroupName('jurchen_group')] che si concentrano principalmente sulla pastorizia invece che sull'agricoltura, il che li differenzia dai $jianzhou_jurchen_reform$. Sono anche noti per l'adozione di molte tradizioni mongole."
  jianzhou_jurchen_reform: "Jurchen Jianzhou"
- #jianzhou_jurchen_reform_desc: "Essere un $jianzhou_jurchen_reform$ significa essere un gruppo di cultura [ShowCultureName('jurchen_culture')] altamente sinicizzato, altamente agricolo e stabilmente insediato. Questi popoli [ShowCultureNameWithNoTooltip('jurchen_culture')] hanno reti commerciali estese con le città cinesi vicine." #OLD ITA
- jianzhou_jurchen_reform_desc: "Being a $jianzhou_jurchen_reform$ means being a highly Sinicized [ShowCultureGroupName('jurchen_group')] group, highly agricultural and permanently settled. These [ShowCultureGroupNameWithNoTooltip('jurchen_group')] peoples have intensive trading networks with nearby [ShowCultureGroupName('chinese_group')] cities." #NEW
- #jianzhou_jurchen_reform_desc: "Being a $jianzhou_jurchen_reform$ means being a highly Sinicized [ShowCultureName('jurchen_culture')] group, highly agricultural and permanently settled. These [ShowCultureNameWithNoTooltip('jurchen_culture')] peoples have intensive trading networks with nearby [ShowCultureGroupName('chinese_group')] cities." #OLD ENG
- #yeren_jurchen_reform: "[ShowCultureNameWithNoTooltip('jurchen_culture')] Yeren" #OLD ITA
- yeren_jurchen_reform: "Yeren [ShowCultureGroupNameWithNoTooltip('jurchen_group')]" #NEW
- #yeren_jurchen_reform: "Yeren [ShowCultureNameWithNoTooltip('jurchen_culture')]" #OLD ENG
- #yeren_jurchen_reform_desc: "Con $yeren_jurchen_reform$ ci si riferisce ai gruppi [ShowCultureName('jurchen_culture')] che occupano regioni meno insediate e mantengono modi di vita più tradizionali. Si basano principalmente sulla caccia e sul foraggiamento, con pratiche agricole meno intensive." #OLD ITA
- yeren_jurchen_reform_desc: "$yeren_jurchen_reform$ refers to [ShowCultureGroupName('jurchen_group')] groups who occupy less-settled regions and maintain more traditional ways of life. They rely primarily on hunting and foraging, with less intensive agricultural practice." #NEW
- #yeren_jurchen_reform_desc: "$yeren_jurchen_reform$ refers to [ShowCultureName('jurchen_culture')] groups who occupy less-settled regions and maintain more traditional ways of life. They rely primarily on hunting and foraging, with less intensive agricultural practice." #OLD ENG
+ jianzhou_jurchen_reform_desc: "Essere un $jianzhou_jurchen_reform$ significa essere un gruppo di cultura [ShowCultureGroupName('jurchen_group')] altamente Sinicizzato, altamente agricolo e stabilmente insediato. Questi popoli [ShowCultureGroupNameWithNoTooltip('jurchen_group')] hanno reti commerciali estese con le città cinesi vicine."
+ yeren_jurchen_reform: "[ShowCultureGroupNameWithNoTooltip('jurchen_group')] Yeren"
+ yeren_jurchen_reform_desc: "Con $yeren_jurchen_reform$ ci si riferisce ai gruppi [ShowCultureGroupName('jurchen_group')] che occupano regioni meno insediate e mantengono modi di vita più tradizionali. Si basano principalmente sulla caccia e sul foraggiamento, con pratiche agricole meno intensive."
  lifan_yuan: "Lǐfān Yuàn"
  lifan_yuan_desc: "Il $lifan_yuan$ è un dipartimento che amministra i territori e le politiche dello Stato nell'[ShowContinentName('asia')] Interna, come le province della [ShowRegionName('mongolia_region')], [ShowRegionName('tibet_region')] e [ShowRegionName('xinjiang_region')]. In caso di necessità, sovrintende anche a qualsiasi territorio ancora più isolato."
 

@@ -17,7 +17,7 @@
  INTERNATIONAL_ORGANIZATION_TT_MODIFIER_INFO: "Essere un [member|e] fornirà:"
  INTERNATIONAL_ORGANIZATION_TT_INTERNATIONAL_ORGANIZATION_MODIFIER_INFO: "L'[international_organization|e] riceve:"
  INTERNATIONAL_ORGANIZATION_TT_LEADER_MODIFIER_INFO: "Il [international_organization_leader_short|e] riceve:"
- INTERNATIONAL_ORGANIZATION_TT_TARGET_MODIFIER_INFO: "The target of [international_organization|e] gets:" #NEW
+ INTERNATIONAL_ORGANIZATION_TT_TARGET_MODIFIER_INFO: "L'obiettivo dell'[international_organization|e] riceve:" #NEW
  INTERNATIONAL_ORGANIZATION_TT_NON_LEADER_MODIFIER_INFO: "Gli altri [members|e] ricevono:"
  INTERNATIONAL_ORGANIZATION_TT_CURRENCY_ENABLED_EFFECT: "Abilita l'accumulo di $CURRENCY$ nell'[international_organization|e]"
  INTERNATIONAL_ORGANIZATION_TT_CURRENCY_DISABLED_EFFECT: "Disabilita l'accumulo di $CURRENCY$ nell'[international_organization|e]"
@@ -77,12 +77,10 @@
  INTERNATIONAL_ORGANIZATION_LEADER_COUNTRY_REPEALED_INFO: "Proibisce una leadership di un singolo [country|e]"
  international_organization_select_column: "Colonna di selezione organizzazione internazionale"
  WE_WANT_THE_ORGANIZATION_TO_GROW: "Vogliamo che l'[international_organization|e] cresca"
- YET_TO_VOTE: "Countries Yet to Vote" #NEW
+ YET_TO_VOTE: "Paesi che devono ancora Votare" #NEW
  NOT_VOTED_OUTLINER_TT: "[GetDataModelSize(IOLawOutlinerEntry.GetNotVoted)] $YET_TO_VOTE$" #NEW
- RESOLUTION_PREDICTED_VOTE_OUTCOME_OUTLINER: "Currently, the winning vote is projected to be $NAME$, with a total of $VALUE|0$ votes." #NEW
- #NOT_VOTED_TT: "Paesi che non hanno ancora votato: [GetDataModelSize(ResolutionGlue.GetNotVoted)]" #OLD ITA
+ RESOLUTION_PREDICTED_VOTE_OUTCOME_OUTLINER: "Attualmente, il voto vincente dovrebbe essere $NAME$, con un totale di $VALUE|0$ voti." #NEW
  NOT_VOTED_TT: "[GetDataModelSize(ResolutionGlue.GetNotVoted)] $YET_TO_VOTE$" #NEW
- #NOT_VOTED_TT: "[GetDataModelSize(ResolutionGlue.GetNotVoted)] Countries Yet to Vote" #OLD ENG
  VOTED_TT: "Voti per '[VoteGlue.GetVoteObject.GetName]': [VoteGlue.GetTotalNumVotes|0L]"
  MIGHT_VOTE_FOR_TT: "Voti potenziali per '[VoteGlue.GetVoteObject.GetName]': [VoteGlue.GetTotalNumVotes|0L]"
  VOTE_NUM_WITH_BREAKDOWN_TT: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|0L$#!"
@@ -90,7 +88,7 @@
  VOTE_NUM_BREAKDOWN_ENTRY: "$VOTER$: #TOOLTIP:$BREAKDOWN_TAG$ $VOTE_NUM|0L$#!"
  RESOLUTION_PREDICTED_VOTE_OUTCOME: "Attualmente, il voto vincente previsto è [ResolutionGlue.GetHighestVote.GetVoteObject.GetName], con un totale di [ResolutionGlue.GetVoteNumWithBreakdown(ResolutionGlue.GetHighestVote)] voti."
  RESOLUTION_PREDICTED_VOTE_OUTCOME_NONE: "Al momento non ci sono risultati definitivi, poiché non è stata ancora espressa alcuna preferenza."
- RESOLUTION_PREDICTED_VOTE_OUTCOME_UNDECISIVE: "Currently, there is no winning outcome, as no majority of votes has been cast." #NEW
+ RESOLUTION_PREDICTED_VOTE_OUTCOME_UNDECISIVE: "Al momento non c'è un risultato vincente, perché non c'è stata una maggioranza di voti." #NEW
  LOCATION_HAS_CARDINAL: "[THIS.GetLocation.GetName] è la sede di un [cardinal|e]."
  CANNOT_REMOVE_LOCATION_NOT_OWNED: "[LOCATION.GetName] non fa parte di [INTERNATIONAL_ORGANIZATION.GetName]"
  CANNOT_ADD_LOCATION_ALREADY_OWNED: "[LOCATION.GetName] fa già parte di [INTERNATIONAL_ORGANIZATION.GetName]"
@@ -104,11 +102,11 @@
  IO_NO_CANDIDATE: "Non c'è alcun candidato per cui possano votare."
  IO_CANT_BE_ELECTED: "Non siamo idonei a essere eletti come [INTERNATIONAL_ORGANIZATION.GetLeaderTitle] di [INTERNATIONAL_ORGANIZATION.GetType.GetName]."
  OPINION_OF_LEADER_TO_US: "Opinione del [international_organization_leader_short|e] nei nostri confronti"
- TRUST_OF_LEADER_TO_US: "[international_organization_leader_short|e] trust of us" #NEW
+ TRUST_OF_LEADER_TO_US: "[international_organization_leader_short|e] ha fiducia in noi" #NEW
  DYNASTIC_POWER_IN_IO: "[dynastic_power|e] nell'[international_organization|e]"
  SEAT_OF_DYNASTY_IN_IO: "Possiede un [ShowModifier('dynasty_seat')] nell'[international_organization|e]"
- THREATENED_BY_IO_MEMBERS: "Threatened by members in the [international_organization|e]" #NEW
- THREATENED_BY_NON_IO_MEMBERS: "Threatened by countries outside of the [international_organization|e]" #NEW
+ THREATENED_BY_IO_MEMBERS: "Minacciato dai membri dell'[international_organization|e]" #NEW
+ THREATENED_BY_NON_IO_MEMBERS: "Minacciato da paesi al di fuori dell'[international_organization|e]" #NEW
  PRIMARY_OR_RULER_CULTURE_EQUAL_TO_LEADER_CULTURE: "[primary_culture|e] o [culture|e] del [ruler|e] uguale alla cultura del [international_organization_leader_short|e]"
  IS_LEADER_OF_AN_AP: "È già leader di un [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]"
  THREATENED_BY_LEADER_RIVALS_OR_ENEMIES: "È minacciato da [rivals|e] o [enemies|e] del [international_organization_leader_short|e]"
@@ -141,7 +139,7 @@
  MODIFIER_SPECIAL_STATUS_LEADER_OF_IO_1: "[country|e] $STATUS$ in $IO$"
  MODIFIER_LEADER_OF_IO: "$LEADER_TITLE$ di $IO$"
  MODIFIER_NON_LEADER_IN_IO: "Non-$LEADER_TITLE$ in $IO$"
- MODIFIER_TARGET_OF_IO: "Target of $IO$" #NEW
+ MODIFIER_TARGET_OF_IO: "Obiettivo di $IO$" #NEW
  LEADER_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è [INTERNATIONAL_ORGANIZATION.GetLeaderTitle] di [INTERNATIONAL_ORGANIZATION.GetName]"
  TARGET_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è il bersaglio della [INTERNATIONAL_ORGANIZATION.GetName]"
  SPECIAL_STATUS_IN_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha lo status '$STATUS$' in [INTERNATIONAL_ORGANIZATION.GetName]"
@@ -292,7 +290,7 @@
  TENETS: "Precetti"
  DOCTRINES: "Dottrine"
  RESOLUTIONS: "Risoluzioni"
- CURRENT_RESOLUTIONS: "Current Voted Resolutions" #NEW
+ CURRENT_RESOLUTIONS: "Risoluzioni Votate Attualmente" #NEW
  CURRENT_LAWS: "Leggi Attuali"
  CANDIDATES: "Candidati"
  IMPERIAL_DIET: "Dieta Imperiale"
@@ -324,9 +322,7 @@
  imperial_prelate_desc: "Status riservato ai membri con la [ShowGovernmentTypeName('theocracy')] che non sono [ShowSpecialStatusName('archbishop_elector')]."
  imperial_prince: "Principe Imperiale"
  imperial_prince_plural: "Principi Imperiali"
- #imperial_prince_desc: "I $imperial_prince_plural$ sono tutti i [members|e] con la [ShowGovernmentTypeName('monarchy')] del [GetUniqueInternationalOrganization('hre').GetName] che non godono di altri status speciali." #OLD ITA
- imperial_prince_desc: "The $imperial_prince_plural$ are all [members|e] of the [GetUniqueInternationalOrganization('hre').GetName] which do not enjoy any other [special_status|e]." #NEW
- #imperial_prince_desc: "The $imperial_prince_plural$ are all [ShowGovernmentTypeName('monarchy')] [members|e] of the [GetUniqueInternationalOrganization('hre').GetName] which do not enjoy any other [special_status|e]." #OLD ENG
+ imperial_prince_desc: "I $imperial_prince_plural$ sono tutti i [members|e] del [GetUniqueInternationalOrganization('hre').GetName] che non godono di altri status speciali."
  imperial_authority: "Autorità Imperiale"
  imperial_authority_desc: "È una misura dell'autorità dell'[GetUniqueInternationalOrganization('hre').GetLeaderTitle] nel [GetUniqueInternationalOrganization('hre').GetName] ed è utilizzata per promulgare le leggi imperiali.\n\nUn alto valore di $imperial_authority$ influenza i seguenti aspetti:\n$BULLET$ Aumenta il [ShowPaymentName('imperial_treasury_contribution')] e il [ShowPaymentName('imperial_army_contribution')] provenienti dai [members|e] del [GetUniqueInternationalOrganization('hre').GetName].\n$BULLET$ I [members|e] del [GetUniqueInternationalOrganization('hre').GetName] sono più propensi a votare a favore delle [policies|e] proposte dall'[hre_emperor|e] nel [GetUniqueInternationalOrganization('hre').GetParliament.GetName]."
  imperial_ban_allowed: "Bando Imperiale Permesso"
@@ -360,9 +356,9 @@
  MULTIPLIER_CHANGE_FORMAT: "$KEY$ moltiplica tutto per: $VALUE|+%2$"
  PERCENTAGE_CHANGE_FORMAT: "$KEY$: $VALUE|+2%$"
  INTERNAL_PEACE: "Pace tra tutti i membri"
- IS_EMPEROR: "Is Emperor" #NEW
- NO_APROPRIATE_CASUS_BELLI: "No appropriate casus belli" #NEW
- EMPEROR_OFFENSIVE_WAR_WITH_MEMBERS: "Emperor leading wars against members" #NEW
+ IS_EMPEROR: "È l'Imperatore" #NEW
+ NO_APROPRIATE_CASUS_BELLI: "Nessun casus belli appropriato" #NEW
+ EMPEROR_OFFENSIVE_WAR_WITH_MEMBERS: "Imperatore che guida guerre contro i membri" #NEW
  NUMBER_OF_PRINCES: "Numero di Principi"
  NUMBER_OF_FREE_CITIES: "Numero di Città Libere"
  LACK_OF_ELECTORS: "Carenza di Elettori"
@@ -583,7 +579,7 @@
  high_kingship_leadership: "Alto Regno"
  high_kingship_leadership_desc: "L'Alto Regno."
  OVER_HALF_OF_VOTES: "Un [candidate|e] possiede almeno il 50% dei voti."
- HRE_ELECTORS_DEADLOCK: "[electors|e] are either non-existent or in a voting deadlock." #NEW
+ HRE_ELECTORS_DEADLOCK: "gLI [electors|e] sono inesistenti o in una situazione di stallo elettorale." #NEW
  HIGH_KINGSHIP_REGION_FORMAT: ""
  HIGH_KINGSHIP_NAME: "Alto Regno di [ROOT.GetVariable('high_kingship_region').GetRegion.GetNameWithNoTooltip]"
 
@@ -754,10 +750,8 @@
  jurchen_confederation: "Confederazione Jurchen"
  jurchen_confederation_desc: "Un'unione di popoli nomadi e seminomadi sotto la bandiera di un clan, che offre protezione da minacce esterne e cerca di contenere i conflitti interni, promuovendo l'unità tra i vari membri."
  jianzhou_jurchen_confederation: "Confederazione Jianzhou"
- haixi_jurchen_confederation: "Haixi Confederation" #NEW
- yeren_jurchen_confederation: "Yeren Confederation" #NEW
- #hulun_jurchen_confederation: "Confederazione Hūlun" #DELETE
- #changbaishan_jurchen_confederation: "Confederazione Changbaishan" #DELETE
+ haixi_jurchen_confederation: "Confederazione Haixin" #NEW
+ yeren_jurchen_confederation: "Confederazione Yeren" #NEW
 
  # Leggi
  5_years_cd: "Abbiamo modificato questa legge negli ultimi #G 5#! anni."
@@ -765,10 +759,10 @@
  local_administration_desc: "Questa legge definisce il modo in cui il nostro popolo verrà amministrato."
  tribal_administration_policy: "Amministrazione Tribale"
  tribal_administration_policy_desc: "L'amministrazione sarà gestita a livello tribale, con ogni capo tribale responsabile delle decisioni per il proprio gruppo."
- tribal_administration_policy_tt: "All members will get [ShowNamedValue('societal_value_minor_move_to_right')] towards [ShowSocietyDirectionName('decentralization')]" #NEW
+ tribal_administration_policy_tt: "Tutti i membri riceveranno [ShowNamedValue('societal_value_minor_move_to_right')] verso [ShowSocietyDirectionName('decentralization')]" #NEW
  sinicized_administration_policy: "Amministrazione Sinicizzata"
  sinicized_administration_policy_desc: "L'amministrazione sarà gestita a livello confederale, con il leader a dirigere il nostro popolo."
- sinicized_administration_policy_tt: "All members will move [ShowNamedValue('societal_value_minor_move_to_left')] towards [ShowSocietyDirectionName('centralization')]" #NEW
+ sinicized_administration_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_minor_move_to_left')] verso [ShowSocietyDirectionName('centralization')]" #NEW
  tax_obligations: "Legge di Tassazione del Clan"
  tax_obligations_desc: "Questa legge definisce il livello di tassazione che sarà applicato al nostro popolo."
  no_tax_obligations_policy: "Nessuna Tassazione"
@@ -789,10 +783,10 @@
  formal_script_desc: "Questa legge determina quale sistema di scrittura dovrà essere utilizzato per la documentazione ufficiale."
  mongol_script_policy: "Scrittura Mongola"
  mongol_script_policy_desc: "Sarà utilizzata la scrittura mongola."
- mongol_script_policy_tt: "All members will move [ShowNamedValue('societal_value_large_move_to_left')] towards [ShowSocietyDirectionName('traditionalist')]" #NEW
+ mongol_script_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_large_move_to_left')] verso [ShowSocietyDirectionName('traditionalist')]" #NEW
  sinicized_script_policy: "Scrittura Sinicizzata"
  sinicized_script_policy_desc: "Sarà utilizzato il sistema di scrittura cinese."
- sinicized_script_policy_tt: "All members will move [ShowNamedValue('societal_value_move_to_left')] towards [ShowSocietyDirectionName('centralization')]" #NEW
+ sinicized_script_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_move_to_left')] verso [ShowSocietyDirectionName('centralization')]" #NEW
  legal_framework: "Legge sulla Burocrazia"
  legal_framework_desc: "Questa legge stabilisce il quadro giuridico adottato dalla nostra burocrazia."
  no_legal_framework_policy: "Nessun Quadro Giuridico"
@@ -907,15 +901,14 @@
  italian_league_3_desc: "Una lega formata attorno alla capitale [GetUniqueInternationalOrganization('italian_league_3').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('italian_league_3').GetLeaderCountry.GetName].$italian_league_key_desc$"
  STRENGTH_OF_FOREIGN_LEAGUE: "Forza della Lega Straniera"
  NOT_NEIGHBORS_AI_WEIGHT: "Non siamo vicini"
- #OPINION_OF_FRANCE_LEADER: "[opinion|e]" #DELETE
  RECENTLY_JOINED_ANOTHER_LEAGUE: "Si è unito recentemente a un'altra Lega"
  CURRENT_APPETITE_FOR_EXPANSION: "Propensione all'espansione"
- LEAGUE_LEADER_CURRENT_TRUST: "Their [trust|e] towards [league_leader_current.GetName]" #NEW
- RELATIVE_STRENGTH_LEAGUE_LEADER_CURRENT: "Their [country_strength|e] relative to [league_leader_current.GetName]" #NEW
- LEAGUE_LEADER_CURRENT_OPINION: "Their [opinion|e] of [league_leader_current.GetName]" #NEW
- TARGET_LEADER_TRUST: "Their [trust|e] towards us" #NEW
- TARGET_LEADER_RELATIVE_STRENGTH: "Their [country_strength|e] relative to us" #NEW
- TARGET_LEADER_OPINION: "Their [opinion|e] of us" #NEW
+ LEAGUE_LEADER_CURRENT_TRUST: "La loro [trust|e] verso [league_leader_current.GetName]" #NEW
+ RELATIVE_STRENGTH_LEAGUE_LEADER_CURRENT: "La loro [country_strength|e] rispetto a [league_leader_current.GetName]" #NEW
+ LEAGUE_LEADER_CURRENT_OPINION: "La loro [opinion|e] di [league_leader_current.GetName]" #NEW
+ TARGET_LEADER_TRUST: "La loro [trust|e] verso di noi" #NEW
+ TARGET_LEADER_RELATIVE_STRENGTH: "La loro [country_strength|e] rispetto a noi" #NEW
+ TARGET_LEADER_OPINION: "La loro [opinion|e] su di noi" #NEW
 
  #Ilkhanate
  ilkhanate: "Īlkhānān"
