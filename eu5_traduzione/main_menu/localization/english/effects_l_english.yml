@@ -23,10 +23,10 @@
   KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] muore"
  PAST_KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] è morto"
 
- TRIGGER_EVENT_EFFECT: "L'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!' si verifica"
- PAST_TRIGGER_EVENT_EFFECT: "L'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!' si è verificato"
- WE_TRIGGER_EVENT_EFFECT: "L'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!' ci accade"
- PAST_WE_TRIGGER_EVENT_EFFECT: "L'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!' ci è accaduto"
+ TRIGGER_EVENT_EFFECT: "Si verifica l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
+ PAST_TRIGGER_EVENT_EFFECT: "Si è verificato l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
+ WE_TRIGGER_EVENT_EFFECT: "Si verifica l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
+ PAST_WE_TRIGGER_EVENT_EFFECT: "Si è verificato l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
  THIRD_TRIGGER_EVENT_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] riceve l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
  PAST_THIRD_TRIGGER_EVENT_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ricevuto l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
 
@@ -1826,10 +1826,10 @@
  THIRD_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ a [LOCATION.GetName] può ora impiegare $POPSIZE|G$ [rgo_pops|e] in più"
  PAST_THIRD_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ a [LOCATION.GetName] ha aumentato il numero massimo di [rgo_pops|e] di $POPSIZE|G$"
  
- NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ potrà impiegare $POPSIZE|R$ [rgo_pops|e] in meno"
- PAST_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ ha ridotto il numero massimo di [rgo_pops|e] di $POPSIZE|R$"
- THIRD_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ a [LOCATION.GetName] potrà impiegare $POPSIZE|R$ [rgo_pops|e] in meno"
- PAST_THIRD_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "L'$RGO$ a [LOCATION.GetName] ha ridotto il numero massimo di [rgo_pops|e] di $POPSIZE|R$"
+ NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "$RGO$ impiegherà $POPSIZE|R$ [rgo_pops|e] in meno"
+ PAST_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "$RGO$ ha ridotto il numero massimo di [rgo_pops|e] di $POPSIZE|R$"
+ THIRD_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "$RGO$ a [LOCATION.GetName] impiegherà $POPSIZE|R$ [rgo_pops|e] in meno"
+ PAST_THIRD_NEG_CHANGE_MAX_RAW_MATERIAL_WORKERS_EFFECT: "$RGO$ a [LOCATION.GetName] ha ridotto il numero massimo di [rgo_pops|e] di $POPSIZE|R$"
 
  CHANGE_PROSPERITY_EFFECT: "Modifica la [prosperity|e] di $VALUE|2G%$"
  THIRD_CHANGE_PROSPERITY_EFFECT: "La [prosperity|e] di [LOCATION.GetName] aumenta di $VALUE|2G%$"

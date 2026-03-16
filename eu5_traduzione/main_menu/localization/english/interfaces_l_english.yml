@@ -408,7 +408,7 @@
  MARKET_GOODS_PRICE_ENTRY_TITLE: "Prezzo [GoodsInMarket.GetGoods.GetNameWithNoTooltip]"
  MARKET_GOODS_PRICE_ENTRY_TITLE_DESC: "Il Prezzo di [GoodsInMarket.GetGoods.GetName] a [GoodsInMarket.GetMarket.GetName] è di [GoodsInMarket.GetGoodsMarketEntry.GetPrice|2] @[GoodsInMarket.GetGoods.GetPriceDifferenceIconName(GoodsInMarket.GetGoodsMarketEntry.GetPrice)]!."
  CURR_STOCKPILE_TT: "Attualmente ci sono [GoodsMarketEntry.GetStockpile|G1] [GoodsMarketEntry.GetGoods.GetIcon] a [GoodsMarketEntry.GetMarket.GetShortNameWithNoTooltip]"
- STOCKPILE_MAX_TT: "Possiamo stoccare [Market.GetCenterLocation.GetModifierValueFixed('maximum_stockpile_capacity')|Y] [GoodsMarketEntry.GetGoods.GetIcon] dovuto a:"
+ STOCKPILE_MAX_TT: "Possiamo stoccare [Market.GetCenterLocation.GetModifierValueFixed('maximum_stockpile_capacity')|Y] [GoodsMarketEntry.GetGoods.GetIcon], grazie a:"
 
  POP_LEVY_CALC_ENTRY: "Ci sono [POP.GetSize|V] [POP.GetNameWithNoTooltip] disponibili per la Leva.\n[LEVY_SETUP.GetAmountOfMen|%2] del [pop|e] sarà riscosso in [LEVY_SETUP.GetName]: $VAL|V$\nCiò è ulteriormente modificato da:"
  POP_LEVY_CALC_WRONG_CULTURE: "Non è una [primary_or_accepted_culture|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+L2$#!"
@@ -958,9 +958,9 @@
  EXPENSE_TOOLTIP_T: "Spese di [Player.GetNameWithNoTooltip]"
  BALANCE_TOOLTIP_T: "Bilancio di [Player.GetNameWithNoTooltip]"
  EXPENSE_MAINT_TOOLTIP_T: "[MaintenanceSetting.GetNameWithNoTooltip] di [MaintenanceSetting.GetSettingOwner.GetNameWithNoTooltip]"
- EXPENSE_MAINT_TT_TEXT: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], la [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Di')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!." 
- EXPENSE_MAINT_TT_TEXT_LONG: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], la [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Di')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!, portando a un cambiamento mensile di [MaintenanceSetting.GetExpenseBenefit]." 
- EXPENSE_MAINT_TT_TEXT_LONG_ALT: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], la [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Di')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!." 
+ EXPENSE_MAINT_TT_TEXT: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], il [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Della')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!." 
+ EXPENSE_MAINT_TT_TEXT_LONG: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], il [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Della')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!, portando a un cambiamento mensile di [MaintenanceSetting.GetExpenseBenefit]." 
+ EXPENSE_MAINT_TT_TEXT_LONG_ALT: "Con un investimento del [MaintenanceSetting.GetSliderValue|2=%V], il [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.Custom('IT_Della')][MaintenanceSetting.GetSettingOwner.GetName] è [MaintenanceSetting.GetExpense|+=2R]@expense!." 
 
  EXPENSE_MAINT_MAX_INVESTMENT_T: "L'Investimento massimo è [MaintenanceSetting.GetMaxExpenseNoFormat|2V]@gold! dalla nostra [economical_base|e] di [MaintenanceSetting.GetSettingOwner.GetEconomicalBaseWithLabel|2]@tax_base!.\nCiò è dovuto al nostro [Localize(Concatenate('MODIFIER_TYPE_NAME_', MaintenanceSetting.GetModifier))|V] di [MaintenanceSetting.GetSettingOwner.GetModifierValueNoFormat(MaintenanceSetting.GetModifier)]:"
  FORTS_LIMIT_TT_TEXT_TITLE: "Limite dei Forti di [Country.GetNameWithNoTooltip]"
