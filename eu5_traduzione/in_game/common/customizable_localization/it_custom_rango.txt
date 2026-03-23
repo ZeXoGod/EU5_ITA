@@ -1,5 +1,13 @@
 ﻿IT_ART_TITOLO = {
     type = character
+	
+	# CASO 10: REGINA / DUCHESSA (Femminile)
+    text = {
+        trigger = {
+            is_female = yes
+        }
+        localization_key = "IT_ART_LA"
+    }
     
     # CASO 1: ZAR
 	text = {
@@ -116,14 +124,6 @@
 			}
         }
         localization_key = "IT_ART_L"
-    }
-
-    # CASO 10: REGINA / DUCHESSA (Femminile)
-    text = {
-        trigger = {
-            is_female = yes
-        }
-        localization_key = "IT_ART_LA"
     }
 
     # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
@@ -137,6 +137,14 @@
 
 IT_DEL_TITOLO = {
     type = character
+	
+	# CASO 10: REGINA / DUCHESSA (Femminile)
+    text = {
+        trigger = {
+            is_female = yes
+        }
+        localization_key = "IT_ART_DELLA"
+    }
     
     # CASO 1: ZAR
 	text = {
@@ -253,14 +261,6 @@ IT_DEL_TITOLO = {
 			}
         }
         localization_key = "IT_ART_DELL"
-    }
-
-    # CASO 10: REGINA / DUCHESSA (Femminile)
-    text = {
-        trigger = {
-            is_female = yes
-        }
-        localization_key = "IT_ART_DELLA"
     }
 
     # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
@@ -274,6 +274,14 @@ IT_DEL_TITOLO = {
 
 IT_DAL_TITOLO = {
     type = character
+	
+	# CASO 10: REGINA / DUCHESSA (Femminile)
+    text = {
+        trigger = {
+            is_female = yes
+        }
+        localization_key = "IT_ART_DALLA"
+    }
     
     # CASO 1: ZAR
 	text = {
@@ -392,14 +400,6 @@ IT_DAL_TITOLO = {
         localization_key = "IT_ART_DALL"
     }
 
-    # CASO 10: REGINA / DUCHESSA (Femminile)
-    text = {
-        trigger = {
-            is_female = yes
-        }
-        localization_key = "IT_ART_DALLA"
-    }
-
     # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
     text = {
         trigger = { 
@@ -411,6 +411,14 @@ IT_DAL_TITOLO = {
 
 IT_AL_TITOLO = {
     type = character
+	
+	# CASO 10: REGINA / DUCHESSA (Femminile)
+    text = {
+        trigger = {
+            is_female = yes
+        }
+        localization_key = "IT_ART_ALLA"
+    }
     
     # CASO 1: ZAR
 	text = {
@@ -531,14 +539,6 @@ IT_AL_TITOLO = {
         localization_key = "IT_ART_ALL"
     }
 
-    # CASO 10: REGINA / DUCHESSA (Femminile)
-    text = {
-        trigger = {
-            is_female = yes
-        }
-        localization_key = "IT_ART_ALLA"
-    }
-
     # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
     text = {
         trigger = { 
@@ -552,6 +552,14 @@ IT_AL_TITOLO = {
 
 IT_SUL_TITOLO = {
     type = character
+	
+	# CASO 10: REGINA / DUCHESSA (Femminile)
+    text = {
+        trigger = {
+            is_female = yes
+        }
+        localization_key = "IT_ART_SULLA"
+    }
     
     # CASO 1: ZAR
 	text = {
@@ -670,14 +678,6 @@ IT_SUL_TITOLO = {
         localization_key = "IT_ART_SULL"
     }
 
-    # CASO 10: REGINA / DUCHESSA (Femminile)
-    text = {
-        trigger = {
-            is_female = yes
-        }
-        localization_key = "IT_ART_SULLA"
-    }
-
     # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
     text = {
         trigger = { 
@@ -710,7 +710,7 @@ IT_ART_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -792,7 +792,7 @@ IT_DEL_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -874,7 +874,7 @@ IT_DAL_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -956,7 +956,7 @@ IT_AL_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1038,7 +1038,7 @@ IT_SUL_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1120,7 +1120,7 @@ IT_NEL_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1202,7 +1202,7 @@ IT_OA_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1522,7 +1522,7 @@ IT_ART_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1597,7 +1597,7 @@ IT_DEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1674,7 +1674,7 @@ IT_NEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1751,7 +1751,7 @@ IT_AL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1828,7 +1828,7 @@ IT_SUL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		country_rank = country_rank:rank_county
+		#country_rank = country_rank:rank_county
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}

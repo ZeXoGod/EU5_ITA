@@ -151,7 +151,7 @@
 
  NEWMONOTHER_SETUP: "Quando un altro [country|e] ottiene un nuovo [ruler|e]."
  NEWMONOTHER_HEADER: "Araldo da $COUNTRY$"
- NEWMONOTHER_TITLE: "Un nuovo $TITLE$ $ACTION$!"
+ NEWMONOTHER_TITLE: "Un Nuovo $TITLE$ $ACTION$!"
  NEWMONOTHER_DESC: "Abbiamo ricevuto notizie secondo cui $FULLMONARCHNAME$ $RISE$ in $LONGCOUNTRY$"
  NEWMONOTHER_EFFECTS: "Il governante ha le seguenti [abilities|e] $ABILITY$"
  NEWMONOTHER_LOG: "$FULLMONARCHNAME$ $RISE$ in $LONGCOUNTRY$."
@@ -163,7 +163,7 @@
  #
  NEWMON_SETUP: "Quando otteniamo un nuovo [ruler|e]."
  NEWMON_HEADER: "Il Nostro Cancelliere Riferisce!"
- NEWMON_TITLE: "Un nuovo $TITLE$!"
+ NEWMON_TITLE: "Un Nuovo Governante!"
  NEWMON_DESC: "$FULLMONARCHNAME$ governerà ora il nostro glorioso Paese! $STAT$"
  NEWMON_EFFECTS: "Il nuovo governante ha le seguenti [abilities|e] $ABILITY$"
  NEWMON_FLAVOR: "$MOURN$"
@@ -173,7 +173,7 @@
  NEWMON_BTN3: "$common_string_go_to$"
  NEWMON_MAP: "Lunga vita a $MONARCHNAME$!"
  NEWMON_MOURN: "Il nostro [country|e] è in lutto per la perdita di $OLD$."
- CONSORTREGENTSUCCEEDED_MOURN: "Il nostro consorte reggente $NAME$ si è fatto da parte e ha permesso a $HEIRNAME$ di prendere la corona."
+ CONSORTREGENTSUCCEEDED_MOURN: "Il consorte reggente $NAME$ si è fatto da parte e ha permesso a $HEIRNAME$ di prendere la corona."
  #
  OTHER_PERFORMS_gag_join_faction_ACTION_SETUP: "Quando un altro paese si unisce a una fazione."
  OTHER_PERFORMS_gag_join_faction_ACTION_HEADER: "$MESSENGER$"
@@ -322,7 +322,7 @@
  BREAK_SCRIPT_DIPLOMACY_ON_PLAYER_BTN3: "$common_string_go_to$"
  BREAK_SCRIPT_DIPLOMACY_ON_PLAYER_MAP: ""
  #
- BREAK_SCRIPT_DIPLOMACY_OTHER_SETUP: "Quando un altro [paese|e] rompe un'interazione diplomatica con terzi."
+ BREAK_SCRIPT_DIPLOMACY_OTHER_SETUP: "Quando un altro [country|e] rompe un'interazione diplomatica con terzi."
  BREAK_SCRIPT_DIPLOMACY_OTHER_HEADER: "$MESSENGER$"
  BREAK_SCRIPT_DIPLOMACY_OTHER_TITLE: "$TITLE$"
  BREAK_SCRIPT_DIPLOMACY_OTHER_DESC: "$DESC$"
@@ -731,23 +731,23 @@
  PEACEACCEPT_BTN2: "Bene!"
  PEACEACCEPT_BTN3: "$common_string_go_to$"
  PEACEACCEPT_MAP: "Pace!"
- TOTAL_POPULATION_CASUALTIES: "Vittime tra la Popolazione" #NEW
- PEACE_COUNTRY_POP_LOSSES: "#T $TOTAL_POPULATION_CASUALTIES$ #! Perdite totali stimate in termini di [population|e] subite da ciascuna delle parti durante la guerra." #NEW
- WAR_WON_NO_SCORE: "#yellow_titles Abbiamo Vinto!#!" #NEW
- WAR_LOST_NO_SCORE: "#yellow_titles Abbiamo Perso!#!" #NEW
- TOTAL_ARMY_CASUALTIES: "Vittime dell'Esercito" #NEW
- PEACE_COUNTRY_ARMY_LOSSES: "#T $TOTAL_ARMY_CASUALTIES$ #! Perdite totali dell'[army|e] subite da ciascuna delle parti durante la guerra." #NEW
- TOTAL_NAVY_CASUALTIES: "Vittime della Marina" #NEW
- PEACE_COUNTRY_NAVY_LOSSES: "#T $TOTAL_NAVY_CASUALTIES$ #! Perdite totali dellA [navy|e] subite da ciascuna delle parti durante la guerra." #NEW
- WAR_UNIT_TYPE_STATS_TT: "[FinishedWarUnitStats.GetCategory.GetName]" #NEW
- WAR_UNIT_TYPE_STATS_TT_TOTAL_UNITS: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Disponobile #! Il numero totale di [FinishedWarUnitStats.GetCategory.GetName] da questa parte della guerra." #NEW
- WAR_UNIT_TYPE_STATS_TT_TOTAL_UNITS_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_TOAL_UNITS_GENERIC$" #NEW
- WAR_UNIT_TYPE_STATS_TT_LOSSES: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Perse #! Le perdite totali di [FinishedWarUnitStats.GetCategory.GetName] durante la guerra." #NEW
- WAR_UNIT_TYPE_STATS_TT_LOSSES_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_LOSSES_GENERIC$" #NEW
- WAR_UNIT_TYPE_STATS_TT_CAPTURED: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Catturati #! Il totale [FinishedWarUnitStats.GetCategory.GetName] catturati durante la guerra." #NEW
- WAR_UNIT_TYPE_STATS_TT_CAPTURED_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_CAPTURED_GENERIC$" #NEW
- WAR_UNIT_TYPE_STATS_TT_REMAINING_UNITS: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Rimasti #! I [FinishedWarUnitStats.GetCategory.GetName] sopravvissuti." #NEW
- WAR_UNIT_TYPE_STATS_TT_REMAINING_UNITS_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_REMAINING_UNITS_GENERIC$" #NEW
+ TOTAL_POPULATION_CASUALTIES: "Vittime tra la Popolazione"
+ PEACE_COUNTRY_POP_LOSSES: "#T $TOTAL_POPULATION_CASUALTIES$ #! Perdite totali stimate in termini di [population|e] subite da ciascuna delle parti durante la guerra."
+ WAR_WON_NO_SCORE: "#yellow_titles Abbiamo Vinto!#!"
+ WAR_LOST_NO_SCORE: "#yellow_titles Abbiamo Perso!#!"
+ TOTAL_ARMY_CASUALTIES: "Vittime dell'Esercito"
+ PEACE_COUNTRY_ARMY_LOSSES: "#T $TOTAL_ARMY_CASUALTIES$ #! Perdite totali dell'[army|e] subite da ciascuna delle parti durante la guerra."
+ TOTAL_NAVY_CASUALTIES: "Vittime della Marina"
+ PEACE_COUNTRY_NAVY_LOSSES: "#T $TOTAL_NAVY_CASUALTIES$ #! Perdite totali dellA [navy|e] subite da ciascuna delle parti durante la guerra."
+ WAR_UNIT_TYPE_STATS_TT: "[FinishedWarUnitStats.GetCategory.GetName]"
+ WAR_UNIT_TYPE_STATS_TT_TOTAL_UNITS: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Disponobile #! Il numero totale di [FinishedWarUnitStats.GetCategory.GetName] da questa parte della guerra."
+ WAR_UNIT_TYPE_STATS_TT_TOTAL_UNITS_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_TOAL_UNITS_GENERIC$"
+ WAR_UNIT_TYPE_STATS_TT_LOSSES: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Perse #! Le perdite totali di [FinishedWarUnitStats.GetCategory.GetName] durante la guerra."
+ WAR_UNIT_TYPE_STATS_TT_LOSSES_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_LOSSES_GENERIC$"
+ WAR_UNIT_TYPE_STATS_TT_CAPTURED: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Catturati #! Il totale [FinishedWarUnitStats.GetCategory.GetName] catturati durante la guerra."
+ WAR_UNIT_TYPE_STATS_TT_CAPTURED_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_CAPTURED_GENERIC$"
+ WAR_UNIT_TYPE_STATS_TT_REMAINING_UNITS: "#T [FinishedWarUnitStats.GetCategory.GetNameWithNoTooltip] Rimasti #! I [FinishedWarUnitStats.GetCategory.GetName] sopravvissuti."
+ WAR_UNIT_TYPE_STATS_TT_REMAINING_UNITS_GENERIC: "$BATTLE_UNIT_TYPE_STATS_TT_REMAINING_UNITS_GENERIC$"
  #
  PEACEACCEPTOTHER_ALLY_SETUP: "Quando un [country|e] accetta un'[peace_offer|e] da un altro [country|e] nella nostra [war|e]."
  PEACEACCEPTOTHER_ALLY_HEADER: "Araldo da $RECIPIENT_NL$"
@@ -1229,7 +1229,7 @@
  NEW_WORK_OF_ART_BETTER_SETUP: "Quando un [artist|e] termina una nuova [work_of_art|e] significativa!."
  NEW_WORK_OF_ART_BETTER_HEADER: "$MESSENGER$"
  NEW_WORK_OF_ART_BETTER_TITLE: "Opera Completata: $ARTTYPE$"
- NEW_WORK_OF_ART_BETTER_DESC: "Il nostro $ARTIST$ $NAME$ ha terminato una nuova opera $ARTTYPE$, di $QUALITY$, dal nome $WORK$, di cui il nostro [country|e] godrà grandemente. Questo aumenta anche l'influenza $CULTURE$ di $INFLUENCE$"
+ NEW_WORK_OF_ART_BETTER_DESC: "Il nostro $ARTIST$ $NAME$ ha terminato una nuova opera $ARTTYPE$, $QUALITY$, dal nome $WORK$, di cui il nostro [country|e] godrà grandemente. Questo aumenta anche l'influenza $CULTURE$ di $INFLUENCE$"
  NEW_WORK_OF_ART_BETTER_FLAVOR: "$DESC$"
  NEW_WORK_OF_ART_BETTER_LOG: "$NAME$ ha terminato $ARTTYPE$, $WORK$"
  NEW_WORK_OF_ART_BETTER_BTN1: "OK"
@@ -1240,7 +1240,7 @@
  NEW_WORK_OF_ART_SETUP: "Quando un [artist|e] termina una qualsiasi nuova [work_of_art|e]."
  NEW_WORK_OF_ART_HEADER: "$MESSENGER$"
  NEW_WORK_OF_ART_TITLE: "Opera Completata: $ARTTYPE_NL$"
- NEW_WORK_OF_ART_DESC: "Il nostro $ARTIST$ $NAME$ ha terminato una nuova opera, $ARTTYPE$, di $QUALITY$, dal nome $WORK$, di cui il nostro [country|e] godrà grandemente. Questo aumenta anche l'influenza $CULTURE$ di $INFLUENCE$"
+ NEW_WORK_OF_ART_DESC: "Il nostro $ARTIST$ $NAME$ ha terminato una nuova opera, $ARTTYPE$, $QUALITY$, dal nome $WORK$, di cui il nostro [country|e] godrà grandemente. Questo aumenta anche l'influenza $CULTURE$ di $INFLUENCE$"
  NEW_WORK_OF_ART_FLAVOR: "$DESC$"
  NEW_WORK_OF_ART_LOG: "$NAME$ ha terminato $ARTTYPE$, $WORK$"
  NEW_WORK_OF_ART_BTN1: "OK"
@@ -1317,9 +1317,9 @@
  #
  NEWBORN_SETUP: "Quando un [child|e] nasce nel nostro [country|e]."
  NEWBORN_HEADER: "$MESSENGER$"
- NEWBORN_TITLE: "È nato un $SEX$!"
- NEWBORN_DESC: "$MONARCHTITLE$! È nato un $SEX$ da $CHAR$. Ci è stato detto che il nome è $CHILD$."
- NEWBORN_LOG: "È nato un $SEX$ da $CHAR$."
+ NEWBORN_TITLE: "Un Nuovo Nato!"
+ NEWBORN_DESC: "$MONARCHTITLE$! $CHAR$ ha dato alla luce un nuovo figlio. Ci è stato riferito che il nome è $CHILD$."
+ NEWBORN_LOG: "È nato un figlio da $CHAR$."
  NEWBORN_BTN1: "OK"
  NEWBORN_BTN2: "OK"
  NEWBORN_BTN3: "$common_string_go_to$"
@@ -1328,7 +1328,7 @@
  NEWBORN_RULER_HEADER: "$NEWBORN_HEADER$"
  NEWBORN_RULER_TITLE: "$NEWBORN_TITLE$"
  NEWBORN_RULER_DESC: "$NEWBORN_DESC$"
- NEWBORN_RULER_LOG: "È nato un $SEX$ da $CHAR$."
+ NEWBORN_RULER_LOG: "È nato un figlio da $CHAR$."
  NEWBORN_RULER_BTN1: "OK"
  NEWBORN_RULER_BTN2: "OK"
  NEWBORN_RULER_BTN3: "$common_string_go_to$"
@@ -1394,23 +1394,23 @@
  UNITS_CAUGHT_IN_FROZEN_SEA_BTN2: "OK"
  UNITS_CAUGHT_IN_FROZEN_SEA_BTN3: "$common_string_go_to$"
  UNITS_CAUGHT_IN_FROZEN_SEA_MAP: ""
- MINOR_REBEL_UPRISING_SETUP: "Quando un [rebel|e] minore si è rivoltato nel nostro [country|e]." #NEW
- MINOR_REBEL_UPRISING_HEADER: "$MESSENGER$" #NEW
- MINOR_REBEL_UPRISING_TITLE: "Rivolta Ribelle Minore" #NEW
- MINOR_REBEL_UPRISING_DESC: "Sembra che $REBEL$ si sono rivoltati in $LOCATIONS$." #NEW
- MINOR_REBEL_UPRISING_EFFECTS: "Impatta le [locations|e] per $MONTHS$ months\n[ShowModifierEffect('minor_rebel_uprising')]" #NEW
- MINOR_REBEL_UPRISING_LOG: "$REBEL$ si è rivoltato in $COUNTRY$." #NEW
- MINOR_REBEL_UPRISING_BTN1: "OK" #NEW
- MINOR_REBEL_UPRISING_BTN2: "OK" #NEW
- MINOR_REBEL_UPRISING_BTN3: "$common_string_go_to$" #NEW
- MINOR_REBEL_UPRISING_MAP: "Rivolta Ribelle!" #NEW
+ MINOR_REBEL_UPRISING_SETUP: "Quando un [rebel|e] minore si è rivoltato nel nostro [country|e]."
+ MINOR_REBEL_UPRISING_HEADER: "$MESSENGER$"
+ MINOR_REBEL_UPRISING_TITLE: "Rivolta Ribelle Minore"
+ MINOR_REBEL_UPRISING_DESC: "Sembra che $REBEL$ si sono rivoltati in $LOCATIONS$."
+ MINOR_REBEL_UPRISING_EFFECTS: "Impatta le [locations|e] per $MONTHS$ months\n[ShowModifierEffect('minor_rebel_uprising')]"
+ MINOR_REBEL_UPRISING_LOG: "$REBEL$ si è rivoltato in $COUNTRY$."
+ MINOR_REBEL_UPRISING_BTN1: "OK"
+ MINOR_REBEL_UPRISING_BTN2: "OK"
+ MINOR_REBEL_UPRISING_BTN3: "$common_string_go_to$"
+ MINOR_REBEL_UPRISING_MAP: "Rivolta Ribelle!"
  
  
  #
  CIVILWAR_STARTS_SETUP: "Quando una [civil_war|e] inizia nel nostro [country|e]."
  CIVILWAR_STARTS_HEADER: "$MESSENGER$"
  CIVILWAR_STARTS_TITLE: "Guerra Civile"
- CIVILWAR_STARTS_DESC: "Sembra che $REBEL$ stia dietro la creazione di una [civil_war|e] nel nostro paese."
+ CIVILWAR_STARTS_DESC: "Sembra che $REBEL$ sia all'origine della [civil_war|e] nel nostro paese."
  CIVILWAR_STARTS_LOG: "$REBEL$ ha avviato una [civil_war|e] in $COUNTRY$."
  CIVILWAR_STARTS_BTN1: "OK"
  CIVILWAR_STARTS_BTN2: "OK"
@@ -1420,7 +1420,7 @@
  CIVILWAR_STARTS_OTHER_SETUP: "Quando una [civil_war|e] inizia in un altro [country|e]."
  CIVILWAR_STARTS_OTHER_HEADER: "$MESSENGER$"
  CIVILWAR_STARTS_OTHER_TITLE: "Guerra Civile"
- CIVILWAR_STARTS_OTHER_DESC: "Sembra che $REBEL$ stia dietro la creazione di una [civil_war|e] in $COUNTRY$."
+ CIVILWAR_STARTS_OTHER_DESC: "Sembra che $REBEL$ sia all'origine di una [civil_war|e] in $COUNTRY$."
  CIVILWAR_STARTS_OTHER_LOG: "$REBEL$ ha avviato una [civil_war|e] in $COUNTRY$."
  CIVILWAR_STARTS_OTHER_BTN1: "OK"
  CIVILWAR_STARTS_OTHER_BTN2: "OK"
@@ -1509,42 +1509,42 @@
  THEYDECLINEBUYPROV_BTN2: "OK"
  THEYDECLINEBUYPROV_BTN3: "$common_string_go_to$"
  THEYDECLINEBUYPROV_MAP: ""
- ACTION_transfer_subject_PERFORMED_ON_US_SETUP: "Quando uno [subject|e] ci viene venduto." #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TITLE: "Suddito Acquistato!" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_DESC: "Abbiamo acquistato [SCOPE.sCountry('target').Custom('IT_La')][SCOPE.sCountry('target').GetName] [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetName] per la modica cifra di [SCOPE.GetValue('sale_price')|2][gold_i]!" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_LOG: "Abbiamo comprato [SCOPE.sCountry('target').Custom('IT_La')][SCOPE.sCountry('target').GetName] [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_BTN1: "OK" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_BTN2: "OK" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_MAP: "" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_SETUP: "Quando veniamo venduti come uno [subject|e]." #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_HEADER: "$MESSENGER$" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_TITLE: "Venduto!" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_DESC: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ci hanno venduto [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per la modica cifra di [SCOPE.GetValue('sale_price')|2][gold_i]!" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ci hanno venduto [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN1: "OK" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN2: "OK" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN3: "$common_string_go_to$" #NEW
- ACTION_transfer_subject_PERFORMED_ON_US_TARGET_MAP: "" #NEW
- WE_PERFORM_transfer_subject_ACTION_SETUP: "Quando vendiamo unO [subject|e]." #NEW
- WE_PERFORM_transfer_subject_ACTION_HEADER: "$MESSENGER$" #NEW
- WE_PERFORM_transfer_subject_ACTION_TITLE: "Suddito Venduto!" #NEW
- WE_PERFORM_transfer_subject_ACTION_DESC: "Abbiamo venduto il nostro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]!" #NEW
- WE_PERFORM_transfer_subject_ACTION_LOG: "Abbiamo venduto il nostro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]" #NEW
- WE_PERFORM_transfer_subject_ACTION_BTN1: "OK" #NEW
- WE_PERFORM_transfer_subject_ACTION_BTN2: "OK" #NEW
- WE_PERFORM_transfer_subject_ACTION_BTN3: "$common_string_go_to$" #NEW
- WE_PERFORM_transfer_subject_ACTION_MAP: "" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_SETUP: "Quando un altro [country|e] vende uno [subject|e] a una terza parte" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_HEADER: "$MESSENGER$" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_TITLE: "Subject Sold!" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_DESC: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] venduto il loro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] venduto il loro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]"" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_BTN1: "OK" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_BTN2: "OK" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_BTN3: "$common_string_go_to$" #NEW
- OTHER_PERFORMS_transfer_subject_ACTION_MAP: "" #NEW
+ ACTION_transfer_subject_PERFORMED_ON_US_SETUP: "Quando uno [subject|e] ci viene venduto."
+ ACTION_transfer_subject_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ ACTION_transfer_subject_PERFORMED_ON_US_TITLE: "Suddito Acquistato!"
+ ACTION_transfer_subject_PERFORMED_ON_US_DESC: "Abbiamo acquistato [SCOPE.sCountry('target').Custom('IT_La')][SCOPE.sCountry('target').GetName] [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetName] per la modica cifra di [SCOPE.GetValue('sale_price')|2][gold_i]!"
+ ACTION_transfer_subject_PERFORMED_ON_US_LOG: "Abbiamo comprato [SCOPE.sCountry('target').Custom('IT_La')][SCOPE.sCountry('target').GetName] [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]"
+ ACTION_transfer_subject_PERFORMED_ON_US_BTN1: "OK"
+ ACTION_transfer_subject_PERFORMED_ON_US_BTN2: "OK"
+ ACTION_transfer_subject_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ ACTION_transfer_subject_PERFORMED_ON_US_MAP: ""
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_SETUP: "Quando veniamo venduti come uno [subject|e]."
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_HEADER: "$MESSENGER$"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_TITLE: "Venduto!"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_DESC: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ci hanno venduto [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per la modica cifra di [SCOPE.GetValue('sale_price')|2][gold_i]!"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ci hanno venduto [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN1: "OK"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN2: "OK"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_BTN3: "$common_string_go_to$"
+ ACTION_transfer_subject_PERFORMED_ON_US_TARGET_MAP: ""
+ WE_PERFORM_transfer_subject_ACTION_SETUP: "Quando vendiamo unO [subject|e]."
+ WE_PERFORM_transfer_subject_ACTION_HEADER: "$MESSENGER$"
+ WE_PERFORM_transfer_subject_ACTION_TITLE: "Suddito Venduto!"
+ WE_PERFORM_transfer_subject_ACTION_DESC: "Abbiamo venduto il nostro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]!"
+ WE_PERFORM_transfer_subject_ACTION_LOG: "Abbiamo venduto il nostro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]"
+ WE_PERFORM_transfer_subject_ACTION_BTN1: "OK"
+ WE_PERFORM_transfer_subject_ACTION_BTN2: "OK"
+ WE_PERFORM_transfer_subject_ACTION_BTN3: "$common_string_go_to$"
+ WE_PERFORM_transfer_subject_ACTION_MAP: ""
+ OTHER_PERFORMS_transfer_subject_ACTION_SETUP: "Quando un altro [country|e] vende uno [subject|e] a una terza parte"
+ OTHER_PERFORMS_transfer_subject_ACTION_HEADER: "$MESSENGER$"
+ OTHER_PERFORMS_transfer_subject_ACTION_TITLE: "Subject Sold!"
+ OTHER_PERFORMS_transfer_subject_ACTION_DESC: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] venduto il loro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]"
+ OTHER_PERFORMS_transfer_subject_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] venduto il loro [subject|e] [SCOPE.sCountry('target').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName] per [SCOPE.GetValue('sale_price')|2][gold_i]""
+ OTHER_PERFORMS_transfer_subject_ACTION_BTN1: "OK"
+ OTHER_PERFORMS_transfer_subject_ACTION_BTN2: "OK"
+ OTHER_PERFORMS_transfer_subject_ACTION_BTN3: "$common_string_go_to$"
+ OTHER_PERFORMS_transfer_subject_ACTION_MAP: ""
 
 
  
@@ -2093,7 +2093,7 @@
  LEFT_IO_SUBJECT: "il paese è ora un suddito di [COUNTRY.GetDiplomacy.GetOverlord.GetName]."
  LEFT_IO_UNION: "il paese si è unito a una nuova Unione."
  LEFT_IO_DIVORCE: "il vincolo matrimoniale non poteva durare per sempre."
- LEFT_IO_ANNULLED: "sono stati costretti ad andarsene in seguito a un [peace_treaty|e]." #NEW
+ LEFT_IO_ANNULLED: "sono stati costretti ad andarsene in seguito a un [peace_treaty|e]."
  #
  THEY_LEFT_INTERNATIONAL_ORGANIZATION_TARGETTING_US_SETUP: "Quando un altro [country|e] lascia un'[international_organization|e] che ci ha preso di mira."
  THEY_LEFT_INTERNATIONAL_ORGANIZATION_TARGETTING_US_HEADER: "$MESSENGER$"
@@ -2823,35 +2823,35 @@
  PERFORM_rtr_declare_war_for_regional_supremacy_ACTION_BTN2: "OK"
  PERFORM_rtr_declare_war_for_regional_supremacy_ACTION_BTN3: "$common_string_go_to$"
  PERFORM_rtr_declare_war_for_regional_supremacy_ACTION_MAP: ""
- PERFORM_rtr_demand_annexation_ACTION_SETUP: "Quando viene richiesta l'annessione durante la [ShowSituationName('red_turban_rebellions')]." #NEW
- PERFORM_rtr_demand_annexation_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_rtr_demand_annexation_ACTION_TITLE: "Annessione Richiesta!" #NEW
- PERFORM_rtr_demand_annexation_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto l'annessione [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]." #NEW
- PERFORM_rtr_demand_annexation_ACTION_FLAVOR: "La ribellione è finita." #NEW
- PERFORM_rtr_demand_annexation_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$" #NEW
- PERFORM_rtr_demand_annexation_ACTION_BTN1: "OK" #NEW
- PERFORM_rtr_demand_annexation_ACTION_BTN2: "OK" #NEW
- PERFORM_rtr_demand_annexation_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_rtr_demand_annexation_ACTION_MAP: "" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_SETUP: "Quando chiediamo l'annessione durante la [ShowSituationName('red_turban_rebellions')]." #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_HEADER: "$MESSENGER$" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_TITLE: "Annessione Richiesta!" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_EFFECTS: "Abbiamo chiesto l'annessione [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]." #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_FLAVOR: "La ribellione è finita." #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_BTN1: "OK" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_BTN2: "OK" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_BTN3: "$common_string_go_to$" #NEW
- WE_PERFORM_rtr_demand_annexation_ACTION_MAP: "" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_SETUP: "Quando un paese richiede la nostra annessione durante la [ShowSituationName('red_turban_rebellions')]." #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_TITLE: "Annessione Richiesta!" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] la nostra annessione." #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN1: "OK" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN2: "OK" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
- ACTION_rtr_demand_annexation_PERFORMED_ON_US_MAP: "" #NEW
+ PERFORM_rtr_demand_annexation_ACTION_SETUP: "Quando viene richiesta l'annessione durante la [ShowSituationName('red_turban_rebellions')]."
+ PERFORM_rtr_demand_annexation_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_rtr_demand_annexation_ACTION_TITLE: "Annessione Richiesta!"
+ PERFORM_rtr_demand_annexation_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto l'annessione [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]."
+ PERFORM_rtr_demand_annexation_ACTION_FLAVOR: "La ribellione è finita."
+ PERFORM_rtr_demand_annexation_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$"
+ PERFORM_rtr_demand_annexation_ACTION_BTN1: "OK"
+ PERFORM_rtr_demand_annexation_ACTION_BTN2: "OK"
+ PERFORM_rtr_demand_annexation_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_rtr_demand_annexation_ACTION_MAP: ""
+ WE_PERFORM_rtr_demand_annexation_ACTION_SETUP: "Quando chiediamo l'annessione durante la [ShowSituationName('red_turban_rebellions')]."
+ WE_PERFORM_rtr_demand_annexation_ACTION_HEADER: "$MESSENGER$"
+ WE_PERFORM_rtr_demand_annexation_ACTION_TITLE: "Annessione Richiesta!"
+ WE_PERFORM_rtr_demand_annexation_ACTION_EFFECTS: "Abbiamo chiesto l'annessione [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]."
+ WE_PERFORM_rtr_demand_annexation_ACTION_FLAVOR: "La ribellione è finita."
+ WE_PERFORM_rtr_demand_annexation_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+ WE_PERFORM_rtr_demand_annexation_ACTION_BTN1: "OK"
+ WE_PERFORM_rtr_demand_annexation_ACTION_BTN2: "OK"
+ WE_PERFORM_rtr_demand_annexation_ACTION_BTN3: "$common_string_go_to$"
+ WE_PERFORM_rtr_demand_annexation_ACTION_MAP: ""
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_SETUP: "Quando un paese richiede la nostra annessione durante la [ShowSituationName('red_turban_rebellions')]."
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_TITLE: "Annessione Richiesta!"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] la nostra annessione."
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN1: "OK"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN2: "OK"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ ACTION_rtr_demand_annexation_PERFORMED_ON_US_MAP: ""
  #
  PERFORM_join_a_league_ACTION_SETUP: "Quando aderiamo a una Lega."
  PERFORM_join_a_league_ACTION_HEADER: "$MESSENGER$"
@@ -2873,15 +2873,15 @@
  PERFORM_create_italian_league_ACTION_BTN2: "OK"
  PERFORM_create_italian_league_ACTION_BTN3: "$common_string_go_to$"
  PERFORM_create_italian_league_ACTION_MAP: ""
- PERFORM_dissolve_italian_league_ACTION_SETUP: "Quando abbiamo sciolto una Lega Italiana." #NEW
- PERFORM_dissolve_italian_league_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_dissolve_italian_league_ACTION_TITLE: "Lega Dissolta!" #NEW
- PERFORM_dissolve_italian_league_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] sciolto la propria Lega Italiana." #NEW
- PERFORM_dissolve_italian_league_ACTION_LOG: "Dissolta una Lega Italiana." #NEW
- PERFORM_dissolve_italian_league_ACTION_BTN1: "OK" #NEW
- PERFORM_dissolve_italian_league_ACTION_BTN2: "OK" #NEW
- PERFORM_dissolve_italian_league_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_dissolve_italian_league_ACTION_MAP: "" #NEW
+ PERFORM_dissolve_italian_league_ACTION_SETUP: "Quando abbiamo sciolto una Lega Italiana."
+ PERFORM_dissolve_italian_league_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_dissolve_italian_league_ACTION_TITLE: "Lega Dissolta!"
+ PERFORM_dissolve_italian_league_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] sciolto la propria Lega Italiana."
+ PERFORM_dissolve_italian_league_ACTION_LOG: "Dissolta una Lega Italiana."
+ PERFORM_dissolve_italian_league_ACTION_BTN1: "OK"
+ PERFORM_dissolve_italian_league_ACTION_BTN2: "OK"
+ PERFORM_dissolve_italian_league_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_dissolve_italian_league_ACTION_MAP: ""
  #
  PERFORM_plan_campaign_in_italy_ACTION_SETUP: "Quando pianifichiamo una campagna in $italy_region$."
  PERFORM_plan_campaign_in_italy_ACTION_HEADER: "$MESSENGER$"
@@ -3134,25 +3134,25 @@
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_BTN2: "OK"
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_BTN3: "$common_string_go_to$"
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_MAP: ""
- PERFORM_rot_declare_conquest_ambition_ACTION: "Ambizione di Conquista di [target.GetName] dichiarata!" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_SETUP: "Quando un paese dichiara l'ambizione di conquistare una regione." #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_TITLE: "Dichiarata l'Ambizione di Conquista!" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] ha dichiarato [SCOPE.sRegion('target').GetName] come loro ambizione di conquista!" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_LOG: "Ambizione di Conquista Dichiarata." #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_BTN1: "OK" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_BTN2: "OK" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_rot_declare_conquest_ambition_ACTION_MAP: "" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_SETUP: "Quando dichiariamo una regione come nostra ambizione da conquistare." #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_HEADER: "$MESSENGER$" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_TITLE: "Ambizione di Conquista Dichiarata" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_EFFECTS: "$EFFECT$" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_LOG: "Abbiamo dichiarato [SCOPE.sRegion('target').GetName] come la nostra ambizione di conquistare." #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN1: "OK" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN2: "OK" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN3: "$common_string_go_to$" #NEW
- WE_PERFORM_rot_declare_conquest_ambition_ACTION_MAP: "" #NEW
+ PERFORM_rot_declare_conquest_ambition_ACTION: "Ambizione di Conquista di [target.GetName] dichiarata!"
+ PERFORM_rot_declare_conquest_ambition_ACTION_SETUP: "Quando un paese dichiara l'ambizione di conquistare una regione."
+ PERFORM_rot_declare_conquest_ambition_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_rot_declare_conquest_ambition_ACTION_TITLE: "Dichiarata l'Ambizione di Conquista!"
+ PERFORM_rot_declare_conquest_ambition_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] ha dichiarato [SCOPE.sRegion('target').GetName] come loro ambizione di conquista!"
+ PERFORM_rot_declare_conquest_ambition_ACTION_LOG: "Ambizione di Conquista Dichiarata."
+ PERFORM_rot_declare_conquest_ambition_ACTION_BTN1: "OK"
+ PERFORM_rot_declare_conquest_ambition_ACTION_BTN2: "OK"
+ PERFORM_rot_declare_conquest_ambition_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_rot_declare_conquest_ambition_ACTION_MAP: ""
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_SETUP: "Quando dichiariamo una regione come nostra ambizione da conquistare."
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_HEADER: "$MESSENGER$"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_TITLE: "Ambizione di Conquista Dichiarata"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_EFFECTS: "$EFFECT$"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_LOG: "Abbiamo dichiarato [SCOPE.sRegion('target').GetName] come la nostra ambizione di conquistare."
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN1: "OK"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN2: "OK"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_BTN3: "$common_string_go_to$"
+ WE_PERFORM_rot_declare_conquest_ambition_ACTION_MAP: ""
  #
  PERFORM_rot_plan_invasion_ACTION: "Invasione di [target.GetName] pianificata!"
  PERFORM_rot_plan_invasion_ACTION_SETUP: "Quando un paese pianifica un'invasione del paese bersaglio."
@@ -3532,15 +3532,15 @@
  PERFORM_contribute_to_organization_treasury_ACTION_BTN2: "OK"
  PERFORM_contribute_to_organization_treasury_ACTION_BTN3: "$common_string_go_to$"
  PERFORM_contribute_to_organization_treasury_ACTION_MAP: ""
- PERFORM_withdraw_from_organization_treasury_ACTION_TITLE: "Prelievo dalla Tesoreria dell'Organizzazione" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_SETUP: "Quando vengono prelevati fondi dalla Tesoreria dell'Organizzazione." #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_EFFECTS: "$EFFECT$" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha prelevato denaro dalLA Tesoreria [SCOPE.sInternationalOrganization('recipient').Custom('IT_IO_DEL')][SCOPE.sInternationalOrganization('recipient').GetName]." #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_BTN1: "OK" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_BTN2: "OK" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_withdraw_from_organization_treasury_ACTION_MAP: "" #NEW
+ PERFORM_withdraw_from_organization_treasury_ACTION_TITLE: "Prelievo dalla Tesoreria dell'Organizzazione"
+ PERFORM_withdraw_from_organization_treasury_ACTION_SETUP: "Quando vengono prelevati fondi dalla Tesoreria dell'Organizzazione."
+ PERFORM_withdraw_from_organization_treasury_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_withdraw_from_organization_treasury_ACTION_EFFECTS: "$EFFECT$"
+ PERFORM_withdraw_from_organization_treasury_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha prelevato denaro dalLA Tesoreria [SCOPE.sInternationalOrganization('recipient').Custom('IT_IO_DEL')][SCOPE.sInternationalOrganization('recipient').GetName]."
+ PERFORM_withdraw_from_organization_treasury_ACTION_BTN1: "OK"
+ PERFORM_withdraw_from_organization_treasury_ACTION_BTN2: "OK"
+ PERFORM_withdraw_from_organization_treasury_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_withdraw_from_organization_treasury_ACTION_MAP: ""
  #
  PERFORM_overrule_imperial_diet_ACTION_SETUP: "Quando l'Imperatore annulla l'Assemblea Imperiale."
  PERFORM_overrule_imperial_diet_ACTION_HEADER: "$MESSENGER$"
@@ -5727,24 +5727,24 @@ WE_PERFORM_share_maps_ACTION_BTN1: "OK"
 WE_PERFORM_share_maps_ACTION_BTN2: "OK"
 WE_PERFORM_share_maps_ACTION_BTN3: "$common_string_go_to$"
 WE_PERFORM_share_maps_ACTION_MAP: ""
-WE_PERFORM_transfer_occupation_ACTION_SETUP: "Quando trasferiamo l'occupazione di una località a un altro Paese." #NEW
-WE_PERFORM_transfer_occupation_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_transfer_occupation_ACTION_TITLE: "Occupazione trasferita a $RECIPIENT$" #NEW
-WE_PERFORM_transfer_occupation_ACTION_EFFECTS: "Abbiamo trasferito l'occupazione di $LOCATION$ a $RECIPIENT$." #NEW
-WE_PERFORM_transfer_occupation_ACTION_LOG: "Abbiamo trasferito l'occupazione di $LOCATION$ a $RECIPIENT$" #NEW
-WE_PERFORM_transfer_occupation_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_transfer_occupation_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_transfer_occupation_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_transfer_occupation_ACTION_MAP: "" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_SETUP: "Quando un altro Paese ci trasferisce l'occupazione di una località." #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_TITLE: "Occupazione trasferita a noi!" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_EFFECTS: "$ACTOR_ADJ$ hanno trasferito l'occupazione di $LOCATION$ a noi." #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_BTN1: "OK" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_BTN2: "OK" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
-ACTION_transfer_occupation_PERFORMED_ON_US_MAP: "" #NEW
+WE_PERFORM_transfer_occupation_ACTION_SETUP: "Quando trasferiamo l'occupazione di una località a un altro Paese."
+WE_PERFORM_transfer_occupation_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_transfer_occupation_ACTION_TITLE: "Occupazione trasferita a $RECIPIENT$"
+WE_PERFORM_transfer_occupation_ACTION_EFFECTS: "Abbiamo trasferito l'occupazione di $LOCATION$ a $RECIPIENT$."
+WE_PERFORM_transfer_occupation_ACTION_LOG: "Abbiamo trasferito l'occupazione di $LOCATION$ a $RECIPIENT$"
+WE_PERFORM_transfer_occupation_ACTION_BTN1: "OK"
+WE_PERFORM_transfer_occupation_ACTION_BTN2: "OK"
+WE_PERFORM_transfer_occupation_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_transfer_occupation_ACTION_MAP: ""
+ACTION_transfer_occupation_PERFORMED_ON_US_SETUP: "Quando un altro Paese ci trasferisce l'occupazione di una località."
+ACTION_transfer_occupation_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ACTION_transfer_occupation_PERFORMED_ON_US_TITLE: "Occupazione trasferita a noi!"
+ACTION_transfer_occupation_PERFORMED_ON_US_EFFECTS: "$ACTOR_ADJ$ hanno trasferito l'occupazione di $LOCATION$ a noi."
+ACTION_transfer_occupation_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] fatto $ACTION$"
+ACTION_transfer_occupation_PERFORMED_ON_US_BTN1: "OK"
+ACTION_transfer_occupation_PERFORMED_ON_US_BTN2: "OK"
+ACTION_transfer_occupation_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ACTION_transfer_occupation_PERFORMED_ON_US_MAP: ""
 #
 ACTION_share_maps_PERFORMED_ON_US_SETUP: "Quando un altro paese condivide mappe con noi."
 ACTION_share_maps_PERFORMED_ON_US_HEADER: "$MESSENGER$"
@@ -6149,26 +6149,26 @@ ACTION_enforce_culture_PERFORMED_ON_US_BTN1: "OK"
 ACTION_enforce_culture_PERFORMED_ON_US_BTN2: "OK"
 ACTION_enforce_culture_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
 ACTION_enforce_culture_PERFORMED_ON_US_MAP: ""
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_SETUP: "Quando diamo la località di un suddito a un altro suddito." #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_TITLE: "Località Trasferita" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_EFFECTS: "Abbiamo dato ai fortunati governanti [SCOPE.sCountry('country_that_gets_the_location').Custom('IT_Della')][SCOPE.sCountry('country_that_gets_the_location').GetName] la località di [SCOPE.sLocation('target_location').GetName], trasferendola [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]." #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_FLAVOR: "Faranno meglio a usarlo con saggezza." #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_give_subject_location_to_other_subject_ACTION_MAP: "" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_SETUP: "Quando il nostro signore concede una delle nostre località a un altro suo suddito." #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_TITLE: "Località Trasferita!" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] dato la località di [SCOPE.sLocation('target_location').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('country_that_gets_the_location').GetName]." #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_FLAVOR: "Dobbiamo trovare un modo per riaverla indietro!" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] effettuato l'azione $ACTION$" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN1: "OK" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN2: "OK" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
-ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_MAP: "" #NEW
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_SETUP: "Quando diamo la località di un suddito a un altro suddito."
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_TITLE: "Località Trasferita"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_EFFECTS: "Abbiamo dato ai fortunati governanti [SCOPE.sCountry('country_that_gets_the_location').Custom('IT_Della')][SCOPE.sCountry('country_that_gets_the_location').GetName] la località di [SCOPE.sLocation('target_location').GetName], trasferendola [SCOPE.sCountry('recipient').Custom('IT_Dalla')][SCOPE.sCountry('recipient').GetName]."
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_FLAVOR: "Faranno meglio a usarlo con saggezza."
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN1: "OK"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN2: "OK"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_give_subject_location_to_other_subject_ACTION_MAP: ""
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_SETUP: "Quando il nostro signore concede una delle nostre località a un altro suo suddito."
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_TITLE: "Località Trasferita!"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] dato la località di [SCOPE.sLocation('target_location').GetName] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('country_that_gets_the_location').GetName]."
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_FLAVOR: "Dobbiamo trovare un modo per riaverla indietro!"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] effettuato l'azione $ACTION$"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN1: "OK"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN2: "OK"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ACTION_give_subject_location_to_other_subject_PERFORMED_ON_US_MAP: ""
 #
 WE_PERFORM_give_location_to_subject_ACTION_SETUP: "Quando cediamo un territorio a un vassallo."
 WE_PERFORM_give_location_to_subject_ACTION_HEADER: "$MESSENGER$"
@@ -6234,26 +6234,26 @@ ACTION_pay_off_debt_PERFORMED_ON_US_BTN1: "OK"
 ACTION_pay_off_debt_PERFORMED_ON_US_BTN2: "OK"
 ACTION_pay_off_debt_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
 ACTION_pay_off_debt_PERFORMED_ON_US_MAP: ""
-WE_PERFORM_place_relative_on_throne_ACTION_SETUP: "Quando mettiamo un parente sul trono." #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_TITLE: "Parente Sistemato!" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_EFFECTS: "Abbiamo posizionato [SCOPE.sCharacter('target').GetName] sul trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('recipient').GetName] per alleviare [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] dai suoi stressanti doveri." #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_FLAVOR: "La corona senza valore è ora un suo problema." #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_place_relative_on_throne_ACTION_MAP: "" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_SETUP: "Quando il nostro sovrano mette uno dei suoi parenti sul nostro trono." #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_TITLE: "Parente Sistemato!" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] [SCOPE.sCountry('recipient').Custom('IT_Ha')] posizionato [SCOPE.sCharacter('target').GetName] sul nostro trono." #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_FLAVOR: "Speriamo che sia migliore di quanto [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] possa mai immaginare." #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] effettuato l'azione $ACTION$" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN1: "OK" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN2: "OK" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
-ACTION_place_relative_on_throne_PERFORMED_ON_US_MAP: "" #NEW
+WE_PERFORM_place_relative_on_throne_ACTION_SETUP: "Quando mettiamo un parente sul trono."
+WE_PERFORM_place_relative_on_throne_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_place_relative_on_throne_ACTION_TITLE: "Parente Sistemato!"
+WE_PERFORM_place_relative_on_throne_ACTION_EFFECTS: "Abbiamo posizionato [SCOPE.sCharacter('target').GetName] sul trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('recipient').GetName] per alleviare [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] dai suoi stressanti doveri."
+WE_PERFORM_place_relative_on_throne_ACTION_FLAVOR: "La corona senza valore è ora un suo problema."
+WE_PERFORM_place_relative_on_throne_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+WE_PERFORM_place_relative_on_throne_ACTION_BTN1: "OK"
+WE_PERFORM_place_relative_on_throne_ACTION_BTN2: "OK"
+WE_PERFORM_place_relative_on_throne_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_place_relative_on_throne_ACTION_MAP: ""
+ACTION_place_relative_on_throne_PERFORMED_ON_US_SETUP: "Quando il nostro sovrano mette uno dei suoi parenti sul nostro trono."
+ACTION_place_relative_on_throne_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_TITLE: "Parente Sistemato!"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] [SCOPE.sCountry('recipient').Custom('IT_Ha')] posizionato [SCOPE.sCharacter('target').GetName] sul nostro trono."
+ACTION_place_relative_on_throne_PERFORMED_ON_US_FLAVOR: "Speriamo che sia migliore di quanto [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] possa mai immaginare."
+ACTION_place_relative_on_throne_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] effettuato l'azione $ACTION$"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN1: "OK"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN2: "OK"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ACTION_place_relative_on_throne_PERFORMED_ON_US_MAP: ""
 #
 WE_PERFORM_press_sailors_ACTION_SETUP: "Quando costringiamo il nostro vassallo a inviarci marinai."
 WE_PERFORM_press_sailors_ACTION_HEADER: "$MESSENGER$"
@@ -7396,24 +7396,24 @@ ACTION_lordship_of_ireland_surrender_and_regrant_PERFORMED_ON_US_BTN1: "OK"
 ACTION_lordship_of_ireland_surrender_and_regrant_PERFORMED_ON_US_BTN2: "OK"
 ACTION_lordship_of_ireland_surrender_and_regrant_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
 ACTION_lordship_of_ireland_surrender_and_regrant_PERFORMED_ON_US_MAP: ""
-WE_PERFORM_improve_our_cultural_view_ACTION_SETUP: "Quando miglioriamo l'opinione della nostra cultura su un'altra cultura." #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_TITLE: "Opinione Culturale in Miglioramento!" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetCulture.GetName] ora ha un'opinione migliore di [SCOPE.sCulture('target').GetName]." #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_improve_our_cultural_view_ACTION_MAP: "" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_SETUP: "Quando riduciamo l'opinione che la nostra cultura ha di un'altra cultura." #NEW
-PERFORM_reduce_our_cultural_view_ACTION_HEADER: "$MESSENGER$" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_TITLE: "Opinione Culturale Ridotta!" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetCulture.GetName] ora ha un'opinione meno positiva di [SCOPE.sCulture('target').GetName]." #NEW
-PERFORM_reduce_our_cultural_view_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_BTN1: "OK" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_BTN2: "OK" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_BTN3: "$common_string_go_to$" #NEW
-PERFORM_reduce_our_cultural_view_ACTION_MAP: "" #NEW
+WE_PERFORM_improve_our_cultural_view_ACTION_SETUP: "Quando miglioriamo l'opinione della nostra cultura su un'altra cultura."
+WE_PERFORM_improve_our_cultural_view_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_improve_our_cultural_view_ACTION_TITLE: "Opinione Culturale in Miglioramento!"
+WE_PERFORM_improve_our_cultural_view_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetCulture.GetName] ora ha un'opinione migliore di [SCOPE.sCulture('target').GetName]."
+WE_PERFORM_improve_our_cultural_view_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+WE_PERFORM_improve_our_cultural_view_ACTION_BTN1: "OK"
+WE_PERFORM_improve_our_cultural_view_ACTION_BTN2: "OK"
+WE_PERFORM_improve_our_cultural_view_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_improve_our_cultural_view_ACTION_MAP: ""
+PERFORM_reduce_our_cultural_view_ACTION_SETUP: "Quando riduciamo l'opinione che la nostra cultura ha di un'altra cultura."
+PERFORM_reduce_our_cultural_view_ACTION_HEADER: "$MESSENGER$"
+PERFORM_reduce_our_cultural_view_ACTION_TITLE: "Opinione Culturale Ridotta!"
+PERFORM_reduce_our_cultural_view_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetCulture.GetName] ora ha un'opinione meno positiva di [SCOPE.sCulture('target').GetName]."
+PERFORM_reduce_our_cultural_view_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+PERFORM_reduce_our_cultural_view_ACTION_BTN1: "OK"
+PERFORM_reduce_our_cultural_view_ACTION_BTN2: "OK"
+PERFORM_reduce_our_cultural_view_ACTION_BTN3: "$common_string_go_to$"
+PERFORM_reduce_our_cultural_view_ACTION_MAP: ""
 #
 WE_PERFORM_improve_cultural_view_ACTION_SETUP: "Quando chiediamo a un paese di migliorare l'opinione della propria cultura nei confronti della nostra."
 WE_PERFORM_improve_cultural_view_ACTION_HEADER: "$MESSENGER$"
@@ -7813,8 +7813,8 @@ WE_PERFORM_start_exploration_ACTION_SETUP: "Quando iniziamo una nuova esplorazio
 WE_PERFORM_start_exploration_ACTION_HEADER: "$MESSENGER$"
 WE_PERFORM_start_exploration_ACTION_TITLE: "Esplorazione Iniziata!"
 WE_PERFORM_start_exploration_ACTION_EFFECTS: "Abbiamo iniziato a preparare una nuova [exploration|e] di [SCOPE.sArea('target').GetName] a [SCOPE.sLocation('launch_location').GetName]."
-WE_PERFORM_start_exploration_ACTION_DESC: "La preparazione sarà completata in [GetExplorationPreparationTimeDays(SCOPE.sCountry('actor'),SCOPE.sCharacter('character'),SCOPE.sLocation('launch_location'))] giorno(i), dopodiché la spedizione salperà verso l'ignoto."
-WE_PERFORM_start_exploration_ACTION_FLAVOR: "Dopo la partenza, [SCOPE.sCharacter('character').GetName] riferirà le [SCOPE.sCharacter('character').GetHimHer] scoperte il prima possibile."
+WE_PERFORM_start_exploration_ACTION_DESC: "La preparazione sarà completata in [GetExplorationPreparationTimeDays(SCOPE.sCountry('actor'),SCOPE.sCharacter('character'),SCOPE.sLocation('launch_location'))] giorni, dopodiché la spedizione salperà verso l'ignoto."
+WE_PERFORM_start_exploration_ACTION_FLAVOR: "Dopo la partenza, [SCOPE.sCharacter('character').GetName] riferirà le sue scoperte il prima possibile."
 WE_PERFORM_start_exploration_ACTION_LOG: "Abbiamo iniziato una nuova [exploration|e] in [SCOPE.sArea('target').GetName]."
 WE_PERFORM_start_exploration_ACTION_BTN1: "OK"
 WE_PERFORM_start_exploration_ACTION_BTN2: "OK"
@@ -7841,23 +7841,23 @@ WE_PERFORM_change_explorer_ACTION_BTN2: "OK"
 WE_PERFORM_change_explorer_ACTION_BTN3: "$common_string_go_to$"
 WE_PERFORM_change_explorer_ACTION_MAP: ""
 #
-WE_PERFORM_create_colonial_charter_ACTION_SETUP: "Quando creiamo un nuovo Statuto Coloniale."
+WE_PERFORM_create_colonial_charter_ACTION_SETUP: "Quando creiamo una nuova Carta Coloniale."
 WE_PERFORM_create_colonial_charter_ACTION_HEADER: "$MESSENGER$"
-WE_PERFORM_create_colonial_charter_ACTION_TITLE: "Nuovo Statuto Coloniale!"
-WE_PERFORM_create_colonial_charter_ACTION_EFFECTS: "Abbiamo avviato un nuovo [colonial_charter|e] in [SCOPE.sProvinceDefinition('target').GetName]."
+WE_PERFORM_create_colonial_charter_ACTION_TITLE: "Nuova Carta Coloniale!"
+WE_PERFORM_create_colonial_charter_ACTION_EFFECTS: "Abbiamo avviato una nuova [colonial_charter|e] in [SCOPE.sProvinceDefinition('target').GetName]."
 WE_PERFORM_create_colonial_charter_ACTION_FLAVOR: "I nostri coloni stanno accorrendo per insediarsi in questo territorio vergine."
-WE_PERFORM_create_colonial_charter_ACTION_LOG: "Abbiamo avviato un nuovo [colonial_charter|e] in [SCOPE.sProvinceDefinition('target').GetName]."
+WE_PERFORM_create_colonial_charter_ACTION_LOG: "Abbiamo avviato una nuova [colonial_charter|e] in [SCOPE.sProvinceDefinition('target').GetName]."
 WE_PERFORM_create_colonial_charter_ACTION_BTN1: "OK"
 WE_PERFORM_create_colonial_charter_ACTION_BTN2: "OK"
 WE_PERFORM_create_colonial_charter_ACTION_BTN3: "$common_string_go_to$"
 WE_PERFORM_create_colonial_charter_ACTION_MAP: ""
 #
-WE_PERFORM_abandon_colonial_charter_ACTION_SETUP: "Quando abbandoniamo uno Statuto Coloniale."
+WE_PERFORM_abandon_colonial_charter_ACTION_SETUP: "Quando abbandoniamo una Carta Coloniale."
 WE_PERFORM_abandon_colonial_charter_ACTION_HEADER: "$MESSENGER$"
-WE_PERFORM_abandon_colonial_charter_ACTION_TITLE: "Statuto Coloniale Abbandonato"
-WE_PERFORM_abandon_colonial_charter_ACTION_EFFECTS: "Abbiamo smesso di sostenere il nostro [colonial_charter|e] [SCOPE.sColonialCharter('target').GetName]."
+WE_PERFORM_abandon_colonial_charter_ACTION_TITLE: "Carta Coloniale Abbandonata"
+WE_PERFORM_abandon_colonial_charter_ACTION_EFFECTS: "Abbiamo smesso di sostenere la nostra [colonial_charter|e] [SCOPE.sColonialCharter('target').GetName]."
 WE_PERFORM_abandon_colonial_charter_ACTION_FLAVOR: "I coloni possono cavarsela da soli."
-WE_PERFORM_abandon_colonial_charter_ACTION_LOG: "Abbiamo smesso di sostenere il nostro [colonial_charter|e] [SCOPE.sColonialCharter('target').GetName]."
+WE_PERFORM_abandon_colonial_charter_ACTION_LOG: "Abbiamo smesso di sostenere la nostra [colonial_charter|e] [SCOPE.sColonialCharter('target').GetName]."
 WE_PERFORM_abandon_colonial_charter_ACTION_BTN1: "OK"
 WE_PERFORM_abandon_colonial_charter_ACTION_BTN2: "OK"
 WE_PERFORM_abandon_colonial_charter_ACTION_BTN3: "$common_string_go_to$"
@@ -7951,7 +7951,7 @@ CREATE_MARKET_OTHERS_MAP: "Nuovo Mercato!"
 START_EXPLORATION_WE_SETUP: "Quando partiamo per una nuova [exploration|e]."
 START_EXPLORATION_WE_HEADER: "Nuova Esplorazione!"
 START_EXPLORATION_WE_TITLE: "$AREA$"
-START_EXPLORATION_WE_EFFECTS: "I nostri esploratori hanno completato i preparativi e stanno partendo verso l'ignoto per esplorare le terre di $AREA|Y$."
+START_EXPLORATION_WE_EFFECTS: "I nostri esploratori hanno completato i preparativi e stanno partendo verso l'ignoto per esplorare $AREA|Y$."
 START_EXPLORATION_WE_FLAVOR: "Auguriamo loro buona fortuna e che Dio li accompagni!"
 START_EXPLORATION_WE_LOG: "Abbiamo iniziato un'[exploration|E] in $AREA$"
 START_EXPLORATION_WE_BTN1: "OK"
@@ -7962,7 +7962,7 @@ START_EXPLORATION_WE_MAP: "Nuova Esplorazione!"
 START_EXPLORATION_OTHERS_SETUP: "Quando un altro [country|e] parte per una nuova [exploration|e]."
 START_EXPLORATION_OTHERS_HEADER: "Nuova Esplorazione"
 START_EXPLORATION_OTHERS_TITLE: "$AREA$"
-START_EXPLORATION_OTHERS_EFFECTS: "$COUNTRY$ ha inviato esploratori nell'ignoto per iniziare a esplorare le terre di $AREA|Y$."
+START_EXPLORATION_OTHERS_EFFECTS: "$COUNTRY$ ha inviato esploratori nell'ignoto per iniziare a esplorare $AREA|Y$."
 START_EXPLORATION_OTHERS_FLAVOR: "La loro incompetenza li farà probabilmente uccidere dai nativi o morire di malattia."
 START_EXPLORATION_OTHERS_LOG: "$COUNTRY$ ha iniziato un'[exploration|E] in $AREA$"
 START_EXPLORATION_OTHERS_BTN1: "OK"
@@ -8004,16 +8004,16 @@ DYNASTY_HEAD_MARRY_BTN1: "OK"
 DYNASTY_HEAD_MARRY_BTN2: "OK"
 DYNASTY_HEAD_MARRY_BTN3: "$common_string_go_to$"
 DYNASTY_HEAD_MARRY_MAP: ""
-DYNASTY_HEAD_MARRY_OTHER_SETUP: "Quando un [character|e] nel nostro [country|e] sposa un [dynasty_head|e] in un altro [country|e]." #NEW
-DYNASTY_HEAD_MARRY_OTHER_HEADER: "Matrimonio Combinato per " #NEW
-DYNASTY_HEAD_MARRY_OTHER_TITLE: "$DYNASTY$" #NEW
-DYNASTY_HEAD_MARRY_OTHER_DESC: "$HEAD$ in $LONGCOUNTRY$ ha annunciato il loro matrimonio con $TARGET$ di $WHERE$. Forse questo avvicinerà ancora di più i nostri paesi?" #NEW
-DYNASTY_HEAD_MARRY_OTHER_EFFECTS: "[opinion|e] $COUNTRY$ su di noi [ShowBiasValue('opinion_dynasties_marrying')|+=0]" #NEW
-DYNASTY_HEAD_MARRY_OTHER_LOG: "$TARGET$ si è sposato $HEAD$ di $DYNASTY$ in $LONGCOUNTRY$." #NEW
-DYNASTY_HEAD_MARRY_OTHER_BTN1: "OK" #NEW
-DYNASTY_HEAD_MARRY_OTHER_BTN2: "OK" #NEW
-DYNASTY_HEAD_MARRY_OTHER_BTN3: "$common_string_go_to$" #NEW
-DYNASTY_HEAD_MARRY_OTHER_MAP: "" #NEW
+DYNASTY_HEAD_MARRY_OTHER_SETUP: "Quando un [character|e] nel nostro [country|e] sposa un [dynasty_head|e] in un altro [country|e]."
+DYNASTY_HEAD_MARRY_OTHER_HEADER: "Matrimonio Combinato per "
+DYNASTY_HEAD_MARRY_OTHER_TITLE: "$DYNASTY$"
+DYNASTY_HEAD_MARRY_OTHER_DESC: "$HEAD$ di $LONGCOUNTRY$ ha annunciato il suo matrimonio con $TARGET$ di $WHERE$. Forse questo avvicinerà ancora di più i nostri paesi?"
+DYNASTY_HEAD_MARRY_OTHER_EFFECTS: "[opinion|e] $COUNTRY$ nei nostri confronti [ShowBiasValue('opinion_dynasties_marrying')|+=0]"
+DYNASTY_HEAD_MARRY_OTHER_LOG: "$TARGET$ ha sposato $HEAD$ dei $DYNASTY$ di $LONGCOUNTRY$."
+DYNASTY_HEAD_MARRY_OTHER_BTN1: "OK"
+DYNASTY_HEAD_MARRY_OTHER_BTN2: "OK"
+DYNASTY_HEAD_MARRY_OTHER_BTN3: "$common_string_go_to$"
+DYNASTY_HEAD_MARRY_OTHER_MAP: ""
 #
 
 
@@ -8126,9 +8126,9 @@ EXPLORATION_SPREAD_TO_US_MAP: ""
 #
 EXPLORATION_SUCCESS_SETUP: "Quando una missione d'esplorazione ha successo."
 EXPLORATION_SUCCESS_HEADER: "$MESSENGER$"
-EXPLORATION_SUCCESS_TITLE: "$AREA$ Scoperta!"
-EXPLORATION_SUCCESS_EFFECTS: "$CHARACTER$ è tornato, con mappe chiare e dettagliate di $AREA$."
-EXPLORATION_SUCCESS_LOG: "Abbiamo ora scoperto $AREA$"
+EXPLORATION_SUCCESS_TITLE: "Area di $AREA$ Scoperta!"
+EXPLORATION_SUCCESS_EFFECTS: "$CHARACTER$ è tornato, con mappe chiare e dettagliate dell'area di $AREA$."
+EXPLORATION_SUCCESS_LOG: "Abbiamo ora scoperto l'area di $AREA$"
 EXPLORATION_SUCCESS_BTN1: "OK"
 EXPLORATION_SUCCESS_BTN2: "OK"
 EXPLORATION_SUCCESS_BTN3: "$common_string_go_to$"
@@ -8162,7 +8162,7 @@ TRADE_CANCELLED_BLOCKED_AT_SOURCE: "[TRADE.GetFromMarket.GetName] ha bloccato le
 TRADE_CANCELLED_BLOCKED_AT_DEST_ISO: "[TRADE.GetGoods.GetName] a causa dell'[import_market|e] owner [TRADE.GetToMarket.GetOwner.GetName] in [isolation|e]"
 TRADE_CANCELLED_BLOCKED_AT_DEST: "[TRADE.GetToMarket.GetName] ha bloccato le importazioni di [TRADE.GetGoods.GetName]"
 TRADE_CANCELLED_NO_PATH: "Non c'è un percorso praticabile per trasportare [TRADE.GetGoods.GetName] da [TRADE.GetFromMarket.GetName] a [TRADE.GetToMarket.GetName]"
-TRADE_CANCELLED_NO_FOOD: "Non c'è più [food|e] in [TRADE.GetFromMarket.GetName], quindi [TRADE.GetGoods.GetName] non può essere esportato in [TRADE.GetToMarket.GetName]" #NEW
+TRADE_CANCELLED_NO_FOOD: "Non c'è più [food|e] in [TRADE.GetFromMarket.GetName], quindi [TRADE.GetGoods.GetName] non può essere esportato in [TRADE.GetToMarket.GetName]"
 TRADE_CANCELLED_SETUP: "Quando una rotta commerciale viene annullata."
 TRADE_CANCELLED_HEADER: "$MESSENGER$"
 TRADE_CANCELLED_TITLE: "Rotta Commerciale Annullata"
@@ -10353,24 +10353,24 @@ PERFORM_migrate_pop_based_country_ACTION_BTN1: "OK"
 PERFORM_migrate_pop_based_country_ACTION_BTN2: "OK"
 PERFORM_migrate_pop_based_country_ACTION_BTN3: "$common_string_go_to$"
 PERFORM_migrate_pop_based_country_ACTION_MAP: ""
-WE_PERFORM_provoke_rebels_ACTION_SETUP: "Quando provochiamo i Ribelli." #NEW
-WE_PERFORM_provoke_rebels_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_provoke_rebels_ACTION_TITLE: "Ribelli Provocati!" #NEW
-WE_PERFORM_provoke_rebels_ACTION_EFFECTS: "Abbiamo mandato degli agenti a fomentare [SCOPE.sRebel('target').GetName]. Presto si ribelleranno contro di noi e noi potremo schiacciarli!" #NEW
-WE_PERFORM_provoke_rebels_ACTION_LOG: "Abbiamo provocato [SCOPE.sRebel('target').GetName]." #NEW
-WE_PERFORM_provoke_rebels_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_provoke_rebels_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_provoke_rebels_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_provoke_rebels_ACTION_MAP: "" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_SETUP: "Quando un altro [country|e] provoca i Ribelli." #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_HEADER: "$MESSENGER$" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_TITLE: "Ribelli Provocati!" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] mandato degli agenti a fomentare [SCOPE.sRebel('target').GetName]. Gli sciocchi avranno presto una guerra civile tra le mani!" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] provocato [SCOPE.sRebel('target').GetName]." #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_BTN1: "OK" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_BTN2: "OK" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_BTN3: "$common_string_go_to$" #NEW
-OTHER_PERFORMS_provoke_rebels_ACTION_MAP: "" #NEW
+WE_PERFORM_provoke_rebels_ACTION_SETUP: "Quando provochiamo i Ribelli."
+WE_PERFORM_provoke_rebels_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_provoke_rebels_ACTION_TITLE: "Ribelli Provocati!"
+WE_PERFORM_provoke_rebels_ACTION_EFFECTS: "Abbiamo mandato degli agenti a fomentare [SCOPE.sRebel('target').GetName]. Presto si ribelleranno contro di noi e noi potremo schiacciarli!"
+WE_PERFORM_provoke_rebels_ACTION_LOG: "Abbiamo provocato [SCOPE.sRebel('target').GetName]."
+WE_PERFORM_provoke_rebels_ACTION_BTN1: "OK"
+WE_PERFORM_provoke_rebels_ACTION_BTN2: "OK"
+WE_PERFORM_provoke_rebels_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_provoke_rebels_ACTION_MAP: ""
+OTHER_PERFORMS_provoke_rebels_ACTION_SETUP: "Quando un altro [country|e] provoca i Ribelli."
+OTHER_PERFORMS_provoke_rebels_ACTION_HEADER: "$MESSENGER$"
+OTHER_PERFORMS_provoke_rebels_ACTION_TITLE: "Ribelli Provocati!"
+OTHER_PERFORMS_provoke_rebels_ACTION_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] mandato degli agenti a fomentare [SCOPE.sRebel('target').GetName]. Gli sciocchi avranno presto una guerra civile tra le mani!"
+OTHER_PERFORMS_provoke_rebels_ACTION_LOG: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] provocato [SCOPE.sRebel('target').GetName]."
+OTHER_PERFORMS_provoke_rebels_ACTION_BTN1: "OK"
+OTHER_PERFORMS_provoke_rebels_ACTION_BTN2: "OK"
+OTHER_PERFORMS_provoke_rebels_ACTION_BTN3: "$common_string_go_to$"
+OTHER_PERFORMS_provoke_rebels_ACTION_MAP: ""
 #
 WE_PERFORM_hire_privateer_ACTION_SETUP: "Quando assoldiamo Corsari."
 WE_PERFORM_hire_privateer_ACTION_HEADER: "$MESSENGER$"
@@ -11317,8 +11317,8 @@ MARRIAGE_UNION_SAME_RULER_US: "in quanto abbiamo lo stesso sovrano."
 MARRIAGE_UNION_SETUP: "Quando formiamo una [GetInternationalOrganizationType('marriage_union').GetName] con un altro [country|e]."
 MARRIAGE_UNION_HEADER: "Il Nostro Cancelliere Riferisce!"
 MARRIAGE_UNION_TITLE: "$marriage_union$ Formata!"
-MARRIAGE_UNION_EFFECTS: "Abbiamo formato una [GetInternationalOrganizationType('marriage_union').GetName] con $LIST$. Ora ci proteggeremo a vicenda in caso di attacco."
-MARRIAGE_UNION_LOG: "Abbiamo formato una [GetInternationalOrganizationType('marriage_union').GetName] con $LIST$"
+MARRIAGE_UNION_EFFECTS: "Abbiamo formato un'[GetInternationalOrganizationType('marriage_union').GetName] tra $LIST$. Ora ci proteggeremo a vicenda in caso di attacco."
+MARRIAGE_UNION_LOG: "Abbiamo formato un'[GetInternationalOrganizationType('marriage_union').GetName] tra $LIST$"
 MARRIAGE_UNION_BTN1: "Ok"
 MARRIAGE_UNION_BTN2: "Ok"
 MARRIAGE_UNION_BTN3: "$common_string_go_to$"
@@ -11476,10 +11476,10 @@ PLAYER_HEGEMON: "Un vero rivale? La cosa si fa interessante!"
 FRIEND_HEGEMON: "Speriamo che ci considerino ancora amici!"
 GP_HEGEMON: "È tempo di forgiare una coalizione."
 DEFAULT_HEGEMON_REACTION: "Guardiamo a questo con grande preoccupazione."
-PLAYER_LOSE_HEGEMON: "Che patetica dimostrazione della loro incompetenza." #NEW
-FRIEND_LOSE_HEGEMON: "Questo getta un'ombra cupa sulla nostra amicizia..." #NEW
-GP_LOSE_HEGEMON: "Dovremmo colmare il vuoto di potere il prima possibile." #NEW
-DEFAULT_LOSE_HEGEMON_REACTION: "In che modo ciò potrebbe influire sull'equilibrio di potere?" #NEW
+PLAYER_LOSE_HEGEMON: "Che patetica dimostrazione della loro incompetenza."
+FRIEND_LOSE_HEGEMON: "Questo getta un'ombra cupa sulla nostra amicizia..."
+GP_LOSE_HEGEMON: "Dovremmo colmare il vuoto di potere il prima possibile."
+DEFAULT_LOSE_HEGEMON_REACTION: "In che modo ciò potrebbe influire sull'equilibrio di potere?"
 #
 GAIN_HEGEMON_US_TITLE: "Egemonia Proclamata!"
 GAIN_HEGEMON_US_SETUP: "Quando proclamiamo un'[hegemony|e]."
@@ -11504,28 +11504,28 @@ GAIN_HEGEMON_THEM_BTN1: "OK"
 GAIN_HEGEMON_THEM_BTN2: "OK"
 GAIN_HEGEMON_THEM_BTN3: "$common_string_go_to$"
 GAIN_HEGEMON_THEM_MAP: "$HEGEMONY$ Ottenuta"
-LOSE_HEGEMON_US_TITLE: "Egemonia persa!" #NEW
-LOSE_HEGEMON_US_SETUP: "Quando perdiamo un [hegemony|e]." #NEW
-LOSE_HEGEMON_US_HEADER: "Il Nostro Cancelliere riferisce" #NEW
-LOSE_HEGEMON_US_DESC: "Abbiamo perso lo status di $HEGEMONY$. Quella che un tempo era la potenza dominante del mondo è ora solo l'ombra di ciò che era! Speriamo che i libri di storia ci ricordino con affetto mentre sprofondiamo sempre più nell'oscurità..." #NEW
-LOSE_HEGEMON_US_EFFECTS: "" #NEW
-LOSE_HEGEMON_US_FLAVOR: "Vae victis..." #NEW
-LOSE_HEGEMON_US_LOG: "Abbiamo perso l'$HEGEMONY$!" #NEW
-LOSE_HEGEMON_US_BTN1: "OK" #NEW
-LOSE_HEGEMON_US_BTN2: "OK" #NEW
-LOSE_HEGEMON_US_BTN3: "$common_string_go_to$" #NEW
-LOSE_HEGEMON_US_MAP: "$HEGEMONY$ Persa" #NEW
-LOSE_HEGEMON_THEM_SETUP: "Quando un altro [country|e] perde un [hegemony|e]." #NEW
-LOSE_HEGEMON_THEM_HEADER: "Il Nostro Cancelliere riferisce" #NEW
-LOSE_HEGEMON_THEM_TITLE: "Egemonia persa!" #NEW
-LOSE_HEGEMON_THEM_DESC: "$WHO$ ha perso l'$HEGEMONY$!" #NEW
-LOSE_HEGEMON_THEM_FLAVOR: "$REACTION$" #NEW
-LOSE_HEGEMON_THEM_EFFECTS: "" #NEW
-LOSE_HEGEMON_THEM_LOG: "$WHO$ ha perso l'$HEGEMONY$." #NEW
-LOSE_HEGEMON_THEM_BTN1: "OK" #NEW
-LOSE_HEGEMON_THEM_BTN2: "OK" #NEW
-LOSE_HEGEMON_THEM_BTN3: "$common_string_go_to$" #NEW
-LOSE_HEGEMON_THEM_MAP: "$HEGEMONY$ Lost" #NEW
+LOSE_HEGEMON_US_TITLE: "Egemonia persa!"
+LOSE_HEGEMON_US_SETUP: "Quando perdiamo un [hegemony|e]."
+LOSE_HEGEMON_US_HEADER: "Il Nostro Cancelliere riferisce"
+LOSE_HEGEMON_US_DESC: "Abbiamo perso lo status di $HEGEMONY$. Quella che un tempo era la potenza dominante del mondo è ora solo l'ombra di ciò che era! Speriamo che i libri di storia ci ricordino con affetto mentre sprofondiamo sempre più nell'oscurità..."
+LOSE_HEGEMON_US_EFFECTS: ""
+LOSE_HEGEMON_US_FLAVOR: "Vae victis..."
+LOSE_HEGEMON_US_LOG: "Abbiamo perso l'$HEGEMONY$!"
+LOSE_HEGEMON_US_BTN1: "OK"
+LOSE_HEGEMON_US_BTN2: "OK"
+LOSE_HEGEMON_US_BTN3: "$common_string_go_to$"
+LOSE_HEGEMON_US_MAP: "$HEGEMONY$ Persa"
+LOSE_HEGEMON_THEM_SETUP: "Quando un altro [country|e] perde un [hegemony|e]."
+LOSE_HEGEMON_THEM_HEADER: "Il Nostro Cancelliere riferisce"
+LOSE_HEGEMON_THEM_TITLE: "Egemonia persa!"
+LOSE_HEGEMON_THEM_DESC: "$WHO$ ha perso l'$HEGEMONY$!"
+LOSE_HEGEMON_THEM_FLAVOR: "$REACTION$"
+LOSE_HEGEMON_THEM_EFFECTS: ""
+LOSE_HEGEMON_THEM_LOG: "$WHO$ ha perso l'$HEGEMONY$."
+LOSE_HEGEMON_THEM_BTN1: "OK"
+LOSE_HEGEMON_THEM_BTN2: "OK"
+LOSE_HEGEMON_THEM_BTN3: "$common_string_go_to$"
+LOSE_HEGEMON_THEM_MAP: "$HEGEMONY$ Lost"
 #
 BATTLE_UNIT_TYPE_STATS_TT: "[BattleUnitStats.GetCategory.GetName]"
 BATTLE_UNIT_TYPE_STATS_TT_TOAL_UNITS: "#T [BattleUnitStats.GetCategory.GetNameWithNoTooltip] in Battaglia #! Il numero totale di [BattleUnitStats.GetCategory.GetName] da questo lato nella battaglia."
@@ -12594,44 +12594,44 @@ ACTION_negotiate_succession_law_PERFORMED_ON_US_BTN1: "OK"
 ACTION_negotiate_succession_law_PERFORMED_ON_US_BTN2: "OK"
 ACTION_negotiate_succession_law_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
 ACTION_negotiate_succession_law_PERFORMED_ON_US_MAP: ""
-WE_PERFORM_union_enforce_religion_ACTION_SETUP: "Quando imponiamo la nostra religione a un partner minore." #NEW
-WE_PERFORM_union_enforce_religion_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_TITLE: "Conversione del Suddito" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_EFFECTS: "Ci siamo assicurati che [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] segua la fede [SCOPE.sCountry('actor').GetReligion.GetName]." #NEW
-WE_PERFORM_union_enforce_religion_ACTION_FLAVOR: "Le loro anime ora saranno salvate." #NEW
-WE_PERFORM_union_enforce_religion_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_union_enforce_religion_ACTION_MAP: "" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_SETUP: "Quando il nostro partner senior ci impone la sua religione." #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_TITLE: "Religione Imposta!" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')][SCOPE.sCountry('actor').GetName|U] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto che seguiamo la fede [SCOPE.sCountry('actor').GetReligion.GetName] come fanno loro." #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').GetName] ha effettuato $ACTION$" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_BTN1: "OK" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_BTN2: "OK" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
-ACTION_union_enforce_religion_PERFORMED_ON_US_MAP: "" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_SETUP: "Quando imponiamo la nostra cultura a un partner minore." #NEW
-WE_PERFORM_union_enforce_culture_ACTION_HEADER: "$MESSENGER$" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_TITLE: "Cultura Imposta" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_EFFECTS: "Ci siamo assicurati che [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] adotti la cultura [SCOPE.sCountry('actor').GetCulture.GetName] come loro [primary_culture|e]." #NEW
-WE_PERFORM_union_enforce_culture_ACTION_FLAVOR: "Si adatteranno al nostro modo di pensare." #NEW
-WE_PERFORM_union_enforce_culture_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_BTN1: "OK" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_BTN2: "OK" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_BTN3: "$common_string_go_to$" #NEW
-WE_PERFORM_union_enforce_culture_ACTION_MAP: "" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_SETUP: "Quando il nostro partner senior ci impone la sua cultura." #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_HEADER: "$MESSENGER$" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_TITLE: "Cultura Imposta!" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')][SCOPE.sCountry('actor').GetName|U] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto che adottiamo la cultura[SCOPE.sCountry('actor').GetCulture.GetName] come nostra [primary_culture|e]." #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').GetName] ha effettuato $ACTION$" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_BTN1: "OK" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_BTN2: "OK" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_BTN3: "$common_string_go_to$" #NEW
-ACTION_union_enforce_culture_PERFORMED_ON_US_MAP: "" #NEW
+WE_PERFORM_union_enforce_religion_ACTION_SETUP: "Quando imponiamo la nostra religione a un partner minore."
+WE_PERFORM_union_enforce_religion_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_union_enforce_religion_ACTION_TITLE: "Conversione del Suddito"
+WE_PERFORM_union_enforce_religion_ACTION_EFFECTS: "Ci siamo assicurati che [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] segua la fede [SCOPE.sCountry('actor').GetReligion.GetName]."
+WE_PERFORM_union_enforce_religion_ACTION_FLAVOR: "Le loro anime ora saranno salvate."
+WE_PERFORM_union_enforce_religion_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+WE_PERFORM_union_enforce_religion_ACTION_BTN1: "OK"
+WE_PERFORM_union_enforce_religion_ACTION_BTN2: "OK"
+WE_PERFORM_union_enforce_religion_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_union_enforce_religion_ACTION_MAP: ""
+ACTION_union_enforce_religion_PERFORMED_ON_US_SETUP: "Quando il nostro partner senior ci impone la sua religione."
+ACTION_union_enforce_religion_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ACTION_union_enforce_religion_PERFORMED_ON_US_TITLE: "Religione Imposta!"
+ACTION_union_enforce_religion_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')][SCOPE.sCountry('actor').GetName|U] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto che seguiamo la fede [SCOPE.sCountry('actor').GetReligion.GetName] come fanno loro."
+ACTION_union_enforce_religion_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').GetName] ha effettuato $ACTION$"
+ACTION_union_enforce_religion_PERFORMED_ON_US_BTN1: "OK"
+ACTION_union_enforce_religion_PERFORMED_ON_US_BTN2: "OK"
+ACTION_union_enforce_religion_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ACTION_union_enforce_religion_PERFORMED_ON_US_MAP: ""
+WE_PERFORM_union_enforce_culture_ACTION_SETUP: "Quando imponiamo la nostra cultura a un partner minore."
+WE_PERFORM_union_enforce_culture_ACTION_HEADER: "$MESSENGER$"
+WE_PERFORM_union_enforce_culture_ACTION_TITLE: "Cultura Imposta"
+WE_PERFORM_union_enforce_culture_ACTION_EFFECTS: "Ci siamo assicurati che [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] adotti la cultura [SCOPE.sCountry('actor').GetCulture.GetName] come loro [primary_culture|e]."
+WE_PERFORM_union_enforce_culture_ACTION_FLAVOR: "Si adatteranno al nostro modo di pensare."
+WE_PERFORM_union_enforce_culture_ACTION_LOG: "Abbiamo effettuato l'azione $ACTION$"
+WE_PERFORM_union_enforce_culture_ACTION_BTN1: "OK"
+WE_PERFORM_union_enforce_culture_ACTION_BTN2: "OK"
+WE_PERFORM_union_enforce_culture_ACTION_BTN3: "$common_string_go_to$"
+WE_PERFORM_union_enforce_culture_ACTION_MAP: ""
+ACTION_union_enforce_culture_PERFORMED_ON_US_SETUP: "Quando il nostro partner senior ci impone la sua cultura."
+ACTION_union_enforce_culture_PERFORMED_ON_US_HEADER: "$MESSENGER$"
+ACTION_union_enforce_culture_PERFORMED_ON_US_TITLE: "Cultura Imposta!"
+ACTION_union_enforce_culture_PERFORMED_ON_US_EFFECTS: "[SCOPE.sCountry('actor').Custom('IT_La')][SCOPE.sCountry('actor').GetName|U] [SCOPE.sCountry('actor').Custom('IT_Ha')] chiesto che adottiamo la cultura[SCOPE.sCountry('actor').GetCulture.GetName] come nostra [primary_culture|e]."
+ACTION_union_enforce_culture_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').GetName] ha effettuato $ACTION$"
+ACTION_union_enforce_culture_PERFORMED_ON_US_BTN1: "OK"
+ACTION_union_enforce_culture_PERFORMED_ON_US_BTN2: "OK"
+ACTION_union_enforce_culture_PERFORMED_ON_US_BTN3: "$common_string_go_to$"
+ACTION_union_enforce_culture_PERFORMED_ON_US_MAP: ""
 #
  EVILDISCOVEREDUS_SETUP: "Quando qualcuno ci scopre mentre costruiamo una Rete di Spionaggio."
  EVILDISCOVEREDUS_HEADER: "$MESSENGER$"
@@ -12721,7 +12721,7 @@ EDUCATION_CHANGED_MAP: ""
  PERFORM_lordship_of_ireland_invite_planters_ACTION_HEADER: "$MESSENGER$"
  PERFORM_lordship_of_ireland_invite_planters_ACTION_TITLE: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] eseguito l'azione [ShowGenericActionName('lordship_of_ireland_invite_planters')] su [target_province.GetName]"
  PERFORM_lordship_of_ireland_invite_planters_ACTION_EFFECTS: "$EFFECT$"
- PERFORM_lordship_of_ireland_invite_planters_ACTION_LOG: "$PERFORM_lordship_of_ireland_invite_planters_ACTION_TITLE$" #NEW
+ PERFORM_lordship_of_ireland_invite_planters_ACTION_LOG: "$PERFORM_lordship_of_ireland_invite_planters_ACTION_TITLE$"
  PERFORM_lordship_of_ireland_invite_planters_ACTION_BTN1: "OK"
  PERFORM_lordship_of_ireland_invite_planters_ACTION_BTN2: "OK"
  PERFORM_lordship_of_ireland_invite_planters_ACTION_BTN3: "$common_string_go_to$"
@@ -12791,7 +12791,7 @@ EDUCATION_CHANGED_MAP: ""
  PERFORM_gov_action_republic_to_theocracy_ACTION_HEADER: "$MESSENGER$"
  PERFORM_gov_action_republic_to_theocracy_ACTION_TITLE: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] riformato la sua [ShowGovernmentTypeName('republic')] in una [ShowGovernmentTypeName('theocracy')]"
  PERFORM_gov_action_republic_to_theocracy_ACTION_EFFECTS: "$EFFECT$"
- PERFORM_gov_action_republic_to_theocracy_ACTION_LOG: "$PERFORM_gov_action_republic_to_theocracy_ACTION_TITLE$" #NEW
+ PERFORM_gov_action_republic_to_theocracy_ACTION_LOG: "$PERFORM_gov_action_republic_to_theocracy_ACTION_TITLE$"
  PERFORM_gov_action_republic_to_theocracy_ACTION_BTN1: "OK"
  PERFORM_gov_action_republic_to_theocracy_ACTION_BTN2: "OK"
  PERFORM_gov_action_republic_to_theocracy_ACTION_BTN3: "$common_string_go_to$"
@@ -12806,22 +12806,22 @@ EDUCATION_CHANGED_MAP: ""
  PERFORM_tribal_to_monarchy_ACTION_BTN2: "OK"
  PERFORM_tribal_to_monarchy_ACTION_BTN3: "$common_string_go_to$"
  PERFORM_tribal_to_monarchy_ACTION_MAP: ""
- PERFORM_cd_inspect_area_ACTION_SETUP: "Quando mettiamo in atto [ShowGenericActionName('cd_inspect_area')] durante un [disaster|e]." #NEW
- PERFORM_cd_inspect_area_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_cd_inspect_area_ACTION_TITLE: "Ispezioni in [target_area.GetName]!" #NEW
- PERFORM_cd_inspect_area_ACTION_EFFECTS: "$EFFECT$" #NEW
- PERFORM_cd_inspect_area_ACTION_LOG: "$PERFORM_cd_inspect_area_ACTION_TITLE$" #NEW
- PERFORM_cd_inspect_area_ACTION_BTN1: "OK" #NEW
- PERFORM_cd_inspect_area_ACTION_BTN2: "OK" #NEW
- PERFORM_cd_inspect_area_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_cd_inspect_area_ACTION_MAP: "" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_SETUP: "Quando mettiamo in atto [ShowGenericActionName('cd_purge_cabinet_member')] durante un [disaster|e]." #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_HEADER: "$MESSENGER$" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_TITLE: "Rimozione di [target_character.GetName] dal [actor.GetGovernment.GetCabinetTitle]!" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_EFFECTS: "$EFFECT$" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_LOG: "$PERFORM_cd_purge_cabinet_member_ACTION_TITLE$" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_BTN1: "OK" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_BTN2: "OK" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_BTN3: "$common_string_go_to$" #NEW
- PERFORM_cd_purge_cabinet_member_ACTION_MAP: "" #NEW
+ PERFORM_cd_inspect_area_ACTION_SETUP: "Quando mettiamo in atto [ShowGenericActionName('cd_inspect_area')] durante un [disaster|e]."
+ PERFORM_cd_inspect_area_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_cd_inspect_area_ACTION_TITLE: "Ispezioni in [target_area.GetName]!"
+ PERFORM_cd_inspect_area_ACTION_EFFECTS: "$EFFECT$"
+ PERFORM_cd_inspect_area_ACTION_LOG: "$PERFORM_cd_inspect_area_ACTION_TITLE$"
+ PERFORM_cd_inspect_area_ACTION_BTN1: "OK"
+ PERFORM_cd_inspect_area_ACTION_BTN2: "OK"
+ PERFORM_cd_inspect_area_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_cd_inspect_area_ACTION_MAP: ""
+ PERFORM_cd_purge_cabinet_member_ACTION_SETUP: "Quando mettiamo in atto [ShowGenericActionName('cd_purge_cabinet_member')] durante un [disaster|e]."
+ PERFORM_cd_purge_cabinet_member_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_cd_purge_cabinet_member_ACTION_TITLE: "Rimozione di [target_character.GetName] dal [actor.GetGovernment.GetCabinetTitle]!"
+ PERFORM_cd_purge_cabinet_member_ACTION_EFFECTS: "$EFFECT$"
+ PERFORM_cd_purge_cabinet_member_ACTION_LOG: "$PERFORM_cd_purge_cabinet_member_ACTION_TITLE$"
+ PERFORM_cd_purge_cabinet_member_ACTION_BTN1: "OK"
+ PERFORM_cd_purge_cabinet_member_ACTION_BTN2: "OK"
+ PERFORM_cd_purge_cabinet_member_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_cd_purge_cabinet_member_ACTION_MAP: ""
 

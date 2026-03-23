@@ -15,7 +15,7 @@
  catholic_flavor.3.b: "Non è un nostro problema."
 
  catholic_flavor.4.title: "Simonia?"
- catholic_flavor.4.desc: "C'è una posizione vacante nell'alta amministrazione ecclesiastica di [ROOT.GetCountry.GetName]. Un ecclesiastico di una famiglia ricca, [target_character.GetName], ci ha fatto un'offerta allettante: se approviamo e sosteniamo la sua elezione, riceveremo un'ingente somma di denaro. Alcuni devoti sostengono che questa pratica sia un peccato chiamato simonia... ma cosa ne sanno loro?"
+ catholic_flavor.4.desc: "C'è una posizione vacante nell'alta amministrazione ecclesiastica [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. Un ecclesiastico di una famiglia ricca, [target_character.GetName], ci ha fatto un'offerta allettante: se approviamo e sosteniamo la sua elezione, riceveremo un'ingente somma di denaro. Alcuni devoti sostengono che questa pratica sia un peccato chiamato simonia... ma cosa ne sanno loro?"
  catholic_flavor.4.a: "Abbiamo bisogno di quei soldi!"
  catholic_flavor.4.b: "La simonia è un peccato!"
 
@@ -26,7 +26,7 @@
  catholic_obstructing_church: "Rifiuto di pagare le indulgenze"
 
  catholic_flavor.6.title: "Venerazione delle Reliquie"
- catholic_flavor.6.desc: "Dal più alto nobile al più umile contadino, tutti credono che venerare le reliquie riduca il tempo da trascorrere in purgatorio. Tuttavia, un trattato che critica questa pratica è stato trovato affisso alla porta di una delle nostre chiese di [unrest_province.GetName], nota per il suo vasto tesoro di reliquie. C'è forse del vero in quelle accuse, o si tratta solo delle parole di eretici che vogliono danneggiare l'unità del [GetInternationalOrganization('catholic_church').GetName], la nostra unica via alla salvezza?"
+ catholic_flavor.6.desc: "Dal più alto nobile al più umile contadino, tutti credono che venerare le reliquie riduca il tempo da trascorrere in purgatorio. Tuttavia, un trattato che critica questa pratica è stato trovato affisso alla porta di una delle nostre chiese di [unrest_province.GetName], nota per il suo vasto tesoro di reliquie. C'è forse del vero in quelle accuse, o si tratta solo delle parole di eretici che vogliono danneggiare l'unità della [GetInternationalOrganization('catholic_church').GetName], la nostra unica via alla salvezza?"
  catholic_flavor.6.a: "Ma abbiamo appena comprato una fiala del latte della Vergine Maria!"
  catholic_flavor.6.b: "Il perdono può venire solo da [ROOT.GetCountry.GetReligion.GetGodName]."
  catholic_flavor.6.b.tt: "Questo renderà scontenta la popolazione di [unrest_province.GetName] che segue il [ShowReligionName('catholic')]."
@@ -37,13 +37,13 @@
  catholic_flavor.7.b: "Una donna speciale, sì, ma pur sempre una donna."
  opinion_denying_the_holy_mother: "Negazione della Santa Madre"
 
- catholic_flavor.8.title: "La dottrina del Giudizio Particolare"
- catholic_flavor.8.desc: "Come sappiamo, alla morte [ROOT.GetCountry.GetReligion.GetGodName] giudica immediatamente ogni anima, decidendone il destino fino al Giudizio Universale.\n\nTuttavia, un monaco di [unrest_location_scope.GetName] ha avviato una disputa dottrinale prossima all'eresia, sostenendo che il purgatorio non esiste e che le preghiere per i defunti non aiutano la loro ascesa al cielo.\n\nQueste dispute stanno minacciando l'unità del [GetInternationalOrganization('catholic_church').GetName]."
+ catholic_flavor.8.title: "La Dottrina del Giudizio Particolare"
+ catholic_flavor.8.desc: "Come sappiamo, alla morte [ROOT.GetCountry.GetReligion.GetGodName] giudica immediatamente ogni anima, decidendone il destino fino al Giudizio Universale.\n\nTuttavia, un monaco di [unrest_location_scope.GetName] ha avviato una disputa dottrinale prossima all'eresia, sostenendo che il purgatorio non esiste e che le preghiere per i defunti non aiutano la loro ascesa al cielo.\n\nQueste dispute stanno minacciando l'unità della [GetInternationalOrganization('catholic_church').GetName]."
  catholic_flavor.8.a: "Probabilmente è un eretico."
  catholic_flavor.8.b: "I morti non possono essere aiutati."
 
  catholic_flavor.9.title: "Una Nuova Confessione di Fede"
- catholic_flavor.9.desc: "Alcuni riformatori hanno proposto una nuova confessione di fede, con differenze minori ma significative rispetto agli insegnamenti Cattolici. Il [GetInternationalOrganization('catholic_church').GetName] sostiene che sfiori l'eresia, mentre altri ritengono che questa confessione potrebbe portare la Chiesa e il suo apparato amministrativo sotto un controllo più stretto."
+ catholic_flavor.9.desc: "Alcuni riformatori hanno proposto una nuova confessione di fede, con differenze minori ma significative rispetto agli insegnamenti Cattolici. La [GetInternationalOrganization('catholic_church').GetName] sostiene che sfiori l'eresia, mentre altri ritengono che questa confessione potrebbe portare la Chiesa e il suo apparato amministrativo sotto un controllo più stretto."
  catholic_flavor.9.a: "Promuoviamola, anche se alcuni sudditi si allontaneranno."
  catholic_flavor.9.b: "No: condannerebbe tutti alla dannazione."
 
@@ -53,7 +53,7 @@
  catholic_flavor.10.b: "Non siamo vincolati da promesse fatte a degli eretici."
 
  catholic_flavor.11.title: "Proclamazione di un Santo"
- catholic_flavor.11.desc: "[pope_scope.GetName] ha appena annunciato che uno dei più stimati antenati del nostro sovrano, [ancestor_saint.GetName], era un[ancestor_saint.Custom('IT_ART_NULL_A')] Sant[ancestor_saint.Custom('IT_ART_O_A')] della nostra venerata Chiesa, e che è giunto il momento di render[ancestor_saint.Custom('IT_ART_GLI_LE')] il giusto onore. Un grande motivo di celebrazione!"
+ catholic_flavor.11.desc: "[pope_scope.GetName] ha appena annunciato che uno dei più stimati antenati del nostro sovrano, [ancestor_saint.Custom('IT_ART_TITOLO')][ancestor_saint.GetName], era un[ancestor_saint.Custom('IT_ART_NULL_A')] Sant[ancestor_saint.Custom('IT_ART_O_A')] della nostra venerata Chiesa, e che è giunto il momento di render[ancestor_saint.Custom('IT_ART_GLI_LE')] il giusto onore. Un grande motivo di celebrazione!"
  catholic_flavor.11.a: "Te Deum!"
 
  catholic_flavor.12.title: "Sublimis Deus"
@@ -81,7 +81,7 @@
  catholic_flavor.15.c: "Nominate un cavallo come papa, per scherzo."
  catholic_flavor.15.d: "Nominate il campanaro di [ShowLocationNameWithNoTooltip('paris')]."
 
- catholic_flavor.16.title: "In Lode degli Scribi"
+ catholic_flavor.16.title: "Elogio degli Scribi"
  catholic_flavor.16.desc: "L'arte di trascrivere i testi è un compito difficile e spesso ingrato. Tuttavia, il [ShowBuildingTypeNameWithNoTooltip('scriptorium')] di [target_location.GetName] ha ricevuto la lode di un abate, che celebra gli scribi con queste parole: #italic Lo scriba devoto, oggetto del nostro trattato, non mancherà mai di lodare Dio, compiacere gli angeli, fortificare i giusti, convertire i peccatori, raccomandare gli umili, confermare i buoni, confondere i superbi e rimproverare gli ostinati.#!"
  catholic_flavor.16.a: "Un eccellente esempio della nostra devozione."
  catholic_flavor.16.b: "Gli scribi hanno meritato tale elogio."
