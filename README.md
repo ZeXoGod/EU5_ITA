@@ -17,8 +17,8 @@
 
 > **Traduzione realizzata dal gruppo di traduttori amatoriali TWR**
 
-**Versione della mod: 1.0.6**  
-**Patch della mod: 1.1.9**
+**Versione della mod: 1.1.0 (Costantinopoli)**  
+**Patch della mod: 1.2.2**
 
 È possibile seguire lo stato di completamento della traduzione su Discord, nel canale [#stato-traduzione](https://discordapp.com/channels/409048447468175370/1376322996381290536).
 
@@ -29,7 +29,7 @@ Vi preghiamo di supportarci nell'acquisto dei nuovi DLC. Quello che per voi è u
 ## Stato - DLC
 | DLC                         | Stato                             |
 |-----------------------------|------------------------------------|
-|Fate of the Phoenix          |❌                                 |
+|Fate of the Phoenix          |:white_check_mark:                                 |
 |Across the Pillars           |❌                                 |
 |The Auld Alliance            |❌                                 |
 ---
