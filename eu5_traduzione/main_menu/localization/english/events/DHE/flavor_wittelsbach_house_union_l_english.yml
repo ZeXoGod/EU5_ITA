@@ -1,30 +1,43 @@
 ﻿l_english:
  flavor_wittelsbach_house_union.1.title: "Trattato di [ShowLocationNameWithNoTooltip('pavia')]"
+ flavor_wittelsbach_house_union.1.entry: "Treaty of Pavia Follow Up" #NEW
  flavor_wittelsbach_house_union.1.desc: "Mentre il trattato dinastico firmato nel 1329 a [ShowLocationName('pavia')] ha stabilizzato le nostre relazioni dinastiche, la posizione di [target_ruler.GetName] è migliorata da allora e potremmo ora cercare di aumentare la nostra autorità su [target_character.GetName] e [GetCountry('PAL').GetName]. Questo ci marchia come un alleato sleale e un leader tirannico del [GetUniqueInternationalOrganization('hre').GetName]. Onorare il trattato preserverebbe il nostro standing diplomatico e la reputazione e ci consentirebbe di unificare le filiali della Dinastia [target_ruler.GetDynasty.GetName] pacificamente in futuro."
  flavor_wittelsbach_house_union.1.a: "Onora il Trattato!"
  flavor_wittelsbach_house_union.1.a.tt: "Se uno dei lati del trattato si trova in un interregno, l'altro lato sarà in grado di ereditare la terra e lo status elettorale del paese."
  flavor_wittelsbach_house_union.1.b: "Imponi la nostra superiorità su [GetCountry('PAL').GetNameWithNoTooltip]."
+ flavor_wittelsbach_house_union.1.b.entry: "Enforce our superiority on $PAL$." #NEW
  flavor_wittelsbach_house_union.1.historical_info: "Il Trattato di Pavia del 1329 fu la fondazione della separazione della Casa di Wittelsbach nei rami bavarese e palatino, che governavano i territori di Wittelbacher rispettivamente. Oltre alla scissione tra i due rami, il trattato ha anche cercato di risolvere la questione dell'Elettorato. Mentre la regola iniziale era un'alternanza dell'elettorato tra il Palatinato e il Ducato della Baviera superiore, il ruolo dell'elettore fu successivamente confermato a rimanere con il Palatinato del Reno. Il Trattato includeva anche un accordo secondo il quale una linea dinastica cadrebbe nelle mani dell'altra se l'attuale governante non aveva eredi maschi diretti."
 
  flavor_wittelsbach_house_union.2.title: "[GetCountry('UBV').GetNameWithNoTooltip] Conferma Vecchi Trattati"
+ flavor_wittelsbach_house_union.2.entry: "Palatinate Event for Treaty of Pavia" #NEW
  flavor_wittelsbach_house_union.2.desc: "I Trattati della nostra dinastia firmati nel 1329 a [ShowLocationName('pavia')] sono stati ancora una volta confermati da [GetCountry('UBV').GetName]. Onorare il trattato sembra essere il corso d'azione più vantaggioso per noi, ma potremmo essere in grado di reclamare le terre detenute dai nostri parenti a [GetCountry('UBV').GetNameWithNoTooltip]."
  flavor_wittelsbach_house_union.2.a: "Il Trattato aiuterà le nostre relazioni."
  flavor_wittelsbach_house_union.2.b: "[ROOT.GetCountry.GetNameWithNoTooltip] regnerà supremo!"
+ flavor_wittelsbach_house_union.2.b.entry: "We will reign supreme!" #NEW
 
  flavor_wittelsbach_house_union.3.title: "[GetCountry('PAL').GetNameWithNoTooltip] Cade nelle Nostre Mani"
+ flavor_wittelsbach_house_union.3.entry: "Palatinate Line dies out" #NEW
  flavor_wittelsbach_house_union.3.desc: "Con la morte di [target_character.GetName], la Dinastia [target_character.GetDynasty.GetName] di [GetCountry('PAL').GetName] si è estinta e il trono rimane non occupato. Con gli accordi fatti nel vecchio Trattato di [ShowLocationName('pavia')], abbiamo un reclamo forte alle loro terre e potremmo pressarli per un'unificazione delle antiche terre [target_ruler.GetDynasty.GetName] in un singolo paese."
- flavor_wittelsbach_house_union.3.a: " Le terre [target_ruler.GetDynasty.GetNameWithNoTooltip] non devono mai essere più separate."
+# flavor_wittelsbach_house_union.3.a: " Le terre [target_ruler.GetDynasty.GetNameWithNoTooltip] non devono mai essere più separate." #OLD
+ flavor_wittelsbach_house_union.3.a: "The [target_ruler.GetDynasty.GetNameWithNoTooltip] lands must never be separate again." #NEW
+ flavor_wittelsbach_house_union.3.a.entry: "The dynasty lands must never be separate again." #NEW
  flavor_wittelsbach_house_union.3.historical_info: "Nel 1777, l'Elettore bavarese e Duca Massimiliano III Giuseppe morì senza lasciare un erede maschio per ereditare i suoi possessi. Secondo il Trattato di Pavia e molti altri trattati dinastici tra Baviera e il Palatinato, i suoi titoli sono caduti nelle mani di Karl IV Theodor del ramo Palatino della Casa di Wittelsbach. Anche se questo ha acceso la Guerra della Successione bavarese, nacque uno stato nuovo composto dai due precedenti Elettorati. Questo Elettorato di riunificazione unito avrebbe eventualmente transizionato nel Regno di Baviera."
 
  flavor_wittelsbach_house_union.4.title: "La Morte del [GetCountry('BAV').GetAdjectiveWithNoTooltip] [GetCountry('BAV').GetGovernment.GetRulerTitle]"
+ flavor_wittelsbach_house_union.4.entry: "Bavarian Line dies out" #NEW
  flavor_wittelsbach_house_union.4.desc: "Il [GetCountry('BAV').GetGovernment.GetRulerTitle] di [GetCountry('BAV').GetName] è morto senza un erede adatto! Secondo i vecchi Trattati firmati a [ShowLocationName('pavia')], abbiamo ora un reclamo forte alle loro terre e siamo i prossimi in linea per ereditare le loro terre."
  flavor_wittelsbach_house_union.4.a: "È tempo di unire le terre [target_ruler.GetDynasty.GetNameWithNoTooltip]!"
+ flavor_wittelsbach_house_union.4.a.entry: "It is time to unite the dynasty lands!" #NEW
 
  flavor_wittelsbach_house_union.5.title: "La Soggugazione della Linea [palatine_country.GetAdjective]"
+ flavor_wittelsbach_house_union.5.entry: "The Subjugation of the Palatine Country Line" #NEW
  flavor_wittelsbach_house_union.5.desc: "La politica intricata del [GetInternationalOrganization('hre').GetName] si è spostata. Il [palatine_country.GetName], governato da un ramo della dinastia [bavaria_ruler.GetDynasty], è diventato un soggetto di [bavaria_country.GetName]. Questo consolidamento del potere pone un'importante domanda sulla rappresentanza della dinastia [bavaria_ruler.GetDynasty] all'interno del [GetInternationalOrganization('hre').GetName]. Con il [palatine_country.GetName] ora sotto il controllo [bavaria_country.GetAdjectiveWithNoTooltip], è stato deciso di trasferire il titolo di [ShowSpecialStatusName('elector')] a [bavaria_country.GetName]."
  flavor_wittelsbach_house_union.5.a: "Lascia che [bavaria_country.GetNameWithNoTooltip] assuma il suo posto legittimo come [ShowSpecialStatusName('elector')]."
+ flavor_wittelsbach_house_union.5.a.entry: "Let them take its rightful place as an [ShowSpecialStatusNameWithNoTooltip('elector')]." #NEW
 
  flavor_wittelsbach_house_union.6.title: "La Soggugazione della Linea [bavaria_country.GetAdjective]"
+ flavor_wittelsbach_house_union.6.entry: "The Subjugation of the Bavaria Country Line" #NEW
  flavor_wittelsbach_house_union.6.desc: "L'equilibrio delicato del potere all'interno del [GetInternationalOrganization('hre').GetName] si è spostato. [bavaria_country.GetName], governato da un ramo della dinastia [palatine_ruler.GetDynasty], è stato soggiogato da [palatine_country.GetName]. Questo capovolgimento pone una domanda fondamentale sulla rappresentanza della dinastia [palatine_ruler.GetDynasty] all'interno del [GetInternationalOrganization('hre').GetName]. Con [bavaria_country.GetName] ora sotto il controllo [palatine_country.GetAdjectiveWithNoTooltip], è stato deciso di trasferire il titolo di [ShowSpecialStatusName('elector')] a [bavaria_country.GetName]."
  flavor_wittelsbach_house_union.6.a: "Lascia che [palatine_country.GetNameWithNoTooltip] assuma il suo posto legittimo come [ShowSpecialStatusName('elector')]."
+ flavor_wittelsbach_house_union.6.a.entry: "Let $PAL$ take its rightful place as an [ShowSpecialStatusNameWithNoTooltip('elector')]." #NEW
 

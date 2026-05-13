@@ -5,7 +5,7 @@
  hussite_flavor.1.b: "Non possiamo permetterci la spesa."
 
  hussite_flavor.2.title: "Membri Prominenti [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] criticano le nostre politiche"
- hussite_flavor.2.desc: "Guidare il nostro popolo non è un compito semplice. Per questo motivo, molti membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno tentato di scalare la nostra gerarchia amministrativa per correggere, a loro dire, la rotta delle nostre azioni. Si ritiene ampiamente che diverse nostre politiche non siano applicate correttamente o siano addirittura in contrasto con i principi Ussiti."
+ hussite_flavor.2.desc: "Guidare il nostro popolo non è un compito semplice. Per questo motivo, molti membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] hanno tentato di scalare la nostra gerarchia amministrativa per correggere, a loro dire, la rotta delle nostre azioni. Si ritiene ampiamente che diverse nostre politiche non siano applicate correttamente o siano addirittura in contrasto con i principi Hussiti."
  hussite_flavor.2.a: "Dobbiamo correggere la rotta."
  hussite_flavor.2.b: "Staranno in silenzio."
 
@@ -21,7 +21,7 @@
  hussite_flavor.4.b: "Colpa della debole leadership [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  target_character_dies_very_violently_tt: "[target_character.GetName] subirà una morte violenta per mano della folla"
 
-#New Events
+ #New Events
 
  hussite_flavor.5.title: "[target_location.GetNameWithNoTooltip] Devia"
  hussite_flavor.5.desc: "Il nostro popolo è famoso per le proprie sperimentazioni e contaminazioni religiose. È vero che fedi affini condividono molti aspetti comuni. Tuttavia, gli sviluppi recenti a [target_location.GetName] hanno portato questa modesta tendenza oltre ogni limite, con molti dei nostri stessi contadini che mostrano interesse per pratiche liturgiche aliene e consultano le scritture di un'altra fede!"
@@ -54,15 +54,15 @@
  hussite_flavor.9.b: "Ai nostri vicini."
 
  hussite_flavor.10.title: "Carri da Guerra e Tattiche Militari"
- hussite_flavor.10.desc: "Durante le [ShowSituationName('hussite_wars')], l'uso dei carri da guerra si rivelò fondamentale per la sopravvivenza degli eserciti ussiti. Queste strutture difensive mobili e fortificate permisero a fanterie composte in gran parte da contadini di respingere le devastanti cariche di cavalleria di nemici meglio equipaggiati. L'innovazione non fu solo una risposta alla mancanza di cavalleria tradizionale, ma un brillante adattamento delle risorse disponibili per superare svantaggi tecnologici e tattici.\n\nTuttavia, i tempi sono cambiati e l'introduzione delle armi da fuoco, insieme a nuove tattiche, ha mutato il campo di battaglia. Gli eserciti ora dipendono da potenti sbarramenti e formazioni agili, introducendo nuovi fattori di cui dobbiamo tener conto. Molti dei nostri teorici militari sostengono l'adozione di nuove tecniche offensive a discapito della difesa tradizionale."
+ hussite_flavor.10.desc: "Durante le [ShowSituationName('hussite_wars')], l'uso dei carri da guerra si rivelò fondamentale per la sopravvivenza degli eserciti hussiti. Queste strutture difensive mobili e fortificate permisero a fanterie composte in gran parte da contadini di respingere le devastanti cariche di cavalleria di nemici meglio equipaggiati. L'innovazione non fu solo una risposta alla mancanza di cavalleria tradizionale, ma un brillante adattamento delle risorse disponibili per superare svantaggi tecnologici e tattici.\n\nTuttavia, i tempi sono cambiati e l'introduzione delle armi da fuoco, insieme a nuove tattiche, ha mutato il campo di battaglia. Gli eserciti ora dipendono da potenti sbarramenti e formazioni agili, introducendo nuovi fattori di cui dobbiamo tener conto. Molti dei nostri teorici militari sostengono l'adozione di nuove tecniche offensive a discapito della difesa tradizionale."
  hussite_flavor.10.a: "Non possiamo tradire le nostre tradizioni!"
  hussite_flavor.10.b: "Non possiamo dipendere da tattiche obsolete, serve una riforma!"
  reform_hussite_army_tt: "Finché il [ShowModifier('hussite_military_reform_modifier')] [modifier|e] è attivo, avremo accesso al [ShowParliamentIssueType('hussite_army_reform')] [parliament_issue|e]"
  stability_loss_depends_on_defensive_sv_tt: "La perdita di [stability|e] dipende dal nostro [ShowSocietyDirectionName('defensive')] [societal_value|e]"
  event_may_reoccur_after_20_years_tt: "Questo [event|e] potrebbe ripresentarsi dopo #Y 20#! anni se seguiamo ancora l'[ShowReligionName('hussite')]"
 
- hussite_flavor.12.title: "Fanatici Ussiti a [target_province.GetNameWithNoTooltip]"
- hussite_flavor.12.desc: "Nonostante i nostri migliori tentativi di bilanciare i bisogni e le richieste dei fedeli all'interno [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank], ci sono sempre coloro che pretendono di più, la cui fame di persecuzione non può essere placata. È il caso dei fanatici Ussiti di [target_province.GetName], le cui richieste di perseguire gli eretici hanno portato solo sacrilegio e instabilità nella provincia. Le loro pretese possono facilmente essere descritte come insensate, tuttavia dovremmo trattare la questione con la massima cautela per evitare di trasformarli in martiri!"
+ hussite_flavor.12.title: "Fanatici Hussiti a [target_province.GetNameWithNoTooltip]"
+ hussite_flavor.12.desc: "Nonostante i nostri migliori tentativi di bilanciare i bisogni e le richieste dei fedeli all'interno [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank], ci sono sempre coloro che pretendono di più, la cui fame di persecuzione non può essere placata. È il caso dei fanatici Hussiti di [target_province.GetName], le cui richieste di perseguire gli eretici hanno portato solo sacrilegio e instabilità nella provincia. Le loro pretese possono facilmente essere descritte come insensate, tuttavia dovremmo trattare la questione con la massima cautela per evitare di trasformarli in martiri!"
  hussite_flavor.12.a: "Assecondiamo le loro richieste, per ora."
  every_hussite_in_target_province_10_sat_tt: "Ogni [pop|e] [ShowReligionAdjectiveWithNoTooltip('hussite')] a [target_province.GetNameWithNoTooltip] guadagnerà il [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] di [pop_satisfaction|e]"
  hussite_flavor.12.b: "Non negoziamo con gli sciocchi!"
@@ -72,7 +72,7 @@
  hussite_flavor.11.a: "Musica per le nostre orecchie!"
 
  hussite_flavor.13.title: "Un Predicatore Esemplare"
- hussite_flavor.13.desc: "Un predicatore carismatico nelle file Ussite a [target_location.GetName] ha iniziato a diffondere idee che si discostano più del solito dai nostri insegnamenti. Alcuni vedono in [target_character.GetHerHim] un visionario, altri temono che [target_character.GetSheHe] possa causare uno scisma tra le nostre fila. I membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono stati molto vocali riguardo la questione, ma esiste il timore che la popolazione locale possa insorgere se interveniamo contro una figura tanto influente."
+ hussite_flavor.13.desc: "Un predicatore carismatico nelle file Hussite a [target_location.GetName] ha iniziato a diffondere idee che si discostano più del solito dai nostri insegnamenti. Alcuni vedono in [target_character.GetHerHim] un visionario, altri temono che [target_character.GetSheHe] possa causare uno scisma tra le nostre fila. I membri [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono stati molto vocali riguardo la questione, ma esiste il timore che la popolazione locale possa insorgere se interveniamo contro una figura tanto influente."
  hussite_flavor.13.a: "Le sue capacità oratorie potrebbero esserci utili."
  hussite_flavor.13.b: "Fate sparire [target_character.GetHerHim]."
  hussite_flavor.13.c: "È tempo di purgare questi eretici a [target_location.GetNameWithNoTooltip]"

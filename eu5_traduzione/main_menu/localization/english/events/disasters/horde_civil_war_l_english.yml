@@ -17,7 +17,8 @@
  horde_civil_war.3.a: "Nessuna crisi di successione trova una fine facile..."
  
  horde_civil_war.4.title: "Vittoria del [target_country.GetGovernment.GetRulerTitle]!"
- horde_civil_war.4.desc: "La lunga lotta contro il nostro acerrimo nemico, [target_character.GetName] ha finalmente trovato la sua fine. Con la completa annessione di [target.GetName], [target_country.Custom('IT_La')][target_country.GetLongName] prevale e l'autorità di [target_ruler.GetName] viene ripristinata! [target_character.GetShortNameWithNoTooltip] è stato portato di fronte alla giustizia, e poco dopo alla spada, come merita."
+# horde_civil_war.4.desc: "La lunga lotta contro il nostro acerrimo nemico, [target_character.GetName] ha finalmente trovato la sua fine. Con la completa annessione di [target.GetName], [target_country.Custom('IT_La')][target_country.GetLongName] prevale e l'autorità di [target_ruler.GetName] viene ripristinata! [target_character.GetShortNameWithNoTooltip] è stato portato di fronte alla giustizia, e poco dopo alla spada, come merita." #OLD
+ horde_civil_war.4.desc: "The long struggle against our bitter enemy, [target_character.GetName] has finally found its end. With the complete annexation of [loser.GetName], the [target_country.GetLongName] prevails, and the authority of [target_ruler.GetName] is restored! [target_character.GetShortNameWithNoTooltip] has been brought to justice, and shortly afterward to the sword as [target_character.GetSheHe] deserves it." #NEW
  horde_civil_war.4.desc.new: "$horde_civil_war.4.desc$\n\nEppure, una volta sconfitto un signore della guerra, uno nuovo aspira a continuare i [target_character.GetHerHis] sforzi. [scope_pretender.GetName] ha radunato i guerrieri dispersi sotto il [scope_pretender.GetHerHis] stendardo per sfidare ancora una volta il [target_country.GetGovernment.GetRulerTitle]."
  horde_civil_war.4.desc.end: "$horde_civil_war.4.desc$\n\nDopo una sconfitta così devastante da parte del pretendente, ogni ulteriore tentativo al trono [target_country.GetAdjectiveWithNoTooltip] sembra essere cessato. La stabilità è tornata ancora una volta in [target_country.GetName]."
  horde_civil_war.4.a: "Un altro avvoltoio che cerca di rivendicare il trono."
@@ -29,7 +30,8 @@
  horde_civil_war.5.b: "Questa è la fine di [target_country.GetNameWithNoTooltip]..."
  
  horde_civil_war.6.title: "Il Governo di [target_character.GetShortNameWithNoTooltip]"
- horde_civil_war.6.desc: "Il vecchio ordine [target_country.Custom('IT_Della')][target_country.GetLongName] non esiste più e [target_character.GetName] è diventato il nuovo sovrano delle steppe. Tuttavia, le sue azioni hanno causato molta sofferenza e spargimento di sangue, e altri signori della guerra potrebbero avere intenzione di tentare i propri colpi di stato contro il nuovo [target.GetGovernment.GetRulerTitle]..."
+# horde_civil_war.6.desc: "Il vecchio ordine [target_country.Custom('IT_Della')][target_country.GetLongName] non esiste più e [target_character.GetName] è diventato il nuovo sovrano delle steppe. Tuttavia, le sue azioni hanno causato molta sofferenza e spargimento di sangue, e altri signori della guerra potrebbero avere intenzione di tentare i propri colpi di stato contro il nuovo [target.GetGovernment.GetRulerTitle]..." #OLD
+ horde_civil_war.6.desc: "The old order of the [target_country.GetLongName] is no more, and [target_character.GetName] has become the new ruler of the steppes. However, [target_character.GetHerHis] actions have caused much suffering and bloodshed, and other warlords may intend to try their own coups against the new [target_country.GetGovernment.GetRulerTitle]..." #NEW
  horde_civil_war.6.a: "Che vengano!"
  
  horde_civil_war.7.title: "La Ribellione di [target_province.GetNameWithNoTooltip]"
@@ -54,6 +56,9 @@
  horde_civil_war.10.a: "Tenere un discorso stimolante!"
  horde_civil_war.10.b: "Mostrare loro la forza attraverso il combattimento!"
  horde_civil_war.10.c: "Iniziare i guerrieri ai nostri piani di battaglia."
+ horde_civil_war.11.title: "Horde Coup" #NEW
+ horde_civil_war.11.desc: "The lack of a recognized ruler within our country has led to more intrigues and rebellion. Despite [target_ruler.GetName]'s best attempt to stabilize the situation, [target_ruler.GetHerHis] lack of authority was [target_ruler.GetHerHis] undoing as [target_character.GetName] and [target_character.GetHerHis] followers have shortly overthrown [target_ruler.GetShortNameWithNoTooltip] and has taken over as our new ruler." #NEW
+ horde_civil_war.11.a: "At least it is not the pretender..." #NEW
  
  horde_civil_war.1000.title: "Confini Non Protetti"
  horde_civil_war.1000.desc: "Di solito i confini di [from_country.GetName] sono regolarmente pattugliati dai nostri esploratori a cavallo. Tuttavia, il caos causato dall'ambizione di [target_character.GetName] mina la nostra sicurezza di confine. È solo una questione di tempo prima che qualsiasi [ShowGovernmentTypeName('steppe_horde')] emergente o qualsiasi altro stato si intrufoli nel nostro stato senza preavviso..."

@@ -1,7 +1,23 @@
 ﻿IT_ART_TITOLO = {
     type = character
 	
-	# CASO 10: REGINA / DUCHESSA (Femminile)
+	#Stadtholder
+	text = {
+        trigger = {
+			is_female = no
+			any_ruling_countries = {
+			OR = {
+            country_rank_is_duchy = yes
+			country_rank_is_kingdom = yes
+			}
+			government_type = government_type:republic
+			tag = NED
+			}
+        }
+        localization_key = "IT_ART_LO"
+    }
+	
+	#REGINA / DUCHESSA (Femminile)
     text = {
         trigger = {
             is_female = yes
@@ -9,7 +25,7 @@
         localization_key = "IT_ART_LA"
     }
     
-    # CASO 1: ZAR
+    #ZAR
 	text = {
         trigger = {
 			is_female = no
@@ -18,14 +34,13 @@
 			OR = {
 				has_reform = government_reform:tsardom
 				culture = { has_culture_group = culture_group:russian_group }
-			}	
-			}
-            
+				}	
+			}           
         }
         localization_key = "IT_ART_LO"
     }
 	
-	# CASO 2: RE
+	#RE
     text = {
         trigger = {
             any_ruling_countries = { country_rank = country_rank:rank_kingdom }
@@ -33,7 +48,7 @@
         localization_key = "IT_ART_IL"
     }
 	
-	# CASO 3: EARL
+	#EARL
 	text = {
         trigger = {
             any_ruling_countries = { 
@@ -49,7 +64,7 @@
         localization_key = "IT_ART_L"
     }
 	
-	# CASO 4: JARL
+	#JARL
 	text = {
         trigger = {
 			is_female = no
@@ -69,7 +84,7 @@
         localization_key = "IT_ART_LO"
     }
 	
-	# CASO 5: SHOGUN
+	#SHOGUN
     text = {
         trigger = {
             any_ruling_countries = { 
@@ -79,7 +94,7 @@
         localization_key = "IT_ART_LO"
     }
 	
-	# CASO 6: IMPERATORE (Inizia per vocale -> L')
+	#IMPERATORE (Inizia per vocale -> L')
     text = {
         trigger = {
             any_ruling_countries = { 
@@ -93,7 +108,7 @@
         localization_key = "IT_ART_L"
     }
 	
-	# CASO 7: LEADER HRE (Inizia per vocale -> L')
+	#LEADER HRE (Inizia per vocale -> L')
     text = {
         trigger = {
             any_ruling_countries = { is_leader_of_international_organization = international_organization:hre }
@@ -101,7 +116,7 @@
         localization_key = "IT_ART_L"
     }
 	
-	# CASO 8: MEMBRO ELETTORE HRE (Elettore)
+	#MEMBRO ELETTORE HRE (Elettore)
     text = {
         trigger = {
             any_ruling_countries = { 
@@ -112,7 +127,7 @@
         localization_key = "IT_ART_L"
     }
 	
-	# CASO 9: OTTOMANI (Inizia per vocale -> L')
+	#OTTOMANI (Inizia per vocale -> L')
     text = {
         trigger = {
             any_ruling_countries = { 
@@ -126,7 +141,7 @@
         localization_key = "IT_ART_L"
     }
 
-    # CASO 11: FALLBACK GENERICO (Il Duca, Il Conte)
+    #FALLBACK GENERICO (Il Duca, Il Conte)
     text = {
         trigger = { 
             always = yes 
@@ -137,6 +152,22 @@
 
 IT_DEL_TITOLO = {
     type = character
+	
+	#Stadtholder
+	text = {
+        trigger = {
+			is_female = no
+			any_ruling_countries = {
+			OR = {
+            country_rank_is_duchy = yes
+			country_rank_is_kingdom = yes
+			}
+			government_type = government_type:republic
+			tag = NED
+			}
+        }
+        localization_key = "IT_ART_DELLO"
+    }
 	
 	# CASO 10: REGINA / DUCHESSA (Femminile)
     text = {
@@ -275,6 +306,22 @@ IT_DEL_TITOLO = {
 IT_DAL_TITOLO = {
     type = character
 	
+	#Stadtholder
+	text = {
+        trigger = {
+			is_female = no
+			any_ruling_countries = {
+			OR = {
+            country_rank_is_duchy = yes
+			country_rank_is_kingdom = yes
+			}
+			government_type = government_type:republic
+			tag = NED
+			}
+        }
+        localization_key = "IT_ART_DALLO"
+    }
+	
 	# CASO 10: REGINA / DUCHESSA (Femminile)
     text = {
         trigger = {
@@ -411,6 +458,22 @@ IT_DAL_TITOLO = {
 
 IT_AL_TITOLO = {
     type = character
+	
+	#Stadtholder
+	text = {
+        trigger = {
+			is_female = no
+			any_ruling_countries = {
+			OR = {
+            country_rank_is_duchy = yes
+			country_rank_is_kingdom = yes
+			}
+			government_type = government_type:republic
+			tag = NED
+			}
+        }
+        localization_key = "IT_ART_ALLO"
+    }
 	
 	# CASO 10: REGINA / DUCHESSA (Femminile)
     text = {
@@ -553,6 +616,22 @@ IT_AL_TITOLO = {
 IT_SUL_TITOLO = {
     type = character
 	
+	#Stadtholder
+	text = {
+        trigger = {
+			is_female = no
+			any_ruling_countries = {
+			OR = {
+            country_rank_is_duchy = yes
+			country_rank_is_kingdom = yes
+			}
+			government_type = government_type:republic
+			tag = NED
+			}
+        }
+        localization_key = "IT_ART_SULLO"
+    }
+	
 	# CASO 10: REGINA / DUCHESSA (Femminile)
     text = {
         trigger = {
@@ -694,6 +773,15 @@ IT_ART_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_LER"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -710,7 +798,7 @@ IT_ART_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -718,7 +806,26 @@ IT_ART_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_IL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_LA"
 	}
 	
@@ -776,6 +883,15 @@ IT_DEL_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_DELLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -792,7 +908,7 @@ IT_DEL_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -800,7 +916,26 @@ IT_DEL_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_DEL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_DELLA"
 	}
 	
@@ -858,6 +993,15 @@ IT_DAL_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_DALLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -874,7 +1018,7 @@ IT_DAL_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -882,7 +1026,26 @@ IT_DAL_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_DAL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_DALLA"
 	}
 	
@@ -940,6 +1103,15 @@ IT_AL_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_ALLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -956,7 +1128,7 @@ IT_AL_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -964,7 +1136,26 @@ IT_AL_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_AL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_ALLA"
 	}
 	
@@ -1022,6 +1213,15 @@ IT_SUL_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_SULLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1038,7 +1238,7 @@ IT_SUL_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1046,7 +1246,26 @@ IT_SUL_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_SUL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_SULLA"
 	}
 	
@@ -1104,6 +1323,15 @@ IT_NEL_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NELLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county	
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1120,7 +1348,7 @@ IT_NEL_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1128,7 +1356,26 @@ IT_NEL_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NEL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NELLA"
 	}
 	
@@ -1186,6 +1433,15 @@ IT_OA_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_RANGO_E"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1202,7 +1458,7 @@ IT_OA_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1210,7 +1466,26 @@ IT_OA_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_RANGO_O"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_RANGO_A"
 	}
 	
@@ -1506,6 +1781,15 @@ IT_ART_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NOSTRO_LE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1522,7 +1806,7 @@ IT_ART_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1530,7 +1814,26 @@ IT_ART_NOSTRO_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_IL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NOSTRO_LA"
 	}
 	
@@ -1581,6 +1884,15 @@ IT_DEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NOSTRO_DELLE"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county	
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1597,7 +1909,7 @@ IT_DEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1605,7 +1917,26 @@ IT_DEL_NOSTRO_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_DEL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NOSTRO_DELLA"
 	}
 	
@@ -1658,6 +1989,15 @@ IT_NEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NOSTRO_NELLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1674,7 +2014,7 @@ IT_NEL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1682,7 +2022,26 @@ IT_NEL_NOSTRO_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_NEL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NOSTRO_NELLA"
 	}
 	
@@ -1735,6 +2094,15 @@ IT_AL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NOSTRO_ALLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county			
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1751,7 +2119,7 @@ IT_AL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1759,7 +2127,26 @@ IT_AL_NOSTRO_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_AL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NOSTRO_ALLA"
 	}
 	
@@ -1812,6 +2199,15 @@ IT_SUL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
+		tag = NED 
+		has_reform = government_reform:seven_provinces 
+		}
+		localization_key = "IT_ART_NOSTRO_SULLE"
+	}
+	
+	text = {
+		trigger = {
+		country_rank = country_rank:rank_county		
 		is_elector = yes 
 		NOT = { government_type = government_type:theocracy }
 		}
@@ -1828,7 +2224,7 @@ IT_SUL_NOSTRO_RANGO = {
 	
 	text = {
 		trigger = { 
-		#country_rank = country_rank:rank_county
+		has_reform = government_reform:papacy_reform
 		government_type = government_type:theocracy
 		religion.group = religion_group:christian	
 		}
@@ -1836,7 +2232,26 @@ IT_SUL_NOSTRO_RANGO = {
 	}
 	
 	text = {
-		trigger = { country_rank = country_rank:rank_county }
+		trigger = { 
+		#country_rank = country_rank:rank_county
+		OR = {
+		has_reform = government_reform:landgraviate
+		has_reform = government_reform:margraviate
+		has_reform = government_reform:prince_bishopric_reform
+			}
+		}
+		localization_key = "IT_ART_NOSTRO_SUL"
+	}
+	
+	text = {
+		trigger = { 
+		country_rank = country_rank:rank_county
+		OR = {
+		NOT = { has_reform = government_reform:landgraviate }
+		NOT = { has_reform = government_reform:margraviate }
+		NOT = { has_reform = government_reform:prince_bishopric_reform }
+			}
+		}
 		localization_key = "IT_ART_NOSTRO_SULLA"
 	}
 	

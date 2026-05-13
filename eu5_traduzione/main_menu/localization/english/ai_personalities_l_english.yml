@@ -1,0 +1,94 @@
+﻿l_english:
+ # AI Personality names (used as PdxDataLocalize(GetKey()) in CAiPersonality::GetName)
+ ai_aggressive: "Aggressivo"
+ ai_expansionist: "Espansionista"
+ ai_defensive: "Difensivo"
+ ai_cautious: "Cauto"
+ ai_opportunistic: "Opportunistico"
+ ai_isolationist: "Isolazionista"
+ ai_friendly: "Amichevole"
+
+ # AI Personality descriptions (key + "_desc")
+ ai_aggressive_desc: "Questa nazione persegue il potere con la forza. È pronta a scatenare guerre, impone condizioni di pace severe e considera le potenze vicine come ostacoli da superare piuttosto che come partner con cui instaurare rapporti."
+ ai_expansionist_desc: "Questa nazione mira ad ampliare i propri confini e la propria influenza. Predilige l'espansione territoriale, persegue attivamente le proprie rivendicazioni e, quando se ne presenta l'occasione, tende alla sottomissione piuttosto che all'annessione vera e propria."
+ ai_defensive_desc: "Questa nazione si preoccupa innanzitutto di proteggere ciò che possiede. Preferisce evitare conflitti inutili, rafforza la propria posizione interna e reagisce alle minacce piuttosto che crearne di nuove."
+ ai_cautious_desc: "Questa nazione è avversa al rischio e paziente. Cerca innanzitutto soluzioni diplomatiche, evita le guerre che non può vincere in modo decisivo e privilegia la stabilità rispetto all'avventurismo."
+ ai_opportunistic_desc: "Questa nazione è calcolatrice e pragmatica. È sempre alla ricerca dei punti deboli altrui e sa cogliere le occasioni propizie, ma evita di impegnarsi in conflitti quando l'esito è incerto."
+ ai_isolationist_desc: "Questa nazione è orientata verso l'interno, dà priorità allo sviluppo interno e rifugge dai coinvolgimenti con l'estero. Mantiene una forte propensione alla neutralità e guarda con diffidenza agli obblighi diplomatici."
+ ai_friendly_desc: "Questa nazione attribuisce grande importanza alle alleanze, alla buona volontà e alla correttezza nei rapporti. Investe molto nella diplomazia, accetta condizioni di pace ragionevoli e tende a stringere nel tempo partnership affidabili."
+
+ # Diplomacy filter category header
+ CUSTOM_SEARCH_FILTER_AI_PERSONALITY_CATEGORY_NAME: "Personalità del Paese"
+
+ # Tooltip section header
+ AI_PERSONALITY_MODIFIERS: "Modificatori Comportamentali"
+
+ # AI disposition labels (how this country sees the player)
+ AI_DISPOSITION_ALARMED: "Allarmato"
+ AI_DISPOSITION_WARY: "Diffidente"
+ AI_DISPOSITION_PLANNING_WAR: "Pianificazione di Guerra"
+ AI_DISPOSITION_COVETS: "Brama la Tua Terra"
+ AI_DISPOSITION_RIVALS: "Rivali"
+ AI_DISPOSITION_INDIFFERENT: "Indifferente"
+
+ # AI disposition descriptions (tooltip body for each disposition)
+ AI_DISPOSITION_ALARMED_DESC: "Questa [country_disposition|e] significa che ti considerano una minaccia esistenziale e che probabilmente cercheranno di stringere alleanze difensive o di intraprendere azioni preventive contro di te."
+ AI_DISPOSITION_WARY_DESC: "Questa [country_disposition|e] significa che si mostrano cauti nei tuoi confronti e saranno riluttanti a fare concessioni o ad abbassare la guardia."
+ AI_DISPOSITION_PLANNING_WAR_DESC: "Questa [country_disposition|e] significa che hanno una rivendicazione o un reclamo in corso e si stanno preparando a far valere i propri diritti con la forza."
+ AI_DISPOSITION_COVETS_DESC: "Questa [country_disposition|e] significa che considerano i tuoi territori un obiettivo allettante e potrebbero cercare di conquistarti o sottometterti non appena se ne presenterà l'occasione."
+ AI_DISPOSITION_RIVALS_DESC: "Questa [country_disposition|e] significa che ti considerano un rivale e si opporranno ai tuoi interessi ogni volta che potranno, arrivando persino a sostenere i tuoi nemici."
+ AI_DISPOSITION_INDIFFERENT_DESC: "Questa [country_disposition|e] indica che al momento non provano sentimenti particolari nei tuoi confronti."
+
+ # Country tooltip row labels
+ AI_ATTITUDE_TOOLTIP_TITLE: "Attitudine e Posizione"
+ AI_SEES_YOU_AS: "Ti vede come:"
+
+ # Objectives display text (shown in country tooltip)
+ OBJECTIVES_HEADER: "Obiettivi:"
+ OBJECTIVES_SPY_NETWORK_REQUIRED: "Crea una [spy_network|e] sopra #G 25#! per rivelare i loro obiettivi strategici."
+ OBJECTIVE_EXPAND_AGAINST: "• Vuole conquistare [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName]"
+ OBJECTIVE_EXPAND_AGAINST_CB: "• Vuole conquistare [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName] e ha un [casus_belli|e]"
+ OBJECTIVE_SUBJUGATE_TARGET: "• Mira a rendere [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName] un vassallo"
+ OBJECTIVE_DEFEND_AGAINST: "• Cercando di contenere [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName]"
+ OBJECTIVE_BUILD_OPINION: "• Stringere amicizia con [COUNTRY.Custom('IT_ART_RANGO')][COUNTRY.GetLongName]"
+ CURRENTLY_NO_DIPLOMATIC_OBJECTIVES: "Al momento non hanno alcun obiettivo diplomatico."
+
+ # EAiDisposition enum token localization (used in trigger description tooltips)
+ alarmed: "Allarmato"
+ wary: "Diffidente"
+ planning_war: "Pianificazione di Guerra"
+ covets: "Brama"
+ rivals: "Rivali"
+ indifferent: "Indifferente"
+
+ # Personality mapmode tooltip title ("[Country] is [Personality]")
+ AI_PERSONALITY_MAPMODE_TITLE: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongNameWithNoTooltip] è $PERSONALITY$"
+
+ # Disposition mapmode tooltip titles (per disposition, for country hover while in ai_disposition_mapmode)
+ AI_DISPOSITION_ALARMED_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] è allarmato"
+ AI_DISPOSITION_WARY_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] è diffidente"
+ AI_DISPOSITION_PLANNING_WAR_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] sta pianificando la guerra"
+ AI_DISPOSITION_COVETS_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] brama la tua terra"
+ AI_DISPOSITION_RIVALS_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] ti considera un rivale"
+ AI_DISPOSITION_INDIFFERENT_MAPMODE_TITLE: "[COUNTRY.Custom('IT_La')][COUNTRY.GetName] è indifferente"
+
+ # Disposition reason text (dynamic "why" lines appended to _DESC in GetDispositionToPlayerDesc)
+ AI_DISPOSITION_REASON_ECO: "La tua economia è di gran lunga superiore alla loro."
+ AI_DISPOSITION_REASON_MILITARY: "La tua forza militare supera di gran lunga la loro."
+ AI_DISPOSITION_REASON_COVETS_COUNT: "Desiderano $COUNT|Y$ dei tuoi territori."
+ AI_DISPOSITION_REASON_RIVALS_FORMAL: "Sei stato formalmente designato come rivale."
+ AI_DISPOSITION_REASON_RIVALS_CB: "Hanno un casus belli contro di te."
+ AI_DISPOSITION_REASON_RIVALS_ANTAGONISM: "Esiste un forte antagonismo tra i nostri paesi."
+
+ # Conquer desire location tooltip strings
+ AI_CONQUER_DESIRE_NO_SELECTION: "Seleziona un paese per visualizzarne gli obiettivi strategici."
+ AI_CONQUER_DESIRE_LOCATION_OWNED: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] possiede già questa località."
+ AI_CONQUER_DESIRE_LOCATION_NONE: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] non ha alcun interesse a conquistare questa località."
+ AI_CONQUER_DESIRE_LOCATION_SCORE: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ha un desiderio del $SCORE|2/%G$ per questa località!"
+
+ # Map mode names and descriptions
+ ai_personality_mapmode: "Personalità del Paese"
+ ai_personality_mapmode_desc: "Assegna a ogni paese un colore in base alla sua personalità, ovvero al tratto fondamentale che ne determina il comportamento diplomatico e militare."
+ ai_disposition_mapmode: "Disposizione del Paese"
+ ai_disposition_mapmode_desc: "Assegna a ogni paese un colore in base a come ti vede: da allarmato e diffidente a desideroso di conquistare il tuo territorio o intenzionato a dichiararti guerra."
+

@@ -1,10 +1,15 @@
 ﻿l_english:
  flavor_nap_pap.1.title: "[lorenzo_valla_scope.GetNameWithNoTooltip]"
- flavor_nap_pap.1.desc: "Un eccellente conferenziere, [lorenzo_valla_scope.GetName], ha recentemente incontrato [country_ruler.GetName], suscitando l'interesse del sovrano per le sue capacità come polemista e filosofo. Pare che i due abbiano costruito una buona intesa, poiché in seguito [country_ruler.GetShortNameWithNoTooltip] ha proposto di finanziare una scuola per lo scrittore e di avvalersi delle qualità presso la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ROOT.GetCountry.GetGovernment.GetAdjective].\n\nInoltre, sembra che [lorenzo_valla_scope.GetNameWithNoTooltip] nutra dubbi circa l'antica #italic Donazione di Costantino#! e che ritenga di poter dimostrare che l'opera sia un falso. Se avesse ragione, ciò provocherebbe profondi riverberi nella dottrina [ShowReligionAdjective('catholic')]."
+ flavor_nap_pap.1.entry: "Lorenzo Valla" #NEW
+# flavor_nap_pap.1.desc: "Un eccellente conferenziere, [lorenzo_valla_scope.GetName], ha recentemente incontrato [country_ruler.GetName], suscitando l'interesse del sovrano per le sue capacità come polemista e filosofo. Pare che i due abbiano costruito una buona intesa, poiché in seguito [country_ruler.GetShortNameWithNoTooltip] ha proposto di finanziare una scuola per lo scrittore e di avvalersi delle qualità presso la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ROOT.GetCountry.GetGovernment.GetAdjective].\n\nInoltre, sembra che [lorenzo_valla_scope.GetNameWithNoTooltip] nutra dubbi circa l'antica #italic Donazione di Costantino#! e che ritenga di poter dimostrare che l'opera sia un falso. Se avesse ragione, ciò provocherebbe profondi riverberi nella dottrina [ShowReligionAdjective('catholic')]." #OLD
+ flavor_nap_pap.1.desc: "An excellent lecturer, [lorenzo_valla_scope.GetName], has recently met [country_ruler.GetName], sparking the interest of the sovereign in his skills as a polemicist and philosopher. It seems the two got on together well, as [country_ruler.GetShortNameWithNoTooltip] afterward proposed the funding of a school for the writer and enlisting his skills in the [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle].\n\nMoreover, it would seem that [lorenzo_valla_scope.GetNameWithNoTooltip] has doubts regarding the ancient #italic Donation of Constantine#! and he believes that he can prove the work is a forgery. If he is right, that would cause ripples in the [ShowReligionAdjective('catholic')] world." #NEW
  flavor_nap_pap.1.historical_info: "Lorenzo Valla fu un umanista italiano del XV secolo che apportò numerosi contributi al Rinascimento italiano, soprattutto al servizio del re Alfonso V d'Aragona a Napoli, dopo la sua conquista. Valla è ricordato soprattutto per la sua critica alla #italic Donazione di Costantino#!, documento su cui si fondava l'autorità papale nel mondo cattolico: egli lo smascherò come un falso, umiliando il potere papale. Per questo è considerato uno dei padri fondatori della critica testuale e della filologia come disciplina accademica."
- flavor_nap_pap.1.a: "Ingaggiate [lorenzo_valla_scope.GetHerHim] immediatamente!"
- flavor_nap_pap.1.b: "Al massimo concedete a [lorenzo_valla_scope.GetHerHim] la scuola."
- flavor_nap_pap.1.c: "E se [lorenzo_valla_scope.GetSheHe] fosse una spia?"
+# flavor_nap_pap.1.a: "Ingaggiate [lorenzo_valla_scope.GetHerHim] immediatamente!" #OLD
+ flavor_nap_pap.1.a: "Hire him at once!" #NEW
+# flavor_nap_pap.1.b: "Al massimo concedete a [lorenzo_valla_scope.GetHerHim] la scuola." #OLD
+ flavor_nap_pap.1.b: "Let him have the school at most." #NEW
+# flavor_nap_pap.1.c: "E se [lorenzo_valla_scope.GetSheHe] fosse una spia?" #OLD
+ flavor_nap_pap.1.c: "What if he is a spy?" #NEW
  NAP_when_done: "Quando [lorenzo_valla_scope.GetName] avrà ultimato il proprio lavoro, potremo smascherare il [GetCountry('PAP').GetName]:"
 
  flavor_nap_pap.2.title: "Smascheramento della #italic Donazione di Costantino#!"
@@ -20,6 +25,7 @@
  flavor_nap_pap.3.desc: "[lorenzo_valla_scope.GetName] di [nap_from.GetName] ha prodotto uno studio sull'origine della #italic Donazione di Costantino#!, ritenendola un falso. Nonostante i nostri sforzi per trovare errori nell'opera, abbiamo rinvenuto poche ragioni fondate per contestarne i contenuti. Sebbene la notizia non abbia ancora raggiunto ogni angolo del mondo che professa la dottrina [ROOT.GetCountry.GetReligion.GetAdjective], lo farà col tempo. Se non interverremo, la nostra autorità subirà senz'altro un danno e ne uscirà indebolita."
  flavor_nap_pap.3.historical_info: "$flavor_nap_pap.2.historical_info$"
  flavor_nap_pap.3.a: "Scomunicate [lorenzo_valla_scope.GetShortNameWithNoTooltip] e tutti i coinvolti!"
+ flavor_nap_pap.3.a.entry: "Excommunicate $Valla$ and everyone involved!" #NEW
  flavor_nap_pap.3.b: "Fingete di non sapere."
  nap_harsher_effect_on_excommunication_but_less_likely_and_excom: "Questa decisione diminuirà la probabilità del #g -50.0%#! che altri paesi ci condannino, ma aumenterà altresì l'impatto sul [reform_desire|e] del #r +50.0%#!."
  nap_every_catholic_country_gets_to_choose: "Ogni paese di fede [ShowReligionAdjective('catholic')] potrà decidere se condannarci o meno. Se sceglieranno di condannarci, aumenteranno il [reform_desire|e] in proporzione alla quota di [provinces|e] di fede [ShowReligionAdjective('catholic')] che possiedono."
@@ -28,6 +34,7 @@
  flavor_nap_pap.4.title: "$flavor_nap_pap.3.title$"
  flavor_nap_pap.4.desc: "Ci è giunta voce di un filosofo, [lorenzo_valla_scope.GetName] di [nap_from.GetName], che ha redatto uno studio sull'origine della #italic Donazione di Costantino#!, giudicandola un falso. Gli studiosi e gli umanisti dello stato ritengono l'esposto autentico. Ciò ci offre la migliore occasione finora per colpire lo [the_papacy.GetName] e tentare di ridurre l'influenza [the_papacy.Custom('IT_ADJ_FS')]. Condannare [the_pope.GetName] sarebbe tuttavia una questione grave e potrebbe esporci al rischio di scomunica."
  flavor_nap_pap.4.historical_info: "$flavor_nap_pap.2.historical_info$"
- flavor_nap_pap.4.a: "Condannate [the_papacy.GetLongNameWithNoTooltip]!"
+ flavor_nap_pap.4.a: "Condannate lo [the_papacy.GetLongNameWithNoTooltip]!"
+ flavor_nap_pap.4.a.entry: "Condemn the $PAP$!" #NEW
  flavor_nap_pap.4.b: "Non intervenite sulla questione."
  nap_condemned_his_holiness: "Condannata Sua Santità"

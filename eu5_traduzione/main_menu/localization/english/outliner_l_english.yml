@@ -172,17 +172,21 @@
  INTEGRATE_OUTLINER_TT: "L'[integration|e] progredisce di $SPEED|+=/$ ogni mese grazie a:\n$WHY$\nIl completamento dell'Integrazione è previsto intorno al $WHEN|Y$."
  INTEGRATE_OUTLINER_NEVER_TT: "L'Integrazione progredisce di $SPEED|+=/$ ogni mese grazie a:\n$WHY$"
  OUTLINER_IMPROVE_OPINION: "$CURRENT_OPINION|2+$ + $DELTA|2+$ ($TOTAL_IMPROVED|0+$/$MAX|0+$)"
- ANNEXATION_TEXT_OUTLINER: "$CURR|2Y$/$NEED$"
+ ANNEXATION_TEXT_OUTLINER: "$TIME$ ($CURR|0Y$/$NEED|0Y$)" #NEW
+ ANNEXATION_OUTLINER_STALLED: "In Stallo" #NEW
  ANNEX_OUTLINER_TT: "L'[annexation|e] progredisce di $SPEED|+=/$ ogni mese grazie a:\n$WHY$\nIl completamento dell'Annessione è previsto intorno al $WHEN|Y$."
  ANNEX_OUTLINER_NEVER_TT: "L'[annexation|e] progredisce di $SPEED|+=/$ ogni mese grazie a:\n$WHY$"
- CREATE_CB_OUTLINER: "$VAL|2%/$"
+# CREATE_CB_OUTLINER: "$VAL|2%/$" #OLD
+ CREATE_CB_OUTLINER: "$VAL|2%/$ (~$MONTHS|Y$m)" #NEW
+ CREATE_CB_OUTLINER_NO_ETA: "$VAL|2%/$" #NEW
  CREATING_CASUS_BELLI_TT: "Il progresso mensile è #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=/%L$#!"
  SPY_NETWORK_OUTLINER_VAL: "$VAL|0$"
  FAVORS_OUTLINER_VAL: "$VAL|0$"
  
  DAYS_LEFT_IN_OCCUPATION: "$DAYS|Y$ Giorno/i"
- OUTLINER_IO_LAW_DEBATE: "#L [IOLawOutlinerEntry.GetResolution.GetNameWithNoTooltip]#! è oggetto di dibattito:" #NEW
- OUTLINER_IO_LAW_DEBATE_SHORT: "[IOLawOutlinerEntry.GetDaysLeft|0]$DAYS_SHORT_LOC$" #NEW
+# OUTLINER_IO_LAW_DEBATE: "#L [IOLawOutlinerEntry.GetResolution.GetNameWithNoTooltip]#! è oggetto di dibattito:" #OLD
+ OUTLINER_IO_LAW_DEBATE: "#L [IOLawOutlinerEntry.GetOutlinerName]#! is being debated" #NEW
+ OUTLINER_IO_LAW_DEBATE_SHORT: "[IOLawOutlinerEntry.GetDaysLeft|0]$DAYS_SHORT_LOC$" 
 
  
  OUTLINER_ITEM_WAR: "[WAR.GetName]"
@@ -192,6 +196,7 @@
  OUTLINER_ITEM_HUMAN_PLAYER_TOOLTIP: "$NAME$ ($USER$) gioca come [COUNTRY.GetName] @[COUNTRY.GetFlag]!"
  OUTLINER_ITEM_HUMAN_PLAYER_NO_COUNTRY_TOOLTIP: "$USER$ non ha ancora selezionato un paese"
  OUTLINER_ITEM_HUMAN_PLAYER_OBSERVER_TOOLTIP: "$NAME$ ($USER$) gioca come osservatore"
+ OUTLINER_PLAYER_CURRENT_SCORE: "[score|E] Attuale: #Y [Score.GetScore|2L]#!" #NEW
  
 
 
@@ -229,6 +234,7 @@
  UNIT_BUILD: "Costruzione di [SUBUNITDEFINITION.GetNameWithNoTooltip] a [LOCATION.GetNameWithNoTooltip]"
  CONS_BUILDING: "[BUILDING_TYPE.GetNameWithNoTooltip] a [LOCATION.GetNameWithNoTooltip]"
  CONS_RGO: "$NAME$ a [LOCATION.GetNameWithNoTooltip]"
+ ACTIVE_megalopolis: "Constructing a Megalopolis in [LOCATION.GetNameWithNoTooltip]" #NEW
  ACTIVE_city: "Concessione Diritti di Città a [LOCATION.GetNameWithNoTooltip]"
  ACTIVE_town: "Fondazione di un Borgo a [LOCATION.GetNameWithNoTooltip]"
  ACTIVE_rural_settlement: "Smantellamento di un Insediamento Rurale a [LOCATION.GetNameWithNoTooltip]"

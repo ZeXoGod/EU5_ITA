@@ -134,7 +134,7 @@
  hre_has_not_direct_free_city_subjects_tt: "Le [free_cities|e] NON sono [subjects|e] di tipo [ShowSubjectTypeName('direct_imperial_free_city')] dell'[hre_emperor|e]"
 
  hre_country_fulfills_imperial_religion_requirement_tt: "La [religion|e] del paese è allineata con la [imperial_religion|e]"
- hre_character_fulfills_imperial_religion_requirement_tt: "La [religion|e] del personaggio è in linea con la [imperial_religion|e]" #NEW
+ hre_character_fulfills_imperial_religion_requirement_tt: "La [religion|e] del personaggio è in linea con la [imperial_religion|e]" 
  hre_is_perpetual_diet_location_tt: "Ospita la #Y Dieta Perpetua#!"
 
  #Celestial Authority 
@@ -795,18 +795,18 @@
  PAST_LOCK_RESOLUTION_EFFECT: "Ha bloccato la [resolution|e] [RESOLUTION.GetName]"
  PAST_WE_LOCK_RESOLUTION_EFFECT: "Abbiamo bloccato la [resolution|e] [RESOLUTION.GetName]"
  PAST_THIRD_LOCK_RESOLUTION_EFFECT: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha bloccato la [resolution|e] [RESOLUTION.GetName]"
- LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] nella [region|e] della [capital|e] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- FIRST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle nostre [locations|e] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- THIRD_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle [locations|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- PAST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] nella [region|e] della [capital|e] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- PAST_FIRST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle nostre [locations|e] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- PAST_THIRD_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle [locations|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" #NEW
- UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] del Paese peggiorerà la loro [opinion|e] su di loro" #NEW
- FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] peggiorerà la loro [opinion|e] su di noi" #NEW
- THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] peggiorerà l'[opinion|e] su di loro" #NEW
- PAST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] del Paese ha peggiorato la loro [opinion|e] su di loro" #NEW
- PAST_FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e]che segue [TARGET_RELIGION.GetName] che non è né nostro [ally|e] né un nostro [subject|e] ha peggiorato la loro [opinion|e] su di noi" #NEW
- PAST_THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha peggiorato l'[opinion|e] su di loro" #NEW
+ LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] nella [region|e] della [capital|e] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ FIRST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle nostre [locations|e] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ THIRD_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle [locations|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si convertiranno da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ PAST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] nella [region|e] della [capital|e] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ PAST_FIRST_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle nostre [locations|e] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ PAST_THIRD_LOTS_OF_RELIGION_EFFECT: "Molti [pops|e] delle [locations|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] nella [region|e] [COUNTRY.GetCapital.GetRegion.GetName] si sono convertiti da [RELIGION.GetName] a [TARGET_RELIGION.GetName]" 
+ UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] del Paese peggiorerà la loro [opinion|e] su di loro" 
+ FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] peggiorerà la loro [opinion|e] su di noi" 
+ THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] peggiorerà l'[opinion|e] su di loro" 
+ PAST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] del Paese ha peggiorato la loro [opinion|e] su di loro" 
+ PAST_FIRST_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e]che segue [TARGET_RELIGION.GetName] che non è né nostro [ally|e] né un nostro [subject|e] ha peggiorato la loro [opinion|e] su di noi" 
+ PAST_THIRD_UPSET_COUNTRIES_OF_RELIGION_EFFECT: "Ogni [country|e] che segue [TARGET_RELIGION.GetName] che non è né un [ally|e] né uno [subject|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha peggiorato l'[opinion|e] su di loro" 
 
  UNLOCK_GLOBAL_LAW_EFFECT: "Sblocca la [law|e] [LAW.GetName] #Y globalmente#!"
  WE_UNLOCK_GLOBAL_LAW_EFFECT: "Sblocchiamo la [law|e] [LAW.GetName] #Y globalmente#!"
@@ -866,6 +866,18 @@
  PAST_SUBTRACT_CELESTIAL_AUTHORITY: "Ha perso $VALUE|-$ #Y $celestial_authority$#!"
  FIRST_PAST_SUBTRACT_CELESTIAL_AUTHORITY: "L'[international_organization|e] ha perso $VALUE|-$ #Y $celestial_authority$#!"
  THIRD_PAST_SUBTRACT_CELESTIAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha perso $VALUE|-$ #Y $celestial_authority$#!"
+ ADD_PAPAL_AUTHORITY: "Gains $VALUE|+$ #Y $papal_authority$#!" #NEW
+ FIRST_ADD_PAPAL_AUTHORITY: "The [international_organization|e] gains $VALUE|+$ #Y $papal_authority$#!" #NEW
+ THIRD_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] gains $VALUE|+$ #Y $papal_authority$#!" #NEW
+ PAST_ADD_PAPAL_AUTHORITY: "Gained $VALUE|+$ #Y $papal_authority$#!" #NEW
+ FIRST_PAST_ADD_PAPAL_AUTHORITY: "The [international_organization|e] gained $VALUE|+$ #Y $papal_authority$#!" #NEW
+ THIRD_PAST_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] gained $VALUE|+$ #Y $papal_authority$#!" #NEW
+ SUBTRACT_PAPAL_AUTHORITY: "Loses $VALUE|-$ #Y $papal_authority$#!" #NEW
+ FIRST_SUBTRACT_PAPAL_AUTHORITY: "The [international_organization|e] loses $VALUE|-$ #Y $papal_authority$#!" #NEW
+ THIRD_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] loses $VALUE|-$ #Y $papal_authority$#!" #NEW
+ PAST_SUBTRACT_PAPAL_AUTHORITY: "Lost $VALUE|-$ #Y $papal_authority$#!" #NEW
+ FIRST_PAST_SUBTRACT_PAPAL_AUTHORITY: "The [international_organization|e] lost $VALUE|-$ #Y $papal_authority$#!" #NEW
+ THIRD_PAST_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] lost $VALUE|-$ #Y $papal_authority$#!" #NEW
 
  TRANSFER_YEARLY_GOLD_FROM_ALL_MEMBERS: "Tutti i [members|e] trasferiscono [gold|e] ($VALUE|2%$ del reddito annuo) [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
  THIRD_TRANSFER_YEARLY_GOLD_FROM_ALL_MEMBERS: "Tutti i [members|e] [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_DEL')][INTERNATIONAL_ORGANIZATION.GetName] trasferiscono [gold|e] ($VALUE|2%$ del reddito annuo) [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"

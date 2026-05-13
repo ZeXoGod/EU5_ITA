@@ -1,5 +1,7 @@
 ﻿l_english:
 
+  fall_of_delhi.1.entry: "$delhi_situation.1.title$"
+  fall_of_delhi.18.entry: "$delhi_situation.18.title$"
   delhi_situation.1.title: "Le Sovraestese Redini del Potere"
   delhi_situation.1.desc: "Le ruote del potere un tempo giravano in nostro favore. I nostri predecessori, i Khaljī, caddero di fronte al potere della nostra dinastia [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] nel 1320. Da allora, vaste porzioni di territorio in $india$ sono crollate di fronte alla nostra potenza. Tuttavia, con l'avanzare del tempo, abbiamo perso il favore del nostro popolo. Coloro a cui prima concedevamo grazia e governorato si sono tramutati in serpenti celati dall'erba, che attendono e pianificano la nostra distruzione.\n\nDavanti a noi si erge una strada turbolente e perigliosa. La sopravvivenza [GetCountry('DLH').Custom('IT_DEL_RANGO')]nostr[GetCountry('DLH').Custom('IT_OA_RANGO')] [GetCountry('DLH').GetFlavorRank] è in bilico tra la distruzione e la completa dominazione. È in arrivo una tempesta..."
   delhi_situation.1.a: "Supereremo questa tempesta."
@@ -65,7 +67,7 @@
   delhi_situation.12.a: "La loro fine si avvicina..."
   delhi_loses_opposers_gain_1_tt: "La nostra [share_of_power_gc|e] aumenterà del #G 5%#! a spese [target_country2.Custom('IT_Della')][target_country2.GetNameWithNoTooltip]. Dovesse raggiungere il #R 50%#!, il [disaster|e] [ShowDisasterName('dissolution_of_delhi')] potrebbe verificarsi per [target_country2.Custom('IT_La')][target_country2.GetNameWithNoTooltip]"
 
-  delhi_situation.13.title: "Opposizione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] al Nostro Governo"
+  delhi_situation.13.title: "Opposizione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] al Nostro Governo"
   delhi_situation.13.desc: "La nostra situazione è senza dubbio tutt'altro che ideale. Briganti vagabondi che si mascherano da membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] hanno iniziato a criticare apertamente e opporsi alle nostre decisioni amministrative a livello locale. Infatti, chiedono con fervore che li favoriamo rispetto alle altre fazioni a corte, una mossa che sarebbe sicuramente costosa per noi, per non parlare del fatto che creerebbe un precedente pericoloso..."
   delhi_situation.13.a: "Acconsentiremo."
   delhi_situation.13.b: "Dimenticano di chi sono i servi!"
@@ -92,8 +94,9 @@
   we_will_lose_all_cores_tt: "Abbandoneremo tutte le nostre località [cores|e] in $india$ che non controlliamo direttamente"
   gain_10_progress_for_claimants_tt: "In nostri nemici guadagneranno #R +10%#! #Y Quota di Potere#! durante la [situation|e] [GetSituationByKey('fall_of_delhi').GetName]"
   powerful_warlords_will_rise_tt: "[countries|e] potenti riempiranno il vuoto lasciato dalla nostra caduta in $india$"
+ 
+  #New Events
 
-#New Events
 
   delhi_situation.17.title: "Lavori d'Irrigazione lungo lo Yamuna"
   delhi_situation.17.desc: "Il fiume Yamuna è da tempo una fonte vitale per l'agricoltura e il commercio nelle nostre terre. Consapevoli del suo potenziale, i nostri consiglieri e governatori locali desiderano intraprendere vasti progetti di irrigazione in [target_province.GetName], al fine di garantire la prosperità dei campi e del popolo. Il miglioramento dell'approvvigionamento idrico incrementerà sicuramente i raccolti locali, ridurrà i rischi di carestia e rafforzerà il nostro controllo sulla provincia e sulla sua capitale, [target_province_capital.GetName], la cui popolazione ne gioirà."

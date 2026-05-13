@@ -50,22 +50,26 @@
  decline_of_mali.8.a: "Questo è il nostro momento per colpire!"
  
  decline_of_mali.9.title: "Un Tempo di Ripresa"
+ decline_of_mali.9.entry: "$decline_of_mali.9.title$" #NEW
  decline_of_mali.9.desc: "I conflitti civili e gli scontri interni che stanno devastando il nostro paese sono giunti a una temporanea battuta d'arresto, poiché siamo riusciti a ripristinare un po' di ordine. Non sappiamo se questa situazione durerà, o se i nostri nemici si stiano semplicemente riorganizzando e guadagnando slancio per sfidare nuovamente il nostro dominio. In ogni caso, dovremmo approfittare di questa opportunità, cercando di ripristinare parte della nostra autorità danneggiata."
  decline_of_mali.9.a: "Stabilizzare il paese."
  decline_of_mali.9.b: "Recuperare la nostra legittimità."
  decline_of_mali.9.c: "Migliorare il nostro rapporto con le Estates."
  
  decline_of_mali.10.title: "Usurpazione del Sandaki di [GetCurrentYear]"
+ decline_of_mali.10.entry: "Sandaki Usurpation of The Current Year" #NEW
  decline_of_mali.10.desc: "Il Sandaki è il più alto consigliere della nostra corte, ricoprendo la posizione più importante nel nostro gabinetto. Solo i più eccezionali e leali tra i nostri servitori raggiungono mai questa posizione, in quanto cruciale per il governo del paese. Tuttavia, la situazione generale di declino ha raggiunto anche la nostra corte, e ora più dei nostri consiglieri hanno la loro posizione non per merito e lealtà, ma attraverso manipolazione, corruzione e nepotismo. Con nostra disperazione, l'attuale Sandaki [mal_pretender_leader.GetName] ha dimostrato di essere di questo tipo, tramando contro [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
  decline_of_mali.10.a: "Traditore!"
  decline_of_mali.10.b: "Difendere il palazzo!"
  
  decline_of_mali.11.title: "Le Incursioni dei [ShowCultureNameWithNoTooltip('mossi')]"
+ decline_of_mali.11.entry: "The Mossi Raids" #NEW
  decline_of_mali.11.desc: "I [ShowCultureName('mossi')] sono un popolo che si è stabilito qualche tempo fa a est del nostro paese, oltre le terre dei [ShowCultureName('bobo')], dei [ShowCultureName('bambara')] e dei [ShowCultureName('dogon')]. I loro clan si confederano attorno a poche città, sebbene il loro stile di vita tradizionale sia semi-nomade. Ciò che li differenzia dagli altri vicini sono le loro abituali incursioni, che sono intrinseche alla loro cultura. E ora è il nostro turno di subirle, mentre cercano di approfittare della nostra debolezza..."
  decline_of_mali.11.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
  decline_of_mali.11.b: "Contrattaccare immediatamente!"
  
  decline_of_mali.12.title: "La Rivolta della [ShowDynastyNameWithNoTooltip('diawara_dynasty')]"
+ decline_of_mali.12.entry: "The Diawara Dynasty Revolt" #NEW
  decline_of_mali.12.desc: "A nord-ovest del nostro paese, i [ShowCultureName('soninke')] si stabiliscono nelle terre, fondatori dell'Impero del Ghana ormai perduto. Anche se il loro potere e influenza sono calati, sono ancora un popolo orgoglioso, e l'indebolimento del nostro potere non è passato inosservato ai loro occhi. Uno dei loro capi, [diawara_ruler.GetName], è riuscito a unificare il [diawara_ruler.GetHerHis] popolo, sfidando il nostro dominio nella regione."
  mal_separatists_rebels_soninke: "Separatisti $soninke$"
  decline_of_mali.12.a: "Dobbiamo riaffermare la nostra autorità!"
@@ -74,11 +78,13 @@
  decline_of_mali.12.b.tt: "Ogni [location|e] nell'[ShowAreaName('ghana_area')] che è culturalmente dominata dai [ShowCultureName('soninke')] si unisce al nuovo stato emergente in [diawara_capital.GetName]"
  
  decline_of_mali.13.title: "Invasione [ShowCultureNameWithNoTooltip('tuareg')]"
+ decline_of_mali.13.entry: "Tuareg Invasion" #NEW
  decline_of_mali.13.desc: "I [ShowCultureName('tuareg')], un popolo nomade Amazigh che abita il Sahara, si stanno rivoltando contro il dominio di [ROOT.GetCountry.GetName]. Approfittano dello stato indebolito del nostro paese per affermare la loro indipendenza e stabilire i propri domini nei territori settentrionali. La ribellione mette un ulteriore pressione sulle nostre risorse, diminuendo ulteriormente la nostra influenza..."
  decline_of_mali.13.a: "Questo non è un bene..."
  mal_separatists_rebels_tuareg: "Separatisti $tuareg$"
  
  decline_of_mali.14.title: "Ascesa di [GetCountry('FUL').GetNameWithNoTooltip]"
+ decline_of_mali.14.entry: "Rise of $FUL$" #NEW
  decline_of_mali.14.desc: "I [ShowCultureName('fulbe')] sono per lo più un popolo di pastori che abita il medio corso del fiume Senegal, con i [ShowCultureName('wolof')] a ovest e i [ShowCultureName('soninke')] a est. Il loro tradizionale modo di vivere li ha resi facile preda del dominio straniero. Tuttavia, un capo forte, [fulo_ruler.GetName], è sorto tra il loro popolo, rivendicando una nuova terra per il [fulo_ruler.GetHerHis] popolo, chiamato [GetCountry('FUL').GetName]."
  decline_of_mali.14.a: "Reprimere i [ShowCultureNameWithNoTooltip('fulbe')]!"
  decline_of_mali.14.a.tt: "Ogni [pop|e] [ShowCultureName('fulbe')] in ogni [location|e] di [ShowAreaName('futa_tooro_area')] che è culturalmente dominata dai [ShowCultureName('fulbe')] si unisce ai [mal_separatists_rebels.GetName] e perde [ShowNamedValue('pop_satisfaction_radical_penalty')|+=2%] di [pop_satisfaction|e]"
@@ -87,6 +93,7 @@
  mal_separatists_rebels_fulbe: "Separatisti $fulbe$"
  
  decline_of_mali.15.title: "Ascesa di [GetCountry('KAB').GetNameWithNoTooltip]"
+ decline_of_mali.15.entry: "Rise of $KAB$" #NEW
  decline_of_mali.15.desc: "La provincia di [ShowProvinceDefinitionName('kaabu_province')] ospita persone diverse, come i [ShowCultureName('fulbe')], i [ShowCultureName('balanta')], i [ShowCultureName('manjak')] e i [ShowCultureName('jola')]. La sua situazione periferica ha determinato che l'indebolimento del potere centrale sia percepito in modo ancora più intenso lì, con quasi nessuna autorità presente. Guidati da [kaabu_ruler.GetName], questi diversi popoli sono insorti, convinti che guideranno il loro stesso destino."
  mal_separatists_rebels_balanta: "Separatisti $balanta$"
  mal_separatists_rebels_manjak: "Separatisti $manjak$"
@@ -97,6 +104,7 @@
  decline_of_mali.15.b.tt: "Ogni [location|e] in [ShowAreaName('gambia_area')] che è culturalmente dominata da [ShowCultureName('fulbe')], [ShowCultureName('balanta')], [ShowCultureName('manjak')] o [ShowCultureName('jola')] si unisce al nuovo stato emergente di [GetCountry('KAB').GetName]"
  
  decline_of_mali.16.title: "Disperazione di [GetCountry('MAL').GetNameWithNoTooltip]"
+ decline_of_mali.16.entry: "Desperation of $MAL$" #NEW
  decline_of_mali.16.desc: "Decenni di guerra hanno messo in ginocchio il nostro paese. I tempi disperati richiedono misure disperate, così [ruler_scope.GetName], governante del nostro un tempo orgoglioso e potente impero, ha preso una decisione senza precedenti. Stiamo pianificando di inviare emissari a una delle più grandi potenze, implorando sostegno. Ora la nostra corte dibatte a quale paese dovremmo chiedere aiuto..."
  
  decline_of_mali.16.a: "Cercare il sostegno [turkish_country.Custom('IT_Della')][turkish_country.GetNameWithNoTooltip]."
@@ -115,14 +123,17 @@
  mal_rejected_alliance: "Rifiutata l'Alleanza"
  
  decline_of_mali.18.title: "[ally_country.GetNameWithNoTooltip] Accetta l'Alleanza!"
+ decline_of_mali.18.entry: "Ally Country accepts the Alliance!" #NEW
  decline_of_mali.18.desc: "I nostri amici di [ally_country.GetName] hanno accettato le nostre suppliche! Con la loro assistenza, potremmo essere in grado di invertire il declino del nostro paese."
  decline_of_mali.18.a: "Finalmente una buona notizia!"
  
  decline_of_mali.19.title: "[ally_country.GetNameWithNoTooltip] Rifiuta l'Alleanza"
+ decline_of_mali.19.entry: "Ally Country rejects the Alliance" #NEW
  decline_of_mali.19.desc: "Nonostante gli sforzi dei nostri emissari, [ally_country.GetName] si è rifiutato di inviarci qualsiasi assistenza. Questa potrebbe non essere la nostra fine, ma ci ha certamente spinto un passo più vicino all'abisso."
  decline_of_mali.19.a: "Piove sul bagnato..."
  
  decline_of_mali.20.title: "[ShowLocationNameWithNoTooltip('gao')] si Ribella a [ROOT.GetCountry.GetNameWithNoTooltip]"
+ decline_of_mali.20.entry: "Gao rebels against $ALI$" #NEW
  decline_of_mali.20.desc: "[ShowLocationName('gao')] è il centro principale del popolo [ShowCultureName('songhai')], essendo la città principale dopo l'Ansa del fiume Niger fino alle terre degli [ShowCultureName('hausa')]. I [ShowCultureNameWithNoTooltip('songhai')] sono orgogliosi e feroci, e il disordine e le lotte intestine in cui è caduto il nostro paese hanno convinto i loro capi che il nostro dominio su di loro è giunto al termine. Questa potrebbe diventare una minaccia pericolosa per il nostro futuro se dovessero riuscire nella loro ribellione..."
  decline_of_mali.20.a: "Ripristinare il controllo sulla situazione!"
  decline_of_mali.20.a.tt: "La popolazione [ShowCultureName('songhai')] di ogni *location* posseduta nella [ShowRegionName('sahel_region')] perde [ShowNamedValue('pop_satisfaction_radical_penalty')|+=2%] [pop_satisfaction|e] e si unisce ai [mal_separatists_rebels.GetName]"

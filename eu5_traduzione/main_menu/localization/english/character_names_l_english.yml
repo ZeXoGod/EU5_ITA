@@ -36,6 +36,12 @@
  patronym_prefix_gaelic_daughter_vowel: "nig "
  patronym_prefix_latin_son: "filius "
  patronym_prefix_latin_daughter: "filia "
+ patronym_prefix_italian_son: "di " #NEW
+ patronym_prefix_italian_daughter: "$patronym_prefix_italian_son$" #NEW
+ patronym_prefix_de_son: "de " #NEW
+ patronym_prefix_de_daughter: "$patronym_prefix_de_son$" #NEW
+ patronym_prefix_rhaetian_son: "da " #NEW
+ patronym_prefix_rhaetian_daughter: "$patronym_prefix_rhaetian_son$" #NEW
  #
  patronym_suffix_swedish_son: "sson"
  patronym_suffix_danish_son: "sen"
@@ -73,6 +79,7 @@
  patronym_suffix_ukrainian_daughter: "ivna"
  patronym_suffix_belarusian_son: "avich"
  patronym_suffix_belarusian_daughter: "aŭna"
+ patronym_suffix_komi: "lön" #NEW
  # 
  descendant_prefix_english: "O'"
  descendant_prefix_gaelic: "Ó "
@@ -103,8 +110,10 @@
  location_prefix_frisian: "fan "
  location_prefix_gaelic: "a "
  location_prefix_german: "von "
- location_prefix_italian: "di "
- location_prefix_italian_vowel: "d'"
+# location_prefix_italian: "di " #OLD
+ location_prefix_italian: "da " #NEW
+# location_prefix_italian_vowel: "d'" #OLD
+ location_prefix_italian_vowel: "da " #NEW
  location_prefix_maltese: "tal-"
  location_prefix_polynesian: "o "
  location_prefix_portuguese: "de "
@@ -126,6 +135,8 @@
  character_title_guru_female: "Gurvī"
  character_title_saint: "Santo"
  character_title_saint_female: "Santa"
+ character_title_patriarch: "Patriarca" #NEW
+ character_title_patriarch_female: "$character_title_patriarch$" #NEW
  character_title_colonel: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel')]"
  character_title_colonel_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel_female')]"
  character_title_nobility_pirate: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain')]"
@@ -146,6 +157,8 @@
  character_title_shinno_female: "Naishinnō"
  character_title_nobility_malay: "Awang"
  character_title_nobility_malay_female: "Awang"
+ character_title_despot: "Despótēs" #NEW
+ character_title_despot_female: "Despótissa" #NEW
  #
  colonel_default: "Colonnello"
  colonel_default_female: "Colonella"
@@ -458,6 +471,9 @@
  captain_norman: "Capitain"
  captain_norman_female: "Capitain"
  captain_norman_plural: "Capitains"
+ captain_roman: "Capitaneus" #NEW
+ captain_roman_female: "Capitanea" #NEW
+ captain_roman_plural: "Capitanei" #NEW
  #
  character_address_male: "Sua $ADDRESS$"
  character_address_female: "Sua $ADDRESS$"
@@ -468,14 +484,14 @@
  character_address_male_possessive_second_person: "Di Vostra $ADDRESS$"
  character_address_female_possessive_second_person: "Di Vostra $ADDRESS$"
  #
- character_address_male_dead: "Sua $ADDRESS$ Defunta"
- character_address_female_dead: "Sua $ADDRESS$ Defunta"
- character_address_male_possessive_dead: "Di Sua $ADDRESS$ Defunta"
- character_address_female_possessive_dead: "Di Sua $ADDRESS$ Defunta" #
- character_address_male_second_person_dead: "Vostra $ADDRESS$ Defunta"
- character_address_female_second_person_dead: "Vostra $ADDRESS$ Defunta" #
- character_address_male_possessive_second_person_dead: "Di Vostra $ADDRESS$ Defunta"
- character_address_female_possessive_second_person_dead: "Di Vostra $ADDRESS$ Defunta"
+ character_address_male_dead: "Sua $ADDRESS$ defunta"
+ character_address_female_dead: "Sua $ADDRESS$ defunta"
+ character_address_male_possessive_dead: "Di Sua $ADDRESS$ defunta"
+ character_address_female_possessive_dead: "Di Sua $ADDRESS$ defunta" #
+ character_address_male_second_person_dead: "Vostra $ADDRESS$ defunta"
+ character_address_female_second_person_dead: "Vostra $ADDRESS$ defunta" #
+ character_address_male_possessive_second_person_dead: "Di Vostra $ADDRESS$ defunta"
+ character_address_female_possessive_second_person_dead: "Di Vostra $ADDRESS$ defunta"
  #
  character_address_second_person_fallback_male: "Mio Signore"
  character_address_second_person_fallback_female: "Mia Signora" 
@@ -745,6 +761,16 @@
  nick_abu_yahya: "$name_abu$ $name_john.arabic_language$"
  nick_glendower: "Glyndŵr"
  nick_skanderbeg: "Skanderbeg"
+ storm_nickname: "the Storm" #NEW
+ wall_breaker_nickname: "il Demolitore" #NEW
+ watcher_nickname: "l'Osservatore" #NEW
+ eagle_nickname: "l'Aquila" #NEW
+ iron_sentinel_nickname: "la Sentinella di Ferro" #NEW
+ heaven_breaker_nickname: "il Distruttore del Cielo" #NEW
+ ironheart_nickname: "il Cuore di Ferro" #NEW
+ widow_maker_nickname: "the Widow-Maker" #NEW
+ iron_rose_nickname: "La Rosa di Ferro" #NEW
+ iron_maiden_nickname: "the Iron Maiden" #NEW
  #
  Andersson: "Andersson"
  Bielke: "Bielke"
@@ -792,7 +818,7 @@
  Rhys: "Rhys"
  Sara: "Sara"
  Tomos: "Tomos"
- Ulrika: "Ulrika"
+# Ulrika: "Ulrika" #DELETE
  Vasa: "Vasa"
  Adolf_Ernst: "Adolf Ernst"
  Adolf_Friedrich: "Adolf Friedrich"
@@ -1287,7 +1313,7 @@
  Hirapal: "Hirapal"
  Hirapala: "Hirapala"
  Holkar: "Holkar"
- Husayn_Shah: "Husayn Shah"
+# Husayn_Shah: "Husayn Shah" #DELETE
  Ibrahim: "Ibrahim"
  Idingo: "Idingo"
  Ijam: "Ijam"
@@ -1372,7 +1398,7 @@
  Kalphana: "Kalphana"
  Kalyana: "Kalyana"
  Kalyanachandra: "Kalyanachandra"
- Kamal: "Kamal"
+# Kamal: "Kamal" #DELETE
  Kamala: "Kamala"
  Kamaladevi: "Kamaladevi"
  Kamalavati: "Kamalavati"
@@ -1928,7 +1954,7 @@
  Saugandeva: "Saugandeva"
  Sawaden: "Sawaden"
  Sayorana: "Sayorana"
- Sayyid: "Sayyid"
+# Sayyid: "Sayyid" #DELETE
  Sedemba: "Sedemba"
  Selling: "Selling"
  Semhang: "Semhang"
@@ -2273,10 +2299,10 @@
  Agallon: "Agallon"
  Agelastos: "Agelastos"
  Agrites: "Agrites"
- Aigidia: "Aigidia"
- Aineias: "Aineias"
+# Aigidia: "Aigidia" #DELETE
+# Aineias: "Aineias" #DELETE
  Aineidas: "Aineidas"
- Akakios: "Akakios"
+# Akakios: "Akakios" #DELETE
  Akapnes: "Akapnes"
  Akoimitos: "Akoimitos"
  Akropolites: "Akropolites"
@@ -2301,11 +2327,11 @@
  Anthe: "Anthe"
  Anthemios: "Anthemios"
  Anthemiotes: "Anthemiotes"
- Anthimos: "Anthimos"
+# Anthimos: "Anthimos" #DELETE
  Anthousa: "Anthousa"
  Antigonos: "Antigonos"
  Antiochites: "Antiochites"
- Antiochos: "Antiochos"
+# Antiochos: "Antiochos" #DELETE
  Antipapas: "Antipapas"
  Antipatra: "Antipatra"
  Aoinos: "Aoinos"
@@ -2328,7 +2354,7 @@
  Arvantenos: "Arvantenos"
  Asidenos: "Asidenos"
  Aspietes: "Aspietes"
- Athanasia: "Athanasia"
+# Athanasia: "Athanasia" #DELETE
  Atrapes: "Atrapes"
  Attaleiates: "Attaleiates"
  Attikos: "Attikos"
@@ -2355,7 +2381,7 @@
  Basillike: "Basillike"
  Batatzes: "Batatzes"
  Bekkos: "Bekkos"
- Belisarios: "Belisarios"
+# Belisarios: "Belisarios" #DELETE
  Belissariotes: "Belissariotes"
  Belissariotis: "Belissariotis"
  Bempetziotes: "Bempetziotes"
@@ -2404,14 +2430,14 @@
  Chrisostomos: "Chrisostomos"
  Chrouselios: "Chrouselios"
  Chrousos: "Chrousos"
- Chrysanthos: "Chrysanthos"
+# Chrysanthos: "Chrysanthos" #DELETE
  Chrysaphes: "Chrysaphes"
  Chryselios: "Chryselios"
  Chrysobalantites: "Chrysobalantites"
  Chrysoberges: "Chrysoberges"
  Chrysochoos: "Chrysochoos"
  Chrysogone: "Chrysogone"
- Chrysogonos: "Chrysogonos"
+# Chrysogonos: "Chrysogonos" #DELETE
  Chrysoloras: "Chrysoloras"
  Chrysouchos: "Chrysouchos"
  Chysovergis: "Chysovergis"
@@ -2429,7 +2455,7 @@
  Diasorenos: "Diasorenos"
  Dikaios: "Dikaios"
  Diogenes: "Diogenes"
- Dionysia: "Dionysia"
+# Dionysia: "Dionysia" #DELETE
  Dokeianos: "Dokeianos"
  Domestikopouolos: "Domestikopouolos"
  Doukas_Mourtzouphlos: "Doukas Mourtzouphlos"
@@ -2439,15 +2465,15 @@
  Drosinos: "Drosinos"
  Drosos: "Drosos"
  Droulenos: "Droulenos"
- Eirenaios: "Eirenaios"
+# Eirenaios: "Eirenaios" #DELETE
  Eirenikos: "Eirenikos"
  Elaiodora: "Elaiodora"
  Elegmites: "Elegmites"
- Elpidios: "Elpidios"
+# Elpidios: "Elpidios" #DELETE
  Enochos: "Enochos"
  Epanokomites: "Epanokomites"
  Eparchos: "Eparchos"
- Epiphania: "Epiphania"
+# Epiphania: "Epiphania" #DELETE
  Epiphanis: "Epiphanis"
  Erastos: "Erastos"
  Ergodotes: "Ergodotes"
@@ -2458,15 +2484,15 @@
  Eugenianos: "Eugenianos"
  Eugenios: "Eugenios"
  Eugeniotis: "Eugeniotis"
- Eulalia: "Eulalia"
+# Eulalia: "Eulalia" #DELETE
  Eulogios: "Eulogios"
- Eunike: "Eunike"
+# Eunike: "Eunike" #DELETE
  Euphemios: "Euphemios"
- Eupraxia: "Eupraxia"
- Eusebios: "Eusebios"
+# Eupraxia: "Eupraxia" #DELETE
+# Eusebios: "Eusebios" #DELETE
  Eustace: "Eustace"
  Eustratios: "Eustratios"
- Evangelos: "Evangelos"
+# Evangelos: "Evangelos" #DELETE
  Evanthia: "Evanthia"
  Evergetidiotis: "Evergetidiotis"
  Exarchos: "Exarchos"
@@ -2485,8 +2511,8 @@
  Gazis: "Gazis"
  Gelotes: "Gelotes"
  Gemistus: "Gemistus"
- Gennadios: "Gennadios"
- Gerasimos: "Gerasimos"
+# Gennadios: "Gennadios" #DELETE
+# Gerasimos: "Gerasimos" #DELETE
  Gerontas: "Gerontas"
  Gidos: "Gidos"
  Glabas: "Glabas"
@@ -2499,7 +2525,7 @@
  Gourzoubathenos: "Gourzoubathenos"
  Grammatikos: "Grammatikos"
  Granatos: "Granatos"
- Gregoria: "Gregoria"
+# Gregoria: "Gregoria" #DELETE
  Gribas: "Gribas"
  Grispos: "Grispos"
  Gymnos: "Gymnos"
@@ -2515,7 +2541,7 @@
  Hephaistos: "Hephaistos"
  Heraclides: "Heraclides"
  Herakleidon: "Herakleidon"
- Herakleios: "Herakleios"
+# Herakleios: "Herakleios" #DELETE
  Herakles: "Herakles"
  Hexakionites: "Hexakionites"
  Hexaklinites: "Hexaklinites"
@@ -2529,7 +2555,7 @@
  Hypatia: "Hypatia"
  Iagaris: "Iagaris"
  Iasites: "Iasites"
- Iason: "Iason"
+# Iason: "Iason" #DELETE
  Iberopoulos: "Iberopoulos"
  Isakiotes: "Isakiotes"
  Isauros: "Isauros"
@@ -2659,9 +2685,9 @@
  Kyminianos: "Kyminianos"
  Kynochorites: "Kynochorites"
  Kyprios: "Kyprios"
- Kyra: "Kyra"
+# Kyra: "Kyra" #DELETE
  Kyrdiniatis: "Kyrdiniatis"
- Kyriake: "Kyriake"
+# Kyriake: "Kyriake" #DELETE
  Kyriotes: "Kyriotes"
  Kyritzes: "Kyritzes"
  Kyritzios: "Kyritzios"
@@ -2701,7 +2727,7 @@
  Louloukes: "Louloukes"
  Lykaon: "Lykaon"
  Lykodontis: "Lykodontis"
- Lykos: "Lykos"
+# Lykos: "Lykos" #DELETE
  Machairas: "Machairas"
  Machetarios: "Machetarios"
  Machoneos: "Machoneos"
@@ -2838,7 +2864,7 @@
  Pegonites: "Pegonites"
  Pegonitissos: "Pegonitissos"
  Pekoules: "Pekoules"
- Pelagios: "Pelagios"
+# Pelagios: "Pelagios" #DELETE
  Pelamedes: "Pelamedes"
  Peloponnesites: "Peloponnesites"
  Pentarkles: "Pentarkles"
@@ -2855,7 +2881,7 @@
  Phialites: "Phialites"
  Philanthropenos: "Philanthropenos"
  Philaretos: "Philaretos"
- Philemon: "Philemon"
+# Philemon: "Philemon" #DELETE
  Philinos: "Philinos"
  Philokales: "Philokales"
  Phokas: "Phokas"
@@ -2870,7 +2896,7 @@
  Prasomales: "Prasomales"
  Prinkips: "Prinkips"
  Probatas: "Probatas"
- Prokopios: "Prokopios"
+# Prokopios: "Prokopios" #DELETE
  Promountenos: "Promountenos"
  Proteuon: "Proteuon"
  Protokletos: "Protokletos"
@@ -3008,7 +3034,7 @@
  de_Patras: "De Patras"
  of_gravina: "di Gravina"
  of_durazzo: "di Durazzo"
- milutin: "Milutin"
+# milutin: "Milutin" #DELETE
  decanski: "Dečanski"
  dusan: "Dušan"
  of_Bribir: "di Bribir"
@@ -3030,7 +3056,7 @@
  Aino: "Aino"
  Akseli: "Akseli"
  Alban: "Alban"
- Aldimir: "Aldimir"
+# Aldimir: "Aldimir" #DELETE
  Aldobrandini: "Aldobrandini"
  Aleksii: "Aleksii"
  Allucingolli: "Allucingolli"
@@ -3048,7 +3074,7 @@
  Asko: "Asko"
  Auni: "Auni"
  Babonic: "Babonic"
- Balsic: "Balsic"
+# Balsic: "Balsic" #DELETE
  Bandinelli: "Bandinelli"
  Bardhi: "Bardhi"
  Bashkim: "Bashkim"
@@ -3077,7 +3103,7 @@
  Branka: "Branka"
  Brankovic: "Brankovic"
  Branovic: "Branovic"
- Bratislav: "Bratislav"
+# Bratislav: "Bratislav" #DELETE
  Brunelleschi: "Brunelleschi"
  Budimir: "Budimir"
  Bujar: "Bujar"
@@ -3104,7 +3130,7 @@
  Crnkovic: "Crnkovic"
  di_Cunio: "di Cunio"
  Cybo: "Cybo"
- Dafina: "Dafina"
+# Dafina: "Dafina" #DELETE
  Dana: "Dana"
  Danail: "Danail"
  Dandolo: "Dandolo"
@@ -3124,8 +3150,8 @@
  Doria: "Doria"
  Dragutinovic: "Dragutinovic"
  Draskovic: "Draskovic"
- Drzislav: "Držislav"
- Dubravko: "Dubravko"
+# Drzislav: "Držislav" #DELETE
+# Dubravko: "Dubravko" #DELETE
  Dukagjin: "Dukagjin"
  Dukasin: "Dukasin"
  Dulo: "Dulo"
@@ -3168,7 +3194,7 @@
  Giorgi: "Giorgi"
  Giustiniani_Garibaldo: "Giustiniani Garibaldo"
  Gjoka: "Gjoka"
- Gjon: "Gjon"
+# Gjon: "Gjon" #DELETE
  Gjonaj: "Gjonaj"
  Gjylo: "Gjylo"
  Gonzaga: "Gonzaga"
@@ -3184,7 +3210,7 @@
  Hannus: "Hannus"
  Harviala: "Harviala"
  Havu: "Havu"
- Haxhi: "Haxhi"
+# Haxhi: "Haxhi" #DELETE
  Hekuran: "Hekuran"
  hella: "Hellä"
  Hertta: "Hertta"
@@ -3232,7 +3258,7 @@
  Karp: "Karp"
  Karpela: "Karpela"
  Kauro: "Kauro"
- Keratza: "Keratza"
+# Keratza: "Keratza" #DELETE
  Kettu: "Kettu"
  Kielo: "Kielo"
  of_Kiev: "di Kiev"
@@ -3338,7 +3364,8 @@
  Nelipcic: "Nelipcic"
  Nemanja: "Nemanja"
  Nemanjic: "Nemanjic"
- Nenad: "Nenad"
+ Nebad: "Nenad" #NEW
+# Nenad: "Nenad" #DELETE
  Nepilic: "Nepilic"
  Nevena: "Nevena"
  Nieminen: "Nieminen"
@@ -3400,7 +3427,7 @@
  Rauha: "Rauha"
  Raya: "Raya"
  Rayna: "Rayna"
- Rexhep: "Rexhep"
+# Rexhep: "Rexhep" #DELETE
  Ricci: "Ricci"
  Riccio: "Riccio"
  Rieti: "Rieti"
@@ -3426,7 +3453,7 @@
  Satatieto: "Satatieto"
  Savelli: "Savelli"
  Scannabecchi: "Scannabecchi"
- Selim: "Selim"
+# Selim: "Selim" #DELETE
  Senni: "Senni"
  Sepp: "Sepp"
  Seppo: "Seppo"
@@ -3462,7 +3489,7 @@
  Taisto: "Taisto"
  Talvikki: "Talvikki"
  Tammpere: "Tammpere"
- Tanush: "Tanush"
+# Tanush: "Tanush" #DELETE
  Tavast: "Tavast"
  Teleki: "Teleki"
  Terhi: "Terhi"
@@ -3661,7 +3688,7 @@
  Wise: "il Saggio"
  de_Aragon: "de Aragón"
  de_Mallorca: "de Mallorca"
- Katharina: "Katharina"
+# Katharina: "Katharina" #DELETE
  Eloisa: "Eloisa"
  di_Sicilia: "di Sicilia"
  Cesarina: "Cesarina"
@@ -3798,7 +3825,7 @@
  Caradja: "Caradja"
  Ciubar: "Ciubar"
  Conachi: "Conachi"
- Cosmina: "Cosmina"
+# Cosmina: "Cosmina" #DELETE
  Craiovesti: "Craiovesti"
  Csaba: "Csaba"
  Cseszneky: "Cseszneky"
@@ -3835,7 +3862,7 @@
  Etel: "Etel"
  Eufroysina: "Eufroysina"
  Festetics: "Festetics"
- Floarea: "Floarea"
+# Floarea: "Floarea" #DELETE
  Forgach: "Forgách"
  Frigyes: "Frigyes"
  Garay: "Garay"
@@ -3899,7 +3926,7 @@
  Ondrej: "Ondrej"
  Orczy: "Orczy"
  Palfi: "Palfi"
- Paraschiva: "Paraschiva"
+# Paraschiva: "Paraschiva" #DELETE
  Pavol: "Pavol"
  Perenyi: "Perényi"
  Petrascu: "Petrascu"
@@ -3907,13 +3934,13 @@
  Pirvu: "Pirvu"
  Podmanicky: "Podmanický"
  Pongrac: "Pongrac"
- Prokop: "Prokop"
+# Prokop: "Prokop" #DELETE
  Racovita: "Racovita"
  Radomir_SLV: "Radomír"
  Radovan: "Radovan"
  Rhedey: "Rhédey"
- Roxana: "Roxana"
- Ruxandra: "Ruxandra"
+# Roxana: "Roxana" #DELETE
+# Ruxandra: "Ruxandra" #DELETE
  Rakoczi: "Rákóczi"
  Rakoczy: "Rákóczy"
  Revay: "Révay"
@@ -3948,12 +3975,13 @@
  Turzo: "Turzo"
  Tador: "Tádor"
  Vacarescu: "Vacarescu"
- Valeriu: "Valeriu"
- Vasilica: "Vasilica"
+# Valeriu: "Valeriu" #DELETE
+# Vasilica: "Vasilica" #DELETE
  Veseleni: "Veseléni"
  Vilhelm: "Vilhelm"
  Viliam: "Viliam"
- Vintila: "Vintila"
+# Vintila: "Vintila" #OLD
+ Vintila: "Vintilă" #NEW
  Virag: "Virág"
  Vitazoslav: "Vitazoslav"
  Vlastimil: "Vlastimil"
@@ -4057,7 +4085,7 @@
  Mahaut: "Mahaut"
  Cerda: "de la Cerda"
  Alienor: "Aliénor"
- Hunchback: "il Gobbo"
+# Hunchback: "il Gobbo" #DELETE
  Proud: "il Fiero"
  Centule: "Centule"
  Aymar: "Aymar"
@@ -4234,7 +4262,7 @@
  Asel: "Asel"
  Ayaulym: "Ayaulym"
  Aygerim: "Aygerim"
- Ayna: "Ayna"
+# Ayna: "Ayna" #DELETE
  Bibigul: "Bibigul"
  Gauhar: "Gauhar"
  Inkar: "Inkar"
@@ -4811,7 +4839,7 @@
  Estrella: "Estrella"
  Etelvina: "Etelvina"
  Eufrasia: "Eufrasia"
- Eulalia_es: "Eulalia"
+# Eulalia_es: "Eulalia" #DELETE
  Eulogia: "Eulogia"
  Eustolia: "Eustolia"
  Evita: "Evita"
@@ -5353,7 +5381,7 @@
  Policarpo: "Policarpo"
  Polifemo: "Polifemo"
  Porfirio: "Porfirio"
- Poseidon: "Poseidón"
+# Poseidon: "Poseidón" #DELETE
  Priamo: "Priamo"
  Procopio: "Procopio"
  Prometeo: "Prometeo"
@@ -5428,7 +5456,7 @@
  Ulrico: "Ulrico"
  Uriel: "Uriel"
  Valeriano: "Valeriano"
- Valerio: "Valerio"
+# Valerio: "Valerio" #DELETE
  Venturo: "Venturo"
  Vermundo: "Vermundo"
  Vero: "Vero"
@@ -5757,7 +5785,7 @@
  Tullius: "Tullius"
  Tullus: "Tullus"
  Ulpius: "Ulpius"
- Valerius: "Valerius"
+# Valerius: "Valerius" #DELETE
  Verginius: "Verginius"
  Vesuvius: "Vesuvius"
  Veturius: "Veturius"
@@ -6548,7 +6576,7 @@
  Hujata: "Hujata"
  Huna: "Huna"
  Husain: "Husain"
- Husayn: "Husayn"
+# Husayn: "Husayn" #DELETE
  Hussain: "Hussain"
  Hussein: "Hussein"
  Hussein_Shahi: "Hussein Shahi"
@@ -6835,7 +6863,7 @@
  Khen: "Khen"
  Khesiwa: "Khesiwa"
  Khetpal: "Khetpal"
- Khidr: "Khidr"
+# Khidr: "Khidr" #DELETE
  Khinrah: "Khinrah"
  Khivi: "Khivi"
  Khokhar: "Khokhar"
@@ -7534,7 +7562,7 @@
  Qadira: "Qadira"
  Qadirid: "Qadirid"
  Qadr: "Qadr"
- Qasim: "Qasim"
+# Qasim: "Qasim" #DELETE
  Qasim_Beg: "Qasim Beg"
  Quadari: "Quadari"
  Qudsia: "Qudsia"
@@ -7769,7 +7797,7 @@
  Sayf-ud-Din_Hamza: "Sayf-ud-Din Hamza"
  Sayid_Hanif: "Sayid Hanif"
  Sayid_Nasir_al-Din: "Sayid Nasir al-Din"
- Sayyid_Khidr: "Sayyid Khidr"
+# Sayyid_Khidr: "Sayyid Khidr" #DELETE
  Sayyidi: "Sayyidi"
  Seema: "Seema"
  Sehrish: "Sehrish"
@@ -7810,7 +7838,7 @@
  Shantaladevi: "Shantaladevi"
  Shanti: "Shanti"
  Shara: "Shara"
- Sharif: "Sharif"
+# Sharif: "Sharif" #DELETE
  Sharma: "Sharma"
  Sharqi: "Sharqi"
  Sharva: "Sharva"
@@ -7842,7 +7870,7 @@
  Silameghavanna: "Silameghavanna"
  Silavamsi: "Silavamsi"
  Silmini: "Silmini"
- Sinan: "Sinan"
+# Sinan: "Sinan" #DELETE
  Sindhi: "Sindhi"
  Sindhia: "Sindhia"
  Singama: "Singama"
@@ -7893,7 +7921,7 @@
  Sthitavarman: "Sthitavarman"
  Subarnachandra: "Subarnachandra"
  Subhakaradeva: "Subhakaradeva"
- Subhan: "Subhan"
+# Subhan: "Subhan" #DELETE
  Sudangpha: "Sudangpha"
  Sudata: "Sudata"
  Sudevaraja: "Sudevaraja"
@@ -8471,7 +8499,7 @@
  Tyvertsky: "Tyvertsky"
  Ulich: "Ulich"
  Ulita: "Ulita"
- Valeriy: "Valeriy"
+# Valeriy: "Valeriy" #DELETE
  Vasiliev: "Vasiliev"
  Vasilievich: "Vasilievich"
  Vasiliy: "Vasiliy"
@@ -8536,7 +8564,7 @@
  Amery: "Amery"
  Violet: "Violet"
  Afraig: "Afraig"
- Emin: "Emin"
+# Emin: "Emin" #DELETE
  Slaine: "Slaine"
  Felim: "Féilim"
  Sean: "Seán"
@@ -8707,7 +8735,7 @@
  Kansoleh: "Kansoleh"
  Kante: "Kante"
  Kant: "Kant"
- Karim: "Karim"
+# Karim: "Karim" #DELETE
  Kashim: "Kashim"
  Katsina: "Katsina"
  Kenga: "Kenga"
@@ -8745,7 +8773,7 @@
  Mariama: "Mariama"
  Massamba: "Massamba"
  Mayan: "Mayan"
- Maysa: "Maysa"
+# Maysa: "Maysa" #DELETE
  Mbegan: "Mbegan"
  Mbissine: "Mbissine"
  Mgbafor: "Mgbafor"
@@ -9218,7 +9246,7 @@
  rhuddlan: "Rhuddlan"
  Artur: "Artur"
  Claudia_catalan: "Clàudia"
- Eulalia_catalan: "Eulàlia"
+# Eulalia_catalan: "Eulàlia" #DELETE
  Lidia_catalan: "Lídia"
  Llorenc: "Llorenç"
  Lluc: "Lluc"
@@ -10334,7 +10362,7 @@
  Alaso: "Alaso"
  Ambro: "Ambro"
  Amburo: "Amburo"
- Asli: "Asli"
+# Asli: "Asli" #DELETE
  Astur: "Astur"
  Awrala: "Awrala"
  Ayaan: "Ayaan"
@@ -10635,7 +10663,7 @@
  Farrah: "Farrah"
  Fathiyya: "Fathiyya"
  Fatin: "Fatin"
- Fatma: "Fatma"
+# Fatma: "Fatma" #DELETE
  Fawziya: "Fawziya"
  Fawziyya: "Fawziyya"
  Fayruz: "Fayruz"
@@ -10758,7 +10786,7 @@
  Nimat: "Nimat"
  Nuha: "Nuha"
  Nura: "Nura"
- Qamar: "Qamar"
+# Qamar: "Qamar" #DELETE
  Raabi_a: "Raabi'a"
  Rabi_a: "Rabi'a"
  Rabi: "Rabi"
@@ -10787,7 +10815,7 @@
  Ruwa: "Ruwa"
  Ruya: "Ruya"
  Sa_adat: "Sa'adat"
- Sabah: "Sabah"
+# Sabah: "Sabah" #DELETE
  Sabeen: "Sabeen"
  Sabriyya: "Sabriyya"
  Sabri: "Sabri"
@@ -10796,7 +10824,7 @@
  Sa_di: "Sa'di"
  Safiya: "Safiya"
  Safiyyah: "Safiyyah"
- Sahar: "Sahar"
+# Sahar: "Sahar" #DELETE
  Sa_ida: "Sa'ida"
  Sakina: "Sakina"
  Salha: "Salha"
@@ -10842,13 +10870,13 @@
  Uzma: "Uzma"
  Wafiya: "Wafiya"
  Waheeda: "Waheeda"
- Wahida: "Wahida"
+# Wahida: "Wahida" #DELETE
  Widad: "Widad"
  Yasmeen: "Yasmeen"
  Yusra: "Yusra"
  Zaahira: "Zaahira"
  Zahia: "Zahia"
- Zahida: "Zahida"
+# Zahida: "Zahida" #DELETE
  Zahira: "Zahira"
  Zaina: "Zaina"
  Zainab: "Zainab"
@@ -12251,14 +12279,14 @@
  Shikot: "Shikot"
  Toya: "Toya"
  Upash: "Upash"
- Abdulaziz: "Abdulaziz"
- Abdulhamit: "Abdülhamit"
- Abdulmecit: "Abdülmecit"
- Abdulrahman: "Abdulrahman"
- Ahmet: "Ahmet"
+# Abdulaziz: "Abdulaziz" #DELETE
+# Abdulhamit: "Abdülhamit" #DELETE
+# Abdulmecit: "Abdülmecit" #DELETE
+# Abdulrahman: "Abdulrahman" #DELETE
+# Ahmet: "Ahmet" #DELETE
  Aksonqor: "Aksonqor"
- Alaattin: "Alaattin"
- Alaeddin: "Alaeddin"
+# Alaattin: "Alaattin" #DELETE
+# Alaeddin: "Alaeddin" #DELETE
  Alkan: "Alkan"
  Alp_Arslan: "Alp Arslan"
  Alp_Yurek: "Alp Yurek"
@@ -12283,17 +12311,17 @@
  Bugra: "Bugra"
  Bulend: "Bulend"
  Burak: "Burak"
- Celalettin: "Celalettin"
- Cem: "Cem"
- Cemal: "Cemal"
- Cihangir: "Cihangir"
+# Celalettin: "Celalettin" #DELETE
+# Cem: "Cem" #DELETE
+# Cemal: "Cemal" #DELETE
+# Cihangir: "Cihangir" #DELETE
  Cuneyd: "Cuneyd"
- Cuneyt: "Cüneyt"
+# Cuneyt: "Cüneyt" #DELETE
  Cagri: "Çagri"
  Caka: "Çaka"
- Cengiz: "Çengiz"
+# Cengiz: "Çengiz" #DELETE
  Danismend: "Danismend"
- Demir: "Demir"
+# Demir: "Demir" #DELETE
  Dogan: "Dogan"
  Dogukan: "Dogukan"
  Dukak: "Dukak"
@@ -12303,29 +12331,29 @@
  Ertan: "Ertan"
  Ertekin: "Ertekin"
  Ertugrul: "Ertugrul"
- Ferhat: "Ferhat"
- Giyasettin: "Giyasettin"
+# Ferhat: "Ferhat" #DELETE
+# Giyasettin: "Giyasettin" #DELETE
  Oz_Beg: "Öz Beg"
  Jani: "Jani"
  Berdi: "Berdi"
  Tini: "Tini"
- Hayreddin: "Hayreddin"
- Harun: "Harun"
+# Hayreddin: "Hayreddin" #DELETE
+# Harun: "Harun" #DELETE
  Hizir: "Hizir"
  Huseyin: "Hüseyin"
  Ilgazi: "Ilgazi"
  Inal: "Inal"
  Immadin: "Immadin"
- Ishak: "Ishak"
- Iskender: "Iskender"
- Izzettin: "Izzettin"
+# Ishak: "Ishak" #DELETE
+# Iskender: "Iskender" #DELETE
+# Izzettin: "Izzettin" #DELETE
  Kaikaus: "Kaikaus"
  Kaikhusraw: "Kaikhusraw"
  Kaiqobad: "Kaiqobad"
- Kamer: "Kamer"
+# Kamer: "Kamer" #DELETE
  Kara: "Kara"
  Karatay: "Karatay"
- Kasim: "Kasim"
+# Kasim: "Kasim" #DELETE
  Kaytun: "Kaytun"
  Kemal: "Kemal"
  Kilic: "Kiliç"
@@ -12334,22 +12362,22 @@
  Kutalmis: "Kutalmis"
  Kutay: "Kutay"
  Kutlug: "Kutlug"
- Meliksah: "Meliksah"
+# Meliksah: "Meliksah" #DELETE
  Mengucek: "Mengucek"
- Mesud: "Mesud"
- Mursel: "Mursel"
+# Mesud: "Mesud" #DELETE
+# Mursel: "Mursel" #DELETE
  Nasimi: "Nasimi"
- Nizamettin: "Nizamettin"
+# Nizamettin: "Nizamettin" #DELETE
  Numan: "Numan"
  Ogulcan: "Oğulcan"
- Omer: "Ömer"
+# Omer: "Ömer" #DELETE
  Porsuk: "Porsuk"
- Recep: "Recep"
+# Recep: "Recep" #DELETE
  Ridvan: "Ridvan"
  Rustem: "Rustem"
  Saim: "Saim"
- Sait: "Sait"
- Salih: "Ṣāliḥ"
+# Sait: "Sait" #DELETE
+# Salih: "Ṣāliḥ" #DELETE
  Thattvi: "Thattvi"
  Saltuk: "Saltuk"
  Saruca: "Saruca"
@@ -12358,16 +12386,17 @@
  Sehinsah: "Sehinsah"
  Selcuk: "Selçuk"
  Sencer: "Sencer"
- Seyfettin: "Seyfettin"
+# Seyfettin: "Seyfettin" #DELETE
  Sobuk: "Söbuk"
  Sokmen: "Sökmen"
  Sonmez: "Sönmez"
  Tanrivermis: "Tanrivermis"
  Tekin: "Tekin"
- Timurtas: "Timurtas"
+# Timurtas: "Timurtas" #DELETE
  Togay: "Togay"
  Togtekin: "Togtekin"
- Toktamis: "Toktamis"
+# Toktamis: "Toktamis" #OLD
+ Toktamis: "Toktamiş" #NEW
  Tolun: "Tolun"
  Toruntay: "Toruntay"
  Tugrul: "Tugrul"
@@ -12376,16 +12405,16 @@
  Tutus: "Tutus"
  Uluc: "Uluç"
  Umur: "Umur"
- Yakup: "Yakup"
+# Yakup: "Yakup" #DELETE
  Yaman: "Yaman"
  Yinal: "Yinal"
- Yunus: "Yunus"
+# Yunus: "Yunus" #DELETE
  Akgul: "Akgul"
  Alime: "Alime"
  Aslihan: "Aslihan"
  Ayasun: "Ayasun"
  Ayla: "Ayla"
- Ayse: "Ayse"
+# Ayse: "Ayse" #DELETE
  Ayten: "Ayten"
  Azize: "Azize"
  Banu: "Banu"
@@ -12397,70 +12426,79 @@
  Ciltanesi: "Çiltanesi"
  Dilber: "Dilber"
  Dilek: "Dilek"
- Dunya: "Dunya"
+# Dunya: "Dunya" #DELETE
  Esin: "Esin"
- Firuze: "Firuze"
- Gulay: "Gulay"
- Gulbahar: "Gulbahar"
+# Firuze: "Firuze" #DELETE
+# Gulay: "Gulay" #OLD
+ Gulay: "Gülay" #NEW
+# Gulbahar: "Gulbahar" #DELETE
  Gulcicek: "Gulçiçek"
  Gulfem: "Gulfem"
  Gulsum: "Gulsum"
- Gumus: "Gumus"
+# Gumus: "Gumus" #DELETE
  Gundes: "Gundes"
  Gunduz: "Gunduz"
- Gunes: "Gunes"
+# Gunes: "Gunes" #OLD
+ Gunes: "Güneş" #NEW
  Handan: "Handan"
- Hatice: "Hatice"
+# Hatice: "Hatice" #DELETE
  Hayat: "Hayat"
- Huma: "Hüma"
- Huriye: "Huriye"
- Hurrem: "Hürrem"
+# Huma: "Hüma" #DELETE
+# Huriye: "Huriye" #DELETE
+# Hurrem: "Hürrem" #DELETE
  Ilkay: "Ilkay"
- Ilknur: "Ilknur"
- Ipek: "Ipek"
- Ipekel: "Ipekel"
+# Ilknur: "Ilknur" #OLD
+ Ilknur: "İlknur" #NEW
+# Ipek: "Ipek" #OLD
+ Ipek: "İpek" #NEW
+# Ipekel: "Ipekel" #OLD
+ Ipekel: "İpekel" #NEW
  Irge: "Irge"
  Karacik: "Karacik"
  Kosem: "Kösem"
- Lale: "Lale"
- Ozgul: "Özgul"
+# Lale: "Lale" #DELETE
+# Ozgul: "Özgul" #OLD
+ Ozgul: "Özgül" #NEW
  Ozlem: "Özlem"
- Mansure: "Mansure"
- Merve: "Merve"
+# Mansure: "Mansure" #DELETE
+# Merve: "Merve" #DELETE
  Mihri: "Mihrî"
  Mihrimah: "Mihrimah"
  Mutlu: "Mutlu"
  Nagihan: "Nagihan"
  Nergis: "Nergis"
  Neslihan: "Neslihan"
- Nilufer: "Nilufer"
+# Nilufer: "Nilufer" #DELETE
  Nurbanu: "Nurbanu"  
  Peksen: "Peksen"
- Safiye: "Safiye"
+# Safiye: "Safiye" #DELETE
  Samur: "Samur"
  Sarica: "Sarica"
- Sehnaz: "Sehnaz"
+# Sehnaz: "Sehnaz" #DELETE
  Serap: "Serap"
- Serife: "Serife"
+# Serife: "Serife" #DELETE
  Sevilay: "Sevilay"
  Sevindik: "Sevindik"
  Sibel: "Sibel"
  Sibylla: "Sibylla"
  Sirin: "Sirin"
  Sirma: "Sirma"
- Songul: "Songul"
+# Songul: "Songul" #OLD
+ Songul: "Songül" #NEW
  Sumru: "Sumru"   
  Tekce: "Tekçe"
  Terkhen: "Terkhen"
  Tura: "Tura"
  Umay: "Umay"
  Usunbike: "Usunbike"
- Vahide: "Vahide"
- Yasar: "Yasar"
+# Vahide: "Vahide" #DELETE
+# Yasar: "Yasar" #OLD
+ Yasar: "Yaşar" #NEW
  Yeldem: "Yeldem"
- Yildiz: "Yildiz"
- Zeynep: "Zeynep"
- Zuhal: "Zuhal"
+# Yildiz: "Yildiz" #OLD
+ Yildiz: "Yıldız" #NEW
+# Zeynep: "Zeynep" #DELETE
+# Zuhal: "Zuhal" #DELETE
  Abas: "Abas"
  Abirad: "Abirad"
  Aboughamr: "Aboughamr"
@@ -12730,7 +12768,7 @@
  Agha: "Âghâ"
  Akbar: "Akbar"
  Allahyar: "Allahyar"
- Amin: "Amin"
+# Amin: "Amin" #DELETE
  Anushirvan: "Anushirvan"
  Ardahan: "Ardahan"
  Ardavan: "Ardavan"
@@ -12754,7 +12792,7 @@
  Esmail: "Esma'il"
  Faramarz: "Faramarz"
  Faraz: "Faraz"
- Farhad: "Farhad"
+# Farhad: "Farhad" #DELETE
  Fariborz: "Fariborz"
  Farroukh: "Farroukh"
  Farrukhzad: "Farrukhzad"
@@ -12811,7 +12849,7 @@
  Peroz: "Peroz"
  Pujman: "Pujman"
  Reza: "Reza"
- Rostam: "Rostam"
+# Rostam: "Rostam" #DELETE
  Ruhollah: "Ruhollah"
  Sadri: "Sadri"
  Safi: "Safi"
@@ -12862,7 +12900,7 @@
  Ghamze: "Ghamze"
  Ghazal: "Ghazal"
  Ghoncheh: "Ghoncheh"
- Golbahar: "Golbahar"
+# Golbahar: "Golbahar" #DELETE
  Golnaz: "Golnaz"
  Golpari: "Golpari"
  Golshan: "Golshan"
@@ -15291,7 +15329,7 @@
  Telerig: "Telerig"
  Tervel: "Tervel"
  Timer: "Timër"
- Timur: "Timur"
+# Timur: "Timur" #DELETE
  Timerec: "Timëreç"
  Timerpalat: "Timërpälat"
  Tingiz: "Tingiz"
@@ -22847,7 +22885,7 @@
  de_Valdivia: "de Valdivia"
  Valdivieso: "Valdivieso"
  do_Vale: "do Vale"
- Valero: "Valero"
+# Valero: "Valero" #DELETE
  del_Valle: "del Valle"
  Valles: "Vallès"
  Valls: "Valls"
@@ -24078,7 +24116,7 @@
  Hozan: "Hozan"
  Husen: "Husên"
  Ibrahim_kurd: "Îbrahîm"
- Kerim: "Kerîm"
+# Kerim: "Kerîm" #DELETE
  Mehmud: "Mehmûd"
  Mihemed: "Mihemed"
  Mistefa: "Mistefa"
@@ -24237,7 +24275,7 @@
  Deria: "Deria"
  Derman: "Derman"
  Devken: "Devken"
- Didar: "Dîdar"
+# Didar: "Dîdar" #DELETE
  Dijwar: "Dijwar"
  Dilan: "Dîlan"
  Dilare: "Dilare"
@@ -24654,9 +24692,9 @@
  Asal: "Asal"
  Atefeh: "Atefeh"
  Ava: "Ava"
- Ayoub: "Ayoub"
+# Ayoub: "Ayoub" #DELETE
  Azar: "Azar"
- Bahador: "Bahador"
+# Bahador: "Bahador" #DELETE
  Baraz: "Baraz"
  Burhanuddin: "Burhanuddin"
  Daniyal: "Daniyal"
@@ -24684,7 +24722,7 @@
  Kian: "Kian"
  Kianoush: "Kianoush"
  Kourosh: "Kourosh"
- Laleh: "Laleh"
+# Laleh: "Laleh" #DELETE
  Mahin: "Mahin"
  Mahsa: "Mahsa"
  Mahvash: "Mahvash"
@@ -25179,7 +25217,7 @@
  Walagash: "Walagash"
  Aehmaed: "Əhməd"
  Aeli: "Əli"
- Aeminae: "Əminə"
+# Aeminae: "Əminə" #DELETE
  Arzu: "Arzu"
  Aygul: "Aygül"
  Aygun: "Aygün"
@@ -25278,7 +25316,7 @@
  Aytaj: "Aytaj"
  Aytaen: "Aytən"
  Ayxan: "Ayxan"
- Aeyyub: "Əyyub"
+# Aeyyub: "Əyyub" #DELETE
  Azadae: "Azadə"
  Aezim: "Əzim"
  Aezizae: "Əzizə"
@@ -25304,7 +25342,7 @@
  Bughaj: "Bughaj"
  Busaegul: "Busəgül"
  Caebrayil: "Cəbrayil"
- Cahangir: "Cahangir"
+# Cahangir: "Cahangir" #DELETE
  Caelal: "Cəlal"
  Caelaliyyae: "Cəlaliyyə"
  Caemaengul: "Çəməngül"
@@ -25334,7 +25372,7 @@
  Dilarae: "Dilarə"
  Dilbaer: "Dilbər"
  Dinarae: "Dinarə"
- Dunya_azeri: "Dünya"
+# Dunya_azeri: "Dünya" #DELETE
  Durna: "Durna"
  Dzhalal: "Dzhalal"
  Eldaeniz: "Eldəniz"
@@ -25388,7 +25426,7 @@
  Inarae: "İnarə"
  Inayaet: "İnayət"
  Iqnati: "Iqnati"
- Iris_azeri: "Iris"
+# Iris_azeri: "Iris" #DELETE
  Isfaendiyar: "Isfəndiyar"
  Isgaendaer: "İsgəndər"
  Istfan: "Istfan"
@@ -25403,7 +25441,7 @@
  Lalae: "Lalə"
  Laeman: "Ləman"
  Laetifae: "Lətifə"
- Laeyla: "Ləyla"
+# Laeyla: "Ləyla" #DELETE
  Maecid: "Məcid"
  Maehaebbaet: "Məhəbbət"
  Mahirae: "Mahirə"
@@ -25475,7 +25513,7 @@
  Rufaet: "Rüfət"
  Rza: "Rza"
  Saeadaet: "Səadət"
- Sabah_azeri: "Şabah"
+# Sabah_azeri: "Şabah" #DELETE
  Saebinae: "Səbinə"
  Sabit: "Sabit"
  Saebnaem: "Şəbnəm"
@@ -25483,13 +25521,13 @@
  Saefa: "Şəfa"
  Saefaer: "Səfər"
  Saefurae: "Səfurə"
- Sahar_azeri: "Şahar"
+# Sahar_azeri: "Şahar" #DELETE
  Saehaer: "Səhər"
  Sahbaz: "Şahbaz"
  Sahil: "Sahil"
  Saehla: "Şəhla"
  Saehriyar: "Şəhriyar"
- Saeid_azeri: "Səid"
+# Saeid_azeri: "Səid" #DELETE
  Saeidae: "Səidə"
  Saelalae: "Şəlalə"
  Saemaed: "Səməd"
@@ -25504,7 +25542,7 @@
  Sofiya: "Sofiya"
  Sokrat: "Sokrat"
  Solmaz: "Solmaz"
- Subhan_azeri: "Sübhan"
+# Subhan_azeri: "Sübhan" #DELETE
  Sufyan: "Süfyan"
  Sukur: "Şükür"
  Taebriz: "Təbriz"
@@ -25541,7 +25579,7 @@
  Yeremya: "Yeremya"
  Yunis: "Yunis"
  Yusae: "Yuşə"
- Zahidae: "Zahidə"
+# Zahidae: "Zahidə" #DELETE
  Zahirae: "Zahirə"
  Zaehra: "Zəhra"
  Zakir: "Zakir"
@@ -25571,7 +25609,7 @@
  Terekeme: "Terekeme"
  Qajar: "Qajar"
  Annagul: "Annagül"
- Ayna_turkmen: "Aýna"
+# Ayna_turkmen: "Aýna" #DELETE
  Aynabat: "Aýnabat"
  Bahargul: "Bahargul"
  Batyr: "Batyr"
@@ -25581,7 +25619,7 @@
  Nyazik: "Nyazik"
  Rowsen: "Röwşen"
  Sona: "Sona"
- Suleyman_turkmen: "Süleýman"
+# Suleyman_turkmen: "Süleýman" #DELETE
  Yusup: "Ýusup"
  Abadan: "Abadan"
  Akgyz: "Akgyz"
@@ -25598,18 +25636,18 @@
  Cynar: "Çynar"
  Dayanc: "Daýanç"
  Deniz: "Deňiz"
- Didar_turkmen: "Didar"
+# Didar_turkmen: "Didar" #DELETE
  Dildara: "Dildara"
  Dileg: "Dileg"
  Dilfuza: "Dilfuza"
  Dowlet: "Döwlet"
  Dowran: "Döwran"
  Doyduk: "Doýduk"
- Dunya_turkmen: "Dünyä"
+# Dunya_turkmen: "Dünyä" #DELETE
  Durdy: "Durdy"
  Dzhamilya: "Dzhamilya"
  Eymir: "Eýmir"
- Eyyub_turkmen: "Eýýüb"
+# Eyyub_turkmen: "Eýýüb" #DELETE
  Ezizjan: "Ezizjan"
  Gadyr: "Gadyr"
  Gapbar: "Gapbar"
@@ -25634,17 +25672,17 @@
  Julyen: "Jülyen"
  Kadyr: "Kadyr"
  Kasym: "Kasym"
- Kerim_turkmen: "Kerim"
+# Kerim_turkmen: "Kerim" #DELETE
  Keyik: "Keyik"
  Kumus: "Kümüş"
  Kurban: "Kurban"
- Lale_turkmen: "Läle"
+# Lale_turkmen: "Läle" #DELETE
  Mahri: "Mähri"
  Mahym: "Mahym"
  Maksat: "Maksat"
- Mati_turkmen: "Mäti"
+# Mati_turkmen: "Mäti" #DELETE
  Mayabibi: "Mayabibi"
- Maysa_turkmen: "Maýsa"
+# Maysa_turkmen: "Maýsa" #DELETE
  Mekan: "Mekan"
  Merjen: "Merjen"
  Meylis: "Meýlis"
@@ -25687,7 +25725,7 @@
  Selbi: "Selbi"
  Semsat: "Şemşat"
  Sirli: "Şirli"
- Sofiya_turkmen: "Sofiýa"
+# Sofiya_turkmen: "Sofiýa" #DELETE
  Sohbet: "Sohbet"
  Soyeg: "Söýeg"
  Sulgun: "Sülgün"
@@ -25701,7 +25739,7 @@
  Yagmyr: "Ýagmyr"
  Yhlas: "Yhlas"
  Yildyz: "Yildiz"
- Yunus_turkmen: "Ýunus"
+# Yunus_turkmen: "Ýunus" #DELETE
  Yupek: "Ýüpek"
  Yyldyrym: "Ýyldyrym"
  Zohre: "Zöhre"
@@ -25784,7 +25822,7 @@
  Aslambek: "Aslambek"
  Aymani: "Aymani"
  Aysha: "Aysha"
- Ayub: "Ayub"
+# Ayub: "Ayub" #DELETE
  Ayza: "Ayza"
  Ayzanat: "Ayzanat"
  Bartsalay: "Bartsalay"
@@ -25924,7 +25962,7 @@
  Rumisa: "Rumisa"
  Ruqayyat: "Ruqayyat"
  Ruvayda: "Ruvayda"
- SHamil: "SHamil"
+# SHamil: "SHamil" #DELETE
  Safiyat: "Safiyat"
  Sagid: "Sagid"
  Sagidat: "Sagidat"
@@ -26046,7 +26084,7 @@
  Toghrilcha: "Toghrilcha"
  Qasar: "Qasar"
  Kaybad: "Kaybad"
- Agrugchi: "Agrugchi"
+# Agrugchi: "Agrugchi" #DELETE
  Temur_Buqa: "Temür Buqa"
  Buqa: "Buqa" 
  Chosbal: "Chosbal"
@@ -26721,7 +26759,7 @@
  Chepchen: "Chepchen"
  Chekes: "Chӗkeş"
  Elime: "Elime"
- Emine: "Emine"
+# Emine: "Emine" #DELETE
  Erhime: "Erhime"
  Kakhvise: "Kakhvise"
  Kalime: "Kalime"
@@ -29068,6 +29106,12 @@
  de_Louvres: "de Louvres"
  Petrarca: "Petrarca"
  Boccaccio: "Boccaccio"
+ Catanese: "Catanese" #NEW
+ Rangabe: "Rangabe" #NEW
+ the_armenian: "l'Armeno" #NEW
+ the_amorian: "l'Amorita" #NEW
+ the_paphlagonian: "il Paflagonico" #NEW
+ Monomachos: "Monomachos" #NEW
  Donati: "Donati"
  Villani: "Villani"
  Coluccio: "Coluccio"
@@ -29214,8 +29258,8 @@
  Offesson: "Offesson"
  ulfeldt: "Ulfeldt"
  grammaticus: "Grammaticus"
- name_mageraghty: "Mageraghty"
- name_mageraghty.gaelic_language: "mág Oireachtaigh"
+# name_mageraghty: "Mageraghty" #DELETE
+# name_mageraghty.gaelic_language: "mág Oireachtaigh" #DELETE
  jansen_wessel: "Jansen Wessel"
  nick_tordenskjold: "Tordenskjold"
  andersen: "Andersen"
@@ -29328,7 +29372,7 @@
  al_mansuri: "al-Manṣūrī"
  al_adil: "al-'Ādil"
  kitbugha: "Kitbuġā"
- sayf: "Sayf"
+# sayf: "Sayf" #DELETE
  qutlughmalik: "Qutlughmalik"
  narjis: "Narjis"
  al_ashraf: "al-Ašraf"
@@ -29427,7 +29471,8 @@
  Melanchton: "Melanchton"
  Bullinger: "Bullinger"
  Quasimodo: "Quasimodo"
- hunchback: "il Gobbo"
+ nick_hunchback: "the Hunchback" #NEW
+# hunchback: "il Gobbo" #DELETE
  basalota: "Basalota"
  Misson: "Misson"
  Reis: "Reis"
@@ -30651,7 +30696,7 @@
  de_Lezo_y_Olavarrieta: "de Lezo y Olavarrieta"
  Pontano: "Pontano"
  name_mimar: "Mi'mâr"
- sinan: "Sinân"
+# sinan: "Sinân" #DELETE
  al_Din_al_Sakhawi: "al-Dīn al-Sakhāwī"
  name_ibn_hajar: "Ibn Ḥajar"
  al_Asqalani: "al-'Asqalānī"
@@ -30791,4 +30836,38 @@
  Nyinamwiru: "Nyinamwiru"
  von_kulsheim: "von Külsheim" 
  Lvov: "Lvov" 
+ asme: "Aşme" #NEW
+ germine: "Germıne" #NEW
+ gulane: "Gulane" #NEW
+ peline: "Pelıne" #NEW
+ rocgule: "Rocgule" #NEW
+ sosine: "Sosıne" #NEW
+ ticida: "Ticida" #NEW
+ vilika: "Vilike" #NEW
+ zelale: "Zelale" #NEW
+ zerre: "Zerre" #NEW
+ zeryam: "Zeryam" #NEW
+ asmen: "Asmên" #NEW
+ astare: "Astare" #NEW
+ bertal: "Bertal" #NEW
+ berz: "Berz" #NEW
+ comerd: "Comerd" #NEW
+ cher: "Çhêr" #NEW
+ newecan: "Newecan" #NEW
+ peroc: "Peroc" #NEW
+ usar: "Usar" #NEW
+ veroc: "Veroc" #NEW
+ xanbeg: "Xanbeg" #NEW
+ lava: "Lava" #NEW
+ layro: "Layro" #NEW
+ lawko: "Lawko" #NEW
+ lizge: "Lizge" #NEW
  jonsson: "Jonsson" 
+ name_shahnshah: "Shahnshah" #NEW
+ Caligula: "Caligula" #NEW
+ Caracalla: "Caracalla" #NEW
+ Gothicus: "Gothicus" #NEW
+ Bulgaroktonos: "Bulgaroktonos" #NEW
+ Porphyrogennetos: "Porphyrogennetos" #NEW
+ the_apostate: "l'Apostata" #NEW
+ the_great_reformer: "il Grande Riformatore" #NEW

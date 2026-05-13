@@ -212,9 +212,9 @@
  artist_events.41.a: "Lasciate che continui a scrivere."
  artist_events.41.b: "Fate in modo che la smetta."
 
- artist_events.42.title: "[target_character.GetNameWithNoTooltip] Sostiene il Cambio Politico"
- artist_events.42.desc: "Il funzionamento interno del nostro governo è piuttosto complesso e spesso lascia spazio alla corruzione e alle lobby. L'ultima sfida al nostro potere proviene nientemeno che da [target_character.GetName]. Secondo la sua retorica, [target_character_2.GetName] sta danneggiando attivamente la stabilità e l'efficienza del nostro sistema legale. In un apparente tentativo di riparare il danno, [target_character.GetShortNameWithNoTooltip] suggerisce l'implementazione di [target_policy.GetName]'. Tuttavia, è chiaro che [target_estate.GetName] parli come tramite, proprio come un burattino."
- artist_events.42.a: "Lo sguardo severo di [target_character_2.GetShortNameWithNoTooltip] punisce la corruzione."
+ artist_events.42.title: "[target_character.GetNameWithNoTooltip] Sostiene il Cambiamento Politico"
+ artist_events.42.desc: "Il funzionamento interno del nostro governo è piuttosto complesso e spesso lascia spazio alla corruzione e alle lobby. L'ultima sfida al nostro potere proviene nientemeno che da [target_character.GetName]. Secondo la sua retorica, [target_character_2.Custom('IT_ART_TITOLO')][target_character_2.GetName] sta danneggiando attivamente la stabilità e l'efficienza del nostro sistema legale. In un apparente tentativo di riparare il danno, [target_character.GetShortNameWithNoTooltip] suggerisce l'implementazione della politica [target_policy.GetName]. Tuttavia, è chiaro che il ceto [target_estate.GetName] parli attraverso di [target_character.GetHerHim], proprio come un burattino."
+ artist_events.42.a: "Lo sguardo virtuoso [target_character_2.Custom('IT_DEL_TITOLO')][target_character_2.GetShortNameWithNoTooltip] punisce la corruzione."
  artist_events.42.b: "Non possiamo rischiare di irritare [target_character.GetShortNameWithNoTooltip] e i suoi sostenitori."
  artist_events.42.c: "Dimentica qual è il suo posto."
  depends_on_change_policy_cost_tt: "La [stability|e] spesa dipende in larga misura dai [costs|e] correnti per cambiare una [policy|e] di una [law|e]"
@@ -233,7 +233,7 @@
  every_supporter_pop_gains_20_satisfaction_tt: "Ogni [pop|e] a supporto della [rebellion|e] dei [target_rebel.GetName] otterrà il [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] di [pop_satisfaction|e]"
 
  artist_events.45.title: "Una Piacevole Coincidenza Legale"
- artist_events.45.desc: "Sembra che [target_character.GetName] abbia recentemente rappresentato membri di spicco del [target_estate.GetName] in tribunale, ottenendo risultati favorevoli. Come ricompensa, hanno fatto una generosa donazione alle nostre casse. Sebbene questo beneficio monetario aumenterà sicuramente la nostra ricchezza, i nostri consulenti sono ansiosi di suggerire innumerevoli modi per investire correttamente i nostri nuovi soldi."
+ artist_events.45.desc: "Sembra che [target_character.GetName] abbia recentemente rappresentato membri di spicco appartenenti al ceto [target_estate.GetName] in tribunale, ottenendo risultati favorevoli. Come ricompensa, hanno fatto una generosa donazione alle nostre casse. Sebbene questo beneficio monetario aumenterà sicuramente la nostra ricchezza, i nostri consulenti sono ansiosi di suggerire innumerevoli modi per investire correttamente i nostri nuovi soldi."
  artist_events.45.a: "Li ringraziamo per il loro dono!"
  artist_events.45.b: "Investiamo i soldi per potenziare le abilità di [target_character.GetShortNameWithNoTooltip]."
 

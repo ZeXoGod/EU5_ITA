@@ -2,6 +2,7 @@
  PRICE_ON_WAR_IMPACT_ENTRY: "@trigger_yes!$NAME$ : $PRICE$"
  PRICE_ON_WAR_ANTAGONISM: "Ciò farà anche sì che altri [countries|e] provino [antagonism|e] verso di noi, dipenderà da quanto tengono a questa guerra:"
  PRICE_ON_WAR_ANTAGONISM_ENTRY: "$NAME$: Base di $VAL|Y$[antagonism_i]"
+ PRICE_ON_WAR_ANTAGONISM_ENTRY_LOCATION: "$NAME$ ([LOCATION.GetRank.GetIcon] [LOCATION.GetName]): Base di $VAL|Y$[antagonism_i]" 
  PRICE_ON_WAR_KICKED_OUT_OF_IO: "Alcune [international_organizations|e] disapprovano la dichiarazione di guerra contro altri membri:"
  PRICE_ON_WAR_KICKED_OUT_OF_IO_ENTRY: "@trigger_yes!Saremo espulsi [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_DAL')][INTERNATIONAL_ORGANIZATION.GetName]"
  DECLARE_WAR_ENEMY_ALLY_ALREADY_AT_WAR: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]! NON può unirsi alla [war|e] perché è in [war|e] con [DEFENDER.Custom('IT_La')][DEFENDER.GetName|Y] @[DEFENDER.GetFlag]!"
@@ -18,6 +19,9 @@
  DECLARE_WAR_CONFIRMATION_WARGOAL: "Dichiarare [war|e] [DEFENDER.Custom('IT_Alla')][DEFENDER.GetName|Y] @[DEFENDER.GetFlag]! usando l'[war_goal|e] $WARGOAL|Y$"
  DECLARE_WAR_CONFIRMATION_WARLEADER: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]! diventerà leader nemico della guerra"
  DECLARE_WAR_CONFIRMATION_STABHIT: "Effetti Immediati:"
+ INTERVENE_WAR_UNION_MEMBER_WARNING_TITLE: "Intervenire contro un Membro dell'Unione"
+ INTERVENE_WAR_UNION_MEMBER_WARNING_DESC: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] è un membro dell'unione e sarà dalla parte avversaria in questa guerra. Intervenire romperà l'unione! Sei sicuro di voler intervenire?"
+ INTERVENE_IN_WAR_CONFIRM_ACCEPT: "Intervenire Comunque"
  DECLARE_WAR_COST: "Costo della Dichiarazione di Guerra"
  DECLARE_WAR_NO_CASUS_BELLI_SELECTED: "Nessun [casus_belli|e] selezionato."
  CANNOT_DECLARE_WAR_NO_WAR_GOAL: "@trigger_no! Si deve selezionare un obiettivo di guerra."
@@ -25,4 +29,5 @@
  BREAKING_COBELLIGERENT_TRUCE: "Chiamare questo [country|e] come [cobelligerent|e] mentre si ha una [truce|e] porterà ad una perdita di [stability|e]!
  CANT_BREAK_COBELLIGERENT_TRUCE: "Questo [country|e] non può essere chiamato mentre si ha una [truce|e] con il nemico"
  WILL_ACCEPT_PROMISE_LAND: "[Country.Custom('IT_La')|U][Country.GetName] accetterà la [call_to_arms] se le si promette di cedergli territori nel [peace_treaty|e]."
+ PRICE_ON_WAR_TRUST: "Dichiarare guerra ridurrà immediatamente la nostra [trust|e] con i difensori di [GetDefine('NDiplomacy', 'TRUST_CHANGE_DECLARE_WAR')|R] e inoltre di [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_DEFENDER')|R] se stiamo rompendo una [truce|e] con loro. La rottura della tregua ridurrà la nostra reputazione presso tutte le altre nazioni nel raggio d'azione di [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_IN_RANGE')|R]."
 

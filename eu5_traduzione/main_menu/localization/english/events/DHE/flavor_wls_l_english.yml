@@ -6,16 +6,21 @@
  flavor_wls.10.c: "Chiudi questa assurdità."
 
  flavor_wls.11.title: "Owain Glyndŵr"
+ flavor_wls.11.entry: "$flavor_wls.11.title$" #NEW
  flavor_wls.11.desc: "Un gallese eccezionalmente intelligente, discendente dalla pre-conquista nativa dinastia reale [mathrafal_dynasty.GetName], è diventato in qualche modo il discorso della città. Dimostrando un talento di guidare e ispirare, potrebbe un giorno liberarci dai ceppi del nostro signore."
  flavor_wls.11.desc_subject: "Un gallese eccezionalmente intelligente, discendente dalla pre-conquista nativa dinastia reale [mathrafal_dynasty.GetName], è diventato in qualche modo il discorso della città. Dimostrando un talento di guidare e ispirare, potrebbe un giorno causare problemi tra i nostri fratelli [GetCountry('ENG').GetAdjective] e il popolo [GetCountry('WLS').GetAdjective]."
  flavor_wls.11.a: "Uno spirito libero non ha bisogno di guida."
- flavor_wls.11.tt1: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e sceglie il suo stesso percorso"
+# flavor_wls.11.tt1: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e sceglie il suo stesso percorso" #OLD
+ flavor_wls.11.tt1: "Owain Mathrafal is added as a character and chooses his own path" #NEW
  flavor_wls.11.b: "Sponsorizza una carriera nel diritto."
- flavor_wls.11.tt2: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e studia diritto"
+# flavor_wls.11.tt2: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e studia diritto" #OLD
+ flavor_wls.11.tt2: "Owain Mathrafal is added as a character and studies law" #NEW
  flavor_wls.11.c: "Arruolalo per il servizio militare."
- flavor_wls.11.tt3: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e diventa uno scudiero per [GetCountry('ENG').GetGovernment.GetRuler.GetName]"
+# flavor_wls.11.tt3: "[owain_glyndwr.GetNameWithNoTooltip] viene aggiunto come personaggio e diventa uno scudiero per [GetCountry('ENG').GetGovernment.GetRuler.GetName]" #OLD
+ flavor_wls.11.tt3: "Owain Mathrafal is added as a character and becomes a squire to [GetCountry('ENG').GetGovernment.GetRuler.GetName]" #NEW
 
  flavor_wls.12.title: "Appello al [GetCountry('ENG').GetGovernment.GetRulerTitle]"
+ flavor_wls.12.entry: "Appeal to the Eng" #NEW
  flavor_wls.12.desc: "Il notevole [owain_glyndwr.GetName] ha recentemente avuto un po' di terra confiscato da un barone vicino [GetCountry('ENG').GetAdjective]. Inoltre, sostiene anche di essere stato mal informato in merito a una citazione per mobilitare truppe feudali per il servizio di confine [GetCountry('SCO').GetAdjective] ed è stato etichettato come un traditore dai tribunali [GetCountry('ENG').GetAdjectiveWithNoTooltip].\n\nPer risolvere la controversia, desidera appellarsi direttamente a [GetCountry('ENG').GetGovernment.GetRuler.GetName] di [GetCountry('ENG').GetNameWithNoTooltip]."
  flavor_wls.12.a: "Invia la lettera."
  flavor_wls.12.tt: "[GetCountry('ENG').GetName] riceverà una lettera contenente un appello personale per la giustizia."
@@ -25,16 +30,20 @@
  flavor_wls.13.desc: "Il [GetCountry('ENG').GetAdjective] [GetCountry('ENG').GetGovernment.GetRulerTitle] ha rifiutato una richiesta di incontrarsi con [owain_glyndwr.GetName] per risolvere la controversia territoriale e la questione della diffamazione del suo onore. La decisione dei tribunali è rimasta, lasciandolo vulnerabile a ulteriori ritorsioni.\n\nOffeso dal suo trattamento, Owain ha preso da parte di dichiararsi il 'Principe del Galles' e sta sollevando una ribellione nel tentativo di rovesciare il dominio [GetCountry('ENG').GetAdjectiveWithNoTooltip]."
  owain_glyndar_rebels: "Glyndŵr Rebellion"
  flavor_wls.13.a: "Schiaccia il traditore!"
- flavor_wls.13.tt1: "[owain_glyndwr.GetName] avvierà una [ShowCultureName('welsh')] [civil_war|e] contro di noi. Eventuali [disloyal_subjects|e] si uniranno a lui. Se vincono, [owain_glyndwr.GetShortNameWithNoTooltip] diventerà indipendente."
+# flavor_wls.13.tt1: "[owain_glyndwr.GetName] avvierà una [ShowCultureName('welsh')] [civil_war|e] contro di noi. Eventuali [disloyal_subjects|e] si uniranno a lui. Se vincono, [owain_glyndwr.GetShortNameWithNoTooltip] diventerà indipendente." #OLD
+ flavor_wls.13.tt1: "Owain Mathrafal will start a [ShowCultureName('welsh')] [civil_war|e] against us. Any [disloyal_subjects|e] will join him. If they win, Owain will become independent." #NEW
  flavor_wls.13.b: "Unisciti alla causa!"
- flavor_wls.13.tt2: "[owain_glyndwr.GetName] avvierà una [ShowCultureName('welsh')] [civil_war|e], e ci uniremo! Eventuali [loyal_subjects|e] ci seguiranno. Se vinciamo, diventeremo indipendenti. "
+# flavor_wls.13.tt2: "[owain_glyndwr.GetName] avvierà una [ShowCultureName('welsh')] [civil_war|e], e ci uniremo! Eventuali [loyal_subjects|e] ci seguiranno. Se vinciamo, diventeremo indipendenti. " #OLD
+ flavor_wls.13.tt2: "Owain Mathrafal will start a [ShowCultureName('welsh')] [civil_war|e], and we will join it! Any [loyal_subjects|e] will follow us. If we win, we will become independent. " #NEW
 
  flavor_wls.14.title: "Terra e onore ripristinati"
+ flavor_wls.14.entry: "$flavor_wls.14.title$" #NEW
  flavor_wls.14.desc: "Il [GetCountry('ENG').GetAdjective] [GetCountry('ENG').GetGovernment.GetRulerTitle] ha annullato una sentenza di tribunale di [owain_glyndwr.GetName], al fine di risolvere la controversia territoriale e la questione della diffamazione del suo onore."
  flavor_wls.14.a: "Perdoneremo, ma non dimenticheremo."
  flavor_wls.14.tt: "[owain_glyndwr.GetNameWithNoTooltip] vede la sua fortuna ripristinata"
 
  flavor_wls.15.title: "Nobile [GetCountry('ENG').GetAdjectiveWithNoTooltip] catturato"
+ flavor_wls.15.entry: "$ENG_ADJ$ noble captured" #NEW
  flavor_wls.15.desc: "Un nobile e generale di nome [edmund_mortimer.GetName] è stato recentemente catturato in una scaramuccia di confine e il [GetCountry('ENG').GetGovernment.GetRulerTitle] di [GetCountry('ENG').GetName] ha rifiutato di fornire i fondi necessari per assicurare la sua libertà.\n\nLa famiglia [percy_dynasty.GetName] di [northumberland.GetName] e la famiglia [mortimer_dynasty.GetName] di [shropshire.GetName] ci si sono avvicinate con una proposta che libererebbe [edmund_mortimer.GetNameWithNoTooltip] dalla prigionia, mentre divide [GetCountry('ENG').GetNameWithNoTooltip] tra loro stessi, con [ROOT.GetCountry.GetName] che riceve diverse province occidentali in cambio."
  flavor_wls.15.desc_ransom_paid: "Una recente scaramuccia di confine ha visto la cattura di un generale [GetCountry('ENG').GetAdjective] e nobile noto come [edmund_mortimer.GetName].\n\n[GetCountry('ENG').GetNameWithNoTooltip] ha accettato di pagare un riscatto per il suo ritorno immediato."
  flavor_wls.15.a: "Accetta i termini."
@@ -46,7 +55,8 @@
  flavor_wls.15.c: "Non possono essere affidabili."
  flavor_wls.15.tt5: "I nobili saranno rifiutati"
  flavor_wls.15.d: "Liberalo."
- flavor_wls.15.tt6: "[edmund_mortimer.GetNameWithNoTooltip] sarà liberato"
+# flavor_wls.15.tt6: "[edmund_mortimer.GetNameWithNoTooltip] sarà liberato" #OLD
+ flavor_wls.15.tt6: "Edmund Mortimer will be released" #NEW
 
  flavor_wls.16.title: "Un Capomaestra Relazioni"
  flavor_wls.16.desc_england_success: "La famiglia [dishonorable_dynasty.GetName] ha elogiato [GetCountry('ENG').GetGovernment.GetRuler.GetName] per la manifestazione di generosità e hanno accettato di deporre le armi. Le nostre spie confermano le avvistamenti dei loro eserciti che si disperdono."
@@ -56,5 +66,6 @@
  flavor_wls.16.tt1: "I ribelli [dishonorable_dynasty.GetNameWithNoTooltip] si disperderanno"
  flavor_wls.16.b: "Come previsto."
  flavor_wls.16.c: "Era la pena di un tentativo."
- flavor_wls.16.tt2: "I ribelli rimangono leali a [owain_glyndwr.GetName]"
+# flavor_wls.16.tt2: "I ribelli rimangono leali a [owain_glyndwr.GetName]" #OLD
+ flavor_wls.16.tt2: "The rebels remain loyal to Owain Mathrafal" #NEW
 

@@ -3,6 +3,9 @@
 	text = { #ITA
 		localization_key = country_name_construction_degli
 		trigger = {
+			
+											 
+
 				OR = {
 					tag = TUR
 					tag = ERE
@@ -18,6 +21,8 @@
 	text = { #ITA
 		localization_key = country_name_construction_dei
 		trigger = {
+								 
+
 				OR = {
 					tag = MEN
 					tag = SRU
@@ -161,6 +166,38 @@
 		}
 	}
 	
+	type = country
+	text = {
+		localization_key = country_name_construction_ROM_republic # Senatus Populusque Romanus
+		trigger = {
+			tag = ROM
+			government_type = government_type:republic
+
+			OR = {
+				court_language ?= language:latin_language
+				culture.language = language:latin_language
+			}
+		}
+	}
+	text = {
+		localization_key = country_name_construction_BYZ_greek # Basileía Rhōmaíōn
+		trigger = {
+			has_game_rule = byz_name_greek
+
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+
+			country_rank = country_rank:rank_empire
+			government_type = government_type:monarchy
+
+			OR = {
+				court_language ?= language:greek_language
+				culture.language = language:greek_language
+			}
+		}
+	}
 	text = {
 		localization_key = country_name_construction_name
 		trigger = {
@@ -205,6 +242,7 @@
 			}
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_prefix_name_rank
 		trigger = {
@@ -216,6 +254,7 @@
 			tag = MAL
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_prefix_name
 		trigger = {
@@ -223,6 +262,7 @@
 			court_language ?= { language_family ?= language_family:chinese_language_family }
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_prefix_name_horde
 		trigger = {
@@ -286,26 +326,17 @@
 
 			country_rank_is_kingdom = yes
 			OR = {
+				tag = ARA
 				tag = CAS
 				tag = POL
 				AND = {
 					tag = BOH
 					has_variable = crown_of_bohemia_variable
 				}
-					  
 			}
 		}
 	}
-	text = {
-		localization_key = country_name_construction_crown_aragona
-		trigger = {
 
-			country_rank_is_kingdom = yes
-			OR = {
-				tag = ARA
-			}
-		}
-	}
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name
 		fallback = yes

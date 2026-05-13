@@ -22,6 +22,8 @@
 
   KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] muore"
  PAST_KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] è morto"
+ REVOKE_TOWN_RIGHTS_EFFECT: "Revoca [TARGET_TOWN_RIGHTS.GetName]" 
+ PAST_REVOKE_TOWN_RIGHTS_EFFECT: "I [town_rights|e] sono stati revocati" 
 
  TRIGGER_EVENT_EFFECT: "Si verifica l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
  PAST_TRIGGER_EVENT_EFFECT: "Si è verificato l'[event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'"
@@ -47,7 +49,8 @@
 
  RANDOM_LIST_EFFECT: "#Y Si verificherà una di $SIZE$ opzioni:#!\n"
  RANDOM_EFFECT: "#Y $CHANCE$%#! di probabilità di "
- RANDOM_LIST_EFFECT_HEADER: "#S $DESC$:#!"
+# RANDOM_LIST_EFFECT_HEADER: "#S $DESC$:#!" #OLD
+ RANDOM_LIST_EFFECT_HEADER: "#Y $DESC$:#!" 
  RANDOM_LIST_DEFAULT_DESC: "Esiti possibili"
  RANDOM_LIST_DEFAULT_MULTIPLE_DESC: "Esiti possibili, sceglie una combinazione di $VALUE|V0$ esiti"
  RANDOM_LIST_DEFAULT_MULTIPLE_UNIQUE_DESC: "Esiti possibili, sceglie $VALUE|V0$ esiti unici"
@@ -253,12 +256,18 @@
  PAST_FIRST_SET_PARLIAMENT_ISSUE_EFFECT: "Abbiamo impostato la [parliament_issue|e] a [TARGET_PARLIAMENT_ISSUE.GetName]"
  PAST_THIRD_SET_PARLIAMENT_ISSUE_EFFECT: "$WHO$ ha impostato la [parliament_issue|e] a [TARGET_PARLIAMENT_ISSUE.GetName]"
 
- SET_PARLIAMENT_TYPE_EFFECT: "Imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
- FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Impostiamo il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
- THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
- PAST_SET_PARLIAMENT_TYPE_EFFECT: "Ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
- PAST_FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Abbiamo impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
- PAST_THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]"
+# SET_PARLIAMENT_TYPE_EFFECT: "Imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ SET_PARLIAMENT_TYPE_EFFECT: "Imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" 
+# FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Impostiamo il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Impostiamo il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" 
+# THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ imposta il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" 
+# PAST_SET_PARLIAMENT_TYPE_EFFECT: "Ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ PAST_SET_PARLIAMENT_TYPE_EFFECT: "Ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" 
+# PAST_FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Abbiamo impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ PAST_FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Abbiamo impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName\n$ESTATES_EFFECT$" 
+# PAST_THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]" #OLD
+ PAST_THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ ha impostato il [parliament_type|e] a [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" 
  
  SET_PARLIAMENT_ISSUE_SUPPORT_EFFECT: "Imposta il supporto in $PARLIAMENT$ a $VALUE|2%Y$"
  NEG_SET_PARLIAMENT_ISSUE_SUPPORT_EFFECT: "Imposta il supporto in $PARLIAMENT$ a $VALUE|2%Y$"
@@ -327,10 +336,10 @@
  PAST_SET_DYNASTY_NAME_TYPE_EFFECT: "Ha cambiato il Tipo di Nome in $TYPE$"
  PAST_THIRD_SET_DYNASTY_NAME_TYPE_EFFECT: "[DYNASTY.GetName|U] ha cambiato il Tipo di Nome in $TYPE$"
 
- ACTIVATE_SITUATION_EFFECT: "Diventa attiva"
- PAST_ACTIVATE_SITUATION_EFFECT: "È diventata attiva"
- THIRD_ACTIVATE_SITUATION_EFFECT: "[SITUATION.GetName|U] diventa attiva"
- PAST_THIRD_ACTIVATE_SITUATION_EFFECT: "[SITUATION.GetName|U] è diventata attiva"
+ ACTIVATE_SITUATION_EFFECT: "Si attiva"
+ PAST_ACTIVATE_SITUATION_EFFECT: "La situazione è diventata attiva"
+ THIRD_ACTIVATE_SITUATION_EFFECT: "Si attiva [SITUATION.GetName|U]"
+ PAST_THIRD_ACTIVATE_SITUATION_EFFECT: "La situazione [SITUATION.GetName|U] è diventata attiva"
 
  END_SITUATION_EFFECT: "Termina"
  PAST_END_SITUATION_EFFECT: "È terminata"
@@ -571,37 +580,79 @@
  WE_LOSE_OPINION_EFFECT_NO_DURATION_PAST: "Abbiamo perso $VALUE|-0$ di [opinion|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  THIRD_GAIN_OPINION_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto $VALUE|+0$ di [opinion|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  THIRD_LOSE_OPINION_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|-0$ di [opinion|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
+ GAIN_TRUST_EQUILIBRIUM_EFFECT: "Ottiene $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ LOSE_TRUST_EQUILIBRIUM_EFFECT: "Perde $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT: "Otteniamo $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT: "Perdiamo $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT: "[COUNTRY.GetLongName] ottiene $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT: "[COUNTRY.GetLongName] perde $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName] per $DURATION$" 
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Ottiene $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Perde $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Otteniamo $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Perdiamo $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] ottiene $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] perde $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetLongName]" 
+ REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "Perde il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetLongName]" 
+ WE_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "Perdiamo il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetLongName]" 
+ THIRD_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "[COUNTRY.GetLongName] perde il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetLongName]" 
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "Ha ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "Ha perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "Abbiamo ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "Abbiamo perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "[COUNTRY.GetName] ha ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "[COUNTRY.GetName] ha perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName] per $DURATION$" 
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Ha ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Ha perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Abbiamo ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Abbiamo perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] ha ottenuto $VALUE|+0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] ha perso $VALUE|-0$ [trust_equilibrium|E] di [TARGET_COUNTRY.GetName]" 
+ REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "Ha perso il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetName]" 
+ WE_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "Abbiamo perso il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetName]" 
+ THIRD_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "[COUNTRY.GetName] ha perso il modificatore di equilibrio della fiducia $TYPE|Y$ nei confronti di [TARGET_COUNTRY.GetName]" 
 
- GAIN_TRUST_EFFECT: "Ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- LOSE_TRUST_EFFECT: "Perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- WE_GAIN_TRUST_EFFECT: "Otteniamo $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- WE_LOSE_TRUST_EFFECT: "Perdiamo $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- THIRD_GAIN_TRUST_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- THIRD_LOSE_TRUST_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
- GAIN_TRUST_EFFECT_NO_DURATION: "Ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- LOSE_TRUST_EFFECT_NO_DURATION: "Perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- WE_GAIN_TRUST_EFFECT_NO_DURATION: "Otteniamo $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- WE_LOSE_TRUST_EFFECT_NO_DURATION: "Perdiamo $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- THIRD_GAIN_TRUST_EFFECT_NO_DURATION: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ottiene $VALUE|+0$ di [trust|E]nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- THIRD_LOSE_TRUST_EFFECT_NO_DURATION: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- REMOVE_TRUST_MODIFIER_EFFECT: "Perde il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- WE_REMOVE_TRUST_MODIFIER_EFFECT: "Perdiamo il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- THIRD_REMOVE_TRUST_MODIFIER_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- GAIN_TRUST_EFFECT_PAST: "Ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- LOSE_TRUST_EFFECT_PAST: "Ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- WE_GAIN_TRUST_EFFECT_PAST: "Abbiamo ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- WE_LOSE_TRUST_EFFECT_PAST: "Abbiamo perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- THIRD_GAIN_TRUST_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- THIRD_LOSE_TRUST_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$"
- GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- WE_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Abbiamo ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- WE_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Abbiamo perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- THIRD_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- THIRD_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Ha perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- WE_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Abbiamo perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- THIRD_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
+# GAIN_TRUST_EFFECT: "Ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ GAIN_TRUST_EFFECT: "Ottiene $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# LOSE_TRUST_EFFECT: "Perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ LOSE_TRUST_EFFECT: "Perde $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# WE_GAIN_TRUST_EFFECT: "Otteniamo $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ WE_GAIN_TRUST_EFFECT: "Otteniamo $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# WE_LOSE_TRUST_EFFECT: "Perdiamo $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ WE_LOSE_TRUST_EFFECT: "Perdiamo $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# THIRD_GAIN_TRUST_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ THIRD_GAIN_TRUST_EFFECT: "[COUNTRY.GetLongName] ottiene $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# THIRD_LOSE_TRUST_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$" #OLD
+ THIRD_LOSE_TRUST_EFFECT: "[COUNTRY.GetLongName] perde $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# GAIN_TRUST_EFFECT_NO_DURATION: "Ottiene $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# LOSE_TRUST_EFFECT_NO_DURATION: "Perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# WE_GAIN_TRUST_EFFECT_NO_DURATION: "Otteniamo $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# WE_LOSE_TRUST_EFFECT_NO_DURATION: "Perdiamo $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# THIRD_GAIN_TRUST_EFFECT_NO_DURATION: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ottiene $VALUE|+0$ di [trust|E]nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# THIRD_LOSE_TRUST_EFFECT_NO_DURATION: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# REMOVE_TRUST_MODIFIER_EFFECT: "Perde il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# WE_REMOVE_TRUST_MODIFIER_EFFECT: "Perdiamo il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# THIRD_REMOVE_TRUST_MODIFIER_EFFECT: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] perde il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName]" #DELETE
+# GAIN_TRUST_EFFECT_PAST: "Ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ GAIN_TRUST_EFFECT_PAST: "Ha ottenuto $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# LOSE_TRUST_EFFECT_PAST: "Ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ LOSE_TRUST_EFFECT_PAST: "Ha perso $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# WE_GAIN_TRUST_EFFECT_PAST: "Abbiamo ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ WE_GAIN_TRUST_EFFECT_PAST: "Abbiamo ottenuto $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# WE_LOSE_TRUST_EFFECT_PAST: "Abbiamo perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ WE_LOSE_TRUST_EFFECT_PAST: "Abbiamo perso $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# THIRD_GAIN_TRUST_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ THIRD_GAIN_TRUST_EFFECT_PAST: "[COUNTRY.GetLongName] ha ottenuto $VALUE|+0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# THIRD_LOSE_TRUST_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] per $DURATION$" #OLD
+ THIRD_LOSE_TRUST_EFFECT_PAST: "[COUNTRY.GetLongName] ha perso $VALUE|-0$ [trust|E] di [TARGET_COUNTRY.GetLongName]" 
+# GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# WE_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Abbiamo ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# WE_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Abbiamo perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# THIRD_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ottenuto $VALUE|+0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# THIRD_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|-0$ di [trust|E] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Ha perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# WE_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Abbiamo perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
+# THIRD_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso il modificatore di fiducia $TYPE|Y$ nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #DELETE
 
  GAIN_ANTAGONISM_EFFECT: "Ottiene $VALUE|+0$ di [antagonism|e] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
  LOSE_ANTAGONISM_EFFECT: "Perde $VALUE|-0$ di [antagonism|e] nei confronti [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongName] per $DURATION$"
@@ -684,6 +735,12 @@
  PAST_GAIN_ESTATE_GOLD_EFFECT: "Il ceto [TARGET_ESTATE.GetName] $GAINED_LOST$ $VAL|2+=$[gold_i]"
  PAST_FIRST_GAIN_ESTATE_GOLD_EFFECT: "Il ceto [TARGET_ESTATE.GetName] $GAINED_LOST$ $VAL|+=$[gold_i]"
  PAST_THIRD_GAIN_ESTATE_GOLD_EFFECT: "Il ceto [TARGET_ESTATE.GetName] [COUNTRY.Custom('IT_In')][COUNTRY.GetName] $GAINED_LOST$ $VAL|+=$[gold_i]"
+ DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I Ceti Bancari ottengono $VALUE|2G$[gold_i]" 
+ FIRST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I nostri Ceti Bancari ottengono $VALUE|2G$[gold_i]" 
+ THIRD_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I Ceti Bancari di [COUNTRY.GetName] ottengono $VALUE|2G$[gold_i]" 
+ PAST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I Ceti Bancari hanno ottenuto $VALUE|2G$[gold_i]" 
+ PAST_FIRST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I nostri Ceti Bancari hanno ottenuto $VALUE|2G$[gold_i]" 
+ PAST_THIRD_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "I Ceti Bancari di [COUNTRY.GetName] hanno ottenuto $VALUE|2G$[gold_i]" 
 
  ESTATE_GAIN_GOLD_EFFECT: "$GAIN_LOSE$ $VAL|2+=$[gold_i]"
  THIRD_ESTATE_GAIN_GOLD_EFFECT: "Il ceto [ESTATE.GetName] $GAIN_LOSE$ $VAL|+=$[gold_i]"
@@ -837,12 +894,15 @@
  PAST_CHANGE_COUNTRY_NAME_EFFECT: "Ha cambiato nome in $NAME|Y$"
  PAST_WE_CHANGE_COUNTRY_NAME_EFFECT: "Abbiamo cambiato nome in $NAME|Y$"
  PAST_THIRD_CHANGE_COUNTRY_NAME_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha cambiato nome in $NAME|Y$"
- DEFINE_TAG_EFFECT: "Viene creato come tag storico $NAME|Y$" #NEW
- WE_DEFINE_TAG_EFFECT: "Siamo stati creati come tag storico $NAME|Y$" #NEW
- THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è creata come tag storico $NAME|Y$" #NEW
- PAST_DEFINE_TAG_EFFECT: "Siamo creati come $NAME|Y$" #NEW
- PAST_WE_DEFINE_TAG_EFFECT: "Siamo stati creati come $NAME|Y$" #NEW
- PAST_THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è stata creata come $NAME|Y$" #NEW
+ DEFINE_TAG_EFFECT: "Viene creato come tag storico $NAME|Y$" 
+ WE_DEFINE_TAG_EFFECT: "Siamo stati creati come tag storico $NAME|Y$" 
+# THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è creata come tag storico $NAME|Y$" #OLD
+ THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.GetName] viene creato come tag storico $NAME|Y$" 
+# PAST_DEFINE_TAG_EFFECT: "Siamo creati come $NAME|Y$" #OLD
+ PAST_DEFINE_TAG_EFFECT: "È stato creato come $NAME|Y$" 
+# PAST_WE_DEFINE_TAG_EFFECT: "Siamo stati creati come $NAME|Y$" #OLD
+ PAST_WE_DEFINE_TAG_EFFECT: "Siamo stati creati come $NAME|Y$" 
+ PAST_THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è stata creata come $NAME|Y$" 
  CHANGE_COUNTRY_FLAG_EFFECT: "Cambia bandiera in $NAME|Y$"
  WE_CHANGE_COUNTRY_FLAG_EFFECT: "Cambiamo bandiera in $NAME|Y$"
  THIRD_CHANGE_COUNTRY_FLAG_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] cambia bandiera in $NAME|Y$"
@@ -928,12 +988,12 @@
  PAST_COPY_COUNTRY_COLOR_EFFECT: "Ha copiato il colore della mappa [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  FIRST_PAST_COPY_COUNTRY_COLOR_EFFECT: "Abbiamo copiato il colore della mappa [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  THIRD_PAST_COPY_COUNTRY_COLOR_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha copiato il colore della mappa [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
- TRANSFER_SUBJECT_EFFECT: "Ottiene [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
- FIRST_TRANSFER_SUBJECT_EFFECT: "Otteniamo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
- THIRD_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ottiene [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
- PAST_TRANSFER_SUBJECT_EFFECT: "Ottenuta [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
- FIRST_PAST_TRANSFER_SUBJECT_EFFECT: "Abbiamo Ottenuto [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
- THIRD_PAST_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha ottenuto [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" #NEW
+ TRANSFER_SUBJECT_EFFECT: "Ottiene [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
+ FIRST_TRANSFER_SUBJECT_EFFECT: "Otteniamo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
+ THIRD_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ottiene [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
+ PAST_TRANSFER_SUBJECT_EFFECT: "Ottenuta [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
+ FIRST_PAST_TRANSFER_SUBJECT_EFFECT: "Abbiamo Ottenuto [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
+ THIRD_PAST_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha ottenuto [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come suddito [COUNTRY.GetDiplomacy.GetOverlord.Custom('IT_Dalla')][COUNTRY.GetDiplomacy.GetOverlord.GetName]" 
  
  REMOVE_REFORM_EFFECT: "Rimuove la [government_reform|e] [TARGET_GOVERNMENT_REFORM.GetName]"
  WE_REMOVE_REFORM_EFFECT: "Rimuoveremo la [government_reform|e] [TARGET_GOVERNMENT_REFORM.GetName]"
@@ -998,21 +1058,33 @@
  PAST_LOSE_LIBERTY_DESIRE_EFFECT: "Ha perso $VALUE|2G$ [liberty_desire|e]"
  PAST_FIRST_LOSE_LIBERTY_DESIRE_EFFECT: "Abbiamo perso $VALUE|2R$ [liberty_desire|e]"
  PAST_THIRD_LOSE_LIBERTY_DESIRE_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha perso $VALUE|2G$ [liberty_desire|e]"
+ GAIN_SCORE_EFFECT: "Ottiene $VALUE|0R$ [score|e]" 
+ FIRST_GAIN_SCORE_EFFECT: "Otteniamo $VALUE|0G$ [score|e]" 
+ THIRD_GAIN_SCORE_EFFECT: "[COUNTRY.GetName] ottiene $VALUE|0R$ [score|e]" 
+ PAST_GAIN_SCORE_EFFECT: "Ha ottenuto $VALUE|0R$ [score|e]" 
+ PAST_FIRST_GAIN_SCORE_EFFECT: "Abbiamo ottenuto $VALUE|0G$ [score|e]" 
+ PAST_THIRD_GAIN_SCORE_EFFECT: "[COUNTRY.GetName] ha ottenuto $VALUE|0R$ [score|e]" 
+ LOSE_SCORE_EFFECT: "Perde $VALUE|0G$ [score|e]" 
+ FIRST_LOSE_SCORE_EFFECT: "Perdiamo $VALUE|0R$ [score|e]" 
+ THIRD_LOSE_SCORE_EFFECT: "[COUNTRY.GetName] perde $VALUE|0G$ [score|e]" 
+ PAST_LOSE_SCORE_EFFECT: "Ha perso $VALUE|0G$ [score|e]" 
+ PAST_FIRST_LOSE_SCORE_EFFECT: "Abbiamo perso $VALUE|0R$ [score|e]" 
+ PAST_THIRD_LOSE_SCORE_EFFECT: "[COUNTRY.GetName] ha perso $VALUE|0G$ [score|e]" 
  
- PERFORM_COUNTRY_INTERACTION_EFFECT: "Esegue #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" #NEW
- THIRD_PERFORM_COUNTRY_INTERACTION_EFFECT: "[COUNTRY.GetName] esegue #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" #NEW
- WE_PERFORM_COUNTRY_INTERACTION_EFFECT: "Eseguiamo #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" #NEW
- PAST_PERFORM_COUNTRY_INTERACTION_EFFECT: "Ha eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" #NEW
- PAST_THIRD_PERFORM_COUNTRY_INTERACTION_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" #NEW
- PAST_WE_PERFORM_COUNTRY_INTERACTION_EFFECT: "Abbiamo eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" #NEW
+ PERFORM_COUNTRY_INTERACTION_EFFECT: "Esegue #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" 
+ THIRD_PERFORM_COUNTRY_INTERACTION_EFFECT: "[COUNTRY.GetName] esegue #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" 
+ WE_PERFORM_COUNTRY_INTERACTION_EFFECT: "Eseguiamo #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION$\n$OUTCOME$" 
+ PAST_PERFORM_COUNTRY_INTERACTION_EFFECT: "Ha eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" 
+ PAST_THIRD_PERFORM_COUNTRY_INTERACTION_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" 
+ PAST_WE_PERFORM_COUNTRY_INTERACTION_EFFECT: "Abbiamo eseguito #Y $DIPLO_ACTION$#! [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName], causando i seguenti effetti:\n$COUNTRY_INTERACTION_PAST$\n$PAST_OUTCOME$" 
  DIPLO_ACTION_IS_PERFORMED: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName]"
  DIPLO_ACTION_WAS_PERFORMED: ""
- DIPLO_ACTION_IS_PROPOSAL: "#Y L'azione diplomatica sarà una proposta e potrà essere respinta.#!" #NEW
- DIPLO_ACTION_IS_ACCEPTED: "#Y L'azione diplomatica sarà applicata affinché venga accettata.#!" #NEW
- DIPLO_ACTION_IS_REJECTED: "#Y L'azione diplomatica sarà automaticamente respinta.#!" #NEW
- DIPLO_ACTION_WAS_PROPOSAL: "#Y L'azione diplomatica era una proposta e può essere respinta.#!" #NEW
- DIPLO_ACTION_WAS_ACCEPTED: "#Y L'azione diplomatica è stata imposta affinché fosse accettata.#!" #NEW
- DIPLO_ACTION_WAS_REJECTED: "#Y L'azione diplomatica è stata automaticamente respinta.#!" #NEW
+ DIPLO_ACTION_IS_PROPOSAL: "#Y L'azione diplomatica sarà una proposta e potrà essere respinta.#!" 
+ DIPLO_ACTION_IS_ACCEPTED: "#Y L'azione diplomatica sarà applicata affinché venga accettata.#!" 
+ DIPLO_ACTION_IS_REJECTED: "#Y L'azione diplomatica sarà automaticamente respinta.#!" 
+ DIPLO_ACTION_WAS_PROPOSAL: "#Y L'azione diplomatica era una proposta e può essere respinta.#!" 
+ DIPLO_ACTION_WAS_ACCEPTED: "#Y L'azione diplomatica è stata imposta affinché fosse accettata.#!" 
+ DIPLO_ACTION_WAS_REJECTED: "#Y L'azione diplomatica è stata automaticamente respinta.#!" 
 
  TOGGLE_RELATION_EFFECT: "$EFFECT_PRESENT$"
  THIRD_TOGGLE_RELATION_EFFECT: "$EFFECT_PRESENT$"
@@ -1236,18 +1308,30 @@
  PAST_THIRD_REMOVE_RELIGIOUS_FOCUS_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha rimosso [TARGET_RELIGIOUS_FOCUS.GetName] come [religious_focus|e] completato"
  PAST_WE_REMOVE_RELIGIOUS_FOCUS_EFFECT: "Abbiamo rimosso [TARGET_RELIGIOUS_FOCUS.GetName] come [religious_focus|e] completato"
 
- GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ottiene $VALUE|2%G$ di progressi"
- FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ottiene $VALUE|2%G$ di progressi"
- THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ottiene $VALUE|2%G$ di progressi"
- LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale perde $VALUE|2%R$ di progressi"
- FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale perde $VALUE|2%R$ di progressi"
- THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e]attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] perde $VALUE|2%R$ di progressi"
- PAST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|2%G$ di progressi"
- PAST_FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|2%G$ di progressi"
- PAST_THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha ottenuto $VALUE|2%G$ di progressi"
- PAST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha perso $VALUE|2%R$ di progressi"
- PAST_FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha perso $VALUE|2%R$ di progressi"
- PAST_THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha perso $VALUE|2%R$ di progressi"
+# GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ottiene $VALUE|2%G$ di progressi" #OLD
+ GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ottiene $VALUE|0G$% di progresso" 
+# FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ottiene $VALUE|2%G$ di progressi" #OLD
+ FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ottiene $VALUE|0G$% di progresso" 
+# THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ottiene $VALUE|2%G$ di progressi" #OLD
+ THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale di [COUNTRY.GetName] ottiene $VALUE|0G$% di progresso" 
+# LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale perde $VALUE|2%R$ di progressi" #OLD
+ LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale perde $VALUE|0R$% di progresso" 
+# FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale perde $VALUE|2%R$ di progressi" #OLD
+ FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale perde $VALUE|0R$% di progresso" 
+# THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e]attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] perde $VALUE|2%R$ di progressi" #OLD
+ THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale di [COUNTRY.GetName] perde $VALUE|0R$% di progresso" 
+# PAST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|2%G$ di progressi" #OLD
+ PAST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|0G$% di progresso" 
+# PAST_FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|2%G$ di progressi" #OLD
+ PAST_FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha ottenuto $VALUE|0G$% di progresso" 
+# PAST_THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha ottenuto $VALUE|2%G$ di progressi" #OLD
+ PAST_THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale di [COUNTRY.GetName] ha ottenuto $VALUE|0G$% di progresso" 
+# PAST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha perso $VALUE|2%R$ di progressi" #OLD
+ PAST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale ha perso $VALUE|0R$% di progresso" 
+# PAST_FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha perso $VALUE|2%R$ di progressi" #OLD
+ PAST_FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La nostra ricerca del [religious_focus|e] attuale ha perso $VALUE|0R$% di progresso" 
+# PAST_THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] ha perso $VALUE|2%R$ di progressi" #OLD
+ PAST_THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "La ricerca del [religious_focus|e] attuale di [COUNTRY.GetName] ha perso $VALUE|0R$% di progresso" 
  
  ADD_AVATAR_EFFECT: "Aggiunge [TARGET_AVATAR.GetName] come [avatar|e]"
  THIRD_ADD_AVATAR_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] aggiunge [TARGET_AVATAR.GetName] come [avatar|e]"
@@ -1320,12 +1404,12 @@
  ANNUL_ALL_TREATIES_WITH_EFFECT_PAST: "Ha annullato tutti i trattati con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] per $DURATION$ ($TREATIES$)"
  FIRST_ANNUL_ALL_TREATIES_WITH_EFFECT_PAST: "Abbiamo annullato tutti i trattati con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] per $DURATION$ ($TREATIES$)"
  THIRD_ANNUL_ALL_TREATIES_WITH_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha annullato tutti i trattati con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] per $DURATION$ ($TREATIES$)"
- LEAVE_ALL_WARS_WITH_EFFECT: "Lascia tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
- FIRST_LEAVE_ALL_WARS_WITH_EFFECT: "Lasciamo tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
- THIRD_LEAVE_ALL_WARS_WITH_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] lascia tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
- LEAVE_ALL_WARS_WITH_EFFECT_PAST: "Ha lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
- FIRST_LEAVE_ALL_WARS_WITH_EFFECT_PAST: "Abbiamo lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
- THIRD_LEAVE_ALL_WARS_WITH_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" #NEW
+ LEAVE_ALL_WARS_WITH_EFFECT: "Lascia tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
+ FIRST_LEAVE_ALL_WARS_WITH_EFFECT: "Lasciamo tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
+ THIRD_LEAVE_ALL_WARS_WITH_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] lascia tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
+ LEAVE_ALL_WARS_WITH_EFFECT_PAST: "Ha lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
+ FIRST_LEAVE_ALL_WARS_WITH_EFFECT_PAST: "Abbiamo lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
+ THIRD_LEAVE_ALL_WARS_WITH_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha lasciato tutte le [wars|e] con o contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
 
 #
  # Privateer
@@ -1343,10 +1427,10 @@
  PAST_CHANGE_PRIVATEER_OWNER_EFFECT: "Ha cambiato lealtà verso [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  PAST_THIRD_CHANGE_PRIVATEER_OWNER_EFFECT: "[PRIVATEER.GetName] ha cambiato lealtà verso [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
 
- HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ingaggia un [privateer|e]"
- THIRD_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ingaggia un [privateer|e] in [AREA.GetName]"
- PAST_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha ingaggiato un [privateer|e]"
- PAST_THIRD_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha ingaggiato un [privateer|e] in [AREA.GetName]"
+ HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] assolda dei [privateers|e]"
+ THIRD_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] assolda dei [privateers|e] in [AREA.GetName]"
+ PAST_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha assoldato dei [privateers|e]"
+ PAST_THIRD_HIRE_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha assoldato dei [privateers|e] in [AREA.GetName]"
 
  DISMISS_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] congeda un [privateer|e]"
  THIRD_DISMISS_PRIVATEER_EFFECT: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] congeda un [privateer|e] in [AREA.GetName]"
@@ -1393,12 +1477,12 @@
  PAST_REMOVE_MERCENARY_MODIFIER: "Ha perso l'effetto di $MODIFIER|V$"
  PAST_THIRD_REMOVE_MERCENARY_MODIFIER: "[MERCENARY.GetName] ha perso l'effetto di $MODIFIER|V$"
 
- HIRE_MERCENARY_EFFECT: "Ingaggerà [TARGET_MERCENARY.GetName]"
- WE_HIRE_MERCENARY_EFFECT: "Ingaggeremo [TARGET_MERCENARY.GetName]"
- THIRD_HIRE_MERCENARY_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ingaggerà [TARGET_MERCENARY.GetName]"
- HIRE_MERCENARY_EFFECT_PAST: "Ha ingaggiato [TARGET_MERCENARY.GetName]"
- WE_HIRE_MERCENARY_EFFECT_PAST: "Abbiamo ingaggiato [TARGET_MERCENARY.GetName]"
- THIRD_HIRE_MERCENARY_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ingaggiato [TARGET_MERCENARY.GetName]"
+ HIRE_MERCENARY_EFFECT: "Ingaggerà [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
+ WE_HIRE_MERCENARY_EFFECT: "Ingaggeremo [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
+ THIRD_HIRE_MERCENARY_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ingaggerà [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
+ HIRE_MERCENARY_EFFECT_PAST: "Ha ingaggiato [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
+ WE_HIRE_MERCENARY_EFFECT_PAST: "Abbiamo ingaggiato [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
+ THIRD_HIRE_MERCENARY_EFFECT_PAST: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha ingaggiato [TARGET_MERCENARY.GetName] per [TARGET_MERCENARY.GetContractLengthInMonths|2] mesi"
 
  DISMISS_MERCENARY_EFFECT: "Congederà [TARGET_MERCENARY.GetName]"
  WE_DISMISS_MERCENARY_EFFECT: "Congederemo [TARGET_MERCENARY.GetName]"
@@ -1525,6 +1609,22 @@
  PAST_ADD_GOD_EFFECT: "Ha venerato [TARGET_GOD.GetName] come suo [god|e] primario"
  PAST_WE_ADD_GOD_EFFECT: "Abbiamo venerato [TARGET_GOD.GetName] come nostro [god|e] primario"
  PAST_THIRD_ADD_GOD_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha venerato [TARGET_GOD.GetName] come suo [god|e] primario"
+ REMOVE_OMEN: "Rinuncerà a [omen|e]" 
+ THIRD_REMOVE_OMEN: "[COUNTRY.GetName] rinuncerà a [omen|e]" 
+ PAST_REMOVE_OMEN: "Ha rinunciato a [omen|e]" 
+ PAST_THIRD_REMOVE_OMEN: "[COUNTRY.GetName] ha rinunciato a [omen|e]" 
+ ADD_OMEN_EFFECT: "[COUNTRY.GetName] invocherà [TARGET_OMEN.GetName] [omen|e]" 
+ WE_ADD_OMEN_EFFECT: "Invocheremo [TARGET_OMEN.GetName] [omen|e]" 
+ THIRD_ADD_OMEN_EFFECT: "[COUNTRY.GetName] invocherà [TARGET_OMEN.GetName] [omen|e]" 
+ PAST_ADD_OMEN_EFFECT: "Ha invocato [TARGET_OMEN.GetName] [omen|e]" 
+ PAST_WE_ADD_OMEN_EFFECT: "Abbiamo invocato [TARGET_OMEN.GetName] [omen|e]" 
+ PAST_THIRD_ADD_OMEN_EFFECT: "[COUNTRY.GetName] ha invocato [TARGET_OMEN.GetName] [omen|e]" 
+ ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] sceglierà [TARGET_GOD.GetName] come guida nella scelta di un [omen|e]" 
+ WE_ADD_OMEN_GOD_EFFECT: "Sceglieremo [TARGET_GOD.GetName] come guida nella scelta di un [omen|e]" 
+ THIRD_ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] sceglierà [TARGET_GOD.GetName] come guida nella scelta di un [omen|e]" 
+ PAST_ADD_OMEN_GOD_EFFECT: "Ha scelto [TARGET_GOD.GetName] come [god|e]" 
+ PAST_WE_ADD_OMEN_GOD_EFFECT: "Abbiamo scelto [TARGET_GOD.GetName] come [god|e]" 
+ PAST_THIRD_ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] ha scelto [TARGET_GOD.GetName] come [god|e]" 
  #
  # Work of Art
  MOVE_ART_EFFECT: "Si sposta a [TARGET_LOCATION.GetName]"
@@ -1676,14 +1776,22 @@
  THIRD_MOVE_CHARACTER_EFFECT: "[CHARACTER.GetName] si trasferisce [TARGET_COUNTRY.Custom('IT_NEL_RANGO')][TARGET_COUNTRY.GetLongName]"
  PAST_MOVE_CHARACTER_EFFECT: "Si è trasferito [TARGET_COUNTRY.Custom('IT_NEL_RANGO')][TARGET_COUNTRY.GetName]"
  PAST_THIRD_MOVE_CHARACTER_EFFECT: "[CHARACTER.GetName] si è trasferito [TARGET_COUNTRY.Custom('IT_NEL_RANGO')][TARGET_COUNTRY.GetLongName]"
- ADD_TRAIT_EFFECT: "Ottiene il [trait|e] [TARGET_TRAIT.GetName]"
- THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ottiene il [trait|e] [TARGET_TRAIT.GetName]"
- PAST_ADD_TRAIT_EFFECT: "Ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]"
- PAST_THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]"
- REMOVE_TRAIT_EFFECT: "Perde il [trait|e] [TARGET_TRAIT.GetName]"
- THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] perde il [trait|e] [TARGET_TRAIT.GetName]"
- PAST_REMOVE_TRAIT_EFFECT: "Ha perso il [trait|e] [TARGET_TRAIT.GetName]"
- PAST_THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] ha perso il [trait|e] [TARGET_TRAIT.GetName]"
+# ADD_TRAIT_EFFECT: "Ottiene il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ ADD_TRAIT_EFFECT: "Ottiene il [trait|e] [TARGET_TRAIT.GetName]" 
+# THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ottiene il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ottiene il [trait|e] [TARGET_TRAIT.GetName]" 
+# PAST_ADD_TRAIT_EFFECT: "Ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ PAST_ADD_TRAIT_EFFECT: "Ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]" 
+# PAST_THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ PAST_THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] ha ottenuto il [trait|e] [TARGET_TRAIT.GetName]" 
+# REMOVE_TRAIT_EFFECT: "Perde il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ REMOVE_TRAIT_EFFECT: "Perde il [trait|e] [TARGET_TRAIT.GetName]" 
+# THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] perde il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] perde il [trait|e] [TARGET_TRAIT.GetName]" 
+# PAST_REMOVE_TRAIT_EFFECT: "Ha perso il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ PAST_REMOVE_TRAIT_EFFECT: "Ha perso il [trait|e] [TARGET_TRAIT.GetName]" 
+# PAST_THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] ha perso il [trait|e] [TARGET_TRAIT.GetName]" #OLD
+ PAST_THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] ha perso il [trait|e] [TARGET_TRAIT.GetName]" 
  GAIN_ARTIST_SKILL_EFFECT: "Ottiene $VALUE|2%G$ di [artistic_skill|E]"
  THIRD_GAIN_ARTIST_SKILL_EFFECT: "[CHARACTER.GetName] ottiene $VALUE|2%G$ di [artistic_skill|E]"
  LOSE_ARTIST_SKILL_EFFECT: "Perde $VALUE|2%R$ di [artistic_skill|E]"
@@ -1776,11 +1884,11 @@
 
  #
  # Location
- ADD_POP_EFFECT: "Ottiene $SIZE|Y$ $RELIGION$ $CULTURE$ $POPTYPE$"
- THIRD_ADD_POP_EFFECT: "[LOCATION.GetName] ottiene $SIZE|Y$ $RELIGION$ $CULTURE$ $POPTYPE$"
+ ADD_POP_EFFECT: "Ottiene $SIZE|Y$ $POPTYPE$ di fede $RELIGION$ e cultura $CULTURE$"
+ THIRD_ADD_POP_EFFECT: "[LOCATION.GetName] ottiene $SIZE|Y$ $POPTYPE$ di fede $RELIGION$ e cultura $CULTURE$"
 
- PAST_ADD_POP_EFFECT: "Ha ottenuto $SIZE|Y$ $RELIGION$ $CULTURE$ $POPTYPE$"
- PAST_THIRD_ADD_POP_EFFECT: "[LOCATION.GetName] ha ottenuto $SIZE|Y$ $RELIGION$ $CULTURE$ $POPTYPE$"
+ PAST_ADD_POP_EFFECT: "Ha ottenuto $SIZE|Y$ $POPTYPE$ di fede $RELIGION$ e cultura $CULTURE$"
+ PAST_THIRD_ADD_POP_EFFECT: "[LOCATION.GetName] ha ottenuto $SIZE|Y$ $POPTYPE$ di fede $RELIGION$ e cultura $CULTURE$"
  
  ADD_LOCATION_MODIFIER: "Ottiene $MODIFIER|V$$SCALE$"
  THIRD_ADD_LOCATION_MODIFIER: "[LOCATION.GetName] ottiene $MODIFIER|V$$SCALE$"
@@ -1871,10 +1979,10 @@
  THIRD_LOCATION_OWNER_EFFECT: "[LOCATION.GetName] sarà posseduta [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
  PAST_CHANGE_LOCATION_OWNER_EFFECT: "È diventata posseduta [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
  PAST_THIRD_LOCATION_OWNER_EFFECT: "[LOCATION.GetName] è diventata posseduta [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
- TRANSFER_LOCATION_OCCUPATION_EFFECT: "Sarà occupato [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" #NEW
- THIRD_TRANSFER_LOCATION_OCCUPATION_EFFECT: "[LOCATION.GetName] sarà occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" #NEW
- PAST_TRANSFER_LOCATION_OCCUPATION_EFFECT: "È stata occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" #NEW
- PAST_THIRD_TRANSFER_LOCATION_OCCUPATION_EFFECT: "[LOCATION.GetName] è stata occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" #NEW
+ TRANSFER_LOCATION_OCCUPATION_EFFECT: "Sarà occupato [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" 
+ THIRD_TRANSFER_LOCATION_OCCUPATION_EFFECT: "[LOCATION.GetName] sarà occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" 
+ PAST_TRANSFER_LOCATION_OCCUPATION_EFFECT: "È stata occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" 
+ PAST_THIRD_TRANSFER_LOCATION_OCCUPATION_EFFECT: "[LOCATION.GetName] è stata occupata [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]" 
  
  FORM_COUNTRY_FROM_LOCATION_EFFECT: "Forma un nuovo [country|e]"
  THIRD_FORM_COUNTRY_FROM_LOCATION_EFFECT: "[LOCATION.GetName] forma un nuovo [country|e]"
@@ -1904,12 +2012,48 @@
  PAST_LOOT_LOCATION_EFFECT: "Ha saccheggiato [TARGET_LOCATION.GetName]"
  PAST_FIRST_LOOT_LOCATION_EFFECT: "Abbiamo saccheggiato [TARGET_LOCATION.GetName]"
  PAST_THIRD_LOOT_LOCATION_EFFECT: "$WHO$ ha saccheggiato [TARGET_LOCATION.GetName]"
- CHANGE_MODIFIER_SIZE_EFFECT: "Modifica la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
- FIRST_CHANGE_MODIFIER_SIZE_EFFECT: "Modifichiamo la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
- THIRD_CHANGE_MODIFIER_SIZE_EFFECT: "$WHO$ modifica la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
- PAST_CHANGE_MODIFIER_SIZE_EFFECT: "Ha modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
- PAST_FIRST_CHANGE_MODIFIER_SIZE_EFFECT: "Abbiamo modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
- PAST_THIRD_CHANGE_MODIFIER_SIZE_EFFECT: "$WHO$ ha modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" #NEW
+ ADD_BUREAUCRACY_EFFECT: "Istituisce la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ FIRST_ADD_BUREAUCRACY_EFFECT: "Istituiamo la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ THIRD_ADD_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] istituisce la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ PAST_ADD_BUREAUCRACY_EFFECT: "Ha istituito la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ PAST_FIRST_ADD_BUREAUCRACY_EFFECT: "Abbiamo istituito la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ PAST_THIRD_ADD_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] ha istituito la [bureaucracy|e] [TARGET_BUREAUCRACY_TYPE.GetName]" 
+ FIRST_REMOVE_BUREAUCRACY_EFFECT: "Aboliamo la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ REMOVE_BUREAUCRACY_EFFECT: "Abolisce la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ THIRD_REMOVE_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] abolisce la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ PAST_REMOVE_BUREAUCRACY_EFFECT: "Ha abolito la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ PAST_FIRST_REMOVE_BUREAUCRACY_EFFECT: "Abbiamo abolito la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ PAST_THIRD_REMOVE_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] ha abolito la [bureaucracy|e] [TARGET_BUREAUCRACY.GetName]" 
+ ADD_ENTRENCHMENT_EFFECT: "Ottiene $VALUE|2G$ [entrenchment|e]" 
+ LOSE_ENTRENCHMENT_EFFECT: "Perde $VALUE|R$ [entrenchment|e]" 
+ THIRD_ADD_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] ottiene $VALUE|2G$ [entrenchment|e]" 
+ THIRD_LOSE_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] perde $VALUE|R$ [entrenchment|e]" 
+ PAST_ADD_ENTRENCHMENT_EFFECT: "Ha ottenuto $VALUE|2G$ [entrenchment|e]" 
+ PAST_LOSE_ENTRENCHMENT_EFFECT: "Ha perso $VALUE|R$ [entrenchment|e]" 
+ PAST_THIRD_ADD_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] ha ottenuto $VALUE|2G$ [entrenchment|e]" 
+ PAST_THIRD_LOSE_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] ha perso $VALUE|R$ [entrenchment|e]" 
+ SET_ENTRENCHMENT_EFFECT: "La [entrenchment|e] è impostata a $VALUE|%V$" 
+ THIRD_SET_ENTRENCHMENT_EFFECT: "La [entrenchment|e] di [BUREAUCRACY.GetName] è impostata a $VALUE|%V$" 
+ PAST_SET_ENTRENCHMENT_EFFECT: "La [entrenchment|e] è stata impostata a $VALUE|%V$" 
+ PAST_THIRD_SET_ENTRENCHMENT_EFFECT: "La [entrenchment|e] di [BUREAUCRACY.GetName] è stata impostata a $VALUE|%V$" 
+ SET_MAINTENANCE_EFFECT: "La [maintenance|e] è impostata a $VALUE|%V$" 
+ THIRD_SET_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è impostata a $VALUE|%V$" 
+ PAST_SET_MAINTENANCE_EFFECT: "La [maintenance|e] è stata impostata a $VALUE|%V$" 
+ PAST_THIRD_SET_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è stata impostata a $VALUE|%V$" 
+ LOCK_MAINTENANCE_EFFECT: "La [maintenance|e] è bloccata e non può essere modificata" 
+ UNLOCK_MAINTENANCE_EFFECT: "La [maintenance|e] è sbloccata e può essere modificata di nuovo liberamente" 
+ THIRD_LOCK_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è bloccata e non può essere modificata" 
+ THIRD_UNLOCK_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è sbloccata e può essere modificata di nuovo liberamente" 
+ PAST_LOCK_MAINTENANCE_EFFECT: "La [maintenance|e] è stata bloccata" 
+ PAST_UNLOCK_MAINTENANCE_EFFECT: "La [maintenance|e] è stata sbloccata" 
+ PAST_THIRD_LOCK_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è stata bloccata" 
+ PAST_THIRD_UNLOCK_MAINTENANCE_EFFECT: "La [maintenance|e] di [BUREAUCRACY.GetName] è stata sbloccata" 
+ CHANGE_MODIFIER_SIZE_EFFECT: "Modifica la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
+ FIRST_CHANGE_MODIFIER_SIZE_EFFECT: "Modifichiamo la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
+ THIRD_CHANGE_MODIFIER_SIZE_EFFECT: "$WHO$ modifica la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
+ PAST_CHANGE_MODIFIER_SIZE_EFFECT: "Ha modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
+ PAST_FIRST_CHANGE_MODIFIER_SIZE_EFFECT: "Abbiamo modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
+ PAST_THIRD_CHANGE_MODIFIER_SIZE_EFFECT: "$WHO$ ha modificato la forza di $MODIFIER$ di $VALUE|+=2$, con conseguente sostituzione con $NEW_MODIFIER$" 
  
  CONSTRUCT_RGO_UPGRADE_EFFECT: "Avvia la costruzione di un potenziamento [rgo|e]"
  THIRD_CONSTRUCT_RGO_UPGRADE_EFFECT: "Avvia la costruzione di un potenziamento [rgo|e] a [LOCATION.GetName]"
@@ -1969,14 +2113,14 @@
  PAST_DISCOVER_LOCATION_EFFECT: "È stata [discovered|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
  THIRD_DISCOVER_LOCATION_EFFECT: "[LOCATION.GetName] sarà [discovered|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
  PAST_THIRD_DISCOVER_LOCATION_EFFECT: "[LOCATION.GetName] è stata [discovered|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
- CHANGE_SIEGE_PROGRESS_EFFECT: "Ottiene $VALUE|0$ Accumulati in [siege|e]" #NEW
- PAST_CHANGE_SIEGE_PROGRESS_EFFECT: "Ha ottenuto $VALUE|0$ Accumulati in [siege|e]" #NEW
- THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ottiene $VALUE|0$ Accumulati in [siege|e]" #NEW
- PAST_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ha ottenuto $VALUE|0$ Accumulati in [siege|e]" #NEW
- NEG_CHANGE_SIEGE_PROGRESS_EFFECT: "Perde $VALUE|0$ Accumulati in [siege|e]" #NEW
- NEG_PAST_CHANGE_SIEGE_PROGRESS_EFFECT: "Ha perso $VALUE|0$ Accumulati in [siege|e]" #NEW
- NEG_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] perde $VALUE|0$ Accumulati in [siege|e]" #NEW
- NEG_PAST_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ha perso $VALUE|0$ Accumulati in [siege|e]" #NEW
+ CHANGE_SIEGE_PROGRESS_EFFECT: "Ottiene $VALUE|0$ Accumulati in [siege|e]" 
+ PAST_CHANGE_SIEGE_PROGRESS_EFFECT: "Ha ottenuto $VALUE|0$ Accumulati in [siege|e]" 
+ THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ottiene $VALUE|0$ Accumulati in [siege|e]" 
+ PAST_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ha ottenuto $VALUE|0$ Accumulati in [siege|e]" 
+ NEG_CHANGE_SIEGE_PROGRESS_EFFECT: "Perde $VALUE|0$ Accumulati in [siege|e]" 
+ NEG_PAST_CHANGE_SIEGE_PROGRESS_EFFECT: "Ha perso $VALUE|0$ Accumulati in [siege|e]" 
+ NEG_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] perde $VALUE|0$ Accumulati in [siege|e]" 
+ NEG_PAST_THIRD_CHANGE_SIEGE_PROGRESS_EFFECT: "[LOCATION.GetName] ha perso $VALUE|0$ Accumulati in [siege|e]" 
 
  DESTROY_BUILDING_EFFECT: "[TARGET_BUILDING.GetName] verrà distrutta"
  THIRD_DESTROY_BUILDING_EFFECT: "[TARGET_BUILDING.GetName] verrà distrutta a [LOCATION.GetName]"
@@ -2095,6 +2239,14 @@
  THIRD_SET_GARRISON_SIZE_EFFECT: "[LOCATION.GetName] imposta la forza della [garrison|e] a $VALUE|2Y$"
  PAST_SET_GARRISON_SIZE_EFFECT: "Ha impostato la forza della [garrison|e] a $VALUE|2Y$"
  PAST_THIRD_SET_GARRISON_SIZE_EFFECT: "[LOCATION.GetName] ha impostato la forza della [garrison|e] a $VALUE|2Y$"
+ GRANT_TOWN_RIGHTS_EFFECT: "Viene concesso [TARGET_TOWN_RIGHTS_TYPE.GetName]" 
+ THIRD_GRANT_TOWN_RIGHTS_EFFECT: "Concede [TARGET_TOWN_RIGHTS_TYPE.GetName] a [LOCATION.GetName]" 
+ PAST_GRANT_TOWN_RIGHTS_EFFECT: "È stato concesso [TARGET_TOWN_RIGHTS_TYPE.GetName]" 
+ PAST_THIRD_GRANT_TOWN_RIGHTS_EFFECT: "Ha concesso [TARGET_TOWN_RIGHTS_TYPE.GetName] a [LOCATION.GetName]" 
+ REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Revoca [TARGET_TOWN_RIGHTS_TYPE.GetName]" 
+ THIRD_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Revoca [TARGET_TOWN_RIGHTS_TYPE.GetName] da [LOCATION.GetName]" 
+ PAST_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Ha perso [TARGET_TOWN_RIGHTS_TYPE.GetName]" 
+ PAST_THIRD_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "[TARGET_TOWN_RIGHTS_TYPE.GetName] è stato perso da [LOCATION.GetName]" 
 
  #
  # Province
@@ -2158,27 +2310,27 @@
  PAST_THIRD_RAISE_LEVIES_INSTANT_EFFECT: "[PROVINCE.GetName] ha arruolato $TYPE$ quasi istantaneamente"
  #
  # Pop
- ADD_POP_SIZE_EFFECT: "Guadagna $POPSIZE|G$ [people|e]"
- THIRD_ADD_POP_SIZE_EFFECT: "[POP.GetName] guadagna $POPSIZE|G$ [people|e]"
- LOSE_POP_SIZE_EFFECT: "Perde $POPSIZE|R$ [people|e]"
- THIRD_LOSE_POP_SIZE_EFFECT: "[POP.GetName] perde $POPSIZE|R$ [people|e]"
- PAST_ADD_POP_SIZE_EFFECT: "Ha guadagnato $POPSIZE|G$ [people|e]"
- PAST_THIRD_ADD_POP_SIZE_EFFECT: "[POP.GetName] ha guadagnato $POPSIZE|R$ [people|e]"
- PAST_LOSE_POP_SIZE_EFFECT: "Ha perso $POPSIZE|R$ [people|e]"
- PAST_THIRD_LOSE_POP_SIZE_EFFECT: "[POP.GetName] ha perso $POPSIZE|R$ [people|e]"
+ ADD_POP_SIZE_EFFECT: "Guadagnano $POPSIZE|G$ [people|e]"
+ THIRD_ADD_POP_SIZE_EFFECT: "[POP.GetName] guadagnano $POPSIZE|G$ [people|e]"
+ LOSE_POP_SIZE_EFFECT: "Perdono $POPSIZE|R$ [people|e]"
+ THIRD_LOSE_POP_SIZE_EFFECT: "[POP.GetName] perdono $POPSIZE|R$ [people|e]"
+ PAST_ADD_POP_SIZE_EFFECT: "Hanno guadagnato $POPSIZE|G$ [people|e]"
+ PAST_THIRD_ADD_POP_SIZE_EFFECT: "[POP.GetName] hanno guadagnato $POPSIZE|R$ [people|e]"
+ PAST_LOSE_POP_SIZE_EFFECT: "Hanno perso $POPSIZE|R$ [people|e]"
+ PAST_THIRD_LOSE_POP_SIZE_EFFECT: "[POP.GetName] hanno perso $POPSIZE|R$ [people|e]"
 
- CHANGE_POP_CULTURE_EFFECT: "Adotta la [culture|e] [TARGET_CULTURE.GetName]"
- THIRD_CHANGE_POP_CULTURE_EFFECT: "[POP.GetName] adotta la [culture|e] [TARGET_CULTURE.GetName]"
- PAST_CHANGE_POP_CULTURE_EFFECT: "Ha adottato la [culture|e] [TARGET_CULTURE.GetName]"
- PAST_THIRD_CHANGE_POP_CULTURE_EFFECT: "[POP.GetName] ha adottato la [culture|e] [TARGET_CULTURE.GetName]"
- CHANGE_POP_RELIGION_EFFECT: "Si converte alla [religion|e] [TARGET_RELIGION.GetAdjective]"
- THIRD_CHANGE_POP_RELIGION_EFFECT: "[POP.GetName] si converte alla [religion|e] [TARGET_RELIGION.GetAdjective]"
- PAST_CHANGE_POP_RELIGION_EFFECT: "Si è convertito alla [religion|e] [TARGET_RELIGION.GetAdjective]"
- PAST_THIRD_CHANGE_POP_RELIGION_EFFECT: "[POP.GetName] si è convertito alla [religion|e] [TARGET_RELIGION.GetAdjective]"
- CHANGE_POP_TYPE_EFFECT: "Diventa [TARGET_POP_TYPE.GetName]"
- THIRD_CHANGE_POP_TYPE_EFFECT: "[POP.GetName] diventa [TARGET_POP_TYPE.GetName]"
- PAST_CHANGE_POP_TYPE_EFFECT: "È diventato [TARGET_POP_TYPE.GetName]"
- PAST_THIRD_CHANGE_POP_TYPE_EFFECT: "[POP.GetName] è diventato [TARGET_POP_TYPE.GetName]"
+ CHANGE_POP_CULTURE_EFFECT: "Adottano la [culture|e] [TARGET_CULTURE.GetName]"
+ THIRD_CHANGE_POP_CULTURE_EFFECT: "[POP.GetName] adottano la [culture|e] [TARGET_CULTURE.GetName]"
+ PAST_CHANGE_POP_CULTURE_EFFECT: "Hanno adottato la [culture|e] [TARGET_CULTURE.GetName]"
+ PAST_THIRD_CHANGE_POP_CULTURE_EFFECT: "[POP.GetName] hanno adottato la [culture|e] [TARGET_CULTURE.GetName]"
+ CHANGE_POP_RELIGION_EFFECT: "Si convertono alla [religion|e] [TARGET_RELIGION.GetAdjective]"
+ THIRD_CHANGE_POP_RELIGION_EFFECT: "[POP.GetName] si convertono alla [religion|e] [TARGET_RELIGION.GetAdjective]"
+ PAST_CHANGE_POP_RELIGION_EFFECT: "Si sono convertiti alla [religion|e] [TARGET_RELIGION.GetAdjective]"
+ PAST_THIRD_CHANGE_POP_RELIGION_EFFECT: "[POP.GetName] si sono convertiti alla [religion|e] [TARGET_RELIGION.GetAdjective]"
+ CHANGE_POP_TYPE_EFFECT: "Diventano [TARGET_POP_TYPE.GetName]"
+ THIRD_CHANGE_POP_TYPE_EFFECT: "[POP.GetName] diventano [TARGET_POP_TYPE.GetName]"
+ PAST_CHANGE_POP_TYPE_EFFECT: "Sono diventati [TARGET_POP_TYPE.GetName]"
+ PAST_THIRD_CHANGE_POP_TYPE_EFFECT: "[POP.GetName] sono diventati [TARGET_POP_TYPE.GetName]"
 
  SPLIT_POP_EFFECT: "$POPSIZE|G$ ($PERCENT|2%$) $CHANGE$"
  THIRD_SPLIT_POP_EFFECT: "$POPSIZE|G$ ($PERCENT|2%$) [POP.GetName] $CHANGE$"
@@ -2190,25 +2342,25 @@
  SPLIT_POP_EFFECT_LOCATION: "si spostano a $LOCATION$"
  SPLIT_POP_EFFECT_LOCATION_PAST: "si sono spostati a $LOCATION$"
 
- CHANGE_POP_OWNER_EFFECT: "Diventa [TARGET_COUNTRY.GetAdjective]"
- THIRD_CHANGE_POP_OWNER_EFFECT: "[POP.GetName] diventa [TARGET_COUNTRY.GetAdjective]"
- PAST_CHANGE_POP_OWNER_EFFECT: "È diventato [TARGET_COUNTRY.GetAdjective]"
- PAST_THIRD_CHANGE_POP_OWNER_EFFECT: "[POP.GetName] è diventato [TARGET_COUNTRY.GetAdjective]"
+ CHANGE_POP_OWNER_EFFECT: "Il Pop diventa [TARGET_COUNTRY.GetAdjective]"
+ THIRD_CHANGE_POP_OWNER_EFFECT: "Il Pop dei [POP.GetName] diventa [TARGET_COUNTRY.GetAdjective]"
+ PAST_CHANGE_POP_OWNER_EFFECT: "Il Pop è diventato [TARGET_COUNTRY.GetAdjective]"
+ PAST_THIRD_CHANGE_POP_OWNER_EFFECT: "Il Pop dei [POP.GetName] è diventato [TARGET_COUNTRY.GetAdjective]"
 
- CHANGE_POP_ALLEGIANCE_EFFECT: "Si unisce a [TARGET_REBEL.GetName]"
- THIRD_CHANGE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] si unisce a [TARGET_REBEL.GetName]"
- PAST_CHANGE_POP_ALLEGIANCE_EFFECT: "Si è unita a [TARGET_REBEL.GetName]"
- PAST_THIRD_CHANGE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] si è unita a [TARGET_REBEL.GetName]"
+ CHANGE_POP_ALLEGIANCE_EFFECT: "Si uniscono a [TARGET_REBEL.GetName]"
+ THIRD_CHANGE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] si uniscono a [TARGET_REBEL.GetName]"
+ PAST_CHANGE_POP_ALLEGIANCE_EFFECT: "Si sono uniti a [TARGET_REBEL.GetName]"
+ PAST_THIRD_CHANGE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] si sono uniti a [TARGET_REBEL.GetName]"
 
- REMOVE_POP_ALLEGIANCE_EFFECT: "Cessa di sostenere $NAME$"
- THIRD_REMOVE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] cessa di sostenere $NAME$"
- PAST_REMOVE_POP_ALLEGIANCE_EFFECT: "Ha cessato di sostenere $NAME$"
- PAST_THIRD_REMOVE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] ha cessato di sostenere $NAME$"
+ REMOVE_POP_ALLEGIANCE_EFFECT: "Cessano di sostenere $NAME$"
+ THIRD_REMOVE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] cessano di sostenere $NAME$"
+ PAST_REMOVE_POP_ALLEGIANCE_EFFECT: "Hanno cessato di sostenere $NAME$"
+ PAST_THIRD_REMOVE_POP_ALLEGIANCE_EFFECT: "[POP.GetName] hanno cessato di sostenere $NAME$"
 
- DESTROY_POP_EFFECT: "[TARGET_POP.GetName] perirà"
- THIRD_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] perirà"
- PAST_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] è perita"
- PAST_THIRD_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] è perita"
+ DESTROY_POP_EFFECT: "[TARGET_POP.GetName] moriranno"
+ THIRD_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] moriranno"
+ PAST_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] sono morti"
+ PAST_THIRD_DESTROY_POP_EFFECT: "[TARGET_POP.GetName] sono morti"
 
  ADD_POP_SATISFACTION_EFFECT: "Guadagnano $VALUE|G=2%$ [pop_satisfaction|e]"
  THIRD_ADD_POP_SATISFACTION_EFFECT: "[POP.GetName] guadagnano $VALUE|G=2%$ [pop_satisfaction|e]"
@@ -2510,8 +2662,8 @@
  PAST_CANCEL_EXPLORATIONER_EFFECT: "È stata annullata"
  PAST_THIRD_CANCEL_EXPLORATIONER_EFFECT: "[EXPLORATION.GetName] è stata annullata"
 
- CREATE_MERCENARY_EFFECT: "La compagnia [mercenary|e] $MERCENARY_NAME$ appare a [TARGET_LOCATION.GetName]"
- PAST_CREATE_MERCENARY_EFFECT: "La compagnia [mercenary|e] $MERCENARY_NAME$ è apparsa a [TARGET_LOCATION.GetName]"
+ CREATE_MERCENARY_EFFECT: "La compagnia [Concept('mercenary', 'Mercenaria')|e] $MERCENARY_NAME$ appare a [TARGET_LOCATION.GetName]"
+ PAST_CREATE_MERCENARY_EFFECT: "La compagnia [Concept('mercenary', 'Mercenaria')|e] $MERCENARY_NAME$ è apparsa a [TARGET_LOCATION.GetName]"
  #
  # Subunits
  ADD_SUBUNIT_MORALE_EFFECT: "Guadagna $VALUE|2G$ [morale|e]"
@@ -2727,6 +2879,12 @@
  PAST_FIRST_REMOVE_ACCEPTED_CULTURE_EFFECT: "Abbiamo rimosso la cultura [TARGET_CULTURE.GetName] come [accepted_culture|e]"
  THIRD_REMOVE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] rimuove la cultura [TARGET_CULTURE.GetName] come [accepted_culture|e]"
  PAST_THIRD_REMOVE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha rimosso la cultura [TARGET_CULTURE.GetName] come [accepted_culture|e]"
+ DEMOTE_ACCEPTED_CULTURE_EFFECT: "Declassa [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
+ PAST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Ha declassato [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
+ FIRST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Declassiamo [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
+ PAST_FIRST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Abbiamo declassato [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
+ THIRD_DEMOTE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] declassa [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
+ PAST_THIRD_DEMOTE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] ha declassato [TARGET_CULTURE.GetName] da [accepted_culture|e] a [tolerated_culture|e]" 
 
 
  ADD_TOLERATED_CULTURE_EFFECT: "Aggiunge la cultura [TARGET_CULTURE.GetName] come [tolerated_culture|e]" #OLD ITA
@@ -2831,3 +2989,64 @@
 
  #tutorial
  START_TUTORIAL_LESSON: "Inizia il tutorial $TUTORIAL_NAME$"
+ SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] emerge con $VALUE|0$ sostenitori" 
+ THIRD_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] emerge in $IN|Y$ con $VALUE|0$ sostenitori" 
+ PAST_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] è emerso con $VALUE|0$ sostenitori" 
+ PAST_THIRD_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] è emerso in $IN|Y$ con $VALUE|0$ sostenitori" 
+ ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] appare in $IN$ per diffondere il [movement|e]" 
+ THIRD_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] appare in $IN$ per diffondere [MOVEMENT.GetName]" 
+ PAST_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] è apparso in $IN$ per diffondere il [movement|e]" 
+ PAST_THIRD_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] è apparso in $IN$ per diffondere [MOVEMENT.GetName]" 
+ REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] smette di diffondere il [movement|e]" 
+ THIRD_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] smette di diffondere [MOVEMENT.GetName]" 
+ PAST_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] ha smesso di diffondere il [movement|e]" 
+ PAST_THIRD_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] ha smesso di diffondere [MOVEMENT.GetName]" 
+ SPREAD_TO_LOCATION_EFFECT: "Ottiene $POPS$ sostenitori in [TARGET_LOCATION.GetName]" 
+ THIRD_SPREAD_TO_LOCATION_EFFECT: "[MOVEMENT.GetName] ottiene $POPS$ sostenitori in [TARGET_LOCATION.GetName]" 
+ PAST_SPREAD_TO_LOCATION_EFFECT: "Ha ottenuto $POPS$ sostenitori in [TARGET_LOCATION.GetName]" 
+ PAST_THIRD_SPREAD_TO_LOCATION_EFFECT: "[MOVEMENT.GetName] ha ottenuto $POPS$ sostenitori in [TARGET_LOCATION.GetName]" 
+ ADD_MOVEMENT_MODIFIER_DURATION: "Ottiene $MODIFIER|V$ per $DURATION|Y$$SCALE$$DECAYING$" 
+ THIRD_ADD_MOVEMENT_MODIFIER_DURATION: "[MOVEMENT.GetName] ottiene $MODIFIER|V$ per $DURATION|Y$$SCALE$$DECAYING$" 
+ PAST_ADD_MOVEMENT_MODIFIER_DURATION: "Ha ottenuto $MODIFIER|V$ per $DURATION|Y$$SCALE$$DECAYING$" 
+ PAST_THIRD_ADD_MOVEMENT_MODIFIER_DURATION: "[MOVEMENT.GetName] ha ottenuto $MODIFIER|V$ per $DURATION|Y$$SCALE$$DECAYING$" 
+ ADD_MOVEMENT_MODIFIER_FOREVER: "Ottiene $MODIFIER|V$ fino a $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" 
+ THIRD_ADD_MOVEMENT_MODIFIER_FOREVER: "[MOVEMENT.GetName] ottiene $MODIFIER|V$ fino a $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" 
+ PAST_ADD_MOVEMENT_MODIFIER_FOREVER: "Ha ottenuto $MODIFIER|V$ fino a $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" 
+ PAST_THIRD_ADD_MOVEMENT_MODIFIER_FOREVER: "[MOVEMENT.GetName] ha ottenuto $MODIFIER|V$ fino a $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" 
+ REMOVE_MOVEMENT_MODIFIER: "Perde l'effetto di $MODIFIER|V$" 
+ THIRD_REMOVE_MOVEMENT_MODIFIER: "[MOVEMENT.GetName] perde l'effetto di $MODIFIER|V$" 
+ PAST_REMOVE_MOVEMENT_MODIFIER: "Ha perso l'effetto di $MODIFIER|V$" 
+ PAST_THIRD_REMOVE_MOVEMENT_MODIFIER: "[MOVEMENT.GetName] ha perso l'effetto di $MODIFIER|V$" 
+ RELEASE_NON_CORES_EFFECT: "Rilascia tutte le province senza nucleo" 
+ FIRST_RELEASE_NON_CORES_EFFECT: "Rilasciamo tutte le nostre province senza nucleo" 
+ THIRD_RELEASE_NON_CORES_EFFECT: "[COUNTRY.GetName] rilascia tutte le province senza nucleo" 
+ PAST_RELEASE_NON_CORES_EFFECT: "Ha rilasciato tutte le province senza nucleo" 
+ PAST_FIRST_RELEASE_NON_CORES_EFFECT: "Abbiamo rilasciato tutte le nostre province senza nucleo" 
+ PAST_THIRD_RELEASE_NON_CORES_EFFECT: "[COUNTRY.GetName] ha rilasciato tutte le province senza nucleo" 
+ ADD_AREA_PREFERENCE_EFFECT: "Aggiunge $NAME$ come preferenza di area dell'IA" 
+ FIRST_ADD_AREA_PREFERENCE_EFFECT: "Aggiungiamo $NAME$ come preferenza di area dell'IA" 
+ THIRD_ADD_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] aggiunge $NAME$ come preferenza di area dell'IA" 
+ PAST_ADD_AREA_PREFERENCE_EFFECT: "Ha aggiunto $NAME$ come preferenza di area dell'IA" 
+ PAST_FIRST_ADD_AREA_PREFERENCE_EFFECT: "Abbiamo aggiunto $NAME$ come preferenza di area dell'IA" 
+ PAST_THIRD_ADD_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] ha aggiunto $NAME$ come preferenza di area dell'IA" 
+ REMOVE_AREA_PREFERENCE_EFFECT: "Rimuove $NAME$ come preferenza di area dell'IA" 
+ FIRST_REMOVE_AREA_PREFERENCE_EFFECT: "Rimuoviamo $NAME$ come preferenza di area dell'IA" 
+ THIRD_REMOVE_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] rimuove $NAME$ come preferenza di area dell'IA" 
+ PAST_REMOVE_AREA_PREFERENCE_EFFECT: "Ha rimosso $NAME$ come preferenza di area dell'IA" 
+ PAST_FIRST_REMOVE_AREA_PREFERENCE_EFFECT: "Abbiamo rimosso $NAME$ come preferenza di area dell'IA" 
+ PAST_THIRD_REMOVE_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] ha rimosso $NAME$ come preferenza di area dell'IA" 
+ REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Rimuove tutte le preferenze di area dell'IA" 
+ FIRST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Rimuoviamo tutte le nostre preferenze di area dell'IA" 
+ THIRD_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "[COUNTRY.GetName] rimuove tutte le preferenze di area dell'IA" 
+ PAST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Ha rimosso tutte le preferenze di area dell'IA" 
+ PAST_FIRST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Abbiamo rimosso tutte le nostre preferenze di area dell'IA" 
+ PAST_THIRD_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "[COUNTRY.GetName] ha rimosso tutte le preferenze di area dell'IA" 
+ SET_PERSONALITY_EFFECT: "La personalità IA viene impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ FIRST_SET_PERSONALITY_EFFECT: "La nostra personalità IA viene impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ THIRD_SET_PERSONALITY_EFFECT: "La personalità IA di [COUNTRY.GetName] viene impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ PAST_SET_PERSONALITY_EFFECT: "La personalità IA è stata impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ PAST_FIRST_SET_PERSONALITY_EFFECT: "La nostra personalità IA è stata impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ PAST_THIRD_SET_PERSONALITY_EFFECT: "La personalità IA di [COUNTRY.GetName] è stata impostata a [TARGET_AI_PERSONALITY.GetName]" 
+ DESTROY_BUILDING_COUNTRY_EFFECT: "[TARGET_COUNTRY.GetName] cesserà di esistere" 
+ PAST_DESTROY_BUILDING_COUNTRY_EFFECT: "[TARGET_COUNTRY.GetName] ha cessato di esistere" 
+ ESTATES_EFFECT: "Effetti dei Ceti:" 

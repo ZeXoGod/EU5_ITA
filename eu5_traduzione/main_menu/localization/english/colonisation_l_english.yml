@@ -1,5 +1,5 @@
 ﻿l_english:
- COLONIAL_CHARTER: "Possedimento coloniale $ADJ$ di [PROVINCE_DEFINITION.GetNameWithNoTooltip]"
+ COLONIAL_CHARTER: "Possedimento Coloniale $ADJ$ di [PROVINCE_DEFINITION.GetNameWithNoTooltip]"
  START_COLONY_TT: "La creazione di una Carta Coloniale in [PROVINCE_DEFINITION.GetName|Y] ci costerà $COST$ in anticipo. Ciò attirerà nel tempo [pops|e] verso le [locations|E] in [PROVINCE_DEFINITION.GetName], e alla fine ci darà la proprietà di tutto il territorio."
  ABANDON_COLONY_TT: "L'abbandono della Carta Coloniale di [COLONIAL_CHARTER.GetName|Y] ci costerà $COST$ in anticipo. Abbandoneremo i [pops|e] che sono migrati nelle [locations|E] che non possediamo."
  START_COLONY_TT_NO_COST: "La creazione di una Carta Coloniale attirerà [pops|e] verso le [locations|E] in [PROVINCE_DEFINITION.GetName] nel tempo, e alla fine ci darà la proprietà di tutto il territorio."
@@ -7,7 +7,7 @@
  ABANDON_BUTTON: "Abbandona la Carta Coloniale"
  
  NO_COLONIAL_CHARTER_EXCLUSIVE: "Questa area è rivendicata [COUNTRY.Custom('IT_Dalla')][COUNTRY.GetName] a causa di $NAME$."
- NO_COLONIAL_CHARTER_RELIGION: "A causa di $NAME|Y$ solo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] è autorizzato a colonizzarla, e tutti gli altri paesi [COUNTRY.GetReligion.Custom('IT_REL_MP')] sono esclusi."
+ NO_COLONIAL_CHARTER_RELIGION: "Siccome è $NAME|Y$ solo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] è autorizzato a colonizzarla, e tutti gli altri paesi di fede [COUNTRY.GetReligion.GetAdjective] sono esclusi."
  
  treaty_of_noteborg: "Il Trattato di '#Y $oreshek$#!' con cui Novgorod e Svezia hanno risolto le loro rivendicazioni su Finlandia e Carelia"
  
@@ -49,7 +49,7 @@
  COLONY_POP_TARGET_PP_COUNTRY: "[power_projection|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]: $VAL$" 
  COLONY_POP_TARGET_PP_EXISTS: "[power_projection|e] in [LOCATION.GetName]: $VAL$" 
  COLONY_POP_TARGET_MIN_POPS: "[pops|e] minimi necessari in [LOCATION.GetName] senza tenere conto della [population|e]: $VAL$" 
- COLONY_POP_TARGET_MAX_POPS: "[pops|e] minimi necessari in [LOCATION.GetName] senza tenere conto della [population|e]: $VAL$" 
+ COLONY_POP_TARGET_MAX_POPS: "[pops|e] massima necessara in [LOCATION.GetName] senza tenere conto della [population|e]: $VAL$" 
  COLONY_POP_TARGET_LOCATION_POPULATION: "Scalando tra quelli con la [population|e] della [location|e] di $POPULATION$ si ottiene un obiettivo di popolazione di $NEED$" 
  COLONIAL_CHARTER_LABEL: "La [colonial_charter|e] di [PROVINCE_DEFINITION.GetName] è al $PERC|2V%$ dall'essere [fully_settled|e]." 
  COLONIAL_CHARTER_FULLY_OURS: "[LOCATION.GetName]: $PERC|G0%$" 

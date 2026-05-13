@@ -1,0 +1,66 @@
+﻿l_english:
+ 
+ d008_orthodox_events.1.title: "Un'Offerta da [actor.GetNameWithNoTooltip]"
+ d008_orthodox_events.1.desc: "Una delegazione di [actor.GetLongName] si è avvicinata al nostro [ROOT.GetCountry.GetGovernment.GetCourtTitle] con l'offerta di prestarci uno dei loro magnifici pezzi di iconografia religiosa, [target.GetName]. Naturalmente, non sarà del tutto gratuito, ma servirà anche ad avvicinare i nostri due paesi."
+ d008_orthodox_events.1.a: "Accettiamo con piacere."
+ d008_orthodox_events.1.b: "Diciamo loro che ne abbiamo già uno."
+
+ d008_orthodox_events.2.title: "Offerta Accettata"
+ d008_orthodox_events.2.desc: "Il glorioso [target_country.GetLongName] ha deciso di accettare la nostra magnanima offerta di prestargli [target.GetName]. Ci hanno già inviato la compensazione monetaria, e questo avvicinerà sicuramente i nostri paesi. Speriamo solo che restituiscano l'icona quando verrà il momento."
+ d008_orthodox_events.2.a: "Prendiamocene cura nel frattempo."
+
+ d008_orthodox_events.3.title: "Offerta Rifiutata"
+ d008_orthodox_events.3.desc: "Gli empi sciocchi di [target_country.GetName] hanno rifiutato la nostra offerta di prestargli [target.GetName]. Abbiamo fatto quell'offerta in buona fede, ma rifiutandola hanno dimostrato di non avere né fede né bontà in sé. Solo qualcuno che respinge [ROOT.GetCountry.GetReligion.GetName] stesso potrebbe osare rifiutare un [ShowWorkOfArtTypeName('icon')]."
+ d008_orthodox_events.3.a: "Danniamoli all'Inferno!"
+
+ d008_orthodox_events.4.title: "Prestito di [target_art.GetNameWithNoTooltip] Scaduto"
+ d008_orthodox_events.4.desc: "Il [ShowWorkOfArtTypeName('icon')] che ci era stato prestato da [origin_country.GetName] è giunto alla fine del periodo di prestito stabilito. È dunque tempo che restituiamo [target_art.GetName] al suo proprietario originale, e ovviamente si aspettano che lo facciamo. Tuttavia, potremmo sostenere di averlo 'smarrito' e quindi non procedere alla restituzione."
+ d008_orthodox_events.4.desc_no_country: "[target_art.GetName] è in nostro possesso da qualche tempo. In origine ci era stato prestato, ma poiché il proprietario originale non esiste più come nazione indipendente, non abbiamo alcun bisogno di restituirlo a qualcuno."
+ d008_orthodox_events.4.a: "Restituiamolo come dovuto."
+ d008_orthodox_events.4.b: "Ora è nostro!"
+
+ d008_orthodox_events.5.title: "$d008_orthodox_events.4.title$"
+ d008_orthodox_events.5.desc: "Il prestito di [target_art.GetName] al [target_country.GetLongName] è giunto al termine. Di conseguenza, ce lo hanno restituito con la cerimonia appropriata, adempiendo correttamente ai termini del nostro accordo."
+ d008_orthodox_events.5.a: "È ciò che dovrebbe fare un vero paese [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip]."
+
+ d008_orthodox_events.6.title: "$d008_orthodox_events.4.title$"
+ d008_orthodox_events.6.desc: "Il prestito di [target_art.GetName] al [target_country.GetLongName] è giunto al termine. Tuttavia, i porci di [target_country.GetName] si sono rifiutati di restituircelo, presentando solo povere scuse per tale rifiuto."
+ d008_orthodox_events.6.a: "Pagheranno per questo insulto!"
+
+ d008_orthodox_events.7.title: "La Sede di [target_pentarchy.GetNameWithNoTooltip]"
+ d008_orthodox_events.7.desc: "[target_pentarchy.GetName], una delle sedi della Pentarchia, i grandi centri di [ShowReligionGroupName('christian')], è finita nelle nostre mani. [target_patriarch.GetName] occuperà ora la sua sede, e noi proclameremo la gloria della fede [ShowReligionAdjective('orthodox')]."
+ d008_orthodox_events.7.a: "La Pentarchia sarà nostra!"
+
+ d008_orthodox_events.8.title: "La Perdita di [target_pentarchy.GetNameWithNoTooltip]"
+ d008_orthodox_events.8.desc: "[target_pentarchy.GetName] ci è stata sottratta, e con essa il potere e il rispetto che conferisce. Dio ci ha abbandonati? La Chiesa [ShowReligionAdjective('orthodox')] di [ROOT.GetCountry.GetName] sarà sicuramente danneggiata da questa perdita."
+ d008_orthodox_events.8.desc_all_pentarchy: "Con la perdita di [target_pentarchy.GetName], la Pentarchia è stata spezzata, poiché non controlliamo più tutte le sue sedi. Se vogliamo assicurare la forza della fede, dobbiamo mettere di nuovo al sicuro tutte e cinque le sedi sotto il nostro stendardo."
+ d008_orthodox_events.8.a: "Dovremo recuperarla!"
+ downgrade_pentarchy_modifier_tt: "Non otterremo più effetti aumentati dalle sedi della Pentarchia controllate"
+
+ d008_orthodox_events.9.title: "Pentarchia Ripristinata"
+ d008_orthodox_events.9.desc: "Con [target_pentarchy.GetName] nelle nostre mani, tutte e cinque le sedi della Pentarchia sono sotto il nostro controllo. Quello che un tempo era un rapporto disgiunto tra le diverse sedi è ora unito sotto la nostra autorità. Persino quelle cadute in mani infedeli ed eretiche sono state ricondotte all'ovile per nostra grazia. La Chiesa sarà di nuovo unita, e i nostri Patriarchi saranno coloro che ne guideranno il corso."
+ d008_orthodox_events.9.a: "La Chiesa sarà unita ancora una volta."
+ upgrade_pentarchy_modifier_tt: "Gli effetti delle sedi della Pentarchia controllate saranno aumentati"
+ pentarchy_unlocked_abilities_tt: "Ottiene accesso alle [actions|e] [ShowGenericActionName('mend_schism')] e [ShowGenericActionName('restore_rome_primacy')]"
+
+ d008_orthodox_events.10.title: "Risanamento dello Scisma"
+ d008_orthodox_events.10.desc: "Uno Scisma dannoso ha covato nel cuore di [ShowReligionGroupName('christian')] per secoli, sin dalla divisione tra i Patriarchi di [ShowLocationName('rome')] e [ShowLocationName('constantinople')]. La scissione della Chiesa d'Occidente servì solo a pervertire la parola di Cristo, cosa di cui gioì solo il Diavolo stesso.\n\nOra, con tutte e cinque le sedi della Pentarchia sotto la nostra autorità, i Patriarchi d'Oriente e d'Occidente sono ancora una volta uniti nella stessa Chiesa e con le stesse vedute. Sebbene vi siano ancora molti eretici che rifiutano di riconoscere la certezza della Vera Chiesa, è solo questione di tempo prima che tutte le pecore tornino al loro vero pastore."
+ d008_orthodox_events.10.a: "C'è una sola Chiesa [ShowReligionGroupAdjectiveWithNoTooltip('christian')]."
+
+ d008_orthodox_events.11.title: "Ripristino del Primato di [ShowLocationNameWithNoTooltip('rome')]"
+ d008_orthodox_events.11.desc: "L'origine e culla dell'Impero, il faro della cultura e della civiltà dell'antichità; a lungo la Città Eterna è rimasta coperta dalle tenebre dell'eresia e della barbarie. Ora, di nuovo nelle nostre giuste mani, la sua gloria sarà restaurata e il suo posto come centro del mondo ristabilito.\n\nDa questa nuova capitale [ROOT.GetCountry.GetGovernment.GetAdjective], il potere del nostro [ROOT.GetCountry.GetFlavorRank] irradierà in lungo e in largo, e da ogni angolo del mondo le genti sentiranno la nostra presenza. Gloria a [ShowLocationName('rome')]! Gloria a [ROOT.GetCountry.GetLongName]!"
+ d008_orthodox_events.11.a: "#italic Urbs aeterna restituta!#!"
+ patriarchate_will_relocate_to_rome_tt: "Il Patriarca di [ShowLocationName('rome')] sarà ora il capo del nostro [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]"
+
+ d008_orthodox_events.12.title: "Lo Scisma è Dichiarato Sanato"
+ d008_orthodox_events.12.desc: "[scope:actor.GetName] afferma di aver sanato il Grande Scisma, unendo la cristianità sotto Costantinopoli."
+ d008_orthodox_events.12.a: "Uniamoci alla fede Ortodossa."
+ d008_orthodox_events.12.b: "Roma è il nostro pastore."
+
+ d008_orthodox_events.13.title: "Lo Scisma è Dichiarato Sanato"
+ d008_orthodox_events.13.desc: "[scope:actor.GetName] pretende di dichiarare sanato lo Scisma alle proprie condizioni."
+ d008_orthodox_events.13.a: "Uno scandalo."
+
+ d008_orthodox_events.14.title: "Il Patriarca si Trasferisce a Roma"
+ d008_orthodox_events.14.desc: "[scope:actor.GetName] ha trasferito il Patriarca Ecumenico a Roma, avanzando una rivendicazione diretta sulla Nostra città."
+ d008_orthodox_events.14.a: "Non cederemo mai Roma."

@@ -3,19 +3,24 @@
  flavor_ben.1.desc: "La prosperità di [target_location.GetName] dipende dalle sue mura. Per questa ragione, [target_character.GetName] ha deciso che è il momento di expanderle. Questo progetto però sarà costoso, ma permetterà al [target_location.GetRank.GetName] di essere portato a nuove vette."
  flavor_ben.1.a: "Costruiamo queste mura."
  flavor_ben.1.b: "I fossati sono abbastanza per proteggere [target_location.GetNameWithNoTooltip]."
+ flavor_ben.1.b.entry: "The ditches are enough to protect the location." #NEW
 
  flavor_ben.2.title: "Amministrazione nelle Città"
+ flavor_ben.2.entry: "$flavor_ben.2.title$" #NEW
  flavor_ben.2.desc: "[ROOT.GetCountry.GetName|U] è stata centralizzata in [ROOT.GetCountry.GetCapital.GetName] anziché nei numerosi luoghi all'interno di essa. Piuttosto che semplicemente offrire loro protezione, possiamo stabilire un'amministrazione che obbedisca direttamente a [target_character.GetName]. Saranno invece governati attraverso il [GetBuildingName('eghabho_nore_mansion')], dove risiedono funzionari governativi che obbediscono direttamente a [target_character.GetNameWithNoTooltip]."
  flavor_ben.2.a: "[ROOT.GetCountry.GetNameWithNoTooltip] sarà centralizzata!"
+ flavor_ben.2.a.entry: "We will be centralized!" #NEW
  flavor_ben.2.b: "L'attuale sistema va bene."
 
  flavor_ben.3.title: "Limitazione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ flavor_ben.3.entry: "$flavor_ben.3.title$" #NEW
  flavor_ben.3.desc: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_HA')] deciso la successione in [ROOT.GetCountry.GetName] da troppo tempo. La loro influenza disturba la stabilità del [ROOT.GetCountry.GetFlavorRank] per i loro interessi personali. [target_character.GetName] e i [target_character.GetHerHis] leali ne hanno avuto abbastanza di questa oligarchia, e desiderano annullarla. Pianificano di orchestrare alcuni assassinii di queste persone influenti che impediscono il governo [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]. Tuttavia, tali azioni potrebbero portarli a ribellarsi."
  flavor_ben.3.a: "Alcuni 'incidenti' possono essere organizzati."
  flavor_ben.3.b: "Non è questo il modo di trattare i sudditi!"
  ben_purge_non_innocent_nobles_tt: "#Y 5%#! [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [pops|e] all'interno di [ROOT.GetCountry.GetCapital.GetName] sarà #R uccisa#!"
 
  flavor_ben.4.title: "Rivolta [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]!"
+ flavor_ben.4.entry: "$flavor_ben.4.title$" #NEW
  flavor_ben.4.desc: "A causa delle nostre azioni contro [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], si sono uniti e si sono ribellati in opposizione a [target_character.GetName]. Ora desiderano liberarsi dall'influenza di [target_character.GetHerHis], spostando il [ROOT.GetCountry.GetFlavorRank] nelle loro mani. Questo si è veramente trasformato in una crisi, ma i sostenitori di [target_character.GetNameWithNoTooltip] dovrebbero stare in piedi, oppure piegarsi alle richieste [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]?"
  flavor_ben.4.a: "Alle armi!"
  flavor_ben.4.b: "Forse hanno un punto a favore..."
@@ -23,11 +28,15 @@
  uzama_revolt: "Rivolta dell'Uzama"
 
  flavor_ben.5.title: "Disordini Civili in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_ben.5.entry: "$flavor_ben.5.title$" #NEW
  flavor_ben.5.desc: "L'aumento dei disordini in [ROOT.GetCountry.GetName] ha portato il paese a essere lentamente dilaniato dall'interno. Il popolo ha visto il declino del [ROOT.GetCountry.GetFlavorRank] durante il governo di [target_character.GetName], e ora si schiera con le promesse che i membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] stanno facendo. Questo è un momento cruciale nella storia di [ROOT.GetCountry.GetNameWithNoTooltip], e la crisi deve essere evitata."
  flavor_ben.5.a: "[ROOT.GetCountry.GetNameWithNoTooltip] sarà restaurata."
+ flavor_ben.5.a.entry: "We will be restored." #NEW
 
  flavor_ben.6.title: "Sponsorizzazione del Commercio degli Schiavi"
- flavor_ben.6.desc: "La pratica della schiavitù ha portato molti profitti a [ROOT.GetCountry.GetName]. È una pratica da cui l'intero [ROOT.GetCountry.GetFlavorRank] ha beneficiato, eccetto i pochi sfortunati. Ora, con i nostri contatti al di fuori di [ShowRegionName('guinea_region')], ci sono stati dibattiti per espandere questa pratica. Principalmente, per concentrarsi sull'espansione del nostro [ShowBuildingTypeName('slave_market')]. Anche se [ROOT.GetCountry.Custom('IT_CROWN_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] potrebbe non essere in grado di intervenire direttamente, può almeno concedere i diritti per espanderlo."
+ flavor_ben.6.entry: "$flavor_ben.6.title$" #NEW
+# flavor_ben.6.desc: "La pratica della schiavitù ha portato molti profitti a [ROOT.GetCountry.GetName]. È una pratica da cui l'intero [ROOT.GetCountry.GetFlavorRank] ha beneficiato, eccetto i pochi sfortunati. Ora, con i nostri contatti al di fuori di [ShowRegionName('guinea_region')], ci sono stati dibattiti per espandere questa pratica. Principalmente, per concentrarsi sull'espansione del nostro [ShowBuildingTypeName('slave_market')]. Anche se [ROOT.GetCountry.Custom('IT_CROWN_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] potrebbe non essere in grado di intervenire direttamente, può almeno concedere i diritti per espanderlo." #OLD
+ flavor_ben.6.desc: "The practice of slavery has brought much profit to [ROOT.GetCountry.GetName]. It is a practice that the entire [ROOT.GetCountry.GetFlavorRank] has benefited from, exxcept the few unfortunate. Now, with our contacts outside of [ShowRegionName('guinea_region')], there have been debates to expand this practice. Primarily, to focus on expanding our [ShowBuildingTypeName('slave_market')]. Although the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] may not be able to intervene directly, it can at the very least grant the rights to expand it." #NEW
  flavor_ben.6.a: "I profitti di tale pratica devono essere ampliati."
  flavor_ben.6.b: "La pratica della schiavitù deve essere lentamente abolita."
  ben_slave_building_upgrade_tt: "Il livello massimo [building|e] di [ShowBuildingTypeName('slave_market')] sarà #G Raddoppiato#!"

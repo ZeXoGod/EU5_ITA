@@ -1,6 +1,7 @@
 ﻿l_english:
  reformation_is_enabled_tt: "La #Y Riforma#! è iniziata"
  casus_belli_forbids_non_french_location_conquest_tt: "L'[war_goal|e] della 'Guerra dei Cent'Anni' permette di conquistare territori solo all'interno della [region|e] [ShowRegionName('france_region')] o territori posseduti da uno [subject|e] di [GetCountry('FRA').GetNameWithNoTooltip] o [GetCountry('ENG').GetNameWithNoTooltip]"
+ superiority_lat_reconquest_reconquest_valid_locations: "Può acquisire solo terreni situati all'interno del [ShowScriptedGeographyName('frankokratia_geography')] con [ShowCasusBelliName('cb_lat_reconquest')]" #NEW
  casus_belli_forbids_location_conquest_tt: "Questa guerra ci vieta di conquistare qualsiasi [location|e] direttamente"
  casus_belli_forbids_normal_subjugation_tt: "Questa guerra ci vieta di [subjugate|e] normalmente il nostro nemico"
  casus_belli_forbids_normal_subjugation_tributary_tt: "$casus_belli_forbids_normal_subjugation_tt$\nPer rendere uno stato [ShowSubjectTypeName('tributary')], usa il [peace_treaty|e] [ShowPeaceTreatyTypeName('force_tributary')]"
@@ -662,3 +663,7 @@
  NOT_FIRST_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Nessuno dei nostri [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Uno dei loro [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  NOT_THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Nessuno dei loro [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
+ CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e]" #NEW
+ NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e]" #NEW
+ CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y Kindred#!" #NEW
+ NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y Kindred#!" #NEW

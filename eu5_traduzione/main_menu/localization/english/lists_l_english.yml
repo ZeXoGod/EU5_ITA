@@ -12,9 +12,9 @@
 
  CULTURE_SORT_BY_NAME: "Ordina per nome della [culture|e]"
  CULTURE_SORT_BY_SIZE: "Ordina per presenza della [culture|e] nel nostro [country|e]"
- CULTURE_SORT_BY_OUR_VIEW: "Ordina per [cultural_opinion|e] che la nostra [primary_culture|e] ha di queste [cultures|e]"
- CULTURE_SORT_BY_THEIR_VIEW: "Ordina per [cultural_opinion|e] che queste [cultures|e] hanno della nostra [primary_culture|e]"
- CULTURE_SORT_BY_STATUS: "Ordina per [cultural_status|e] che queste [cultures|e] hanno nel nostro [country|e]"
+ CULTURE_SORT_BY_OUR_VIEW: "Ordina in base allo [cultural_opinion|e] che la nostra [primary_culture|e] ha di queste [cultures|e]"
+ CULTURE_SORT_BY_THEIR_VIEW: "Ordina in base allo [cultural_opinion|e] che queste [cultures|e] hanno della nostra [primary_culture|e]"
+ CULTURE_SORT_BY_STATUS: "Ordina in base allo [cultural_status|e] che queste [cultures|e] hanno nel nostro [country|e]"
 
  WORKS_OF_ART_SORT_BY_NAME: "Ordina per nome dell'[work_of_art|e]"
  WORKS_OF_ART_SORT_BY_DATE: "Ordina per data di creazione dell'[work_of_art|e]"
@@ -27,6 +27,8 @@
  GOODS_SOURCE_ENTRY_SORT_BY_LOCATION_NAME: "$sort_location_name$"
  GOODS_SOURCE_ENTRY_SORT_BY_OWNER_NAME: "Ordina per nome del [owner|e] delle [locations|e]"
  GOODS_SOURCE_ENTRY_SORT_BY_OUTPUT: "Ordina per [output|e] delle [locations|e]"
+ GOODS_SOURCE_ENTRY_SORT_BY_DEMAND: "Sort by the [demand|e] of the [locations|e]" #NEW
+ GOODS_SOURCE_ENTRY_SORT_BY_BALANCE: "Sort by the [balance|e] of the [locations|e]" #NEW
 
  REBEL_ENTRY_SORT_BY_LOCATION_NAME: "$sort_location_name$"
  REBEL_ENTRY_SORT_BY_POPULATION: "Ordina per la [population|e] delle [locations|e]"
@@ -78,6 +80,7 @@
  COUNTRY_SORT_BY_POPULATION: "Clicca per ordinare per [population|e]"
  COUNTRY_SORT_BY_GREAT_POWER_SCORE: "Clicca per ordinare per [great_power_score|e]"
  COUNTRY_SORT_BY_WILL: "Ordina per volontà"
+ COUNTRY_SORT_BY_RELATIVE_POWER: "Sort by [country_strength|E]" #NEW
  COUNTRY_SORT_BY_AVAILABILITY: "Ordina per disponibilità"
  COUNTRY_SORT_BY_YUAN_ALLEGIANCE: "Clicca per ordinare per la loro $rtr_yuan_allegiance$"
  COUNTRY_SORT_BY_ARMY_SIZE: "Clicca per ordinare per dimensione dell'[army|e]"
@@ -107,6 +110,10 @@
  LOCATION_DISTANCE_TO_AREA: "#T Distanza Esplorazione #! Distanza dall'[area|e] obiettivo"
  LOCATION_SORT_BY_TOPOGRAPHY: "Ordina per topografia della [location|E]"
  LOCATION_SORT_BY_ROADS_COST: "Ordina per costo di costruzione di una [road|e] per questa [location|E]"
+ LOCATION_SORT_BY_INCOME: "Sort by the income of the [location|E]" #NEW
+ LOCATION_SORT_BY_WEALTH: "Sort by the wealth of the [location|E]" #NEW
+ LOCATION_SORT_BY_TOWN_RIGHTS: "Click to sort by [town_rights|e]" #NEW
+ LOCATION_SORT_BY_AVAILABLE_PEASANTS_JOBS: "Sort by the amount of available peasants in a [location|E]" #NEW
 
  PROVINCE_SORT_BY_NAME: "Ordina per nome della [province|E]"
  PROVINCE_SORT_BY_POPULATION: ""Clicca per ordinare per [population|e]"
@@ -117,6 +124,7 @@
  PROVINCE_SORT_BY_PROSPERITY: "Clicca per ordinare per [prosperity|e] media delle [locations|e]"
  PROVINCE_SORT_BY_SATISFACTION: "Clicca per ordinare per [average_satisfaction|e] della [population|e]"
  PROVINCE_SORT_BY_TAX_BASE: "Clicca per ordinare per [tax_base|e] della [province|e]"
+ PROVINCE_SORT_BY_LOCATION_WEALTH: "Click to sort by the [wealth|e] of the [province|e]" #NEW
  PROVINCE_SORT_BY_FOOD: "Clicca per ordinare per quantità attuale di [food|e] della [province|e]"
  PROVINCE_SORT_BY_FOOD_PERCENT: "Clicca per ordinare per percentuale attuale di [food|e] della [province|e]"
  PROVINCE_SORT_BY_FOOD_BALANCE: "Clicca per ordinare per variazione mensile attuale di [food|e] della [province|e]"
@@ -136,6 +144,7 @@
  PROVINCE_SORT_BY_REBEL_PROGRESS: "Clicca per ordinare per progresso [rebel|e] nella [province|e]"
  PROVINCE_SORT_BY_MARKET: "Ordina per nome del [market|E] della [province|E]"
  PROVINCE_SORT_BY_UNFILLED_JOBS: "Ordina in base al numero di dipendenti mancanti in una [province|E]"
+ PROVINCE_SORT_BY_AVAILABLE_PEASANTS_JOBS: "Sort by the amount of available peasants in a [province|E]" #NEW
  PROVINCE_SORT_BY_PEASANT_POPULATION: "Ordina per [province|E] popolazione popolana"
 
  AREA_SORT_BY_NAME: "Ordina per nome dell'[area|E]"
@@ -143,6 +152,7 @@
  AREA_SORT_BY_NEEDED_TIME: "Clicca per ordinare per tempo necessario"
  AREA_SORT_BY_EXPECTED_COST: "Clicca per ordinare per costo previsto"
  AREA_SORT_BY_POPULATION: "Clicca per ordinare per [population|e]"
+ AREA_SORT_BY_HARBOR_CAPACITY: "Click to sort by combined [harbor_capacity|e] in the [area|e]" #NEW
  AREA_SORT_BY_INTEGRATION_PRECENTAGE: "Clicca per ordinare per percentuale di [integration|e] nell'[area|e]"
  AREA_SORT_BY_PRIMARY_CULTURE_PRECENTAGE: "Clicca per ordinare per percentuale di [primary_culture|e] nell'[area|e]"
  
@@ -212,6 +222,9 @@
  
  DISEASE_SORT_BY_NAME: "Ordina per nome della [disease|e]"
  DISEASE_SORT_BY_OUTBREAKS_AMOUNT: "Ordina per quantità di focolai di [disease|e]"
+ MOVEMENT_SORT_BY_NAME: "Sort by the name of the [movement|e]" #NEW
+ MOVEMENT_SORT_BY_COUNTRY_AFFECTED: "Sort by [country|e] affected" #NEW
+ MOVEMENT_SORT_BY_AMOUNT: "Sort by the amount of [movement|e]" #NEW
 
  BUILDING_LOCATION_SORT_BY_LOCATION: "Ordina per nome della [location|e]"
  BUILDING_LOCATION_SORT_BY_UNEMPLOYED: "Ordina per numero di lavoratori disponibili"
@@ -222,6 +235,7 @@
  BUILDING_LOCATION_SORT_BY_NUMBER: "Ordina per numero di [buildings|e]"
  BUILDING_LOCATION_SORT_BY_MARKET_ACCESS: "Ordina per [market_access|e]"
  BUILDING_LOCATION_SORT_BY_FOOD_OUTPUT: "Ordina per quantità di [food|e] prodotta"
+ BUILDING_LOCATION_SORT_BY_PEASANTS_AVAILABLE: "Sort by the total number of [ShowPopTypeName('peasants')] available on each [location|e]" #NEW
 
  REBELS_SORT_BY_NAME: "Ordina per nome del [rebel|e]"
  REBELS_SORT_BY_CATEGORY: "Ordina per nome della categoria"
@@ -242,6 +256,7 @@
  CHARACTER_SORT_BY_DIP: "Ordina per [dip|e] del [character|e]"
  CHARACTER_SORT_BY_MIL: "Ordina per [mil|e] del [character|e]"
  CHARACTER_SORT_BY_TOTAL_STATS: "Clicca per ordinare per [ability|e] del [character|e]"
+ CHARACTER_SORT_BY_EXPLORER: "Sort by whether the [character|e] is an [explorer|e]" #NEW
  CHARACTER_SORT_BY_SKILL: "Ordina per [artistic_skill|e] dell'[artist|e]"
  CHARACTER_SORT_BY_WORKS_CREATED: "Ordina per numero di [works_of_art|e] create dall'[artist|e]"
  CHARACTER_SORT_BY_CURRENT_WORK: "Ordina per [work_of_art|e] attuale su cui l'[artist|e] sta lavorando"
@@ -342,6 +357,7 @@
  SORT_TEXT_CONTINENT_NAME: "[ROOT.GetContinent.GetName]"
  SORT_TEXT_RELIGION_GROUP_NAME: "[ROOT.GetReligionGroup.GetNameWithNoTooltip]"
  SORT_TEXT_LANGUAGE_NAME: "[ROOT.GetLanguage.GetNameWithNoTooltip]"
+ SORT_TEXT_GOD_NAME: "[ROOT.GetGod.GetNameWithNoTooltip]" #NEW
  SORT_TEXT_REBEL_NAME: "[ROOT.GetRebel.GetNameWithNoTooltip]"
  SORT_TEXT_TRADE_NAME: "[ROOT.GetTrade.GetNameWithNoTooltip]"
  SORT_TEXT_RELIGIOUS_SCHOOL_NAME: "[ROOT.GetReligiousSchool.GetNameWithNoTooltip]"
@@ -397,6 +413,11 @@
  SORT_TEXT_NAME_TT: "Clicca per ordinare per nome"
  SORT_TEXT_LOCATION_TT: "Clicca per ordinare per [location|e]"
  LOCATION_SORT_BY_LANGUAGE_POWER: "Clicca per ordinare per [language_power|e]"
+ LOCATION_SORT_BY_GOD_ABILITY: "Click to sort by [ability|e] associated with [god|e]" #NEW
+ SORT_TEXT_TOWN_RIGHTS_TYPE_NAME: "[ROOT.GetTownRightsType.GetNameWithNoTooltip]" #NEW
+ SORT_TEXT_TOWN_RIGHTS_TYPE_EFFECT: "[ROOT.GetTownRightsType.GetDesc]" #NEW
+ TOWN_RIGHTS_TYPE_SORT_BY_NAME: "Click to sort by name" #NEW
+ TOWN_RIGHTS_TYPE_SORT_BY_EFFECT: "Click to sort by effect" #NEW
 
  # Text Filters
  mercenary_name_text_filter_name: "Cerca per nome dei [mercenary|e]"
@@ -509,6 +530,8 @@
  expand_raw_goods_location_text_filter_desc: "Utilizza il nome della [location|e] come criterio per i risultati della barra di ricerca."
  expand_raw_goods_market_text_filter_name: "Cerca per nome del [market|e]"
  expand_raw_goods_market_text_filter_desc: "Utilizza il nome del [market|e] come criterio per i risultati della barra di ricerca."
+ in_range_markets_name_text_filter_name: "Search for the names of the [markets|e]" #NEW
+ in_range_markets_name_text_filter_desc: "Use the name of the [markets|e] to filter this further" #NEW
  
  food_production_market_text_filter_name: "Cerca per nome del [market|e]"
  food_production_market_text_filter_desc: "Utilizza il nome del [market|e] come criterio per i risultati della barra di ricerca."
@@ -662,26 +685,47 @@
  CUSTOM_SEARCH_FILTER_HOLY_SITE_SUBJECT_OWNED_DESC: "Mostra i [holy_sites|e] che sono posseduti dai nostri [subjects|e]."
  CUSTOM_SEARCH_FILTER_HOLY_SITE_PRIMARY_RELIGION_NAME: "$game_concept_primary_religion$"
  CUSTOM_SEARCH_FILTER_HOLY_SITE_PRIMARY_RELIGION_DESC: "Mostra i [holy_sites|e] che provengono dalla nostra [primary_religion|e]."
+ custom_search_filter_holy_site_religion_group_name: "@religion! Religion" #NEW
+ CUSTOM_SEARCH_FILTER_HOLY_SITE_RELIGION_NAME: "[RELIGION.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_HOLY_SITE_RELIGION_DESC: "Show [holy_sites|e] associated with [RELIGION.GetName]." #NEW
 
  custom_search_filter_dynasty_category_name: "@dynasty! $game_concept_dynasties$"
  CUSTOM_SEARCH_FILTER_DYNASTY_CHARACTERS_ALIVE_NAME: "Solo con Personaggi vivi"
  CUSTOM_SEARCH_FILTER_DYNASTY_CHARACTERS_ALIVE_DESC: "Mostra le [dynasties|e] che hanno almeno un [character|e] vivo."
+ custom_search_filter_movement_category_name: "$game_concept_movements$" #NEW
+ CUSTOM_SEARCH_FILTER_MOVEMENT_OUTBREAKS_IN_COUNTRY_NAME: "Present in our country" #NEW
+ CUSTOM_SEARCH_FILTER_MOVEMENT_OUTBREAKS_IN_COUNTRY_DESC: "Show only [movements|e] that have at least one outbreak in our country." #NEW
  
  search_filter_culture_category_name: "@culture! Filtri Cultura"
  search_filter_culture_present_in_country_name: "Presente nel Paese"
  search_filter_culture_present_in_country_desc: "Mostra le Culture che la nostra popolazione professa"
  search_filter_culture_not_present_in_country_name: "Non Presente nel Paese"
  search_filter_culture_not_present_in_country_desc: "Mostra le Culture che la nostra popolazione NON professa"
- search_filter_culture_status_accepted_name: "Accettata"
+# search_filter_culture_status_accepted_name: "Accettata" #OLD
+ search_filter_culture_status_accepted_name: "[accepted_culture_icon] Accepted" #NEW
  search_filter_culture_status_accepted_desc: "Filtra le culture Discriminate e Tollerate"
- search_filter_culture_status_accepted_or_tolerated_name: "Accettata e Tollerata"
+# search_filter_culture_status_accepted_or_tolerated_name: "Accettata e Tollerata" #OLD
+ search_filter_culture_status_accepted_or_tolerated_name: "[accepted_culture_icon] Accepted and [tolerated_culture_icon] Tolerated" #NEW
  search_filter_culture_status_accepted_or_tolerated_desc: "Filtra le culture Discriminate"
- search_filter_culture_status_nonaccepted_name: "Discriminata"
+# search_filter_culture_status_nonaccepted_name: "Discriminata" #OLD
+ search_filter_culture_status_nonaccepted_name: "[non_accepted_culture_icon] Discriminated" #NEW
  search_filter_culture_status_nonaccepted_desc: "Filtra le culture Accettate"
  
  custom_search_filter_culture_group_category_name: "@culture! Gruppi Culturali"
  CUSTOM_SEARCH_FILTER_CULTURE_GROUP_NAME: "[CULTURE_GROUP.GetNameWithNoTooltip]"
  CUSTOM_SEARCH_FILTER_CULTURE_GROUP_DESC: "Mostra le [cultures|e] che fanno parte del gruppo [CULTURE_GROUP.GetName]."
+ custom_search_filter_dhe_age_category_name: "$game_concept_age$" #NEW
+ custom_search_filter_dhe_age_group_name: "Ages" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_AGE_ITEM_NAME: "[AGE.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_AGE_ITEM_DESC: "Show [dynamic_historical_events|e] whose start date falls in [AGE.GetName]." #NEW
+ custom_search_filter_dhe_status_category_name: "Status" #NEW
+ custom_search_filter_dhe_status_group_name: "Event status" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_HAS_HAPPENED_NAME: "Has Happened" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_HAS_HAPPENED_DESC: "Show [dynamic_historical_events|e] that have already happened." #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_NOT_YET_NAME: "Not yet" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_NOT_YET_DESC: "Show [dynamic_historical_events|e] that have not happened yet." #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_TIME_HAS_PASSED_NAME: "Time has Passed" #NEW
+ CUSTOM_SEARCH_FILTER_DHE_STATUS_TIME_HAS_PASSED_DESC: "Show [dynamic_historical_events|e] whose time window has passed without having happened." #NEW
 
  search_filter_subunit_has_levies_name: "È una leva"
  search_filter_subunit_has_levies_desc: "Mostra le sottounità di leva."
@@ -693,11 +737,14 @@
  search_filter_unit_has_commander_desc: "Mostra le unità che hanno un comandante."
  search_filter_unit_has_not_commander_name: "Non ha un comandante"
  search_filter_unit_has_not_commander_desc: "Mostra le unità che non hanno un comandante."
- search_filter_unit_has_levies_name: "Ha truppe di leva"
+# search_filter_unit_has_levies_name: "Ha truppe di leva" #OLD
+ search_filter_unit_has_levies_name: "[levy_icon] Has levies" #NEW
  search_filter_unit_has_levies_desc: "Mostra le unità che hanno truppe di leva."
- search_filter_unit_has_mercenaries_name: "Ha mercenari"
+# search_filter_unit_has_mercenaries_name: "Ha mercenari" #OLD
+ search_filter_unit_has_mercenaries_name: "[mercenary_icon] Has mercenaries" #NEW
  search_filter_unit_has_mercenaries_desc: "Mostra le unità che hanno mercenari."
- search_filter_unit_has_regulars_name: "Ha regolari"
+# search_filter_unit_has_regulars_name: "Ha regolari" #OLD
+ search_filter_unit_has_regulars_name: "[regular_icon] Has regulars" #NEW
  search_filter_unit_has_regulars_desc: "Mostra le unità che hanno regolari."
  search_filter_unit_has_infantries_name: "Ha fanteria"
  search_filter_unit_has_infantries_desc: "Mostra le unità che hanno fanteria."
@@ -717,16 +764,20 @@
  search_filter_unit_has_heavy_ships_desc: "Mostra le unità che hanno navi pesanti."
 
  search_filter_goods_category_name: "@good! Tipi di Beni"
- search_filter_goods_category_raw_material_name: "Materia Prima"
+# search_filter_goods_category_raw_material_name: "Materia Prima" #OLD
+ search_filter_goods_category_raw_material_name: "[raw_material_icon] Raw material" #NEW
  search_filter_goods_category_raw_material_desc: "Mostra solo i beni che sono materie prime."
- search_filter_goods_category_produced_name: "Prodotta"
+# search_filter_goods_category_produced_name: "Prodotta" #OLD
+ search_filter_goods_category_produced_name: "[produced_goods_icon] Produced" #NEW
  search_filter_goods_category_produced_desc: "Mostra solo i beni che sono prodotte."
  search_filter_goods_market_produced_desc: "Mostra i beni che sono prodotte in locazioni di questo mercato."
  
  search_filter_trade_category_name: "@trade! Filtri Commercio"
- search_filter_trade_is_export_name: "Esportazione"
+# search_filter_trade_is_export_name: "Esportazione" #OLD
+ search_filter_trade_is_export_name: "[export_icon] Export" #NEW
  search_filter_trade_is_export_desc: "Mostra solo gli scambi che sono esportazioni."
- search_filter_trade_is_import_name: "Importazione"
+# search_filter_trade_is_import_name: "Importazione" #OLD
+ search_filter_trade_is_import_name: "[import_icon] Import" #NEW
  search_filter_trade_is_import_desc: "Mostra solo gli scambi che sono importazioni."
  
  search_filter_mercenary_category_name: "@mercenary! Filtri Mercenari"
@@ -748,23 +799,44 @@
  search_filter_not_hired_mercenary_desc: "Mostra i mercenari che non sono da noi assoldati"
 
  search_filter_location_category_name: "@location! Filtri Località"
- search_filter_location_only_full_expanded_rgo_name: "R.G.O. Pienamente Espansa"
+# search_filter_location_only_full_expanded_rgo_name: "O.R.R. Pienamente Espansa" #OLD
+ search_filter_location_only_full_expanded_rgo_name: "[rgo_icon] Fully expanded R.G.O." #NEW
  search_filter_location_only_full_expanded_rgo_desc: "Mostra solo le [location|e] che sono pienamente espanse riguardo le [rgo|E]"
- search_filter_location_over_building_limit_name: "Oltre Limite Edifici"
+# search_filter_location_over_building_limit_name: "Oltre Limite Edifici" #OLD
+ search_filter_location_over_building_limit_name: "[supported_building_levels_icon] Over Building Limit" #NEW
  search_filter_location_over_building_limit_desc: "Mostra solo le [locations|e] senza [supported_building_levels|e] disponibili"
- search_filter_location_only_not_full_expanded_rgo_name: "R.G.O. Non Pienamente Espansa"
+# search_filter_location_only_not_full_expanded_rgo_name: "O.R.R. Non Pienamente Espansa" #OLD
+ search_filter_location_only_not_full_expanded_rgo_name: "[rgo_icon] Not Fully expanded R.G.O." #NEW
  search_filter_location_only_not_full_expanded_rgo_desc: "Mostra solo le [location|e] che non sono pienamente espanse riguardo le [rgo|E]"
- search_filter_location_only_coastal_name: "Costiera"
+# search_filter_location_only_coastal_name: "Costiera" #OLD
+ search_filter_location_only_coastal_name: "[coast_icon] Coastal" #NEW
  search_filter_location_only_coastal_desc: "Mostra solo le [location|e] [Concept('coastal', 'Costiere')|e]"
- search_filter_location_only_not_coastal_name: "Non Costiera"
+# search_filter_location_only_not_coastal_name: "Non Costiera" #OLD
+ search_filter_location_only_not_coastal_name: "@inland! Non-Coastal" #NEW
  search_filter_location_only_not_coastal_desc: "Mostra solo le [location|e] non [Concept('coastal', 'Costiere')|e]"
- search_filter_location_core_name: "Nazionale"
+ search_filter_location_has_river_name: "[river_icon] Has River" #NEW
+ search_filter_location_has_river_desc: "Show only locations that have a river" #NEW
+ search_filter_location_has_no_river_name: "[river_icon] Has no River" #NEW
+ search_filter_location_has_no_river_desc: "Show only locations that do not have a river" #NEW
+ search_filter_location_has_town_rights_name: "[town_rights_icon] Has [town_rights]" #NEW
+ search_filter_location_has_town_rights_desc: "Show only locations that have [town_rights|e]" #NEW
+ search_filter_location_has_no_town_rights_name: "[town_rights_icon] Has no [town_rights]" #NEW
+ search_filter_location_has_no_town_rights_desc: "Show only locations that do not have [town_rights|e]" #NEW
+ search_filter_location_is_urban_name: "Is Urban" #NEW
+ search_filter_location_is_urban_desc: "Show only Urban locations" #NEW
+ search_filter_location_is_not_urban_name: "Is not Urban" #NEW
+ search_filter_location_is_not_urban_desc: "Show only rural locations" #NEW
+# search_filter_location_core_name: "Nazionale" #OLD
+ search_filter_location_core_name: "[core_icon] Core" #NEW
  search_filter_location_core_desc: "Mostra le [location|e] [cores|e]"
- search_filter_location_integrated_name: "Integrata"
+# search_filter_location_integrated_name: "Integrata" #OLD
+ search_filter_location_integrated_name: "[integrated_icon] Integrated" #NEW
  search_filter_location_integrated_desc: "Mostra le [location|e] [Concept('integrated', 'Integrate')|e]"
- search_filter_location_conquered_name: "Conquistata"
+# search_filter_location_conquered_name: "Conquistata" #OLD
+ search_filter_location_conquered_name: "[conquered_icon] Conquered" #NEW
  search_filter_location_conquered_desc: "Mostra le [location|e] conquistate"
- search_filter_location_colonized_name: "Colonizzata"
+# search_filter_location_colonized_name: "Colonizzata" #OLD
+ search_filter_location_colonized_name: "[colonized_icon] Colonized" #NEW
  search_filter_location_colonized_desc: "Mostra le [location|e] colonizzate"
  search_filter_location_only_burgher_possitive_deficit_name: "Nessun Deficit di Borghesi"
  search_filter_location_only_burgher_possitive_deficit_desc: "Mostra solo le [location|e] che non hanno deficit di Borghesi"
@@ -796,33 +868,48 @@
  search_filter_rebel_of_country_desc: "Mostra solo i ribelli appartenenti al nostro [country|e] invece di includere quelli dei nostri [subjects|e]."
 
  search_filter_character_category_name: "@characters! Filtri Personaggio"
- search_filter_character_is_ruler_name: "Sovrano"
+# search_filter_character_is_ruler_name: "Sovrano" #OLD
+ search_filter_character_is_ruler_name: "[ruler_icon] Ruler" #NEW
  search_filter_character_is_ruler_desc: "Mostra i personaggi che sono sovrani"
- search_filter_character_is_consort_name: "Consorte"
+# search_filter_character_is_consort_name: "Consorte" #OLD
+ search_filter_character_is_consort_name: "[consort_icon] Consort" #NEW
  search_filter_character_is_consort_desc: "Mostra i personaggi che sono consorte"
- search_filter_character_is_heir_name: "Erede"
+# search_filter_character_is_heir_name: "Erede" #OLD
+ search_filter_character_is_heir_name: "[heir_icon] Heir" #NEW
  search_filter_character_is_heir_desc: "Mostra i personaggi che sono eredi"
- search_filter_character_is_regent_name: "Reggente"
+# search_filter_character_is_regent_name: "Reggente" #OLD
+ search_filter_character_is_regent_name: "[regent_icon] Regent" #NEW
  search_filter_character_is_regent_desc: "Mostra i personaggi che sono reggenti"
- search_filter_character_is_general_name: "Generale"
+# search_filter_character_is_general_name: "Generale" #OLD
+ search_filter_character_is_general_name: "[general_icon] General" #NEW
  search_filter_character_is_general_desc: "Mostra i personaggi che sono generali"
- search_filter_character_is_admiral_name: "Ammiraglio"
+# search_filter_character_is_admiral_name: "Ammiraglio" #OLD
+ search_filter_character_is_admiral_name: "[admiral_icon] Admiral" #NEW
  search_filter_character_is_admiral_desc: "Mostra i personaggi che sono ammiragli"
- search_filter_character_is_explorer_name: "Esploratore"
+# search_filter_character_is_explorer_name: "Esploratore" #OLD
+ search_filter_character_is_explorer_name: "[explorer_icon] Explorer" #NEW
  search_filter_character_is_explorer_desc: "Mostra i personaggi che sono esploratori"
- search_filter_character_is_artist_name: "Artista"
+# search_filter_character_is_artist_name: "Artista" #OLD
+ search_filter_character_is_artist_name: "[artist_icon] Artist" #NEW
  search_filter_character_is_artist_desc: "Mostra i personaggi che sono artisti"
- search_filter_character_is_crown_name: "Corona"
+# search_filter_character_is_crown_name: "Corona" #OLD
+ search_filter_character_is_crown_name: "@crown_estate! Crown" #NEW
  search_filter_character_is_crown_desc: "Mostra i personaggi che sono membri della corona"
- search_filter_character_is_noble_name: "Nobile"
+# search_filter_character_is_noble_name: "Nobile" #OLD
+ search_filter_character_is_noble_name: "@nobles_estate! Noble" #NEW
  search_filter_character_is_noble_desc: "Mostra i personaggi che sono nobili"
- search_filter_character_is_clergy_name: "Chierico"
+# search_filter_character_is_clergy_name: "Chierico" #OLD
+ search_filter_character_is_clergy_name: "@clergy_estate! Cleric" #NEW
  search_filter_character_is_clergy_desc: "Mostra i personaggi che sono chierici"
- search_filter_character_is_burgher_name: "Borghese"
+# search_filter_character_is_burgher_name: "Borghese" #OLD
+ search_filter_character_is_burgher_name: "@burghers_estate! Burgher" #NEW
  search_filter_character_is_burgher_desc: "Mostra i personaggi che sono borghesi"
- search_filter_character_is_peasant_name: "Contadino"
- search_filter_character_is_peasant_desc: "Mostra i personaggi che sono contadini"
- search_filter_character_is_married_name: "Sposato/a"
+# search_filter_character_is_peasant_name: "Contadino" #OLD
+ search_filter_character_is_peasant_name: "@peasants_estate! Commoner" #NEW
+# search_filter_character_is_peasant_desc: "Mostra i personaggi che sono contadini" #OLD
+ search_filter_character_is_peasant_desc: "Shows characters that are Commoners" #NEW
+# search_filter_character_is_married_name: "Sposato/a" #OLD
+ search_filter_character_is_married_name: "[marry_icon] Married" #NEW
  search_filter_character_is_married_desc: "Mostra i personaggi che sono sposati"
  search_filter_character_is_not_married_name: "Non sposato/a"
  search_filter_character_is_not_married_desc: "Mostra i personaggi che non sono sposati"
@@ -830,82 +917,115 @@
  search_filter_character_has_available_marriage_desc: "Mostra i personaggi che possono sposarsi"
  search_filter_character_is_pregnant_name: "Incinta"
  search_filter_character_is_pregnant_desc: "Mostra i personaggi che sono incinta"
- search_filter_character_is_adult_name: "Adulto"
+# search_filter_character_is_adult_name: "Adulto" #OLD
+ search_filter_character_is_adult_name: "[adult_icon] Adult" #NEW
  search_filter_character_is_adult_desc: "Mostra i personaggi che sono adulti"
- search_filter_character_is_courtier_name: "Cortigiano"
+# search_filter_character_is_courtier_name: "Cortigiano" #OLD
+ search_filter_character_is_courtier_name: "[courtier_icon] Courtier" #NEW
  search_filter_character_is_courtier_desc: "Mostra i personaggi che sono cortigiani"
- search_filter_character_is_adolescent_name: "Adolescente"
+# search_filter_character_is_adolescent_name: "Adolescente" #OLD
+ search_filter_character_is_adolescent_name: "[adolescent_icon] Adolescent" #NEW
  search_filter_character_is_adolescent_desc: "Mostra i personaggi che sono adolescenti"
- search_filter_character_is_child_name: "Bambino"
+# search_filter_character_is_child_name: "Bambino" #OLD
+ search_filter_character_is_child_name: "[child_icon] Child" #NEW
  search_filter_character_is_child_desc: "Mostra i personaggi che sono bambini"
- search_filter_character_has_child_education_selected_name: "Ha istruzione selezionata"
+# search_filter_character_has_child_education_selected_name: "Ha istruzione selezionata" #OLD
+ search_filter_character_has_child_education_selected_name: "[child_education_icon] Has education selected" #NEW
  search_filter_character_has_child_education_selected_desc: "Mostra i personaggi che hanno un'istruzione selezionata"
- search_filter_character_has_not_child_education_selected_name: "Non ha istruzione selezionata"
+# search_filter_character_has_not_child_education_selected_name: "Non ha istruzione selezionata" #OLD
+ search_filter_character_has_not_child_education_selected_name: "[child_education_icon] Has no education selected" #NEW
  search_filter_character_has_not_child_education_selected_desc: "Mostra i personaggi che non hanno un'istruzione selezionata"
- search_filter_character_is_exploring_name: "In esplorazione"
+# search_filter_character_is_exploring_name: "In esplorazione" #OLD
+ search_filter_character_is_exploring_name: "[exploration_icon] Exploring" #NEW
  search_filter_character_is_exploring_desc: "Mostra i personaggi che stanno esplorando"
- search_filter_character_is_not_exploring_name: "Non in esplorazione"
+# search_filter_character_is_not_exploring_name: "Non in esplorazione" #OLD
+ search_filter_character_is_not_exploring_name: "[exploration_icon] Not exploring" #NEW
  search_filter_character_is_not_exploring_desc: "Mostra i personaggi che non stanno esplorando"
- search_filter_character_is_in_cabinet_name: "Nel gabinetto"
+# search_filter_character_is_in_cabinet_name: "Nel gabinetto" #OLD
+ search_filter_character_is_in_cabinet_name: "[cabinet_icon] In cabinet" #NEW
  search_filter_character_is_in_cabinet_desc: "Mostra i personaggi che sono nel gabinetto"
- search_filter_character_is_not_in_cabinet_name: "Non nel gabinetto"
+# search_filter_character_is_not_in_cabinet_name: "Non nel gabinetto" #OLD
+ search_filter_character_is_not_in_cabinet_name: "[cabinet_icon] Not in cabinet" #NEW
  search_filter_character_is_not_in_cabinet_desc: "Mostra i personaggi che non sono nel gabinetto"
- search_filter_character_is_male_name: "Maschio"
+# search_filter_character_is_male_name: "Maschio" #OLD
+ search_filter_character_is_male_name: "@male! Male" #NEW
  search_filter_character_is_male_desc: "Mostra i personaggi che sono maschi"
- search_filter_character_is_female_name: "Femmina"
+# search_filter_character_is_female_name: "Femmina" #OLD
+ search_filter_character_is_female_name: "@female! Female" #NEW
  search_filter_character_is_female_desc: "Mostra i personaggi che sono femmine"
- search_filter_character_is_saint_name: "Santo"
+# search_filter_character_is_saint_name: "Santo" #OLD
+ search_filter_character_is_saint_name: "[saint_icon] Saint" #NEW
  search_filter_character_is_saint_desc: "Mostra i personaggi che sono santi"
 
  search_filter_pop_category_name: "@social_class! Classe Sociale"
- search_filter_pop_is_nobles_name: "Nobile"
+# search_filter_pop_is_nobles_name: "Nobile" #OLD
+ search_filter_pop_is_nobles_name: "@nobles! Noble" #NEW
  search_filter_pop_is_nobles_desc: "Mostra i pop che sono nobili"
- search_filter_pop_is_clergy_name: "Chierico"
+# search_filter_pop_is_clergy_name: "Chierico" #OLD
+ search_filter_pop_is_clergy_name: "@clergy! Cleric" #NEW
  search_filter_pop_is_clergy_desc: "Mostra i pop che sono chierici"
- search_filter_pop_is_burghers_name: "Borghese"
+# search_filter_pop_is_burghers_name: "Borghese" #OLD
+ search_filter_pop_is_burghers_name: "@burghers! Burgher" #NEW
  search_filter_pop_is_burghers_desc: "Mostra i pop che sono borghesi"
- search_filter_pop_is_laborers_name: "Operaio"
+# search_filter_pop_is_laborers_name: "Operaio" #OLD
+ search_filter_pop_is_laborers_name: "@laborers! Laborer" #NEW
  search_filter_pop_is_laborers_desc: "Mostra i pop che sono operai"
- search_filter_pop_is_soldiers_name: "Soldato"
+# search_filter_pop_is_soldiers_name: "Soldato" #OLD
+ search_filter_pop_is_soldiers_name: "@soldiers! Soldier" #NEW
  search_filter_pop_is_soldiers_desc: "Mostra i pop che sono soldati"
- search_filter_pop_is_peasants_name: "Contadino"
+# search_filter_pop_is_peasants_name: "Contadino" #OLD
+ search_filter_pop_is_peasants_name: "@peasants! Peasant" #NEW
  search_filter_pop_is_peasants_desc: "Mostra i pop che sono popolani"
- search_filter_pop_is_tribesmen_name: "Uomo della Tribù"
+# search_filter_pop_is_tribesmen_name: "Uomo della Tribù" #OLD
+ search_filter_pop_is_tribesmen_name: "@tribesmen! Tribesmen" #NEW
  search_filter_pop_is_tribesmen_desc: "Mostra i pop che sono uomini delle tribù"
- search_filter_pop_is_slaves_name: "Schiavo"
+# search_filter_pop_is_slaves_name: "Schiavo" #OLD
+ search_filter_pop_is_slaves_name: "@slaves! Slaves" #NEW
  search_filter_pop_is_slaves_desc: "Mostra i pop che sono schiavi"
  
- search_filter_location_control_name: "Controllo Località"
+# search_filter_location_control_name: "Controllo Località" #OLD
+ search_filter_location_control_name: "[control_icon] Location control" #NEW
  search_filter_location_control_desc: "Mostra le locazioni all'interno dell'intervallo di controllo specificato"
  search_filter_location_control_format: "$VAL|%0$"
- search_filter_location_proximity_to_capital_name: "Prossimità della località alla capitale" 
+# search_filter_location_proximity_to_capital_name: "Prossimità della località alla capitale" #OLD
+ search_filter_location_proximity_to_capital_name: "[proximity_icon] Location proximity to capital" #NEW
  search_filter_location_proximity_to_capital_desc: "Mostra le località che si trovano almeno alla distanza specificata dalla capitale" 
  search_filter_location_proximity_to_capital_format: "$VAL|%0$" 
  
- search_filter_location_market_access_name: "Accesso al Mercato"
+# search_filter_location_market_access_name: "Accesso al Mercato" #OLD
+ search_filter_location_market_access_name: "[market_access_icon] Market access" #NEW
  search_filter_location_market_access_desc: "Mostra le locazioni all'interno dell'intervallo di accesso al mercato specificato"
  search_filter_location_market_access_format: "$VAL|%0$"
  
- search_filter_location_unemployed_percentage_name: "Percentuale di Disoccupazione"
+# search_filter_location_unemployed_percentage_name: "Percentuale di Disoccupazione" #OLD
+ search_filter_location_unemployed_percentage_name: "[employment_icon] Unemployment percentage" #NEW
  search_filter_location_unemployed_percentage_desc: "Mostra le locazioni all'interno dell'intervallo di percentuale di disoccupazione specificato"
  search_filter_location_unemployed_percentage_format: "$VAL|%0$"
  
- search_filter_location_population_name: "Popolazione Località"
+# search_filter_location_population_name: "Popolazione Località" #OLD
+ search_filter_location_population_name: "[population_icon] Location population" #NEW
  search_filter_location_population_desc: "Mostra le locazioni all'interno dell'intervallo di popolazione specificato"
  search_filter_location_population_format: "[LocationWithInRange_Format(Player.Self, '(CFixedPoint)$VAL$')]"
 
  search_filter_cabinet_action_category_name: "@cabinet_action! Filtri Ruolo di Gabinetto"
- search_filter_cabinet_action_adm_name: "Amministrativa"
+# search_filter_cabinet_action_adm_name: "Amministrativa" #OLD
+ search_filter_cabinet_action_adm_name: "@adm! Administrative" #NEW
  search_filter_cabinet_action_adm_desc: "Mostra le [cabinet_actions|e] che utilizzano il potere [adm|e]."
- search_filter_cabinet_action_dip_name: "Diplomatica"
+# search_filter_cabinet_action_dip_name: "Diplomatica" #OLD
+ search_filter_cabinet_action_dip_name: "@dip! Diplomatic" #NEW
  search_filter_cabinet_action_dip_desc: "Mostra le [cabinet_actions|e] che utilizzano il potere [dip|e]."
- search_filter_cabinet_action_mil_name: "Militare"
+# search_filter_cabinet_action_mil_name: "Militare" #OLD
+ search_filter_cabinet_action_mil_name: "@mil! Military" #NEW
  search_filter_cabinet_action_mil_desc: "Mostra le [cabinet_actions|e] che utilizzano il potere [mil|e]."
- search_filter_cabinet_action_province_name: "Riguarda Provincia"
- search_filter_cabinet_action_province_desc: "Mostra le [cabinet_actions|e] che riguardano una provincia."
- search_filter_cabinet_action_country_name: "Riguarda Paese"
+# search_filter_cabinet_action_province_name: "Riguarda Provincia" #OLD
+ search_filter_cabinet_action_province_name: "@province! Affects Province" #NEW
+# search_filter_cabinet_action_province_desc: "Mostra le [cabinet_actions|e] che riguardano una provincia." #OLD
+ search_filter_cabinet_action_province_desc: "Show [cabinet_actions|e] that affects a [province|e]." #NEW
+# search_filter_cabinet_action_country_name: "Riguarda Paese" #OLD
+ search_filter_cabinet_action_country_name: "@country! Affects Country" #NEW
  search_filter_cabinet_action_country_desc: "Mostra le [cabinet_actions|e] che riguardano il paese."
- search_filter_cabinet_action_societal_value_name: "Riguarda Società"
+# search_filter_cabinet_action_societal_value_name: "Riguarda Società" #OLD
+ search_filter_cabinet_action_societal_value_name: "[societal_value_icon] Affects Society" #NEW
  search_filter_cabinet_action_societal_value_desc: "Mostra le [cabinet_actions|e] che riguardano la nostra società."
  
  search_filter_roadbuilder_destinations_desc: "Mostra le possibili destinazioni di [road|e] da questa [location|e]."
@@ -932,16 +1052,35 @@
 
  # Custom Filters
  custom_search_filter_building_pop_type_group_name: "@social_class! Classe Sociale"
- CUSTOM_SEARCH_FILTER_BUILDING_ONLY_POPTYPE_NAME: "[POP_TYPE.GetNameWithNoTooltip]"
+# CUSTOM_SEARCH_FILTER_BUILDING_ONLY_POPTYPE_NAME: "[POP_TYPE.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_BUILDING_ONLY_POPTYPE_NAME: "[POP_TYPE.GetIcon] [POP_TYPE.GetNameWithNoTooltip]" #NEW
  CUSTOM_SEARCH_FILTER_BUILDING_ONLY_POPTYPE_DESC: "Mostra gli [buildings|e] che possono [employ|e] [POP_TYPE.GetName]."
  
  custom_search_filter_building_category_group_name: "@building_levels! Categoria"
  CUSTOM_SEARCH_FILTER_BUILDING_ONLY_BUILDINGCATEGORY_NAME: "[BUILDING_CATEGORY.GetNameWithNoTooltip]"
  CUSTOM_SEARCH_FILTER_BUILDING_ONLY_BUILDINGCATEGORY_DESC: "Mostra gli [buildings|e] della [building_category|e] [BUILDING_CATEGORY.GetName]."
+ custom_search_filter_building_estate_group_name: "Estate Buildings" #NEW
+ CUSTOM_SEARCH_FILTER_BUILDING_HIDE_ESTATE_ONLY_NAME: "Hide Estate-Only Buildings" #NEW
+ CUSTOM_SEARCH_FILTER_BUILDING_HIDE_ESTATE_ONLY_DESC: "Hide [buildings|e] that can only be built and managed by [estates|e], not directly by the player." #NEW
  
  custom_search_filter_hints_category_name: "@hint! Filtri Suggerimenti"
  CUSTOM_SEARCH_FILTER_HINTS_PRIO_NAME: "Suggerimenti ad Alta Priorità"
  CUSTOM_SEARCH_FILTER_HINTS_PRIO_DESC: "Mostra i suggerimenti che potrebbero essere più utili per noi al momento."
+ custom_search_filter_in_range_markets_category_name: "Markets Filters" #NEW
+ CUSTOM_SEARCH_FILTER_IN_RANGE_MARKETS_NAME: "Markets visible from [MARKET.GetCenterLocation.GetOwner.GetFlagIcon] [MARKET.GetShortNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_IN_RANGE_MARKETS_DESC: "Filter by Markets visible from [MARKET.GetCenterLocation.GetOwner.GetFlagIcon][MARKET.GetName]" #NEW
+ CUSTOM_SEARCH_FILTER_MARKETS_CONTINENT_NAME: "Markets in [MARKET.GetCenterLocation.GetContinent.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_MARKETS_CONTINENT_DESC: "Filter by Markets on the same [continent|e] of [MARKET.GetCenterLocation.GetName]" #NEW
+ CUSTOM_SEARCH_FILTER_PRESENCE_MARKETS_NAME: "Markets with presence of [GetPlayer.GetNameWithFlagWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_PRESENCE_MARKETS_DESC: "Filter by Markets where there is some active presence of [GetPlayer.GetNameWithFlag], meaning there is at least some trade capacity or some owned locations." #NEW
+ CUSTOM_SEARCH_FILTER_NOT_THIS_MARKETS_NAME: "Exclude [MARKET.GetCenterLocation.GetOwner.GetFlagIcon] [MARKET.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_NOT_THIS_MARKETS_DESC: "This filter will have the effect of excluding [MARKET.GetCenterLocation.GetOwner.GetFlagIcon] [MARKET.GetName] from the search." #NEW
+ CUSTOM_SEARCH_FILTER_ADJACENT_MARKETS_NAME: "Adjacent Markets" #NEW
+ CUSTOM_SEARCH_FILTER_ADJACENT_MARKETS_DESC: "Filter by Markets adjacent to [MARKET.GetCenterLocation.GetOwner.GetFlagIcon] [MARKET.GetName]." #NEW
+ CUSTOM_SEARCH_FILTER_NEGATIVE_BALANCE_LOCAL_MARKETS_NAME: "Markets with only local negative balance" #NEW
+ CUSTOM_SEARCH_FILTER_NEGATIVE_BALANCE_LOCAL_MARKETS_DESC: "For each good, only Markets with local negative balance will be filtered" #NEW
+ CUSTOM_SEARCH_FILTER_NEGATIVE_BALANCE_ALL_MARKETS_NAME: "Markets with only total negative balance" #NEW
+ CUSTOM_SEARCH_FILTER_NEGATIVE_BALANCE_ALL_MARKETS_DESC: "For each good, only Markets with total negative balance (trades included) will be filtered" #NEW
  
  custom_search_filter_diplo_cat_category_name: "@organization! Filtri Azioni Diplomatiche"
  CUSTOM_SEARCH_FILTER_DIPLO_FRIENDLY_CAT_NAME: "Azioni Amichevoli"
@@ -967,9 +1106,11 @@
  
  custom_search_filter_building_food_production_category_name: "@food_productivity! Filtri Produzione Alimentare"
  custom_search_filter_building_food_production_group_name: "@food_productivity! Produzione Alimentare"
- CUSTOM_SEARCH_FILTER_BUILDING_FOOD_PRODUCTION_NAME: "Produce Cibo"
+# CUSTOM_SEARCH_FILTER_BUILDING_FOOD_PRODUCTION_NAME: "Produce Cibo" #OLD
+ CUSTOM_SEARCH_FILTER_BUILDING_FOOD_PRODUCTION_NAME: "@food! Produces Food" #NEW
  CUSTOM_SEARCH_FILTER_BUILDING_FOOD_PRODUCTION_DESC: "[buildings|e] che [produces|e] [food|e]."
- CUSTOM_SEARCH_FILTER_IS_RAW_GOOD_NAME: "È Materia Prima"
+# CUSTOM_SEARCH_FILTER_IS_RAW_GOOD_NAME: "È Materia Prima" #OLD
+ CUSTOM_SEARCH_FILTER_IS_RAW_GOOD_NAME: "[rgo_icon] Is Raw Good" #NEW
  CUSTOM_SEARCH_FILTER_IS_RAW_GOOD_DESC: "[goods|e] che sono [rgo|e]."
  
  CUSTOM_SEARCH_FILTER_BUILDING_FOOD_CAPACITY_NAME: "Aumenta la Capacità Alimentare"
@@ -983,9 +1124,14 @@
  custom_search_filter_raw_goods_location_category_name: "@country! Filtri Località Materie Prime"
  custom_search_filter_building_goods_category_name: "@good! Merci"
  custom_search_filter_building_goods_group_name: "@good! Tipi di merci"
- CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_NAME: "@[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]"
+ custom_search_filter_markets_global_category_name: "Markets Filters" #NEW
+ custom_search_filter_markets_and_goods_global_category_name: "Markets and Goods Filters" #NEW
+# CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_NAME: "@[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_NAME: "@[GOODS.GetKey]! Produces [GOODS.GetNameWithNoTooltip]" #NEW
  CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_DESC: "Mostra gli [buildings|e] che [produce|e] @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]."
- CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_CONSUMPTION_DESC: "Mostra gli [buildings|e] che consumano @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]."
+ CUSTOM_SEARCH_FILTER_BUILDING_ONLY_INPUT_GOODS_NAME: "@[GOODS.GetKey]! Uses [GOODS.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_BUILDING_ONLY_INPUT_GOODS_DESC: "Show [buildings|e] that consume @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip] as input." #NEW
+# CUSTOM_SEARCH_FILTER_BUILDING_ONLY_GOODS_CONSUMPTION_DESC: "Mostra gli [buildings|e] che consumano @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]." #DELETE
 
  custom_search_filter_building_goods_method_category_name: "Metodo di Estrazione"
  custom_search_filter_building_goods_method_group_name: "Tipi di Metodo di Estrazione"
@@ -995,28 +1141,44 @@
  custom_search_filter_location_category_name: "@location! Filtri Tipo di Località"
  custom_search_filter_location_group_name: "@location! Tipi di Località"
  custom_search_filter_location_rank_category_name: "@location! Ranghi di Località"
- CUSTOM_SEARCH_FILTER_LOCATION_RANK_NAME: "[LocationRank.GetNameWithNoTooltip]"
- CUSTOM_SEARCH_FILTER_LOCATION_RANK_DESC: "Mostra le [locations|e] che sono [LocationRank.GetNameWithNoTooltip]."
+# CUSTOM_SEARCH_FILTER_LOCATION_RANK_NAME: "[LocationRank.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_LOCATION_RANK_NAME: "[LocationRank.GetIcon] [LocationRank.GetNameWithNoTooltip]" #NEW
+# CUSTOM_SEARCH_FILTER_LOCATION_RANK_DESC: "Mostra le [locations|e] che sono [LocationRank.GetNameWithNoTooltip]." #OLD
+ CUSTOM_SEARCH_FILTER_LOCATION_RANK_DESC: "Show [locations|e] that are a [LocationRank.GetIcon] [LocationRank.GetNameWithNoTooltip]." #NEW
  custom_search_filter_location_topography_category_name: "@topography! Topografia Località"
- CUSTOM_SEARCH_FILTER_LOCATION_TOPOGRAPHY_NAME: "[TOPOGRAPHY.GetNameWithNoTooltip]"
+# CUSTOM_SEARCH_FILTER_LOCATION_TOPOGRAPHY_NAME: "[TOPOGRAPHY.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_LOCATION_TOPOGRAPHY_NAME: "[TOPOGRAPHY.GetIcon] [TOPOGRAPHY.GetNameWithNoTooltip]" #NEW
  CUSTOM_SEARCH_FILTER_LOCATION_TOPOGRAPHY_DESC: "Mostra le [locations|e] che hanno [TOPOGRAPHY.GetNameWithNoTooltip]."
  custom_search_filter_location_vegetation_category_name: "@vegetation! Vegetazione Località"
- CUSTOM_SEARCH_FILTER_LOCATION_VEGETATION_NAME: "[VEGETATION.GetNameWithNoTooltip]"
+# CUSTOM_SEARCH_FILTER_LOCATION_VEGETATION_NAME: "[VEGETATION.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_LOCATION_VEGETATION_NAME: "[VEGETATION.GetIcon] [VEGETATION.GetNameWithNoTooltip]" #NEW
  CUSTOM_SEARCH_FILTER_LOCATION_VEGETATION_DESC: "Mostra le [locations|e] che hanno [VEGETATION.GetNameWithNoTooltip]."
  custom_search_filter_location_climate_category_name: "@climate! Clima Località"
- CUSTOM_SEARCH_FILTER_LOCATION_CLIMATE_NAME: "[CLIMATE.GetNameWithNoTooltip]"
+# CUSTOM_SEARCH_FILTER_LOCATION_CLIMATE_NAME: "[CLIMATE.GetNameWithNoTooltip]" #OLD
+ CUSTOM_SEARCH_FILTER_LOCATION_CLIMATE_NAME: "[CLIMATE.GetIcon] [CLIMATE.GetNameWithNoTooltip]" #NEW
  CUSTOM_SEARCH_FILTER_LOCATION_CLIMATE_DESC: "Mostra le [locations|e] che hanno [CLIMATE.GetNameWithNoTooltip]."
  custom_search_filter_location_produce_food_category_name: "@food_suitability! Idoneità Alimentare Località"
  CUSTOM_SEARCH_FILTER_LOCATION_PRODUCE_FOOD_NAME: "Può costruire edifici alimentari"
  CUSTOM_SEARCH_FILTER_LOCATION_PRODUCE_FOOD_DESC: "Mostra le [locations|e] che possono costruire qualsiasi edificio che migliori le necessità alimentari."
+ custom_search_filter_location_goods_category_name: "@good! Location Goods Filters" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_GOODS_HAS_BUILDING_NAME: "Has Producing Building" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_GOODS_HAS_BUILDING_DESC: "Show [goods|e] that have a [building|e] actively producing them." #NEW
+ custom_search_filter_location_raw_goods_category_name: "@good! Location goods" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_RAW_GOODS_NAME: "@[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip] in Location" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_RAW_GOODS_DESC: "Show [locations|e] that [produce|e] @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]." #NEW
+ custom_search_filter_location_province_raw_goods_category_name: "@good! Province goods" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_PROVINCE_RAW_GOODS_NAME: "@[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip] in Province" #NEW
+ CUSTOM_SEARCH_FILTER_LOCATION_PROVINCE_RAW_GOODS_DESC: "Show [locations|e] whose [province] contains a @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip] [rgo]." #NEW
  
  custom_search_filter_seazones_category_name: "@seazone! Zone Marittime"
  custom_search_filter_seazones_group_name: "@seazone! Tipi di Zona Marittima"
  CUSTOM_SEARCH_FILTER_SEAZONE_TOPOGRAPHY_NAME: "[TOPOGRAPHY.GetNameWithNoTooltip]"
  CUSTOM_SEARCH_FILTER_SEAZONE_TOPOGRAPHY_DESC: "Mostra le [seazones|e] che sono [TOPOGRAPHY.GetNameWithNoTooltip]."
- CUSTOM_SEARCH_FILTER_SEAZONE_HAS_PRIVATEERS_NAME: "Ha Corsari Ostili"
+# CUSTOM_SEARCH_FILTER_SEAZONE_HAS_PRIVATEERS_NAME: "Ha Corsari Ostili" #OLD
+ CUSTOM_SEARCH_FILTER_SEAZONE_HAS_PRIVATEERS_NAME: "[privateers_icon] Has hostile Privateers" #NEW
  CUSTOM_SEARCH_FILTER_SEAZONE_HAS_PRIVATEERS_DESC: "[seazones|e] che hanno [privateers|e] ostili."
- CUSTOM_SEARCH_FILTER_SEAZONE_NOT_HAS_PRIVATEERS_NAME: "Non ha Corsari Ostili"
+# CUSTOM_SEARCH_FILTER_SEAZONE_NOT_HAS_PRIVATEERS_NAME: "Non ha Corsari Ostili" #OLD
+ CUSTOM_SEARCH_FILTER_SEAZONE_NOT_HAS_PRIVATEERS_NAME: "[privateers_icon] Has no hostile Privateers" #NEW
  CUSTOM_SEARCH_FILTER_SEAZONE_NOT_HAS_PRIVATEERS_DESC: "[seazones|e] che non hanno [privateers|e] ostili."
 
  custom_search_filter_seazones_markets_category_name: "@market! Mercati"
@@ -1026,20 +1188,25 @@
  
  custom_search_filter_areas_category_name: "@area! Aree"
  custom_search_filter_areas_group_name: "@area! Tipi di Area"
- CUSTOM_SEARCH_FILTER_AREA_HAS_PRIVATEERS_NAME: "Ha Corsari Ostili"
+# CUSTOM_SEARCH_FILTER_AREA_HAS_PRIVATEERS_NAME: "Ha Corsari Ostili" #OLD
+ CUSTOM_SEARCH_FILTER_AREA_HAS_PRIVATEERS_NAME: "[privateers_icon] Has hostile Privateers" #NEW
  CUSTOM_SEARCH_FILTER_AREA_HAS_PRIVATEERS_DESC: "[area|e] che ha [privateers|e] ostili."
- CUSTOM_SEARCH_FILTER_AREA_NOT_HAS_PRIVATEERS_NAME: "Non ha Corsari Ostili"
+# CUSTOM_SEARCH_FILTER_AREA_NOT_HAS_PRIVATEERS_NAME: "Non ha Corsari Ostili" #OLD
+ CUSTOM_SEARCH_FILTER_AREA_NOT_HAS_PRIVATEERS_NAME: "[privateers_icon]  Has no hostile Privateers" #NEW
  CUSTOM_SEARCH_FILTER_AREA_NOT_HAS_PRIVATEERS_DESC: "[area|e] che non ha [privateers|e] ostili."
- CUSTOM_SEARCH_FILTER_AREA_HAS_HIRED_PRIVATEERS_NAME: "Ha Corsari Assoldati"
+# CUSTOM_SEARCH_FILTER_AREA_HAS_HIRED_PRIVATEERS_NAME: "Ha Corsari Assoldati" #OLD
+ CUSTOM_SEARCH_FILTER_AREA_HAS_HIRED_PRIVATEERS_NAME: "[privateers_icon] Has hired Privateers" #NEW
  CUSTOM_SEARCH_FILTER_AREA_HAS_HIRED_PRIVATEERS_DESC: "[area|e] che ha [privateers|e] assoldati."
- CUSTOM_SEARCH_FILTER_AREA_HAS_NOT_HIRED_PRIVATEERS_NAME: "Non ha Corsari Assoldati"
+# CUSTOM_SEARCH_FILTER_AREA_HAS_NOT_HIRED_PRIVATEERS_NAME: "Non ha Corsari Assoldati" #OLD
+ CUSTOM_SEARCH_FILTER_AREA_HAS_NOT_HIRED_PRIVATEERS_NAME: "[privateers_icon] Has no hired Privateers" #NEW
  CUSTOM_SEARCH_FILTER_AREA_HAS_NOT_HIRED_PRIVATEERS_DESC: "[area|e] che non ha [privateers|e] assoldati."
  
  custom_search_filter_law_category_name: "@law! Categoria di Legge"
  CUSTOM_SEARCH_FILTER_LAW_CATEGORY_NAME: "$CATEGORY$"
  CUSTOM_SEARCH_FILTER_LAW_CATEGORY_DESC: "Mostra le [laws|e] che rientrano in $CATEGORY$."
  custom_search_filter_law_religion_name: "@religion! Specifiche per la Religione"
- custom_search_filter_law_gov_name: "@political_power! Specifiche per il Governo"
+# custom_search_filter_law_gov_name: "@political_power! Specifiche per il Governo" #OLD
+ custom_search_filter_law_gov_name: "@government! Government Specific" #NEW
  custom_search_filter_law_country_name: "@country! Specifiche per il Paese"
  CUSTOM_SEARCH_FILTER_UNIQUE_LAWS_RELIGION_NAME: "$RELIGION$"
  CUSTOM_SEARCH_FILTER_UNIQUE_LAWS_RELIGION_DESC: "Mostra le [laws|e] uniche per $RELIGION$."
@@ -1065,42 +1232,75 @@
  CUSTOM_SEARCH_FILTER_RAW_GOODS_NOT_ONLY_FULL_DESC: "Mostra le [locations|e] che NON sono pienamente espanse."
  
  custom_search_filter_trade_category_name: "@trade! Commercio"
- CUSTOM_SEARCH_FILTER_TRADE_IS_EXPORT_NAME: "Esportazioni"
+# CUSTOM_SEARCH_FILTER_TRADE_IS_EXPORT_NAME: "Esportazioni" #OLD
+ CUSTOM_SEARCH_FILTER_TRADE_IS_EXPORT_NAME: "[exports_icon] Exports" #NEW
  CUSTOM_SEARCH_FILTER_TRADE_IS_EXPORT_DESC: "Mostra solo le esportazioni."
- CUSTOM_SEARCH_FILTER_TRADE_IS_IMPORT_NAME: "Importazioni"
+# CUSTOM_SEARCH_FILTER_TRADE_IS_IMPORT_NAME: "Importazioni" #OLD
+ CUSTOM_SEARCH_FILTER_TRADE_IS_IMPORT_NAME: "[exports_icon] Imports" #NEW
  CUSTOM_SEARCH_FILTER_TRADE_IS_IMPORT_DESC: "Mostra solo le importazioni."
 
  custom_search_filter_market_category_name: "@market! Mercato"
  custom_search_filter_market_presence_group_name: "@market! Presenza Mercati"
+ TRADE_DESTINATION_FILTER_SELECT: "Filter Trade Suggestions by Destination Market" #NEW
+ TRADE_DESTINATION_FILTER_ALL: "Destination: All Markets" #NEW
+ TRADE_DESTINATION_FILTER_ALL_MARKETS: "All Markets in Range" #NEW
+ TRADE_DESTINATION_MARKET_SEARCH_HINT: "Type a Market or a Good name to filter further." #NEW
+ TRADE_DESTINATION_FILTERS_ACTIVE: "destination markets selected" #NEW
+ CLEAR_TRADE_DESTINATION_FILTER: "Right-click to clear all destination filters" #NEW
+ custom_search_filter_destination_market_category_name: "Destination Market Filters" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_PRESENCE_NAME: "Presenti"
- CUSTOM_SEARCH_FILTER_MARKET_HAS_PRESENCE_DESC: "Mostra solo i mercati in cui possediamo sedi (in verde) o abbiamo una certa capacità commerciale (in blu)."
+ CUSTOM_SEARCH_FILTER_DESTINATION_SELECTED_NAME: "Selected Markets" #NEW
+ CUSTOM_SEARCH_FILTER_DESTINATION_SELECTED_DESC: "Only show markets currently selected as destination filters" #NEW
+ CUSTOM_SEARCH_FILTER_ALL_DESTINATION_MARKETS_NAME: "All Markets" #NEW
+ CUSTOM_SEARCH_FILTER_ALL_DESTINATION_MARKETS_DESC: "Show all markets in range as destination options" #NEW
+ custom_search_filter_destination_per_market_category_name: "Markets in Range" #NEW
+ custom_search_filter_destination_goods_category_name: "Good Filters" #NEW
+ CUSTOM_SEARCH_FILTER_DESTINATION_GOODS_NAME: "@[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_DESTINATION_GOODS_DESC: "Only show [trades|e] involving @[GOODS.GetKey]! [GOODS.GetNameWithNoTooltip]." #NEW
+ CUSTOM_SEARCH_FILTER_SELECT_DESTINATION_MARKET_NAME: "[MARKET.GetCenterLocation.GetOwner.GetFlagIcon] [MARKET.GetNameWithNoTooltip]" #NEW
+ CUSTOM_SEARCH_FILTER_SELECT_DESTINATION_MARKET_DESC: "Filter all trade categories where [Market.GetNameWithNoTooltip] is either the source or the destination of the [trade|e]." #NEW
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_PRESENCE_DESC: "Mostra solo i mercati in cui possediamo sedi (in verde) o abbiamo una certa capacità commerciale (in blu)." #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_PRESENCE_DESC: "Show only [domestic_markets_with_icon|e] and [trading_markets_with_icon|e]." #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_PRESENCE_NAME: "Non Presenti"
- CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_PRESENCE_DESC: "Mostra solo i mercati non presenti nel nostro Paese."
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_PRESENCE_DESC: "Mostra solo i mercati non presenti nel nostro Paese." #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_PRESENCE_DESC: "Show only [markets|e] with no presence in our [country|e]." #NEW
  custom_search_filter_market_with_pops_group_name: "@market! Mercati con Popolazione"
- CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_NAME: "Ha Popolazione"
- CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_DESC: "Mostra solo i mercati con popolazione del nostro paese."
- CUSTOM_SEARCH_FILTER_MARKET_WITHOUT_POPS_NAME: "Non ha Popolazione"
+# CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_NAME: "Ha Popolazione" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_NAME: "[pops_icon] Has Pops" #NEW
+# CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_DESC: "Mostra solo i mercati con popolazione del nostro paese." #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_WITH_POPS_DESC: "Show only [domestic_markets_with_icon|e], [markets] with [pops_with_icon|e] from our [country]." #NEW
+# CUSTOM_SEARCH_FILTER_MARKET_WITHOUT_POPS_NAME: "Non ha Popolazione" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_WITHOUT_POPS_NAME: "[pops_icon] Has No Pops" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_WITHOUT_POPS_DESC: "Mostra solo i mercati senza popolazione del nostro paese."
  custom_search_filter_market_merchant_capacity_group_name: "[merchant_capacity]"
- CUSTOM_SEARCH_FILTER_MARKET_HAS_MERCHANT_CAPACITY_NAME: "Ha Capacità Commerciale"
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_MERCHANT_CAPACITY_NAME: "Ha Capacità Commerciale" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_MERCHANT_CAPACITY_NAME: "[merchant_capacity_icon] Has Trade Capacity" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_MERCHANT_CAPACITY_DESC: "Mostra solo i mercati in cui abbiamo [merchant_capacity]."
- CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_MERCHANT_CAPACITY_NAME: "Non ha Capacità Commerciale"
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_MERCHANT_CAPACITY_NAME: "Non ha Capacità Commerciale" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_MERCHANT_CAPACITY_NAME: "[merchant_capacity_icon] Has No Trade Capacity" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_MERCHANT_CAPACITY_DESC: "Mostra solo i mercati in cui non abbiamo [merchant_capacity]."
- CUSTOM_SEARCH_FILTER_MARKET_HAS_TRADE_ADVANTAGE_NAME: "Ha Vantaggio Commerciale" 
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_TRADE_ADVANTAGE_NAME: "Ha Vantaggio Commerciale" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_TRADE_ADVANTAGE_NAME: "[merchant_power_icon] Has Trade Advantage" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_TRADE_ADVANTAGE_DESC: "Mostra solo i mercati in cui abbiamo [merchant_power]." 
- CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_TRADE_ADVANTAGE_NAME: "Non ha Vantaggio Commerciale" 
+# CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_TRADE_ADVANTAGE_NAME: "Non ha Vantaggio Commerciale" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_TRADE_ADVANTAGE_NAME: "[merchant_power_icon] Has No Trade Advantage" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_HAS_NO_TRADE_ADVANTAGE_DESC: "Mostra solo i mercati in cui non abbiamo [merchant_power]." 
  custom_search_filter_market_range_group_name: "@market! Portata del Mercato"
- CUSTOM_SEARCH_FILTER_MARKET_IS_IN_RANGE_NAME: "È a Portata"
+# CUSTOM_SEARCH_FILTER_MARKET_IS_IN_RANGE_NAME: "È a Portata" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_IS_IN_RANGE_NAME: "[trade_range_icon] Is In Range" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_IS_IN_RANGE_DESC: "Mostra solo i mercati che sono a portata."
- CUSTOM_SEARCH_FILTER_MARKET_IS_NOT_IN_RANGE_NAME: "Non è a Portata"
+# CUSTOM_SEARCH_FILTER_MARKET_IS_NOT_IN_RANGE_NAME: "Non è a Portata" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_IS_NOT_IN_RANGE_NAME: "[trade_range_icon] Is Not In Range" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_IS_NOT_IN_RANGE_DESC: "Mostra solo i mercati che non sono a portata."
  custom_search_filter_market_needs_category_name: "@market_needs! Fabbisogni del Mercato"
- CUSTOM_SEARCH_FILTER_MARKET_BUILDING_NEEDS_NAME: "Fabbisogni Edifici"
+# CUSTOM_SEARCH_FILTER_MARKET_BUILDING_NEEDS_NAME: "Fabbisogni Edifici" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_BUILDING_NEEDS_NAME: "@building_needs! Building Needs" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_BUILDING_NEEDS_DESC: "Mostra solo le merci necessarie ai nostri edifici."
- CUSTOM_SEARCH_FILTER_MARKET_GOV_NEEDS_NAME: "Fabbisogni del Governo"
+# CUSTOM_SEARCH_FILTER_MARKET_GOV_NEEDS_NAME: "Fabbisogni del Governo" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_GOV_NEEDS_NAME: "@governent_needs! Government Needs" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_GOV_NEEDS_DESC: "Mostra solo le merci necessarie al nostro governo."
- CUSTOM_SEARCH_FILTER_MARKET_POP_NEEDS_NAME: "Fabbisogni Popolazione"
+# CUSTOM_SEARCH_FILTER_MARKET_POP_NEEDS_NAME: "Fabbisogni Popolazione" #OLD
+ CUSTOM_SEARCH_FILTER_MARKET_POP_NEEDS_NAME: "@pop_needs! Pop Needs" #NEW
  CUSTOM_SEARCH_FILTER_MARKET_POP_NEEDS_DESC: "Mostra solo le merci necessarie alla nostra popolazione."
 
  custom_search_filter_current_needs_group_name: "@market_needs! Fabbisogni"
@@ -1119,13 +1319,16 @@
  CUSTOM_SEARCH_FILTER_BUILDING_ITEM_CAN_NOT_BUILD_DESC: "Mostra gli [buildings|e] che non possono essere costruiti in nessuna [location|e]."
  
  custom_search_filter_trades_group_name: "@food! Cibo"
- CUSTOM_SEARCH_FILTER_FOOD_TRADES_EXPORTED_NAME: "Scambi di Cibo"
+# CUSTOM_SEARCH_FILTER_FOOD_TRADES_EXPORTED_NAME: "Scambi di Cibo" #OLD
+ CUSTOM_SEARCH_FILTER_FOOD_TRADES_EXPORTED_NAME: "@food! Food Trades" #NEW
  CUSTOM_SEARCH_FILTER_FOOD_TRADES_EXPORTED_DESC: "Mostra solo gli scambi di [trades|e] di cibo."
  
  custom_search_filter_trades_type_group_name: "@trade! Tipo di Scambio"
- CUSTOM_SEARCH_FILTER_TRADES_EXPORTED_NAME: "Esportazioni"
+# CUSTOM_SEARCH_FILTER_TRADES_EXPORTED_NAME: "Esportazioni" #OLD
+ CUSTOM_SEARCH_FILTER_TRADES_EXPORTED_NAME: "[exports_icon] Exports" #NEW
  CUSTOM_SEARCH_FILTER_TRADES_EXPORTED_DESC: "Mostra gli [trades|e] che lasciano questo Mercato."
- CUSTOM_SEARCH_FILTER_TRADES_IMPORTED_NAME: "Importazioni"
+# CUSTOM_SEARCH_FILTER_TRADES_IMPORTED_NAME: "Importazioni" #OLD
+ CUSTOM_SEARCH_FILTER_TRADES_IMPORTED_NAME: "[imports_icon] Imports" #NEW
  CUSTOM_SEARCH_FILTER_TRADES_IMPORTED_DESC: "Mostra gli [trades|e] che entrano in questo Mercato."
 
  custom_trades_capacity_origin_name: "Origine Scambio"
@@ -1145,12 +1348,18 @@
  CUSTOM_SEARCH_FILTER_GOODS_NEEDED_BY_BUILDINGS_DESC: "Mostra i [goods|e] necessarie ai nostri [buildings|e]."
  CUSTOM_SEARCH_FILTER_RELEVANT_GOODS_TRADE_NAME: "Merci Rilevanti nel Mercato"
  CUSTOM_SEARCH_FILTER_RELEVANT_GOODS_TRADE_DESC: "Mostra i [goods|e] che attualmente hanno [supply|e], [demand|e] o [stockpile|e]."
+ CUSTOM_SEARCH_FILTER_IN_RANGE_RELEVANT_GOODS_TRADE_NAME: "Relevant Goods" #NEW
+ CUSTOM_SEARCH_FILTER_IN_RANGE_RELEVANT_GOODS_TRADE_NAME_DESC: "Filter by goods that have at least some supply or demand for the filtered Markets" #NEW
  CUSTOM_SEARCH_FILTER_RELEVANT_COUNTRY_GOODS_TRADE_NAME: "Merci Rilevanti nel Paese"
  CUSTOM_SEARCH_FILTER_RELEVANT_COUNTRY_GOODS_TRADE_DESC: "Mostra i [goods|e] che sono prodotte o consumate nel nostro [country|e]."
  CUSTOM_SEARCH_FILTER_GOODS_PRODUCED_BY_OUR_COUNTRY_TRADE_NAME: "Merci Prodotte dal Nostro Paese"
  CUSTOM_SEARCH_FILTER_GOODS_PRODUCED_BY_OUR_COUNTRY_TRADE_DESC: "Mostra i [goods|e] che sono prodotte nel nostro paese."
- CUSTOM_SEARCH_FILTER_FOOD_BEARING_GOODS_TRADE_NAME: "Merci Alimentari nel Mercato"
+# CUSTOM_SEARCH_FILTER_FOOD_BEARING_GOODS_TRADE_NAME: "Merci Alimentari nel Mercato" #OLD
+ CUSTOM_SEARCH_FILTER_FOOD_BEARING_GOODS_TRADE_NAME: "@food! Food bearing Goods in Market" #NEW
  CUSTOM_SEARCH_FILTER_FOOD_BEARING_GOODS_TRADE_DESC: "Mostra i [goods|e] di [food|e]."
+ CUSTOM_SEARCH_FILTER_IN_RANGE_RURAL_GOODS: "Rural Goods" #NEW
+ CUSTOM_SEARCH_FILTER_IN_RANGE_URBAN_GOODS: "Urban Goods" #NEW
+ CUSTOM_SEARCH_FILTER_SAME_CONTINENT_NAME: "Same continent markets" #NEW
  
  custom_search_filter_rebel_group_name: "@rebels! Categoria Ribelli"
  CUSTOM_SEARCH_FILTER_REBEL_CATEGORY_DESC: "Mostra $CATEGORY$"
@@ -1160,6 +1369,10 @@
  CUSTOM_SEARCH_FILTER_COUNTRY_WILL_ACCEPT_DESC: "Mostra i [countries|e] che accetteranno questa azione diplomatica."
  CUSTOM_SEARCH_FILTER_COUNTRY_WILL_NOT_ACCEPT_NAME: "NON Accetterà"
  CUSTOM_SEARCH_FILTER_COUNTRY_WILL_NOT_ACCEPT_DESC: "Mostra i [countries|e] che NON accetteranno questa azione diplomatica."
+ CUSTOM_SEARCH_FILTER_COUNTRY_ABLE_TO_ACCEPT_NAME: "Is Able to Accept" #NEW
+ CUSTOM_SEARCH_FILTER_COUNTRY_ABLE_TO_ACCEPT_DESC: "Show [countries|e] that meet the requirements for this diplomatic action." #NEW
+ CUSTOM_SEARCH_FILTER_COUNTRY_NOT_ABLE_TO_ACCEPT_NAME: "Is NOT Able to Accept" #NEW
+ CUSTOM_SEARCH_FILTER_COUNTRY_NOT_ABLE_TO_ACCEPT_DESC: "Show [countries|e] that do NOT meet the requirements for this diplomatic action." #NEW
  
  custom_search_filter_find_consort_age_group_name: "Età Candidati"
  CUSTOM_SEARCH_FILTER_FIND_CONSORT_AGE_NAME: "Intervallo di età"
@@ -1231,8 +1444,8 @@ CUSTOM_SEARCH_FILTER_LEADER_HOME_REGION_DESC: "Mostra solo i leader mercenari pr
  CUSTOM_SEARCH_FILTER_BUILD_LOCATION_UNDER_BUILDING_LIMIT_DESC: "Mostra solo le [locations|e] con [supported_building_levels|e] disponibili"
  CUSTOM_SEARCH_FILTER_BUILD_LOCATION_OVER_BUILDING_LIMIT_NAME: "Oltre il Limite Edifici"
  CUSTOM_SEARCH_FILTER_BUILD_LOCATION_OVER_BUILDING_LIMIT_DESC: "Mostra solo le [locations|e] senza [supported_building_levels|e] disponibili"
- CUSTOM_SEARCH_FILTER_BUILD_LOCATION_AVAILABLE_PEASANTS_NAME: "Contadini Disponibili"
- CUSTOM_SEARCH_FILTER_BUILD_LOCATION_AVAILABLE_PEASANTS_DESC: "Mostra le [locations|e] che hanno più di 1.000 [ShowPopTypeName('peasants')], in modo che possano [promote|e] ad altri [pop_type|e] quando viene costruito un nuovo [building|e]."
+ CUSTOM_SEARCH_FILTER_BUILD_LOCATION_AVAILABLE_PEASANTS_NAME: "Popolani Disponibili"
+ CUSTOM_SEARCH_FILTER_BUILD_LOCATION_AVAILABLE_PEASANTS_DESC: "Mostra le [locations|e] che hanno più di 1.000 [ShowPopTypeName('peasants')], in modo che possano essere [Concept('promote', 'Promossi')|e] ad altre [pop_type|e] quando viene costruito un nuovo [building|e]."
 
  # EMPTY LISTS
  SCROLL_LIST_EMPTY: "Questo elenco è vuoto."
@@ -1254,6 +1467,7 @@ CUSTOM_SEARCH_FILTER_LEADER_HOME_REGION_DESC: "Mostra solo i leader mercenari pr
  CHARACTERS_LIST_EMPTY: "@trigger_no! Non ci sono [characters|e] con questi criteri di ricerca."
  POPS_LIST_EMPTY: "@trigger_no! Non ci sono [pops|e] con questi criteri di ricerca."
  REBELS_LIST_EMPTY: "@trigger_no! Non ci sono [rebels|e] con questi criteri di ricerca."
+ MOVEMENTS_LIST_EMPTY: "@trigger_no! There are no [movements|e] with this search criteria." #NEW
  DYNASTIES_LIST_EMPTY: "@trigger_no! Non ci sono [dynasties|e] con questi criteri di ricerca."
  WORKS_OF_ART_LIST_EMPTY: "@trigger_no! Non ci sono [works_of_art|e] nel nostro [country|e]."
  DIPLOMACY_LIST_EMPTY: "@trigger_no! Non ci sono relazioni diplomatiche per il nostro [country|e]."
@@ -1284,7 +1498,8 @@ CUSTOM_SEARCH_FILTER_LEADER_HOME_REGION_DESC: "Mostra solo i leader mercenari pr
  province_population: "Popolazione Provincia"
  province_satisfaction: "Soddisfazione Provincia"
  province_tax_base: "Base Imponibile Provincia"
- province_tribesmen: "Numero di Uomini della Tribù"
+ province_location_wealth: "Location Wealth" #NEW
+ province_tribesmen: "Numero di Uomini delle Tribù"
  province_food: "Cibo Provincia"
  province_food_percentage: "Percentuale Cibo Provincia"
  province_is_starving: "Provincia in carestia"
@@ -1296,6 +1511,7 @@ CUSTOM_SEARCH_FILTER_LEADER_HOME_REGION_DESC: "Mostra solo i leader mercenari pr
  area_exploration: "Area da esplorare"
  colonial_charter: "Carta Coloniale"
  shugo_province_name: "Provincia Shugo"
+ select_target_acceptance_total: "Acceptance" #NEW
  
  market_food: "Cibo Mercato"
  market_food_percentage: "Percentuale Cibo Mercato"
@@ -1317,3 +1533,7 @@ CUSTOM_SEARCH_FILTER_LEADER_HOME_REGION_DESC: "Mostra solo i leader mercenari pr
  CUSTOM_SEARCH_FILTER_HAS_TRADE_ROUTE_DESC: "Mostra solo i mercati che hanno già una Rotta Commerciale per questo bene" 
  CUSTOM_SEARCH_FILTER_HAS_NO_TRADE_ROUTE_NAME: "Non ha Rotte Commerciali" 
  CUSTOM_SEARCH_FILTER_HAS_NO_TRADE_ROUTE_DESC: "Mostra solo i mercati senza una Rotta Commerciale per questo bene" 
+ dhe_entry_name_text_filter_name: "Search by event name" #NEW
+ dhe_entry_name_text_filter_desc: "Filter DHE events by their title." #NEW
+ dhe_entry_age_text_filter_name: "Search by age" #NEW
+ dhe_entry_age_text_filter_desc: "Filter DHE events by the age they belong to." #NEW

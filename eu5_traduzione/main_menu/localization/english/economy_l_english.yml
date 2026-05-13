@@ -1,7 +1,9 @@
 ﻿l_english:
+ megalopolis: "Megalopoli" 
  city: "Città"
  town: "Borgo"
  rural_settlement: "Insediamento Rurale"
+ megalopolis_desc: "Forse la più grandiosa impresa dell'intera umanità, una Megalopoli è un vasto centro urbano che mostra l'apice della realizzazione architettonica e culturale." 
  city_desc: "L'epitomo della civiltà, una Città è una metropoli frenetica di industria, grandi templi e sedi del potere governativo sparse su più distretti."
  town_desc: "Un insediamento modesto in grado di soddisfare le necessità manifatturiere di base, un Borgo segna gli inizi della vita urbana."
  rural_settlement_desc: "Un Insediamento Rurale è un terreno maturo per lo sfruttamento, che rappresenta tutto, dalle terre selvagge ai gruppi di villaggi rurali."
@@ -14,7 +16,7 @@
  war_exhaustion: "Stanchezza da Guerra"
  karma: "Karma"
  yanantin: "Yanantin"
- complacency: "Compiacimento" #NEW
+ complacency: "Compiacimento" 
  righteousness: "Rettitudine"
  harmony: "Armonia"
  self_control: "Autocontrollo"
@@ -60,6 +62,8 @@
 
  HONOR_TT_TEXT: "Abbiamo [CountryReligionLateralView.GetCountry.GetFixedPointCurrencyValue('honor')|W] [honor|V] e questo cambia di [CountryReligionLateralView.GetCountry.GetModifierValue('monthly_honor')] ogni mese."
  HONOR_TT_CURRENT_TEXT: "Con [honor|V] a [Country.GetFixedPointCurrencyValue('honor')|W], otteniamo i seguenti effetti:"
+ HONOR_TT_IF_HIGH_T: "Se avessimo [honor|V] sopra #V 75#!, otterremmo:" 
+ HONOR_TT_IF_LOW_T: "Se avessimo [honor|V] sotto #V 25#!, otterremmo:" 
 
  KARMA_TT_TEXT: "Abbiamo [CountryReligionLateralView.GetCountry.GetFixedPointCurrencyValue('karma')|W] [karma|V] e questo cambia di [CountryReligionLateralView.GetCountry.GetModifierValue('monthly_karma')] ogni mese."
  KARMA_TT_CURRENT_TEXT: "Con [karma|V] a [Country.GetFixedPointCurrencyValue('karma')|W], otteniamo i seguenti effetti:"
@@ -110,7 +114,10 @@
  EXPENSE_FROM_FORT: "[fort_maintenance|e]: $VAL|<+=2$[gold_i]"
  EXPENSE_FROM_STABILITY: "[stability_investment|e]: $VAL|<+=2$[gold_i]"
  EXPENSE_FROM_UPKEEP: "[buildings|e]: $VAL|<+=2$[gold_i]"
- PRIVATEER_MAINTENANCE_COST: "[privateer_maintenance|e]: $VAL|<+=2$"
+# PRIVATEER_MAINTENANCE_COST: "[privateer_maintenance|e]: $VAL|<+=2$" #OLD
+ PRIVATEER_MAINTENANCE_COST: "[privateer_maintenance|e]: $VAL|<+=2$[$ICON$_i]" 
+ BUREAUCRACY_MAINTENANCE_COST: "[bureaucracy|e]: $VAL|<+=2$[$ICON$_i]" 
+ SPECIFIC_BUREAUCRACY_MAINTENANCE_COST: "[BUREAUCRACY_TYPE.GetName] al $MAINTENANCE|2%$ di [bureaucracy_maintenance|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|<+=2$[$ICON$_i]#!" 
  SAILORS_FROM_POPS: "[sailors|e] dai Pop: $VAL$ [sailors_i|e]"
  MANPOWER_FROM_POPS: "[manpower|e] dai Pop: $VAL$ [manpower_i|e]"
  MANPOWER_INCOME_WITH_BREAKDOWN: "[manpower|e] mensili: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$ [manpower_i|e]#!"
@@ -121,10 +128,13 @@
  INCOME_FROM_INFLATION: "[minting|e]: $VAL|<+=2$[gold_i]"
  EXPENSE_FROM_EXPLORATION: "Missioni di Esplorazione: $VAL|<+=2$[gold_i]"
  EXPENSE_FROM_SUBSIDIES: "Edifici Sovvenzionati: $VAL|<+=2$[gold_i]"
- TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Mercati con [merchant_capacity|e] [Player.Custom('IT_ADJ_FS')]:"
+# TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Mercati con [merchant_capacity|e] [Player.Custom('IT_ADJ_FS')]:" #OLD
+ TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Mercati con [merchant_capacity|] [Player.GetAdjective]:" 
  MARKET_WITH_TOTAL_MERCHANT_CAPACITY: "[MARKET.GetShortName]: [MARKET.GetMerchantTotalCapacity(Player.Self)|2+]"
  RESOURCES_FROM_LOCATIONS: "Dalle [locations|e]: $VAL|<+=2$"
  RESOURCES_FROM_BUILDINGS: "Dagli [buildings|e]: $VAL|<+=2$"
+ ADDITIONAL_MODIFIER_ENTRENCHMENT: "[entrenchment|e]: $VAL|-=%$" 
+ MINTING_FULL_EFFICIENCY_INCOME: "Con l'impostazione [minting|e] selezionata, il reddito a piena efficienza sarebbe stato $VAL|2+=$@income!" 
  #
  army_tradition: "Tradizione dell'Esercito"
  navy_tradition: "Tradizione della Marina"
@@ -146,7 +156,7 @@
  FORMAT_CURRENCY_karma: "$VAL|2$"
  FORMAT_CURRENCY_purity: "$VAL|2$"
  FORMAT_CURRENCY_yanantin: "$VAL|2$"
- FORMAT_CURRENCY_complacency: "$VAL|2$" #NEW
+ FORMAT_CURRENCY_complacency: "$VAL|2$" 
  FORMAT_CURRENCY_righteousness: "$VAL|2$"
  FORMAT_CURRENCY_harmony: "$VAL|2$"
  FORMAT_CURRENCY_self_control: "$VAL|2$"
@@ -184,7 +194,7 @@
  FORMAT_CURRENCY_SHORT_karma: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_purity: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_yanantin: "$VAL|0$"
- FORMAT_CURRENCY_SHORT_complacency: "$VAL|0$" #NEW
+ FORMAT_CURRENCY_SHORT_complacency: "$VAL|0$" 
  FORMAT_CURRENCY_SHORT_righteousness: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_harmony: "$VAL|0$"
  FORMAT_CURRENCY_SHORT_self_control: "$VAL|0$"
@@ -221,7 +231,7 @@
  FORMAT_CURRENCY_karma_change: "$VAL|+=2$"
  FORMAT_CURRENCY_purity_change: "$VAL|+=2$"
  FORMAT_CURRENCY_yanantin_change: "$VAL|+=2$"
- FORMAT_CURRENCY_complacency_change: "$VAL|-=2$" #NEW
+ FORMAT_CURRENCY_complacency_change: "$VAL|-=2$" 
  FORMAT_CURRENCY_righteousness_change: "$VAL|+=2$"
  FORMAT_CURRENCY_harmony_change: "$VAL|+=2$"
  FORMAT_CURRENCY_self_control_change: "$VAL|+=2$"
@@ -253,7 +263,7 @@
  FORMAT_CURRENCY_EFFECT_karma: "$VAL|+=2$ [karma|e]"
  FORMAT_CURRENCY_EFFECT_purity: "$VAL|+=2$ [purity|e]"
  FORMAT_CURRENCY_EFFECT_yanantin: "$VAL|+=2$ [yanantin|e]"
- FORMAT_CURRENCY_EFFECT_complacency: "$VAL|-=2$ [complacency|e]" #NEW
+ FORMAT_CURRENCY_EFFECT_complacency: "$VAL|-=2$ [complacency|e]" 
  FORMAT_CURRENCY_EFFECT_righteousness: "$VAL|+=2$ [righteousness|e]"
  FORMAT_CURRENCY_EFFECT_harmony: "$VAL|+=2$ [harmony|e]"
  FORMAT_CURRENCY_EFFECT_self_control: "$VAL|+=2$ [self_control|e]"
@@ -283,7 +293,7 @@
  FORMAT_CURRENCY_EFFECT_karma_INV: "$VAL|-=2$ [karma|e]"
  FORMAT_CURRENCY_EFFECT_purity_INV: "$VAL|-=2$ [purity|e]"
  FORMAT_CURRENCY_EFFECT_yanantin_INV: "$VAL|-=2$ [yanantin|e]"
- FORMAT_CURRENCY_EFFECT_complacency_INV: "$VAL|+=2$ [complacency|e]" #NEW
+ FORMAT_CURRENCY_EFFECT_complacency_INV: "$VAL|+=2$ [complacency|e]" 
  FORMAT_CURRENCY_EFFECT_righteousness_INV: "$VAL|-=2$ [righteousness|e]"
  FORMAT_CURRENCY_EFFECT_harmony_INV: "$VAL|-=2$ [harmony|e]"
  FORMAT_CURRENCY_EFFECT_honor_INV: "$VAL|-=2$ [honor|e]"
@@ -314,7 +324,7 @@
  FORMAT_CURRENCY_TRIGGER_karma: "$VAL|2Y$ [karma|e]"
  FORMAT_CURRENCY_TRIGGER_purity: "$VAL|2Y$ [purity|e]"
  FORMAT_CURRENCY_TRIGGER_yanantin: "$VAL|2Y$ [yanantin|e]"
- FORMAT_CURRENCY_TRIGGER_complacency: "$VAL|2Y$ [complacency|e]" #NEW
+ FORMAT_CURRENCY_TRIGGER_complacency: "$VAL|2Y$ [complacency|e]" 
  FORMAT_CURRENCY_TRIGGER_righteousness: "$VAL|2Y$ [righteousness|e]"
  FORMAT_CURRENCY_TRIGGER_harmony: "$VAL|2Y$ [harmony|e]"
  FORMAT_CURRENCY_TRIGGER_self_control: "$VAL|2Y$ [self_control|e]"
@@ -341,7 +351,7 @@
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_karma: "$VAL|Y%2$ [karma|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_purity: "$VAL|Y%2$ [purity|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_yanantin: "$VAL|Y%2$ [yanantin|e]"
- FORMAT_CURRENCY_TRIGGER_PERCENTAGE_complacency: "$VAL|Y%2$ [complacency|e]" #NEW
+ FORMAT_CURRENCY_TRIGGER_PERCENTAGE_complacency: "$VAL|Y%2$ [complacency|e]" 
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_righteousness: "$VAL|Y%2$ [righteousness|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_harmony: "$VAL|Y%2$ [harmony|e]"
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_self_control: "$VAL|Y%2$ [self_control|e]"
@@ -371,7 +381,7 @@
  CURRENCY_ENTRY_karma: "$VAL|+=2$ [$ICON$_i]"
  CURRENCY_ENTRY_purity: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_yanantin: "$VAL|Y2$ [$ICON$_i]"
- CURRENCY_ENTRY_complacency: "$VAL|Y2$ [$ICON$_i]" #NEW
+ CURRENCY_ENTRY_complacency: "$VAL|Y2$ [$ICON$_i]" 
  CURRENCY_ENTRY_righteousness: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_harmony: "$VAL|Y2$ [$ICON$_i]"
  CURRENCY_ENTRY_self_control: "$VAL|Y2$ [$ICON$_i]"
@@ -386,10 +396,14 @@
  CURRENCY_MONTHLY_CHANGE: ""
  HISTORICAL_TAX_BASE_LABEL: "[tax_base|e] storica tra [Country.GetHistoricalMinTaxBase|2L]@gold! e [Country.GetHistoricalMaxTaxBase|2L]@gold!"
  #
- ARMY_MAINTENANCE_COST: "Mantenimento Esercito: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!"
- NAVY_MAINTENANCE_COST: "Mantenimento Marina: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!"
- ARMY_REINFORCE_COST: "Rinforzo Eserciti: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!"
- NAVY_REINFORCE_COST: "Riparazione Navi: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!"
+# ARMY_MAINTENANCE_COST: "Mantenimento Esercito: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" #OLD
+ ARMY_MAINTENANCE_COST: "#italic $BULLET$Manutenzione esercito: $VAL$#!" 
+# NAVY_MAINTENANCE_COST: "Mantenimento Marina: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" #OLD
+ NAVY_MAINTENANCE_COST: "#italic $BULLET$Manutenzione marina: $VAL$#!" 
+# ARMY_REINFORCE_COST: "Rinforzo Eserciti: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" #OLD
+ ARMY_REINFORCE_COST: "#italic $BULLET$Eserciti in rinforzo: $VAL$#!" 
+# NAVY_REINFORCE_COST: "Riparazione Navi: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" #OLD
+ NAVY_REINFORCE_COST: "#italic $BULLET$Navi in riparazione: $VAL$#!#!" 
  CURRENCY_DECAY: "Decadimento $CURRENCY$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!"
  STABILITY_DECAY: "Decadimento Stabilità: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!\n"
  STABILITY_DECAY_BRK_TT: "#T Fonti di Decadimento della Stabilità#!"
@@ -407,7 +421,7 @@
  MAX_MANPOWER_TT: "Possiamo immagazzinare fino a $YEARS|Y$ anni di [manpower|E] della nostra generazione mensile fino a un massimo di $VAL|Y$."
  MAX_SAILORS_TT: "Possiamo immagazzinare fino a $YEARS|Y$ anni di [sailors|E] della nostra generazione mensile fino a un massimo di $VAL|Y$."
  GOODS_DEMAND_IMPACT_ON_PRICE: "[GOODS.GetIcon] [GOODS.GetName]: $VAL|-=2%$ ($PRICE|2V$)"
- MARKET_PRICE_IMPACT_HEADER: "L'impatto del [market_price|e] sui [gold|e] dal [MARKET.GetName] è $VAL|-=2%$:"
+ MARKET_PRICE_IMPACT_HEADER: "L'impatto del [market_price|e] sui [gold|e] nel [MARKET.GetName] è $VAL|-=2%$:"
  INFLATION_PRICE_IMPACT: " e un'[inflation|E] di $VAL|Y%2$ aumenta tutti i nostri prezzi del $VAL|-=2%$."
  OUR_CURRENCY_MODIFIER_IMPACT: "$EFFECT$"
  CURRENCY_MODIFIER_IMPACT: "$EFFECT$"
@@ -453,7 +467,8 @@
  explore_area_card_name: "Area [PossibleExplorationItem.GetArea.GetNameWithNoTooltip] ([PossibleExplorationItem.GetArea.GetRegion.GetNameWithNoTooltip])"
  privatter_area_card_name: "Area [PossiblePrivateerItem.GetArea.GetNameWithNoTooltip] ([PossiblePrivateerItem.GetArea.GetRegion.GetNameWithNoTooltip])"
  start_exploration: "Inizia l'Esplorazione"
- start_exploration_on: "Inizia i preparativi per Esplorare [Area.GetName]"
+# start_exploration_on: "Inizia i preparativi per Esplorare [Area.GetName]" #OLD
+ start_exploration_on: "Inizia a preparare un'esplorazione" 
  start_exploration_desc_tooltip: "Inizieremo a preparare una nuova esplorazione, dopo i preparativi ci avventureremo nell'ignoto."
  start_exploration_desc: "[SCOPE.sCharacter('character').GetName] inizierà a preparare una nuova esplorazione di [SCOPE.sArea('target').GetName] da [SCOPE.sLocation('launch_location').GetName]. La preparazione durerà [GetExplorationPreparationTimeDays(SCOPE.sCountry('actor'),SCOPE.sCharacter('character'),SCOPE.sLocation('launch_location'))] giorni, dopo i quali si avventureranno nell'ignoto."
  start_exploration_land: "Inizia l'Esplorazione"
@@ -471,10 +486,12 @@
  scaled_lost_war: "Guerra Persa"
  national_church_power: "Costo delle Azioni della Chiesa Nazionale"
  hussite_wars_actions_price: "Costo delle Azioni della Situazione $hussite_wars$"
+ megalopolis_upgrade: "Potenzia a Megalopoli" 
  city_upgrade: "Migliora a Città"
  town_upgrade: "Migliora a Borgo"
  rural_settlement_upgrade: "Miglioramento Insediamento Rurale"
  rural_settlement_downgrade: "Declassamento Insediamento Rurale"
+ hre_army_building: "Edificio dell'esercito imperiale" 
  p_building_age_1_traditions: "Edifici dell'Età delle [ShowAgeNameWithNoTooltip('age_1_traditions')]"
  p_building_age_2_renaissance: "Edifici dell'Età del [ShowAgeNameWithNoTooltip('age_2_renaissance')]"
  p_building_age_3_discovery: "Edifici dell'Età delle [ShowAgeNameWithNoTooltip('age_3_discovery')]"
@@ -493,6 +510,7 @@
  small_culture_building: "Piccolo Edificio Culturale"
  small_religion_building: "Piccolo Edificio Religioso"
  small_estate_building: "Costo Piccolo Edificio del Ceto"
+ expensive_estate_building: "Costo degli edifici di ceto costosi" 
  orthodox_monastery_building: "Costo Edificio Monastero Ortodosso"
  miaphysite_monastery_building: "Costo Edificio Monastero Miafisita"
  cardinal_price: "Costo Cardinale"
@@ -500,17 +518,30 @@
  cheap_building: "Edificio Economico"
  remove_lutheran_preacher: "Rimuovi Predicatore"
  remove_panaqa_early: "Rimozione Anticipata Panaqa"
- army_infantry_build: "Costo Costruzione Fanteria"
- army_infantry_reinforce: "Costo Rinforzo Fanteria"
- army_infantry_maintenance: "Costo Mantenimento Fanteria"
- army_marine_build: "Costo Costruzione Marina"
- army_marine_reinforce: "Costo Rinforzo Marina"
- army_marine_maintenance: "Costo Mantenimento Marina"
+ merchant_guild_chapel_price: "Prezzo di $merchant_guild_chapel$" 
+ army_light_infantry_build: "Costo di costruzione della fanteria leggera" 
+ army_light_infantry_reinforce: "Costo di rinforzo della fanteria leggera" 
+ army_light_infantry_maintenance: "Costo di manutenzione della fanteria leggera" 
+ army_heavy_infantry_build: "Costo di costruzione della fanteria pesante" 
+ army_heavy_infantry_reinforce: "Costo di rinforzo della fanteria pesante" 
+ army_heavy_infantry_maintenance: "Costo di manutenzione della fanteria pesante" 
+# army_infantry_build: "Costo Reclutamento Fanteria" #DELETE
+# army_infantry_reinforce: "Costo Rinforzo Fanteria" #DELETE
+# army_infantry_maintenance: "Costo Mantenimento Fanteria" #DELETE
+# army_marine_build: "Costo Costruzione Marina" #DELETE
+# army_marine_reinforce: "Costo Rinforzo Marina" #DELETE
+# army_marine_maintenance: "Costo Mantenimento Marina" #DELETE
  archer_infantry_construction: "Costruzione Fanteria Arcieri"
  archer_infantry_maintenance: "Mantenimento Fanteria Arcieri"
- army_cavalry_build: "Costo Costruzione Cavalleria"
- army_cavalry_reinforce: "Costo Rinforzo Cavalleria"
- army_cavalry_maintenance: "Costo Mantenimento Cavalleria"
+ army_light_cavalry_build: "Costo di costruzione della cavalleria leggera" 
+ army_light_cavalry_reinforce: "Costo di rinforzo della cavalleria leggera" 
+ army_light_cavalry_maintenance: "Costo di manutenzione della cavalleria leggera" 
+ army_heavy_cavalry_build: "Costo di costruzione della cavalleria pesante" 
+ army_heavy_cavalry_reinforce: "Costo di rinforzo della cavalleria pesante" 
+ army_heavy_cavalry_maintenance: "Costo di manutenzione della cavalleria pesante" 
+# army_cavalry_build: "Costo Reclutamento Cavalleria" #DELETE
+# army_cavalry_reinforce: "Costo Rinforzo Cavalleria" #DELETE
+# army_cavalry_maintenance: "Costo Mantenimento Cavalleria" #DELETE
  army_artillery_build: "Costo Costruzione Artiglieria"
  army_artillery_reinforce: "Costo Rinforzo Artiglieria"
  army_artillery_maintenance: "Costo Mantenimento Artiglieria"
@@ -529,7 +560,7 @@
  navy_transport_build: "Costo Costruzione Trasporto"
  navy_transport_reinforce: "Costo Rinforzo Trasporto"
  navy_transport_maintenance: "Costo Mantenimento Trasporto"
- template_maintenance: "Costo Mantenimento Template" #NEW
+ template_maintenance: "Costo Mantenimento Template" 
  subject_pays_vassal: "Il Vassallo paga il Signore"
  subject_pays_samanta: "La $samanta$ paga il Signore"
  subject_pays_maha_samanta: "La $maha_samanta$ paga il Signore"
@@ -567,13 +598,13 @@
  corrupt_officials_monthly_cost: "Costo Mensile $corrupt_officials_relation$"
  commission_art_price: "Costo Commissione Artistica"
  abdicate_price: "Costo Abdicazione"
- improve_our_cultural_view_price: "Costo $improve_our_cultural_view$" #NEW
- transfer_subject_price: "Costo $transfer_subject$" #NEW
+ improve_our_cultural_view_price: "Costo $improve_our_cultural_view$" 
+ transfer_subject_price: "Costo $transfer_subject$" 
  rtr_grant_titles_price: "Costo $rtr_grant_titles$"
  rtr_negotiate_with_rebels_price: "Costo $rtr_negotiate_with_rebels$"
  rtr_appease_the_court_price: "Costo $rtr_appease_the_court$"
  rtr_rein_in_area_price: "Costo $rtr_rein_in_area$"
- rtr_demand_annexation_price: "Costo $rtr_demand_annexation$" #NEW
+ rtr_demand_annexation_price: "Costo $rtr_demand_annexation$" 
  change_employment_system_price: "Costo $change_employment_system$"
  restrict_peranakan_trading_rights_price: "Costo $restrict_peranakan_trading_rights$"
  ban_conversion_of_adipatis_price: "Costo $ban_conversion_of_adipatis$"
@@ -586,9 +617,10 @@
  revolution_actions_price: "Costo Azioni Principali $the_revolution$"
  wotr_action_price: "Costo Azioni Principali $war_of_the_roses$"
  peasants_war_actions_price: "Costo Azioni Principali $peasants_war$"
+ rise_of_the_szlachta_actions_price: "Prezzo delle azioni principali $rise_of_the_szlachta$" 
  religious_turmoil_actions_price: "Costo Azioni Principali $religious_turmoil$"
  change_government_type_price: "Costo Cambio $game_concept_government_type$"
- provoke_rebels_price: "Costo Azioni Principali $provoke_rebels$" #NEW
+ provoke_rebels_price: "Costo Azioni Principali $provoke_rebels$" 
 
  #Special Units
  n_panokseon_build: "Costo Costruzione $n_panokseon$"
@@ -624,20 +656,24 @@
  SUBTAB_ECONOMY_NEEDS: "Necessità Correnti"
  SUBTAB_ECONOMY_BUDGET: "Bilancio"
  RGO_BUILD: "ESPANDI PRODUZIONE [ExpandProductionLateralView.GetGoods.GetName]"
+ RGO_BUILD_GOODS_PRICE_IMPACT_ON_COST: "Dal prezzo di mercato predefinito di [GOODS.GetName] ([GOODS.GetDefaultMarketPrice|1]@gold!): $SCALE$" 
  TOTAL_PRODUCTION: "Produzione totale nel [country|e]"
  GOOD_PRODUCTION: "Produzione [GOODS.GetName]"
  SELECT_LOCATION: "Seleziona Località"
- SELECT_ALL_LOCATIONS: "Seleziona Tutte le Località" #NEW
+ SELECT_ALL_LOCATIONS: "Seleziona Tutte le Località" 
  EXPAND_PRODUCTION_SORT_NAME: "Ordina per nome della [location|e]"
  EXPAND_PRODUCTION_SORT_PRICE: "Ordina per prezzo in ogni [market|e]"
  EXPAND_PRODUCTION_SORT_PROD: "Ordina per produzione in ogni [location|e]"
  EXPAND_PRODUCTION_SORT_WORKERS: "Ordina per lavoratori in ogni [location|e]"
  BUILD_B_FOR_G: "Costruisci"
- GREATEST_SURPLUS: "Maggiore Eccedenza"
- GREATEST_NEEDS: "Maggiori Necessità"
+# GREATEST_SURPLUS: "Maggiore Eccedenza" #OLD
+ GREATEST_SURPLUS: "Maggior surplus locale" 
+# GREATEST_NEEDS: "Maggiori Necessità" #OLD
+ GREATEST_NEEDS: "Maggiori deficit locali" 
+ LOCAL_BALANCE: "Bilancio locale" 
  MARKET_SURPLYS_LABEL_SHORT: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!"
  MARKET_PRICE_WITH_CHANGE: "$VAL|2$@$DIFFERENCE$!@$ICON$!"
- GOODS_MARKET_ENTRY_TITLE: "[GoodsMarketEntry.GetGoods.GetNameWithNoTooltip] nel [Market.GetShortNameWithNoTooltip]"
+ GOODS_MARKET_ENTRY_TITLE: "[GoodsMarketEntry.GetGoods.GetNameWithNoTooltip] a [Market.GetShortNameWithNoTooltip]"
  GOODS_NOT_A_RAW_MATERIAL: "@trigger_no![GOODS.GetName] non è una [raw_material|e]"
  GOODS_NOT_IN_THIS_MARKET: "@trigger_no! Al momento non possediamo [locations|e] nel [MARKET.GetName] che possano produrre più [GOODS.GetName] come [raw_material|e]."
  GOODS_CLICK_TO_SELECT_WHERE: "Seleziona in quale località espandere."
@@ -646,14 +682,15 @@
  GOODS_NOT_BUILD_IN_THIS_MARKET: "@trigger_no! Non ci sono [locations|e] possibili che [Concept('own', 'possediamo')|e] per costruire un $INFO$ nel [MARKET.GetName]"
  SORT_BY_NAME_ECO_NEEDS_TT: "Ordina per Quantità"
  SORT_BY_NAME_ECO_MARKET_TT: "Ordina per nome del [market|e]"
- SORT_BY_MARKET_RELEVANCE_TT: "Ordina per Rilevanza di Mercato" #NEW
- SORT_BY_MERCHANT_RANKING_TT: "Ordina in base alla nostra posizione tra tutti i paesi commerciali nel [market|e]" #NEW
+ SORT_BY_MARKET_RELEVANCE_TT: "Ordina per Rilevanza di Mercato" 
+ SORT_BY_MERCHANT_RANKING_TT: "Ordina in base alla nostra posizione tra tutti i paesi commerciali nel [market|e]" 
  SORT_BY_PRICE_ECO_TT: "Ordina per [price|e] del [good|e]"
  SORT_BY_FOOD_BALANCE_TT: "Ordina per il bilancio del [food|e] nel [market|e]"
  SORT_BY_MARKET_VALUE_TT: "Ordina per il valore totale scambiato nel [market|e]"
  SORT_BY_MARKET_CAPACITY_TT: "Ordina per la [merchant_capacity|e] totale nel [market|e]"
  SORT_BY_SURPLUS_MARKETS_TT: "Ordina per [goods|e] in eccedenza nel [market|e]"
  SORT_BY_DEMAND_MARKETS_TT: "Ordina per [goods|e] più richiesti nel [market|e]"
+ SORT_BY_BURGHER_TRADING_TT: "Ordina per capacità di [burgher_trade|e] nel [market|e]" 
  SORT_BY_SURPLUS_TT: "Ordina per l'eccedenza disponibile del [good|e] desiderato nel [market|e]"
  SORT_BY_TRANSPORT_COST_TT: "Ordina per il costo di trasporto del [good|e] desiderato nel [market|e]"
  SORT_BY_MOVING_GOODS_AMOUNT_TT: "Ordina per la quantità effettiva di [good|e] che verranno trasportati"
@@ -689,8 +726,13 @@
  capitalism_desc: "Gli edifici ricevono impiegati in ordine di redditività."
  capitalism_prioritising_infrastructure: "Infrastruttura, poi i Più Redditizi"
  capitalism_prioritising_infrastructure_desc: "Gli edifici ricevono impiegati prima per infrastruttura, e poi in ordine di redditività."
+ capitalism_prioritising_infrastructure_trade: "Infrastruttura, commercio, poi massima redditività" 
+ capitalism_prioritising_infrastructure_trade_desc: "Gli edifici vengono riempiti prima in base all'infrastruttura, poi al commercio e quindi in ordine di profitto maggiore." 
+ capitalism_prioritising_infrastructure_trade_and_culture: "Infrastruttura, commercio, cultura, poi massima redditività" 
+ capitalism_prioritising_infrastructure_trade_and_culture_desc: "Gli edifici vengono riempiti prima in base all'infrastruttura, poi al commercio, poi alla cultura e quindi in ordine di profitto maggiore." 
 
  christian_tenet_price: "Costo Dottrina Fede $christian_ADJ$"
+ jurchen_confederation_law_price: "Prezzo della legge sulla Confederazione Jurchen" 
 
  #Western Schism
  western_schism_ri_actions_price: "Influenza lo $western_schism$"

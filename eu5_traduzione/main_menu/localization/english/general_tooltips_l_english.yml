@@ -43,14 +43,18 @@
 
  COUNTRY_RANK_MODIFIER: "[country_rank|e] $COUNTRY_RANK$"
  RELIGIOUS_ASPECT_MODIFIER: "[religious_aspect|e] $RELIGIOUS_ASPECT$"
+ RELIGION_MODIFIER: "[primary_religion|e] $RELIGION$" #NEW TRADOTTO
  AVATAR_MODIFIER: "$AVATAR$ [avatar|e]"
- GOD_MODIFIER: "$GOD$ [god|e]"
+ GOD_MODIFIER: "[god|e] $GOD$"
+ OMEN_MODIFIER: "[omen|e] $OMEN$" #NEW
+ BUREAUCRACY_MODIFIER: "[bureaucracy|e] $BUREAUCRACY_TYPE$" #NEW
  VEGETATION_MODIFIER: "[vegetation|e] $VEGETATION$"
  TOPOGRAPHY_MODIFIER: "[topography|e] $TOPOGRAPHY$"
  CLIMATE_MODIFIER: "[climate|e] $CLIMATE$"
  LOCATION_RANK_MODIFIER: "$LOCATION_RANK$ ([location_rank|e])"
+ LOCATION_RANK_CAPITAL_MODIFIER: "La [capital|e] ha il [location_rank|e] $LOCATION_RANK$" #NEW
  SUBJECT_TYPE_OVERLORD_MODIFIER_LOC: "[subjects|e] $SUBJECT_TYPE$"
- SUBJECT_TYPE_IS_SUBJECT_MODIFIER_LOC: "È uno $SUBJECT_TYPE$ [subject_type|e]"
+ SUBJECT_TYPE_IS_SUBJECT_MODIFIER_LOC: "È uno [subject_type|e] $SUBJECT_TYPE$ "
 
  RELIGIONGROUP_MODIFIER: "[religion_group|e]: $NAME$"
 
@@ -93,7 +97,7 @@
 
  LANGUAGE_HAS_CULTURES_SINGULAR: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] è parlata dalla [culture|e] $LIST$."
  LANGUAGE_HAS_CULTURES_PLURAL: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] è parlata dalle [cultures|e] $LIST$."
- LANGUAGE_HAS_NO_CULTURES: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] non è attualmente parlata da nessuna [cultures|e]."
+ LANGUAGE_HAS_NO_CULTURES: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] non è attualmente parlata da nessuna [culture|e]."
  COMMON_LANGUAGE_IS_DEAD: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] non è attualmente parlata da nessuna [pop|e]."
 
  LANGUAGE_HAS_RELIGION_DEFINITIONS_SINGULAR: "La [language|e] [LANGUAGE.GetNameWithNoTooltip] è la [liturgical_language|e] per la [religion|e] $LIST$."
@@ -270,7 +274,7 @@
  RELIGION_HAS_IMPORTANT_COUNTRY: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha uno status speciale"
  RELIGION_HAS_CARDINALS: "Ha un Collegio di [cardinals|e]"
  RELIGION_NOT_ENABLED: "Attualmente non è stata ancora concepita"
- RELIGION_FOUNDED_IN: "È stata fondata $DATE|Y$"
+ RELIGION_FOUNDED_IN: "È stata fondata in data $DATE|Y$"
  RELIGION_IS_CULTURE_LOCKED: "I [pops|e] non possono essere [Concept('assimilated', 'Assimilati')|e] prima della [Concept('converted', 'Conversione')|e]"
  #
  DISASTER_EACH_MONTH: "Ogni Mese:"
@@ -439,6 +443,10 @@
 
  RESISTANCES_LABEL: "Resistenze alle $game_concept_disease$ nella [location|e]"
  LOCATION_DISEASE_HEADER: "Malattie a [Location.GetNameWithNoTooltip]"
+ MOVEMENT_RESISTANCES_LABEL: "$game_concept_movement$ resistances in the [location|e]" #NEW
+ LOCATION_MOVEMENTS_HEADER: "Movimenti a [Location.GetNameWithNoTooltip]" #NEW
+ LOCATION_MOVEMENTS_INFO_HEADER: "#col_t Location#! #col_t Movement#! #col_t Followers#!" #NEW
+ LOCATION_NO_MOVEMENTS_INFO: "A [LOCATION.GetNameWithNoTooltip] al momento non ci sono movimenti." #NEW 
 
  WINTER_BLOCKS_MOVEMENT: "@trigger_no! È impossibile muovere qualsiasi esercito in [TOPOGRAPHY.GetName] durante un $STATIC_MODIFIER_NAME_winter_normal$ o $STATIC_MODIFIER_NAME_winter_severe$."
  ZOC_BLOCKS_MOVEMENT: "@trigger_no! L'esercito non può oltrepassare la [zone_of_control|e] di un [fort|e] vicino."
@@ -453,6 +461,10 @@
  AI_CONTROLLER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di controllo con altri $NUMBER$ località.\nIl controllore è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
  AI_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di proprietà con altri $NUMBER$ località.\nIl proprietario è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
  AI_MAP_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] si trova in un'area di proprietà sulla mappa con altri $NUMBER$ località.\nIl proprietario della mappa è [COUNTRY.Custom('IT_La')][COUNTRY.GetName].\nNumero di aree di controllo adiacenti: $AI_MAP_OWNER_AREA_TOOLTIP$."
+ MOVEMENT_PRESENCE_LOCATION_TOOLTIP: "#col [LOCATION.GetName]#! #col_m [MOVEMENT.GetName]#! #col $AFFECTED$ [pops|e] out of $TOTAL$#!" #NEW
+ MOVEMENT_PRESENCE_SUB_UNIT_TOOLTIP: "[SUBUNIT.GetName]: [MOVEMENT.GetName]: $AFFECTED$ troops are followers out of $TOTAL$" #NEW
+ MOVEMENT_PRESENCE_UNIT_TOOLTIP: "[UNIT.GetName]: [MOVEMENT.GetName]: $NUM|Y$ sub units affected, $AFFECTED$ troops out of $TOTAL$" #NEW
+ MOVEMENT_PRESENCE_POP_TOOLTIP: "[POP.GetName]: [MOVEMENT.GetName]: $AFFECTED$ [pops|e] are followers out of $TOTAL$" #NEW
 
  PROVINCE_DEFINITION_TOOLTIP: "Numero di [locations|e]: [PROVINCE_DEFINITION.GetNumLocations]\n[area|e]: [PROVINCE_DEFINITION.GetArea.GetName]"
  PROV_DEF_MEMBERS_HEADER: "Le [locations|e] di [PROVINCE_DEFINITION.GetNameWithNoTooltip]"
@@ -480,22 +492,22 @@
  CONTINENT_TOOLTIP: "Questo [continent|e] è formato da [CONTINENT.GetNumSubContinents] [sub_continents|e] che sono:\n"
  CONTINENT_MEMBERS_HEADER: "I [sub_continents|e] di [CONTINENT.GetNameWithNoTooltip]"
  CONTINENT_MEMBERS_ENTRY: "[SUB_CONTINENT.GetName]: [SUB_CONTINENT.GetNumRegions]"
- SCRIPTED_GEOGRAPHY_TITLE_TT: "[ScriptedGeography.GetName]" #NEW
- SCRIPTED_GEOGRAPHY_NUM_OF_LOCATIONS: "[ScriptedGeography.GetName] ha [ScriptedGeography.GetNumberOfLocationsForScriptedGeography] [locations|e] in totale." #NEW
- GEOGRAPHY_IN_SCRIPTED_GEOGRAPHY: "[ScriptedGeography.GetName] è composto da:" #NEW
- GEOGRAPHY_SUFFIX: ", e altri $NUM$" #NEW
- GEOGRAPHY_LOCATION: "$BULLET$$NUM$ [locations|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_PROVINCE_DEFINITION: "$BULLET$$NUM$ [province_definitions|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_AREA: "$BULLET$$NUM$ [areas|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_REGION: "$BULLET$$NUM$ [regions|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_SUB_CONTINENT: "$BULLET$$NUM$ [sub_continents|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_CONTINENT: "$BULLET$$NUM$ [continents|e], compreso $ENTRIES$." #NEW
- GEOGRAPHY_ENTRY_LOCATION: "#L [LOCATION.GetName]#!" #NEW
- GEOGRAPHY_ENTRY_PROVINCE_DEFINITION: "#L [PROVINCE_DEFINITION.GetName]#!" #NEW
- GEOGRAPHY_ENTRY_AREA: "#L [AREA.GetName]#!" #NEW
- GEOGRAPHY_ENTRY_REGION: "#L [REGION.GetName]#!" #NEW
- GEOGRAPHY_ENTRY_SUB_CONTINENT: "#L [SUB_CONTINENT.GetName]#!" #NEW
- GEOGRAPHY_ENTRY_CONTINENT: "#L [CONTINENT.GetName]#!" #NEW
+ SCRIPTED_GEOGRAPHY_TITLE_TT: "[ScriptedGeography.GetName]" 
+ SCRIPTED_GEOGRAPHY_NUM_OF_LOCATIONS: "[ScriptedGeography.GetName] ha [ScriptedGeography.GetNumberOfLocationsForScriptedGeography] [locations|e] in totale." 
+ GEOGRAPHY_IN_SCRIPTED_GEOGRAPHY: "[ScriptedGeography.GetName] è composto da:" 
+ GEOGRAPHY_SUFFIX: ", e altri $NUM$" 
+ GEOGRAPHY_LOCATION: "$BULLET$$NUM$ [locations|e], compreso $ENTRIES$." 
+ GEOGRAPHY_PROVINCE_DEFINITION: "$BULLET$$NUM$ [province_definitions|e], compreso $ENTRIES$." 
+ GEOGRAPHY_AREA: "$BULLET$$NUM$ [areas|e], compreso $ENTRIES$." 
+ GEOGRAPHY_REGION: "$BULLET$$NUM$ [regions|e], compreso $ENTRIES$." 
+ GEOGRAPHY_SUB_CONTINENT: "$BULLET$$NUM$ [sub_continents|e], compreso $ENTRIES$." 
+ GEOGRAPHY_CONTINENT: "$BULLET$$NUM$ [continents|e], compreso $ENTRIES$." 
+ GEOGRAPHY_ENTRY_LOCATION: "#L [LOCATION.GetName]#!" 
+ GEOGRAPHY_ENTRY_PROVINCE_DEFINITION: "#L [PROVINCE_DEFINITION.GetName]#!" 
+ GEOGRAPHY_ENTRY_AREA: "#L [AREA.GetName]#!" 
+ GEOGRAPHY_ENTRY_REGION: "#L [REGION.GetName]#!" 
+ GEOGRAPHY_ENTRY_SUB_CONTINENT: "#L [SUB_CONTINENT.GetName]#!" 
+ GEOGRAPHY_ENTRY_CONTINENT: "#L [CONTINENT.GetName]#!" 
 
  CLICK_CONFIRM_DIALOG_TOOLTIP: "Un click comporterà una finestra di conferma aggiuntiva prima di eseguire l'azione."
  CLICK_HOLD_TOOLTIP: "Un click prolungato comporterà l'esecuzione immediata dell'azione."
@@ -523,7 +535,7 @@
 
  LOCATION_CLICK_IMPORT_EXPORT_LATERALVIEW: "Click sinistro per selezionare questo [market|e] per avviare una $IMPORT$"
  LOCATION_CLICK_RECRUIT_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare un reclutamento\nClick destro per selezionare questa [location|e] per annullare un reclutamento in corso"
- LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [unit_template|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso" #NEW
+ LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [unit_template|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso" 
  LOCATION_CLICK_RISE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [levies|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso"
  LOCATION_CLICK_HIRE_LATERALVIEW: "Click sinistro per selezionare questa [location|e] per avviare l'arruolamento di [mercenaries|e]\nClick destro per selezionare questa [location|e] per annullare l'arruolamento in corso"
 
@@ -535,9 +547,10 @@
  LOCATION_COLONIAL_OWNED: "Una Patria [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]"
  LOCATION_COLONIAL_BUILDINS: "[buildings|e]: $INFO$"
  NO_PORT_TO_TRACE_FLEET_FROM: "Non abbiamo nessun [port|e] da cui tracciare una rotta navale."
- INSIDE_NAVAL_RANGE_TT: "La distanza navale di $VALUE|2Y$ è all'interno della nostra [naval_range|E] di [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|G]"
- NOT_INSIDE_NAVAL_RANGE_TT: "@trigger_no! La distanza navale $VALUE|2R$ NON è all'interno della nostra [naval_range|E] di [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|Y]"
-
+ INSIDE_NAVAL_RANGE_TT: "La distanza navale di $VALUE|2Y$ ($PCT|0Y$% della nostra [naval_range|E] [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|G]) — nella portata." #NEW
+ NOT_INSIDE_NAVAL_RANGE_TT: "@trigger_no! La distanza navale $VALUE|2R$ ($PCT|0Y$% della nostra [naval_range|E] [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|Y]) — fuori portata." #NEW
+ NAVAL_RANGE_MAPMODE_LAND_NOT_ON_NAVAL_GRAPH_TT: "Questa [location|e] non è un [port|e] o una [seazone|e] sulla mappa delle rotte navali, quindi non ha una distanza via mare dal nostro [country|e]." #NEW
+ 
  INSIDE_COLONIAL_RANGE_TT: "La distanza navale di $VALUE|2Y$ è all'interno della nostra [colonial_range|E] di [Player.GetDoubleModifierValue('colonial_range','colonial_range_modifier')|G]"
  NOT_INSIDE_COLONIAL_RANGE_TT: "@trigger_no! La distanza navale $VALUE|2R$ NON è all'interno della nostra [colonial_range|E] di [Player.GetDoubleModifierValue('colonial_range','colonial_range_modifier')|Y]"
 
@@ -545,13 +558,14 @@
  MAPMODE_TRUCE_LOCATION_TT: "$COUNTRY$ ha una tregua con $OTHER$ fino al $DATE|V$."
 
  ADJACENT_TRADE_RANGE_TT: "[MARKET.GetName] è adiacente a uno dei nostri [markets|e]."
- INSIDE_TRADE_RANGE_TT: "La distanza commerciale di $VALUE|2Y$ da [Market.GetName] è all'interno della nostra [trade_range|E] di [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|G]."
- NOT_INSIDE_TRADE_RANGE_TT: "@trigger_no! Distanza commerciale $VALUE|2R$ da [Market.GetName] NON è all'interno della nostra [trade_range|E] di [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|Y]."
+ INSIDE_TRADE_RANGE_TT: "La distanza commerciale di $VALUE|2Y$ dal [Market.GetName] è all'interno della nostra [trade_range|E] di [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|G]."
+ NOT_INSIDE_TRADE_RANGE_TT: "La distanza commerciale di $VALUE|2Y$ dal [Market.GetName] supera la nostra [trade_range|E] [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|Y]. I costi di trasporto saranno più elevati per questa tratta." #NEW
 
  TOP_N_LOCATIONS_HEADER: "#T$NUM$ Migliori Località#!"
  BOTTOM_N_LOCATIONS_HEADER: "#$NUM$ Ultime Località#!"
  LOCATION_POPULATION_GROWTH_LABEL: "#TOOLTIP:$BREAKDOWN_TAG$ $POP_CHANGE|L$#!"
  LOCATION_POPULATION_GROWTH_ENTRY: "[LOCATION.GetName]: [LOCATION.GetPopulationChangeLabel]"
+ LOCATION_NATURAL_GROWTH_ENTRY: "[LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $NATURAL_GROWTH$#!" #NEW
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY: "$MOVETYPE$: $POP_CHANGE$"
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION: "$MOVETYPE$: #TOOLTIP:$BREAKDOWN_TAG$ $POP_CHANGE$#!"
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION_TITLE_IN: "Migrazione verso $LOCATION$"
@@ -566,11 +580,11 @@
  UNIT_WEIGHT_ENTRY: "[SUBUNIT.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2LV$#!"
  ATTRITION_DUE_TO: "#T [attrition]#!\nIl $VAL|R2%$ [attrition|e] è dovuto a"
  ARMY_TOO_LARGE: "Sopra il [supply_limit|e]: $VAL|-=2$"
- LEADING_TO_ATTRITION: "#R [attrition]#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" #NEW
- FOOD_CONSUMPTION_PENALTY_DUE_TO: "#R Penalità Consumo di Cibo#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" #NEW
- FOOD_CONSUMPTION_PENALTY_TO_WEIGHT: "#T Penalità Consumo di Cibo#!\n$VAL|2%$ a causa della Mancanza di Forniture in [LOCATION.GetName]\n[supply_limit]: $SUPPLY_LIMIT|2V$\nNecessario: $NEED|2V$" #NEW
- ATTRITION_TOOLTIP_HEADER: "#R Attrition#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" #NEW
- ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Attualmente nessuna perdita per attrito." #NEW
+ LEADING_TO_ATTRITION: "#R [attrition]#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" 
+ FOOD_CONSUMPTION_PENALTY_DUE_TO: "#R Penalità Consumo di Cibo#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" 
+ FOOD_CONSUMPTION_PENALTY_TO_WEIGHT: "#T Penalità Consumo di Cibo#!\n$VAL|2%$ a causa della Mancanza di Forniture in [LOCATION.GetName]\n[supply_limit]: $SUPPLY_LIMIT|2V$\nNecessario: $NEED|2V$" 
+ ATTRITION_TOOLTIP_HEADER: "#R Attrition#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" 
+ ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Attualmente nessuna perdita per attrito." 
  OUTSIDE_OF_NAVAL_RANGE_ATTRITION: "Fuori dalla portata navale: $VALUE|2/-=$"
  FROZEN_ATTRITION: "Mare [Concept('frozen', 'Ghiacciato')|e]: $VALUE|2-=$"
  NAVY_FROZEN_ATTRITION: "Bloccata nel Mare [Concept('frozen', 'Ghiacciato')|e]: $VALUE|2/-=$"
@@ -587,6 +601,7 @@
  UNIT_ABILITY_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato $ADVANCE_LIST$ per [UNIT_ABILITY.GetName]"
  CABINET_ACTION_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato $ADVANCE_LIST$ per poter effettuare l'azione [CABINET_ACTION.GetName]"
  BUILDING_TYPE_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter costruire [BUILDING_TYPE.GetName]"
+ TOWN_RIGHTS_TYPE_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter costruire un [TOWN_RIGHTS_TYPE.GetName]" #NEW
  ROAD_TYPE_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter costruire [ROAD_TYPE.GetName]"
  EMPLOYMENT_SYSTEM_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter costruire [EMPLOYMENT_SYSTEM.GetName]"
  LAW_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter codificare [LAW.GetName]"
@@ -608,7 +623,7 @@
  HOLY_SITE_TT_INFO: "[holy_site_type_short|e]: [HOLY_SITE.GetType.GetName]\n[location|e]: [LOCATION.GetName]"
  NO_AVAILABLE_TARGETS_WITH_REASON: "@trigger_no! $REASON$"
  NO_AVAILABLE_TARGETS: "@trigger_no! Nessun bersaglio disponibile"
- PROXIMITY_ADJACENT_DISTANCE: "#V Costo del Segmento ([LOCATION.GetName]@button_simple_smaller![TARGET_LOCATION.GetName]) è $DISTANCE|+=$ a causa di:#!\n$BREAKDOWN$" #NEW
+ PROXIMITY_ADJACENT_DISTANCE: "#V Costo del Segmento ([LOCATION.GetName]@button_simple_smaller![TARGET_LOCATION.GetName]) è $DISTANCE|+=$ a causa di:#!\n$BREAKDOWN$" 
  PROXIMITY_ADJACENT_DISTANCE_NUM: "Costo di Prossimità di questo segmento: $DISTANCE$"
  PROXIMITY_ADJACENT_DISTANCE_TEXT: "La costruzione di [roads|e] o l'aumento della [maritime_presence|e] ridurrà il Costo di Prossimità tra le [locations|e]."
  PROXIMITY_ADJACENT_NAME: "Costo di Prossimità tra le [game_concept_locations]"

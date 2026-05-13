@@ -18,7 +18,7 @@
  
  lutheranism_events.6.title: "La Paura dei Cripto-Cattolici"
  lutheranism_events.6.desc: "È sempre presente nel nostro stato il timore che alcuni individui, pur professando di credere in tutti gli aspetti della nostra Chiesa di Stato, siano in realtà simpatizzanti segreti del [ShowReligionName('catholic')]. Una famiglia nobile in particolare, sebbene profondamente radicata nell'apparato statale, si dice abbia inclinazioni papiste. Col passare degli anni queste voci non accennano a morire e ora sembrano quasi impossibili da ignorare."
- lutheranism_events.6.a: "Proibire a questa famiglia di ricoprire cariche pubbliche."
+ lutheranism_events.6.a: "Proibite a questa famiglia di ricoprire cariche pubbliche."
  lutheranism_events.6.b: "Devono essere processati."
  lutheranism_events.6.c: "Ignoriamo queste vili dicerie."
  
@@ -37,7 +37,7 @@
  lutheranism_events.9.e: "Evitare ingerenze a livello locale."
  
  lutheranism_events.10.title: "Resistenza alla Riforma in [ROOT.GetCountry.GetNameWithNoTooltip]"
- lutheranism_events.10.desc: "Ci sono ancora coloro, specialmente nelle campagne, che si oppongono alla Chiesa di Stato di [ROOT.GetCountry.GetLongName] e desiderano tornare all'abbraccio della Chiesa Romana. Tuttavia, c'è una grande differenza tra dubbi religiosi e ribellione aperta, e finora le cose sono rimaste tranquille in [ROOT.GetCountry.GetName]. La Chiesa di Stato si è quindi accontentata di lasciare in pace la maggior parte di questi dissidenti, purché continuino a partecipare alle funzioni e a pagare le tasse.\n\nSembra però che questa pace non fosse destinata a durare. La recente appropriazione dell'argento della Chiesa nella zona è stata vista come una dichiarazione di guerra da parte dei locali, che ora stanno imbracciando le armi per proteggere le loro chiese dalle mani avide di [ROOT.GetCountry.GetCapital.GetName]."
+ lutheranism_events.10.desc: "Ci sono ancora coloro, specialmente nelle campagne, che si oppongono alla Chiesa di Stato [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] e desiderano tornare all'abbraccio della Chiesa Romana. Tuttavia, c'è una grande differenza tra dubbi religiosi e ribellione aperta, e finora le cose sono rimaste tranquille [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName]. La Chiesa di Stato si è quindi accontentata di lasciare in pace la maggior parte di questi dissidenti, purché continuino a partecipare alle funzioni e a pagare le tasse.\n\nSembra però che questa pace non fosse destinata a durare. La recente appropriazione dell'argento della Chiesa nella zona è stata vista come una dichiarazione di guerra da parte dei locali, che ora stanno imbracciando le armi per proteggere le loro chiese dalle mani avide di [ROOT.GetCountry.GetCapital.GetName]."
  lutheranism_events.10.a: "È tempo di una persuasione energica."
  lutheranism_events.10.b: "Esoneriamo temporaneamente quest'area dalla riscossione."
  
@@ -143,9 +143,9 @@
  lutheranism_events.33.b: "Avviciniamoci ai pietisti con interesse."
 
  lutheranism_events.34.title: "Sommosse Iconoclaste a [target_province.GetNameWithNoTooltip]"
- lutheranism_events.34.desc: "L'odio per le icone e le immagini della vecchia Chiesa cattolica è un tratto comune a molti luterani, e la politica di consentire tali immagini nella Chiesa di [ROOT.GetOwner.GetLongName] non è mai stata del tutto priva di problemi.\n\nInfuriata da ciò che percepisce come idolatria, la popolazione di [target_province.GetName] ha assaltato numerose chiese della provincia, frantumando vetrate dipinte e distruggendo icone e altari."
- lutheranism_events.34.a: "Punisci i responsabili."
- lutheranism_events.34.b: "Ripara e restaura le chiese danneggiate."
+ lutheranism_events.34.desc: "L'odio per le icone e le immagini della vecchia Chiesa cattolica è un tratto comune a molti luterani, e la politica di consentire tali immagini nella Chiesa [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] non è mai stata del tutto priva di problemi.\n\nInfuriata da ciò che percepisce come idolatria, la popolazione di [target_province.GetName] ha assaltato numerose chiese della provincia, frantumando vetrate dipinte e distruggendo icone e altari."
+ lutheranism_events.34.a: "Punite i responsabili."
+ lutheranism_events.34.b: "Riparate e restaurate le chiese danneggiate."
 
  lutheranism_events.35.title: "Un Predicatore Patriottico e Carismatico a [target_province.GetNameWithNoTooltip]"
  lutheranism_events.35.desc: "[target_province.GetName] è una regione piena di piccole chiese luterane che respingono l'idea di una Chiesa centralizzata e dogmatica.\n\nUn predicatore carismatico ha guadagnato rilevanza qui e, mentre i suoi sermoni uniscono le comunità locali, rafforzano anche la loro determinazione a mantenere l'autonomia dalla Chiesa della loro antica madrepatria."

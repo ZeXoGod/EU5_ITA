@@ -1,6 +1,7 @@
 ﻿l_english:
  HAS_PROP_FORTS_IN_LOC: "Ha $NUM|Y$ livelli di fortificazioni, che propagano una [zone_of_control|e] sulle [locations|e] adiacenti."
  HAS_FORTS_IN_LOC: "Ha $NUM|Y$ livelli di fortificazioni semplici."
+ HAS_CITY_WALLS_IN_LOC: "Ha [city_walls|e] (Livello [fort|e] minimo: I). I muri non si sovrappongono a un vero [fort|e]."
  INFLUENCE_FORT_ENTRY: "Nella [zone_of_control|e] di [LOCATION.GetName]."
  FORT_FLIPPING: "#T Cambio del Controllore#!\nIl [controller] di @location!$PROV|Y$ sta cambiando in $FLIPPER|Y$ a causa del [fort|e] in $FLIPPINGLOCATION|Y$.\nProgresso: $PERCENT|Y2%$."
  CAPITAL_FLIPPING: "#T Cambio del Controllore#!\nIl [controller] di @location!$PROV|Y$ sta cambiando in $FLIPPER|Y$ a causa del loro controllo della [province_capital|e] in @location! $FLIPPINGLOCATION|Y$.\nProgresso: $PERCENT|Y2%$."
@@ -28,3 +29,7 @@
  defensive_military_stance: "Difensivo"
  defensive_military_stance_desc: "Lo [subject|e] adotterà un approccio difensivo alle tattiche militari, cercando di impedire ai nemici di fare qualsiasi cosa solo nelle terre alleate."
  defensive_military_stance_desc_all: "Tutti i nostri [subjects|e] adotteranno un approccio difensivo alle tattiche militari, cercando di impedire ai nemici di agire solo nelle terre alleate."
+
+ siege_raider_military_stance: "Assediatore"
+ siege_raider_military_stance_desc: "Lo [subject|e] si concentrerà esclusivamente sull'assedio delle fortificazioni nemiche e sul sostegno ai nostri assedi in corso, evitando, ove possibile, le battaglie in campo aperto."
+ siege_raider_military_stance_desc_all: "Tutti i nostri [subjects|e] si concentreranno esclusivamente sull'assedio delle fortificazioni nemiche e sul sostegno ai nostri assedi in corso, evitando, ove possibile, le battaglie in campo aperto."

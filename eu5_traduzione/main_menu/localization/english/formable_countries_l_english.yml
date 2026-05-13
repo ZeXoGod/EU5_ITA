@@ -25,6 +25,10 @@
  NOL_f_desc: "Per troppo tempo, le terre dei Northumbriani sono state governate da meridionali o persone d'oltreoceano. È tempo per noi di prendere le redini della nostra nazione e reclamare la gloria che i nostri antenati un tempo conoscevano. I signori del Nord risorgeranno ancora una volta!"
  IRE_f: "Irlanda"
  IRE_f_desc: "Per decenni, l'Inghilterra ha tentato di soggiogare la popolazione irlandese e controllare l'isola e i suoi abitanti da lontano. Unire le terre irlandesi sotto un'unica bandiera e scopo potrebbe essere la nostra unica possibilità di respingere questi spietati conquistatori!"
+ MTH_f: "Meath"
+ MTH_f_desc: "Un tempo il Meath era annoverato tra le grandi province d'Irlanda, un regno i cui sovrani dominavano gran parte del Leinster e il cui territorio comprendeva l'antica sede di Tara. Consolidando il nostro dominio su queste terre, potremo riportare in auge quell'antica eredità e restituire al regno il posto che gli spetta tra i regni d'Irlanda."
+ MCM_f: "Munster"
+ MCM_f_desc: "Il Munster, la grande provincia meridionale dell'Irlanda, fu la patria di re come Brian Boru, che un tempo rivendicò il titolo di Gran Re di tutta l'isola. Con le fertili terre del Munster e i porti atlantici sotto la nostra bandiera, faremo rinascere questo antico regno e ci ergeremo a signori del sud."
  SPA_f: "Spagna"
  SPA_f_desc: "Dalla sconfitta dei Visigoti per mano dell'invasione [ShowReligionGroupAdjective('muslim')] nell'VIII secolo, l'Iberia è stata la sede di diversi regni indipendenti. Numerosi aspiranti conquistatori hanno da allora tentato di unificare la regione, proclamandosi governanti di 'Hispania', 'Spania' o, come è ora conosciuta, 'Spagna'. Ma saremo noi a unificare finalmente la Penisola una volta per tutte!"
  ADU_f: "Al-'Andalus"
@@ -63,7 +67,13 @@
  HRE_f_desc: "$hre_desc$"
  HRE_f_tt: "Il $HRE_f$ può essere formato solo tramite la [policy|e] [ShowPolicyName('renovatio_policy')] dell'[GetUniqueInternationalOrganization('hre').GetName]"
  LAT_f: "Impero Latino"
- LAT_f_desc: "Il vecchio $ROM_f$ è sopravvissuto a $BYZ$, incentrato su [ShowLocationName('constantinople')], sebbene seguissero la fede [ShowReligionName('orthodox')] invece della giusta fede [ShowReligionAdjective('catholic')] di [ShowLocationName('rome')]. Pertanto, è nostro sacro dovere soppiantarli come $BYZ_eastern_rome$, stabilendo un Imperatore cattolico a [ShowLocationNameWithNoTooltip('constantinople')]."
+ LAT_f_desc: "Il vecchio $ROM_f$ è sopravvissuto incentrato su [ShowLocationName('constantinople')], sebbene seguissero la fede [ShowReligionName('orthodox')] invece della giusta fede [ShowReligionAdjective('catholic')] di [ShowLocationName('rome')]. Pertanto, è nostro sacro dovere soppiantarli come $BYZ_eastern_rome$, stabilendo un Imperatore cattolico a [ShowLocationNameWithNoTooltip('constantinople')]."
+ LAT_REDUCED_REQUIREMENTS_f: "$LAT_f$"
+ LAT_REDUCED_REQUIREMENTS_f_desc: "$LAT_f_desc$"
+ THE_f: "Tessalonica"
+ THE_f_desc: "Un [GetCountry('THE').GetFlavorRank] di breve durata fondato dai crociati in [ShowScriptedGeographyName('greece_geography')] all'indomani della Quarta Crociata, i cui sovrani esercitarono una grande influenza nell'[GetCountry('LAT').GetLongName]. Sebbene fosse stato distrutto da [GetCharacter('the_theodoros_komnenos_doukas').GetName] nel 1224, se riuscissimo a riconquistare i territori contesi, ciò ci renderebbe una potenza di tutto rispetto in [ShowScriptedGeographyNameWithNoTooltip('greece_geography')]."
+ THE_REDUCED_REQUIREMENTS_f: "$THE_f$"
+ THE_REDUCED_REQUIREMENTS_f_desc: "$THE_f_desc$"
  SAR_f: "Sardegna"
  SAR_f_desc: "La nostra isola è stata a lungo amaramente divisa tra i nostri Giudicati e i governanti stranieri. Questi tempi oscuri devono finire, e un sovrano che unifichi la Sardegna ci governerà tutti, portando pace e prosperità al nostro popolo... e guerra e devastazione ai nostri nemici. Come giustamente meritano."
  MSI_f: "Mossi"
@@ -90,6 +100,8 @@
  UKR_f_desc: "Secoli fa, la terra della Rus' fu unita sotto un'unica bandiera e governata dalla leggendaria città di [ShowLocationName('kyiv')]. Ma le orde mongole avanzarono dalla grande steppa, saccheggiando e bruciando. Persino la grande [ShowLocationNameWithNoTooltip('kyiv')] non poté evitare questo destino. Terrorizzato, il nostro popolo fuggì a nord nelle terre interne che oggi chiamiamo Russia.\nOra, una nuova e arrogante città settentrionale è in ascesa. Il suo sovrano immagina una nuova Rus', una Rus' incentrata su [ShowLocationName('moscow')] e non su [ShowLocationNameWithNoTooltip('kyiv')]. Ma noi Ruteni non permetteremo ai pretendenti di rivendicare l'eredità dei nostri antenati! [ShowLocationNameWithNoTooltip('kyiv')] risorgerà ancora una volta, e con essa la Rus'!"
  ROM_f: "Impero Romano"
  ROM_f_desc: "Non dal secondo secolo un solo impero ha comandato l'intera area del Mediterraneo e oltre, e quell'impero era la possente Roma. Se rivendichiamo questa terra, possiamo deridere qualsiasi pretendente di Costantinopoli o del Sacro Romano Impero, e proclamarci come i #italic veri#! successori dell'Impero Romano. #italic Cives Romani sumus#!!"
+ ROM_BYZ_f: "$ROM_f$"
+ ROM_BYZ_f_desc: "Siamo i veri eredi dell'Impero Romano e non permetteremo ai barbari di appropriarsi della nostra eredità! Ristabilendo il nostro dominio in Italia, dimostreremo agli Stati residui dell'Occidente che siamo i veri eredi di Roma!"
  CTH_f: "Cartagine"
  CTH_f_desc: "Gli infami cani dell'Impero Romano bruciarono Cartagine fino alle fondamenta, cercando di cancellare ogni singola memoria di questa antica civiltà. La loro identità, cultura e religione potrebbero essere svanite, ma finché esisterà un singolo pretendente Romano, esisterà la necessità di un'antitesi per questi ciarlatani. Diventeremo il flagello per tutti quegli stolti che glorificano i Romani; diventeremo gli Eredi di Cartagine!"
  NSE_f: "Impero del Mare del Nord"
@@ -124,6 +136,8 @@
  GRE_f_desc: "Sin dai primi giorni della nostra civiltà, l'Ellade è stata divisa, sia internamente dai suoi molti regni in competizione, sia occupata da stranieri per mano dei nostri comuni nemici. Nel corso dei secoli, il nostro potere è diminuito man mano che venivamo conquistati, smembrati e i nostri tesori portati via dai conquistatori. È un insulto alla nostra vasta eredità di arte, sport e invenzione esistere in uno stato così frammentato! Unire le terre greche sotto una bandiera e un unico sovrano è la nostra unica via per tornare alla grandezza del nostro passato."
  BYZ_f: "Impero Bizantino"
  BYZ_f_desc: "Il glorioso Impero Bizantino è svanito da tempo, ma finché i Greci vivono a [ShowLocationName('constantinople')], c'è speranza per la sua resurrezione. Come una fenice che torna alla vita da un mucchio di ceneri, così devono fare i resti di Roma Orientale. Ma prima di poterci riunire in un impero vitale, dobbiamo sedare il dissenso interno e assicurarci di lavorare tutti per lo stesso obiettivo. Dopotutto, possiamo prendere il posto dell'Impero Bizantino nello spirito, ma non possiamo prenderne il nome finché non dimostreremo di esserne degni..."
+ BYZ_trebizond_f: "$BYZ_f$" #NEW
+ BYZ_trebizond_f_desc: "Noi della dinastia dei Comneni siamo i legittimi eredi del trono che i latini ci hanno sottratto nel 1204. Dal nostro rifugio sulle rive del Mar Nero, la fiamma imperiale arde ancora. Riconquistiamo [ShowLocationName('constantinople')] e riuniamo le terre Greche sotto la nostra bandiera, e l'Impero Romano risorgerà ancora una volta da Trebisonda." #NEW                                                                                                                                                                                                                                                                                                                                      
  CNN_f: "Connacht"
  CNN_f_desc: "Uno dei regni tradizionali dell'[ShowRegionName('ireland_region')], $CNN_f$ vanta una storia lunga e gloriosa. Avendo ottenuto abbastanza influenza da ottenere l'Alta Regalità su tutta l'isola, $CNN_f$ ha una certa pretesa di tradizione e leadership — ma se saremo in grado di rimanere saldi di fronte agli aspiranti oppressori o meno dipenderà dalla nostra unificazione."
  HEN_f: "Hen Ogledd"
@@ -196,12 +210,12 @@
  RUM_f_desc: "Al suo apice, il Sultanato di Rum era la maggiore potenza dell'[ShowRegionName('anatolia_region')]. Purtroppo, fu frammentato da costanti invasioni brutali e feroci dispute di successione, cadendo nell'oscurità. Ma abbiamo la volontà e il potere di riforgiare i pezzi rotti dell'[ShowRegionNameWithNoTooltip('anatolia_region')] sotto un unico dominio e ripristinare il nostro Sultanato dimenticato da tempo!"
  MGE_f: "Impero $MGE_ADJ$"
  MGE_f_desc: "L'impero di $genghis_khan_name$, un tempo il più potente del mondo, è quasi scomparso. Siamo ora un popolo frammentato, disperso e disconnesso. Ma siamo ancora Mongoli e non abbiamo mai perso la speranza di riconquistare ciò che abbiamo perso. Dobbiamo restaurare la nostra eredità replicando le conquiste del Grande $rank_kingdom_horde_ruler_suffix_male$. L'Impero Mongolo risorgerà per conquistare ancora una volta!"
- MGO_f: "$MGO$" #NEW
- MGO_f_desc: "Il popolo della $mongolia_region$ non ha conosciuto l'unità dai tempi del grande $genghis_khan_name$. Ora sta a noi riunificare le tribù e marciare verso una nuova era di conquiste." #NEW
+ MGO_f: "$MGO$" 
+ MGO_f_desc: "Il popolo della $mongolia_region$ non ha conosciuto l'unità dai tempi del grande $genghis_khan_name$. Ora sta a noi riunificare le tribù e marciare verso una nuova era di conquiste." 
  ILK_f: "$ILK$"
  ILK_f_desc: "Il nostro impero un tempo si estendeva in tutto il mondo, infinito e vibrante. Ora è una mera storia, una nota a piè di pagina storica. Questo non può durare — siamo gli eredi dell'eredità di [GetCharacter('hulegu_khan_borjigin').GetName], e meritiamo di più! Riformeremo il nostro un tempo glorioso impero, unindo il nostro popolo e riprendendo ciò che era nostro. E anche di più..."
  GEO_f: "$GEO$"
- GEO_f_desc: "Il paesaggio stesso della [ShowAreaName('georgia')] e le devastazioni delle incursioni straniere hanno ripetutamente messo alla prova la resilienza del nostro popolo, ma abbiamo trionfato, dimostrandoci tenaci come le montagne e gli altipiani che ci proteggono. Con grinta e determinazione, vedremo la $GEO$ risorgere ancora una volta e prosperare sotto la nostra guida."
+ GEO_f_desc: "Il paesaggio stesso della [ShowAreaName('georgia_area')] e le devastazioni delle incursioni straniere hanno ripetutamente messo alla prova la resilienza del nostro popolo, ma abbiamo trionfato, dimostrandoci tenaci come le montagne e gli altipiani che ci proteggono. Con grinta e determinazione, vedremo la $GEO$ risorgere ancora una volta e prosperare sotto la nostra guida."
  ARM_f: "$ARM$"
  ARM_f_desc: "Il popolo Armeno è un'antica civiltà, con una storia che inizia anche prima del tempo dei Romani. Abbiamo sopportato l'ascesa e la caduta di imperi conquistatori senza perdere né la nostra lingua madre né la nostra fede. Ora riuniremo gli eredi dispersi di Hayk sotto un'unica bandiera e un'unica identità Armena!"
  SWI_f: "$SWI$"
@@ -273,18 +287,20 @@
  CIR_f_desc: "La divisione del popolo Circasso in tribù in competizione separate deve finire. Se vogliamo diventare forti e non soccombere alla pressione esterna, dobbiamo essere riuniti sotto un unico leader potente che possa guidare abilmente il nostro popolo verso la prosperità — e incutere terrore nel cuore dei nostri nemici."
  AZT_f: "Azteco"
  AZT_f_desc: "L'Impero $AZT_f$ si erge come simbolo di divinità e destino imperiale. Dalla città sacra di [ShowLocationName('tenochtitlan')], i nostri gloriosi leader sono riusciti a unire gran parte della [ShowRegionName('mesoamerica_region')] sotto un unico radioso Sole. Attraverso la fede, la guerra e il sacrificio, il nostro impero ritrovato reclamerà il suo scopo sacro di garantire che i cieli risplendano e gli dèi siano onorati."
- TUR_f: "$TUR$" #NEW
- TUR_f_desc: "" #NEW
- ASK_f: "$ASK$" #NEW
- ASK_f_desc: "" #NEW
- JAP_f: "$JAP$" #NEW
- JAP_f_desc: "" #NEW
- PGR_f: "$PGR$" #NEW
- PGR_f_desc: "" #NEW
- MTM_f: "$MTM$" #NEW
- MTM_f_desc: "" #NEW
- YUA_f: "$YUA$" #NEW
- YUA_f_desc: "$YUA$" #NEW
- CSH_f: "$CSH$" #NEW
- CSH_f_desc: "" #NEW
+ PON_f: "Pontus"
+ PON_f_desc: "Fondata da Mithridates I Ktistes (meaning #italic il Costruttore#!), Pontus divenne un vivace e prospero crocevia in cui si intrecciavano le tradizioni persiane e anatoliche con le influenze ellenistiche. Situato in posizione strategica tra un territorio montuoso facilmente difendibile e la comunità costiera [ShowCultureName('greek_culture')] dedita alla navigazione, il Regno prosperò, includendo città importanti come Amaseia e Sinope. Al culmine del suo potere, il regno si estendeva dalle profondità della [ShowAreaName('cappadocia_area')] alle coste della [ShowAreaName('crimea_area')]. Riaffermando un’eredità così gloriosa, rivendichiamo il nostro diritto di governare queste terre in modo indiscusso."
+ TUR_f: "$TUR$" 
+ TUR_f_desc: "" 
+ ASK_f: "$ASK$" 
+ ASK_f_desc: "" 
+ JAP_f: "$JAP$" 
+ JAP_f_desc: "" 
+ PGR_f: "$PGR$" 
+ PGR_f_desc: "" 
+ MTM_f: "$MTM$" 
+ MTM_f_desc: "" 
+ YUA_f: "$YUA$" 
+ YUA_f_desc: "$YUA$" 
+ CSH_f: "$CSH$" 
+ CSH_f_desc: "" 
  

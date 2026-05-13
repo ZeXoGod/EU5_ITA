@@ -49,8 +49,10 @@
   # Treaty of Tordesillas
   #
   treaty_of_tordesillas: "Trattato di [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetNameWithNoTooltip]"
-  treaty_of_tordesillas_desc: "Questo trattato fu firmato a [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetName] [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.GetLongName] e [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.GetLongName]. Stabilisce una serie di regole e parametri che consentono alle due potenze di rivendicare diritti esclusivi sulla colonizzazione e lo sfruttamento di qualsiasi terra appena scoperta sul continente di [ShowContinentName('america')]."
-  claim_reason_treaty_of_tordesillas: "Rivendicato tramite il $treaty_of_tordesillas$."
+  treaty_of_tordesillas_desc: "Questo trattato fu firmato a [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetName] [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.GetLongName] e [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.GetLongName]. $treaty_of_tordesillas_desc_second_section$"
+  treaty_of_tordesillas_desc_single_signatory: "Questo trattato fu firmato a [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetName] dalle due principali potenze coloniali, ma oggi solo [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.Custom('IT_ART_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.GetLongName] sostiene il trattato; il suo cofirmatario è stato sconfitto e dimenticato. $treaty_of_tordesillas_desc_second_section$" #NEW
+  treaty_of_tordesillas_desc_second_section: "Il documento stabilisce una serie di regole e parametri che consentono alle due potenze di rivendicare diritti esclusivi sulla colonizzazione e lo sfruttamento di qualsiasi territorio di nuova scoperta nel continente d'[ShowContinentName('america')]." #NEW
+  claim_reason_treaty_of_tordesillas: "Rivendicata in base al $treaty_of_tordesillas$"
   treaty_of_tordesillas.tt.location_is_east_of_line: "[THIS.GetLocation.GetName] è a est della linea immaginaria centrata su [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_line_location').GetLocation.GetName] che il $treaty_of_tordesillas$ userà per dividere il mondo.\n\nUna volta che il trattato è ratificato, questa [location|e] sarà rivendicata [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.GetLongName]"
   treaty_of_tordesillas.tt.location_is_west_of_line: "[THIS.GetLocation.GetName] è a ovest della linea immaginaria centrata su [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_line_location').GetLocation.GetName] che il $treaty_of_tordesillas$ userà per dividere il mondo.\n\nUna volta che il trattato è ratificato, questa [location|e] sarà rivendicata [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.Custom('IT_DAL_RANGO')][GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.GetLongName]"
   treaty_of_tordesillas.tt.location_is_line_origin: "[THIS.GetLocation.GetName] è la [location|e] che definisce la posizione della linea immaginaria che il $treaty_of_tordesillas$ userà per dividere il mondo"
@@ -120,8 +122,8 @@
   SITUATION_NOT_VOTED_TITLE: "Devono ancora votare: [GetDataModelSize(SituationView.GetNotVotedYet)|V0]"
   SITUATION_VOTES_PROGRESS: "#T Progressi del Voto del Consiglio in [Country.GetNameWithNoTooltip]#! I progressi affinché [Country.Custom('IT_La')][Country.GetName] possa convocare un consiglio sono al [VoteTargetGlue.GetVotePercentage|V2%]. Il supporto dei diversi [cardinals|e] cresce ogni mese di #Y 1#!, mentre certe azioni possono aumentarlo ulteriormente." 
   western_schism_1_tt: "Esiste un candidato per [ROOT.GetVariable('schism_pope_cardinal').GetCardinal.GetName] e [ROOT.GetVariable('schism_opponent_cardinal').GetCardinal.GetName]"
-  western_schism_2_tt: "[ROOT.GetVariable('schism_pope_cardinal').GetCardinal.GetName] ha tenuto più di 2 Concili"
-  western_schism_3_tt: "[ROOT.GetVariable('schism_opponent_cardinal').GetCardinal.GetName] ha tenuto più di 2 Concili"
+  western_schism_2_tt: "[ROOT.GetVariable('schism_pope_cardinal').GetCardinal.GetName] ha tenuto di 2 Concili"
+  western_schism_3_tt: "[ROOT.GetVariable('schism_opponent_cardinal').GetCardinal.GetName] ha tenuto di 2 Concili"
   SCHISM_CARDINALS_OF_COUNTRY: "Cardinali [Country.Custom('IT_DEL_RANGO')][Country.GetLongNameWithNoTooltip]"
   NO_CARDINALS_IN_COUNTRY: "[Country.Custom('IT_ART_RANGO')|U][Country.GetLongNameWithNoTooltip] non ha alcun $game_concept_cardinals$."
   SCHISM_CARDINAL_ENTRY: "$BULLET$[Cardinal.GetName]"
@@ -153,7 +155,7 @@
   WESTERN_SCHISM_CURIA_ACTIONS_EFFECT_TT: "$MODIFIER_TYPE_NAME_curia_actions_blocked$: #G $YES$"
   choose_candidate_to_support: "Seleziona Candidato da sostenere"
   choose_candidate_for_demands: "Seleziona Candidato a cui chiedere un pagamento"
-  ws_schism_show_support_for_one_pope_tt: "Il Candidato selezionato riceverà supporto nel voto dello $western_schism$"
+  ws_schism_show_support_for_one_pope_tt: "Il Candidato selezionato riceverà supporto nel voto dello $western_schism$. Il sostegno ottenuto dipenderà dal numero dei cardinali, che verrà dimezzato."
   ws_show_unity_of_faith_tt: "Ogni [location|e] nella [province|e] designata guadagnerà [ShowModifier('ws_show_unity_of_faith')]"
   western_schism_pope_score: "Punteggio Candidato Papale"
   western_schism_anti_pope_score: "Punteggio Candidato Anti-Papale"
@@ -174,14 +176,16 @@
   move_good_to_new_location: "Spostare [goods|e] in una nuova località"
   columbian_exchange: "Scambio Colombiano"
   columbian_exchange_desc: "Il contatto con nuove popolazioni straniere d'oltremare ha aperto il nostro paese a nuove colture e animali da queste terre lontane, e ha portato grandi opportunità per sviluppare relazioni commerciali che forniscono ai nostri mercanti accesso a strani e esotici nuovi prodotti."
+ columbian_exchange_old_world_goods_traded_tt: "Un bene del Vecchio Mondo viene prodotto o commercializzato nel nostro mercato" #NEW
+ columbian_exchange_new_world_goods_traded_tt: "Un bene del Nuovo Mondo viene prodotto o commercializzato nel nostro mercato" #NEW
   NEW_WORLD_GOODS_TITLE: "Beni del Nuovo Mondo"
   NEW_WORLD_GOODS_DESC: "Queste sono tutte le [raw_materials|e] trovate in [ShowContinentName('america')] che vengono esportate nel #Y Vecchio Mondo#!, ossia in [ShowContinentName('europe')], [ShowContinentName('asia')] e [ShowContinentName('africa')]."
-  NEW_WORLD_GOODS_DISTRIBUTION: "Presente [Scope.GetGoods.GetPresentOutsideContinent('america')] volte"
-  NEW_WORLD_GOODS_DISTRIBUTION_TOOLTIP: "[Scope.GetGoods.GetName] è presente in [Scope.GetGoods.GetPresentOutsideContinent('america')] località nel #Y Vecchio Mondo#!, che sarebbe [ShowContinentName('europe')], [ShowContinentName('asia')] e [ShowContinentName('africa')]"
+  NEW_WORLD_GOODS_DISTRIBUTION: "Presente [Goods.GetPresentOutsideContinent('america')] volte"
+  NEW_WORLD_GOODS_DISTRIBUTION_TOOLTIP: "[Goods.GetName] è presente in [Goods.GetPresentOutsideContinent('america')] località nel #Y Vecchio Mondo#!, che sarebbe [ShowContinentName('europe')], [ShowContinentName('asia')] e [ShowContinentName('africa')]"
   OLD_WORLD_GOODS_TITLE: "Beni del Vecchio Mondo"
   OLD_WORLD_GOODS_DESC: "Queste sono tutte le [raw_materials|e] importate in [ShowContinentName('america')] dal #Y Vecchio Mondo#! ossia da [ShowContinentName('europe')], [ShowContinentName('asia')] o [ShowContinentName('africa')]."
-  OLD_WORLD_GOODS_DISTRIBUTION: "Presente [Scope.GetGoods.GetPresentInContinent('america')] volte"
-  OLD_WORLD_GOODS_DISTRIBUTION_TOOLTIP: "[Scope.GetGoods.GetName] è presente in [Scope.GetGoods.GetPresentInContinent('america')] località in [ShowContinentName('america')]"
+  OLD_WORLD_GOODS_DISTRIBUTION: "Presente [Goods.GetPresentInContinent('america')] volte"
+  OLD_WORLD_GOODS_DISTRIBUTION_TOOLTIP: "[Goods.GetName] è presente in [Goods.GetPresentInContinent('america')] località in [ShowContinentName('america')]"
   #
   # Council of Trent
   #
@@ -213,13 +217,13 @@
   SECOND_STRONGEST_BEYLIK: "Secondo Beilicato più Forte"
   THIRD_STRONGEST_BEYLIK: "Terzo Beilicato più Forte"
   ROTT_GRAPH_TITLE_TT: "Analisi del Punteggio"
-  ROTT_LEADER_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[monthly_income_trade_and_tax|e]: [Country.GetEstimatedMonthlyIncomeTradeAndTax|2]"
+  ROTT_LEADER_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[tax_base|e]: [Country.GetTotalTaxBase|2]" #NEW
   ROTT_LEADER_COUNTRY_SCORE_TITLE_TT: "Paese più Forte"
   ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT: "#italic Ogni mese, la prestazione complessiva dei paesi nella [situation|e] dell'[ShowSituationNameWithNoTooltip('rise_of_the_ottomans')] è valutata e le posizioni dei tre più potenti sono aggiornate sulla base dei nuovi punteggi.#!"
-  ROTT_SECOND_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[monthly_income_trade_and_tax|e]: [Country.GetEstimatedMonthlyIncomeTradeAndTax|2]"
+  ROTT_SECOND_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[tax_base|e]: [Country.GetTotalTaxBase|2]" #NEW
   ROTT_SECOND_COUNTRY_SCORE_TITLE_TT: "Secondo più Forte"
   ROTT_SECOND_COUNTRY_SCORE_FLAVOR_TT: "$ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT$"
-  ROTT_THIRD_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[monthly_income_trade_and_tax|e]: [Country.GetEstimatedMonthlyIncomeTradeAndTax|2]"
+  ROTT_THIRD_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[tax_base|e]: [Country.GetTotalTaxBase|2]"
   ROTT_THIRD_COUNTRY_SCORE_TITLE_TT: "Terzo più Forte"
   ROTT_THIRD_COUNTRY_SCORE_FLAVOR_TT: "$ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT$"
   ROTT_LEADER_COUNTRY: "##1 [SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('strongest_beylik_variable').GetCountry.GetLongName]: [SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('strongest_strongest_beylik_total_score_variable').GetValue|2]"
@@ -239,18 +243,18 @@
   #
   # Rise of Timur
   #
-  rise_of_timur: "Ascesa di $name_temur$"
+  rise_of_timur: "Ascesa di $name_timur$"
   rise_of_timur_desc: "Alimentato dall'ambizione di seguire le orme di $genghis_khan_name$ e dei Califfi, [GetCountry('TIM').MakeScope.GetVariable('tim_founding_father').GetCharacter.GetName] ha radunato i suoi soldati e lealisti, e ha fondato un nascente Impero costruito su un'espansione spietata e tattiche brillanti. Per [GetCountry('TIM').MakeScope.GetVariable('tim_founding_father').GetCharacter.GetNameWithNoTooltip], le terre dell'[ShowSubContinentName('central_asia')], del [ShowSubContinentName('middle_east')], e dell'$india$ sono le più adatte alla sua conquista, che plasmerà indelebilmente queste regioni nei secoli a venire..."
   has_timurids_stagnate_tt: "La nazione [GetCountry('TIM').GetName] ha un [ruler|e] con meno di #Y 150#! punti nelle [abilities|e], OPPURE non ha né un governante né un [heir|e]"
   has_annexed_timurids_tt: "La nazione [GetCountry('TIM').GetName] è stata [Concept('annexed', 'Annessa')|el] o [Concept('subjugated', 'Soggiogata')|e]"
-  has_restored_the_mongol_empire_tt: "La nazione [GetCountry('TIM').GetName] ha restaurato la [GetCountry('MGE').GetName]"
+  timur_could_form_mughals_or_mongol_empire_tt: "[GetCountry('TIM').GetName] potrebbe formare [GetFormableCountry('MGE').Custom('IT_La')][GetFormableCountry('MGE').GetName] o [GetFormableCountry('MUG').Custom('IT_La')][GetFormableCountry('MUG').GetName]" #NEW
   ROT_TIMURIDS: "#T [GetCountry('TIM').GetName]#!"
   ROT_TIMURS_ALLIES: "Alleato [GetCountry('TIM').GetName]"
   ROT_TIMURS_SUBJECTS: "Stato Cliente [GetCountry('TIM').GetName]"
   ROT_CURRENTLY_INVADED: "Attualmente invaso dai [GetCountry('TIM').Custom('IT_ADJ_MP')]"
   ROT_FUTURE_INVASION_TARGET: "Potenziale obiettivo di invasione futura [GetCountry('TIM').GetName]"
   ROT_END_CONDITIONS: "Condizioni per il Termine"
-  ROT_CONQUEST_AMBITION: "Obiettivo di Conquista Ambiziosa [GetCountry('TIM').GetNameWithNoTooltip]" #NEW
+  ROT_CONQUEST_AMBITION: "Obiettivo di Conquista Ambiziosa [GetCountry('TIM').GetNameWithNoTooltip]" 
   KILL_COUNTER: "Contatore Uccisioni"
   KILL_COUNTER_DESC: "Gli eserciti predatori [GetCountry('TIM').Custom('IT_DEL_RANGO')][GetCountry('TIM').GetLongName] hanno ucciso #Y [SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('timur_total_kill_counter').GetValue]#! persone in totale."
   TOTAL_KILLS: "Uccisioni Totali"
@@ -301,6 +305,9 @@
  no_locations_available: "@trigger_no! Non ci sono [locations|e] disponibili che soddisfino i criteri."
  raise_bey_fortress_tt: "La costruzione di [ShowBuildingTypeName('bey_fortress')] designa quella città come nostra roccaforte di potere, il che può avere molti benefici per il suo [control|e] e la sua [prosperity|e] attraverso un [event|e].\n\n #R Tuttavia#!, se la località dovesse cadere nelle mani dei nostri nemici, la nostra [stability|e] e il [government_power|e] soffriranno notevolmente"
  choose_location: "Scegli una [location|e]"
+ choose_holy_site: "Scegli una [holy_site|e]" #NEW
+ choose_god: "Scegli un [god|e]" #NEW
+ choose_omen: "Scegli un [omen|e]" #NEW
  choose_fortification_to_inspect: "Scegli una [location|e] con un [ShowBuildingTypeName('castle')] da ispezionare."
  no_fortifications_available: "@trigger_no! Non ci sono [locations|e] con un [ShowBuildingTypeName('castle')] disponibili da ispezionare."
  inspect_fortifications_location_tt: "Rafforza le difese delle fortificazioni nell'[area|e] selezionata e assicurati che siano all'altezza dei nostri standard militari ottenendo [ShowModifier('recently_inspected_fortifications_modifier')]"
@@ -320,7 +327,7 @@
  #
  hundred_years_war: "Guerra dei Cent'anni"
  hundred_years_war_info: "Questo è un conflitto che creerà [wars|e] tra [GetCountry('ENG').GetName] e [GetCountry('FRA').GetName] finché una parte non avrà raggiunto i suoi obiettivi."
- hundred_years_war_desc: "La morte dell'ultimo erede diretto al trono [GetCountry('FRA').GetAdjective] ha lasciato un vuoto di potere, gettando la [ShowRegionName('france_region')] nel caos. Con rivendicazioni, concorrenti e tensioni di lunga data sul territorio e sui diritti feudali, la fragile pace tra [GetCountry('FRA').Custom('IT_La')][GetCountry('FRA').GetNameWithNoTooltip] e [GetCountry('ENG').Custom('IT_La')][GetCountry('ENG').GetNameWithNoTooltip] è andata in frantumi. Entrambi i reami detengono terre in [ShowRegionNameWithNoTooltip('france_region')], creando una frizione che minaccia l'unità del [ShowReligionGroupName('christian')]. Quello che è iniziato come una disputa sulla successione è sfociato in una lotta prolungata per il dominio, una che ora minaccia di sfregiare il continente per generazioni."
+ hundred_years_war_desc: "La morte dell'ultimo erede diretto al trono [GetCountry('FRA').GetAdjective] ha lasciato un vuoto di potere, gettando la [ShowRegionName('france_region')] nel caos. Con rivendicazioni, concorrenti e tensioni di lunga data sul territorio e sui diritti feudali, la fragile pace tra [GetCountry('FRA').Custom('IT_La')][GetCountry('FRA').GetNameWithNoTooltip] e [GetCountry('ENG').Custom('IT_La')][GetCountry('ENG').GetNameWithNoTooltip] è andata in frantumi. Entrambi i reami detengono terre in [ShowRegionNameWithNoTooltip('france_region')], creando una frizione che minaccia l'unità del [ShowReligionGroupName('christian')]. Quello che è iniziato come una disputa sulla successione è sfociato in una lotta prolungata per il dominio, che ora minaccia di sfregiare il continente per generazioni."
  ENGLISH_VICTORY: "Condizioni di Vittoria [GetCountry('ENG').Custom('IT_ADJ_MP')]"
  FRENCH_VICTORY: "Condizioni di Vittoria [GetCountry('FRA').Custom('IT_ADJ_MP')]"
  DEC_WAR_ON_FRANCE: "Dichiarare [war|e] [GetCountry('FRA').Custom('IT_AL_RANGO')][GetCountry('FRA').GetLongNameWithNoTooltip]"
@@ -394,20 +401,21 @@
  fra_has_eligible_child_tt: "La dinastia [GetCountry('FRA').GetGovernment.GetRulerOrRegent.GetDynasty.GetName] di [GetCountry('FRA').GetName] ha un [character|e] che è idoneo a diventare il nostro [heir|e]"
  has_not_been_exempted_tt: "Non è stata concessa l'esenzione temporanea dalle guerre offensive attraverso l'[action|e] [ShowGenericActionName('demand_autonomy')] per la [situation|e] della [ShowSituationName('hundred_years_war')]"
  another_appanage_capital_area_stronger_tt: "Nessun altro [ShowSubjectTypeName('appanage')] con la sua [capital|e] nella stessa [area|e] della nostra [capital|e] ha una [country_strength|e] più alta della nostra"
- has_demanded_autonomy_tt: "In quanto [ShowSubjectTypeName('appanage')], abbiamo il [modifier|e] [ShowModifier('granted_autonomy_to_expand_modifier')] dall'[action|e] [ShowGenericActionName('demand_autonomy')] per la [situation|e] della [ShowSituationName('hundred_years_war')]"
+ has_demanded_autonomy_tt: "In quanto [ShowSubjectTypeName('appanage')], o abbiamo il [modifier|e] [ShowModifier('granted_autonomy_to_expand_modifier')] dall'[action|e] [ShowGenericActionName('demand_autonomy')] per la [situation|e] della [ShowSituationName('hundred_years_war')], oppure stiamo dichiarando [war|e] [overlord.Custom('IT_Alla')][overlord.GetName]"
  has_relevant_event_to_the_disaster_tt: "Sta attualmente risolvendo un [event|e] che è rilevante per questo [disaster|e]"
  selected_character_will_be_executed_tt: "Il [character|e] selezionato incontrerà la sua morte per mano dei nostri boia"
  demand_territory_return: "Richiedi Aggiustamento Confine"
  demand_territory_return_desc: "È giunto alla nostra attenzione che i nostri pari vicini, stati clienti compagni del grande [GetCountry('FRA').GetLongName], controllano attualmente alcune terre che consideriamo nostre. Questa questione deve essere affrontata con la massima urgenza!"
  demand_territory_return_tt: "Chiederemo la restituzione della località [core|e] selezionata sotto il nostro controllo."
- wont_join_vs_other_appanages_with_granted_autonomy_to_expand_modifier_during_hyw_tt: "Questo [subject_type|e] non si unirà automaticamente a [wars|e] contro un [ShowSubjectTypeName('appanage')] che ha ricevuto il [modifier|e] [ShowModifier('granted_autonomy_to_expand_modifier')] dall'[action|e] [ShowGenericActionName('demand_autonomy')] durante la [ShowSituationName('hundred_years_war')]"
+ wont_join_vs_other_appanages_with_granted_autonomy_to_expand_modifier_during_hyw_tt: "La guerra non si combatte contro un [ShowSubjectTypeName('appanage')] che ha ricevuto il [modifier|e] [ShowModifier('granted_autonomy_to_expand_modifier')] dall'[action|e] [ShowGenericActionName('demand_autonomy')] durante la [ShowSituationName('hundred_years_war')]"
  hyw_will_soon_fire_tt: "La [situation|e] della [ShowSituationName('hundred_years_war')] potrebbe iniziare presto"
 
  betray_our_allegiance: "Tradire la nostra Fedeltà"
  betray_our_allegiance_desc: "Le maree della guerra cambiano. Sebbene abbiamo promesso di aiutare i nostri alleati con le armi durante il conflitto in corso, dobbiamo fare i conti con la realtà e perseguire una diversa linea diplomatica, nel tentativo di risparmiare alla nostra gente gli orrori della guerra e della sottomissione."
  eng_leads_one_side_france_another_tt: "Uno schieramento della [war|e] è guidato dall'[GetCountry('ENG').GetName], mentre l'altro è guidato dalla [GetCountry('FRA').GetName]"
  choose_war_tt: "Scegli una [war|e]"
- war_goal_owned_by_us_tt: "L'[war_goal|e] NON è una [location|e] o una [province|e] che possediamo" #NEW
+ war_goal_owned_by_us_tt: "L'[war_goal|e] NON è una [location|e] o una [province|e] che possediamo" 
+ war_going_on_longer_than_year_tt: "Va avanti da almeno #Y 1#! anno" #NEW
 
  procure_core_claim: "Ottenere ua Rivendicazione su una Località Centrale"
  procure_core_claim_desc: "Non possiamo più ignorare la nostra legittima rivendicazione su certe terre. Affermando la proprietà su ciò che è giustamente nostro, poniamo le basi per la guerra per reclamare il nostro territorio perduto."
@@ -425,6 +433,9 @@
  
  hyw_defect_action: "Tentativo di Defezione"
  hyw_defect_action_desc: "La nostra frustrazione nei confronti del nostro attuale signore ha raggiunto un punto di svolta. La sua cattiva gestione dell'intero regno ha lasciato molti dei suoi stati clienti, noi compresi, frustrati. È ora che prendiamo in considerazione l'idea di cambiare schieramento prima che scoppi una guerra!"
+ crown_new_ruler: "Incoronare un Nuovo Sovrano" #NEW
+ crown_new_ruler_desc: "Purtroppo ci siamo ritrovati alleati con i nostri nemici mortali. Questa situazione ostacola i nostri sforzi bellici e fa apparire il nostro accordo come un segno di debolezza. Dobbiamo cercare di eleggere un nuovo sovrano, purché questa alleanza non sia guidata da noi!" #NEW
+ selected_character_takes_actor_crown_tt: "Il [character|e] scelto diventerà il nostro nuovo [ruler|e] con grande disappunto dei nostri avversari in questa [situation|e] attuale. Ciò potrebbe portare a una [war|e]" #NEW
   
  #
  # Standard Situation
@@ -671,6 +682,8 @@
  intervene_in_italian_campaign_price: "Costo per Intervenire nella Campagna Italiana"
  iw_send_aid_price: "Costo per Inviare Aiuto"
  iw_send_aid_text: "Seleziona un paese a cui inviare il nostro aiuto."
+ LEADER_BALKANS_POWER_TOOLTIP: "Leader della Lega dei Balcani" #NEW
+ MEMBER_BALKANS_POWER_TOOLTIP: "Membro della Lega dei Balcani" #NEW
 
  #Tooltips and colors
  CONQUEST_DESIRE_ON_US: "Desiderio di Conquista nei nostri confronti"
@@ -834,7 +847,7 @@
  catholic_league_ally.tt: "Alleato con il Leader della $catholic_league$"
  war_of_religions_neutral.tt: "Neutrale"
  WAR_OF_RELIGIONS_PROTESTANT_UNION_LEADER: "Leader Protestante"
- WAR_OF_RELIGIONS_PROTESTANT_LEAGUE_LEADER_ALLY: "[ally|e] del $WAR_OF_RELIGIONS_PROTESTANT_UNION_LEADER$"
+ WAR_OF_RELIGIONS_PROTESTANT_UNION_LEADER_ALLY: "[ally|e] del $WAR_OF_RELIGIONS_PROTESTANT_UNION_LEADER$"
  WAR_OF_RELIGIONS_CATHOLIC_LEAGUE_LEADER: "Leader Cattolico"
  WAR_OF_RELIGIONS_CATHOLIC_LEAGUE_LEADER_ALLY: "[ally|e] del $WAR_OF_RELIGIONS_CATHOLIC_LEAGUE_LEADER$"
  WAR_OF_RELIGIONS_PROTESTANT_UNION_TITLE: "[GetUniqueInternationalOrganization('protestant_union').GetName]"

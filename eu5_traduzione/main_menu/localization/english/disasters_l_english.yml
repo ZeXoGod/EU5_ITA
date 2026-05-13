@@ -125,6 +125,7 @@
  horde_civil_war: "Guerra Civile dell'Orda"
  horde_civil_war_desc: "Ancora una volta l'autorità del nostro sovrano viene messa in discussione! Un signore della guerra rivale minaccia l'Orda con una guerra civile, desideroso di reclamare il trono. L'Orda deve marciare contro i propri guerrieri ribelli..."
  horde_civil_war_end_trigger_no_rebels: "Nessun [rebel|e] è un ribelle #Y Pretendente#!"
+ horde_civil_war_capital_has_neighbor_province_tt: "La capitale confina con una provincia vicina"
  horde_civil_war_crown_supporters: "Lealisti dell'Orda"
  horde_civil_war_pretender_supporters: "Rinnegati dell'Orda"
  GUI_REBEL_OWNED_LOCATIONS: "[locations|e] controllate dai [rebels|e]: [DisasterView.GetDisaster.GetOwner.MakeScope.GetVariable('GUI_pretender_rebel_character').GetCharacter.GetCourtCountry.GetOwnedLocationCount]"
@@ -150,8 +151,8 @@
  #Disaster
  sinicization_disaster: "Influenza della Cina"
  sinicization_disaster_desc: "L'influenza della [GetCountry('CHI').GetName] è stata per molti versi vantaggiosa per la nostra società. Tuttavia, questo legame con un gigante culturale ha introdotto elementi estranei che ci allontanano dalle nostre tradizioni e minacciano la nostra indipendenza. Per preservare la nostra identità unica, dobbiamo resistere a queste seduzioni esterne. D'altro canto, potremmo invece beneficiare di legami più stretti..."
- has_opted_to_side_with_china_in_events_tt: "Ha sufficientemente #G favorito#! l'influenza della [GetCountry('CHI').GetNameWithNoTooltip] nella nostra corte attraverso [events|e]"
- has_opted_to_stay_sovereign_from_china_in_events_tt: "Ha sufficientemente #G limitato#! l'influenza della [GetCountry('CHI').GetNameWithNoTooltip] nella nostra corte attraverso [events|e]"
+ has_opted_to_side_with_china_in_events_tt: "Ha sufficientemente #G favorito#! l'influenza della [GetCountry('CHI').GetNameWithNoTooltip] nella nostra corte attraverso [events|e] ([THIS.GetVariable('china_side').GetValue]/30)"
+ has_opted_to_stay_sovereign_from_china_in_events_tt: "Ha sufficientemente #G limitato#! l'influenza della [GetCountry('CHI').GetNameWithNoTooltip] nella nostra corte attraverso [events|e] ([THIS.GetVariable('sovereign_side').GetValue]/30)"
 
 #Crisis of the Chinese Dynasty
  #Disaster
@@ -267,7 +268,7 @@
 #Time of Troubles Disaster
  #Disaster
  time_of_troubles: "Tempi Difficili"
- time_of_troubles_desc: "È un'epoca oscura di disordine sociale ed economico. La nostra nazione soffre carestia e guerra, e fatica a contenere l'opposizione del clero e della nobiltà. Assediato su ogni fronte dai venti della discordia, [Country.Custom('IT_ART_RANGO')]nostr[Country.Custom('IT_OA_RANGO')] [Country.GetFlavorRank] è sul punto di essere fatto a pezzi."
+ time_of_troubles_desc: "È un'epoca oscura di disordine sociale ed economico. La nostra nazione soffre carestia e guerra, e fatica a contenere l'opposizione del clero e della nobiltà. Assediato da ogni parte dai cani della discordia, il nostro regno sta per essere dilaniato e divorato..."
 
 #Decline of the Empire
  #Disaster
@@ -293,7 +294,8 @@
  coup_attempt: "Tentativo di Colpo di Stato"
  coup_attempt_desc: "Ombre minacciose si muovono attorno a noi come rapaci, pronte a colpire — la più temibile di esse potrebbe causare la morte prematura del nostro governante! Peggio ancora, verrebbe sostituito con un fantoccio manipolato da questi assassini nell'ombra."
  recently_had_coup_attempt_inconclusive_tt: "NON ha subito un colpo di stato inconclusivo o riuscito negli ultimi #Y 5#! anni"
- conspirators_murdered_ruler_tt: "I cospiratori hanno assassinato con successo il nostro governante"
+ conspirators_murdered_ruler_tt: "I cospiratori hanno assassinato con successo il nostro [ruler|e]"
+ any_conspirator_became_ruler_tt: "Uno dei cospiratori fu incoronato [ruler|e]"
 
 #Byzantine Civil War
  #Disaster

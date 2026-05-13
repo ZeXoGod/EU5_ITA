@@ -5,7 +5,9 @@
  TRAIT_WHEN_ARTIST: "[artist_trait|e]"
  TRAIT_WHEN_EXPLORER: "[explorer_trait|e]"
  TRAIT_WHEN_CHILD: "[child_trait|e]"
+ TRAIT_WHEN_HEALTH: "[health_trait|e]" #NEW
  TRAIT_WHEN_RELIGIOUS_FIGURE: "[religious_figure_trait|e]"
+ TRAIT_WHEN_CABINET: "[cabinet_trait|e]" #NEW
  NEXT_TRAIT_GAINED_AT: "#T $game_concept_ruler_trait$#!\nTempo di governo rimanente per acquisire il prossimo [trait|e]: $DATE|Y$"
  NOT_YET_THIRD_TRAIT: "#T $game_concept_ruler_trait$#!\nTempo di governo rimanente per acquisire l'ultimo [trait|e]: $DATE|Y$"
  REGENTS_NO_TRAITS: "#T $game_concept_ruler_trait$#!\nUn [regent|e] non può acquisire nuovi [traits|e]"
@@ -17,7 +19,21 @@
  TRAIT_CATEGORY_ARTIST: "[artist|e]"
  TRAIT_CATEGORY_CHILD: "[child|e]"
  TRAIT_CATEGORY_RELIGIOUS_FIGURE: "[religious_figure|e]"
+ TRAIT_CATEGORY_CABINET: "[cabinet|e]" #NEW
  TRAIT_CATEGORY_CHARACTER: "[character|e]"
+ TRAIT_CATEGORY_HEALTH: "[health_trait_short|e]" #NEW
+ TRAIT_TOOLTIP_UPGRADES_FROM: "Upgrades From: [Trait.GetName]" #NEW
+ TRAIT_TOOLTIP_UPGRADES_TO: "Upgrades To: [Trait.GetName]" #NEW
+ TRAIT_TOOLTIP_CHANCE_ON_BIRTH: "Chance on Birth: $CHANCE|%+$" #NEW
+ TRAIT_TOOLTIP_CHANCE_ON_BIRTH_BAD: "Chance on Birth: $CHANCE|%-$" #NEW
+ TRAIT_TOOLTIP_CHANCE_AFTER_BATTLE: "Chance After Battle: $CHANCE|%+$" #NEW
+ TRAIT_TOOLTIP_CHANCE_AFTER_BATTLE_BAD: "Chance After Battle: $CHANCE|%-$" #NEW
+ TRAIT_TOOLTIP_YEARLY_CHANCE_OF_REMOVE: "Yearly Chance of Removal: $CHANCE|%-$" #NEW
+ TRAIT_TOOLTIP_YEARLY_CHANCE_OF_REMOVE_BAD: "Yearly Chance of Removal: $CHANCE|%+$" #NEW
+ TRAIT_TOOLTIP_YEARLY_CHANCE_TO_DIE: "Yearly Chance of Death: $CHANCE|%-$" #NEW
+ TRAIT_TOOLTIP_YEARLY_CHANCE_TO_DIE_BAD: "Yearly Chance of Death: $CHANCE|%+$" #NEW
+ TRAIT_TOOLTIP_RECOVERY_TRAIT: "Recovery grants: [Trait.GetName]" #NEW
+ CHARACTER_TRAIT_MONTHLY_DEATH_CHANCE: "[Trait.GetNameWithNoTooltip]: Yearly Chance of Death: $CHANCE|%+$" #NEW
  #
  administrative: "Amministrativa"
  balanced: "Equilibrata"
@@ -72,53 +88,56 @@
  obsessive_perfectionist: "Perfezionista Ossessivo"
  malevolent: "Malevolo"
  #Personality Modifier Descriptions - Note: don't refer directly to the sex or title of the monarch.
- desc_conqueror: "Chi governa è un conquistatore. Sotto questo regime potremo annettere nuovi territori al nostro dominio con maggiore efficacia."
- desc_tolerant: "Chi governa è tollerante. Le minoranze religiose prospereranno durante il nostro regime."
- desc_just: "Chi governa è giusto. Grazie a una profonda conoscenza delle leggi e delle tradizioni del regno, i sudditi ci considerano legittimi e imparziali."
- desc_righteous: "Chi governa è retto. Il popolo difficilmente metterà in dubbio la nostra autorità, sapendo che chi è retto agisce sempre per il bene comune."
- desc_kind_hearted: "Chi governa è magnanimo. Un sincero interesse per la gente comune ha reso chi ci guida molto amato e la nazione più resiliente alle difficoltà, specialmente in tempo di guerra."
- desc_free_thinker: "Chi governa è un libero pensatore. Non vincolato da dottrine rigide, incoraggia tutti a sperimentare e ragionare liberamente sul futuro della nostra grande nazione."
- desc_well_connected: "Chi governa è ben introdotto. La corte e il gabinetto beneficiano dell'ampia rete di contatti tra le menti più brillanti di quest'epoca."
- desc_calm: "Chi governa è calmo. Non perdendo mai la pazienza né la dignità, ispira con l'esempio e prende decisioni ponderate, permettendoci di superare più rapidamente qualsiasi crisi."
- desc_careful: "Chi governa è cauto. Navigando con attenzione tra le regole non scritte delle relazioni internazionali, riesce ad attenuare l'impatto delle nostre trasgressioni."
- desc_secretive: "Chi governa è riservato. Un istinto naturale a mantenere porte chiuse e lettere cifrate si riflette su tutto il governo, rendendo più arduo infiltrarci per i nemici."
- desc_intricate_web_weaver: "Chi governa è un tessitore di intrighi. Ordendo continuamente nuove trame, si assume personalmente gran parte della responsabilità dello spionaggio estero."
- desc_well_advised: "Chi governa è ben consigliato. Sempre pronto ad ascoltare il saggio consiglio altrui, attira un maggior numero di persone alla corte e nel gabinetto."
- desc_benevolent: "Chi governa è benevolo. Essere percepiti come animati da buone intenzioni è un grande vantaggio per mantenere la tranquillità dei sudditi."
- desc_zealot: "Chi governa è uno zelota. La devozione fanatica alla vera fede permette di ispirare più persone a convertirsi e aderire alla religione di Stato."
- desc_pious: "Chi governa è devoto. Profondamente spirituale e religioso, assicura che lo Stato non smarrisca la rotta e infonde fiducia nella nostra fede."
- desc_lawgiver: "Chi governa è un legislatore. Le leggi costruiscono e uniscono un regno. L'obiettivo è ridurre le centinaia di leggi e consuetudini delle varie parti del regno per creare un corpus giuridico più centralizzato e giusto."
- desc_midas_touched: "Chi governa ha il tocco di Mida. Il talento di rendere profittevole ogni progetto è un'immensa risorsa. Le casse dello Stato non mancheranno mai di denaro finché resterà al potere."
- desc_incorruptible: "Chi governa è incorruttibile. Costruire uno Stato moderno significa combattere costantemente la corruzione. I funzionari sono sempre tentati di accettare tangenti, e prendersi cura di amici e parenti è un istinto umano naturale. Respingendo con fermezza ogni simile tentazione e combattendola con sdegno, dà l'esempio all'intera nazione."
- desc_architectural_visionary: "Chi governa è un visionario dell'architettura. Migliorare le infrastrutture è una necessità per qualsiasi Stato della nostra epoca, e questo è chi può farlo. Grandi visioni unite a un'eccezionale capacità di contenere i costi rendono chi governa una risorsa preziosa."
- desc_scholar: "Chi governa è un erudito. L'ambizione di comprendere il mondo e i principi che regolano uomini e natura permette di capire e implementare nuove tecnologie con un'efficienza altrimenti impossibile."
- desc_entrepreneur: "Chi governa è intraprendente. Vedendo il potenziale per nuovi progetti in ogni ostacolo od opportunità, contribuisce a un numero sempre crescente di iniziative per rafforzare la nostra economia."
- desc_industrious: "Chi governa è laborioso. Mai pago di riposare e attraverso giornate lavorative sempre più lunghe, gestisce costantemente i dettagli di ogni provincia del regno per massimizzare la produzione e le entrate di tutte le risorse sotto controllo statale."
- desc_expansionist: "Chi governa è un espansionista. Personalmente investito nella rivendicazione e colonizzazione di nuove terre, è determinato ad assicurare che l'espansione coloniale resti una priorità assoluta per il nostro Stato."
- desc_charismatic_negotiator: "Chi governa è un negoziatore carismatico. Attraverso il coinvolgimento personale nella diplomazia e nelle trattative statali, riesce a far vedere le cose dal nostro punto di vista più spesso di quanto sarebbe altrimenti possibile."
- desc_silver_tongue: "Chi governa ha una lingua d'argento. Nelle comunicazioni con gli altri Stati, riesce a presentare le nostre azioni passate sotto una luce molto più favorevole. Una volta che i vicini comprendono le ragioni delle nostre azioni, sono molto più inclini a perdonarci eventuali trasgressioni."
- desc_tactical_genius: "Chi governa è un genio tattico. Un grande interesse personale nelle manovre e nelle finte sul campo di battaglia si traduce in una maggiore competenza ed esperienza in queste materie per tutti i nostri generali."
- desc_bold_fighter: "Chi governa è un combattente audace. Credendo che l'urto sia di grande importanza sul campo di battaglia, non teme mai le conseguenze e incoraggia tutti a guidare le proprie truppe nel cuore della mischia nemica quando la situazione lo richiede."
- desc_fierce_negotiator: "Chi governa è un negoziatore implacabile. Avremo vita più facile nel convincere i capitani mercenari a combattere per la nostra causa con una paga inferiore a quella che altrimenti richiederebbero."
- desc_strict: "Chi governa è severo. Interessandosi molto al comportamento delle truppe, è in grado di instillare un rigido senso di disciplina in tutti i ranghi, dal più basso al più alto."
- desc_inspiring_leader: "Chi governa è un leader ispiratore. Una grande leadership personale può far trovare coraggio anche agli uomini più codardi."
- desc_martial_educator: "Chi governa è un istruttore militare. Sotto il regime attuale, l'addestramento del nostro corpo ufficiali è una delle nostre massime priorità."
- desc_babbling_buffoon: "Chi governa è considerato un buffone chiacchierone. Sebbene animato da buone intenzioni nell'impegnarsi personalmente nella diplomazia con i vicini, manca del talento necessario per condurre trattative. Chiunque fa più fatica a cogliere i nostri argomenti e molte delle nostre negoziazioni sono ostacolate dall'inettitudine di chi ci guida."
- desc_embezzler: "Chi governa è corrotto. Una delle motivazioni principali è la volontà e il talento di usare le entrate statali per aumentare la ricchezza personale."
- desc_drunkard: "Chi governa è dissoluto. Cercando sempre sollievo dall'apatia generale, si abbandona a grandi quantità di sostanze stimolanti sotto forma di alcol. Avere un sovrano dissoluto getta una cattiva luce sull'intera nazione."
- desc_sinner: "Chi governa è un peccatore. Le mancanze personali nella guida del paese hanno rivoltato contro di noi l'establishment religioso."
- desc_greedy: "Chi governa è avido. La riscossione delle entrate statali diventa sempre più spietata e miope sotto chi non si ferma davanti a nulla pur di aumentare le entrate. Danneggiando o distruggendo ogni fonte di reddito, gli effetti a lungo termine di questo comportamento miope sono una drastica riduzione del gettito fiscale."
- desc_cruel: "Chi governa è considerato crudele. Storie diffuse di azioni arbitrarie e crudeli hanno profondamente turbato molti dei nostri sudditi. Questo potrebbe non bastare di per sé a scatenare una ribellione, ma qualsiasi crisi colpirà più duramente l'opinione pubblica poiché a nessuno mancano motivi per ribellarsi."
- desc_naive: "Chi governa è un ingenuo entusiasta. Precipitandosi ciecamente avanti e sottovalutando costantemente le conseguenze delle azioni, fa sì che i nostri vicini impieghino più tempo a perdonare offese e trasgressioni."
- desc_craven: "Chi governa è vigliacco. Disperatamente terrorizzato dal combattimento fisico, sta il più lontano possibile dai campi di battaglia. Le nostre truppe non possono fare a meno di notare che sono da sole."
+ desc_conqueror: "Il Personaggio è un conquistatore. Sotto questo regime potremo annettere nuovi territori al nostro dominio con maggiore efficacia."
+ desc_tolerant: "Il Personaggio è tollerante. Le minoranze religiose prospereranno durante il nostro regime."
+ desc_just: "Il Personaggio è giusto. Grazie a una profonda conoscenza delle leggi e delle tradizioni del regno, i sudditi ci considerano legittimi e imparziali."
+ desc_righteous: "Il Personaggio è retto. Il popolo difficilmente metterà in dubbio la nostra autorità, sapendo che chi è retto agisce sempre per il bene comune."
+ desc_kind_hearted: "Il Personaggio è magnanimo. Un sincero interesse per la gente comune ha reso chi ci guida molto amato e la nazione più resiliente alle difficoltà, specialmente in tempo di guerra."
+ desc_free_thinker: "Il Personaggio è un libero pensatore. Non vincolato da dottrine rigide, incoraggia tutti a sperimentare e ragionare liberamente sul futuro della nostra grande nazione."
+ desc_well_connected: "Il Personaggio è ben introdotto. La corte e il gabinetto beneficiano dell'ampia rete di contatti tra le menti più brillanti di quest'epoca."
+ desc_calm: "Il Personaggio è calmo. Non perdendo mai la pazienza né la dignità, ispira con l'esempio e prende decisioni ponderate, permettendoci di superare più rapidamente qualsiasi crisi."
+ desc_careful: "Il Personaggio è cauto. Navigando con attenzione tra le regole non scritte delle relazioni internazionali, riesce ad attenuare l'impatto delle nostre trasgressioni."
+ desc_secretive: "Il Personaggio è riservato. Un istinto naturale a mantenere porte chiuse e lettere cifrate che si riflette su tutto il governo, rendendo più arduo per gli agenti nemici infiltrarsi nelle nostre istituzioni"
+ desc_intricate_web_weaver: "Il Personaggio è un tessitore di intrighi. Ordendo continuamente nuove trame, si assume personalmente gran parte della responsabilità dello spionaggio estero."
+ desc_well_advised: "Il Personaggio è ben consigliato. Sempre pronto ad ascoltare il saggio consiglio altrui, attira un maggior numero di persone alla corte e nel gabinetto."
+ desc_benevolent: "Il Personaggio è benevolo. Essere percepiti come animati da buone intenzioni è un grande vantaggio per mantenere la tranquillità dei sudditi."
+ desc_zealot: "Il Personaggio è uno zelota. La devozione fanatica alla vera fede permette di ispirare più persone a convertirsi e aderire alla religione di Stato."
+ desc_pious: "Il Personaggio è devoto. Profondamente spirituale e religioso, assicura che lo Stato non smarrisca la rotta e infonde fiducia nella nostra fede."
+ desc_lawgiver: "Il Personaggio è un legislatore. Le leggi costruiscono e uniscono un regno. L'obiettivo è ridurre le centinaia di leggi e consuetudini delle varie parti del regno per creare un corpus giuridico più centralizzato e giusto."
+ desc_midas_touched: "Il Personaggio ha il tocco di Mida. Il talento di rendere profittevole ogni progetto è un'immensa risorsa. Le casse dello Stato non mancheranno mai di denaro finché resterà al potere."
+ desc_incorruptible: "Il Personaggio è incorruttibile. Costruire uno Stato moderno significa combattere costantemente la corruzione. I funzionari sono sempre tentati di accettare tangenti, e prendersi cura di amici e parenti è un istinto umano naturale. Respingendo con fermezza ogni simile tentazione e combattendola con sdegno, dà l'esempio all'intera nazione."
+ desc_architectural_visionary: "Il Personaggio è un visionario dell'architettura. Migliorare le infrastrutture è una necessità per qualsiasi Stato della nostra epoca, e questo è chi può farlo. Grandi visioni unite a un'eccezionale capacità di contenere i costi rendono chi governa una risorsa preziosa."
+ desc_scholar: "Il Personaggio è un erudito. L'ambizione di comprendere il mondo e i principi che regolano uomini e natura permette di capire e implementare nuove tecnologie con un'efficienza altrimenti impossibile."
+ desc_entrepreneur: "Il Personaggio è intraprendente. Vedendo il potenziale per nuovi progetti in ogni ostacolo od opportunità, contribuisce a un numero sempre crescente di iniziative per rafforzare la nostra economia."
+ desc_industrious: "Il Personaggio è laborioso. Mai pago di riposare e attraverso giornate lavorative sempre più lunghe, gestisce costantemente i dettagli di ogni provincia del regno per massimizzare la produzione e le entrate di tutte le risorse sotto controllo statale."
+ desc_expansionist: "Il Personaggio è un espansionista. Personalmente investito nella rivendicazione e colonizzazione di nuove terre, è determinato ad assicurare che l'espansione coloniale resti una priorità assoluta per il nostro Stato."
+ desc_charismatic_negotiator: "Il Personaggio è un negoziatore carismatico. Attraverso il coinvolgimento personale nella diplomazia e nelle trattative statali, riesce a far vedere le cose dal nostro punto di vista più spesso di quanto sarebbe altrimenti possibile."
+ desc_silver_tongue: "Il Personaggio ha una lingua d'argento. Nelle comunicazioni con gli altri Stati, riesce a presentare le nostre azioni passate sotto una luce molto più favorevole. Una volta che i vicini comprendono le ragioni delle nostre azioni, sono molto più inclini a perdonarci eventuali trasgressioni."
+ desc_tactical_genius: "Il Personaggio è un genio tattico. Un grande interesse personale nelle manovre e nelle finte sul campo di battaglia si traduce in una maggiore competenza ed esperienza in queste materie per tutti i nostri generali."
+ desc_bold_fighter: "Il Personaggio è un combattente audace. Credendo che l'urto sia di grande importanza sul campo di battaglia, non teme mai le conseguenze e incoraggia tutti a guidare le proprie truppe nel cuore della mischia nemica quando la situazione lo richiede."
+# desc_fierce_negotiator: "Il Personaggio è un negoziatore implacabile. Avremo vita più facile nel convincere i capitani mercenari a combattere per la nostra causa con una paga inferiore a quella che altrimenti richiederebbero." #OLD
+ desc_fierce_negotiator: "This ruler is a Fierce Negotiator. In any treaty or negotiation, our ruler will not easily cede ground and will instead continue fighting to defend our best interests." #NEW
+ desc_strict: "Il Personaggio è severo. Interessandosi molto al comportamento delle truppe, è in grado di instillare un rigido senso di disciplina in tutti i ranghi, dal più basso al più alto."
+ desc_inspiring_leader: "Il Personaggio è un leader ispiratore. Una grande leadership personale può far trovare coraggio anche agli uomini più codardi."
+ desc_martial_educator: "Il Personaggio è un istruttore militare. Sotto il regime attuale, l'addestramento del nostro corpo ufficiali è una delle nostre massime priorità."
+ desc_babbling_buffoon: "Il Personaggio è considerato un buffone chiacchierone. Sebbene animato da buone intenzioni nell'impegnarsi personalmente nella diplomazia con i vicini, manca del talento necessario per condurre trattative. Chiunque fa più fatica a cogliere i nostri argomenti e molte delle nostre negoziazioni sono ostacolate dall'inettitudine di chi ci guida."
+ desc_embezzler: "Il Personaggio è corrotto. Una delle motivazioni principali è la volontà e il talento di usare le entrate statali per aumentare la ricchezza personale."
+ desc_drunkard: "Il Personaggio è dissoluto. Cercando sempre sollievo dall'apatia generale, si abbandona a grandi quantità di sostanze stimolanti sotto forma di alcol. Avere un sovrano dissoluto getta una cattiva luce sull'intera nazione."
+ desc_sinner: "Il Personaggio è un peccatore. Le mancanze personali nella guida del paese hanno rivoltato contro di noi l'establishment religioso."
+ desc_greedy: "Il Personaggio è avido. La riscossione delle entrate statali diventa sempre più spietata e miope sotto chi non si ferma davanti a nulla pur di aumentare le entrate. Danneggiando o distruggendo ogni fonte di reddito, gli effetti a lungo termine di questo comportamento miope sono una drastica riduzione del gettito fiscale."
+ desc_cruel: "Il Personaggio è considerato crudele. Storie diffuse di azioni arbitrarie e crudeli hanno profondamente turbato molti dei nostri sudditi. Questo potrebbe non bastare di per sé a scatenare una ribellione, ma qualsiasi crisi colpirà più duramente l'opinione pubblica poiché a nessuno mancano motivi per ribellarsi."
+ desc_naive: "Il Personaggio è un ingenuo entusiasta. Precipitandosi ciecamente avanti e sottovalutando costantemente le conseguenze delle azioni, fa sì che i nostri vicini impieghino più tempo a perdonare offese e trasgressioni."
+ desc_craven: "Il Personaggio è vigliacco. Disperatamente terrorizzato dal combattimento fisico, sta il più lontano possibile dai campi di battaglia. Le nostre truppe non possono fare a meno di notare che sono da sole."
  desc_loose_lips: "Spesso personalmente responsabile di fughe di notizie e violazioni della sicurezza, chi governa è generalmente troppo fiducioso e facilmente ingannabile. Sfortunatamente, la somma di tutto ciò è che arreca più danno che beneficio ai nostri sforzi di controspionaggio."
- desc_obsessive_perfectionist: "Chi governa è un perfezionista ossessivo. Un vivo interesse per i dettagli e le minuzie non è sempre accompagnato da un pari talento in tali questioni. Causando costantemente interruzioni e ritardi, arreca molto più danno che beneficio quando si tratta di sviluppare le nostre infrastrutture interne."
- desc_malevolent: "Chi governa è considerato malevolo. Le azioni sono spesso percepite come motivate da malizia o intento ostile. Di conseguenza, qualsiasi paese soggetto sotto il nostro controllo è pronto a irritarsi e teme qualsiasi nostra azione."
+ desc_obsessive_perfectionist: "Il Personaggio è un perfezionista ossessivo. Un vivo interesse per i dettagli e le minuzie non è sempre accompagnato da un pari talento in tali questioni. Causando costantemente interruzioni e ritardi, arreca molto più danno che beneficio quando si tratta di sviluppare le nostre infrastrutture interne."
+ desc_malevolent: "Il Personaggio è considerato malevolo. Le azioni sono spesso percepite come motivate da malizia o intento ostile. Di conseguenza, qualsiasi paese soggetto sotto il nostro controllo è pronto a irritarsi e teme qualsiasi nostra azione."
  #Leaders (Generals and Admirals)
  glory_seeker: "Cacciatore di Gloria"
  desc_glory_seeker: "Questo Generale è avido di fama: le truppe al suo comando ottengono più Prestigio e Tradizione dell'Esercito, perché vengono sempre schierate dove l'impatto è più evidente."
  born_to_the_saddle: "Nato in Sella"
  desc_born_to_the_saddle: "Questo Generale è nato in sella: la Cavalleria al suo comando sfrutta meglio il vantaggio di fiancheggiamento."
+ offensive_planner: "Offensive Planner" #NEW
+ desc_offensive_planner: "This General is an Offensive Planner. Troops commanded by this leader will gain a bonus in combat." #NEW
  defensive_planner: "Pianificatore Difensivo"
  desc_defensive_planner: "Questo Generale è un pianificatore difensivo: le truppe al suo comando resistono meglio alle cariche."
  battlefield_medic: "Medico da Campo"
@@ -137,6 +156,8 @@
  desc_siege_specialist: "È uno specialista d'assedio: gli assedi che dirige sono più efficienti e si concludono più rapidamente."
  cannoneer: "Cannoniere"
  desc_cannoneer: "È un cannoniere: affascinato da polvere da sparo e cannoni, rende l'Artiglieria al suo comando più efficiente."
+ aggressive_commander: "Aggressive Commander" #NEW
+ desc_aggressive_commander: "This Admiral is an Aggressive Commander. Ships led by this leader will gain a bonus in combat." #NEW
  extortioner: "Taglieggiatore"
  desc_extortioner: "Questo Ammiraglio è un taglieggiatore: sa sfruttare la superiorità di forza, così le [ships|e] al suo comando esercitano più Potere Commerciale dei concorrenti."
  ruthless_blockader: "Bloccatore Spietato"
@@ -178,6 +199,9 @@
  hussar_commander: "Comandante degli Ussari"
  desc_hussar_commander: "Questo Generale è un vero Comandante degli Ussari: le cariche di Cavalleria da lui guidate sono più efficaci."
  hussar_commander_die_desc: "Fu un temibile capo ussaro e vincitore di molte battaglie. Senza di [CHARACTER.GetHerHim], la nostra cavalleria potrebbe non toccare più simili vette di gloria."
+ triumphant: "Triumphant" #NEW
+ desc_triumphant: "A general with this trait has been elevated by the Senate of their country after their return from a successful campaign and given the highest honour a military officer can receive, earning both the respect and admiration of all." #NEW
+ triumphant_die_desc: "[CHARACTER.GetSheHe|U] was one of the most respected and honored generals our nation had. There is no doubt that both the government and the people will miss [CHARACTER.GetHerHis] ability and leadership." #NEW
  #
  # Artists
  #
@@ -205,6 +229,42 @@
  desc_prescient: "L'ispirazione è la scintilla dei più grandi capolavori. Questi artisti godono di un costante slancio creativo, che li porta ad avviare nuove opere con maggior frequenza."
  idler: "Indolente"
  desc_idler: "Creare arte non è per i deboli di cuore: richiede doti rare, sostenute da ispirazione e fiducia. Chi ha questo tratto ne difetta, e per questo avvia nuove opere più di rado."
+ blind: "Blind" #NEW
+ desc_blind: "This individual has lost the gift of sight." #NEW
+ blind_die_desc: "[CHARACTER.GetHerHis|U] blindness was a tragic affliction, but [CHARACTER.GetSheHe] faced it with courage and dignity." #NEW
+ one_eyed: "One-Eyed" #NEW
+ desc_one_eyed: "This individual has lost the gift of sight in one of their eyes." #NEW
+ one_eyed_die_desc: "[CHARACTER.GetSheHe|U] could not see out of [CHARACTER.GetHerHis] eye, but that did not stop [CHARACTER.GetHerHis] determination." #NEW
+ maimed: "Maimed" #NEW
+ desc_maimed: "This individual has suffered traumatic injuries, resulting in the loss of limb." #NEW
+ maimed_die_desc: "Following a traumatic incident, [CHARACTER.GetSheHe] lived out [CHARACTER.GetHerHis] days as a maimed cripple." #NEW
+ scarred: "Scarred" #NEW
+ desc_scarred: "This individual has survived a minor facial injury, resulting in a handsome scar." #NEW
+ scarred_die_desc: "[CHARACTER.GetSheHe|U] was known for that impressive scar which enhanced [CHARACTER.GetHerHis] countenance." #NEW
+ disfigured: "Disfigured" #NEW
+ desc_disfigured: "This individual has barely survived a severe facial trauma, resulting in a terrible disfigurement." #NEW
+ disfigured_die_desc: "[CHARACTER.GetSheHe|U] was known for a horrific disfigurement which dominated what was left of [CHARACTER.GetHerHis] face." #NEW
+ castrated: "Castrated" #NEW
+ desc_castrated: "This individual has been castrated, meaning they can no longer father children." #NEW
+ castrated_die_desc: "Following a brutal castration, [CHARACTER.GetSheHe] found [CHARACTER.GetHerselfHimself] unable to fulfil [CHARACTER.GetHerselfHimself] or others." #NEW
+ sickly: "Sickly" #NEW
+ desc_sickly: "This individual suffers from poor health and is often unwell." #NEW
+ sickly_die_desc: "[CHARACTER.GetSheHe|U] battled with illness throughout [CHARACTER.GetHerHis] pitiful life." #NEW
+ healthy: "Healthy" #NEW
+ desc_healthy: "This individual enjoys good health and is often in high spirits." #NEW
+ healthy_die_desc: "[CHARACTER.GetSheHe|U] lived a healthy and fulfilling life, surrounded by loved ones." #NEW
+ hunchback: "Hunchbacked" #NEW
+ desc_hunchback: "This individual was born with a deformed spine, affecting their posture and appearance." #NEW
+ hunchback_die_desc: "[CHARACTER.GetSheHe|U] lived with a hunchback, and will be remembered for [CHARACTER.GetHerHis] lurching gait and distinctive silhouette." #NEW
+ smallpox_trait: "Smallpox" #NEW
+ desc_smallpox_trait: "This individual has contracted smallpox. Fever, vomiting, and weeping blisters cover their body — a slow and agonizing sickness." #NEW
+ smallpox_trait_die_desc: "Smallpox finally claimed [CHARACTER.GetHerHis] life, the fever and blisters consuming [CHARACTER.GetHerHim] at last." #NEW
+ pockmarked_trait: "Pockmarked" #NEW
+ desc_pockmarked_trait: "The pox has left its mark upon this individual, with great scars and pitting covering their face — a permanent reminder of their brush with smallpox." #NEW
+ pockmarked_trait_die_desc: "[CHARACTER.GetSheHe|U] carried [CHARACTER.GetHerHis] pockmarks to the grave, a lasting mark of a brush with smallpox." #NEW
+ bubonic_plague_trait: "Bubonic Plague" #NEW
+ desc_bubonic_plague_trait: "This individual has contracted the Black Death. The terrible illness ravages their body — black swellings, raging fever, and a creeping death." #NEW
+ bubonic_plague_trait_die_desc: "The Black Death claimed [CHARACTER.GetHerHis] life, as it has claimed so many others." #NEW
  #
  just_die_desc: "Il nostro Paese sentirà la mancanza dei suoi giudizi equi e imparziali."
  righteous_die_desc: "Il nostro popolo piange la scomparsa del sovrano più virtuoso della nostra epoca."
@@ -231,7 +291,8 @@
  silver_tongue_die_desc: "Le sue parole suadenti hanno tenuto il mondo a distanza. Chi ci proteggerà ora?"
  tactical_genius_die_desc: "Le sue manovre raffinate hanno lasciato i nemici frastornati e confusi."
  bold_fighter_die_desc: "Le sue cariche ardite tra le file nemiche hanno segnato per sempre ogni soldato della sua generazione."
- fierce_negotiator_die_desc: "Le sue trattative spietate hanno ridotto sul lastrico i capitani di ventura in tutte le nostre terre."
+# fierce_negotiator_die_desc: "Le sue trattative spietate hanno ridotto sul lastrico i capitani di ventura in tutte le nostre terre." #OLD
+ fierce_negotiator_die_desc: "[CHARACTER.GetHerHis|U] harsh bargaining is a clear loss to our negotiation skills." #NEW
  strict_die_desc: "La sua vigilanza costante ci ha tenuti sempre all'erta."
  inspiring_leader_die_desc: "Ispirò una generazione a prendere le armi contro i nostri nemici."
  martial_educator_die_desc: "Il programma di studi che creò per i nostri ufficiali verrà usato per generazioni."
@@ -275,6 +336,8 @@
  naval_gunner_die_desc: "Il suo addestramento costante delle nostre squadre di artiglieria di bordo accrebbe la nostra potenza sul mare durante la sua vita."
  accomplished_sailor_die_desc: "La sua grande perizia nell'arte della vela era venerata dai suoi uomini."
  level_headed_die_desc: "Mancherà molto la sua capacità di restare lucido anche di fronte al grave pericolo."
+ offensive_planner_die_desc: "[CHARACTER.GetSheHe|U] died doing what [CHARACTER.GetSheHe] was most famous for: planning the ways to destroy [CHARACTER.GetHerHis] enemies." #NEW
+ aggressive_commander_die_desc: "Leading an army and charging in the front of it ended up killing [CHARACTER.GetHerHim]. Was the fame gained during all [CHARACTER.GetHerHis] worth it?" #NEW
  # Artists
  gold_loving_die_desc: "La sua passione per l'oro ha messo sotto pressione la nostra tesoreria, e ai nostri contabili non mancherà."
  humble_die_desc: "La sua umiltà ha reso le sue imprese ancor più celebrate da tutti."
@@ -385,4 +448,65 @@
  
  stargazer: "Contemplatore delle Stelle"
  desc_stargazer: "Le stelle affascinano l'umanità fin dalle sue origini, e molti vi cercano una presenza divina. Questo individuo è tra costoro, con lo sguardo sempre rivolto al cielo in cerca di conoscenza e risposte. E molto si può apprendere dagli astri, se si ha la volontà di osservare."
- stargazer_die_desc: "La stella che era la vita di [CHARACTER.GetName] si è spenta, e molti si lamentano di quanto oscuro sia diventato il mondo senza di essa. La conoscenza del firmamento non sarà più tramandata dalla sua voce, e molti sguardi un tempo rivolti al cielo, ora si chineranno a terra."
+ stargazer_die_desc: "La stella che era la vita di [CHARACTER.GetName] si è spenta, e molti si lamentano di quanto oscuro sia diventato il mondo senza di essa. La conoscenza del firmamento non sarà più tramandata dalla sua voce, e molti sguardi un tempo rivolti al cielo, ora si chineranno a terra." 
+ administrator: "Administrator" #NEW
+ administrator_die_desc: "The task performed by [CHARACTER.GetName] has come to its end, and with that our administration has lost one of its greatest contributors. Without [CHARACTER.GetHerHis] meticulous and well-calculated actions and supervision, the wheels of our government will now turn slower." #NEW
+ desc_administrator: "Planning, logistics, organization... These are all qualities possessed by this individual, allowing the smooth functioning of our government and our country as a whole. Every need and every action of our administration is accounted for, reducing bureaucratic overhead." #NEW
+ tax_optimizer: "Tax Optimizer" #NEW
+ tax_optimizer_die_desc: "No matter how much wealth [CHARACTER.GetSheHe] seized or amassed, that has not saved [CHARACTER.GetName] from Death. To where [CHARACTER.GetSheHe] goes now, none of the taxes [CHARACTER.GetSheHe] helped collect will be of any use to [CHARACTER.GetHerHim]." #NEW
+ desc_tax_optimizer: "This individual lives among piles of coin and abacuses, always counting and writing down a precise account of all taxes and revenues. With accurate calculations, comparisons, and balances, these actions allow for the taxes to be as high as possible for what the land itself provides." #NEW
+ green_thumb: "Green Thumb" #NEW
+ green_thumb_die_desc: "[CHARACTER.GetName] had firm roots among us, and our country saw [CHARACTER.GetHerHim] grow and flourish. Now [CHARACTER.GetSheHe] has been plucked from us, and the leaves falling in the wind are the land itself mourning [CHARACTER.GetHerHis] passing." #NEW
+ desc_green_thumb: "This individual is fascinated by everything that lives and grows, and is constantly immersed in horticultural endeavors. From having a planter besides the desk, to laboring in a personal garden, to overseeing whole farming activities just for entertainment, it seems that no single leaf of grass in the country is beyond such caring attention." #NEW
+ fiscal_hawk: "Fiscal Hawk" #NEW
+ fiscal_hawk_die_desc: "No clever maneuvering has been able to save [CHARACTER.GetName] from dying, proving that our lives are just on loan — a loan that sooner or later must be repaid." #NEW
+ desc_fiscal_hawk: "Money begets money, and that is something that this individual knows very well. Through clever tactics and negotiations, our wealth is made greater than it would otherwise seem, and that in turn will bring us more wealth." #NEW
+ patron_of_arts_die_desc: "[CHARACTER.GetName] has passed, and with [CHARACTER.GetHerHim] a beacon of culture is extinguished. The numerous art pieces that [CHARACTER.GetSheHe] gathered in life will now serve as a testimony and remembrance after [CHARACTER.GetHerHis] death." #NEW
+ desc_patron_of_arts: "This individual is an enthusiast of the arts in all their shapes and forms. From painting to sculpture, from architecture to poetry, no art form is undeserving of admiration and promotion." #NEW
+ army_reformer: "Army Reformer" #NEW
+ army_reformer_die_desc: "The death of [CHARACTER.GetName] has shocked our army, as [CHARACTER.GetName] was instrumental for many of its changes. The soldiers will honor [CHARACTER.GetHerHis] memory, but [CHARACTER.GetHerHis] policies and guidance will be severely missed." #NEW
+ desc_army_reformer: "An army that does not change or adapt is an army that will rust until it falls apart. This individual knows that very well, and is a great proponent of keeping the army constantly updated and adapted to newer forms of warfare." #NEW
+ charismatic_orator: "Charismatic Orator" #NEW
+ charismatic_orator_die_desc: "No sweet word or rehearsed speech has been able to persuade Death to spare [CHARACTER.GetName]. [CHARACTER.GetSheHe|U] has been taken from us, and the halls and streets throughout our country feel more silent with [CHARACTER.GetHerHis] loss." #NEW
+ desc_charismatic_orator: "Not everyone has the skills to properly speak in public, and fewer still are those who can capture the listener's attention like this individual, able not only to change others' opinions, but also to convince them that those were originally their own." #NEW
+ honest: "Honest" #NEW
+ honest_die_desc: "[CHARACTER.GetName] has died, and with [CHARACTER.GetHerHim] goes one of the best parts of our country. [CHARACTER.GetHerHis] honesty and candor will be surely missed." #NEW
+ desc_honest: "This individual does not have grain of malice in the soul, and can always be trusted and taken at face value. This allows an administration under such leadership to work harmoniously, without people having to constantly worry about hidden agendas, treachery, or subterfuge." #NEW
+ stubborn: "Stubborn" #NEW
+ stubborn_die_desc: "Some would have said that [CHARACTER.GetName] was too stubborn to die, but not even [CHARACTER.GetHerHis] pig-headedness could save [CHARACTER.GetHerHim] from the biggest shifts of all." #NEW
+ desc_stubborn: "No change is small enough for this individual, all will be seen with reluctance. Set in the established ways, neither opinions nor behavior will be easily found wrong or with room for improvement, and none will be changed without difficulties." #NEW
+ architect: "Architect" #NEW
+ architect_die_desc: "The final stone has been laid upon the life of [CHARACTER.GetName]. A pillar of our country that sustained it with [CHARACTER.GetHerHis] work, let what [CHARACTER.GetSheHe] erected stand as a testimony of [CHARACTER.GetHerHis] actions." #NEW
+ desc_architect: "From the smallest hut to the loftiest halls, no building is too insignificant to spark this individual's architectural curiosity. In the same way as an architect designs and supervises the construction of a building, this character designs and supervises the construction of our country." #NEW
+ theologian: "Theologian" #NEW
+ theologian_die_desc: "[CHARACTER.GetName] has died. Let us hope that all [CHARACTER.GetHerHis] studies have prepared [CHARACTER.GetHerHim] for whatever [CHARACTER.GetSheHe] will encounter now." #NEW
+ desc_theologian: "Discussions about faith, divinity, and the Beyond are everyday occurrences around this individual, as there is no one more devout; nor is there any more arduous student of the faith and its mysteries." #NEW
+ bureaucrat: "Bureaucrat" #NEW
+ bureaucrat_die_desc: "[CHARACTER.GetName] has died. Some of [CHARACTER.GetHerHis] rivals now mock [CHARACTER.GetHerHim] by asking whether [CHARACTER.GetSheHe] had already filled in the proper forms for dying, whereas others sigh in relief that they will not need to fill in more forms themselves." #NEW
+ desc_bureaucrat: "For the vast majority of people, bureaucracy is obscure, cryptic, and incomprehensible. For others, like this individual, it comes as easy as breathing, and they are able to disentangle its mysteries with ease." #NEW
+ oracle: "Oracle" #NEW
+ oracle_die_desc: "The death of [CHARACTER.GetName] saddens our country, which now finds itself severed from the link that tied it directly to the Divine." #NEW
+ desc_oracle: "The mysteries of the Divine are indecipherable, except for those blessed by it. This is one of such individuals, able to commune directly with the Divine and transfer wills and petitions between this world and theirs." #NEW
+ deceitful: "Deceitful" #NEW
+ deceitful_die_desc: "[CHARACTER.GetName] has died, even if some do not fully believe it yet, since they are so used to [CHARACTER.GetHerHis] constant lies and machinations. Many almost expect [CHARACTER.GetHerHis] death to be another one of these fabrications." #NEW
+ desc_deceitful: "Almost nothing this individual says can be trusted, and those around are always doubting the intentions and watching their backs. Mistrust and paranoia ensues wherever this character goes." #NEW
+ fickle: "Fickle" #NEW
+ fickle_die_desc: "It seems [CHARACTER.GetName] has finally taken a firm and unchanging action — [CHARACTER.GetHerHis] death. Many still pray that [CHARACTER.GetSheHe] does not change [CHARACTER.GetHerHis] mind now, and return to life." #NEW
+ desc_fickle: "This individual cannot form an opinion, or is just constantly forming too many and switching between them. Whatever the case, neither firmness nor loyalty to a cause can be expected from someone like that." #NEW
+ schemer: "Schemer" #NEW
+ schemer_die_desc: "[CHARACTER.GetName] has died, and some say it may be an unexpected consequence of one of [CHARACTER.GetHerHis] constant schemes." #NEW
+ desc_schemer: "It is difficult to know what this individual is thinking at any given time, as schemes, plots, and subterfuges are always about. People have to sleep with one eye open, and always watch their backs." #NEW
+ corrupt: "Corrupt" #NEW
+ corrupt_die_desc: "The death of [CHARACTER.GetName] has finally freed our nation and its wealth from [CHARACTER.GetHerHis] clutching hands and rampant greed." #NEW
+ desc_corrupt: "Every time any sum of money passes through this individual's hands, it mysteriously becomes smaller. Perhaps some of these 'handling costs' should be examined..." #NEW
+ influential: "Influential" #NEW
+ influential_die_desc: "No amount of power or sway can save one from death, as [CHARACTER.GetName] could not save [CHARACTER.GetHerselfHimself]. Now the country is free from [CHARACTER.GetHerHis] claws and influence." #NEW
+ desc_influential: "People are not made equal, and some have more power and influence than others. This individual is one with such power, whose words have the strength of laws, and whose objectives are forced to become the country's objectives." #NEW
+ unmotivated: "Unmotivated" #NEW
+ unmotivated_die_desc: "Fortunately, dying is something that does not require any kind of active participation, otherwise [CHARACTER.GetName] would have never found the motivation to do it." #NEW
+ desc_unmotivated: "Everybody has days in which it is hard to get any work done, but this individual takes that to the extreme. With a constant lack of any kind of motivation or drive, all work takes much longer to complete, if it is ever completed at all." #NEW
+ abrasive: "Abrasive" #NEW
+ abrasive_die_desc: "[CHARACTER.GetName] has died, and people breathe free that they will never have to deal with such person again and suffer [CHARACTER.GetHerHis] hurtful words." #NEW
+ desc_abrasive: "Talking with this individual feels like being constantly slapped in the face, or stabbed in the heart. Hurtful comments, mordant words, and other such verbal attacks are almost everything such a conversation consists of." #NEW
+ arrogant_die_desc: "[CHARACTER.GetName]'s airs and hubris have come to an end with [CHARACTER.GetHerHis] passing. Now [CHARACTER.GetSheHe] is on the same level as the rest, whether [CHARACTER.GetSheHe] likes it or not." #NEW
+ desc_arrogant: "This individual feels superior to everyone, as if living in a different stratum due to divine blessing. Such a personality is difficult to satisfy, as no matter what we do, it is never enough." #NEW

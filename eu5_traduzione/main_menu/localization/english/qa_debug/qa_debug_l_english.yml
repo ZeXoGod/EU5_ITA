@@ -173,6 +173,7 @@
  qa_debug.11.b: "Distruggi TUTTI i Ribelli!"
  qa_debug.11.c: "I ribelli si solleveranno!"
  qa_debug.11.d: "Basta perdere tempo, inizia una guerra civile ORA."
+ qa_debug.11.e: "Stop all THAT dicking around, and just start a revolt IMMEDIATELY." #NEW
  qa_debug.12.title: "Menu Località"
  qa_debug.12.desc: "Scegli l'aggiustamento alle tue località e province."
  qa_debug.12.a: "Rimuovi tutta l'autonomia nelle mie province."
@@ -239,8 +240,10 @@
  qa_debug.15.a: "[ShowDiseaseName('bubonic_plague')]"
  qa_debug.16.title: "Menu Esercito Terrestre"
  qa_debug.16.desc: "Che tipo di unità ti servono?"
- qa_debug.16.a: "[ShowUnitCategoryName('army_infantry')]"
- qa_debug.16.b: "[ShowUnitCategoryName('army_cavalry')]"
+# qa_debug.16.a: "[ShowUnitCategoryName('army_infantry')]" #OLD
+ qa_debug.16.a: "[ShowUnitCategoryName('army_heavy_infantry')]" #NEW
+# qa_debug.16.b: "[ShowUnitCategoryName('army_cavalry')]" #OLD
+ qa_debug.16.b: "[ShowUnitCategoryName('army_heavy_cavalry')]" #NEW
  qa_debug.16.c: "[ShowUnitCategoryName('army_artillery')]"
  qa_debug.16.d: "[ShowUnitCategoryName('army_auxiliary')]"
  qa_debug.17.title: "Menu Flotta"

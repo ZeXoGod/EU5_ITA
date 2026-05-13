@@ -1,0 +1,161 @@
+﻿l_english:
+
+#Fate of the Phoenix
+ fate_of_the_phoenix: "Destino della Fenice"
+ fate_of_the_phoenix_desc: "I secoli recenti hanno assistito alla lenta decadenza del nostro glorioso [GetCountry('BYZ').GetFlavorRank]. Lotte intestine costanti, instabilità interna e la [ShowSituationName('rise_of_the_ottomans')] in corso preannunciano rovina per noi e per il nostro popolo, mentre [GetCountry('SER').GetName] e [GetCountry('BUL').GetName] premono sul nostro confine settentrionale. Con pura forza e tenacia, dobbiamo porre fine alla corruzione e restaurare l'autorità della corona, prima che sia troppo tardi..."
+ remember_no_turk_tt: "Nessun altro [country|e] con la sua [capital|e] in [ShowRegionName('anatolia_region')], oltre a noi, possiede più di #Y 100#! [locations|e] inclusi i suoi [subjects|e] ed è [ShowCultureName('turkish_culture')] o [ShowCultureName('turkoman_culture')], oppure ha la [government_reform|e] [ShowGovernmentReformName('anatolian_beylik')]"
+
+#Fate of the Phoenix Events (to be moved)
+
+ fate_of_the_phoenix.1.title: "Il Destino della Fenice"
+ fate_of_the_phoenix.1.desc_a: "Un tempo, le mura di [ShowLocationName('constantinople')] segnavano il centro del mondo. Da lì fluivano legge, fede e ordine imperiale, davvero un'eredità rivendicata dalla stessa $ROM$. Ora, quell'eredità pesa gravemente su di noi.\n\nAnni di intrighi, vittorie vuote e autorità logorata hanno lasciato il [ROOT.GetCountry.GetFlavorRank] diminuito nello spirito, se non ancora nel nome. Oltre i nostri confini, nuovi poteri si raccolgono con pazienza e fame, mentre al loro interno i vecchi uffici marciscono nell'abbandono. Il nostro popolo merita una via migliore, degna dello splendore e dell'opulenza dei nostri gloriosi antenati!"
+ fate_of_the_phoenix.1.desc_b: "È giunta notizia da [ShowLocationName('constantinople')]. Sembra che l'antica sede imperiale sia in difficoltà, con la sua autorità che si sfalda sotto il peso della discordia e del declino. Per generazioni, il destino del [target_location.GetRank.GetName] ha plasmato l'ordine delle terre [ShowReligionGroupAdjective('christian')] di [ShowRegionName('balkan_region')], legando le nostre storie attraverso la fede, con ciascuna spada che teneva l'altra nel fodero, per lo più.\n\nOra, mentre la sua presa si indebolisce, l'equilibrio che un tempo governava i nostri confini diventa stancamente incerto. Alcuni tra le nostre famiglie influenti esortano alla prudenza, avvertendo che la caduta di un simile pilastro destabilizzerebbe tutti coloro che condividono il suo rito. Altri parlano più schiettamente: le vecchie garanzie svaniscono, e ciò che un tempo era stabilito dalla tradizione potrebbe presto essere deciso dalla forza. In questi tempi inquieti, la strada che sceglieremo echeggerà ben oltre il nostro [ROOT.GetCountry.GetFlavorRank]."
+ fate_of_the_phoenix.1.desc_c: "La debolezza imperiale raramente si annuncia con cerimonie. Le dimostrazioni consecutive di debolezza, l'incapacità di custodire i confini e la perdita di prestigio nel [GetCountry('BYZ').GetLongName] sono segno che il loro tempo al sole sta per giungere a una fine rigida e improvvisa. Dunque, la situazione a occidente non richiede più reverenza o prudenza — solo calcolo. Saremo noi a banchettare sui loro resti e ad ascendere per prendere il loro posto."
+ fate_of_the_phoenix.1.a: "Non perdiamo ancora la speranza."
+ fate_of_the_phoenix.1.b: "Accettiamo la crudele signora del cambiamento..."
+ fop_parameters_a_tt: "L'esito di questo disastro determinerà il nostro destino. Durante questo periodo turbolento, otterremo accesso ad [actions|e] uniche tramite il pannello del [disaster|e]"
+ fop_parameters_b_tt: "Se porremo fine al [disaster|e] invertendo con successo la decadenza, questo potrebbe mandare onde nei libri di storia, annunciando una seconda età dell'oro per il nostro popolo"
+ fop_paramenters_bul_tur_ser_tt: "Mentre il [GetCountry('BYZ').GetLongName] attraversa il [disaster|e] [ShowDisasterName('fate_of_the_phoenix')], ci verranno offerte opportunità per sfruttare la sua debolezza"
+
+ fate_of_the_phoenix.2.title: "[target_location.GetName] Riconquistata!"
+ fate_of_the_phoenix.2.desc: "Gli stendardi del [ROOT.GetCountry.GetFlavorRank] sventolano ancora una volta sopra [target_location.GetName]. A lungo conteso da signori della guerra [ShowCultureName('turkish_culture')], pirati e potenze rivali, questo vitale porto egeo torna ora in mani [ROOT.GetCountry.GetAdjective]. I suoi porti e mercati sono malconci, ma pieni di promesse. Il modo in cui sceglieremo di restaurare i nostri nuovi possedimenti plasmerà la nostra presenza nei mari orientali per generazioni."
+ fate_of_the_phoenix.2.a: "Ricostruiamo il porto."
+ fate_of_the_phoenix.2.b: "Restauriamo invece i mercati e i magazzini."
+ building_set_to_max_level_tt: "Il [building|e] sarà portato al suo livello massimo"
+
+ fate_of_the_phoenix.3.title: "$fate_of_the_phoenix.2.title$"
+ fate_of_the_phoenix.3.desc: "[target_location.GetName], un tempo rifugio degli imperatori e sede della continuità imperiale dopo la calamità del 1204, è tornata sotto il nostro dominio. Da queste mura, il [ROOT.GetCountry.GetFlavorRank] sopportò l'esilio, custodì le sue leggi e preservò la sua pretesa di dominio universale. Il suo restauro è più di un guadagno territoriale. In verità, è un confronto con il cammino che il [ROOT.GetCountry.GetFlavorRank] seguirà ora."
+
+ fate_of_the_phoenix.3.a: "[ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetNameWithNoTooltip] supervisionerà personalmente questo progetto!"
+ fate_of_the_phoenix.3.b: "Mostriamo un segno del nostro ritrovato splendore imperiale!"
+ fate_of_the_phoenix.3.c: "È tempo di restaurare l'amministrazione di [ShowRegionNameWithNoTooltip('anatolia_region')]!"
+
+ fate_of_the_phoenix.4.title: "$fate_of_the_phoenix.2.title$"
+ fate_of_the_phoenix.4.desc: "[target_location.GetName], l'antica culla del potere [GetCountry('TUR').GetAdjective], è caduta alle armi imperiali. Da questo [target_location.GetRank.GetName], i beylik un tempo traevano forza, ambizione e tributo. La sua conquista manda un messaggio chiaro in tutta [ShowRegionName('anatolia_region')]: la marea è cambiata, e il [ROOT.GetCountry.GetFlavorRank] non sta più sulla difensiva."
+ fate_of_the_phoenix.4.a: "Siamo i padroni di [ShowRegionNameWithNoTooltip('anatolia_region')]!"
+ unlocks_demand_beylik_tribute_disaster_action_tt: "Concede accesso all'[action|e] [ShowGenericActionName('demand_beylik_tribute')] per la durata di questo [disaster|e]"
+
+ fate_of_the_phoenix.5.title: "Vittoria Contro [loser.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.5.desc: "La crescente instabilità causata dai Beylik in guerra è culminata nell'ascesa del [loser.GetLongName]. Con la forza e una diplomazia competente, sono arrivati a rappresentare una minaccia costante per l'indipendenza del nostro [ROOT.GetCountry.GetFlavorRank]. Tuttavia, le recenti vittorie contro di loro hanno ricordato che siamo gli araldi di $ROM$, e nonostante l'epoca turbolenta combattiamo ancora come leoni. Che questo momento segni la svolta, una nuova era per annullare la decadenza degli anni passati!"
+ fate_of_the_phoenix.5.a: "La marea sta cambiando!"
+ high_legitimacy_grants_extra_benefits_tt: "Per #Y 30#! anni, mantenere più di #Y 50#! [legitimacy|e] aumenterà significativamente la nostra [assimilation|e] e [integration|e] delle [locations|e]"
+
+ fate_of_the_phoenix.6.title: "[target_province.GetNameWithNoTooltip] Resiste alla Nostra Autorità"
+ fate_of_the_phoenix.6.desc: "[target_province.GetName] ha rifiutato di cooperare durante questo periodo turbolento. Se le sue richieste di autonomia resteranno insoddisfatte, potrebbe seguire una ribellione aperta. I nostri consiglieri esortano a fare concessioni, ma cedere ora eroderebbe ulteriormente l'autorità del [ROOT.GetCountry.GetFlavorRank]."
+ fate_of_the_phoenix.6.a: "La fenice non si cura di lamentele banali."
+ fate_of_the_phoenix.6.b: "Forse [target_character.GetShortNameWithNoTooltip] può occuparsene?"
+ fate_of_the_phoenix.6.c: "Ascoltiamo il popolo!"
+ target_character_goes_to_target_province_to_restore_order_tt: "[target_character.GetName] supervisionerà il ripristino dell'ordine in [target_province.GetName]. [target_character.GetSheHe|U] non sarà disponibile per #Y 2#! anni"
+
+ fate_of_the_phoenix.7.title: "La Debolezza di [target_country.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.7.desc: "[target_country.GetName] mostra chiari segni di debolezza, e la nostra vicinanza offre una rara opportunità. Se vogliamo far valere le nostre rivendicazioni, dobbiamo agire presto, prima che [target_character.GetName] possa restaurare ordine e forza."
+ fate_of_the_phoenix.7.a: "Il nostro tempo è giunto."
+ fate_of_the_phoenix.7.b: "Preserviamo l'equilibrio di potere!"
+ we_may_have_another_chance_soon_tt: "#italic Potremmo avere un'altra occasione per ottenere queste rivendicazioni in futuro...#!"
+
+ fate_of_the_phoenix.8.title: "Le Guerre di [actor.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.8.desc: "[actor.GetName] sono attualmente impegnati in guerra contro coloro che proclamano nemici della Vera Fede. In quanto compagni membri del [GetInternationalOrganizationType('autocephalous_patriarchate').GetNameWithNoTooltip], ora chiedono che prendiamo le armi al loro fianco contro questo presunto nemico comune. Se rifiutassimo, minacciano l'esclusione dal Patriarcato stesso, un grave affronto spirituale che getterebbe anche una lunga ombra sulle relazioni tra i nostri reami."
+ fate_of_the_phoenix.8.a: "Andiamo in guerra!"
+ fate_of_the_phoenix.8.b: "Non vale il nostro tempo."
+
+ fate_of_the_phoenix.9.title: "Disertori nel [target_army.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.9.desc: "I rapporti dal [target_army.GetName] sono profondamente preoccupanti. Sotto il comando di [target_character.GetName], il morale è crollato e le diserzioni aumentano. Simili fallimenti si riflettono male sul nostro [ROOT.GetCountry.GetFlavorRank] e incoraggiano i nostri nemici."
+ fate_of_the_phoenix.9.a: "Codardi! Tutti quanti!"
+ target_army_suffers_losses_tt: "[target_army.GetName] perde #R [ROOT.GetVariable('visual_strength_loss_variable').GetValue|V2]%#! di [strength|e] per diserzioni"
+
+ fate_of_the_phoenix.10.title: "Ascesa di uno Strategos Leale"
+ fate_of_the_phoenix.10.desc: "Per decenni, [target_character.GetName], comandante del [target_unit.GetName], ha servito con distinzione. Attraverso lealtà e vittorie ripetute, [target_character.GetSheHe] è diventato un simbolo per gli uomini, un'incarnazione di disciplina e risolutezza in un tempo di incertezza."
+ fate_of_the_phoenix.10.a: "[target_character.GetShortNameWithNoTooltip] ci guiderà alla vittoria!"
+ major_victories_enhance_stats_tt: "Se [target_character.GetName] vince [battles|e] importanti, le [abilities|e] di [target_character.GetHerHis] potrebbero migliorare" 
+ 
+ fate_of_the_phoenix.11.title: "[target_character.GetNameWithNoTooltip] Ottiene una Grande Vittoria"
+ fate_of_the_phoenix.11.desc: "Il nostro [target_unit.GetName] ha ottenuto una grande vittoria su un esercito guidato da [target_losing_country.GetName], a [target_location.GetName]. La notizia del trionfo si diffonde rapidamente, rinnovando la fiducia che la Fenice ancora resista. [target_character.GetShortName] è sulla buona strada di [target_character.GetHerHis] per diventare una figura leggendaria."
+ fate_of_the_phoenix.11.a: "Che [target_character.GetSheHe] guidi i nostri eserciti per sempre!"
+
+ fate_of_the_phoenix.12.title: "[target_character.GetNameWithNoTooltip] Subisce una Sconfitta"
+ fate_of_the_phoenix.12.desc: "Un giorno nero pieno di presagi putridi! [target_character.GetName] ha subito una grave sconfitta contro un esercito comandato da [target_character_2.GetName], a [target_location.GetName]. La perdita è severa, e i rivali osserveranno sicuramente da vicino ulteriori segni di debolezza. È questo un segno che la marea si sta volgendo contro di noi? Speriamo per il meglio mentre ci sforziamo di vincere la guerra in corso."
+ fate_of_the_phoenix.12.a: "Vergogniamoci di questa prova!"
+
+ fate_of_the_phoenix.13.title: "L'Amministrazione di [target_character.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.13.desc: "Questo momento potrebbe ancora rivelarsi decisivo per il [ROOT.GetCountry.GetFlavorRank]. A lungo abbiamo sopportato il declino, mentre discordia interna, sconfinamenti stranieri e lenta erosione dell'autorità pesavano sul nostro popolo. Tramite nuove iniziative di gabinetto, potremmo finalmente imporre ordine al disordine, restaurando disciplina nelle nostre istituzioni e scopo nel governo della terra.\n\nTali riforme richiederanno risolutezza e sacrificio, perché le abitudini della decadenza sono profondamente radicate e la resistenza è inevitabile. Eppure, se ci impegneremo pienamente, queste misure potrebbero arrestare il lungo arretramento del [ROOT.GetCountry.GetFlavorRank] e gettare le fondamenta del rinnovamento, affinché l'esitazione non ci consegni a ulteriore frammentazione e irrilevanza."
+ fate_of_the_phoenix.13.a: "Sacrifichiamo ciò che serve al ritorno di un sole glorioso."
+ enable_unlock_spread_philhellenism_and_encourage_latin_militarism_tt: "Sbloccheremo le [cabinet_actions|e] [ShowCabinetActionName('spread_philhellenism')] e [ShowCabinetActionName('encourage_latin_militarism')] per la durata del [disaster|e] [ShowDisasterName('fate_of_the_phoenix')]\n\nSe concluderemo vittoriosamente il disastro, otterremo accesso a queste azioni di gabinetto #Y permanentemente#!"
+ 
+ fate_of_the_phoenix.14.title: "Rinascita della Fenice"
+ fate_of_the_phoenix.14.desc: "Il territorio un tempo perduto è stato riconquistato, e l'età della decadenza volge al termine. [ROOT.GetCountry.GetName] si erge restaurata come un vero [ROOT.GetCountry.GetFlavorRank], pronta ad affrontare ancora una volta i suoi nemici. Ora, [ShowLocationName('rome')] attende."
+ fate_of_the_phoenix.14.a: "Non ci sarà alcun [ROOT.GetCountry.GetGovernment.GetRulerTitle] marmoreo sotto la nostra sorveglianza!"
+ maintain_cabinet_actions_tt: "La nostra rinascita vittoriosa attraverso il [disaster|e] ci ha permesso di mantenere l'accesso a entrambe le [cabinet_actions|e] [ShowCabinetActionName('spread_philhellenism')] e [ShowCabinetActionName('encourage_latin_militarism')]"
+ because_we_made_military_reforms_tt: "Poiché abbiamo promulgato una o più riforme militari tramite l'[action|e] [ShowGenericActionName('reform_imperial_armies')]:"
+ num_of_reforms_desc: "Numero di riforme"
+ unlock_allelengyon_bureaucracy_kephalai_bureaucracy_tt: "Sblocca le [bureaucracies|e] $allelengyon_bureaucracy$ e $kephalai_bureaucracy$"
+ unlock_kritai_katholikoi_reformed_extra_effect: "L'effetto [ShowModifierTypeName('country_cabinet_efficiency')] della [government_reform|e] [ShowGovernmentReformName('kritai_katholikoi_reformed')] diventerà permanente"
+
+ fate_of_the_phoenix.15.title: "Era di Decadenza"
+ fate_of_the_phoenix.15.desc: "Nonostante i nostri sforzi, le terre recentemente perdute non poterono essere riconquistate. La rinascita dei Beylik vicini, insieme a potenze ostili oltre i nostri confini di [ShowRegionName('balkan_region')], ha reso impossibile invertire la rotta. La lunga decadenza continua, e il futuro del [ROOT.GetCountry.GetFlavorRank] è gettato nell'incertezza."
+ fate_of_the_phoenix.15.a: "Il nostro futuro è avvolto da ombre e incertezza."
+ no_longer_access_to_the_cabinet_actions_tt: "Non avremo più accesso alle [cabinet_actions|e] [ShowCabinetActionName('spread_philhellenism')] e [ShowCabinetActionName('encourage_latin_militarism')]"
+ 
+ fate_of_the_phoenix.16.title: "[actor.GetNameWithNoTooltip] Richiede una Donazione"
+ fate_of_the_phoenix.16.desc: "Abbiamo ricevuto notizia del tumulto che consuma [actor.GetName]. Come ultima risorsa, hanno inviato emissari a supplicare assistenza monetaria. In cambio, promettono di aprire il loro [actor.GetFlavorRank] alla diffusione delle nostre norme e usanze. Un simile gesto è alquanto senza precedenti e potrebbe dire molto sulla situazione disperata in [actor.GetCapital.GetName]."
+ fate_of_the_phoenix.16.a: "Concediamo un piccolo segno di assistenza simbolica."
+ fate_of_the_phoenix.16.b: "Sosteniamo lo scudo contro le orde di [ShowRegionNameWithNoTooltip('anatolia_region')]."
+ fate_of_the_phoenix.16.c: "Nessuna moneta agli eretici!"
+ no_money_for_byz_tt: "Non invieremo alcun aiuto a un [actor.GetName] sofferente"
+
+ fate_of_the_phoenix.17.title: "[actor.GetNameWithNoTooltip] Offre Privilegi Commerciali"
+ fate_of_the_phoenix.17.desc: "Facciamo già affari a [ShowLocationName('constantinople')], ma ora [actor.GetName] ci hanno avvicinato con un'offerta, fornire loro materiale da costruzione per la flotta in cambio di privilegi preferenziali nei mercati della loro capitale."
+ fate_of_the_phoenix.17.a: "[target_country.GetGovernment.GetRulerOrRegent.GetShortNameWithNoTooltip] è un uomo d'affari, e fa affari!"
+ fate_of_the_phoenix.17.b: "Lasciamo perdere."
+ selected_republic_may_donate_ships_to_our_cause_tt: "La $merchant_republic$ selezionata può donare [ships|e] galee e [sailors|e] in cambio di [merchant_power|e] a [ShowLocationName('constantinople')]"
+ byzantines_left_fend_themselves_tt: "Il [actor.GetLongName] è lasciato a badare a sé stesso"
+ latin_merchant_privileges_key: "Privilegi Mercantili $italian_group$"
+
+ fate_of_the_phoenix.18.title: "[target_character.GetNameWithNoTooltip] Arriva a [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+ fate_of_the_phoenix.18.desc: "Inviato su raccomandazione dei nostri fidati amici in [target_country.GetName], [target_character.GetName] è arrivato dal [target_location.GetRank.GetName] di [target_location.GetName], portando con [target_character.GetHerHim] le abilità e il sapere per cui le terre [target_culture.GetName] sono rinomate. Temprato da corti straniere e disciplinato dai metodi della penisola, [target_character.GetSheHe] offre ora i servizi di [target_character.GetHerHis] al nostro [ROOT.GetCountry.GetFlavorRank], un gesto gentile e caloroso.\n\nUn simile arrivo non promette solo benefici pratici, ma approfondisce anche i legami che ci uniscono ai nostri fratelli [ShowCultureGroupName('italian_group')], il cui sapere e ingegno continuano a plasmare gli affari di principi e imperatori allo stesso modo."
+ fate_of_the_phoenix.18.a: "Seguiremo la carriera di [target_character.GetHerHis] con grande interesse!"
+
+ fate_of_the_phoenix.19.title: "[actor.GetNameWithNoTooltip] Pretende Tributo"
+ fate_of_the_phoenix.19.desc: "Con la caduta di [ShowLocationName('bursa')] nelle mani di [actor.GetName], l'autorità di [target_character_1.GetName] si trova rinnovata e incontrastata. Da [target_location_1.GetName], gli inviati arrivano portando richieste invece di convenevoli. Rivendicano tributo come prezzo dei nostri cosiddetti costumi pagani, e le loro parole sono affilate dalla minaccia non detta della forza. Tra oro, sangue o sfida, ci si aspetta una risposta e le sue conseguenze si faranno sentire ben oltre i nostri confini."
+ fate_of_the_phoenix.19.a: "Non abbiamo scelta se non separarci dal nostro denaro."
+ fate_of_the_phoenix.19.b: "Mandiamo loro invece uomini validi."
+ fate_of_the_phoenix.19.c: "Non riceveranno nulla!"
+
+ fate_of_the_phoenix.20.title: "Riforma dell'Esercito [actor.GetAdjectiveWithNoTooltip]"
+ fate_of_the_phoenix.20.desc_a: "Anni di abbandono e tensione fiscale hanno lasciato gli eserciti del [ROOT.GetCountry.GetFlavorRank] impreparati alle prove future. Sotto l'autorità di [target_character.GetName], possono essere emanati nuovi regolamenti per restaurare la disciplina, riorganizzare il comando e ravvivare le tradizioni che un tempo rendevano gli eserciti di [ROOT.GetCountry.GetCapital.GetName] temuti in ogni terra e frontiera. Per quanto costose, tali riforme potrebbero ancora arrestare la lunga decadenza della nostra forza militare."
+ fate_of_the_phoenix.20.desc_b: "I mari sono stati a lungo sia scudo sia linea vitale del [ROOT.GetCountry.GetFlavorRank], eppure le nostre flotte ora soffrono di pratiche superate e competenza calante. Sotto l'egida di [target_character.GetName], si potrebbero compiere sforzi per rinnovare il comando navale, migliorare l'addestramento e modernizzare le istituzioni che sostengono il nostro potere marittimo. In caso di successo, la marina [ROOT.GetCountry.GetAdjective] potrebbe di nuovo proteggere le nostre coste e il nostro commercio da tutti i rivali."
+ fate_of_the_phoenix.20.a: "Compiamo un passo necessario per combattere la decadenza."
+ fate_of_the_phoenix.20.b: "Forse non ancora."
+ reformation_of_the_school_of_admirals_better_stats_tt: "Finché questo [modifier|e] è attivo, usare l'[action|e] [ShowGenericActionName('train_admiral')] produrrà [characters|e] con [abilities|e] complessive migliori"
+ better_stats_because_reformation_of_the_school_of_admirals_modifier_tt: "Le [abilities|e] di questo [admiral|e] sono state migliorate di #G +10#! grazie al [modifier|e] [ShowModifier('reformation_of_the_school_of_admirals_modifier')] attivo"
+ because_we_reformed_our_navy_in_DHE_desc: "Poiché abbiamo riformato la nostra [navy|e] nell'[event|e] $flavor_byz.15.title$"
+ target_character_total_abilities: "[abilities|e] di [target_character.GetName]"
+ 
+# Actions for Fate of the Phoenix Disaster
+
+ selected_country_will_send_us_engineer_character_tt: "Il [country|e] selezionato ci invierà uno dei suoi migliori [characters|e]"
+ target_country_forced_to_give_tribute_tt: "Il [country|e] selezionato può essere persuaso a darci [gold|e] o [manpower|e]"
+ at_war_with_heathens_or_heretics_tt: "Stiamo attualmente conducendo una [war|e] contro un [country|e] che NON segue [actor.GetReligion.GetName]"
+ selected_country_may_join_every_ongoing_war_against_heathen_and_heretics_tt: "Il [country|e] selezionato può unirsi alle nostre [wars|e] in corso i cui [war_leaders|e] sono [heathens|e] o [heretics|e]"
+ pops_in_capital_province_convert_catholic_tt: "Alcuni dei nostri [pops|e] che seguono [actor.GetReligion.GetName] in [actor.GetCapital.GetProvince.GetName] abbracceranno [ShowReligionName('catholic')]"
+ fate_of_phoenix_actions_price: "Prezzo delle Azioni di $fate_of_the_phoenix$"
+
+ request_papal_donation: "Richiedi una Donazione $PAP_ADJ$"
+ request_papal_donation_desc: "Con il [actor.GetFlavorRank] sotto pressione e le sue casse vuote, si potrebbero inviare emissari al $PAP$ per chiedere aiuto in nome di [ShowReligionGroupName('christian')]. Sebbene tali richieste siano raramente prive di conseguenze, il loro oro potrebbe ancora comprarci tempo nella nostra ora del bisogno."
+ grant_latin_merchants_privileges: "Concedi Privilegi ai Mercanti [ShowCultureGroupNameWithNoTooltip('italian_group')]"
+ grant_latin_merchants_privileges_desc: "Estendendo diritti speciali alle repubbliche mercantili [ShowCultureGroupName('italian_group')], speriamo di ravvivare il commercio e assicurarci supporto navale. Queste concessioni potrebbero rafforzare il commercio a [actor.GetCapital.GetName], ma rischiano di approfondire l'influenza straniera nel [actor.GetCapital.GetRank.GetName]."
+ accept_catholic_delegation: "Accetta una Delegazione [ShowReligionAdjectiveWithNoTooltip('catholic')]"
+ accept_catholic_delegation_desc: "Delegati del [GetUniqueInternationalOrganization('catholic_church').GetName] possono essere invitati a [actor.GetCapital.GetName], portando parole di unità e quiete aspettative di compromesso. Secondo molti dei nostri consiglieri, ospitare questi delegati può migliorare le relazioni con il mondo [ShowReligionAdjective('catholic')], ma simili gesti non sono privi di tensioni interne."
+ attract_italian_engineer: "Attira un Ingegnere [ShowCultureGroupNameWithNoTooltip('italian_group')]"
+ attract_italian_engineer_desc: "Si cercano rinomati ingegneri [ShowCultureGroupName('italian_group')] per migliorare le nostre fortificazioni e opere militari. La loro competenza promette soluzioni moderne a problemi antichi, forse al costo di legarci ai metodi e all'influenza occidentali."
+ demand_beylik_tribute: "Pretendi Tributo dai Beylik"
+ demand_beylik_tribute_desc: "Con la nostra autorità riaffermata in [ShowRegionName('anatolia_region')], possiamo ancora una volta costringere i beylik vicini a riconoscere la supremazia [actor.GetAdjective]. Il tributo estratto ora potrebbe indebolire futuri rivali e restaurare la fiducia nella forza del [actor.GetFlavorRank]."
+ summon_patriarchate_member: "Convoca un Membro del Patriarcato"
+ summon_patriarchate_member_desc: "Come guida del nostro [GetInternationalOrganizationType('autocephalous_patriarchate').GetNameWithNoTooltip], possiamo chiamare altri capi [ShowReligionAdjective('orthodox')] ad aiutarci contro i nemici della fede. Tali appelli si basano sulla fede condivisa più che sull'obbligo, e potrebbero ancora radunare spade alla nostra causa."
+ reform_imperial_armies: "Riforma l'Esercito [GetCountry('BYZ').GetAdjectiveWithNoTooltip]"
+ reform_imperial_armies_desc: "Le forze armate del [actor.GetFlavorRank] hanno sofferto decenni di abbandono e improvvisazione. Una riforma completa promette disciplina e struttura rinnovate, anche se richiede stabilità, argento e la volontà di cambiare abitudini radicate."
+ patronize_orthodox_monastery: "Patrocina $orthodox_monastery$"
+ patronize_orthodox_monastery_desc: "Concedendo patronato a un [ShowBuildingTypeName('orthodox_monastery')] locale, riaffermiamo la nostra devozione e rafforziamo la vita religiosa locale. Tale generosità migliorerà sicuramente la qualità della vita locale, ricordando ai fedeli che il [actor.GetLongName] si erge ancora come protettore della vera fede."
+ reform_armed_forces_tt: "Potremo riformare il nostro [army|e] o la nostra [navy|e], annullando la decadenza dei secoli passati"
+ has_not_completed_all_six_reforms_tt: "Non abbiamo completato tutte le #Y 6#! riforme disponibili"
+ patronize_orth_monastery_tt: "La [location|e] selezionata riceverà il [modifier|e] [ShowModifier('patronize_orthodox_monastery_modifier')], mentre molti dei nostri [pops|e] [ShowReligionAdjective('orthodox')] riceveranno [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] di [pop_satisfaction|e]"
+

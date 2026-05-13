@@ -1,25 +1,39 @@
 ﻿l_english:
  flavor_nor.1.title: "[target_character.GetNameWithNoTooltip]"
- flavor_nor.1.desc: "Il nobile e cavaliere [target_character.Custom('IT_CUL_MS')], [target_character.GetName], è un ex drottsete, un uomo che poteva governare il paese in nome del Re, e reggente [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. È un discendente diretto dell'antica famiglia reale norvegese e il comandante della Fortezza di Akershus dal 1440 al 1445. [target_character.GetNameWithNoTooltip] è uno dei principali fautori delle politiche anti-anseatiche [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]."
- flavor_nor.1.a: "Potrebbe essere utile al regno"
- flavor_nor.1.b: "Non vogliamo antagonizzare la Lega Anseatica"
+ flavor_nor.1.entry: "Sigurd Jonsson, Norwegian Statesman" #NEW
+# flavor_nor.1.desc: "Il nobile e cavaliere [target_character.Custom('IT_CUL_MS')], [target_character.GetName], è un ex drottsete, un uomo che poteva governare il paese in nome del Re, e reggente [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. È un discendente diretto dell'antica famiglia reale norvegese e il comandante della Fortezza di Akershus dal 1440 al 1445. [target_character.GetNameWithNoTooltip] è uno dei principali fautori delle politiche anti-anseatiche [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]." #OLD
+ flavor_nor.1.desc: "The [target_character.GetCulture.GetName] nobleman and knight, [target_character.GetName], is a former drottsete, a man who could rule the country in the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s name, and regent of [ROOT.GetCountry.GetName]. He is a direct descendant of the old [ROOT.GetCountry.GetAdjectiveWithNoTooltip] royal family and the commander of Akershus Fortress from 1440 to 1445. [target_character.GetNameWithNoTooltip] is one of the leading proponents of the anti-[target_country.GetAdjective] policies in [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
+# flavor_nor.1.a: "Potrebbe essere utile al regno" #OLD
+ flavor_nor.1.a: "He could be of use to the [ROOT.GetCountry.GetFlavorRank]." #NEW
+ flavor_nor.1.a.entry: "He could be of use to the realm." #NEW
+# flavor_nor.1.b: "Non vogliamo antagonizzare la Lega Anseatica" #OLD
+ flavor_nor.1.b: "We do not want to antagonize [target_country.GetNameWithNoTooltip]." #NEW
+ flavor_nor.1.b.entry: "We do not want to antagonize them." #NEW
  
  hanseatic_conflict: "Conflitto Anseatico-Scandinavo"
 
 
  flavor_nor.2.title: "Gyldenløve"
+ flavor_nor.2.entry: "$flavor_nor.2.title$" #NEW
  flavor_nor.2.desc: "Il figlio del Consigliere Nazionale Henrik Jensson, [niels.GetName], ha recentemente sposato Ingerd Ottesdatter e consolidato il suo possesso delle tenute di Austrått. È ora uno dei più grandi proprietari terrieri della Norvegia, con proprietà a Bergen, Vardøhus, Hålogaland, Fosen, Frosta, Stjørdal, Sunnmøre, Romsdal, Edøy, Selbu e Herjedalen. È stato suggerito per la posizione di Consigliere Nazionale."
- flavor_nor.2.a: "Che diventi un consigliere"
+# flavor_nor.2.a: "Che diventi un consigliere" #OLD
+ flavor_nor.2.a: "Let him become an advisor." #NEW
  
  flavor_nor.3.title: "La Fortezza di Vardøhus"
+ flavor_nor.3.entry: "$flavor_nor.3.title$" #NEW
  flavor_nor.3.desc: "La prima fortificazione nel Comune di Vardø nella contea di Finnmark fu costruita nel 1306 e fu chiamata Varghøya. La seconda fortificazione fu costruita a Østervågen, eretta tra il 1450 e il 1500, una fortificazione rettangolare con due bastioni angolari."
- flavor_nor.3.a: "Fortificare ulteriormente la fortezza"
- flavor_nor.3.b: "Aumentare le difese in tutta la Norvegia"
- flavor_nor.3.c: "Non fare nulla"
+# flavor_nor.3.a: "Fortificare ulteriormente la fortezza" #OLD
+ flavor_nor.3.a: "Fortify the fortress further." #NEW
+# flavor_nor.3.b: "Aumentare le difese in tutta la Norvegia" #OLD
+ flavor_nor.3.b: "Increase defenses in the whole of Norway." #NEW
+# flavor_nor.3.c: "Non fare nulla" #OLD
+ flavor_nor.3.c: "Do nothing." #NEW
  
  
  flavor_nor.5.title: "Un Matrimonio Strategico"
- flavor_nor.5.desc: "Sin dal trattato di Perth del XIII secolo, [GetCountry('SCO').Custom('IT_La')][GetCountry('SCO').GetName] è stata obbligata a pagare una somma annuale [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetLongName] in cambio del controllo delle Ebridi. Questi pagamenti sono ormai da tempo scaduti, tuttavia, e questo è stato causa di tensioni a intermittenza. Indipendentemente dalle nostre pretese ancestrali, tuttavia, la nostra capacità di proiettare potere nelle [ShowAreaName('scottish_highlands')] non è più quella di una volta, e abbiamo questioni più grandi più vicine a casa da gestire. È stato suggerito che questo conflitto venga risolto una volta per tutte. Il Jarldom di [ShowLocationName('orkney')] sarà impegnata e poi trasferita agli Scozzesi.\n\n[ShowLocationNameWithNoTooltip('orkney')] rimane tuttavia uno dei titoli di più alto rango [ROOT.GetCountry.Custom('IT_NEL_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip], uno che a volte è stato un trampolino di lancio verso il trono [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. Pur rimanendo un fattore debole, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.GetAdjectiveWithNoTooltip] è molto diffidente riguardo a questo accordo."
+ flavor_nor.5.entry: "$flavor_nor.5.title$" #NEW
+# flavor_nor.5.desc: "Sin dal trattato di Perth del XIII secolo, [GetCountry('SCO').Custom('IT_La')][GetCountry('SCO').GetName] è stata obbligata a pagare una somma annuale [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetLongName] in cambio del controllo delle Ebridi. Questi pagamenti sono ormai da tempo scaduti, tuttavia, e questo è stato causa di tensioni a intermittenza. Indipendentemente dalle nostre pretese ancestrali, tuttavia, la nostra capacità di proiettare potere nelle [ShowAreaName('scottish_highlands')] non è più quella di una volta, e abbiamo questioni più grandi più vicine a casa da gestire. È stato suggerito che questo conflitto venga risolto una volta per tutte. Il Jarldom di [ShowLocationName('orkney')] sarà impegnata e poi trasferita agli Scozzesi.\n\n[ShowLocationNameWithNoTooltip('orkney')] rimane tuttavia uno dei titoli di più alto rango [ROOT.GetCountry.Custom('IT_NEL_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip], uno che a volte è stato un trampolino di lancio verso il trono [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. Pur rimanendo un fattore debole, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.GetAdjectiveWithNoTooltip] è molto diffidente riguardo a questo accordo." #OLD
+ flavor_nor.5.desc: "Ever since the 13th century treaty of Perth, [GetCountry('SCO').GetName] has been obligated to pay a yearly sum to the [ROOT.GetCountry.GetLongName] in exchange for control of the Hebrides. These payments are by now long overdue, however, and this has been the cause for tensions on and off. Regardless of our ancestral claims, however, our ability to project power in the [ShowAreaName('scottish_highlands_area')] is not what it was, and we have bigger issues closer to home to handle. It has been suggested that this conflict be settled once and for all. The Jarldom of [ShowLocationName('orkney')] will be pawned and then transferred to the Scots.\n\n[ShowLocationNameWithNoTooltip('orkney')] remains one of the highest ranked titles in the [ROOT.GetCountry.GetLongNameWithNoTooltip] however, one that has at times been a stepping stone to the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] throne. While they remain a weak factor, the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are very wary of this deal." #NEW
  flavor_nor.5.historical_info: "Nel 1468, l'impoverito Cristiano I, Re di Danimarca, Norvegia e Svezia, diede in sposa la sua unica figlia Margherita a Giacomo III di Scozia. Poiché non poteva presentare la dote promessa, invece impegnò le Isole Orcadi a Giacomo III di Scozia al posto di una dote reale per 50.000 fiorini. Le Shetland furono impegnate per ulteriori 8.000 fiorini."
  flavor_nor.5.a: "Poniamo fine a questo conflitto."
  flavor_nor.5.a.tt: "#flavor Se [GetCountry('SCO').Custom('IT_La')][GetCountry('SCO').GetName] accetta accadrà quanto segue:#!"
@@ -39,12 +53,14 @@
  flavor_nor.8.a: "È fatto."
  
  flavor_nor.9.title: "La Scozia Rifiuta"
+ flavor_nor.9.entry: "$flavor_nor.9.title$" #NEW
  flavor_nor.9.desc: "Gli Scozzesi hanno rifiutato il nostro accordo per risolvere le pretese contrastanti nelle Ebridi e nelle Isole Orcadi. Di conseguenza la tensione è in aumento di nuovo."
  flavor_nor.9.a: "Non ci arrenderemo mai!"
 
  
 
  flavor_nor.16.title: "Hollendertiden"
+ flavor_nor.16.entry: "$flavor_nor.16.title$" #NEW
  flavor_nor.16.desc: "Il legname è sempre stato una delle principali esportazioni dell'economia Norvegese e le navi commerciali dai Paesi Bassi sono diventate una vista sempre più comune lungo la costa Morvegese. A differenza dei mercanti Anseatici che hanno dominato la nostra economia per secoli, gli Olandesi si accontentano di commerciare senza immischiarsi negli affari locali o infrangere le leggi del paese.\nCon una domanda sempre crescente da parte dei costruttori navali Olandesi, l'industria del legname in Norvegia potrebbe benissimo diventare la più grande d'Europa. Come popolo marittimo e di costruttori navali possiamo indubbiamente imparare molto dagli imprenditori olandesi allineandoci con loro contro i Germanici."
  flavor_nor.16.a: "Il tempo degli Olandesi è giunto."
  STATIC_MODIFIER_NAME_nor_hollendertiden: "Hollendertiden"
@@ -52,19 +68,23 @@
 
  
  flavor_nor.21.title: "[tordenskiold.GetNameWithNoTooltip]"
+ flavor_nor.21.entry: "Tordenskiøld" #NEW
  flavor_nor.21.desc: "Attraverso attacchi audaci e manovre abili, [tordenskiold.GetName] si sta facendo un nome come capitano promettente nella marina Norvegese. La sua riluttanza a ritirarsi mai da uno scontro, indipendentemente dalle dimensioni delle navi coinvolte o da qualsiasi altra circostanza, lo ha catapultato attraverso i ranghi. Oggi è davanti [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.GetName] per essere nobilitato per le sue grandi imprese in mare aperto."
  flavor_nor.21.a: "D'ora in poi sarà conosciuto come 'Tordenskiold' - Scudo del Tuono."
  
  flavor_nor.22.title: "[cort_adeler.GetNameWithNoTooltip]"
+ flavor_nor.22.entry: "Cort Adeler" #NEW
  flavor_nor.22.desc: "All'età di 15 anni il giovane figlio dello skipper [cort_adeler.GetName] lasciò la Norvegia per il mare aperto e da allora ha fatto carriera come capitano mercantile di successo nei Paesi Bassi, nel Mediterraneo e persino lontano come la Costa del Coromandel in India. Avendo anche agito come capitano in tempi di guerra in azioni navali Olandesi, Inglesi, Veneziane e Turche, Adeler è in possesso di esperienza e contatti che pochi nella sua generazione possiedono. Attraverso le sue varie imprese mercantili ha acquisito una considerevole fortuna personale, parte della quale ha investito nel suo paese natale, specialmente nelle tenute che ha iniziato a sviluppare fuori dalla città Norvegese di Skien.\nUn uomo della levatura di Adeler potrebbe sicuramente essere utilizzato bene al servizio dello stato."
  flavor_nor.22.a: "Un uomo straordinario!"
  
  flavor_nor.23.title: "Grande Incendio di Oslo"
+ flavor_nor.23.entry: "$flavor_nor.23.title$" #NEW
  flavor_nor.23.desc: "Per tre giorni gli incendi hanno devastato la città di legno di Oslo e ora tutti tranne pochi edifici nella capitale del nostro paese giacciono in cenere. Mentre il fuoco ha perseguitato Oslo prima, la distruzione che affrontiamo ora è così definitiva che è stato suggerito di trasferire completamente la città mentre la ricostruiamo. Invece di costruire in legno e attendere la prossima catastrofe, è stato suggerito di ricostruire più vicino alla fortezza di Akershus, utilizzando tecniche di costruzione e pianificazione urbana più solide come si addice a una capitale della nostra epoca.\nRicostruire più vicino ad Akershus ci permetterà anche di fortificare adeguatamente la città, il che può essere di grande beneficio in questi tempi. In pratica, tuttavia, i governanti precedenti hanno trovato difficile impedire ai cittadini di Oslo di ricostruire con qualsiasi materiale e modalità desiderino, quindi una ristrutturazione adeguata sarà probabilmente molto costosa."
  flavor_nor.23.a: "Dobbiamo fondare una nuova città!"
  STATIC_MODIFIER_NAME_nor_rebuilding_oslo: "Ricostruzione di Oslo"
  flavor_nor.23.b: "Ciò che è andato perduto è scomparso, lasciamo che le persone ricostruiscano come meglio credono."
  
  flavor_nor.24.title: "I Legami Olandesi- si Rafforzano"
+ flavor_nor.24.entry: "$flavor_nor.24.title$" #NEW
  flavor_nor.24.desc: "Nel tempo l'ampia integrazione della Norvegia nell'economia delle ricche città nei Paesi Bassi ha portato a un'industria cantieristica in crescita in patria. Le città Norvegesi fortemente legate al commercio del legname stanno crescendo rapidamente più grandi che mai, con mercanti Norvegesi, Olandesi, Danesi, Scozzesi, Inglesi e Svedesi che si mescolano insieme per creare un ambiente marittimo cosmopolita.\nI giovani Norvegesi hanno anche iniziato a migrare in numero crescente verso i Paesi Bassi. Alcuni si stabiliscono lì mentre altri continuano verso il mare aperto. Il numero crescente di espatriati Norvegesi e coloro che alla fine tornano nelle nostre terre stanno insieme immergendo il nostro paese sempre più profondamente nell'economia globale emergente."
  flavor_nor.24.a: "Il mare è il nostro futuro e il nostro passato."

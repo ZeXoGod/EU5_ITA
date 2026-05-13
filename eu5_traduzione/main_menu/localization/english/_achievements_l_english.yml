@@ -2,8 +2,11 @@
  ACHIEVEMENTS_LABEL: "Achievements"
  ACHIEVEMENT_GROUP_TOOLTIP_TITLE: "Difficoltà dell'Achievement"
  ACHIEVEMENT_LOCKED_TEXT: "Achievement non ancora ottenuto nella campagna attuale"
+ ACHIEVEMENT_LOCKED_REQUIREMENTS_TITLE: "#V Sblocca condizioni#!:"
  ACHIEVEMENT_NOT_POSSIBLE_TITLE: "Achievement Non Disponibile"
- ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "Achievements disponibili solo nella modalità Ironman."
+ ACHIEVEMENT_REQUIRES_DLC_TITLE: "DLC Achievement"
+ ACHIEVEMENT_REQUIRES_DLC: "Ha abilitato i DLC: [GameDLC.GetName]"
+ ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "chievements disponibili solo nella modalità Ironman."
  IRONMAN_LABEL: "Ironman"
  IRONMAN_SAVEGAME_NAME: "Ironman di $COUNTRY$"
  IRONMAN_SAVELABEL_NAME: "Salvataggio Ironman"
@@ -21,21 +24,40 @@
  ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Non Disponibili#!"
  ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON: "#N Non Disponibili#!\n\nGli achievements non possono essere sbloccati nella sessione di gioco attuale.\n$ACHIEVEMENTS_EXPLANATION$"
  ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Gli achievements sono sbloccabili solo se:\n$EFFECT_LIST_BULLET$Si gioca in modalità giocatore singolo\n$EFFECT_LIST_BULLET$La modalità Ironman è attivata\n$EFFECT_LIST_BULLET$I file di gioco che influenzano il gameplay non sono stati modificati e non si stanno usando opzioni di avvio speciali (cioè il checksum è invariato)"
- ACHIEVEMENTS_ENABLED: "#T Achievements Disponibili#!\nGli Achievements possono essere attualmente sbloccati durante la partita."
- ACHIEVEMENTS_DISABLED: "#T Achievements Non Disponibili#!\nGli Achievements non possono essere attualmente sbloccati durante la partita.\n\n$ACHIEVEMENTS_EXPLANATION$"
  ACHIEVEMENT_GROUP_TITLE_CAESAR: "[Group.GetName]"
  ACHIEVEMENT_GROUP_AMOUNT_CAESAR: "[Group.CalcNumberOfUnlockedVisibleAchievements] / [Group.GetNumberOfVisibleAchievements]"
-
- # Template
- # ACHIEVEMENT_name: ""
- # ACHIEVEMENT_DESC_name: ""
 
  # Achievements Very Easy
  ACHIEVEMENT_until_death_do_us_apart: "Finché Morte non ci Separi"
  ACHIEVEMENT_DESC_until_death_do_us_apart: "Ottieni un Matrimonio Reale con un altro paese."
+ until_death_do_us_apart_tt: "Abbiamo un [royal_marriage|e]"
 
- ACHIEVEMENT_for_the_glory: "Per la Gloria"
- ACHIEVEMENT_DESC_for_the_glory: "Annettere diplomaticamente un vassallo."
+ ACHIEVEMENT_that_is_mine: "Quello è Mio!"
+ ACHIEVEMENT_DESC_that_is_mine: "Conquista una località."
+ that_is_mine_tt: "Abbiamo conquistato una [location|e]"
+ 
+ ACHIEVEMENT_victorious: "Vittorioso!"
+ ACHIEVEMENT_DESC_victorious: "Vinci una guerra."
+ victorious_tt: "Abbiamo vinto una [war|e]"
+ 
+ ACHIEVEMENT_its_just_business: "Sono Solo Affari" #NEW
+ ACHIEVEMENT_DESC_its_just_business: "Crea un Mercato."
+ its_just_business_tt: "Abbiamo creato un [market|e]"
+ 
+ ACHIEVEMENT_all_in_favor: "Tutti Favorevoli"
+ ACHIEVEMENT_DESC_all_in_favor: "Approvare una proposta in Parlamento."
+ all_in_favor_tt: "Abbiamo approvato una [parliament_issue|e]"
+ 
+ ACHIEVEMENT_patron_of_the_arts: "Mecenate delle Arti"
+ ACHIEVEMENT_DESC_patron_of_the_arts: "Invita un artista."
+ patron_of_the_arts_tt: "Abbiamo invitato un [artist|e]"
+ 
+ ACHIEVEMENT_combined_arms: "Armate Congiunte"
+ ACHIEVEMENT_DESC_combined_arms: "Avere leve, un esercito e mercenari allo stesso tempo."
+ 
+ ACHIEVEMENT_rule_of_law: "Stato di Diritto"
+ ACHIEVEMENT_DESC_rule_of_law: "Cambia una politica."
+ rule_of_law_tt: "Abbiamo modificato una [policy|e] in una [law|e]"
 
  ACHIEVEMENT_brothers_in_arms: "Fratelli d'Armi"
  ACHIEVEMENT_DESC_brothers_in_arms: "Essere un partecipante secondario in una guerra dove un alleato ha almeno il 90% di punteggio di guerra."
@@ -46,40 +68,11 @@
  ACHIEVEMENT_cold_war: "Guerra Fredda"
  ACHIEVEMENT_DESC_cold_war: "Avere una guerra senza combattimenti attivi per 2 anni."
 
- ACHIEVEMENT_that_is_mine: "Quello è Mio!"
- ACHIEVEMENT_DESC_that_is_mine: "Conquista una località."
+ ACHIEVEMENT_for_the_glory: "Per la Gloria"
+ ACHIEVEMENT_DESC_for_the_glory: "Annettere diplomaticamente un vassallo."
 
- ACHIEVEMENT_victorious: "Vittorioso!"
- ACHIEVEMENT_DESC_victorious: "Vinci una guerra."
-
- ACHIEVEMENT_its_just_business: "Sono Solo Affari" #NEW
- ACHIEVEMENT_DESC_its_just_business: "Crea un Mercato."
-
- ACHIEVEMENT_all_in_favor: "Tutti Favorevoli"
- ACHIEVEMENT_DESC_all_in_favor: "Approvare una proposta in Parlamento."
-
- ACHIEVEMENT_patron_of_the_arts: "Mecenate delle Arti"
- ACHIEVEMENT_DESC_patron_of_the_arts: "Invita un artista."
-
- ACHIEVEMENT_combined_arms: "Armate Congiunte"
- ACHIEVEMENT_DESC_combined_arms: "Avere leve, un esercito e mercenari allo stesso tempo."
-
- ACHIEVEMENT_rule_of_law: "Stato di Diritto"
- ACHIEVEMENT_DESC_rule_of_law: "Cambia una politica."
-
- ACHIEVEMENT_here_i_stand: "Qui Sto"
- ACHIEVEMENT_DESC_here_i_stand: "Convertiti al Luteranesimo e sblocca 3 Aspetti della Fede."
 
  # Achievements Easy
- ACHIEVEMENT_rule_britannia: "Rule Britannia"
- ACHIEVEMENT_DESC_rule_britannia: "Iniziando con l'Inghilterra, forma la Gran Bretagna e diventa un'Egemonia Navale."
-
- ACHIEVEMENT_plus_ultra: "Plus Ultra"
- ACHIEVEMENT_DESC_plus_ultra: "Giocando con Castiglia o la Spagna, avere presenza in Iberia, Maghreb, Caraibi, Mesoamerica e Perù."
-
- ACHIEVEMENT_city_of_mans_desire: "La Città del Desiderio"
- ACHIEVEMENT_DESC_city_of_mans_desire: "Iniziando con gli Ottomani, conquista Costantinopoli e termina l'ascesa dei Turchi come Beylik più forte."
-
  ACHIEVEMENT_a_pile_of_gold: "Una Montagna d'Oro"
  ACHIEVEMENT_DESC_a_pile_of_gold: "Possiedi 35 località che producono oro o argento."
 
@@ -91,61 +84,42 @@
 
  ACHIEVEMENT_it_belongs_in_a_museum: "Da Museo!"
  ACHIEVEMENT_DESC_it_belongs_in_a_museum: "Ottieni una nuova Opera d'Arte."
+ it_belongs_in_a_museum_tt: "Abbiamo acquisito un nuovo [work_of_art|e]"
 
  ACHIEVEMENT_a_cabinet_of_curiosities: "Camera delle Meraviglie"
  ACHIEVEMENT_DESC_a_cabinet_of_curiosities: "Avere un'Azione di Gabinetto attiva per tutte e tre le categorie contemporaneamente."
 
  ACHIEVEMENT_hearts_and_minds: "Cuori e Menti"
  ACHIEVEMENT_DESC_hearts_and_minds: "Migliora l'opinione culturale con un altro paese."
+ hearts_and_minds_tt: "Abbiamo migliorato l'[cultural_opinion|e] di un altro paese"
 
  ACHIEVEMENT_a_brave_new_world: "Il Nuovo Mondo"
  ACHIEVEMENT_DESC_a_brave_new_world: "Scopri il Nuovo Mondo."
+ 
+ ACHIEVEMENT_three_mountains: "Le Tre Montagne"
+ ACHIEVEMENT_DESC_three_mountains: "Forma Ryūkyū." 
+ 
+ ACHIEVEMENT_rule_britannia: "Rule Britannia"
+ ACHIEVEMENT_DESC_rule_britannia: "Iniziando con l'Inghilterra, forma la Gran Bretagna e diventa un'Egemonia Navale."
+
+ ACHIEVEMENT_plus_ultra: "Plus Ultra"
+ ACHIEVEMENT_DESC_plus_ultra: "Giocando con Castiglia o la Spagna, avere presenza in Iberia, Maghreb, Caraibi, Mesoamerica e Perù."
+
 
  # Achievements Medium
- ACHIEVEMENT_crusader_kings: "Crusader Kings"
- ACHIEVEMENT_DESC_crusader_kings: "Vinci una Crociata o una Jihād."
-
- ACHIEVEMENT_lingua_franca: "Lingua Franca"
- ACHIEVEMENT_DESC_lingua_franca: "Giocando la Francia, diventa Egemonia Culturale."
  
- ACHIEVEMENT_break_the_yoke: "Spezzare il Giogo"
- ACHIEVEMENT_DESC_break_the_yoke: "Giocando un paese russo, spezza il Giogo Tataro."
-
- ACHIEVEMENT_felix_austria: "Felix Austria"
- ACHIEVEMENT_DESC_felix_austria: "Iniziando con l'Austria, diventa Imperatore del SRI e diventa una Grande Potenza."
-
- ACHIEVEMENT_hongwu_di: "Hóngwǔ Dì"
- ACHIEVEMENT_DESC_hongwu_di: "Giocando Míng, possiedi l'intera Cina e diventa il leader del Regno di Mezzo."
- hongwu_di_east_china_trigger_tt: "[ShowRegionName('east_china_region')] (escludendo [ShowAreaName('taiwan_area')]) è di proprietà di [GetCountry('MNG').GetName] o dei suoi [subjects|e]" #NEW
-
+ ACHIEVEMENT_here_i_stand: "Qui Sto"
+ ACHIEVEMENT_DESC_here_i_stand: "Convertiti al Luteranesimo e sblocca 3 Aspetti della Fede."
+ 
  ACHIEVEMENT_just_a_little_bit_more_patience: "Un Altro Poco di Pazienza"
  ACHIEVEMENT_DESC_just_a_little_bit_more_patience: "Gioca una campagna dal 1337 al 1836."
-
+ 
  ACHIEVEMENT_potato_potato: "Patata Patata"
  ACHIEVEMENT_DESC_potato_potato: "Partendo con un paese europeo, produci patate."
-
- ACHIEVEMENT_three_mountains: "Le Tre Montagne"
- ACHIEVEMENT_DESC_three_mountains: "Forma Ryūkyū."
-
- ACHIEVEMENT_doge_coins: "Doge Coins"
- ACHIEVEMENT_DESC_doge_coins: "Iniziando con Venezia, diventa un'Egemonia Economica."
-
- ACHIEVEMENT_je_maintiendrai: "Je Maintiendrai"
- ACHIEVEMENT_DESC_je_maintiendrai: "Forma i Paesi Bassi con una nazione minore di cultura olandese."
-
- ACHIEVEMENT_lion_of_the_north: "Leone del Nord"
- ACHIEVEMENT_DESC_lion_of_the_north: "Iniziando con la Svezia, garantisci la vittoria della Lega Protestante."
- unlock_lion_of_the_north_achievement_tt: "Essere partecipante attivo dal lato protestante e ottenere la vittoria nella Guerra delle Religioni."
-
- ACHIEVEMENT_the_navigator: "Il Navigatore"
- ACHIEVEMENT_DESC_the_navigator: "Giocando il Portogallo, avere presenza in Africa, America, India e Indonesia prima dell'Età della Riforma."
-
- ACHIEVEMENT_house_of_hus: "Casa per Hus"
- ACHIEVEMENT_DESC_house_of_hus: "Iniziando con la Boemia, vinci le Guerre Ussite come Ussita."
-
+ 
  ACHIEVEMENT_the_spice_must_flow: "La Spezia Deve Scorrere"
  ACHIEVEMENT_DESC_the_spice_must_flow: "Partendo con un paese europeo, avere una rotta commerciale attiva con i Chiodi di Garofano."
-
+ 
  ACHIEVEMENT_scientific_victory: "Vittoria Scientifica"
  ACHIEVEMENT_DESC_scientific_victory: "Avere almeno 450 Progressi ricercati."
 
@@ -154,40 +128,45 @@
 
  ACHIEVEMENT_moneytalks: "Il Denaro Parla"
  ACHIEVEMENT_DESC_moneytalks: "Diventa un'Egemonia Economica."
+ 
+ ACHIEVEMENT_doge_coins: "Doge Coins"
+ ACHIEVEMENT_DESC_doge_coins: "Iniziando con Venezia, diventa un'Egemonia Economica."
 
- # Achievements Hard
- ACHIEVEMENT_what_the_lord_giveth: "Il Signore Dona"
- ACHIEVEMENT_DESC_what_the_lord_giveth: "Inizia con 8 privilegi attivi per la nobiltà, poi rimuovili tutti."
+ ACHIEVEMENT_je_maintiendrai: "Je Maintiendrai"
+ ACHIEVEMENT_DESC_je_maintiendrai: "Forma i Paesi Bassi con una nazione minore di cultura Olandese."
 
- ACHIEVEMENT_be_in_all_the_clubs: "In Tutti i Club"
- ACHIEVEMENT_DESC_be_in_all_the_clubs: "Appartenere a 6 Organizzazioni Internazionali."
+ ACHIEVEMENT_lion_of_the_north: "Leone del Nord"
+ ACHIEVEMENT_DESC_lion_of_the_north: "Iniziando con la Svezia, garantisci la vittoria della Lega Protestante."
+ unlock_lion_of_the_north_achievement_tt: "Abbiamo partecipato attivamente alla guerra durante la [situation|e] [ShowSituationName('war_of_religions')], ci siamo schierati con l'[GetInternationalOrganizationType('protestant_union').GetName] e l'[GetInternationalOrganizationType('protestant_union').GetNameWithNoTooltip] ha vinto"
 
- ACHIEVEMENT_welfare_state: "Stato Sociale"
- ACHIEVEMENT_DESC_welfare_state: "Avere un mercato del proprio paese con una scorta completa di almeno 20.000 cibo."
-
- ACHIEVEMENT_five_hundred_miles: "500 Miglia"
- ACHIEVEMENT_DESC_five_hundred_miles: "Possiedi almeno 100 località con 5 strade ciascuna."
- ACHIEVEMENT_saladin_legacy: "Eredità di Saladino" #NEW
- ACHIEVEMENT_DESC_saladin_legacy: "Partendo come Ayyubidi, voi o i vostri sudditi possedete: la regione dell'Egitto e dell'Hejaz, lo Yemen Settentrionale, lo Yemen Meridionale, il Levante e le zone della Jazira." #NEW
- ACHIEVEMENT_african_trade: "Commercio Africano" #NEW
- ACHIEVEMENT_DESC_african_trade: "Partendo da Kilwa, diventa proprietario di un centro commerciale in Africa con il valore di mercato più alto al mondo." #NEW
- ACHIEVEMENT_i_am_inevitable: "Io sono Inevitabile" #NEW
- ACHIEVEMENT_DESC_i_am_inevitable: "Possiedi tutte le Egemonie." #NEW
- ACHIEVEMENT_greatness_from_small_beginnings: "La Grandezza Nasce da Piccoli Inizi" #NEW
- ACHIEVEMENT_DESC_greatness_from_small_beginnings: "Partendo come Contea, ottieni il rango di Impero, escluso quello di Imperatore del Sacro Romano Impero." #NEW
- ACHIEVEMENT_goose_step_by_step: "Goose Step by Step" #NEW
- ACHIEVEMENT_DESC_goose_step_by_step: "Come Prussia hai oltre 50 Valori Sociali di Qualità e Offensivi." #NEW
- ACHIEVEMENT_ill_be_wittelsback: "Sarò Wittelsback" #NEW
- ACHIEVEMENT_DESC_ill_be_wittelsback: "Partendo come Brandeburgo, supera il disastro “Timulto in Brandeburgo” con un punteggio di investimento Wittelsbacher pari a 100 e un sovrano Wittelsbach sul trono." #NEW
- ACHIEVEMENT_reformatio_imperii: "Reformatio Imperii" #NEW
- ACHIEVEMENT_DESC_reformatio_imperii: "Come Imperatore del SRI, hai promulgato le politiche “Dieta Perpetua”,  “Ewiger Landfriede” e “Tassazione Diretta”." #NEW
-
- ACHIEVEMENT_total_control: "Controllo Totale"
- ACHIEVEMENT_DESC_total_control: "Possiedi 20 località con controllo al 100%."
-
+ ACHIEVEMENT_the_navigator: "Il Navigatore"
+ ACHIEVEMENT_DESC_the_navigator: "Giocando il Portogallo, avere presenza in Africa, America, India e Indonesia prima dell'Età della Riforma."
+ 
  ACHIEVEMENT_true_heir_of_timur: "Vero Erede di Timur"
  ACHIEVEMENT_DESC_true_heir_of_timur: "Dopo aver avuto Timur come sovrano, forma l'Impero Moghul."
+ 
+ ACHIEVEMENT_city_of_mans_desire: "La Città del Desiderio"
+ ACHIEVEMENT_DESC_city_of_mans_desire: "Iniziando con gli Ottomani, conquista Costantinopoli e termina l'ascesa dei Turchi come Beylik più forte."
+ 
+ ACHIEVEMENT_felix_austria: "Felix Austria"
+ ACHIEVEMENT_DESC_felix_austria: "Iniziando con l'Austria, diventa Imperatore del SRI e diventa una Grande Potenza."
+ 
+ ACHIEVEMENT_hongwu_di: "Hóngwǔ Dì"
+ ACHIEVEMENT_DESC_hongwu_di: "Giocando Míng, possiedi l'intera Cina e diventa il leader del Regno di Mezzo."
+ hongwu_di_east_china_trigger_tt: "[ShowRegionName('east_china_region')] (escludendo [ShowAreaName('taiwan_area')]) è di proprietà di [GetCountry('MNG').GetName] o dei suoi [subjects|e]" #NEW 
+ 
+ ACHIEVEMENT_break_the_yoke: "Spezzare il Giogo"
+ ACHIEVEMENT_DESC_break_the_yoke: "Giocando un paese russo, spezza il Giogo Tataro."
+ 
+ ACHIEVEMENT_lingua_franca: "Lingua Franca"
+ ACHIEVEMENT_DESC_lingua_franca: "Giocando la Francia, diventa Egemonia Culturale."
+ 
+ ACHIEVEMENT_crusader_kings: "Crusader Kings"
+ ACHIEVEMENT_DESC_crusader_kings: "Vinci una Crociata o una Jihād."
+ crusader_kings_tt: "Abbiamo vinto una [war|e] con il [casus_belli|e] [ShowCasusBelliName('cb_crusade')] o [ShowCasusBelliName('cb_jihad')]"
 
+
+ # Achievements Hard
  ACHIEVEMENT_respected: "Rispettato"
  ACHIEVEMENT_DESC_respected: "Avere 100 Prestigio, 100 Legittimità e 100 Stabilità."
 
@@ -196,22 +175,108 @@
 
  ACHIEVEMENT_manchurian_candidate: "Un Candidato Manciù"
  ACHIEVEMENT_DESC_manchurian_candidate: "Inizia con un paese di cultura Jurchen e diventa il Leader del Regno di Mezzo."
-
- # Achievements Very Hard
+ 
+ ACHIEVEMENT_house_of_hus: "Casa per Hus"
+ ACHIEVEMENT_DESC_house_of_hus: "Iniziando con la Boemia, vinci le Guerre Ussite come Ussita."
+ 
  ACHIEVEMENT_what_a_great_guy: "Che Grande"
  ACHIEVEMENT_DESC_what_a_great_guy: "Essere presenti in ogni subcontinente."
+ 
+ ACHIEVEMENT_total_control: "Controllo Totale"
+ ACHIEVEMENT_DESC_total_control: "Possiedi 20 località con controllo al 100%."
+ 
+ ACHIEVEMENT_be_in_all_the_clubs: "In Tutti i Club"
+ ACHIEVEMENT_DESC_be_in_all_the_clubs: "Appartenere a 6 Organizzazioni Internazionali."
+ 
+ ACHIEVEMENT_what_the_lord_giveth: "Il Signore Dona"
+ ACHIEVEMENT_DESC_what_the_lord_giveth: "Inizia con 8 privilegi attivi per la Nobiltà, poi rimuovili tutti."
 
- # Achievement Groups
+ ACHIEVEMENT_welfare_state: "Stato Sociale"
+ ACHIEVEMENT_DESC_welfare_state: "Avere un mercato del proprio paese con una scorta completa di almeno 60.000 cibo."
+
+ ACHIEVEMENT_five_hundred_miles: "500 Miglia"
+ ACHIEVEMENT_DESC_five_hundred_miles: "Possiedi almeno 100 località con 5 strade ciascuna."
+ 
+ ACHIEVEMENT_saladin_legacy: "Eredità di Saladino" #NEW
+ ACHIEVEMENT_DESC_saladin_legacy: "Partendo come Ayyubidi, voi o i vostri sudditi possedete: la regione dell'Egitto e dell'Hejaz, lo Yemen Settentrionale, lo Yemen Meridionale, il Levante e le zone della Jazira." #NEW
+ 
+ ACHIEVEMENT_african_trade: "Commercio Africano" #NEW
+ ACHIEVEMENT_DESC_african_trade: "Partendo da Kilwa, diventa proprietario di un centro commerciale in Africa con il valore di mercato più alto al mondo." #NEW
+ 
+ ACHIEVEMENT_i_am_inevitable: "Io sono Inevitabile" #NEW
+ ACHIEVEMENT_DESC_i_am_inevitable: "Possiedi tutte le Egemonie." #NEW
+ 
+ ACHIEVEMENT_greatness_from_small_beginnings: "La Grandezza Nasce da Piccoli Inizi" #NEW
+ ACHIEVEMENT_DESC_greatness_from_small_beginnings: "Partendo come Contea, ottieni il rango di Impero, escluso quello di Imperatore del Sacro Romano Impero." #NEW
+ 
+ ACHIEVEMENT_goose_step_by_step: "Goose Step by Step" #NEW
+ ACHIEVEMENT_DESC_goose_step_by_step: "Come Prussia hai oltre 50 Valori Sociali di Qualità e Offensivi." #NEW
+ 
+ ACHIEVEMENT_ill_be_wittelsback: "Sarò Wittelsback" #NEW
+ ACHIEVEMENT_DESC_ill_be_wittelsback: "Partendo come Brandeburgo, supera il disastro “Timulto in Brandeburgo” con un punteggio di investimento Wittelsbacher pari a 100 e un sovrano Wittelsbach sul trono." #NEW
+ had_turmoil_in_brandenburg_disaster_tt: "Abbiamo avuto il [disaster|e] [ShowDisasterName('turmoil_in_brandenburg')]"
+ ill_be_wittelsback_tt: "Il nostro punteggio di investimento per Wittelsbacher è di #Y 100#!"
+ 
+ ACHIEVEMENT_reformatio_imperii: "Reformatio Imperii" #NEW
+ ACHIEVEMENT_DESC_reformatio_imperii: "Come Imperatore del SRI, hai promulgato le politiche “Dieta Perpetua”,  “Ewiger Landfriede” e “Tassazione Diretta”." #NEW
+
+
+ # Achievements Very Hard
+ 
+ # Template
+# ACHIEVEMENT_name: ""
+# ACHIEVEMENT_DESC_name: ""
+
+ #Achievement Groups
+ # D008 DLC Achievements
+ ACHIEVEMENT_nut_allergy: "Allergia alle Noci"
+ ACHIEVEMENT_DESC_nut_allergy: "Avere 6 membri del gabinetto con il tratto "Eunuco"."
+
+ ACHIEVEMENT_reborn_from_the_ashes: "Rinato dalle Ceneri"
+ ACHIEVEMENT_DESC_reborn_from_the_ashes: "Supera il disastro “Il Destino della Fenice”"
+ reborn_from_the_ashes_tt: "Abbiamo vinto il [disaster|e] [ShowDisasterName('fate_of_the_phoenix')]"
+
+ ACHIEVEMENT_holy_flush: "Sfida Sacra"
+ ACHIEVEMENT_DESC_holy_flush: "Ripristinare la Pentarchia come paese Ortodosso."
+
+ ACHIEVEMENT_give_me_back_my_legions: "Ridatemi le Mie Legioni!"
+ ACHIEVEMENT_DESC_give_me_back_my_legions: "Avere 10 unità di Legionari in un unico esercito."
+
+ ACHIEVEMENT_mare_nostrum: "Mare Nostrum"
+ ACHIEVEMENT_DESC_mare_nostrum: "Conquista, come Impero Romano, tutte le località della costa Mediterranea e raggiungi 100 punti Latinitas."
+
+ ACHIEVEMENT_belisars_legacy: "L'Eredità di Belisar"
+ ACHIEVEMENT_DESC_belisars_legacy: "Come Bisanzio, ripristina i confini di Giustiniano e ricomponi lo Scisma."
+
+ # Byzantine/Balkans Standard Achievements
+ ACHIEVEMENT_stefans_dream: "Il Sogno di Stefan"
+ ACHIEVEMENT_DESC_stefans_dream: "Come Serbia, conquista Costantinopoli, raggiungi il grado di Impero e prendi il controllo dell'impero di Stefan Dušan."
+
+ ACHIEVEMENT_the_empire_strikes_back: "L'Impero Colpisce Ancora"
+ ACHIEVEMENT_DESC_the_empire_strikes_back: "Come Stato Frankokratia, costituisce l'Impero Latino."
+
+ ACHIEVEMENT_there_can_be_only_one: "Ce ne Può Essere Solo Uno"
+ ACHIEVEMENT_DESC_there_can_be_only_one: "O nel ruolo dell'imperatore del Sacro Romano Impero, che distrugge Bisanzio mentre controlla Costantinopoli, oppure nel ruolo di Bisanzio, che smantella il Sacro Romano Impero mentre controlla Aquisgrana."
+
+ ACHIEVEMENT_megalopolis: "Megalopoli"
+ ACHIEVEMENT_DESC_megalopolis: "Trasforma un insediamento rurale in una Megalopoli."
+
+ ACHIEVEMENT_the_great_great_wall: "La Grande Muraglia"
+ ACHIEVEMENT_DESC_the_great_great_wall: "Costruisci Mura Cittadine in ogni località lungo il percorso della Grande Muraglia."
+
+ ACHIEVEMENT_a_tale_of_two_cities: "Una Storia di Due Città"
+ ACHIEVEMENT_DESC_a_tale_of_two_cities: "Avere due Città nella stessa provincia, entrambe con il numero massimo di Diritti Urbani e senza che nessuna di esse condivida alcun Diritto Urbano con l'altra."
+ 
  ACHIEVEMENT_GROUP_very_easy_achievements: "Molto Facile"
  ACHIEVEMENT_GROUP_easy_achievements: "Facile"
  ACHIEVEMENT_GROUP_medium_achievements: "Medio"
  ACHIEVEMENT_GROUP_hard_achievements: "Difficile"
  ACHIEVEMENT_GROUP_very_hard_achievements: "Molto Difficile"
-
  PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Modalità Ironman\n[SelectLocalization(GameIsIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]"
  PLAY_BUTTON_ACHIEVEMENTS_TOOLTIP: "Achievements [SelectLocalization(CanGetAchievements, 'ACHIEVEMENTS_ENABLED_NO_HEADER', 'ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON')]"
 
  # Tooltips
+ 
  has_emerged_victorious_during_rise_of_ottomans_situation_tt: "Siamo emersi vittoriosi nella [situation|e] [ShowSituationName('rise_of_the_ottomans')] come Beylik più forte"
  had_timur_as_past_ruler_tt: "Uno dei nostri precedenti [rulers|e] è [GetCharacter('chg_timur_lame_borjigin').GetName]"
  hussites_won_hussite_wars_situation_tt: "[ShowReligionName('hussite')] è stato vittorioso nella [situation|e] [ShowSituationName('hussite_wars')]"

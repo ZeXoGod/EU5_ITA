@@ -40,8 +40,10 @@
  mlo_secret_council: "Consiglio Segreto"
  mlo_secret_council_desc: "Il Consiglio Segreto è un organo composto da persone di nobili origini. La sua giurisdizione comprende tutto il nostro dominio e spesso si scontra con l'agenda del sovrano. La maggior parte delle decisioni critiche prese da o per conto del sovrano sono spesso sottoposte all'esame del Consiglio Segreto."
  # Scotland
- scottish_shires_reform: "Shires [GetCountry('SCO').Custom('IT_ADJ_MP')]"
- scottish_shires_reform_desc: "Introdotto da [GetCharacter('sco_malcolm_iii').GetName], il sistema delle #italic shires#! divide [GetCountry('SCO').GetName] in contee amministrative, con ogni shire che ha una propria struttura."
+# scottish_shires_reform: "Shires [GetCountry('SCO').Custom('IT_ADJ_MP')]" #OLD
+ scottish_shires_reform: "Shires of $SCO$" #NEW
+# scottish_shires_reform_desc: "Introdotto da [GetCharacter('sco_malcolm_iii').GetName], il sistema delle #italic shires#! divide [GetCountry('SCO').GetName] in contee amministrative, con ogni shire che ha una propria struttura." #OLD
+ scottish_shires_reform_desc: "Introduced by [GetCharacter('sco_malcolm_iii').GetName], the shire system divides $SCO$ into administrative counties, with each shire having its own structure." #NEW
  # Republics
  merchant_republic: "Repubblica Mercantile"
  merchant_republic_desc: "Una repubblica fondata sui principi del commercio. Gli scambi commerciali sono il fattore più importante per le famiglie che governano queste repubbliche."
@@ -85,7 +87,12 @@
 
  primas_germaniae: "Primas Germaniae"
  primas_germaniae_plural: "Primas Germaniae"
- primas_germaniae_desc: "Deteniamo il prestigioso titolo di Primas Germaniae, che ci distingue come l'arcivescovo più importante del [GetUniqueInternationalOrganization('hre').GetName]."
+# primas_germaniae_desc: "Deteniamo il prestigioso titolo di Primas Germaniae, che ci distingue come l'arcivescovo più importante del [GetUniqueInternationalOrganization('hre').GetName]." #OLD
+ primas_germaniae_desc: "We hold the prestigious title of Primas Germaniae, distinguishing us as one of the most important ecclesiastical offices in the [GetUniqueInternationalOrganization('hre').GetName]." #NEW
+ town_specialization: "Tailored $game_concept_town_rights$" #NEW
+ town_specialization_desc: "Urban settlements are the muscles that power our country. Their sprawl attracts the majority of our population, and their bustling economies provide both opportunities and benefits for all. If we provide them with the appropriate laws, regulations, and privileges, we can ensure that they are most beneficial for us, each according to their situation and needs." #NEW
+ capitalistic_cities: "Fueling Economies" #NEW
+ capitalistic_cities_desc: "Our economy is based on the industries of our towns and cities. Providing them with the adequate regulations will ensure that we maintain those industries functioning at their best performance, reducing costs and maximizing benefits." #NEW
 
  #
  # Common
@@ -212,12 +219,15 @@
  state_sponsored_markets_desc: "È necessario creare degli hub commerciali con il sostegno dello Stato per incoraggiare il commercio. Il sostegno del Governo garantirà prezzi equi e crescita economica."
  coastal_city_or_town_gets_tt: "Ogni nostra [Concept('towns_and_cities', 'Località Urbana')|e] [coastal|e] posseduta otterrà:"
  every_coastal_location_gains_tt: "Ogni nostra [location|e] [coastal|e] otterrà:"
+ plutocratic_monarchy: "Plutocratic Monarchy" #NEW
+ plutocratic_monarchy_desc: "A Monarchy that manages its finances by relying on the merchant class and securing the flow of commerce." #NEW
 
  #
  # Specific ones
  #
  alsno_stadga: "Alsnö Stadga"
- alsno_stadga_desc: "Questo insieme di regole è stato stabilito da [GetCharacter('swe_magnus_ladulas').GetName] nel 1280 ad Alsnö Hus per regolamentare e formalizzare i benefici della [ShowEstateTypeName('nobles_estate')], proteggendo al contempo i [ShowPopTypeName('peasants')] dalle loro imprese. Questo è il motivo per cui fu soprannominato “Ladulås”, ovvero “Barn-Lock” in Inglese, dalla gente comune."
+# alsno_stadga_desc: "Questo insieme di regole è stato stabilito da [GetCharacter('swe_magnus_ladulas').GetName] nel 1280 ad Alsnö Hus per regolamentare e formalizzare i benefici della [ShowEstateTypeName('nobles_estate')], proteggendo al contempo i [ShowPopTypeName('peasants')] dalle loro imprese. Questo è il motivo per cui fu soprannominato “Ladulås”, ovvero “Barn-Lock” in Inglese, dalla gente comune." #OLD
+ alsno_stadga_desc: "This set of rules was set up by [GetCharacter('swe_magnus_ladulas').GetName] in 1280 at Alsnö Hus to regulate and formalize the benefits of the [ShowEstateTypeName('nobles_estate')], while also protecting the [ShowPopTypeName('peasants')] from their exploits. This is why he was nicknamed 'Ladulås', or 'Barn-Lock' in English by the commoners." #NEW
  papacy_reform: "Santa Sede"
  papacy_reform_desc: "La Santa Sede è la giurisdizione del Vescovo di [ShowLocationName('rome')], il #italic Pontifex Maximus#!, capo della Chiesa [ShowReligionAdjective('catholic')], conosciuto come il [GetCountry('PAP').GetGovernment.GetRulerTitle]."
  kingdom_of_god_reform: "Regno di Dio"
@@ -361,9 +371,9 @@
  ancient_french_taxation_desc: "Storicamente, le tasse sono state imposte e riscosse solo nei momenti di necessità, non con un sistema ricorrente."
  fra_ancient_french_taxation_removal_conditions: "Può essere rimosso manualmente raggiungendo#G +50.00#! [ShowSocietyDirectionName('centralization')|l] o attraverso [dynamic_historical_event|e] $flavor_fra.1.title$."
  
- basic_timariot_system: "Sistema delle Timar"
+ basic_timariot_system: "Sistema dei Timar"
  basic_timariot_system_desc: "Un sistema di proprietà terriere feudali incentrato sulla costruzione di una formidabile forza di cavalleria. Ai nostri cavalleggeri Sipâhi verranno assegnate delle concessioni terriere e saranno obbligati a fornire forze di cavalleria proporzionali alle dimensioni dei loro possedimenti."
- expanded_timariot_system: "Sistema delle Timar Ampliato"
+ expanded_timariot_system: "Sistema dei Timar Ampliato"
  expanded_timariot_system_desc: "Il sistema con i Sipâhi proprietari terrieri che forniscono la maggior parte della nostra cavalleria è stato ampliato, assegnando loro vasti tratti di terra conquistata su cui continuare ad accumulare cavalleria."
  legacy_of_osman: "Eredità di Osman"
  legacy_of_osman_desc: "L'Eredità di Osman rappresenta il diritto divino ad espandersi sotto l'autorità centrale religiosa e politica del nostro leader supremo. Invochiamo l'Eredità per giustificare le nostre continue conquiste, mantenere la legittimità dinastica in diversi possedimenti e creare un impero in cui i popoli conquistati non siano semplicemente sottomessi, ma completamente assorbiti. Il mancato rispetto dell'Eredità può essere visto come un tradimento delle tradizioni del nostro popolo."
@@ -540,9 +550,11 @@
  taluqdar_nobility_desc: "I taluqdar, o aristocratici dinastici, possiedono vasti terreni, riscuotono le tasse e svolgono ruoli significativi nella nostra amministrazione ed economia. In quanto proprietari terrieri con un potere e un'influenza considerevoli a corte, i Taluqdar sono il nostro equivalente dell'alta nobiltà di altre regioni."
  mhr_ashta_pradhan: "Ashta Pradhan"
  mhr_ashta_pradhan_desc: "$mhr_ashta_pradhan$ - #italic Consiglio dei Ministri Moderno#! - è il sistema di delega ministeriale utilizzato dal popolo [ShowLanguageName('marathi_language')]. Il Consiglio ha il compito di guidare l'amministrazione dello Stato, supervisionando le questioni militari, finanziarie, diplomatiche e religiose."
- theme_system: "Sistema dei Theme"
- theme_system_desc: "Un sistema di sedi provinciali ed eserciti, guidati da uno strategos con la duplice responsabilità di proteggere gli abitanti del luogo e di stabilire l'autorità per volere dell'[GetCountry('BYZ').GetFlavorRank]. Questo sistema sostituì l'amministrazione provinciale di Diocleziano e da allora ha servito il nostro popolo."
- byz_theme_system_not_obselete_tt: "Il $theme_system$ non è stato reso obsoleto da un [event|e]"
+# theme_system: "Sistema dei Theme" #OLD
+ theme_system: "Decayed Theme System" #NEW
+# theme_system_desc: "Un sistema di sedi provinciali ed eserciti, guidati da uno strategos con la duplice responsabilità di proteggere gli abitanti del luogo e di stabilire l'autorità per volere dell'[GetCountry('BYZ').GetFlavorRank]. Questo sistema sostituì l'amministrazione provinciale di Diocleziano e da allora ha servito il nostro popolo." #OLD
+ theme_system_desc: "A system of provincial headquarters and armies, spearheaded by a strategos with dual responsibilities to protect the locals and establish authority at the behest of the [GetCountry('BYZ').GetFlavorRank]. This system replaced the provincial administration of Diocletian and has served our people ever since. Yet time has worn it thin, it endures still, a relic of ages long past." #NEW
+# byz_theme_system_not_obselete_tt: "Il $theme_system$ non è stato reso obsoleto da un [event|e]" #DELETE
  kritai_katholikoi: "Kritai Katholikoi"
  kritai_katholikoi_desc: "I Kritai Katholikoi, colloquialmente chiamati #italic Giudici Universali dei Romani#!, sono arrivati a rappresentare l'apice dell'autorità legale [GetCountry('BYZ').Custom('IT_ADJ_FS')], nati dalla riforma di [GetCharacter('byz_andronikos_ii_palaiologos').GetName] e inizialmente composti da dodici giudici di estrazione sia laica che ecclesiastica. In seguito ridotto a un collegio di quattro persone, questo illustre tribunale detiene un'autorità senza pari e senza possibilità di appello."
  speransky_liberalization_reform: "Riforma Liberale di Speransky"
@@ -568,10 +580,11 @@
 
  kritai_katholikoi_reformed: "Kritai Katholikoi Riformato"
  kritai_katholikoi_reformed_desc: "Sebbene il sistema giudiziario creato da [GetCharacter('byz_andronikos_ii_palaiologos').GetName] abbia visto un successo iniziale, c'erano ancora problemi interni, che i giudici sfruttavano per perseguire i loro interessi. Con le riforme di questa Corte Suprema, i processi legali esistenti sono stati snelliti, garantendo al contempo l'assenza di corruzione tra i giudici."
+ is_currently_in_disaster_for_byz_tt: "[ShowDisasterName('fate_of_the_phoenix')] is currently active or we completed it victoriously" #NEW
 
  modern_imperial_army: "Esercito Imperiale Moderno"
  modern_imperial_army_desc: "Il vecchio $theme_system$ di [GetCountry('BYZ').GetName] si è rivelato difettoso, rafforzando l'autorità dei governatori e dei generali piuttosto che del sovrano. Di conseguenza, è stato costituito un nuovo Esercito Imperiale, dove essere un soldato è una professione piuttosto che un dovere."
- byz_reformed_imperial_army_tt: "È stato costituito l'$modern_imperial_army$ attraverso un [event|e]"
+# byz_reformed_imperial_army_tt: "È stato costituito l'$modern_imperial_army$ attraverso un [event|e]" #DELETE
 
  #Oman
  omani_overseas_ambitions_reform: "Ambizioni d'Oltremare"
@@ -712,3 +725,20 @@
  #Malacca Formable 
  shahbandariyya_reform: "Shāhbandariyya"
  shahbandariyya_reform_desc: "$shahbandar_desc$"
+ partitio_reform: "Partitio Terrarum Imperii Romaniae" #NEW
+ partitio_reform_desc: "After the Fourth Crusade, the Eastern Roman Empire was partitioned among several Western European families, who then founded a series of Crusader Principalities. While these polities existed, they were a constant threat to the Empire." #NEW
+ ach_heirs_of_the_latin_empire: "Titular Rulers of the Latin Empire" #NEW
+ ach_heirs_of_the_latin_empire_desc: "Although we have since lost control of [ShowLocationName('constantinople')], the seat of power for the [GetCountry('LAT').GetLongName], our claim to it still remains as strong as ever." #NEW
+ ath_rule_of_the_catalans: "Dominance of the [ShowCultureNameWithNoTooltip('catalan')] Company" #NEW
+ ath_rule_of_the_catalans_desc: "Since the seizure of the [GetCountry('ATH').GetLongNameWithNoTooltip], the [ShowCultureNameWithNoTooltip('catalan')] Company has projected considerable military influence over [ShowScriptedGeographyName('greece_geography')]." #NEW
+ ath_catalan_company_expelled_or_stability: "Can be manually removed if above #G +60.00#! [stability|e] or directly through certain [GetCountry('ATH').GetAdjectiveWithNoTooltip] [dynamic_historical_events|e]." #NEW
+ lat_papal_restoration_claimant: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] Backing to Retake [ShowLocationNameWithNoTooltip('constantinople')]" #NEW
+ lat_papal_restoration_claimant_desc: "Although the [GetCountry('LAT').GetLongName] has since been destroyed by the [GetCountry('BYZ').GetLongName], recent crusader state campaigns in [ShowScriptedGeographyName('greece_geography')] have encouraged [GetCountry('PAP').GetAdjectiveWithNoTooltip] sponsorship to restore the empire." #NEW
+ lat_restored_rule_of_the_latins: "Restored Rule of the Latins" #NEW
+ lat_restored_rule_of_the_latins_desc: "Once thought to be lost forever to a resurgent [GetCountry('BYZ').GetName], the [GetCountry('LAT').GetLongNameWithNoTooltip] has at long last been restored in [ShowLocationName('constantinople')], and once against serves as a bastion of [ShowReligionAdjective('catholic')] rule throughout [ShowScriptedGeographyName('greece_geography')]." #NEW
+ mass_levy_system: "Mass Levy System" #NEW
+ mass_levy_system_desc: "By instituting a system of mass conscription, we can draw upon the full population of our realm for military service. This broad mobilization swells our armies with common soldiers, embracing the philosophy that victory comes through numbers rather than individual skill." #NEW
+ free_market_charters: "Free Market Charters" #NEW
+ free_market_charters_desc: "By granting charters that guarantee free trade and protect merchant interests, we encourage commerce to flourish across our realm. Wealthy trading classes gain political influence, shifting power away from the traditional nobility toward those who command capital." #NEW
+ representative_assemblies: "Representative Assemblies" #NEW
+ representative_assemblies_desc: "By establishing representative assemblies that give voice to the common people, we decentralize authority and foster broader political participation. Local governance becomes more responsive, and individual liberties are enshrined as a cornerstone of our political order." #NEW

@@ -6,16 +6,19 @@
  burghers_estate: "Borghesia"
  burghers_estate_desc: "Questo ceto rappresenta la classe commerciale del nostro paese, inclusi artigiani, mercanti e commercianti. La loro responsabilità tradizionale è mantenere e sviluppare l'economia. Pertanto, vengono solitamente concessi loro diritti e privilegi speciali per facilitare il commercio e gli scambi.\n$estate_common_crown_ending$"
  peasants_estate: "Popolani"
- peasants_estate_desc: "Questo è il ceto che rappresenta la popolazione di livello più basso della società. Spesso una classe a cui viene dato poco o nessun prestigio o potere, la gente comune costituisce tuttavia le fondamenta del nostro paese e può diventare sorprendentemente potente quando unita."
+# peasants_estate_desc: "Questo è il ceto che rappresenta la popolazione di livello più basso della società. Spesso una classe a cui viene dato poco o nessun prestigio o potere, la gente comune costituisce tuttavia le fondamenta del nostro paese e può diventare sorprendentemente potente quando unita." #OLD
+ peasants_estate_desc: "Questo è il ceto che rappresenta la popolazione al livello più basso della società. Spesso una classe a cui viene concesso poco o nessun prestigio o potere, la gente comune costituisce tuttavia le fondamenta del nostro paese e può diventare sorprendentemente potente quando è unita.\n$estate_common_crown_ending$" 
  crown_estate: "Corona"
- crown_estate_desc: "Questo è il cuore e la fonte dell'autorità per tutto il nostro regno e governo, detenuto esclusivamente da coloro che sono al vertice e non concesso agli altri stati.\nIn generale, è meglio che lo stato governativo detenga quanto più potere possibile."
+# crown_estate_desc: "Questo è il cuore e la fonte dell'autorità per tutto il nostro regno e governo, detenuto esclusivamente da coloro che sono al vertice e non concesso agli altri stati.\nIn generale, è meglio che lo stato governativo detenga quanto più potere possibile." #OLD
+ crown_estate_desc: "Questo è il cuore e la fonte di autorità per tutto il nostro reame e governo, detenuto soltanto da coloro che sono al vertice e non concesso agli altri ceti.\n$estate_common_crown_ending$" 
  dhimmi_estate: "Dhimmi"
  dhimmi_estate_desc: "Questo ceto rappresenta le minoranze religiose nel nostro [country|e] che sono considerate 'Gente del Libro' nell'[ShowReligionGroupName('muslim')]. Questo di solito si riferisce alla comunità [ShowReligionGroupAdjective('christian')] e [ShowReligionAdjective('judaism')], ma a volte viene esteso ad altre [religions|e]. Il loro status e i loro privilegi possono variare notevolmente tra i diversi paesi, così come la loro organizzazione e il loro numero.\n$estate_common_crown_ending$"
  tribes_estate: "Tribù"
  tribes_estate_desc: "Questo ceto rappresenta le diverse tribù e clan presenti nel nostro [country|e]. Sono tradizionalmente organizzati in gruppi di lignaggio e parentela e dispersi principalmente nelle zone rurali. Questi diversi gruppi vivono e lavorano in modi molto diversi, e la loro distanza e relativa indipendenza dai principali centri di potere li rende difficili da governare. Le loro usanze uniche tipicamente danno loro anche una reputazione di guerrieri temibili e imprevedibili.\n$estate_common_crown_ending$"
  cossacks_estate: "Cosacchi"
  cossacks_estate_desc: "Questo ceto rappresenta diversi gruppi all'interno della popolazione [ShowCultureName('cossack_culture')] presenti nel nostro [country|e]. Organizzati in gruppi semi-nomadi e semi-militarizzati, vivono ai margini di altre nazioni, ma possono essere convinti a servirle fedelmente e essere di grande utilità se forniti degli incentivi appropriati.\n$estate_common_crown_ending$"
- estate_common_crown_ending: "In generale, è meglio che il ceto governativo abbia più potere degli altri Ceti."
+# estate_common_crown_ending: "In generale, è meglio che il ceto governativo abbia più potere degli altri Ceti." #OLD
+ estate_common_crown_ending: "In generale, è meglio che il ceto $crown_estate$ abbia più potere degli altri ceti." 
  
  
  crown_estate_holy_order: "Capitolo"
@@ -24,6 +27,9 @@
  crown_estate_derbfine: "Derbfine"
  crown_estate_clan: "Clan"
  crown_estate_kronan: "Kronan"
+ crown_estate_kruna: "Kruna" 
+ crown_estate_korona: "Korona" 
+ crown_estate_krona: "Krona" 
  
  clergy_estate_holy_order: "Fratres"
  clergy_estate_prest: "Prästeståndet"
@@ -36,6 +42,7 @@
  clergy_estate_kahenat: "Kahenat"
  clergy_estate_teopixque: "Teōpixqueh"
  clergy_estate_kler: "Kler"
+ clergy_estate_kleriki: "Kleriki" 
  clergy_estate_brahmin: "Brāhmaṇa"
  clergy_estate_granthis: "Granthis"
  clergy_estate_bateren: "Bateren"
@@ -76,6 +83,8 @@
  nobles_estate_makuannent: "Makuannent"
  nobles_estate_pipiltin: "Pīpiltin"
  nobles_estate_vlastela: "Vlastela"
+ nobles_estate_bolyari: "Bolyari" 
+ nobles_estate_plemstvo: "Plemstvo" 
  nobles_estate_yangban: "Yangban"
  nobles_estate_amir: "'Umarā'"
  nobles_estate_kshatriya: "Kṣatriya"
@@ -101,6 +110,8 @@
  burghers_estate_naggade: "Naggade"
  burghers_estate_pochteca: "Pōchtēcah"
  burghers_estate_mestanstvo: "Meštanstvo"
+ burghers_estate_grazhdani: "Grazhdani" 
+ burghers_estate_mescanstvo: "Meščanstvo" 
  burghers_estate_jungin: "Jungin"
  burghers_estate_vaishya: "Vaiśya"
  burghers_estate_chounin: "Chōnin"
@@ -120,6 +131,8 @@
  peasants_estate_gebbar: "Gebbar"
  peasants_estate_macehualtin: "Mācēhualtin"
  peasants_estate_sebri: "Sebri"
+ peasants_estate_selyani: "Selyani " 
+ peasants_estate_sleherniki: "Sleherniki" 
  peasants_estate_sangmin: "Sangmin"
  peasants_estate_sudra: "Śūdra"
  peasants_estate_noumin: "Nōmin"
@@ -178,6 +191,8 @@
  clerical_advisory_council_desc: "Abbiamo deciso di formare un consiglio di consulenti, composto interamente da santi del [ShowEstateTypeName('clergy_estate')]. Questo li renderà più influenti, ma anche più compiacenti, poiché potranno esprimere le loro preoccupazioni direttamente a noi e vedere i loro interessi soddisfatti."
  clergy_powerful_dioceses: "Diocesi Potenti"
  clergy_powerful_dioceses_desc: "L'amministrazione del nostro territorio è nelle mani dello stato. Tuttavia, l'organizzazione del [ShowEstateTypeName('clergy_estate')] non segue i nostri sistemi provinciali. Invece, essi si organizzano in Diocesi, che hanno un potere e un'influenza significativi sugli affari interni del nostro paese."
+ nobles_offensive_military_doctrine: "Dottrina militare offensiva" 
+ nobles_offensive_military_doctrine_desc: "I nostri [ShowEstateTypeName('nobles_estate')] propendono per tattiche militari aggressive, aderendo all'idea che una buona offesa sia la miglior difesa. I loro comandanti e soldati sono predisposti ad azioni audaci e decisive, cercando la rapida distruzione dei nostri nemici." 
  
  nobles_land_rights: "Diritti Fondiari"
  nobles_land_rights_desc: "Questo rappresenta i privilegi che la nostra [ShowEstateTypeName('nobles_estate')] ha sulle terre che governa e sulle persone che le abitano. Tra questi diritti, la $nobles_estate$ può solitamente tassare i [ShowEstateTypeName('peasants_estate')] che vivono sulle loro terre, arruolarli per formare leve o amministrare la giustizia da soli. Questi possedimenti sono solitamente ereditari."
@@ -205,8 +220,10 @@
  bashtinas_and_pronijas_grants_desc: "Il sistema di concessioni terriere per le nostre élite è ispirato al sistema bizantino delle #italic Pronoias#!. Concede loro una vasta gamma di privilegi e obblighi per conto dei loro domini quando si tratta di amministrare le terre loro concesse in affitto dal governo."
  zupa_districts: "Distretti Župa"
  zupa_districts_desc: "La compartimentazione e la divisione della nostra società sono dettagliate nei vari quadri giuridici che circondano il nostro ramo amministrativo. L'aspetto più importante della nostra società e burocrazia è la divisione delle nostre province in distretti Župa, finalizzata a migliorare la gestione degli affari locali."
- vlastele_krayishnik: "Vlastele Krayishnik"
- vlastele_krayishnik_desc: "Le nostre terre di confine devono essere custodite in sicurezza in ogni momento. A tal fine, il sistema delle #italic krayine#! divide le nostre frontiere in distretti ben amministrati sotto il comando di signori locali, noti come #italic Vlastele Krayishnik#!, che sono incaricati di mantenere e proteggere il popolo delle loro province."
+# vlastele_krayishnik: "Vlastele Krayishnik" #OLD
+ vlastele_krayishnik: "Krajiška Vlastela" 
+# vlastele_krayishnik_desc: "Le nostre terre di confine devono essere custodite in sicurezza in ogni momento. A tal fine, il sistema delle #italic krayine#! divide le nostre frontiere in distretti ben amministrati sotto il comando di signori locali, noti come #italic Vlastele Krayishnik#!, che sono incaricati di mantenere e proteggere il popolo delle loro province." #OLD
+ vlastele_krayishnik_desc: "Le nostre terre di confine devono essere sorvegliate in sicurezza in ogni momento. A tal fine, il sistema delle #italic krajine#! divide le nostre frontiere in distretti ben amministrati sotto il comando di signori locali, noti come #italic Krajiška Vlastela#!, incaricati di mantenere e proteggere il popolo delle loro province." 
  feudal_mercenary_contracts: "Contratti Mercenari Feudali"
  feudal_mercenary_contracts_desc: "Gli eserciti arruolati dal nostro popolo spesso lasciano a desiderare. Per proteggere il nostro popolo e superare i nostri rivali, dobbiamo fare affidamento su mercenari stranieri, i cui contratti saranno gestiti dai membri d'élite della nostra società."
 
@@ -230,7 +247,8 @@
  coign_and_livery_privilege_desc: "Questo sistema, noto anche come #italic bonnacht#!, richiede che i nostri capi minori debbano alloggiare i nostri leali soldati nelle loro proprietà a proprie spese."
  peasants_allowed_weapons_privilege: "Milizie Comuni"
  peasants_allowed_weapons_privilege_desc: "Il popolo comune è autorizzato a tenere le proprie armi, che poi devono usare quando chiamati per il servizio di leva. Ciò aumenta la domanda di armi sul mercato."
- gradozadanje_and_gradobljudenlje_rights: "Gradozadanje e Gradobljudenlje"
+# gradozadanje_and_gradobljudenlje_rights: "Gradozadanje e Gradobljudenlje" #OLD
+ gradozadanje_and_gradobljudenlje_rights: "Gradozidanije e Gradobljudenije" 
  gradozadanje_and_gradobljudenlje_rights_desc: "Il nostro dominio ospita molte fortificazioni e roccaforti formidabili. Le spese di manutenzione e la guarnigione di questi presidi sono state affidate alla popolazione locale e ai cittadini."
  peasants_autonomous_villages: "Villaggi Autonomi"
  peasants_autonomous_villages_desc: "Negli insediamenti rurali del nostro stato, c'è un detto: 'Le leggi del sovrano finiscono al cancello del villaggio'. Le persone nei nostri insediamenti si organizzano indipendentemente dall'autorità centrale di questo paese."
@@ -275,6 +293,10 @@
 
  land_owning_farmers: "Contadini Proprietari Terrieri"
  land_owning_farmers_desc: "I contadini [GetCountry('SWE').Custom('IT_ADJ_MP')] detengono una posizione insolitamente forte rispetto ai loro pari in gran parte dell'[ShowContinentName('europe')] feudale. Posseggono la loro terra direttamente, pagano le tasse direttamente alla corona e spesso hanno voce nelle assemblee locali, dando loro un certo grado di autonomia e protezione legale. Questi agricoltori non erano servi; molti sono armati e servono nelle leve. I loro diritti sono radicati nell'antico diritto consuetudinario e la loro relativa indipendenza è un elemento fondamentale della società rurale svedese."
+ lat_compromise_with_greek_populace: "Compromesso con il popolo [ShowCultureNameWithNoTooltip('greek_culture')]" 
+ lat_compromise_with_greek_populace_desc: "Sebbene l'élite crociata dominante possa ancora esercitare grande influenza, alcune delle famiglie [ShowCultureName('greek_culture')] rimaste esercitano ancora un notevole potere proprio. Trovare un compromesso tra l'élite dominante e quella un tempo potente sarebbe il modo migliore per costruire un governo stabile in ShowScriptedGeographyName('greece_geography')]." 
+ lat_latin_crusader_elite: "Élite crociata" 
+ lat_latin_crusader_elite_desc: "Sebbene la caduta dell'impero latino possa aver frammentato i $nobles_estate$ crociati, essi mantengono ancora una forza potente in tutta [ShowScriptedGeographyName('greece_geography')] che non può essere ignorata." 
  
 #Aragon      
  general_privilege: "Privilegio Generale di [GetCountry('ARA').GetNameWithNoTooltip]"
@@ -576,7 +598,8 @@
  right_to_inherit_desc: "La [ShowEstateTypeName('nobles_estate')] [ShowCultureGroupName('german_group')] mantiene la lunga tradizione di dividere le terre e i titoli del padre tra tutti i figli, assicurando la pace tra fratelli ed evitando guerre non necessarie."
 
  fund_karimi: "Finanziare i Mercanti Karimi"
- fund_karimi_desc: "Finanziare la potente [ShowEstateTypeName('burghers_estate')] conosciuta come i Karimi, che sono responsabili del commercio delle [ShowGoodsName('spices')] così come di altre merci preziose, è essenziale per la nostra continua prosperità."
+# fund_karimi_desc: "Finanziare la potente [ShowEstateTypeName('burghers_estate')] conosciuta come i Karimi, che sono responsabili del commercio delle [ShowGoodsName('spices')] così come di altre merci preziose, è essenziale per la nostra continua prosperità." #OLD
+ fund_karimi_desc: "Finanziare i potenti [ShowEstateTypeName('burghers_estate')] noti come Karimi, responsabili del commercio delle spezie e di altre merci preziose, è essenziale per la nostra prosperità continua." 
 
  waqf_payments: "Pagamenti Waqf"
  waqf_payments_desc: "Per dimostrare la nostra pietà e dedizione religiosa, concederemo pagamenti #italic waqf#! come doti caritatevoli, che saranno utilizzati per finanziare madrase, ospedali e moschee, oltre che per aiutare i meno fortunati."
@@ -603,7 +626,7 @@
  ius_teutonicum_desc: "Dai tempi delle marche orientali dell'Impero Carolingio, la popolazione [ShowCultureGroupName('german_group')] si è espansa e stabilita più a est. Noto come #italic Ostsiedlung#!, questo afflusso di coloni tedeschi è spesso incoraggiato dai governanti locali per popolare aree scarsamente popolate. Questi coloni sono soggetti a un tipo speciale di legge, lo #italic $ius_teutonicum$#!, che offre loro privilegi speciali come esenzioni fiscali e il diritto di stabilire città autonome."
 
  kormlenije: "Kormlenije"
- kormlenije_desc: "In [GetCountry('RUS').GetName], il Sistema Kormlenije è un meccanismo per soddisfare le esigenze finanziarie e materiali della [ShowEstateTypeName('nobles_estate')], stabilendo una dipendenza finanziaria tra le élite. Questa dipendenza, a sua volta, gioca un ruolo cruciale nel garantire la loro incrollabile lealtà."
+ kormlenije_desc: "Il Sistema Kormlenije è un meccanismo per soddisfare le esigenze finanziarie e materiali della [ShowEstateTypeName('nobles_estate')] russa, stabilendo una dipendenza finanziaria tra le élite. Questa dipendenza, a sua volta, gioca un ruolo cruciale nel garantire la loro incrollabile lealtà."
 
  haudenosaunee_labor_division: "Divisione del Lavoro Haudenosaunee"
  haudenosaunee_labor_division_desc: "Il nostro popolo ha ruoli chiaramente definiti all'interno delle loro comunità. I compiti sono distribuiti e assegnati per il beneficio collettivo del gruppo, con coloro che condividono gli stessi compiti che lavorano insieme. Uomini e donne adempiono ruoli complementari attraverso i rispettivi incarichi, creando una divisione del lavoro olistica."
@@ -695,6 +718,7 @@
  scottish_clans_desc: "Il popolo di [GetCountry('SCO').GetName] è stato tradizionalmente organizzato in più clan, ciascuno unito sia in termini di parentela che di ubicazione geografica, e che deve lealtà al proprio capoclan. I raduni dei clan e le interrelazioni tra di loro sono ciò che guida la politica [GetCountry('SCO').GetAdjective]."
  autonomous_scottish_clans: "Clan Scozzesi Autonomi"
  autonomous_scottish_clans_desc: "$scottish_clans_desc$"
+ gaelic_clans_pop_assignment_tt: "I pops di lingua [ShowLanguageName('gaelic_language')] del gruppo culturale [ShowCultureGroupName('celtic_group')] sono assegnati a [ShowEstateTypeName('tribes_estate')]" 
  tribes_scotland_gaelic_heritage: "Eredità [ShowCultureGroupNameWithNoTooltip('scottish_group')] Unificata"
  tribes_scotland_gaelic_heritage_desc: "Per generazioni, i clan delle Highland rurali settentrionali hanno mantenuto la loro identità [ShowLanguageName('gaelic_language')], mentre i clan delle Lowland hanno in gran parte sviluppato la propria cultura [ShowCultureGroupName('scottish_group')]. Nonostante le pratiche diverse, i clan delle Highland e delle Lowland metteranno comunque da parte le loro differenze per combattere gli avversari stranieri che minacciano la [GetCountry('SCO').GetName]."
  autonomous_tribes_scotland_gaelic_heritage: "$tribes_scotland_gaelic_heritage$ Autonomo"
@@ -710,7 +734,8 @@
 
 # France 
  villes_franches: "Villes Franches"
- villes_franches_desc: "Diverse delle nostre città di mercato sono cresciute enormemente di dimensione, durante gli ultimi decenni. Come tale, hanno sviluppato un livello di autonomia, trasformandosi in qualcosa di simile a città libere e inclini verso un approccio decentralizzato al governo."
+# villes_franches_desc: "Diverse delle nostre città di mercato sono cresciute enormemente di dimensione, durante gli ultimi decenni. Come tale, hanno sviluppato un livello di autonomia, trasformandosi in qualcosa di simile a città libere e inclini verso un approccio decentralizzato al governo." #OLD
+ villes_franches_desc: "Diverse delle nostre città mercato hanno conosciuto una crescita considerevole negli ultimi decenni. Di conseguenza, sono diventate simboli dell'espansione del potere della Corona in tutto il regno, in opposizione ai signori feudali che dominano le campagne." 
 
  residence_in_versailles: "Residenza a Versailles"
  residence_in_versailles_desc: "La famiglia [GetCountry('FRA').GetGovernment.GetAdjective] ha esteso un'offerta di residenza per i membri delle dinastie prominenti della [ShowEstateTypeName('nobles_estate')] di vivere nel palazzo di Versailles."
@@ -762,7 +787,7 @@
  consolidated_corruption_of_the_clergy: "Corruzione Consolidata della Fede"
  consolidated_corruption_of_the_clergy_desc: "La sfortunata realtà che i nostri leader religiosi abbiano voce in capitolo sulle nostre politiche interne è solo un effetto collaterale degli altri accordi corrotti che ci hanno estorto sotto la minaccia della scomunica."
  noble_sponsored_navy: "Marina Nobiliare"
- noble_sponsored_navy_desc: "La nostra marina è mantenuta e controllata dalla [ShowEstateTypeName('nobles_estate')]. Grazie ai loro contributi finanziari, saremo in grado di sollevare una potente flotta, sebbene in cambio di permettere ai $nobles_estate$ di avere più influenza sugli affari navali."
+ noble_sponsored_navy_desc: "La nostra marina è mantenuta e controllata dalla [ShowEstateTypeName('nobles_estate')]. Grazie ai loro contributi finanziari, saremo in grado di sollevare una potente flotta, sebbene in cambio di permettere alla $nobles_estate$ di avere più influenza sugli affari navali."
  magdeburg_rights: "Diritti di [ShowLocationNameWithNoTooltip('magdeburg')]"
  magdeburg_rights_desc: "Una serie di privilegi originariamente redatti usando il diritto $FLA_ADJ$, questo quadro legale si è diffuso attraverso l'[ShowContinentName('europe')] centrale attraverso un afflusso di immigrati di cultura [ShowCultureGroupName('german_group')]. Mirato a coltivare le libertà del singolo cittadino, questi diritti servono a garantire e regolamentare l'autonomia dell'amministrazione locale."
  novi_fori: "Novi Fori"
@@ -831,6 +856,8 @@
 
  ira_clerical_aristocracy: "Aristocrazia Clericale"
  ira_clerical_aristocracy_desc: "Un'unione tra i proprietari terrieri facoltosi e il [ShowEstateTypeName('clergy_estate')], in cui la proprietà legale della terra viene trasferita al $clergy_estate$ per assicurare che tale proprietà non possa mai essere confiscata dalla nazione."
+ lat_protector_of_the_constantinople_patriarchate: "Protettore del Patriarcato di [ShowLocationNameWithNoTooltip('constantinople')]" 
+ lat_protector_of_the_constantinople_patriarchate_desc: "Il ritorno dei Crociati a [ShowLocationName('constantinople')] ha visto il Patriarcato restaurato ancora una volta. Con una presenza [ShowReligionAdjective('catholic')] rafforzata a [ShowLocationNameWithNoTooltip('constantinople')], il Patriarcato servirà ancora una volta da simbolo del dominio [ShowReligionAdjectiveWithNoTooltip('catholic')] in [ShowScriptedGeographyName('greece_geography')]." 
  
 #Mamluks                                     
  mam_muhtasibs: "Ispettori Muḥtasib"

@@ -8,6 +8,7 @@
  expand_rgo_hunting: "Espandere la Caccia"
  expand_rgo_forestry: "Espandere la Silvicoltura"
  expand_rgo_gathering: "Espandere la Raccolta"
+ expand_aqueduct_system: "Espandere i Sistemi di Acquedotti"
  rgo_mining: "Miniere"
  rgo_farming: "Coltivazioni"
  rgo_forestry: "Silvicoltura"
@@ -300,6 +301,7 @@
  maintain_railroad_demand: "Mantenimento [ShowRoadTypeNameWithNoTooltip('railroad')]"
  build_town_demand: "Costruire Borgo"
  build_city_demand: "Concessione Diritti di Città"
+ build_megalopolis_demand: "Costruire Megalopoli"
  embrace_institution: "Adottare Istituzioni"
  ship_maintenance: "Mantenimento Nave"
  ship_construction: "Costruzione Nave"
@@ -377,6 +379,12 @@
  paper_mill_maintenance: "Cartiere"
  paper_wood_pulp_maintenance: "Carta di Pasta di Legno"
  qalat_al_mashwar_maintenance: "Mantenimento $qalat_al_mashwar$"
+ 
+ 
+ early_council_hall_maintenance: "Antiche Sale del Consiglio"
+ council_hall_maintenance: "Sale del Consiglio"
+ modern_council_hall_maintenance: "Moderne Sale del Consiglio"
+ 
  
  bog_iron_maintenance: "Fonderie di Ferro di Palude"
  
@@ -509,7 +517,7 @@
  
  bronze_tools_guild_maintenance: "Fabbricanti di Utensili in Bronzo"
  stone_tools_guild_maintenance: "Fabbricanti di Utensili in Pietra"
- copper_tools_guild_maintenance: "Fabbricanti di Utensili in Rame" #NEW
+ copper_tools_guild_maintenance: "Fabbricanti di Utensili in Rame" 
  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
  cloth_manufactory_slot_0: "Metodo per i $wool_cloth_manufactory_maintenance$"
  wool_cloth_manufactory_maintenance: "Tessitori di Lana"
@@ -552,6 +560,8 @@
  ostrog_construction: "Costruzione Ostrog"
  ostrog_maintenance: "Ostrog"
  construction_center_maintenance: "Centri di Costruzione"
+ aqueduct_system_maintenance: "Sistemi di Acquedotti"
+ aqueduct_system_construction: "Costruzione Sistemi di Acquedotti"
  fortress_church_construction: "Costruzione Chiese Fortificate"
  fortress_granary_construction: "Costruzione Agadir"
  fortress_church_maintenance: "Chiese Fortificate"
@@ -570,6 +580,7 @@
  confucian_school_maintenance: "Scuole Confuciane"
  korean_gunnery_construction: "Costruzione Artiglierie Coreane"
  korean_gunnery_maintenance: "Artiglierie Coreane"
+ jurchen_barracks_maintenance: "$jurchen_barracks$"
  granary_maintenance: "Granai di Frumento"
  qullqa_maintenance: "Qullqa"
  char_coal_maintenance: "Produzione di Carbone"
@@ -632,6 +643,7 @@
  maize_beer_workshop_maintenance: "Laboratori di Birra di Mais"
  bavarian_beer_workshop_maintenance: "Laboratori di Birra Bavarese"
  honey_beer_workshop_maintenance: "Laboratori di Birra al Miele"
+ rice_beer_workshop_maintenance: "Laboratori di Birra di Riso"
  brewery_mill_maintenance: "Fabbriche di Birra"
  sugar_liquor_workshop_maintenance: "Laboratori di Liquori di Zucchero"
  rice_liquor_workshop_maintenance: "Laboratori di Liquori di Riso"
@@ -680,12 +692,14 @@
  slave_center_maintenance: "Centri per gli Schiavi"
  colony_construction: "Costruzione Insediamenti"
  simple_colony_construction: "Colonizzazione"
+ kilwan_shipwrights_maintenance: "Manutenzione Kilwan Shipwrights"
  colony_maintenance: "Insediamenti"
  missionary_construction: "Creazione Missioni"
  missionary_maintenance: "Missionari"
  fur_trading_post_maintenance: "Mantenimento Stazioni Commercio Pellicce"
  grant_privilege: "Concessione Privilegi"
  revoke_privilege: "Revoca Privilegi"
+ grant_town_rights: "Concessione Diritti Urbani"
  create_supply_depot: "Creazione Depositi di Rifornimenti"
  create_sea_exploration: "Preparazione Esplorazione Marina"
  create_land_exploration: "Preparazione Esplorazione Terrestre"
@@ -711,6 +725,8 @@
  funduq_maintenance: "Mantenimento Funduq"
  castle_construction: "Costruzione Castello"
  castle_maintenance: "Mantenimento Castello"
+ city_walls_maintenance: "$city_walls$ Maintenance"
+ city_walls_construction: "Costruzione $city_walls$"
  bank_construction: "Costruzione Banche"
  bank_maintenance: "Bisogni delle Banche"
  wissel_bank_maintenance: "Wisselbank"
@@ -726,7 +742,7 @@
  stone_quarry_maintenance: "Cave di Pietra"
  crude_quarry_maintenance: "Cave di Pietra Grezza"
  sand_pit_maintenance: "Cave di Sabbia"
- fiber_crops_farm_maintenance: "Fiber Crops Farms"
+ fiber_crops_farm_maintenance: "Fattorie Culture da Fibra"
  sheep_farm_maintenance: "Allevamenti di Pecore"
  clay_pit_maintenance: "Cave di Argilla"
  lumber_mill_maintenance: "Segherie"
@@ -738,10 +754,12 @@
  road_maintenance: "Mantenimento Strada"
  colonial_charter_maintenance: "Mantenimento Carta Coloniale"
  slave_rgo_demands: "Schiavi necessari per le [rgo|e]"
+ bureaucracy_maintenance: "Mantenimento [bureaucracy|e]"
  honey_brewery_maintenance: "Produttori di Braggot al Miele"
  honey_winery_maintenance: "Produttori di Idromele al Miele"
  maize_brewery_maintenance: "Birrifici di Mais"
  fruit_brewery_maintenance: "Produttori di Sidro di Frutta"
+ rice_brewery_maintenance: "Birrifici di Riso"
  rice_winery_maintenance: "Cantine di Vino di Riso"
  fruit_winery_maintenance: "Cantine di Vino di Frutta"
  rice_winery_manufactory_maintenance: "Cantine di Vino di Riso"
@@ -795,7 +813,7 @@
  jewelry_guild_slot_0: "[production_methods|e] Base:"
  gold_base: "Gioielli in Oro"
  silver_base: "Gioielli in Argento"
- copper_base: "Gioielli in Rame" #NEW
+ copper_base: "Gioielli in Rame" 
  jewelry_guild_slot_1: "Miglioramenti:"
  gems_enhancement: "Miglioramenti Pietre Preziose"
  ivory_enhancement: "Miglioramenti Avorio"
@@ -882,6 +900,8 @@
  sawmill_maintenance: "Segherie"
  local_smelters_maintenance: "Fonderie Locali"
  fruit_orchard_maintenance: "Frutteto"
+ hippodrome_construction: "Costruzione $hippodrome$"
+ merchant_guild_chapel_construction: "Costruzione $merchant_guild_chapel$"
  
  
 
@@ -969,6 +989,7 @@
  expensive_capital_administration_maintenance: "Edifici Amministrativi Costosi"
  endrun_academy_maintenance: "$enderun_academy$"
  moscow_artillery_yard_maintenance: "$moscow_artillery_yard$"
+ hippodrome_maintenance: "$hippodrome$"
  
  capital_administration_maintenance: "Edifici Amministrativi"
  royal_court_maintenance: "Corte Reale"
@@ -1028,6 +1049,8 @@
  ribat_maintenance: "Mantenimento $ribat$"
  rahdar_construction: "Costruzione $rahdar$"
  rahdar_maintenance: "Mantenimento $rahdar$"
+ fur_trim_guild_maintenance: "Fur Trims"
+ fur_trim_workshop_maintenance: "Fur Trims"
  ori_portuguese_quarters_maintenance_desc: "Quartieri dove gli europei possono riposarsi."
  peacock_throne_maintenance: "Mantenimento $peacock_throne$"
  mug_new_coinage: "Introduzione di Nuova Moneta"
@@ -1049,6 +1072,11 @@
  tur_turkish_delight: "Dolce Turco"
  cahokia_woodhenge_production_method: "Mantenimento $woodhenge_of_cahokia$"
  woodhenge_of_cahokia_construction: "Costruzione $woodhenge_of_cahokia$"
- local_governor_construction: "Costruzione $local_governor$" #NEW
- naval_governor_maintenance: "Mantenimento $naval_governor$" #NEW
- local_governor_maintenance: "Mantenimento $local_governor$" #NEW
+ local_governor_construction: "Costruzione $local_governor$" 
+ naval_governor_maintenance: "Mantenimento $naval_governor$" 
+ local_governor_maintenance: "Mantenimento $local_governor$" 
+ colonial_administration_requirements: "Amministrazione Coloniale"
+ build_hippodrome_price: "Prezzo $hippodrome$"
+ merchant_guild_chapel_requirements: "Cappelle della Gilda dei Mercanti"
+ viceroyalty_maintenance: "Mantenimento $viceroyalty$"
+ lieutenancy_maintenance: "Mantenimento $lieutenancy$"

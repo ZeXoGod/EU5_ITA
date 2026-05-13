@@ -1,0 +1,63 @@
+﻿l_english:
+ flavor_byz_ven.1.title: "In Cattive Acque"
+ flavor_byz_ven.1.entry: "$flavor_byz_ven.1.title$"
+ flavor_byz_ven.1.desc: "Mentre la [ShowDisasterName('byzantine_succession_crisis')] infuria, il nostro tesoro viene prosciugato, rendendo la nostra posizione sempre più insostenibile con il proseguire dei conflitti. Se il nostro tumulto interno persisterà, l'esistenza stessa del [origin_country.GetLongName] sarà in pericolo.\n\nIn circostanze così disperate, circola un'idea un tempo incredibile — impegnare [target_woa.GetName] come garanzia per un prestito da una delle repubbliche mercantili."
+ flavor_byz_ven.1.a: "Tempi disperati richiedono misure altrettanto disperate."
+ flavor_byz_ven.1.b: "È assurdo."
+
+ BYZ_crown_jewels_tt: "Se [THIS.GetCountry.GetName] accetta, ci concederà in [loan|e] [SCOPE.GetLocalVariable('loan_size').GetValue|+=] [gold_i|e] e subiremo [ShowModifier('BYZ_lacking_jewels')] finché la [work_of_art|e] di [target_woa.GetName] non sarà restituita"
+
+ flavor_byz_ven.2.title: "Pegno dei Gioielli della Corona [origin_country.GetAdjectiveWithNoTooltip]"
+ flavor_byz_ven.2.entry: "Pegno dei Gioielli della Corona $BYZ_ADJ$"
+ flavor_byz_ven.2.desc: "Il [origin_country.GetLongName] è nella più disperata delle situazioni. Soffrendo la [ShowDisasterName('byzantine_succession_crisis')], sta consumando rapidamente il suo tesoro di guerra e ha un bisogno critico di fondi aggiuntivi. La sua situazione sembra così terribile, infatti, che ci ha fatto un'offerta sorprendente: una richiesta di prestito, offrendo [target_woa.GetName] come garanzia. Questo può essere considerato da alcuni un segno di fiducia... o da altri un atto di disperazione."
+ flavor_byz_ven.2.a: "Sarà una splendida aggiunta alla nostra collezione."
+ flavor_byz_ven.2.b: "Lasciamo cadere il malvagio [origin_country.GetFlavorRank]."
+ flavor_byz_ven.2.b.entry: "Lasciamo cadere il malvagio reame."
+
+ pawning_of_crown_jewels: "Pegno dei Gioielli della Corona"
+ LOAN_SHORT_NAME_pawning_of_crown_jewels_L: "$pawning_of_crown_jewels$"
+ LOAN_SHORT_NAME_pawning_of_crown_jewels_B: "$pawning_of_crown_jewels$"
+ LOAN_TOOLTIP_pawning_of_crown_jewels: "È stato raggiunto un accordo reciproco in cui il prestatore concede un prestito al debitore in cambio del possesso di $byzantine_crown_jewels$. Quando il prestito verrà ripagato, anche i gioielli impegnati dovrebbero essere restituiti — almeno in teoria."
+ LOAN_TITLE_pawning_of_crown_jewels: "$pawning_of_crown_jewels$"
+ LOAN_NAME_pawning_of_crown_jewels_L: "$pawning_of_crown_jewels$"
+ LOAN_NAME_pawning_of_crown_jewels_B: "$pawning_of_crown_jewels$"
+
+ flavor_byz_ven.3.title: "Prestito Ripagato"
+ flavor_byz_ven.3.entry: "$flavor_byz_ven.3.title$"
+ flavor_byz_ven.3.desc: "Il [origin_country.GetLongName] ha appena ripagato il prestito che gli abbiamo concesso, e ora pretende che [target_woa.GetName] sia restituito al suo possesso. Secondo il nostro accordo, dobbiamo acconsentire — ma farlo ci farebbe perdere la leva che abbiamo su di lui.\n\nSicuramente, se non restituissimo i gioielli, non accadrebbe nulla di significativo..."
+ flavor_byz_ven.3.a: "Non possiamo rischiare una simile macchia sulla nostra reputazione."
+ flavor_byz_ven.3.b: "Dopotutto, perché no? Perché non dovremmo tenerlo?"
+
+ flavor_byz_ven.4.title: "Gioielli della Corona Restituiti"
+ flavor_byz_ven.4.desc: "Secondo il nostro accordo, abbiamo ripagato il prestito al [target_country.GetLongName] e [target_woa.GetName] è stato successivamente restituito, riportato al possesso [origin_country.GetAdjective] in [target_location.GetName].\n\nÈ stato un piacere fare affari con la più serena [ShowGovernmentReformName('merchant_republic')] di tutte."
+ flavor_byz_ven.4.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_byz_ven.4.a.entry: "$common_string_brilliant$"
+
+ flavor_byz_ven.5.title: "Accordo Infranto"
+ flavor_byz_ven.5.desc: "Nonostante abbiamo ripagato il prestito secondo l'accordo stipulato, la parte [target_country.GetAdjective] ha ignorato la nostra richiesta di restituire [target_woa.GetName]. Possiamo interpretarlo in un solo modo — un grande furto!\n\nAffronteranno l'ira del [origin_country.GetLongName]..."
+ flavor_byz_ven.5.a: "Non avremmo dovuto trattare con il Diavolo."
+
+ flavor_byz_ven.6.title: "$flavor_byz_ven.4.title$"
+ flavor_byz_ven.6.desc: "Il [target_army.GetName] ha finalmente riportato [target_woa.GetName] in nostro possesso. La nostra proprietà è stata ricondotta a [target.GetName], dove è stata accolta calorosamente dalla [ROOT.GetCountry.GetGovernment.GetCourtTitle]. I nostri nemici non potranno più usare questi gioielli per imporci la loro volontà!"
+ flavor_byz_ven.6.desc_recovered: "The [target_woa.GetName] are once more in our possession, recovered along with [target.GetName]. Our property has been brought back to where it belongs, warmly received by the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. No longer can our enemies use these jewels to leverage their will upon us!" #NEW
+ flavor_byz_ven.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_byz_ven.6.a.entry: "$common_string_brilliant$"
+
+ flavor_byz_ven.7.title: "[target_woa.GetNameWithNoTooltip]"
+ flavor_byz_ven.7.desc: "La recente presa di [location.GetName] è stata un grande successo per [ROOT.GetCountry.GetName]. Le nostre forze, [target_army.GetName], hanno condotto una completa 'ispezione' della terra, acquisendo [target_woa.GetName] nel processo, una risorsa importante per i nostri alleati in [origin_country.GetName]. Potremmo restituirlo a loro... ma non meritiamo forse una quota uguale delle spoglie di guerra?"
+ flavor_byz_ven.7.a: "Li restituiremo ai nostri cari alleati."
+ flavor_byz_ven.7.b: "Ma è nostro di diritto per furto!"
+
+ flavor_byz_ven.8.title: "Gioielli Rubati!"
+ flavor_byz_ven.8.desc: "Ci sono giunti rapporti dell'assoluta incompetenza dei nostri prestatori! Dopo averci prestato oro con il venerabile [target_woa.GetName] come garanzia, sono riusciti a farsi rubare quegli stessi gioielli proprio sotto il naso. Speriamo devotamente che recuperino i nostri beni. In caso contrario, dovremo riprenderceli da [target.GetName] da soli..."
+ flavor_byz_ven.8.a: "C'è qualcosa che sappiano fare bene, oltre ad accumulare oro?"
+
+ byz_woa_was_moved: "[target_woa.GetName] è stato spostato a [target.GetName]" flavor_byz_ven.9.title: "A Deal is Struck" #NEW
+ flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$" #NEW
+ flavor_byz_ven.9.desc: "Our envoys have returned from [target_country.GetName] with most welcome news: the [target_country.GetAdjective] merchants have agreed to our offer. In exchange for the [target_woa.GetName], a loan has been extended to us, giving our treasury the breathing room it so desperately needed. Let us make the most of this reprieve." #NEW
+ flavor_byz_ven.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]" #NEW
+ flavor_byz_ven.9.a.entry: "$common_string_brilliant$" #NEW
+ flavor_byz_ven.10.title: "Refused by the Serenissima" #NEW
+ flavor_byz_ven.10.entry: "$flavor_byz_ven.10.title$" #NEW
+ flavor_byz_ven.10.desc: "Our envoys have returned empty-handed. The [target_country.GetLongName] has refused our offer, unwilling to provide a loan even with the [target_woa.GetName] as collateral. The insult stings almost as much as the blow to our finances. We must seek other means to weather this crisis." #NEW
+ flavor_byz_ven.10.a: "So be it." #NEW

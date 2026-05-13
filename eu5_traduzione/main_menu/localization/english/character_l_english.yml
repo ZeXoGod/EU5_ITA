@@ -149,7 +149,7 @@
  DEATH_REASON_their_own_exploding_cannon: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] quando è esploso un cannone di sua fabbricazione."
 
  DEATH_REASON_starvation: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] di fame."
- DEATH_REASON_wild_animal: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] dopo essere stat[CHARACTER.Custom('IT_ART_O_A')] attaccat[CHARACTER.Custom('IT_ART_O_A')] da un [SCOPE.sLocation('location').Custom('GetDangerousWildAnimalName')]."
+ DEATH_REASON_wild_animal: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] dopo essere stat[CHARACTER.Custom('IT_ART_O_A')] attaccat[CHARACTER.Custom('IT_ART_O_A')] da un [CHARACTER.GetLocation.Custom('GetDangerousWildAnimalName')]."
  
  DEATH_REASON_cannibalism: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] cannibalizzat[CHARACTER.Custom('IT_ART_O_A')] dalla folla contadina."
  CHAR_DIED_DATE: "[CHARACTER.GetDeathAndAgeInfo] il $DATE|Y$\n"
@@ -179,3 +179,8 @@
  DEATH_REASON_stray_fire: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] uccis[CHARACTER.Custom('IT_ART_O_A')] da un proiettile o una palla di cannone vagante."
  DEATH_REASON_hanged_by_mob: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] impiccat[CHARACTER.Custom('IT_ART_O_A')] da una folla inferocita."
  DEATH_REASON_hanged_by_mob_location: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] impiccat[CHARACTER.Custom('IT_ART_O_A')] da una folla inferocita a [SCOPE.sLocation('location').GetName]."
+ 
+ DEATH_REASON_poisoned: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] uccis[CHARACTER.Custom('IT_ART_O_A')] con del veleno." #NEW
+ DEATH_REASON_poisoned_killer: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] avvelenat[CHARACTER.Custom('IT_ART_O_A')] da [SCOPE.sCharacter('killer').GetName]." #NEW
+ 
+ DEATH_REASON_sickly_death: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] a causa di problemi di salute." #NEW

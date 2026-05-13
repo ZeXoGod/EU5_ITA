@@ -1,0 +1,36 @@
+﻿l_english:
+
+#Fate of the Phoenix DLC
+ assign_despot: "Assegna come $STATIC_MODIFIER_NAME_despot_modifier$"
+ assign_despot_concept: "[character|e]"
+ assign_despot_act: "$assign_despot$"
+ assign_despot_desc: "Assegna un [character|e] alla posizione di $STATIC_MODIFIER_NAME_despot_modifier$, con i seguenti effetti:\n[ShowModifierEffect('despot_modifier')]"
+ assign_despot_desc_specific: "Assegna un [character|e] alla posizione di $STATIC_MODIFIER_NAME_despot_modifier$, conferendogli il [modifier|e] [ShowModifier('despot_modifier')]."
+ assign_despot_past: "[SCOPE.sCharacter('recipient').GetName] è stato nominato [ShowModifier('despot_modifier')]"
+ assign_despot_act_past: "[SCOPE.sCharacter('recipient').GetName] è stato nominato [ShowModifier('despot_modifier')]"
+
+ compose_strategikon: "Componi Stratēgikòn"
+ compose_strategikon_concept: "[character|e]"
+ compose_strategikon_act: "$compose_strategikon$"
+ compose_strategikon_desc: "Il nostro [ruler|e] concentrerà la propria esperienza militare personale su un argomento bellico a scelta. Tale conoscenza aiuterà certamente a promuovere la nostra abilità e a esaltare le nostre rinomate capacità marziali."
+ compose_strategikon_desc_specific: "Il nostro [ruler|e] otterrà un [character_modifier|e] appropriato in base alla sua composizione."
+ compose_strategikon_past: "Ha composto uno Stratēgikòn"
+ compose_strategikon_act_past: "[SCOPE.sCharacter('recipient').GetName] ha composto uno Stratēgikòn, ottenendo un potente [modifier|e] per il regno di [SCOPE.sCharacter('recipient').GetHerHis]."
+ has_not_composed_strategikon_tt: "Il nostro [ruler|e] non ha già composto uno Stratēgikòn nel corso della sua vita"
+ actor_ruler_total_abilities: "[actor.GetGovernment.GetRulerOrRegent.GetName] [total_ability|e]"
+
+ castrate_character: "Castra"
+ castrate_character_concept: "[character|e]"
+ castrate_character_act: "$castrate_character$"
+ castrate_character_desc: "Ordina la castrazione di un [character|e] alla nostra corte. Questa punizione segna permanentemente il bersaglio e gli rimuove la capacità di generare figli."
+ castrate_character_desc_specific: "Ordina la castrazione di un [character|e], assegnandogli la condizione [ShowTraitName('castrated')]."
+ castrate_character_past: "[SCOPE.sCharacter('recipient').GetName] è stato castrato per ordine imperiale"
+ castrate_character_act_past: "[SCOPE.sCharacter('recipient').GetName] è stato castrato per ordine imperiale"
+
+ blind_character: "Acceca"
+ blind_character_concept: "[character|e]"
+ blind_character_act: "$blind_character$"
+ blind_character_desc: "Ordina l'accecamento di un [character|e] alla nostra corte. Questa antica punizione rende il bersaglio incapace di guidare eserciti e ne diminuisce il peso politico."
+ blind_character_desc_specific: "Ordina l'accecamento di un [character|e], assegnandogli la condizione [ShowTraitName('blind')]."
+ blind_character_past: "[SCOPE.sCharacter('recipient').GetName] è stato accecato per ordine imperiale"
+ blind_character_act_past: "[SCOPE.sCharacter('recipient').GetName] è stato accecato per ordine imperiale"

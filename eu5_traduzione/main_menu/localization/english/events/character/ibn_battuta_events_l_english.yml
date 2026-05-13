@@ -1,6 +1,7 @@
 ﻿l_english:
  survive_string: "Qualora [target_character.GetLastName] dovesse sopravvivere ai suoi viaggi, il [country|e] che lo ospiterà apprenderà di"
  ibn_battuta_events.1.title: "Un Viaggiatore di Mondo"
+ ibn_battuta_events.1.entry: "$ibn_battuta_events.1.title$" #NEW
  ibn_battuta_events.1.desc: "Con molte terre già alle spalle, [target_character.GetLastName] punta ora lo sguardo sul lontano [GetCountry('YUA').GetLongName]. Racconti di vaste città, costumi raffinati e potenti imperatori sono giunti da tempo alle sue orecchie. Desideroso di assistere a quelle che vengono descritte come meraviglie dell'Oriente e di espandere la sua conoscenza di corti e culture distanti, [target_character.GetLastNameWithNoTooltip] si prepara per la prossima e più ambiziosa tappa del suo viaggio. Il cammino davanti a lui è lungo e incerto, ma [target_character.GetLastNameWithNoTooltip] viaggia con una risoluzione incrollabile e uno spirito curioso, presentandosi come un presunto pioniere dei nostri tempi."
  ibn_battuta_events.1.a: "Guida il suo viaggio verso [target_location_1.GetNameWithNoTooltip]."
  ibn_battuta_events.1.b: "Deve visitare [target_location_2.GetNameWithNoTooltip]!"
@@ -11,7 +12,7 @@
  when_ibn_battuta_drafts_rihla_he_will_remember_sumatra_tt: "$survive_string$ [target_location_1.GetArea.GetName]"
  ibn_battuta_will_admire_and_study_the_architecture_of_angkor_tt: "Mentre si trova a [target_location_2.GetName], [target_character.GetLastName] ammirerà l'architettura grandiosa [target_location_2.Custom('IT_DEL_LOCATION')][target_location_2.GetRank.GetName]. Le tappe successive del suo viaggio beneficeranno di bonus agli [building|e]"
  when_ibn_battuta_drafts_rihla_he_will_remember_lower_mekong_tt: "$survive_string$ [target_location_2.GetArea.GetName]"
- ibn_battuta_trade_in_martaban_tt: "Mentre si trova a [target_location_3.GetName], [target_character.GetLastName] osserverà il suo porto trafficato e il flusso costante di merci. Le tappe successive del suo viaggio beneficeranno di bonus all'[trade_efficiency|e]."
+ ibn_battuta_trade_in_martaban_tt: "Mentre si trova a [target_location_3.GetName], [target_character.GetLastName] osserverà il suo porto trafficato e il flusso costante di merci. Le tappe successive del suo viaggio beneficeranno di bonus all'[selling_efficiency|e]."
  when_ibn_battuta_drafts_rihla_he_will_remember_irrawady_delta_area_tt: "$survive_string$ [target_location_3.GetArea.GetName]"
  
  ibn_battuta_events.2.title: "[target_character.GetLastNameWithNoTooltip] Visita le Nostre Terre"
@@ -37,7 +38,6 @@
  ibn_battuta_events.4.desc: "Dopo viaggi distanti attraverso l'[ShowRegionName('indonesia_region')], e forse persino le città favolose [GetCountry('YUA').Custom('IT_DEL_TITOLO')][GetCountry('YUA').GetLongName], [target_character.GetLastName] si ritrova ora [ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Accolto secondo le nostre tradizioni locali, questo stanco viaggiatore è ansioso di esaminare la nostra società e annotare tutto ciò che attira il suo sguardo.\n\nA dire il vero, egli porta con sé storie, doni e osservazioni dalle rotte orientali. Racconti di città tentacolari, burocrazie disciplinate e reti mercantili che si estendono dall'[ShowRegionNameWithNoTooltip('indonesia_region')] a [GetCountry('CHI').GetCapital.GetName] circolano ora tra i nostri studiosi e [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Che stia consigliando un amministratore locale, discutendo in una [ShowBuildingTypeName('sufi_mosque')] o riflettendo silenziosamente all'ombra di una cupola, [target_character.GetLastNameWithNoTooltip] si dimostra ancora una volta un contenitore di saggezza distante, trasportata su strade incerte."
  ibn_battuta_events.4.a: "Copritelo di doni degni della conoscenza che ci ha portato."
  ibn_battuta_events.4.b: "Mostreremo ospitalità, non monete."
- ibn_battuta_events.4.c: ""
  ibn_studied_customs_of_china_tt: "Poiché [target_character.GetLastName] ha studiato i costumi letterari ed espressivi [GetCountry('CHI').Custom('IT_Della')][GetCountry('CHI').GetNameWithNoTooltip]:"
  chinese_laws_ibn_battuta_effect_tt: "Poiché [target_character.GetLastName] ha studiato le formalità legali e il quadro giuridico [GetCountry('CHI').Custom('IT_Della')][GetCountry('CHI').GetNameWithNoTooltip]:"
  ibn_battuta_will_carry_gifts_tt: "Mentre si trova a [ROOT.GetCountry.GetCapital.GetName], [target_character.GetLastName] riceverà molti doni e monete dai locali. Le tappe successive del suo viaggio beneficeranno di questa ricchezza attraverso l'acquisizione di una parte dei [gold|e]"

@@ -70,10 +70,10 @@
  motet_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
 
  symphony: "Sinfonia"
- symphony_name: "$NUM$ Sinfonia $SUFFIX$ di $LASTNAME|U$"
+ symphony_name: "$NUM$$SUFFIX$ Sinfonia di $LASTNAME|U$"
 
  hymnal: "Innario"
- hymnal_name: "$NUM$ Innario $SUFFIX$ di $LASTNAME|U$"
+ hymnal_name: "$NUM$$SUFFIX$ Innario di $LASTNAME|U$"
 
  novel: "Romanzo"
  novel_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
@@ -173,8 +173,8 @@
  art_quality_great: "Capolavoro" #75-86
  art_quality_best: "Magnum Opus" #87-100
  #
- ART_WAS_DESTROYED: "Le seguenti opere d'arte sono state distrutte: $LIST$."
- ART_WAS_CAPTURED: "Le seguenti opere d'arte sono state catturate e portate a [COUNTRY.GetCapital.GetName]: $LIST$."
+ ART_WAS_DESTROYED: "Le seguenti [works_of_art|e] sono state distrutte: $LIST$."
+ ART_WAS_CAPTURED: "Le seguenti [works_of_art|e] sono state catturate e portate a [COUNTRY.GetCapital.GetName]: $LIST$."
  #
  
  WORK_OF_ART_DATA: "[art_quality|e]: [WORK_OF_ART.GetQualityName|V] ([WORK_OF_ART.GetQuality|Y]%)\nTipo: [WORK_OF_ART.GetDefinition.GetName]\nCreazione: [WORK_OF_ART.GetCreationDate]\nOrigine: [WORK_OF_ART.GetOrigin.GetName]"
@@ -186,8 +186,9 @@
  WORK_OF_ART_LOCATION_MODS: "In ogni [location|e], se questa è la migliore [work_of_art|e] presente, si applica quanto segue:"
  WORK_OF_ART_MODIFIER_SCALE: "Tutti i modificatori sono scalati di $VAL|%+=Y$:"
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Da [art_quality|e]: $VAL|%+=Y$"
+ WORK_OF_ART_MODIFIER_SCALE_DESC: "I benefici forniti da un [WORK_OF_ART_TYPE.GetName] sono influenzati da questi modificatori:" #NEW
  WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Dal [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!"
- CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y]."
+ CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y].\nLo sviluppo dell'[work_of_art|e] dipende dal livello di [court_maintenance|e]"
  CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]"
  CHAR_WORK_OF_ART_HEADER_S: "Ha creato un'opera chiamata"
  CHAR_WORK_OF_ART_HEADER_P: "Ha creato le seguenti opere"
@@ -216,6 +217,7 @@
  teotihuacan_temple_desc: "Il Tempio del Sole a Teotihuacan, costruito intorno al 200 d.C., è una delle maggiori piramidi precolombiane delle Americhe. Situato nel cuore dell'antica città presso l'attuale Città del Messico, era allineato con fenomeni astronomici e svolgeva un ruolo centrale nella vita rituale mesoamericana. Costruito in pietra vulcanica e rivestito in stucco, simboleggiava il potere politico e religioso di Teotihuacan, tanto da influenzare civiltà successive, come gli Aztechi, che lo veneravano come luogo sacro."
  # Unique art keys
  de_jure_belli_ac_pacis: "De Jure Belli Ac Pacis"
+ book_of_kells: "Libro di Kells" #NEW
  bayeux_tapestry_key: "Arazzo di $bayeux$"
  two_icons_of_archangel_michael: "Le Due Icone dell'Arcangelo Michele"
  vladislav_hall: "Sala Vladislav"
@@ -431,6 +433,10 @@
  chronica_provinz_lyfflandt_desc: "La $chronica_provinz_lyfflandt$ narra la storia del [ShowAreaName('baltic_area')] dalla metà del XII secolo alla metà del XVI, concentrandosi in particolare sugli annali della [GetCountry('LIV').GetName]."
  chronik_des_land_preussens: "Cronaca della Terra di Prussia"
  chronik_des_land_preussens_desc: "La $chronik_des_land_preussens$ descrive gli eventi accaduti ai [GetCountry('TEU').GetName] e in [ShowAreaName('prussia_area')] durante gran parte della seconda metà del XIV secolo."
+ roman_history: "Storia Romana"
+ roman_history_desc: "Con i suoi 37 volumi, la $roman_history$ è una cronaca degli eventi che hanno avuto luogo [GetCountry('BYZ').Custom('IT_In')][GetCountry('BYZ').GetName] dall'inizio del XIII secolo fino alla metà del XIV secolo."
+ byzantine_crown_jewels: "Gioielli della Corona Bizantina"
+ byzantine_crown_jewels_desc: "Una serie di splendide gemme che adornano le corone e altri simboli del potere [GetCountry('BYZ').GetAdjective]."
  on_miracles_signs_and_revelations: "Sui Miracoli, i Segni e le Rivelazioni"
  astronomiae_instauratae_progymnasmata: "Astronomiae Instauratae Progymnasmata"
  gesta_danorum: "Gesta Danorum"
@@ -697,6 +703,7 @@
  art_name_a_praise_of_freedom_desc: "Elogiando le libertà e i diritti goduti nel nostro paese, funge da celebrazione delle nostre politiche e da incoraggiamento alla ricerca della libertà."
  art_key_holy_leader_portrait_desc: "Raffigurazione del sovrano come guida sacra e salvatore: scelta destinata a irritare i membri più conservatori della fede."
  holy_crown_of_hungary_crooked_desc: "$holy_crown_of_hungary_desc$ Tuttavia, ora ha subito alcuni danni, e una parte del suo antico splendore è perduta."
+ book_of_kells_desc: "Realizzato dai monaci Celtici intorno all'800 d.C., il Libro di Kells è un manoscritto evangelico riccamente miniato, famoso per la sua calligrafia intricata e le sue decorazioni mozzafiato. Originariamente creato nel monastero di Iona e successivamente conservato a Kells, è una delle opere più belle dell'arte insulare giunte fino a noi e un capolavoro del primo Medioevo."
  bayeux_tapestry_key_desc: "Raffigurando gli eventi della conquista $norman$ di $ENG$, è un ricamo lungo 70 metri e uno dei massimi esempi di arte romanica secolare."
  two_icons_of_archangel_michael_desc: "Saccheggiate da [ShowLocationName('constantinople')] durante la Quarta Crociata, le due icone adornano oggi le sale della cattedrale di [ShowLocationName('venice')]."
  stone_of_scone_desc: "La Pietra di Scone, conosciuta anche come Pietra del Destino, è un antico simbolo della regalità scozzese. Tradizionalmente utilizzata nelle cerimonie di incoronazione dei sovrani di Scozia, rimase nell'Abbazia di Scone fino al 1296, quando fu requisita da Edoardo I d'Inghilterra dopo la sua vittoria nella Prima Guerra d'Indipendenza Scozzese. Edoardo fece collocare la pietra sotto la Sedia dell'Incoronazione a Westminster, integrandola così nella tradizione coronazionale inglese."
@@ -1113,9 +1120,29 @@
  cluny_abbey: "Abbazia di Cluny"
  cluny_abbey_desc: "Fondata nel 910 in Borgogna, l'Abbazia di Cluny divenne il cuore spirituale di un vasto movimento di riforma monastica che trasformò la cristianità occidentale. La sua influenza si diffuse attraverso centinaia di monasteri affiliati, promuovendo rigore liturgico e indipendenza papale. La terza chiesa abbaziale, completata all'inizio del XII secolo, fu la più grande d'Europa fino alla costruzione di San Pietro a Roma."
  aachen_cathedral: "Cattedrale di Aquisgrana"
- aachen_cathedral_desc: "Commissionata da Carlo Magno intorno al 796, la Cattedrale di $ORIGIN$ (Aix-la-Chapelle) è un capolavoro dell'architettura carolingia e una delle prime grandi chiese cupolate d'Europa. Servì come luogo di incoronazione dei re tedeschi dal 936 al 1531. La Cappella Palatina, con la sua pianta ottagonale e i suoi mosaici, trae ispirazione da Ravenna e Bisanzio. Nel XIV secolo rimaneva un importante simbolo del potere imperiale e un centro di pellegrinaggio per le reliquie di Carlo Magno." codex_balduini_trevirensis: "#italic Codex Balduini Trevirensis#!" 
+ aachen_cathedral_desc: "Commissionata da Carlo Magno intorno al 796, la Cattedrale di $ORIGIN$ (Aix-la-Chapelle) è un capolavoro dell'architettura carolingia e una delle prime grandi chiese cupolate d'Europa. Servì come luogo di incoronazione dei re tedeschi dal 936 al 1531. La Cappella Palatina, con la sua pianta ottagonale e i suoi mosaici, trae ispirazione da Ravenna e Bisanzio. Nel XIV secolo rimaneva un importante simbolo del potere imperiale e un centro di pellegrinaggio per le reliquie di Carlo Magno."
+ 
+ codex_balduini_trevirensis: "#italic Codex Balduini Trevirensis#!" 
  codex_balduini_trevirensis_desc: "Questa Cronaca, chiamata anche #italic Kaiser Heinrichs Romfahrt#!, non solo raffigura la campagna italiana di Enrico VII di Lussemburgo, dove fu incoronato re d'Italia e imperatore, ma mostra anche raffigurazioni del Collegio degli Elettori del Sacro Romano Impero, legittimando la loro pretesa ai prestigiosi ruoli." 
  codex_manesse: "#italic Codex Manesse#!" 
  codex_manesse_desc: "Questo manoscritto contiene alcune delle opere più famose di #italic Minnesang#! in dialetto $central_german_dialect$. Le canzoni raccolte sono accompagnate da splendide illustrazioni, che ritraggono non solo personaggi importanti della nobiltà tedesca medievale, come i membri della dinastia degli Hohenstaufen, ma anche i singoli poeti che hanno scritto le canzoni." 
  sistine_chapel: "Cappella Sistina" 
- sistine_chapel_desc: "Inizialmente nota come la #italic Capella Magna#!, la 'Grande Cappella', la $sistine_chapel$ è la cappella principale della Corte Papale. Finì per diventare il luogo in cui si tengono i conclavi papali, e il suo interno è uno degli spazi artistici più straordinari mai creati. All'inizio del 1500, Michelangelo trasformò il soffitto con scene drammatiche tratte dalla Bibbia, riempiendolo di figure potenti ed espressive che cambiarono il corso dell'arte occidentale, e in seguito tornò per dipingere il travolgente Giudizio Universale dietro l'altare." 
+ sistine_chapel_desc: "Inizialmente nota come la #italic Capella Magna#!, la 'Grande Cappella', la $sistine_chapel$ è la cappella principale della Corte Papale. Divenne la sede dei conclavi papali e il suo interno si trasformò col tempo in uno degli spazi artistici più straordinari mai realizzati. All'inizio del 1500, Michelangelo trasformò il soffitto con scene drammatiche tratte dalla Bibbia, riempiendolo di figure potenti ed espressive che cambiarono il corso dell'arte occidentale, e in seguito tornò per dipingere il travolgente Giudizio Universale dietro l'altare." 
+
+ rila_monastery_art: "Monastero di Rila"
+ rila_monastery_art_desc: "Fondato nel X secolo dall'eremita San Giovanni di Rila e incastonato tra le aspre montagne che portano lo stesso nome, questo monastero Ortodosso divenne ben presto un faro spirituale per il Cristianesimo Slavo. Il monastero era un importante luogo di pellegrinaggio e, sin dalla sua fondazione, ricevette ingenti donazioni da ogni sovrano della Bulgaria. Ha rappresentato un centro vitale per la conservazione della lingua, della letteratura e delle tradizioni religiose bulgare durante i periodi di difficoltà, mentre i monaci mantenevano una ricca tradizione di trascrizione di manoscritti, pittura di icone e composizione di inni."
+
+ boyana_church_frescoes: "Affreschi della Chiesa di Boyana"
+ boyana_church_frescoes_desc: "Dipinti nel 1259, questi affreschi medievali adornano la piccola Chiesa di Boyana, nei pressi di $ORIGIN$. Essi segnano una svolta nell'arte Bizantina, anticipando l'umanesimo Rinascimentale con ritratti personalizzati e composizioni dinamiche, e raffigurano diverse figure religiose, tra cui Cristo e la Vergine. Questi affreschi si distinguono per il loro vivace realismo, la modellazione sottile dei volti, i gesti espressivi e un senso di carattere individuale che conferisce alle figure una presenza quasi realistica, segnando un significativo progresso artistico nei Balcani medievali."
+
+ kiev_missal: "Messeale di Kiev"
+ kiev_missal_desc: "Il Messale di Kiev è costituito da un piccolo gruppo di fogli di pergamena risalenti alla fine del X secolo e scritti nella forma più antica dell'alfabeto Glagolitico. Contenente parti di un messale di rito Romano tradotto in Slavo Ecclesiastico Antico, il testo riflette il periodo di transizione in cui i Cristiani Slavi stavano adottando pratiche liturgiche provenienti sia dalla tradizione Orientale che da quella Occidentale. Conservati attraverso i secoli, questi frammenti rimangono uno dei documenti sopravvissuti più importanti per comprendere la diffusione iniziale del Cristianesimo tra gli Slavi e lo sviluppo della loro cultura scritta."
+
+ euphrasian_basilica: "Basilica Eufrasiana"
+ euphrasian_basilica_desc: "Eretta nel VI secolo nella città costiera di Poreč dal Vescovo Eufrasio, questa maestosa basilica paleocristiana sostituì una chiesa precedente e divenne un fiore all’occhiello dell’arte Bizantina nella regione Adriatica. Il suo interno è dominato da un mosaico dell’abside raffigurante Cristo in trono tra santi e martiri, circondato da tessere dorate scintillanti e figure vivide che trasmettono maestà divina e serena autorità."
+
+ carta_monastery: "Monastero di Cârța"
+ carta_monastery_desc: "Fondato nel XIII secolo come abbazia Cistercense nei Carpazi meridionali della Transilvania, il monastero fu istituito sotto il patrocinio della corona Ungherese e popolato da monaci che seguivano gli austeri ideali dei Monaci Bianchi. La sua chiesa, costruita in uno stile di transizione dal Romanico al Gotico, presentava una facciata slanciata, archi a sesto acuto e volte a crociera. La sua costruzione introdusse e contribuì allo sviluppo dell'arte Gotica francese nella regione. Il complesso comprendeva edifici monastici disposti attorno a un chiostro, riflettendo l'enfasi Cistercense sulla semplicità, il lavoro manuale e la contemplazione."
+ 
+ gospels_of_tsar_ivan_alexander: "I Vangeli dello Zar Ivan Alessandro"
+ gospels_of_tsar_ivan_alexander_desc: "I Vangeli dello Zar Ivan Alessandro sono un volume riccamente miniato che incarna l'ambizione culturale e la devozione religiosa del secondo periodo d'oro della Bulgaria."

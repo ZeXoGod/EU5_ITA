@@ -1,203 +1,266 @@
 ﻿l_english:
-flavor_ned.1.title: "[target_location.GetNameWithNoTooltip] in fiamme!"
+ flavor_ned.1.title: "[target_location.GetNameWithNoTooltip] in Fiamme!"
+ flavor_ned.1.entry: "Harlingen up in Flames" #NEW
  flavor_ned.1.desc: "Una tragedia ha colpito [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] di [target_location.GetName]! È scoppiato un grande incendio che ha avvolto parti [target_location.Custom('IT_DEL_LOCATION')][target_location.GetRank.GetNameWithNoTooltip], come la #italic Sala del Consiglio#! e l'#italic Archivio#!. I loro cittadini hanno cercato di domarlo, ma alcuni di loro sono rimasti intrappolati e sono periti tra le fiamme."
  flavor_ned.1.a: "Una tragedia per [target_location.GetNameWithNoTooltip]..."
+ flavor_ned.1.a.entry: "A tragedy for [ShowLocationNameWithNoTooltip('harlingen')]..." #NEW
 
  flavor_ned.2.title: "Rafforzamento [target_location.Custom('IT_DEL_LOCATION')][target_location.GetNameWithNoTooltip]"
+ flavor_ned.2.entry: "Strengthening Sunda Kelapa" #NEW
  flavor_ned.2.desc: "Da quando i nostri esploratori sono arrivati in [ShowRegionName('indonesia_region')], gran parte della terra è passata sotto il nostro controllo, sia con la guerra che con la penna. [target_character.GetName] e i suoi consiglieri hanno pianificato una nuova città nell'area, un forte dove i coloni di cultura [ROOT.GetCountry.GetCulture.GetName] possano accorrere senza doversi preoccupare della popolazione nativa."
  flavor_ned.2.historical_info: "Quando i coloni olandesi arrivarono nelle Indie Orientali, uno dei loro primi obiettivi fu fortificare la loro terra colonizzata. Uno di questi forti fu Batavia, che in seguito divenne la capitale delle Indie Orientali Olandesi. Durante il dominio della VOC, la città divenne la più importante della regione."
  flavor_ned.2.a: "Costruiamo in [target_location.GetNameWithNoTooltip] un forte."
+ flavor_ned.2.a.entry: "Let us make [ShowLocationNameWithNoTooltip('sunda_kelapa')] a fort." #NEW
  flavor_ned.2.b: "Questo è troppo costoso. Cerchiamo invece di placare i locali."
  flavor_ned.2.c: "[target_location.GetNameWithNoTooltip] sarà il luogo più importante dell'area."
+ flavor_ned.2.c.entry: "[ShowLocationNameWithNoTooltip('sunda_kelapa')] shall be the greatest place in the area." #NEW
  flavor_ned.2.d: "[target_location.GetNameWithNoTooltip] DEVE essere costruita!"
+ flavor_ned.2.d.entry: "[ShowLocationNameWithNoTooltip('sunda_kelapa')] MUST be built!" #NEW
 
  flavor_ned.3.title: "[target_character2.GetNameWithNoTooltip]"
+ flavor_ned.3.entry: "Frederick Coyett, Governor of Formosa" #NEW
  flavor_ned.3.desc: "Con l'ascesa del nostro impero commerciale, molte grandi figure, facciano esse parte [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] o [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], si stanno unendo alla nostra causa. Una di queste è [target_character2.GetName], un cittadino [ShowCultureName('swedish')] che si sta facendo un nome [target_country2.Custom('IT_In')][target_country2.GetName], desiderando di diventare un giorno il governatore di uno dei nostri possedimenti coloniali."
  flavor_ned.3.historical_info: "Nato a Stoccolma, Frederick Coyett fu il primo Svedese a esplorare l'Asia Orientale; trascorse la maggior parte del suo tempo come diplomatico per la VOC a Dejima e gestì con successo l'#italic Affare Nanbu#!, che portò al rilascio di diversi prigionieri Olandesi da parte dello Shogunato. Dopo molti negoziati andati a buon fine, fu nominato governatore di Formosa. Tuttavia, quando la dinastia Míng cadde, egli perse il suo governatorato e l'intera isola a favore di #italic Zhèng Chénggōng#!. I suoi anni rimanenti furono trascorsi a Batavia, dove collezionò tonnellate di statue Indù."
  flavor_ned.3.a: "Gli permetteremo di servirci."
  flavor_ned.3.b: "Non gli è permesso stare in questo paese."
 
  flavor_ned.4.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.4.entry: "Pieter Post, Dutch Architect" #NEW
  flavor_ned.4.desc: "Con il nostro secolo d'oro della cultura e dell'architettura, la nostra popolazione ha iniziato a spostarsi verso questioni estranee alla guerra e al commercio. Uno di loro è [target_character.GetName], un pioniere dello stile #italic Barocco Olandese#!. Se dovessimo sovvenzionarlo, egli potrebbe essere in grado di portare la cultura della nostra nazione a nuove vette."
  flavor_ned.4.historical_info: "Durante il XVII secolo, i Paesi Bassi videro l'ascesa dello stile architettonico Barocco Olandese. Pieter Post, insieme al suo collaboratore Jacob van Campen, furono i principali pionieri dietro questo stile, progettando molti nuovi palazzi e musei."
  flavor_ned.4.a: "Egli ha il nostro sostegno."
  flavor_ned.4.b: "Edifici migliori? Il nostro denaro è necessario altrove."
 
  flavor_ned.5.title: "Commercio in [ShowRegionNameWithNoTooltip('japan_region')]"
- flavor_ned.5.desc: "Le terre del [ShowRegionName('japan_region')], sebbene a noi estranee, sembrano essere un luogo eccellente per il commercio dei nostri mercanti. Il loro argento, così come i loro beni di lusso, esercitano un grande fascino sulla nostra popolazione. Se riusciremo a stabilire lì i nostri commercianti, potremo iniziare a portare questi beni in [ROOT.GetCountry.GetName]."
+ flavor_ned.5.entry: "Trade in Japan Region" #NEW
+ flavor_ned.5.desc: "Le terre del [ShowRegionName('japan_region')], sebbene a noi estranee, sembrano essere un luogo eccellente per il commercio dei nostri mercanti. Il loro argento, così come i loro beni di lusso, esercitano un grande fascino sulla nostra popolazione. Se riusciremo a stabilire lì i nostri commercianti, potremo iniziare a portare questi beni [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName]."
  flavor_ned.5.a: "Stabiliamo lì un nuovo avamposto."
  flavor_ned.5.b: "Uno spreco di tempo."
  NED_UNLOCK_DUTCH_OUTPOSTS_IN_JAPAN: "Saremo in grado di costruire un [ShowBuildingTypeName('dutch_trade_outpost')] a [target_location.GetName]."
 
  flavor_ned.6.title: "Kaapkolonie"
+ flavor_ned.6.entry: "$flavor_ned.6.title$" #NEW
  flavor_ned.6.desc: "Con i nostri coloni nelle terre dell'[ShowRegionName('southern_africa_region')], molti di loro hanno costruito nuove città e porti, pronti a mettere in sicurezza i mari circostanti e di riflesso l'interezza del commercio asiatico. Una delle città è [target_location.GetName]. Forse possiamo sovvenzionare la costruzione di questo porto."
  flavor_ned.6.historical_info: "Il Capo fu una delle colonie più importanti dell'Impero Olandese. Essendo il crocevia per il commercio marittimo tra Asia ed Europa, servì come porto vitale per la VOC."
  flavor_ned.6.a: "Il Capo ci porterà buona speranza."
  flavor_ned.6.b: "Non è di un nuovo porto che abbiamo bisogno, ma di una flotta più grande."
 
  flavor_ned.7.title: "[target_location.GetNameWithNoTooltip]"
+ flavor_ned.7.entry: "New Amsterdam on Manhattan" #NEW
  flavor_ned.7.desc: "Con molte nazioni europee che si uniscono alla corsa coloniale, lo abbiamo fatto anche noi. Invece di rivendicare enormi quantità di terra, abbiamo scelto di creare città più concentrate nelle Americhe. Una di queste è [target_location.GetName], dove molti nuovi coloni si sono uniti allo sforzo per fortificarla contro ogni minaccia. Possiamo scegliere di offrire sussidi ai coloni locali o lasciare che costruiscano il porto da soli."
  flavor_ned.7.a: "Abbiamo una [ShowLocationNameWithNoTooltip('amsterdam')], ma che ne dite di due?"
  flavor_ned.7.b: "Lasciamo che i coloni se ne occupino da soli."
  
  flavor_ned.8.title: "I Pezzenti del Mare"
- flavor_ned.8.desc: "Se vogliamo garantire la nostra indipendenza, dobbiamo mettere al sicuro le nostre terre e i nostri mari. Per compiere quest'ultimo obiettivo, [target_character.GetName] desidera concedere lettere di corsa a qualsiasi imbarcazione armata che desideri servire [target_country..Custom('IT_La')][target_country.GetName]."
+ flavor_ned.8.entry: "$flavor_ned.8.title$" #NEW
+ flavor_ned.8.desc: "Se vogliamo garantire la nostra indipendenza, dobbiamo mettere al sicuro le nostre terre e i nostri mari. Per compiere quest'ultimo obiettivo, [target_character.GetName] desidera concedere lettere di corsa a qualsiasi imbarcazione armata che desideri servire [target_country.Custom('IT_La')][target_country.GetName]."
  flavor_ned.8.historical_info: "Durante la Guerra degli Ottant'anni, Guglielmo d'Orange concesse lettere di corsa a qualsiasi nave armata, portando diciotto navi sotto la bandiera Olandese. Questi corsari sarebbero aumentati gradualmente di numero, tormentando i porti Spagnoli. Molti grandi eroi fecero parte dei Pezzenti del Mare."
- flavor_ned.8.a: "Per la difesa [target_country..Custom('IT_Della')][target_country.GetNameWithNoTooltip], questo è necessario."
+ flavor_ned.8.a: "Per la difesa [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip], questo è necessario."
+ flavor_ned.8.a.entry: "For their defense, this is needed." #NEW
  flavor_ned.8.b: "Promuovere la pirateria? Che ne è stato della salvaguardia delle nostre acque?"
 
  flavor_ned.9.title: "Interessi in [ShowAreaNameWithNoTooltip('sailan_area')]"
+ flavor_ned.9.entry: "Interests in Sailan Area" #NEW
  flavor_ned.9.desc: "L'isola del [ShowAreaName('sailan_area')] funge da regione strategica per ogni mercante in $india$. [target_country.Custom('IT_La')][target_country.GetName] controlla [ShowLocationName('kurunegala')] e l'unico modo per prenderla è con la forza."
  flavor_ned.9.a: "Lo [ShowAreaNameWithNoTooltip('sailan_area')] ci appartiene."
  flavor_ned.9.b: "Una guerra lì non sarebbe saggia."
 
- flavor_ned.10.title: "Le Cinque Ammiragliate [ROOT.GetCountry.Custom('IT_ADJ_FP')]"
+ flavor_ned.10.title: "I Cinque Ammiragliati [ROOT.GetCountry.Custom('IT_ADJ_FP')]"
+ flavor_ned.10.entry: "$flavor_ned.10.title$" #NEW
  flavor_ned.10.desc: "Le nostre terre possono anche essere governate da [target_character.GetName], ma le differenze tra le nostre province hanno diviso il nostro [ShowBuildingTypeName('admiralty')]. Questo fazionalismo tra [ShowLocationName('groningen')], [ShowLocationName('hoorn')], [ShowLocationName('rotterdam')], [ShowLocationName('middelburg')] e [ShowLocationName('amsterdam')] ci impedisce di unificare le nostre marine. Tuttavia, permettere loro di perseguire i loro interessi potrebbe consentire un maggiore impegno da parte di ciascuna di esse."
  flavor_ned.10.a: "Permettiamo a questi ammiragliati di esistere per conto proprio."
  flavor_ned.10.b: "Unifichiamoli in uno solo."
  NED_UNLOCKS_UNIFIED_ADMIRALTIES_GOV_REFORM: "Sblocca la [government_reform|e] [ShowGovernmentReformName('unified_admiralty_reform')]."
 
  flavor_ned.11.title: "Colonizzazione di [ShowAreaNameWithNoTooltip('taiwan_area')]"
+ flavor_ned.11.entry: "Settling Taiwan Area" #NEW
  flavor_ned.11.desc: "Con i nostri esploratori e coloni che hanno raggiunto persino le terre della $china$, hanno rivendicato e colonizzato l'isola di [ShowAreaName('taiwan_area')]. Tuttavia, l'influenza [ROOT.GetCountry.GetCulture.GetName] lì è scarsa. Forse possiamo provare a popolarla con persone provenienti da [ROOT.GetCountry.GetCapital.GetName]."
  flavor_ned.11.a: "La cultura [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] sarà dominante a [ShowAreaNameWithNoTooltip('taiwan_area')]."
+ flavor_ned.11.a.entry: "Our culture shall be dominant in [ShowAreaNameWithNoTooltip('taiwan_area')]." #NEW
  flavor_ned.11.b: "Lasciamo l'isola di [ShowAreaNameWithNoTooltip('taiwan_area')] così com'è."
 
  flavor_ned.12.title: "[target_artist.GetNameWithNoTooltip]"
+ flavor_ned.12.entry: "Jan Leeghwater, Water Engineer" #NEW
  flavor_ned.12.desc: "Con la crescente minaccia dei mari pronti a inghiottire lentamente i Paesi Bassi, molti architetti stanno cercando di trovare nuovi modi per contenere questo problema. Uno di loro è [target_artist.GetName], che ha già pianificato molti [ShowBuildingTypeName('polders')] nelle nostre terre."
  flavor_ned.12.historical_info: "Jan Adriaenszoon Leeghwater fu la prima persona a creare un polder da un lago drenando l'acqua con un mulino a vento. Guidò anche la costruzione di molti altri polder a Purmer, Schermer e Heerhugowaard."
  flavor_ned.12.a: "Assumiamolo per realizzare ancora più [ShowBuildingTypeNameWithNoTooltip('polders')]."
  flavor_ned.12.b: "Le sue opere non sono gradite qui."
 
  flavor_ned.13.title: "Il Padre della Microbiologia"
+ flavor_ned.13.entry: "$flavor_ned.13.title$" #NEW
  flavor_ned.13.desc: "Man mano che la scienza si sviluppa, aumenta anche la nostra conoscenza di ciò che ci circonda. Molti desiderano approfondire questa conoscenza e hanno iniziato a studiare in numerose università. Uno di loro è [target_artist.GetName], un microbiologo di [ShowLocationName('the_hague')]. Sebbene il suo lavoro non sia riconosciuto, possiamo provare ad aiutarlo in questa impresa."
  flavor_ned_13.historical_info: "Noto per le sue scoperte nel campo della microbiologia, Antonie Philips van Leeuwenhoek fu soprannominato il Padre della Microbiologia da molti storici e scienziati. Essendo autodidatta, riuscì a stabilire la microbiologia come campo scientifico ufficiale. I suoi esperimenti su se stesso gli permisero di esaminare il suo sangue, portando alla scoperta dei globuli rossi."
  flavor_ned.13.a: "Destineremo i fondi per aiutare nel campo della microbiologia."
  flavor_ned.13.b: "Egli non appartiene [target_country2.Custom('IT_Alla')][target_country2.GetNameWithNoTooltip]."
+ flavor_ned.13.b.entry: "He does not belong in them." #NEW
 
  flavor_ned.14.title: "Il Linciaggio di [target_character.GetNameWithNoTooltip]"
+ flavor_ned.14.entry: "The Eating of the Grand Pensionary" #NEW
  flavor_ned.14.desc: "La guerra e la sventura hanno piegato [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName]. Con le forze [target_country.Custom('IT_Della')][target_country.GetName] che hanno preso il controllo di [ROOT.GetCountry.GetCapital.GetName], gran parte [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] vede [target_character.GetName] e le sue ambizioni come l'unica ragione di tutto questo. Una folla inferocita si è ora radunata fuori dalla residenza di [target_character.GetNameWithNoTooltip] per giustiziarlo. Nonostante il suo discorso accattivante, la folla non si è fermata. Come animali, lo hanno attaccato, portandolo alla sua morte. In seguito, parti del corpo sono scomparse, venendo mangiate dalla folla implacabile che aveva perseguitato fin dall'inizio."
- flavor_ned.14.a: "Persino ora, [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip] non è al sicuro..."
+# flavor_ned.14.a: "Persino ora, [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip] non è al sicuro..." #OLD
+ flavor_ned.14.a: "Even now, [ROOT.GetCountry.GetNameWithNoTooltip] are not safe..." #NEW
+ flavor_ned.14.a.entry: "Even now, we are not safe..." #NEW
 
  flavor_ned.15.title: "Le Sette Province"
+ flavor_ned.15.entry: "$flavor_ned.15.title$" #NEW
  flavor_ned.15.desc: "Sebbene i Paesi Bassi siano stati unificati da una causa comune, sono ancora divisi a causa di rivendicazioni de jure e differenze culturali. Tuttavia, possiamo usare questa disunità a nostro vantaggio. Creando una confederazione dove ogni provincia ha le sue leggi e i suoi diritti, pur dovendo obbedire al governo centrale, possiamo garantire adeguatamente che ognuna di esse sia protetta e possa prosperare per conto proprio, permettendoci invece di guardare all'esterno."
  flavor_ned.15.historical_info: "Durante la rivolta Olandese contro gli Asburgo, il popolo Olandese creò una confederazione in cui a ogni provincia era permesso di mantenere i propri interessi. Questa confederazione, tuttavia, era ancora piagata dal Fazionalismo, poiché gli Statisti e gli Orangisti lottavano per il controllo delle numerose province. Fu solo con l'era Napoleonica e la Repubblica Batava che l'intero sistema fu abolito, portando al Regno dei Paesi Bassi come lo conosciamo."
  flavor_ned.15.a: "Creiamo questa confederazione."
  flavor_ned.15.b: "Decentrare non è la soluzione."
 
  flavor_ned.16.title: "Secolo d'Oro della Cultura [target_country.GetCulture.GetNameWithNoTooltip]"
+ flavor_ned.16.entry: "The Dutch Golden Age of Culture" #NEW
  flavor_ned.16.desc: "Con la nostra ascesa nella politica globale, la nostra cultura sta vivendo il suo zenit, con molti nuovi artisti che accorrono alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Con il loro aiuto, la cultura [target_country.GetCulture.GetName] si diffonde in lungo e in largo, in un Secolo d'oro."
  flavor_ned.16.a: "La cultura [target_country.GetCulture.GetNameWithNoTooltip] sarà conosciuta in ogni angolo."
+ flavor_ned.16.a.entry: "Their culture culture will be known in every corner." #NEW
 
  flavor_ned.17.title: "Industrie Tessili [target_location.Custom('IT_Della')][target_location.GetNameWithNoTooltip] e [target_location2.GetNameWithNoTooltip]"
+ flavor_ned.17.entry: "Cloth Industries of the Low Countries" #NEW
  flavor_ned.17.desc: "Le terre [target_country.Custom('IT_Della')][target_country.GetName] sono ricche di tinture, permettendoci di produrre ogni tipo di tessuto. Due delle gilde più rinomate sono quelle [target_location.Custom('IT_Della')][target_location.GetName] e [target_location2.GetName], entrambe molto preziose per [target_country.Custom('IT_La')][target_country.GetNameWithNoTooltip]. [target_character.GetName] ha intenzione di aiutare entrambe le gilde, tuttavia favorirne una rispetto all'altra potrebbe permetterci di specializzare ulteriormente la nostra industria tessile."
  flavor_ned.17.a: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] [target_location.Custom('IT_Della')][target_location.GetNameWithNoTooltip] avrà il nostro aiuto."
- flavor_ned.17.b: "Aiutare [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] [target_location2.Custom('IT_Della')][target_location2.GetNameWithNoTooltip] ci porterà più benefici."
+ flavor_ned.17.a.entry: "The $burghers_estate$ of the location will have our aid." #NEW
+# flavor_ned.17.b: "Aiutare [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] [target_location2.Custom('IT_Della')][target_location2.GetNameWithNoTooltip] ci porterà più benefici." #OLD
+ flavor_ned.17.b: "Aiding the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [target_location2.GetNameWithNoTooltip] will yield us more benefits." #NEW
+ flavor_ned.17.b.entry: "Aiding the $burghers_estate$ of the location will yield us more benefits." #NEW
  flavor_ned.17.c: "Sosteniamo entrambe le gilde."
  flavor_ned.17.d: "Non abbiamo i fondi per questo."
 
  flavor_ned.18.title: "La Brama di Spezie"
- flavor_ned.18.desc: "Con le rotte per le $india$ bloccate dai mercanti [ShowReligionGroupAdjective('muslim')], la nostra gente è stata privata dei propri beni di lusso. [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] del [target_market.GetName] hanno tenuto d'occhio nuove rotte marittime per assicurarsi ancora una volta il commercio delle spezie. In ogni caso, [target_character.GetName] deve trovare una via per le $india$."
+ flavor_ned.18.entry: "$flavor_ned.18.title$" #NEW
+ flavor_ned.18.desc: "Con le rotte per l'$india$ bloccate dai mercanti musulmani, la nostra gente è stata privata dei propri beni di lusso. [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] del [target_market.GetName] hanno tenuto d'occhio nuove rotte marittime per assicurarsi ancora una volta il commercio delle spezie. In ogni caso, [target_character.GetName] deve trovare una via per le $india$."
  flavor_ned.18.a: "Salpiamo per le Indie."
  NED_SECURE_SPICE_FOR_BONUSES: "Se saremo in grado di importare del [ShowGoodsName('pepper')] nel [target_market.GetName], otterremo dei benefici."
 
  flavor_ned.19.title: "Libertà di Pensiero"
- flavor_ned.19.desc: "Con l'ascesa della Riforma [ShowReligionAdjective('lutheran')], molte nuove visioni religiose estremiste sono sorte nella visione [ShowReligionGroupAdjective('christian')]. [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], tuttavia, ha promosso sempre più idee Umaniste, favorendo la libertà di pensiero e di ideali, purché si serva la nazione. [target_character.GetName] ha preso nota di questo e sta ora pianificando il futuro di questa nuova ondata di umanesimo."
+ flavor_ned.19.entry: "$flavor_ned.19.title$" #NEW
+ flavor_ned.19.desc: "Con l'ascesa della Riforma [ShowReligionAdjective('lutheran')], molte nuove visioni religiose estremiste sono sorte nel mondo cristiano. [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], tuttavia, ha promosso sempre più idee Umaniste, favorendo la libertà di pensiero e di ideali, purché si serva la nazione. [target_character.GetName] ha preso nota di questo e sta ora pianificando il futuro di questa nuova ondata di umanesimo."
  flavor_ned.19.a: "Dopotutto, è un paese libero."
  flavor_ned.19.b: "Usiamo le loro idee a nostro vantaggio."
- flavor_ned.19.c: "Non facciamo arrabbiare le autorità [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip]."
+ flavor_ned.19.c: "Non facciamo arrabbiare le autorità [ROOT.GetCountry.Custom('IT_REL_FP')]."
+ flavor_ned.19.c.entry: "Let us not upset the faithful authorities." #NEW
 
  flavor_ned.20.title: "Le Spezie Scorrono"
+ flavor_ned.20.entry: "$flavor_ned.20.title$" #NEW
  flavor_ned.20.desc: "I nostri mercanti sono finalmente riusciti a ottenere una fornitura di [ShowGoodsName('pepper')]. Il popolo [target_country.GetAdjective] può ora finalmente usare questo nuovo bene nelle proprie cucine."
  flavor_ned.20.a: "Finché avremo una marina, il [ShowGoodsNameWithNoTooltip('pepper')] scorrerà."
 
  flavor_ned.21.title: "Le Filosofie di [target_character.GetNameWithNoTooltip]"
+ flavor_ned.21.entry: "Pierre Bayle's Philosophies" #NEW
  flavor_ned.21.desc: "Ispirato dagli scritti di Muḥammad bin Ṭufayl, [target_character.GetName] è arrivato alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] in cerca di impiego. Nato a [ShowLocationName('paris')] come cittadino [ShowCultureName('french')], da allora ha lasciato la sua casa per perseguire i suoi studi filosofici. Egli desidera scrivere un dizionario biografico, intitolato #italic Dictionnaire Historique et Critique#!."
  flavor_ned.21.historical_info: "Pierre Bayle fu un Ugonotto nato a Parigi durante il Regno di Luigi XIV. Dopo aver studiato a Puylaurens, Parigi e Sedan, fuggì nella Repubblica delle Sette Province Unite a causa della persecuzione religiosa nel paese. Durante il suo soggiorno lì, fu nominato professore di filosofia e storia a Rotterdam. Gran parte delle sue opere aprì la strada all'Illuminismo, così come ad altre filosofie che contraddicevano direttamente i suoi insegnamenti, come la Teodicea."
  flavor_ned.21.a: "Sponsorizziamo i suoi scritti."
  flavor_ned.21.b: "Via con lui, nessun filosofo [ShowCultureNameWithNoTooltip('french')] è ammesso [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_ned.21.b.entry: "Away with him, no [ShowCultureNameWithNoTooltip('french')] philosopher allowed in our country." #NEW
 
  flavor_ned.22.title: "Il Racconto di [target_character2.GetNameWithNoTooltip]"
+ flavor_ned.22.entry: "The Tale of Michiel de Ruyter" #NEW
  flavor_ned.22.desc: "Nato come popolano a [ShowLocationName('middelburg')], [target_character2.GetName] ha mostrato molto talento fin da giovanissimo. Lavorando come apprendista nostromo dall'età di 11 anni e unendosi all'esercito [ROOT.GetCountry.GetAdjective] come giovane adulto. Ora, egli serve la flotta mercantile [ROOT.GetCountry.Custom('IT_ADJ_FS')]. Sebbene giovane, egli è esperto e possiamo usarlo per rafforzare o il nostro esercito o la nostra marina."
  flavor_ned.22.a: "Noi [ROOT.GetCountry.GetCulture.Custom('IT_CUL_MP')] siamo sempre stati orgogliosi navigatori."
+ flavor_ned.22.a.entry: "We have always been proud seafarers." #NEW
  flavor_ned.22.b: "Dobbiamo proteggere la terra [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetNameWithNoTooltip] con un esercito più forte."
+ flavor_ned.22.b.entry: "We must protect the land of $NED$ with a stronger army." #NEW
  flavor_ned.22.c: "Invece di chiedere a [target_character2.GetNameWithNoTooltip], impieghiamolo pienamente."
+ flavor_ned.22.c.entry: "Instead of asking him, let us fully employ him." #NEW
 
  flavor_ned.23.title: "Libertà dei Mari"
+ flavor_ned.23.entry: "$flavor_ned.23.title$" #NEW
  flavor_ned.23.desc: "Sebbene l'idea del [ShowSocietyDirectionName('free_trade')] non sia estranea [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName], i dibattiti tra Protezionismo e [ShowSocietyDirectionNameWithNoTooltip('free_trade')] diventano più accesi. Uno dei filosofi che partecipano a questi colloqui è [target_character.GetName], avendo servito come mercante d'oltremare per [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank]. Avendo già iniziato a scrivere il suo nuovo trattato, egli potrebbe essere in grado di spostare l'ago della bilancia dalla parte del [ShowSocietyDirectionNameWithNoTooltip('free_trade')]."
  flavor_ned.23.a: "Lasciamo che lo finisca, la libertà di commercio è benvenuta qui."
  flavor_ned.23.b: "Egli non è ammesso [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_ned.23.b.entry: "He is not allowed in our country." #NEW
 
- flavor_ned_paper_industry_title: "L'Industria del [ShowGoodsNameWithNoTooltip('paper')] [target_location.Custom('IT_Della')][target_location.GetNameWithNoTooltip]"
+ flavor_ned_paper_industry_title: "L'Industria della [ShowGoodsNameWithNoTooltip('paper')] di [target_location.GetNameWithNoTooltip]"
 
  flavor_ned.24.title: "$flavor_ned_paper_industry_title$"
+ flavor_ned.24.entry: "$flavor_ned.24.title$" #NEW
  flavor_ned.24.desc: "[target_location.GetName] e la sua [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] sono le gilde più rinomate dei Paesi Bassi meridionali. Recentemente, hanno pianificato di espandere la loro produzione di [ShowGoodsName('paper')], credendo che ciò permetterà [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName] di rafforzare ulteriormente la sua autosufficienza."
  flavor_ned.24.a: "Istituiamo questa sezione meridionale della produzione di [ShowGoodsNameWithNoTooltip('paper')]."
  flavor_ned.24.b: "Non abbiamo i fondi per tali imprese."
 
  flavor_ned.25.title: "$flavor_ned_paper_industry_title$"
- flavor_ned.25.desc: "[ROOT.GetCountry.Custom('IT_BURGHERS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] di [target_location.GetName] [ROOT.GetCountry.Custom('IT_BURGHERS_HA')] fatto progressi nei loro sforzi di produzione della [ShowGoodsNameWithNoTooltip('paper')]. Avendo preparato i piani per un nuovo [ShowBuildingTypeName('paper_workshop')], ora chiedono un aiuto finanziario al loro [target_character.GetName]."
+ flavor_ned.25.entry: "$flavor_ned.25.title$" #NEW
+ flavor_ned.25.desc: "I membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] di [target_location.GetName] hanno fatto progressi nei loro sforzi di produzione della [ShowGoodsNameWithNoTooltip('paper')]. Avendo preparato i piani per un nuovo [ShowBuildingTypeName('paper_workshop')], ora chiedono un aiuto finanziario al loro [target_character.GetName]."
  flavor_ned.25.a: "Avranno il loro aiuto."
- flavor_ned.25.b: "Non abbiamo fondi da risparmiare per loro."
+ flavor_ned.25.b: "Non abbiamo fondi da stanziare per loro."
 
  flavor_ned.26.title: "Umanesimo [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
+ flavor_ned.26.entry: "$flavor_ned.26.title$" #NEW
  flavor_ned.26.desc: "Questo mondo è pieno di molte fedi diverse, molte tradizioni diverse e molte idee diverse. Invece di imporre le nostre ovunque andiamo, dovremmo invece tollerare tali credenze, purché non causino problemi [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName]."
  flavor_ned.26.a: "Ognuno è libero di pensare [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_ned.26.a.entry: "Everyone is free to think in our country." #NEW
  flavor_ned.26.b: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] deve essere invece soddisfatta."
- NED_ALL_NON_TRUE_FAITH_POP_BECOME_HAPPIER: "Tutta la nostra [pop|e] non [ROOT.GetCountry.GetReligion.GetAdjective] otterrà [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] di [pop_satisfaction|e]"
- NED_ALL_CLERGY_BECOME_HAPPIER: "Tutta la nostra [pop|e] [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ShowPopTypeName('clergy')] [ROOT.GetCountry.GetReligion.GetAdjective] otterrà [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] di [pop_satisfaction|e]"
+ flavor_ned.26.b.entry: "The $clergy_estate$ need to be satisfied instead." #NEW
+ NED_ALL_NON_TRUE_FAITH_POP_BECOME_HAPPIER: "Tutta i nostri [pop|e] non [ROOT.GetCountry.Custom('IT_REL_MP')] otterranno [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] di [pop_satisfaction|e]"
+ NED_ALL_CLERGY_BECOME_HAPPIER: "Tutti i nostri [pop|e] [ROOT.GetCountry.Custom('IT_REL_MP')] [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ShowPopTypeName('clergy')] otterranno [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] di [pop_satisfaction|e]"
 
  flavor_ned.27.title: "[target_character.GetNameWithNoTooltip]"
- flavor_ned.27.desc: "Nato a [ShowLocationName('leiden')], [target_character.GetName] ha mostrato un discreto talento come artista. Egli ha già creato opere d'arte minori, tutte raffiguranti uno stile diverso. Forse egli sarà una valida aggiunta alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_ned.27.entry: "Rembrandt van Rijn, Dutch Master" #NEW
+# flavor_ned.27.desc: "Nato a [ShowLocationName('leiden')], [target_character.GetName] ha mostrato un discreto talento come artista. Egli ha già creato opere d'arte minori, tutte raffiguranti uno stile diverso. Forse egli sarà una valida aggiunta alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
+ flavor_ned.27.desc: "Born in [ShowLocationName('leiden')], [target_character.GetName] has shown quite the talent as an artist. he has already created minor works of art, all depicting a different style. Maybe he will make a fine addition to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_ned.27.historical_info: "Rembrandt Harmenszoon van Rijn, noto semplicemente come Rembrandt, è considerato uno dei più grandi artisti della storia. Nonostante non sia mai andato all'estero per studiare altre forme d'arte, le sue opere furono ispirate dagli antichi maestri Italiani e dai Bentvueghels, una società di artisti a Roma. Nonostante abbia prodotto centinaia di dipinti in gioventù, la seconda metà della sua vita fu piagata da problemi finanziari e tragedie personali, come il rifiuto del suo dipinto a olio La #italic Congiura di Claudio Civile#! o la vendita della sua casa a causa dei suoi debiti, che costrinse lui e la sua famiglia a trasferirsi in un luogo più modesto a Rozengracht."
- flavor_ned.27.a: "Assumiamolo."
- flavor_ned.27.b: "Non gli è permesso stare qui."
+# flavor_ned.27.a: "Assumiamolo." #OLD
+ flavor_ned.27.a: "Let us hire him." #NEW
+# flavor_ned.27.b: "Non gli è permesso stare qui." #OLD
+ flavor_ned.27.b: "He is not allowed here." #NEW
  NED_WE_WILL_FUND_REMBRANDT: "[target_character.GetName] servirà la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
 
  flavor_ned.28.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.28.entry: "Menno van Coehoorn, Military Engineer" #NEW
  flavor_ned.28.desc: "La guerra d'assedio è forse la parte più costosa della guerra. Molti teorici hanno abbozzato nuove idee, ma nessuno di loro si avvicina a quelle di [target_character.GetName]. Avendo servito come ufficiale nel nostro esercito, egli ha acquisito esperienza delle condizioni in cui si troverebbe il soldato medio in una situazione del genere. I suoi piani comprendono la costruzione di nuovi forti all'interno [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] e l'uso di molteplici linee di difesa, nonché una forma attiva di guerra difensiva, dove le nostre forze dovrebbero tormentare il nemico."
  flavor_ned.28.a: "Usiamo queste idee per quando poniamo un assedio."
  flavor_ned.28.b: "Proteggere [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip] è la nostra priorità principale."
+ flavor_ned.28.b.entry: "Protecting us is our biggest priority." #NEW
  flavor_ned.28.c: "Non ascolteremo le sue idee."
 
  flavor_ned.29.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.29.entry: "Willem Barentsz, Arctic Explorer" #NEW
  flavor_ned.29.desc: "Molti esploratori e cartografi hanno sempre sognato di mappare completamente l'Artico. Uno di questi uomini è [target_character.GetName], nato in un villaggio all'interno di [ShowLocationName('harlingen')]. Egli ha approcciato la [ROOT.GetCountry.GetGovernment.GetCourtTitle] con una ragione per cui dovrebbe imbarcarsi in questa spedizione: sebbene il ghiaccio del Passaggio a Nord-Est ci impedisca di navigare verso la $china$, il sole di mezzanotte scioglierà il ghiaccio, permettendo una rotta affidabile."
  flavor_ned.29.a: "Gli è permesso servirci."
  flavor_ned.29.b: "È impazzito? Bandiamolo."
 
  flavor_ned.30.title: "Sistema di Forti Permanenti"
+ flavor_ned.30.entry: "$flavor_ned.30.title$" #NEW
  flavor_ned.30.desc: "Le nostre terre nei Paesi Bassi possono essere prospere, ma sono anche vulnerabili durante la guerra. Creando diverse linee di fortificazione in un piano difensivo approfondito, possiamo garantire che le nostre terre siano protette anche nelle peggiori situazioni."
  flavor_ned.30.historical_info: "Durante il XVII secolo, quando la guerra d'assedio era predominante, due teorici militari dominarono in quel campo. Il maresciallo Vauban del Regno di Francia e Menno van Coehoorn, il famoso ingegnere Olandese, spinsero queste teorie al limite. Nel caso dei Paesi Bassi, le loro città densamente popolate assicurarono che diverse fortificazioni venissero costruite in tutto il paese per scoraggiare gli eserciti nemici dal tentare di conquistare la nazione. Queste fortezze potevano facilmente trattenere interi eserciti da sole, portando il nemico a dover pianificare un lungo assedio o preparare un attacco costoso."
  flavor_ned.30.a: "Incoraggiamo questa nuova linea di fortificazioni."
  flavor_ned.30.b: "La miglior difesa è un buon attacco."
 
- flavor_ned.31.title: "Architettura Barocca [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
- flavor_ned.31.desc: "Con l'architettura [ROOT.GetCountry.GetAdjective] che ha raggiunto il suo zenit, sono emersi nuovi stili. Uno di questi è lo #italic Stile Barocco#!, che si concentra sulla decorazione dell'esterno in modo da trasmettere serietà, mentre l'interno è decorato con materiali nobili. Forse possiamo promuovere questo stile."
+ flavor_ned.31.title: "Architettura Barocca [ROOT.GetCountry.Custom('IT_ADJ_FS')]"
+ flavor_ned.31.entry: "$flavor_ned.31.title$" #NEW
+ flavor_ned.31.desc: "Con l'architettura [ROOT.GetCountry.Custom('IT_ADJ_FS')] che ha raggiunto il suo zenit, sono emersi nuovi stili. Uno di questi è lo #italic Stile Barocco#!, che si concentra sulla decorazione dell'esterno in modo da trasmettere serietà, mentre l'interno è decorato con materiali nobili. Forse possiamo promuovere questo stile."
  flavor_ned.31.a: "Dobbiamo promuovere questo nuovo stile!"
  flavor_ned.31.b: "Non abbiamo i fondi per questo."
 
  flavor_ned.32.title: "Patriottentijd"
+ flavor_ned.32.entry: "$flavor_ned.32.title$" #NEW
  flavor_ned.32.desc: "Sebbene le [ShowGovernmentReformName('seven_provinces')] ci abbiano servito bene, si è formata una banda di ribelli che si definiscono #italic Patriotten#! e che desiderano vedere la caduta di questo sistema. Essi si oppongono al loro [target_character.GetName] e ai suoi sostenitori, pronti a trascinare [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] in una rivoluzione."
  flavor_ned.32.a: "Fatevi avanti, voi patrioti!"
  ned_all_peasants_in_capital_become_disloyal: "Tutti i [pops|e] [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] nella [target_area.GetName] perderanno il [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] della loro [pop_satisfaction|e]."
 
  flavor_ned.33.title: "Urbanizzazione dei Paesi Bassi"
+ flavor_ned.33.entry: "$flavor_ned.33.title$" #NEW
  flavor_ned.33.desc: "I Paesi Bassi hanno recentemente visto molte delle loro località riempirsi di ogni tipo di persone, nobili o popolani allo stesso modo. Località come [target_location.GetName], [target_location2.GetName] e [target_location3.GetName] sono le più popolate e potrebbero beneficiare del nostro aiuto per urbanizzarsi ancora di più."
  flavor_ned.33.a: "Avranno il nostro aiuto."
  flavor_ned.33.b: "Possono svilupparsi per conto proprio."
  
  flavor_ned.1000.title: "Un Complotto Glorioso?"
+ flavor_ned.1000.entry: "$flavor_ned.1000.title$" #NEW
  flavor_ned.1000.desc: "Sebbene [target_character.GetName] sia il legittimo sovrano [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], la sua immagine pubblica si è lentamente deteriorata, venendo visto come nient'altro che un oppressore. Ci sono stati sussurri, molti sussurri in effetti, di un complotto per invitare [target_character2.GetName] a governare queste terre al suo posto."
  flavor_ned.1000.a: "Un complotto contro [target_character.GetNameWithNoTooltip]? Dobbiamo fermarli!"
- NED_UNLESS_IF_WE_SECURE_LEGITIMACY_ENGLISH_NOBLES_WILL_INVITE_DUTCH_RULER: "Finché la nostra [legitimacy|e] è inferiore a #Y 80#!, c'è una possibilità che [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] di cultura [ROOT.GetCountry.GetCulture.GetName] inviti [target_character2.GetName] a governare su di loro."
+ flavor_ned.1000.a.entry: "A plot against him? We must stop them!" #NEW
+ NED_UNLESS_IF_WE_SECURE_LEGITIMACY_ENGLISH_NOBLES_WILL_INVITE_DUTCH_RULER: "Finché la nostra [legitimacy|e] è inferiore a #Y 80#!, c'è una possibilità che i membri [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] di cultura [ROOT.GetCountry.GetCulture.GetName] invitino [target_character2.GetName] a governare su di loro."
 
  flavor_ned.1001.title: "Gli Immortali Sette"
- flavor_ned.1001.desc: "Con la situazione [target_country.Custom('IT_In')][target_country.GetName] che peggiora e [target_character2.GetName] visto come un falso [target_country.GetGovernment.GetRulerTitle], parte della loro [target_country.GetGovernment.GetEstateName('nobles_estate')] ha avvicinato [target_character.GetName] e gli hanno offerto la corona [target_country.GetAdjectiveWithNoTooltip] qualora egli accettasse."
+ flavor_ned.1001.desc: "Con la situazione [target_country.Custom('IT_In')][target_country.GetName] che peggiora e [target_character2.GetName] visto come un falso [target_country.GetGovernment.GetRulerTitle], parte [ROOT.GetCountry.Custom('IT_NOBLES_DEL')]loro [target_country.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_HA')] avvicinato [target_character.Custom('IT_ART_TITOLO')][target_character.GetName] e gli hanno offerto la corona [target_country.Custom('IT_ADJ_FS')] qualora egli accettasse."
  flavor_ned.1001.a: "Salpiamo per [target_country.Custom('IT_La')][target_country.GetNameWithNoTooltip]."
+ flavor_ned.1001.a.entry: "Let us set sail for them." #NEW
  flavor_ned.1001.b: "Aspettate, non abbiamo mai acconsentito a nulla di tutto ciò!"
  
  flavor_ned.1002.title: "La Gloriosa Rivoluzione"
- flavor_ned.1002.desc: "Con il vecchio governo [target_country.Custom('IT_Della')][target_country.GetName] rovesciato, [target_character.GetName] è ora il legittimo sovrano di tutta la terra [target_country.GetAdjectiveWithNoTooltip]. Egli e [ROOT.GetCountry.Custom('IT_PARL_IL')]su[ROOT.GetCountry.Custom('IT_PARL_OA')] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sono ora pronti a discutere la questione [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]."
- flavor_ned.1002.a: "Saranno sudditi [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] [ROOT.GetCountry.GetAdjectiveWithNoTooltip]."
+ flavor_ned.1002.entry: "$flavor_ned.1002.title$" #NEW
+ flavor_ned.1002.desc: "Con il vecchio governo [target_country.Custom('IT_Della')][target_country.GetName] rovesciato, [target_character.GetName] è ora il legittimo sovrano di tutta la terra [target_country.Custom('IT_ADJ_FS')]. Egli e [ROOT.GetCountry.Custom('IT_PARL_IL')]su[ROOT.GetCountry.Custom('IT_PARL_OA')] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sono ora pronti a discutere la questione [target_country.Custom('IT_Della')][target_country.GetNameWithNoTooltip]."
+ flavor_ned.1002.a: "Saranno sudditi [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] [ROOT.GetCountry.Custom('IT_ADJ_FS')]."
+ flavor_ned.1002.a.entry: "They shall be subjects to our $crown_estate$." #NEW
 
  flavor_ned.1003.title: "Integrazione della Gran Bretagna"
  flavor_ned.1003.desc: "Mentre le terre della Gran Bretagna sono ora sotto [ROOT.GetCountry.Custom('IT_CROWN_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], parte della popolazione sta ancora resistendo al nostro dominio. Dovremmo discutere con [ROOT.GetCountry.Custom('IT_PARL_IL')]nostr[ROOT.GetCountry.Custom('IT_PARL_OA')] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] riguardo a questo problema e cercare di trovare una soluzione."

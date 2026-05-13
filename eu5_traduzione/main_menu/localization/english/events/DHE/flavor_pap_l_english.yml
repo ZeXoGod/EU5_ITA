@@ -1,34 +1,47 @@
 ﻿l_english:
  flavor_pap.1.title: "Riorganizzazione della Santa Inquisizione"
+ flavor_pap.1.entry: "$flavor_pap.1.title$" #NEW
  flavor_pap.1.desc: "Su iniziativa di [future_paul_iv_scope.GetName] da [ShowLocationName('naples')], il [ROOT.GetCountry.GetGovernment.GetRulerTitle] ha riorganizzato l'Inquisizione Romana secondo il Modello Spagnolo. Insieme ai Gesuiti, viene inflitto un regno di terrore al popolo. Tuttavia, i metodi crudeli sono efficaci e portano alla completa eradicazione dell'Eresia [ShowReligionAdjective('lutheran')] nella Penisola Italiana."
- flavor_pap.1.a: "Inquisizione su Modello Spagnolo"
- flavor_pap.1.b: "Inquisizione Moderata"
+# flavor_pap.1.a: "Inquisizione su Modello Spagnolo" #OLD
+ flavor_pap.1.a: "Spanish model inquisition." #NEW
+# flavor_pap.1.b: "Inquisizione Moderata" #OLD
+ flavor_pap.1.b: "Moderate Inquisition." #NEW
 
  flavor_pap.2.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_pap.2.entry: "Giordano Bruno, Heretic Philosopher" #NEW
  flavor_pap.2.desc: "[target_character.GetName] è un teologo che identifica Dio con la Natura. Anche se afferma di essere un devoto Cristiano, difende la visione cosmologica di Copernico e allo stesso tempo satirizza la fede cieca nella religione. È stato arrestato a [ShowLocationName('venice')] ed è stato estradato a [ShowLocationName('rome')], dove ora è sotto processo."
- flavor_pap.2.a: "Bruciate l'eretico"
- flavor_pap.2.b: "Risparmiategli la vita"
+# flavor_pap.2.a: "Bruciate l'eretico" #OLD
+ flavor_pap.2.a: "Burn the heretic." #NEW
+# flavor_pap.2.b: "Risparmiategli la vita" #OLD
+ flavor_pap.2.b: "Spare his life." #NEW
  borgia_pope_tt: "[borgia_pope_scope.GetName] diventerà il nuovo Papa!"
 
  flavor_pap.4.title: "Il [ROOT.GetCountry.GetGovernment.GetRulerTitle] [borgia_pope_scope.GetLastNameWithNoTooltip]"
+ flavor_pap.4.entry: "The Borgia Pope" #NEW
  flavor_pap.4.desc: "Dal tetto della Cappella Sistina sale il fumo bianco. Tra accuse di simonia, il Conclave ha eletto [borgia_pope_scope.GetName], Arcivescovo di [ShowLocationName('valencia')], al Trono di San Pietro. I [borgia_pope_scope.GetLastNameWithNoTooltip] sono arrivati relativamente di recente sulla scena politica Romana e hanno suscitato l'ira delle famiglie Romane più affermate che ambivano a quella posizione per sé. Sebbene molte delle voci che circondano questo [ROOT.GetCountry.GetGovernment.GetRulerTitle] [borgia_pope_scope.GetLastNameWithNoTooltip] siano probabilmente esagerazioni diffuse dai suoi nemici, è noto che egli abbia apertamente un'amante e che abbia già elevato suo figlio adolescente [borgia_pope_son_scope.GetName] al rango di cardinale. Si ipotizza che il regno di questo [ROOT.GetCountry.GetGovernment.GetRulerTitle] sarà pieno di scandali e corruzione."
  flavor_pap.4.a: "Lo [ROOT.GetCountry.GetNameWithNoTooltip] sopravviverà."
+ flavor_pap.4.a.entry: "We will survive." #NEW
 
  flavor_pap.5.title: "[caesar_borgia_scope.GetNameWithNoTooltip]"
+ flavor_pap.5.entry: "Caesar Borgia" #NEW
  flavor_pap.5.desc: "[caesar_borgia_scope.GetName], figlio del [ROOT.GetCountry.GetGovernment.GetRulerTitle], è diventato il primo uomo in assoluto a dimettersi dalla carica di cardinale. Alla ricerca invece di una carriera come avventuriero militare, ha già dimostrato di essere un condottiero capace e spietato. Il Santo Padre ha deciso di riconoscere la sua abilità concedendo a [caesar_borgia_scope.GetShortNameWithNoTooltip] il ruolo di Capitano Generale della Chiesa, conferendogli il controllo sull'esercito del [ROOT.GetCountry.GetAdjective]."
  flavor_pap.5.a: "Aut Caesar, aut nihil."
 
  flavor_pap.6.title: "Uno [ROOT.GetCountry.GetNameWithNoTooltip] Scandalizzato"
+ flavor_pap.6.entry: "$flavor_pap.6.title$" #NEW
  flavor_pap.6.desc: "Una serie di voci maligne circonda le azioni della famiglia Borgia. Abbondano le accuse di omicidi commessi con la cantarella, un veleno presumibilmente letale e difficile da rilevare, utilizzato per eliminare i rivali politici. Si dice che lo stesso Santo Padre sia abitualmente coinvolto in simonia e corruzione, e si sussurrano voci ancora più inquietanti sulla relazione tra i suoi figli, [caesar_borgia_scope.GetShortName] e [lucrecia_borgia_scope.GetName]. Sebbene sembrino esserci poche prove a sostegno di queste accuse, esse sono ampiamente credute dalla popolazione [ShowReligionAdjective('catholic')] in lungo e in largo."
  flavor_pap.6.a: "Bugie e calunnie!"
  flavor_pap.6.b: "Possiamo trasformare questa situazione a nostro vantaggio."
 
  flavor_pap.7.title: "La Fine dello [ROOT.GetCountry.GetNameWithNoTooltip] dei [GetCharacter('rodrigo_borgia').GetLastNameWithNoTooltip]"
+ flavor_pap.7.entry: "The End of the Rodrigo Borgia $PAP$" #NEW
  flavor_pap.7.desc: "La morte del [ROOT.GetCountry.GetGovernment.GetRulerTitle] [GetCharacter('rodrigo_borgia').GetLastNameWithNoTooltip] è stato accolto con una tranquilla celebrazione tra le famiglie patrizie di [ShowLocationName('rome')]. I cardinali hanno eletto uno dei rivali più accaniti di [GetCharacter('rodrigo_borgia').GetLastNameWithNoTooltip] per sostituirlo. [target_character.GetName] promette di porre fine alla corruzione del suo predecessore e di ripristinare la fiducia nella santità della Chiesa. [caesar_borgia_scope.GetName] nel frattempo ha visto il suo potere crollare dall'oggi al domani senza il sostegno del [ROOT.GetCountry.GetAdjective]. Temendo per la propria vita, è fuggito in [GetCountry('NAV').GetName] dove spera di trovare riparo dai suoi nemici."
  flavor_pap.7.a: "La Chiesa deve riparare alla sua reputazione."
 
  flavor_pap.8.title: "Voci di Stregoneria"
- flavor_pap.8.desc: "[target_character.GetName] è una figura ben nota all'interno della [GetInternationalOrganization('catholic_church').GetName]. [target_character.GetSheHe|U] è un fervente sostenitore dell'esistenza delle streghe e della loro influenza malvagia sulle povere anime Cattoliche. Il suo zelo è controbilanciato solo dalla reazione controversa che suscita negli altri membri della nostra [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip]. Diversi vescovi hanno negato a [target_character.GetNameWithNoTooltip] il diritto di giudicare le presunte streghe sulla base della dottrina [ShowReligionAdjectiveWithNoTooltip('catholic')].\n\nPer evitare che il conflitto degenerasse in una frattura diffusa all'interno della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], dovremmo chiarire la nostra posizione sulla stregoneria e l'eresia."
+ flavor_pap.8.entry: "$flavor_pap.8.title$" #NEW
+# flavor_pap.8.desc: "[target_character.GetName] è una figura ben nota all'interno della [GetInternationalOrganization('catholic_church').GetName]. [target_character.GetSheHe|U] è un fervente sostenitore dell'esistenza delle streghe e della loro influenza malvagia sulle povere anime Cattoliche. Il suo zelo è controbilanciato solo dalla reazione controversa che suscita negli altri membri della nostra [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip]. Diversi vescovi hanno negato a [target_character.GetNameWithNoTooltip] il diritto di giudicare le presunte streghe sulla base della dottrina [ShowReligionAdjectiveWithNoTooltip('catholic')].\n\nPer evitare che il conflitto degenerasse in una frattura diffusa all'interno della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], dovremmo chiarire la nostra posizione sulla stregoneria e l'eresia." #OLD
+ flavor_pap.8.desc: "[target_character.GetName] is a well known figure inside the [GetInternationalOrganization('catholic_church').GetName]. He is a zealous advocate for the existence of witches and their evil influences on the poor [ShowReligionAdjective('catholic')] souls. His zealousness is only met by the controversial reaction he sparks in other members of our [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip]. Multiple bishops denied [target_character.GetNameWithNoTooltip] the rights to judge over alleged witches on the ground of being in breach with [ShowReligionAdjectiveWithNoTooltip('catholic')] doctrine.\n\nIn order to not let the conflict escalate into a widespread rift of the [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], we should make our stance clear on witchcraft and heresy." #NEW
  flavor_pap.8.a: "La stregoneria è chiaramente un segno di eresia."
  flavor_pap.8.b: "Sciocchezze, le streghe non esistono!"
  flavor_pap.8.historical_info: "Heinrich Kramer era un monaco Domenicano, le cui attività ebbero un grande impatto sul trattamento della stregoneria e sull'inizio dei processi alle streghe nell'Europa centrale. Dopo aver partecipato a un processo alle streghe a Ravensburg nel 1482, redasse il testo di quella che sarebbe poi diventata la bolla papale #italic Summis desiderantes affectibus#!. Kramer, figura controversa, fu espulso da Innsbruck dopo che il processo contro una donna del luogo si concluse con un'assoluzione. Durante il suo viaggio verso Colonia iniziò a redigere il #italic Malleus Maleficarum#!, il Martello delle Streghe, conferendogli ulteriore autorità nella persecuzione delle presunte streghe nei territori del Sacro Romano Impero."
@@ -41,6 +54,7 @@
  opinion_refused_to_pay_apostolic_tax: "Rifiuto di Pagare la Tassa Apostolica"
 
  flavor_pap.10.title: "La Guardia Svizzera"
+ flavor_pap.10.entry: "$flavor_pap.10.title$" #NEW
  flavor_pap.10.desc: "L'inchiostro sul contratto che istituisce la Guardia Svizzera Pontificia si è asciugato. Questo reggimento d'élite è composto da uomini disciplinati ed esperti, fedeli in modo assoluto al Santo Padre. Hanno giurato di servire lo [ROOT.GetCountry.GetLongName] fino al Giorno del Giudizio."
  flavor_pap.10.a: "Difenderanno bene la Chiesa."
 
@@ -48,41 +62,55 @@
  flavor_pap.11.desc: "[ShowLocationName('rome')] è perduta! Mentre il nemico avanza per arrestare [target_character.GetName] questi ricorda il Passetto di Borgo, un passaggio che collega la Città del Vaticano con Castel Sant'Angelo. Molti leader del passato lo hanno utilizzato come via di fuga in tempi di pericolo, e ora [target_character.GetShortNameWithNoTooltip] deve decidere se fuggire dal Vaticano."
  flavor_pap.11.a: "Scappa attraverso il passaggio!"
  flavor_pap.11.b: "Il [ROOT.GetCountry.GetGovernment.GetRulerTitle] non abbandonerà il Vaticano."
+ flavor_pap.11.b.entry: "The ruler will not abandon the Vatican." #NEW
 
  flavor_pap.12.title: "Sacco di [ShowLocationNameWithNoTooltip('rome')]"
+ flavor_pap.12.entry: "Sack of Rome" #NEW
  flavor_pap.12.desc: "The war has left the city of [ShowLocationName('rome')] in shambles. The enemy stormed the walls and ransacked the city, overwhelming the garrison. On the steps of St Peter's Basilica, our last few guards met a ghastly end, slaughtered before the pillage began. Destruction, looting and executions followed until, at last, the bandits, deserters, soldiers and looters began their long trek home with what valuables they managed to pilfer."
  flavor_pap.12.a: "Rafforzate la guarnigione, questo non deve ripetersi mai più."
  flavor_pap.12.b: "Riparare i danni alla città."
 
  flavor_pap.13.title: "La Biblioteca Vaticana"
+ flavor_pap.13.entry: "$flavor_pap.13.title$" #NEW
  flavor_pap.13.desc: "La Chiesa [ShowReligionAdjective('catholic')] possiede una vasta moltitudine di opere scritte provenienti da tutte le epoche. Sono stati assicurati i finanziamenti necessari per consolidare e ampliare la conoscenza della Cristianità attraverso la creazione di una magnifica biblioteca all'interno delle mura del Vaticano. La fondazione della Biblioteca Vaticana stabilirà [ShowLocationName('rome')] come centro del mondo accademico."
  flavor_pap.13.a: "Stabiliscilo e concentrati sui lavori amministrativi."
  flavor_pap.13.b: "L'attenzione dovrebbe concentrarsi sulle attività diplomatiche."
  flavor_pap.13.c: "Finanziare una biblioteca dedicata alle arti militari."
 
  flavor_pap.14.title: "La Cappella Sistina"
+ flavor_pap.14.entry: "$flavor_pap.14.title$" #NEW
  flavor_pap.14.desc: "La Cappella Maggiore è utilizzata per le messe che possono essere celebrate in spazi più piccoli e meno pubblici rispetto alle Basiliche. Gli anni non sono stati clementi con la cappella un tempo magnifica decorata da Fra Angelico: le sue pareti sono inclinate ed è in uno stato di rovina. La cappella dovrebbe essere demolita, poiché la struttura non è abbastanza sicura per le numerose messe che vi si celebrano ogni anno. Al suo posto dovrebbe sorgere un nuovo edificio più maestoso, e molti artisti famosi sarebbero onorati se venisse loro chiesto di decorare la nuova Cappella Sistina."
  flavor_pap.14.a: "Assegnate il lavoro a [target_artist_1.GetNameWithNoTooltip]." 
+ flavor_pap.14.a.entry: "Assign the work to him." #NEW
  flavor_pap.14.b: "[target_artist_2.GetNameWithNoTooltip] supervisionerà il progetto."
+ flavor_pap.14.b.entry: "The artist will oversee the project." #NEW
  flavor_pap.14.c: "Che ne dite di [target_artist_3.GetNameWithNoTooltip]?"
+ flavor_pap.14.c.entry: "How about him?" #NEW
  flavor_pap.14.d: "Non abbiamo bisogno di espressioni frivole di ricchezza!"
  sistine_chapel_is_not_realized_tt: "#italic La Cappella Sistina non sarà realizzata e non vedrà mai la luce, risparmiandoci così un po' di [gold|e]#!"
 
  flavor_pap.15.title: "Decora la Cappella Sistina"
+ flavor_pap.15.entry: "$flavor_pap.15.title$" #NEW
  flavor_pap.15.desc: "La vecchia e fatiscente Cappella Maggiore non esiste più: al suo posto ora sorge la grandiosa Cappella Sistina. Il Tempio di Salomone e la Cappella Sistina hanno le stesse dimensioni, come riportato nell'Antico Testamento. L'esterno è privo di dettagli decorativi e l'edificio è diviso in tre piani con soffitto a volta e sei alte finestre ad arco sui lati, due su ciascuna estremità. Sebbene bella nella sua semplicità, la bellezza della cappella potrebbe essere esaltata dagli affreschi dipinti dai più importanti artisti del nostro tempo."
  flavor_pap.15.a: "Assumere [sandro_boticelli_scope.GetNameWithNoTooltip]."
+ flavor_pap.15.a.entry: "Hire $Botticelli$." #NEW
  flavor_pap.15.b: "Assumere [ghirlandaio_scope.GetNameWithNoTooltip]."
+ flavor_pap.15.b.entry: "Hire Ghirlandaio." #NEW
  flavor_pap.15.c: "Assumere [pietro_perugino_scope.GetNameWithNoTooltip]."
+ flavor_pap.15.c.entry: "Hire Perugino." #NEW
  flavor_pap.15.d: "Assumere [michaelangelo_scope.GetNameWithNoTooltip]."
+ flavor_pap.15.d.entry: "Hire Michelangelo." #NEW
  flavor_pap.15.e: "Basta trovare qualcuno che decori la cappella!"
 
  flavor_pap.17.title: "Simonia Condannata"
+ flavor_pap.17.entry: "$flavor_pap.17.title$" #NEW
  flavor_pap.17.desc: "Negli Atti degli Apostoli 8:9-24, Simone Mago offrì denaro ai due discepoli Pietro e Giovanni affinché gli conferissero il potere di impartire lo Spirito Santo a chiunque egli imponesse le mani. Questo atto di vendere beni spirituali come cariche e ruoli ecclesiastici è chiamato Simonia dal nome di quest'uomo, e molti governanti sono stati influenzati dal luccichio dell'oro fino a vendere seggi vescovili."
  flavor_pap.17.a: "Lo tratteremo come il crimine che è!"
  disables_simony: "Questo disabilita l'evento "Simonia" per i Paesi di fede [ShowReligionAdjective('catholic')]."
  flavor_pap.17.b: "Questa è una pratica che consentiremo."
 
  flavor_pap.18.title: "Venerazione delle Reliquie - consentire o vietare?"
+ flavor_pap.18.entry: "$flavor_pap.18.title$" #NEW
  flavor_pap.18.desc: "Churches have always kept relics from saints, to venerate and in some cases use to heal the sick and infirm. This long practice has now been challenged, and some believe it to be idolatry, a heresy that should be banned. The selling of relics has made many a church rich, and if the [ROOT.GetCountry.GetGovernment.GetRulerTitle] were to publicly announce his support of this practice, some of that money would find its way to our coffers."
  flavor_pap.18.a: "Impedite la vendita di reliquie!"
  disables_veneration_of_relics: "This disables the event 'Veneration of Relics' and 'Veneration of the Virgin Mary' for [ShowReligionAdjective('catholic')] countries."
@@ -90,18 +118,23 @@
  flavor_pap.18.c: "Dovremmo affermare il nostro controllo su di esso."
 
  flavor_pap.19.title: "[galileo_galilei_scope.GetNameWithNoTooltip]"
+ flavor_pap.19.entry: "Galileo Galilei" #NEW
  flavor_pap.19.desc: "L'idea che la Terra e i pianeti ruotino attorno al Sole è un concetto che Niccolò Copernico descrisse per la prima volta nel suo libro #italic 'De revolutionibus orbium coelestium'#! nel 1543 e ora [galileo_galilei_scope.GetName] lo ha promosso nuovamente nel suo libro #italic 'Sidereus Nuncius'#!. La sua controversa difesa di questa tesi gli ha procurato molti nemici nella Chiesa [ShowReligionAdjective('catholic')] e, sebbene ammettiamo che sarebbe un avversario molto interessante in un dibattito, forse dovremmo essere cauti e semplicemente imprigionarlo prima che si prenda gioco dei nostri postulati?"
  flavor_pap.19.a: "Invitalo a discutere di scienza."
  flavor_pap.19.b: "Deve essere processato."
 
  flavor_pap.20.title: "Il Regno di Dio sulla Terra"
+ flavor_pap.20.entry: "$flavor_pap.20.title$" #NEW
  flavor_pap.20.desc: "Dopo aver unificato l'[ShowRegionName('italy_region')] sotto la bandiera [ShowReligionName('catholic')], il [GetCountry('PAP').GetGovernment.GetRulerTitle] ha ritenuto opportuno dichiararla '[ShowGovernmentReformName('kingdom_of_god_reform')]'. I Credenti Cattolici di tutta [ShowContinentName('europe')] accorrono sotto la sua bandiera, desiderosi di vivere in questa nazione modello di virtù [ShowReligionGroupAdjective('christian')]. Le potenze straniere non possono più controllare il Collegio dei Cardinali, ma non presteranno nemmeno molta attenzione alle bolle o ai decreti del [GetCountry('PAP').GetAdjective]."
  flavor_pap.20.a: "Tutti gli Uomini sotto un unico Dio!"
- flavor_pap.20.b: "Amen"
+# flavor_pap.20.b: "Amen" #OLD
+ flavor_pap.20.b: "Amen." #NEW
  STATIC_MODIFIER_NAME_kingdom_of_god_slot_modifier: "$kingdom_of_god_reform$"
  STATIC_MODIFIER_DESC_kingdom_of_god_slot_modifier: "Il potere religioso del $kingdom_of_god_reform$ può costringere anche gli ingranaggi arrugginiti della burocrazia a inginocchiarsi davanti a sé."
  
  flavor_pap.21.title: "[GetCountry('PAP').GetGovernment.GetRulerTitle] Accusato di Aver  Figli"
+# flavor_pap.21.entry: "Pap Accused of Fathering Children" #NEW #OLD
+ flavor_pap.21.entry: "The Pope Accused of Fathering Children" #NEW
  flavor_pap.21.desc: "In tutto il paese circolano voci secondo cui il [GetCountry('PAP').GetGovernment.GetRulerTitle], nonostante abbia preso i voti, ha segretamente avuto dei figli. Alcuni sostengono che queste accuse siano un tentativo malizioso di minare l'autorità della [GetUniqueInternationalOrganization('catholic_church').GetName], mentre altri sostengono che le voci siano vere, citando nomi specifici e prove. I cardinali e il resto del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono combattuti sul fatto che queste accuse debbano essere investigate o tranquillamente archiviate per proteggere la nostra reputazione."
  flavor_pap.21.a: "Fai uno sforzo per ignorarli."
  flavor_pap.21.b: "È troppo tardi per impedire che si diffondano."
@@ -110,89 +143,121 @@
  flavor_pap.21.historical_info: "Nel corso dei secoli, diversi papi sono stati accusati di aver avuto figli, anche dopo aver preso i voti. Papa Giulio II, Paolo III, Alessandro VI e Gregorio XIII hanno tutti affrontato tali accuse e alcuni, come Alessandro VI, hanno apertamente riconosciuto i propri figli. Questi casi hanno scatenato scandali, mettendo in discussione l'autorità morale della carica Papale."
  
  flavor_pap.22.title: "Incendio del Palazzo Lateranense"
+ flavor_pap.22.entry: "$flavor_pap.22.title$" #NEW
  flavor_pap.22.desc: "Il disastro ha colpito l'antico Palazzo Lateranense a [ShowLocationName('rome')]. Questa antica sede dei Papi è stata il cuore dell'autorità del [ROOT.GetCountry.GetAdjective] per quasi mille anni, ospitando manufatti di inestimabile valore, reliquie sacre e documenti insostituibili che raccontano la storia della [GetUniqueInternationalOrganization('catholic_church').GetName]. Mentre le fiamme si propagano, le colonne si incrinano e gli arazzi secolari vengono ridotti in cenere. Il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], le guardie e i servitori si affrettano a spegnere l'incendio, ma senza un intervento rapido l'intero palazzo potrebbe andare distrutto."
  flavor_pap.22.a: "Mobilitiamo le risorse per salvare ciò che possiamo!"
  flavor_pap.22.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
- flavor_pap.22.historical_info: "Nel 1361 un devastante incendio distrusse il Palazzo Lateranense. Questo antico palazzo, un tempo sede dell'autorità papale, fu quasi completamente distrutto, con la sola eccezione della #italic cappella Sancta Sanctorum#! – che ospita alcune delle reliquie più sacre della Chiesa, sopravvissute alle fiamme."
+ flavor_pap.22.b.entry: "$common_string_nothing_we_can_do_about_it$" #NEW
+# flavor_pap.22.historical_info: "Nel 1361 un devastante incendio distrusse il Palazzo Lateranense. Questo antico palazzo, un tempo sede dell'autorità papale, fu quasi completamente distrutto, con la sola eccezione della #italic cappella Sancta Sanctorum#! – che ospita alcune delle reliquie più sacre della Chiesa, sopravvissute alle fiamme." #OLD
+ flavor_pap.22.historical_info: "In 1361, a devastating fire engulfed the Lateran Palace. This ancient palace, once the grand center of papal authority, was almost completely destroyed, with only the #italic Sancta Sanctorum chapel#! — home to some of the Church's most sacred relics — surviving the flames." #NEW
  
  flavor_pap.23.title: "[pap_fontana.GetNameWithNoTooltip]"
- flavor_pap.23.desc: "[pap_fontana.GetName], un architetto rinomato e di grande talento, è diventato famoso per il suo lavoro su numerosi progetti per i nostri cardinali. La sua abilità nella progettazione di grandi opere e nella ristrutturazione urbana ha trasformato alcune parti di [ShowLocationName('rome')]. Il talento di [pap_fontana.GetLastNameWithNoTooltip] potrebbe rivelarsi prezioso per noi nel perseguire la nostra visione di una ristrutturazione gloriosa di [ShowLocationNameWithNoTooltip('rome')]. Forse sarebbe saggio nominarl[pap_fontana.Custom('IT_ART_O_A')] ufficialmente nostro architetto pontificio, incaricandol[pap_fontana.Custom('IT_ART_O_A')] di dare vita alle nostre ambizioni architettoniche."
- flavor_pap.23.a: "Assumil[pap_fontana.Custom('IT_ART_O_A')]!"
- flavor_pap.23.b: "Lascial[pap_fontana.Custom('IT_ART_O_A')] lavorare con i nostri Cardinali."
+ flavor_pap.23.entry: "Domenico Fontana" #NEW
+# flavor_pap.23.desc: "[pap_fontana.GetName], un architetto rinomato e di grande talento, è diventato famoso per il suo lavoro su numerosi progetti per i nostri cardinali. La sua abilità nella progettazione di grandi opere e nella ristrutturazione urbana ha trasformato alcune parti di [ShowLocationName('rome')]. Il talento di [pap_fontana.GetLastNameWithNoTooltip] potrebbe rivelarsi prezioso per noi nel perseguire la nostra visione di una ristrutturazione gloriosa di [ShowLocationNameWithNoTooltip('rome')]. Forse sarebbe saggio nominarl[pap_fontana.Custom('IT_ART_O_A')] ufficialmente nostro architetto pontificio, incaricandol[pap_fontana.Custom('IT_ART_O_A')] di dare vita alle nostre ambizioni architettoniche." #OLD
+ flavor_pap.23.desc: "[pap_fontana.GetName], a renowned and gifted architect, has gained fame for his work on numerous projects for our cardinals. His skill with grand designs and urban restructuring has transformed parts of [ShowLocationName('rome')]. [pap_fontana.GetLastNameWithNoTooltip]'s talents could be invaluable to us as we pursue our vision of a restructured, glorious [ShowLocationNameWithNoTooltip('rome')]. Perhaps it would be wise to officially appoint him as our pontifical architect, entrusting him to bring our architectural ambitions to life." #NEW
+# flavor_pap.23.a: "Assumil[pap_fontana.Custom('IT_ART_O_A')]!" #OLD
+ flavor_pap.23.a: "Hire him!" #NEW
+# flavor_pap.23.b: "Lascial[pap_fontana.Custom('IT_ART_O_A')] lavorare con i nostri Cardinali." #OLD
+ flavor_pap.23.b: "Leave him to work with our Cardinals." #NEW
  flavor_pap.23.historical_info: "Domenico Fontana è stato un influente architetto italiano le cui opere hanno plasmato il volto di Roma. Divenne l'architetto preferito di Papa Sisto V, guidando importanti progetti urbani a Roma. Tra i successi di Fontana figurano il trasferimento dell'Obelisco Vaticano in Piazza San Pietro e la progettazione della ristrutturazione del Palazzo Lateranense."
  
  flavor_pap.24.title: "Ricostruzione del Palazzo Lateranense"
+ flavor_pap.24.entry: "$flavor_pap.24.title$" #NEW
  flavor_pap.24.desc: "Il Palazzo Lateranense, un tempo maestosa residenza dei papi e simbolo dell'autorità della Chiesa, oggi è in gran parte in rovina a causa dei violenti incendi che lo hanno devastato nel XIV secolo. Molti ritengono che sia giunto il momento di riportare questo antico palazzo al suo antico splendore, data la sua innegabile importanza storica e spirituale. Con il nostro rinomato architetto [fontana.GetName] a [ROOT.GetCountry.GetGovernment.GetCourtTitle], abbiamo le competenze necessarie per intraprendere questo progetto monumentale."
  flavor_pap.24.a: "Ricostruisci il palazzo."
  flavor_pap.24.b: "Migliorare invece le infrastrutture generali di [ShowLocationNameWithNoTooltip('rome')]."
  flavor_pap.24.historical_info: "Alla fine del XVI secolo, papa Sisto V incaricò il famoso architetto Domenico Fontana di ricostruire il Palazzo Lateranense, che era caduto in rovina dopo secoli di incendi e abbandono. Fontana trasformò l'antica struttura, modernizzandola e aggiungendo nuove ali, cortili e grandi sale per ripristinarne l'importanza come simbolo dell'autorità papale."
  
  flavor_pap.25.title: "Rinforzare [ShowBuildingTypeNameWithNoTooltip('castel_sant_angelo')]"
+ flavor_pap.25.entry: "Fortifying Castel Sant'Angelo" #NEW
  flavor_pap.25.desc: "Il Mausoleo di Adriano, oggi meglio conosciuto come [ShowBuildingTypeName('castel_sant_angelo')], è stato gradualmente trasformato dai nostri predecessori in un bastione fortificato, fornendo una linea di difesa vitale per [ShowLocationName('rome')]. Data la natura turbolenta dei nostri tempi, molti consiglieri ora ci esortano a completarne la trasformazione in un castello formidabile, in grado di proteggere [ShowLocationNameWithNoTooltip('rome')] da qualsiasi minaccia."
  flavor_pap.25.a: "Trasformalo in una fortezza a tutti gli effetti."
  flavor_pap.25.b: "Le sue difese attuali sono sufficienti."
  flavor_pap.25.historical_info: "Nel XVI secolo Castel Sant'Angelo era diventato una fortezza completamente sviluppata, con passaggi sotterranei che la collegavano al Vaticano. Castel Sant'Angelo è famoso per aver protetto Papa Clemente VII durante il Sacco di Roma del 1527, quando lui e il suo seguito vi si rifugiarono dalle truppe invasori di Carlo V."
  
  flavor_pap.26.title: "Residenza Estiva dei Papi"
+ flavor_pap.26.entry: "$flavor_pap.26.title$" #NEW
  flavor_pap.26.desc: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] ha espresso interesse a stabilire una residenza estiva lontano dalle strade affollate e caotiche del centro di [ShowLocationName('rome')]. Il Quirinale, uno dei famosi Sette Colli di [ShowLocationNameWithNoTooltip('rome')], è considerata una località ideale, che offre un rifugio tranquillo con brezze fresche e viste panoramiche. Se procediamo, il rinomato architetto [fontana.GetName] potrebbe supervisionare la progettazione e la costruzione del palazzo."
  flavor_pap.26.a: "Costruisci la residenza estiva sul colle del Quirinale."
  flavor_pap.26.b: "Non è il momento per progetti ambiziosi."
  flavor_pap.26.historical_info: "Il Palazzo del Quirinale fu commissionato nel 1583 da Papa Gregorio XIII come residenza estiva per il papato. Progettato con il contributo di eminenti architetti, tra cui Domenico Fontana, il palazzo offriva un rifugio dal caldo e dalla folla del centro di Roma. Quando il neocostituito Regno d'Italia annesse gran parte di ciò che restava dello Stato Pontificio, il Palazzo del Quirinale divenne la sede dei re Italiani."
  
  flavor_pap.27.title: "[pap_danti.GetNameWithNoTooltip]"
- flavor_pap.27.desc: "Il dotto studioso e matematico [pap_danti.GetName] ha attirato l'attenzione della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] con il suo impressionante lavoro nel campo dell'astronomia, della cartografia e della costruzione di strumenti.. [pap_danti.GetLastNameWithNoTooltip] è rinomato per la creazione di mappe accurate, carte celesti e meridiane e la sua competenza si è già dimostrata preziosa per i progetti architettonici della Chiesa. Come studioso dedito al progresso della conoscenza, [pap_danti.GetLastNameWithNoTooltip] potrebbe esserci di grande aiuto mettendo le sue competenze al servizio delle nostre ambizioni."
- flavor_pap.27.a: "Nominal[pap_danti.Custom('IT_ART_O_A')] come nostro Cartografo di [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
- flavor_pap.27.b: "Nominal[pap_danti.Custom('IT_ART_O_A')] e finanzia ulteriormente la sua ricerca."
- flavor_pap.27.c: "Il suo talento è ammirevole, ma al momento non possiamo permettercelo."
+ flavor_pap.27.entry: "Ignazio Danti" #NEW
+# flavor_pap.27.desc: "Il dotto studioso e matematico [pap_danti.GetName] ha attirato l'attenzione della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] con il suo impressionante lavoro nel campo dell'astronomia, della cartografia e della costruzione di strumenti.. [pap_danti.GetLastNameWithNoTooltip] è rinomato per la creazione di mappe accurate, carte celesti e meridiane e la sua competenza si è già dimostrata preziosa per i progetti architettonici della Chiesa. Come studioso dedito al progresso della conoscenza, [pap_danti.GetLastNameWithNoTooltip] potrebbe esserci di grande aiuto mettendo le sue competenze al servizio delle nostre ambizioni." #OLD
+ flavor_pap.27.desc: "The learned scholar and mathematician [pap_danti.GetName] has caught the attention of our [ROOT.GetCountry.GetGovernment.GetCourtTitle] with his impressive work in astronomy, cartography, and instrument making. [pap_danti.GetLastNameWithNoTooltip] is renowned for creating accurate maps, celestial charts, and sundials, and his expertise has already proven valuable for the Church's architectural projects. As a scholar dedicated to advancing knowledge, [pap_danti.GetLastNameWithNoTooltip] could assist us greatly by lending his skills to our ambitions." #NEW
+# flavor_pap.27.a: "Nominal[pap_danti.Custom('IT_ART_O_A')] come nostro Cartografo di [ROOT.GetCountry.GetGovernment.GetCourtTitle]!" #OLD
+ flavor_pap.27.a: "Appoint him as our [ROOT.GetCountry.GetGovernment.GetCourtTitle] Cartographer!" #NEW
+ flavor_pap.27.a.entry: "Appoint him as our court Cartographer!" #NEW
+# flavor_pap.27.b: "Nominal[pap_danti.Custom('IT_ART_O_A')] e finanzia ulteriormente la sua ricerca." #OLD
+ flavor_pap.27.b: "Appoint him and further fund his research." #NEW
+# flavor_pap.27.c: "Il suo talento è ammirevole, ma al momento non possiamo permettercelo." #OLD
+ flavor_pap.27.c: "His talents are admirable, but we cannot afford them now." #NEW
  flavor_pap.27.historical_info: "Ignazio Danti era un abile astronomo, matematico e cartografo che creò mappe accurate e strumenti astronomici per la corte Papale. Danti ebbe un ruolo cruciale nel proporre una serie di riforme che avrebbero portato alla creazione del Calendario Gregoriano."
  
  flavor_pap.28.title: "Errori del Calendario Giuliano"
+ flavor_pap.28.entry: "$flavor_pap.28.title$" #NEW
  flavor_pap.28.desc: "Per secoli, il calendario giuliano è stato lo standard in tutto il mondo Cristiano. Tuttavia, sta diventando sempre più evidente che le sue imprecisioni nel calcolo dell'anno e nella previsione di date chiave, come la Pasqua, hanno causato crescente preoccupazione. Il disallineamento del calendario con l'anno solare ha portato a uno scostamento significativo, mettendo in discussione sia le nostre tradizioni che questioni pratiche. Molti consiglieri chiedono ora di riunire i nostri più grandi studiosi, matematici e astronomi per elaborare una soluzione che possa correggere questi errori di lunga data."
  flavor_pap.28.a: "Convocate le menti più brillanti per riformare il calendario."
  flavor_pap.28.a.tt: "Le nostre menti più brillanti inizieranno a lavorare alla creazione del nuovo calendario."
  flavor_pap.28.b: "Questo imponente progetto sarebbe troppo costoso."
  flavor_pap.28.historical_info: "Il Calendario Giuliano, introdotto da Giulio Cesare, era stato concepito per allineare il calendario Romano all'anno solare. Tuttavia, presentava un difetto significativo: sovrastimava la durata dell'anno. Nel corso dei secoli, questo piccolo errore si è accumulato, causando uno scostamento del calendario dall'anno solare effettivo, e questo disallineamento ha influito sulla tempistica di eventi importanti, in particolare la celebrazione della Pasqua, che era tradizionalmente legata all'equinozio di primavera."
  
- flavor_pap.29.title: "Inter Gravissimas – Il Nuovo Calendario"
+# flavor_pap.29.title: "Inter Gravissimas – Il Nuovo Calendario" #OLD
+ flavor_pap.29.title: "Inter Gravissimas — The New Calendar" #NEW
+ flavor_pap.29.entry: "$flavor_pap.29.title$" #NEW
  flavor_pap.29.desc: "Dopo molti sforzi e una stretta collaborazione tra le menti più brillanti della [GetUniqueInternationalOrganization('catholic_church').GetName], abbiamo raggiunto un importante traguardo nella riforma del calendario. [target_ruler.GetName] ha emanato la bolla papale #italic Inter Gravissimas#!, annunciando la creazione di un nuovo calendario che sostituirà il sistema Giuliano, ormai obsoleto. Questo nuovo calendario corregge lo scarto stagionale e prevede con precisione date come quella della Pasqua. Sarà adottato immediatamente, riallineando le nostre celebrazioni sacre e la vita quotidiana con l'anno solare naturale."
  flavor_pap.29.a: "Un successo monumentale!"
  flavor_pap.29.historical_info: "Papa Gregorio XIII introdusse il Calendario Gregoriano nel 1582, che riuscì a risolvere i problemi causati dal Calendario Giuliano non allineato. Eliminò tutti i giorni in eccesso che si erano accumulati nel corso dei secoli e implementò un sistema di anni bisestili più accurato che avrebbe impedito il ripetersi di questo errore."
  
  flavor_pap.30.title: "Constitutiones Sanctæ Matris Ecclesiæ"
+ flavor_pap.30.entry: "$flavor_pap.30.title$" #NEW
  flavor_pap.30.desc: "Negli ultimi anni, molti all'interno della [GetUniqueInternationalOrganization('catholic_church').GetName] hanno sollevato preoccupazioni in merito a questioni di disciplina, istruzione e integrità del clero. Si fa sempre più forte la richiesta di redigere un documento completo che affronti queste questioni di lunga data. Tale decreto imporrebbe standard più severi per la condotta del clero, migliorerebbe l'istruzione dei sacerdoti e garantirebbe la disciplina a tutti i livelli della Chiesa."
  flavor_pap.30.a: "Sostenere la sua stesura."
  flavor_pap.30.b: "La Chiesa va bene così com'è; non sono necessari cambiamenti."
  flavor_pap.30.historical_info: "#italic La Constitutiones Sanctæ Matris Ecclesiæ#!, note anche come Costituzioni Egidiane, erano un insieme di leggi promulgate dal cardinale Albornoz nel 1357. Queste leggi costituirono la prima costituzione storica dello Stato Pontificio e furono concepite per centralizzare e riformare l'amministrazione dello Stato Pontificio, che era frammentato e afflitto dalla corruzione."
  
  flavor_pap.31.title: "[pap_raphael.GetNameWithNoTooltip]"
- flavor_pap.31.desc: "[pap_raphael.GetName], un celebre pittore e architetto del [ShowInstitutionName('renaissance')], ha recentemente attirato l'attenzione della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Noto per le sue composizioni raffinate e la sua maestria nella prospettiva, le sue opere gli hanno valso il plauso in tutta Italia e oltre. Assumerlo aumenterebbe sicuramente il prestigio culturale della Chiesa e attirerebbe anche l'ammirazione di studiosi e artisti. Molti consulenti raccomandano di invitare formalmente [pap_raphael.GetNameWithNoTooltip] a ricoprire il ruolo di consulente artistico per elevare la grandiosità dei nostri progetti e rafforzare l'eredità del [ROOT.GetCountry.GetAdjective] nell'arte e nell'architettura. "
- flavor_pap.31.a: "Invite [pap_raphael.GetLastNameWithNoTooltip] nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_pap.31.entry: "Raffaello Sanzio da Urbino" #NEW
+# flavor_pap.31.desc: "[pap_raphael.GetName], un celebre pittore e architetto del [ShowInstitutionName('renaissance')], ha recentemente attirato l'attenzione della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Noto per le sue composizioni raffinate e la sua maestria nella prospettiva, le sue opere gli hanno valso il plauso in tutta Italia e oltre. Assumerlo aumenterebbe sicuramente il prestigio culturale della Chiesa e attirerebbe anche l'ammirazione di studiosi e artisti. Molti consulenti raccomandano di invitare formalmente [pap_raphael.GetNameWithNoTooltip] a ricoprire il ruolo di consulente artistico per elevare la grandiosità dei nostri progetti e rafforzare l'eredità del [ROOT.GetCountry.GetAdjective] nell'arte e nell'architettura. " #OLD
+ flavor_pap.31.desc: "[pap_raphael.GetName], a celebrated [ShowInstitutionName('renaissance')] painter and architect, has recently caught the attention of our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Known for his exquisite compositions and mastery of perspective, [pap_raphael.GetLastNameWithNoTooltip]'s works have earned him acclaim across Italy and beyond. Hiring him would surely enhance the cultural prestige of the Church and also attract admiration from scholars and artists alike. Many advisors recommend that we formally invite [pap_raphael.GetLastNameWithNoTooltip] to serve as an artistic consultant to elevate the grandeur of our projects and reinforce the [ROOT.GetCountry.GetAdjective] legacy in art and architecture." #NEW
+# flavor_pap.31.a: "Invite [pap_raphael.GetLastNameWithNoTooltip] nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
+ flavor_pap.31.a: "Invite Sanzio da Urbino to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
+ flavor_pap.31.a.entry: "Invite Sanzio da Urbino to our court." #NEW
  flavor_pap.31.b: "Al momento non possiamo permetterci il lusso di un artista."
  flavor_pap.31.historical_info: "Raffaello Sanzio da Urbino è stato un maestro pittore e architetto del Rinascimento italiano, celebre per la chiarezza delle forme, la facilità compositiva e la realizzazione visiva dell'ideale Neoplatonico della grandezza umana. Nel 1508 Raffaello fu invitato da Papa Giulio II a lavorare in Vaticano, dove realizzò alcune delle sue opere più famose, tra cui la Scuola di Atene e la Madonna Sistina."
  
  flavor_pap.32.title: "L'Umanesimo e gli Insegnamenti della Chiesa"
+ flavor_pap.32.entry: "$flavor_pap.32.title$" #NEW
  flavor_pap.32.desc: "I recenti sviluppi relativi alla Riforma Protestante stanno rapidamente trasformando il panorama della [GetUniqueInternationalOrganization('catholic_church').GetName]. Le tendenze umanistiche un tempo celebrate, che fiorirono sotto i papi del [ShowInstitutionName('renaissance')] e enfatizzavano la ragione, l'apprendimento classico e il valore dell'esperienza individuale, sono sempre più viste con sospetto.\n\nMentre la Chiesa si sposta lentamente verso una posizione più ortodossa, molti considerano l'umanesimo incompatibile con gli insegnamenti e le dottrine tradizionali. Questa crescente tensione solleva interrogativi sul futuro orientamento della Chiesa e sul suo rapporto con i più ampi movimenti intellettuali d'[ShowContinentName('europe')]."
  flavor_pap.32.a: "Rafforzare gli insegnamenti ortodossi e prendere le distanze dall'umanesimo."
  flavor_pap.32.b: "L'umanesimo deve rimanere parte integrante dei nostri insegnamenti!"
  
  flavor_pap.101.title: "Gli Archivi Papali d'[from_location.GetNameWithNoTooltip]"
+ flavor_pap.101.entry: "The $PAP_ADJ$ Archives of Location" #NEW
  flavor_pap.101.desc: "La storia del governo del [ROOT.GetCountry.GetAdjective] è antica e molto ben documentata. Molti eventi e decisioni riguardanti gli affari [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank] e del [ROOT.GetCountry.GetReligion.GetName] sono archiviati e raccolti negli [ShowBuildingTypeName('papal_archives')] d'[from_location.GetName].\n\nL'accesso a questi archivi è diventato molto limitato, tuttavia, a causa della nostra attività in [ShowRegionName('france_region')], la nostra capitale; la sede stessa del [ROOT.GetCountry.GetReligion.GetNameWithNoTooltip] era stata trasferita ad [target_location.GetName]. La nostra influenza sulle nostre proprietà in [ShowRegionName('italy_region')] sta diventando sempre più limitata.\n\nI consiglieri di [ruler_scope.GetName] suggerisco di spostare gli archivi ad [target_location.GetNameWithNoTooltip] per eliminare le restrizioni."
  flavor_pap.101.a: "Sposta gli archivi."
  flavor_pap.101.b: "Non vale la pena spendere tanto."
  
  flavor_pap.33.title: "Il Giubileo del 1350"
+ flavor_pap.33.entry: "$flavor_pap.33.title$" #NEW
  flavor_pap.33.desc: "All'alba dell'anno 1350, pellegrini provenienti da tutta la Cristianità affluiscono a [ShowLocationName('rome')] per partecipare al grande Giubileo, una celebrazione sacra che offre la remissione dei peccati e le benedizioni divine ai fedeli. Questo evento sacro, proclamato da [target_ruler.GetName], ha attirato migliaia di persone in cerca di rinnovamento spirituale, portando non solo devozione religiosa, ma anche prosperità alla Città Eterna."
  flavor_pap.33.a: "Sottolineare il significato spirituale del Giubileo."
  flavor_pap.33.b: "Sfruttate i vantaggi economici dei pellegrini."
  flavor_pap.33.historical_info: "Il Giubileo del 1350 fu il secondo Anno Santo nella storia della Chiesa Cattolica, dopo quello indetto da Papa Bonifacio VIII nel 1300. Proclamato da Papa Clemente VI, attirò a Roma un gran numero di pellegrini, nonostante l'impatto devastante della peste nera che stava devastando l'Europa. A coloro che visitavano le basiliche di San Pietro e San Paolo venivano concesse indulgenze plenarie, il che rafforzò l'autorità spirituale del Papato. Tuttavia, il Giubileo ebbe anche conseguenze economiche significative, poiché i mercanti e le autorità locali trassero profitto dall'aumento dell'attività nella città."
  
  flavor_pap.34.title: "Pubblicazione del Canzoniere"
- flavor_pap.34.desc: "Il celebre poeta e studioso [target_character.GetName] ha completato una magistrale raccolta di sonetti e poesie dedicati alla sua musa, Laura. Quest'opera, nota come il #italic Canzoniere#!, è una testimonianza sia del suo genio letterario sia del crescente spirito umanistico che cerca di far rivivere gli ideali classici. [target_character.GetLastNameWithNoTooltip] si rivolge ora alla [ROOT.GetCountry.GetGovernment.GetCourtTitle], chiedendo il patrocinio per garantire l'ampia diffusione della sua magnum opus."
- flavor_pap.34.a: "Patrociniamo [target_character.GetLastNameWithNoTooltip] e le sue opere!"
+ flavor_pap.34.entry: "$flavor_pap.34.title$" #NEW
+# flavor_pap.34.desc: "Il celebre poeta e studioso [target_character.GetName] ha completato una magistrale raccolta di sonetti e poesie dedicati alla sua musa, Laura. Quest'opera, nota come il #italic Canzoniere#!, è una testimonianza sia del suo genio letterario sia del crescente spirito umanistico che cerca di far rivivere gli ideali classici. [target_character.GetLastNameWithNoTooltip] si rivolge ora alla [ROOT.GetCountry.GetGovernment.GetCourtTitle], chiedendo il patrocinio per garantire l'ampia diffusione della sua magnum opus." #OLD
+ flavor_pap.34.desc: "The esteemed poet and scholar [target_character.GetName] has completed a masterful collection of sonnets and poems dedicated to his muse, Laura. This work, known as the #italic Canzoniere#!, is a testament to both his literary genius and the growing spirit of humanism that seeks to revive classical ideals. [target_character.GetLastNameWithNoTooltip] now turns to the [ROOT.GetCountry.GetGovernment.GetCourtTitle], requesting patronage to ensure the widespread publication of his magnum opus." #NEW
+# flavor_pap.34.a: "Patrociniamo [target_character.GetLastNameWithNoTooltip] e le sue opere!" #OLD
+ flavor_pap.34.a: "Patronize [target_character.GetLastNameWithNoTooltip] and his works!" #NEW
+ flavor_pap.34.a.entry: "Patronize him and his works!" #NEW
  flavor_pap.34.b: "Questa poesia è una distrazione dalla fede!"
  flavor_pap.34.historical_info: "Francesco Petrarca, noto come Petrarca, è stato un poeta e studioso italiano, nonché uno dei primi umanisti, spesso considerato l'iniziatore dell'umanesimo Rinascimentale Italiano. È famoso soprattutto per le sue poesie, in particolare il #italic Canzoniere#!, nonché per il suo impegno nella riscoperta e nella conservazione dei testi latini classici. Il fascino di Petrarca per l'antichità e la sua convinzione della superiorità morale e intellettuale dell'era classica hanno svolto un ruolo cruciale nel plasmare il pensiero rinascimentale in Italia e oltre."
  
  flavor_pap.35.title: "Bonifica delle Paludi Pontine"
+ flavor_pap.35.entry: "$flavor_pap.35.title$" #NEW
  flavor_pap.35.desc: "Per secoli, le vaste e malariche Paludi Pontine di [ShowLocationName('velletri')] e [ShowLocationName('terracina')] hanno rappresentato un ostacolo significativo per l'agricoltura, il commercio e l'insediamento umano. Diversi papi hanno cercato di bonificare il territorio, ma ogni tentativo è stato vanificato da controversie sui diritti di proprietà, opposizione politica o dalla difficoltà intrinseca dell'impresa. Ora, con rinnovata determinazione, i nostri ingegneri hanno proposto un piano audace per bonificare finalmente le paludi."
  flavor_pap.35.a: "Impegnati a prosciugarle."
  flavor_pap.35.a.tt: "Il modificatore applicato annullerà alcuni degli effetti negativi della [topography|e] delle $wetlands$ Locali"
@@ -200,24 +265,32 @@
  flavor_pap.35.historical_info: "Le Paludi Pontine rappresentavano una sfida di lunga data per i papi, poiché erano famose per la loro impraticabilità e la diffusione della malaria. I primi tentativi documentati di bonificarle risalgono al 1298, sotto papa Bonifacio VIII, il cui progetto di canali portò inavvertitamente a ulteriori inondazioni. Nel corso dei secoli successivi, papi come Eugenio IV, Leone X, Martino V, Sisto V e Pio VI tentarono tutti di bonificarle, incontrando spesso la resistenza della nobiltà locale per questioni di proprietà e diritti di pesca."
  
  flavor_pap.36.title: "L'Avidità del cardinale [target_character.GetLastNameWithNoTooltip]"
- flavor_pap.36.desc: "Ultimamente, il Cardinale [target_character.GetName] è stato pesantemente criticato per aver presumibilmente usato la sua influenza per accumulare immense ricchezze e ottenere potere. Il suo controllo su uffici redditizi, l'acquisizione aggressiva di terreni e il patrocinio di progetti architettonici stravaganti hanno arricchito la sua famiglia a spese del tesoro pubblico. Il suo stile di vita indulgente e il suo favoritismo hanno attirato critiche sia dal [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] che dai [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], che vedono le sue azioni come emblematiche della corruzione all'interno della [GetUniqueInternationalOrganization('catholic_church').GetName]."
- flavor_pap.36.a: "Cercare di nascondere silenziosamente le sue azioni."
- flavor_pap.36.b: "Rimproveralo pubblicamente per la sua corruzione e licenzialo."
+ flavor_pap.36.entry: "The Greed of Cardinal Borghese" #NEW
+# flavor_pap.36.desc: "Ultimamente, il Cardinale [target_character.GetName] è stato pesantemente criticato per aver presumibilmente usato la sua influenza per accumulare immense ricchezze e ottenere potere. Il suo controllo su uffici redditizi, l'acquisizione aggressiva di terreni e il patrocinio di progetti architettonici stravaganti hanno arricchito la sua famiglia a spese del tesoro pubblico. Il suo stile di vita indulgente e il suo favoritismo hanno attirato critiche sia dal [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] che dai [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], che vedono le sue azioni come emblematiche della corruzione all'interno della [GetUniqueInternationalOrganization('catholic_church').GetName]." #OLD
+ flavor_pap.36.desc: "As of late, Cardinal [target_character.GetName] has been heavily criticized for allegedly using his influence to amass immense wealth and gain power. His control over lucrative offices, aggressive acquisition of land, and patronage of extravagant architectural projects have enriched his family at the expense of the treasury. His indulgent lifestyle and favoritism have drawn criticism from both the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], who see his actions as emblematic of corruption within the [GetUniqueInternationalOrganization('catholic_church').GetName]." #NEW
+# flavor_pap.36.a: "Cercare di nascondere silenziosamente le sue azioni." #OLD
+ flavor_pap.36.a: "Attempt to quietly cover up his actions." #NEW
+# flavor_pap.36.b: "Rimproveralo pubblicamente per la sua corruzione e licenzialo." #OLD
+ flavor_pap.36.b: "Rebuke his corruption publicly and dismiss him." #NEW
  flavor_pap.36.historical_info: "Il Cardinale Caffarelli-Borghese fu uno dei cardinali più potenti e influenti del suo tempo, ricoprendo il ruolo di segretario e braccio destro di suo zio, Papa Paolo V. Grazie al nepotismo, acquisì numerosi titoli, terreni e posizioni redditizie, rendendo la famiglia Borghese una delle più ricche di Roma. Investì molto nelle arti e commissionò la costruzione di Villa Borghese, una tenuta opulenta ricca di opere d'arte di grande valore. Tuttavia, la sua spietata ricerca di ricchezza e potere lo rese una figura controversa."
  
  flavor_pap.37.title: "La Grande Devozione del 1399"
+ flavor_pap.37.entry: "$flavor_pap.37.title$" #NEW
  flavor_pap.37.desc: "Una grande ondata di fervore religioso si è diffusa nello [ROOT.GetCountry.GetName] mentre migliaia di penitenti attraversano la campagna in solenni processioni. Conosciuti come #italic Bianchi#! per le vesti bianche che indossano, marciano a piedi nudi di città in città con il volto coperto, intonando preghiere e invocando il pentimento e la misericordia divina. Queste masse auto-organizzate, ispirate dai timori apocalittici e dai tumulti dell'epoca, hanno raccolto un immenso sostegno popolare, ma la loro natura incontrollata e spontanea suscita preoccupazioni, soprattutto tra le autorità ecclesiastiche."
  flavor_pap.37.a: "Incoraggiare il movimento."
  flavor_pap.37.b: "Regolate questi raduni per prevenire disordini."
  flavor_pap.37.historical_info: "The Bianchi movement of 1399 was a mass religious phenomenon that swept across central and northern Italy. It was fueled by widespread anxiety over war, plague, and economic hardship. The movement quickly spread to cities such as Rome, Florence, and Bologna, where thousands of penitents walked in long processions, reciting prayers and hymns. While the Bianchi were generally peaceful and motivated by spiritual concerns, their sudden and unregulated processions caused alarm among authorities."
  
  flavor_pap.38.title: "Istituzione della Guardia [ShowCultureNameWithNoTooltip('corsican')|U]"
+ flavor_pap.38.entry: "Establishment of the Corsican Guard" #NEW
  flavor_pap.38.desc: "Riconoscendo la necessità di una forza dedicata e leale per proteggere il [ROOT.GetCountry.GetGovernment.GetRulerTitle] e mantenere l'ordine all'interno dello [ROOT.GetCountry.GetName], [target_ruler.GetHeSheFormal] ha autorizzato l'assunzione della Guardia [ShowCultureName('corsican')|U]. Composta da guerrieri temprati provenienti dalla [ShowAreaName('liguria_area')], che sono famosi per la loro abilità marziale e la loro incrollabile devozione, la loro nomina a [ROOT.GetCountry.GetCapital.GetName] garantirà la protezione del [ROOT.GetCountry.GetGovernment.GetRulerTitle] e ufficiali chiave della Chiesa."
  flavor_pap.38.a: "Istituiscili come guardia del [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_pap.38.a.entry: "Establish them as his guard." #NEW
  flavor_pap.38.b: "Ci affideremo ai nostri soldati regolari."
  flavor_pap.38.historical_info: "La presenza dei Corsi nello Stato Pontificio è attestata fin dal IX secolo. Il loro numero crebbe dopo la fine del Papato Avignonese, poiché Roma divenne il nuovo centro del Paese con molte nuove opportunità di lavoro che attirarono l'immigrazione. Da questi immigrati, nel 1603 Papa Clemente VIII istituì la Guardia Corsica, che aveva principalmente il compito di fungere da guardia del corpo papale e da forza di polizia a Roma."
  
  flavor_pap.39.title: "Il Comportamento Incontrollabile della Guardia Corsa"
+ flavor_pap.39.entry: "The Corsican Guard's Uncontrollable Behavior" #NEW
  flavor_pap.39.desc: "La nostra forza di protezione d'élite è diventata fonte di costante agitazione all'interno di [ROOT.GetCountry.GetCapital.GetName]. I membri della Guardia [ShowCultureName('corsican')|U] sono sempre più spesso coinvolti in violente risse non solo tra loro, ma anche con altre unità militari e persino con civili. Le notizie di duelli per strada, faide mortali e aggressioni incontrollate sono diventate all'ordine del giorno, trasformando alcune zone di [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] in campi di battaglia. I cittadini vivono nella paura e persino i funzionari della Chiesa esitano a camminare per le strade di notte. Molti ora sostengono che questi uomini abbiano esaurito la loro utilità."
  flavor_pap.39.a: "Sciogliete l'unità."
  flavor_pap.39.a.tt: "Tutti i [pops|e] a [ROOT.GetCountry.GetCapital.GetName] guadagnano il [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [Concept('pop_satisfaction', 'Soddisfazione')|e]"
@@ -226,6 +299,7 @@
  flavor_pap.39.historical_info: "Verso la metà del XVII secolo, la Guardia Corsa era diventata famosa per il suo comportamento incontrollabile. Il loro forte senso di orgoglio e lealtà portava a frequenti dispute, che spesso degeneravano in violente risse con altre fazioni a Roma. Uno degli episodi più famosi avvenne nel 1662, quando uno scontro tra la Guardia Corsa e la scorta dell'ambasciatore francese provocò uno scandalo internazionale. L'indignazione diplomatica che ne seguì, unita al loro comportamento sconsiderato, costrinse papa Alessandro VII a sciogliere la Guardia Corsa nel 1662."
  
  flavor_pap.40.title: "Rafforzamento della Marina Pontificia"
+ flavor_pap.40.entry: "$flavor_pap.40.title$" #NEW
  flavor_pap.40.desc: "Il crescente dominio navale dei nostri avversari minaccia la sicurezza delle nostre coste e dei territori del [ROOT.GetCountry.GetAdjective]. Con l'espansione delle flotte nemiche, è diventato chiaro che dobbiamo rafforzare le nostre forze navali per difendere la fede e garantire la nostra influenza sul Mediterraneo. Molte figure di spicco stanno ora promuovendo una nuova iniziativa navale per aumentare le dimensioni della nostra flotta e contribuire agli sforzi Cristiani volti a garantire la sicurezza nel Mediterraneo."
  flavor_pap.40.a: "Sostieni l'iniziativa."
  flavor_pap.40.a.tt: "#G [ROOT.GetVariable('total_gained_ships_variable').GetValue]#! [ships|e] di Tipo Galee saranno radunate a [target_location.GetName]"
@@ -233,62 +307,83 @@
  flavor_pap.40.historical_info: "Durante il XVI e il XVII secolo, la Marina Pontificia subì una significativa espansione a causa della crescente minaccia della supremazia navale Ottomana nel Mediterraneo. Riconoscendo la necessità di una flotta forte, papa Sisto V decretò la creazione di dieci navi da guerra permanenti che costituirono il nucleo della Marina Pontificia. Sebbene relativamente piccola rispetto alle flotte di Venezia o della Spagna, la Marina Pontificia contribuì agli sforzi della Cristianità e ottenne numerose vittorie in battaglie navali."
  
  flavor_pap.41.title: "Patrocinio di [target_character.GetLastNameWithNoTooltip]"
- flavor_pap.41.desc: "[target_character.GetName] è uno [ShowArtistTypeNameWithNoTooltip('sculptor')] e [ShowArtistTypeNameWithNoTooltip('architect')] di straordinario talento. La sua maestria nell'arte Barocca ha già lasciato un segno indelebile su [ShowLocationName('rome')] e i suoi progetti per grandi chiese, fontane e palazzi hanno trasformato la Città Eterna in un vero capolavoro. Grazie alle sue competenze a nostra disposizione, potremmo consolidare ulteriormente il nostro dominio culturale e artistico assumendolo come architetto ufficiale del [ROOT.GetCountry.GetAdjective]."
- flavor_pap.41.a: "Dai a [target_character.GetLastNameWithNoTooltip] il sostegno di cui ha bisogno!"
+ flavor_pap.41.entry: "Patronage of Bernini" #NEW
+# flavor_pap.41.desc: "[target_character.GetName] è uno [ShowArtistTypeNameWithNoTooltip('sculptor')] e [ShowArtistTypeNameWithNoTooltip('architect')] di straordinario talento. La sua maestria nell'arte Barocca ha già lasciato un segno indelebile su [ShowLocationName('rome')] e i suoi progetti per grandi chiese, fontane e palazzi hanno trasformato la Città Eterna in un vero capolavoro. Grazie alle sue competenze a nostra disposizione, potremmo consolidare ulteriormente il nostro dominio culturale e artistico assumendolo come architetto ufficiale del [ROOT.GetCountry.GetAdjective]." #OLD
+ flavor_pap.41.desc: "[target_character.GetName] is a [ShowArtistTypeNameWithNoTooltip('sculptor')] and [ShowArtistTypeNameWithNoTooltip('architect')] of extraordinary talent. His mastery of Baroque art has already left a lasting mark on [ShowLocationName('rome')], and his designs for grand churches, fountains, and palaces have transformed the Eternal City into a true masterpiece. With his skills at our disposal, we could further solidify our cultural and artistic dominance by hiring him as the official [ROOT.GetCountry.GetAdjective] architect." #NEW
+# flavor_pap.41.a: "Dai a [target_character.GetLastNameWithNoTooltip] il sostegno di cui ha bisogno!" #OLD
+ flavor_pap.41.a: "Give [target_character.GetLastNameWithNoTooltip] the support he needs!" #NEW
+ flavor_pap.41.a.entry: "Give him the support he needs!" #NEW
  flavor_pap.41.b: "I nostri fondi sono necessari altrove."
  flavor_pap.41.historical_info: "Gian Lorenzo Bernini è stato uno degli artisti Barocchi più influenti in Italia. Ha lavorato per diversi Papi, tra cui Urbano VIII e Alessandro VII, e il patrocinio Papale gli ha permesso di progettare molti dei monumenti più famosi di Roma, tra cui i colonnati di Piazza San Pietro, la Fontana dei Quattro Fiumi e numerose sculture all'interno della Basilica di San Pietro."
  
  flavor_pap.42.title: "Inaugurazione del Primo [ShowBuildingTypeNameWithNoTooltip('theater')]"
+ flavor_pap.42.entry: "Commissioning the First Theater" #NEW
  flavor_pap.42.desc: "Il piacere di andare a [ShowBuildingTypeName('theater')] si sta diffondendo rapidamente tra la popolazione dell'[ShowRegionName('italy_region')], con grandi spettacoli che hanno affascinato il pubblico in luoghi come [ShowLocationName('florence')], [ShowLocationName('venice')], e [ShowLocationName('naples')]. Per garantire che [ShowLocationName('rome')] rimanga all'avanguardia nello sviluppo culturale e artistico, è stato proposto di costruire un nuovo [ShowBuildingTypeNameWithNoTooltip('theater')] [target_location.Custom('IT_NEL_LOCATION')][target_location.GetRank.GetName]. Fortunatamente, abbiamo già [bernini.GetName] a nostra disposizione and [bernini.GetHisHer] e la sua genialità architettonica potrebbe rendere questo progetto un capolavoro del design Barocco. Tuttavia, alcuni membri del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sono preoccupati che un [ShowBuildingTypeNameWithNoTooltip('theater')] del genere possa incoraggiare un'arte infedele e decadente, distogliendo i fedeli da attività più pie."
  flavor_pap.42.a: "Lasciamo che [bernini.GetLastNameWithNoTooltip] crei il suo capolavoro!"
+ flavor_pap.42.a.entry: "Let $Bernini$ create his masterpiece!" #NEW
  flavor_pap.42.b: "Il palcoscenico non è il posto giusto per i nostri fondi."
  flavor_pap.42.historical_info: "Il #italic Teatro delle Quattro Fontane#! era un teatro Barocco a Roma, progettato da Gian Lorenzo Bernini e commissionato dal Cardinale Francesco Barberini a metà del XVII secolo. Il teatro faceva parte del più ampio complesso architettonico che circondava la Chiesa di #italic San Carlo alle Quattro Fontane#!. Divenne un centro di innovazione teatrale Barocca, ma fu demolito all'inizio del XVIII secolo nell'ambito della ristrutturazione architettonica di Roma."
 
  flavor_pap.1000.title: "La Fondazione della Compagnia di Gesù"
+ flavor_pap.1000.entry: "$flavor_pap.1000.title$" #NEW
  flavor_pap.1000.historical_info: "Nel 1540 Papa Paolo III riconobbe l'Ordine dei Gesuiti, creato nel 1534 dallo spagnolo Don Íñigo López de Oñaz y Loyola, meglio conosciuto come Sant'Ignazio di Loyola. Egli divenne uno dei più devoti controriformisti e nemico numero uno del movimento Luterano. Loyola, che aveva un passato da soldato, lasciò il segno nell'ordine, che era organizzato quasi come un esercito. Grande importanza era data sia alla formazione dei missionari che a quella dei consiglieri delle corti reali europee. Ciò rese l'ordine dei gesuiti molto potente sulla scena politica. Nel 1773 l'ordine dei gesuiti fu sciolto da papa Pio VI a causa delle pressioni esercitate dai paesi di Fede [ShowReligionGroupAdjective('christian')] nell'Età dell'Illuminismo. Nel 1814 l'ordine dei Gesuiti fu reistituito, ma era ormai solo una pallida ombra del potente ordine che era stato un tempo.."
  flavor_pap.1000.desc: "[target_country.Custom('IT_La')|U][target_country.GetName] sta guidando il sostegno al nuovo Ordine dei Gesuiti e al loro impegno nell'affrontare l'eresia [ShowReligionAdjective('lutheran')]."
  flavor_pap.1000.a: "Congratulazioni [target_country.Custom('IT_Alla')][target_country.GetNameWithNoTooltip]."
+ flavor_pap.1000.a.entry: "Congratulate them." #NEW
 
  flavor_pap.1001.title: "Sostegno [ROOT.GetCountry.GetAdjectiveWithNoTooltip] all'ordine dei Gesuiti"
+ flavor_pap.1001.entry: "$flavor_pap.1001.title$" #NEW
  flavor_pap.1001.desc: "Il nostro sostegno all'ordine dei Gesuiti è stato notato ed è pienamente apprezzato dal [GetCountry('PAP').GetGovernment.GetRulerTitle]."
  flavor_pap.1001.historical_info: "L'ordine dei Gesuiti fu fondato nel 1534 dallo spagnolo Don Íñigo López de Oñaz y Loyola, meglio conosciuto come Sant'Ignazio di Loyola. Fu uno dei più devoti controriformisti e nemico numero uno dell'eresia [ShowReligionAdjective('lutheran')]."
  flavor_pap.1001.a: "Accogliamo con umiltà i complimenti."
 
  flavor_pap.1200.title: "Missione in $china$"
+ flavor_pap.1200.entry: "$flavor_pap.1200.title$" #NEW
  flavor_pap.1200.desc: "È nostro solenne dovere evangelizzare ovunque, portare la Parola di [ROOT.GetCountry.GetReligion.GetGodName] in ogni angolo della terra. Man mano che la nostra conoscenza del mondo cresce, cresce anche il nostro dovere. Gli esploratori in Estremo Oriente hanno iniziato ad entrare in contatto con i mercanti locali in [target_province.GetName]; è un segno che dobbiamo andare avanti e fare proselitismo tra loro."
  flavor_pap.1200.a: "Mandate i Gesuiti!"
 
  flavor_pap.1201.title: "L'arrivo dei Gesuiti"
  flavor_pap.1201.desc: "Missionari provenienti da terre lontane hanno attraversato il mare per raggiungere le nostre terre, portando doni [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] ed esponendo varie invenzioni meccaniche provenienti dall'Europa. Hanno anche dimostrato una grande conoscenza creando un'enorme mappa del mondo e proponendo valide idee per la riforma del calendario. Ma hanno anche portato con sé strane idee religiose e filosofiche, che potrebbero sconvolgere l'ordine tradizionale della Cina. Questi missionari dovrebbero essere autorizzati a rimanere?"
- flavor_pap.1201.a: "Sì, potremmo trarre vantaggio dal loro apprendimento."
- flavor_pap.1201.b: "No, le loro idee straniere non sono accettabili nella nostra società."
+# flavor_pap.1201.a: "Sì, potremmo trarre vantaggio dal loro apprendimento." #OLD
+ flavor_pap.1201.a: "Yes, we may benefit from their learning." #NEW
+# flavor_pap.1201.b: "No, le loro idee straniere non sono accettabili nella nostra società." #OLD
+ flavor_pap.1201.b: "No, their foreign ideas are not acceptable in our society." #NEW
  all_catholic_will_love_tt: "Tutti i [countries|e] di Fede [ShowReligionAdjective('catholic')] che ci hanno scoperto ricevono [ShowBiasValue('opinion_accepted_jesuits')|+=0] [opinion|e] [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]"
 
  flavor_pap.1300.title: "Missione in [ShowRegionNameWithNoTooltip('japan_region')]"
+ flavor_pap.1300.entry: "Mission To Japan Region" #NEW
  flavor_pap.1300.desc: "Le leggendarie terre del [ShowRegionName('japan_region')] ci stanno chiamando, implorando la salvezza. Dovremmo cercare queste isole dell'Estremo Oriente e diffondere la Buona Novella tra la loro popolazione."
  flavor_pap.1300.a: "Mandate i Gesuiti!"
  flavor_pap.1301.title: "Il Kirishitano"
  flavor_pap.1301.desc: "Missionari di Fede [ShowReligionAdjective('catholic')], sostenuti dal loro [ROOT.GetCountry.GetGovernment.GetRulerTitle] lontano, hanno iniziato ad arrivare sulle nostre coste. Stanno tentando di diffondere il [ShowReligionGroupName('christian')] e convertire in massa la popolazione locale. Se non vengono fermati, questi Gesuiti, Francescani e Domenicani potrebbero rappresentare una minaccia significativa per lo [ShowReligionName('shinto')]."
  flavor_pap.1301.a: "Fermate i missionari!"
- flavor_pap.1301.b: "Lascia che diffondano la loro fede"
+# flavor_pap.1301.b: "Lascia che diffondano la loro fede" #OLD
+ flavor_pap.1301.b: "Let them spread their faith." #NEW
 
  flavor_pap.1400.title: "La Compagnia di Gesù"
+ flavor_pap.1400.entry: "$flavor_pap.1400.title$" #NEW
  flavor_pap.1400.desc: "I Gesuiti sono le truppe d'assalto della rinascita [ShowReligionAdjective('catholic')]. Appositamente addestrati nelle tecniche per convertire le persone al [ShowReligionNameWithNoTooltip('catholic')], costituiscono una forza potente nel convincere i pagani e gli eretici a vedere la luce."
  flavor_pap.1400.a: "Ite, inflammate omnia!"
  flavor_pap.1400.tooltip: "La Compagnia di Gesù verrà fondata!"
  flavor_pap.1401.title: "Istituire la Compagnia di Gesù"
+ flavor_pap.1401.entry: "$flavor_pap.1401.title$" #NEW
  flavor_pap.1401.desc: "Sua Santità ha approvato un nuovo ordine missionario chiamato Compagnia di Gesù. Tuttavia, senza il sostegno reale, il nuovo ordine non potrà prosperare nei nostri territori.\n\nDobbiamo sostenere i Gesuiti?"
  flavor_pap.1401.a: "Ad maiorem Dei gloriam!"
  flavor_pap.1401.b: "Assolutamente no..."
 
  flavor_pap.1500.title: "La Commissione della Basilica di San Pietro"
+ flavor_pap.1500.entry: "$flavor_pap.1500.title$" #NEW
  flavor_pap.1500.desc: "La vecchia Basilica di San Pietro, costruita dall'imperatore Costantino il Grande, è oggi in uno stato di grave degrado a causa della sua età e della mancanza di manutenzione subita durante il soggiorno del [ROOT.GetCountry.GetGovernment.GetRulerTitle] nella città di [ShowLocationName('avignon')].\n\nÈ giunto il momento che tutti i Cristiani si uniscano per ricostruire il tempio e trasformarlo in un monumento degno di San Pietro stesso."
  flavor_pap.1500.historical_info: "Papa Giulio II iniziò la costruzione della Basilica poco dopo essere stato eletto [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Il completamento richiese più di 100 anni e uno degli artisti più famosi della storia, Michelangelo, ebbe un ruolo importante nella sua realizzazione, sia come architetto che come pittore."
- flavor_pap.1500.a: "Costruisci la Basilica"
+# flavor_pap.1500.a: "Costruisci la Basilica" #OLD
+ flavor_pap.1500.a: "Build the Basilica." #NEW
  flavor_pap.1500.b: "Utilizza le entrate derivanti dalle Indulgenze per finanziarla."
  flavor_pap.1500.c: "Costruisci la Basilica e chiedi a [michaelangelo_scope.GetShortNameWithNoTooltip] di abbellirla."
+ flavor_pap.1500.c.entry: "Build the Basilica and have Michelangelo embellish it." #NEW
  flavor_pap.1500.d: "Finanziatela con le indulgenze, assumete [michaelangelo_scope.GetShortNameWithNoTooltip] per decorarla."
- flavor_pap.1500.e: "Concentrati sulle questioni mondane"
+ flavor_pap.1500.d.entry: "Fund it with Indulgences, hire Michelangelo to adorn it." #NEW
+# flavor_pap.1500.e: "Concentrati sulle questioni mondane" #OLD
+ flavor_pap.1500.e: "Concentrate on worldly matters." #NEW
 
  flavor_pap.1501.title: "Inaugurazione di San Pietro"
  flavor_pap.1501.desc: "Dopo 120 anni di lavori, la meravigliosa Basilica di San Pietro è finalmente stata completata: è un momento di gioia e di festa per ogni servitore di Dio."
@@ -300,6 +395,7 @@
  flavor_pap.1502.a: "Dannazione!"
 
  flavor_pap.1700.title: "Vendita delle Indulgenze"
+ flavor_pap.1700.entry: "$flavor_pap.1700.title$" #NEW
  flavor_pap.1700.desc: "Molti paesi hanno iniziato a vendere indulgenze in cambio di denaro, affinché i ricchi possano salvare le loro anime e continuare a vivere nel peccato. Abbiamo ricevuto segnalazioni secondo cui alcuni dei nostri vescovi offrono questi servizi sostenendo di essere autorizzati da [target_ruler.GetName] stesso.\n\nQuesta pratica porta un sacco di soldi nelle casse della Chiesa e, mentre alcuni la condannano, altri pensano che dovrebbe essere consentita."
  flavor_pap.1700.a: "Indagare su queste accuse."
  flavor_pap.1700.a.tt: "Avvieremo delle indagini su queste affermazioni."
@@ -307,7 +403,9 @@
  flavor_pap.1700.c: "Cercheremo di sradicare completamente questa pratica!"
 
  flavor_pap.1701.title: "Il Frate [target_character.GetNameWithNoTooltip]"
- flavor_pap.1701.desc: "Membro dell'Ordine Domenicano, [target_character.GetName], è diventato famoso grazie ai suoi metodi radicali e innovativi per vendere le indulgenze. Oltre a vendere il perdono dopo che un povero peccatore ha ceduto alla debolezza, [target_character.GetSheHe] è anche disposto a perdonare i peccati non ancora commessi. Con questo, [target_character.GetSheHe] ha guadagnato una somma considerevole per la [GetInternationalOrganization('catholic_church').GetName] e per il [GetInternationalOrganization('catholic_church').GetLeaderTitle]."
+ flavor_pap.1701.entry: "Johann Tetzel starts selling in Saxony" #NEW
+# flavor_pap.1701.desc: "Membro dell'Ordine Domenicano, [target_character.GetName], è diventato famoso grazie ai suoi metodi radicali e innovativi per vendere le indulgenze. Oltre a vendere il perdono dopo che un povero peccatore ha ceduto alla debolezza, [target_character.GetSheHe] è anche disposto a perdonare i peccati non ancora commessi. Con questo, [target_character.GetSheHe] ha guadagnato una somma considerevole per la [GetInternationalOrganization('catholic_church').GetName] e per il [GetInternationalOrganization('catholic_church').GetLeaderTitle]." #OLD
+ flavor_pap.1701.desc: "A member of the Dominican Order, [target_character.GetName], has come to fame through his radical and innovative ways to sell indulgences. In addition to selling forgiveness after a poor sinner has given in to weakness, he is also open to forgive sins not yet committed. With this, he has earned a sizeable sum for the [GetInternationalOrganization('catholic_church').GetName] and the [GetInternationalOrganization('catholic_church').GetLeaderTitle]." #NEW
  flavor_pap.1701.a: "Non appena l'oro nella bara suona, l'anima salvata balza in cielo."
  flavor_pap.1701.b: "Convocatelo affinché sia processato."
  disables_indulgences: "Questo disabilita l'evento $flavor_pap.1700.title$ per i paesi di Fede [ShowReligionAdjective('catholic')]."
@@ -321,12 +419,15 @@
  flavor_pap.1703.b: "Puniremo chiunque venga sorpreso a vendere indulgenze."
 
  flavor_pap.1704.title: "Il Processo di [target_character.GetNameWithNoTooltip]"
+ flavor_pap.1704.entry: "The Trial of Johann Tetzel" #NEW
  flavor_pap.1704.desc: "Abbiamo convocato [target_character.GetName] a [ROOT.GetCountry.GetCapital.GetName] per difendersi dall'accusa di vendita sfrenata di indulgenze. Dopo il suo arrivo, ha fornito una lunga difesa delle sue azioni e ora sta a noi decidere come procedere in merito alla questione."
  flavor_pap.1704.a: "[target_character.GetNameWithNoTooltip] è colpevole."
+ flavor_pap.1704.a.entry: "The character is guilty." #NEW
  flavor_pap.1704.b: "Mandalo in un [ShowBuildingTypeNameWithNoTooltip('monastery')] locale."
  flavor_pap.1704.c: "È innocente!"
 
  flavor_pap.1800.title: "La Corona di Roma e [GetCountry('TUR').Custom('IT_La')][GetCountry('TUR').GetNameWithNoTooltip]"
+ flavor_pap.1800.entry: "The Ottomans and the Crown of Rome" #NEW
  flavor_pap.1800.desc: "La caduta di [ShowLocationName('constantinople')] provocò onde d'urto in tutto il mondo Cristiano, alterando l'equilibrio del potere regionale e consegnando uno dei luoghi più importanti del Cristianesimo nelle mani degli infedeli. Nonostante i numerosi tentativi militari di fermare l'espansione [GetCountry('TUR').Custom('IT_ADJ_FS')], i nostri sforzi hanno avuto scarso successo.\n\nAlla luce di ciò, è emersa una proposta audace: piuttosto che continuare un conflitto inutile, dovremmo prendere in considerazione un approccio diplomatico. È stato proposto di inviare una lettera a [ottoman_ruler.GetName], esortandolo a convertirsi al [ShowReligionName('catholic')]. In cambio, lo riconosceremmo come legittimo Imperatore di Roma, unendo potenzialmente la fede sotto un unico vessillo e stabilizzando la regione."
  flavor_pap.1800.a: "Questa è follia!"
  flavor_pap.1800.b: "Questa è follia! Ma proviamoci..."
@@ -337,6 +438,7 @@
  flavor_pap.1801.title: "L'Offerta della Corona Romana"
  flavor_pap.1801.desc: "È arrivato un messaggio sorprendente dalo [GetCountry('PAP').GetName], indirizzato direttamente al nostro [GetCountry('TUR').GetGovernment.GetRulerTitle]. Nella lettera, il [GetCountry('PAP').GetGovernment.GetRulerTitle] propone un'offerta radicale:  se accettiamo di convertirci al [ShowReligionName('catholic')], la [GetUniqueInternationalOrganization('catholic_church').GetName] ci riconoscerà ufficialmente come legittimi Imperatori di Roma. Ciò porrebbe fine all'aspra contesa con la cristianità e, in teoria, unirebbe i nostri regni sotto un'unica fede. La maggior parte lo considera un astuto stratagemma per sovvertire il nostro impero dall'interno, mentre alcuni lo vedono come un'occasione unica per consolidare il potere in tutta [ShowContinentName('europe')]. I nostri consiglieri considerano questa proposta una follia e accettarla porterebbe probabilmente a disordini interni di proporzioni inimmaginabili."
  flavor_pap.1801.a: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] è un maledetto idiota."
+ flavor_pap.1801.a.entry: "The ruler is a damned fool." #NEW
  flavor_pap.1801.b: "Lunga vita al Kayser-i Rum!"
  
  flavor_pap.1802.title: "[GetCountry('TUR').GetNameWithNoTooltip] Rifiuta l'Offerta"
@@ -349,9 +451,11 @@
 
  flavor_pap.9000.title: "Stato Pontificio"
  flavor_pap.9000.desc: "La profonda devozione dei Cattolici Romani ha risvegliato il desiderio di uno Stato indipendente governato dai papi della Chiesa. Gran parte della popolazione ha espresso il proprio sostegno all'idea di una tale istituzione e ora si è rivolta [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.GetName] per l'approvazione."
- flavor_pap.9000.a: "Non sosterremo mai uno Stato del genere."
+# flavor_pap.9000.a: "Non sosterremo mai uno Stato del genere." #OLD
+ flavor_pap.9000.a: "We will never support such a state." #NEW
  every_catholic_hates_us_tt: "Ogni [country|e] di Fede [ShowReligionAdjective('catholic')] cambia la sua [opinion|e] [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetLongName] di [ShowBiasValue('opinion_declined_independent_state_support')|+=0]"
- flavor_pap.9000.b: "Roma è giustamente loro"
+# flavor_pap.9000.b: "Roma è giustamente loro" #OLD
+ flavor_pap.9000.b: "Rome is rightfully theirs." #NEW
 
  flavor_pap.9001.title: "Lo Stato Pontificio"
  flavor_pap.9001.desc: "Ci rattrista profondamente vedere che i domini del Papa sono quasi completamente scomparsi. La nostra forte devozione ci rende i candidati ideali per la creazione di un nuovo Stato Pontificio. Forse dovremmo cedere una delle nostre province?"
@@ -362,6 +466,11 @@
  flavor_pap.9002.desc: "Nonostante i nostri migliori sforzi per mascherare la nostra espansione in [ShowRegionName('italy_region')] con l'aiuto della nostra diplomazia, sembra che la [GetUniqueInternationalOrganization('catholic_church').GetName] abbia condannato all'unanimità la nostra annessione di [target_location.GetName]. I rappresentanti provenienti da ogni angolo del continente hanno avanzato le loro richieste affinché [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetNameWithNoTooltip] venga restituita al [GetCountry('PAP').GetGovernment.GetRulerTitle]!"
  flavor_pap.9002.a: "Si tratta di una proposta valida."
  flavor_pap.9002.b: "Cappello stravagante o meno, il [GetCountry('PAP').GetGovernment.GetRulerTitle] non avrà [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetNameWithNoTooltip]!"
+ flavor_pap.9002.b.entry: "Fancy hat or not, he will not have the city!" #NEW
 
  accepted_to_return_rome_tt: "Ogni [country|e] di Fede [ShowReligionAdjective('catholic')] cambia la sua [opinion|e] [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetLongName] di [ShowBiasValue('returned_rome')|+=0]"
  declined_to_return_rome_tt: "Ogni [country|e] di Fede [ShowReligionAdjective('catholic')] cambia la sua [opinion|e] [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetLongName] di [ShowBiasValue('declined_return_rome')|+=0]"
+ flavor_pap.9003.title: "Rome Falls to the Infidel" #NEW
+ flavor_pap.9003.desc: "The Eternal City has fallen into the hands of those outside the Christian faith. News of [ShowLocationNameWithNoTooltip('rome')]'s conquest has sent shockwaves across Christendom. The [GetInternationalOrganization('catholic_church').GetName] mourns the loss of its most sacred city, and the faithful demand action. The [ShowReligionAdjective('catholic')] world will not forget this transgression." #NEW
+ flavor_pap.9003.a: "The infidels will know the wrath of Christendom." #NEW
+ catholics_outraged_over_infidel_rome_tt: "Every [ShowReligionAdjective('catholic')] [country|e] gains [antagonism|e] toward [ROOT.GetCountry.GetLongName] for seizing [ShowLocationNameWithNoTooltip('rome')]" #NEW

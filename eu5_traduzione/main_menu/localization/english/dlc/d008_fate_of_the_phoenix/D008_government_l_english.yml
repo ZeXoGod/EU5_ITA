@@ -1,0 +1,90 @@
+﻿l_english:
+
+ spread_philhellenism: "Diffondi il Filellenismo"
+ spread_philhellenism_desc: "Elevando il sapere, l'arte e la filosofia [ShowCultureGroupName('greek_group')], cerchiamo di plasmare il modo in cui il nostro reame è percepito sia in patria sia all'estero. Studiosi, artisti e ammiratori della cultura [ShowCultureName('greek_culture')] sono attratti da noi, rafforzando il nostro splendore e la nostra influenza attraverso l'ammirazione più che con la forza."
+ spread_philhellenism_action: "$spread_philhellenism$"
+ spread_philhellenism_active: "Diffusione della Politica Filellenica"
+ spread_philhellenism_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')]"
+ spread_philhellenism_action_progress_wordier: "[SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')]"
+ spread_philhellenism_action_progress_tooltip: "[research_progress|e]: [SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')] \n\n[cultural_influence|e]: [SCOPE.sCountry('actor').GetModifierValue('cultural_influence_modifier')]"
+spread_philhellenism_action_progress_long_wordier: "@research_progress! [SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')] \n\n@cultural_influence! [SCOPE.sCountry('actor').GetModifierValue('cultural_influence_modifier')]"
+
+ encourage_latin_militarism: "Incoraggia il Militarismo [ShowLanguageNameWithNoTooltip('latin_language')]"
+ encourage_latin_militarism_desc: "Legheremo il nostro reame all'ideale [ShowLanguageName('latin_language')] della guerra ordinata: contratti applicati, esercitazioni standardizzate e il peso delle armi reso consueto. Una simile disciplina ridurrà sicuramente il costo di mantenere i soldati sul campo e favorirà una tradizione professionale di servizio."
+ encourage_latin_militarism_action: "Incoraggia il Militarismo Latino"
+encourage_latin_militarism_active: "Incoraggiamento del Militarismo Latino"
+encourage_latin_militarism_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')]"
+encourage_latin_militarism_action_progress_wordier: "[army_maintenance|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')]"
+encourage_latin_militarism_action_progress_long_wordier: "@army_maintenance! [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')] \n\n@army_tradition! [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]"
+encourage_latin_militarism_action_progress_tooltip: "[army_maintenance|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')] \n\n[army_tradition|e]: [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]"
+
+ AUTO_MODIFIER_NAME_bureaucracy_nomos_empsychos_high_legitimacy: "$nomos_empsychos_bureaucracy$"
+ AUTO_MODIFIER_NAME_bureaucracy_nomos_empsychos_low_legitimacy: "$nomos_empsychos_bureaucracy$"
+
+ cb_restore_roman_borders: "Ripristina i Confini $ROM_ADJ$"
+ cb_restore_roman_borders_desc: "Lo splendore dell'antico Impero ci chiama. È tempo che la fenice dispieghi le ali, condannando tutti coloro che osano frapporsi tra noi e la nostra ambizione di restaurare gli antichi [ShowScriptedGeographyName('roman_borders_geography')]."
+ roman_borders_geography: "Confini $ROM_ADJ$"
+
+ epic_hellenic_history: "Epopea della Storia Ellenica"
+ epic_hellenic_history_desc: "Una rievocazione dell'illustre storia dell'antico mondo greco, composta su pagine in foglia d'oro e ornata di calligrafia. Quest'opera d'arte è una testimonianza della nostra opulenza e delle grandi personalità che abbiamo la fortuna di chiamare nostri antenati. Questa cronaca contiene una raccolta di storie, come la distruzione di Troy, dove il grande Achilles incontrò la sua fine, i viaggi del leggendario Odysseus e le spedizioni di Jason e dei suoi Argonauts, tra le altre."
+
+ nomos_empsychos_bureaucracy: "Nómos Émpsychos"
+ nomos_empsychos_bureaucracy_desc: "Derivando dal concetto di legge vivente (#italic Nómos Émpsychos#!), l'Imperatore forma una pietra angolare fondamentale della nostra amministrazione e incarna la stessa autorità sovrana. Formulato per la prima volta sotto Justinian, questo principio lega legislazione, giustizia e comando alla persona imperiale, ponendo il sovrano al cuore stesso dello stato romano."
+
+
+ 
+ honorary_titles_bureaucracy: "Titoli Onorifici"
+ honorary_titles_bureaucracy_desc: "Dal #italic Patrikios#! e #italic Anthypatos#! al #italic Magistros#! e #italic Kouropalatēs#!, la nostra corte governa l'ambizione attraverso la dignità invece che con il comando.\n\nQuesto sistema intricato, incentrato sul conferimento di onori, sete e privilegi graduati, permette all'Imperatore di legare generali, senatori ed élite provinciali al trono ricompensando la lealtà, disinnescando la rivalità e trasformando il prestigio stesso in uno strumento di governo."
+
+ 
+ court_eunuchs_bureaucracy: "Eunuchi di Corte"
+ court_eunuchs_bureaucracy_desc: "Istruiti, leali ed esclusi dall'ambizione dinastica, gli eunuchi di corte formano un quadro amministrativo fidato. La loro vicinanza all'Imperatore e l'isolamento dal potere familiare li rendono amministratori ideali del governo palaziale, delle finanze e della corrispondenza imperiale."
+
+ 
+ ritualistic_court_bureaucracy: "Corte Rituale"
+ ritualistic_court_bureaucracy_desc: "La cerimonia è il governo reso visibile. Attraverso rituali regolati, precedenze e spettacolo, la corte imperiale trasforma l'autorità in teatro sacro, ordinando la gerarchia in patria mentre travolge gli inviati stranieri con la maestà della nostra grande capitale, percepita come il centro del mondo civilizzato."
+
+
+
+ sixty_books_of_the_basilika_bureaucracy: "Libri della Basiliká"
+ HAS_SIXTY_BOOKS_OF_THE_BASILIKA_TRIGGER: "Ha il $sixty_books_of_the_basilika_bureaucracy$"
+ THIRD_HAS_SIXTY_BOOKS_OF_THE_BASILIKA_TRIGGER: "Ha il $sixty_books_of_the_basilika_bureaucracy$"
+ FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "Il [disaster|e] $fate_of_the_phoenix$ è attivo"
+ THIRD_FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "Il [disaster|e] $fate_of_the_phoenix$ è attivo"
+ sixty_books_basilika_satisfaction_scale_tt: "La penalità alla [estate_satisfaction|e] dei Contadini scala con il cursore di mantenimento del $sixty_books_of_the_basilika_bureaucracy$. (#R -5%#! al mantenimento completo e #R -20%#! senza mantenimento)"
+ sixty_books_of_the_basilika_bureaucracy_desc: "Basandosi sul #italic Corpus Juris Civilis#! di Giustiniano, il $sixty_books_of_the_basilika_bureaucracy$ riorganizza il diritto romano in un corpus giuridico [ShowLanguageName('greek_language')] coerente. Chiarendo, standardizzando e armonizzando secoli di giurisprudenza, rende la legge dell'Imperatore indiscussa, autorevole e universale."
+
+
+ romanitas_bureaucracy: "Romanitas"
+ romanitas_bureaucracy_desc: "$romanitas_bureaucracy$ afferma la continuità ininterrotta dello stato romano. L'Imperatore governa non per conquista o etnia, ma come legittimo erede di autorità, legge e tradizione che risalgono a oltre un millennio. Questa identità lega insieme impero e fede, presentando il dominio romano come divinamente sancito e moralmente supremo."
+
+
+
+ imperial_senate_bureaucracy: "Senato Imperiale"
+ imperial_senate_bureaucracy_desc: "Composto da alti dignitari nominati dall'autorità imperiale, il Senato funge da organo di acclamazione e consiglio. Il suo assenso legittima regni, successioni e atti importanti, preservando la continuità romana e assicurando al tempo stesso che la sovranità resti saldamente imperiale."
+
+
+ kephalai_bureaucracy: "Kephalai"
+ kephalai_bureaucracy_desc: "Le #italic Kephalai#! sono compendi amministrativi e giuridici progettati per rendere praticabile il governo imperiale. Sostituendo ordinamenti regionali più antichi come il #italic Katepaníkion#!, distillano legge, tassazione e obblighi militari in direttive standardizzate, assicurando un governo uniforme nelle province."
+ won_fate_of_the_phoenix_disaster_tt: "Siamo emersi vittoriosi dal [disaster|e] [ShowDisasterName('fate_of_the_phoenix')]"
+ fop_renaissance_latin_merchants_tt: "Abbiamo concesso privilegi ai mercanti [ShowCultureGroupName('latin_group')]"
+
+
+ magister_militum_bureaucracy: "Strategarchia"
+ magister_militum_bureaucracy_desc: "La #italic Strategarchia#! incarna il comando istituzionale dell'esercito imperiale. I generali sono nominati, ruotati e contenuti dalla burocrazia, assicurando che il potere militare serva lo stato invece dell'ambizione personale. La guerra è così resa una funzione amministrativa, governata dalla gerarchia invece che dalla fedeltà personale, assicurando al contempo che solo i migliori salgano al vertice."
+
+
+ has_unlocked_bureaucracy_via_flavor_byz_31_tt: "Abbiamo sbloccato questa [bureaucracy|e] tramite l'[event|e] $flavor_byz.31.title$, che può verificarsi dopo l'anno #Y 1400#!"
+
+ themata_bureaucracy: "Thémata"
+ themata_bureaucracy_desc: "Formati in risposta a una pressione esistenziale, i #italic Thémata#! dividono l'impero in distretti provinciali militari-amministrativi. Ciascuna di queste divisioni è governata da uno #italic Strategós#! che unisce autorità civile e militare, consentendo una rapida difesa locale pur restando formalmente subordinato alla gerarchia imperiale."
+
+
+ allelengyon_bureaucracy: "Allelengyon"
+ allelengyon_bureaucracy_desc: "Originariamente concepito sotto l'Imperatore Basil II (comunemente noto con il soprannome #italic Bulgar-Slayer#!) e derivato dalla parola [ShowLanguageName('greek_language')] #italic allilengýi#! (solidarietà), l'#italic $allelengyon_bureaucracy$#! era un obbligo fiscale pensato per redistribuire il peso delle imposte. Quando i piccoli proprietari non riescono a soddisfare i propri obblighi, la responsabilità viene trasferita legalmente ai proprietari terrieri più ricchi del distretto, garantendo le entrate imperiali e prevenendo al tempo stesso la rovina e l'assorbimento delle terre contadine. In questo modo, la solidarietà fiscale diventa una leva di stabilità e controllo."
+
+ katepanata: "Katepanáta"
+ katepanata_desc: "La risposta ai vicini guerrafondai è il consolidamento del territorio appena conquistato tramite una risoluta autorità militare. Originati dalla parola #italic katepánō#! — colui che è posto al vertice — i $katepanata$ stanno al di sopra dei temi ordinari, raggruppando province sotto un unico comandante investito di potere sia civile sia marziale. Impiegati per la prima volta con rilievo nei secoli X e XI, da [ShowRegionName('italy_region')] con sede a [ShowLocationName('bari')] fino alle frontiere instabili di [ShowAreaNameWithNoTooltip('armenia_area')] sotto imperatori come Basilio II, questi grandi distretti assicuravano che terre lontane e contese non fossero lasciate a un governo frammentato. Che questi bastioni della nostra forza di volontà servano da vessillo contro tutti coloro che cercano di strapparci la corona!"
+ has_completed_fate_of_the_phoenix_disaster: "Abbiamo completato vittoriosamente il [disaster|e] [ShowDisasterName('fate_of_the_phoenix')]"
+
+

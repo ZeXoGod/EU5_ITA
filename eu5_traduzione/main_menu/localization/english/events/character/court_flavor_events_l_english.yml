@@ -83,7 +83,7 @@
  court_flavor_events.21.a: "$common_string_this_is_not_good$"
  
  court_flavor_events.22.title: "Saggezza Straniera"
- court_flavor_events.22.desc: "Mentre il ceto dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] è alquanto turbato all'idea di uno straniero che lavori per il loro [ROOT.GetCountry.GetGovernment.GetRulerTitle], il nostro [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] di cultura [advisor.GetCulture.GetName], [advisor.GetName], è stato ampiamente elogiato per aver portato idee e pratiche nuove alla corte. Sembra che possiamo ancora imparare qualcosa dalla sapienza straniera!"
+ court_flavor_events.22.desc: "Mentre il ceto [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] è alquanto turbato all'idea di uno straniero che lavori per [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] loro [ROOT.GetCountry.GetGovernment.GetRulerTitle], il nostro [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] [advisor.GetName], di cultura [advisor.GetCulture.GetName], è stato ampiamente elogiato per aver portato idee e pratiche nuove alla corte. Sembra che possiamo ancora imparare qualcosa dalla sapienza straniera!"
  court_flavor_events.22.a: "$common_string_good$"
  
  court_flavor_events.25.title: "Il Sangue è più Denso dell'Acqua?"
@@ -104,14 +104,14 @@
  court_flavor_events.28.a: "$common_string_this_is_not_good$"
  
  court_flavor_events.30.title: "Un Cambio di Politica?"
- court_flavor_events.30.desc: "[advisor.GetName] si è guadagnato molti amici nella corte [ROOT.GetCountry.GetAdjective] grazie al suo servizio dedicato come [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]. Tuttavia, sembra che l'esatto opposto accada tra i suoi compatrioti al servizio del [advisor_antiliaisons_target_country.GetGovernment.GetGovernmentType.GetName] [advisor_antiliaisons_target_country.GetAdjective]: invidiosi della sua posizione, Lo rimproverano per aver accettato un impiego tra i nemici del suo popolo e hanno iniziato a diffondere voci che mettono in dubbio la sua affidabilità.\nPreoccupato per la sua reputazione nella corte [ROOT.GetCountry.GetAdjectiveWithNoTooltip], [advisor.GetNameWithNoTooltip] è diventato un acceso oppositore del [advisor_antiliaisons_target_country.GetGovernment.GetRulerTitle] [advisor_antiliaisons_target_country.GetAdjectiveWithNoTooltip]. Ha fatto causa comune con diversi individui che la pensano allo stesso modo per chiedere una linea più dura contro [advisor_antiliaisons_target_country.GetLongNameWithNoTooltip]."
+ court_flavor_events.30.desc: "[advisor.GetName] si è guadagnato molti amici nella corte [ROOT.GetCountry.GetAdjective] grazie al suo servizio dedicato come [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]. Tuttavia, sembra che l'esatto opposto accada tra i suoi compatrioti al servizio del [advisor_antiliaisons_target_country.GetGovernment.GetGovernmentType.GetName] [advisor_antiliaisons_target_country.GetAdjective]: invidiosi della sua posizione, Lo rimproverano per aver accettato un impiego tra i nemici del suo popolo e hanno iniziato a diffondere voci che mettono in dubbio la sua affidabilità.\nPreoccupato per la sua reputazione nella corte [ROOT.GetCountry.GetAdjectiveWithNoTooltip], [advisor.GetNameWithNoTooltip] è diventato un acceso oppositore del [advisor_antiliaisons_target_country.GetGovernment.GetRulerTitle] [advisor_antiliaisons_target_country.GetAdjectiveWithNoTooltip]. Ha fatto causa comune con diversi individui che la pensano allo stesso modo per chiedere una linea più dura contro [advisor_antiliaisons_target_country.Custom('IT_ART_RANGO')][advisor_antiliaisons_target_country.GetLongNameWithNoTooltip]."
  court_flavor_events.30.a: "Ha ragione – è necessario un cambio di politica."
  advisor_antiliaisons: "Linea dura"
  advisor_spurious_accusations: "Accuse spurie"
  court_flavor_events.30.b: "Peggiorare le relazioni non sarebbe nel nostro interesse."
  
  court_flavor_events.31.title: "Consigliere Intrigante"
- court_flavor_events.31.desc: "I nostri occhi e orecchie in [from.GetLongName] riferiscono che il [from.GetGovernment.GetRulerTitle] [from.GetAdjectiveWithNoTooltip] ha recentemente assunto una posizione più dura verso [ROOT.GetCountry.GetLongName]. Sembra che questo cambio di politica sia stato causato in gran parte da [advisor.GetName], un [from.GetGovernment.GetCabinetMemberTitle] [from.GetAdjectiveWithNoTooltip] che, preoccupato per la sua posizione nella corte [from.GetAdjectiveWithNoTooltip], ha lanciato varie accuse contro di Noi incitando a una risposta forte contro le nostre presunte aggressioni."
+ court_flavor_events.31.desc: "I nostri occhi e orecchie [from.Custom('IT_NEL_RANGO')][from.GetLongName] riferiscono che [from.Custom('IT_ART_TITOLO')][from.GetGovernment.GetRulerTitle] [from.Custom('IT_Di')][from.GetNameWithNoTooltip] ha recentemente assunto una posizione più dura verso [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName]. Sembra che questo cambio di politica sia stato causato in gran parte da [advisor.GetName], un [from.GetGovernment.GetCabinetMemberTitle] [from.GetAdjectiveWithNoTooltip] che, preoccupato per la sua posizione nella corte [from.Custom('IT_ADJ_FS')], ha lanciato varie accuse contro di Noi incitando a una risposta forte contro le nostre presunte aggressioni."
  court_flavor_events.31.a: "Ma che piccolo...!"
  
  court_flavor_events.32.title: "Consigliere Intrigante"
@@ -120,19 +120,19 @@
  court_flavor_events.32.b: "Un no è un no."
  
  court_flavor_events.35.title: "Esule [exile_country.GetAdjectiveWithNoTooltip]"
- court_flavor_events.35.desc: "[advisor.GetName], un esule politico [exile_country.Custom('IT_DAL_RANGO')][exile_country.GetLongName], è apparso alla nostra corte. Offre i suoi servigi al [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip] [ROOT.GetCountry.GetAdjective] in cambio di protezione dal [exile_country.GetGovernment.GetRulerTitle] [exile_country.GetAdjectiveWithNoTooltip]. Dovremmo accoglierlo?"
+ court_flavor_events.35.desc: "[advisor.GetName], un esule politico [exile_country.Custom('IT_DAL_RANGO')][exile_country.GetLongName], è apparso alla nostra corte. Offre i suoi servigi alla [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip] [ROOT.GetCountry.GetAdjective] in cambio di protezione dal [exile_country.GetGovernment.GetRulerTitle] [exile_country.GetAdjectiveWithNoTooltip]. Dovremmo accoglierlo?"
  court_flavor_events.35.a: "I suoi servigi saranno utili."
  opinion_took_in_exiles: "Ha accolto esuli"
  court_flavor_events.35.b: "Non abbiamo spazio per lui."
  opinion_turned_away_exiles: "Ha respinto esuli"
  
- court_flavor_events.36.title: "Esuli [exile_country.GetAdjectiveWithNoTooltip]"
- court_flavor_events.36.desc: "[advisor.GetName] è grato per aver ricevuto asilo nella corte [ROOT.GetCountry.GetAdjective]. Tuttavia, ha recentemente richiamato l'attenzione sul fatto che ci sono molti altri notabili [exile_country.GetAdjective] nella sua stessa posizione – uomini di grande saggezza e influenza, insiste. Potrebbe essere utile permettere loro di unirsi alla nostra corte, se desideriamo intensificare la nostra opposizione alle ambizioni [exile_country.GetAdjectiveWithNoTooltip]."
+ court_flavor_events.36.title: "Esuli [exile_country.Custom('IT_ADJ_MP')]"
+ court_flavor_events.36.desc: "[advisor.GetName] è grato per aver ricevuto asilo nella nostra corte. Tuttavia, ha recentemente richiamato l'attenzione sul fatto che ci sono molte altre figure di rilievo [exile_country.Custom('IT_In')][exile_country.GetName] nella sua stessa posizione – uomini di grande saggezza e influenza, insiste. Potrebbe essere utile permettere loro di unirsi alla nostra corte, se desideriamo intensificare la nostra opposizione alle ambizioni [exile_country.Custom('IT_ADJ_FP')]."
  court_flavor_events.36.a: "Li accoglieremo."
  court_flavor_events.36.b: "Non abbiamo spazio per altri esuli."
  
- court_flavor_events.37.title: "Esuli in [from.GetLongNameWithNoTooltip]"
- court_flavor_events.37.desc: "I nostri occhi e orecchie in [from.GetLongName] riferiscono che hanno accolto molti dei nemici politici [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] che erano stati precedentemente esiliati dalla corte [ROOT.GetCountry.GetAdjective] o hanno scelto di cercare opportunità altrove. Ora stanno spingendo per un'azione forte contro l'attuale 'regime' [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fornendo assistenza attiva al [from.GetGovernment.GetRulerTitle] [from.GetAdjectiveWithNoTooltip] per il raggiungimento di tale scopo."
+ court_flavor_events.37.title: "Esuli [from.Custom('IT_NEL_RANGO')][from.GetLongNameWithNoTooltip]"
+ court_flavor_events.37.desc: "I nostri occhi e orecchie [from.Custom('IT_NEL_RANGO')][from.GetLongName] riferiscono che hanno accolto molti dei nemici politici [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] che erano stati precedentemente esiliati dalla corte [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] o hanno scelto di cercare opportunità altrove. Ora stanno spingendo per un'azione forte contro l'attuale 'regime' [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fornendo assistenza attiva [from.Custom('IT_AL_TITOLO')][from.GetGovernment.GetRulerTitle] [from.Custom('IT_Di')][from.GetNameWithNoTooltip] per il raggiungimento di tale scopo."
  court_flavor_events.37.a: "Come osano!"
  opinion_hosting_exiles: "Ospita esuli"
  

@@ -1,0 +1,92 @@
+﻿l_english:
+ 
+ loan_icon: "Presta Icona"
+ loan_icon_desc: "Presta un [ShowWorkOfArtTypeName('icon')] a un altro [country|e] per un periodo di #Y 10#! anni, dietro pagamento di una somma che dipende dal suo [income|e] e dalla [art_quality|e] dell'[work_of_art|e]. Migliorerà anche l'[opinion|e] e la [trust|e] tra i due paesi."
+ loan_icon_tt_no_target: "Invieremo al [country|e] bersaglio un'offerta per prestargli una delle nostre [works_of_art|e] in cambio di [gold|e]"
+ loan_icon_tt: "Riceveranno la nostra offerta di prestargli [SCOPE.sWorkOfArt('target').GetName] in cambio di [SCOPE.GetValue('icon_price_value')|2][gold_i]"
+ loan_icon_bad_economy_tt: "Sembrano trovarsi in una cattiva situazione economica, quindi #R potrebbero non accettare#! se non hanno una [opinion|e] abbastanza buona di noi"
+ loan_icon_choose_icon: "Scegli il [ShowWorkOfArtTypeName('icon')] da prestare"
+ not_already_receiving_icon_tt: "Non devono aver già ricevuto in prestito un [ShowWorkOfArtTypeName('icon')]"
+
+ mend_schism: "Risana lo Scisma"
+ mend_schism_desc: "Per troppi secoli [ShowReligionGroupName('christian')] è stato diviso. Con tutte le sedi della Pentarchia sotto il nostro controllo, è tempo di esercitare la nostra influenza per sanare quella ferita e riconciliare le Chiese."
+ restore_rome_primacy: "Ripristina il Primato di [ShowLocationNameWithNoTooltip('rome')]"
+ restore_rome_primacy_desc: "[ShowLocationName('rome')] fu la prima capitale dell'Impero e, anche dopo la divisione tra Oriente e Occidente, continuò a essere una città importante fino alla caduta della parte occidentale. Ora, con la Città Eterna di nuovo sotto il nostro controllo, possiamo restituirle il suo primato di capitale originaria."
+ patriarch_not_in_rome_tt: "Il nostro [GetInternationalOrganizationType('autocephalous_patriarchate').GetName] non deve già avere sede a [ShowLocationName('rome')]"
+ reestablish_hellenism: "Ristabilisci [ShowReligionNameWithNoTooltip('hellenism_religion')]"
+ reestablish_hellenism_desc: "L'antica religione del nostro popolo seduce la corona con le sue tradizioni e il suo mistero. Possiamo riportarla alla gloria passata e farne di nuovo una grande religione."
+
+ add_omen: "Aggiungi Presagio"
+ add_omen_god: "Scegli Dio per la Guida del Presagio"
+ select_omen: "Invoca Presagio"
+ select_omen_desc: "Il nostro sovrano invocherà un presagio."
+ select_omen_tt: "Otterremo un bonus temporaneo per il nostro [country|e]. La potenza dipende dalla [ability|e] rilevante del nostro [ruler|e]."
+ select_omen_god_is_active_tt: "[target.GetName] è già impegnato con un altro [omen|e]."
+ select_omen_god: "Seleziona Presagio"
+ select_omen_god_desc: "Il nostro sovrano sceglierà un dio come guida nella scelta di un [omen|e]."
+ select_omen_god_tt: "Scegli un dio come guida nella scelta di un [omen|e]."
+
+ 
+ host_olympiad: "Ospita Olimpiade"
+ host_olympiad_desc: "Il nostro sovrano ospiterà un torneo di giochi in un [holy_site|e] [ShowReligionAdjective('hellenism_religion')] in onore degli dei."
+ host_olympiad_location_tt: "La [location|e] scelta ottiene [ShowModifier('host_olympiad_location_modifier')] per la durata dell'evento dell'Olimpiade."
+ host_olympiad_effect_tt_location: "Gli effetti saranno aumentati in proporzione alla [holy_site_importance_short|e] di [target.GetName], pari a [target.GetImportance]."
+ host_olympiad_effect_tt_no_location: "Gli effetti saranno aumentati in proporzione alla [holy_site_importance_short|e] del [holy_site|e] selezionato."
+ 
+ sponsor_troop_feast: "Sponsorizza un Banchetto per le Truppe"
+ sponsor_troop_feast_desc: "Organizzando un banchetto per i nostri eserciti, manterremo gli uomini in ottime condizioni e con il morale alto, assicurandoci che siano desiderosi di servire il nostro paese."
+
+
+ roman_festivals: "Organizza un Festival Romano"
+ roman_festivals_desc: "Ogni mese del calendario ha molte feste in onore dei nostri numerosi Dei, ma in questa occasione useremo il potere dello stato per organizzare una splendida cerimonia."
+ explanation_roman_festivals_tt: "Le genti [ShowReligionAdjective('hellenism_religion')] celebrano molte festività dedicate alle loro divinità. Ogni mese le celebrazioni cambiano e riceveremo effetti diversi a seconda di come saranno svolte."
+ compitalia_tt: "Il festival dei Compitalia si tiene in onore dei #italic Lares Compitales#!, divinità domestiche degli incroci."
+ lupercalia_tt: "Il festival dei Lupercalia ruota attorno alla salute, alla fertilità e alla purificazione della città."
+ quinquatria_tt: "I Quinquatria sono un festival in onore della Dea [ShowGodName('athena_god')]."
+ fordicidia_tt: "Fordicidia è un festival incentrato su fertilità, agricoltura e allevamento. Durante questo evento, i celebranti sacrificano una mucca gravida alla dea della terra, #italic Tellus#!."
+ mercuralia_tt: "I Mercuralia sono un festival in onore del Dio messaggero, [ShowGodName('hermes_god')]."
+ vestalia_tt: "Vestalia è un festival in onore della dea del focolare, #italic Vesta#!."
+ neptunalia_tt: "I Neptunalia sono un festival in onore del Dio [ShowGodName('poseidon_god')]."
+ vinalia_rustica_tt: "Il festival della Vinalia Rustica ruota attorno alla vendemmia, alla crescita delle piante e alla fertilità. Si tiene in onore sia di [ShowGodName('zeus_god')] sia di [ShowGodName('aphrodite_god')]."
+ ludi_romani_tt: "Il festival dei Ludi Romani comprende una serie di giochi e spettacoli in onore di [ShowGodName('zeus_god')]."
+ equus_october_tt: "L'Equus October consiste in feste di corse equestri e in un sacrificio di cavalli in onore di [ShowGodName('ares_god')], coincidendo con la fine della stagione agricola e militare."
+ ludi_plebeii_tt: "I Ludi Plebeii sono un festival composto da molteplici rappresentazioni teatrali e competizioni atletiche incentrate sul popolo comune."
+ saturnalia_tt: "I Saturnalia sono un festival in onore del dio del tempo, #italic Saturn#!."
+
+ greek_festivals: "Rivitalizza un Antico Festival Greco"
+ greek_festivals_desc: "Ogni regione del nostro territorio ha un festival speciale in onore di uno o più dei nostri numerosi Dei. Faremo uso del potere dello stato per sostenere ogni regione e rafforzare i suoi sforzi per creare la cerimonia più grandiosa mai conosciuta."
+ greek_festivals_tt: "Possediamo una località in almeno una delle seguenti province: [ShowProvinceDefinitionName('laconia_province')], [ShowProvinceDefinitionName('achaea_province')], [ShowProvinceDefinitionName('arcadia_province')], [ShowProvinceDefinitionName('attica_province')], [ShowProvinceDefinitionName('smyrna_province')], [ShowProvinceDefinitionName('central_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('aetolia_province')], [ShowProvinceDefinitionName('rodos_province')], [ShowProvinceDefinitionName('messenia_province')], [ShowProvinceDefinitionName('aydin_province')]."
+ gymnopaedia_tt: "Il festival dei Gymnopaedia è celebrato a #italic Sparta#! in onore del dio #italic Apollo#!."
+ gymnopaedia_tt_mod: "Riceveremo [ShowModifier('gymnopaedia_modifier')]."
+ laphria_tt: "Il festival dei Laphria è celebrato in [ShowProvinceDefinitionName('achaea_province')] in onore della dea #italic Artemis#!."
+ laphria_tt_mod: "Riceveremo [ShowModifier('laphria_modifier')]."
+ lykaia_tt: "Il festival dei Lykaia è celebrato in [ShowProvinceDefinitionName('arcadia_province')] come rito di passaggio per i giovani adolescenti e come protezione dalla minaccia dei licantropi."
+ lykaia_tt_mod: "Riceveremo [ShowModifier('lykaia_modifier')]."
+ panathenaic_games_tt: "I Panathenaic Games sono celebrati in [ShowProvinceDefinitionName('attica_province')] in onore della Dea [ShowGodName('athena_god')]."
+ panathenaic_games_tt_mod: "Riceveremo [ShowModifier('panathenaic_games_modifier')]."
+ apaturia_tt: "Il festival degli Apaturia è celebrato in [ShowProvinceDefinitionName('smyrna_province')] in onore degli dei [ShowGodName('zeus_god')] e [ShowGodName('athena_god')]."
+ apaturia_tt_mod: "Riceveremo [ShowModifier('apaturia_modifier')]."
+ hetairideia_tt: "Il festival degli Hetairideia è celebrato in [ShowProvinceDefinitionName('central_macedonia_province')] in onore del dio [ShowGodName('zeus_god')]."
+ hetairideia_tt_mod: "Riceveremo [ShowModifier('hetairideia_modifier')]."
+ apellai_tt: "Il festival degli Apellai è celebrato in [ShowProvinceDefinitionName('aetolia_province')] in onore del dio #italic Apollo#!."
+ apellai_tt_mod: "Riceveremo [ShowModifier('apellai_modifier')]."
+ halieia_tt: "Il festival degli Halieia è celebrato in [ShowProvinceDefinitionName('rodos_province')] in onore del dio #italic Helios#!."
+ halieia_tt_mod: "Riceveremo [ShowModifier('halieia_modifier')]."
+ heraclean_games_tt: "Gli Heraclean Games sono celebrati in [ShowProvinceDefinitionName('lower_macedonia_province')] in onore dell'eroe e dio #italic Heracles#!."
+ heraclean_games_tt_mod: "Riceveremo [ShowModifier('heraclean_games_modifier')]."
+ carneia_tt: "Il festival dei Carneia è celebrato in [ShowProvinceDefinitionName('messenia_province')] in onore del dio #italic Apollo#!."
+ carneia_tt_mod: "Riceveremo [ShowModifier('carneia_modifier')]."
+ panionia_tt: "Il festival dei Panionia è celebrato in [ShowProvinceDefinitionName('aydin_province')] in onore del dio [ShowGodName('poseidon_god')]."
+ panionia_tt_mod: "Riceveremo [ShowModifier('panionia_modifier')]."
+
+
+ hire_advisor_eunuch_chance_tt: "Probabilità del 10-100% di assumere un [character|e] [ShowTraitName('eunuch')] con [abilities|e] medie più alte, proporzionata al radicamento della [ShowBureaucracyTypeName('court_eunuchs_bureaucracy')] e a [ShowModifierTypeName('eunuch_power')]."
+
+ grant_a_triumph: "Concedi un Trionfo"
+ grant_a_triumph_desc: "I successi devono essere celebrati. Un valido comandante degli eserciti dovrebbe dunque essere presentato al popolo come vincitore in una spettacolare parata trionfale."
+ grant_a_triumph_tt: "Abbiamo vinto una guerra negli ultimi 5 anni."
+ grant_a_triumph_triumphant_bonus_tt: "Il [character|e] scelto riceverà il tratto [ShowTraitName('triumphant')]"
+
+
+
+ 

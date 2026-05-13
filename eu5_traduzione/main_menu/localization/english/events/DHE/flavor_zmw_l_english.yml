@@ -1,55 +1,75 @@
 ﻿l_english:
  flavor_zmw.1.title: "L'Ascesa di $MTP$"
- flavor_zmw.1.desc: "La nostra espansione in [ShowProvinceDefinitionName('upper_mazowe_province')] ha creato un nuovo centro economico, che giace ora nelle mani di [target_character.GetName]. Con le ricchezze che ha lentamente iniziato ad accumulare grazie ai profitti di [ShowProvinceDefinitionNameWithNoTooltip('upper_mazowe_province')], sta tramando per ottenere ancora più potere in [ROOT.GetCountry.GetName] e dichiarare [target_character.GetHerselfHimself] 'Conquistatore degli Uomini'."
+ flavor_zmw.1.entry: "$flavor_zmw.1.title$" #NEW
+# flavor_zmw.1.desc: "La nostra espansione in [ShowProvinceDefinitionName('upper_mazowe_province')] ha creato un nuovo centro economico, che giace ora nelle mani di [target_character.GetName]. Con le ricchezze che ha lentamente iniziato ad accumulare grazie ai profitti di [ShowProvinceDefinitionNameWithNoTooltip('upper_mazowe_province')], sta tramando per ottenere ancora più potere in [ROOT.GetCountry.GetName] e dichiarare [target_character.GetHerselfHimself] 'Conquistatore degli Uomini'." #OLD
+ flavor_zmw.1.desc: "Our expansion into [ShowProvinceDefinitionName('upper_mazowe_province')] has created a new economic center, which lies now in the hands of [target_character.GetName]. With the wealth that slowly started to accumulate from the profits of [ShowProvinceDefinitionNameWithNoTooltip('upper_mazowe_province')], he is plotting to take even more power in [ROOT.GetCountry.GetName] and declare [target_character.GetHerselfHimself] 'Conqueror of Man'." #NEW
  flavor_zmw.1.a: "[target_character.GetNameWithNoTooltip] ci guiderà."
- flavor_zmw.1.b: "La sua pietosa ribellione verrà spazzata via."
+ flavor_zmw.1.a.entry: "The character will lead us." #NEW
+# flavor_zmw.1.b: "La sua pietosa ribellione verrà spazzata via." #OLD
+ flavor_zmw.1.b: "His pitiful rebellion will be swept away." #NEW
  flavor_zmw.1.historical_info: "Nyatsimba Mutota, il primo re di Mutapa, era un nobile dello Zimbabwe che guidò l'espansione del regno verso i territori a nord in cerca di nuove risorse. Qui, stabilì una nuova base di potere per la sua dinastia, superando lentamente in potenza il vecchio regno e soppiantando il suo dominio."
  mutapa_rebels: "Rivolta di $MTP$"
  mutapa_rebels_joining: "Tutti i [pops|e] [ShowPopTypeName('peasants')] in [ShowProvinceDefinitionName('upper_mazowe_province')] perdono [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] di [pop_satisfaction|e] e si uniscono alla [target_mutapa_rebels.GetName]."
 
  flavor_zmw.2.title: "L'Ascesa di $RZW$"
+ flavor_zmw.2.entry: "$flavor_zmw.2.title$" #NEW
  flavor_zmw.2.desc: "Una nuova potenza sta sorgendo! Sotto la guida di [target_character.GetName], [ShowProvinceDefinitionName('shangani_province')] è diventata una minaccia considerevole per la stabilità del nostro [ROOT.GetCountry.GetFlavorRank]. Le ambizioni di [target_character.GetNameWithNoTooltip] non si fermeranno davanti a nulla, se non al dominio di [ROOT.GetCountry.GetName]."
  flavor_zmw.2.a: "[target_character.GetNameWithNoTooltip] sarà il nostro nuovo leader."
+ flavor_zmw.2.a.entry: "The character will be our new leader." #NEW
  flavor_zmw.2.b: "Schiacceremo questo pretendente presuntuoso."
  flavor_zmw.2.historical_info: "Le fondamenta dell'Impero Rozvi risiedono nelle terre intorno a Butua, una delle province del Regno di Mutapa. Guidati da Dombo Changamire, i Rozvi ottennero una vittoria decisiva sui portoghesi in Zimbabwe nel 1660 e stabilirono la loro dinastia come regnanti sull'altopiano dello Zimbabwe."
  rozwi_rebels: "Rivolta di $RZW$"
  rozwi_rebels_joining: "Tutti i [pops|e] [ShowPopTypeName('peasants')] in [ShowProvinceDefinitionName('shangani_province')] perdono [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] di [pop_satisfaction|e] e si uniscono alla [target_rozwi_rebels.GetName]."
 
  flavor_zmw.3.title: "[ShowGovernmentReformNameWithNoTooltip('zmw_council_of_senior_wives')]"
+ flavor_zmw.3.entry: "The Council of Senior Wives" #NEW
  flavor_zmw.3.desc: "Le mogli dei nostri sovrani hanno accesso a molti punti chiave del nostro Stato e potrebbero offrircene una visione approfondita, se fossero ammesse all'interno del nostro consiglio. Non dovremmo sprecare questo potenziale, e dovremmo creare il [ShowGovernmentReformName('zmw_council_of_senior_wives')] come parte diretta del nostro governo."
  flavor_zmw.3.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_zmw.3.a.entry: "$common_string_brilliant$" #NEW
  flavor_zmw.3.b: "Non ora."
 
  flavor_zmw.1000.title: "In Cerca di Risorse"
+ flavor_zmw.1000.entry: "$flavor_zmw.1000.title$" #NEW
  flavor_zmw.1000.desc: "Il cuore di [target_country.GetName] è incentrato sul [target_location.GetRank.GetName] di [target_location.GetName]. Eppure, risorse preziose come il [ShowGoodsName('salt')] stanno diminuendo. [target_character.GetName] ha fatto una dichiarazione affinché tutti coloro che cercano l'avventura si presentino al [ROOT.GetCountry.GetGovernment.GetCourtTitle] immediatamente per colonizzare le terre incontaminate vicine."
  flavor_zmw.1000.a: "Abbiamo bisogno di tutto l'aiuto possibile."
  flavor_zmw.1000.a.tt: "Sbloccheremo l'[event|e] '#Y $flavor_zmw.1001.title$#!' che attira nuovi [courtiers|e] su base annuale, qualora dovessimo mai avere meno di 10"
 
  flavor_zmw.1001.title: "Gli Avventurieri Rispondono alla Chiamata"
+ flavor_zmw.1001.entry: "$flavor_zmw.1001.title$" #NEW
  flavor_zmw.1001.desc: "Da quando [target_character.GetName] ha fatto la sua dichiarazione, uomini in cerca di avventura si sono riversati nel [target_country.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] per [ShowCabinetActionName('settle_the_frontier')] per il loro Paese."
  flavor_zmw.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_zmw.1001.a.entry: "$common_string_brilliant$" #NEW
  flavor_zmw.1001.a.tt: "Un nuovo [character|e] compare in [target_country.GetName]"
 
  flavor_zmw.1100.title: "Arriva [target_character.GetNameWithNoTooltip]"
- flavor_zmw.1100.desc: "[target_character.GetName], un auto-proclamato avventuriero [ShowCultureName('portuguese')], sta implorando di avere udienza con [target_ruler.GetName]. Nonostante sia nato in una terra straniera, [target_character.GetHeShe] desidera servire nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come consigliere. Anche se potrebbe essere una risorsa preziosa per noi, è difficile verificare verso chi sia rivolta la sua lealtà."
+ flavor_zmw.1100.entry: "Antonio Fernandes comes to Zimbabwe" #NEW
+# flavor_zmw.1100.desc: "[target_character.GetName], un auto-proclamato avventuriero [ShowCultureName('portuguese')], sta implorando di avere udienza con [target_ruler.GetName]. Nonostante sia nato in una terra straniera, [target_character.GetHeShe] desidera servire nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come consigliere. Anche se potrebbe essere una risorsa preziosa per noi, è difficile verificare verso chi sia rivolta la sua lealtà." #OLD
+ flavor_zmw.1100.desc: "[target_character.GetName], a self-proclaimed [ShowCultureName('portuguese')] adventurer, is pleading for an audience with [target_ruler.GetName]. Despite being born in a foreign land, he wants to serve in our [ROOT.GetCountry.GetGovernment.GetCourtTitle] as an advisor. Although he could be a valuable asset for us, it is hard to verify where his loyalty lies." #NEW
  flavor_zmw.1100.a: "Sarà un consigliere utile."
  flavor_zmw.1100.b: "Sembra molto rischioso."
  flavor_zmw.1100.historical_info: "Antônio Fernandes fu il primo Esploratore Portoghese ad avventurarsi all'interno delle terre dello Zimbabwe. Fece il suo ingresso in Zimbabwe nel 1511 dal porto di Sofala. Da lì viaggio nell'entroterra e stabilì infine un contatto con il sovrano di Mutapa, Chikuyo Chisamarengu."
 
  flavor_zmw.1101.title: "[target_character.GetNameWithNoTooltip] Fornisce Mappe di [ShowRegionNameWithNoTooltip('zimbabwe_region')]"
+ flavor_zmw.1101.entry: "Antonio Fernandes Supplies Maps to Portugal" #NEW
  flavor_zmw.1101.desc: "[target_character.GetName], un avventiero che ha viaggiato all'interno dello [ShowRegionName('zimbabwe_region')] a lungo, è riuscito ad guadagnare il favore di un sovrano locale. Durante i suoi viaggi, è stato in grado di redigere una mappa della regione che supera in qualità qualsiasi altra di cui siamo a conoscenza. Fortunatamente, ci sta offrendo di venderci queste informazioni fondamentali."
  flavor_zmw.1101.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_zmw.1101.a.entry: "$common_string_brilliant$" #NEW
  flavor_zmw.1101.b: "Non siamo interessati."
 
  flavor_zmw.1200.title: "La Missione di [target_character.GetNameWithNoTooltip]"
- flavor_zmw.1200.desc: "Originario di [target_country.GetName], [target_character.GetName] ha servito il suo Paese sia come diplomatico che come governatore, ma desiderava intraprendere un percorso di vita da missionario [ShowReligionAdjective('catholic')], il quale lo ha condotto alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetHeShe|U] ci sta chiedendo il permesso di istituire una missione, e a [target_ruler.GetName] se sarebbe interessato a convertirsi personalmente al [ShowReligionNameWithNoTooltip('catholic')]."
+ flavor_zmw.1200.entry: "Christian Missionaries in Zimbabwe" #NEW
+# flavor_zmw.1200.desc: "Originario di [target_country.GetName], [target_character.GetName] ha servito il suo Paese sia come diplomatico che come governatore, ma desiderava intraprendere un percorso di vita da missionario [ShowReligionAdjective('catholic')], il quale lo ha condotto alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetHeShe|U] ci sta chiedendo il permesso di istituire una missione, e a [target_ruler.GetName] se sarebbe interessato a convertirsi personalmente al [ShowReligionNameWithNoTooltip('catholic')]." #OLD
+ flavor_zmw.1200.desc: "Hailing from [target_country.GetName], [target_character.GetName] has served both as a diplomat and governor in service of his country but wanted to pursue a life as a [ShowReligionAdjective('catholic')] missionary, which lead him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. He is asking for our permission to set up a mission and about the interest of [target_ruler.GetName] to personally convert to [ShowReligionNameWithNoTooltip('catholic')]." #NEW
  flavor_zmw.1200.a: "[target_ruler.GetNameWithNoTooltip] si convertirà."
+ flavor_zmw.1200.a.entry: "The ruler will convert." #NEW
  flavor_zmw.1200.b: "Consenti la sua missione, ma [target_ruler.GetNameWithNoTooltip] non abbandonerà la propria fede."
+ flavor_zmw.1200.b.entry: "Allow his mission, but he will not abandon our faith." #NEW
  flavor_zmw.1200.c: "Rifiuta la sua richiesta."
  flavor_zmw.conversion.tt: "Alcuni dei nostri [pops|e] in [ROOT.GetCountry.GetName] si convertiranno al [ShowReligionName('catholic')]."
  flavor_zmw.1200.historical_info: "Il Gesuita Gonçalo da Silveira arrivò in Zimbabwe dopo aver lasciato il suo incarico di superiore provinciale nelle Indie Portoghesi nel 1560. Durante il suo incontro con il re, fu in grado di convertire lui e alcuni suoi sudditi. Questo evento segnò il primo successo di un missionario cattolico nella regione."
 
  flavor_zmw.1201.title: "Reazione Contro la Conversione"
+ flavor_zmw.1201.entry: "$flavor_zmw.1201.title$" #NEW
  flavor_zmw.1201.desc: "I mercanti [ShowReligionGroupAdjective('muslim')] nel nostro Paese sono rimasti indignati dalla conversione di [target_ruler.GetName] e stanno ora facendo pressione sui di [target_ruler.GetHeShe] per rinunciare alla fede [ShowReligionAdjective('catholic')]. Mentre è ovvio che essi temano la crescente influenza dei mercanti [ShowReligionAdjectiveWithNoTooltip('catholic')], perdere la nostra relazione vantaggiosa con in mercanti [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] potrebbe danneggiare gravemente la nostra economia.\n\nQualunque cosa facciamo, dovremo prendere una decisione difficile sul futuro del nostro [ROOT.GetCountry.GetFlavorRank]."
  flavor_zmw.1201.a: "Hanno ragione. Rinuncia al [ShowReligionNameWithNoTooltip('catholic')]."
  flavor_zmw.1201.b: "Dovremmo abbracciare la luce del [ShowReligionNameWithNoTooltip('catholic')]."
