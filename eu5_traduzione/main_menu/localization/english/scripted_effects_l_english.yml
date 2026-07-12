@@ -303,7 +303,8 @@
 
  SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "Imposta il [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a $VALUE|0Y$"
  NEG_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "Imposta il [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a #Y 0#!"
- WE_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "Impostiamo il nostro [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a $VALUE|0Y$"
+ WE_INTEGRATION_LEVEL_SET_INDIVIDUAL_EFFECT: "Impostiamo il nostro [union_integration_level_member|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName] su $VALUE|0Y$" 
+# WE_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "Impostiamo il nostro [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a $VALUE|0Y$" #DELETE
  WE_NEG_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "Impostiamo il nostro [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a #Y 0#!"
  THIRD_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] imposta il proprio [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a $VALUE|0Y$"
  THIRD_NEG_SET_INDIVIDUAL_INTEGRATION_LEVEL_EFFECT: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] imposta il proprio [union_integration_level_member|e] [TARGET_INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][TARGET_INTERNATIONAL_ORGANIZATION.GetName] a #Y 0#!"
@@ -866,18 +867,19 @@
  PAST_SUBTRACT_CELESTIAL_AUTHORITY: "Ha perso $VALUE|-$ #Y $celestial_authority$#!"
  FIRST_PAST_SUBTRACT_CELESTIAL_AUTHORITY: "L'[international_organization|e] ha perso $VALUE|-$ #Y $celestial_authority$#!"
  THIRD_PAST_SUBTRACT_CELESTIAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha perso $VALUE|-$ #Y $celestial_authority$#!"
- ADD_PAPAL_AUTHORITY: "Gains $VALUE|+$ #Y $papal_authority$#!" #NEW
- FIRST_ADD_PAPAL_AUTHORITY: "The [international_organization|e] gains $VALUE|+$ #Y $papal_authority$#!" #NEW
- THIRD_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] gains $VALUE|+$ #Y $papal_authority$#!" #NEW
- PAST_ADD_PAPAL_AUTHORITY: "Gained $VALUE|+$ #Y $papal_authority$#!" #NEW
- FIRST_PAST_ADD_PAPAL_AUTHORITY: "The [international_organization|e] gained $VALUE|+$ #Y $papal_authority$#!" #NEW
- THIRD_PAST_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] gained $VALUE|+$ #Y $papal_authority$#!" #NEW
- SUBTRACT_PAPAL_AUTHORITY: "Loses $VALUE|-$ #Y $papal_authority$#!" #NEW
- FIRST_SUBTRACT_PAPAL_AUTHORITY: "The [international_organization|e] loses $VALUE|-$ #Y $papal_authority$#!" #NEW
- THIRD_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] loses $VALUE|-$ #Y $papal_authority$#!" #NEW
- PAST_SUBTRACT_PAPAL_AUTHORITY: "Lost $VALUE|-$ #Y $papal_authority$#!" #NEW
- FIRST_PAST_SUBTRACT_PAPAL_AUTHORITY: "The [international_organization|e] lost $VALUE|-$ #Y $papal_authority$#!" #NEW
- THIRD_PAST_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] lost $VALUE|-$ #Y $papal_authority$#!" #NEW
+ 
+ ADD_PAPAL_AUTHORITY: "Ottiene $VALUE|+$ #Y $papal_authority$#!" 
+ FIRST_ADD_PAPAL_AUTHORITY: "L'[international_organization|e] ottiene $VALUE|+$ #Y $papal_authority$#!" 
+ THIRD_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ottiene $VALUE|+$ #Y $papal_authority$#!" 
+ PAST_ADD_PAPAL_AUTHORITY: "Ha ottenuto $VALUE|+$ #Y $papal_authority$#!" 
+ FIRST_PAST_ADD_PAPAL_AUTHORITY: "L'[international_organization|e] ha ottenuto $VALUE|+$ #Y $papal_authority$#!" 
+ THIRD_PAST_ADD_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha ottenuto $VALUE|+$ #Y $papal_authority$#!" 
+ SUBTRACT_PAPAL_AUTHORITY: "Perde $VALUE|-$ #Y $papal_authority$#!" 
+ FIRST_SUBTRACT_PAPAL_AUTHORITY: "L'[international_organization|e] perde $VALUE|-$ #Y $papal_authority$#!" 
+ THIRD_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] perde $VALUE|-$ #Y $papal_authority$#!" 
+ PAST_SUBTRACT_PAPAL_AUTHORITY: "Ha perso $VALUE|-$ #Y $papal_authority$#!" 
+ FIRST_PAST_SUBTRACT_PAPAL_AUTHORITY: "L'[international_organization|e] ha perso $VALUE|-$ #Y $papal_authority$#!" 
+ THIRD_PAST_SUBTRACT_PAPAL_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha perso $VALUE|-$ #Y $papal_authority$#!" 
 
  TRANSFER_YEARLY_GOLD_FROM_ALL_MEMBERS: "Tutti i [members|e] trasferiscono [gold|e] ($VALUE|2%$ del reddito annuo) [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
  THIRD_TRANSFER_YEARLY_GOLD_FROM_ALL_MEMBERS: "Tutti i [members|e] [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_DEL')][INTERNATIONAL_ORGANIZATION.GetName] trasferiscono [gold|e] ($VALUE|2%$ del reddito annuo) [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
@@ -955,6 +957,10 @@
 
  SET_SITUATION_END_FLAG_EFFECT: "Termina la [situation|e] [SITUATION.GetName]"
  PAST_SET_SITUATION_END_FLAG_EFFECT: "Ha terminato la [situation|e] [SITUATION.GetName]"
+ iw_increase_tension_effect_tt: "[GetSituationByKey('italian_wars').GetName] aumenta di $VALUE|+$ [situation_tension|e]" 
+ iw_decrease_tension_effect_tt: "[GetSituationByKey('italian_wars').GetName] diminuisce di $VALUE|-$ [situation_tension|e]" 
+ iw_reset_tension_effect_tt: "La [situation_tension|e] di [GetSituationByKey('italian_wars').GetName] viene reimpostata a #Y 0#!" 
+ challenge_action_locked_for_everyone_for_10_years_tt: "L'[action|e] [ShowGenericActionName('challenge_league_leadership')] non sarà disponibile per i [members|e] della nostra Lega per #Y 10#! anni" 
 
  historical_rival_key: "#Y $opinion_historical_rival$#!"
  ADD_HISTORICAL_RIVAL_EFFECT: "Considererà [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] come il proprio $historical_rival_key$"
@@ -1012,3 +1018,4 @@
  add_random_dip_ruler_trait_tt: "Il nostro [ruler|e] otterrà un [trait|e] casuale relativo alla [diplomacy|e]"
  add_random_dip_regent_trait_tt: "Il nostro [regent|e] otterrà un [trait|e] casuale relativo alla [diplomacy|e]"
  new_child_for_ruler: "Il [ROOT.GetCountry.GetGovernment.GetRulerTitle] ha un nuovo figlio"
+ reset_complacency_tt: "La nostra [complacency|e] sarà reimpostata a #Y 0#!" 

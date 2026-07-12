@@ -1,6 +1,6 @@
 ﻿l_english:
  black_death.1.title: "La [ShowSituationNameWithNoTooltip('black_death')] a [GetDisease('bubonic_plague').GetOrigin.GetNameWithNoTooltip]"
- black_death.1.desc: "Provengono notizie allarmanti da [GetDisease('bubonic_plague').GetOrigin.GetName], contenute in un resoconto che abbiamo appena ricevuto.\n\nAhimè! Le nostre navi entrano nel porto, ma di mille marinai se ne salvano a malapena dieci. Raggiungiamo le nostre case; i nostri parenti e vicini vengono a farci visita da ogni parte. Che ci maledicano, poiché lanciamo a tutti loro i dardi della morte! Mentre ci parlavano, abbracciavano e baciavano, diffondevamo il veleno con le nostre labbra. Tornando a casa loro, infettarono le loro famiglie, che perirono in tre giorni, e furono seppellite in una fossa comune. Preti e dottori che fanno visita ai malati tornano a casa ammalati a loro volta, aggiungendosi poco dopo al numero dei morti. O Morte! Crudele, amara, empia Morte! Che rompi in tal modo i legami d'affetto separando padre e madre, fratello e sorella, marito e moglie. Piangendo della nostra miseria, avevamo paura di scappare, eppure non osavamo rimanere."
+ black_death.1.desc: "Notizie inquietanti ci sono giunte da [GetDisease('bubonic_plague').GetOrigin.GetName], dove sembra aver attecchito una nuova epidemia. Una certa flotta mercantile mediterranea che l'ha incontrata avrebbe fatto il seguente resoconto:\n\nAhimè! Le nostre navi entrano in porto, ma di mille marinai a malapena dieci vengono risparmiati. Raggiungiamo le nostre case; i nostri parenti e i nostri vicini accorrono da ogni dove per farci visita. Guai a noi, poiché scagliamo contro di loro i dardi della morte! Mentre parlavamo con loro, mentre ci abbracciavano e ci baciavano, spargevamo il veleno dalle nostre labbra. Tornati alle loro case, a loro volta infettarono presto intere famiglie, che in tre giorni soccombettero e furono sepolte in una fossa comune. Sacerdoti e medici che visitavano i malati tornarono infermi dai loro doveri, e presto furono annoverati tra i morti. O morte! Morte crudele, amara, empia, che così spezzi i legami d'affetto e separi padre e madre, fratello e sorella, marito e moglie. Piangendo la nostra miseria, temevamo di fuggire, eppure non osavamo restare." 
  black_death.1.a: "Dannati ratti!"
  black_death.1.a.tt: "La [ShowSituationName('black_death')] ha cominciato a diffondersi da [GetDisease('bubonic_plague').GetOrigin.GetName]"
 
@@ -48,10 +48,11 @@
  STATIC_MODIFIER_NAME_black_death_austerity_movement: "Movimento di Austerità"
  plague_satisfaction_and_spread_tt: "Ogni [location|e] che possediamo in [target_province.GetName] che non ha già debellato la malattia subirà una diffusione della [GetDisease('bubonic_plague').GetName] aumentata del #R 10%#!, mentre la [pop_satisfaction|e] dei suo paesani aumenterà del #G 10%#!"
 
- black_death.1003.t: "La Peste Nera Reclama il Trono"
- black_death.1003.desc: "[target_portrait_character.GetName] ha nascosto i sintomi per un po' di tempo. Ma ahimè, sul letto di morte, è chiaro che anche [target_portrait_character.GetHerHim] è stat[target_portrait_character.Custom('IT_ART_O_A')] colpit[target_portrait_character.Custom('IT_ART_O_A')] da questo terribile male che affligge [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank].\n\nNon c'è più molto da fare per [target_portrait_character.GetHerHim] ora, solo l'oscurità attende, per [target_portrait_character.GetHerHim] e per noi."
- black_death.1003.a: "Riposi in pace..."
+ black_death.1003.t: "La Morte Nera Raggiunge il Trono" 
+ black_death.1003.desc: "[target_portrait_character.GetName] ha nascosto i sintomi per qualche tempo. Ma ahimè, oggi è chiaro che anche [target_portrait_character.GetHerHim] è caduto vittima di questo terribile morbo che infesta il [ROOT.GetCountry.GetFlavorRank].\n\nOra possiamo fare ben poco per [target_portrait_character.GetHerHim], se non pregare e sperare che i medici conoscano il loro mestiere." 
+ black_death.1003.a: "Preghiamo per [target_portrait_character.GetHerHim]!" 
  black_death.1003.b: "Radunate ogni dottore della capitale!"
+ black_death.1003.c: "Non c'è nulla che possiamo fare..." 
 
  black_death.1004.t: "La Morte Terribile"
  black_death.1004.desc: "Gli abitanti dei villaggi circostanti [target_location.GetName] hanno iniziato a organizzare gli sforzi per tappare le fosse nel terreno da cui proviene il miasma della peste, sigillando sistematicamente le fessure grandi e piccole in tutto il loro territorio.\n\nGli abitanti sono certi che questo risolverà il problema, ma gli esperti di [ROOT.GetCountry.GetCapital.GetName] avvertono che ciò danneggerà solo la qualità del suolo della regione."
@@ -176,6 +177,6 @@
  black_death.1025.t: "Disordini per la Peste"
  black_death.1025.desc: "L'epidemia è stata gestita in modo troppo incompetente. La malattia sta dilagando, uccidendo gli amici e i cari di coloro che hanno avuto la fortuna di sopravvivere.\n\nSe non intraprendiamo immediatamente una linea correttiva, le popolazioni delle zone più colpite insorgeranno e metteranno a ferro e fuoco [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Dobbiamo placare la loro rabbia o almeno reindirizzarla verso qualcos'altro!"
  black_death.1025.a: "Affronteremo i ribelli direttamente."
- black_death.1025.b: "Presto, preparate la propaganda!"
+ black_death.1025.b: "Presto, distraiamoli con dei festeggiamenti!" 
  black_death.1025.c: "Scaricate la colpa sulla minoranza di cultura [blame_target.GetAdjectiveWithNoTooltip]."
  every_location_with_plague_scaling_satisfaction_loss_tt: "I [pops|e] che abitano una [location|e] al momento afflitta dalla [GetDisease('bubonic_plague').GetNameWithNoTooltip] soffriranno di una ridotta [pop_satisfaction|e] in base alla presenza della malattia."

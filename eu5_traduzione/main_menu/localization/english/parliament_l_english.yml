@@ -32,8 +32,9 @@
  PARLIAMENT_CURRENT_SUPPORT: "L'attuale sostegno del parlamento è: $SUPPORT$%"
 
  NO_POSSIBLE_AGENDAS: "@trigger_no! Non ci sono più [parliament_agendas|e] possibili."
- LAWS_THAT_CAN_BE_DEBATED: "Policies that can be Debated" #NEW
- IO_PARLIAMENT_NO_LAWS_CALL_DIET: "@trigger_no! No [laws|e] available for debate. Check the Imperial Constitution to see all the Laws." #NEW
+ PARLIAMENT_TYPE_ALREADY_SELECTED: "@trigger_no! Questo è già il nostro [parliament_type|e] attuale." 
+ LAWS_THAT_CAN_BE_DEBATED: "Politiche che possono essere discusse" 
+ IO_PARLIAMENT_NO_LAWS_CALL_DIET: "@trigger_no! Nessuna [laws|e] disponibile per il dibattito. Controlla la Costituzione Imperiale per vedere tutte le Leggi." 
  
  ACTIVE_PARLIAMENT_SUPPORT_POWER: "Il valore base è $VAL|2G$ [estate_power|e] modificato da:"
  ACTIVE_PARLIAMENT_SUPPORT_IMPORTANCE: "Importanza dell'Agenda: $VAL|2+=%$"
@@ -50,16 +51,16 @@
  IO_PARLIAMENT_NON_VOTERS: "Devo ancora votare"
  IO_PARLIAMENT_OPPOSERS: "Oppositori"
  IO_PARLIAMENT_VOTERS: "Sostenitori"
- IO_PARLIAMENT_VOTED: "Voted" #NEW
- IO_PARLIAMENT_VOTES_LEFT: "Votes Left:" #NEW
- IO_IF_DEBATE_FAILS: "#r If it fails#!" #NEW
- IO_IF_DEBATE_PASSES: "#g If it Passes#!" #NEW
- IO_LAW_DEBATE_POLICY_KEPT: "[policy|e] is kept" #NEW
- IO_LAW_DEBATE_POLICY_SET: "[policy|e] is set" #NEW
+ IO_PARLIAMENT_VOTED: "Votato" 
+ IO_PARLIAMENT_VOTES_LEFT: "Voti rimasti:" 
+ IO_IF_DEBATE_FAILS: "#r Se fallisce#!" 
+ IO_IF_DEBATE_PASSES: "#g Se passa#!" 
+ IO_LAW_DEBATE_POLICY_KEPT: "La [policy|e] viene mantenuta" 
+ IO_LAW_DEBATE_POLICY_SET: "La [policy|e] viene impostata" 
 
  #Actions
  call_parliament: "Convoca il Parlamento"
- call_parliament_desc: "Questo convocherà il Parlamento nel tentativo di ottenere sostegno per risolvere una [parliament_issue|e], cambiare le [policies|e] delle nostre [laws|e], creare un [casus_belli|e], aumentare le [taxes|e] o ottenere più [army_levies|e] e [navy_levies|e].\n\nDurante questa sessione otterremo i seguenti effetti:\n[ShowModifierEffect('parliament_in_session')], [ShowModifier('parliament_location')]; e o [ShowModifier('parliament_in_capital')] o [ShowModifier('parliament_outside_capital')] a seconda della [location|e] selezionata" #OLD ITA
+ call_parliament_desc: "Questo convocherà il Parlamento nel tentativo di ottenere sostegno per risolvere una [parliament_issue|e], cambiare [policies|e] nelle nostre [laws|e], creare un [casus_belli|e], imporre [taxes|e] più alte o aumentare [army_levies|e] e [navy_levies|e].\n\nDurante questa sessione otterremo i seguenti effetti\n[ShowModifier('parliament_in_session')],\n[ShowModifier('parliament_location')];\ne [ShowModifier('parliament_in_capital')] oppure [ShowModifier('parliament_outside_capital')] a seconda della [location|e] selezionata." 
  
  request_more_taxes: "Richiedi Imposte Aggiuntive"
  request_more_taxes_desc: "Richiesta [Player.Custom('IT_PARL_AL')][Player.GetGovernment.GetParliament.GetName] di consentirci di riscuotere più [taxes|e] dai [estates|e]."
@@ -71,6 +72,8 @@
  ask_for_law_changes_desc: "Richiesta ai [estates|e] di approvare la nostra modifica di una determinata [policy|e] nelle nostre [laws|e]."
  ask_for_law_changes_select_law_title: "Seleziona una [law|e] che [Player.Custom('IT_PARL_IL')]nostr[Player.Custom('IT_PARL_OA')] [Player.GetGovernment.GetParliament.GetName] accetterà di cambiare."
  ask_for_law_changes_select_policies_title: "Seleziona una [policy|e] che [Player.Custom('IT_PARL_IL')]nostr[Player.Custom('IT_PARL_OA')] [Player.GetGovernment.GetParliament.GetName] accetterà di cambiare."
+ declare_holidays_request: "Dichiara festività" 
+ declare_holidays_request_desc: "Dichiarare festivo un giorno imminente per tutto il nostro popolo ci procurerà sostegno popolare e ci aiuterà anche a stabilizzare i nostri affari." 
  
  
  prepare_for_war_select_title: "Seleziona il [country|e] su cui ottenere un [casus_belli|e]"
@@ -90,10 +93,10 @@
  promote_star_fort_building_desc: "$promote_castle_building_desc$"
  promote_fortress_building: "Promuovere i Lavori per una $fortress$"
  promote_fortress_building_desc: "$promote_castle_building_desc$"
- promote_pike_and_shot_tactics: "Promote Pike and Shot Tactics" #NEW
- promote_pike_and_shot_tactics_desc: "The combination of pikemen and arquebusiers in the same disciplined formations is a force to reckon with in any army. By promoting strict training in these formations, we will ensure that our army can outperform the enemy in both offense and defense even among their midst." #NEW
- promote_artillery_doctrine: "Promote Artillery Doctrine" #NEW
- promote_artillery_doctrine_desc: "The decisive power of artillery on the battlefield is unquestionable, and we must built our military doctrine around that fact. We must ensure that our armies include powerful cannons capable of shattering both enemy lines and fortifications." #NEW
+ promote_pike_and_shot_tactics: "Promuovi tattiche di picca e tiro" 
+ promote_pike_and_shot_tactics_desc: "La combinazione di picchieri e archibugieri nelle stesse formazioni disciplinate è una forza da non sottovalutare in qualsiasi esercito. Promuovendo un addestramento rigoroso in queste formazioni, garantiremo che il nostro esercito possa superare il nemico sia in attacco sia in difesa anche nel mezzo delle sue file." 
+ promote_artillery_doctrine: "Promuovi dottrina d'artiglieria" 
+ promote_artillery_doctrine_desc: "Il potere decisivo dell'artiglieria sul campo di battaglia è indiscutibile, e dobbiamo costruire la nostra dottrina militare attorno a questo fatto. Dobbiamo assicurarci che i nostri eserciti includano cannoni potenti, capaci di frantumare sia le linee nemiche sia le fortificazioni." 
  sponsor_a_university: "Finanziare un'$university$"
  sponsor_a_university_desc: "La diffusione della conoscenza nella ricerca dell'illuminazione mentale e della comprensione del divino è un obiettivo puro che dobbiamo sostenere con tutte le nostre forze finanziarie e politiche, istituendo istituzioni liturgiche di grande prestigio."
  pops_in_province_gain_20_satisfaction: "I [pops|e] nella [province|e] di questa [location|e] otterranno [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] di [pop_satisfaction|e]."
@@ -743,9 +746,9 @@
  pa_construct_market_village: "Richiesta di un Nuovo Mercato"
  pa_construct_market_village_simple: "Richiedi un Nuovo Mercato"
  pa_construct_market_village_desc: "Il [estate|e] ci sta chiedendo di costruire un nuovo $market_village$ per le loro attività commerciali."
- pa_construct_city_walls: "Demand for $city_walls$" #NEW
- pa_construct_city_walls_simple: "Demand for $city_walls$" #NEW
- pa_construct_city_walls_desc: "The citizens are petitioning us to construct new [ShowBuildingTypeNameWithNoTooltip('city_walls')] for their protection." #NEW
+ pa_construct_city_walls: "Richiesta di $city_walls$" 
+ pa_construct_city_walls_simple: "Richiesta di $city_walls$" 
+ pa_construct_city_walls_desc: "I cittadini ci stanno chiedendo di costruire nuove [ShowBuildingTypeNameWithNoTooltip('city_walls')] per la loro protezione." 
 
  #Diplomatic Agendas
  pa_break_alliance: "Rompere un'Alleanza"
@@ -774,12 +777,12 @@
  pa_reduce_naval_recruitment: "Ridurre il Reclutamento della Marina"
  pa_reduce_naval_recruitment_simple: "$pa_reduce_naval_recruitment$"
  pa_reduce_naval_recruitment_desc: "I membri di questo [estate|e] sono preoccupati per il nostro intenso reclutamento nella marina e vogliono ridurre il numero di persone costrette ad arruolarsi."
- pa_increase_entrenchment: "Increase Bureaucratic Entrenchment" #NEW
- pa_increase_entrenchment_simple: "$pa_increase_entrenchment$" #NEW
- pa_increase_entrenchment_desc: "Members of this [estate|e] seem to be pushing for the entrechment of current bureaucracy, likely in an effort to solidify whatever institutional influence they have." #NEW
- pa_decrease_entrenchment: "Reduce Bureaucratic Entrenchment" #NEW
- pa_decrease_entrenchment_simple: "$pa_decrease_entrenchment$" #NEW
- pa_decrease_entrenchment_desc: "Members of this [estate|e] seem to be pushing for the reduction of current bureaucracy entrenchment, likely in an effort to limit institutional influence." #NEW
+ pa_increase_entrenchment: "Aumenta il Radicamento Burocratico" 
+ pa_increase_entrenchment_simple: "$pa_increase_entrenchment$" 
+ pa_increase_entrenchment_desc: "I membri di questo [estate|e] sembrano spingere per il radicamento della burocrazia attuale, probabilmente nel tentativo di consolidare qualunque influenza istituzionale possiedano." 
+ pa_decrease_entrenchment: "Riduci il Radicamento Burocratico" 
+ pa_decrease_entrenchment_simple: "$pa_decrease_entrenchment$" 
+ pa_decrease_entrenchment_desc: "I membri di questo [estate|e] sembrano spingere per la riduzione del radicamento della burocrazia attuale, probabilmente nel tentativo di limitare l'influenza istituzionale." 
 
  #$mamluk$ Actions
  promote_mamluks: "Promuovere un $mamluk$"
@@ -803,182 +806,205 @@
  pa_hre_affirmation_of_free_city_rights_desc: "Rinnoviamo i diritti e le garanzie delle $free_city_plural$, garantendo la loro stabilità e prosperità all'interno dell'Impero."
  opinion_hre_pa_supports_free_cities: "Sostenere le [ShowSpecialStatusNamePluralWithNoTooltip('free_city')]"
  pa_hre_affirmation_of_free_city_rights_tt: "Ogni [ShowSpecialStatusName('free_city')] indipendente ottiene [ShowNamedValue('stability_mild_bonus')|+=2] [stability|e] mentre ogni paese che attualmente conduce una guerra contro di loro perde [ShowBiasValue('opinion_hre_pa_supports_free_cities')|+] opinione nei confronti dell'[GetUniqueInternationalOrganization('hre').GetLeaderTitle] del [GetUniqueInternationalOrganization('hre').GetName]." 
- royal_monopoly_on_trade: "Royal Monopoly on Trade" #NEW
- royal_monopoly_on_trade_desc: "The merchants of our realm have grown fat on the profits of commerce for long enough. By asserting a royal monopoly on key goods, we bring those revenues into the crown's hands, where they can serve the whole of the realm." #NEW
- charter_subject_governors: "Charter Subject Governors" #NEW
- charter_subject_governors_desc: "Our distant subjects demand attention that the crown can ill afford. By chartering formal governors with royal authority, we tighten our grip on these lands and ensure their revenues flow properly to our coffers." #NEW
- establish_colonial_administration: "Establish Colonial Administration" #NEW
- establish_colonial_administration_desc: "The colonies we have planted abroad must be governed as proper extensions of our realm, not left to the whims of fortune-seekers. We must establish proper administrative structures to make this so." #NEW
- reform_the_royal_treasury: "Reform the Royal Treasury" #NEW
- reform_the_royal_treasury_desc: "The unchecked expansion of minting has driven prices upward and weakened the value of our coin. A thorough audit of crown finances and reform of our treasury practices would restore sound money to the realm." #NEW
- issue_royal_censure: "Issue Royal Censure" #NEW
- issue_royal_censure_desc: "Our rivals have taken actions that cannot go without formal rebuke. A royal censure, backed by the authority of this parliament, would make plain to all that we will not suffer such conduct without response." #NEW
- mandate_emergency_levies: "Mandate Emergency Levies" #NEW
- mandate_emergency_levies_desc: "Our war effort stands in need of greater support from every corner of the realm. The crown must call upon all estates and subjects to contribute what they can to see us through this trial." #NEW
- fund_royal_art_patronage: "Fund Royal Art Patronage" #NEW
- fund_royal_art_patronage_desc: "The greatness of a realm is measured not only in armies and gold, but in the works of art and culture it produces. We should invest in the patronage of artists and craftsmen who will immortalize our dynasty's glory." #NEW
- institute_feudal_levies: "Institute Feudal Levies" #NEW
- institute_feudal_levies_desc: "The backbone of any great army is the mounted nobility. By formalizing the military obligations of our noble houses — particularly their obligation to furnish heavy cavalry — we strengthen our forces in the field." #NEW
- establish_military_exercises: "Establish Military Exercises" #NEW
- establish_military_exercises_desc: "Our noble retinues grow soft in times of peace. By mandating regular field exercises and tournaments, we ensure that our warriors remain sharp and our armies ready when the call to battle comes." #NEW
- establish_heralds_college: "Establish a Heralds' College" #NEW
- establish_heralds_college_desc: "The precedence of titles, the rights of coats of arms, and the order of noble rank are matters of great consequence. A heralds' college would bring order to these affairs and lend greater prestige to our realm abroad." #NEW
- promote_chivalric_orders: "Promote Chivalric Orders" #NEW
- promote_chivalric_orders_desc: "Our chivalric orders are the embodiment of noble martial virtue. By granting them royal recognition and funding, we strengthen the bonds between the crown and its finest warriors." #NEW
- license_noble_privateers: "License Noble Privateers" #NEW
- license_noble_privateers_desc: "The seas offer riches to the bold, and noble houses are well placed to outfit vessels of war for profit. By issuing letters of marque, we give form and legitimacy to their ventures while the crown benefits from the resulting trade disruption." #NEW
- monopolize_land_trade_routes: "Monopolize Land Trade Routes" #NEW
- monopolize_land_trade_routes_desc: "Our nobility controls the roads, the passes, and the bridges through which all land trade must flow. By granting them formal tolling rights over overland merchants, we channel those profits into the hands of our most loyal subjects." #NEW
- fund_noble_colonization: "Fund Noble Colonization" #NEW
- fund_noble_colonization_desc: "The great noble houses of our realm have the resources and the ambition to finance colonial expeditions. We should charter and encourage these ventures to extend our reach beyond the horizon." #NEW
- grant_exclusive_hunting_rights: "Grant Exclusive Hunting Rights" #NEW
- grant_exclusive_hunting_rights_desc: "The forests and game of the realm are the natural domain of the nobility. By granting them exclusive rights to hunt and manage these lands, we strengthen their bond to their estates and their loyalty to the crown." #NEW
- establish_noble_garrison_law: "Establish Noble Garrison Law" #NEW
- establish_noble_garrison_law_desc: "Unrest threatens our realm, and we cannot suppress it without strong local garrisons. Let the noble houses be required by law to maintain fortified positions in their domains, ready to defend crown and country." #NEW
- establish_clergy_charity: "Establish Clergy Charity" #NEW
- establish_clergy_charity_desc: "Our people go hungry while the granaries of great lords stand full. It is the duty of the Church to organize the relief of the poor and the hungry — a duty we must now formalize and fund." #NEW
- launch_religious_missions: "Launch Religious Missions" #NEW
- launch_religious_missions_desc: "Much of our realm yet lies outside the light of the true faith. The Church must organize and dispatch missionaries to bring those lost souls into the fold, and we shall give them the backing they need to succeed." #NEW
- institute_canonical_law: "Institute Canonical Law" #NEW
- institute_canonical_law_desc: "A realm divided in faith is a realm divided in spirit. By codifying church law and enforcing its uniform application across our provinces, we strengthen the bonds of faith that hold our people together." #NEW
- establish_inquisition_courts: "Establish Inquisition Courts" #NEW
- establish_inquisition_courts_desc: "The seeds of heresy have taken root, and only a systematic effort of Church courts can root them out. We must act swiftly before the contagion spreads further." #NEW
- promote_religious_tolerance: "Promote Religious Tolerance" #NEW
- promote_religious_tolerance_desc: "Our realm is home to many who do not share our faith, and their discontent breeds unrest. It is the wisdom of the Church to acknowledge that peace is better served by tolerance than by perpetual conflict." #NEW
- fund_monastery_network: "Fund a Monastery Network" #NEW
- fund_monastery_network_desc: "The monasteries of our realm are centers of learning, charity, and order. We should expand their network and endow them properly, that their good works may reach every corner of the realm." #NEW
- establish_pilgrimage_routes: "Establish Pilgrimage Routes" #NEW
- establish_pilgrimage_routes_desc: "The sacred sites of our faith draw the faithful from near and far. By formally protecting and maintaining the routes to these holy places, we show our piety and draw distinction and prestige to our realm." #NEW
- regulate_tithe_collection: "Regulate Tithe Collection" #NEW
- regulate_tithe_collection_desc: "The collection of tithes has grown irregular and contentious. By standardizing the church's share of income across the realm, we ensure fair and reliable revenue for the clergy while relieving the burden of uncertainty from our people." #NEW
- sponsor_theological_seminaries: "Sponsor Theological Seminaries" #NEW
- sponsor_theological_seminaries_desc: "A learned clergy is the foundation of a spiritually healthy realm. We must fund the establishment and expansion of seminaries to train a new generation of learned churchmen." #NEW
- promote_export_trade: "Promote Export Trade" #NEW
- promote_export_trade_desc: "Our merchants stand ready to carry our goods to the furthest corners of the world, but they need the backing of this parliament to expand their networks. A commitment to export trade will enrich the realm and strengthen our hand abroad." #NEW
- establish_import_controls: "Establish Import Controls" #NEW
- establish_import_controls_desc: "We must not allow the flood of foreign goods to undermine our own producers. By establishing formal controls on what enters our markets, we protect our industries and ensure our merchants remain competitive." #NEW
- fund_trade_expeditions: "Fund Trade Expeditions" #NEW
- fund_trade_expeditions_desc: "The merchant guilds stand ready to pool their capital for long-range commercial voyages, but such ventures require the backing of law and the confidence that comes from parliamentary support." #NEW
- establish_commodity_exchange: "Establish a Commodity Exchange" #NEW
- establish_commodity_exchange_desc: "Our market centers bustle with activity, but lack a formal exchange where bulk goods can be traded in an orderly fashion. A properly established commodity exchange would make our markets the envy of our neighbors." #NEW
- promote_maritime_trade: "Promote Maritime Trade" #NEW
- promote_maritime_trade_desc: "The sea lanes are highways of wealth for those bold enough to use them. We should invest in the infrastructure and institutions that support maritime commerce, and ensure our merchants command the waters." #NEW
- license_trading_companies: "License Trading Companies" #NEW
- license_trading_companies_desc: "The risks and rewards of long-distance trade are too great for any single merchant to bear alone. We should license formal trading companies to pool resources and share those risks, to the benefit of the realm as a whole." #NEW
- establish_customs_houses: "Establish Customs Houses" #NEW
- establish_customs_houses_desc: "Our borders are porous, and foreign merchants profit from goods that enter our realm without proper accounting. By building customs houses, we impose order on our imports and ensure the crown and our merchants take their proper share." #NEW
- fund_artisan_guilds: "Fund Artisan Guilds" #NEW
- fund_artisan_guilds_desc: "The skilled craftsmen of our realm produce goods of extraordinary quality, but they lack the organisation and support to reach their full potential. We should fund and protect the guilds that represent them." #NEW
- establish_trade_insurance: "Establish Trade Insurance" #NEW
- establish_trade_insurance_desc: "The risks of trade — shipwreck, banditry, war — deter many a merchant from the ventures that would enrich the realm. By creating formal insurance schemes, we allow our merchants to trade with greater confidence." #NEW
- expand_postal_relay_network: "Expand the Postal Relay Network" #NEW
- expand_postal_relay_network_desc: "Reliable communication is the lifeblood of commerce. Our merchant houses are willing to finance a network of relay stations that would carry messages and goods faster than ever before — an investment that would repay itself many times over." #NEW
- establish_common_food_stores: "Establish Common Food Stores" #NEW
- establish_common_food_stores_desc: "Our people are vulnerable to the cruel turns of bad harvests, and hunger breeds desperation. By establishing community grain stores, we ensure that no famine, however harsh, can leave our people without recourse." #NEW
- promote_farming_innovation: "Promote Farming Innovation" #NEW
- promote_farming_innovation_desc: "New methods of crop rotation and cultivation have shown remarkable results in other lands. We should support their adoption across our realm, that our fields may yield more abundantly and our people suffer less from want." #NEW
- sponsor_irrigation_projects: "Sponsor Irrigation Projects" #NEW
- sponsor_irrigation_projects_desc: "Much of our realm's land could yield far greater harvests if only water could be brought to it. We should fund the construction of waterways and irrigation works that will transform dry land into productive farmland." #NEW
- reduce_serfdom: "Reduce Serfdom" #NEW
- reduce_serfdom_desc: "The bonds of serfdom weigh heavily on the common folk, binding them to the land and stifling the very labor that sustains us all. By easing these burdens and granting greater freedom of movement, we strengthen the loyalty and productivity of our people." #NEW
- establish_village_councils: "Establish Village Councils" #NEW
- establish_village_councils_desc: "Our rural communities are governed by distant lords who neither know nor care for local needs. By establishing village councils with the authority to manage local affairs, we give our people a voice and bring order closer to home." #NEW
- charter_artisan_guilds: "Charter Artisan Guilds" #NEW
- charter_artisan_guilds_desc: "The masters and journeymen of our workshops toil without formal recognition from the crown. By granting guild charters to the craft brotherhoods of the realm, we bring their trades under lawful order and earn the goodwill of those whose hands sustain our prosperity." #NEW
- subsidize_grain_imports: "Subsidize Grain Imports" #NEW
- subsidize_grain_imports_desc: "Our markets hold the means to feed our people, but only if the price of grain remains within reach of ordinary folk. By subsidizing grain imports, we ensure that shortage and want do not drive our people to desperation." #NEW
- rural_crafts_charter: "Rural Crafts Charter" #NEW
- rural_crafts_charter_desc: "The guild monopolies of our towns crush the cottage industries that sustain rural families through lean seasons. We should charter and protect rural craftsmen from such interference, giving the common folk the economic freedom they deserve." #NEW
- prevent_noble_enclosure: "Prevent Noble Enclosure" #NEW
- prevent_noble_enclosure_desc: "The great lords of the realm have for too long seized the common lands that our peasants depend upon for their survival. We must act to protect what little they have left, before that unrest becomes something far more dangerous." #NEW
- declare_war_taxes: "Declare War Taxes" #NEW
- declare_war_taxes_desc: "Our war effort demands resources beyond what ordinary revenue can provide. Parliament must authorise emergency levies on all estates — a burden shared by all for the survival and glory of the realm." #NEW
- wartime_cavalry_reserve: "Wartime Cavalry Reserve" #NEW
- wartime_cavalry_reserve_desc: "The decisive engagement may come at any moment, and we must ensure our heavy cavalry are in a state of full readiness. Let the noble houses commit their finest mounted warriors to a state of constant alert until the war is won." #NEW
- fortify_frontier_passes: "Fortify Frontier Passes" #NEW
- fortify_frontier_passes_desc: "Our borders are only as strong as the passes our enemies must cross to reach us. We should fund the hardening of every vulnerable crossing — turning the natural defenses of the land into killing grounds for any who dare invade." #NEW
- military_chaplaincy: "Military Chaplaincy" #NEW
- military_chaplaincy_desc: "Our armies fight not only for crown and country, but for faith and duty. By embedding clergy as chaplains within our forces, we sustain the spirit of our soldiers under the hardships of campaign." #NEW
- establish_field_hospitals: "Establish Field Hospitals" #NEW
- establish_field_hospitals_desc: "Too many of our soldiers die not from enemy blades but from wounds that could be treated, and sickness that could be prevented. Let the Church organize mobile hospitals to follow our armies and save the lives of those who fight for us." #NEW
- naval_supply_contracts: "Naval Supply Contracts" #NEW
- naval_supply_contracts_desc: "Our fleet cannot remain at sea without reliable supply, and the merchant guilds have the networks to provide it. By contracting them formally to keep the fleet provisioned, we ensure our ships can fight without fear of running short." #NEW
- fund_siege_engineers: "Fund Siege Engineers" #NEW
- fund_siege_engineers_desc: "The walls of our enemies will not fall without the expertise to bring them down. Our burgher guilds can finance specialist engineers and the siege equipment needed to reduce even the strongest fortifications." #NEW
- wartime_harvest_pooling: "Wartime Harvest Pooling" #NEW
- wartime_harvest_pooling_desc: "Our armies march on their stomachs, and a hungry army does not fight well. By organizing the pooling of harvest surpluses into regional magazines, our people can directly sustain the forces that defend them." #NEW
- supply_line_labor_draft: "Supply Line Labor Draft" #NEW
- supply_line_labor_draft_desc: "The roads that carry our supplies to the front must be maintained and our materiel moved without cease. Our people can serve the war effort through labor on the supply lines — a contribution as vital as any sword arm." #NEW
- royal_road_commission: "Royal Road Commission" #NEW
- royal_road_commission_desc: "The roads that connect our realm are the arteries through which authority and commerce flow. By commissioning a proper network of maintained royal roads, we ensure that our control reaches swiftly to every corner of our lands." #NEW
- mountain_pass_charters: "Mountain Pass Charters" #NEW
- mountain_pass_charters_desc: "Our noble houses stand astride the mountain passes that divide our realm. By chartering them to maintain and garrison these crossings, we ensure that distance and terrain no longer isolate our provinces from the crown." #NEW
- establish_parish_waypoints: "Establish Parish Waypoints" #NEW
- establish_parish_waypoints_desc: "The roads of our realm are long and the distances wearying for courier and traveler alike. By establishing parish stations along key routes, the Church can provide rest, guidance, and support to all who move through our lands." #NEW
- coastal_trading_post_network: "Coastal Trading Post Network" #NEW
- coastal_trading_post_network_desc: "Our coasts offer natural harbors and stopping points that go unused for lack of proper facilities. A merchant-funded network of coastal trading posts would reduce the costs and risks of maritime commerce and bring distant provinces closer to the capital." #NEW
- rural_road_upkeep_corvee: "Rural Road Upkeep Corvée" #NEW
- rural_road_upkeep_corvee_desc: "Our rural roads fall into disrepair for want of organized maintenance. By requiring a modest corvée of labor from peasant households to keep local roads passable, we ensure that no part of the realm is cut off from the center." #NEW
- STATIC_MODIFIER_NAME_parl_royal_monopoly_mod: "Royal Trade Monopoly" #NEW
- STATIC_MODIFIER_NAME_parl_charter_governors_mod: "Chartered Subject Governors" #NEW
- STATIC_MODIFIER_NAME_parl_colonial_admin_mod: "Colonial Administration" #NEW
- STATIC_MODIFIER_NAME_parl_royal_treasury_mod: "Treasury Reform" #NEW
- STATIC_MODIFIER_NAME_parl_royal_censure_mod: "Royal Censure" #NEW
- STATIC_MODIFIER_NAME_parl_emergency_levies_mod: "Emergency Levies" #NEW
- STATIC_MODIFIER_NAME_parl_royal_art_patronage_mod: "Royal Art Patronage" #NEW
- STATIC_MODIFIER_NAME_parl_feudal_levies_mod: "Feudal Levy Obligations" #NEW
- STATIC_MODIFIER_NAME_parl_military_exercises_mod: "Military Exercises" #NEW
- STATIC_MODIFIER_NAME_parl_heralds_college_mod: "Heralds' College" #NEW
- STATIC_MODIFIER_NAME_parl_chivalric_orders_mod: "Chivalric Orders Recognition" #NEW
- STATIC_MODIFIER_NAME_parl_noble_privateers_mod: "Noble Privateering License" #NEW
- STATIC_MODIFIER_NAME_parl_land_trade_mod: "Noble Land Trade Monopoly" #NEW
- STATIC_MODIFIER_NAME_parl_noble_colonization_mod: "Noble Colonization Charter" #NEW
- STATIC_MODIFIER_NAME_parl_hunting_rights_mod: "Exclusive Hunting Rights" #NEW
- STATIC_MODIFIER_NAME_parl_garrison_law_mod: "Noble Garrison Law" #NEW
- STATIC_MODIFIER_NAME_parl_garrison_law_failure_mod: "Garrison Neglect" #NEW
- STATIC_MODIFIER_NAME_parl_clergy_charity_mod: "Clergy Charity Organization" #NEW
- STATIC_MODIFIER_NAME_parl_religious_missions_mod: "Religious Missions" #NEW
- STATIC_MODIFIER_NAME_parl_canonical_law_mod: "Canonical Law" #NEW
- STATIC_MODIFIER_NAME_parl_inquisition_courts_mod: "Inquisition Courts" #NEW
- STATIC_MODIFIER_NAME_parl_inquisition_failure_mod: "Inquisition Backlash" #NEW
- STATIC_MODIFIER_NAME_parl_religious_tolerance_mod: "Religious Tolerance Edict" #NEW
- STATIC_MODIFIER_NAME_parl_monastery_network_mod: "Monastery Network" #NEW
- STATIC_MODIFIER_NAME_parl_pilgrimage_routes_mod: "Pilgrimage Routes" #NEW
- STATIC_MODIFIER_NAME_parl_tithe_collection_mod: "Regulated Tithe Collection" #NEW
- STATIC_MODIFIER_NAME_parl_theological_seminaries_mod: "Theological Seminaries" #NEW
- STATIC_MODIFIER_NAME_parl_export_trade_mod: "Export Trade Promotion" #NEW
- STATIC_MODIFIER_NAME_parl_import_controls_mod: "Import Controls" #NEW
- STATIC_MODIFIER_NAME_parl_trade_expeditions_mod: "Trade Expeditions" #NEW
- STATIC_MODIFIER_NAME_parl_commodity_exchange_mod: "Commodity Exchange" #NEW
- STATIC_MODIFIER_NAME_parl_maritime_trade_mod: "Maritime Trade Promotion" #NEW
- STATIC_MODIFIER_NAME_parl_trading_companies_mod: "Trading Company License" #NEW
- STATIC_MODIFIER_NAME_parl_customs_houses_mod: "Customs Houses" #NEW
- STATIC_MODIFIER_NAME_parl_artisan_guilds_mod: "Artisan Guilds Charter" #NEW
- STATIC_MODIFIER_NAME_parl_trade_insurance_mod: "Trade Insurance Scheme" #NEW
- STATIC_MODIFIER_NAME_parl_postal_relay_mod: "Postal Relay Network" #NEW
- STATIC_MODIFIER_NAME_parl_common_food_stores_mod: "Common Food Stores" #NEW
- STATIC_MODIFIER_NAME_parl_farming_innovation_mod: "Farming Innovation" #NEW
- STATIC_MODIFIER_NAME_parl_irrigation_projects_mod: "Irrigation Projects" #NEW
- STATIC_MODIFIER_NAME_parl_reduce_serfdom_mod: "Reduced Serfdom" #NEW
- STATIC_MODIFIER_NAME_parl_serfdom_slave_fail_mod: "Slave Unrest" #NEW
- STATIC_MODIFIER_NAME_parl_serfdom_peasant_fail_mod: "Peasant Unrest" #NEW
- STATIC_MODIFIER_NAME_parl_village_councils_mod: "Village Councils" #NEW
- STATIC_MODIFIER_NAME_parl_artisan_guild_charters_mod: "Artisan Guild Charters" #NEW
- STATIC_MODIFIER_NAME_parl_grain_imports_mod: "Grain Import Subsidies" #NEW
- STATIC_MODIFIER_NAME_parl_rural_crafts_mod: "Rural Crafts Charter" #NEW
- STATIC_MODIFIER_NAME_parl_noble_enclosure_mod: "Enclosure Protection" #NEW
- STATIC_MODIFIER_NAME_parl_war_taxes_mod: "War Taxes" #NEW
- STATIC_MODIFIER_NAME_parl_cavalry_reserve_mod: "Cavalry Reserve" #NEW
- STATIC_MODIFIER_NAME_parl_frontier_passes_mod: "Fortified Frontier" #NEW
- STATIC_MODIFIER_NAME_parl_military_chaplaincy_mod: "Military Chaplaincy" #NEW
- STATIC_MODIFIER_NAME_parl_field_hospitals_mod: "Field Hospitals" #NEW
- STATIC_MODIFIER_NAME_parl_naval_supply_mod: "Naval Supply Contracts" #NEW
- STATIC_MODIFIER_NAME_parl_siege_engineers_mod: "Siege Engineers" #NEW
- STATIC_MODIFIER_NAME_parl_harvest_pooling_mod: "Harvest Pooling" #NEW
- STATIC_MODIFIER_NAME_parl_supply_labor_mod: "Supply Line Labor Draft" #NEW
- STATIC_MODIFIER_NAME_parl_supply_labor_fail_mod: "Supply Draft Unrest" #NEW
- STATIC_MODIFIER_NAME_parl_royal_roads_mod: "Royal Road Commission" #NEW
- STATIC_MODIFIER_NAME_parl_mountain_passes_mod: "Mountain Pass Charters" #NEW
- STATIC_MODIFIER_NAME_parl_parish_waypoints_mod: "Parish Waypoints" #NEW
- STATIC_MODIFIER_NAME_parl_coastal_posts_mod: "Coastal Trading Posts" #NEW
- STATIC_MODIFIER_NAME_parl_road_corvee_mod: "Road Upkeep Corvée" #NEW
+ royal_monopoly_on_trade: "Monopolio regio sul commercio" 
+ royal_monopoly_on_trade_desc: "I mercanti del nostro regno si sono arricchiti abbastanza con i profitti del commercio. Affermando un monopolio regio sui beni chiave, portiamo quelle entrate nelle mani della corona, dove potranno servire l'intero regno." 
+ charter_subject_governors: "Concedi carte ai governatori degli stati clienti" 
+ charter_subject_governors_desc: "I nostri stati clienti lontani richiedono un'attenzione che la corona può a malapena permettersi. Concedendo carte formali a governatori dotati di autorità regia, rafforziamo la presa su queste terre e garantiamo che le loro entrate fluiscano correttamente nelle nostre casse." 
+ establish_colonial_administration: "Istituisci amministrazione coloniale" 
+ establish_colonial_administration_desc: "Le colonie che abbiamo fondato all'estero devono essere governate come vere estensioni del nostro regno, non lasciate ai capricci di cercatori di fortuna. Dobbiamo istituire strutture amministrative adeguate perché ciò avvenga." 
+ reform_the_royal_treasury: "Riforma il Tesoro regio" 
+ reform_the_royal_treasury_desc: "L'espansione incontrollata della coniazione ha spinto i prezzi verso l'alto e indebolito il valore della nostra moneta. Un'accurata revisione delle finanze della corona e una riforma delle pratiche del tesoro restituirebbero solidità monetaria al regno." 
+ issue_royal_censure: "Emetti censura regia" 
+ issue_royal_censure_desc: "I nostri rivali hanno compiuto azioni che non possono restare senza formale rimprovero. Una censura regia, sostenuta dall'autorità di questo parlamento, renderebbe chiaro a tutti che non tollereremo simili condotte senza risposta." 
+ mandate_emergency_levies: "Imponi leve d'emergenza" 
+ mandate_emergency_levies_desc: "Il nostro sforzo bellico ha bisogno di maggiore sostegno da ogni angolo del regno. La corona deve chiamare tutti i ceti e i sudditi a contribuire con quanto possono per superare questa prova." 
+ fund_royal_art_patronage: "Finanzia il mecenatismo artistico regio" 
+ fund_royal_art_patronage_desc: "La grandezza di un regno non si misura solo in eserciti e oro, ma anche nelle opere d'arte e cultura che produce. Dovremmo investire nel patrocinio di artisti e artigiani che immortaleranno la gloria della nostra dinastia." 
+ institute_feudal_levies: "Istituisci leve feudali" 
+ institute_feudal_levies_desc: "La spina dorsale di ogni grande esercito è la nobiltà a cavallo. Formalizzando gli obblighi militari delle nostre casate nobiliari, in particolare quello di fornire cavalleria pesante, rafforziamo le nostre forze sul campo." 
+ establish_military_exercises: "Istituisci esercitazioni militari" 
+ establish_military_exercises_desc: "I nostri seguiti nobiliari si infiacchiscono in tempo di pace. Imponendo esercitazioni da campo e tornei regolari, garantiamo che i nostri guerrieri restino pronti e i nostri eserciti siano preparati quando giungerà la chiamata alla battaglia." 
+ establish_heralds_college: "Istituisci un Collegio degli Araldi" 
+ establish_heralds_college_desc: "La precedenza dei titoli, i diritti sugli stemmi e l'ordine del rango nobiliare sono questioni di grande importanza. Un collegio degli araldi porterebbe ordine in questi affari e darebbe maggiore prestigio al nostro regno all'estero." 
+ promote_chivalric_orders: "Promuovi ordini cavallereschi" 
+ promote_chivalric_orders_desc: "I nostri ordini cavallereschi sono l'incarnazione della virtù marziale nobiliare. Concedendo loro riconoscimento e finanziamenti regi, rafforziamo i legami tra la corona e i suoi migliori guerrieri." 
+ license_noble_privateers: "Autorizza corsari nobili" 
+ license_noble_privateers_desc: "I mari offrono ricchezze agli audaci, e le casate nobiliari sono ben posizionate per armare navi da guerra a scopo di profitto. Concedendo lettere di corsa, diamo forma e legittimità alle loro imprese mentre la corona trae beneficio dalla conseguente perturbazione del commercio." 
+ monopolize_land_trade_routes: "Monopolizza le rotte commerciali terrestri" 
+ monopolize_land_trade_routes_desc: "La nostra nobiltà controlla le strade, i passi e i ponti attraverso cui deve fluire tutto il commercio terrestre. Concedendo loro diritti formali di pedaggio sui mercanti via terra, convogliamo quei profitti nelle mani dei nostri sudditi più leali." 
+ fund_noble_colonization: "Finanzia la colonizzazione nobiliare" 
+ fund_noble_colonization_desc: "Le grandi casate nobiliari del nostro regno hanno le risorse e l'ambizione per finanziare spedizioni coloniali. Dovremmo autorizzare e incoraggiare queste imprese per estendere la nostra portata oltre l'orizzonte." 
+ grant_exclusive_hunting_rights: "Concedi diritti esclusivi di caccia" 
+ grant_exclusive_hunting_rights_desc: "Le foreste e la selvaggina del regno sono il dominio naturale della nobiltà. Concedendo loro diritti esclusivi di caccia e gestione di queste terre, rafforziamo il loro legame con i possedimenti e la loro lealtà alla corona." 
+ establish_noble_garrison_law: "Istituisci la legge sulle guarnigioni nobiliari" 
+ establish_noble_garrison_law_desc: "Il disordine minaccia il nostro regno, e non possiamo reprimerlo senza forti guarnigioni locali. Che le casate nobiliari siano obbligate per legge a mantenere posizioni fortificate nei propri domini, pronte a difendere corona e paese." 
+ establish_clergy_charity: "Istituisci carità del clero" 
+ establish_clergy_charity_desc: "Il nostro popolo soffre la fame mentre i granai dei grandi signori restano pieni. È dovere della Chiesa organizzare il soccorso dei poveri e degli affamati, un dovere che ora dobbiamo formalizzare e finanziare." 
+ launch_religious_missions: "Avvia missioni religiose" 
+ launch_religious_missions_desc: "Gran parte del nostro regno giace ancora fuori dalla luce della vera fede. La Chiesa deve organizzare e inviare missionari per ricondurre quelle anime perdute nell'ovile, e noi daremo loro il sostegno necessario per riuscirci." 
+ institute_canonical_law: "Istituisci diritto canonico" 
+ institute_canonical_law_desc: "Un regno diviso nella fede è un regno diviso nello spirito. Codificando il diritto ecclesiastico e imponendone l'applicazione uniforme in tutte le nostre province, rafforziamo i legami di fede che tengono insieme il nostro popolo." 
+ establish_inquisition_courts: "Istituisci tribunali dell'Inquisizione" 
+ establish_inquisition_courts_desc: "I semi dell'eresia hanno messo radici, e solo uno sforzo sistematico dei tribunali ecclesiastici può estirparli. Dobbiamo agire rapidamente prima che il contagio si diffonda ulteriormente." 
+ promote_religious_tolerance: "Promuovi tolleranza religiosa" 
+ promote_religious_tolerance_desc: "Il nostro regno ospita molti che non condividono la nostra fede, e il loro malcontento genera disordini. È saggezza della Chiesa riconoscere che la pace è favorita più dalla tolleranza che dal conflitto perpetuo." 
+ fund_monastery_network: "Finanzia una rete monastica" 
+ fund_monastery_network_desc: "I monasteri del nostro regno sono centri di apprendimento, carità e ordine. Dovremmo espandere la loro rete e dotarli adeguatamente, così che le loro buone opere possano raggiungere ogni angolo del regno." 
+ establish_pilgrimage_routes: "Istituisci rotte di pellegrinaggio" 
+ establish_pilgrimage_routes_desc: "I luoghi sacri della nostra fede attirano fedeli da vicino e da lontano. Proteggendo e mantenendo formalmente le rotte verso questi luoghi santi, mostriamo la nostra pietà e portiamo distinzione e prestigio al nostro regno." 
+ regulate_tithe_collection: "Regola la riscossione della decima" 
+ regulate_tithe_collection_desc: "La riscossione delle decime è diventata irregolare e controversa. Standardizzando la quota di reddito spettante alla Chiesa in tutto il regno, garantiamo entrate eque e affidabili al clero, sollevando al contempo il nostro popolo dal peso dell'incertezza." 
+ sponsor_theological_seminaries: "Sostieni seminari teologici" 
+ sponsor_theological_seminaries_desc: "Un clero istruito è il fondamento di un regno spiritualmente sano. Dobbiamo finanziare la fondazione e l'espansione di seminari per formare una nuova generazione di ecclesiastici dotti." 
+ promote_export_trade: "Promuovi il commercio d'esportazione" 
+ promote_export_trade_desc: "I nostri mercanti sono pronti a portare le nostre merci negli angoli più lontani del mondo, ma hanno bisogno del sostegno di questo parlamento per espandere le loro reti. Un impegno verso il commercio d'esportazione arricchirà il regno e rafforzerà la nostra posizione all'estero." 
+ establish_import_controls: "Istituisci controlli sulle importazioni" 
+ establish_import_controls_desc: "Non dobbiamo permettere che il flusso di merci straniere indebolisca i nostri produttori. Istituendo controlli formali su ciò che entra nei nostri mercati, proteggiamo le nostre industrie e garantiamo che i nostri mercanti restino competitivi." 
+ fund_trade_expeditions: "Finanzia spedizioni commerciali" 
+ fund_trade_expeditions_desc: "Le gilde mercantili sono pronte a unire i propri capitali per viaggi commerciali a lunga distanza, ma tali imprese richiedono il sostegno della legge e la fiducia che deriva dall'appoggio parlamentare." 
+ establish_commodity_exchange: "Istituisci una borsa merci" 
+ establish_commodity_exchange_desc: "I nostri centri di mercato pullulano di attività, ma mancano di una borsa formale dove le merci all'ingrosso possano essere scambiate in modo ordinato. Una borsa merci adeguatamente istituita renderebbe i nostri mercati l'invidia dei vicini." 
+ promote_maritime_trade: "Promuovi il commercio marittimo" 
+ promote_maritime_trade_desc: "Le rotte marittime sono vie di ricchezza per chi è abbastanza audace da usarle. Dovremmo investire nelle infrastrutture e nelle istituzioni che sostengono il commercio marittimo, e garantire che i nostri mercanti dominino le acque." 
+ license_trading_companies: "Autorizza compagnie commerciali" 
+ license_trading_companies_desc: "I rischi e le ricompense del commercio a lunga distanza sono troppo grandi perché un singolo mercante li sopporti da solo. Dovremmo autorizzare compagnie commerciali formali per mettere in comune risorse e condividere quei rischi, a beneficio del regno nel suo complesso." 
+ establish_customs_houses: "Istituisci dogane" 
+ establish_customs_houses_desc: "I nostri confini sono porosi, e i mercanti stranieri traggono profitto da beni che entrano nel nostro regno senza adeguata contabilità. Costruendo dogane, imponiamo ordine sulle nostre importazioni e garantiamo che la corona e i nostri mercanti ricevano la loro giusta parte." 
+ fund_artisan_guilds: "Finanzia gilde artigiane" 
+ fund_artisan_guilds_desc: "Gli artigiani qualificati del nostro regno producono beni di qualità straordinaria, ma mancano dell'organizzazione e del sostegno necessari per raggiungere il loro pieno potenziale. Dovremmo finanziare e proteggere le gilde che li rappresentano." 
+ establish_trade_insurance: "Istituisci assicurazione commerciale" 
+ establish_trade_insurance_desc: "I rischi del commercio, naufragi, banditismo e guerra, scoraggiano molti mercanti dalle imprese che arricchirebbero il regno. Creando sistemi assicurativi formali, permettiamo ai nostri mercanti di commerciare con maggiore fiducia." 
+ expand_postal_relay_network: "Espandi la rete di stazioni postali" 
+ expand_postal_relay_network_desc: "Comunicazioni affidabili sono la linfa vitale del commercio. Le nostre case mercantili sono disposte a finanziare una rete di stazioni di cambio che trasporterebbe messaggi e merci più rapidamente che mai, un investimento che si ripagherebbe molte volte." 
+ establish_common_food_stores: "Istituisci riserve alimentari comuni" 
+ establish_common_food_stores_desc: "Il nostro popolo è vulnerabile ai crudeli capricci dei cattivi raccolti, e la fame genera disperazione. Istituendo granai comunitari, garantiamo che nessuna carestia, per quanto dura, possa lasciare il nostro popolo senza risorse." 
+ promote_farming_innovation: "Promuovi innovazione agricola" 
+ promote_farming_innovation_desc: "Nuovi metodi di rotazione delle colture e coltivazione hanno dato risultati notevoli in altre terre. Dovremmo sostenerne l'adozione in tutto il nostro regno, affinché i nostri campi producano più abbondantemente e il nostro popolo soffra meno la penuria." 
+ sponsor_irrigation_projects: "Sostieni progetti di irrigazione" 
+ sponsor_irrigation_projects_desc: "Gran parte delle terre del nostro regno potrebbe dare raccolti molto più ricchi se solo vi fosse portata acqua. Dovremmo finanziare la costruzione di canali e opere d'irrigazione che trasformeranno terre aride in campi produttivi." 
+ reduce_serfdom: "Riduci la servitù della gleba" 
+ reduce_serfdom_desc: "I vincoli della servitù della gleba pesano gravemente sulla gente comune, legandola alla terra e soffocando proprio il lavoro che sostiene tutti noi. Alleggerendo questi pesi e concedendo maggiore libertà di movimento, rafforziamo la lealtà e la produttività del nostro popolo." 
+ establish_village_councils: "Istituisci consigli di villaggio" 
+ establish_village_councils_desc: "Le nostre comunità rurali sono governate da signori lontani che non conoscono né curano i bisogni locali. Istituendo consigli di villaggio con l'autorità di gestire gli affari locali, diamo voce al nostro popolo e portiamo l'ordine più vicino a casa." 
+ charter_artisan_guilds: "Concedi carte alle gilde artigiane" 
+ charter_artisan_guilds_desc: "I maestri e i garzoni delle nostre botteghe faticano senza un riconoscimento formale da parte della corona. Concedendo carte di corporazione alle confraternite artigiane del regno, portiamo i loro mestieri sotto un ordine legale e guadagniamo la benevolenza di coloro le cui mani sostengono la nostra prosperità." 
+ subsidize_grain_imports: "Sovvenziona importazioni di grano" 
+ subsidize_grain_imports_desc: "I nostri mercati hanno i mezzi per nutrire il nostro popolo, ma solo se il prezzo del grano resta alla portata della gente comune. Sovvenzionando le importazioni di grano, garantiamo che scarsità e bisogno non spingano il nostro popolo alla disperazione." 
+ rural_crafts_charter: "Carta dell'artigianato rurale" 
+ rural_crafts_charter_desc: "I monopoli delle gilde nelle nostre città soffocano le attività domestiche che sostengono le famiglie rurali nelle stagioni difficili. Dovremmo autorizzare e proteggere gli artigiani rurali da tali interferenze, dando alla gente comune la libertà economica che merita." 
+ prevent_noble_enclosure: "Previeni le recinzioni nobiliari" 
+ prevent_noble_enclosure_desc: "I grandi signori del regno hanno sequestrato per troppo tempo le terre comuni da cui dipendono i nostri contadini per sopravvivere. Dobbiamo agire per proteggere quel poco che resta loro, prima che il malcontento diventi qualcosa di molto più pericoloso." 
+ declare_war_taxes: "Dichiara tasse di guerra" 
+ declare_war_taxes_desc: "Il nostro sforzo bellico richiede risorse superiori a quelle fornite dalle entrate ordinarie. Il parlamento deve autorizzare leve fiscali d'emergenza su tutti i ceti, un peso condiviso da tutti per la sopravvivenza e la gloria del regno." 
+ wartime_cavalry_reserve: "Riserva di cavalleria in tempo di guerra" 
+ wartime_cavalry_reserve_desc: "Lo scontro decisivo può arrivare in qualsiasi momento, e dobbiamo garantire che la nostra cavalleria pesante sia in piena prontezza. Che le casate nobiliari impegnino i loro migliori guerrieri montati in uno stato di allerta costante finché la guerra non sarà vinta." 
+ fortify_frontier_passes: "Fortifica i passi di frontiera" 
+ fortify_frontier_passes_desc: "I nostri confini sono forti solo quanto i passi che i nemici devono attraversare per raggiungerci. Dovremmo finanziare il rafforzamento di ogni passaggio vulnerabile, trasformando le difese naturali del territorio in trappole mortali per chiunque osi invadere." 
+ military_chaplaincy: "Cappellania militare" 
+ military_chaplaincy_desc: "I nostri eserciti combattono non solo per corona e paese, ma per fede e dovere. Inserendo il clero come cappellani nelle nostre forze, sosteniamo lo spirito dei soldati nelle dure prove della campagna." 
+ establish_field_hospitals: "Istituisci ospedali da campo" 
+ establish_field_hospitals_desc: "Troppi dei nostri soldati muoiono non per le lame nemiche, ma per ferite che potrebbero essere curate e malattie che potrebbero essere prevenute. Che la Chiesa organizzi ospedali mobili per seguire i nostri eserciti e salvare le vite di coloro che combattono per noi." 
+ naval_supply_contracts: "Contratti di rifornimento navale" 
+ naval_supply_contracts_desc: "La nostra flotta non può restare in mare senza rifornimenti affidabili, e le gilde mercantili hanno le reti per fornirli. Stipulando con loro contratti formali per mantenere la flotta rifornita, garantiamo che le nostre navi possano combattere senza timore di restare a corto." 
+ fund_siege_engineers: "Finanzia ingegneri d'assedio" 
+ fund_siege_engineers_desc: "Le mura dei nostri nemici non cadranno senza le competenze necessarie ad abbatterle. Le nostre gilde borghesi possono finanziare ingegneri specializzati e l'equipaggiamento d'assedio necessario per ridurre anche le fortificazioni più solide." 
+ wartime_harvest_pooling: "Messa in comune dei raccolti in guerra" 
+ wartime_harvest_pooling_desc: "I nostri eserciti marciano sul loro stomaco, e un esercito affamato non combatte bene. Organizzando la messa in comune delle eccedenze dei raccolti in magazzini regionali, il nostro popolo può sostenere direttamente le forze che lo difendono." 
+ supply_line_labor_draft: "Leva di lavoro per le linee di rifornimento" 
+ supply_line_labor_draft_desc: "Le strade che portano i nostri rifornimenti al fronte devono essere mantenute, e il nostro materiale deve essere spostato senza sosta. Il nostro popolo può servire lo sforzo bellico con il lavoro sulle linee di rifornimento, un contributo vitale quanto qualsiasi braccio armato." 
+ royal_road_commission: "Commissione delle strade regie" 
+ royal_road_commission_desc: "Le strade che collegano il nostro regno sono le arterie attraverso cui scorrono autorità e commercio. Commissionando una vera rete di strade regie mantenute, garantiamo che il nostro controllo raggiunga rapidamente ogni angolo delle nostre terre." 
+ mountain_pass_charters: "Carte dei passi montani" 
+ mountain_pass_charters_desc: "Le nostre casate nobiliari dominano i passi montani che dividono il regno. Concedendo loro carte per mantenere e presidiare questi attraversamenti, garantiamo che distanza e terreno non isolino più le nostre province dalla corona." 
+ establish_parish_waypoints: "Istituisci stazioni parrocchiali" 
+ establish_parish_waypoints_desc: "Le strade del nostro regno sono lunghe e le distanze faticose per corrieri e viaggiatori. Istituendo stazioni parrocchiali lungo le rotte chiave, la Chiesa può fornire riposo, guida e sostegno a tutti coloro che attraversano le nostre terre." 
+ coastal_trading_post_network: "Rete costiera di empori commerciali" 
+ coastal_trading_post_network_desc: "Le nostre coste offrono porti naturali e punti di sosta che restano inutilizzati per mancanza di strutture adeguate. Una rete di empori commerciali costieri finanziata dai mercanti ridurrebbe costi e rischi del commercio marittimo e avvicinerebbe le province lontane alla capitale." 
+ rural_road_upkeep_corvee: "Corvée per la manutenzione delle strade rurali" 
+ rural_road_upkeep_corvee_desc: "Le nostre strade rurali cadono in rovina per mancanza di manutenzione organizzata. Richiedendo una modesta corvée di lavoro alle famiglie contadine per mantenere percorribili le strade locali, garantiamo che nessuna parte del regno sia tagliata fuori dal centro." 
+ STATIC_MODIFIER_NAME_parl_royal_monopoly_mod: "Monopolio regio del commercio" 
+ STATIC_MODIFIER_NAME_parl_charter_governors_mod: "Governatori di stati clienti con carta" 
+ STATIC_MODIFIER_NAME_parl_colonial_admin_mod: "Amministrazione coloniale" 
+ STATIC_MODIFIER_NAME_parl_royal_treasury_mod: "Riforma del Tesoro" 
+ STATIC_MODIFIER_NAME_parl_royal_censure_mod: "Censura regia" 
+ STATIC_MODIFIER_NAME_parl_emergency_levies_mod: "Leve d'emergenza" 
+ STATIC_MODIFIER_NAME_parl_royal_art_patronage_mod: "Mecenatismo artistico regio" 
+ STATIC_MODIFIER_NAME_parl_feudal_levies_mod: "Obblighi di leva feudale" 
+ STATIC_MODIFIER_NAME_parl_military_exercises_mod: "Esercitazioni militari" 
+ STATIC_MODIFIER_NAME_parl_heralds_college_mod: "Collegio degli Araldi" 
+ STATIC_MODIFIER_NAME_parl_chivalric_orders_mod: "Riconoscimento degli ordini cavallereschi" 
+ STATIC_MODIFIER_NAME_parl_noble_privateers_mod: "Licenza di corsa nobiliare" 
+ STATIC_MODIFIER_NAME_parl_land_trade_mod: "Monopolio nobiliare del commercio terrestre" 
+ STATIC_MODIFIER_NAME_parl_noble_colonization_mod: "Carta di colonizzazione nobiliare" 
+ STATIC_MODIFIER_NAME_parl_hunting_rights_mod: "Diritti esclusivi di caccia" 
+ STATIC_MODIFIER_NAME_parl_garrison_law_mod: "Legge sulle guarnigioni nobiliari" 
+ STATIC_MODIFIER_NAME_parl_garrison_law_failure_mod: "Negligenza delle guarnigioni" 
+ STATIC_MODIFIER_NAME_parl_clergy_charity_mod: "Organizzazione caritativa del clero" 
+ STATIC_MODIFIER_NAME_parl_religious_missions_mod: "Missioni religiose" 
+ STATIC_MODIFIER_NAME_parl_canonical_law_mod: "Diritto canonico" 
+ STATIC_MODIFIER_NAME_parl_inquisition_courts_mod: "Tribunali dell'Inquisizione" 
+ STATIC_MODIFIER_NAME_parl_inquisition_failure_mod: "Reazione contro l'Inquisizione" 
+ STATIC_MODIFIER_NAME_parl_religious_tolerance_mod: "Editto di tolleranza religiosa" 
+ STATIC_MODIFIER_NAME_parl_monastery_network_mod: "Rete monastica" 
+ STATIC_MODIFIER_NAME_parl_pilgrimage_routes_mod: "Rotte di pellegrinaggio" 
+ STATIC_MODIFIER_NAME_parl_tithe_collection_mod: "Riscossione regolata della decima" 
+ STATIC_MODIFIER_NAME_parl_theological_seminaries_mod: "Seminari teologici" 
+ STATIC_MODIFIER_NAME_parl_export_trade_mod: "Promozione del commercio d'esportazione" 
+ STATIC_MODIFIER_NAME_parl_import_controls_mod: "Controlli sulle importazioni" 
+ STATIC_MODIFIER_NAME_parl_trade_expeditions_mod: "Spedizioni commerciali" 
+ STATIC_MODIFIER_NAME_parl_commodity_exchange_mod: "Borsa merci" 
+ STATIC_MODIFIER_NAME_parl_maritime_trade_mod: "Promozione del commercio marittimo" 
+ STATIC_MODIFIER_NAME_parl_trading_companies_mod: "Licenza per compagnie commerciali" 
+ STATIC_MODIFIER_NAME_parl_customs_houses_mod: "Dogane" 
+ STATIC_MODIFIER_NAME_parl_artisan_guilds_mod: "Carta delle gilde artigiane" 
+ STATIC_MODIFIER_NAME_parl_trade_insurance_mod: "Sistema di assicurazione commerciale" 
+ STATIC_MODIFIER_NAME_parl_postal_relay_mod: "Rete di stazioni postali" 
+ STATIC_MODIFIER_NAME_parl_common_food_stores_mod: "Riserve alimentari comuni" 
+ STATIC_MODIFIER_NAME_parl_farming_innovation_mod: "Innovazione agricola" 
+ STATIC_MODIFIER_NAME_parl_irrigation_projects_mod: "Progetti di irrigazione" 
+ STATIC_MODIFIER_NAME_parl_reduce_serfdom_mod: "Servitù della gleba ridotta" 
+ STATIC_MODIFIER_NAME_parl_serfdom_slave_fail_mod: "Disordini degli schiavi" 
+ STATIC_MODIFIER_NAME_parl_serfdom_peasant_fail_mod: "Disordini contadini" 
+ STATIC_MODIFIER_NAME_parl_village_councils_mod: "Consigli di villaggio" 
+ STATIC_MODIFIER_NAME_parl_artisan_guild_charters_mod: "Carte delle gilde artigiane" 
+ STATIC_MODIFIER_NAME_parl_grain_imports_mod: "Sussidi alle importazioni di grano" 
+ STATIC_MODIFIER_NAME_parl_rural_crafts_mod: "Carta dell'artigianato rurale" 
+ STATIC_MODIFIER_NAME_parl_noble_enclosure_mod: "Protezione dalle recinzioni" 
+ STATIC_MODIFIER_NAME_parl_war_taxes_mod: "Tasse di guerra" 
+ STATIC_MODIFIER_NAME_parl_cavalry_reserve_mod: "Riserva di cavalleria" 
+ STATIC_MODIFIER_NAME_parl_frontier_passes_mod: "Frontiera fortificata" 
+ STATIC_MODIFIER_NAME_parl_military_chaplaincy_mod: "Cappellania militare" 
+ STATIC_MODIFIER_NAME_parl_field_hospitals_mod: "Ospedali da campo" 
+ STATIC_MODIFIER_NAME_parl_naval_supply_mod: "Contratti di rifornimento navale" 
+ STATIC_MODIFIER_NAME_parl_siege_engineers_mod: "Ingegneri d'assedio" 
+ STATIC_MODIFIER_NAME_parl_harvest_pooling_mod: "Messa in comune dei raccolti" 
+ STATIC_MODIFIER_NAME_parl_supply_labor_mod: "Leva di lavoro per rifornimenti" 
+ STATIC_MODIFIER_NAME_parl_supply_labor_fail_mod: "Disordini per la leva di rifornimento" 
+ STATIC_MODIFIER_NAME_parl_royal_roads_mod: "Commissione delle strade regie" 
+ STATIC_MODIFIER_NAME_parl_mountain_passes_mod: "Carte dei passi montani" 
+ STATIC_MODIFIER_NAME_parl_parish_waypoints_mod: "Stazioni parrocchiali" 
+ STATIC_MODIFIER_NAME_parl_coastal_posts_mod: "Empori commerciali costieri" 
+ STATIC_MODIFIER_NAME_parl_road_corvee_mod: "Corvée per la manutenzione stradale" 
+ STATIC_MODIFIER_NAME_parl_standing_regiments_mod: "Reggimenti permanenti" 
+ STATIC_MODIFIER_NAME_parl_wartime_conscription_mod: "Coscrizione in tempo di guerra" 
+ STATIC_MODIFIER_NAME_parl_industrial_workshops_mod: "Officine industriali" 
+ STATIC_MODIFIER_NAME_parl_wartime_officer_corps_mod: "Corpo ufficiali rafforzato" 
+ establish_standing_regiments: "Istituisci reggimenti permanenti" 
+ establish_standing_regiments_desc: "L'epoca di radunare seguiti al bisogno è passata. Le nostre casate nobiliari dovrebbero invece fornire ufficiali addestrati per comandare reggimenti mantenuti permanentemente al servizio regio, una forza combattente che deve la propria disciplina alla corona piuttosto che al proprio signore." 
+ mandate_wartime_conscription: "Imponi coscrizione in tempo di guerra" 
+ mandate_wartime_conscription_desc: "I nostri nemici schierano eserciti di uomini coscritti, e dobbiamo fare lo stesso. Traendo riserve e reclute dai registri parrocchiali, accresceremo le nostre forze in quest'ora di bisogno." 
+ promote_industrial_workshops: "Promuovi officine industriali" 
+ promote_industrial_workshops_desc: "Le confraternite artigiane che un tempo sostenevano le nostre città non possono più eguagliare la produzione richiesta dalla nostra epoca. Dovremmo investire nelle nuove manifatture e officine meccanizzate che producono molto di più, molto più in fretta, e permettere alle nostre arti di stare al passo coi tempi." 
+ wartime_officer_corps: "Rafforza il corpo ufficiali" 
+ wartime_officer_corps_desc: "L'urto della cavalleria non decide più la giornata. Ciò che ora sostiene una battaglia è l'abilità di chi comanda, e il parlamento dovrebbe dare all'esercito il meglio dei nostri uomini, addestrati e assegnati prima dell'apertura della campagna." 
+ pa_accept_estate_culture: "Accetta la cultura del ceto" 
+ pa_accept_estate_culture_simple: "Corrompi il ceto" 
+ pa_accept_estate_culture_desc: "Il [estate|e] richiede che la [culture|e] dominante del suo popolo riceva accettazione ufficiale." 
+ pa_convert_to_estate_religion: "Convertiti alla religione del ceto" 
+ pa_convert_to_estate_religion_simple: "Corrompi il ceto" 
+ pa_convert_to_estate_religion_desc: "Il [estate|e] richiede che il paese si converta alla [religion|e] del suo popolo." 
+ pa_change_court_language_to_estate_language: "Cambia lingua di corte" 
+ pa_change_court_language_to_estate_language_simple: "Corrompi il ceto" 
+ pa_change_court_language_to_estate_language_desc: "Il [estate|e] richiede che la [court_language|e] sia cambiata in una che rifletta meglio la sua identità." 
+ iw_militarize_country: "Militarizza la nazione" 
+ iw_militarize_country_desc: "Invita il [parliament|e] a sostenere un rafforzamento militare d'emergenza, concedendo [army_tradition|e] e temprando il nostro [army|e] più esperto." 

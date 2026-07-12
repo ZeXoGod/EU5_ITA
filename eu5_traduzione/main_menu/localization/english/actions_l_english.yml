@@ -19,6 +19,12 @@
 # pilgrimage_purity: "Pellegrinaggio" #DELETE
 # pilgrimage_purity_desc: "Ottieni [purity|e] visitando un [holy_site|e]" #DELETE
  pilgrimage_select_holy_site_title: "Seleziona un [holy_site|e] da visitare"
+ PILGRIMAGE_HOLY_SITE_TRAVEL_MONTHS: "$MONTHS|0$ mesi" 
+ PILGRIMAGE_HOLY_SITE_GOLD_COST: "$GOLD|0$@gold!" 
+ PILGRIMAGE_HOLY_SITE_INFLUENCE_GAIN: "+$INFLUENCE|0$@religious_influence!" 
+ HOLY_SITE_SORT_BY_TRAVEL_MONTHS: "Clicca per ordinare per tempo di viaggio" 
+ HOLY_SITE_SORT_BY_GOLD_COST: "Clicca per ordinare per costo in oro" 
+ HOLY_SITE_SORT_BY_INFLUENCE_GAIN: "Clicca per ordinare per guadagno di influenza" 
 # pilgrimage_yanantin: "Pellegrinaggio" #DELETE
 # pilgrimage_yanantin_desc: "Cambia il nostro [yanantin|e] visitando un [holy_site|e]" #DELETE
 # pilgrimage_mayan: "Pellegrinaggio" #DELETE
@@ -45,6 +51,7 @@
  join_sect: "Unisciti a una Setta"
  join_sect_desc: "Unisciti a una [sect|e]."
  join_sect_choose_sect: "Scegli la [sect|e] a cui unirti"
+ join_sect_max_sects_tt: "Siamo membri di meno gruppi di [Concept('sect', 'sette')|e] di quanti ne consenta la nostra religione." 
  disfavor_sect: "Disapprova una Setta"
  disfavor_sect_desc: "Disapprova una [sect|e]. Ne scoraggeremo la diffusione nel nostro territorio, anche se otterremo penalità aggiuntive se vi apparteniamo."
  disfavor_sect_choose_sect: "Scegli la [sect|e] da disapprovare"
@@ -130,6 +137,7 @@
  create_autocephalous_patriarchate_tt: "[actor.Custom('IT_La')|U][actor.GetName] crea un nuovo [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]"
  third_rome: "Terza Roma"
  third_rome_desc: "Crea un [holy_site|e] nella sede del nostro [autocephalous_patriarchate|e]."
+ choose_war: "Scegli guerra" 
 
  relocate_ecumenical_patriarchate: "Rilocare il Patriarcato Ecumenico"
  relocate_ecumenical_patriarchate_desc: "Sposta la sede del nostro [autocephalous_patriarchate|e] in un [holy_site|e] per ottenere bonus aggiuntivi."
@@ -147,12 +155,11 @@
  settle_country_desc: "Abbiamo stabilito la nostra religione e cultura in queste terre; rendiamolo ufficiale e [Concept('settle', 'Insediamoci')|e] qui in modo permanente, così da lavorare i campi e costruire miglioramenti per migliorare la nostra vita."
 
  hire_advisor: "Assumi un $game_concept_courtier$"
-# hire_advisor_desc: "Spendi [legitimacy|e] [legitimacy_i|e] per incoraggiare un nuovo [character|e] a entrare nella nostra corte." #OLD
  hire_advisor_desc: "Spendi [government_power|e] per incoraggiare un nuovo [character|e] a entrare nella nostra corte." 
  hire_advisor_effect: "Un nuovo [character|e] viene assunto ed entra nel nostro Paese."
 
  hire_artist: "Assumi un Artista"
- hire_artist_desc: "Spendi oro per incoraggiare un nuovo [artist|e] a entrare nella nostra corte."
+ hire_artist_desc: "Incoraggia un nuovo [artist|e] a entrare nella nostra corte." 
  hire_artist_effect: "Un nuovo [artist|e] viene assunto ed entra nel nostro Paese."
  improve_our_cultural_view: "Migliorare la nostra opinione Culturale" 
  improve_our_cultural_view_desc: "Cerchiamo di migliorare l'opinione che la nostra [culture|e] ha di un'altra." 
@@ -186,18 +193,14 @@
  become_shogun_from_imperial_court: "Diventa [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]"
  become_shogun_from_imperial_court_desc: "Possiamo persuadere la $imperial_court$ a concederci l'autorizzazione per diventare [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
  appease_nobles_estate_from_shogun_court: "Placa la Nobiltà"
-# appease_nobles_estate_from_shogun_court_desc: "Manovrando la $shogunate_court$, possiamo tenere sotto controllo la [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')]." #OLD
  appease_nobles_estate_from_shogun_court_desc: "Gestendo il $shogunate_court$, possiamo tenere sotto controllo le famiglie potenti." 
  increase_levies_from_shogun_court: "Aumenta le Leve"
-# increase_levies_from_shogun_court_desc: "Possiamo richiedere più [army_levies|e] e [navy_levies|e] dalla nostra [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] tramite la $shogunate_court$." #OLD
  increase_levies_from_shogun_court_desc: "Possiamo richiedere più [army_levies|e] e [navy_levies|e] ai nostri servitori più forti tramite il $shogunate_court$." 
  increase_tax_income_from_shogun_court: "Aumenta le Entrate Fiscali"
-# increase_tax_income_from_shogun_court_desc: "Possiamo richiedere più [taxes|e] dalla nostra [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] tramite la $shogunate_court$." #OLD
  increase_tax_income_from_shogun_court_desc: "Possiamo richiedere più [taxes|e] ai nostri servitori tramite il $shogunate_court$." 
  demand_extra_payment_from_shogun_court: "Richiedi un Pagamento Extra"
  demand_extra_payment_from_shogun_court_desc: "Possiamo chiedere un pagamento immediato di [manpower|e] e [gold|e] tramite la $shogunate_court$."
  increase_peasant_satisfaction_from_ikko_ikki: "Placa i Contadini"
-# increase_peasant_satisfaction_from_ikko_ikki_desc: "Possiamo negoziare con gli $ikko_ikki$ per mantenere soddisfatti i [SCOPE.sCountry('actor').GetGovernment.GetEstateName('peasants_estate')]." #OLD
  increase_peasant_satisfaction_from_ikko_ikki_desc: "Possiamo negoziare con gli $ikko_ikki$ per mantenere felice la popolazione." 
  reduce_rebels_from_ikko_ikki: "Riduci il Progresso dei Ribelli Religiosi"
  reduce_rebels_from_ikko_ikki_desc: "Possiamo negoziare con gli $ikko_ikki$ per ridurre il rischio di ribellione."
@@ -264,6 +267,34 @@
  PERFORM_REDUCTION_T: "Esegui riduzione" 
  perform_reduction: "Esegui riduzione" 
  perform_reduction_desc: "Riduci il potere dell'[estate|e] distruggendo i suoi [buildings|e], questo avrà un impatto sulla sua [estate_satisfaction|e]." 
+ ESTATE_ACTIONS_MENU_T: "Azioni dei Ceti" 
+ ESTATE_ACTIONS_LATERALVIEW_T: "Interagisci con [EstateActionsLateralView.GetEstate.GetNameWithNoTooltip]" 
+ ask_for_extra_levies: "Chiedi Leve Extra" 
+ ask_for_extra_levies_desc: "Richiedi forze aggiuntive all'[estate|e]. Le sue risorse saranno messe sotto pressione e la sua [estate_satisfaction|e] calerà drasticamente, a meno che tu non stia difendendo da un attacco." 
+ ASK_FOR_EXTRA_LEVIES_T: "Chiedi Leve Extra" 
+ ask_for_extra_levies_cooldown: "Chiedi Leve Extra" 
+ extraordinary_taxes: "Imponi Tasse Straordinarie" 
+ extraordinary_taxes_desc: "Imponi tasse eccezionali all'[estate|e] per un anno, aumentando il suo tetto fiscale massimo. La sua [estate_satisfaction|e] ne risentirà, meno se ti stai difendendo da un attacco." 
+ EXTRAORDINARY_TAXES_T: "Imponi Tasse Straordinarie" 
+ extraordinary_taxes_cooldown: "Imponi Tasse Straordinarie" 
+ ask_clergy_for_legitimacy: "Richiedi Approvazione del Clero" 
+ ask_clergy_for_legitimacy_desc: "Chiedi al $clergy_estate$ di celebrare cerimonie e offrire approvazioni pubbliche che rafforzino il mandato divino del tuo sovrano. Fornisce [legitimacy|e] al costo della [estate_satisfaction|e] del clero." 
+ ask_clergy_for_legitimacy_cooldown: "Richiedi Approvazione del Clero" 
+ ask_nobility_for_diplomats: "Richiedi Inviati Nobiliari" 
+ ask_nobility_for_diplomats_desc: "Chiedi al $nobles_estate$ di inviare emissari aggiuntivi e fornire i propri contatti nelle corti straniere. Fornisce [diplomats|e] al costo della [estate_satisfaction|e] nobiliare." 
+ ask_nobility_for_diplomats_cooldown: "Richiedi Inviati Nobiliari" 
+ ask_burghers_for_loan: "Richiedi Contributo d'Emergenza" 
+ ask_burghers_for_loan_desc: "Chiedi al $burghers_estate$ di pagare un contributo d'emergenza dalla propria tesoreria, aspettandosi favori in cambio. Trasferisce alla corona fino a metà della riserva d'oro dei borghesi al costo della [estate_satisfaction|e] dei borghesi. A differenza di un prestito, non consuma la nostra [Concept('loan', 'capacità di prestito')]." 
+ ask_burghers_for_loan_cooldown: "Richiedi Contributo d'Emergenza" 
+ ask_commoners_for_stability: "Fai appello ai Ceti Popolari" 
+ ask_commoners_for_stability_desc: "Chiedi alla gente comune di organizzare attività civiche che calmino i disordini e rassicurino la popolazione. Fornisce [stability|e] al costo della [estate_satisfaction|e] dei popolani." 
+ ask_commoners_for_stability_cooldown: "Fai appello ai Ceti Popolari" 
+ ask_tribes_for_manpower: "Chiama le Tribù alle Armi" 
+ ask_tribes_for_manpower_desc: "Chiedi ai capi tribali o alle schiere cosacche di chiamare i loro guerrieri alle armi in cambio di promesse di autonomia o bottino. Fornisce [manpower|e] al costo della [estate_satisfaction|e] tribale." 
+ ask_tribes_for_manpower_cooldown: "Chiama le Tribù alle Armi" 
+ call_emergency_parliament: "Convoca il Parlamento d'Emergenza" 
+ call_emergency_parliament_desc: "Convoca una sessione lampo del [parliament|e] sotto pressione, aggirando il normale tempo di recupero. Costa [legitimacy|e]. Disponibile solo in guerra e mentre il normale tempo di recupero è ancora attivo." 
+ call_emergency_parliament_cooldown: "Convoca il Parlamento d'Emergenza" 
  migrate_pop_based_country_select_source_area: "Seleziona l'[area|e] da cui spostare i [pops|e]:"
  migrate_pop_based_country_select_source_province: "Seleziona la [province|e] da cui spostare i [pops|e]:"
  migrate_pop_based_country_select_destination_province: "Seleziona la [province|e] dove spostare i [pops|e]:"
@@ -391,7 +422,7 @@
  migrate_pop_based_country_desc: "#T Fai Migrare i Pop#!\nTrasferisci i [pops|e] da una [location|e] a un'altra."
  steppe_horde_to_monarchy: "Riforma in una $monarchy$"
  steppe_horde_to_monarchy_desc: "I problemi moderni non possono essere risolti finché la successione dello stato rimane così precaria. Le guerre civili e le lotte per il trono sono troppo comuni. I guerrieri si dividono e combattono tra loro invece di seguire una forte figura di autorità.\n\nI tempi nomadi sono finiti. L'era di una nuova [ShowGovernmentTypeNameWithNoTooltip('monarchy')] sta arrivando!"
- steppe_horde_to_monarchy_tt: "Ci riformeremo in una [ShowGovernmentTypeName('monarchy')] e diventeremo un Paese [settled|e]\n#Y Questo processo richiede 15 anni per essere completato#!"
+ steppe_horde_to_monarchy_tt: "Ci riformeremo in una [ShowGovernmentTypeName('monarchy')] e diventeremo un [settled_country|e]\n#Y Questo processo richiede 15 anni per essere completato#!" 
  relocate_market: "Ricollocare Mercato"
  relocate_market_desc: "Sposta un [market|e] in una diversa [location|e]"
  relocate_market_select_market: "Seleziona il [market|e] da ricollocare:"
@@ -414,6 +445,13 @@
  provoke_rebels: "Provoca i Ribelli" 
  provoke_rebels_desc: "Provoca i [rebels|e] a ribellarsi contro di noi." 
  provoke_rebels_tt: "La [rebellion|e] selezionata sarà spinta a ribellarsi contro di noi, così potremo schiacciarla sul campo di battaglia una volta per tutte!" 
+ negotiate_rebels_buy_off: "Corrompi i Ribelli" 
+ negotiate_rebels_buy_off_desc: "Spendi dell'oro per corrompere i capi dei [rebels|e] e ridurre i loro progressi verso la rivolta." 
+ negotiate_rebels_buy_off_cooldown: "Corrompi i Ribelli" 
+ negotiate_rebels_buy_off_no_target_tt: "Nessuna [rebellion|e] selezionata." 
+ negotiate_rebels_accept_demands: "Accetta le loro Richieste" 
+ negotiate_rebels_accept_demands_desc: "Cedi alle loro richieste per evitare una [rebellion|e] o una [civil_war|e]." 
+ negotiate_rebels_accept_demands_no_target_tt: "Nessuna [rebellion|e] selezionata." 
 
  hire_privateer: "Assolda Corsari"
  hire_privateer_desc: "Assolda dei [privateers|e] per saccheggiare un'[area|e]."
@@ -435,12 +473,16 @@
  delist_unit_merc_destroyed: "Unità rimossa"
  spread_reformation_through_trade: "Diffondi la Riforma attraverso il commercio" 
  spread_reformation_through_trade_desc: "I nostri mercanti percorrono le rotte commerciali dell'Europa settentrionale e sono sempre più esposti alle nuove idee protestanti. Possiamo incoraggiare i nostri empori commerciali ad adottare la fede riformata." 
- spread_reformation_through_trade_tt: "I [pops|e] collegati ai nostri [Hanseatic Kontors|e] che sono ancora [Catholic|e] si convertiranno alla [religion|e] selezionata." 
+ spread_reformation_through_trade_tt: "I [pops|e] collegati al nostro [ShowBuildingTypeName('hanseatic_kontor')] che sono ancora [ShowReligionAdjective('catholic')] si convertiranno alla [religion|e] selezionata." 
 
 #Reformation
  embrace_the_reformation: "Abbraccia la Riforma"
  embrace_the_reformation_desc: "$reformation$ ha preso piede nel nostro Paese! Potrebbe essere saggio abbracciare i tempi che cambiano ed essere considerati un baluardo della nuova fede."
  embrace_the_reformation_tt: "Il nostro [country|e] si convertirà alla [religion|e] selezionata, inclusi il nostro [ruler|e], [consort|e], [heir|e], e i [children|e] del nostro [ruler|e]."
+ sponsor_the_reformation: "Patrocina la Riforma" 
+ sponsor_the_reformation_desc: "Le idee di $reformation$ sono allettanti e potrebbero giovare al nostro paese! Se stabiliamo contatti con chi predica queste nuove idee, potremmo accelerarne la diffusione all'interno del nostro paese." 
+ sponsor_the_reformation_tt: "Il nostro [country|e] inviterà il [movement|e] selezionato e uno dei nostri membri del gabinetto diventerà un propagatore del [movement] scelto." 
+ sponsor_the_reformation_no_movements: "@trigger_no! Nessun [movement|e] disponibile" 
 
  dissolve_monasteries: "Dissolvi i Monasteri"
  dissolve_monasteries_desc: "Il monachesimo papista è superato ed eretico. Dobbiamo dissolvere altri dei rimanenti conventi non conformisti, privarli delle loro terre e confiscare i loro beni."
@@ -466,7 +508,6 @@
  summon_mystic: "Convoca Mistico"
  summon_mystic_desc: "Nelle nostre comunità monastiche vivono persone particolarmente devote a raggiungere una vicinanza con Dio. Queste persone, chiamate mistici, sono uomini e donne di grande saggezza, capaci di aiutarci a guidare meglio il regno. Non dovremmo esitare a farne consiglieri quando necessario."
  bosnian_church_diplomacy: "Invia Emissari a Roma"
-# bosnian_church_diplomacy_desc: "A causa dell'isolamento della nostra fede, i nostri legami con il cattolicesimo sono spesso messi in dubbio da molti dei nostri vicini, che ci accusano di eresia. Dovremmo inviare un rappresentante della nostra chiesa a Roma per giurare fedeltà al Papa e mettere fine a queste dicerie che ci mettono in pericolo." #OLD
  bosnian_church_diplomacy_desc: "A causa dell'isolamento della nostra fede, i nostri legami con il Cattolicesimo sono spesso messi in dubbio da molti dei nostri vicini, che ci accusano di eresia. Dovremmo inviare un rappresentante della nostra chiesa a Roma per giurare fedeltà al Papa e porre fine a queste dicerie che ci mettono in pericolo." 
  bosnian_church_diplomacy_tt: "Miglioreremo le nostre relazioni con i paesi che seguono [ShowLocationName('rome')]"
  improve_opinion_with_all_catholics_tt: "Miglioreremo l'[opinion|e] di ogni [country|e] di fede [ShowReligionAdjective('catholic')] nei nostri confronti di [ShowBiasValue('opinion_bosnian_church_diplomacy')|+=0]"
@@ -528,6 +569,7 @@
  VOTE_LOCK_REASON_BRIBED: "Non sembrano disposti a cambiare voto. Forse sono stati corrotti?"
  VOTE_LOCK_REASON_FAVOURS: "Non sembrano disposti a cambiare voto. Qualcuno potrebbe aver richiesto un favore."
  VOTE_LOCK_REASON_SUPPORT: "Non cambieranno voto perché [emperor.Custom('IT_La')][emperor.GetName] li ha sostenuti contro i Ribelli Pretendenti."
+ VOTE_LOCK_REASON_CIRCLE_LEADER: "Il loro leader dell'[imperial_circle|e] li ha spinti ad assumere questa posizione e non romperanno i ranghi." 
 
  USEFULNESS_OF_GOVERNMENT_REFORM: "Utilità della [government_reform|e]"
  USEFULNESS_OF_PARLIAMENT_TYPE: "Utilità del [parliament_type|e]"
@@ -537,6 +579,12 @@
  ACTOR_ACCEPTANCE: "Accettazione dell'attore per l'[country_interaction|e] se richiesto"
  BIAS_FROM_RULER_TRAITS: "Influenza dai [traits|e] del Governante"
  OPPOSES_RULER_TRAITS: "In opposizione ai [traits|e] del Governante"
+ WANTS_TO_CONTAIN_TARGET: "Vuole contenere il bersaglio" 
+ OPINION_OF_DEFENDER_IN_COMPARISON_TO_TARGET: "Opinione del difensore rispetto all'opinione dell'attaccante" 
+ MILITARY_STRENGTH_IN_COMPARISON_TO_TARGET: "Forza militare rispetto all'attaccante" 
+ MILITARY_STRENGTH_IN_COMPARISON_TO_ACTOR: "Forza militare rispetto [actor.Custom('IT_Alla')][actor.GetName]" 
+ PERSONALITY_OF_TARGET: "Personalità al governo [recipient.Custom('IT_Della')][recipient.GetName]" 
+ PERSONALITY_OF_ACTOR: "Personalità al governo [actor.Custom('IT_Della')][actor.GetName]" 
  PROVIDES_POWER_OPPORTUNITY: "Fornisce un'Opportunità per la Presa del Potere"
  BENEFITS_US: "Ci avvantaggia"
  OPINION_OF_OTHER_MEMBERS: "Opinione degli altri membri"
@@ -546,6 +594,7 @@
  OPINION_OF_FREE_CITIES: "Opinione delle altre [ShowSpecialStatusNamePlural('free_city')]"
  DOES_NOT_BENEFITS_US: "Non ci avvantaggia"
  GREAT_POWER_LEADER_COMPARISON: "[great_power_score|e] confrontato con [international_organization_leader_short|e]"
+ TAX_BASE_LEADER_COMPARISON: "[tax_base|e] rispetto a [international_organization_leader_short|e]" 
  LEVEL_OF_EMPEROR_COMFORT_REFORMS: "Grado di Accettazione dell'Imperatore verso le Riforme"
  POLICY_PRINCE_OPPOSES: "I Principi si Oppongono alla Politica"
  POLICY_EMPEROR_WANTS: "L'$emperor$ Vuole questa Politica"
@@ -554,7 +603,8 @@
  UNION_WE_ARE_SENIOR_PARTNER: "Siamo il [ShowSpecialStatusName('senior_partner')]"
  UNION_DIPLOMATIC_REPUTATION_OF_SENIOR_PARTNER: "Reputazione Diplomatica [senior_partner_scope.Custom('IT_Della')][senior_partner_scope.GetName]"
  UNION_TRUST_OF_SENIOR_PARTNER: "Fiducia [senior_partner_scope.Custom('IT_Della')][senior_partner_scope.GetName]"
- UNION_GREAT_POWER_SCORE_COMPARED_TO_SENIOR_PARTNER: "Punteggio di Grande Potenza rispetto [senior_partner_scope.Custom('IT_alla')][senior_partner_scope.GetName]"
+ UNION_ECONOMICAL_BASE_COMPARED_TO_SENIOR_PARTNER: "[economical_base|e] rispetto [senior_partner_scope.Custom('IT_Alla')][senior_partner_scope.GetName]" 
+# UNION_GREAT_POWER_SCORE_COMPARED_TO_SENIOR_PARTNER: "Punteggio di Grande Potenza rispetto [senior_partner_scope.Custom('IT_alla')][senior_partner_scope.GetName]" #DELETE
  UNION_CULTURAL_INFLUENCE_VS_TRADITION: "Influenza Culturale [senior_partner_scope.Custom('IT_Della')][senior_partner_scope.GetName] contro Tradizione Culturale del $junior_partner$"
  UNION_NOBLES_OPINION_OF_SENIOR_PARTNER: "Opinione della $nobles_estate$ su [senior_partner_scope.GetName]"
  UNION_BURGHERS_OPINION_OF_SENIOR_PARTNER: "Opinione della $burghers_estate$ su [senior_partner_scope.GetName]"
@@ -600,15 +650,18 @@
  POLICY_BIAS_EMPEROR_WANTS: "L'Imperatore desidera approvare questa legge"
  POLICY_BIAS_EMPEROR_OPPOSES: "L'Imperatore non desidera approvare questa legge"
  POLICY_BIAS_PRINCE_WANTS: "Il Principe desidera approvare questa legge"
+ POLICY_BIAS_PRINCE_SUPPORTS: "Il Principe sostiene l'approvazione della legge" 
  POLICY_BIAS_PRINCE_OPPOSES: "Il Principe non desidera approvare questa legge"
  POLICY_BIAS_OPINION_OF_EMPEROR: "Opinione dell'Imperatore"
  POLICY_BIAS_OPINION_OF_IO_LEADER: "Opinione del Leader"
  POLICY_BIAS_IMPERIAL_AUTHORITY: "$imperial_authority$"
+ POLICY_BIAS_VOTE_WITH_EMPEROR: "Allineamento con l'Imperatore (opinione x $imperial_authority$)" 
  POLICY_VOTE_BIAS: "Dal desiderio di votare [SCOPE.sPolicy('vote').GetNameWithNoTooltip]"
- POLICY_WANTS_TO_KEEP_CURRENT_POLICY: "Dal desiderio di mantenere [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]"
+ POLICY_WANTS_TO_KEEP_CURRENT_POLICY: "Per la preferenza a mantenere [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName] rispetto a [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" 
  POLICY_WANTS_TO_REMOVE_CURRENT_POLICY: "Dal desiderio di rimuovere [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]"
- POLICY_REASON_TO_VOTE_FOR_PROPOSED_POLICY: "Preferisce votare per [SCOPE.sInternationalOrganization('recipient').MakeScope.GetVariable('ai_io_law_target').GetPolicy.GetName] invece" 
- POLICY_REASON_TO_VOTE_FOR_TARGET: "Dai motivi per votare per [SCOPE.sPolicy('evaluation_policy').GetName]" 
+ POLICY_REASON_TO_VOTE_FOR_PROPOSED_POLICY: "Per la preferenza per [SCOPE.sPolicy('vote').GetNameWithNoTooltip] rispetto a [SCOPE.sInternationalOrganization('recipient').MakeScope.GetVariable('ai_io_law_target').GetPolicy.GetName]" 
+ POLICY_REASON_TO_VOTE_FOR_PREVIEWED_POLICY: "Per la preferenza per [SCOPE.sPolicy('vote').GetNameWithNoTooltip] rispetto a [SCOPE.sPolicy('previewed_vote').GetName]" 
+ POLICY_REASON_TO_VOTE_FOR_TARGET: "Per la preferenza per [SCOPE.sPolicy('evaluation_policy').GetName] rispetto a [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" 
  POLICY_BASE_REASON_KEEP_POLICY: "Dal desiderio di mantenere una politica già consolidata"
  POLICY_BASE_REASON_REFORM_POLICY: "Dal desiderio di riformare una politica già consolidata"
  POLICY_PROPOSE_BIAS: "Dal desiderio di proporre [SCOPE.sPolicy('vote').GetNameWithNoTooltip]"
@@ -641,7 +694,6 @@
  create_colonial_charter_select_province: "Seleziona da dove inviare i [pops|e]:"
  can_use_agenda_bribe_tt: "Possiamo usare qualsiasi [parliament_agenda|e] di [ESTATE_TYPE.GetName] di [TARGET_COUNTRY.GetName] come tangente" 
 # create_colonial_charter_select_province_none: "@trigger_no! Nessuna [provinces|e] disponibile come origine." #DELETE
-# create_colonial_charter_select_province_definition: "Seleziona la provincia da colonizzare:" #OLD
  create_colonial_charter_select_province_definition: "Seleziona la [province|e] da concedere in statuto:" 
  abandon_colonial_charter_desc: "Abbandonare la Carta Coloniale interromperà la migrazione dei pops. I [pops|e] migrati in [locations|E] che non possediamo verranno abbandonati."
  abandon_colonial_charter_select_colonial_charter: "Seleziona la Carta Coloniale da abbandonare:"
@@ -765,13 +817,10 @@
  sengoku_force_end_war_desc: "Le guerre devastanti stanno danneggiando il nostro Paese. Possiamo sfruttare la nostra autorità imperiale e costringere qualsiasi clan belligerante a cessare i combattimenti inviando un decreto imperiale ufficiale."
  sengoku_force_end_war_choose_war: "Scegli una [war|e] da fermare"
  sengoku_revoke_clans_land: "Revoca Terre"
-# sengoku_revoke_clans_land_desc: "Revoca parte delle terre assegnate e restituiscile al controllo diretto dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName]." #OLD
  sengoku_revoke_clans_land_desc: "Revoca parte delle terre assegnate e restituiscile al controllo diretto di [GetUniqueInternationalOrganization('japanese_shogunate').GetName]. Le probabilità che un clan accetti le nostre richieste dipendono dalla sua [opinion|e] nei nostri confronti e dalla nostra [diplomatic_reputation|e]." 
  sengoku_limit_clans_autonomy: "Limita l'Autonomia dei Clan"
-# sengoku_limit_clans_autonomy_desc: "I clan stanno sfuggendo al nostro controllo e agiscono indipendentemente, ignorando la nostra autorità. Dobbiamo costringerli a rispettare le direttive dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName]." #OLD
  sengoku_limit_clans_autonomy_desc: "I clan stanno sfuggendo al nostro controllo e agiscono in modo indipendente, ignorando la nostra autorità. Dobbiamo costringerli a obbedire e a seguire le direttive di [GetUniqueInternationalOrganization('japanese_shogunate').GetName]. Le probabilità che un clan accetti le nostre richieste dipendono dalla sua [opinion|e] nei nostri confronti e dalla nostra [diplomatic_reputation|e]." 
  sengoku_summon_to_court: "Convoca alla Corte"
-# sengoku_summon_to_court_desc: "I leader dei clan ignorano la nostra autorità. Dovremmo convocarli alla nostra corte così da tenerli sotto controllo, o usare il loro rifiuto come prova della loro slealtà." #OLD
  sengoku_summon_to_court_desc: "I capi dei clan respingono la nostra autorità. Dovremmo convocarli alla nostra corte, così da poterli tenere sotto controllo, oppure usare il loro rifiuto di obbedire a tale convocazione come giustificazione del loro tradimento. Le probabilità che un clan accetti le nostre richieste dipendono dalla sua [opinion|e] nei nostri confronti e dalla nostra [diplomatic_reputation|e]." 
  sengoku_proclaim_clan_independence: "Proclama l'Indipendenza del Clan"
  sengoku_proclaim_clan_independence_desc: "Lo [GetUniqueInternationalOrganization('japanese_shogunate').GetName] è diventato debole e non riesce più a controllare i clan in modo efficace. Dobbiamo approfittarne e affermare la nostra indipendenza dall'autorità dello $JAPANESE_SHOGUNATE_LEADER_MALE$"
@@ -909,8 +958,7 @@
  send_people_to_the_colonies_no_countries: "$no_valid_countries$"
  send_people_to_the_colonies_destination_no_provinces: "$no_valid_provinces$"
  kbo_pop_promote_action_no_provinces: "$no_valid_provinces$"
-# swe_slash_and_burn_new_farms_no_provinces: "$no_valid_provinces$" #OLD
- swe_slash_and_burn_new_farms_no_provinces: "@trigger_no! Nessuna [provinces|e] adatta trovata. Una provincia bersaglio deve:\nEssere nell'area di Norrland o Finlandia (escluse le province di Finlandia e Nyland);\nAvere una [population|e] inferiore a 10;\nAvere uno sviluppo inferiore a 20;\nNon essere già sostenuta da questa azione o da Espelli persone." 
+ swe_slash_and_burn_new_farms_no_provinces: "@trigger_no! Non sono state trovate [provinces|e] adatte. Una provincia bersaglio deve:\nTrovarsi nell'area del Norrland o della Finlandia (escluse le province di Finlandia e Nyland);\nAvere una [population|e] inferiore a 10.000;\nAvere uno sviluppo inferiore a 20;\nNon essere già supportata da questa azione o da Espelli Persone." 
  send_secret_royal_inspectors_no_provinces: "$no_valid_provinces$"
  aclla_distribution_no_provinces: "$no_valid_provinces$"
 
@@ -981,7 +1029,9 @@
  treasure_voyage_select_character_no_characters: "$no_valid_characters$"
  join_a_league_no_ios: "$no_valid_international_organizations$"
  plan_campaign_in_italy_no_provinces: "@trigger_no! Non soddisfiamo uno o più dei requisiti previsti per questa [action|e]"
- intervene_in_italian_campaign_no_countries: "$no_valid_countries$"
+ iw_intervene_in_war_no_countries: "@trigger_no! Al momento non ci sono leader di leghe straniere che guidino una [war|e] contro il leader di una lega italiana" 
+ choose_war_to_intervene_in: "Scegli una [war|e] in cui intervenire" 
+# intervene_in_italian_campaign_no_countries: "$no_valid_countries$" #DELETE
  iw_send_aid_no_countries: "$no_valid_countries$"
  make_unit_available_for_hire_no_units: "$no_valid_units$"
  delist_unit_no_mercenaries: "$no_valid_mercenaries$"
@@ -1201,8 +1251,10 @@
  lordship_of_ireland_form_kingdom_desc: "Il titolo di Re d'Irlanda è finalmente alla nostra portata, consolidando la nostra legittimità sulla terra e sul suo popolo."
  lordship_of_ireland_form_kingdom_region_tt: "Ogni [location|e] nella [region|e] [ShowRegionName('ireland_region')] deve essere [owned|e] da un [member|e] del [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]."
  IRE_f_lordship_tt: "Non possiamo farlo mentre siamo un [member|e] del [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]. Solo il [international_organization_leader_short|e] può farlo tramite l'azione [ShowGenericActionName('lordship_of_ireland_form_kingdom')]."
- neither_highkingship_nor_lordship_exist_tt: "Né la [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] né l'[GetUniqueInternationalOrganization('high_kingship').GetName] possono esistere."
+ neither_highkingship_nor_lordship_exist_tt: "Non possono esistere né [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] né [GetInternationalOrganizationType('high_kingship').GetName] di [ShowRegionName('ireland_region')]." 
  IRE_f_sole_high_kingship_tt: "Noi siamo l'unico membro rimasto dell'Alta Regalità d'Irlanda." 
+ IRE_high_kingship_f_leader_tt: "Dobbiamo essere il [international_organization_leader_short|e] di [GetInternationalOrganizationType('high_kingship').GetName] di [ShowRegionName('ireland_region')]" 
+ IRE_lordship_of_ireland_f_leader_tt: "Dobbiamo essere il [ShowSpecialStatusName('lord_of_ireland')] di [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]" 
 
 
 #Treaty of Tordesillas
@@ -1281,11 +1333,13 @@
 
  overthrow_high_king: "$cb_high_kingship_overthrow$"
  overthrow_high_king_desc: "$cb_high_kingship_overthrow_desc$"
- claim_high_kingship: "Rivendica l'Alta Regalità" 
- claim_high_kingship_desc: "Dichiara la tua ambizione di diventare Alto Re d'Irlanda, aprendo il titolo all'elezione tra i regni irlandesi." 
+# claim_high_kingship: "Rivendica l'Alta Regalità" #DELETE
+# claim_high_kingship_desc: "Dichiara la tua ambizione di diventare Alto Re d'Irlanda, aprendo il titolo all'elezione tra i regni irlandesi." #DELETE
 
  subjugate_high_kingship_member: "$cb_high_kingship_subjugate$"
  subjugate_high_kingship_member_desc: "$cb_high_kingship_subjugate_desc$"
+ high_kingship_reclaim_land: "$cb_high_kingship_reclamation$" 
+ high_kingship_subjugate_member: "$cb_high_kingship_subjugate$" 
  
 #Government Transitions
  #Generic Keys
@@ -1319,3 +1373,12 @@
  theocracy_to_republic: "$transition_to_republic$"
  theocracy_to_republic_desc: "Il potere calante del clero non ha giovato alla stabilità percepita del nostro reame. Attraverso una serie di riforme, trasferiremo quel poco di autorità che rimane al clero verso la borghesia."
  nahuatl_religious_actions_price: "Prezzo delle azioni religiose $nahuatl$" 
+ set_province_capital: "Designa Capitale di Provincia" 
+ set_province_capital_desc: "Designa questa [location|e] come [province_capital|e] permanente, impedendo la riassegnazione automatica basata sulla [population_growth|e]." 
+ seek_artist: "Cerca un Artista" 
+ seek_artist_desc: "Invia agenti a trovare e reclutare uno specialista di una disciplina scelta per la nostra corte." 
+ seek_artist_select_type: "Scegli Disciplina" 
+ choose_circle: "Scegli Circolo Imperiale" 
+ choose_circle_leader: "Scegli il leader del Circolo" 
+ choose_emperor: "Scegli Imperatore" 
+ choose_yourself: "Scegli Te Stesso" 

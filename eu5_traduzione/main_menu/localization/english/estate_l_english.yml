@@ -6,10 +6,8 @@
  burghers_estate: "Borghesia"
  burghers_estate_desc: "Questo ceto rappresenta la classe commerciale del nostro paese, inclusi artigiani, mercanti e commercianti. La loro responsabilità tradizionale è mantenere e sviluppare l'economia. Pertanto, vengono solitamente concessi loro diritti e privilegi speciali per facilitare il commercio e gli scambi.\n$estate_common_crown_ending$"
  peasants_estate: "Popolani"
-# peasants_estate_desc: "Questo è il ceto che rappresenta la popolazione di livello più basso della società. Spesso una classe a cui viene dato poco o nessun prestigio o potere, la gente comune costituisce tuttavia le fondamenta del nostro paese e può diventare sorprendentemente potente quando unita." #OLD
  peasants_estate_desc: "Questo è il ceto che rappresenta la popolazione al livello più basso della società. Spesso una classe a cui viene concesso poco o nessun prestigio o potere, la gente comune costituisce tuttavia le fondamenta del nostro paese e può diventare sorprendentemente potente quando è unita.\n$estate_common_crown_ending$" 
  crown_estate: "Corona"
-# crown_estate_desc: "Questo è il cuore e la fonte dell'autorità per tutto il nostro regno e governo, detenuto esclusivamente da coloro che sono al vertice e non concesso agli altri stati.\nIn generale, è meglio che lo stato governativo detenga quanto più potere possibile." #OLD
  crown_estate_desc: "Questo è il cuore e la fonte di autorità per tutto il nostro reame e governo, detenuto soltanto da coloro che sono al vertice e non concesso agli altri ceti.\n$estate_common_crown_ending$" 
  dhimmi_estate: "Dhimmi"
  dhimmi_estate_desc: "Questo ceto rappresenta le minoranze religiose nel nostro [country|e] che sono considerate 'Gente del Libro' nell'[ShowReligionGroupName('muslim')]. Questo di solito si riferisce alla comunità [ShowReligionGroupAdjective('christian')] e [ShowReligionAdjective('judaism')], ma a volte viene esteso ad altre [religions|e]. Il loro status e i loro privilegi possono variare notevolmente tra i diversi paesi, così come la loro organizzazione e il loro numero.\n$estate_common_crown_ending$"
@@ -17,7 +15,6 @@
  tribes_estate_desc: "Questo ceto rappresenta le diverse tribù e clan presenti nel nostro [country|e]. Sono tradizionalmente organizzati in gruppi di lignaggio e parentela e dispersi principalmente nelle zone rurali. Questi diversi gruppi vivono e lavorano in modi molto diversi, e la loro distanza e relativa indipendenza dai principali centri di potere li rende difficili da governare. Le loro usanze uniche tipicamente danno loro anche una reputazione di guerrieri temibili e imprevedibili.\n$estate_common_crown_ending$"
  cossacks_estate: "Cosacchi"
  cossacks_estate_desc: "Questo ceto rappresenta diversi gruppi all'interno della popolazione [ShowCultureName('cossack_culture')] presenti nel nostro [country|e]. Organizzati in gruppi semi-nomadi e semi-militarizzati, vivono ai margini di altre nazioni, ma possono essere convinti a servirle fedelmente e essere di grande utilità se forniti degli incentivi appropriati.\n$estate_common_crown_ending$"
-# estate_common_crown_ending: "In generale, è meglio che il ceto governativo abbia più potere degli altri Ceti." #OLD
  estate_common_crown_ending: "In generale, è meglio che il ceto $crown_estate$ abbia più potere degli altri ceti." 
  
  
@@ -220,9 +217,7 @@
  bashtinas_and_pronijas_grants_desc: "Il sistema di concessioni terriere per le nostre élite è ispirato al sistema bizantino delle #italic Pronoias#!. Concede loro una vasta gamma di privilegi e obblighi per conto dei loro domini quando si tratta di amministrare le terre loro concesse in affitto dal governo."
  zupa_districts: "Distretti Župa"
  zupa_districts_desc: "La compartimentazione e la divisione della nostra società sono dettagliate nei vari quadri giuridici che circondano il nostro ramo amministrativo. L'aspetto più importante della nostra società e burocrazia è la divisione delle nostre province in distretti Župa, finalizzata a migliorare la gestione degli affari locali."
-# vlastele_krayishnik: "Vlastele Krayishnik" #OLD
  vlastele_krayishnik: "Krajiška Vlastela" 
-# vlastele_krayishnik_desc: "Le nostre terre di confine devono essere custodite in sicurezza in ogni momento. A tal fine, il sistema delle #italic krayine#! divide le nostre frontiere in distretti ben amministrati sotto il comando di signori locali, noti come #italic Vlastele Krayishnik#!, che sono incaricati di mantenere e proteggere il popolo delle loro province." #OLD
  vlastele_krayishnik_desc: "Le nostre terre di confine devono essere sorvegliate in sicurezza in ogni momento. A tal fine, il sistema delle #italic krajine#! divide le nostre frontiere in distretti ben amministrati sotto il comando di signori locali, noti come #italic Krajiška Vlastela#!, incaricati di mantenere e proteggere il popolo delle loro province." 
  feudal_mercenary_contracts: "Contratti Mercenari Feudali"
  feudal_mercenary_contracts_desc: "Gli eserciti arruolati dal nostro popolo spesso lasciano a desiderare. Per proteggere il nostro popolo e superare i nostri rivali, dobbiamo fare affidamento su mercenari stranieri, i cui contratti saranno gestiti dai membri d'élite della nostra società."
@@ -246,8 +241,7 @@
  coign_and_livery_privilege: "Alloggio e Vettovagliamento"
  coign_and_livery_privilege_desc: "Questo sistema, noto anche come #italic bonnacht#!, richiede che i nostri capi minori debbano alloggiare i nostri leali soldati nelle loro proprietà a proprie spese."
  peasants_allowed_weapons_privilege: "Milizie Comuni"
- peasants_allowed_weapons_privilege_desc: "Il popolo comune è autorizzato a tenere le proprie armi, che poi devono usare quando chiamati per il servizio di leva. Ciò aumenta la domanda di armi sul mercato."
-# gradozadanje_and_gradobljudenlje_rights: "Gradozadanje e Gradobljudenlje" #OLD
+ peasants_allowed_weapons_privilege_desc: "Alla gente comune è permesso tenere le proprie armi, che dovrà poi usare quando chiamata al servizio di leva." 
  gradozadanje_and_gradobljudenlje_rights: "Gradozidanije e Gradobljudenije" 
  gradozadanje_and_gradobljudenlje_rights_desc: "Il nostro dominio ospita molte fortificazioni e roccaforti formidabili. Le spese di manutenzione e la guarnigione di questi presidi sono state affidate alla popolazione locale e ai cittadini."
  peasants_autonomous_villages: "Villaggi Autonomi"
@@ -294,7 +288,7 @@
  land_owning_farmers: "Contadini Proprietari Terrieri"
  land_owning_farmers_desc: "I contadini [GetCountry('SWE').Custom('IT_ADJ_MP')] detengono una posizione insolitamente forte rispetto ai loro pari in gran parte dell'[ShowContinentName('europe')] feudale. Posseggono la loro terra direttamente, pagano le tasse direttamente alla corona e spesso hanno voce nelle assemblee locali, dando loro un certo grado di autonomia e protezione legale. Questi agricoltori non erano servi; molti sono armati e servono nelle leve. I loro diritti sono radicati nell'antico diritto consuetudinario e la loro relativa indipendenza è un elemento fondamentale della società rurale svedese."
  lat_compromise_with_greek_populace: "Compromesso con il popolo [ShowCultureNameWithNoTooltip('greek_culture')]" 
- lat_compromise_with_greek_populace_desc: "Sebbene l'élite crociata dominante possa ancora esercitare grande influenza, alcune delle famiglie [ShowCultureName('greek_culture')] rimaste esercitano ancora un notevole potere proprio. Trovare un compromesso tra l'élite dominante e quella un tempo potente sarebbe il modo migliore per costruire un governo stabile in ShowScriptedGeographyName('greece_geography')]." 
+ lat_compromise_with_greek_populace_desc: "Sebbene l'élite crociata dominante possa ancora esercitare grande influenza, alcune delle famiglie [ShowCultureName('greek_culture')] rimaste detengono ancora un notevole potere proprio. Trovare un compromesso tra l'élite dominante e quella un tempo potente sarebbe il modo migliore per costruire un dominio stabile in [ShowScriptedGeographyName('greece_geography')]." 
  lat_latin_crusader_elite: "Élite crociata" 
  lat_latin_crusader_elite_desc: "Sebbene la caduta dell'impero latino possa aver frammentato i $nobles_estate$ crociati, essi mantengono ancora una forza potente in tutta [ShowScriptedGeographyName('greece_geography')] che non può essere ignorata." 
  
@@ -317,6 +311,8 @@
  signoria_council_desc: "La Signoria di [GetCountry('FLO').GetName] è il nome del consiglio dei nove che governa la città, i cui membri sono tratti dalle diverse gilde. Ogni due mesi, si tiene un sorteggio per rieleggere i membri del consiglio. Questo continuo rimescolamento assicura che gli interessi della Repubblica prevalgano su quelli personali. Il fatto che tutti i suoi membri provengano dalle gilde, tuttavia, fa sì che siano sempre le stesse famiglie ad essere al comando."
  florence_guilds: "Gilde di [GetCountry('FLO').GetNameWithNoTooltip]"
  florence_guilds_desc: "I diversi artigiani e mercanti di [GetCountry('FLO').GetName] sono tradizionalmente associati in diverse gilde. Ciò garantisce non solo un alto standard di qualità per i prodotti, ma evita anche di alimentare una concorrenza sleale. Tuttavia, il potere e l'influenza che queste gilde detengono di conseguenza sono innegabili.\n\nQuesto sblocca la [law|e] [ShowLawName('guilds_of_florence')]."
+ arte_della_lana: "Arte della Lana" 
+ arte_della_lana_desc: "L'#italic Arte della Lana#!, la corporazione della lana, è una delle più potenti tra le sette arti maggiori [GetCountry('FLO').Custom('IT_Di')][GetCountry('FLO').GetName] e controlla ogni fase del commercio della lana, dall'acquisto del vello grezzo alla vendita del panno finito. I suoi membri comprendono mercanti, tintori, tessitori e rifinitori, tutti vincolati da severi standard qualitativi applicati dagli ispettori della corporazione. Concedere riconoscimento formale all'Arte consolida l'influenza della classe mercantile e garantisce che la reputazione [GetCountry('FLO').Custom('IT_Di')][GetCountry('FLO').GetNameWithNoTooltip] per i panni pregiati resti ineguagliata in tutto il continente." 
 
 #Korea      
  scholar_officials: "Funzionari Eruditi"
@@ -512,7 +508,7 @@
  shipwright_contracts: "Contratti con i Costruttori Navali" 
  shipwright_contracts_desc: "Concedere contratti favorevoli sponsorizzati dallo stato a membri facoltosi della nostra società ci permetterà di adottare una presa più efficiente sui nostri processi di costruzione navale e ridurre la burocrazia regolamentare intorno all'industria."
 
- allow_trade_center_sponsorship: "Permettere il Sostegno dei Centri Commerciali"
+ allow_trade_center_sponsorship: "Consentire la Promozione dei Centri di Commercio"
  allow_trade_center_sponsorship_desc: "Sponsorizzando vari centri commerciali in tutto il nostro regno, ci assicureremo che la [ShowEstateTypeName('burghers_estate')] e le persone danarose abbiano strutture adeguate in cui scambiare merci e stabilire un flusso commerciale sano."
 
  market_fairs: "Fiere di Mercato"
@@ -598,7 +594,6 @@
  right_to_inherit_desc: "La [ShowEstateTypeName('nobles_estate')] [ShowCultureGroupName('german_group')] mantiene la lunga tradizione di dividere le terre e i titoli del padre tra tutti i figli, assicurando la pace tra fratelli ed evitando guerre non necessarie."
 
  fund_karimi: "Finanziare i Mercanti Karimi"
-# fund_karimi_desc: "Finanziare la potente [ShowEstateTypeName('burghers_estate')] conosciuta come i Karimi, che sono responsabili del commercio delle [ShowGoodsName('spices')] così come di altre merci preziose, è essenziale per la nostra continua prosperità." #OLD
  fund_karimi_desc: "Finanziare i potenti [ShowEstateTypeName('burghers_estate')] noti come Karimi, responsabili del commercio delle spezie e di altre merci preziose, è essenziale per la nostra prosperità continua." 
 
  waqf_payments: "Pagamenti Waqf"
@@ -734,7 +729,6 @@
 
 # France 
  villes_franches: "Villes Franches"
-# villes_franches_desc: "Diverse delle nostre città di mercato sono cresciute enormemente di dimensione, durante gli ultimi decenni. Come tale, hanno sviluppato un livello di autonomia, trasformandosi in qualcosa di simile a città libere e inclini verso un approccio decentralizzato al governo." #OLD
  villes_franches_desc: "Diverse delle nostre città mercato hanno conosciuto una crescita considerevole negli ultimi decenni. Di conseguenza, sono diventate simboli dell'espansione del potere della Corona in tutto il regno, in opposizione ai signori feudali che dominano le campagne." 
 
  residence_in_versailles: "Residenza a Versailles"

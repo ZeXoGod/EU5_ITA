@@ -3,19 +3,15 @@
  flavor_hsa.1.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hsa.1.entry: "Georg Giese, Hanseatic Merchant" #NEW
  flavor_hsa.1.desc: "The merchant [target_character.GetName], who formerly worked in [ShowLocationName('london')] as a member of the Hanseatic League, has returned to [ShowLocationName('gdansk')]. He is to marry Christine Krüger, daughter of a prestigious Danzig citizen, e is currently looking for a new opportunity."
-# flavor_hsa.1.a: "Hire him" #OLD
  flavor_hsa.1.a: "Hire him." #NEW
-# flavor_hsa.1.b: "Ignore him" #OLD
  flavor_hsa.1.b: "Ignore him." #NEW
  
  flavor_hsa.2.title: "Shipbuilding technology"
- flavor_hsa.2.entry: "$flavor_hsa.2.title$" #NEW
-# flavor_hsa.2.desc: "We, the Hansa, sell ships everywhere in Europe, including Italy e control most of the shipbuilding market, mainly in Lübeck e in Danzig. Holle wants to favor Bruges as a huge staple market at the end of a trade route e is starting to become a competitor of us in shipbuilding. Should we stop the flow of shipbuilding technology from Hansa towns to Holle?" #OLD
+ flavor_hsa.2.entry: "$flavor_hsa.2.title$"
  flavor_hsa.2.desc: "We, the Hansa, sell ships across Europe, from the [ShowAreaName('baltic_area')] to [ShowRegionName('italy_region')]. Indeed, our yards in [ShowLocationName('lubeck')] and [ShowProvinceDefinitionName('danzig_province')] dominate the market as the primary source of splendid high quality vessels and seasoned shipwrights. Yet [GetCountry('HOL').GetName] now seeks to elevate [GetCountry('HOL').GetCapital.GetName] into a great staple at the end of the trade routes, and their shipwrights grow bolder by the year. If our techniques continue to spread from [ROOT.GetCountry.GetAdjective] towns into [GetCountry('HOL').GetAdjectiveWithNoTooltip] hands, we may soon find ourselves financing the rise of a rival." #NEW
  flavor_hsa.2.a: "Stop the flow of shipbuilding technology!"
 # STATIC_MODIFIER_NAME_hsa_stop_shipbuilding_technology: "Stop spreading the shipbuilding technology" #DELETE
 # STATIC_MODIFIER_DESC_hsa_stop_shipbuilding_technology: "The Netherles has become a competitor to the Hansa e thus the Hansa has stopped spreading its shipbuilding technology." #DELETE
-# flavor_hsa.2.b: "Spread the shipbuilding technology" #OLD
  flavor_hsa.2.b: "Spread the shipbuilding technology." #NEW
  STATIC_MODIFIER_NAME_hsa_spread_shipbuilding_technology: "Spread the shipbuilding technology"
  STATIC_MODIFIER_DESC_hsa_spread_shipbuilding_technology: "Hansa has agreed to spread its shipbuilding technology even though Holle has become its competitor."
@@ -34,12 +30,11 @@
  flavor_hsa.4.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hsa.4.entry: "Heinrich Sudermann, the Syndic" #NEW
  flavor_hsa.4.desc: "An official of the Hanseatic League from [ShowLocationName('cologne')], [target_character.GetName], was elected to the post of Syndic in 1556. He became a permanent official with legal training who worked to protect e extend the diplomatic agreements of the Hansa member towns."
-# flavor_hsa.4.a: "He could do much good in [ROOT.GetCountry.GetNameWithNoTooltip]" #OLD
  flavor_hsa.4.a: "He could do much good in [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
  flavor_hsa.4.a.entry: "He could do much good in us." #NEW
 
  flavor_hsa.5.title: "The Seal of the League"
- flavor_hsa.5.entry: "$flavor_hsa.5.title$" #NEW
+ flavor_hsa.5.entry: "$flavor_hsa.5.title$"
  flavor_hsa.5.desc: "The union that our many merchants operate under has been prospering for some time. Business e affluence flow freely from our trade hubs throughout the entirety of [ShowContinentName('europe')]. In order to further solidify our grasp on our diplomatic status in spite of our decentralized nature, our members have elected to be represented by a common seal, to signify our unity."
  flavor_hsa.5.a: "We will adopt [target_location.GetNameWithNoTooltip]'s seal."
  flavor_hsa.5.a.entry: "We will adopt [ShowLocationNameWithNoTooltip('lubeck')]'s seal." #NEW

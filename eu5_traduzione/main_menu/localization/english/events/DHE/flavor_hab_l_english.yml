@@ -5,7 +5,6 @@
  flavor_hab.1.desc: "[target_character.GetName] ha ricevuto molti riconoscimenti al servizio della Chiesa [ROOT.GetCountry.GetReligion.GetAdjective] e, dato che ora sta assumendo una posizione nelle nostre terre, potremmo utilizzare le sue capacità a nostro favore, sia presso la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] che come inviato diplomatico presso i [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle]."
  flavor_hab.1.a: "Tenetelo nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  flavor_hab.1.a.entry: "Keep him in our court." #NEW
-# flavor_hab.1.b: "Utilizzarlo come voce [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [GetCountry('PAP').Custom('IT_NEL_RANGO')][GetCountry('PAP').GetLongNameWithNoTooltip]" #OLD
  flavor_hab.1.b: "Use him as a [ROOT.GetCountry.GetAdjectiveWithNoTooltip] voice in the [GetCountry('PAP').GetLongNameWithNoTooltip]." #NEW
  flavor_hab.1.b.entry: "Use him as our voice in $PAP$." #NEW
  good_papal_relations: "Buone relazioni con il [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle]"
@@ -18,15 +17,14 @@
  flavor_hab.2.b: "Congedatelo."
 
  flavor_hab.3.title: "La Perdita della Nostra Sede Ancestrale"
- flavor_hab.3.entry: "$flavor_hab.3.title$" #NEW
+ flavor_hab.3.entry: "$flavor_hab.3.title$"
  flavor_hab.3.desc: "I nostri nemici ci hanno costretto a revocare la nostra legittima rivendicazione sull'[ShowLocationName('aarau')]! Con ciò, non solo perdiamo uno dei nostri centri più forti nell'area della Svizzera, ma anche lo stesso Castello degli Asburgo. Mentre il castello ha perso gran parte della sua funzionalità e del suo prestigio con l'acquisizione e il trasferimento in [ShowLocationName('vienna')], la perdita della nostra sede dinastica è un duro colpo per il nostro prestigio."
  flavor_hab.3.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
- flavor_hab.3.a.entry: "$common_string_curses$" #NEW
+ flavor_hab.3.a.entry: "$common_string_curses$"
 
  flavor_hab.4.title: "Dachl d'Oro dell'[ShowLocationNameWithNoTooltip('innsbruck')]"
  flavor_hab.4.entry: "Goldenes Dachl Innsbruck" #NEW
  flavor_hab.4.desc: "Per commemorare la gloria [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] e della nostra dinastia, dovremmo incaricare un architetto di decorare il nostro maniero ad [ShowLocationName('innsbruck')], l'influente città mineraria. [target_ruler.GetName] ha già mostrato un interesse particolare per [ShowLocationNameWithNoTooltip('innsbruck')], trascorrendo in città tutto il tempo possibile. L'abile architetto [target_artist.GetName] ha condiviso con noi progetti promettenti; uno dei suoi suggerimenti più attraenti è un tetto fatto di tegole che brillano come oro puro al sole."
-# flavor_hab.4.a: "Questo mostrerà la gloria della nostra dinastia" #OLD
  flavor_hab.4.a: "This will show the glory of our dynasty." #NEW
  flavor_hab.4.b: "Non dovremmo spendere questo tipo di denaro."
  flavor_hab.4.historical_info: "Il tetto d'oro di Innsbruck fu costruito nel 1500 per onorare la fine del secolo, su commissione dell'imperatore Massimiliano I. Il tetto, che prende il nome dalle oltre 2000 tegole di rame dorate a fuoco, è decorato da rilievi che raffigurano Massimiliano e le sue prime e seconde mogli, Maria di Borgogna e Bianca Maria Sforza."
@@ -38,10 +36,10 @@
  flavor_hab.5.historical_info: "Il 7 novembre 1492, un meteorite del peso di 127 chilogrammi cadde in un campo fuori dalla città di Ensisheim, in Alsazia, allora parte della provincia dell'Austria Ulteriore. Dopo che gli abitanti di Ensisheim iniziarono a indagare sullo strano evento, un magistrato locale ordinò loro di conservare la pietra e di smettere di rimuoverne i pezzi. Il re Massimiliano ordinò in seguito di conservare la pietra nella chiesa parrocchiale locale, mentre un pezzo del meteorite fu inviato al futuro Papa Pio III."
 
  flavor_hab.6.title: "Tag Generale e tag"
- flavor_hab.6.entry: "$flavor_hab.6.title$" #NEW
+ flavor_hab.6.entry: "$flavor_hab.6.title$"
  flavor_hab.6.desc: "Le nostre terre, dalle rive del Danubio in [ShowAreaName('austria_area')], alle montagne dell'[ShowAreaName('tirol_area')], sono diverse e abitate da persone con interessi e desideri diversi. Unire queste persone in un unico [ROOT.GetCountry.GetGovernment.GetParliament.GetName] è un risultato incredibile e ci aiuterà a fornire un governo forte per una terra indivisibile."
  flavor_hab.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.6.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.6.a.entry: "$common_string_brilliant$"
 
  flavor_hab.7.title: "[ShowGovernmentReformNameWithNoTooltip('reichshofrat_reform')]"
  flavor_hab.7.entry: "Reichshofrat" #NEW
@@ -69,7 +67,7 @@
  flavor_hab.10.a: "Una benedizione!"
 
  flavor_hab.11.title: "Amor Electis, Iniustis Ordinor Ultor"
- flavor_hab.11.entry: "$flavor_hab.11.title$" #NEW
+ flavor_hab.11.entry: "$flavor_hab.11.title$"
  flavor_hab.11.desc: "[target_ruler.GetName] è stato scelto come [GetUniqueInternationalOrganization('hre').GetLeaderTitle]. la sua elezione non è stata una sorpresa, considerando il suo talento nello stabilire legami diplomatici con gli elettori del [GetUniqueInternationalOrganization('hre').GetName]. la sua ambizione e il suo desiderio di vincere l'elezione erano già stati mostrati nel motto scelto in precedenza #italic Amor Electis, Iniustis Ordinor Ultor#!, che [target_ruler.GetHeShe] abbreviava in AEIOU nelle sue firme."
  flavor_hab.11.a: "Gloria agli [target_ruler.GetDynasty.GetNameWithNoTooltip]!"
  flavor_hab.11.a.entry: "Glory to the dynasty!" #NEW
@@ -89,7 +87,7 @@
  flavor_hab.13.b.entry: "The character will improve our economy through diplomacy!" #NEW
 
  flavor_hab.14.title: "Le Lotte [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]"
- flavor_hab.14.entry: "$flavor_hab.14.title$" #NEW
+ flavor_hab.14.entry: "$flavor_hab.14.title$"
  flavor_hab.14.desc: "I rappresentanti [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] si sono rivolti a [target_ruler.GetName] per aiutare la loro attuale posizione di debolezza dovuta alle continue tensioni della guerra. Sebbene ci interessi poco l'opinione di questi contadini, è innegabile che dobbiamo assicurarci la loro collaborazione per ottenere il necessario supporto fiscale e militare. Concedendo loro una serie di leggi che regolano i loro doveri nei confronti del padrone di casa, potremmo regolare i rapporti tra le due parti e garantire una cooperazione legale, rendendo più facile la risoluzione di future dispute."
  flavor_hab.14.a: "Concedete loro questo privilegio."
  flavor_hab.14.b: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] osano pretendere qualcosa da noi?"
@@ -97,7 +95,7 @@
  flavor_hab.14.historical_info: "Il Tractatus de iuribus incorporalibus#! è una serie di leggi firmate dall'imperatore Leopoldo I nel 1679. Queste leggi assicurarono una maggiore protezione legale ai contadini austriaci e permisero loro di portare in tribunale le violazioni e i maltrattamenti dei nobili responsabili. Sebbene la nuova situazione fosse vantaggiosa sia per i contadini che per l'imperatore, il suo successo fu alterno e non fu applicato pienamente in tutte le terre austriache nella stessa misura."
 
  flavor_hab.15.title: "Il #italian Wiennerische Diarium#!"
- flavor_hab.15.entry: "$flavor_hab.15.title$" #NEW
+ flavor_hab.15.entry: "$flavor_hab.15.title$"
  flavor_hab.15.desc: "Un abitante di [ShowLocationName('vienna')] ed editore ha creato un giornale. Con l'intenzione di riportare tutto ciò che di rilevante accade in [ShowLocationNameWithNoTooltip('vienna')] e nel mondo senza aggiunta di poesie, è in lizza per ottenere una sovvenzione ufficiale dalla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] per ricevere la reputazione di riconoscimento e preferenza."
  flavor_hab.15.a: "Una lettura piacevole."
  flavor_hab.15.b: "Dovremmo chiuderlo!"
@@ -106,9 +104,7 @@
  
  flavor_hab.16.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.16.entry: "Melchior Khlesl" #NEW
-# flavor_hab.16.desc: "[target_character.GetName], un ecclesiastico [ShowReligionAdjective('catholic')], ha dimostrato un talento nel riconvertire le persone di fede [ShowReligionAdjective('lutheran')]. Ciò potrebbe derivare dalla sua stessa esperienza di conversione alla fede [ShowReligionAdjectiveWithNoTooltip('catholic')], dal momento che [target_character.GetHeShe] è cresciuto come [ShowReligionAdjectiveWithNoTooltip('lutheran')]." #OLD
  flavor_hab.16.desc: "[target_character.GetName], a [ShowReligionAdjective('catholic')] clergyman, has shown a talent for re-converting people of [ShowReligionAdjective('lutheran')] faith. This might come from his own experience converting to the [ShowReligionAdjectiveWithNoTooltip('catholic')] faith since he grew up a [ShowReligionAdjectiveWithNoTooltip('lutheran')] [target_character.GetHerselfHimself]." #NEW
-# flavor_hab.16.a: "Promuoverlo come nostro consigliere." #OLD
  flavor_hab.16.a: "Promote him to be our advisor." #NEW
  flavor_hab.16.a.tt: "All [pops|e] of [ShowReligionAdjective('lutheran')] faith lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]." #DA TRADURRE
  flavor_hab.16.b: "Non abbiamo bisogno dei suoi servizi."
@@ -126,16 +122,15 @@
  flavor_hab.18.entry: "Geheime Kabinettskanzlei" #NEW
  flavor_hab.18.desc: "Lo spionaggio può essere un mestiere inaffidabile, soprattutto quando ci si deve affidare a connessioni dirette con gli individui. Altri Paesi hanno già creato istituzioni per far fronte a queste necessità e noi dovremmo creare una di queste Camere Nere. L'[ShowGovernmentReformName('geheime_kabinettskanzlei')] svolgerebbe il proprio lavoro sotto la copertura di un ufficio postale, consentendo un facile accesso alla posta che attraversa il nostro Paese."
  flavor_hab.18.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
- flavor_hab.18.a.entry: "$common_string_alright$" #NEW
+ flavor_hab.18.a.entry: "$common_string_alright$"
  flavor_hab.18.b: "L'intelligenza è un bene inutile."
  flavor_hab.18.historical_info: "La Geheime Kabinettskanzlei fu creata nel 1711 come Camera Nera con sede nella Hofburg viennese. Per motivi di segretezza, il nome dell'ufficio fu cambiato più volte prima di essere conosciuto come Geheime Kabinettskanzlei. La Camera è esistita fino al 1848, quando è stata sciolta in seguito alle rivoluzioni che hanno scosso l'Impero austriaco."
 
  flavor_hab.19.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.19.entry: "Prince Eugene of Savoy" #NEW
-# flavor_hab.19.desc: "[target_character.GetName], un abile ufficiale delle nostre forze, ha chiesto a [target_ruler.GetName] di essere elevato al grado di generale. Mentre [target_character.GetHeShe] non ha servito a lungo nei nostri eserciti, [target_character.GetNameWithNoTooltip] si dimostra promettente come comandante e chiede apertamente lo stesso agli altri Paesi. Se non vogliamo perdere un ufficiale così promettente, dovremmo assumerlo subito e permettergli di comandare le nostre armate." #OLD
  flavor_hab.19.desc: "[target_character.GetName], a skilled officer in our forces, has requested [target_ruler.GetName] to be raised to the rank of a general. While he did not serve long in our armies before, [target_character.GetNameWithNoTooltip] shows promise as a commander and openly requests the same from other countries. If we do not want to lose such a promising officer we should employ him now and let him command our armies." #NEW
  flavor_hab.19.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.19.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.19.a.entry: "$common_string_brilliant$"
  flavor_hab.19.b: "Che richiesta oltraggiosa!"
  flavor_hab.19.historical_info: "Il principe Eugenio di Savoia, nato da una famiglia nobile francese, fu allevato alla corte di Luigi XIV. Avendo inizialmente rifiutato una posizione militare nell'esercito reale francese, Eugenio entrò al servizio dell'imperatore del Sacro Romano Impero Leopoldo I all'età di 19 anni. Nell'esercito imperiale si distinse durante l'assedio ottomano di Vienna e salì rapidamente alla posizione di maresciallo di campo. Guidando gli eserciti austriaci a ripetute vittorie in battaglie contro gli eserciti turchi, fu infine riconosciuto come uno dei più grandi comandanti militari del suo tempo."
 
@@ -143,7 +138,7 @@
  flavor_hab.20.entry: "Ludwig van Beethoven" #NEW
  flavor_hab.20.desc: "Le vicende del mondo hanno costretto un giovane dell'[ShowLocationName('bonn')] di nome [target_artist.GetName] a stabilirsi definitivamente nella nostra tentacolare capitale di [target_location.GetName]. Qui si è fatto rapidamente un nome come compositore, sponsorizzato da alcuni [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] locali. Sta dimostrando un grande talento come musicista e sembra determinato a creare un'eredità duratura, anche contro le più difficili previsioni."
  flavor_hab.20.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.20.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.20.a.entry: "$common_string_brilliant$"
  flavor_hab.20.historical_info: "Dopo un breve viaggio a Vienna nel 1786, Beethoven si stabilì definitivamente nella città nel 1792. Lì rimase ininterrottamente, ad eccezione di alcuni brevi periodi di interruzione, fino alla sua morte nel 1827. È a Vienna che compose la maggior parte delle sue opere, sotto il patrocinio di vari nobili austriaci come Franz Joseph Maximilian von Lobkowitz e Karl Lichnowsky."
 
 
@@ -163,13 +158,13 @@
  flavor_hab.23.entry: "Klemens von Metternich" #NEW
  flavor_hab.23.desc: "[target_character.GetName] ha catturato la nostra attenzione durante il suo servizio [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName]. Sebbene sia entrato a far parte del nostro ministero diplomatico solo pochi anni fa, il suo talento e le sue capacità sono chiaramente visibili e molti dei nostri consiglieri concordano sul fatto che sia destinato alla grandezza. La sua determinazione a preservare il nostro dominio di fronte a minacce presunte e reali ci aiuterà sicuramente."
  flavor_hab.23.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.23.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.23.a.entry: "$common_string_brilliant$"
 
  flavor_hab.24.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.24.entry: "Johann Wenzel Radetzky" #NEW
  flavor_hab.24.desc: "[target_character.GetName] si è unito all'esercito [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] solo pochi anni fa, ma è salito rapidamente di grado grazie alla sua determinazione e alla sua mente brillante. Proveniente da una famiglia [ShowCultureName('czech')] e cresciuto in [ShowAreaName('bohemia_area')], è un esempio luminoso per gli altri ed è perfettamente preparato a guidare i nostri eserciti."
  flavor_hab.24.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.24.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.24.a.entry: "$common_string_brilliant$"
  flavor_hab.24.b: "Che esca dal nostro regno."
  flavor_hab.24.historical_info: "Josef Wenzel Radetzky entrò nell'esercito austriaco nel 1784. Durante le guerre napoleoniche, salì rapidamente di grado e fu determinante per la vittoria della coalizione nella battaglia di Lipsia. Si ritirò infine nel 1856, dopo aver servito 72 anni nell'esercito austriaco e sotto 5 imperatori."
 
@@ -177,7 +172,7 @@
  flavor_hab.25.entry: "Schönbrunn Palace" #NEW
  flavor_hab.25.desc: "Sebbene l'[ShowLocationName('vienna')] non manchi di bei palazzi in cui [target_ruler.GetName] possa trascorrere del tempo, manca di un pezzo forte. La fortuna vuole che un vecchio Jagdschloss della nostra dinastia, situato fuori [ShowLocationNameWithNoTooltip('vienna')], e l'area circostante si prestino bene a un palazzo di grandi dimensioni e ai suoi giardini. [target_artist.GetName] sarebbe adatto al compito di redigere un progetto per una residenza degna [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName]."
  flavor_hab.25.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.25.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.25.a.entry: "$common_string_brilliant$"
  flavor_hab.25.b: "Sembra uno spreco di denaro."
  flavor_hab.25.historical_info: "Inizialmente una piccola residenza per i monarchi austriaci costruita nel 1643, Schönbrunn fu quasi completamente distrutta durante il secondo assedio di Vienna nel 1683 dalle truppe ottomane. L'edificio fu inizialmente ricostruito, ma fu completamente riprogettato nel 1740, quando l'ereditiera designata Maria Teresa lo scelse come principale residenza estiva della dinastia asburgica. Progettata dagli architetti Nikolaus von Pacassi e Johann Ferdinand Hetzendorf von Hohenberg, la costruzione dell'edificio principale e del parco terminò nel 1749."
 
@@ -185,12 +180,12 @@
  flavor_hab.26.entry: "Joseph Haydn" #NEW
  flavor_hab.26.desc: "Dopo aver trascorso anni alle dipendenze di una famiglia [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], [target_artist.GetName] è ora alla ricerca di un nuovo impiego. Se riuscissimo ad assicurarci i servizi di un compositore così rinomato, la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] ne guadagnerebbe in reputazione."
  flavor_hab.26.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.26.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.26.a.entry: "$common_string_brilliant$"
  flavor_hab.26.b: "Dovrà cercare un impiego altrove."
  flavor_hab.26.historical_info: "Entrato in formazione musicale all'età di 6 anni, Joseph Haydn fu rapidamente riconosciuto per il suo talento canoro dal direttore della musica della Cattedrale di Santo Stefano a Vienna. Rimasto a Vienna, trovò lavoro prima presso il conte di Morzin e poi presso la famiglia nobile ungherese Esterházy."
  
  flavor_hab.27.title: "Colori [ROOT.GetCountry.GetGovernment.GetAdjective|U]"
- flavor_hab.27.entry: "$flavor_hab.27.title$" #NEW
+ flavor_hab.27.entry: "$flavor_hab.27.title$"
  flavor_hab.27.desc: "La nostra ascesa alle vette del [ROOT.GetCountry.GetGovernment.GetAdjective] è stata a dir poco straordinaria. Essendo una delle forze dominanti nella sfera tedesca e un faro di potere nell'[ShowContinentName('europe')], molti ritengono che sia giunto il momento che il nostro status si rifletta non solo nei fatti ma anche nei simboli. Tra queste proposte c'è l'adozione di una nuova bandiera: il sorprendente vessillo nero e giallo, a testimonianza delle nostre ambizioni [ROOT.GetCountry.GetGovernment.GetAdjective] e della grandezza."
  flavor_hab.27.a: "Adottate i colori di [ROOT.GetCountry.GetGovernment.GetAdjective]!"
  flavor_hab.27.a.entry: "Adopt the royal colors!" #NEW
@@ -221,28 +216,21 @@
  flavor_hab.31.historical_info: "La Gesera di Vienna del 1420-1421 fu un evento durante il quale i sentimenti antisemiti culminarono nella persecuzione, nell'esecuzione e nell'espulsione della popolazione ebraica viennese sotto il duca Alberto V. Le accuse di profanazione dell'ostia e di collaborazione con gli hussiti fornendo loro armi furono usate come pretesto per questa brutale repressione, che causò la perdita di vite umane e la distruzione del quartiere ebraico di Vienna."
  
  flavor_hab.32.title: "Paracelso"
- flavor_hab.32.entry: "$flavor_hab.32.title$" #NEW
-# flavor_hab.32.desc: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] ha sentito parlare di un medico itinerante che sta visitando l'[ShowLocationName('vienna')]. [target_character.GetName], detto anche Paracelso, è noto per le sue idee rivoluzionarie in medicina, alchimia e filosofia naturale, sostenendo che [target_character.GetSheHe] può sbloccare nuovi modi di comprendere il mondo e i suoi misteri. Sebbene i suoi metodi anticonvenzionali abbiano sollevato qualche sopracciglio, le sue conoscenze potrebbero fornire un'intuizione preziosa per il progresso [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]." #OLD
+ flavor_hab.32.entry: "$flavor_hab.32.title$"
  flavor_hab.32.desc: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has heard of a traveling physician who is currently visiting [ShowLocationName('vienna')]. [target_character.GetName], also called Paracelsus, is known for his revolutionary ideas in medicine, alchemy, and natural philosophy, claiming that he can unlock new ways of understanding the world and its mysteries. While his unconventional methods have raised some eyebrows, his knowledge could provide invaluable insight into the [ROOT.GetCountry.GetFlavorRank]'s advancement." #NEW
-# flavor_hab.32.a: "Rendete permanente il suo soggiorno in [ShowLocationNameWithNoTooltip('vienna')]!" #OLD
  flavor_hab.32.a: "Make his stay in [ShowLocationNameWithNoTooltip('vienna')] permanent!" #NEW
-# flavor_hab.32.b: "le sue idee sembrano troppo radicali." #OLD
  flavor_hab.32.b: "His ideas seems too radical." #NEW
  flavor_hab.32.historical_info: "Teofrasto di Hohenheim, meglio conosciuto come Paracelso, fu un medico, alchimista e astrologo svizzero all'avanguardia. Famoso per il suo rifiuto delle pratiche mediche tradizionali e per la sua insistenza sull'uso dell'osservazione e della sperimentazione, Paracelso rivoluzionò lo studio della medicina sostenendo l'uso di sostanze chimiche e minerali nei trattamenti. A lui si deve anche il nome dell'elemento zinco e lo sviluppo del concetto di tossicologia, che lo rendono una delle figure più influenti della prima scienza moderna."
  
  flavor_hab.33.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.33.entry: "Oswald von Wolkenstein" #NEW
-# flavor_hab.33.desc: "Originario della [ShowProvinceDefinitionName('south_tirol_province')], [target_character.GetName] è un poeta, diplomatico e cavaliere di talento. Conosciuto per la sua padronanza della musica e dei testi, [target_character.GetSheHe] sembra essere in una posizione unica per colmare il divario tra la diplomazia e le fiorenti arti del nostro regno. Avendo servito in precedenza come scudiero e diplomatico, [target_character.GetLastNameWithNoTooltip] ha viaggiato per gran parte dell'[ShowContinentName('europe')], il che sottolinea ulteriormente la sua importanza. La sua presenza nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] potrebbe migliorare notevolmente la nostra posizione culturale e diplomatica." #OLD
  flavor_hab.33.desc: "Hailing from [ShowProvinceDefinitionName('south_tirol_province')], [target_character.GetName] is a gifted poet, diplomat, and knight. Known for his mastery of music and lyrics, he seems to be uniquely positioned to bridge the gap between diplomacy and the flourishing arts of our realm. Having previously served as a squire and a diplomat, [target_character.GetLastNameWithNoTooltip] has traveled much of [ShowContinentName('europe')], which only further highlights his importance. His presence at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] could greatly enhance our cultural and diplomatic standing." #NEW
-# flavor_hab.33.a: "Dobbiamo cercare il suo consiglio." #OLD
  flavor_hab.33.a: "We must seek his counsel." #NEW
-# flavor_hab.33.b: "le sue capacità sono troppo costose." #OLD
  flavor_hab.33.b: "His skills are too expensive." #NEW
  flavor_hab.33.historical_info: "Oswald von Wolkenstein fu una delle figure più celebri del tardo Medioevo di lingua tedesca, noto per il suo ruolo di poeta, compositore e diplomatico. Viaggiò molto in Europa, Medio Oriente e Nord Africa, assorbendo diverse influenze culturali che arricchirono la sua arte. Oswald svolse anche un ruolo attivo nella politica regionale, in particolare nel Tirolo, e fu una figura chiave al servizio del Sacro Romano Imperatore Sigismondo."
 
  flavor_hab.34.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.34.entry: "Petrus Zwicker" #NEW
-# flavor_hab.34.desc: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] ha recentemente sentito parlare di [target_character.GetName], un devoto monaco celestino e un temuto inquisitore. Conosciuto per la sua implacabile caccia agli eretici e per i suoi influenti scritti anti-eretici, porta con sé una grande esperienza nella lotta al dissenso religioso. la sua presenza potrebbe rafforzare i nostri sforzi per mantenere l'ortodossia e l'ordine religioso." #OLD
  flavor_hab.34.desc: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has recently heard of [target_character.GetName], a dedicated Celestine monk and a feared inquisitor. Known for his relentless pursuit of heretics and his influential anti-heretical writings, he brings a wealth of experience in combating religious dissent. His presence could strengthen our efforts to maintain religious orthodoxy and order." #NEW
  flavor_hab.34.a: "Cercate la sua esperienza nei processi per eresia."
  flavor_hab.34.b: "Dobbiamo percorrere una strada più indulgente."
@@ -257,38 +245,37 @@
  flavor_hab.35.historical_info: "La Guerra dei contadini del Salisburghese del 1525-1526 fu una delle rivolte più organizzate durante la Guerra dei contadini tedesca, con i minatori e i contadini che ottennero vittorie notevoli come la battaglia di Schladming. Nonostante il successo iniziale, i ribelli finirono per soccombere a causa della disunione interna e dello strapotere della Lega Sveva."
  
  flavor_hab.36.title: "La Ribellione si Diffonde"
- flavor_hab.36.entry: "$flavor_hab.36.title$" #NEW
+ flavor_hab.36.entry: "$flavor_hab.36.title$"
  flavor_hab.36.desc: "La nostra risposta pesante alla ribellione dei contadini in [ShowLocationName('salzburg')] non ha fatto altro che gettare benzina sul fuoco. Ci giungono notizie che contadini, minatori e agricoltori scontenti nelle regioni vicine hanno iniziato a unirsi alla causa. Quella che era cominciata come una ribellione locale ha ora innescato una rivolta regionale che minaccia di destabilizzare l'intera area."
  flavor_hab.36.a: "Molto bene..."
+ variable_hab_peasant_rebels_joining_tt: "The Salzburg Peasants are Joining the Rebel Cause" #NEW
  
  flavor_hab.37.title: "Il Collegio Elettorale Riafferma l'Impero degli [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
- flavor_hab.37.entry: "$flavor_hab.37.title$" #NEW
+ flavor_hab.37.entry: "$flavor_hab.37.title$"
  flavor_hab.37.desc: "La creazione del Collegio Elettorale ha reso l'elezione imperiale più complessa, poiché ora dobbiamo corteggiare attivamente il favore dei singoli elettori attraverso la diplomazia, le alleanze, i privilegi, le concessioni di terre e molte altre concessioni. Nonostante la formalizzazione del processo elettorale attraverso la Bolla d'Oro recentemente approvata, [austria_first_emperor.GetName] è riuscito a reclamare la corona imperiale di [GetUniqueInternationalOrganization('hre').GetName]. Questa occasione monumentale cementa la posizione di [ROOT.GetCountry.GetAdjective] come forza dominante in [ShowContinentName('europe')] e inaugura una nuova era di prestigio e influenza per la nostra dinastia."
  flavor_hab.37.a: "Lunga vita all'Imperatore!"
  flavor_hab.37.historical_info: "Gli Asburgo mantennero la loro posizione quasi ininterrotta sul trono del Sacro Romano Imperatore dal 1438 alla dissoluzione dell'Impero nel 1806, gestendo abilmente il Collegio elettorale. Attraverso matrimoni strategici, acquisizioni territoriali e alleanze, gli Asburgo accumularono immense ricchezze e influenza politica, che permisero loro di offrire sostanziali incentivi finanziari o favori politici per assicurarsi i voti."
 
  flavor_hab.38.title: "La Tomba del Primo Imperatore"
- flavor_hab.38.entry: "$flavor_hab.38.title$" #NEW
+ flavor_hab.38.entry: "$flavor_hab.38.title$"
  flavor_hab.38.desc: "La morte del nostro [first_emperor.GetName] ha segnato la fine di un'epoca, ma la sua eredità vive nell'impero che ha contribuito a unire. Per onorare la sua memoria e i suoi contributi monumentali [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName] e a [GetUniqueInternationalOrganization('hre').GetName], [target_ruler.GetName] ha decretato la costruzione di una grande tomba a [ShowWorkOfArtName('st_stephens_cathedral')] in [ShowLocationName('vienna')]. La Tomba del Primo Imperatore servirà sia come luogo di riposo per il nostro amato antenato, sia come testimonianza della forza e della resistenza della nostra dinastia."
  flavor_hab.38.a: "Questa tomba ispirerà le generazioni a venire!"
  flavor_hab.38.b: "Questa impresa è troppo costosa."
  flavor_hab.38.historical_info: "La tomba dell'imperatore Federico III è una delle opere più significative dell'arte tardo-medievale. Situata nel Coro degli Apostoli della Cattedrale di Santo Stefano a Vienna, fu completata postuma nel 1513 su commissione del figlio del defunto imperatore, Massimiliano I. Realizzata in marmo Adnet di Salisburgo, la tomba riflette la grandezza imperiale di Federico e la duratura eredità degli Asburgo."
+ variable_austria_first_emperor_variable_tt: "The First Holy Roman Emperor has Reigned" #NEW
  
  flavor_hab.39.title: "La Filantropia del Reich"
- flavor_hab.39.entry: "$flavor_hab.39.title$" #NEW
+ flavor_hab.39.entry: "$flavor_hab.39.title$"
  flavor_hab.39.desc: "Mentre affrontiamo le orde pagane degli [GetCountry('TUR').GetAdjective], [target_ruler.GetName] sta pensando di convocare la Dieta Imperiale e di fare appello ai principi e alle città del [GetUniqueInternationalOrganization('hre').GetName] affinché contribuiscano con fondi e truppe a difendere i confini e a preservare la fede."
  flavor_hab.39.a: "Convocare la Dieta e chiedere aiuto."
  flavor_hab.39.b: "Lo affronteremo da soli."
  flavor_hab.39.historical_info: "Storicamente, l'imposta 'Reichstürkenhilfe' era una tassa imposta dal Sacro Romano Imperatore per combattere i Turchi Ottomani durante la loro espansione verso ovest. Dopo la caduta di Costantinopoli nel 1453, la minaccia ottomana divenne un problema urgente per l'Impero. In occasione di numerose diete imperiali, come quelle tenute a Francoforte, Norimberga e Ratisbona, l'imperatore Federico III e poi Carlo V chiesero l'approvazione di fondi e truppe per la difesa dell'Impero. Tuttavia, questi contributi erano spesso ritardati, incompleti o del tutto negati."
  
  flavor_hab.40.title: "La Madonna di Frauenstein"
- flavor_hab.40.entry: "$flavor_hab.40.title$" #NEW
-# flavor_hab.40.desc: "Uno dei più rinomati scultori dell'Impero, [target_character.GetName], ha completato un capolavoro che unisce arte e fede in un modo raramente visto prima. La sua opera, la Madonna di Frauenstein, è stata inaugurata nella chiesa di pellegrinaggio vicino ad [ShowLocationName('kirchdorf')]. Questa scultura tardogotica, scolpita in legno di tiglio, raffigura la Vergine Maria nel suo ruolo di madre protettrice, che ripara le figure inginocchiate sotto il suo mantello. L'intricato disegno dell'opera, dalla Madonna e dal Bambino sovradimensionati alle figure dettagliate sottostanti, evoca sia un senso di maestosità divina che di devozione umana. Si dice che [target_ruler.GetName] sia rappresentato tra le figure sotto il manto protettivo di Maria, il che non fa che sottolineare ulteriormente la nostra fede e la nostra guida benedetta nei confronti di [GetUniqueInternationalOrganization('hre').GetName]." #OLD
+ flavor_hab.40.entry: "$flavor_hab.40.title$"
  flavor_hab.40.desc: "One of the Empire's most renowned sculptors, [target_character.GetName], has completed a masterpiece that combines artistry and faith in a way rarely seen before. His work, the Frauenstein Madonna, has been unveiled in the pilgrimage church near [ShowLocationName('kirchdorf')]. This late Gothic sculpture, carved from linden wood, depicts the Virgin Mary in her role as the protective mother, sheltering kneeling figures beneath her cloak. The work's intricate design, from the oversized Madonna and Child to the detailed figures beneath, evokes both a sense of divine majesty and human devotion. [target_ruler.GetName] is said to be represented among the figures under Mary's protective mantle, which only further emphasizes our faith and blessed leadership in the [GetUniqueInternationalOrganization('hre').GetName]." #NEW
-# flavor_hab.40.a: "Ricompensatelo con un posto in [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.40.a: "Reward him with a position at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.40.a.entry: "Reward him with a position at the court." #NEW
-# flavor_hab.40.b: "Lodate il suo lavoro, ma lasciatelo rimanere in [ShowLocationNameWithNoTooltip('kirchdorf')]." #OLD
  flavor_hab.40.b: "Praise his work but let him remain in [ShowLocationNameWithNoTooltip('kirchdorf')]." #NEW
 
  flavor_hab.41.title: "[ShowBuildingTypeNameWithNoTooltip('ambras_castle')]"
@@ -300,18 +287,15 @@
 
  flavor_hab.42.title: "Il Processo a [target_character.GetNameWithNoTooltip]"
  flavor_hab.42.entry: "The Trial of Martin Siebenbürger" #NEW
-# flavor_hab.42.desc: "È stato portato alla nostra attenzione il fatto che il processo in corso a carico di [target_character.GetName], stimato studioso di diritto, giudice ed ex sindaco di [ShowLocationName('vienna')], sta causando scompiglio politico. Noto per la sua integrità e la sua instancabile ricerca della giustizia, Il modo in cui [target_character.GetLastNameWithNoTooltip] ha gestito i casi di corruzione gli ha procurato nemici tra le élite consolidate. Il suo rifiuto di cedere alla corruzione e i suoi scontri con fazioni potenti lo hanno ora coinvolto in un'indagine politicamente delicata, soprattutto a causa della partecipazione di [target_character.GetLastNameWithNoTooltip] al $flavor_hab.45.title$. Mentre la tensione sale, è stato chiesto [ROOT.GetCountry.Custom('IT_CROWN_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] di intervenire per risolvere la questione." #OLD
  flavor_hab.42.desc: "It has been brought to our attention that an ongoing trial centered on [target_character.GetName], a respected legal scholar, judge, and former mayor of [ShowLocationName('vienna')], is causing political turmoil. Known for his integrity and unflinching pursuit of justice, [target_character.GetLastNameWithNoTooltip]'s handling of corruption cases earned him enemies among the entrenched elites. His refusal to bow to bribery and his confrontations with powerful factions have now embroiled him in a politically charged investigation, especially due to [target_character.GetLastNameWithNoTooltip]'s taking part in the $flavor_hab.45.title$. As tensions rise, the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] has been requested to step in and settle this matter." #NEW
-# flavor_hab.42.a: "[target_character.GetSheHe|U] è un uomo d'onore e deve essere liberato!" #OLD
  flavor_hab.42.a: "He is a honorable man and must be freed!" #NEW
  flavor_hab.42.b: "Non possiamo rischiare di turbare le élite..."
  flavor_hab.42.historical_info: "Siebenbürger fu determinante nel denunciare vari scandali di corruzione che coinvolgevano malversazioni e tangenti tra i funzionari della città. Nonostante la sua determinazione, i potenti avversari cercarono di screditarlo, facendo appello persino all'imperatore Massimiliano I. Dopo la morte di Massimiliano, le turbolenze politiche continuarono e Siebenbürger rimase coinvolto in dispute tra fazioni. Quando Ferdinando I assunse il controllo, Siebenbürger e altri membri del consiglio furono accusati di aver oltrepassato la loro autorità e furono giustiziati."
+ variable_siebenburger_trial_tt: "Martin Siebenbürger Awaits Trial" #NEW
 
  flavor_hab.43.title: "Un Mercante d'Influenza"
- flavor_hab.43.entry: "$flavor_hab.43.title$" #NEW
-# flavor_hab.43.desc: "Un abile commerciante e finanziere, [target_character.GetName], è giunto alla nostra attenzione. La sua vasta esperienza come cancelliere e tesoriere, insieme ai suoi preziosi legami con l'influente famiglia [ShowDynastyName('fugger_dynasty')], lo rendono un candidato interessante per un ruolo ufficiale nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Mentre [target_character.GetLastNameWithNoTooltip] è straniero, [target_character.GetSheHe] possiede già delle terre in Austria e ha iniziato a integrarsi nell'élite locale. la sua esperienza nella gestione finanziaria e nel commercio potrebbe servire molto gli interessi della nostra tesoreria." #OLD
+ flavor_hab.43.entry: "$flavor_hab.43.title$"
  flavor_hab.43.desc: "A skilled merchant and financier, [target_character.GetName], has come to our attention. His extensive experience as a chancellor and treasurer, along with his valuable connections to the influential [ShowDynastyName('fugger_dynasty')] family, make him a compelling candidate for an official role at our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. While [target_character.GetLastNameWithNoTooltip] is a foreigner, he already owns land in Austria and has begun integrating into the local elite. His expertise in financial management and trade could greatly serve the interests of our treasury." #NEW
-# flavor_hab.43.a: "Le sue capacità ci saranno utili." #OLD
  flavor_hab.43.a: "His skills will serve us well." #NEW
  flavor_hab.43.b: "Non possiamo rischiare di affidare le nostre finanze a uno straniero."
  flavor_hab.43.historical_info: "Gabriel von Salamanca fu un mercante spagnolo, poi nobile, che svolse un ruolo importante alla corte asburgica come tesoriere generale e arcicancelliere dell'arciduca Ferdinando I d'Austria dal 1521 al 1526. Salamanca divenne un potentissimo consigliere del sovrano austriaco e raggiunse una posizione sociale che trovò infine la sua pomposa espressione nei suoi matrimoni con membri dell'alta nobiltà."
@@ -341,30 +325,24 @@
  flavor_hab.46.historical_info: "La battaglia di Mohács del 1526 segnò una sconfitta catastrofica per l'Ungheria. La morte del re Luigi II d'Ungheria e Boemia lasciò il regno nel caos. Si creò così un vuoto di potere che sia l'arciduca austriaco Ferdinando I che il nobile transilvano Giovanni Zápolya cercarono di colmare. Ferdinando, marito della sorella di Luigi, Anna, rivendicò il trono sulla base di diritti dinastici e fu eletto re d'Ungheria da una fazione di nobili ungheresi nel 1526."
 
  flavor_hab.47.title: "Un Palazzo di Splendore"
- flavor_hab.47.entry: "$flavor_hab.47.title$" #NEW
+ flavor_hab.47.entry: "$flavor_hab.47.title$"
  flavor_hab.47.desc: "Con [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] che prospera e le nostre casse che traboccano di ricchezza, c'è l'opportunità di trasformare la nostra sede di potere in un vero e proprio simbolo della nostra magnificenza. Il vecchio castello di Hofburg non riflette più lo splendore e lo status che abbiamo raggiunto. Molti in [ROOT.GetCountry.GetGovernment.GetCourtTitle] propongono di ricostruire e ampliare Hofburg per farne una grande residenza degna del nostro crescente prestigio e potere."
  flavor_hab.47.a: "Ricostruitela in una residenza degna della nostra maestà!"
  flavor_hab.47.b: "Dovremmo concentrarci su questioni più importanti."
  
  flavor_hab.48.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.48.entry: "Bernhard von Cles" #NEW
-# flavor_hab.48.desc: "Mentre la Riforma attraversa l'[ShowContinentName('europe')], [ROOT.GetCountry.Custom('IT_CLERGY_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] ci hanno spinto ad assumere persone che prendessero una posizione dura contro la diffusione dell'eresia. Uno di questi uomini è [target_character.GetName], noto per le sue spiccate doti diplomatiche e la sua ferma posizione sulle questioni di fede, [target_character.GetSheHe] è il candidato ideale per guidare le nostre politiche in questi tempi turbolenti." #OLD
  flavor_hab.48.desc: "As the Reformation sweeps across [ShowContinentName('europe')], our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] has been pushing us to employ people who would take a harsh stance against the spread of heresy. One such man is [target_character.GetName], known for sharp diplomatic skills and his firm stance on matters of faith, he is an ideal candidate for guiding our policies during these turbulent times." #NEW
-# flavor_hab.48.a: "Invitatelo a unirsi alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.48.a: "Invite him to join the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.48.a.entry: "Invite him to join the court." #NEW
-# flavor_hab.48.b: "le sue opinioni sono troppo radicali." #OLD
  flavor_hab.48.b: "His views are too radical." #NEW
  flavor_hab.48.historical_info: "Bernhard von Cles fu un cardinale, vescovo e statista la cui carriera si intrecciò con gli sconvolgimenti politici e religiosi dell'Europa del XVI secolo. Salito alla ribalta come vescovo di Trento e poi come presidente del Consiglio privato sotto Ferdinando I, Von Cles fu uno strenuo oppositore di Martin Lutero e svolse un ruolo significativo nel contrastare la Riforma protestante, in particolare aumentando la pressione sui possedimenti protestanti alla Dieta di Spira nel 1529."
  
  flavor_hab.49.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.49.entry: "Georg Tannstetter" #NEW
-# flavor_hab.49.desc: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] ha discusso della presenza di [target_character.GetName] in [ShowLocationName('vienna')]. [target_character.GetLastNameWithNoTooltip] è un grande studioso e un polimata, rinomato per le sue competenze in medicina, matematica, astronomia e cartografia. [target_character.GetSheHe|U] è stato anche il medico personale di molti importanti personaggi [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Con le sue grandi conoscenze e la sua capacità di fondere il lavoro scientifico con la pratica, [target_character.GetSheHe] sarebbe un ottimo candidato per il servizio di [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.49.desc: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has been discussing the presence of [target_character.GetName] in [ShowLocationName('vienna')]. [target_character.GetLastNameWithNoTooltip] is a great scholar and a polymath, renowned for his expertise in medicine, mathematics, astronomy, and cartography. He has also served as a personal physician to many important people of the [ROOT.GetCountry.GetFlavorRank]. With his great knowledge and his capability of merging the scientific work with practice, he would be a very good candidate for [ROOT.GetCountry.GetGovernment.GetCourtTitle] service." #NEW
-# flavor_hab.49.a: "Invitatelo a unirsi alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.49.a: "Invite him to join the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.49.a.entry: "Invite him to join the court." #NEW
-# flavor_hab.49.b: "Non siamo interessati a ciò che [target_character.GetSheHe] ha da offrire." #OLD
  flavor_hab.49.b: "We are not interested in what he has to offer." #NEW
  
  flavor_hab.50.title: "[target_character.GetNameWithNoTooltip] Crea il [ShowWorkOfArtNameWithNoTooltip('tabula_hungariae')]"
@@ -385,6 +363,7 @@
  flavor_hab.52.a: "Commissionare una massiccia ricostruzione delle mura."
  flavor_hab.52.b: "La Commissione ha apportato un miglioramento minore."
  flavor_hab.52.c: "Le difese attuali sono sufficienti."
+ variable_hab_fortify_vienna_variable_tt: "[ShowLocationName('vienna')] is to be Fortified after the Siege" #NEW
  
  flavor_hab.53.title: "Abbattere le Mura dell'[ShowLocationNameWithNoTooltip('vienna')]"
  flavor_hab.53.entry: "Tearing Down the Walls of Vienna" #NEW
@@ -394,26 +373,26 @@
  flavor_hab.53.historical_info: "La decisione di abbattere le fortificazioni di Vienna arrivò nel XIX secolo, a causa della rapida industrializzazione e della crescita demografica della città. Le mura, che avevano protetto Vienna con successo durante eventi come gli assedi ottomani del 1529 e del 1683, non erano più necessarie in un'epoca di guerra moderna."
  
  flavor_hab.54.title: "Sala Landtafel"
- flavor_hab.54.entry: "$flavor_hab.54.title$" #NEW
+ flavor_hab.54.entry: "$flavor_hab.54.title$"
  flavor_hab.54.desc: "Con l'acquisizione di [ShowLocationName('prague')], abbiamo incontrato la notevole pratica [GetCountry('BOH').GetAdjective] del cosiddetto #italic Zemské desky#! Questo sistema prevede la tenuta di registri di proprietà nobiliari, transazioni legali e diritti, tutti conservati in libri ufficiali. Inizialmente era ospitato nel Vecchio Palazzo Reale del Castello di [ShowLocationNameWithNoTooltip('prague')], ma la sala fu distrutta da un incendio. Poiché questa istituzione garantisce la trasparenza e la continuità in materia di proprietà terriere nobiliari e di decisioni legali, molti hanno suggerito di costruire una nuova sala in cui collocarla e di adottare questo sistema per noi stessi."
  flavor_hab.54.a: "Ricostruite!"
  flavor_hab.54.b: "Non è necessario."
  
  flavor_hab.55.title: "Stabilire la Frontiera Militare"
- flavor_hab.55.entry: "$flavor_hab.55.title$" #NEW
+ flavor_hab.55.entry: "$flavor_hab.55.title$"
  flavor_hab.55.desc: "L'incessante minaccia di sconfinamento degli [GetCountry('TUR').GetAdjective] sui nostri confini mette a rischio la sicurezza delle nostre terre e la stabilità dell'[ShowContinentName('europe')] stessa. Per contrastare questa minaccia, molti hanno suggerito di istituire una zona difensiva lungo la nostra frontiera meridionale, abitata da sudditi fedeli e da soldati professionisti incaricati di proteggere [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
  flavor_hab.55.a: "Stabilitelo!"
  flavor_hab.55.b: "Non c'è bisogno di questo."
  flavor_hab.55.historical_info: "La Frontiera militare asburgica fu istituita nel XVI secolo come zona di confine fortificata per difendere la monarchia asburgica dall'Impero Ottomano. Questa frontiera si estendeva attraverso la Croazia, la Serbia e la Romania, fungendo da zona cuscinetto tra i territori controllati dagli Ottomani e le terre degli Asburgo. La regione fu colonizzata da un mix di gruppi etnici, tra cui serbi, croati e vlachi, ai quali furono concessi terreni e privilegi in cambio del servizio militare."
  
  flavor_hab.56.title: "Popolazione della Frontiera Militare"
- flavor_hab.56.entry: "$flavor_hab.56.title$" #NEW
+ flavor_hab.56.entry: "$flavor_hab.56.title$"
  flavor_hab.56.desc: "I nostri pianificatori militari hanno proposto un'iniziativa audace per rafforzare la nostra difesa contro le incursioni degli [GetCountry('TUR').GetAdjective]: trasferire i contadini dalle zone centrali alla nuova frontiera militare. Incoraggiando l'insediamento in queste regioni di confine, possiamo creare una linea di difesa autosufficiente in cui i sudditi fedeli agiscono come forza di allarme e resistenza contro qualsiasi avanzata nemica."
  flavor_hab.56.a: "Un'idea valida."
  flavor_hab.56.b: "Sono più necessari a casa."
  
  flavor_hab.57.title: "Rivolta Contadina Tirolese"
- flavor_hab.57.entry: "$flavor_hab.57.title$" #NEW
+ flavor_hab.57.entry: "$flavor_hab.57.title$"
  flavor_hab.57.desc: "Ci sono giunte notizie delle rivolte in [ShowAreaName('tirol_area')] sotto la guida di [target_character.GetName]. Avendo guadagnato la fiducia dei minatori e dei contadini scontenti, [target_character.GetLastNameWithNoTooltip] ha radunato una ribellione armata contro l'ordine costituito, sostenendo di combattere per l'uguaglianza, la giustizia e i diritti della gente comune. Il movimento si è diffuso rapidamente: gli insorti hanno preso d'assalto i vescovadi e hanno presentato richieste radicali che sfidano l'autorità [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
  flavor_hab.57.a: "Mobilitate le risorse e schiacciateli!"
  flavor_hab.57.b: "Non rappresentano una minaccia per noi."
@@ -423,38 +402,35 @@
  flavor_hab.57.historical_info: "Michael Gaismair fu una figura di spicco nella guerra dei contadini tedeschi, guidando le rivolte tirolesi e salisburghesi del 1525-1526. Gaismair si rivoltò contro i privilegi radicati della nobiltà e della Chiesa cattolica. Dopo lo scoppio della ribellione nel 1525, elaborò riforme radicali, tra cui l'uguaglianza davanti alla legge, l'elezione di giudici e sacerdoti e persino l'abolizione della Chiesa cattolica. Nonostante i suoi sforzi per organizzare uno stato contadino cristiano e democratico, la sua ribellione fu infine stroncata."
  
  flavor_hab.58.title: "Il più Strano dei Regali"
- flavor_hab.58.entry: "$flavor_hab.58.title$" #NEW
+ flavor_hab.58.entry: "$flavor_hab.58.title$"
  flavor_hab.58.desc: "Si diffonde in [ShowLocationName('vienna')] la notizia di un arrivo straordinario: un magnifico elefante, regalatoci dai nostri amici [GetCountry('POR').GetAdjective]. L'animale ha fatto scalpore in città, poiché per la maggior parte della nostra gente è la prima volta che vede una creatura del genere al di fuori di illustrazioni o racconti di terre lontane. L'elefante, imponente e maestoso, è allo stesso tempo un simbolo della portata degli [GetCountry('POR').GetAdjectiveWithNoTooltip] nel mondo e un gesto di benevolenza nei confronti della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  flavor_hab.58.a: "Beh... grazie?"
  flavor_hab.58.historical_info: "L'elefante Solimano fu un dono del re Giovanni III del Portogallo all'arciduca Massimiliano II d'Austria nel 1552. Solimano fu inviato a Vienna come gesto di diplomazia e di alleanza. Il suo viaggio dal Portogallo all'Austria, passando per la Spagna e l'Italia, fu uno spettacolo che affascinò il pubblico di tutta Europa. Al suo arrivo a Vienna, Solimano fece scalpore."
  
  flavor_hab.59.title: "Espandere il [ShowWorkOfArtNameWithNoTooltip('hofburg')]"
  flavor_hab.59.entry: "Expanding the Hofburg" #NEW
+ flavor_hab.59.requirement_tt: "The $hofburg$ is located in [ShowLocationName('vienna')]" #NEW
  flavor_hab.59.desc: "[target_ruler.GetName] ha sviluppato una passione per il collezionismo di oggetti rari ed esotici, da squisiti manoscritti e reliquie di valore inestimabile a manufatti insoliti. Tuttavia, questa nuova passione ha portato a un problema urgente: all'interno del [ShowWorkOfArtName('hofburg')] non c'è spazio adeguato per ospitare una collezione così prestigiosa e in crescita. Per risolvere questo problema, è stato proposto di ampliare il [ShowWorkOfArtNameWithNoTooltip('hofburg')] con grandi sale e gallerie che possano ospitare questi tesori."
-# flavor_hab.59.a: "Ampliare il [ShowWorkOfArtNameWithNoTooltip('hofburg')] per preservare questi tesori." #OLD
  flavor_hab.59.a: "Expand the $hofburg$ to preserve these treasures." #NEW
  flavor_hab.59.b: "Abbiamo questioni più urgenti da affrontare."
  flavor_hab.59.historical_info: "Molti governanti austriaci miravano a consolidare l'arte, la letteratura e i manufatti storici sotto il dominio asburgico. Alcune di queste collezioni furono inizialmente ospitate nell'ampliato Palazzo Hofburg di Vienna e servirono sia come testimonianza del prestigio imperiale sia come risorsa per gli studiosi. Con il tempo, questi crescenti depositi di conoscenza e arte divennero le fondamenta della Biblioteca della Corte Imperiale Austriaca."
  
  flavor_hab.60.title: "Un Maestro per la [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
- flavor_hab.60.entry: "$flavor_hab.60.title$" #NEW
-# flavor_hab.60.desc: "[target_ruler.GetName], ardente ammiratore delle arti, ha espresso l'interesse di portare il rinomato compositore [target_character.GetName] a prestare servizio presso la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetLastNameWithNoTooltip], celebre per la sua padronanza della musica sacra e dell'intricata polifonia, è uno dei musicisti più rispettati dell'[ShowContinentName('europe')]. La sua nomina eleverebbe il prestigio della nostra nazione e cementerebbe ulteriormente la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come faro di cultura e raffinatezza." #OLD
+ flavor_hab.60.entry: "$flavor_hab.60.title$"
  flavor_hab.60.desc: "[target_ruler.GetName], an ardent admirer of the arts, has expressed an interest in bringing the renowned composer [target_character.GetName] to serve at our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetLastNameWithNoTooltip], celebrated for his mastery of sacred music and intricate polyphony, is one of the most respected musicians in [ShowContinentName('europe')]. His appointment would elevate the prestige of our nation and further cement our [ROOT.GetCountry.GetGovernment.GetCourtTitle] as a beacon of culture and refinement." #NEW
  flavor_hab.60.a: "Non badate a spese."
-# flavor_hab.60.b: "le sue richieste sono troppo costose." #OLD
  flavor_hab.60.b: "His demands are too expensive." #NEW
  flavor_hab.60.historical_info: "Giovanni Pierluigi da Palestrina è considerato uno dei più grandi compositori del Rinascimento. La sua musica ha stabilito un punto di riferimento per le composizioni sacre. Nel 1560, l'inviato imperiale dell'imperatore Massimiliano II negoziò con Palestrina per occupare il posto vacante di Kapellmeister alla corte viennese. Nonostante l'alta considerazione che l'imperatore aveva di lui, le trattative alla fine fallirono a causa delle forti richieste finanziarie di Palestrina."
  
  flavor_hab.61.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.61.entry: "Pieter Bruegel" #NEW
-# flavor_hab.61.desc: "Appassionato conoscitore delle arti, [target_ruler.GetName] ha ammirato a lungo le opere del celebre pittore [target_character.GetName]. Le vivaci rappresentazioni di [target_character.GetLastNameWithNoTooltip] di vita contadina, paesaggi e temi allegorici hanno incantato le corti di tutta l'[ShowContinentName('europe')]. Avendo già acquistato alcuni dei suoi capolavori, [target_ruler.GetNameWithNoTooltip] pensa ora di invitare [target_character.GetLastNameWithNoTooltip] a unirsi alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come artista residente." #OLD
  flavor_hab.61.desc: "Being a passionate connoisseur of the arts, [target_ruler.GetName] has long admired the works of the renowned painter [target_character.GetName]. [target_character.GetLastNameWithNoTooltip]'s vivid depictions of peasant life, landscapes, and allegorical themes have enchanted courts across [ShowContinentName('europe')]. Having already acquired several of his masterpieces, [target_ruler.GetNameWithNoTooltip] now considers inviting [target_character.GetLastNameWithNoTooltip] to join our [ROOT.GetCountry.GetGovernment.GetCourtTitle] as a resident artist." #NEW
  flavor_hab.61.a: "Invitiamo [target_character.GetLastNameWithNoTooltip] nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
  flavor_hab.61.a.entry: "Let us invite him to our court!" #NEW
  flavor_hab.61.b: "Non possiamo permetterci questo lusso in questo momento."
  
  flavor_hab.62.title: "La Corona Imperiale"
- flavor_hab.62.entry: "$flavor_hab.62.title$" #NEW
+ flavor_hab.62.entry: "$flavor_hab.62.title$"
  flavor_hab.62.desc: "[target_ruler.GetName] ha espresso il desiderio di creare una corona che simboleggi lo splendore, il potere e il prestigio [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. La nuova corona imperiale rappresenterebbe la grandezza [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] e del suo sovrano, fungendo da testimonianza del nostro diritto divino e da riflesso del nostro status senza pari all'interno dell'[ShowContinentName('europe')]."
  flavor_hab.62.a: "Non si è badato a spese!"
  flavor_hab.62.b: "Non è questo il momento per una simile vanità."
@@ -468,7 +444,7 @@
  flavor_hab.64.b: "La sua forma attuale serve bene allo scopo."
  
  flavor_hab.65.title: "L'Apostolo della Stiria"
- flavor_hab.65.entry: "$flavor_hab.65.title$" #NEW
+ flavor_hab.65.entry: "$flavor_hab.65.title$"
  flavor_hab.65.desc: "Gli sforzi di ricattolicizzazione in corso nelle nostre terre hanno ricevuto un enorme impulso grazie all'instancabile dedizione di [target_character.GetName], il vescovo [ShowReligionAdjective('catholic')] di Seckau. Conosciuto come l'Apostolo della Stiria, [target_character.GetLastNameWithNoTooltip] ha guidato commissioni sostenute dall'esercito per espellere predicatori [ShowReligionAdjective('lutheran')], bruciare testi eretici e imporre giuramenti di fedeltà alla fede [ShowReligionAdjectiveWithNoTooltip('catholic')]."
  flavor_hab.65.a: "Garantire a [target_character.GetLastNameWithNoTooltip] il pieno sostegno."
  flavor_hab.65.a.entry: "Grant him full support." #NEW
@@ -477,77 +453,58 @@
  
  flavor_hab.66.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.66.entry: "Gundakar von Liechtenstein" #NEW
-# flavor_hab.66.desc: "[target_character.GetName], è emerso come uno dei più capaci e leali consiglieri [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Membro di spicco dell'[ShowGovernmentReformName('hab_geheimer_rat')], [target_character.GetLastNameWithNoTooltip] è noto per la sua competenza amministrativa, la finezza diplomatica e l'incrollabile lealtà [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName]. la sua acuta intuizione e la sua vasta esperienza si sono rivelate preziose nella gestione dei nostri affari di Stato, e la sua influenza tra la nobiltà lo rende una figura indispensabile in [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.66.desc: "[target_character.GetName], has emerged as one of the most capable and loyal advisors of our [ROOT.GetCountry.GetFlavorRank]. A prominent member of the [ShowGovernmentReformName('hab_geheimer_rat')], [target_character.GetLastNameWithNoTooltip] is known for his administrative expertise, diplomatic finesse, and unshakable loyalty to [ROOT.GetCountry.GetName]. His keen insight and vast experience have proven invaluable in managing our affairs of state, and his influence among the nobility makes him an indispensable figure at [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
-# flavor_hab.66.a: "Festeggiate il successo della sua carriera!" #OLD
  flavor_hab.66.a: "Celebrate his successful career!" #NEW
  flavor_hab.66.historical_info: "Gundakar fu una figura importante nell'amministrazione austriaca durante i regni di Mattia, Ferdinando I e Ferdinando II. Come membro del Geheimer Rat e abile amministratore, svolse un ruolo fondamentale nel consolidamento del potere asburgico durante la Guerra dei Trent'anni e negli sforzi della Controriforma."
  
  flavor_hab.67.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.67.entry: "Karl von Liechtenstein" #NEW
-# flavor_hab.67.desc: "[target_character.GetName] si è distinto come amministratore accorto e servitore fidato della nostra dinastia. Come membro dell'[ShowGovernmentReformName('hab_geheimer_rat')], i suoi sforzi per rafforzare il governo [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] gli sono valsi rispetto e timore. [target_ruler.GetName] considera la possibilità di conferire a [target_character.GetLastNameWithNoTooltip] un ruolo consultivo elevato per sfruttare la sua impareggiabile competenza in materia di statistica." #OLD
  flavor_hab.67.desc: "[target_character.GetName] has distinguished himself as a shrewd administrator and a trusted servant of our dynasty. As a member of the [ShowGovernmentReformName('hab_geheimer_rat')], his efforts to strengthen the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s rule have earned him both respect and fear. [target_ruler.GetName] considers granting [target_character.GetLastNameWithNoTooltip] an elevated advisory role to leverage his unmatched expertise in statecraft." #NEW
-# flavor_hab.67.a: "Concedetegli una posizione elevata." #OLD
  flavor_hab.67.a: "Grant him an elevated position." #NEW
  flavor_hab.67.historical_info: "Karl I del Liechtenstein fu una figura chiave negli sforzi della monarchia asburgica per riaffermare il proprio controllo durante la Guerra dei Trent'anni. Divenne un fedele sostenitore dell'imperatore Ferdinando II, assistendo alla soppressione dei latifondi durante il Tribunale del sangue di Praga e supervisionando la redistribuzione delle terre confiscate ai ribelli. Nominato governatore e viceré di Boemia, svolse un ruolo fondamentale nel ristabilire l'ordine dopo la Battaglia della Montagna Bianca."
  
  flavor_hab.68.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.68.entry: "Maximilian von Liechtenstein" #NEW
-# flavor_hab.68.desc: "[target_character.GetName] ha scalato i ranghi [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], trasformandosi da giovane nobile in un esperto comandante e fidato alleato [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] e membro dell'[ShowGovernmentReformName('hab_geheimer_rat')]. Conosciuto per la sua leadership sul campo di battaglia e per la sua costante lealtà, [target_character.GetSheHe] ha assicurato la protezione [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank] e si è guadagnato l'ammirazione dei soldati e [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]." #OLD
  flavor_hab.68.desc: "[target_character.GetName] has risen through the ranks of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], transforming from a young noble into a seasoned commander and trusted ally of the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] and a member of the [ShowGovernmentReformName('hab_geheimer_rat')]. Known for his leadership on the battlefield and his steadfast loyalty, he has ensured the protection of the [ROOT.GetCountry.GetFlavorRank] and also gained the admiration of both soldiers and [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] alike." #NEW
-# flavor_hab.68.a: "[target_character.GetSheHe|U] guiderà bene i nostri eserciti!" #OLD
  flavor_hab.68.a: "He will lead our armies well!" #NEW
  flavor_hab.68.historical_info: "Maximilian von Liechtenstein fu un importante generale della sfera militare e politica asburgica durante i primi turbolenti anni della Guerra dei Trent'anni. Dalla difesa di Krems alla guida delle forze nella battaglia della Montagna Bianca, il suo contributo alle vittorie asburgiche fu immenso."
  
  flavor_hab.69.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.69.entry: "Maximilian Trauttmansdorff" #NEW
-# flavor_hab.69.desc: "[target_character.GetName] è uno dei più abili statisti [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank] e una figura di spicco del nostro [ShowAdvanceName('geheimrat')]. Uomo di profonda intelligenza e visione strategica, [target_character.GetSheHe] ha servito la [ROOT.GetCountry.GetGovernment.GetCourtTitle] con distinzione, navigando nelle complessità della diplomazia e del governo con una finezza senza pari. Conosciuto per la sua arguzia e la capacità di mediare accordi delicati, la sua crescente reputazione lo ha reso indispensabile per [ROOT.GetCountry.Custom('IT_CROWN_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]." #OLD
  flavor_hab.69.desc: "[target_character.GetName] is one of the most capable statesmen in the [ROOT.GetCountry.GetFlavorRank] and a prominent figure of our [ShowAdvanceName('geheimrat')]. A man of profound intellect and strategic vision, he has served the [ROOT.GetCountry.GetGovernment.GetCourtTitle] with distinction, navigating the complexities of diplomacy and governance with unparalleled finesse. Known for his sharp wit and ability to broker delicate agreements, his growing reputation has made him indispensable to the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]." #NEW
-# flavor_hab.69.a: "Siamo fortunati ad averlo!" #OLD
  flavor_hab.69.a: "We are lucky to have him!" #NEW
  flavor_hab.69.historical_info: "Maximilian Freiherr von und zu Trauttmansdorff fu un influente statista e diplomatico austriaco durante la Guerra dei Trent'anni e uno dei principali artefici della Pace di Westfalia. Come capo della delegazione imperiale ai negoziati della Pace di Westfalia, lavorò instancabilmente per assicurare condizioni favorevoli alla monarchia asburgica. Dopo l'incoronazione di Ferdinando III nel 1637, divenne la seconda persona più potente dell'intero regno."
  
  flavor_hab.70.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.70.entry: "Franz von Dietrichstein" #NEW
-# flavor_hab.70.desc: "[target_character.GetName] è noto per la sua maestria diplomatica e per il suo incrollabile impegno nella Controriforma. [target_character.GetSheHe|U] è stato a lungo una forza stabilizzante nel volatile panorama politico e religioso [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. Con i suoi ampi legami sia con [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] che con [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], i consigli di Dietrichstein potrebbero rivelarsi preziosi nella gestione degli affari interni, nel consolidamento della fede e nell'assicurare la lealtà delle principali famiglie nobili." #OLD
  flavor_hab.70.desc: "[target_character.GetName] is known as a mastery of diplomacy with unwavering commitment to the Counter-Reformation. He has long been a stabilizing force in the volatile political and religious landscape of the [ROOT.GetCountry.GetFlavorRank]. With his extensive connections to both [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], Dietrichstein's counsel could prove invaluable in managing domestic affairs, consolidating faith, and ensuring the loyalty of key noble families." #NEW
-# flavor_hab.70.a: "il suo servizio è molto apprezzato." #OLD
  flavor_hab.70.a: "His service is much appreciated." #NEW
  flavor_hab.70.historical_info: "Franz von Dietrichstein fu un cardinale e statista austriaco che servì come stretto consigliere dei governanti asburgici durante la Controriforma. Come vescovo di Olmütz e diplomatico imperiale, fu una figura chiave nell'applicazione della Controriforma e nel rafforzamento dell'autorità asburgica in Boemia."
  
  flavor_hab.71.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.71.entry: "Gerhard von Questenberg" #NEW
-# flavor_hab.71.desc: "[target_character.GetName] è un rinomato diplomatico, statista e membro dell'[ShowGovernmentReformName('hab_geheimer_rat')]. Conosciuto per la sua competenza in materia di diplomazia e statistica, [target_character.GetSheHe] porta con sé un bagaglio di esperienza che giova molto alla nostra nazione. Forse, passare dal servizio [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] a una posizione in [ROOT.GetCountry.GetGovernment.GetCourtTitle] potrebbe essere ancora più vantaggioso." #OLD
  flavor_hab.71.desc: "[target_character.GetName] is a renowned diplomat, statesman, and a member of the [ShowGovernmentReformName('hab_geheimer_rat')]. Known for his expertise in diplomacy and statecraft, he brings a wealth of experience that greatly benefits our nation. Perhaps, switching him from serving the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to a position at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] could be even more beneficial." #NEW
-# flavor_hab.71.a: "Troveremo un posto per lui alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.71.a: "We shall find a position for him at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.71.a.entry: "We shall find a position for him at the court." #NEW
  flavor_hab.71.historical_info: "Gerhard von Questenberg fu una figura centrale durante la Guerra dei Trent'anni, in qualità di diplomatico e statista imperiale. Nato da una famiglia importante, divenne consigliere privato dell'imperatore Ferdinando II e svolse un ruolo cruciale in eventi chiave come la Dieta elettorale di Ratisbona del 1630."
  
  flavor_hab.72.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.72.entry: "Johann Baptist Verda" #NEW
-# flavor_hab.72.desc: "[target_character.GetName], che ha già prestato servizio nell'[ShowGovernmentReformName('hab_geheimer_rat')], ha offerto i suoi servizi alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. La sua vasta esperienza come diplomatico e funzionario di Stato, insieme al suo stretto rapporto con [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], lo rendono una risorsa preziosa." #OLD
  flavor_hab.72.desc: "[target_character.GetName], who has previously served in the [ShowGovernmentReformName('hab_geheimer_rat')], has offered his services to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. His extensive experience as a diplomat and state official, along with his close relationship with the [ROOT.GetCountry.GetGovernment.GetRulerTitle] make him a valuable asset." #NEW
-# flavor_hab.72.a: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] farà buon uso di lui." #OLD
  flavor_hab.72.a: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] will make a good use of him." #NEW
  flavor_hab.72.a.entry: "Our court will make a good use of him." #NEW
  flavor_hab.72.historical_info: "Johann Baptist Verda fu un importante diplomatico e confidente dell'imperatore Ferdinando II e fu il primo cancelliere di corte per l'Austria Superiore, Interna e Inferiore. Noto per il suo ruolo in importanti negoziati e per il suo coinvolgimento negli intrighi della Guerra dei Trent'anni, Verda fu una figura chiave nel plasmare il panorama politico dell'Impero."
  
  flavor_hab.73.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.73.entry: "Nicolas Esterházy" #NEW
-# flavor_hab.73.desc: "[target_character.GetName], un importante nobile della parte [ShowCultureName('hungarian')] [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], ha offerto i suoi servizi alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Conosciuto per il suo convinto sostegno al cattolicesimo e per la sua dedizione alla nostra causa, la competenza di [target_character.GetLastNameWithNoTooltip] in campo politico e militare lo rende una risorsa preziosa." #OLD
  flavor_hab.73.desc: "[target_character.GetName], a prominent noble from the [ShowCultureName('hungarian')] part of our [ROOT.GetCountry.GetFlavorRank], has offered his services to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Known for his staunch support of Catholicism and his dedication to our cause, [target_character.GetLastNameWithNoTooltip]'s expertise in politics and military matters makes him a valuable asset." #NEW
-# flavor_hab.73.a: "Nominatelo come consulente." #OLD
  flavor_hab.73.a: "Appoint him as an advisor." #NEW
-# flavor_hab.73.b: "Cercate la sua guida militare." #OLD
  flavor_hab.73.b: "Seek his military guidance." #NEW
  flavor_hab.73.historical_info: "Nikolaus Esterházy fu un nobile e statista ungherese che fondò l'influente casata degli Esterházy. Ex protestante convertitosi al cattolicesimo, salì alla ribalta grazie al suo sostegno agli Asburgo. Svolse un ruolo chiave nella resistenza all'espansione ottomana e nel consolidamento del potere asburgico in Ungheria, guadagnandosi titoli come Conte di Bereg e Palatino d'Ungheria."
  
  flavor_hab.74.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.74.entry: "Vilém Slavata" #NEW
-# flavor_hab.74.desc: "Nobile di grande levatura all'interno [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank], [target_character.GetName] è una figura al tempo stesso ammirata e temuta. Con un passato segnato dalla sua fedeltà [ROOT.GetCountry.Custom('IT_CROWN_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], [target_character.GetSheHe] cerca ora di consolidare ulteriormente la sua posizione. Molti suggeriscono di ricompensare la sua lealtà con un posto in [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.74.desc: "A noble of great standing within the [ROOT.GetCountry.GetFlavorRank], [target_character.GetName] is a figure both admired and feared. With a past marked by his loyalty to the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], he now seeks to further solidify his position. Many suggest that we reward his loyalty with a position at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
-# flavor_hab.74.a: "Lasciamoci guidare da lui." #OLD
  flavor_hab.74.a: "Let him guide us." #NEW
  flavor_hab.74.historical_info: "Salvata fu un fedele sostenitore degli Asburgo, ricoprendo diverse posizioni chiave, tra cui quella di governatore della Boemia e partecipando all'esercito imperiale. È noto soprattutto per essere sopravvissuto alla famosa Defenestrazione di Praga del 1618, dove fu gettato da una finestra da una folla protestante."
  
@@ -558,7 +515,7 @@
  flavor_hab.75.b: "Abolirlo."
  
  flavor_hab.76.title: "Una Celebrazione Trionfale"
- flavor_hab.76.entry: "$flavor_hab.76.title$" #NEW
+ flavor_hab.76.entry: "$flavor_hab.76.title$"
  flavor_hab.76.desc: "La nostra recente vittoria sulle forze di $protestant_union$ è stata un trionfo decisivo e necessario in questo lungo ed estenuante conflitto. [target_ruler.GetName] ha dichiarato che è giunto il momento di commemorare questa importante occasione storica costruendo un grande monumento per celebrare il nostro successo. L'idea è di costruire una statua dedicata alla Vergine Maria. [ShowWorkOfArtName('marian_column')] simboleggerebbe la protezione divina e la forza delle nostre forze di fronte alle avversità."
  flavor_hab.76.a: "Costruire il monumento."
  flavor_hab.76.b: "Concentrarsi su altre priorità."
@@ -566,13 +523,12 @@
  
  flavor_hab.77.title: "Il Talento Tentatore di [target_character.GetNameWithNoTooltip]"
  flavor_hab.77.entry: "Antonio Cesti" #NEW
-# flavor_hab.77.desc: "[target_character.GetName], rinomato compositore e cantante d'opera, si è guadagnato una vasta fama in tutta l'[ShowRegionName('italy_region')] per il suo straordinario talento musicale e per le sue accattivanti interpretazioni operistiche. Le sue opere hanno entusiasmato il pubblico in lungo e in largo, facendogli guadagnare un posto tra gli artisti più celebri del tempo. [target_ruler.GetName], devoto ammiratore delle sue opere, ha proposto di invitare Cesti a unirsi alla nostra corte." #OLD
  flavor_hab.77.desc: "[target_character.GetName], a renowned composer and opera singer, has gained widespread fame across [ShowRegionName('italy_region')] for his extraordinary musical talent and captivating operatic performances. His works have enthralled audiences far and wide, earning him a place among the most celebrated artists of the time. [target_ruler.GetName], a devoted admirer of his operas, has brought forth the idea of inviting Cesti to join our court." #NEW
  flavor_hab.77.a: "Sostenete questo suggerimento."
  flavor_hab.77.b: "Non possiamo permetterci questo lusso."
  
  flavor_hab.78.title: "Il Depotenziamento del Parlamento Tirolese"
- flavor_hab.78.entry: "$flavor_hab.78.title$" #NEW
+ flavor_hab.78.entry: "$flavor_hab.78.title$"
  flavor_hab.78.desc: "Il parlamento locale dell'[ShowAreaName('tirol_area')] è stato a lungo un organo di governo regionale, rappresentando le proprietà della terra e salvaguardando i privilegi locali. Tuttavia, negli ultimi anni, è diventato sempre più un ostacolo ai nostri sforzi di centralizzazione e riforma. Molti all'interno della [ROOT.GetCountry.GetGovernment.GetCourtTitle] sostengono che la sua influenza mina l'autorità [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], suggerendo che è giunto il momento di esautorare questa istituzione e di mettere le sue funzioni sotto un controllo più diretto."
  flavor_hab.78.a: "Disattivatelo immediatamente!"
  flavor_hab.78.a.tt: "All [pops|e] in [ShowAreaName('tirol_area')] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" #DA TRADURRE
@@ -580,23 +536,22 @@
  flavor_hab.78.b.tt: "All [pops|e] in [ShowAreaName('tirol_area')] will gain [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]" #DA TRADURRE
  
  flavor_hab.79.title: "Forgiatura del Pummerin"
- flavor_hab.79.entry: "$flavor_hab.79.title$" #NEW
+ flavor_hab.79.entry: "$flavor_hab.79.title$"
  flavor_hab.79.desc: "All'indomani della nostra trionfale rimozione dell'assedio [GetCountry('TUR').GetAdjective], molti all'interno della [ROOT.GetCountry.GetGovernment.GetCourtTitle] e [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_HA')] proposto un grande gesto per immortalare la nostra vittoria. Con gli innumerevoli cannoni [GetCountry('TUR').GetAdjectiveWithNoTooltip] catturati ora in nostro possesso, alcuni suggeriscono di fonderli per forgiare un'enorme campana per [ShowWorkOfArtName('st_stephens_cathedral')]."
  flavor_hab.79.a: "Forgiamo questa campana della vittoria!"
  flavor_hab.79.b: "Le nostre risorse sono meglio spese altrove."
  flavor_hab.79.historical_info: "La Pummerin, la grande campana della Cattedrale di Santo Stefano, fu fusa nel 1705 da cannoni ottomani catturati durante il secondo assedio di Vienna nel 1683. Con le sue elaborate decorazioni barocche, la campana era una straordinaria opera di artigianato artistico. Tuttavia, pur essendo visivamente magnifica, la sua qualità sonora era considerata meno riuscita, un difetto attribuito alle sue immense dimensioni e al suo peso."
+ variable_hab_church_bell_variable_tt: "A Grand Bell is to be Commissioned for [ShowWorkOfArtName('st_stephens_cathedral')]" #NEW
  
  flavor_hab.80.title: "König Ottokars Glück und Ende"
- flavor_hab.80.entry: "$flavor_hab.80.title$" #NEW
-# flavor_hab.80.desc: "La nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] ha sempre cercato di celebrare le arti, e la recente tragedia #italic König Ottokars Glück und Ende#!, scritta dal talentuoso [target_character.GetName], è stata lodata come un capolavoro. Lo spettacolo, che racconta l'ascesa e la caduta di [otakar.GetName], mescola dramma e storia in un modo che ha affascinato il pubblico e ha dato nuovo prestigio [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetFlavorRank]. L'abilità di [target_character.GetLastNameWithNoTooltip] nel tessere una narrazione così toccante ha portato molti a suggerire di offrirgli un posto in [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
+ flavor_hab.80.entry: "$flavor_hab.80.title$"
  flavor_hab.80.desc: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has always sought to celebrate the arts, and the recent tragedy #italic König Ottokars Glück und Ende#!, written by the talented [target_character.GetName], has been lauded as a masterpiece. The play, recounting the rise and fall of [otakar.GetName], blends drama and history in a way that has captivated audiences and brought renewed prestige to the [ROOT.GetCountry.GetFlavorRank]. [target_character.GetLastNameWithNoTooltip]'s skill in weaving such a poignant narrative has led many to suggest offering him a position at [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.80.a: "Offre a [target_character.GetLastNameWithNoTooltip] un posto in [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  flavor_hab.80.a.entry: "Offer him a place at court." #NEW
-# flavor_hab.80.b: "Lasciatelo prosperare in modo indipendente." #OLD
  flavor_hab.80.b: "Let him flourish independently." #NEW
  
  flavor_hab.81.title: "Il Regno di Galizia-lodomeria"
- flavor_hab.81.entry: "$flavor_hab.81.title$" #NEW
+ flavor_hab.81.entry: "$flavor_hab.81.title$"
  flavor_hab.81.desc: "L'acquisizione di vasti territori polacchi ha comportato nuove sfide per l'amministrazione di queste terre. Molti dei nostri funzionari hanno espresso preoccupazione per il mantenimento del controllo e della stabilità nella regione. Per affrontare questo problema, è stato proposto di istituire una nuova corona di terre e di concederle un'autonomia limitata e i poteri di governare a nostro nome."
  flavor_hab.81.a: "Istituire il Regno di Galizia-Lodomeria."
  flavor_hab.81.a.tt: "Affermeremo $GLD$ come un [ShowSubjectTypeName('vassal')] in tutta [ShowAreaName('lesser_poland_area')] e [ShowAreaName('red_ruthenia_area')]."
@@ -606,15 +561,13 @@
  
  flavor_hab.82.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.82.entry: "Johann Anton von Pergen" #NEW
-# flavor_hab.82.desc: "[target_character.GetName] ha fatto faville con le sue innovazioni nel campo della governance e dell'intelligence. Conosciuto per il suo acume amministrativo e le sue impareggiabili capacità diplomatiche, [target_character.GetLastNameWithNoTooltip] ha in mente di rivoluzionare la sorveglianza dello Stato e la gestione degli affari interni. Molti ritengono che il suo talento possa migliorare notevolmente l'efficienza della nostra amministrazione e rafforzare la sicurezza dello Stato. [target_ruler.GetName], colpito dalle sue idee, ha avanzato la proposta di invitarlo a unirsi alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] come consigliere." #OLD
  flavor_hab.82.desc: "[target_character.GetName] has been making waves with his innovations in governance and intelligence. Known for his administrative acumen and unmatched skills in diplomacy, [target_character.GetLastNameWithNoTooltip] has plans to revolutionize state surveillance and the management of internal affairs. Many believe his talents could greatly enhance the efficiency of our administration and strengthen the state's security. [target_ruler.GetName], impressed by [target_character.GetLastNameWithNoTooltip]'s ideas, has brought up the suggestion of inviting him to join our [ROOT.GetCountry.GetGovernment.GetCourtTitle] as an advisor." #NEW
-# flavor_hab.82.a: "Invitatelo in [ROOT.GetCountry.GetGovernment.GetCourtTitle] e spingete le sue riforme!" #OLD
  flavor_hab.82.a: "Invite him to the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and push his reforms!" #NEW
  flavor_hab.82.a.entry: "Invite him to the court and push his reforms!" #NEW
  flavor_hab.82.b: "Non c'è bisogno di una riforma."
  
  flavor_hab.83.title: "Un Monumento al Trionfo"
- flavor_hab.83.entry: "$flavor_hab.83.title$" #NEW
+ flavor_hab.83.entry: "$flavor_hab.83.title$"
  flavor_hab.83.desc: "Per commemorare il recente matrimonio reale, è stata avanzata la proposta di costruire un grande arco di trionfo nella città di [ShowLocationName('innsbruck')]. L'arco di trionfo simboleggerebbe l'unione delle case e celebrerebbe questa gioiosa occasione che rafforza la forza della nostra dinastia. Costruito in robusta pietra anziché in effimero legno, questo arco di trionfo durerebbe nei secoli come testimonianza della nostra unità."
  flavor_hab.83.a: "Costruiamo questo arco di trionfo per celebrare questa occasione."
  flavor_hab.83.b: "Dobbiamo concentrarci su investimenti pratici invece che su grandi gesti."
@@ -622,7 +575,6 @@
  
  flavor_hab.84.title: "La Rivolta di [target_character.GetLastNameWithNoTooltip]"
  flavor_hab.84.entry: "Bocskai's Uprising" #NEW
-# flavor_hab.84.desc: "Il malcontento è scoppiato in [ShowAreaName('slovakia_area')] quando [target_character.GetName], un potente nobile, ha guidato una ribellione armata contro il nostro governo. Le sue richieste di maggiori libertà religiose e autonomia risuonano con molti che non sopportano le nostre politiche accentratrici e la soppressione del protestantesimo nella regione. I rapporti suggeriscono che [target_character.GetLastNameWithNoTooltip] si sia alleato con [GetCountry('TUR').Custom('IT_La')][GetCountry('TUR').GetName], rendendo questa rivolta una seria minaccia per l'autorità imperiale." #OLD
  flavor_hab.84.desc: "Discontent has erupted in [ShowAreaName('slovakia_area')] as [target_character.GetName], a powerful noble, leads an armed rebellion against our rule. His demands for greater religious freedoms and autonomy resonate with many who resent our centralizing policies and the suppression of Protestantism in the region. Reports suggest that [target_character.GetLastNameWithNoTooltip] has allied with [GetCountry('TUR').GetName], making this uprising a serious threat to imperial authority." #NEW
  flavor_hab.84.a: "Nessuno potrà sfidare il nostro dominio!"
  bocskai_uprising: "La rivolta di Bocskai"
@@ -639,6 +591,7 @@
  bethlen_uprising: "La rivolta di Bethlen"
  flavor_hab.85.b: "Negoziare un accordo di pace."
  flavor_hab.85.historical_info: "Bethlen si oppose agli sforzi degli Asburgo di imporre il cattolicesimo in Ungheria. Fu eletto re d'Ungheria e le sue forze catturarono territori significativi e minacciarono persino Vienna. Il conflitto portò alla pace di Nikolsburg nel 1621, che concesse libertà religiose e concessioni politiche alla nobiltà ungherese in cambio della rinuncia di Bethlen alla corona ungherese."
+ variable_hab_bethlen_uprising_tt: "Bethlen's Uprising is Imminent" #NEW
  
  flavor_hab.86.title: "La Guerra d'Indipendenza di [target_character.GetLastNameWithNoTooltip]"
  flavor_hab.86.entry: "Rákóczi's Uprising" #NEW
@@ -649,14 +602,13 @@
  flavor_hab.85.b.tt: "We will lose [ShowNamedValue('control_ultimate_penalty')|+=2%] [control|e] over all [owned|e] [locations|e] in [ShowAreaName('slovakia_area')]" #DA TRADURRE
  flavor_hab.86.b: "Offrite loro un compromesso."
  flavor_hab.86.historical_info: "La Guerra d'indipendenza di Rákóczi fu una grande ribellione guidata da Francesco II Rákóczi contro il dominio asburgico in Ungheria. Scaturita dall'insoddisfazione per la politica pesante dell'imperatore Leopoldo I e per le continue difficoltà sociali ed economiche, la rivolta ottenne un ampio sostegno tra i nobili e i contadini ungheresi. Nonostante i successi iniziali, la ribellione alla fine vacillò."
+ variable_hab_rakoczi_uprising_tt: "Rákóczi's Uprising is Imminent" #NEW
  
  flavor_hab.88.title: "La Missione Religiosa di [target_character.GetLastNameWithNoTooltip]"
  flavor_hab.88.entry: "Primož Trubar's Religious Mission" #NEW
-# flavor_hab.88.desc: "Si diffonde la notizia della crescente influenza di [target_character.GetName], un sacerdote [ShowCultureName('slovene')] diventato riformatore protestante, i cui insegnamenti e scritti stanno rapidamente guadagnando terreno tra la popolazione [ShowCultureNameWithNoTooltip('slovene')]. Tuttavia, i suoi sforzi sono un affronto diretto all'autorità di [GetUniqueInternationalOrganization('catholic_church').GetName] e una minaccia all'unità della nostra fede. [ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], allarmati dalla sua crescente popolarità, esortano [ROOT.GetCountry.Custom('IT_CROWN_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] a mettere in atto severe misure di controriforma per sopprimere questa eresia." #OLD
  flavor_hab.88.desc: "Word spreads of the growing influence of [target_character.GetName], a [ShowCultureName('slovene')] priest turned Protestant reformer, whose teachings and writings are rapidly gaining traction among the [ShowCultureNameWithNoTooltip('slovene')] population. However, his efforts are a direct affront to the authority of the [GetUniqueInternationalOrganization('catholic_church').GetName] and a threat to the unity of our faith. The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], alarmed by his growing popularity, are urging the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] to implement strict Counter-Reformation measures to suppress this heresy." #NEW
  flavor_hab.88.a: "Fermate subito questa eresia!"
  flavor_hab.88.a.tt: "#Y 10%#! of all [ShowCultureName('slovene')] [pops|e] in [ShowAreaName('slovenia_area')] embrace [ShowReligionName('lutheran')]" #DA TRADURRE
-# flavor_hab.88.b: "Tollerare i suoi insegnamenti." #OLD
  flavor_hab.88.b: "Tolerate his teachings." #NEW
  flavor_hab.88.b.tt: "#Y 30%#! of all [ShowCultureName('slovene')] [pops|e] in [ShowAreaName('slovenia_area')] embrace [ShowReligionName('lutheran')]" #DA TRADURRE
  flavor_hab.88.historical_info: "Primož Trubar è stato un riformatore e teologo protestante sloveno, noto soprattutto per aver scritto e pubblicato i primi libri in lingua slovena, tra cui una traduzione slovena del Nuovo Testamento. Il suo lavoro gettò le basi della lingua letteraria slovena e diffuse gli ideali protestanti tra gli sloveni."
@@ -664,28 +616,23 @@
  flavor_hab.90.title: "[target_character.GetLastNameWithNoTooltip] Pubblica i Regesta Imperii"
  flavor_hab.90.entry: "Böhmer Publishes the Regesta Imperii" #NEW
  flavor_hab.90.desc: "[target_character.GetName], solerte bibliotecario comunale di [ShowLocationName('frankfurt')], ha portato a termine un progetto monumentale: i Regesta Imperii#! L'opera è un inventario ordinato delle fonti documentarie e storiografiche dei Sacri Romani Imperatori e dei Papi, e offre uno strumento prezioso per la comprensione della storia di [GetUniqueInternationalOrganization('hre').GetName]."
-# flavor_hab.90.a: "Invitatelo nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.90.a: "Invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.90.a.entry: "Invite him to our court." #NEW
-# flavor_hab.90.b: "L'intero Impero deve beneficiare del suo lavoro." #OLD
  flavor_hab.90.b: "The entire Empire must benefit from his work." #NEW
  flavor_hab.90.historical_info: "Il progetto #italic Regesta Imperii#!# è stato avviato nel 1829 da Johann Friedrich Böhmer, il cui obiettivo originario era quello di compilare i regesti preliminari per i #italic Monumenta Germaniae Historica#!#. Con il tempo, divenne un'impresa indipendente, catalogando e organizzando i documenti e le fonti storiografiche degli imperatori del Sacro Romano Impero dai Carolingi a Massimiliano I."
  
  flavor_hab.91.title: "L'Epoca Biedermeier"
- flavor_hab.91.entry: "$flavor_hab.91.title$" #NEW
+ flavor_hab.91.entry: "$flavor_hab.91.title$"
  flavor_hab.91.desc: "Con la crescente prosperità e influenza della classe media nella nostra società, si sta verificando una notevole trasformazione culturale. L'apprezzamento dell'arte, della musica, della letteratura e dell'arredamento non è più limitato [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ma sta diventando una parte vitale della vita della classe media. Si tratta di un importante cambiamento culturale verso la raffinatezza personale e il comfort domestico, in quanto la nuova borghesia abbraccia la bellezza e la creatività nei suoi ambienti quotidiani."
  flavor_hab.91.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.91.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.91.a.entry: "$common_string_brilliant$"
  flavor_hab.91.historical_info: "L'epoca Biedermeier, che va all'incirca dal 1815 al 1848, emerse in Europa centrale durante il periodo di conservatorismo politico seguito al Congresso di Vienna. Fu un periodo in cui la crescente classe media iniziò a concentrarsi sulla vita domestica, ponendo l'accento sul comfort, la semplicità e la praticità."
  
  flavor_hab.92.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.92.entry: "Johann Strauss" #NEW
-# flavor_hab.92.desc: "[target_character.GetName] ha affascinato il pubblico di tutta l'[ShowContinentName('europe')] con la sua vivace musica da ballo e la sua padronanza del valzer viennese. Il suo lavoro ha elevato questa danza popolare, un tempo popolare, a simbolo di una raffinata ricercatezza culturale. I rappresentanti della [ROOT.GetCountry.GetGovernment.GetCourtTitle] hanno proposto di invitare [target_character.GetLastNameWithNoTooltip] come compositore e direttore d'orchestra ufficiale della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], dove le sue composizioni potrebbero aggiungere prestigio ai nostri eventi sociali e alla nostra posizione culturale." #OLD
  flavor_hab.92.desc: "[target_character.GetName] has been captivating audiences across [ShowContinentName('europe')] with his lively dance music and mastery of the Viennese waltz. His work has elevated this once-popular folk dance into a symbol of refined cultural sophistication. Representatives of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have proposed inviting [target_character.GetLastNameWithNoTooltip] to serve as an official composer and conductor at our [ROOT.GetCountry.GetGovernment.GetCourtTitle], where his compositions could add prestige to our social events and cultural standing." #NEW
-# flavor_hab.92.a: "Invitatelo in [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.92.a: "Invite him to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.92.a.entry: "Invite him to the court." #NEW
-# flavor_hab.92.b: "la sua musica appartiene alla gente." #OLD
  flavor_hab.92.b: "His music belongs to the people." #NEW
  flavor_hab.92.historical_info: "Johann Baptist Strauss I è stato un compositore austriaco famoso per aver reso popolare il valzer viennese, trasformandolo in un segno distintivo culturale dell'Austria del XIX secolo. La sua composizione più famosa, la Marcia di Radetzky, celebrava le vittorie militari austriache ed era un simbolo di orgoglio imperiale."
  
@@ -705,35 +652,31 @@
  flavor_hab.95.entry: "Wiener Klassik" #NEW
  flavor_hab.95.desc: "L'[ShowLocationName('vienna')] è diventata il cuore pulsante della musica europea, con compositori ed esecutori che si affollano nella nostra capitale per creare opere di bellezza senza tempo. Una nuova era della musica, conosciuta come [ShowAdvanceName('wiener_klassik')], sta fiorendo nelle nostre terre. Questa fioritura culturale eleva il prestigio [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] e ispira l'anima della nostra nazione."
  flavor_hab.95.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.95.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.95.a.entry: "$common_string_brilliant$"
  flavor_hab.95.historical_info: "Il classicismo viennese è emerso alla fine del XVIII secolo come segno distintivo dell'influenza culturale austriaca. Questa epoca musicale enfatizzò la chiarezza, l'equilibrio e la profondità emotiva, segnando un allontanamento dalla complessità della musica barocca. Vienna divenne il centro di questo movimento, attirando alcuni dei più celebri compositori della storia, tra cui Joseph Haydn, Wolfgang Amadeus Mozart, Ludwig van Beethoven e Franz Schubert."
  
  flavor_hab.96.title: "La Sanzione Pragmatica"
- flavor_hab.96.entry: "$flavor_hab.96.title$" #NEW
+ flavor_hab.96.entry: "$flavor_hab.96.title$"
  flavor_hab.96.desc: "La stabilità [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] e l'eredità della dinastia [target_ruler.GetDynasty.GetName] hanno sempre contato su una successione regolare e indiscussa. Per salvaguardarla, abbiamo negoziato con successo la Prammatica Sanzione, un accordo fondamentale che consente agli eredi di sesso femminile di salire al trono in assenza di un successore maschio. Grazie all'editto, [target_heir.GetName] potrà succedere a [target_ruler.GetName] senza alcuna controversia."
  flavor_hab.96.a: "Qualsiasi cosa per il futuro della nostra dinastia."
  flavor_hab.96.historical_info: "La Prammatica Sanzione del 1713 fu un editto costituzionale emanato dall'imperatore Carlo VI per garantire la continuità della dinastia asburgica. Di fronte alla mancanza di un erede maschio, Carlo VI cercò di assicurare alla figlia Maria Teresa il diritto di ereditare tutte le terre degli Asburgo. La Prammatica Sanzione dichiarava che le terre ereditarie degli Asburgo erano indivisibili e permetteva la successione femminile in mancanza di eredi maschi."
  
  flavor_hab.97.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.97.entry: "Marianna Martines" #NEW
-# flavor_hab.97.desc: "Le incantevoli melodie di [target_character.GetName] hanno conquistato il cuore di tutti coloro che lo hanno ascoltato. Celebre cantante, compositore e pianista [ROOT.GetCountry.GetAdjective], [target_character.GetLastNameWithNoTooltip] è ammirato in tutto [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] per il suo notevole talento e la sua capacità di dare vita a qualsiasi composizione. È giunta voce alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] che [target_character.GetSheHe] potrebbe essere disponibile a prestare servizio come musicista della [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.97.desc: "The enchanting melodies of [target_character.GetName] have captivated the hearts of all who have heard her. A celebrated [ROOT.GetCountry.GetAdjective] singer, composer, and pianist, [target_character.GetLastNameWithNoTooltip] is admired across the [ROOT.GetCountry.GetFlavorRank] for her remarkable talent and her ability to breathe life into any composition. Word has reached the [ROOT.GetCountry.GetGovernment.GetCourtTitle] that she may be available to serve as a [ROOT.GetCountry.GetGovernment.GetCourtTitle] musician." #NEW
-# flavor_hab.97.a: "Dovremmo assumerlo." #OLD
  flavor_hab.97.a: "We should employ her." #NEW
  flavor_hab.97.b: "Le donne non hanno posto in [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  flavor_hab.97.b.entry: "Women have no place at the court." #NEW
  
  flavor_hab.98.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.98.entry: "Antonio Salieri" #NEW
-# flavor_hab.98.desc: "[target_character.GetName], uno dei più rinomati compositori e direttori d'orchestra dell'[ShowContinentName('europe')], è diventato famoso per le sue opere magistrali e i suoi lavori orchestrali. Venerato insegnante e mentore, tra i suoi allievi figurano alcuni dei più grandi nomi della musica. Ultimamente, la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] si è interessata a impiegarlo come musicista di [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.98.desc: "[target_character.GetName], one of the most renowned composers and conductors in [ShowContinentName('europe')], has gained fame for his masterful operas and orchestral works. A revered teacher and mentor, his pupils include some of the greatest names in music. Lately, our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has been interested in employing him as the [ROOT.GetCountry.GetGovernment.GetCourtTitle] musician." #NEW
-# flavor_hab.98.a: "Assumetelo." #OLD
  flavor_hab.98.a: "Hire him." #NEW
  flavor_hab.98.b: "Non abbiamo bisogno di queste stravaganze."
  flavor_hab.98.historical_info: "Antonio Salieri è stato un compositore italiano che ha trascorso gran parte della sua carriera a Vienna, in qualità di compositore di corte e Kapellmeister della monarchia asburgica. Artista prolifico, Salieri compose opere, musica sacra e lavori orchestrali. Durante la sua vita ottenne ampi consensi."
  
  flavor_hab.99.title: "Proclamazione dell'Impero [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
- flavor_hab.99.entry: "$flavor_hab.99.title$" #NEW
+ flavor_hab.99.entry: "$flavor_hab.99.title$"
  flavor_hab.99.desc: "La caduta del Sacro Romano Impero ha lasciato un vuoto significativo nell'[ShowContinentName('europe')] centrale e con essa è terminato il legame secolare tra la nostra dinastia e la corona imperiale. Tuttavia, piuttosto che soffermarsi su ciò che è andato perduto, alcuni consiglieri sostengono che dovremmo guardare all'interno, alla forza e alla diversità dei nostri domini. Suggeriscono di proclamare l'Impero [ROOT.GetCountry.GetAdjective] e di segnalare al mondo che la nostra monarchia rimane un faro di stabilità, forza e continuità."
  flavor_hab.99.a: "Proclamate l'Impero [ROOT.GetCountry.GetAdjectiveWithNoTooltip]!"
  flavor_hab.99.a.entry: "Proclaim our Empire!" #NEW
@@ -742,12 +685,9 @@
  
  flavor_hab.100.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hab.100.entry: "Johann Lukas von Hildebrandt" #NEW
-# flavor_hab.100.desc: "Lo splendore delle nostre città e dei nostri palazzi la dice lunga sulla potenza e la raffinatezza [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], e pochi architetti possono competere con [target_character.GetName] nella capacità di dare vita a tanta grandezza. Noto per la sua padronanza dello stile barocco, [target_character.GetLastNameWithNoTooltip] ha creato alcune delle strutture più magnifiche di tutta [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], fondendo eleganza e praticità. Molti nell'[ROOT.GetCountry.GetAdjectiveWithNoTooltip] suggeriscono di nominarlo architetto capo [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]." #OLD
  flavor_hab.100.desc: "The splendor of our cities and palaces speaks volumes about the power and refinement of our [ROOT.GetCountry.GetFlavorRank], and few architects can rival [target_character.GetName] in their ability to bring such grandeur to life. Known for his mastery of the Baroque style, [target_character.GetLastNameWithNoTooltip] has created some of the most magnificent structures in all of [ROOT.GetCountry.GetName], blending elegance with practicality. Many in the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] suggest that we appoint him as the chief architect of our [ROOT.GetCountry.GetFlavorRank]." #NEW
-# flavor_hab.100.a: "Nominatelo architetto di [ROOT.GetCountry.GetAdjectiveWithNoTooltip]." #OLD
  flavor_hab.100.a: "Appoint him as [ROOT.GetCountry.GetAdjectiveWithNoTooltip] architect." #NEW
  flavor_hab.100.a.entry: "Appoint him as our architect." #NEW
-# flavor_hab.100.b: "il suo servizio è troppo costoso." #OLD
  flavor_hab.100.b: "His service is too expensive." #NEW
  flavor_hab.100.historical_info: "Johann Lukas von Hildebrandt è stato uno degli architetti più importanti del barocco austriaco. Tra le sue opere ricordiamo il magnifico Palazzo del Belvedere a Vienna, costruito per il principe Eugenio di Savoia, e il Palazzo Schönborn a Göllersdorf."
  
@@ -764,8 +704,7 @@
  flavor_hab.102.b: "Si tratta di una spesa stravagante che non possiamo permetterci."
  
  flavor_hab.103.title: "Regolazione del Danubio"
- flavor_hab.103.entry: "$flavor_hab.103.title$" #NEW
-# flavor_hab.103.desc: "Il Danubio ha nuovamente inondato l'[ShowLocationName('vienna')], causando distruzioni diffuse alle infrastrutture e alle abitazioni. La popolazione locale è in difficoltà e molti hanno chiesto l'aiuto [ROOT.GetCountry.Custom('IT_CROWN_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] per aiutarli a recuperare ciò che possono. Sebbene sia essenziale prestare soccorso nell'immediato, diverse voci autorevoli in [ROOT.GetCountry.GetGovernment.GetCourtTitle] propongono che questa catastrofe ricorrente potrebbe essere evitata se adottassimo misure più permanenti per regolare il fiume e le sue sponde. Alcuni propongono di chiedere l'assistenza di [target_character], noto per le sue opere di ingegneria sul lago Schwarzen e sui ponti del Danubio. Forse [target_character.GetSheHe] potrebbe aiutarci a fermare lo straripamento del fiume." #OLD
+ flavor_hab.103.entry: "$flavor_hab.103.title$"
  flavor_hab.103.desc: "Danube has once again flooded [ShowLocationName('vienna')], causing widespread destruction to infrastructure and homes. The local population is in distress, and many have requested the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]'s aid to help them recover what they can. While it is essential to provide immediate relief, several influential voices at [ROOT.GetCountry.GetGovernment.GetCourtTitle] are proposing that this recurring catastrophe could be prevented if we adopt more permanent measures to regulate the river and its banks. Some are proposing to seek the assistance of [target_character], who is well known for his engineering works on the Schwarzen lake and Danube bridges. Perhaps, he would be able to help us stop the river from overflowing." #NEW
  flavor_hab.103.a: "Impiegare [target_character.GetLastNameWithNoTooltip] per costruire la diga."
  flavor_hab.103.a.entry: "Employ him to build the dam." #NEW
@@ -774,7 +713,7 @@
  flavor_hab.103.historical_info: "Storicamente, il Danubio era una zona umida non regolamentata, lunga diversi chilometri. Poiché molte zone della città erano soggette a inondazioni, molti suggerirono di regolare il fiume creando un nuovo letto. Il primo tentativo fu fatto da Johann Sigismund Hubert nel 1771. Egli riuscì a costruire una diga di protezione alta quasi 6 metri, ma la diga fu violata più volte. Solo nel XIX secolo uno di questi progetti riuscì a regolare il fiume e a evitare che inondasse la città."
  
  flavor_hab.1000.title: "Forgiate il Privilegium Maius"
- flavor_hab.1000.entry: "$flavor_hab.1000.title$" #NEW
+ flavor_hab.1000.entry: "$flavor_hab.1000.title$"
  flavor_hab.1000.desc: "Come primo protettore dei [GetUniqueInternationalOrganization('hre').GetName] dalle minacce del sud-est, [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName] merita di essere elevato al più alto rango dell'Impero! [GetCharacter('ogk_friedrich_i_hohenstaufen').GetName] ha concesso #italic Privilegium minus#! ai nostri predecessori, assicurando la nostra indipendenza dal $BAV$ e concedendoci il titolo di [ROOT.GetCountry.GetFlavorRank].\n\nOra è il momento di fare ulteriore pressione su [target_emperor.GetName] per ampliare quei privilegi, elevandoci vicino allo status di [ShowSpecialStatusName('elector')]. Ci sono persone abili nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] che potrebbero essere impiegate per forgiare un nuovo documento che costringa [target_emperor.GetNameWithNoTooltip] a riconoscere la nostra posizione."
  flavor_hab.1000.a: "Redigere i documenti necessari."
  flavor_hab.1000.b: "Inviate anche argomenti finanziariamente validi al $emperor$!"
@@ -805,7 +744,7 @@
  flavor_hab.1005.title: "[target_emperor_country.Custom('IT_La')][target_emperor_country.GetNameWithNoTooltip] ci Concede dei Privilegi"
  flavor_hab.1005.desc: "La nostra falsificazione dei documenti non è stata scoperta dallo sciocco [target_emperor.GetName] ed [target_emperor.GetHeShe] ci ha quindi concesso il suo pieno permesso di chiamarci d'ora in poi Arciducato [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName], insieme a tutti i privilegi che abbiamo chiesto."
  flavor_hab.1005.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1005.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1005.a.entry: "$common_string_brilliant$"
 
  flavor_hab.1006.title: "[target_emperor_country.Custom('IT_La')][target_emperor_country.GetNameWithNoTooltip] ha Rifiutato la Nostra Bustarella"
  flavor_hab.1006.entry: "Bribe Rejected" #NEW
@@ -814,22 +753,24 @@
  flavor_hab.1006.a.entry: "We can only wait on his verdict." #NEW
 
  flavor_hab.1007.title: "Il Verdetto del Privilegium Maius"
- flavor_hab.1007.entry: "$flavor_hab.1007.title$" #NEW
+ flavor_hab.1007.entry: "$flavor_hab.1007.title$"
  flavor_hab.1007.desc: "I consiglieri di [target_emperor.GetName] hanno terminato il loro esame e hanno espresso il loro dubbio sull'autenticità delle nostre affermazioni. Tuttavia, la falsificazione si è rivelata abbastanza buona da non essere del tutto liquidabile. Mentre [target_emperor.GetNameWithNoTooltip] ha rifiutato la sua totale approvazione dei nostri legittimi privilegi, [target_emperor.GetHeShe] ha concesso alcune delle nostre richieste."
  flavor_hab.1007.a: "Abbastanza bene... per ora."
 
  flavor_hab.1008.title: "Il Privilegium Maius nelle Nostre Mani"
- flavor_hab.1008.entry: "$flavor_hab.1008.title$" #NEW
+ flavor_hab.1008.entry: "$flavor_hab.1008.title$"
  flavor_hab.1008.desc: "Ora che siamo stati eletti alla carica di [GetUniqueInternationalOrganization('hre').GetLeaderTitle], possiamo finalmente correggere il grave errore commesso dai nostri predecessori come [GetUniqueInternationalOrganization('hre').GetLeaderTitle]. Come leader dei [GetUniqueInternationalOrganization('hre').GetName], possiamo ora concedere i privilegi che la dinastia [target_ruler.GetDynasty.GetName] merita."
  flavor_hab.1008.a: "È ora di rimediare a questo errore."
  flavor_hab.1008.privilegium_not_granted_tt: "The Privilegium Maius has not yet been Granted" #NEW
  
  flavor_hab.1009.title: "Nuove Regole della Casa"
- flavor_hab.1009.entry: "$flavor_hab.1009.title$" #NEW
+ flavor_hab.1009.entry: "$flavor_hab.1009.title$"
  flavor_hab.1009.desc: "[target_ruler.GetName] cerca di affermare la propria autorità sui crescenti domini degli [ROOT.GetCountry.GetAdjective] in qualità di capo della casata, ma suo fratello [brother.GetName] resiste a questa percepita supremazia, sottolineando la necessità di unità ed equità all'interno della famiglia. Per evitare potenziali conflitti, le famiglie suggeriscono di redigere un accordo formale - un insieme di regole della casa - per assicurare una governance condivisa e mantenere la stabilità."
  flavor_hab.1009.a: "Formalizzare le regole della casa."
  flavor_hab.1009.b: "Evitare accordi formali."
  flavor_hab.1009.historical_info: "Le Regole della Casa Rudolfina, istituite nel 1364, cercavano di regolare il governo congiunto delle terre asburgiche da parte di Rodolfo IV e dei suoi fratelli, Albrecht III e Leopoldo III. Pur concedendo a tutti gli Asburgo maschi uguali titoli e responsabilità, le regole davano al fratello maggiore, Rodolfo IV, privilegi speciali nella rappresentanza esterna e nella riscossione delle imposte. Le regole crearono un delicato equilibrio di potere che durò solo fino alla divisione delle terre degli Asburgo nel Trattato di Neuberg del 1379."
+ variable_privilegium_maius_granted_tt: "The Privilegium Maius has been Granted" #NEW
+ variable_privilegium_maius_accepted_tt: "The Privilegium Maius has been Accepted by the Empire" #NEW
 
  flavor_hab.1100.title: "La Capitale [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip]"
  flavor_hab.1100.desc: "Con la morte di [target_old_ruler.GetName], siamo nella posizione di spostare il nostro centro di potere all'interno dei nostri possedimenti principali. Una nuova capitale potrebbe permetterci di concentrarci specificamente su questa regione e di farla diventare una vera e propria sede del potere per la nostra dinastia."
@@ -840,7 +781,7 @@
  STATIC_MODIFIER_NAME_habsburg_capital: "Capitale Dinastico"
 
  flavor_hab.1101.title: "Una Capitale Permanente per [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_hab.1101.entry: "$flavor_hab.1101.title$" #NEW
+ flavor_hab.1101.entry: "$flavor_hab.1101.title$"
  flavor_hab.1101.desc: "Scegliere una capitale in base ai capricci del nostro sovrano sembra essere sempre più una reliquia di un'epoca passata. Con la forte volontà di [target_ruler.GetName], siamo in grado di scegliere una residenza permanente per la nostra famiglia e di centralizzare il nostro governo lì."
  flavor_hab.1101.tt: "Non saremo più in grado di cambiare il nostro capitale con un nuovo sovrano"
  flavor_hab.1101.a: "L'[ShowLocationNameWithNoTooltip('vienna')] è il futuro della [target_ruler.GetDynasty.GetNameWithNoTooltip]."
@@ -857,14 +798,14 @@
  STATIC_MODIFIER_NAME_mining_rush: "Corsa alle miniere!"
 
  flavor_hab.1201.title: "Miniera d'Argento di Schwaz"
- flavor_hab.1201.entry: "$flavor_hab.1201.title$" #NEW
+ flavor_hab.1201.entry: "$flavor_hab.1201.title$"
  flavor_hab.1201.desc: "Con la costante espansione delle nostre operazioni minerarie in [ShowLocationName('schwaz')] si scopre ogni anno un numero maggiore di [ShowGoodsName('silver')]. È ormai chiaro che [ShowLocationNameWithNoTooltip('schwaz')] ha il potenziale per renderci ricchi oltre ogni immaginazione e diventare la spina dorsale delle nostre finanze. Le vicine [ShowLocationName('innsbruck')] e [ShowLocationNameWithNoTooltip('schwaz')] potrebbero diventare un'esposizione dello splendore e del potere della nostra dinastia se sostenessimo ora la loro industria mineraria."
  flavor_hab.1201.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1201.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1201.a.entry: "$common_string_brilliant$"
  schwaz_mine: "Miniera d'argento di Schwaz"
 
  flavor_hab.1202.title: "Una Nuova Bergordnung per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_hab.1202.entry: "$flavor_hab.1202.title$" #NEW
+ flavor_hab.1202.entry: "$flavor_hab.1202.title$"
  flavor_hab.1202.desc: "La nostra industria mineraria è fiorente e attira sempre più persone a lavorare nelle miniere delle nostre bellissime valli. Per non perdere il controllo della situazione e regolare questa corsa all'estrazione in modo vantaggioso, dovremmo chiarire ogni incertezza nel nostro attuale [ShowPolicyName('german_mining_law')]. Fortunatamente, [target_character.GetName] ha già dimostrato di essere un amministratore capace in [ShowLocationName('schladming')] e potrebbe essere assunto per supervisionare i nostri sforzi minerari direttamente dalla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  flavor_hab.1202.a: "Mandatelo a chiamare immediatamente!"
  flavor_hab.1202.a.tt: "Every [location|e] with a mining [raw_material|e] gains [ShowModifier('schladming_bergordnung')]." #DA TRADURRE
@@ -883,6 +824,7 @@
  flavor_hab.1301.desc: "Il noto umanista e poeta [target_character.GetName] si è rivolto a [target_ruler.GetName] con la proposta di ampliare il [ShowBuildingTypeName('university')] con una scuola dedicata agli studi umanistici. Questa scuola umanistica potrebbe aiutarci ad attirare [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] artisti più capaci e a dimostrare la nostra dedizione agli ideali dell'umanesimo."
  flavor_hab.1301.a: "Un piano splendido!"
  flavor_hab.1301.b: "Che idea ridicola."
+ variable_habsburg_renaissance_prince_tt: "The Habsburg Renaissance Patronage is Established" #NEW
 
  flavor_hab.1302.title: "Il Theuerdank di [target_ruler.GetNameWithNoTooltip]"
  flavor_hab.1302.entry: "Theuerdank" #NEW
@@ -892,7 +834,6 @@
  flavor_hab.1303.title: "L'Abile [target_character.GetNameWithNoTooltip]"
  flavor_hab.1303.entry: "Johannes Cuspinian" #NEW
  flavor_hab.1303.desc: "[target_character.GetName] ha da poco terminato gli studi presso il [ShowBuildingTypeName('university')] di [ShowLocationName('vienna')] e ora attende di approfondire i suoi studi umanistici. Oltre alla sua formazione accademica, si dimostra promettente anche in campo diplomatico e potrebbe essere una grande risorsa per i nostri affari esteri."
-# flavor_hab.1303.a: "Sarebbe un ottimo insegnante per la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.1303.a: "He would make an excellent teacher at our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.1303.a.entry: "He would make an excellent teacher at our court." #NEW
  STATIC_MODIFIER_NAME_cuspinian_educator: "Educazione cuspidina"
@@ -914,7 +855,7 @@
  flavor_hab.1401.b: "Pagatelo."
 
  flavor_hab.1402.title: "Le Richieste di Mailberger"
- flavor_hab.1402.entry: "$flavor_hab.1402.title$" #NEW
+ flavor_hab.1402.entry: "$flavor_hab.1402.title$"
  flavor_hab.1402.desc: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] scontenti, che hanno tramato e complottato per un po', hanno ora presentato le loro richieste a [target_ruler.GetName]. Sebbene siano audaci nel presentare queste richieste sotto la minaccia poco velata di una ribellione armata nel caso in cui non cedessimo, potrebbe essere la decisione più saggia quella di accogliere la loro richiesta e riconciliarsi con i membri."
  flavor_hab.1402.a: "Sembrano abbastanza ragionevoli."
  flavor_hab.1402.b: "Non otterranno nulla!"
@@ -935,7 +876,7 @@
  flavor_hab.1501.title: "[target_artist.GetNameWithNoTooltip] Pubblica il suo Lavoro"
  flavor_hab.1501.desc: "[target_artist.GetName] ha fatto notevoli progressi nel suo lavoro, pubblicando il suo lavoro sull'astronomia tolemaica nell'opera #italica Theoricae novae planetarum#!"
  flavor_hab.1501.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1501.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1501.a.entry: "$common_string_brilliant$"
 
  flavor_hab.1502.title: "L'Allievo di [target_artist.GetNameWithNoTooltip]"
  flavor_hab.1502.entry: "Regiomontanus / Johannes Müller" #NEW
@@ -993,7 +934,7 @@
  flavor_hab.1604.c.entry: "Expel them from our country." #NEW
 
  flavor_hab.1605.title: "Le Denunce Contro i Gesuiti"
- flavor_hab.1605.entry: "$flavor_hab.1605.title$" #NEW
+ flavor_hab.1605.entry: "$flavor_hab.1605.title$"
  flavor_hab.1605.desc: "Negli ultimi anni sono giunte alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] sempre più denunce riguardanti il [ShowBuildingTypeName('jesuit_college')]. Secondo le loro denunce, i gesuiti riconvertono gli [ShowReligionAdjective('lutheran')] in violazione della Confessione da noi firmata e delle leggi imperiali che guidano la convivenza tra [ShowReligionName('catholic')] e [ShowReligionNameWithNoTooltip('lutheran')] nelle nostre terre."
  flavor_hab.1605.a: "Non dobbiamo litigare con i gesuiti."
  flavor_hab.1605.a.tt: "Questo renderà infelice la nostra popolazione che segue gli [ShowReligionNameWithNoTooltip('lutheran')]."
@@ -1001,6 +942,7 @@
  flavor_hab.1605.b.tt: "Questo renderà felice la nostra popolazione che segue gli [ShowReligionNameWithNoTooltip('lutheran')]."
  flavor_hab.1605.c: "Dovremmo liberarci dei gesuiti."
  flavor_hab.1605.c.tt: "Questo renderà molto felice la nostra popolazione che segue gli [ShowReligionNameWithNoTooltip('lutheran')]."
+ variable_jesuit_colleges_sponsored_tt: "The Jesuit Colleges have been Sponsored" #NEW
 
  flavor_hab.1606.title: "Il Contraccolpo degli [ShowReligionAdjectiveWithNoTooltip('catholic')]"
  flavor_hab.1606.entry: "Pope and Spain Are Unhappy About Jesuit Refusal" #NEW
@@ -1008,6 +950,7 @@
  flavor_hab.1606.a: "Piegatevi alla loro volontà e permettete ai gesuiti di tornare [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]."
  flavor_hab.1606.a.entry: "Bend to their will and allow the Jesuits back in our country." #NEW
  flavor_hab.1606.b: "Rifiutiamo le loro richieste."
+ variable_jesuit_colleges_rejected_tt: "The Jesuit Colleges have been Rejected" #NEW
 
  flavor_hab.1607.title: "Il [ShowBuildingTypeNameWithNoTooltip('monastery')] Consiglio [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_hab.1607.entry: "Monastery Council of Austria" #NEW
@@ -1017,7 +960,7 @@
  flavor_hab.1607.b: "Dovranno adattarsi da soli."
 
  flavor_hab.1608.title: "La Confessio Bohemica"
- flavor_hab.1608.entry: "$flavor_hab.1608.title$" #NEW
+ flavor_hab.1608.entry: "$flavor_hab.1608.title$"
  flavor_hab.1608.desc: "I possedimenti [ShowCultureName('czech')] del nostro dominio si sono rivolti a noi con la richiesta di confermare la loro confessione, che è una confessione [ShowReligionAdjective('lutheran')], lontana dalla nostra fede [ShowReligionAdjective('catholic')]. Sebbene i possedimenti [ShowCultureNameWithNoTooltip('czech')] non siano ancora abbastanza potenti, rifiutarli del tutto potrebbe avere gravi conseguenze in futuro."
  flavor_hab.1608.a: "Accettatelo, senza firma."
  royal_letter_of_bohemia: "Confessione di [ShowAreaNameWithNoTooltip('bohemia_area')]"
@@ -1027,14 +970,15 @@
  flavor_hab.1608.historical_info: "La #Confessio Bohemica#!, in lingua inglese, fu accettata dall'imperatore Massimiliano II nel maggio del 1575, al fine di garantire l'eredità del suo erede designato, Rodolfo II. La Confessione fu redatta dai possedimenti non cattolici della Boemia, per garantire il loro status giuridico sotto il dominio asburgico. Massimiliano II accettò la confessione come base giuridica, ma non la firmò e fu concessa solo nelle principali terre boeme, e non in Slesia o Lusazia. La firma della Lettera di Maestà da parte di Rodolfo II nel 1609 confermò questi diritti ai possedimenti boemi."
  
  flavor_hab.1609.title: "Ricattolicizzazione [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
- flavor_hab.1609.entry: "$flavor_hab.1609.title$" #NEW
+ flavor_hab.1609.entry: "$flavor_hab.1609.title$"
  flavor_hab.1609.desc: "Il fuoco dell'eresia ha minacciato di consumare l'unità della cristianità nelle nostre terre, ma i recenti sviluppi hanno riacceso la speranza per la vera fede. Ispirati da [ShowAdvanceName('edict_of_restitution')] e dal nostro recente schieramento con la fazione [ShowReligionAdjective('catholic')] nella Dieta Imperiale, [ROOT.GetCountry.Custom('IT_CLERGY_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sostengono ora un'audace campagna di ricattolicizzazione per reclamare i cuori e le menti del popolo. Essi sostengono che attraverso l'applicazione degli insegnamenti [ShowReligionAdjectiveWithNoTooltip('catholic')] e il ristabilimento dell'autorità della Chiesa, possiamo ripristinare l'ordine divino [ROOT.GetCountry.Custom('IT_NEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] e garantire la posizione [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] come bastione della fede [ShowReligionAdjectiveWithNoTooltip('catholic')] nell'[ShowContinentName('europe')]."
  flavor_hab.1609.a: "Applicare con fervore la ricattolicizzazione."
  flavor_hab.1609.b: "Promuovere la vera fede con mezzi pacifici."
  flavor_hab.1609.c: "Concentrarsi sull'unità piuttosto che sulla religione."
+ variable_hab_enable_recatholicization_tt: "The Catholic Faction has been Backed in the Imperial Diet" #NEW
 
  flavor_hab.1700.title: "Una Banca per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_hab.1700.entry: "$flavor_hab.1700.title$" #NEW
+ flavor_hab.1700.entry: "$flavor_hab.1700.title$"
  flavor_hab.1700.desc: "Per migliorare la nostra stabilità finanziaria e ridurre la nostra dipendenza da altre fonti, dovremmo creare una banca di proprietà dello Stato. Purtroppo, questo richiederà un grosso investimento iniziale per garantirne la sopravvivenza. A tal fine, [target_ruler.GetName] potrebbe chiedere un contributo [ROOT.GetCountry.Custom('IT_NOBLES_AL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], anche se non sarebbero certo contenti di questa decisione."
  flavor_hab.1700.a: "Chiederemo un contributo [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
  flavor_hab.1700.a.entry: "We will demand a contribution of the $nobles_estate$." #NEW
@@ -1042,7 +986,7 @@
  flavor_hab.1700.historical_info: "Dopo che l'affidamento a privati per il sostegno finanziario portò alla bancarotta dello Stato asburgico, l'imperatore Leopoldo I decise di fondare una banca di proprietà dello Stato, il #Banco del Giro#! nel 1703. A causa dell'occupazione della politica estera e dei grandi investimenti dello Stato per finanziare la Guerra di Successione Spagnola, la banca fallì solo due anni dopo e fu infine ceduta alla città di Vienna, che la trasformò nella #italic Wiener Stadtbank#!, che da allora in poi ebbe un ruolo centrale nel finanziamento degli Asburgo."
 
  flavor_hab.1701.title: "Il Destino della Banca [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_hab.1701.entry: "$flavor_hab.1701.title$" #NEW
+ flavor_hab.1701.entry: "$flavor_hab.1701.title$"
  flavor_hab.1701.desc: "È giunto il momento di decidere se possiamo andare avanti con il nostro progetto di finanziare una nuova banca [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName]. Questo sarà possibile solo se saremo in grado di raccogliere fondi sufficienti."
  flavor_hab.1701.a: "Un successo straordinario!"
  flavor_hab.1701.b: "Un fallimento spettacolare."
@@ -1058,47 +1002,45 @@
  flavor_hab.1801.entry: "Mühlviertel Textile Production Success" #NEW
  flavor_hab.1801.desc: "I nostri investimenti nelle tessiture della [ShowProvinceDefinitionName('muhlviertel_province')] sono stati un grande successo! Il [ShowBuildingTypeName('cloth_manufactory')], ormai affermato, sta prosperando nella zona ed è certo che queste industrie beneficeranno la nostra economia negli anni a venire."
  flavor_hab.1801.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1801.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1801.a.entry: "$common_string_brilliant$"
+ variable_hab_push_for_muhlviertel_textile_industry_tt: "The [ShowProvinceDefinitionName('muhlviertel_province')] Textile Industry is Being Promoted" #NEW
 
  flavor_hab.1802.title: "Il Fallimento dell'Industria Tessile dell'[ShowLocationNameWithNoTooltip('linz')]"
  flavor_hab.1802.entry: "Mühlviertel Textile Production Failure" #NEW
  flavor_hab.1802.desc: "Senza alcun investimento significativo in un [ShowBuildingTypeName('cloth_manufactory')], non siamo riusciti a realizzare i nostri piani iniziali di creare un'industria dello [ShowGoodsName('cloth')] in [ShowProvinceDefinitionName('muhlviertel_province')]."
  flavor_hab.1802.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
- flavor_hab.1802.a.entry: "$common_string_curses$" #NEW
+ flavor_hab.1802.a.entry: "$common_string_curses$"
 
  flavor_hab.1900.title: "[target_character.GetNameWithNoTooltip] si Stabilisce in [ShowLocationNameWithNoTooltip('vienna')]"
  flavor_hab.1900.entry: "Samuel Oppenheimer" #NEW
-# flavor_hab.1900.desc: "[target_character.GetName] si è fatto un nome come banchiere e grazie al suo legame con alcuni membri della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Con il notevole patrimonio che ha acquisito, potrebbe essere una grande risorsa per noi se gli offrissimo una posizione nel nostro consiglio consultivo." #OLD
  flavor_hab.1900.desc: "[target_character.GetName] has made a name for [target_character.GetHerselfHimself] as a banker and through his connection to some members of our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. With the considerable wealth he has acquired, he could be a great asset for us if we offer him a position in our advisory council." #NEW
-# flavor_hab.1900.a: "Invitatelo nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.1900.a: "Invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_hab.1900.a.entry: "Invite him to our court." #NEW
  flavor_hab.1900.b: "Non abbiamo bisogno di altri consiglieri."
 
  flavor_hab.1901.title: "[target_mentor.GetNameWithNoTooltip] Raccomanda [target_character.GetNameWithNoTooltip]"
  flavor_hab.1901.entry: "Samson Wertheimer" #NEW
-# flavor_hab.1901.desc: "Con gli eccellenti servizi forniti da [target_mentor.GetName], [target_mentor.GetHeShe] ha ora raccomandato un possibile successore per la sua posizione. [target_character.GetName], un esperto banchiere, potrebbe svolgere il ruolo di [target_mentor.GetNameWithNoTooltip] come consulente finanziario della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.1901.desc: "With the excellent services provided by [target_mentor.GetName], [target_mentor.GetHeShe] now recommended a possible successor for his position. [target_character.GetName] a skilled banker in his own right, could fulfill the role of [target_mentor.GetNameWithNoTooltip] as our [ROOT.GetCountry.GetGovernment.GetCourtTitle] advisor in financial matters." #NEW
  flavor_hab.1901.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1901.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1901.a.entry: "$common_string_brilliant$"
  flavor_hab.1901.b: "[target_mentor.GetNameWithNoTooltip] è già abbastanza."
  flavor_hab.1901.b.entry: "The mentor is enough already." #NEW
+ variable_samuel_oppenheimer_hired_tt: "Samuel Oppenheimer has been Hired as Court Banker" #NEW
 
  flavor_hab.1902.title: "Il Supporto Bellico di [target_character.GetNameWithNoTooltip]"
  flavor_hab.1902.entry: "The Court Bankers finance in wartime" #NEW
  flavor_hab.1902.desc: "La guerra è un periodo costoso per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName]. Fortunatamente, il ricco [target_character.GetName] è disposto a contribuire in modo significativo al nostro sforzo bellico senza chiedere in cambio privilegi o sovvenzioni."
  flavor_hab.1902.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1902.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1902.a.entry: "$common_string_brilliant$"
 
  flavor_hab.1903.title: "Il Supporto alla Costruzione di [target_character.GetNameWithNoTooltip]"
  flavor_hab.1903.entry: "The Court Bankers finance in wartime" #NEW
  flavor_hab.1903.desc: "[target_location.GetName] è una [target_location.GetRank.GetName] trafficata e i cantieri sono visibili ovunque. [target_character.GetName] non è ancora soddisfatto della forma della [target_location.GetRank.GetNameWithNoTooltip] e ci ha concesso una generosa donazione per continuare la trasformazione di [target_location.GetNameWithNoTooltip] in una splendida [target_location.GetRank.GetNameWithNoTooltip] barocca."
  flavor_hab.1903.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.1903.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.1903.a.entry: "$common_string_brilliant$"
 
  flavor_hab.2000.title: "I Piani Diplomatici di [target_character.GetNameWithNoTooltip]"
  flavor_hab.2000.entry: "Wenzel Anton Kaunitz - Diplomatic Revolution" #NEW
-# flavor_hab.2000.desc: "Esponente di spicco del [ShowInstitutionName('enlightenment')], [target_character.GetName] ha dimostrato il suo valore di diplomatico come nostro rappresentante presso le corti dei nostri rivali e alleati. [target_character.GetNameWithNoTooltip] ha ora elaborato un grande piano per assicurarci un posto sulla scena europea. Questa potrebbe essere un'occasione d'oro per modellare le nostre relazioni estere a nostro piacimento, soprattutto nei confronti della rivale [rival_country.GetName]." #OLD
  flavor_hab.2000.desc: "A prominent representative of the [ShowInstitutionName('enlightenment')], [target_character.GetName] has proven his worth as a diplomat as our representative in the courts of our rivals and allies alike. [target_character.GetNameWithNoTooltip] has now crafted a grand plan to secure our place on the European stage. This could be a golden opportunity for us to shape our foreign relations to our own preference, especially to our rival [rival_country.GetName]." #NEW
  flavor_hab.2000.a: "Un piano perfetto."
  flavor_hab.2000.b: "La situazione attuale ci sta bene."
@@ -1114,39 +1056,35 @@
  flavor_hab.2100.entry: "Reforms of Maria Theresia and Joseph II" #NEW
  flavor_hab.2100.desc: "Il nostro illuminato [ROOT.GetCountry.GetGovernment.GetRulerTitle] non è soddisfatto delle attuali leggi [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. Basandosi vagamente sui principi del [ShowInstitutionName('enlightenment')], [target_ruler.GetHeShe] ha decretato un grande cambiamento di politica per quanto riguarda quasi tutte le questioni civili. Mentre alcune voci nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] consigliano [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] di scegliere un approccio meno radicale e veloce alla riforma, solo il tempo ci dirà se queste preoccupazioni sono più di una paura reazionaria."
  flavor_hab.2100.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.2100.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.2100.a.entry: "$common_string_brilliant$"
  flavor_hab.2100.historical_info: "Durante il regno di Maria Teresa, tra il 1740 e il 1780, l'Austria iniziò il processo di riforma secondo gli ideali dell'Illuminismo. Mentre lei adottò un approccio conservatore per non turbare l'aristocrazia, suo figlio Giuseppe II spinse per idee più radicali dopo aver iniziato la sua co-regia insieme alla madre nel 1765. Sebbene le sue idee mirassero a un rapido cambiamento verso un assolutismo illuminato, egli incontrò una feroce resistenza in tutte le parti della popolazione austriaca."
  
  flavor_hab.2101.title: "La Manifestazione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] Contro le Riforme"
- flavor_hab.2101.entry: "$flavor_hab.2101.title$" #NEW
+ flavor_hab.2101.entry: "$flavor_hab.2101.title$"
  flavor_hab.2101.desc: "Gli sforzi riformisti di [target_ruler.GetName] non sono stati accolti bene [ROOT.GetCountry.Custom('IT_NOBLES_DAL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Si sono rifiutati di rispettare le nuove leggi stabilite [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName], a meno che non li risarciamo per ogni singola perdita."
  flavor_hab.2101.a: "Tornare indietro e regolare le riforme."
  flavor_hab.2101.b: "Un po' d'oro li farà sicuramente tacere."
  flavor_hab.2101.c: "Potrebbero voler ricordare chi è il loro [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
  flavor_hab.2101.c.entry: "They might want a reminder who their ruler is." #NEW
+ variable_hab_reforms_of_enlightenment_tt: "The Reforms of Enlightenment have been Enacted" #NEW
 
  flavor_hab.2102.title: "Nessun Contraccolpo Contro le Riforme"
- flavor_hab.2102.entry: "$flavor_hab.2102.title$" #NEW
+ flavor_hab.2102.entry: "$flavor_hab.2102.title$"
  flavor_hab.2102.desc: "Le nostre riforme, avviate da [target_ruler.GetName], sono state accettate senza i soliti battibecchi su ogni singolo dettaglio della nostra politica. [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] può ora essere davvero considerata un faro del [ShowInstitutionName('enlightenment')]."
  flavor_hab.2102.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.2102.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.2102.a.entry: "$common_string_brilliant$"
  
  flavor_hab.2103.title: "La Razionalizzazione della Gestione del Territorio"
- flavor_hab.2103.entry: "$flavor_hab.2103.title$" #NEW
-# flavor_hab.2103.desc: "[target_character.GetName], un amministratore lungimirante, ha proposto una politica di trasformazione per affrontare le inefficienze nell'uso della terra all'interno [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Il suo piano, ora noto come 'Raabization', prevede la ridistribuzione delle vaste terre detenute [ROOT.GetCountry.Custom('IT_NOBLES_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a piccoli affittuari in contratti di locazione ereditaria. Dando potere [ROOT.GetCountry.Custom('IT_PEASANTS_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], sostiene [target_character.GetLastNameWithNoTooltip], possiamo modernizzare l'agricoltura, aumentare la produttività e garantire maggiori entrate allo Stato." #OLD
+ flavor_hab.2103.entry: "$flavor_hab.2103.title$"
  flavor_hab.2103.desc: "[target_character.GetName], a forward-thinking administrator, has proposed a transformative policy to address inefficiencies in land use within our [ROOT.GetCountry.GetFlavorRank]. His plan, now known as 'Raabization' involves redistributing the vast lands held by the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] to small-scale tenant farmers in hereditary leases. By empowering the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], [target_character.GetLastNameWithNoTooltip] argues, we can modernize agriculture, increase productivity, and secure greater revenues for the state." #NEW
  flavor_hab.2103.a: "Attuare le riforme di [target_character.GetLastNameWithNoTooltip]."
  flavor_hab.2103.a.entry: "Implement his reforms." #NEW
-# flavor_hab.2103.b: "le sue idee sono troppo radicali." #OLD
  flavor_hab.2103.b: "His ideas are too radical." #NEW
  
  flavor_hab.2104.title: "Riforme di [target_character.GetNameWithNoTooltip]"
  flavor_hab.2104.entry: "Reforms of Adam František Kollár" #NEW
-# flavor_hab.2104.desc: "[target_character.GetName] è un importante studioso [ShowCultureName('slovak')] e bibliotecario imperiale, che sta facendo scalpore con le sue idee radicali sul governo e sui diritti dei sudditi. Conosciuto come il 'Socrate [ShowCultureNameWithNoTooltip('slovak')]', [target_character.GetLastNameWithNoTooltip] sostiene che l'istruzione e le riforme sono vitali per la prosperità dello Stato e ha persino messo in discussione i privilegi tradizionali [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Le sue proposte di conferire potere [ROOT.GetCountry.Custom('IT_CROWN_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] e di ridurre l'influenza delle strutture feudali radicate hanno scatenato un acceso dibattito all'interno della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_hab.2104.desc: "[target_character.GetName] is a prominent [ShowCultureName('slovak')] scholar and imperial librarian, who has been making waves with his radical ideas about governance and the rights of subjects. Known as the '[ShowCultureNameWithNoTooltip('slovak')] Socrates', [target_character.GetLastNameWithNoTooltip] is arguing that education and reform are vital to the prosperity of the state and has even challenged the traditional privileges of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. His proposals to empower the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] and reduce the influence of entrenched feudal structures have sparked fierce debate within our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
-# flavor_hab.2104.a: "Dobbiamo sostenere le sue proposte." #OLD
  flavor_hab.2104.a: "We must support his proposals." #NEW
-# flavor_hab.2104.b: "Le sue idee minacciano la nostra stabilità." #OLD
  flavor_hab.2104.b: "His ideas threaten our stability." #NEW
  flavor_hab.2104.historical_info: "Adam František Kollár è stato uno storico, linguista e pensatore politico slovacco che ha lavorato come bibliotecario presso la Biblioteca di Corte di Vienna. Convinto sostenitore dell'assolutismo illuminato, Kollár si schierò a favore della centralizzazione delle riforme e della riduzione del potere della nobiltà. Fu uno dei principali consiglieri di Maria Teresa durante le sue riforme legali e amministrative. È noto anche per aver coniato il termine 'etnologia'."
 
@@ -1164,7 +1102,7 @@
  flavor_hab.2201.b: "Un'invasione dell'[ShowAreaNameWithNoTooltip('austria_area')] è un'idea assurda."
 
  flavor_hab.2202.title: "Un'Accademia Militare per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_hab.2202.entry: "$flavor_hab.2202.title$" #NEW
+ flavor_hab.2202.entry: "$flavor_hab.2202.title$"
  flavor_hab.2202.desc: "Possiamo imparare molto dai nostri amici e nemici sui campi di battaglia dell'[ShowContinentName('europe')]. Ma imparare solo attraverso l'esperienza diretta potrebbe rivelarsi un errore catastrofico quando si tratta di guerra. Se vogliamo rivendicare una posizione di forza militare rispettata, dovremmo creare un'istituzione per educare i nostri ufficiali, indipendentemente dalla loro posizione, all'arte della guerra."
  flavor_hab.2202.a: "Trovata l'Accademia!"
  flavor_hab.2202.b: "Un'idea ridicola, i nostri attuali ufficiali sono ineguagliabili!"
@@ -1242,7 +1180,7 @@
  flavor_hab.2602.entry: "Positive Response" #NEW
  flavor_hab.2602.desc: "[target_spain.GetName] ha accettato la nostra proposta di matrimonio, legando i nostri due regni in una potente alleanza contro i nostri nemici comuni. Insieme, [target_spain.GetNameWithNoTooltip] e [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] saranno uniti contro le ambizioni [GetCountry('FRA').Custom('IT_Della')][GetCountry('FRA').GetName], assicurando un futuro più sicuro e prospero per entrambe le nazioni."
  flavor_hab.2602.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hab.2602.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hab.2602.a.entry: "$common_string_brilliant$"
 
  flavor_hab.2603.title: "[target_spain.GetNameWithNoTooltip] Rifiuta la Nostra Proposta"
  flavor_hab.2603.entry: "Negative Response" #NEW

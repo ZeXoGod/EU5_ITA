@@ -1,20 +1,20 @@
 ﻿l_english:
  flavor_brapru.1.title: "The End of the Twin Towns of Berlin and Kölln"
- flavor_brapru.1.entry: "$flavor_brapru.1.title$" #NEW
+ flavor_brapru.1.entry: "$flavor_brapru.1.title$"
  flavor_brapru.1.desc: "The river Spree has acted as the border between Kölln and Berlin since their foundation, but the #italic Mühlendamm#!, a dam that cuts the Spree in two, has acted as the bond that has united the #italic Twin Cities#! forever. Acting as conjoined twins, the two cities have always covered each other backs and acted as a front, opposing the power of the rulers of the [ROOT.GetCountry.GetFlavorRank]. Despite many rulers trying to enforce their power over them, they have stubbornly resisted any attempt to submit them. Now, [target_character.GetName] has the means to enforce this union and stop the liberties of the two cities, converting the merged city into a proper capital for our nation."
  flavor_brapru.1.a: "They will be a unique town from now on."
  flavor_brapru.1.b: "We will let them be separated."
  flavor_brapru.1.historical_info: "In 1307, Berlin and Kölln formed an alliance with other towns in the Margraviate such as Brandenburg an der Havel, Frankfurt an der Oder, and Salzwedel. This alliance was forged to collectively defend their rights against the sovereign of the time, Heinrich I. However, the autonomy of Kölln and Berlin was brought to an end by Elector Frederick II Irontooth of Brandenburg in 1451, as he declared the twin town to be his official residence.\n\nIn 1710, under the decree of King Frederick I, the twin cities Kölln and old Berlin were merged. The result of this merger was the establishment of the capital of Prussia. Notably, Altberlin's substantial size, being twice that of Kölln, made the new city be named Berlin."
 
  flavor_brapru.2.title: "The Construction of the Brandenburger Tor"
- flavor_brapru.2.entry: "$flavor_brapru.2.title$" #NEW
+ flavor_brapru.2.entry: "$flavor_brapru.2.title$"
  flavor_brapru.2.desc: "To celebrate our recent military victories and to preserve our standing among the powers of [ShowContinentName('europe')], we could contract a skilled artist of the neoclassical style to design and build us a monument worthy of a great European capital. [target_artist.GetName] has already made plans towards a grand gate that could be placed at the western entrance of [ShowLocationName('berlin')], connecting our current seat of power, with the ancient capital of [ShowLocationName('brandenburg')]."
  flavor_brapru.2.a: "Commemorate the victory with the Gate."
  flavor_brapru.2.b: "Money is fine in the treasury."
  flavor_brapru.2.historical_info: "The Brandenburg Gate was built between 1789 and 1793. While the Gate was designed by the Artist Carl Gotthard Langhans, multiple other artists were involved in the decorations of the Gate. The Quadriga, depicting the Roman goddess Victoria, was created by the sculpturer Johan Gottfried Schadow, with others contributing to reliefs and friezes, with the decorations facing towards the City itself. The Gate, designed in the style of neoclassicism, was built at the then borders of the City of Berlin, in the zone of Dorotheenstadt to commemorate the Prussian victory against a Dutch popular revolt and the formation of an alliance with the countries of the Netherlands and Great Britain."
 
  flavor_brapru.3.title: "A Colonial Charter for the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_brapru.3.entry: "$flavor_brapru.3.title$" #NEW
+ flavor_brapru.3.entry: "$flavor_brapru.3.title$"
  flavor_brapru.3.desc: "With the influx of new ideas and traders from [ShowSubContinentName('western_europe')] there are more and more advisors that advocate towards the founding of a Trading Company to exploit the trans-Atlantic Trade for ourselves, instead of relying on foreign traders. While [target_character.GetName] has an open ear to these ideas, this would be a risky investment and we might want to focus our efforts of expansion closer to our own territory."
  flavor_brapru.3.a: "We will exploit this!"
  flavor_brapru.3.b: "A worthless endeavor."
@@ -26,7 +26,7 @@
  flavor_brapru.4.a: "What is Enlightenment?"
  
  flavor_brapru.5.title: "The Era of the Soldier-King"
- flavor_brapru.5.entry: "$flavor_brapru.5.title$" #NEW
+ flavor_brapru.5.entry: "$flavor_brapru.5.title$"
  flavor_brapru.5.desc: "With [target_character.GetName] on the throne, our country entered into a new era. Major reforms and consolidation of the national budget have been implemented and secured funding for a worthy army. Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] has gathered international attention with his frugal approach to courtly pleasures and excess, rather investing the majority of the available money into further expansions of the army."
  flavor_brapru.5.a: "God raised you to the Throne to work!"
  flavor_brapru.5.historical_info: "With the Ascension of Friedrich Wilhelm to the Prussian throne, the country entered a new era. He radically reformed the State Budget, cutting the expanses for the court to almost nothing, while heavily investing in the expansion of the army and administration of the state. While the army of Prussia grew to 80000 men, he reduced the courtly positions to a third of previous positions in order to save costs and reduce the debt Prussia had accumulated under his father's rule. His reforms transformed Prussia into an absolute and militaristic state that would ascend to the status of major power during the 18th century. "
@@ -42,6 +42,7 @@
  flavor_brapru.7.desc: "We let the problems with our Recruitment system fester for too long and a Reform now seems like the only option. The Plans for the [ShowPolicyName('canton_system_policy')] are still present and our advisors in favor of reform are still advising us to implement this policy to regulate recruitment."
  flavor_brapru.7.a: "Give in to the demands."
  flavor_brapru.7.b: "Ignore these complaints."
+ canton_reform_done_tt: "The Canton System Reform has been Enacted" #NEW
 
  flavor_brapru.8.title: "Reforms of the Great Elector"
  flavor_brapru.8.desc: "Our most capable ruler, [target_character.GetName], has drafted multiple plans to reform the [ROOT.GetCountry.GetLongName] into a modern state. Among [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] plans are a radical reform and expansion of the army, an improvement for [ShowLocationName('berlin')], and dreams of a capable navy for [ROOT.GetCountry.GetNameWithNoTooltip]. Although all of these would elevate us among the countries of [ShowRegionName('north_german_region')], we will have to decide where our resources should be allocated for now."
@@ -52,11 +53,9 @@
  flavor_brapru.8.historical_info: "Friedrich Wilhelm von Hohenzollern rose to the throne of the Electorate of Brandenburg in 1640 in the turbulent time of the Thirty Years War, which brought devastation to the Electorate's Lands. During the Treaty of Westphalia he was able to consolidate some territorial expansion for Brandenburg in both the Rhineland and Pomerania. During his reign, he laid the groundwork for both military and administrative capabilities for the Brandenburgian-Prussian state, which later propelled Prussia to a major power in European affairs. These efforts and his military success in the Swedish-Brandenburgian wars would grant him the nickname #italic The Great Elector#!."
 
  flavor_brapru.9.title: "A new Capital for [ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_brapru.9.entry: "$flavor_brapru.9.title$" #NEW
+ flavor_brapru.9.entry: "$flavor_brapru.9.title$"
  flavor_brapru.9.desc: "Ever since the founding of the [ROOT.GetCountry.GetLongName] by [GetCharacter('bra_albrecht_i_askanier').GetName] we have ruled over the area of [ShowLocationName('berlin')]. Some of our advisors, recommended us to move the capital to [ShowLocationNameWithNoTooltip('berlin')], which seemss to be well suited to serve as a capital worthy of our ambitions. This would serve us as an opportune moment to also seize control of the [ShowBuildingTypeName('hanseatic_kontor')], weakening foreign influences in our lands."
-# flavor_brapru.9.a: "Move the court to [ShowLocationNameWithNoTooltip('berlin')]" #OLD
  flavor_brapru.9.a: "Move the court to [ShowLocationNameWithNoTooltip('berlin')]." #NEW
-# flavor_brapru.9.b: "Let's solidify our power in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]" #OLD
  flavor_brapru.9.b: "Let us solidify our power in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." #NEW
  flavor_brapru.9.b.entry: "Let us solidify our power in the capital." #NEW
  
@@ -74,14 +73,14 @@
  flavor_brapru.historical_info: "After Albrecht von Hohenzollern secularized the Teutonic Order into the Duchy of Prussia, he followed the advice of Protestant preachers like Martin Luther further, and laid the foundations of an institution for higher learning. To this effect, the University of Königsberg was founded in 1544. Being located outside of the borders of the Holy Roman Empire, this was the first University built without the prior papal or imperial approval."
 
  flavor_brapru.12.title: "Prutenic Tables"
- flavor_brapru.12.entry: "$flavor_brapru.12.title$" #NEW
+ flavor_brapru.12.entry: "$flavor_brapru.12.title$"
  flavor_brapru.12.desc: "A mathematician and astronomer, [target_artist.GetName] has come to our court to enquire about a potential sponsorship of our [ROOT.GetCountry.GetGovernment.GetRulerTitle] for his work. During his time at the [ShowBuildingTypeName('university')] of [ShowLocationName('wittenberg')] he calculated a new set of astronomical tables, which he claims to be more precise than previous calculations."
  flavor_brapru.12.a: "Finance the printing."
  flavor_brapru.12.b: "Dismiss him!"
  flavor_brapru.12.historical_info: "The astronomer Erasmus Reinhold was supported and financed by Albrecht von Hohenzollern, Duke of Prussia, who also financed the printing of the Prutenic Tables.$prutenic_tables_desc$ The Prutenic Tables were used by the calendar reform instituted by Pope Gregory XIII and eventually replaced the Alfonsine Tables used by astronomers."
 
  flavor_brapru.13.title: "Edict of Potsdam"
- flavor_brapru.13.entry: "$flavor_brapru.13.title$" #NEW
+ flavor_brapru.13.entry: "$flavor_brapru.13.title$"
  flavor_brapru.13.desc: "For a long time [ShowContinentName('europe')] has suffered under the strife between [ShowReligionName('catholic')] and those who embraced the ideas of the Reformation. If we were to invite the suppressed [ShowReligionName('lutheran')] and [ShowReligionName('calvinist')] people of [ShowContinentNameWithNoTooltip('europe')] to settle in our lands, we could certainly profit from the influx of new subjects. But such a proclamation would earn the ire of the powers of [ShowContinentNameWithNoTooltip('europe')] which subjects we are encouraging to migrate to us."
  flavor_brapru.13.a: "Let it be known that they can settle in [ROOT.GetCountry.GetNameWithNoTooltip]!"
  flavor_brapru.13.a.entry: "Let it be known that they can settle in us!" #NEW
@@ -97,7 +96,7 @@
  flavor_brapru.14.historical_info: "Hieronymus Roth, a member of the Königsberger City Council and lawyer, led an organized Opposition to the #italic Great Elector#! Friedrich Wilhelm von Hohenzollern. After the Elector declared himself and ducal Prussia as completely independent from the Kingdom of Poland in 1660, Roth and his allies in the Council of Königsberg, petitioned the King of Poland, John II Casimir Vasa, to once again accept the lands of East Prussia into his authority. The silence of the Polish King and the entrance of Friedrich Wilhelm in Königsberg in October 1662 put an end to the brewing rebellion, with Roth being arrested and imprisoned for life."
  
  flavor_brapru.15.title: "Praxis Pietatis Melica"
- flavor_brapru.15.entry: "$flavor_brapru.15.title$" #NEW
+ flavor_brapru.15.entry: "$flavor_brapru.15.title$"
  flavor_brapru.15.desc: "The Cantor and teacher at the Zum Grauen Kloster Gymnasium in [ShowLocationName('berlin')], [target_artist.GetName], has come to reach quite some renown as a composer of concerts and an extensive writer on Musical Education. During his time as a cantor, [target_artist.GetNameWithNoTooltip] has also put together a book of over 240 hymns known as the Praxis Pietatis Melica or the Practice of Piety. His intention, for new hymns to be added for the benefit of the many faithful across the German lands, is admirable and we should support the publication of his work."
  flavor_brapru.15.a: "Nun danket alle Gott."
  
@@ -114,16 +113,15 @@
  flavor_brapru.17.b: "We cannot abide his reconciliatory views."
 
  flavor_brapru.18.title: "University of Frankfurt"
- flavor_brapru.18.entry: "$flavor_brapru.18.title$" #NEW
+ flavor_brapru.18.entry: "$flavor_brapru.18.title$"
  flavor_brapru.18.desc: "We have graciously been sponsored to build a [ShowBuildingTypeName('university')] in the vicinity of [ShowLocationName('lebus')]. This new institution of learning will be built in the neighboring town of Frankfurt an der Oder and will result in a shift of power towards the Town that has been constructed on the banks of the Oder river."
  flavor_brapru.18.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_brapru.18.a.entry: "$common_string_brilliant$" #NEW
+ flavor_brapru.18.a.entry: "$common_string_brilliant$"
 
  flavor_brapru.19.title: "The Bravery of Spandau"
- flavor_brapru.19.entry: "$flavor_brapru.19.title$" #NEW
+ flavor_brapru.19.entry: "$flavor_brapru.19.title$"
  flavor_brapru.19.desc: "What was supposed to be a pleasure for everyone in the population of our fair [ShowLocationName('berlin')] escalated against the wishes of our [ROOT.GetCountry.GetGovernment.GetRulerTitle]. In a well-studied show battle, which was supposed to show the Population of Berlin-Kölln beating their neighbors of Spandau, the participants of Spandau revolted against the outcome and beat our favorites! This rebellion shows their direct disdain for our [ROOT.GetCountry.GetGovernment.GetRulerTitle] and should not be tolerated."
  flavor_brapru.19.a: "This needs to be punished!"
-# flavor_brapru.19.b: "Let them have their fun" #OLD
  flavor_brapru.19.b: "Let them have their fun." #NEW
  flavor_brapru.19.historical_info: "A maneuver staged by Elector Joachim II Hektor von Hohenzollern in August 1567 between the inhabitants of Berlin-Kölln and Spandau, a settlement then independent of Berlin itself, came later to be known as #italic Knüppelkrieg#! when the residents of Spandau rebelled against the Elector's desired outcome, a victory of the Berlin citizens. Pushed by the fervor and intensity of the maneuver the participants on the Spandauer Side went against the desires of the Elector and beat the Berlin-Kölln side decisively. Angered by this outcome, Joachim II Hektor threatened them with cannons, although they were not loaded, and imprisoned the mayor of Spandau for multiple months."
 
@@ -151,24 +149,24 @@
  flavor_brapru.23.a: "All should strive towards tolerance!"
  flavor_brapru.23.b: "A useless plea for tolerance."
 
- flavor_brapru.24.title: "[ShowPolicyNameWithNoTooltip('order_of_the_swan_policy')]"
+ flavor_brapru.24.title: "[ShowChivalricOrderNameWithNoTooltip('order_of_the_swan')]" #NEW
  flavor_brapru.24.entry: "Order of The Swan" #NEW
- flavor_brapru.24.desc: "Much of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] consider the [country_ruler.GetName]'s efforts of spreading piety to be rather inadequate. Apparently, they believe that the creation of a new chivalry order to spread the Virgin Mary cult would rectify that [ROOT.GetCountry.GetGovernment.GetAdjective] indifference. A domestic chivalric order would lead to the spiritual growth of the members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and their serfs.\n\nThough the creation of such an order would be quite costly, it would greatly contribute to growing the prestige of the [ROOT.GetCountry.GetFlavorRank]. Lured by those reasons, [country_ruler.GetNameWithNoTooltip] was convinced to at least entertain such a possibility. As such, [country_ruler.GetSheHe] let several proposals be made, but only the one about [ShowPolicyName('order_of_the_swan_policy')] seems to be to the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s liking."
+ flavor_brapru.24.desc: "Much of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] consider the [country_ruler.GetName]'s efforts of spreading piety to be rather inadequate. Apparently, they believe that the creation of a new chivalry order to spread the Virgin Mary cult would rectify that [ROOT.GetCountry.GetGovernment.GetAdjective] indifference. A domestic chivalric order would lead to the spiritual growth of the members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and their serfs.\n\nThough the creation of such an order would be quite costly, it would greatly contribute to growing the prestige of the [ROOT.GetCountry.GetFlavorRank]. Lured by those reasons, [country_ruler.GetNameWithNoTooltip] was convinced to at least entertain such a possibility. As such, [country_ruler.GetSheHe] let several proposals be made, but only the one about [ShowChivalricOrderName('order_of_the_swan')] seems to be to the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s liking." #NEW
  flavor_brapru.24.historical_info: "The Brandenburgian #italic Schwanenorden#! was founded in 1440 by Prince-elector Frederick II. Its #italic modus operandi#! was to promote piety and to spread the cult of the Virgin Mary. The founding members amounted to 37 people but the Order would quickly grow to encompass hundreds."
  flavor_brapru.24.a: "Encourage this establishment."
  flavor_brapru.24.b: "Why should we bother?"
 
  flavor_brapru.25.title: "$flavor_brapru.24.title$"
- flavor_brapru.25.entry: "$flavor_brapru.25.title$" #NEW
- flavor_brapru.25.desc: "[country_ruler.GetName] has recently founded the [ShowPolicyName('order_of_the_swan_policy')] in order to promote piety and the cult of the Virgin Mary in [country_ruler.GetHerHis] country. Due to our dynastic connections, many of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have been offered membership in the chivalric establishment. This could be an excellent opportunity to promote our own interests."
+ flavor_brapru.25.entry: "$flavor_brapru.25.title$"
+ flavor_brapru.25.desc: "[country_ruler.GetName] has recently founded the [ShowChivalricOrderName('order_of_the_swan')] in order to promote piety and the cult of the Virgin Mary in [country_ruler.GetHerHis] country. Due to our dynastic connections, many of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have been offered membership in the chivalric establishment. This could be an excellent opportunity to promote our own interests." #NEW
  flavor_brapru.25.historical_info: "$flavor_brapru.24.historical_info$"
  flavor_brapru.25.a: "We should have [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] join this order."
  flavor_brapru.25.a.entry: "We should have him join this order." #NEW
  flavor_brapru.25.b: "Good to have them."
 
- flavor_brapru.26.title: "[ShowPolicyNameWithNoTooltip('order_of_the_black_eagle_policy')]"
+ flavor_brapru.26.title: "[ShowChivalricOrderNameWithNoTooltip('order_of_the_black_eagle')]" #NEW
  flavor_brapru.26.entry: "Order of the Black Eagle" #NEW
- flavor_brapru.26.desc: "As the militarization of our country grows and we pivot towards [ShowSocietyDirectionName('quality')] more and more, we find ourselves lacking in rewards befitting our outstanding generals. Though land grants and direct payments are good rewards in and of themselves, the establishment of a new, secular military order would go a long way toward promoting the good name of our war heroes. Though costly, the [ShowPolicyName('order_of_the_black_eagle_policy')] would promote more discipline and merit."
+ flavor_brapru.26.desc: "As the militarization of our country grows and we pivot towards [ShowSocietyDirectionName('quality')] more and more, we find ourselves lacking in rewards befitting our outstanding generals. Though land grants and direct payments are good rewards in and of themselves, the establishment of a new, secular military order would go a long way toward promoting the good name of our war heroes. Though costly, the [ShowChivalricOrderName('order_of_the_black_eagle')] would promote more discipline and merit." #NEW
  flavor_brapru.26.historical_info: "Prince-elector Frederick III founded the Order of the Black Eagle, a military order that included most reigning members and kinsmen of the ruling Hohenzollern dynasty and many visiting foreign royals, on January 17th, 1701, on the eve of being crowned as King in Prussia. Aside from being awarded to royals, it was also conferred to skilled military personnel, promoting meritocracy in the process."
  flavor_brapru.26.a: "We will fund the establishment."
  flavor_brapru.26.b: "Such vanities do not concern us or our generals!"
@@ -177,7 +175,6 @@
  flavor_brapru.27.entry: "Prussian Colonization of Silesia" #NEW
  flavor_brapru.27.desc: "Since its conquest, the area of [ShowAreaName('silesia_area')] has been left relatively desolate and devastated by the effects of the wars. Without wanting to spend much on investments and with an ever-rising fervor to assimilate heretic provinces in the country, some have proposed to invite [ROOT.GetCountry.GetReligion.GetAdjective] settlers into the area to both stimulate the local economy as well as to assimilate the area into our country."
  flavor_brapru.27.historical_info: "Following the acquisition of Silesia in 1742, the Prussian State enacted policies in order to encourage Protestant settlement in Eastern Silesia, which was predominantly Catholic and Polish-speaking. In 1773, an edict was issued to encourage further settlers to live in Silesia."
-# flavor_brapru.27.a: "Encourage [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] settlers to settle in [ShowAreaNameWithNoTooltip('silesia_area')]" #OLD
  flavor_brapru.27.a: "Encourage [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] settlers to settle in [ShowAreaNameWithNoTooltip('silesia_area')]." #NEW
  flavor_brapru.27.a.entry: "Encourage faithful settlers to settle in [ShowAreaNameWithNoTooltip('silesia_area')]." #NEW
  flavor_brapru.27.b: "They will recover themselves."
@@ -192,7 +189,7 @@
  STATIC_MODIFIER_NAME_PRU_justifying_conquest_of_royal_prussia: "Justifying Conquest of Royal Prussia"
 
  flavor_brapru.29.title: "Expanding the Tangermünde Castle"
- flavor_brapru.29.entry: "$flavor_brapru.29.title$" #NEW
+ flavor_brapru.29.entry: "$flavor_brapru.29.title$"
  flavor_brapru.29.desc: "The [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetRulerTitle] has had a [ROOT.GetCountry.GetGovernment.GetCourtTitle] residence in Tangermünde for many years. However, as our focus has been shifting eastwards, the establishment has fallen into disrepair and has become a shell of its former self. Perhaps a renovation and expansion would be in order."
  flavor_brapru.29.historical_info: "Tangermünde Castle is a castle built in the 10th century at the Tanger river estuary, in Tangermünde. Under the rule of the Ascanians, the Tangermünde Castle was one of the favored residences of the Brandenburgian Margraves. In 1373, the new margrave, also the Holy Roman Emperor, Charles IV, would move into the castle and greatly expand it into a #italic Kaiserpfalz#!."
  flavor_brapru.29.a: "It is worth the investment."
@@ -207,7 +204,7 @@
  STATIC_MODIFIER_NAME_PRU_fabrication: "Fabricated Dispute"
 
  flavor_brapru.31.title: "Ecumenical Discussion in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
- flavor_brapru.31.entry: "$flavor_brapru.31.title$" #NEW
+ flavor_brapru.31.entry: "$flavor_brapru.31.title$"
  flavor_brapru.31.desc: "As a protest to the unjust actions of the [ShowReligionAdjective('catholic')] Church, many different independent churches have formed, most of them following either [ShowReligionAdjective('lutheran')] or [ShowReligionAdjective('calvinist')] traditions. With both of those faiths present in the country, [opposing_religion.GetAdjectiveWithNoTooltip] [ShowEstateTypeName('clergy_estate')] have begun calling for more tolerant treatment and for ecumenical talks with the state religion, hoping to bring the two churches closer together."
  flavor_brapru.31.historical_info: "The Berliner Religious Talks were held from September of 1662 to May of 1663. The goal of those meetings was to bring the Lutheran and the Calvinist faiths closer together and to promote Ecumenism. The catalyst to those events were the actions of the Elector of Brandenburg, Frederick Wilhelm, who was a Calvinist ruler of a mostly Lutheran country."
  flavor_brapru.31.a: "Let them convene."
@@ -217,7 +214,7 @@
  PRU_every_pop_of_other_protestant_denomination: "Every [pop|e] of [opposing_religion.GetAdjective] denomination gains [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]."
 
  flavor_brapru.32.title: "Das Toleranzedikt"
- flavor_brapru.32.entry: "$flavor_brapru.32.title$" #NEW
+ flavor_brapru.32.entry: "$flavor_brapru.32.title$"
  flavor_brapru.32.desc: "The ecumenical talks between the [ShowReligionAdjective('lutheran')] and [ShowReligionAdjective('calvinist')] faiths have been somewhat successful. While they certainly have led to greater sense of unity in the Protestant world, much of our [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] remains intolerant and contrarian to the idea. In such case, the [opposing_religion.GetAdjectiveWithNoTooltip] believers have begun calling for a tolerance edict, enforcing the tolerance of their faith in the [ROOT.GetCountry.GetFlavorRank]."
  flavor_brapru.32.historical_info: "On 16th of September of 1664, the Elector of Brandenburg, Frederick Wilhelm, issued the Edict of Tolerance. As per the issued edict, the mutual criticism of the Lutheran and the Calvinist churches have been banned much to the discontent of the established Lutheran clergy, who were furious about the Calvinist Elector's encroachment against the state Church."
  flavor_brapru.32.a: "Issue the edict."
@@ -232,14 +229,14 @@
  flavor_brapru.33.historical_info: "Frederick II of Prussia was given the name Frederick the Great, but that was not the only title he was known for. In Germany, he is fondly remembered as #italic Der Kartoffelkönig#! - the Potato King. Frederick played a key role in popularizing the potato in 18th-century Germany. He allegedly ordered the cultivation of royal potato fields and had them guarded by soldiers not to protect them, but to give the impression that they were valuable. By feigning scarcity and exclusivity, peasants started to assume the crop must be precious. Some even began to steal potatoes at night, helping to spread its cultivation across Prussia."
  
  flavor_brapru.34.title: "Planned Settlements"
- flavor_brapru.34.entry: "$flavor_brapru.34.title$" #NEW
+ flavor_brapru.34.entry: "$flavor_brapru.34.title$"
  flavor_brapru.34.desc: "An ambitious proposal to solve the issue of sparsely populated areas in [ROOT.GetCountry.GetName] has reached the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. The proposed [ShowGovernmentReformName('peuplierung_system')] would be a [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]-controlled initiative to settle these lands. The proposal includes generous offers of religious tolerance, tax exemptions, and state-sponsored support for willing migrants, especially skilled foreign workers and persecuted religious communities."
  flavor_brapru.34.a: "Let them come!"
  flavor_brapru.34.b: "This policy will weaken our control."
  flavor_brapru.34.historical_info: "#italic Peuplierung#! was was a crown-driven settlement policy practiced across Prussia in in the 17th and 18th centuries. It aimed to repopulate areas ravaged by war and disease by offering incentives to immigrants. Frederick the Great famously proclaimed that he would welcome people of all faiths in Prussia, as long as the people who profess them are honest."
 
  flavor_brapru.35.title: "The Last Will of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- flavor_brapru.35.entry: "$flavor_brapru.35.title$" #NEW
+ flavor_brapru.35.entry: "$flavor_brapru.35.title$"
  flavor_brapru.35.desc: "Our aging [ROOT.GetCountry.GetGovernment.GetRulerTitle] has decided to write down the last will which has shocked the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_ruler.GetName] has declared that [target_ruler.GetHisHer] younger son [favorite_child.GetName] should succeed [target_ruler.GetHimHer], ignoring the well-established tradition of primogeniture. [target_ruler.GetSheHe|U] argues in the document that [target_heir.GetName] lacks the virtues of leadership, while [favorite_child.GetNameWithNoTooltip] has the temperance and wisdom to rule. Many fear that if this is accepted, [ShowEstateTypeName('nobles_estate')] might be greatly upset."
  flavor_brapru.35.a: "Honor [target_ruler.GetHisHer] will."
  flavor_brapru.35.a.entry: "Honor his will." #NEW
@@ -247,7 +244,7 @@
  flavor_brapru.35.historical_info: "Friedrich I, the first Hohenzollern Elector of Brandenburg, made waves with his controversial will by naming his second son, Friedrich II, as his successor instead of his firstborn. This decision broke with the law of primogeniture, which dictated that the eldest male heir should inherit all titles and lands."
 
  flavor_brapru.36.title: "Combating the Plagues"
- flavor_brapru.36.entry: "$flavor_brapru.36.title$" #NEW
+ flavor_brapru.36.entry: "$flavor_brapru.36.title$"
  flavor_brapru.36.desc: "The recurring plagues that ravage [ROOT.GetCountry.GetName] have long troubled us, but recently a proposal to establish a quarantine site outside of [ShowLocationName('berlin')]'s walls has been brought up. The invisioned [ShowBuildingTypeName('charite_of_berlin')] would combine the charitable mission of combating plague and disease with the scientific ambition."
  flavor_brapru.36.a: "Approve the proposal."
  flavor_brapru.36.b: "We cannot afford it."
@@ -255,11 +252,8 @@
  
  flavor_brapru.37.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.37.entry: "Alexander von Humboldt" #NEW
-# flavor_brapru.37.desc: "A scientist with remarkable intellect and unquenchable curiosity, [target_character.GetName], is gaining fame across [ROOT.GetCountry.GetName]. Trained as a mining engineer, [target_character.GetLastNameWithNoTooltip] has developed a passion for scientific exploration, geography, and the study of nature. [target_character.GetSheHe|U] has recently suggested expeditions to faraway lands aim to catalogue the world's ecosystems and climates as a single interrelated system, but he lacks funding for launching them." #OLD
  flavor_brapru.37.desc: "A scientist with remarkable intellect and unquenchable curiosity, [target_character.GetName], is gaining fame across [ROOT.GetCountry.GetName]. Trained as a mining engineer, [target_character.GetLastNameWithNoTooltip] has developed a passion for scientific exploration, geography, and the study of nature. He has recently suggested expeditions to faraway lands aim to catalogue the world's ecosystems and climates as a single interrelated system, but he lacks funding for launching them." #NEW
-# flavor_brapru.37.a: "Fund [target_character.GetHisHer] expeditions!" #OLD
  flavor_brapru.37.a: "Fund his expeditions!" #NEW
-# flavor_brapru.37.b: "Let private patrons finance [target_character.GetHisHer] wanderlust." #OLD
  flavor_brapru.37.b: "Let private patrons finance his wanderlust." #NEW
  flavor_brapru.37.historical_info: "Alexander von Humboldt was a polymath, geographer, botanist, geologist, and pioneer of ecology. His five-year Latin American expedition transformed global understanding of climate zones, the interrelation of ecosystems, and geology. His extensive researched helped lay the groundwork for environmental science."
  
@@ -274,46 +268,35 @@
  
  flavor_brapru.39.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.39.entry: "Georg Wilhelm Friedrich Hegel" #NEW
-# flavor_brapru.39.desc: "[target_character.GetName] is a formidable thinker who has been gaining fame for [target_character.GetHisHer] opposition of the entrenched dualism of modern thought. Instead, [target_character.GetLastNameWithNoTooltip] attempts to build a philosophy of immanence grounded in experience and reason, confronting contradiction not as failure, but as the motor of development. [target_character.GetSheHe|U] maintains that human freedom and reason are not given but won through history." #OLD
  flavor_brapru.39.desc: "[target_character.GetName] is a formidable thinker who has been gaining fame for his opposition of the entrenched dualism of modern thought. Instead, [target_character.GetLastNameWithNoTooltip] attempts to build a philosophy of immanence grounded in experience and reason, confronting contradiction not as failure, but as the motor of development. He maintains that human freedom and reason are not given but won through history." #NEW
-# flavor_brapru.39.a: "[target_character.GetHisHer|U] thought shall guide us!" #OLD
  flavor_brapru.39.a: "His thought shall guide us!" #NEW
  flavor_brapru.39.b: "These abstractions are not fit for statecraft."
  flavor_brapru.39.historical_info: "Georg Wilhelm Friedrich Hegel was an important German idealist who sought to overcome the false oppositions of modern philosophy, such as the conflicts of reason and emotion, freedom and necessity, or mind and body. He insisted that truth must emerge from the immanent critique of ideas themselves, not from externally imposed premises. His philosophy had enormous impact on subsequent philosophical ideas which were developed by numerous philosophers whom he had influenced."
  
  flavor_brapru.40.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.40.entry: "Anna Dorothea Therbusch" #NEW
-# flavor_brapru.40.desc: "[target_character.GetName] has been rising to prominence in the world of art. [target_character.GetHisHer|U] work, a blend of baroque grandeur and [ShowInstitutionName('enlightenment')] sensibility, has earned admiration across [ShowContinentName('europe')]. Despite institutional barriers, [target_character.GetSheHe] has gained membership in various prestigious organizations, and now, [target_character.GetSheHe] wishes to return to [ShowLocationName('berlin')] and offers to become our [ROOT.GetCountry.GetGovernment.GetCourtTitle] painter." #OLD
  flavor_brapru.40.desc: "[target_character.GetName] has been rising to prominence in the world of art. Her work, a blend of baroque grandeur and [ShowInstitutionName('enlightenment')] sensibility, has earned admiration across [ShowContinentName('europe')]. Despite institutional barriers, she has gained membership in various prestigious organizations, and now, she wishes to return to [ShowLocationName('berlin')] and offers to become our [ROOT.GetCountry.GetGovernment.GetCourtTitle] painter." #NEW
-# flavor_brapru.40.a: "Hire [target_character.GetHerHim]." #OLD
  flavor_brapru.40.a: "Hire her." #NEW
  flavor_brapru.40.b: "Women should stay away from art."
  flavor_brapru.40.historical_info: "Anna Dorothea Therbusch broke through rigid artistic and gender barriers to become one of the most accomplished portrait painters of her generation, at a time when few women could receive formal training. Invited to Paris, she joined the Royal Academy and created portraits of Enlightenment figures and nobility alike. When she returned to Prussia, she became the portrait artist of Frederick the Great and also decorated his palace of Sanssouci."
  
  flavor_brapru.41.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.41.entry: "Christian Wolff" #NEW
-# flavor_brapru.41.desc: "[target_character.GetName] is a philosopher famous for [target_character.GetHerHis] systematization of knowledge, proposing a logical, almost mathematical structure to theology, ethics, politics, and even metaphysics. Though quite controversial for [target_character.GetHerHis] earlier clashes with the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], for which he was even exiled, [target_character.GetHerHis] rehabilitation may well guide our bureaucrats, jurists, and even the [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #OLD
  flavor_brapru.41.desc: "[target_character.GetName] is a philosopher famous for his systematization of knowledge, proposing a logical, almost mathematical structure to theology, ethics, politics, and even metaphysics. Though quite controversial for his earlier clashes with the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], for which he was even exiled, his rehabilitation may well guide our bureaucrats, jurists, and even the [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #NEW
-# flavor_brapru.41.a: "Rehabilitate [target_character.GetHerHim]." #OLD
  flavor_brapru.41.a: "Rehabilitate him." #NEW
-# flavor_brapru.41.b: "[target_character.GetSheHe|U] is too controversial to be employed." #OLD
  flavor_brapru.41.b: "He is too controversial to be employed." #NEW
  flavor_brapru.41.historical_info: "Christian Wolff was one of the central figures of German Enlightenment philosophy. Known for his encyclopedic writings and advocacy of rationalist method, he sought to apply reason to all branches of knowledge. Despite early clashes with religious authorities, his legacy was rehabilitated under Frederick the Great, and he became a cornerstone of Prussian intellectual life, greatly influencing Prussian rulers who sought rational statecraft."
  
  flavor_brapru.42.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.42.entry: "Kurt von Schwerin" #NEW
-# flavor_brapru.42.desc: "Our military officers have been praising [target_character.GetName] as a great commander who has greatly contributed to several of our victories through [target_character.GetHerHis] unmatched command in the field. [target_character.GetHerHis|U] presence inspires our men and reminds friend and foe alike that [ROOT.GetCountry.GetAdjective] arms are forged by more than monarchs. It has been suggested that we give [target_character.GetHerHim] a promotion to general so that our army can better benefit from [target_character.GetHerHis] skills." #OLD
  flavor_brapru.42.desc: "Our military officers have been praising [target_character.GetName] as a great commander who has greatly contributed to several of our victories through his unmatched command in the field. His presence inspires our men and reminds friend and foe alike that [ROOT.GetCountry.GetAdjective] arms are forged by more than monarchs. It has been suggested that we give him a promotion to general so that our army can better benefit from his skills." #NEW
-# flavor_brapru.42.a: "Promote [target_character.GetHerHim] to give [target_character.GetHerHim] greater command." #OLD
  flavor_brapru.42.a: "Promote him to give him greater command." #NEW
  flavor_brapru.42.b: "We are not interested."
  flavor_brapru.42.historical_info: "Kurt von Schwerin rose through multiple European armies to become Field Marshal of Prussia. At the Battle of Mollwitz, his leadership arguably saved the young Frederick the Great's campaign. Fiercely loyal and unwavering in the face of danger, Schwerin was mortally wounded at Prague while personally rallying troops. He is widely regarded one of the most capable and dedicated generals of Frederick the Great."
  
  flavor_brapru.43.title: "[target_character.GetNameWithNoTooltip]"
  flavor_brapru.43.entry: "Andreas Schlüter" #NEW
-# flavor_brapru.43.desc: "As of late, the visual face of [ShowLocationName('berlin')] is being reshaped by [target_character.GetName], who is regarded as a great architect and a visionary. With mastery of both sculpture and architecture, [target_character.GetSheHe] fuses Baroque grandeur with military symbolism to reflect the might of our state. [target_character.GetSheHe|U] is praised for the ability to turn any building into a monument of sovereignty and power. Many suggest that we employ [target_character.GetHerHim] as a [ROOT.GetCountry.GetGovernment.GetCourtTitle] architect to let [target_character.GetHerHim] craft the image of a future [ROOT.GetCountry.GetName]." #OLD
  flavor_brapru.43.desc: "As of late, the visual face of [ShowLocationName('berlin')] is being reshaped by [target_character.GetName], who is regarded as a great architect and a visionary. With mastery of both sculpture and architecture, he fuses Baroque grandeur with military symbolism to reflect the might of our state. He is praised for the ability to turn any building into a monument of sovereignty and power. Many suggest that we employ him as a [ROOT.GetCountry.GetGovernment.GetCourtTitle] architect to let him craft the image of a future [ROOT.GetCountry.GetName]." #NEW
-# flavor_brapru.43.a: "Hire [target_character.GetHerHim]!" #OLD
  flavor_brapru.43.a: "Hire him!" #NEW
  flavor_brapru.43.b: "We cannot afford artistic extravagance."
  flavor_brapru.43.historical_info: "Andreas Schlüter served as both court sculptor and royal architect, reshaping Berlin into a symbol of emergent Prussian power. He sculpted military heroes into dynamic form at the Zeughaus and designed the Berlin Palace into a royal residence worthy of Europe's greatest monarchies."
@@ -331,25 +314,25 @@
  flavor_brapru.1001.a: "Regretable."
  
  flavor_brapru.1100.title: "A new residence for our [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- flavor_brapru.1100.entry: "$flavor_brapru.1100.title$" #NEW
+ flavor_brapru.1100.entry: "$flavor_brapru.1100.title$"
  flavor_brapru.1100.desc: "Our capital of [ShowLocationName('berlin')] deserves a fitting residence for a [ROOT.GetCountry.GetGovernment.GetRulerTitle]! With a new palace in the midst of the city, we could exert our control over the [ROOT.GetCountry.GetFlavorRank] a lot more quickly and work towards the disempowerment of the local estates. But there will be a certain risk to consider in the stance of the people of [ShowLocationNameWithNoTooltip('berlin')] towards this project."
  flavor_brapru.1100.a: "Build the Palace."
  flavor_brapru.1100.b: "Do not provoke the people."
 
  flavor_brapru.1101.title: "Berliner Unwille"
- flavor_brapru.1101.entry: "$flavor_brapru.1101.title$" #NEW
+ flavor_brapru.1101.entry: "$flavor_brapru.1101.title$"
  flavor_brapru.1101.desc: "Just as we feared, the local population of [ShowLocationName('berlin')] is rising up in opposition and makes demands to enshrine their privileges despite our god-given rights to rule over the city. We will need to decide if we want to push beyond their demands, or give into their demands for their privileges to be entrenched."
  flavor_brapru.1101.a: "Ignore the rabble."
  flavor_brapru.1101.b: "Reach a compromise with the Population."
 
  flavor_brapru.1200.title: "A Reform of Law"
- flavor_brapru.1200.entry: "$flavor_brapru.1200.title$" #NEW
+ flavor_brapru.1200.entry: "$flavor_brapru.1200.title$"
  flavor_brapru.1200.desc: "A state like ours needs to be adaptable to changes at all times. Now a promising candidate is rising through the ranks of our legal system, that could spearhead direly needed reforms of our legal system. This [target_character.GetName] has been working as the president of the #italic Kammergericht#! and has drafted plans to reform the legal system all over [ROOT.GetCountry.GetName]. If we support his efforts this could lead to a swift and radical reformation of our country."
  flavor_brapru.1200.a: "Support his reforms!"
  flavor_brapru.1200.b: "Rein his ambitions in."
  
  flavor_brapru.1201.title: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Legal System"
- flavor_brapru.1201.entry: "$flavor_brapru.1201.title$" #NEW
+ flavor_brapru.1201.entry: "$flavor_brapru.1201.title$"
  flavor_brapru.1201.desc: "Since our employment of [target_character.GetName] our legal system has undergone huge changes. Now is the time to codify these changes into a standardized legal code, that will guide all future generations on how the lands of [ROOT.GetCountry.GetName] will have to be administered. This will ensure the fair treatment of all our subjects according to one standard, instead of the local irregularities that were common occurrences previously."
  flavor_brapru.1201.a: "Implement it right away!"
  flavor_brapru.1201.b: "We will need to consider this carefully."
@@ -366,7 +349,7 @@
  flavor_brapru.1301.a: "We need to study it!"
  
  flavor_brapru.1400.title: "Without a Care"
- flavor_brapru.1400.entry: "$flavor_brapru.1400.title$" #NEW
+ flavor_brapru.1400.entry: "$flavor_brapru.1400.title$"
  flavor_brapru.1400.desc: "Our [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] has begun to experience an increase in the enlightened pursuit of the finer things in life, such as philosophy, art, and music. Our very own [ROOT.GetCountry.GetGovernment.GetRulerTitle] is often seen entertaining [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] guests with music composed by [ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself].\nHowever, these arrangements are not well suited for the busy court of [ROOT.GetCountry.GetCapital.GetName], constantly surrounded and interrupted by the daily tasks of the country. To this effect, we need a summer residence, sans souci, without a care, away from the busy court life in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] desires and [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] has already personally delegated the architect [target_artist.GetName] to draw up sketches for a modest one-story building, enveloped by a magnificent garden."
  flavor_brapru.1400.a: "Let [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] have [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] Sanssouci."
  flavor_brapru.1400.a.entry: "Let him have his Sanssouci." #NEW
@@ -374,7 +357,7 @@
  flavor_brapru.1400.b.entry: "The ruler already has a home in the capital." #NEW
 
  flavor_brapru.1401.title: "Sanssouci Palace"
- flavor_brapru.1401.entry: "$flavor_brapru.1401.title$" #NEW
+ flavor_brapru.1401.entry: "$flavor_brapru.1401.title$"
  flavor_brapru.1401.desc: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] has been jubilant ever since the construction of [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] summer palace was completed and the vision of [target_character.GetName] realized. Provided that [target_character.GetNameWithNoTooltip] is not involved in the most pressing matters of state [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] will spend [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] Summer days in the new residence, entertaining the brightest minds of our era, be it over political debate or philosophical discussion. The social elite of [ROOT.GetCountry.GetName] are very impressed by this new palace and will be interested in spending their time from now on in the immediate area around [potsdam_province.GetName]."
  flavor_brapru.1401.a: "A new center of culture for [ROOT.GetCountry.GetNameWithNoTooltip] is born."
  flavor_brapru.1401.a.entry: "A new center of culture for us is born." #NEW
@@ -388,31 +371,27 @@
  flavor_brapru.1500.c: "This needs no investment."
 
  flavor_brapru.1501.title: "Oder-Spree Canal brings Prosperity"
- flavor_brapru.1501.entry: "$flavor_brapru.1501.title$" #NEW
+ flavor_brapru.1501.entry: "$flavor_brapru.1501.title$"
  flavor_brapru.1501.desc: "We have completed the Canal connecting the Oder and Spree Rivers! Shortly after the inauguration was completed by the [ROOT.GetCountry.GetGovernment.GetRulerTitle] the positive effects on the Economy of both [ShowLocationName('berlin')] and [ShowLocationName('lebus')] are noticeable. The Canal seems to be an astonishing success in revitalizing the local economy of [ROOT.GetCountry.GetName]."
  flavor_brapru.1501.a: "Long live [target_character.GetNameWithNoTooltip] and [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] Canal!"
  flavor_brapru.1501.a.entry: "Long live him and his Canal!" #NEW
 
  flavor_brapru.1600.title: "Financial Prerogatives of the Kreditwerk"
- flavor_brapru.1600.entry: "$flavor_brapru.1600.title$" #NEW
+ flavor_brapru.1600.entry: "$flavor_brapru.1600.title$"
  flavor_brapru.1600.desc: "Our poor financial reserves leave our [ROOT.GetCountry.GetLongName] in a precarious financial position, with few options being available to us in case of emergency. The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] have now approached us with a proposal to alleviate this problem. By granting them further rights over the royal Finances, they would lend their support in times of need. However, this privilege would further entrench the reliance of [target_character.GetName] on the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [ROOT.GetCountry.GetNameWithNoTooltip]. At the moment we have no choice but to give in to them, but we should be wary of opportunities in the future to revert the Kreditwerks status."
  flavor_brapru.1600.a: "Empower the Kreditwerk."
 
  flavor_brapru.1601.title: "The Bankruptcy of the Kreditwerk"
- flavor_brapru.1601.entry: "$flavor_brapru.1601.title$" #NEW
+ flavor_brapru.1601.entry: "$flavor_brapru.1601.title$"
  flavor_brapru.1601.desc: "Despite the Powers granted to the Kreditwerk, the Institution managed to go into heavy debt, mismanaging our finances to a large degree. Since we are now faced with the immediate bankruptcy of the Kreditwerk, we will have to make a decision regarding its future. There are multiple factions forming within the ranks of our advisors, some advising it to reform the Kreditwerk and put it under the direct administration of the crown, while others recommend the total abolishment of the Institution."
-# flavor_brapru.1601.a: "Reform the Institution under the crown" #OLD
  flavor_brapru.1601.a: "Reform the Institution under the crown." #NEW
  flavor_brapru.1601.b: "Let's get rid of this evil."
  flavor_brapru.1601.c: "Bail it out and let it continue."
 
  flavor_brapru_teu.1.title: "Pawning of [ShowProvinceDefinitionNameWithNoTooltip('neumark_province')]"
  flavor_brapru_teu.1.entry: "Pawning of Neumark Province" #NEW
-# flavor_brapru_teu.1.desc: "Our eastern territories in [ShowProvinceDefinitionName('neumark_province')] are too far for us to properly control from the confines of our capital. Infested with rampant robber barons, perhaps it would be beneficial for us to pawn them off to another entity that would not have a natural interest in our territories and could, therefore, be trusted." #OLD
  flavor_brapru_teu.1.desc: "Our eastern territories in [ShowProvinceDefinitionName('neumark_province')] are too far for us to properly control from the confines of our capital. Infested with rampant Robber Barons, perhaps it would be beneficial for us to pawn them off to another entity that would not have a natural interest in our territories and could, therefore, be trusted." 
-# flavor_brapru_teu.1.historical_info: "The province of Neumark, constantly troubled with robber barons, was pawned off to the Teutonic Order in 1402. It was hoped that the order would be able to curb local crime, but was unable to do so and the province remained impoverished until it was eventually sold back to the Brandenburgian Electors in the 1450s." #OLD
  flavor_brapru_teu.1.historical_info: "The province of Neumark, constantly troubled with Robber Barons, was pawned off to the Teutonic Order in 1402. It was hoped that the order would be able to curb local crime, but was unable to do so and the province remained impoverished until it was eventually sold back to the Brandenburgian Electors in the 1450s." 
-# flavor_brapru_teu.1.a: "Pawn it off to the [GetCountry('TEU').GetNameWithNoTooltip]" #OLD
  flavor_brapru_teu.1.a: "Pawn it off to [GetCountry('TEU').GetNameWithNoTooltip]." #NEW
  flavor_brapru_teu.1.a.entry: "Pawn it off to the $TEU$." #NEW
  flavor_brapru_teu.1.b: "We will deal with them ourselves."
@@ -421,8 +400,7 @@
  TEU_rejected_sale: "Rejected Purchase"
 
  flavor_brapru_teu.2.title: "$flavor_brapru_teu.1.title$"
- flavor_brapru_teu.2.entry: "$flavor_brapru_teu.2.title$" #NEW
-# flavor_brapru_teu.2.desc: "The [teu_from.GetLongName] are clearly too incompetent to deal with the robber barons in their eastern territories within [ShowProvinceDefinitionName('neumark_province')]. In their attempt to flee from this problem, they have offered us the province for an ample sum of gold." #OLD
+ flavor_brapru_teu.2.entry: "$flavor_brapru_teu.2.title$"
  flavor_brapru_teu.2.desc: "The [teu_from.GetLongName] are clearly too incompetent to deal with the Robber Barons in their eastern territories within [ShowProvinceDefinitionName('neumark_province')]. In their attempt to flee from this problem, they have offered us the province for an ample sum of gold." 
  flavor_brapru_teu.2.historical_info: "$flavor_brapru_teu.1.historical_info$"
  flavor_brapru_teu.2.a: "We will accept."
@@ -431,24 +409,22 @@
  flavor_brapru_teu.3.title: "The Fate of [ShowProvinceDefinitionNameWithNoTooltip('neumark_province')]"
  flavor_brapru_teu.3.entry: "The Fate of Neumark Province" #NEW
  flavor_brapru_teu.3.desc: "Having bought [ShowProvinceDefinitionName('neumark_province')] all these years ago, we were not able to successfully stomp the issues permeating the province. Instead, the only benefit we have stood to gain from the area is it standing as our rallying point for mercenaries arriving from the West."
-# flavor_brapru_teu.3.historical_info: "The province of Neumark, constantly troubled with robber barons, was pawned off to the Teutonic Order in 1402 by the Brandenburgian electors. Under the rule of the Order, the province remained impoverished and the Master of the Order, after trying to sell it to Poland, managed to sell it back to Brandenburg in 1455 as part of the Treaties of Cölln and Mewe." #OLD
  flavor_brapru_teu.3.historical_info: "The province of Neumark, constantly troubled with Robber Barons, was pawned off to the Teutonic Order in 1402 by the Brandenburgian electors. Under the rule of the Order, the province remained impoverished and the Master of the Order, after trying to sell it to Poland, managed to sell it back to Brandenburg in 1455 as part of the Treaties of Cölln and Mewe." 
  flavor_brapru_teu.3.a: "We should consider selling it back to [GetCountry('BRA').GetNameWithNoTooltip]."
  flavor_brapru_teu.3.a.entry: "We should consider selling it back to $BRA$." #NEW
  flavor_brapru_teu.3.b: "Or perhaps [GetCountry('POL').GetNameWithNoTooltip] would be better."
  flavor_brapru_teu.3.b.entry: "Or perhaps $POL$ would be better." #NEW
  flavor_brapru_teu.3.c: "What is ours is ours."
+ variable_bought_neumark_tt: "The Neumark has been Purchased" #NEW
  TEU_sell_neumark_back_to_brandenburg: "We will offer [GetCountry('BRA').GetName] the following locations, if they accept:"
  TEU_sell_neumark_back_to_poland: "We will offer [GetCountry('POL').GetName] the following locations, if they accept:"
 
  flavor_brapru_teu.4.title: "Treaty of Cölln"
-# flavor_brapru_teu.4.desc: "Decades ago, we sold [ShowProvinceDefinitionName('neumark_province')] to [teu_from.GetName], hoping to get rid of the robber baron problem that has been hurting our prestige and that gave us more problems than good. After all these years, the [teu_from.GetAdjectiveWithNoTooltip] state not only did not solve the problem, but it also increased poverty in the province. Having given up on their exposed flank, they are offering the lands back to us." #OLD
  flavor_brapru_teu.4.desc: "Decades ago, we sold [ShowProvinceDefinitionName('neumark_province')] to [teu_from.GetName], hoping to get rid of the Robber Baron problem that has been hurting our prestige and that gave us more problems than good. After all these years, the [teu_from.GetAdjectiveWithNoTooltip] state not only did not solve the problem, but it also increased poverty in the province. Having given up on their exposed flank, they are offering the lands back to us." 
  flavor_brapru_teu.4.desc_other: "We have received an offer of province sale from an unlikely source - the [teu_from.GetLongName]. The area in question is [ShowProvinceDefinitionName('neumark_province')] - we should seriously consider that offer."
  flavor_brapru_teu.4.historical_info: "$flavor_brapru_teu.3.historical_info$"
  flavor_brapru_teu.4.a: "Gross incompetence... We will accept."
  flavor_brapru_teu.4.b: "A conquest would be less expensive."
-# flavor_brapru_teu.4.c: "It is still full of robber barons!" #OLD
  flavor_brapru_teu.4.c: "It is still full of Robber Barons!" 
 
  flavor_brapru_teu.5.title: "Our Offer Refused"
@@ -456,7 +432,7 @@
  flavor_brapru_teu.5.a: "That is simply too bad."
 
  flavor_brapru.1800.title: "Trouble on the Throne"
- flavor_brapru.1800.entry: "$flavor_brapru.1800.title$" #NEW
+ flavor_brapru.1800.entry: "$flavor_brapru.1800.title$"
  flavor_brapru.1800.desc: "The throne room of [pru_from.GetName] has been chaotic lately. Several incompetent decisions on part of the [pru_from.GetGovernment.GetRulerTitle] and [our_ruler.GetHerHis] courtiers have led to a crisis which threatens the very integrity of the state. In this case, the estates of [pru_from.GetNameWithNoTooltip] have begun looking towards foreign candidates, including [target_character.GetNameWithNoTooltip]."
  flavor_brapru.1800.a: "Truly, [target_character.GetNameWithNoTooltip] must rule us."
  flavor_brapru.1800.a.entry: "Truly, he must rule us." #NEW
@@ -474,6 +450,7 @@
  flavor_brapru.1802.desc: "The challenges of ruling a country are all but few. While most are ready to face such hard tasks, some fail to live up to the pressure. Clearly, one of such people was [insane_individual.GetName], as [insane_individual.GetSheHe] has begun to show signs of mental decline. Most members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and of the estates have declared [insane_individual.GetHerHim] as unfit to rule."
  flavor_brapru.1802.a: "Only [proposed_regent.GetNameWithNoTooltip] can help us."
  flavor_brapru.1802.a.entry: "Only he can help us." #NEW
+ variable_insanity_cooldown_tt: "Mental Illness has Recently Afflicted the Dynasty" #NEW
 
  flavor_brapru.1803.title: "$flavor_brapru.1802.title$"
  flavor_brapru.1803.desc: "We have received word from our subject in [pru_from.GetName] of their political woes. Their government has been left without a ruler due to the mental decline of [insane_individual.GetName]. In those dark times, they have reached out to their kinsman, [proposed_regent.GetName]. Should [proposed_regent.GetNameWithNoTooltip] become the regent, a personal union would form, leading to troubles on the horizon for us. We could impose our own regent, but that would be met with outrage in [pru_from.GetNameWithNoTooltip]."
@@ -484,7 +461,7 @@
  flavor_brapru.1804.title: "Rule in [pru_from.GetNameWithNoTooltip]"
  flavor_brapru.1804.desc: "[proposed_regent.GetName] has safely arrived in [pru_from.GetCapital.GetName], the capital of [pru_from.GetName], and a ceremony has been held, turning [proposed_regent.GetHimHer] into the regent of the state and, in practice, forming a Personal Union between [ROOT.GetCountry.GetName] and [pru_from.GetNameWithNoTooltip]. However, this means that [proposed_regent.GetNameWithNoTooltip] must now swear allegiance to the [pru_from.GetDiplomacy.GetOverlord.GetLongName] for [proposed_regent.GetHisHer] newly acquired territories."
  flavor_brapru.1804.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_brapru.1804.a.entry: "$common_string_brilliant$" #NEW
+ flavor_brapru.1804.a.entry: "$common_string_brilliant$"
  PRU_we_have_formed_personal_union_with_PRU_subject: "We have formed a [union|e] with [pru_from.GetName]."
 
  flavor_brapru.1805.title: "[intervening_tag.GetAdjectiveWithNoTooltip] Intervention"
@@ -493,12 +470,12 @@
  PRU_poland_enforced_regent: "[intervening_tag.GetName] forced their regent on [pru_from.GetName]. A [union|e] with [pru_from.GetName] will not form."
 
  flavor_brapru.1806.title: "$flavor_brapru.1805.title$"
- flavor_brapru.1806.entry: "$flavor_brapru.1806.title$" #NEW
+ flavor_brapru.1806.entry: "$flavor_brapru.1806.title$"
  flavor_brapru.1806.desc: "[pru_from.GetAdjective] overlords in [intervening_tag.GetName] have caught a glimpse of their troubles and their invitation of [proposed_regent.GetName]. Having determined it is their right to appoint the regent, they have sent [proposed_regent_of_poland.GetShortName], who has become the new [pru_from.GetGovernment.GetRulerTitle]. We have essentially been barred from acquiring a new [pru_from.GetFlavorRank] in the east. They shall know our wrath!"
  flavor_brapru.1806.a: "They will be punished for meddling!"
 
  flavor_brapru.1807.title: "Treaty of [wehlau_loc.GetNameWithNoTooltip]"
- flavor_brapru.1807.entry: "Treaty of Wehlau Loc" #NEW
+ flavor_brapru.1807.entry: "Treaty of Wehlau" #NEW
  flavor_brapru.1807.desc: "Since our succession in [GetCountry('PRU').GetName], we have been slowly gaining in power relative to our partial suzerain in [GetCountry('PRU').GetDiplomacy.GetOverlord.GetName]. Today, as our relative power to the [GetCountry('PRU').GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip] is more favorable than ever, we should propose a treaty between two nations, offering the [GetCountry('PRU').GetDiplomacy.GetOverlord.GetAdjectiveWithNoTooltip] the promise of peace in return for them renouncing [GetCountry('PRU').GetNameWithNoTooltip] as their subject."
  flavor_brapru.1807.historical_info: "The Treaty of Wehlau was a humiliating pact between the Kingdom of Poland and the Hohenzollern Duchy of Prussia, whereas the former have rescinded their overlordship over the latter, receiving Hohenzollern military support against the Swedes in return. The catalyst of this treaty was the catastrophic invasion of Poland, known as the #italic Swedish Deluge#!."
  flavor_brapru.1807.a: "Let us propose the notion."
@@ -518,19 +495,19 @@
  flavor_brapru.1809.desc_failure: "Much to their own dismay, [overlord_of_prussia.GetName] have refused to sign the proposed treaty and as such, we will have to make them face the consequences of their actions. Having proven to the world of our intentions to resolve the matter amicably, we are free to go to war."
  flavor_brapru.1809.historical_info: "$flavor_brapru.1807.historical_info$"
  flavor_brapru.1809.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_brapru.1809.a.entry: "$common_string_brilliant$" #NEW
+ flavor_brapru.1809.a.entry: "$common_string_brilliant$"
  flavor_brapru.1809.b: "Rather unfortunate for [GetCountry('PRU').GetDiplomacy.GetOverlord.GetNameWithNoTooltip]."
  flavor_brapru.1809.b.entry: "Rather unfortunate for their overlord." #NEW
 
  flavor_brapru.1810.title: "An Offer of Regency"
- flavor_brapru.1810.entry: "$flavor_brapru.1810.title$" #NEW
+ flavor_brapru.1810.entry: "$flavor_brapru.1810.title$"
  flavor_brapru.1810.desc: "The mental decline of the [pru_from.GetAdjective] [insane_individual.GetName] has led to the [pru_from.GetAdjectiveWithNoTooltip] [pru_from.GetGovernment.GetCourtTitle] struggling to find a regent to rule the country in [insane_individual.GetHerHis] stead. Should they fail to do so, they run the risk of chaos and lawlessness. That is why they have chosen the only sensible candidate for the regency, [insane_individual.GetHerHis] kin, [proposed_regent.GetName], to do that. We see little reasons to deny this offer, though it could put us at risk of war with their overlords in [pru_from.GetDiplomacy.GetOverlord.GetName]."
  flavor_brapru.1810.a: "Indeed, we could do that."
  flavor_brapru.1810.b: "This might get us into unnecessary conflict."
  PRU_our_chance_to_get_union: "This will lead to a [union|e] between the two nations."
 
  flavor_brapru.1811.title: "Secularization of the [ROOT.GetCountry.GetFlavorRank]"
- flavor_brapru.1811.entry: "$flavor_brapru.1811.title$" #NEW
+ flavor_brapru.1811.entry: "$flavor_brapru.1811.title$"
  flavor_brapru.1811.desc: "With the Reformation in full swing, we have made the hard choice to convert away from [ShowReligionName('catholic')] to [ROOT.GetCountry.GetReligion.GetName]. Since then, we have been left with more questions than answers. Nobody, not a single soul, seems to know who is our true suzerain, what mission we are on, and what even the aspects of our faith are. Does the existence of the [ROOT.GetCountry.GetLongName] still make sense?"
  flavor_brapru.1811.historical_info: "In 1525, the Catholic Teutonic Order has been secularized into a Lutheran Duchy by grandmaster Albert of Hohenzollern. The former grandmaster held homage to the King of Poland and was permitted to continue ruling as a Duke of Prussia. It was the first instance of an open adoption of Lutheranism as a state religion."
  flavor_brapru.1811.a: "Times have changed."
@@ -569,16 +546,17 @@
 # flavor_brapru.1904.c: "There is no need for further punishment." #DELETE
  
  flavor_brapru.2000.title: "The Reconstruction Period"
- flavor_brapru.2000.entry: "$flavor_brapru.2000.title$" #NEW
+ flavor_brapru.2000.entry: "$flavor_brapru.2000.title$"
  flavor_brapru.2000.desc: "The recent turmoil over the succession in [ROOT.GetCountry.GetName] has come to an end. We have seen what the neglection of responsibilities can lead to, and if we are to retain the [root_dynasty.GetName] on the throne, we must do everything in our power to prevent such crisis from ever happening again. The [ROOT.GetCountry.GetFlavorRank] lies ravaged by feuds and weakened by uncertain loyalties. It is time to rebuild."
  flavor_brapru.2000.a: "Let us reconcile with the estates first."
  flavor_brapru.2000.b: "Focus on reasserting our rule."
  flavor_brapru.2000.c: "Prioritize the [ROOT.GetCountry.GetFlavorRank]'s stabilization."
  flavor_brapru.2000.c.entry: "Prioritize the realm's stabilization." #NEW
  flavor_brapru.2000.d: "We must work on modernization."
+ had_turmoil_in_brandenburg_disaster_variable_tt: "Brandenburg has had the Turmoil in Brandenburg Disaster" #NEW
  
  flavor_brapru.2001.title: "Reversal of Allegiances"
- flavor_brapru.2001.entry: "$flavor_brapru.2001.title$" #NEW
+ flavor_brapru.2001.entry: "$flavor_brapru.2001.title$"
  flavor_brapru.2001.desc: "With our rule asserted over [ROOT.GetCountry.GetName], our diplomatic stance has ben called into question. Although we had previously relied on our old allies, such as [target_country.GetName], many believe that the recent events might have made them cautious, and that our old enemies may become useful partners."
  flavor_brapru.2001.a: "Let us seek an alliance with [emperor_country.GetNameWithNoTooltip]."
  flavor_brapru.2001.a.entry: "Let us seek an alliance with them." #NEW

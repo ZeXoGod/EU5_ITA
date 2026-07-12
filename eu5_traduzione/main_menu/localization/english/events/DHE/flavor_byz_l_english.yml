@@ -4,57 +4,54 @@
  flavor_byz.1.desc: "Desiderose di vendicare il leggendario tradimento dei Crociati, le truppe [ROOT.GetCountry.GetAdjective] non risparmiarono nessuno mentre calavano sulla città un tempo grande di [ShowLocationName('venice')]. La missione dei generali imperiali è sempre stata chiara, tutte le famiglie patrizie devono essere private delle loro proprietà e dei loro onori, e i tesori che un tempo furono rubati dalla città del desiderio del mondo devono essere restituiti.\n\nQuando giunse il momento della discesa degli eserciti [ROOT.GetCountry.GetAdjectiveWithNoTooltip] sulla Città dell'Acqua, le cose divennero più orribili di quanto chiunque avesse immaginato. Una vita di guerra non favorisce la gentilezza in nessuno e, con comandanti ansiosi di vedere la città bruciare, i soldati [ROOT.GetCountry.GetAdjectiveWithNoTooltip] intrapresero una campagna di devastazione lunga diversi giorni e saccheggiarono chiese, palazzi e persino l'arsenale veneziano."
  flavor_byz.1.a: "Oderint dum metuant."
  flavor_byz.1.b: "Fermiamo il saccheggio!"
+ variable_venice_acquired_peacefully_variable_tt: "[ShowLocationName('venice')] was Acquired Peacefully" #NEW
  STATIC_MODIFIER_NAME_chastening_of_venice: "Castigo di Venice"
  STATIC_MODIFIER_DESC_chastening_of_venice: "Il saccheggio e la distruzione subiti dalla città di Venice quando passò sotto il controllo bizantino vi hanno lasciato un segno duraturo."
 
  flavor_byz.2.title: "Athens riconquistata!"
  flavor_byz.2.entry: "$flavor_byz.2.title$" 
  flavor_byz.2.desc: "Per secoli [ShowLocationName('athens')] fu un centro della cultura e dell'arte [ROOT.GetCountry.GetAdjectiveWithNoTooltip] finché non venne perduta a favore dei Latini nella Quarta Crociata. Più di recente, la città è stata la capitale di un ducato indipendente governato da varie famiglie occidentali. Tuttavia, quel tempo è finito, e per la prima volta dal 1204 [ShowLocationNameWithNoTooltip('athens')] fa di nuovo parte del [ROOT.GetCountry.GetLongName]."
- flavor_byz.2.desc_hellenic: "The sacred city of [ShowLocationName('athens')], birthplace of philosophy and the ancient wisdom, has returned to those who honor the old gods. For a [ShowReligionAdjective('hellenism_religion')] [ROOT.GetCountry.GetFlavorRank], this is as much a spiritual triumph as a military one — the city of Athena herself is once again ours." #NEW
- flavor_byz.2.desc_other: "The ancient city of [ShowLocationName('athens')], long a cultural heart of the old world, has returned to [ROOT.GetCountry.GetAdjective] control after centuries of foreign rule. For the first time since 1204, [ShowLocationNameWithNoTooltip('athens')] is once again part of the [ROOT.GetCountry.GetLongName]." #NEW
+ flavor_byz.2.desc_hellenic: "La città sacra di [ShowLocationName('athens')], culla della filosofia e dell'antica saggezza, è tornata a coloro che onorano gli antichi dei. Per un [ROOT.GetCountry.GetFlavorRank] [ShowReligionAdjective('hellenism_religion')], questo è tanto un trionfo spirituale quanto militare — la città di Athena stessa è di nuovo nostra." #NEW
+ flavor_byz.2.desc_other: "L'antica città di [ShowLocationName('athens')], a lungo cuore culturale del vecchio mondo, è tornata sotto il controllo [ROOT.GetCountry.GetAdjective] dopo secoli di dominio straniero. Per la prima volta dal 1204, [ShowLocationNameWithNoTooltip('athens')] fa di nuovo parte del [ROOT.GetCountry.GetLongName]." #NEW
  flavor_byz.2.a: "E per sempre!"
- flavor_byz.2.b: "Athena's city is restored to us!" #NEW
- flavor_byz.2.c: "A great victory for the [ROOT.GetCountry.GetFlavorRank]." #NEW
+ flavor_byz.2.b: "La città di Athena ci è stata restituita!" #NEW
+ flavor_byz.2.c: "Una grande vittoria per il [ROOT.GetCountry.GetFlavorRank]." #NEW
 
-# flavor_byz.3.title: "Nikomedia riconquistata!" #OLD
- flavor_byz.3.title: "$izmit.greek_language$ reclaimed!" #NEW
+ flavor_byz.3.title: "$izmit.greek_language$ riconquistata!" #NEW
  flavor_byz.3.entry: "$flavor_byz.3.title$" 
-# flavor_byz.3.desc: "Nikomedia, o [ShowLocationName('izmit')] come la chiamavano i Turchi, fu una città chiave [ROOT.GetCountry.GetAdjective] sulla costa dell'Asia Minore per oltre mille anni prima di essere infine perduta a favore delle forze invasori [ShowCultureName('turkish_culture')] nel 1337. Il suo ritorno ci pone in una posizione ideale per espanderci ancora una volta in Asia Minore." #OLD
- flavor_byz.3.desc: "$izmit.greek_language$, or $izmit$ as the Turks called it, was a key [ROOT.GetCountry.GetAdjective] city on the Asia Minor coast for over a thousand years before finally being lost to the invading [ShowCultureName('turkish_culture')] forces in 1337. Its return puts us in an ideal position to expand back into Asia Minor once more." #NEW
- flavor_byz.3.desc_hellenic: "$izmit$, known in ancient times as $izmit.greek_language$, was once the capital of the kingdom of Bithynia and a great city of the Hellenistic east. Long before it became a cornerstone of our [ROOT.GetCountry.GetFlavorRank], it stood as a center of [ShowCultureName('greek_culture')] civilization. Its return places us once again at the gateway to Anatolia." #NEW
- flavor_byz.3.desc_other: "$izmit.greek_language$, or $izmit$ as the Turks called it, was a key [ROOT.GetCountry.GetAdjective] city on the Asia Minor coast for over a thousand years before finally being lost to the invading [ShowCultureName('turkish_culture')] forces in 1337. Its return puts us in an ideal position to expand back into Asia Minor once more." #NEW
+ flavor_byz.3.desc: "$izmit.greek_language$, o $izmit$ come la chiamavano i Turchi, fu una città [ROOT.GetCountry.GetAdjective] chiave sulla costa dell'Asia Minor per oltre mille anni prima di essere infine perduta a favore delle forze d'invasione [ShowCultureName('turkish_culture')] nel 1337. Il suo ritorno ci mette in una posizione ideale per espanderci di nuovo in Asia Minor." #NEW
+ flavor_byz.3.desc_hellenic: "$izmit$, nota nell'antichità come $izmit.greek_language$, fu un tempo la capitale del regno di Bithynia e una grande città dell'oriente ellenistico. Molto prima di diventare una pietra angolare del nostro [ROOT.GetCountry.GetFlavorRank], era un centro della civiltà [ShowCultureName('greek_culture')]. Il suo ritorno ci pone ancora una volta alla porta dell'Anatolia." #NEW
+ flavor_byz.3.desc_other: "$izmit.greek_language$, o $izmit$ come la chiamavano i Turchi, fu una città [ROOT.GetCountry.GetAdjective] chiave sulla costa dell'Asia Minor per oltre mille anni prima di essere infine perduta a favore delle forze d'invasione [ShowCultureName('turkish_culture')] nel 1337. Il suo ritorno ci mette in una posizione ideale per espanderci di nuovo in Asia Minor." #NEW
  flavor_byz.3.a: "E così faremo!"
- flavor_byz.3.b: "Ancient Bithynia is ours once more!" #NEW
- flavor_byz.3.c: "Our foothold in Anatolia is secured." #NEW
+ flavor_byz.3.b: "L'antica Bithynia è di nuovo nostra!" #NEW
+ flavor_byz.3.c: "La nostra testa di ponte in Anatolia è sicura." #NEW
 
  flavor_byz.4.title: "Antioch riconquistata!"
  flavor_byz.4.entry: "$flavor_byz.4.title$" 
-# flavor_byz.4.desc: "Perduta a favore dei Beylik [ShowCultureName('turkish_culture')] nel 1084, [ShowLocationName('antioch')] è stata chiamata la culla di [ShowReligionGroupName('christian')]. Sebbene non sia più la metropoli che fu un tempo, rimane una città santa importante." #OLD
- flavor_byz.4.desc: "Lost to the [ShowCultureName('turkish_culture')] Beyliks in 1084, [ShowLocationName('antioch')] has been called the cradle of [ShowReligionGroupName('christian')]. While it is no longer the metropolis it once was, it remains an important holy place." #NEW
- flavor_byz.4.desc_hellenic: "[ShowLocationName('antioch')] was founded by Seleucus I Nicator, one of the great successors of Alexander, as the capital of his Seleucid Empire. For centuries, it was one of the finest cities of the Hellenistic world, a great center of [ShowCultureName('greek_culture')] culture and learning. Its recapture is a worthy achievement for any heir to that ancient legacy." #NEW
- flavor_byz.4.desc_other: "The great holy place of [ShowLocationName('antioch')], lost to the [ShowCultureName('turkish_culture')] Beyliks in 1084, has at long last returned to imperial control. While its ancient glory has faded with the centuries, [ShowLocationNameWithNoTooltip('antioch')] remains a significant landmark and a strategic gateway to the east." #NEW
+ flavor_byz.4.desc: "Perduta a favore dei Beylik [ShowCultureName('turkish_culture')] nel 1084, [ShowLocationName('antioch')] è stata chiamata la culla di [ShowReligionGroupName('christian')]. Sebbene non sia più la metropoli di un tempo, rimane un importante luogo sacro." #NEW
+ flavor_byz.4.desc_hellenic: "[ShowLocationName('antioch')] fu fondata da Seleucus I Nicator, uno dei grandi successori di Alexander, come capitale del suo Impero Seleucide. Per secoli fu una delle città più splendide del mondo ellenistico, un grande centro di cultura e apprendimento [ShowCultureName('greek_culture')]. La sua riconquista è un risultato degno di qualunque erede di quell'antica eredità." #NEW
+ flavor_byz.4.desc_other: "Il grande luogo sacro di [ShowLocationName('antioch')], perduto a favore dei Beylik [ShowCultureName('turkish_culture')] nel 1084, è finalmente tornato sotto il controllo imperiale. Sebbene la sua antica gloria sia svanita con i secoli, [ShowLocationNameWithNoTooltip('antioch')] rimane un punto di riferimento significativo e una porta strategica verso l'oriente." #NEW
  flavor_byz.4.a: "Deus vult!"
- flavor_byz.4.b: "[ShowLocationNameWithNoTooltip('antioch')], jewel of the Hellenistic east, is ours!" #NEW
- flavor_byz.4.c: "The [ROOT.GetCountry.GetFlavorRank] reaches further east." #NEW
+ flavor_byz.4.b: "[ShowLocationNameWithNoTooltip('antioch')], gioiello dell'oriente ellenistico, è nostra!" #NEW
+ flavor_byz.4.c: "Il [ROOT.GetCountry.GetFlavorRank] si spinge più a oriente." #NEW
 
  flavor_byz.5.title: "Jerusalem riconquistata!"
  flavor_byz.5.entry: "$flavor_byz.5.title$" 
  flavor_byz.5.desc: "Perduta a favore degli Arabi nel 634, [ShowLocationName('jerusalem')] fu un tempo un centro del culto [ShowReligionGroupAdjective('christian')] nell'Impero. La sua riconquista risolleverà sicuramente il morale di tutti i popoli [ShowReligionGroupAdjectiveWithNoTooltip('christian')]."
- flavor_byz.5.desc_hellenic: "[ShowLocationName('jerusalem')] has long been a place of great importance to many faiths, and its recapture extends our dominion deep into the old imperial heartland. While it holds no particular significance for [ShowReligionAdjective('hellenism_religion')] worship, controlling such a storied landmark carries its own strategic value." #NEW
- flavor_byz.5.desc_other: "The city of [ShowLocationName('jerusalem')], held by foreign powers since 634, has been brought back under imperial control. Its recapture strengthens our position in the region and adds a prestigious holy place to our domain." #NEW
+ flavor_byz.5.desc_hellenic: "[ShowLocationName('jerusalem')] è stata a lungo un luogo di grande importanza per molte fedi, e la sua riconquista estende il nostro dominio in profondità nell'antico cuore imperiale. Sebbene non abbia un significato particolare per il culto [ShowReligionAdjective('hellenism_religion')], controllare un luogo così leggendario ha un valore strategico proprio." #NEW
+ flavor_byz.5.desc_other: "La città di [ShowLocationName('jerusalem')], detenuta da potenze straniere dal 634, è stata riportata sotto il controllo imperiale. La sua riconquista rafforza la nostra posizione nella regione e aggiunge al nostro dominio un prestigioso luogo sacro." #NEW
  flavor_byz.5.a: "Deus vult!"
- flavor_byz.5.b: "Its worth is strategic, not spiritual." #NEW
- flavor_byz.5.c: "Another holy place returned to the [ROOT.GetCountry.GetFlavorRank]." #NEW
+ flavor_byz.5.b: "Il suo valore è strategico, non spirituale." #NEW
+ flavor_byz.5.c: "Un altro luogo sacro restituito al [ROOT.GetCountry.GetFlavorRank]." #NEW
 
  flavor_byz.6.title: "Rome riconquistata!"
  flavor_byz.6.entry: "$flavor_byz.6.title$" 
  flavor_byz.6.desc: "Sebbene non sia sempre stata controllata direttamente dall'Impero, [ShowLocationName('rome')] recise infine ogni legame [ROOT.GetCountry.GetAdjective] quando Papa Leo III incoronò [GetCharacter('fra_charlemagne').GetName] Imperatore del Sacro Romano Impero. Ora, tuttavia, la città è di nuovo nelle nostre mani, e sebbene abbia sofferto molto resta comunque una città di grande prestigio da controllare."
- flavor_byz.6.desc_hellenic: "Long before Popes and self-proclaimed emperors claimed [ShowLocationName('rome')], it was the western seat of our Empire — a city whose legacy reaches back to the very founders of civilization. Now, free of papal meddling, [ShowLocationNameWithNoTooltip('rome')] can stand once more as a monument to the ancient world's enduring glory." #NEW
- flavor_byz.6.desc_other: "The ancient city of [ShowLocationName('rome')], though diminished from its former glory, remains one of the most prestigious cities in the known world. Its return to imperial hands is a significant achievement, and with it our claim to the ancient western empire is strengthened." #NEW
-# flavor_byz.6.a: "Rome, the city where it all began, is once again in our hands" #OLD
+ flavor_byz.6.desc_hellenic: "Molto prima che Papi e imperatori autoproclamati rivendicassero [ShowLocationName('rome')], essa era la sede occidentale del nostro Impero — una città la cui eredità risale ai fondatori stessi della civiltà. Ora, libera dalle ingerenze papali, [ShowLocationNameWithNoTooltip('rome')] può ergersi ancora una volta come monumento alla gloria duratura del mondo antico." #NEW
+ flavor_byz.6.desc_other: "L'antica città di [ShowLocationName('rome')], sebbene diminuita rispetto alla sua gloria passata, rimane una delle città più prestigiose del mondo conosciuto. Il suo ritorno in mani imperiali è un risultato significativo e con esso la nostra rivendicazione sull'antico impero occidentale è rafforzata." #NEW
  flavor_byz.6.a: "Rome, la città dove tutto ebbe inizio, è di nuovo nelle nostre mani." 
- flavor_byz.6.b: "The ancient capital is restored to its rightful heirs!" #NEW
- flavor_byz.6.c: "An imperial prize beyond compare." #NEW
+ flavor_byz.6.b: "L'antica capitale è restituita ai suoi legittimi eredi!" #NEW
+ flavor_byz.6.c: "Un premio imperiale senza pari." #NEW
 
  flavor_byz.7.title: "Ortodossia di Rome restaurata!"
  flavor_byz.7.entry: "$flavor_byz.7.title$" 
@@ -83,17 +80,13 @@
  flavor_byz.11.title: "La Scuola d'Arte Cretese"
  flavor_byz.11.entry: "$flavor_byz.11.title$" 
  flavor_byz.11.desc: "Poche scuole nella nostra nazione hanno avuto un impatto sulla diffusione della ricchezza e della bellezza dell'arte e dell'iconografia [GetCountry('BYZ').GetAdjectiveWithNoTooltip] quanto la scuola d'arte cretese. La scuola è destinata a diventare un centro di cultura e arte, mentre continua ad attrarre grandi studenti sotto la guida di uomini come [target_artist.GetName]."
-# flavor_byz.11.a: "Bring [target_artist.GetHerHim] to court." #OLD
  flavor_byz.11.a: "Portiamolo a corte." 
-# flavor_byz.11.b: "[target_artist.GetSheHe|U] will weave our legend abroad!" #OLD
  flavor_byz.11.b: "Intesserà la nostra leggenda all'estero!" 
  flavor_byz.11.c: "Non possiamo permettercelo..."
 
  flavor_byz.12.title: "El Greco"
  flavor_byz.12.entry: "$flavor_byz.12.title$" 
-# flavor_byz.12.desc: "Few artists have left their mark across the ever-changing landscape of art as [target_artist.GetName], also known as #italic el Greco#!. Despite his work becoming the antithesis to early baroque style, [target_artist.GetSheHe] has successfully carved a new distinct niche by supporting the primacy of imagination and intuition over the subjective character of creation, thus sending ripples across the artistic world across the halls of [ShowContinentName('europe')]." #OLD
  flavor_byz.12.desc: "Pochi artisti hanno lasciato il proprio segno nel paesaggio in continuo mutamento dell'arte come [target_artist.GetName], noto anche come #italic el Greco#!. Nonostante la sua opera sia diventata l'antitesi dello stile barocco iniziale, egli è riuscito a ritagliarsi una nuova nicchia distinta sostenendo il primato dell'immaginazione e dell'intuizione sul carattere soggettivo della creazione, mandando così onde nel mondo artistico attraverso le sale di [ShowContinentName('europe')]." 
-# flavor_byz.12.a: "[target_artist.GetHerHis|U] paintings will adorn our walls." #OLD
  flavor_byz.12.a: "I suoi dipinti adorneranno le nostre pareti." 
  flavor_byz.12.c: "Non possiamo permettercelo..."
  get_el_greco_as_painter_tt: "[target_artist.GetNameWithNoTooltip] apparirà come #italic pittore#!"
@@ -110,20 +103,15 @@
  flavor_byz.14.title: "La Proposta dei [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
  flavor_byz.14.entry: "$flavor_byz.14.title$" 
  flavor_byz.14.desc: "La nostra marina è caduta in rovina da parecchio tempo. Quello che un tempo era un ramo orgoglioso della nostra potente autorità è ora diventato lo zimbello del mondo. In effetti, i nostri vicini sfacciati, che bramano la nostra terra, sono giunti a contestare il nostro dominio marittimo e compiono frequenti incursioni nei nostri porti. Nel nostro momento di bisogno, delegati dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si sono fatti avanti con una proposta curiosa. Secondo la loro corrispondenza, desiderano assumere il comando delle nostre forze navali, finanziandole nel processo..."
-# flavor_byz.14.a: "[ROOT.GetCountry.Custom('common_string_positive')]" #OLD
  flavor_byz.14.a: "Non possiamo dipendere da loro!" 
-# flavor_byz.14.b: "We cannot depend on them!" #OLD
  flavor_byz.14.b: "[ROOT.GetCountry.Custom('common_string_positive')]" 
  flavor_byz.14.b.entry: "$common_string_brilliant$" 
  byz_magnates_wont_offer_again_tt: "I [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] non offriranno più la loro assistenza nelle questioni navali"
 
-# flavor_byz.15.title: "[target_character2.GetNameWithNoTooltip]'s Naval Reforms" #OLD
  flavor_byz.15.title: "Riforme Navali di [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetNameWithNoTooltip]" 
  flavor_byz.15.entry: "$flavor_byz.15.title$" 
  flavor_byz.15.desc: "Non è un segreto che la nostra marina abbia visto giorni migliori. I recenti tumulti affrontati dal nostro popolo hanno prosciugato il tesoro imperiale, causando tagli e carenze in ogni settore. Nonostante ciò, i nostri consiglieri sotto l'egida di [target_character2.GetName] hanno elaborato un piano nel tentativo di recuperare parte del nostro antico splendore navale!"
-# flavor_byz.15.a: "It is a vital reform." #OLD
  flavor_byz.15.a: "Possiamo giustificare una simile riforma." 
-# flavor_byz.15.b: "This coin is best spent elsewhere..." #OLD
  flavor_byz.15.b: "Che la riforma sia ampia e di vasta portata!" 
  flavor_byz.15.c: "Questo denaro è meglio speso altrove..." 
  if_we_pass_naval_reform_disaster_panel_tt: "Questo produrrà benefici se sceglieremo di riformare la nostra [navy|e] tramite l'[action|e] [ShowGenericActionName('reform_imperial_armies')] nel pannello del [disaster|e] [ShowDisasterName('fate_of_the_phoenix')]" 
@@ -162,7 +150,6 @@ able_to_add_reform_later_tt: "Potremo adottare questa [government_reform|e] in s
  
 flavor_byz.21.title: "Canti Acritici"
  flavor_byz.21.entry: "$flavor_byz.21.title$" 
-#flavor_byz.21.desc: "In the ages of the early [GetCountry('BYZ').GetName], many frontiersmen known as #italic Akritais#! fought to protect [ShowRegionName('anatolia_region')] from the [ShowCultureGroupName('arabian_group')] invaders. This has led to many great poems and many great heroes being produced in [ShowCultureName('greek_culture')] literature, such as #italic Digenes Akritas#!" #OLD
 flavor_byz.21.desc: "Nelle epoche del primo [GetCountry('BYZ').GetName], molti uomini di frontiera noti come #italic Akritais#! combatterono per proteggere [ShowRegionName('anatolia_region')] dagli invasori [ShowCultureGroupName('arabian_group')]. Questo portò alla produzione di molti grandi poemi e molti grandi eroi nella letteratura [ShowCultureName('greek_culture')], come #italic Digenes Akritas#!." 
 flavor_byz.21.historical_info: "Molti di questi poemi sono considerati l'inizio della Letteratura Greca Moderna, alcuni dei quali divennero persino un simbolo del nazionalismo greco. Uno di questi poemi, e forse il più noto, è il racconto di Digenes Akritas, una guardia di confine di discendenza sia greca sia araba, che protegge l'Impero Bizantino dagli Arabi e uccide persino esseri mitici come draghi." 
 flavor_byz.21.a: "Facciamo conoscere questi poemi al resto del mondo."
@@ -211,13 +198,10 @@ flavor_byz.27.title: "Declino del Rinascimento [target_character.GetDynasty.GetN
 flavor_byz.27.desc: "Mentre in passato molti grandi artisti accorrevano alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] in un fenomeno chiamato Rinascimento [target_character.GetDynasty.GetName], negli ultimi anni c'è stato un declino, con grandi uomini che scelgono di unirsi ad altre corti invece che alla nostra. Forse [target_character.GetName] dovrebbe investire per fermare questo declino."
 flavor_byz.27.historical_info: "Quando la dinastia Palaiologos riconquistò Constantinople, avviò una campagna di rinnovamento per la città. Ciò accese l'ultimo periodo di sviluppo dell'arte bizantina, in cui essa si sarebbe lentamente allontanata da numerose usanze bizantine, come gli artisti che firmavano le proprie opere, e si sarebbe spostata verso uno stile diverso, quello paleologo, che in seguito avrebbe influenzato la Scuola d'arte Cretese." 
 flavor_byz.27.a: "Non abbiamo i fondi per sponsorizzare nessuno in questo momento."
-#flavor_byz.27.b: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetCourtTitle] needs to prosper!" #OLD
 flavor_byz.27.b: "Il tesoro [ROOT.GetCountry.GetAdjectiveWithNoTooltip] coprirà le spese!" 
 flavor_byz.27.c: "Permettiamo ai [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] di pagare il conto." 
-# flavor_byz.27.d: "[target_location.GetNameWithNoTooltip] diventerà la culla del [ShowInstitutionName('renaissance')]." #OLD
-flavor_byz.27.d: "[target_location.GetNameWithNoTooltip] shall become the cradle of the [ShowInstitutionNameWithNoTooltip('renaissance')]." #NEW
-# constantinople_to_spawn_renaissance_tt: "#italic Constantinople#! è idonea come luogo di nascita del [ShowInstitutionName('renaissance')]" #OLD
-constantinople_to_spawn_renaissance_tt: "[ShowLocationName('constantinople')] is eligible as the birthplace of the [ShowInstitutionName('renaissance')]" #NEW
+flavor_byz.27.d: "Facciamo di [target_location.GetNameWithNoTooltip] la culla del [ShowInstitutionNameWithNoTooltip('renaissance')]." #NEW
+constantinople_to_spawn_renaissance_tt: "[ShowLocationName('constantinople')] può essere il luogo di nascita del [ShowInstitutionName('renaissance')]" #NEW
 
 flavor_byz.28.title: "Una [ROOT.GetCountry.GetGovernment.GetCourtTitle] in [ShowAreaNameWithNoTooltip('morea_area')]"
  flavor_byz.28.entry: "Nuova Sparta" 
@@ -234,12 +218,10 @@ flavor_byz.29.historical_info: "Sebbene non si sappia molto dell'istituzione chi
 
 flavor_byz.30.title: "Un Patto con [target_country.GetNameWithNoTooltip]"
  flavor_byz.30.entry: "Chiesa Ortodossa e Luterani alleati contro i Cattolici" 
-#flavor_byz.30.desc: "With the rise of [target_country.GetReligion.GetName] in [ShowContinentName('europe')], the [ShowReligionAdjective('catholic')] world, our old enemies, are finally experiencing what we experienced centuries ago. Leading this reformation is [target_country.GetName]. Perhaps if we keep good relations with them, we can finally make the dent against [target_country2.GetName] we so wished to be able to in the past.." #OLD
 flavor_byz.30.desc: "Con l'ascesa di [target_country.GetReligion.GetName] in [ShowContinentName('europe')], il mondo [ShowReligionAdjective('catholic')], i nostri vecchi nemici, sta finalmente vivendo ciò che noi abbiamo vissuto secoli fa. A guidare questa riforma è [target_country.GetName]. Forse, se manterremo buone relazioni con loro, potremo finalmente incidere contro [target_country2.GetName] come tanto desideravamo in passato." 
 flavor_byz.30.a: "Ci alleeremo con [target_country.GetNameWithNoTooltip]."
 flavor_byz.30.b: "Le questioni di [target_country2.GetReligion.GetNameWithNoTooltip] non ci riguardano."
 
-#flavor_byz.31.title: "Reforming the [target_character.GetDynasty.GetNameWithNoTooltip] Army" #OLD
 flavor_byz.31.title: "Riforma dell'Esercito [ROOT.GetCountry.GetAdjectiveWithNoTooltip]" 
  flavor_byz.31.entry: "Riforma dell'Esercito Bizantino" 
 flavor_byz.31.desc: "Mentre il nostro esercito dominava in passato usando i Themata e le numerose leve che fornivano, l'aumento della ricchezza e la centralizzazione dei reami hanno portato gli eserciti a diventare una professione a tempo pieno. [target_character.GetName], insieme al consiglio di [target_character.GetHerHis], ha lavorato duramente alla stesura di una nuova organizzazione dell'esercito, una che dipende meno dai [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] per le truppe."
@@ -274,8 +256,7 @@ flavor_byz.35.b: "Fidarsi dei [GetCountry('GEN').GetAdjectiveWithNoTooltip]? Mai
 
 flavor_byz.36.title: "[ShowRegionNameWithNoTooltip('anatolia_region')] Riconquistata!"
  flavor_byz.36.entry: "Ripristino del Controllo in Anatolia" 
-flavor_byz.36.desc: "I nostri eserciti hanno finalmente assicurato l'antica provincia di [ShowRegionName('anatolia_region')]. Con le sue città ora sotto il nostro controllo e i nostri nemici scacciati, possiamo finalmente celebrare questo trionfo."
-#flavor_byz.36.a: "Glory by to [ROOT.GetCountry.GetNameWithNoTooltip]." #OLD
+ flavor_byz.36.desc: "Our armies have finally secured the lands of [ShowRegionName('anatolia_region')]. With its cities now under our control and our enemies driven away, we can finally celebrate this triumph." #NEW
 flavor_byz.36.a: "Gloria a [ROOT.GetCountry.GetNameWithNoTooltip]." 
 
 flavor_byz.37.title: "Sbarco in [ShowRegionNameWithNoTooltip('italy_region')]"
@@ -301,8 +282,7 @@ flavor_byz.39.c: "Non abbandoneremo [target_location2.GetNameWithNoTooltip] né 
 flavor_byz.40.title: "Nomon Syngraphe"
  flavor_byz.40.entry: "$flavor_byz.40.title$" 
 flavor_byz.40.desc: "Dalla morte di [target_character.GetName], diverse persone hanno iniziato a rovistare tra ciò che erano i suoi possedimenti. Uno di loro, [target_character2.GetName], ha scoperto uno dei suoi manoscritti, etichettato #italic Nomoi#!. Ispirato dagli insegnamenti [ShowReligionAdjective('zoroastrian')] e da quelli di Plato, consiste in vari argomenti, tutti ricondotti al ritorno delle vie ellenistiche."
-#flavor_byz.40.a: "Un'opera d'arte resterà un'opera d'arte, anche se eretica." #OLD
-flavor_byz.40.a: "A work of art shall remain a work of art." #NEW
+flavor_byz.40.a: "Un'opera d'arte deve rimanere un'opera d'arte." #NEW
 flavor_byz.40.b: "Rivisitiamo alcuni di questi testi, rendiamoli più grandiosi."
 flavor_byz.40.c: "Gettiamolo nel fuoco, distruggiamolo!"
 
@@ -395,10 +375,8 @@ flavor_byz.52.title: "Riforma del Corpus Juris Civilis"
 flavor_byz.52.desc: "Nonostante il nostro [ROOT.GetCountry.GetFlavorRank] sia sovrano, ciò non ha impedito alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] di intervenire nella politica del [ROOT.GetCountry.GetFlavorRank]. Sempre intenta a immischiarsi nel [ROOT.GetCountry.GetGovernment.GetParliament.GetName], i suoi desideri spesso contraddicono quelli di [target_character.GetName]. Forse cambiando le nostre leggi possiamo limitarne il potere in [ROOT.GetCountry.GetName]."
 flavor_byz.52.a: "Riscriviamolo, anche se faremo arrabbiare i nostri ceti."
 flavor_byz.52.b: "Il codice ha già servito [ROOT.GetCountry.GetNameWithNoTooltip] per molti secoli."
-#BYZ_NO_MORE_COURT_EVENTS: "Gli [events|e] #Y Influenza della Corte Bizantina#! non si attiveranno più." #OLD
-BYZ_NO_MORE_COURT_EVENTS: "The #Y Byzantine Court Influence#! [events|e], through which the court periodically pushes our [societal_values|e] — for better or worse — will no longer trigger." #NEW
-#BYZ_COURT_EVENTS_WILL_CONTINUE: "Gli [events|e] #Y Influenza della Corte Bizantina#! continueranno ad attivarsi." #OLD
-BYZ_COURT_EVENTS_WILL_CONTINUE: "The #Y Byzantine Court Influence#! [events|e], through which the court periodically pushes our [societal_values|e] — for better or worse — will continue triggering." #NEW
+BYZ_NO_MORE_COURT_EVENTS: "Gli #Y Influenza della Corte Bizantina#! [events|e], tramite i quali la corte spinge periodicamente i nostri [societal_values|e] — nel bene o nel male — non si attiveranno più." #NEW
+BYZ_COURT_EVENTS_WILL_CONTINUE: "Gli #Y Influenza della Corte Bizantina#! [events|e], tramite i quali la corte spinge periodicamente i nostri [societal_values|e] — nel bene o nel male — continueranno ad attivarsi." #NEW
 
 flavor_byz.53.title: "Fortificazione delle [ShowBuildingTypeNameWithNoTooltip('theodosian_walls')]"
  flavor_byz.53.entry: "Rifortificazione delle Theodosian Walls" 
@@ -441,8 +419,7 @@ BYZ_do_not_get_informed_about_migrations: "I [pops|e] di [culture|e] [ShowCultur
 BYZ_more_reasons_to_migrate_here: "I [pops|e] [ShowCultureName('albanian')] saranno più propensi a migrare nelle nostre terre tramite l'[event|e] se concediamo l'[estate_privilege|e] [ShowEstatePrivilegeName('tribes_land_rights')]" 
 flavor_byz.60.title: "Un Co-Imperatore?" 
  flavor_byz.60.entry: "$flavor_byz.60.title$" 
-#flavor_byz.60.desc: "[target_character.GetName] è sempre stato un sostenitore e compagno di lunga data di [target_character2.GetName]. Avendo inizialmente sostenuto il [ROOT.GetCountry.GetGovernment.GetRulerTitle] durante la lotta di [target_character2.GetHerHis] contro il nonno di [target_character2.GetHerHis], [GetCharacter('byz_andronikos_ii_palaiologos').GetName], [target_character.GetShortNameWithNoTooltip] ha distinto [target_character.GetHerselfHimself] come compagno leale e statista competente.\n\nPer questo, a [target_character.GetNameWithNoTooltip] è stata offerta molte volte la posizione di co-imperatore di [target_character2.GetNameWithNoTooltip], ma l'ha sempre rifiutata. Alcuni, e specialmente [target_character2.GetShortNameWithNoTooltip], credono che [target_character.GetSheHe] sarebbe un grande co-imperatore." #OLD
-flavor_byz.60.desc: "[target_character.GetName] has always been a long-time supporter and companion to the late [target_character2.GetName]. Having initially supported the [ROOT.GetCountry.GetGovernment.GetRulerTitle] during [target_character2.GetHerHis] struggle against [target_character2.GetHerHis] grandfather, [GetCharacter('byz_andronikos_ii_palaiologos').GetName], [target_character.GetShortNameWithNoTooltip] has distinguished [target_character.GetHerselfHimself] as a loyal companion and a competent statesman.\n\nIn [target_character2.GetHerHis] lifetime, [target_character.GetNameWithNoTooltip] had many times been offered the position of co-emperor, yet at all times refused. With [target_character2.GetShortNameWithNoTooltip] now gone, there are those at [ROOT.GetCountry.GetGovernment.GetCourtTitle] who believe [target_character.GetSheHe] would make for a great co-emperor." #NEW
+flavor_byz.60.desc: "[target_character.GetName] è sempre stato un sostenitore e compagno di lunga data del defunto [target_character2.GetName]. Avendo inizialmente sostenuto il [ROOT.GetCountry.GetGovernment.GetRulerTitle] durante la lotta di [target_character2.GetHerHis] contro il nonno di [target_character2.GetHerHis], [GetCharacter('byz_andronikos_ii_palaiologos').GetName], [target_character.GetShortNameWithNoTooltip] ha distinto [target_character.GetHerselfHimself] come compagno leale e statista competente.\n\nDurante la vita di [target_character2.GetHerHis], a [target_character.GetNameWithNoTooltip] era stata offerta molte volte la posizione di co-imperatore, ma l'ha sempre rifiutata. Ora che [target_character2.GetShortNameWithNoTooltip] non c'è più, ci sono persone presso la [ROOT.GetCountry.GetGovernment.GetCourtTitle] che credono che [target_character.GetSheHe] sarebbe un grande co-imperatore." #NEW
 flavor_byz.60.a: "Non è volontà di nessun altro se non di [target_character.GetHerHis]." 
 flavor_byz.60.b: "Facciamo pressione su [target_character.GetHerHim] affinché accetti." 
 BYZ_additional_events_become_available: "Ulteriori [events|e] diventano disponibili quando [target_character.GetName] è considerato co-imperatore" 
@@ -500,13 +477,9 @@ flavor_byz.1001.historical_info: "$flavor_byz.1000.historical_info$"
 
 flavor_byz.1100.title: "Hesychasm"
  flavor_byz.1100.entry: "$flavor_byz.1100.title$" 
-#flavor_byz.1100.desc: "Theological matters have always gripped our people. As a nation that sees itself as the pride of the [ShowReligionAdjective('orthodox')] faith we have proven time and again the validity of our beliefs in search of the divine.\n\nHowever, it has recently come to our attention that [target_character.GetName] has discovered a series of irregularities in terms of religious practice, by the monks in [target_location.GetName]. According to [target_character.GetShortNameWithNoTooltip], the monks' practices are borderline heretic, ranging from debates on the essence and praxis of the divine, to the practice of inner prayer.\n\nIt seems that [target_character.GetShortNameWithNoTooltip]'s writings condemn the teachings of Hesychasm in an attempt to disturb social peace. Our advisors are wary of social friction, or even open revolt lest we find a way to deal with this problem." #OLD
 flavor_byz.1100.desc: "Le dispute teologiche agitano da tempo il cuore del nostro Impero. Come custodi e orgoglio della fede [ShowReligionAdjective('orthodox')], ci siamo eretti a difensori della vera dottrina nella nostra ricerca dei misteri divini.\n\nCi giunge ora voce che [target_character_1.GetName] abbia individuato preoccupanti irregolarità nelle pratiche religiose dei monaci di [target_location.GetName]. Sotto la direzione spirituale di [target_character_2.GetName], si dice che le loro devozioni si soffermino su audaci questioni riguardanti l'essenza e le energie di Dio, e incoraggino la pratica della quiete interiore e della preghiera incessante.\n\nIn risposta, [target_character_1.GetShortNameWithNoTooltip] ha messo per iscritto le sue obiezioni, condannando questi insegnamenti dell'Hesychasm come innovazione pericolosa e avvertendo che tali dottrine potrebbero seminare confusione tra i fedeli e turbare la fragile pace del nostro [ROOT.GetCountry.GetFlavorRank]. I nostri consiglieri avvertono che uno zelo mal gestito, mistico o critico che sia, potrebbe infiammare il disordine e forse persino provocare una rivolta aperta se questa questione non sarà risolta con prudenza." 
-#flavor_byz.1100.a: "It is just harmless scholarly debate." #OLD
 flavor_byz.1100.a: "Sosteniamo il movimento." 
-#flavor_byz.1100.b: "We will not tolerate [target_character.GetHerHis] insolence." #OLD
 flavor_byz.1100.b: "[target_character_1.GetShortNameWithNoTooltip] dice la verità, l'esicasmo è eresia!" 
-#flavor_byz.1100.c: "Do not get too attached to your head, [target_character.GetShortNameWithNoTooltip]!" #OLD
 flavor_byz.1100.c: "Ignoriamo il caos che fermenta." 
 byz_may_trigger_other_event_tt: "Questi dibattiti potrebbero presto raggiungere oltre i nostri confini"
 #slightly_worsen_relations_with_all_orthodox_tt: "Our relations with all [ShowReligionAdjectiveWithNoTooltip('orthodox')] countries will worsen slightly" #DELETE
@@ -523,11 +496,10 @@ flavor_byz.1101.a: "Cosa sta succedendo nel [target_country.GetLongName]?"
 
 flavor_byz.1102.title: "Dibattito per i Secoli"
  flavor_byz.1102.entry: "$flavor_byz.1102.title$" 
-#flavor_byz.1102.desc: "'This is a total disaster.' 'Is this the end for the [ShowReligionAdjective('orthodox')] faith?' are but some of the commonly heard phrases surrounding the clash between [target_character2.GetName] and [target_character.GetName]. While the former is an ardent supporter of Hesychast practices, the latter has fought tooth and nail to discredit and delegitimize these practices. Launching insults and calling upon the divine in the same breath, these two seem to have really driven a wedge across [ShowReligionAdjectiveWithNoTooltip('orthodox')] believers in [target_location.GetName]. Something must be done posthaste, lest we risk the outrage be spilled and devolve into a rebellion!" #OLD
 flavor_byz.1102.desc: "'Questa calamità è l'inizio della fine per la fede [ShowReligionAdjective('orthodox')]?' Tali sussurri ansiosi risuonano ora nei chiostri mentre la disputa tra [target_character2.GetName] e [target_character.GetName] si approfondisce.\n\nIl primo si erge come fervente difensore della tradizione esicasta, mentre il secondo lavora instancabilmente per denunciare questi insegnamenti come errore e illusione. Le accuse hanno ceduto il passo alla condanna aperta, e gli appelli alla ragione ricevono risposta con invocazioni dell'autorità divina. Ciò che iniziò come un disaccordo teologico ora minaccia di dividere i fedeli di [target_location.GetName] in campi ostili.\n\nA meno che questa questione non venga risolta rapidamente e con saggezza, l'indignazione potrebbe superare i confini del discorso e precipitare nel disordine, forse persino nella ribellione." 
-#flavor_byz.1102.a: "Practice what you preach and stay quiet, ideally forever!" #OLD
 flavor_byz.1102.a: "Il nostro sostegno all'esicasmo è saldo!" 
 flavor_byz.1102.b: "[target_character.GetNameWithNoTooltip] apprezzerà la nuova casa di [target_character.GetHerHis] in [target_country.GetNameWithNoTooltip]."
+ variable_hesychasm_activated_variable_tt: "The Hesychast Doctrine has been Embraced" #NEW
 church_condemns_ongoing_debates_tt: "Figure potenti dei [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] condannano la nostra posizione di difesa dell'Hesychasm" 
 
 flavor_byz_title_key: "Una Mano per la Pace"
@@ -585,7 +557,6 @@ flavor_byz.1400.title: "$flavor_byz.1400_title_key$"
 flavor_byz.1400.desc: "Nelle epoche passate, uomini da [ShowRegionName('scandinavian_region')] salpavano verso sud, navigando oltre i fiumi di [ShowRegionName('russian_region')] per emergere in [ShowAreaName('black_sea_area')]. Questi uomini, noti come [ShowUnitDefinitionName('a_varangians')], avevano servito con la massima lealtà gli antichi Imperatori di [ROOT.GetCountry.GetName]. Forse possiamo restaurare questa guardia invitando [varangian_character.GetName] e una banda di uomini da [target_country.GetName] a servire [target_character.GetName] come guardie del corpo."
 flavor_byz.1400.a: "Richiediamo una nuova Guardia Variaga."
 flavor_byz.1400.b: "Non abbiamo bisogno di [varangian_character.GetNameWithNoTooltip]."
-#BYZ_IF_THEY_ACCEPT: "We will request [mercenaries|e] from [target_country.GetName]. If they accept the following will happen:" #OLD
 BYZ_IF_THEY_ACCEPT: "Richiederemo [pops|e] da [target_country.GetName]. Se accettano, accadrà quanto segue:" 
 
 flavor_byz.1401.title: "$flavor_byz.1400_title_key$"
@@ -640,7 +611,6 @@ flavor_byz.1503.title: "Un Nemico Comune"
 flavor_byz.1503.desc: "L'ascesa fulminea del [GetCountry('TUR').GetLongName] ha sconvolto l'equilibrio di potere in [ShowRegionName('anatolia_region')]. La sua espansione aggressiva gli ha procurato molti nemici da ogni lato. [target_character2.GetName] si è opposto alla minaccia [GetCountry('TUR').GetAdjective] per decenni. Forse sarebbe saggio rafforzare le nostre relazioni e presentare un fronte unito, per non rischiare di cadere preda delle ambizioni espansionistiche di [GetCountry('TUR').GetGovernment.GetRulerOrRegent.GetName]."
 flavor_byz.1503.historical_info: "Nel corso del XIV secolo, gli Aydinids, un Beylik turco con base nell'Anatolia occidentale, mantennero una relazione cordiale ma complessa con l'Impero Bizantino. Inizialmente furono coinvolti in una serie di alleanze e scontri con i Bizantini mentre espandevano il loro territorio. A volte, i sovrani Aydinid cooperarono con i Bizantini, servendo come mercenari o persino alleati contro altri Beylik turchi e il crescente Impero Ottomano. Tuttavia, questa cooperazione era spesso opportunistica e pragmatica, con entrambe le parti che cercavano di sfruttare la forza militare dell'altra per mutuo beneficio, come schiacciare un nemico vicino."
 flavor_byz.1503.a: "Dobbiamo cercare amici ovunque possiamo trovarli."
-#flavor_byz.1503.b: "We care not for the affairs of pety lords." #OLD
 flavor_byz.1503.b: "Non ci curiamo degli affari di signori meschini." 
  variable_tt_byz_continued_byzantine_renaissance_event: "Il Rinascimento Bizantino Fiorisce" 
  variable_tt_morea_focus_flag: "Morea è il Cuore dell'Impero" 

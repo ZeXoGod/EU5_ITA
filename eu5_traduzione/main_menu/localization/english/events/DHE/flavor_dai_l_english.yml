@@ -21,7 +21,6 @@
  flavor_dai.3.entry: "The Japanese Merchants" #NEW
  flavor_dai.3.desc: "I mercanti [target_culture_group.GetName] da [target_country.GetName] sono diventati una vista comune in [target_location.GetName]. Commerciando in [target_market.GetName], la loro presenza ha creato un legame unico tra [ROOT.GetCountry.GetName] e il popolo di [target_region.GetName]. Alcuni dei nostri membri più sospettosi [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] temono, comunque, che parte del [root_culture.GetName] potrebbe andare perso se continuiamo questa relazione commerciale."
  flavor_dai.3.historical_info: "Durante il XVI secolo, i mercanti giapponesi si sono impegnati nel commercio con i vietnamiti e hanno persino stabilito la loro stessa residenza nella città portuale di Faifo. Durante questo periodo, i giapponesi costruirono il Ponte Giapponese che serve sia come ponte che come tempio."
-# flavor_dai.3.a: "Rafforzare i nostri legami con [target_country.GetNameWithNoTooltip]" #OLD
  flavor_dai.3.a: "Strengthen our ties with [target_country.GetNameWithNoTooltip]." #NEW
  flavor_dai.3.a.entry: "Strengthen our ties with them." #NEW
  japanese_bridge: "$japanese_group$ Bridge"
@@ -30,7 +29,7 @@
  flavor_dai.3.c.entry: "Remove their merchants from our ports." #NEW
 
  flavor_dai.4.title: "La Cittadella Imperiale"
- flavor_dai.4.entry: "$flavor_dai.4.title$" #NEW
+ flavor_dai.4.entry: "$flavor_dai.4.title$"
  flavor_dai.4.desc: "Con la crescita della popolazione del [ROOT.GetCountry.GetLongName], il nostro stato continua a somigliare a un vero imperio simile a quello dei [GetUniqueInternationalOrganization('middle_kingdom').GetName]. I nostri consulenti suggeriscono di costruire una grande cittadella in onore di [target_character.GetName]."
  flavor_dai.4.desc.a: "$flavor_dai.4.desc$ Propongono inoltre di spostare la [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] al [target_location.GetRank.GetName] di [target_location.GetName], anche se alcuni consigliano di espandere [capital_location.GetName] invece."
  flavor_dai.4.desc.b: "$flavor_dai.4.desc$ Il [target_location.GetRank.GetName] di [target_location.GetName] sarà espanso per ospitare la [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] di [ROOT.GetCountry.GetNameWithNoTooltip]."
@@ -45,13 +44,10 @@
 
  flavor_dai.5.title: "La Latinizzazione di [root_language.GetNameWithNoTooltip]"
  flavor_dai.5.entry: "The Latinization of Root Language" #NEW
-# flavor_dai.5.desc: "I mercanti e i missionari europei hanno raggiunto [target_region.GetName] e si impegnano con i residenti di questi luoghi nel commercio mentre cercano anche di diffondere la loro fede. Uno di questi missionari è [target_character.GetName] da [target_country.GetName] che diffonde l'influenza di [target_religion.GetName] in [ROOT.GetCountry.GetName]. Mentre il lavoro religioso di [target_character.GetHerHis] aumenta le sopracciglia [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], il lavoro degli studiosi di [target_character.GetHerHis] ha creato una versione dello script [target_language.GetName] per scrivere la lingua [root_language.GetName] che porta grandi vantaggi sulla vecchia scrittura [root_culture.GetName]." #OLD
  flavor_dai.5.desc: "European merchants and missionaries have reached [target_region.GetName] and engage with the residents of these places in trade while also trying to spread their faith. One of such missionaries is [target_character.GetName] from [target_country.GetName] who spreads, the influence of [target_religion.GetName] in [ROOT.GetCountry.GetName]. While his religious business raises the eyebrows of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], his scholar works created a version of the [target_language.GetName] script to write the [root_language.GetName] language which brings great advantages over the old [root_culture.GetName] script." #NEW
  flavor_dai.5.historical_info: "Francisco de Pina, un gesuita portoghese, interprete e missionario influente, fu attivo nel moderno Vietnam dal 1617 fino alla sua morte nel 1625. Ha latinizzato la scrittura della lingua vietnamita che in seguito avrebbe costruito il fondamento dell'alfabeto vietnamita moderno."
  flavor_dai.5.a: "Abbraccia questo nuovo alfabeto."
  portuguese_missionary: "Missionario [target_culture.GetName]"
-# flavor_dai.5.b: "Lascia che [target_character.GetHerHim] risieda, ma il lavoro di [target_character.GetHerHis] non influenzerà la nostra lingua." #OLD
  flavor_dai.5.b: "Let him reside, but his work shall not influence our language." #NEW
-# flavor_dai.5.c: "Espelli questo e tutti gli altri missionari [target_culture.GetNameWithNoTooltip] per l'insolenza di [target_character.GetHerHis]." #OLD
  flavor_dai.5.c: "Banish this and all other [target_culture.GetNameWithNoTooltip] missionaries for his insolence." #NEW
  flavor_dai.5.c.entry: "Banish this and all other missionaries for his insolence." #NEW

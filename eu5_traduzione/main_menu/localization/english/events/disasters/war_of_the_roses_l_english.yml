@@ -1,14 +1,13 @@
 ﻿l_english:
- war_of_the_roses.1.title: "Guerra delle Due Rose"
- war_of_the_roses.1.desc: "Due rami cadetti della Casa dei Plantageneti, la Casa di Lancaster e la Casa di York, ritengono entrambi di essere gli eredi legittimi al trono d'Inghilterra. Scontri sporadici tra i rispettivi sostenitori sono già scoppiati in alcune province all'interno della nazione.\n\nI loro simboli araldici, una rosa rossa e una rosa bianca, sono già diventati sinonimo del conflitto, oggi comunemente noto come Guerra delle Due Rose."
- war_of_the_roses.1.a: "Supporta la Casa di Lancaster."
-# york_rebels_joining: "Tutti i [pops|e] in [ShowProvinceDefinitionName('north_riding_province')] si uniranno a [target_york_head.GetName]" #OLD
- york_rebels_joining: "All [pops|e] in [ShowProvinceDefinitionName('north_riding_province')] and [ShowProvinceDefinitionName('west_riding_province')] will join the rebellion of [target_york_head.GetName]" #NEW
- war_of_the_roses.1.b: "Supporta la Casa di York."
+ war_of_the_roses.1.title: "[ShowDisasterNameWithNoTooltip('war_of_the_roses')]" 
+ war_of_the_roses.1.desc: "Due rami cadetti della Casa di [ShowDynastyName('plantagenet_dynasty')], la Casa di [ShowDynastyName('lancaster_dynasty')] e la Casa di [ShowDynastyName('york_dynasty')], rivendicano entrambi di essere i legittimi eredi al trono [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]. Scontri sporadici tra i loro sostenitori sono già scoppiati in diverse province del Paese.\n\nI loro simboli araldici, una rosa rossa e una rosa bianca, sono già diventati sinonimo del conflitto ora comunemente noto come [ShowDisasterName('war_of_the_roses')]." 
+ war_of_the_roses.1.desc.lancaster_ruler: "La Casa di [ShowDynastyName('york_dynasty')], un ramo cadetto della Casa di [ShowDynastyName('plantagenet_dynasty')], contesta da tempo il diritto della Casa regnante di [ShowDynastyName('lancaster_dynasty')] al trono [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]. Ora i suoi sostenitori hanno preso le armi, e persino all'interno della Casa di [ShowDynastyNameWithNoTooltip('lancaster_dynasty')] è emerso un pretendente rivale per sfidare [ROOT.GetGovernment.GetRuler.GetName].\n\nI simboli araldici delle due case cadette, una rosa rossa e una rosa bianca, sono già diventati sinonimo del conflitto ora comunemente noto come [ShowDisasterName('war_of_the_roses')]." 
+ war_of_the_roses.1.a: "Sosteniamo la Casa di [ShowDynastyNameWithNoTooltip('lancaster_dynasty')]." 
+ york_rebels_joining: "Tutti i [pops|e] in [ShowProvinceDefinitionName('north_riding_province')] e [ShowProvinceDefinitionName('west_riding_province')] si uniranno alla ribellione di [target_york_head.GetName]" 
+ war_of_the_roses.1.b: "Sosteniamo la Casa di [ShowDynastyNameWithNoTooltip('york_dynasty')]." 
  york_rebel_name: "I Pretendenti di York"
  lancaster_rebel_name: "I Pretendenti di Lancaster"
-# lancaster_rebels_joining: "Tutti i [pops|e] in [ShowProvinceDefinitionName('lancashire_province')] si uniranno a [target_lancaster_head.GetName]" #OLD
- lancaster_rebels_joining: "All [pops|e] in [ShowProvinceDefinitionName('lancashire_province')] and [ShowProvinceDefinitionName('cheshire_province')] will join the rebellion of [target_lancaster_head.GetName]" #NEW
+ lancaster_rebels_joining: "Tutti i [pops|e] in [ShowProvinceDefinitionName('lancashire_province')] e [ShowProvinceDefinitionName('cheshire_province')] si uniranno alla ribellione di [target_lancaster_head.GetName]" 
  ensuing_chaos_distabilizes_peasants_estate_tt: "Il caos che si sta scatenando si diffonde, danneggiando la [estate_satisfaction|e] dei nostri [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]"
 
  war_of_the_roses.2.title: "Sostegno per la Corona"

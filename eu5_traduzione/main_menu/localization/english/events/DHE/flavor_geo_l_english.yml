@@ -10,7 +10,7 @@
  every_location_target_province_30_prosperity_tt: "Every owned [location|e] in [target_province.GetName] gains [ShowNamedValue('prosperity_extreme_bonus')|+=2%] [prosperity|e]"
 
  flavor_geo.2.title: "Trade with the West"
- flavor_geo.2.entry: "$flavor_geo.2.title$" #NEW
+ flavor_geo.2.entry: "$flavor_geo.2.title$"
  flavor_geo.2.desc: "In order to safeguard our future, it would be wise to consider diplomatic and mercantile relations with various affluent Westerners. Despite being the head of a strong [ROOT.GetCountry.GetFlavorRank], we are surrounded by hostile heathens. Correspondence with the West would only further our link to them and safeguard our position, at a time when even the once-powerful [GetUniqueInternationalOrganization('ilkhanate').GetName] is falling apart..."
  flavor_geo.2.a: "We shall trade with [target_country1.GetNameWithNoTooltip]."
  flavor_geo.2.a.entry: "We shall trade with them." #NEW
@@ -46,9 +46,9 @@
  flavor_geo.6.desc.a: "We rejoice as we read the positive response on behalf of the [target_country2.GetAdjective] [target_country2.GetGovernment.GetCourtTitle]. Highlighting the common interests of both our people, [target_character2.GetName] is willing to enter into an alliance with us!"
  flavor_geo.6.desc.b: "Despite our best and kindest efforts to establish a mutually beneficial alliance, the [target_country2.GetAdjective] [target_country2.GetGovernment.GetRulerTitle] has decided against closer relations with our people..."
  flavor_geo.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_geo.6.a.entry: "$common_string_brilliant$" #NEW
+ flavor_geo.6.a.entry: "$common_string_brilliant$"
  flavor_geo.6.b: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
- flavor_geo.6.b.entry: "$common_string_this_is_disappointing$" #NEW
+ flavor_geo.6.b.entry: "$common_string_this_is_disappointing$"
 
  flavor_geo.7.title: "Campaign Against the [target_country2.GetLongNameWithNoTooltip]"
  flavor_geo.7.entry: "Campaign Against Shirvan" #NEW
@@ -75,7 +75,7 @@
  flavor_geo.10.b: "Declined!? How dare they?"
 
  flavor_geo.11.title: "A Powerful Neighbor"
- flavor_geo.11.entry: "$flavor_geo.11.title$" #NEW
+ flavor_geo.11.entry: "$flavor_geo.11.title$"
  flavor_geo.11.desc: "Our best efforts to safeguard our independence, in combination with military success and the expulsion of foreign troops from our soil, were not enough to deter neighboring powers from handling our wealth. The latest to try is none other than [target_character2.GetName] of the [target_country2.GetLongName]. [target_character2.GetSheHe|U] has demanded a meager tribute in exchange for our continued autonomy under [target_character2.GetHerHis] banner of protection."
  flavor_geo.11.a: "A small price to pay..."
  flavor_geo.11.b: "[target_character2.GetShortNameWithNoTooltip] will have nothing!"
@@ -86,7 +86,7 @@
  flavor_geo.12.desc.a: "In a gesture of goodwill and diplomacy, the neighboring [target_country.GetLongName] has agreed to enter our sphere of influence and pay valuable tribute, recognizing the power of our authority that permeates their lands!"
  flavor_geo.12.desc.b: "The [target_country.GetLongName] have been stubbornly resisting foreign invasion once and once again. Instead of realizing that we are obviously stronger and more powerful than them, they have once more refused to bend the knee and have risen up in defiance of our authority."
  flavor_geo.12.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_geo.12.a.entry: "$common_string_brilliant$" #NEW
+ flavor_geo.12.a.entry: "$common_string_brilliant$"
  flavor_geo.12.b: "They will be brought to their knees..."
 
  flavor_geo.13.title: "Order Across [ShowProvinceDefinitionNameWithNoTooltip('imereti_province')]"
@@ -96,7 +96,7 @@
  flavor_geo.13.b: "Let us not disturb the current arrangement."
 
  flavor_geo.14.title: "The Mint of Elegir"
- flavor_geo.14.entry: "$flavor_geo.14.title$" #NEW
+ flavor_geo.14.entry: "$flavor_geo.14.title$"
  flavor_geo.14.desc: "Coin is the language of power and influence. As we expand our domain and establish footholds further East, the necessity for coin to maintain forts and armies grows. A new deposit of valuable metal has been located in [target_location.GetName] and with it, a series of plans by our advisors to further develop this great find and maximize the extraction."
  flavor_geo.14.historical_info: "While the exact geographical position of the mint is largely disputed, the mint of Elegir is widely regarded as one of the most important cornerstones of many great nations as it came into operation as early as 740 AD. It was here that the Jalayarid coin was minted during Chobanid rule in Transcaucasia."
  flavor_geo.14.a: "Shiny!"
@@ -124,7 +124,7 @@
 
  flavor_geo.18.desc: "$flavor_geo.17.desc_common$ In a twist of fate, [target_character1.GetShortNameWithNoTooltip] has agreed to embrace the true faith, shining the light of [ShowReligionName('catholic')] across the [ShowRegionNameWithNoTooltip('caucasus_region')]."
  flavor_geo.18.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_geo.18.a.entry: "$common_string_brilliant$" #NEW
+ flavor_geo.18.a.entry: "$common_string_brilliant$"
 
  flavor_geo.19.title: "[ShowReligionNameWithNoTooltip('catholic')] Spreads"
  flavor_geo.19.entry: "Catholic Spreads" #NEW
@@ -145,13 +145,13 @@
  flavor_geo.21.c: "...emotional support."
 
  flavor_geo.22.title: "Restoration of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
- flavor_geo.22.entry: "$flavor_geo.22.title$" #NEW
+ flavor_geo.22.entry: "$flavor_geo.22.title$"
  flavor_geo.22.desc: "For far too long have the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] trampled on the fortunes and rights of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Angry members of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] and influential men of faith have made their way in front of [target_character.GetName] in [target_location.GetName] to demand the curbing of the power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], lest their greed swallows us whole!"
  flavor_geo.22.a: "Heed the advice of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  flavor_geo.22.a.entry: "Heed the advice of the $clergy_estate$." #NEW
  flavor_geo.22.b: "Impose a few limitations."
  flavor_geo.22.c: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
- flavor_geo.22.c.entry: "$common_string_nothing_we_can_do_about_it$" #NEW
+ flavor_geo.22.c.entry: "$common_string_nothing_we_can_do_about_it$"
 
  flavor_geo.23.title: "Solar Eclipse of [GetCurrentYear]"
  flavor_geo.23.entry: "Solar Eclipse of The Current Year" #NEW
@@ -174,16 +174,15 @@
  flavor_geo.25.c.entry: "...an official proclamation of his conversion." #NEW
 
  flavor_geo.26.title: "[ROOT.GetCountry.GetNameWithNoTooltip]'s Religion Identity"
- flavor_geo.26.entry: "$flavor_geo.26.title$" #NEW
+ flavor_geo.26.entry: "$flavor_geo.26.title$"
  flavor_geo.26.desc: "The recently forced acceptance of the [GetCountry('TIM').GetAdjective] faith by our [ROOT.GetCountry.GetGovernment.GetRulerTitle] has obviously not been seen in the best light by the majority of the population. Our [ROOT.GetCountry.GetReligion.GetAdjective] beliefs can not be so easily swayed by foreign influence, even under the threat of war. Many argue that [target_character.GetName] should recant such conversion and instead prepare to defend the true faith."
  flavor_geo.26.a: "It was actually a ruse, and it served its purpose."
  flavor_geo.26.b: "What is done, is done."
+ variable_timur_conversion_variable_tt: "Our Faith was Shaped by Timur's Conquest" #NEW
 
  flavor_geo.27.title: "[target_character2.GetNameWithNoTooltip]"
  flavor_geo.27.entry: "Giorgi Saakadze" #NEW
-# flavor_geo.27.desc: "A prominent individual has been frequently at the mouths of many of the members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] as of recent. Member of a minor unlanded nobility family from [target_location.GetName], [target_character2.GetName] has already made a name for [target_character2.GetHerselfHimself] for [target_character2.GetHerHis] military achievements, having since very early dedicated [target_character2.GetHerselfHimself] to the pursuit of that career. Having such talent around would undoubtedly improve our military capabilities, and [target_character2.GetHerHis] ardent tactics are sure to become useful in our conflicts to come." #OLD
  flavor_geo.27.desc: "A prominent individual has been frequently at the mouths of many of the members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] as of recent. Member of a minor unlanded nobility family from [target_location.GetName], [target_character2.GetName] has already made a name for [target_character2.GetHerselfHimself] for his military achievements, having since very early dedicated [target_character2.GetHerselfHimself] to the pursuit of that career. Having such talent around would undoubtedly improve our military capabilities, and his ardent tactics are sure to become useful in our conflicts to come." #NEW
-# flavor_geo.27.a: "Invite [target_character2.GetHerHim] to [ROOT.GetCountry.GetGovernment.GetCourtTitle], we will make use of [target_character2.GetHerHim]." #OLD
  flavor_geo.27.a: "Invite him to [ROOT.GetCountry.GetGovernment.GetCourtTitle], we will make use of him." #NEW
  flavor_geo.27.a.entry: "Invite him to court, we will make use of him." #NEW
  flavor_geo.27.b: "We do not need advice from upstart lesser nobles."
@@ -191,11 +190,8 @@
  
  flavor_geo.28.title: "[target_character2.GetNameWithNoTooltip]"
  flavor_geo.28.entry: "Sulkhan-Saba Orbeliani" #NEW
-# flavor_geo.28.desc: "Born from one of our lesser noble houses, [target_character2.GetName] has been showing signs of great curiosity and intelligence since an early age. Having spent [target_character2.GetHerHis] childhood in [target_character2.GetHerHis] native [target_location.GetRank.GetName] of [target_location.GetName], [target_character2.GetSheHe] used to peruse everything in [target_character2.GetHerHis] family's library. When [target_character2.GetSheHe] later was brought to live at [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character2.GetSheHe] absorbed all knowledge in the [ROOT.GetCountry.GetGovernment.GetAdjective] library. Even at a young age, [target_character2.GetSheHe] already dabbled in writing, and some of those texts show promise. If nurtured, [target_character2.GetSheHe] is sure to become one of our best writers." #OLD
  flavor_geo.28.desc: "Born from one of our lesser noble houses, [target_character2.GetName] has been showing signs of great curiosity and intelligence since an early age. Having spent his childhood in his native [target_location.GetRank.GetName] of [target_location.GetName], he used to peruse everything in his family's library. When he later was brought to live at [ROOT.GetCountry.GetGovernment.GetCourtTitle], he absorbed all knowledge in the [ROOT.GetCountry.GetGovernment.GetAdjective] library. Even at a young age, he already dabbled in writing, and some of those texts show promise. If nurtured, he is sure to become one of our best writers." #NEW
-# flavor_geo.28.a: "Keep [target_character2.GetHerHim] close at [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_geo.28.a: "Keep him close at [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
  flavor_geo.28.a.entry: "Keep him close at court." #NEW
-# flavor_geo.28.b: "A country pumpkin, let [target_character2.GetHerHim] go back to where [target_character2.GetSheHe] came from." #OLD
  flavor_geo.28.b: "A country pumpkin, let him go back to where he came from." #NEW
  flavor_geo.28.historical_info: "A prominent Georgian scholar, diplomat, and writer, Sulkhan-Saba Orbeliani is renowned for his contributions to Georgian literature and education. A member of the influential Orbeliani family, he is best known for his work #italic The Life of Saba#! and his translation of classical works, including Aesop's Fables into Georgian, which significantly enriched Georgian literary tradition. His efforts in education and diplomacy were pivotal in promoting and preserving Georgian culture during a period of political instability and external threats. Orbeliani's impact is remembered for his role in fostering Georgian intellectual and cultural renaissance."

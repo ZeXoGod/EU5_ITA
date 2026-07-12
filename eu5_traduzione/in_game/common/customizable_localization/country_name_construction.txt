@@ -269,6 +269,16 @@
 			government_type = government_type:steppe_horde
 		}
 	}
+	
+	text = {
+		localization_key = country_name_construction_prefix_name_bank_special
+		trigger = {
+			OR = {
+				tag = HBURG #Bank of Hamburg
+				tag = BGIRO #Banco del Giro
+			}
+		}
+	}
 
 	text = {
 		localization_key = country_name_construction_prefix_adjective_rank

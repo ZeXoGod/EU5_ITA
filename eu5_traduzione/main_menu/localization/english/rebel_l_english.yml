@@ -13,15 +13,15 @@
  REBEL_PROGRESS_LACK_OF_CONTROL: "Da $GOLD|2$@gold! a causa della mancanza di [control|e]: $VAL|2-=%$" 
  REBEL_PROGRESS_MODIFIER: "Modificatore Progresso Ribelle $REBEL$"
  REBEL_HOUSE_SUPPORT: "Sostenuti da [DYNASTY.GetName]: $VAL|2-=%$"
- REBEL_POWER_OF_SUPPORT: "Base [political_power|e] Ribelle: $VAL|-2V$\n[political_power|e] totale della [primary_culture|e]: #G -#!$SIZE|V2+$\nFattore della [political_power|e] della [primary_culture|e]: $SIZE_FACTOR|V2+%$\nScala: $SCALE|V2%$\nSe il potere ribelle supera il $PERC|%2V$ del potere della cultura primaria, ottengono progresso."
+ REBEL_POWER_OF_SUPPORT: "[political_power|e] ribelle: $VAL|V2$\n[political_power] richiesta: $REQUIRED_POWER|V2$\nCarenza di potere politico: $SHORTFALL|V2$\nProgresso mensile: $PROGRESS|+=2%$" 
  REBEL_STALLED_CIVIL_WAR: "Bloccato a causa della [civil_war|e]."
-# REBEL_STALLED_NOT_ENOUGH: "Bloccato perché non ha abbastanza sostenitori." #OLD
- REBEL_STALLED_NOT_ENOUGH: "Frozen due to not having enough supporters: #V +/-0.0%#!" #NEW
+ REBEL_STALLED_NOT_ENOUGH: "Bloccato perché non ha abbastanza sostenitori: #V +/-0.0%#!"
  REBEL_PROGRESS_ESTATE: "[estate_power|e]: $VAL|2-=%$"
  REBEL_PROGRESS_POPULATION: "Supporto da parte di $POP|V$@population!: $VAL|2-=%$" 
  REBEL_NATIONALISM_SOURCE: "Nazionalismo\nNazionalismo di Base: $VAL|2=-%$"
  REBEL_NATIONALISM_CULTURE_WAR: "[cultural_influence|e] [CULTURE.GetName] vs [cultural_tradition|e] [TARGET_CULTURE.GetName]: $VAL|-=2%$"
  REBEL_LACK_OF_INTEGRATION: "Mancanza di [integration|e]: $VAL|2=-%$" 
+ all_other_pops_tt: "Tutti gli altri [pops|e] perdono #R 20#! [pop_satisfaction|e]." 
  
  RSI_HEADER: "Motivi per cui i [pops|e] sostengono questi ribelli."
  RSI_ESTATE: "$BULLET$Motivi del [estate|e] [ESTATE.GetNameWithNoTooltip]" 
@@ -38,7 +38,7 @@
  rsi_goods: "Costo dei [pop_needs|e]"
  rsi_lack_of_goods: "Mancanza di [pop_needs|e]"
  rsi_events: "[events|e]"
- rsi_slave: "Slave" #NEW
+ rsi_slave: "Schiavo" 
  rsi_interventions: "[building|e] locali costruiti"
 
  FOREIGN_SUPPORT: "Sostegno Straniero"
@@ -146,6 +146,8 @@
  percy_uprising_country_adjective: "della $percy_uprising$"
  mortimer_uprising_country: "$mortimer_uprising$"
  mortimer_uprising_country_adjective: "della $mortimer_uprising$"
+ percy_and_mortimer_uprising_country: "$percy_and_mortimer_uprising$" 
+ percy_and_mortimer_uprising_country_adjective: "$percy_and_mortimer_uprising$" 
  lollard_uprising_country: "$lollard_uprising$"
  lollard_uprising_country_adjective: "della $lollard_uprising$"
  henry_tudor_support_country: "$henry_tudor_support$"
@@ -363,10 +365,11 @@
  serb_uprising_country_adjective: "del Movimento di $serb_uprising$ $ADJ$"
  chiprovtsi_uprising_country: "Movimento di $chiprovtsi_uprising$ $ADJ$"
  chiprovtsi_uprising_country_adjective: "del Movimento di $chiprovtsi_uprising$ $ADJ$"
- dobrujan_revolt_country: "$dobrujan_revolt$" #NEW
- dobrujan_revolt_country_adjective: "$ADJ$ $dobrujan_revolt$" #NEW
- nikephoros_ii_orsini_revolt_country: "$orsini_revolt$" #NEW
- nikephoros_ii_orsini_revolt_country_adjective: "$ADJ$ $Orsini$" #NEW
+ 
+ dobrujan_revolt_country: "$dobrujan_revolt$" 
+ dobrujan_revolt_country_adjective: "$dobrujan_revolt$ $ADJ$" 
+ nikephoros_ii_orsini_revolt_country: "$orsini_revolt$" 
+ nikephoros_ii_orsini_revolt_country_adjective: "$Orsini$ $ADJ$" 
  
  #
  pretender_rebels: "[pretender_rebels_icon] Pretendente"
@@ -417,9 +420,13 @@
  REBELS_CURRENT_PROGRESS: "Progresso attuale: $VAL|%$"
  REBELS_CABINET_MODIFIER: "@rebels_default! Progresso mensile ribelle: #G -0.25%#!"
  REBEL_SUPPORT_HEADER: "Paesi che sostengono [Rebel.GetNameWithNoTooltip]"
- REBEL_DOES_HAVE_SUPPORTERS: "I seguenti [countries|e] sostengono [Rebel.GetName]:" REBEL_SUPPRESS_PRIORITY_TOOLTIP_ON: "Prioritize Suppression: #G Active#!\n\nArmies using the Suppress Rebels automation will be sent to this rebellion before others." #NEW
- REBEL_SUPPRESS_PRIORITY_TOOLTIP_OFF: "Prioritize Suppression: #R Inactive#!\n\nClick to mark this rebellion as priority. Armies using the Suppress Rebels automation will be sent here before others." #NEW
- REBEL_SUPPRESS_PRIORITY_TITLE: "Prioritize Suppression" #NEW
- REBEL_SUPPRESS_PRIORITY_DESC: "Armies using the Suppress Rebels automation will be sent to this rebellion before others." #NEW
- REBEL_SUPPRESS_PRIORITY_MARK: "Mark this rebellion as priority" #NEW
- REBEL_SUPPRESS_PRIORITY_UNMARK: "Unmark this rebellion as priority" #NEW
+ REBEL_DOES_HAVE_SUPPORTERS: "I seguenti [countries|e] sostengono [Rebel.GetName]:" 
+ REBEL_VICTORY_DEMANDS_TOOLTIP_TITLE: "Se vincono" 
+ REBEL_SUPPRESS_PRIORITY_TOOLTIP_ON: "Priorità alla Soppressione: #G Attiva#!\n\nGli eserciti che utilizzano l'automazione "Sopprimere i Ribelli" saranno inviati a reprimere questa ribellione prima degli altri." 
+ REBEL_SUPPRESS_PRIORITY_TOOLTIP_OFF: "Priorità alla Soppressione: #R Inattiva#!\n\nClicca qui per contrassegnare questa ribellione come prioritaria. Gli eserciti che utilizzano l'automazione "Sopprimere i Ribelli" saranno inviati qui prima degli altri." 
+ REBEL_SUPPRESS_PRIORITY_TITLE: "Priorità alla Soppressione" 
+ REBEL_SUPPRESS_PRIORITY_DESC: "Gli eserciti che utilizzano l'automazione "Sopprimere i Ribelli" saranno inviati a sedare questa ribellione prima degli altri." 
+ REBEL_SUPPRESS_PRIORITY_MARK: "Considera questa ribellione una priorità" 
+ REBEL_SUPPRESS_PRIORITY_UNMARK: "Rimuovi questa ribellione dalle priorità" 
+ REBEL_LEGEND_WILL_REVOLT: "Si unirà alla rivolta" 
+ REBEL_LEGEND_HAS_SUPPORT: "Ha un certo sostegno ribelle" 

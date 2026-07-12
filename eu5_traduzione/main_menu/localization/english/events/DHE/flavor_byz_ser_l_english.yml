@@ -10,14 +10,14 @@
  flavor_byz_ser.2.title: "$flavor_byz_ser.1.title$"
  flavor_byz_ser.2.entry: "$flavor_byz_ser.2.title$"
  flavor_byz_ser.2.desc: "La regione di [ShowProvinceDefinitionName('vardar_province')], un tempo posseduta dal potente [ROOT.GetCountry.GetLongName], è caduta da tempo in mano ai barbari. Ora, dopo molti decenni, potremmo avere la possibilità di riportarla nel nostro ovile tramite un alleato improbabile.\n\n[target_character.GetName], un magnate [target_country.GetAdjective] che governa [origin_country.GetName], sembra avere le priorità di [target_character.GetHerHis] in ordine. Pur essendo nominalmente leale al [target_country.GetLongNameWithNoTooltip], le nostre spie riferiscono che la lealtà di [target_character.GetHerHis] è volubile e che [target_character.GetSheHe] potrebbe essere spinto verso di noi con l'uso di qualche tattica subdola."
- flavor_byz_ser.2.a: "Ricopriamo [target_character.GetHerHim] d'oro!"
+ flavor_byz_ser.2.a: "Ricopriamolo d'oro!"
  flavor_byz_ser.2.a.entry: "Ricopriamolo d'oro!"
 
  flavor_byz_ser.3.title: "$flavor_byz_ser.1.title$"
  flavor_byz_ser.3.entry: "$flavor_byz_ser.3.title$"
  flavor_byz_ser.3.desc: "[target_character.GetName], dopo aver distinto [target_character.GetHerselfHimself] in precedenza in una sanguinosa guerra civile [target_country2.GetAdjective], è giunto a esercitare molto potere e influenza nella [ShowProvinceDefinitionName('vardar_province')] [ROOT.GetCountry.GetAdjective]. Nonostante sia un [ShowSubjectTypeName('vassal')] di [target_country.GetName], il dominio di [target_character.GetHerHis] è praticamente indipendente a causa della [ShowSocietyDirectionName('decentralization')] di [target_country.GetNameWithNoTooltip]. [target_character.GetSheHe] è pronto a essere il creatore di re nell'area."
  flavor_byz_ser.3.a: "Il potere tende a corrompere, e il potere dispotico corrompe dispoticamente."
- SER_strumica_was_released: "[origin_country.GetName] has been released as our [ShowSubjectTypeName('vassal')]. If we maintain their [subject_loyalty|e] we will be able to immediately annex them at the beginning of #W 1341#!" #NEW
+ SER_strumica_was_released: "[origin_country.GetName] è stato rilasciato come nostro [ShowSubjectTypeName('vassal')]. Se manteniamo la loro [subject_loyalty|e] potremo annetterli immediatamente all'inizio del #W 1341#!" 
 
  SER_threat_of_secession: "Se [origin_country.GetName] ha meno del #Y 50.0%#! di [subject_loyalty|e] all'inizio del #W 1341#!, cambierà alleanza e diventerà un [ShowSubjectTypeName('vassal')] di [target_country2.GetName]"
  SMC_player: "Poiché [origin_country.GetName] è un giocatore umano, la decisione finale dipende interamente dalla sua scelta nel relativo [event|e]"
@@ -25,7 +25,6 @@
  SMC_threat_of_secession: "Nel #W 1341#!, potremo scegliere di diventare un [ShowSubjectTypeName('vassal')] di [target_country2.GetName]. A seconda della nostra [subject_loyalty|e], scegliere l'uno o l'altro potrebbe costare [stability|e]"
 
  flavor_byz_ser.4.title: "Tempo della Resa dei Conti"
-# flavor_byz_ser.4.entry: "$flavor_byz_ser.4.title$" #DELETE
  flavor_byz_ser.4.desc: "Sono passati anni e la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ROOT.GetCountry.GetAdjective] è stata visitata molte volte da inviati [target_country2.GetAdjective]. Il loro obiettivo — allontanarci da [target_country.GetName] e spingerci verso il [target_country2.GetFlavorRank] a sud. Tuttavia, possiamo vedere attraverso le loro interferenze e non saremo persuasi così facilmente dalle loro parole. In definitiva questa è la nostra decisione, e qualunque stato sceglieremo di affiancare, ciò avrà effetto sulla regione di [ShowRegionName('balkan_region')] per i decenni a venire."
  flavor_byz_ser.4.a: "La nostra lealtà non sarà messa in discussione."
  flavor_byz_ser.4.b: "Serve un cambiamento."
@@ -34,7 +33,7 @@
  flavor_byz_ser.5.desc: "Nonostante tutte le voci sulla slealtà [origin_country.GetAdjective], risulta che il legame [ShowCultureName('serbian_culture')] che scorre tra i magnati e lo stato [target_country.GetAdjective] sia più profondo della loro avidità... Anche con le interferenze [target_country2.GetAdjective], il [origin_country.GetGovernment.GetRulerTitle] di [origin_country.GetNameWithNoTooltip] è rimasto saldo — [origin_country.GetNameWithNoTooltip] resterà parte del [target_country.GetLongNameWithNoTooltip]."
  flavor_byz_ser.5.byz: "Ahimè, un giorno lo riconquisteremo..."
  flavor_byz_ser.5.ser: "Come previsto."
- flavor_byz_ser.5.ser_annex: "The lands shall be reintegrated." #NEW
+ flavor_byz_ser.5.ser_annex: "I terreni saranno restituiti." 
 
 
  flavor_byz_ser.6.title: "$flavor_byz_ser.5.title$"

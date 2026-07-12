@@ -6,7 +6,9 @@
  ACHIEVEMENT_NOT_POSSIBLE_TITLE: "Achievement Non Disponibile"
  ACHIEVEMENT_REQUIRES_DLC_TITLE: "DLC Achievement"
  ACHIEVEMENT_REQUIRES_DLC: "Ha abilitato i DLC: [GameDLC.GetName]"
- ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "chievements disponibili solo nella modalità Ironman."
+ ACHIEVEMENT_REQUIRES_DLC_PASS: "#indent_newline:0 #trigger_pass @trigger_pass! $ACHIEVEMENT_REQUIRES_DLC$#!#!" 
+ ACHIEVEMENT_REQUIRES_DLC_FAIL: "#indent_newline:0 #trigger_fail @trigger_fail! $ACHIEVEMENT_REQUIRES_DLC$#!#!" 
+# ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "chievements disponibili solo nella modalità Ironman." #DELETE
  IRONMAN_LABEL: "Ironman"
  IRONMAN_SAVEGAME_NAME: "Ironman di $COUNTRY$"
  IRONMAN_SAVELABEL_NAME: "Salvataggio Ironman"
@@ -23,7 +25,7 @@
  ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Disponibili#!"
  ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Non Disponibili#!"
  ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON: "#N Non Disponibili#!\n\nGli achievements non possono essere sbloccati nella sessione di gioco attuale.\n$ACHIEVEMENTS_EXPLANATION$"
- ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Gli achievements sono sbloccabili solo se:\n$EFFECT_LIST_BULLET$Si gioca in modalità giocatore singolo\n$EFFECT_LIST_BULLET$La modalità Ironman è attivata\n$EFFECT_LIST_BULLET$I file di gioco che influenzano il gameplay non sono stati modificati e non si stanno usando opzioni di avvio speciali (cioè il checksum è invariato)"
+ ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Gli achievement sono sbloccabili solo se:\n$EFFECT_LIST_BULLET$Nessuna regola di gioco che blocca gli achievement è abilitata\n$EFFECT_LIST_BULLET$Giochi in giocatore singolo\n$EFFECT_LIST_BULLET$Non sei in modalità Osservatore\n$EFFECT_LIST_BULLET$Non hai mai giocato questo salvataggio in multigiocatore\n$EFFECT_LIST_BULLET$Il gioco non ha raggiunto la data di fine partita\n$EFFECT_LIST_BULLET$Non stai usando il salvataggio di un altro giocatore\n$EFFECT_LIST_BULLET$Non stai usando opzioni di avvio speciali" 
  ACHIEVEMENT_GROUP_TITLE_CAESAR: "[Group.GetName]"
  ACHIEVEMENT_GROUP_AMOUNT_CAESAR: "[Group.CalcNumberOfUnlockedVisibleAchievements] / [Group.GetNumberOfVisibleAchievements]"
 
@@ -40,7 +42,7 @@
  ACHIEVEMENT_DESC_victorious: "Vinci una guerra."
  victorious_tt: "Abbiamo vinto una [war|e]"
  
- ACHIEVEMENT_its_just_business: "Sono Solo Affari" #NEW
+ ACHIEVEMENT_its_just_business: "Sono Solo Affari" 
  ACHIEVEMENT_DESC_its_just_business: "Crea un Mercato."
  its_just_business_tt: "Abbiamo creato un [market|e]"
  
@@ -153,7 +155,7 @@
  
  ACHIEVEMENT_hongwu_di: "Hóngwǔ Dì"
  ACHIEVEMENT_DESC_hongwu_di: "Giocando Míng, possiedi l'intera Cina e diventa il leader del Regno di Mezzo."
- hongwu_di_east_china_trigger_tt: "[ShowRegionName('east_china_region')] (escludendo [ShowAreaName('taiwan_area')]) è di proprietà di [GetCountry('MNG').GetName] o dei suoi [subjects|e]" #NEW 
+ hongwu_di_east_china_trigger_tt: "[ShowRegionName('east_china_region')] (escludendo [ShowAreaName('taiwan_area')]) è di proprietà [GetCountry('MNG').Custom('IT_Della')][GetCountry('MNG').GetName] o dei suoi [subjects|e]"  
  
  ACHIEVEMENT_break_the_yoke: "Spezzare il Giogo"
  ACHIEVEMENT_DESC_break_the_yoke: "Giocando un paese russo, spezza il Giogo Tataro."
@@ -197,28 +199,28 @@
  ACHIEVEMENT_five_hundred_miles: "500 Miglia"
  ACHIEVEMENT_DESC_five_hundred_miles: "Possiedi almeno 100 località con 5 strade ciascuna."
  
- ACHIEVEMENT_saladin_legacy: "Eredità di Saladino" #NEW
- ACHIEVEMENT_DESC_saladin_legacy: "Partendo come Ayyubidi, voi o i vostri sudditi possedete: la regione dell'Egitto e dell'Hejaz, lo Yemen Settentrionale, lo Yemen Meridionale, il Levante e le zone della Jazira." #NEW
+ ACHIEVEMENT_saladin_legacy: "Eredità di Saladino" 
+ ACHIEVEMENT_DESC_saladin_legacy: "Partendo come Ayyubidi, voi o i vostri sudditi possedete: la regione dell'Egitto e dell'Hejaz, lo Yemen Settentrionale, lo Yemen Meridionale, il Levante e le zone della Jazira." 
  
- ACHIEVEMENT_african_trade: "Commercio Africano" #NEW
- ACHIEVEMENT_DESC_african_trade: "Partendo da Kilwa, diventa proprietario di un centro commerciale in Africa con il valore di mercato più alto al mondo." #NEW
+ ACHIEVEMENT_african_trade: "Commercio Africano" 
+ ACHIEVEMENT_DESC_african_trade: "Partendo da Kilwa, diventa proprietario di un centro commerciale in Africa con il valore di mercato più alto al mondo." 
  
- ACHIEVEMENT_i_am_inevitable: "Io sono Inevitabile" #NEW
- ACHIEVEMENT_DESC_i_am_inevitable: "Possiedi tutte le Egemonie." #NEW
+ ACHIEVEMENT_i_am_inevitable: "Io sono Inevitabile" 
+ ACHIEVEMENT_DESC_i_am_inevitable: "Possiedi tutte le Egemonie." 
  
- ACHIEVEMENT_greatness_from_small_beginnings: "La Grandezza Nasce da Piccoli Inizi" #NEW
- ACHIEVEMENT_DESC_greatness_from_small_beginnings: "Partendo come Contea, ottieni il rango di Impero, escluso quello di Imperatore del Sacro Romano Impero." #NEW
+ ACHIEVEMENT_greatness_from_small_beginnings: "La Grandezza Nasce da Piccoli Inizi" 
+ ACHIEVEMENT_DESC_greatness_from_small_beginnings: "Partendo come Contea, ottieni il rango di Impero, escluso quello di Imperatore del Sacro Romano Impero." 
  
- ACHIEVEMENT_goose_step_by_step: "Goose Step by Step" #NEW
- ACHIEVEMENT_DESC_goose_step_by_step: "Come Prussia hai oltre 50 Valori Sociali di Qualità e Offensivi." #NEW
+ ACHIEVEMENT_goose_step_by_step: "Passo dell'oca dopo passo" 
+ ACHIEVEMENT_DESC_goose_step_by_step: "Come Prussia hai oltre 50 Valori Sociali di Qualità e Offensivi." 
  
- ACHIEVEMENT_ill_be_wittelsback: "Sarò Wittelsback" #NEW
- ACHIEVEMENT_DESC_ill_be_wittelsback: "Partendo come Brandeburgo, supera il disastro “Timulto in Brandeburgo” con un punteggio di investimento Wittelsbacher pari a 100 e un sovrano Wittelsbach sul trono." #NEW
+ ACHIEVEMENT_ill_be_wittelsback: "Sarò Wittelsback" 
+ ACHIEVEMENT_DESC_ill_be_wittelsback: "Partendo come Brandeburgo, supera il disastro “Tumulto in Brandeburgo” con un punteggio di investimento Wittelsbacher pari a 100 e un sovrano Wittelsbach sul trono." 
  had_turmoil_in_brandenburg_disaster_tt: "Abbiamo avuto il [disaster|e] [ShowDisasterName('turmoil_in_brandenburg')]"
  ill_be_wittelsback_tt: "Il nostro punteggio di investimento per Wittelsbacher è di #Y 100#!"
  
- ACHIEVEMENT_reformatio_imperii: "Reformatio Imperii" #NEW
- ACHIEVEMENT_DESC_reformatio_imperii: "Come Imperatore del SRI, hai promulgato le politiche “Dieta Perpetua”,  “Ewiger Landfriede” e “Tassazione Diretta”." #NEW
+ ACHIEVEMENT_reformatio_imperii: "Reformatio Imperii" 
+ ACHIEVEMENT_DESC_reformatio_imperii: "Come Imperatore del SRI, hai promulgato le politiche “Dieta Perpetua”,  “Ewiger Landfriede” e “Tassazione Diretta”." 
 
 
  # Achievements Very Hard
@@ -266,13 +268,25 @@
 
  ACHIEVEMENT_a_tale_of_two_cities: "Una Storia di Due Città"
  ACHIEVEMENT_DESC_a_tale_of_two_cities: "Avere due Città nella stessa provincia, entrambe con il numero massimo di Diritti Urbani e senza che nessuna di esse condivida alcun Diritto Urbano con l'altra."
+ ACHIEVEMENT_gilt_edged: "Credito dorato" 
+ ACHIEVEMENT_DESC_gilt_edged: "Raggiungi 80 di solvibilità senza mai andare in bancarotta." 
+ ACHIEVEMENT_cowabunga: "Cowabunga!" 
+ ACHIEVEMENT_DESC_cowabunga: "Tieni un pittore, uno scultore, un architetto e uno scienziato alla tua corte nello stesso momento." 
+ ACHIEVEMENT_counting_circles: "Cerchi da contare" 
+ ACHIEVEMENT_DESC_counting_circles: "Partendo come Contea, diventa il capo di un Circolo Imperiale." 
+ ACHIEVEMENT_if_you_cant_beat_em_join_em: "Se non puoi batterli, unisciti a loro" 
+ ACHIEVEMENT_DESC_if_you_cant_beat_em_join_em: "Vinci la situazione Guelfi e Ghibellini dopo aver cambiato fazione almeno una volta, trascorrendo almeno un mese in ciascuna fazione." 
+ ACHIEVEMENT_league_of_legends: "Lega delle leggende" 
+ ACHIEVEMENT_DESC_league_of_legends: "Esci vittorioso dalla situazione delle Guerre d'Italia come capo di una qualsiasi Lega." 
+ ACHIEVEMENT_uomo_universale: "Uomo Universale" 
+ ACHIEVEMENT_DESC_uomo_universale: "Come paese di cultura italiana, possiedi il luogo di nascita del Rinascimento mentre sei completamente Innovativo." 
  
  ACHIEVEMENT_GROUP_very_easy_achievements: "Molto Facile"
  ACHIEVEMENT_GROUP_easy_achievements: "Facile"
  ACHIEVEMENT_GROUP_medium_achievements: "Medio"
  ACHIEVEMENT_GROUP_hard_achievements: "Difficile"
  ACHIEVEMENT_GROUP_very_hard_achievements: "Molto Difficile"
- PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Modalità Ironman\n[SelectLocalization(GameIsIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]"
+ PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Modalità Ironman\n[SelectLocalization(GameWouldBeIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]" 
  PLAY_BUTTON_ACHIEVEMENTS_TOOLTIP: "Achievements [SelectLocalization(CanGetAchievements, 'ACHIEVEMENTS_ENABLED_NO_HEADER', 'ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON')]"
 
  # Tooltips
@@ -280,3 +294,8 @@
  has_emerged_victorious_during_rise_of_ottomans_situation_tt: "Siamo emersi vittoriosi nella [situation|e] [ShowSituationName('rise_of_the_ottomans')] come Beylik più forte"
  had_timur_as_past_ruler_tt: "Uno dei nostri precedenti [rulers|e] è [GetCharacter('chg_timur_lame_borjigin').GetName]"
  hussites_won_hussite_wars_situation_tt: "[ShowReligionName('hussite')] è stato vittorioso nella [situation|e] [ShowSituationName('hussite_wars')]"
+ gilt_edged_tt: "Non siamo mai andati in bancarotta" 
+ if_you_cant_beat_em_join_em_win_tt: "Siamo usciti vittoriosi dalla [situation|e] [ShowSituationName('guelphs_and_ghibellines')]" 
+ if_you_cant_beat_em_join_em_switch_tt: "Abbiamo cambiato fazione almeno una volta, trascorrendo almeno un mese in ciascuna fazione" 
+ league_of_legends_tt: "Abbiamo guidato una Lega alla vittoria nella [situation|e] [ShowSituationName('italian_wars')]" 
+ uomo_universale_renaissance_tt: "Possediamo il luogo di nascita del Rinascimento" 

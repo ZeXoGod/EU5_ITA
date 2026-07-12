@@ -25,6 +25,7 @@
  national_assemblies_desc: "Un'assemblea composta da rappresentanti dell'intera nazione. A seconda del tipo di governo, può avere tutti i poteri del governo o solo quelli legislativi."
  prussian_monarchy: "Monarchia Prussiana"
  prussian_monarchy_desc: "Una forma di governo sotto un monarca, che pone grande attenzione all'efficienza amministrativa, soprattutto nelle questioni militari, se la situazione lo richiede."
+ unlock_militarize_country_cabinet_action_tt: "Concede accesso alla [cabinet_action|e] [ShowCabinetActionName('militarize_country')]" 
  the_court_of_wards_and_liveries: "Corte dei Feudi e delle Investiture"
  the_court_of_wards_and_liveries_desc: "Con una corte dei feudi e delle investiture, l'amministrazione della riscossione delle imposte e dei diritti feudali è molto più efficace, grazie alla maggiore competenza degli esattori e a un sistema di entrate organizzato. Tuttavia, la nobiltà tende a considerare tali corti come un profondo sfruttamento delle proprie fortune."
  royal_decree: "Decreto Reale"
@@ -40,10 +41,8 @@
  mlo_secret_council: "Consiglio Segreto"
  mlo_secret_council_desc: "Il Consiglio Segreto è un organo composto da persone di nobili origini. La sua giurisdizione comprende tutto il nostro dominio e spesso si scontra con l'agenda del sovrano. La maggior parte delle decisioni critiche prese da o per conto del sovrano sono spesso sottoposte all'esame del Consiglio Segreto."
  # Scotland
-# scottish_shires_reform: "Shires [GetCountry('SCO').Custom('IT_ADJ_MP')]" #OLD
- scottish_shires_reform: "Shires of $SCO$" #NEW
-# scottish_shires_reform_desc: "Introdotto da [GetCharacter('sco_malcolm_iii').GetName], il sistema delle #italic shires#! divide [GetCountry('SCO').GetName] in contee amministrative, con ogni shire che ha una propria struttura." #OLD
- scottish_shires_reform_desc: "Introduced by [GetCharacter('sco_malcolm_iii').GetName], the shire system divides $SCO$ into administrative counties, with each shire having its own structure." #NEW
+ scottish_shires_reform: "Shires di $SCO$" 
+ scottish_shires_reform_desc: "Introdotto da [GetCharacter('sco_malcolm_iii').GetName], il sistema degli shire divide $SCO$ in contee amministrative, ciascuna dotata di una propria struttura." 
  # Republics
  merchant_republic: "Repubblica Mercantile"
  merchant_republic_desc: "Una repubblica fondata sui principi del commercio. Gli scambi commerciali sono il fattore più importante per le famiglie che governano queste repubbliche."
@@ -87,12 +86,11 @@
 
  primas_germaniae: "Primas Germaniae"
  primas_germaniae_plural: "Primas Germaniae"
-# primas_germaniae_desc: "Deteniamo il prestigioso titolo di Primas Germaniae, che ci distingue come l'arcivescovo più importante del [GetUniqueInternationalOrganization('hre').GetName]." #OLD
- primas_germaniae_desc: "We hold the prestigious title of Primas Germaniae, distinguishing us as one of the most important ecclesiastical offices in the [GetUniqueInternationalOrganization('hre').GetName]." #NEW
- town_specialization: "Tailored $game_concept_town_rights$" #NEW
- town_specialization_desc: "Urban settlements are the muscles that power our country. Their sprawl attracts the majority of our population, and their bustling economies provide both opportunities and benefits for all. If we provide them with the appropriate laws, regulations, and privileges, we can ensure that they are most beneficial for us, each according to their situation and needs." #NEW
- capitalistic_cities: "Fueling Economies" #NEW
- capitalistic_cities_desc: "Our economy is based on the industries of our towns and cities. Providing them with the adequate regulations will ensure that we maintain those industries functioning at their best performance, reducing costs and maximizing benefits." #NEW
+ primas_germaniae_desc: "Deteniamo il prestigioso titolo di Primas Germaniae, che ci distingue come uno dei più importanti uffici ecclesiastici del [GetUniqueInternationalOrganization('hre').GetName]." 
+ town_specialization: "$game_concept_town_rights$ su Misura" 
+ town_specialization_desc: "Gli insediamenti urbani sono i muscoli che alimentano il nostro paese. La loro espansione attira la maggior parte della nostra popolazione, e le loro economie vivaci offrono opportunità e benefici per tutti. Se forniremo loro leggi, regolamenti e privilegi adeguati, potremo assicurarci che siano il più vantaggiose possibile per noi, ciascuna secondo la propria situazione e le proprie necessità." 
+ capitalistic_cities: "Alimentare le Economie" 
+ capitalistic_cities_desc: "La nostra economia si basa sulle industrie delle nostre città e dei nostri centri urbani. Fornire loro regolamenti adeguati garantirà che tali industrie continuino a funzionare al massimo rendimento, riducendo i costi e massimizzando i benefici." 
 
  #
  # Common
@@ -219,15 +217,61 @@
  state_sponsored_markets_desc: "È necessario creare degli hub commerciali con il sostegno dello Stato per incoraggiare il commercio. Il sostegno del Governo garantirà prezzi equi e crescita economica."
  coastal_city_or_town_gets_tt: "Ogni nostra [Concept('towns_and_cities', 'Località Urbana')|e] [coastal|e] posseduta otterrà:"
  every_coastal_location_gains_tt: "Ogni nostra [location|e] [coastal|e] otterrà:"
- plutocratic_monarchy: "Plutocratic Monarchy" #NEW
- plutocratic_monarchy_desc: "A Monarchy that manages its finances by relying on the merchant class and securing the flow of commerce." #NEW
+ plutocratic_monarchy: "Monarchia Plutocratica" 
+ plutocratic_monarchy_desc: "Una monarchia che gestisce le proprie finanze affidandosi alla classe mercantile e garantendo il flusso del commercio." 
+ agrarian_community: "Comunità Agraria" 
+ agrarian_community_desc: "Le nostre terre sono coltivate da persone di molte fedi e origini diverse. Coltivare un senso di comunità e porre al centro la loro identità condivisa di nostri sudditi ridurrà gli attriti e concentrerà tutti sui nostri obiettivi comuni." 
+ agrarian_community_town_right_unlock_tt: "Concede accesso a [ShowTownRightsName('agrarian_community_town_right')]" 
+ study_of_the_classics: "Studio dei Classici" 
+ study_of_the_classics_desc: "Per garantire la prosperità duratura del nostro governo, dovremo istituire un nuovo sistema di istruzione per la nostra élite. Con una nuova istituzione separata, potremo assicurare l'accesso a tutori della massima qualità, mantenendo al contempo i loro sforzi concentrati su chi lo merita di più. Con il nostro governo sostenuto da questi sforzi, col tempo ciò ispirerà la nostra popolazione ad aspirare allo stesso livello di istruzione." 
+ study_of_the_classics_building_unlock_tt: "Concede accesso all'edificio [ShowBuildingTypeName('gymnasium_building')]" 
+ barony_rule_reform: "Governo delle Baronie" 
+ barony_rule_reform_desc: "I nostri nobili più capaci garantiranno che la nostra influenza raggiunga non solo gli angoli più remoti del nostro regno, ma favorisca anche legami con i nostri sudditi. Inviando membri minori della nostra stessa famiglia come ambasciatori presso i nostri vassalli, potremo placare coloro che governano in nostra vece e assicurarci che la loro supervisione realizzi la nostra volontà." 
+ barony_rule_reform_scripted_relation_unlock_tt: "Concede accesso all'interazione con i sudditi [ShowRelationTypeName('strengthen_family_ties')]" 
+ enlightened_leadership_reform: "Guida Illuminata" 
+ enlightened_leadership_reform_desc: "La nostra guida deve essere composta solo dalle menti più brillanti, a prescindere dalla loro origine. Questa guida ispiratrice per il nostro popolo garantirà al nostro stato un vantaggio sui rivali, tanto nel governo quanto negli affari militari." 
+ enlightened_leadership_reform_town_right_unlock_tt: "Concede accesso a [ShowTownRightsName('enlightened_leadership_reform_town_right')]" 
+ hermit_country_reform: "Paese Eremita" 
+ hermit_country_reform_desc: "Il nostro paese deve restare resiliente contro le minacce straniere, persino prima che le potenze rivali rivelino le loro intenzioni. Pianificando con cura le nostre relazioni diplomatiche con i paesi stranieri, potremo ridurre il rischio che fabbrichino pretesti di guerra contro di noi." 
+ hermit_country_reform_scripted_relation_unlock_tt: "Concede accesso all'azione segreta [ShowCountryInteractionName('annul_casus_belli')]" 
+ shield_of_the_faith_reform: "Scudo della Fede" 
+ shield_of_the_faith_reform_desc: "Siamo i difensori dei giusti, e proteggeremo i nostri fratelli nella fede da chiunque osi mettere loro le mani addosso. Il popolo dell'unica vera fede potrà cercare rifugio nei nostri possenti baluardi, dove nessun pagano potrà far loro del male." 
+ shield_of_the_faith_reform_building_unlock_tt: "Concede accesso all'edificio [ShowBuildingTypeName('fortress_church')]" 
+ enlightened_council_reform: "Consiglio Illuminato" 
+ enlightened_council_reform_desc: "Il nostro stato deve essere guidato dai principi degli studiosi illuminati. I consiglieri che guidano il nostro sovrano devono mantenerlo ben informato e concentrato sull'unico compito di garantire il benessere di tutti i nostri sudditi." 
+ enlightened_council_reform_request_unlock_tt: "Concede accesso alla richiesta parlamentare $declare_holidays_request$" 
+ colonial_empire_reform: "Impero Coloniale" 
+ colonial_empire_reform_desc: "Il nostro impero si estende sui vasti oceani del mondo, e le nostre possenti flotte trasportano merci preziose da un continente all'altro. Proteggere le nostre flotte e tenere al sicuro i nostri possedimenti coloniali dall'influenza dei mercanti stranieri garantirà il nostro controllo duraturo su ogni angolo del mondo." 
+ tyranny_of_the_capital_reform: "Tirannia della Capitale" 
+ tyranny_of_the_capital_reform_desc: "Sosterremo gli sforzi della nostra capitale per centralizzare il potere nelle mani del governo. Una presenza costante della nostra autorità e della nostra forza garantirà la cooperazione dei nostri ceti e impedirà qualsiasi rivolta contro il nostro dominio." 
+ tyranny_of_the_capital_reform_action_unlock_tt: "Concede accesso alla [cabinet_action|e] [ShowCabinetActionName('tyranny_of_the_capital_action')]" 
+ noblesse_oblige_reform: "Noblesse Oblige" 
+ noblesse_oblige_reform_desc: "Le azioni della nostra classe alta devono superare ogni aspettativa riposta in essa, così da essere d'ispirazione per il nostro popolo e servire come modello del cittadino ideale da emulare." 
+ noblesse_oblige_reform_action_unlock_tt: "Concede accesso alla [cabinet_action|e] [ShowCabinetActionName('noblesse_oblige_cabinet_action')]" 
+ rural_oligarchy_reform: "Oligarchia Rurale" 
+ rural_oligarchy_reform_desc: "La spina dorsale della nostra economia si trova nelle materie prime della nostra terra. Concedendo carte ai nostri borghesi perché supervisionino tali operazioni tramite compagnie locali, potremo garantire un'espansione rapida ed efficiente delle nostre estrazioni." 
+ everyone_serves_reform: "Sistema di Stoccaggio Pianificato" 
+ everyone_serves_reform_desc: "Nutrire le nostre truppe non è un compito facile: richiede sia la costruzione di un'infrastruttura di edifici $grain_house$, sia il loro riempimento con il raccolto annuale. Allo stesso tempo, il nostro popolo deve farsi carico di questo contributo aggiuntivo, altrimenti il nostro esercito non riuscirebbe a proteggere efficacemente il nostro paese." 
+ everyone_serves_reform_building_unlock_tt: "Concede accesso all'edificio [ShowBuildingTypeName('grain_house')]" 
+ trade_guards_reform: "Guardie Commerciali Professionali" 
+ trade_guards_reform_desc: "Per facilitare il flusso di merci in tutto il nostro paese e garantire la sicurezza di ogni mercante che metta piede sul nostro territorio, dovremmo istituire una compagnia permanente di soldati con l'unico scopo di proteggere le nostre rotte commerciali. Inoltre, questa organizzazione sarà incaricata anche della manutenzione e della costruzione di nuove strade." 
+ provincial_consulates_reform: "Consolati Provinciali" 
+ provincial_consulates_reform_desc: "Possiamo agevolare tutta la diplomazia estera investendo in una rete di edifici [ShowBuildingTypeName('provincial_chancery')]. Così facendo, potremo garantire che gli inviati stranieri raggiungano i nostri rappresentanti molto più rapidamente e accelerare le nostre comunicazioni con le potenze straniere." 
+ provincial_consulates_reform_building_unlock_tt: "Concede accesso all'edificio [ShowBuildingTypeName('provincial_chancery')]" 
+ peasant_labor_rights_reform: "Diritti del Lavoro Garantiti" 
+ peasant_labor_rights_reform_desc: "Dare alla nostra popolazione protezione legale contro chi desidera sfruttarla aiuterà la nostra terra e il nostro popolo a prosperare. Con un solido sistema giuridico che protegga contadini e lavoratori dagli abusi, aumentando al contempo le loro opportunità di istruzione, potremo ottenere un incremento duraturo della nostra produttività." 
+ peasant_labor_rights_reform_cabinet_action_unlock_tt: "Concede accesso alla [cabinet_action|e] [ShowCabinetActionName('peasant_labor_rights_action')]" 
+ leader_of_nations_reform: "Uffici di Integrazione" 
+ leader_of_nations_reform_desc: "L'integrazione del territorio dei nostri sudditi nella nostra amministrazione è un compito difficile, reso ancora più arduo dal sentimento negativo trasmesso ad altri paesi. L'istituzione di nuovi uffici potrà attenuare questo problema, almeno per quei paesi che ci hanno già giurato fedeltà." 
+ leader_of_nations_reform_event_effect_unlock_tt: "All'annessione di un suddito, non riceveremo più una penalità di opinione con gli altri sudditi" 
+ new_elite_reform: "Modernizzazione dei Diritti Urbani" 
+ new_elite_reform_desc: "Molte delle nostre città e dei nostri centri urbani restano aggrappati a diritti obsoleti, concessi loro secoli fa. Affinché queste aree urbane rimangano competitive, dobbiamo assicurarci che i loro privilegi restino sensati per il loro status attuale all'interno del nostro paese." 
 
  #
  # Specific ones
  #
  alsno_stadga: "Alsnö Stadga"
-# alsno_stadga_desc: "Questo insieme di regole è stato stabilito da [GetCharacter('swe_magnus_ladulas').GetName] nel 1280 ad Alsnö Hus per regolamentare e formalizzare i benefici della [ShowEstateTypeName('nobles_estate')], proteggendo al contempo i [ShowPopTypeName('peasants')] dalle loro imprese. Questo è il motivo per cui fu soprannominato “Ladulås”, ovvero “Barn-Lock” in Inglese, dalla gente comune." #OLD
- alsno_stadga_desc: "This set of rules was set up by [GetCharacter('swe_magnus_ladulas').GetName] in 1280 at Alsnö Hus to regulate and formalize the benefits of the [ShowEstateTypeName('nobles_estate')], while also protecting the [ShowPopTypeName('peasants')] from their exploits. This is why he was nicknamed 'Ladulås', or 'Barn-Lock' in English by the commoners." #NEW
+ alsno_stadga_desc: "Questo insieme di regole fu istituito da [GetCharacter('swe_magnus_ladulas').GetName] nel 1280 ad Alsnö Hus per regolamentare e formalizzare i benefici di [ShowEstateTypeName('nobles_estate')], proteggendo al tempo stesso [ShowPopTypeName('peasants')] dai loro abusi. Per questo fu soprannominato 'Ladulås', o 'Barn-Lock' in inglese dai popolani." 
  papacy_reform: "Santa Sede"
  papacy_reform_desc: "La Santa Sede è la giurisdizione del Vescovo di [ShowLocationName('rome')], il #italic Pontifex Maximus#!, capo della Chiesa [ShowReligionAdjective('catholic')], conosciuto come il [GetCountry('PAP').GetGovernment.GetRulerTitle]."
  kingdom_of_god_reform: "Regno di Dio"
@@ -240,6 +284,8 @@
  galley_lords_reform_desc: "Anche se siamo legati alla terra, il mare è il nostro dominio."
  wayfinders_reform: "Esperti Navigatori"
  wayfinders_reform_desc: "Migliaia di anni di viaggi hanno insegnato ai nostri navigatori come attraversare i mari. Privi di tecnologia avanzata, i navigatori memorizzano gli schemi delle stelle e osservano i minimi cambiamenti nelle nuvole e nell'acqua per determinare la loro posizione nel vasto Pacifico."
+ byzantine_court_in_italy: "Influenza Bizantina" 
+ byzantine_court_in_italy_desc: "Pur essendosi trasferiti in [ShowRegionName('italy_region')], i [GetDynasty('palaiologos_dynasty').GetName] [GetCountry('MFA').Custom('IT_Di')][GetCountry('MFA').GetName] restano fedeli alla loro ascendenza [ShowCultureName('greek_culture')]." 
  magna_carta_reform: "Magna Carta"
  magna_carta_reform_desc: "La 'Grande Carta' è un documento legale che mira a proteggere i diritti feudali dei nostri baroni contro la tassazione ingiusta e le manovre legali da parte della [ShowEstateTypeName('crown_estate')]. È anche uno dei primi documenti a sancire l'idea delle libertà civili, come il diritto a un processo equo e la protezione dalla detenzione illegale."
  sbl_restorer_of_the_disinherited: "Restauratore dei Diseredati"
@@ -265,6 +311,8 @@
  por_casa_de_india_desc: "La Casa da Índia supervisiona tutti i possedimenti [GetCountry('POR').Custom('IT_ADJ_MP')] in [ShowContinentName('africa')] e $india$ e controlla tutti i diritti di commercio in queste zone."
  tsardom: "Zarato"
  tsardom_desc: "Il nostro Stato sostiene l'eredità dell'Impero Romano, ed è un punto fermo della nostra religione di Stato. In qualità di Zar dell'intera [ShowRegionName('russian_region')], il nostro sovrano è il vero signore degli Slavi Orientali."
+ bulgarian_tsardom: "Zarato Bulgaro" 
+ bulgarian_tsardom_desc: "Il nostro regno sostiene l'illustre eredità di Simeone il Grande e degli imperatori dello zarato [GetCountry('BUL').GetAdjective] che ci hanno preceduti. Acclamato sia dal clero sia dalla nobiltà, il nostro sovrano si erge a custode della fede [GetCountry('BUL').GetReligion.GetAdjective] e a pietra angolare del potere imperiale [ShowCultureGroupName('south_slavic_group')] nella regione [ShowRegionName('balkan_region')]." 
  veche_republic: "Repubblica del Veche"
  veche_republic_desc: "Questo Stato è governato da una Veche, un consiglio con la massima autorità legislativa e giudiziaria composto da [ShowEstateTypeName('nobles_estate')], [ShowEstateTypeName('burghers_estate')] e anche [ShowEstateTypeName('peasants_estate')]."
  sudebnik: "Sudebnik"
@@ -328,8 +376,8 @@
  petition_of_rights_desc: "I cittadini all'interno dei nostri confini, in particolare quelli con legami nobiliari, chiedono da tempo l'adozione di alcuni diritti inalienabili. Questi avrebbero un impatto sulla cooperazione dei nostri Stati e sulla nostra capacità di riforme governative, a costo di un'autorità centrale più debole."
  judicate_reform: "Giudicato"
  judicate_reform_desc: "Il Giudicato è un tipo di governo unico, definito dalle sue istituzioni simili a una repubblica e dall'elezione del governante all'interno della Corte Suprema."
- diarchy_republic: " Repubblica Diarchica"
- diarchy_republic_desc: "Nessun uomo dovrebbe governare un Paese da solo, altrimenti non siamo migliori dei despoti tirannici che cercano di sottomettere il nostro popolo.\nIl #italic Capitano del Popolo#! sarà una posizione duale in cui i membri delle famiglie [ShowDynastyName('spinola_dynasty')] e [ShowDynastyName('doria_dynasty')] ricopriranno ciascuno la carica. Questa disposizione garantirà un equilibrio del potere esecutivo."
+ diarchy_republic: "Repubblica Diarchica"
+ diarchy_republic_desc: "Nessun uomo dovrebbe governare un paese da solo, altrimenti non saremmo migliori dei despoti tirannici che cercano di soggiogare il nostro popolo.\nIl #italic Capitano del Popolo#! sarà una carica duplice, in cui membri delle famiglie [ShowDynastyName('spinola_dynasty')] e [ShowDynastyName('doria_dynasty')] occuperanno ciascuno l'ufficio. La rivalità tra i loro #italic alberghi#! mantiene inquieta la $republic$, ma i loro diarchi condividono i fardelli dello stato e i loro banchi di cambio mantengono il flusso della moneta." 
  great_and_minor_councils_of_genoa: "Maggior e Minor Consiglio di [GetCountry('GEN').GetNameWithNoTooltip]"
  great_and_minor_councils_of_genoa_desc: "Creati dall'Ammiraglio Andrea Doria dopo aver riformato il governo [GetCountry('GEN').GetAdjective], il $great_and_minor_councils_of_genoa$ sono i due organi legislativi dello Stato. Il Maggior Consiglio rappresenta i membri della [ShowEstateTypeName('burghers_estate')] mentre il Minor Consiglio è composto dalla [ShowEstateTypeName('nobles_estate')]."
  joint_ruling_monarchy: "Governo Congiunto"
@@ -397,6 +445,7 @@
  sovet_gospod_desc: "Il Sovet Gospod - o Consiglio dei Signori - è l'istituzione decisionale della Repubblica. A differenza del sistema delle Veche, il Sovet Gospod dà più potere ai Posadnik, ai Tysyatsky e ad altri membri della [ShowEstateTypeName('nobles_estate')]. In questo sistema, l'influenza della [ShowEstateTypeName('burghers_estate')] e dei [ShowEstateTypeName('peasants_estate')] è trascurabile."
  ruling_commission_of_england: "Commissione di Governo"
  ruling_commission_of_england_desc: "Una commissione formata da membri della [ShowEstateTypeName('nobles_estate')] ha effettivamente assunto la gestione del regno, agendo come reggenti. La capacità del monarca di esercitare il potere è limitata e il suo diritto di governare diminuisce nel tempo. La commissione può governare solo fino a quando mantiene il sostegno del Parlamento, o fino a quando il sovrano non raccoglie un sostegno sufficiente per rovesciarla."
+ commission_established_tt: "La Commissione di Governo d'Inghilterra è stata istituita" 
  bank_of_england_reform: "Banca di $ENG$"
  bank_of_england_reform_desc: "Istituzione centralizzata e influente, questa banca è composta da potenti finanziatori e aumenta notevolmente la nostra credibilità e la capacità di gestire i nostri debiti. Il suo scopo è quello di gestire le finanze pubbliche, aiutando a stabilizzare i prestiti governativi."
  banu_hummay_amendments: "Emendamenti al Banu Hummay"
@@ -464,7 +513,8 @@
  legacy_of_kublai_khan_desc: "[GetCharacter('kublai_khan').GetName] è stato colui che ha consolidato il nostro dominio sulla $china$. Ha adottato lo stile [ShowCultureGroupName('chinese_group')] e si è proclamato $EMPEROR_CHINA_MALE$ del [GetUniqueInternationalOrganization('middle_kingdom').GetName]. Finché seguiremo le sue orme, la nostra autorità sul Trono del Drago sarà riconosciuta."
 
  three_departments_system: "Tre Dipartimenti"
- three_departments_system_desc: "Il sistema dei $three_departments_system$ e dei Sei Ministeri derivano dagli antichi imperi cinesi e sono le strutture amministrative principali del nostro Stato. Ogni dipartimento è responsabile di diversi aspetti della stesura, della definizione e della revisione delle politiche statali. I Sei Ministeri sono i sei principali organi esecutivi dello Stato, suddivisi nei rispettivi affari di Stato: lavoro, tasse, riti, affari militari, applicazione della legge e lavori pubblici."
+ three_departments_system_desc: "Il $three_departments_system$ e il Sistema dei Sei Ministeri hanno origine negli antichi imperi cinesi e sono le principali strutture amministrative del nostro stato. Ogni dipartimento è responsabile di diversi aspetti della redazione, dell'istituzione e della revisione delle politiche statali. I [ShowBureaucracyTypeName('six_boards_bureaucracy')] sono i sei principali organi esecutivi dello stato, suddivisi nei rispettivi affari di stato: impiego, tassazione, riti, affari militari, applicazione della legge e lavori pubblici." 
+ improves_six_boards_bureaucracy_tt: "Migliora del #G 50%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]" 
  unlocked_mandarin_language_reforms_tt: "È stato sbloccato tramite un [event|e]"
 
  empower_the_eunuchs: "Rafforzare gli Eunuchi"
@@ -531,6 +581,10 @@
  full_college_desc: "L'istituzione esecutiva che sovrintende alla governance quotidiana e ai compiti del Senato. Tutte le questioni e gli ordini del giorno da discutere vengono preparati in anticipo in questo organo esecutivo."
  signoria_of_venice: "Signoria di [GetCountry('VEN').GetNameWithNoTooltip]"
  signoria_of_venice_desc: "Organo governativo supremo di [GetCountry('VEN').GetName], la Signoria pone grande enfasi sulla collaborazione tra il Doge e le altre posizioni chiave dello Stato. La lotta per il potere tra il Consiglio e il Doge diventa quindi un ricordo del passato."
+ ven_magistrato_alla_sanita: "Magistrato alla Sanità" 
+ ven_magistrato_alla_sanita_desc: "Nessuna città in Europa ha affrontato la minaccia delle epidemie con più rigore di $VEN$, e il #italic Magistrato alla Sanità#! permanente che abbiamo istituito è l'istituzione di sanità pubblica più sofisticata al mondo, composta da medici, notai e ispettori tutti tenuti a riferire a un'autorità centrale i primi segni di contagio. Quando la peste compare ai nostri confini, la magistratura ha il potere di mettere in quarantena per quaranta giorni le navi in arrivo nella laguna, una misura che chiamiamo #italic quarantina#!, e di imporre sanzioni a chiunque nasconda la malattia. Questo sistema ha risparmiato a $VEN$ catastrofi che hanno svuotato città rivali, e mantiene la nostra forza lavoro, i nostri mercanti e la nostra flotta abbastanza sani da sostenere il commercio anche mentre la malattia dilaga nella penisola." 
+ ven_provveditori_ai_beni_inculti: "Provveditori ai Beni Inculti" 
+ ven_provveditori_ai_beni_inculti_desc: "I territori della #italic terraferma#! custodiscono un potenziale agricolo che cattivo drenaggio, incuria e indifferenza feudale hanno lasciato irrealizzato: paludi che potrebbero diventare campi di grano, rive fluviali che si allagano ogni primavera e spazzano via il lavoro della stagione. Abbiamo istituito i #italic Provveditori ai Beni Inculti#! con l'autorità di commissionare canali di drenaggio, far rispettare sistemi di irrigazione e compensare i proprietari terrieri la cui cooperazione è richiesta dai lavori. Questo miglioramento sistematico delle terre ha esteso la capacità produttiva delle nostre regioni agricole più ricche, dando a $VEN$ un surplus alimentare che mantiene nutrita la città anche quando il commercio marittimo è interrotto dalla guerra o dai blocchi." 
  promissione_ducale_reform: "Promissione Ducale"
  promissione_ducale_reform_desc: "La Promissione Ducale funge da giuramento formale e da accordo contrattuale che ogni Doge neoeletto di [GetCountry('VEN').GetName] deve giurare di rispettare."
  standardized_relazioni_reform: "Relazioni Standardizzate"
@@ -550,10 +604,8 @@
  taluqdar_nobility_desc: "I taluqdar, o aristocratici dinastici, possiedono vasti terreni, riscuotono le tasse e svolgono ruoli significativi nella nostra amministrazione ed economia. In quanto proprietari terrieri con un potere e un'influenza considerevoli a corte, i Taluqdar sono il nostro equivalente dell'alta nobiltà di altre regioni."
  mhr_ashta_pradhan: "Ashta Pradhan"
  mhr_ashta_pradhan_desc: "$mhr_ashta_pradhan$ - #italic Consiglio dei Ministri Moderno#! - è il sistema di delega ministeriale utilizzato dal popolo [ShowLanguageName('marathi_language')]. Il Consiglio ha il compito di guidare l'amministrazione dello Stato, supervisionando le questioni militari, finanziarie, diplomatiche e religiose."
-# theme_system: "Sistema dei Theme" #OLD
- theme_system: "Decayed Theme System" #NEW
-# theme_system_desc: "Un sistema di sedi provinciali ed eserciti, guidati da uno strategos con la duplice responsabilità di proteggere gli abitanti del luogo e di stabilire l'autorità per volere dell'[GetCountry('BYZ').GetFlavorRank]. Questo sistema sostituì l'amministrazione provinciale di Diocleziano e da allora ha servito il nostro popolo." #OLD
- theme_system_desc: "A system of provincial headquarters and armies, spearheaded by a strategos with dual responsibilities to protect the locals and establish authority at the behest of the [GetCountry('BYZ').GetFlavorRank]. This system replaced the provincial administration of Diocletian and has served our people ever since. Yet time has worn it thin, it endures still, a relic of ages long past." #NEW
+ theme_system: "Sistema dei Temi Decaduto" 
+ theme_system_desc: "Un sistema di quartieri generali provinciali ed eserciti, guidato da uno strategos con la duplice responsabilità di proteggere gli abitanti locali e affermare l'autorità per conto del [GetCountry('BYZ').GetFlavorRank]. Questo sistema sostituì l'amministrazione provinciale di Diocleziano e da allora ha servito il nostro popolo. Eppure il tempo lo ha logorato: resiste ancora, una reliquia di epoche ormai lontane." 
 # byz_theme_system_not_obselete_tt: "Il $theme_system$ non è stato reso obsoleto da un [event|e]" #DELETE
  kritai_katholikoi: "Kritai Katholikoi"
  kritai_katholikoi_desc: "I Kritai Katholikoi, colloquialmente chiamati #italic Giudici Universali dei Romani#!, sono arrivati a rappresentare l'apice dell'autorità legale [GetCountry('BYZ').Custom('IT_ADJ_FS')], nati dalla riforma di [GetCharacter('byz_andronikos_ii_palaiologos').GetName] e inizialmente composti da dodici giudici di estrazione sia laica che ecclesiastica. In seguito ridotto a un collegio di quattro persone, questo illustre tribunale detiene un'autorità senza pari e senza possibilità di appello."
@@ -580,7 +632,7 @@
 
  kritai_katholikoi_reformed: "Kritai Katholikoi Riformato"
  kritai_katholikoi_reformed_desc: "Sebbene il sistema giudiziario creato da [GetCharacter('byz_andronikos_ii_palaiologos').GetName] abbia visto un successo iniziale, c'erano ancora problemi interni, che i giudici sfruttavano per perseguire i loro interessi. Con le riforme di questa Corte Suprema, i processi legali esistenti sono stati snelliti, garantendo al contempo l'assenza di corruzione tra i giudici."
- is_currently_in_disaster_for_byz_tt: "[ShowDisasterName('fate_of_the_phoenix')] is currently active or we completed it victoriously" #NEW
+ is_currently_in_disaster_for_byz_tt: "[ShowDisasterName('fate_of_the_phoenix')] è attualmente attivo o lo abbiamo completato vittoriosamente" 
 
  modern_imperial_army: "Esercito Imperiale Moderno"
  modern_imperial_army_desc: "Il vecchio $theme_system$ di [GetCountry('BYZ').GetName] si è rivelato difettoso, rafforzando l'autorità dei governatori e dei generali piuttosto che del sovrano. Di conseguenza, è stato costituito un nuovo Esercito Imperiale, dove essere un soldato è una professione piuttosto che un dovere."
@@ -725,20 +777,26 @@
  #Malacca Formable 
  shahbandariyya_reform: "Shāhbandariyya"
  shahbandariyya_reform_desc: "$shahbandar_desc$"
- partitio_reform: "Partitio Terrarum Imperii Romaniae" #NEW
- partitio_reform_desc: "After the Fourth Crusade, the Eastern Roman Empire was partitioned among several Western European families, who then founded a series of Crusader Principalities. While these polities existed, they were a constant threat to the Empire." #NEW
- ach_heirs_of_the_latin_empire: "Titular Rulers of the Latin Empire" #NEW
- ach_heirs_of_the_latin_empire_desc: "Although we have since lost control of [ShowLocationName('constantinople')], the seat of power for the [GetCountry('LAT').GetLongName], our claim to it still remains as strong as ever." #NEW
- ath_rule_of_the_catalans: "Dominance of the [ShowCultureNameWithNoTooltip('catalan')] Company" #NEW
- ath_rule_of_the_catalans_desc: "Since the seizure of the [GetCountry('ATH').GetLongNameWithNoTooltip], the [ShowCultureNameWithNoTooltip('catalan')] Company has projected considerable military influence over [ShowScriptedGeographyName('greece_geography')]." #NEW
- ath_catalan_company_expelled_or_stability: "Can be manually removed if above #G +60.00#! [stability|e] or directly through certain [GetCountry('ATH').GetAdjectiveWithNoTooltip] [dynamic_historical_events|e]." #NEW
- lat_papal_restoration_claimant: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] Backing to Retake [ShowLocationNameWithNoTooltip('constantinople')]" #NEW
- lat_papal_restoration_claimant_desc: "Although the [GetCountry('LAT').GetLongName] has since been destroyed by the [GetCountry('BYZ').GetLongName], recent crusader state campaigns in [ShowScriptedGeographyName('greece_geography')] have encouraged [GetCountry('PAP').GetAdjectiveWithNoTooltip] sponsorship to restore the empire." #NEW
- lat_restored_rule_of_the_latins: "Restored Rule of the Latins" #NEW
- lat_restored_rule_of_the_latins_desc: "Once thought to be lost forever to a resurgent [GetCountry('BYZ').GetName], the [GetCountry('LAT').GetLongNameWithNoTooltip] has at long last been restored in [ShowLocationName('constantinople')], and once against serves as a bastion of [ShowReligionAdjective('catholic')] rule throughout [ShowScriptedGeographyName('greece_geography')]." #NEW
- mass_levy_system: "Mass Levy System" #NEW
- mass_levy_system_desc: "By instituting a system of mass conscription, we can draw upon the full population of our realm for military service. This broad mobilization swells our armies with common soldiers, embracing the philosophy that victory comes through numbers rather than individual skill." #NEW
- free_market_charters: "Free Market Charters" #NEW
- free_market_charters_desc: "By granting charters that guarantee free trade and protect merchant interests, we encourage commerce to flourish across our realm. Wealthy trading classes gain political influence, shifting power away from the traditional nobility toward those who command capital." #NEW
- representative_assemblies: "Representative Assemblies" #NEW
- representative_assemblies_desc: "By establishing representative assemblies that give voice to the common people, we decentralize authority and foster broader political participation. Local governance becomes more responsive, and individual liberties are enshrined as a cornerstone of our political order." #NEW
+ partitio_reform: "Partitio Terrarum Imperii Romaniae" 
+ partitio_reform_desc: "Dopo la Quarta Crociata, l'Impero Romano d'Oriente fu spartito tra diverse famiglie dell'Europa occidentale, che fondarono poi una serie di principati crociati. Finché queste entità politiche esistettero, rappresentarono una minaccia costante per l'Impero." 
+ ach_heirs_of_the_latin_empire: "Sovrani Titolari dell'Impero Latino" 
+ ach_heirs_of_the_latin_empire_desc: "Sebbene da allora abbiamo perso il controllo di [ShowLocationName('constantinople')], sede del potere [GetCountry('LAT').Custom('IT_Della')][GetCountry('LAT').GetLongName], la nostra rivendicazione su di essa resta forte come sempre." 
+ ath_rule_of_the_catalans: "Dominio della Compagnia [ShowCultureNameWithNoTooltip('catalan')]" 
+ ath_rule_of_the_catalans_desc: "Dalla presa [GetCountry('ATH').Custom('IT_Della')][GetCountry('ATH').GetLongNameWithNoTooltip], la Compagnia [ShowCultureNameWithNoTooltip('catalan')] ha proiettato una considerevole influenza militare su [ShowScriptedGeographyName('greece_geography')]." 
+ ath_catalan_company_expelled_or_stability: "Può essere rimossa manualmente se la [stability|e] è superiore a #G +60.00#! o direttamente tramite determinati [dynamic_historical_events|e] [GetCountry('ATH').Custom('IT_ADJ_MP')]." 
+ lat_papal_restoration_claimant: "Sostegno [GetCountry('PAP').GetAdjectiveWithNoTooltip] per Riconquistare [ShowLocationNameWithNoTooltip('constantinople')]" 
+ lat_papal_restoration_claimant_desc: "Sebbene [GetCountry('LAT').Custom('IT_La')][GetCountry('LAT').GetLongName] sia stato da allora distrutto [GetCountry('BYZ').Custom('IT_Dalla')][GetCountry('BYZ').GetLongName], le recenti campagne degli stati crociati in [ShowScriptedGeographyName('greece_geography')] hanno incoraggiato la sponsorizzazione [GetCountry('PAP').Custom('IT_ADJ_FS')] per restaurare l'impero." 
+ lat_restored_rule_of_the_latins: "Dominio Restaurato dei Latini" 
+ lat_restored_rule_of_the_latins_desc: "Un tempo ritenuto perduto per sempre a favore di un risorgente [GetCountry('BYZ').GetName], [GetCountry('LAT').Custom('IT_La')][GetCountry('LAT').GetLongNameWithNoTooltip] è stato infine restaurato a [ShowLocationName('constantinople')] e serve ancora una volta da baluardo del dominio [ShowReligionAdjective('catholic')] in tutta [ShowScriptedGeographyName('greece_geography')]." 
+ mass_levy_system: "Sistema di Leva di Massa" 
+ mass_levy_system_desc: "Istituendo un sistema di coscrizione di massa, possiamo attingere all'intera popolazione del nostro regno per il servizio militare. Questa ampia mobilitazione ingrossa i nostri eserciti con soldati comuni, abbracciando la filosofia secondo cui la vittoria deriva dai numeri più che dall'abilità individuale." 
+ free_market_charters: "Carte di Libero Mercato" 
+ free_market_charters_desc: "Concedendo carte che garantiscono il libero commercio e proteggono gli interessi dei mercanti, incoraggiamo il commercio a prosperare in tutto il nostro regno. Le ricche classi mercantili acquisiscono influenza politica, spostando il potere dalla nobiltà tradizionale verso coloro che controllano il capitale." 
+ representative_assemblies: "Assemblee Rappresentative" 
+ representative_assemblies_desc: "Istituendo assemblee rappresentative che danno voce al popolo comune, decentralizziamo l'autorità e favoriamo una partecipazione politica più ampia. Il governo locale diventa più reattivo, e le libertà individuali vengono sancite come pietra angolare del nostro ordine politico." 
+ luc_libertas: "Libertas!" 
+ luc_libertas_desc: "Il popolo comune non dovrebbe aspettare che potenze straniere arrivino a portargli via case, famiglie e futuro. Al contrario, ogni cittadino deve essere pronto a dare la vita per un futuro più luminoso." 
+ righteous_government: "Governo Retto" 
+ righteous_government_desc: "Il nostro dominio è definito dalle tradizioni ancestrali della $china$, e le virtù della benevolenza, della rettitudine, del rispetto, della saggezza, della sincerità e della lealtà, tra molte altre, sono la bussola guida della nostra amministrazione. Un simile governo non può che essere benedetto dal Cielo stesso." 
+ national_traditions: "Tradizioni Nazionali" 
+ national_traditions_desc: "Neppure la potenza culturale della $china$ è in grado di influenzare le nostre tradizioni. Siamo orgogliosi della nostra cultura e della nostra eredità, e non permetteremo ad alcuna influenza straniera di dettare le condizioni e il funzionamento del nostro governo." 

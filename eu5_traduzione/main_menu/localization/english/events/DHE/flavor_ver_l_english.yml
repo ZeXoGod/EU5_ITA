@@ -1,0 +1,98 @@
+﻿l_english:
+ VER_benefits_from_winning_the_war: "Nella [target_war.GetName], l'[ShowPeaceTreatyTypeName('scaligeri_victory')] [peace_offer|e] sarà a nostra disposizione"
+ ver_remove_antagonism: "[THIS.GetCountry.Custom('IT_La')|U][THIS.GetCountry.GetName] vedrà rimosso da tutti i [countries|e] l'[antagonism|e] causato dalle richieste di [peace_treaty|e]"
+ ver_add_integration_in_every_location: "Ogni [location|e] [owned|e] in [ShowScriptedGeographyName('scaligeri_conquests_geography')] riceverà #G +100.0%#! di [integration|e]"
+ SCALIGER_WAR_NAME: "Guerra scaligera"
+
+ ver_demands_start: "Richiederemo"
+ ver_demands_end: "nell'ambito dell'accordo di pace nella [target_war.GetName]" 
+ ver_demands_FLO_pescia_demand: "$ver_demands_start$ [ShowLocationName('pescia')] $ver_demands_end$"
+ ver_demands_FLO_lucca_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('lucca_province')] $ver_demands_end$"
+ ver_demands_VEN_mestre_demand: "$ver_demands_start$ [ShowLocationName('mestre')] $ver_demands_end$"
+ ver_demands_VEN_treviso_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('venice_province')] $ver_demands_end$"
+ ver_demands_MLO_brescia_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('brescia_province')] $ver_demands_end$"
+ ver_demands_MLO_parma_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('parma_province')] $ver_demands_end$"
+
+ ver_effect_depends_on_scope: "Gli effetti di questo [peace_treaty|e] dipenderanno dall'opzione scelta in un [event|e]"
+ VER_benefits_for_coalition_members: "Gli attaccanti nella [target_war.GetName] riceveranno [events|e] per far valere le loro rivendicazioni su vari territori di confine; l'acquisizione di territori con altri mezzi non è consentita"
+ VER_cannot_take_territory_besides_scripted_peace_deal: "I territori devono essere acquisiti tramite trattati di pace speciali, resi disponibili tramite [events|e] man mano che la Guerra scaligera prosegue"
+
+ scaligeri_war_historical_info: "La Guerra scaligera ebbe inizio a metà del 1336 in seguito alle frizioni tra gli Scaligeri e Venezia. All'origine del conflitto vi fu l'installazione veronese di catene per riscuotere pedaggi, che minacciava direttamente il commercio della Serenissima. Sebbene si fossero avviati negoziati per risolvere la questione amichevolmente, il senato veneziano irrigidì la propria posizione, interrompendo le esportazioni di sale e inducendo la Padova scaligera a creare le proprie saline. Il conflitto ebbe infine inizio il 22 giugno, quando Firenze e Venezia firmarono un accordo in base al quale la prima avrebbe coperto due terzi del costo della guerra."
+
+
+ flavor_ver.1.title: "[target_war.GetNameWithNoTooltip]"
+ flavor_ver.1.desc: "I domini della famiglia [target_dynasty.GetName], edificati con il sangue e il sudore del nostro caro [target_character.GetName], sono diventati negli ultimi anni il bersaglio di una grande coalizione di piccoli stati dell'[ShowRegionName('italy_region')] settentrionale. Originariamente composta soltanto da [GetCountry('VEN').Custom('IT_DAL_RANGO')][GetCountry('VEN').GetLongName] e [GetCountry('FLO').Custom('IT_DAL_RANGO')][GetCountry('FLO').GetLongName], i nostri arbitri hanno tradito la nostra recente proposta di pace, scegliendo di schierarsi con i nostri nemici. Non importa — anche loro saranno severamente puniti per le loro trasgressioni."
+ flavor_ver.1.historical_info: "$scaligeri_war_historical_info$"
+ flavor_ver.1.a: "Sbarazziamoci dei deboli."
+
+ flavor_ver.2.title: "[target_war.GetNameWithNoTooltip]"
+ flavor_ver.2.desc: "La bellicosa casata [target_dynasty.GetName] è diventata il bersaglio di una grande coalizione guidata [anti_scaligeri_leader.Custom('IT_DAL_RANGO')][anti_scaligeri_leader.GetLongName]. Siamo sul punto di ribaltare le sorti di questa [target_war.GetName], ma abbiamo bisogno dell'aiuto dei nostri nuovi alleati per riuscirci. Mentre [mlo_participant.GetAdjective] [mlo_army.GetName] si mobilita al confine con [target_ver.GetName], [flo_participant.Custom('IT_ART_RANGO')][flo_participant.GetLongName] finanzia la guerra e il nostro esercito è guidato da [target_character.GetName], il nemico [target_ver.GetAdjectiveWithNoTooltip] sarà presto sconfitto e [ShowRegionName('italy_region')] tornerà ancora una volta alla pace."
+ flavor_ver.2.historical_info: "$scaligeri_war_historical_info$"
+ flavor_ver.2.a: "Purghiamo il diavolo scaligero!"
+
+ ver_owner_is_an_defender: "Il [owner|e] di [THIS.GetLocation.GetName] è un paese che è un [defender|e] nella [target_war.GetName]"
+ ver_controller_is_an_attacker: "Il [controller|e] di [THIS.GetLocation.GetName] è un paese che è un [attacker|e] nella [target_war.GetName]"
+
+ flavor_ver.3.title: "Le nostre rivendicazioni su [target_province.GetNameWithNoTooltip]"
+ flavor_ver.3.desc: "La [target_war.GetName] contro la casata [target_dynasty.GetName] [target_country.Custom('IT_In')][target_country.GetName] procede senza intoppi. Le nostre forze sono recentemente riuscite a prendere il controllo di [target_province.GetName], una provincia saldamente nella sfera d'influenza della famiglia [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetDynasty.GetName] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]. Forse dovremmo rivendicare quel territorio per far sapere ai nostri alleati [war_leader.Custom('IT_In')][war_leader.GetName] quali domini della casata [target_dynasty.GetNameWithNoTooltip] desideriamo."
+ flavor_ver.3.entry: "$MLO_ADJ$ Rivendicazioni nella Guerra scaligera"
+ flavor_ver.3.a: "Avanziamo una rivendicazione."
+ flavor_ver.3.b: "E invece [ShowProvinceDefinitionNameWithNoTooltip('parma_province')]?"
+ 
+ flavor_ver.4.title: "Le nostre rivendicazioni su [target_location.GetNameWithNoTooltip]"
+ flavor_ver.4.desc: "Stiamo assistendo al crollo dell'egemonia [target_dynasty.GetName] nell'[ShowRegionName('italy_region')] settentrionale grazie ai nostri sforzi e a quelli dei nostri alleati. Con il successo della guerra, [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName], che nel 1336 fu obbligata a pagare due terzi dei costi, farà valere i propri interessi in questa guerra. E i nostri interessi? Non dobbiamo guardare oltre lo stato scaligero [target_country.Custom('IT_Di')][target_country.GetName] — uno stato che da tempo sfida la signoria di [ShowLocationName('florence')]."
+ flavor_ver.4.entry: "$FLO_ADJ$ Rivendicazioni nella Guerra scaligera"
+ flavor_ver.4.a: "Rivendichiamo [ShowLocationNameWithNoTooltip('pescia')]."
+ flavor_ver.4.b: "L'intera [target_country.GetCapital.GetRank.GetNameWithNoTooltip] ci appartiene!"
+ flavor_ver.4.b.entry: "L'intera città ci appartiene!"
+ 
+ flavor_ver.5.title: "Le nostre rivendicazioni su [target_province.GetNameWithNoTooltip]"
+ flavor_ver.5.desc: "La guerra non paga... o forse sì?\n\nNonostante il sangue e la fatica, la [target_war.GetName] comincia finalmente a mostrarci qualche beneficio concreto. Lo scopo ufficiale di questa guerra potrebbe essere smantellare lo stato della casata [target_dynasty.GetName], ma così facendo potremmo ottenere territori che essi hanno rivendicato attraverso le loro stesse sanguinose guerre. Una potenziale via di espansione potrebbe essere [target_location.GetName] e la più vasta provincia di [target_province.GetName], territori che condividono affinità culturali con [ROOT.GetCountry.GetFlavorRank]."
+ flavor_ver.5.entry: "$VEN_ADJ$ Rivendicazioni nella Guerra scaligera"
+ flavor_ver.5.a: "[target_location.GetNameWithNoTooltip] sarà nostra!"
+ flavor_ver.5.a.entry: "Mestre sarà nostra!"
+ flavor_ver.5.b: "[target_province.GetNameWithNoTooltip] costituirà la base della #italic Terraferma#!."
+ flavor_ver.5.b.entry: "Il Veneto veronese costituirà la base della #italic Terraferma#!."
+ 
+ flavor_ver.6.title: "Rivendicazioni [from_country.Custom('IT_Di')][from_country.GetNameWithNoTooltip]"
+ flavor_ver.6.desc: "Un araldo è giunto [from_country.Custom('IT_DAL_RANGO')][from_country.GetLongName] per informarci delle sue richieste contro la casata [target_dynasty.GetName] [war_enemy.Custom('IT_Di')][war_enemy.GetName]. Faremo bene a considerare il [target_peace_treaty.GetName] mentre stabiliamo le condizioni di pace della [target_war.GetName], altrimenti gli emissari [from_country.Custom('IT_ADJ_MP')] lo considereranno una promessa infranta."
+ flavor_ver.6.a: "Accogliamo le loro richieste a tempo debito."
+
+ ver_peace_treaty_has_become_available: "[target_peace_treaty.GetName] è ora disponibile nella [target_war.GetName]"
+
+ flavor_ver.7.title: "Il nostro trionfo"
+ flavor_ver.7.desc: "Finalmente, dopo anni di sanguinoso conflitto, la $SCALIGER_WAR_NAME$ è giunta al termine. Oggi le forze [ROOT.GetCountry.Custom('IT_ADJ_FP')] trionfano a [target_location.GetName], poiché i nostri nemici sono stati sconfitti. Questa non è stata soltanto una guerra per la supremazia sull'[ShowRegionName('italy_region')] settentrionale — è stata anche una lotta per l'onore di [target_character.GetName], il fondatore di quello che oggi è noto come [ROOT.GetCountry.GetLongName]. È la [target_character.GetHerHis] eredità che abbiamo difeso."
+ flavor_ver.7.a: "Gloria alla casata [target_dynasty.GetNameWithNoTooltip]!"
+ 
+ flavor_ver.8.title: "Vittoria della Lega"
+ flavor_ver.8.desc: "Il destino degli aggressori della casata [target_dynasty.GetName] è finalmente segnato — il diavolo scaligero è stato sconfitto e i domini di [target_character.GetName] sono ormai in rovina. L'[ShowRegionName('italy_region')] settentrionale non sarà più dominata da un solo tiranno. Questo sarà sicuramente ricordato come uno dei momenti più decisivi nella storia [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]!"
+ flavor_ver.8.a: "Era ora!" 
+
+ flavor_ver.1000.title: "Un parente di [target_character2.GetNameWithNoTooltip]"
+ flavor_ver.1000.desc: "Il sovrano deposto [target_country.Custom('IT_Di')][target_country.GetName] e parente di [target_character2.GetName], [target_character.GetName], conserva una posizione di potere presso la [target_country.GetCapital.GetRankAndName] in qualità di vicario. Sebbene nominalmente fedele alla casata [target_dynasty.GetName], [target_character.GetShortNameWithNoTooltip] rimane popolare nel [target_character.GetHisHer] vecchio dominio, certamente amareggiato per i soprusi scaligeri contro la casata [target_character.GetDynasty.GetName]. Sappiamo anche della [target_character.GetHerHis] debolezza per il nostro caro [target_character2.GetShortNameWithNoTooltip], un condottiero al nostro servizio. Se dovessimo assediare la [target_character.GetHerHis] [target_country.GetCapital.GetRank.GetName], [target_character.GetSheHe] diserterebbe sicuramente."
+ flavor_ver.1000.a: "Deliziosamente diabolico..."
+
+ ver_padua_incident_rules: "Se [ShowLocationName('padova')] sarà occupata prima del #W 1339.1.1#!, [target_country.Custom('IT_La')][target_country.GetName] cambierà schieramento nella [target_war.GetName] e diventerà indipendente"
+
+ flavor_ver.1001.title: "Possibile tradimento?"
+ flavor_ver.1001.desc: "Le nostre spie a [target_location.GetName] riferiscono di possibili negoziati nemici che si svolgono proprio sotto il nostro naso: qualcuno [target_country.Custom('IT_NEL_RANGO')][target_country.GetLongName] sta scambiando lettere con i nostri nemici nella [target_war.GetName]. Sembra che non possiamo più essere così certi della lealtà [target_country.Custom('IT_ADJ_FS')] a lungo termine. Nel frattempo abbiamo inviato i nostri agenti a trovare il colpevole — ma resta da vedere se riusciranno a trovarlo in tempo."
+ flavor_ver.1001.desc_pad: "Le nostre spie nella nostra capitale riferiscono di possibili negoziati nemici che si svolgono proprio sotto il nostro naso: qualcuno sta scambiando lettere con i nostri nemici nella [target_war.GetName]. Se non si farà nulla, un attacco dall'interno potrebbe minacciare [target_location.GetName]! Nel frattempo abbiamo inviato i nostri agenti a trovare il colpevole — ma resta da vedere se riusciranno a trovarlo in tempo."
+ flavor_ver.1001.a: "Estirpiamo il marcio!" 
+
+ flavor_ver.1002.title: "Congiuratore scoperto!"
+ flavor_ver.1002.entry: "$flavor_ver.1002.title$"
+ flavor_ver.1002.desc: "[target_character.GetName] è stato trascinato davanti a [target_character2.GetName] e accusato di aver cospirato con i nemici della casata [target_dynasty.GetName]. Da mesi [target_character.GetShortNameWithNoTooltip] scambia lettere con i nostri nemici nella [target_war.GetName]. Il motivo di tutto ciò? Il rancore derivante dalla [target_character.GetHerHis] deposizione di un decennio fa."
+ flavor_ver.1002.a: "A morte!"
+
+ flavor_ver.1003.title: "Porte aperte!"
+ flavor_ver.1003.desc: "Nei momenti finali dell'assedio, [target_character.GetName], nostro alleato a [target_location.GetName], ordinò alla guarnigione di respingere un attacco diversivo presso una delle porte mentre ci apriva [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] dall'altra. La località fu presa e [target_character.GetNameWithNoTooltip] fu proclamato sovrano [target_country.Custom('IT_Di')][target_country.GetName], tra grandi acclamazioni da parte dei membri di [target_estate.GetName]. Ciò segna un cambiamento significativo nella [target_war.GetName], poiché la casata [target_dynasty.GetName] ha appena perso uno dei suoi preziosi domini."
+ flavor_ver.1003.a: "Verso altre vittorie come questa!"
+
+ flavor_ver.1004.title: "Agonia del nostro alleato"
+ flavor_ver.1004.desc: "Ci sono giunte notizie terribili! Il nostro alleato [target_character.GetName] [target_country.Custom('IT_In')][target_country.GetName], suo precedente sovrano, è stato scoperto dalla casata [target_dynasty.GetName] mentre colludeva segretamente con noi. [target_character.GetShortNameWithNoTooltip] è stato brutalmente catturato dai soldati [target_country2.Custom('IT_ADJ_MP')] e condotto davanti a [target_character2.GetName], dove [target_character.GetSheHe] ricevette la dovuta condanna a morte."
+ flavor_ver.1004.a: "Abbiamo perso un grande alleato."
+
+ flavor_ver.1005.title: "Caduta di [ShowLocationNameWithNoTooltip('padova')]"
+ flavor_ver.1005.desc: "Il cospiratore [target_country.Custom('IT_In')][target_country.GetName] si è rivelato essere [target_character.GetName] fin dall'inizio! Questo bastardo, che [target_character2.GetName] depose circa un decennio fa, ha a lungo covato rancore contro la casata [target_dynasty.GetName], nonostante il [target_character.GetHerHis] vicariato. Ora [target_character.GetSheHe] è finalmente riuscito a ottenere la [target_character.GetHerHis] vendetta, cedendo [target_location.GetRank.GetName] ai nostri nemici e prendendo il controllo [target_country.Custom('IT_Di')][target_country.GetNameWithNoTooltip]."
+ flavor_ver.1005.a: "Con o senza [target_country.GetNameWithNoTooltip], prevarremo."
+ ver_will_join_target_war: "[THIS.GetCountry.Custom('IT_La')|U][THIS.GetCountry.GetName] si unirà a [target_war.GetName] dalla parte degli attaccanti"

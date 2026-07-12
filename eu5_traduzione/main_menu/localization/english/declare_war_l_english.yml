@@ -10,7 +10,7 @@
  DECLARE_WAR_ENEMY_TRIBUTARY_JOIN: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] @[COUNTRY.GetFlag]! si unirà alla [war|e] poiché è uno stato cliente [DEFENDER.Custom('IT_Della')][DEFENDER.GetName] @[DEFENDER.GetFlag]!"
  DECLARE_WAR_ENEMY_INTERNATIONAL_ORGANIZATION_JOIN: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] @[COUNTRY.GetFlag]! si unirà alla [war|e] poichè è in $TYPE$ con [DEFENDER.Custom('IT_La')][DEFENDER.GetName|Y] @[DEFENDER.GetFlag]!"
  DECLARE_WAR_ENEMY_ALLY_JOIN: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]! si unirà alla [war|e] poiché ha un trattato per difendere [DEFENDER.Custom('IT_La')][DEFENDER.GetName|Y] @[DEFENDER.GetFlag]! ."
- DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER: "E assumerà il ruolo di leader della [war|e] poiché si considera più forte [DEFENDER.Custom('IT_Della')][DEFENDER.GetName|Y] @[DEFENDER.GetFlag]!"
+ DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER: "E prenderanno il controllo come [war_leader|e] poiché si considerano più forti di @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]" 
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_ALLIES: "Possibili difensori che si uniscono [COUNTRY.Custom('IT_AL_RANGO')][COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]!:"
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_NO_ALLIES: "@trigger_no! Non ci sono difensori aggiuntivi che si uniscono [COUNTRY.Custom('IT_AL_RANGO')][COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]!."
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_ALLY: "[COUNTRY.GetLongName|Y] @[COUNTRY.GetFlag]!"

@@ -3,6 +3,7 @@
  revoke_town_rights: "Revoca Diritti Urbani"
  revoke_town_rights_desc: ""
  REVOKE_TOWN_RIGHTS_FROM: "Revoca [town_rights|E] da [TownRightsItem.GetFirstLocationName]"
+ REVOKE_LOCATION_TOWN_RIGHT: "Revoca [town_rights|E] da [Location.GetName]" 
 
 
 #######################################
@@ -12,6 +13,18 @@
  staple_port_desc: "Questa [location|e] ha ottenuto privilegi legali che conferiscono ai [ShowEstateTypeName('burghers_estate')] maggiori diritti sul [trade|e] locale."
  granary_town: "Città Granaio"
  granary_town_desc: "Questa [location|e] ha ottenuto privilegi legali e normative volte ad aumentare la propria produzione e lo stoccaggio di [food|e]."
+ market_charter: "Carta di Mercato" 
+ market_charter_desc: "A questa [location|e] è stato concesso il diritto di tenere mercati regolari, attirando mercanti e commercianti ed espandendo la capacità del suo [ShowBuildingTypeName('marketplace')] locale." 
+ free_town_charter: "Carta di Città Libera" 
+ free_town_charter_desc: "A questa [location|e] sono stati concessi diritti di autogoverno, riducendo l'autorità diretta del [ShowEstateTypeName('crown_estate')] in cambio di maggiore libertà nell'attrarre coloni e condurre commerci." 
+ fortress_town: "Città Fortezza" 
+ fortress_town_desc: "Questa [location|e] è stata designata come guarnigione militare, ricevendo investimenti nelle sue fortificazioni e nelle [manpower|e]. La presenza militare permanente sottrae spazio al commercio civile." 
+ mining_charter: "Carta Mineraria" 
+ mining_charter_desc: "A questa [location|e] sono stati concessi diritti formali per condurre ed espandere le attività minerarie, aumentando la scala dell'estrazione. Di conseguenza, il [ShowEstateTypeName('peasants_estate')] è soggetto a obblighi più severi." 
+ mining_charter_rgo_tt: "Ha una [raw_material|e] mineraria o produce [ShowGoodsName('salt')] nell'entroterra" 
+ studium_privileges: "Privilegi dello Studium" 
+ studium_privileges_desc: "Questa [location|e] è stata riconosciuta come centro di apprendimento, ottenendo il diritto di mantenere scuole e attrarre studiosi. Tali attività favoriscono la diffusione di [literacy|e] e [institution|e], anche se raramente arricchiscono direttamente il tesoro." 
+ studium_privileges_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]" 
 
 
  
@@ -68,10 +81,12 @@
  
  upper_bergregal: "Upper Bergregal"
  upper_bergregal_desc: "Cedere al governo della città il diritto di svolgere attività minerarie aumenterà i fondi disponibili per la prospezione di nuovi giacimenti minerari e renderà la zona più attraente per i potenziali nuovi coloni. Purtroppo, ciò comporta restrizioni più severe per i cittadini comuni del luogo e limita la loro possibilità di trarre beneficio direttamente dalle miniere."
- unlock_bergregal_rights_tt: "Sblocca i [town_rights] [ShowTownRightsName ('upper_bergregal')] e [ShowTownRightsName('lower_bergregal')]"
+ upper_bergregal_raw_material_tt: "Produce [ShowGoodsName('silver')], [ShowGoodsName('goods_gold')], [ShowGoodsName('gems')] o [ShowGoodsName('salt')] nell'entroterra" 
+ unlock_bergregal_rights_tt: "Sblocca i [town_rights] [ShowTownRightsName('upper_bergregal')] e [ShowTownRightsName('lower_bergregal')]"
  
  lower_bergregal: "Lower Bergregal"
  lower_bergregal_desc: "$upper_bergregal_desc$"
+ lower_bergregal_raw_material_tt: "Produce [ShowGoodsName('iron')], [ShowGoodsName('copper')], [ShowGoodsName('lead')], [ShowGoodsName('tin')], [ShowGoodsName('alum')], [ShowGoodsName('marble')], [ShowGoodsName('mercury')], [ShowGoodsName('coal')], [ShowGoodsName('stone')] o [ShowGoodsName('saltpeter')]" 
  
  stapelrecht_town_rights: "Diritti Base della [ShowSpecialStatusNameWithNoTooltip('free_city')]"
  stapelrecht_town_rights_desc: "Il titolo di [ShowSpecialStatusName('free_city')] concessa dall'[ShowSpecialStatusName('emperor')] ci garantisce la libertà di istituire determinati privilegi all'interno delle nostre città, a vantaggio dei mercanti locali e costringendo un maggior numero di mercanti stranieri a commerciare attraverso i nostri territori."
@@ -153,13 +168,22 @@
 
  imperial_breadbasket_rights: "Granaio dell'Impero"
  imperial_breadbasket_rights_granary_tt: "Ha un [ShowBuildingTypeName('granary')] di livello 5 o superiore"
+ imperial_breadbasket_rights_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]" 
  imperial_breadbasket_rights_desc: "Questa [location|e] è stata incaricata di provvedere all'approvvigionamento dell'intero regno, e i suoi granai sono stati ampliati per far fronte ai nostri ambiziosi progetti. Il grano affluisce e defluisce sotto la supervisione imperiale, garantendo abbondanza sia ai cittadini che all'esercito."
 
  constantinopolitan_silk_monopoly_rights: "Monopolio della Seta di [ShowLocationNameWithNoTooltip('constantinople')]"
+ constantinopolitan_silk_monopoly_rights_tt: "La località è [ShowLocationName('constantinople')] con una [raw_material|e] completamente espansa" 
  constantinopolitan_silk_monopoly_rights_desc: "All'interno di [ShowLocationName('constantinople')], la produzione di [ShowGoodsName('silk')] è caratterizzata da standard elevati, una lunga tradizione che attraversa le generazioni. Le botteghe artigiane prosperano sotto la supervisione imperiale, anche se l'intera produzione è soggetta al monopolio."
 
  scholai_literacy_rights: "Privilegi Scholai"
+ scholai_literacy_rights_tt: "La cultura dominante appartiene al [ShowCultureGroupName('greek_group')] e la [literacy|e] locale non supera il 125% della media del paese" 
  scholai_literacy_rights_desc: "Questa [location|e] è riconosciuta come un centro di cultura, dove le lettere vengono promosse sotto il patrocinio delle autorità. La conoscenza si diffonde rapidamente, anche se tali attività raramente arricchiscono le casse dello Stato. La mente oziosa è il terreno fertile del diavolo."
 
  municipia_privilegia: "Privilegi Municipia"
- municipia_privilegia_desc: "Questa [location|e] è stata elevata al rango di municipium e ai suoi cittadini sono stati concessi i diritti previsti dalla nostra legislazione. Le élite locali esercitano una maggiore influenza, legando il territorio più strettamente alle tradizioni di [ShowSocietyDirectionName('latinization')]."
+ municipia_privilegia_latin_tt: "Il proprietario tende verso [ShowSocietyDirectionName('latinization')] o ha [ShowLanguageName('latin_language')] come lingua di corte o dominante" 
+ municipia_privilegia_desc: "Questa [location|e] è stata elevata al rango di municipium e ai suoi cittadini sono stati concessi i diritti previsti dalla nostra legislazione. Le élite locali esercitano una maggiore influenza, legando il territorio più strettamente alle tradizioni di [ShowSocietyDirectionName('latinization')]." 
+ agrarian_community_town_right: "Carta della libertà religiosa" 
+ agrarian_community_town_right_desc: "Questa [location|e] ha ricevuto diritti speciali, riconoscendo la libertà religiosa di ogni individuo in cambio della destinazione di ampie parti del suo territorio alla produzione di cibo e materie prime." 
+ agrarian_community_raw_material_tt: "Produce [ShowGoodsName('wheat')], [ShowGoodsName('maize')], [ShowGoodsName('rice')], [ShowGoodsName('millet')], [ShowGoodsName('legumes')], [ShowGoodsName('potato')], [ShowGoodsName('livestock')], [ShowGoodsName('olives')], [ShowGoodsName('fruit')] o [ShowGoodsName('beeswax')]" 
+ enlightened_leadership_reform_town_right: "Diritti del consiglio dei popolani" 
+ enlightened_leadership_reform_town_right_desc: "A questa [location|e] è stato concesso il diritto di aprire il proprio consiglio locale ai popolani. Ciò dà alla classe contadina una voce negli affari locali e le consente di richiedere maggiori diritti per sé." 

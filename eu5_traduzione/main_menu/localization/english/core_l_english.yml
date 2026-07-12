@@ -123,12 +123,11 @@
  PRICE_COST_VALUE_NO_COL: "$VAL$ [$ICON$_i]"
  PRICE_gold_COST_VALUE_NO_COL: "$VAL|D$ [gold_i]" 
  PRICE_COST_VALUE_NO_ICON: "$VAL|Y$"
-# PRICE_COST_VALUE_NO_BASE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|Y$#! [$ICON$_i]" #OLD
  PRICE_COST_VALUE_NO_BASE: "$VAL|Y$ [$ICON$_i]" 
  PRICE_LONG_COST_VALUE: "$VAL|Y$ [$ICON$_i]"
-# PRICE_BASE_VALUE: "Costo Base: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|Y$#! [$ICON$_i]" #OLD
  PRICE_BASE_VALUE: "Costo base: $VAL|Y$ [$ICON$_i]" 
  PRICE_NAME_VALUE: "$NAME$: $VAL|Y$ [$ICON$_i]"
+ PRICE_FURTHER_MODIFIED: "Questo viene poi ulteriormente modificato da" 
  PRICE_CURRENCY: "Costo [$ICON$_i] dovuto a:"
  PRICE_BASE_VALUE_RAW: "Costo Base: $VAL|Y$ [$ICON$_i]"
  PRICE_BASE_VALUE_RAW_NAMED: "Costo base di $NAME$: $VAL|Y$ [$ICON$_i]" 
@@ -136,7 +135,6 @@
  PRICE_SCALED_VALUE_RAW: "Scalato: $VAL|Y$ [$ICON$_i]"
  PRICE_SCALED_MONTHLY_GOLD_RAW: "$PERCENTAGE|2Y%$ di [economical_base|e]: $VAL|Y$ [$ICON$_i]" 
  PRICE_SCALED_VALUE_FROM_POPS_RAW: "Oro Scalato dalla Popolazione: $VAL|Y$ [$ICON$_i]"
-# PRICE_SCALED_VALUE_FROM_RECIPIENT_RAW: "Oro Scalato dal Ricevente: $VAL|Y$ [$ICON$_i]" #OLD
  PRICE_SCALED_VALUE_FROM_RECIPIENT_RAW: "$PERCENTAGE|2Y%$ di [economical_base|e] dal destinatario: $VAL|Y$ [$ICON$_i]" 
  PRICE_CAP_MAX: "Limite Massimo: $VAL|Y$ [$ICON$_i]"
  PRICE_CAP_MIN: "Limite Minimo: $VAL|Y$ [$ICON$_i]"
@@ -147,7 +145,6 @@
  PRICE_COST_GOODS_IMPACT_BREAKDOWN: "#TOOLTIP:$BREAKDOWN_TAG$ #L Merci#!#!" 
  PRICE_GOODS_IMPACT_ENTRY_HEADER: "#T Impatto $VALUE|=-%2$ dovuto a#!" 
  PRICE_GOLD_PER_POP: "$VAL|2Y$ [$ICON$_i] per pop"
-# PRICE_NO_VALUE: "0" #OLD
  PRICE_NO_VALUE: "" 
  BASE_COST: "Costo Base"
  GENERAL_CAP_MIN_PERCENT: "Limite Minimo: $VAL|2%Y$"
@@ -313,6 +310,7 @@
  HOST: "Host"
  BLOCK_COMMAND_ONLY_HOST: "Comando console disponibile solo per l'host"
  BLOCK_COMMAND_MULTIPLAYER_IRONMAN: "Comando console non disponibile in multiplayer e ironman"
+ ERROR_UNAVAILABLE_IN_MULTIPLAYER_OR_IRONMAN: "ERRORE: non disponibile in multiplayer e ironman" 
  BLOCK_FOR_OBSERVER: "Comando console non disponibile per l'osservatore"
  JOINING_SERVER_PROGRESS: "Connessione al server"
  WAITING_FOR_HOST_RESPONSE: "In attesa di risposta dall'host"
@@ -355,29 +353,21 @@
  PDX_TOOLTIP_SHORTCUT: "[MakeShortcutIcon('$SHORTCUT$')]"
  PDX_TOOLTIP_INPUT_ACTION: "[MakeShortcutIcons('$BOUND_INPUT_1$', '$BOUND_INPUT_2$')]"
  PDX_TOOLTIP_DOUBLE_INPUT_ACTION_FORMAT: "$BOUND_INPUT_1$ / $BOUND_INPUT_2$"
-# LOCATION_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha anche accesso ai seguenti Edifici & Leve unici: $BONUSES$" #OLD
  LOCATION_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.GetName] ottiene anche accesso ai seguenti Edifici e Leve unici:\n$BONUSES$" 
  COUNTRY_SUMMARY_SPECIFIC_LOBBY_DESCRIPTION_TT: "Riepilogo Paese"
  COUNTRY_EVENTS_SPECIFIC_LOBBY_DESCRIPTION_TT: "Eventi Paese"
-# COUNTRY_SPECIFIC_LOBBY_DESCRIPTION: "Come [COUNTRY.GetName], ottieni accesso ai seguenti Progressi, Leggi, Riforme e Unità uniche: $BONUSES$" #OLD
  COUNTRY_SPECIFIC_LOBBY_DESCRIPTION: "Come [COUNTRY.GetName], ottieni accesso ai seguenti Progressi, Leggi, Riforme e Unità unici:\n$BONUSES$" 
  COUNTRY_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Paese"
-# CULTURE_SPECIFIC_LOBBY_DESCRIPTION: "La [culture|e] [ROOT.GetCulture.GetName] sblocca: $BONUSES$" #OLD
  CULTURE_SPECIFIC_LOBBY_DESCRIPTION: "La [culture|e] [ROOT.GetCulture.GetName] sblocca:\n$BONUSES$" 
  CULTURE_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Cultura"
-# CULTURE_GROUP_SPECIFIC_LOBBY_DESCRIPTION: "Il [culture_group|e] [ROOT.GetCultureGroup.GetName] sblocca: $BONUSES$" #OLD
  CULTURE_GROUP_SPECIFIC_LOBBY_DESCRIPTION: "Il [culture_group|e] [ROOT.GetCultureGroup.GetName] sblocca:\n$BONUSES$" 
  CULTURE_GROUP_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Gruppo Culturale"
-# RELIGION_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] segue la fede [ROOT.GetReligion.GetName], permettendo: $BONUSES$" #OLD
  RELIGION_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.GetName] segue la fede [ROOT.GetReligion.GetName], permettendo:\n$BONUSES$" 
  RELIGION_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Religione"
-# RELIGION_GROUP_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è parte del [religion_group|e] [ROOT.GetReligionGroup.GetName], permettendo: $BONUSES$" #OLD
  RELIGION_GROUP_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.GetName] fa parte del [religion_group|e] [ROOT.GetReligionGroup.GetName], permettendo:\n$BONUSES$" 
  RELIGION_GROUP_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Gruppo Religioso"
-# GOVERNMENT_TYPE_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha il tipo di Governo [ROOT.GetGovernmentType.GetName], che specificamente permette: $BONUSES$" #OLD
  GOVERNMENT_TYPE_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.GetName] ha il tipo di governo [ROOT.GetGovernmentType.GetName], che permette specificamente:\n$BONUSES$" 
  GOVERNMENT_TYPE_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Tipo di Governo"
-# COUNTRY_TYPE_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è un $COUNTRYTYPE$, che sblocca: $BONUSES$" #OLD
  COUNTRY_TYPE_SPECIFIC_LOBBY_DESCRIPTION: "[COUNTRY.GetName] è un paese $COUNTRYTYPE$, che sblocca:\n$BONUSES$" 
  COUNTRY_TYPE_SPECIFIC_LOBBY_DESCRIPTION_TT: "Bonus Tipo di Paese"
  EVENT_LOBBY_DESCRIPTION: "Ci sono $VAL|Y$ [dynamic_historical_events|e] per [COUNTRY.Custom('IT_La')][COUNTRY.GetName]."
@@ -417,20 +407,17 @@
 
  SAVEGAME_COMPATIBILITY_HEADER: "Errori di Salvataggio"
  SAVEGAME_COMPATIBILITY_UNSUPPORTED: "$BULLET_WITH_TAB$ Versione di salvataggio non supportata."
- SAVEGAME_COMPATIBILITY_MISSING_LOCATION: "$BULLET_WITH_TAB$ Salvataggio manca della località: $LOCATION$"
+ SAVEGAME_COMPATIBILITY_MISSING_LOCATION: "$BULLET_WITH_TAB$ Il salvataggio contiene una località che non esiste: $LOCATION$" 
  ERRORS_SAVEGAME_HEADER: "#T Errori di Salvataggio #! (#L #TOOLTIP:$BREAKDOWN_TAG$ $HOVER$#!#!)"
 
  MP_HOST_LABEL: "#G Host#! "
  MULTIPLAYER_DATE_TOOLTIP: "$PLAYER$ ($COUNTRY$): $DATE$"
- MULTIPLAYER_DATE_NOCOUNTRY_TOOLTIP: "$PLAYER$: $DATE$"
+ MULTIPLAYER_DATE_NOCOUNTRY_TOOLTIP: "$PLAYER$ ($COUNTRY$): $DATE$" 
+ MULTIPLAYER_OBSERVER_FOR_COUNTRY: "Osservatore per $COUNTRY$" 
  MULTIPLAYER_LAGGING_BEHIND: "Alcuni giocatori sono in ritardo. Il gioco li aspetterà per sincronizzarsi."
-# GAME_DLC_TOOLTIP_OWNED: "Posseduto: [Select_CString(GameDLC.IsOwned,'Sì','No')]" #OLD
  GAME_DLC_TOOLTIP_OWNED: "Posseduto: [Select_CString(GameDLC.IsOwned,'Yes','No')]" 
-# GAME_DLC_TOOLTIP_INSTALLED: "Installato: [Select_CString(GameDLC.IsInstalled,'Sì','No')]" #OLD
  GAME_DLC_TOOLTIP_INSTALLED: "Installato: [Select_CString(GameDLC.IsInstalled,'Yes','No')]" 
-# GAME_DLC_TOOLTIP_MOUNTED: "Caricato: [Select_CString(GameDLC.IsMounted,'Si','No')]" #OLD
  GAME_DLC_TOOLTIP_MOUNTED: "Montato: [Select_CString(GameDLC.IsMounted,'Yes','No')]" 
-# GAME_DLC_TOOLTIP_ACTIVATED: "Attivato: [Select_CString(GameDLC.IsActivated,'Sì','No')]" #OLD
  GAME_DLC_TOOLTIP_ACTIVATED: "Attivato: [Select_CString(GameDLC.IsActivated,'Yes','No')]" 
  GAME_DLC_TOOLTIP: "[GameDLC.GetName]\n[GameDLC.GetDesc]\n$GAME_DLC_TOOLTIP_OWNED$\n$GAME_DLC_TOOLTIP_INSTALLED$\n$GAME_DLC_TOOLTIP_ACTIVATED$"
  GAME_DLC_KEY_VALUE: "$KEY$: $VALUE$"

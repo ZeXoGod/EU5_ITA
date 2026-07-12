@@ -8,7 +8,6 @@
 
  flavor_hab_tir.2.title: "Un nuovo marito per [target_ruler.GetShortNameWithNoTooltip]"
  flavor_hab_tir.2.entry: "A new husband for Margarete" #NEW
-# flavor_hab_tir.2.desc: "Con [target_ruler.GetName] ora libera dal suo precedente matrimonio, dovremo affrettarci a assicurare un nuovo marito per [target_ruler.GetHerHim]. [ROOT.GetCountry.GetName] è ancora in una posizione precaria e ha disperatamente bisogno di stabilità. Moltiple dinastie guardano con interesse il nostro [ROOT.GetCountry.GetFlavorRank] come premio e un legame forte con uno potrebbe respingere gli altri. Specialmente i [GetDinastia('wittelsbach_dynasty').GetName] e [GetDinastia('habsburg_dynasty').GetName] have an interest in securing our les e could serve as great allies... or be the downfall of our [ROOT.GetCountry.GetFlavorRank]." #OLD
  flavor_hab_tir.2.desc: "With [target_ruler.GetName] now freed from her previous marriage, we will have to hurry to secure a new husband for her. [ROOT.GetCountry.GetName] is still in a precarious position and desperately needs stability. Multiple dynasties eye up our [ROOT.GetCountry.GetFlavorRank] as a price and a strong bond with one could fend off the others. Especially the [GetDynasty('wittelsbach_dynasty').GetName] and [GetDynasty('habsburg_dynasty').GetName] have an interest in securing our lands and could serve as great allies... or be the downfall of our [ROOT.GetCountry.GetFlavorRank]." #NEW
  flavor_hab_tir.2.a: "We need to find a suitable husbe soon."
  flavor_hab_tir.2.a.tt: "Senza l'approvazione papale, avremo difficoltà ad arrangiare un matrimonio reale da soli. Tuttavia, corteggiatori interessati richiederanno un matrimonio presto."
@@ -22,7 +21,7 @@
  flavor_hab_tir.3.b.entry: "We prefer the [ShowDynastyNameWithNoTooltip('habsburg_dynasty')] candidate." #NEW
 
  flavor_hab_tir.4.title: "Una nuova dinastia per [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_hab_tir.4.entry: "$flavor_hab_tir.4.title$" #NEW
+ flavor_hab_tir.4.entry: "$flavor_hab_tir.4.title$"
  flavor_hab_tir.4.desc: "I [target_ruler.GetDinastia.GetName] sono ora ascesi al trono di [ROOT.GetCountry.GetName]! Mentre molti piangono ancora i giorni dell'amato [GetCharacter('tir_margarete_von_tirol').GetShortName], we will have to now move on e orientate ourselves in this new political situation. With our relatives ready to help our young reign, we will be able to secure it e secure our rightful position in the [target_ruler.GetDinastia.GetNameWithNoTooltip] Dinastia."
  flavor_hab_tir.4.a: "The [target_ruler.GetDinastia.GetNameWithNoTooltip] are trustworthy!"
  flavor_hab_tir.4.a.entry: "The dynasty are trustworthy!" #NEW
@@ -30,9 +29,10 @@
  flavor_hab_tir.4.b.entry: "Glory to the dynasty!" #NEW
  flavor_hab_tir.4.c: "The [target_ruler.GetDinastia.GetNameWithNoTooltip] will be loved eventually!"
  flavor_hab_tir.4.c.entry: "The dynasty will be loved eventually!" #NEW
+ flavor_hab_tir.4.d: "We must defend our sovereignty!" #NEW
 
  flavor_hab_tir.5.title: "Una nuova dinastia per [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_hab_tir.5.entry: "$flavor_hab_tir.5.title$" #NEW
+ flavor_hab_tir.5.entry: "$flavor_hab_tir.5.title$"
  flavor_hab_tir.5.desc: "The duplicitous [target_ruler.GetDinastia.GetName] have now seized the throne of [GetCountry('TIR').GetName]! Per diritto delle nostre leggi, il [GetCountry('TIR').GetLongName] would have fallen into our hes, if it was not for the interference of the [target_ruler.GetDinastia.GetNameWithNoTooltip]. The circumstances leave us no choice but to immediately rush e secure the les for ourselves before the [target_ruler.GetDinastia.GetNameWithNoTooltip] abbiano tempo di stabilire il loro governo."
  flavor_hab_tir.5.a: "Non saremo negati la nostra quota!"
  flavor_hab_tir.5.b: "Non possiamo rischiare guerra con i [target_ruler.GetDinastia.GetNameWithNoTooltip]."
@@ -51,7 +51,6 @@
 
  flavor_hab_tir.1100.title: "La questione di [GetCountry('TIR').GetNameWithNoTooltip]"
  flavor_hab_tir.1100.entry: "Tirol has no Habsburg Heir" #NEW
-# flavor_hab_tir.1100.desc: "[GetCountry('TIR').GetName], il paese che controlla i passi vitali delle Alpi, sta affrontando un futuro incerto sulla successione di [target_ruler.GetName]. Due to our familiar relationship, we should offer [target_ruler.GetHerHim] our help e pressure [target_ruler.GetHerHim] into designating us as the rightful inheritors of [GetCountry('TIR').GetNameWithNoTooltip].\n\nIf [target_ruler.GetSheHe] would agree to these terms, we could take control over both the trade routes of the alpine region e of the rich mines located in their territory." #OLD
  flavor_hab_tir.1100.desc: "[GetCountry('TIR').GetName], the country controlling the vital passes of the Alps, is facing an uncertain future over the succession of [target_ruler.GetName]. Due to our familiar relationship, we should offer her our help and pressure her into designating us as the rightful inheritors of [GetCountry('TIR').GetNameWithNoTooltip].\n\nIf she would agree to these terms, we could take control over both the trade routes of the alpine region and of the rich mines located in their territory." #NEW
  flavor_hab_tir.1100.a: "Non c'è danno in una semplice richiesta."
  flavor_hab_tir.1100.b: "Non vale la pena lo sforzo."
@@ -63,4 +62,5 @@
 
  flavor_hab_tir.1102.title: "[GetCountry('TIR').GetNameWithNoTooltip] Accetta"
  flavor_hab_tir.1102.desc: "[target_ruler.GetName] has agreed to our proposal e has granted us direct succession to [target_ruler.GetHerHis] titles. To prevent any misgivings or alterations to these documents, we should escort [target_ruler.GetHerHis] to our capital e grant her a peaceful life in [ROOT.GetCountry.GetCapital.GetName]."
- flavor_hab_tir.1102.a: "Glory to the [target_habsburg_ruler.GetDinastia.GetNameWithNoTooltip]!" flavor_hab_tir.1102.a.entry: "Glory to the dynasty!" #NEW
+ flavor_hab_tir.1102.a: "Glory to the [target_habsburg_ruler.GetDinastia.GetNameWithNoTooltip]!" 
+ flavor_hab_tir.1102.a.entry: "Glory to the dynasty!" #NEW

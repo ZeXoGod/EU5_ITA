@@ -1,12 +1,12 @@
 ﻿l_english:
  mission_select_market: "Seleziona un [market|e] per la [mission|e]"
  mission_no_markets: "$no_valid_markets$"
- mission_select_goods: "Seleziona un [good|e] per la [mission]"
+ mission_select_goods: "Seleziona un [good|e] per la [mission]" 
  mission_no_goods: "$no_valid_goods$"
  
  mission_task_select_market: "Seleziona un [market|e] per il [task|e]"
  mission_task_no_markets: "$no_valid_markets$"
- mission_task_select_goods: "Seleziona un [good|e] per il [task]"
+ mission_task_select_goods: "Seleziona un [good|e] per il [task]" 
  mission_task_no_goods: "$no_valid_goods$"
  mission_task_select_town_or_city: "Seleziona una [urban_location|e] per il [task]"
  mission_task_no_town_or_city: "$no_valid_town_or_city$"
@@ -246,7 +246,7 @@
  plan_campaign_against_target_conquest_province_4_tt: "$goal_of_campaign_key$ [target_conquest_province_4.GetName]"
  plan_campaign_against_target_conquest_province_5_tt: "$goal_of_campaign_key$ [target_conquest_province_5.GetName]"
  clergy_pops_of_prim_culture_gain_pop_satisfaction_tt: "I [pops|e] del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ShowReligionAdjectiveWithNoTooltip('catholic')] di [culture|e] [ROOT.GetCountry.GetCulture.GetName] otterranno [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]"
- discount_on_parliament_action_tt: "La richiesta al [parliament|e] [ShowGenericActionName('prepare_for_war')] del [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sarà scontata per tutta la durata di questo [mission_task|e]"
+ discount_on_parliament_action_tt: "La [parliament_request|e] [ShowGenericActionName('prepare_for_war')] del [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sarà meno costosa per la durata di questo [mission_task|e]" 
  looting_will_be_lessened_in_target_province_tt: "I nostri soldati non saccheggeranno molto [gold|e] da [target_loot_province.GetNameWithNoTooltip]"
  has_enabled_parliament_grant_levies_tt: "Ha ottenuto [ShowModifier('parliament_approved_extra_levies')] tramite [parliament_requests|e]"
  monthly_events_about_clergy_mobilizing_tt: "Potrebbero verificarsi [events|e] mensili riguardanti il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] mentre questa [mission|e] è attiva"

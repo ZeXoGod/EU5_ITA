@@ -1,16 +1,19 @@
 ﻿l_english:
 
- pirate_events.1.title: "[target_character.GetNameWithNoTooltip] il Pirata"
- pirate_events.1.entry: "Personaggio Target il Pirata"
- pirate_events.1.desc: "[ROOT.GetCountry.Custom('IT_La')|U][ROOT.GetCountry.GetName|U], un tempo cuore del grande Impero Śrīvijaya, è da tempo in competizione con i rivali stranieri nella nostra regione. Lo status di [GetCountry('MAJ').GetLongName] ha reso vulnerabile [GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] che per decenni è stato un rifugio per pirati senza legge. Tuttavia, la situazione è cambiata ancora una volta con l'espansione della nostra presenza marittima. Sono comparsi nuovi gruppi di corsari, e tra loro si sta affermando un leader astuto e spietato, [target_character.GetName]. Ottenuto un incarico nella nostra flotta, [target_character.GetHerHim] potrebbe rivelarsi un valido candidato per la carica di ammiraglio."
- pirate_events.1.a: "Cercheremo la fortuna in mare aperto!"
- pirate_events.1.b: "Lasciamo che [target_character.GetHerHim] presti servizio nella flotta."
- pirate_events.1.c: "Mandiamol[target_character.Custom('IT_ART_O_A')] via."
+# pirate_events.1.title: "[target_character.GetNameWithNoTooltip] il Pirata" #DELETE
+# pirate_events.1.entry: "Personaggio Target il Pirata" #DELETE
+# pirate_events.1.desc: "[ROOT.GetCountry.Custom('IT_La')|U][ROOT.GetCountry.GetName|U], un tempo cuore del grande Impero Śrīvijaya, è da tempo in competizione con i rivali stranieri nella nostra regione. Lo status di [GetCountry('MAJ').GetLongName] ha reso vulnerabile [GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] che per decenni è stato un rifugio per pirati senza legge. Tuttavia, la situazione è cambiata ancora una volta con l'espansione della nostra presenza marittima. Sono comparsi nuovi gruppi di corsari, e tra loro si sta affermando un leader astuto e spietato, [target_character.GetName]. Ottenuto un incarico nella nostra flotta, [target_character.GetHerHim] potrebbe rivelarsi un valido candidato per la carica di ammiraglio." #DELETE
+# pirate_events.1.a: "Cercheremo la fortuna in mare aperto!" #DELETE
+# pirate_events.1.b: "Lasciamo che [target_character.GetHerHim] presti servizio nella flotta." #DELETE
+# pirate_events.1.c: "Mandiamol[target_character.Custom('IT_ART_O_A')] via." #DELETE
  government_implements_several_policies_relevant_to_pirates_tt: "Il nostro governo implementerà diverse [policies|e] per supportare le attività dei pirati lungo le nostre coste"
  
  pirate_events.2.title: "La Banda di [target_character.GetNameWithNoTooltip]"
- pirate_events.2.entry: "La Banda di Personaggio Target"
+ pirate_events.2.entry: "La banda $name_lin.min_language$ $Daoqian$" 
  pirate_events.2.desc: "Il famigerato pirata [target_culture.Custom('IT_CUL_MS')] [target_character.GetName] e la sua spietata banda di tagliagole, ha fatto scalo a [target_location.GetName], per avere udienza con [target_character_2.GetName]. [target_character.GetShortNameWithNoTooltip] è rinomato per la sua brutalità, per aver catturato prede pericolose e affondato molti nemici, solo quest'anno. Si dice che abbia massacrato i nativi di [ShowAreaNameWithNoTooltip('taiwan_area')], ed abbia usato il loro sangue come mastice per sigillare una falla nella sua nave.\n\n[target_character.GetSheHe] afferma che il suo obiettivo a [target_location.GetNameWithNoTooltip] è quello di offrire i suoi servizi [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetFlavorRank] in cambio di asilo da parte dalle autorità [target_culture.Custom('IT_CUL_FP')]. Tuttavia, in base alla sua reputazione ed alle dimensioni della sua flotta, è probabile che le sue vere intenzioni in città vadano oltre quanto da [target_character.GetSheHe] affermato." 
+ pirate_events.2.a: "Cercheremo fortuna in mare aperto!" 
+ pirate_events.2.b: "Che [target_character.GetHerHim] serva nella flotta." 
+ pirate_events.2.c: "Allontaniamo [target_character.GetHerHim]." 
  build_galleys_to_navy_size_percentage_tt: "Una flotta di [ships|e] galee sarà costruita a [target_location.GetName]"
  
  pirate_events.4.title: "La Tirannia di [target_character.GetNameWithNoTooltip]"

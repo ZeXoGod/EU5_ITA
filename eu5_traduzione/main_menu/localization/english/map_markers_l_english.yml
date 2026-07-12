@@ -43,7 +43,7 @@
  UNIT_HAS_ARMIES_DISEMBARKING: "#R Questa [navy|e] ha [armies|e] imbarcati che stanno [Concept('disembark', 'Sbarcando')|e], non può muoversi al momento.#!"
  PORT_TOOLTIP: ""
  PORT_TOOLTIP_NEW: "Il Porto di [PortMarker.GetLocation.GetNameWithNoTooltip]"
- PORT_TOOLTIP_TEXT: "Questo [port|e] si trova nella [seazone|e][PortMarker.GetPortSeaZone.GetName].\n\n[PortMarker.GetShipsInfo]" #NEW
+ PORT_TOOLTIP_TEXT: "Questo [port|e] si trova nella [seazone|e][PortMarker.GetPortSeaZone.GetName].\n\n[PortMarker.GetShipsInfo]" 
  NO_SHIPS_IN_PORT: "Attualmente, non ci sono [ships|e] nel porto."
  OCCUPATION_X_DAYS_LEFT: "$VAL|Y$ giorno/i rimanenti"
  OCCUPATION_X_DAYS_LEFT_SHORT: "$VAL|Y$g"
@@ -59,5 +59,7 @@
  CITY_MARKER_TOOLTIP_CAPITAL: "[capital|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]"
  BLOCKED_VISION_TOOLTIP: "Le [units|e] nemiche potrebbero essere [Concept('hidden', 'Nascoste')|e] in [LOCATION.GetName] a causa delle seguenti caratteristiche:\n$WHY$"
  BLOCKED_VISION_TOOLTIP_TEXT: "Visione Bloccata"
+ WINTER_BLOCKED_TOOLTIP: "[LOCATION.GetName] è attualmente bloccata dal [winter|e]. Gli eserciti non possono entrare o passare attraverso questa località finché l'inverno non termina." 
+ WINTER_BLOCKED_TOOLTIP_TEXT: "Bloccata dall'inverno" 
  DESERT_CONNECTOR_TOOLTIP: "Collegamento con il Deserto"
  DESERT_CONNECTOR_TOOLTIP_TEXT: "[LOCATION.GetName] connette le seguenti [locations|e]:"

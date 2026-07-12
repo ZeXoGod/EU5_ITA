@@ -1,6 +1,6 @@
 ﻿l_english:
  flavor_mal.1.title: "Zenith of the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_mal.1.entry: "$flavor_mal.1.title$" #NEW
+ flavor_mal.1.entry: "$flavor_mal.1.title$"
  flavor_mal.1.desc: "During the reign of [mal_mansa_musa_ruler.GetName], the [ROOT.GetCountry.GetLongName] has reached the pinnacle of power in $west_africa$. Truly blessed by Allāh, the great [ROOT.GetCountry.GetGovernment.GetRulerTitle] has ruled [ROOT.GetCountry.GetNameWithNoTooltip] with strength and wisdom, and even has shown the great wealth of the [ROOT.GetCountry.GetFlavorRank] to the rest of the world during [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] Ḥajj.\n\nHowever, the wheel of fortune cannot turn forever in our favor. [mal_maghan_ruler.GetName] has never been of great significance and the [ROOT.GetCountry.GetFlavorRank] is facing social issues with so many diverse cultures present in the state.\n\nOnly time will tell what might happen to the [ROOT.GetCountry.GetLongNameWithNoTooltip]..."
  flavor_mal.1.a: "May these prospering times find no end."
  flavor_mal.1.a.tt: "We might become subject to the [ShowDisasterName('decline_of_empire')] [disaster|e] should our [control|e] over our lands decays under weak leadership"
@@ -11,12 +11,11 @@
  flavor_mal.2.desc: "While [mal_maghan_ruler.GetName] has not shown any promising skills for ruling a state, his uncle [mal_suleyman_ruler.GetName] has proven his abilities during [mal_mansa_musa_ruler.GetName]'s great Ḥajj as regent of [ROOT.GetCountry.GetName]. The support for [mal_suleyman_ruler.GetNameWithNoTooltip] as the new [ROOT.GetCountry.GetGovernment.GetRulerTitle] is strong. However, [mal_maghan_ruler.GetNameWithNoTooltip] is the current ruler of our state, and it goes against the traditional laws of [ROOT.GetCountry.GetNameWithNoTooltip] to usurp [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim]."
  flavor_mal.2.a: "Let [mal_suleyman_ruler.GetNameWithNoTooltip] rule over [ROOT.GetCountry.GetNameWithNoTooltip]."
  flavor_mal.2.a.entry: "Let $name_salomon.mande_language$ Keita rule over us." #NEW
-# flavor_mal.2.b: "[mal_maghan_ruler.GetNameWithNoTooltip] inherited the throne. [mal_maghan_ruler.GetHeShe|U] shall prove [mal_maghan_ruler.GetHerselfHimself] first." #OLD
  flavor_mal.2.b: "[mal_maghan_ruler.GetNameWithNoTooltip] inherited the throne. He shall prove [mal_maghan_ruler.GetHerselfHimself] first." #NEW
  flavor_mal.2.b.entry: "$name_maghan$ Keita inherited the throne. He shall prove himself first." #NEW
 
  flavor_mal.3.title: "The Transformation of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Military"
- flavor_mal.3.entry: "$flavor_mal.3.title$" #NEW
+ flavor_mal.3.entry: "$flavor_mal.3.title$"
  flavor_mal.3.desc: "The armies of [ROOT.GetCountry.GetName] used to be made up of #italic Horons#! - 'free men', who brought their own weaponry to the battle and were trained in the arts of war. With the increasing usage of [ShowUnitDefinitionName('a_sofa_infantry')], the character of our military is shifting. No more is the state protected by our well-trained part-time soldiers but by an army of #italic Jonows#! — 'slaves' — who once were just the carrier of the military equipment.\n\nOpinions are split if such development is to our advantage or not. While the quality of our army is less secure, it is undeniable that the quantity of the Sofa troops is a force to be reckoned with."
  flavor_mal.3.a: "Let us utilize the $a_sofa_infantry$ more."
  flavor_mal.3.b: "We should not replace the Horon with these slaves."
@@ -34,33 +33,33 @@
  flavor_mal.5.b: "The problem lies with the disloyal chiefs."
  
  flavor_mal.6.title: "Islamization of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
- flavor_mal.6.entry: "$flavor_mal.6.title$" #NEW
+ flavor_mal.6.entry: "$flavor_mal.6.title$"
  flavor_mal.6.desc: "While our [ROOT.GetCountry.GetFlavorRank] is Islamic in name, the old religion of our forefathers is still very much a force to be reckoned with. Islam has, however, been gaining more ground lately among the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], and wandering marabouts have also become an increasingly common sight even in the farthest corners of our lands.\n\nIn the past, our predecessors have all avoided being too forceful about converting their subjects, but if we wish, we could probably make use of these recent developments to encourage the spread of the true faith."
  flavor_mal.6.a: "Let us convert our people!"
  flavor_mal.6.b: "Let us not rock the boat."
  
  flavor_mal.7.title: "Access to Gunpowder Weaponry"
- flavor_mal.7.entry: "$flavor_mal.7.title$" #NEW
+ flavor_mal.7.entry: "$flavor_mal.7.title$"
  flavor_mal.7.desc: "For centuries, our men have relied on javelins and bows. These were the ways of our ancestors, and so are they the ways of our current generation of warriors. Yet, those strangers from [mal_arms_dealer.GetName] possess weapons never seen before in [ROOT.GetCountry.GetName]. Although our own traditional weapons surpass those foreign tools of destruction, it is clear that this 'gunpowder weaponry' has the potential to replace the bow. Military advisors recommend that we gain access to these guns by purchasing them from the [mal_arms_dealer.GetAdjectiveWithNoTooltip] merchants."
  flavor_mal.7.a: "We should request guns from [mal_arms_dealer.GetNameWithNoTooltip]."
  flavor_mal.7.a.entry: "We should request guns from the arms dealer." #NEW
  flavor_mal.7.a.tt: "We will try to purchase gunpowder weaponry from [mal_arms_dealer.GetName].\nThe price is #R [ROOT.GetVariable('mal_gun_price').GetValue|V2]#! if [mal_arms_dealer.GetNameWithNoTooltip] accepts. In return, the [mal_arms_buyer.GetAdjective] military and war economy will see a large boost"
  flavor_mal.7.b: "Guns? Spears and Arrows are all we need!"
- mal_need_for_firearms: "Need for $firearms$"
- mal_rejection_of_firearms: "Rejection of $firearms$"
+ mal_need_for_firearms: "Need for $firearms$" #NEW
+ mal_rejection_of_firearms: "Rejection of $firearms$" #NEW
 
  flavor_mal.8.title: "[mal_arms_buyer.GetNameWithNoTooltip] requests Access to Guns"
  flavor_mal.8.desc: "Curious news has reached our court, as the merchants of [mal_arms_buyer.GetName], sent by their [mal_arms_buyer.GetGovernment.GetRulerTitle] [mal_arms_buyer.GetGovernment.GetRuler.GetHerselfHimself], make us an offer to sell our firearms as well as our weapon expertise to them. While granting them access to our arsenal might give us a grateful ally in $west_africa$, it could threaten our outstanding business opportunities with [mal_arms_buyer.GetNameWithNoTooltip]."
  flavor_mal.8.a: "There is no benefit to us to sell guns to them."
  flavor_mal.8.b: "This might be a profitable business."
- mal_granted_us_access_to_firearms: "Granted us Access to $firearms$"
- mal_rejected_us_access_to_firearms: "Rejected us Access to $firearms$"
+ mal_granted_us_access_to_firearms: "Granted us Access to $firearms$" #NEW
+ mal_rejected_us_access_to_firearms: "Rejected us Access to $firearms$" #NEW
 
  flavor_mal.9.title: "[mal_arms_dealer.GetNameWithNoTooltip] sells Gunpowder Weapons!"
  flavor_mal.9.entry: "Arms Dealer sells Gunpowder Weapons!" #NEW
  flavor_mal.9.desc: "Great news has reached the court, as the merchants of [mal_arms_dealer.GetName] have agreed to sell gunpowder weapons, as well as the necessary resources and knowledge to produce these weapons ourselves! The military of [ROOT.GetCountry.GetName] can finally adapt to the changing nature of warfare!"
  flavor_mal.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_mal.9.a.entry: "$common_string_brilliant$" #NEW
+ flavor_mal.9.a.entry: "$common_string_brilliant$"
 
  flavor_mal.10.title: "[mal_arms_dealer.GetNameWithNoTooltip] refuses Access to Gunpowder Weapons!"
  flavor_mal.10.entry: "Arms Dealer refuses Access to Gunpowder Weapons!" #NEW
@@ -68,13 +67,13 @@
  flavor_mal.10.a: "These insidious snakes..."
 
  flavor_mal.11.title: "[ROOT.GetCountry.GetNameWithNoTooltip] in the Defensive"
- flavor_mal.11.entry: "$flavor_mal.11.title$" #NEW
+ flavor_mal.11.entry: "$flavor_mal.11.title$"
  flavor_mal.11.desc: "The wars against the [ROOT.GetCountry.GetLongName] are showing their toll. More and more territory is lost to those who seek our destruction; more and more our bravest men are forced to go into the defensive while the hordes of ungrateful traitors and marauding tribes push into our land.\n\nAs tragic as things are, at least these wars show [ROOT.GetCountry.GetAdjectiveWithNoTooltip] tenacity. However, the voices in the military command argue that our defensive strategy will lead to our doom. Going into the offensive and bringing the fight to our enemies is the only way to restore the glory of the [ROOT.GetCountry.GetFlavorRank]."
  flavor_mal.11.a: "This is madness, the army just cannot leave our land."
  flavor_mal.11.b: "They are right! Defending will only delay our demise."
 
  flavor_mal.12.title: "The Farima-Soura & Sankar-Zouma"
- flavor_mal.12.entry: "$flavor_mal.12.title$" #NEW
+ flavor_mal.12.entry: "$flavor_mal.12.title$"
  flavor_mal.12.desc: "Our borders are often perilous, and many merchants across the domain have fallen victim to illicit banditry and crime. Despite our best efforts, we have failed to establish the rule of law and bring our borderlands closer to our court in [target_location.GetName].\n\nThus, many influential members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have voiced their concerns and have brought forth ideas about delegating some power to them, particularly around the northern and southern border."
  flavor_mal.12.a: "The Farima-Soura will serve us faithfully."
  flavor_mal.12.b: "Let us turn to the Sankar-Zouma." 
@@ -82,7 +81,7 @@
  flavor_mal.12.d: "We cannot allow such influence in the hands of the nobles!"
 
  flavor_mal.13.title: "The Sankore Madrasa"
- flavor_mal.13.entry: "$flavor_mal.13.title$" #NEW
+ flavor_mal.13.entry: "$flavor_mal.13.title$"
  flavor_mal.13.desc: "Few establishments and centers of learning are as illustrious and celebrated as the [ShowBuildingTypeName('madrasa')] in [target_location.GetName]. Originally built around the roots of the Sankore [ShowBuildingTypeName('temple')], the madrasa was founded with the financial backing of a [ShowCultureName('mandinka')] woman.\n\nSince then, the institution has not only prospered under the guide of great men, such as [GetCharacter('mal_musa_keita').GetName], but also continues receiving several students, who visit its premises from every corner of the continent to obtain the wisdom within its walls."
  flavor_mal.13.a: "This is the shining example of our innovative thought!"
  flavor_mal.13.b: "We shall admire it but we cannot fund it even more..."
@@ -111,7 +110,7 @@
  flavor_mal.17.b: "We will put them to the sword, all of them!"
 
  flavor_mal.18.title: "A Fragmented Realm"
- flavor_mal.18.entry: "$flavor_mal.18.title$" #NEW
+ flavor_mal.18.entry: "$flavor_mal.18.title$"
  flavor_mal.18.desc: "Many within our ranks seem to believe that our great nation is falling apart. Regional revolts, prospecting pretenders, and harsh weather patterns have led to many speculating that our end is nigh. Adding salt to our wounds, now many of our subjects to our eastern territories demand their complete independence from our authority after kicking out our local administrators and putting the local crown representatives to the sword!"
  flavor_mal.18.a: "Harsh terms but we will accept..."
  flavor_mal.18.b: "Blood is repaid with blood, the cycle of violence..."
@@ -136,7 +135,7 @@
  flavor_mal.20.b: "No need for that."
 
  flavor_mal.21.title: "Pax Mandinka"
- flavor_mal.21.entry: "$flavor_mal.21.title$" #NEW
+ flavor_mal.21.entry: "$flavor_mal.21.title$"
  flavor_mal.21.desc: "Our reign over most of [ShowRegionName('guinea_region')] has enabled us to further extend our influence, establishing an ever-lasting peace in the region. Now it is an opportunity to focus on [ROOT.GetCountry.GetName] proper."
  flavor_mal.21.a: "Let this peace bring many caravans."
  flavor_mal.21.b: "Maintaining peace in [ROOT.GetCountry.GetNameWithNoTooltip] is important."
@@ -163,7 +162,7 @@
  mal_unlock_fulani_cattle_rearing_pens_tt: "Unlocks the [ShowBuildingTypeName('fulani_cattle_rearing_pen')] [building|e] for our [ShowGoodsName('livestock')] producing [locations|e] in [ShowRegionName('guinea_region')]"
 
  flavor_mal.24.title: "Searching for the Lost Voyage"
- flavor_mal.24.entry: "$flavor_mal.24.title$" #NEW
+ flavor_mal.24.entry: "$flavor_mal.24.title$"
  flavor_mal.24.desc: "While [target_character.GetName] thought the [ShowRegionName('south_atlantic_region')] expedition to have been in vain, [target_character2.GetName] thinks otherwise. [target_character2.GetSheHe|U] thinks that there must be something in the West. We could try to invest in new voyages, all for the sake of diving into the unknown."
  flavor_mal.24.historical_info: "Although it is only a myth that Ko Mamadi might have discovered the Americas with his voyages, it can be said that his failure to return contributed to the rise of Mansa Mūsā in the Mali Empire and a focus on internal stability rather than discovery and innovation."
  flavor_mal.24.a: "We have plenty of gold, we can afford new expeditions."
@@ -172,45 +171,45 @@
  mal_finding_america_yields_rewards_tt: "Should we happen to discover a new [continent|e], we will get the opportunity to strengthen our #Y Outward#! values."
 
  flavor_mal.25.title: "Land Spotted!"
- flavor_mal.25.entry: "$flavor_mal.25.title$" #NEW
+ flavor_mal.25.entry: "$flavor_mal.25.title$"
  flavor_mal.25.desc: "Whilst we were never able to discover what happened to the lost fleet, [target_character.GetName] has found new lands. This discovery has shocked the entire crew, as well as everyone in [ROOT.GetCountry.GetGovernment.GetCourtTitle], but it leaves us with new opportunities. Perhaps [target_character2.GetName] was wrong, perhaps there is a point to looking outwards."
  flavor_mal.25.a: "Quickly, these new lands must be settled."
  flavor_mal.25.b: "We are in no rush. Let the rest of the [ROOT.GetCountry.GetFlavorRank] know."
  flavor_mal.25.b.entry: "We are in no rush. Let the rest of the realm know." #NEW
 
  flavor_mal.26.title: "Council Dominates Politics"
- flavor_mal.26.entry: "$flavor_mal.26.title$" #NEW
+ flavor_mal.26.entry: "$flavor_mal.26.title$"
  flavor_mal.26.desc: "With the weakness of [target_character.GetName] being obvious to our estates, they have decided to exploit it. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] now dominates the administration of [ROOT.GetCountry.GetName]."
  flavor_mal.26.a: "[ROOT.GetCountry.Custom('common_string_we_must_do_something')]"
- flavor_mal.26.a.entry: "$common_string_we_must_do_something_about_it$" #NEW
+ flavor_mal.26.a.entry: "$common_string_we_must_do_something_about_it$"
 
  flavor_mal.27.title: "The Boulder of Gold Sold"
- flavor_mal.27.entry: "$flavor_mal.27.title$" #NEW
+ flavor_mal.27.entry: "$flavor_mal.27.title$"
  flavor_mal.27.desc: "[target_character.GetName] and [target_character.GetHerHis] practices have led to the unthinkable. Selling the Boulder of Gold, a possession that many would do anything to acquire, for much less than its original value. This event has shocked the entire [ROOT.GetCountry.GetGovernment.GetCourtTitle], questioning [target_character.GetHerHis] competence."
  flavor_mal.27.a: "But the economy!"
 
  flavor_mal.28.title: "Restoring the Tributes"
- flavor_mal.28.entry: "$flavor_mal.28.title$" #NEW
+ flavor_mal.28.entry: "$flavor_mal.28.title$"
  flavor_mal.28.desc: "In the past, the main source of gold for [ROOT.GetCountry.GetName] was not its mines, but the numerous tributes the surrounding nations would pay. With that tradition slowly fading away, [target_character.GetName] has proposed to restore this system."
  flavor_mal.28.a: "Let us demand tributes once again."
  flavor_mal.28.b: "Instead of relying on old methods, we should focus on centralizing."
 
  flavor_mal.29.title: "Masters of the River"
- flavor_mal.29.entry: "$flavor_mal.29.title$" #NEW
+ flavor_mal.29.entry: "$flavor_mal.29.title$"
  flavor_mal.29.desc: "The people of the Niger River have brought [ROOT.GetCountry.GetName] a lot of food due to their fishermen's traditions. Dubbed the Masters of the River, they helped create locations such as [target_location.GetName], and have been an integral part of the [ROOT.GetCountry.GetFlavorRank]. Perhaps we can offer them more aid."
  flavor_mal.29.a: "They can have some gold."
  flavor_mal.29.b: "Let us not."
  mal_every_pop_gains_20_satisfaction_tt: "Every [pop|e] in [target_location.GetName] will gain [ShowNamedValue('pop_satisfaction_severe_bonus')|+2%] [pop_satisfaction|e]"
 
  flavor_mal.30.title: "A Tyrannical Ruler"
- flavor_mal.30.entry: "$flavor_mal.30.title$" #NEW
+ flavor_mal.30.entry: "$flavor_mal.30.title$"
  flavor_mal.30.desc: "[target_character.GetName] has been oppressing [target_character.GetHerHis] subjects, mistreating them and thinking of them as mere pawns. While [target_character.GetSheHe] has the power to do so, all of [ROOT.GetCountry.GetName] is murmuring of overthrowing [target_character.GetHerHim]."
  flavor_mal.30.a: "[target_character.GetNameWithNoTooltip] needs to be contained."
  flavor_mal.30.a.entry: "The character needs to be contained." #NEW
  mal_all_pops_lose_15_satisfaction_tt: "All of our [pops|e] will lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+2%] [pop_satisfaction|e]"
 
  flavor_mal.31.title: "Shifting Towards the Coast"
- flavor_mal.31.entry: "$flavor_mal.31.title$" #NEW
+ flavor_mal.31.entry: "$flavor_mal.31.title$"
  flavor_mal.31.desc: "Whilst the Trans-Saharan trade has brought [ROOT.GetCountry.GetName] many riches in the past, it is now clear that there has been a shift towards maritime trade. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] has suggested that we instead focus on developing some of our coastal locations in [ShowRegionName('guinea_region')] instead, such as [target_location.GetName], to stay ahead in any economic matters."
  flavor_mal.31.a: "[target_location.GetNameWithNoTooltip] shall receive aid."
  flavor_mal.31.a.entry: "The location shall receive aid." #NEW
@@ -228,8 +227,7 @@
  flavor_mal.32.c.entry: "Let us blame him instead." #NEW
 
  flavor_mal.33.title: "Constructing the $timbuktu_palace$"
- flavor_mal.33.entry: "$flavor_mal.33.title$" #NEW
-# flavor_mal.33.desc: "To further strengthen the golden age that the [target_location.GetRank.GetName] of [target_location.GetName] is experiencing, [target_character.GetName] envisions the construction of a grand palace, a testament to the wealth and prestige of our [ROOT.GetCountry.GetRank]. Inspired by the flourishing courts of great empires, [target_character.GetSheHe] seeks to create a masterpiece of architecture — one that will rival the finest structures in [ROOT.GetCountry.GetName]. Designed with intricate craftsmanship and adorned with symbols of power, the palace will serve as both an administrative center and a monument to the legacy of [target_character.GetNameWithNoTooltip], ensuring [target_location.GetNameWithNoTooltip] remains a shining note in history, a beacon of prosperity and culture." #OLD
+ flavor_mal.33.entry: "$flavor_mal.33.title$"
  flavor_mal.33.desc: "To further strengthen the golden age that the [target_location.GetRank.GetName] of [target_location.GetName] is experiencing, [target_character.GetName] envisions the construction of a grand palace, a testament to the wealth and prestige of our [ROOT.GetCountry.GetRank.GetName]. Inspired by the flourishing courts of great empires, [target_character.GetSheHe] seeks to create a masterpiece of architecture — one that will rival the finest structures in [ROOT.GetCountry.GetName]. Designed with intricate craftsmanship and adorned with symbols of power, the palace will serve as both an administrative center and a monument to the legacy of [target_character.GetNameWithNoTooltip], ensuring [target_location.GetNameWithNoTooltip] remains a shining note in history, a beacon of prosperity and culture." #NEW
  flavor_mal.33.a: "Let us aid this construction."
  flavor_mal.33.b: "No need to make these useless buildings."

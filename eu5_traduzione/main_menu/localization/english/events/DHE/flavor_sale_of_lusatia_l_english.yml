@@ -1,30 +1,31 @@
 ﻿l_english:
 
  flavor_sale_of_lusatia.1000.title: "L'Impegno di [GetCountry('SOR').GetNameWithNoTooltip]"
- flavor_sale_of_lusatia.1000.entry: "Renew the Lusatian Pledge" #NEW
+ flavor_sale_of_lusatia.1000.entry: "Rinnovo del giuramento lusaziano" 
  flavor_sale_of_lusatia.1000.desc: "Il [GetCountry('SOR').GetLongName], che abbiamo acquisito con la nostra eredità dopo la morte di [GetCharacter('bra_heinrich_ii_askanier').GetName], non ha grande valore per [target_ruler.GetName] e [target_ruler.GetHerHis] ambizioni a [ROOT.GetCountry.GetCapital.GetName]. In precedenza, abbiamo raggiunto un accordo con il [GetCountry('MEI').GetLongName], impegnandoci i diritti di [GetCountry('SOR').GetNameWithNoTooltip] a loro. Poiché i poteri stranieri vedono [GetCountry('SOR').GetNameWithNoTooltip] come un'avenue per la loro stessa espansione, potrebbe essere più vantaggioso rinnovare questo accordo, e guadagnare denaro da esso ora invece di essere incatenati dall'onere di difenderlo dall'aggressione straniera."
  flavor_sale_of_lusatia.1000.a: "Invia un diplomatico a [GetCountry('MEI').GetCapital.GetNameWithNoTooltip]!"
- flavor_sale_of_lusatia.1000.a.entry: "Send a diplomat to the capital!" #NEW
+ flavor_sale_of_lusatia.1000.a.entry: "Inviamo un diplomatico nella capitale!" 
  flavor_sale_of_lusatia.1000.a.tt: "[GetCountry('MEI').GetName] sarà in grado di acquistare [GetCountry('SOR').GetName] per una quantità significativa di denaro, trasferendo la [subject|e] relazione a loro per 10 anni. Tuttavia, [target_ruler.GetName] rimarrà il [ruler|e] di [GetCountry('SOR').GetNameWithNoTooltip]."
  flavor_sale_of_lusatia.1000.b: "Non possiamo separarci da esso, nemmeno temporaneamente."
  flavor_sale_of_lusatia.1000.historical_info: "La Margraviato di Lusazia fu impegnata alla Margraviato di Meißen nel 1353, rinnovando un vecchio impegno del 1323. L'impegno è stato concordato per durare 10 anni, dando a Meißen accesso alle entrate di Lusazia, mentre il Wittelsbacher rimase i governanti nominali."
 
  flavor_sale_of_lusatia.1001.desc: "Il [GetCountry('BRA').GetLongName] ci ha offerto di rinnovare il vecchio impegno di [GetCountry('SOR').GetName] per dieci anni. Mentre richiedono un pagamento significativo, potrebbe essere una splendida opportunità per acquisire più influenza nelle vecchie terre [target_ruler_meissen.GetDynasty.GetName]."
-# flavor_sale_of_lusatia.1001.a: " [ROOT.GetCountry.Custom('common_string_positive')]" #OLD
- flavor_sale_of_lusatia.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]" #NEW
- flavor_sale_of_lusatia.1001.a.entry: "$common_string_brilliant$" #NEW
+ flavor_sale_of_lusatia.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]" 
+ flavor_sale_of_lusatia.1001.a.entry: "$common_string_brilliant$"
  flavor_sale_of_lusatia.1001.b: "Non abbiamo bisogno di quella terra."
 
  flavor_sale_of_lusatia.1100.title: "La Questione di [GetCountry('SOR').GetNameWithNoTooltip]"
- flavor_sale_of_lusatia.1100.entry: "Renew the Lusatian Pledge" #NEW
+ flavor_sale_of_lusatia.1100.entry: "Rinnovo del giuramento lusaziano" 
  flavor_sale_of_lusatia.1100.desc_normal: "Il [GetCountry('SOR').GetLongName] è ora supposto tornare nel nostro gregge, poiché l'impegno è completato.\n\nTuttavia, rimane una proprietà che ci offre poco valore e la vendita delle terre potrebbe darci il supporto finanziario necessario per questioni più importanti. Potremmo esplorare l'opzione di vendere completamente il titolo, liberandoci dalla terra problematica. Sicuramente molti sarebbero interessati all'acquisizione di [GetCountry('SOR').GetName] e le nostre buone relazioni con [target_buyer.GetName] li rendono un'opzione affidabile."
  flavor_sale_of_lusatia.1100.desc_fallback: "L'impegno di [GetCountry('SOR').GetName] ha percorso il suo corso ma sfortunatamente ha cessato di esistere nel possesso di stolti stranieri. Abbiamo poche opzioni legali per riprendere quelle terre ora."
  flavor_sale_of_lusatia.1100.a: "Avvicina [target_buyer.GetNameWithNoTooltip] con l'offerta."
- flavor_sale_of_lusatia.1100.a.entry: "Approach the buyer with the offer." #NEW
+ flavor_sale_of_lusatia.1100.a.entry: "Avviciniamoci all'acquirente con l'offerta." 
  flavor_sale_of_lusatia.1100.b: "Abbiamo finito di vendere terre."
  flavor_sale_of_lusatia.1100.c: "Riavremo le nostre terre legittime!"
  flavor_sale_of_lusatia.1100.d: "Un lasso di giudizio, forse."
  flavor_sale_of_lusatia.1100.historical_info: "Dopo che l'impegno del 1353 aveva percorso il suo corso, Otto von Wittelsbach vendette il titolo e le terre della Margraviato di Lusazia alla Corona di Boemia, che accettò l'offerta. Lusazia entrò nel dominio della Boemia, unificando la Lusazia superiore e inferiore ancora una volta sotto un'unica regola."
+ pledge_of_lusatia_accepted_tt: "Il giuramento lusaziano è stato accettato" 
+ pledge_of_lusatia_timeout_tt: "Il giuramento lusaziano ha fatto il suo corso" 
 
  flavor_sale_of_lusatia.1101.desc: "Con l'impegno di [GetCountry('SOR').GetName] a [GetCountry('MEI').GetName] che termina, [GetCountry('BRA').GetName] ha deciso di offrirci un acquisto completo del [GetCountry('SOR').GetLongNameWithNoTooltip]. Mentre il prezzo è certamente ripido, potrebbe essere un investimento lucroso per noi."
  flavor_sale_of_lusatia.1101.a: "Lo accettiamo!"
@@ -33,5 +34,5 @@
  flavor_sale_of_lusatia.1102.title: "Offerta Rifiutata"
  flavor_sale_of_lusatia.1102.desc: "[target_buyer.GetName] ha rifiutato la nostra offerta! [GetCountry('SOR').GetName] tornerà al nostro dominio come affermato nell'impegno originale e pagheranno di nuovo le loro tasse vassalle a noi."
  flavor_sale_of_lusatia.1102.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
- flavor_sale_of_lusatia.1102.a.entry: "$common_string_alright$" #NEW
+ flavor_sale_of_lusatia.1102.a.entry: "$common_string_alright$"
 

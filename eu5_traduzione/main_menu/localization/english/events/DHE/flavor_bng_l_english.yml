@@ -16,7 +16,7 @@
  flavor_bng.3.entry: "Khan Jahan Ali - Khalifatabad" #NEW
  flavor_bng.3.desc: "Coming from our regional [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], [target_character.GetName] transformed the area around [ShowLocationName('khalifatabad')] into a beautiful city of mosques and bridges. With the city being situated in the Ganges Delta, this was not an easy task. Regardless of that, in his capable hands, [ShowLocationNameWithNoTooltip('khalifatabad')] is quickly rising to a prominent center among our mint towns."
  flavor_bng.3.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_bng.3.a.entry: "$common_string_brilliant$" #NEW
+ flavor_bng.3.a.entry: "$common_string_brilliant$"
 
  flavor_bng.4.title: "Minting Towns of [ShowAreaNameWithNoTooltip('bengal_area')] Prosper"
  flavor_bng.4.entry: "Minting Towns in Bengal" #NEW
@@ -31,7 +31,7 @@
  flavor_bng.5.b: "We have no money for such lavish buildings."
 
  flavor_bng.6.title: "The Neighboring States"
- flavor_bng.6.entry: "$flavor_bng.6.title$" #NEW
+ flavor_bng.6.entry: "$flavor_bng.6.title$"
  flavor_bng.6.desc: "With [target_character.GetName] wishing to unify [ShowRegionName('bengal_region')], [target_character.GetHeShe] has started assembling an army and causing border conflicts with the surrounding states, hoping to provoke them into war."
  flavor_bng.6.a: "Let us unify [ShowRegionNameWithNoTooltip('bengal_region')]!"
  flavor_bng.6.b: "Maintaining stability is preferable."
@@ -46,7 +46,6 @@
 
  flavor_bng.8.title: "A [ShowReligionAdjectiveWithNoTooltip('hindu')] Pretender"
  flavor_bng.8.entry: "Hindu pretender" #NEW
-# flavor_bng.8.desc: "The [ShowReligionAdjective('hindu')] populace within [ROOT.GetCountry.GetName] have rallied up to a local governor. [target_character.GetHerHis|U] name is [target_character.GetName], a lowborn of humble origins who is sick of the [ShowReligionGroupAdjective('muslim')] rule in [ROOT.GetCountry.GetNameWithNoTooltip], wishing to usurp the throne of [ROOT.GetCountry.GetNameWithNoTooltip] from [target_character2.GetName]." #OLD
  flavor_bng.8.desc: "The [ShowReligionAdjective('hindu')] populace within [ROOT.GetCountry.GetName] have rallied up to a local governor. His name is [target_character.GetName], a lowborn of humble origins who is sick of the [ShowReligionGroupAdjective('muslim')] rule in [ROOT.GetCountry.GetNameWithNoTooltip], wishing to usurp the throne of [ROOT.GetCountry.GetNameWithNoTooltip] from [target_character2.GetName]." #NEW
  flavor_bng.8.a: "Maybe it is time for a new management..."
  flavor_bng.8.b: "To arms!"
@@ -54,7 +53,7 @@
  bng_hindus_become_disloyal_tt: "All [ShowReligionAdjective('hindu')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
 
  flavor_bng.9.title: "Promotion of Sufism"
- flavor_bng.9.entry: "$flavor_bng.9.title$" #NEW
+ flavor_bng.9.entry: "$flavor_bng.9.title$"
  flavor_bng.9.desc: "Sufi practices have been popularized within [ROOT.GetCountry.GetName]. Many shrines have been dedicated to them, and even a few people within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] are following their ideas. Perhaps we can sponsor them even more."
  flavor_bng.9.a: "We will promote the Sufi practices."
  flavor_bng.9.b: "No need to spend resources for this."
@@ -66,27 +65,27 @@
  flavor_bng.10.b: "We are already in a good economic position."
 
  flavor_bng.11.title: "Shipbuilding Traditions"
- flavor_bng.11.entry: "$flavor_bng.11.title$" #NEW
+ flavor_bng.11.entry: "$flavor_bng.11.title$"
  flavor_bng.11.desc: "The [ROOT.GetCountry.GetCulture.GetName] people have had a major presence within [ShowProvinceDefinitionName('bengal_high_sea_zones_province')] in the past, ensuring that the coast as well as the trade routes there were under their control. We bolstered one of the strongest navies within $india$ and had a legacy of shipbuilding within the region. We should promote this tradition as well, bolstering our port in [target_location.GetName]."
  flavor_bng.11.a: "Our navy shall thrive."
  flavor_bng.11.b: "Bolstering our land is more important."
  bng_buff_naval_parliament_debate_tt: "For #Y 20#! years, the [ShowParliamentIssueType('increase_naval_spending')] will now grant #G +5%#! [societal_values|e] towards [ShowSocietyDirectionName('naval')]"
 
  flavor_bng.12.title: "$firoz_minar$"
- flavor_bng.12.entry: "$flavor_bng.12.title$" #NEW
+ flavor_bng.12.entry: "$flavor_bng.12.title$"
  flavor_bng.12.desc: "With the obsession [target_character.GetName] has over architecture, [target_character.GetSheHe] has decided to create a tower inspired by the [ShowDynastyName('tughlaq_dynasty')] architecture. Named $firoz_minar$, it is meant to commemorate the victories of [target_character.GetNameWithNoTooltip]."
  flavor_bng.12.a: "The chief architect will make it the tallest tower!"
  flavor_bng.12.b: "What purpose does a mere tower serve?"
 
  flavor_bng.13.title: "$dakhil_darwaza$"
- flavor_bng.13.entry: "$flavor_bng.13.title$" #NEW
+ flavor_bng.13.entry: "$flavor_bng.13.title$"
  flavor_bng.13.desc: "To fortify the citadel of [target_location.GetName], [target_character.GetName] wishes to create a new main entrance for the [target_location.GetRank.GetName], naming it $dakhil_darwaza$. [target_character.GetSheHe|U] wants to turn it into the most elegant and largest gates within $india$. It would be costly, but it would be glorious."
  flavor_bng.13.a: "Let these gates be built."
  flavor_bng.13.b: "[target_location.GetNameWithNoTooltip] is already fortified."
  flavor_bng.13.b.entry: "[ShowLocationNameWithNoTooltip('gaur')] is already fortified." #NEW
 
  flavor_bng.14.title: "$kusumba_mosque$"
- flavor_bng.14.entry: "$flavor_bng.14.title$" #NEW
+ flavor_bng.14.entry: "$flavor_bng.14.title$"
  flavor_bng.14.desc: "Several mosques within [ShowRegionName('bengal_region')] have followed the [target_character.GetDynasty.GetName] architecture, with many of them already being constructed in that style. [target_character.GetName] has been obsessed with creating a new one, with a completely different style. Calling it $kusumba_mosque$, [target_character.GetSheHe] claims it will be the black gem of [ShowRegionNameWithNoTooltip('bengal_region')]."
  flavor_bng.14.historical_info: "During the height of the Suri rule over Bengal, several mosques were constructed by these rulers all over the realm. Although most of them followed the same style, the Kusumba Mosque followed the style of older ones, independent from the style of the Afghani rulers."
  flavor_bng.14.a: "It shall be a grand mosque."
@@ -95,10 +94,9 @@
 
  flavor_bng_1000_shared: "Relations With $china$"
  flavor_bng.1000.title: "$flavor_bng_1000_shared$"
- flavor_bng.1000.entry: "$flavor_bng.1000.title$" #NEW
+ flavor_bng.1000.entry: "$flavor_bng.1000.title$"
  flavor_bng.1000.desc: "The [GetInternationalOrganization('middle_kingdom').GetName] led by [target_country.GetName] may prove to be valuable allies. Although it is not entirely sure if we can convince them to support us in any conflict, we can, at the very least, send emissaries to them to strengthen the relations between both realms."
  flavor_bng.1000.a: "It is worth the effort."
-# flavor_bng.1000.b: "No need to make them our allies" #OLD
  flavor_bng.1000.b: "No need to make them our allies." #NEW
  bng_no_diplomatic_ties_tt: "We will not send any embassy to [target_country.GetName]"
 

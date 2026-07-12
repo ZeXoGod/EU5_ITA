@@ -7,8 +7,7 @@
  COUNTRY_OPINION_OF_TT: "L'attuale opinione di ($OPINION|2+=$) è dovuta a:"
  COUNTRY_TRUST_OF_SELF: "#T Fiducia $WHO$#!\n$TARGET|Y$ si fida chiaramente di sé stesso."
  COUNTRY_TRUST_OF_SELF_PLAYER: "#T Fiducia in $TARGET$#!\n$TARGET|Y$ è il nostro Paese!"
-# COUNTRY_TRUST_OF: "#T Fiducia [COUNTRY.Custom('IT_ADJ_FS')] [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongNameWithNoTooltip]#!\nLa [Select_CString(TARGET_COUNTRY.IsPlayer, 'loro', 'nostra')] fiducia ($TRUST|2+=$) è dovuta a:" #OLD
- COUNTRY_TRUST_OF: "#T [COUNTRY.GetAdjectiveWithNoTooltip] Trust of [TARGET_COUNTRY.GetLongNameWithNoTooltip]#!\n[Select_CString(TARGET_COUNTRY.IsPlayer, 'Their', 'Our')] trust is $TRUST$ and in the next month it will change by $TRUST_CHANGE|2+=$ due to:\n$CHANGE_REASONS$\nThe equilibrium is $EQUILIBRIUM|2$ due to:" #NEW
+ COUNTRY_TRUST_OF: "#T Fiducia [COUNTRY.Custom('IT_ADJ_FS')] [TARGET_COUNTRY.Custom('IT_DEL_RANGO')][TARGET_COUNTRY.GetLongNameWithNoTooltip]#!\nLa [Select_CString(TARGET_COUNTRY.IsPlayer, 'loro', 'nostra')] fiducia è $TRUST$ e il mese prossimo cambierà di $TRUST_CHANGE|2+=$ a causa di:\n$CHANGE_REASONS$\nL'equilibrio è $EQUILIBRIUM|2$ dovuto a:"
  COUNTRY_TRUST_OF_TT: "La fiducia di ($TRUST|+=$) è dovuta a:"
  COUNTRY_ANTAGONISM_TOWARDS_SELF: "#T Antagonismo [COUNTRY.GetAdjective]#!\n[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] non prova chiaramente alcun [antagonism|e] verso sé stesso."
  COUNTRY_ANTAGONISM_TOWARDS_SELF_PLAYER: "#T Antagonismo verso [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]#!\n[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] è il nostro Paese!"
@@ -24,6 +23,10 @@
  COUNTRY_OPINION_OF_MYSELF: "Amandi te ipsum non est vanitas. Est sanitatem reducamus."
  OPINION_ENTRY: "$NAME$: $VAL|2=+$\n"
  OPINION_ANTAGONISM_ENTRY: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+2$#!\n"
+ OPINION_TIMED_ENTRY: "$NAME$ $SUFFIX$: $VAL|2=+$\n" 
+ OPINION_TIMED_ENTRY_CHANGE: "$NAME$ $SUFFIX$: $VAL|0=+$ ($CHANGE|2=+$ annuale)\n" 
+ BIAS_TEMPORAL_EXPIRES: " #flavor (scade il $DATE$)#!" 
+ BIAS_TEMPORAL_FADING: " #flavor (svanisce ~$YEAR$)#!" 
  OPINION_BASE_FROM_ANTAGONISM: "#T Impatto Antagonismo#!\nOgni [antagonism|e] fornisce $EACH|+=$ [opinion|e]\nDa $BASE|R0$ [antagonism|e]: $VAL|+$"
  OPINION_MODIFIED_BY_TITLE: "Modificato ulteriormente (fino a un minimo del 5%):"
  OPINION_MODIFIED_BY_NEIGHBOUR: "Vicino: $VAL|-%$"
@@ -35,24 +38,23 @@
  OPINION_MODIFIED_BY_DEFENSIVE_SUPPORT: "Ricevere supporto difensivo: $VAL|-%$"
  OPINION_MODIFIED_BY_ROYAL_MARRIAGE: "[royal_marriage|e]: $VAL|-%$"
  OPINION_MODIFIED_BY_IO: "Condivide un'[international_organization|e]: $VAL|-%$"
- TRUST_ENTRY: "$NAME$: $VAL|=+0$"
- TRUST_ENTRY_CHANGE: "$NAME$: $VAL|0=+$ ($CHANGE|2=+$ annuale)"
+ TRUST_ENTRY: "$NAME$: $VAL|=+2$" 
+ TRUST_ENTRY_CHANGE: "$NAME$: $VAL|2=+$ ($CHANGE|2=+$ annuale)" 
  ANTAGONISM_ENTRY_FOR_COUNTRY_WITH_BREAKDOWN: "[COUNTRY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-V2$#!"
  ANTAGONISM_ENTRY_WITH_BREAKDOWN: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-=1$#!\n"
  ANTAGONISM_ENTRY: "$NAME$: $VAL|1=-$"
-# ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ ($CHANGE|2=-$ annuale)" #OLD
- ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ (#TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|2=-$#! yearly)" #NEW
+ ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ (#TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|2=-$#! annuale)" 
  ANTAGONISM_ENTRY_CHANGE_THEM: "$MODIFIER$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]: $VAL|-=$ annuale" 
- ANTAGONISM_YEARLY_CHANGE_BASE: "Natural decay: $VAL|2=-$ yearly" #NEW
- ANTAGONISM_YEARLY_CHANGE_MODIFIER: "[COUNTRY.GetName] $MODIFIER$: $VAL|2=-$ yearly" #NEW
- ANTAGONISM_YEARLY_CHANGE_OPINION_IMPROVEMENT: "Opinion improvement: $VAL|2=-$ yearly" #NEW
+ ANTAGONISM_YEARLY_CHANGE_BASE: "Decadimento naturale: $VAL|2=-$ annuale" 
+ ANTAGONISM_YEARLY_CHANGE_MODIFIER: "$MODIFIER$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]: $VAL|2=-$ annuale" 
+ ANTAGONISM_YEARLY_CHANGE_OPINION_IMPROVEMENT: "Miglioramento dell'opinione: $VAL|2=-$ annuale" 
  OPINION_SAME_CULTURE_ENTRY: "Entrambi hanno la [primary_culture|e] [CULTURE.GetName]: $VAL|0=+$\n"
  OPINION_CULTURE_ENTRY: "Opinione [CULTURE.GetName] della cultura [TARGET_CULTURE.GetName]: $VAL|0=+$\n"
  OPINION_SHARED_CULTURE_GROUPS: "$NUM$ su $TOTAL$ [culture_groups|e] Condivisi: $VAL|=+$\n"
  OPINION_RELIGIOUS_TOLERANCE_ENTRY: "#T Ragioni di Tolleranza#!\n[tolerance|e] religiosa [COUNTRY.Custom('IT_ADJ_FS')] della religione [TARGET_RELIGION.GetAdjective]: $VAL|0=+$\n"
  OPINION_RELIGION_GENERAL_VIEW_ENTRY: "Opinione della religione [RELIGION.GetAdjective] nei confronti di quella [TARGET_RELIGION.GetAdjective]: $VAL|0=+$\n"
  OPINION_RELIGION_ENTRY: "Opinione [COUNTRY.Custom('IT_ADJ_FS')] sui [countries|e] di fede [TARGET_RELIGION.GetAdjective]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L0=+$#!\n"
- OPINION_EXCOMMUNICATED: "[CHARACTER.GetName] is Excommunicated" #NEW
+ OPINION_EXCOMMUNICATED: "[CHARACTER.GetName] è scomunicat[CHARACTER.Custom('IT_ART_O_A')]" 
  CULTURE_BREAKDOWN_TOOLTIP: "#T Ripartizione cultura [CULTURE.GetNameWithNoTooltip]#!\nI [pops|e] di cultura [CULTURE.GetName] sono distribuiti tra le seguenti [provinces|e]:"
  CULTURE_BREAKDOWN_TOOLTIP_ENTRY: "[PROVINCE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $POP_SIZE|L$#!"
  ICI_HEADER: "Cultura [CULTURE.GetNameWithNoTooltip] in [PROVINCE.GetNameWithNoTooltip]"
@@ -60,7 +62,7 @@
  
  OPINION_CULTURE_TOOLTIP: "#T Opinione [CULTURE.GetNameWithNoTooltip] nei confronti della cultura [TARGET_CULTURE.GetNameWithNoTooltip]#!\nL'opinione $TITLE$ fornisce quanto segue:\nOpinione dei [countries|e] di cultura [CULTURE.GetName] su quelli di cultura [TARGET_CULTURE.GetName]: $VAL|0=+$"
  OPINION_CULTURE_POP_TOOLTIP: "[Concept('pop_satisfaction', 'Soddisfazione dei Pop')|e] di cultura [CULTURE.GetNameWithNoTooltip]: $VAL|=+2%$"
- OPINION_CULTURE_ASSIMILATION_TOOLTIP: "[assimilation|e] of [TARGET_CULTURE.GetName] [pops|e]: $VAL|=+2%$" #NEW
+ OPINION_CULTURE_ASSIMILATION_TOOLTIP: "[assimilation|e] dei [pops|e] della cultura [TARGET_CULTURE.GetName]: $VAL|=+2%$" 
  
  RELIGION_BREAKDOWN_TOOLTIP: "#T Ripartizione [RELIGION.GetNameWithNoTooltip]#!\nI [pops|e] di fede [RELIGION.GetAdjective] sono distribuiti tra le seguenti [provinces|e]:"
  RELIGION_BREAKDOWN_TOOLTIP_ENTRY: "[PROVINCE.GetName]: $POP_SIZE$ persone"
@@ -142,6 +144,7 @@
  io_opinion_hre: "[member|e] Compagno dell'Impero"
  io_opinion_high_kingship: "[member|e] della stessa Alto Regno"
  io_opinion_high_king: "Il Nostro Re Supremo"
+ opinion_voted_for_high_king: "Li abbiamo sostenuti per il titolo di Sommo Re" 
  io_opinion_lordship_of_ireland: "[member|e] della Signoria d'Irlanda"
  io_opinion_lord_of_ireland: "Signore d'Irlanda"
  io_opinion_autocephalous_patriarchate: "Nello stesso Patriarcato Autocefalo"
@@ -167,6 +170,7 @@
  opinion_threatening_rival: "Rivale Minaccioso" 
  opinion_enemy: "Nemico"
  opinion_defending_our_rival: "Difende il Nostro Rivale"
+ opinion_expelled_from_league: "Espulso dalla Lega" 
  opinion_enemy_of_my_enemy: "Nemico del Mio Nemico"
  opinion_rival_of_my_rival: "Rivale del mio Rivale" 
  opinion_defended_our_land: "Abbiamo difeso la nostra terra" 
@@ -202,10 +206,8 @@
  trust_they_rival_us: "[rival|e]"
  trust_mutual_rival: "Mutuo [rival|e]"
  trust_supporting_rival: "Supporta il Rivale"
-# trust_receiving_guarantee: "$guarantee$ di Lungo Termine" #OLD
- trust_receiving_guarantee: "Guarantee" #NEW
-# trust_alliance: "$alliance$ di Lungo Termine" #OLD
- trust_alliance: "Alliance" #NEW
+ trust_receiving_guarantee: "Garante"
+ trust_alliance: "Alleanza" 
  trust_declared_war: "Guerra Dichiarata"
  trust_cant_afford_tribute: "Impossibilità di Pagare il Tributo"
  trust_broke_alliance: "Ha Rotto l'Alleanza"
@@ -255,8 +257,8 @@
  opinion_cardinal_selected: "Cardinale diventato Papa"
  opinion_jubilee_bad: "Il Papa disapprova il Giubileo"
  opinion_jubilee_good: "Il Papa approva il Giubileo"
- stolen_jewels: "Stolen Jewels" #NEW
- BYZ_latin_emperor_opinion: "Titular Latin Emperor" #NEW
+ stolen_jewels: "Gioielli rubati" 
+ BYZ_latin_emperor_opinion: "Imperatore latino titolare" 
  #Western Schism
  western_schism_opposing_side: "Avversario nello Scisma d'Occidente"
  western_schism_rethinking_our_approach: "Riconsiderare il Nostro Approccio"
@@ -301,7 +303,7 @@
  religious_disagreements_modifier: "Disaccordi Religiosi nelle Guerre Ussite"
  folded_to_hussites_modifier: "Piegato agli Ussiti"
  pol_answered_plight_of_hussites: "Aiuto nelle Guerre Ussite"
- violated_congress_of_visegrad_modifier: " Congresso di [ShowLocationName('visegrad')] Violato"
+ violated_congress_of_visegrad_modifier: "Congresso di [ShowLocationName('visegrad')] Violato"
  violated_congress_of_visegrad_antagonism: "Congresso di [ShowLocationName('visegrad')] Violato"
  honored_congress_of_visegrad_modifier: "Congresso di [ShowLocationName('visegrad')] Onorato"
  granted_joint_assembly_decrees_modifier: "Concessi i [ShowEstatePrivilegeName('joint_assembly_decrees')]"
@@ -351,7 +353,7 @@
  trust_protects_pirates: "Protegge i Pirati"
  trust_sco_fra_renaissance_auld_alliance: "La Vecchia Alleanza"
  trust_sco_fra_auld_alliance: "Rinnovo della Vecchia Alleanza"
- trust_ach_naples_court_ties: "Deep Ties to the Court of Naples" #NEW
+ trust_ach_naples_court_ties: "Stretti legami con la Corte di Napoli" 
  pol_gave_up_on_wschowa: "Rinunciato a Wschowa"
  kor_persecuted_cotton_theft: "Perseguiti per Furto di Cotone"
  opinion_good_relations: "Buone Relazioni"
@@ -395,6 +397,7 @@
  opinion_fra_aggressive_entrance_into_italy: "Entrata Aggressiva in Italia"
  opinion_fra_allied_aggression_concerns: "Entrata Preoccupante in Italia"
  opinion_mlo_betrayal: "Tradimento Milanese"
+ opinion_mfa_betrayal: "Non si è unito alla campagna contro $BYZ$" 
  opinion_mor_betrayal: "Tradimento Marocchino"
  opinion_seized_our_courts_resources: "Ha Prelevato Risorse della Nostra Corte!"
  opinion_called_into_war_by_overlord: "Chiamati in Guerra dal Signore"
@@ -443,7 +446,7 @@
  opinion_levies_requested_by_overlord: "Leve Richieste dal Signore"
  opinion_joined_our_order_of_chivalry: "Si è Unito al Nostro Ordine Cavalleresco"
  opinion_opinion_influenced: "Opinione Influenzata"
- opinion_violated_sovereignty: "Violata la Sovranità"
+ opinion_violated_sovereignty: "Ha violato la nostra sovranità" 
  opinion_increased_loan_interest: "Ha Aumentato l'Interesse sul Nostro Prestito"
  opinion_diplomatic_outreach: "Contatto Diplomatico"
  opinion_refused_demands: "Richieste Rifiutate"
@@ -456,6 +459,8 @@
  opinion_denied_special_access: "Accesso Speciale Negato"
  opinion_religious_hostilities: "Ostilità Religiose"
  pol_political_intervention_modifier: "Intervento Politico"
+ opinion_pol_reform_threatens_neighbors: "Allarme per la riforma polacca" 
+ opinion_pol_constitution_threatens_neighbors: "Crisi della costituzione polacca" 
  opinion_decline_crown_of_vassal: "Rifiutata la Corona del Nostro Vassallo"
  opinion_common_enemy: "Nemico in Comune"
  opinion_elevated_to_celestial_governor: "Elevato a $celestial_governor$"
@@ -474,15 +479,15 @@
  opinion_historical_rival_CAS_ccw: "Promesse Infrante"
  opinion_historical_rival_target_ccw: "Richieste Irragionevoli"
  opinion_granted_electorship: "Elettorato Concesso"
- opinion_granted_legatus_natus: "Granted Legatus Natus" #NEW
- opinion_granted_primas_germaniae: "Granted Primas Germaniae" #NEW
- opinion_granted_free_city: "Granted Free City" #NEW
- opinion_granted_kingdom_title: "Granted Kingdom Title" #NEW
- opinion_granted_country_privileges: "Granted Country Privileges" #NEW
+ opinion_granted_legatus_natus: "Legatus Natus concesso" 
+ opinion_granted_primas_germaniae: "Primas Germaniae concesso" 
+ opinion_granted_free_city: "Città Libera concessa" 
+ opinion_granted_kingdom_title: "Titolo di Regno concesso" 
+ opinion_granted_country_privileges: "Privilegi al Paese concessi" 
  opinion_rescinded_electorship: "Elettorato Revocato"
- opinion_rescinded_legatus_natus: "Rescinded Legatus Natus" #NEW
- opinion_rescinded_primas_germaniae: "Rescinded Primas Germaniae" #NEW
- opinion_rescinded_free_city: "Rescinded Free City" #NEW
+ opinion_rescinded_legatus_natus: "Legatus Natus revocato" 
+ opinion_rescinded_primas_germaniae: "Primas Germaniae revocato" 
+ opinion_rescinded_free_city: "Città Libera revocata" 
  opinion_demanded_unlawful_territory: "Territorio Rivendicato Illegalmente" 
  hre_emperor_defends_empire: "Difesa Imperiale"
  opinion_added_land_to_hre: "Aggiunto territorio al [GetUniqueInternationalOrganization('hre').GetName]"
@@ -544,7 +549,7 @@
  member_same_league: "Membro della stessa Lega"
  opinion_weakened_our_league: "Ha Indebolito la Nostra Lega"
  opinion_strengthened_our_league: "Ha Rafforzato la Nostra Lega"
- io_opinion_foreign_league_balkan: "$member_same_league$" #NEW
+ io_opinion_foreign_league_balkan: "$member_same_league$" 
  io_opinion_foreign_league_france: "$member_same_league$"
  io_opinion_foreign_league_hre: "$member_same_league$"
  io_opinion_foreign_league_iberia: "$member_same_league$"
@@ -552,13 +557,16 @@
  io_opinion_italian_league_2: "$member_same_league$"
  io_opinion_italian_league_3: "$member_same_league$"
  opinion_refused_invitation_to_league: "Invito Rifiutato"
+ opinion_diplomatic_misunderstanding: "Malinteso diplomatico" 
+ opinion_diplomatic_accord: "Accordo diplomatico" 
  opinion_steadfast_loyalty: "Lealtà Incrollabile"
  fought_with_us_modifier: "Ha Combattuto al Nostro Fianco nelle Guerre Italiane"
- iw_victors_of_the_war_trust: "Vincitori delle Guerre Italiane"
+# iw_victors_of_the_war_trust: "Vincitori delle Guerre Italiane" #DELETE
  opinion_refuses_to_join_our_side: "Rifiuta di Unirsi alla Nostra Fazione"
  opinion_guelphs_sanction_emperor: "Ha Antagonizzato l'Impero"
  opinion_ghibellines_sanction_pope: "Ha Antagonizzato il Papato"
  opinion_guelphs_support_imperial_rivals: "Supporto ai Guelfi"
+ opinion_ghibellines_agreed_to_support_us: "Intervento in Italia" 
  opinion_ghibellines_refuses_to_support_us: "Rifiuta di Supportarci
 
  #Rise of the Ottomans
@@ -636,6 +644,7 @@
   opinion_refused_imperial_petition: "Petizione Imperiale Respinta"
   opinion_refused_shogunate_authority: "Autorità dello Shogunato Rifiutata"
   trust_common_enemy: "Nemico Comune"
+ iw_shared_defeat_trust: "Fine delle guerre d'Italia" 
   opinion_revoked_shugo_office: "Ufficio Shugo Revocato"
   opinion_usurped_shugo_office: "Ufficio Shugo Usurpato"
   opinion_demanded_extra_payment: "Pagamento supplementare Richiesto"
@@ -805,24 +814,26 @@
  antagonism_skilled_diplomat: "Diplomatico esperto"
  antagonism_revealed_sham_documents: "Documenti fasulli rivelati"
  antagonism_created_splinter_autocephalous_patriarchate: "Creato [autocephalous_patriarchate|e] scismatico"
+ antagonism_destroyed_autocephalous_patriarchate: "Ha distrutto il nostro $autocephalous_patriarchate$" 
  antagonism_claimed_empire: "Ha Rivendicato l'Impero"
  antagonism_embraced_piracy: "Ha Abbracciato la Pirateria"
  antagonism_rejected_piracy: "Ha Rifiutato la Pirateria"
  antagonism_trade_wars: "Guerre commerciali"
  antagonism_cultural_development: "Sviluppo Culturale"
  antagonism_maps_stolen: "Mappe Rubate"
+ antagonism_casus_belli_annulled: "Casus belli annullato" 
  antagonism_bav_ignore_feudal_traditions_mild: "Ha vassallizzato la $LBV$"
  antagonism_bav_ignore_feudal_traditions_harsh: "Ha annesso con la forza la $LBV$"
  antagonism_broke_subject_union: "Ha rotto l'Unione dello Stato Cliente"
  antagonism_peace_rtr_demand_all_occupied_territories: "Richiede Tutti i Territori Occupati"
- antagonism_peace_rtr_demand_all_chinese_territories: "Demand All Chinese Territories" #NEW
+ antagonism_peace_rtr_demand_all_chinese_territories: "Richiede tutti i territori cinesi" 
  antagonism_anti_scaligeri_league: "Lega Anti-Scaligera"
  antagonism_ordered_me_to_annul_treaties: "Ci ha ordinato di annullare i trattati con un altro [country|e]" 
  antagonism_ordered_someone_to_annul_treaties_with_us: "Ha ordinato a un altro [country|e] di annullare i trattati con noi" 
- antagonism_maritime_aggression: "Maritime Aggression" #NEW
- antagonism_seized_papal_capital: "Seized the Papal Capital" #NEW
- antagonism_infidel_holds_rome: "Infidel Holds [ShowLocationNameWithNoTooltip('rome')]" #NEW
- antagonism_ach_byzantine_civil_war_intervention: "Sowed Chaos in Byzantium" #NEW
+ antagonism_maritime_aggression: "Aggressione marittima" 
+ antagonism_seized_papal_capital: "Ha conquistato la Capitale Papale" 
+ antagonism_infidel_holds_rome: "Un infedele controlla [ShowLocationNameWithNoTooltip('rome')]" 
+ antagonism_ach_byzantine_civil_war_intervention: "Ha seminato il caos a Bisanzio" 
 
  #Portugal
  por_shared_letters_with_persian_shah: "Scambio Epistolare"
@@ -868,31 +879,32 @@
  #Cahokia
  chk_raided_our_city: "Saccheggio di Cahokia"
  antagonism_chk_raiding_neighbors_for_food: "Razzie ai Vicini per Cibo"
- ach_nap_court_ties: "Ties to the Court of Naples" #NEW
- ach_nap_court_ties_monetary: "Monetary Ties to Naples" #NEW
- ach_epirus_support_rebel_victory: "Supported Orsini Uprising" #NEW
- ach_epirus_support_rebel_victory_betrayed: "Betrayed Us!" #NEW
- ach_claimed_the_peloponnese: "Claimed the Peloponnese" #NEW
- ach_ath_frankokratia_ties: "Latin Ties" #NEW
- ach_papal_latin_restoration_guarantee: "Backing of the Papal State" #NEW
- ach_pap_sacked_constantinople_again: "Sacked Constantinople" #NEW
- ach_rejected_papacy_offer: "Rejected Proposal to Restore the Latin Empire" #NEW
- ath_byz_raided_our_greek_holdings: "Raided our Northern Greek Holdings" #NEW
- ath_befriend_epirus: "Befriended" #NEW
- ath_acknowledged_the_latin_claim: "Recognized our claims to the Latin Empire" #NEW
- ath_papal_latin_restoration: "Supported Papal Proposal to Restore the Latin Empire" #NEW
- ath_declined_papal_latin_restoration: "Declined Papal Offer to Restore the Latin Empire" #NEW
- ath_claimed_thessalonica: "Claimed Thessalonica" #NEW
- ath_proclaimed_rival_thessalonica_kingdom: "Proclaimed Rival Kingdom to Thessalonica" #NEW
- lat_patriarchate_of_constantinople_restored: "Latin Patriarchate of Constantinople Restored" #NEW
- burned_venice: "Burned $venice$" #NEW
+ ach_nap_court_ties: "Legami con la Corte di Napoli" 
+ ach_nap_court_ties_monetary: "Legami monetari con Napoli" 
+ ach_epirus_support_rebel_victory: "Ha sostenuto la rivolta degli Orsini" 
+ ach_epirus_support_rebel_victory_betrayed: "Ci ha traditi!" 
+ ach_claimed_the_peloponnese: "Ha rivendicato il Peloponneso" 
+ ach_ath_frankokratia_ties: "Legami latini" 
+ ach_papal_latin_restoration_guarantee: "Sostegno dello Stato Pontificio" 
+ ach_pap_sacked_constantinople_again: "Costantinopoli saccheggiata" 
+ ach_rejected_papacy_offer: "Rifiutata la proposta di restaurare l'Impero Latino" 
+ ath_byz_raided_our_greek_holdings: "Hanno razziato i nostri possedimenti nella Grecia settentrionale" 
+ ath_befriend_epirus: "Diventato amico" 
+ ath_acknowledged_the_latin_claim: "Ha riconosciuto le nostre rivendicazioni sull'Impero Latino" 
+ ath_papal_latin_restoration: "Ha sostenuto la proposta papale di ripristinare l'Impero Latino" 
+ ath_declined_papal_latin_restoration: "Ha rifiutato l'offerta del Papa di ripristinare l'Impero Latino" 
+ ath_claimed_thessalonica: "Ha rivendicato Tessalonica" 
+ ath_proclaimed_rival_thessalonica_kingdom: "Ha proclamato un Regno rivale a Tessalonica" 
+ lat_patriarchate_of_constantinople_restored: "Ristabilimento del Patriarcato Latino di Costantinopoli" 
+ italian_culture_hired_our_artist: "Ha assoldato di nascosto un artista!" 
+ burned_venice: "$venice$ bruciata" 
 
  #Misc
 
  ayd_byz_cooperation: "Cooperazione Contro gli [GetCountry('TUR').GetNameWithNoTooltip]"
- prevented_ship_building_technology_from_spreading: "Prevented the Sharing of Shipbuilding Technology" #NEW
- sided_with_palamas_opinion_modifier: "Sided with Palamas" #NEW
- sided_with_barlaam_opinion_modifier: "Sided with Barlaam" #NEW
+ prevented_ship_building_technology_from_spreading: "Ha ostacolato la diffusione della tecnologia navale" 
+ sided_with_palamas_opinion_modifier: "Schierato con Palamas" 
+ sided_with_barlaam_opinion_modifier: "Schierato con Barlaam" 
 
  ira_rejected_persian_diplomats: "Diplomatici Respinti"
  ira_visited_capital: "Visita alla Capitale"
@@ -935,20 +947,36 @@
 
  #Denmark
  dan_banned_lutheran_bible: "Bibbia Luterana Vietata"
- opinion_catholic_delegation: "Catholic Delegation" #NEW
- opinion_invited_patriarch_delegation: "Invited Patriarch Delegation" #NEW
- orthodox_synod_diplomatic_embassy_modifier: "Diplomatic Embassy" #NEW
- alliance_with_lutherans: "Enemy of My Enemy" #NEW
- mocked_nation: "Mocked our Nation" #NEW
- opinion_bos_aspirations_of_liberty: "Aspirations of Liberty" #NEW
- opinion_bos_proclaimed_kingdom_of_bosnia: "Proclaimed the Kingdom of Bosnia" #NEW
- opinion_bos_diplomatic_restraint: "Diplomatic Restraint" #NEW
- opinion_bos_became_catholic: "Converted to Catholicism" #NEW
- opinion_bos_became_orthodox: "Converted to Orthodoxy" #NEW
- opinion_rag_ottoman_partnership: "Ottoman Partnership" #NEW
- opinion_bul_proclaimed_an_empire: "Proclaimed an Empire" #NEW
- cro_approved_the_merge: "Approved the Merge of Croatia and Slavonia" #NEW
- cro_rejected_the_merge: "Rejected the Merge of Croatia and Slavonia" #NEW
- cro_dismissal_of_nelipic: "Dismissal of Nelipić's Claim" #NEW
- cro_legitimation_of_nelipic: "Legitimation of Nelipić's Claim" #NEW
+ opinion_catholic_delegation: "Delegazione cattolica" 
+ opinion_invited_patriarch_delegation: "Delegazione patriarcale invitata" 
+ orthodox_synod_diplomatic_embassy_modifier: "Ambasciata diplomatica" 
+ alliance_with_lutherans: "Il nemico del mio nemico" 
+ mocked_nation: "Ha deriso la nostra Nazione" 
+ opinion_bos_aspirations_of_liberty: "Aspirazioni di libertà" 
+ opinion_bos_proclaimed_kingdom_of_bosnia: "Ha proclamato il Regno di Bosnia" 
+ opinion_bos_diplomatic_restraint: "Moderazione diplomatica" 
+ opinion_bos_became_catholic: "Convertito al cattolicesimo" 
+ opinion_bos_became_orthodox: "Convertito all'ortodossia" 
+ opinion_rag_ottoman_partnership: "Partenariato ottomano" 
+ opinion_bul_proclaimed_an_empire: "Proclamato un Impero" 
+ opinion_bul_placated_subject: "Soggetto placato" 
+ cro_approved_the_merge: "Approvata l'Unione tra Croazia e Slavonia" 
+ cro_rejected_the_merge: "Rifiutata l'Unione tra Croazia e Slavonia" 
+ cro_dismissal_of_nelipic: "Rigetto della rivendicazione di Nelipić" 
+ cro_legitimation_of_nelipic: "Legittimità della rivendicazione di Nelipić" 
+ luc_refused_alliance: "Ha rifiutato la nostra alleanza" 
+ luc_refused_to_sell_us: "Ha rifiutato di venderci" 
+ luc_did_not_intervene_in_trade: "Non è intervenuto nel nostro commercio" 
+ luc_refused_to_buy_our_subject: "Ha rifiutato di acquistare il nostro soggetto" 
+ pis_salted_genoa: "Ha cosparso Genova di sale" 
+ pis_rejected_rulership_of_country: "Ha rifiutato il governo" 
+ pis_rejected_university_papal_bull: "Ha respinto la nostra bolla papale" 
+ opinion_refused_my_bribe: "Ha rifiutato la nostra tangente" 
+ opinion_received_imperial_grant: "Ha ricevuto una concessione imperiale" 
+ opinion_demanded_loyalty: "Ha preteso la nostra lealtà" 
+ opinion_reformed_circle_coinage: "Ha riformato la monetazione del circolo" 
+ opinion_reduction_of_circle_titles: "Ha ridotto i titoli del circolo" 
+ byz_ven_anti_genoese_pact: "Patto congiunto contro Genova." 
+ ven_anti_genoese_pact_against_them: "Patto congiunto con Bisanzio contro di loro." 
+ byz_refused_venetian_pact: "Ha rifiutato il nostro patto antigenovese." 
 

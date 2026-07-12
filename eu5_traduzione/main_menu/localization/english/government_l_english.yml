@@ -27,7 +27,6 @@
  ESTATE_TYPE_GIVE_TAX_TO_OTHER: "$BULLET_WITH_TAB$A seconda dell'[ShowModifierTypeName('global_peasant_enfranchisment')], il reddito andrà a [ESTATE_TYPE.GetName]." 
  TAX_BASE_PEASANT_ENFRANCH: "[peasant_enfranchisement|e]: [Location.GetPeasantEnfranchisment|2G%] [peasant_enfranchisement_icon]" 
  PEASANT_ENFRANCHISMENT: "Minimo $MIN|2%$ e il Massimo è $MAX|2%$" 
-# PEASANT_ENFRANCHISMENT_TITLE: "#T $MODIFIER_TYPE_NAME_global_peasant_enfranchisment$#!" #OLD
  PEASANT_ENFRANCHISMENT_TITLE: "[peasant_enfranchisement|e] è [Location.GetPeasantEnfranchisment|2G%] a causa di:" 
  LOCATION_PEASANT_ENFRANCHISMENT_TITLE: "[peasant_enfranchisement] in [Location.GetNameWithNoTooltip]" 
  PEASANT_ENFRANCHISMENT_TT_TITLE: "Media di $game_concept_peasant_enfranchisement$ di [Country.GetNameWithNoTooltip]" 
@@ -85,6 +84,8 @@
  tribal_matrilineal_desc: "È un tipo di [heir_selection|e] di una Tribù in cui il [ruler|e] è la figlia maggiore del precedente [ruler]."
  matrilineal_non_exclusive: "Matrilineare non Esclusiva"
  matrilineal_non_exclusive_desc: "È un tipo di [heir_selection|e] di un reame in cui il nuovo [ruler|e] è la persona più capace della dinastia del precedente [ruler]."
+ matrilineal_customary_law_policy: "Diritto Consuetudinario Matrilineare" 
+ matrilineal_customary_law_policy_desc: "Codifica le usanze tradizionali del reame, riconoscendo l'eredità per linea femminile e consentendo [rulers|e] di entrambi i generi." 
  bank_selection: "Scelta del Nuovo Direttore Bancario"
  elective_succession: "Successione Elettiva"
  elective_succession_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')], in cui il nuovo governante viene eletto dalla [ShowEstateTypeName('nobles_estate')]. Sebbene ogni nobile possa essere eletto, gli elettori preferiscono un membro della dinastia attuale per la carica di monarca.\n\n$UNSTABLE_UNION_WARNING$"
@@ -102,9 +103,7 @@
  veche_selection_best_candidate_desc: "Un nuovo [ruler|e] è selezionato con l'[country_interaction|e] [ShowCountryInteractionName('invite_prince')]."
  bank_selection_desc: "È un tipo di [heir_selection|e] di una Famiglia di Banchieri in cui il [ruler|e] è scelto tra i membri della dinastia."
  pirate_elective_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('republic')] Pirata in cui il [ruler|e] è scelto tra uno o più candidati dagli equipaggi."
-# cognatic_primogeniture_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] in cui l'[heir|e] è il figlio maschio più anziano dell'attuale [ruler|e], sebbene anche le femmine possano ereditare se non vi è un maschio più idoneo." #OLD
  cognatic_primogeniture_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] che segue la linea più anziana della famiglia regnante, preferendo i maschi alle femmine. I discendenti di un [heir|e] defunto ereditano il posto del loro genitore nella linea di successione prima degli altri figli del [ruler|e]." 
-# absolute_cognatic_primogeniture_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] in cui l'[heir|e] è il figlio più anziano (maschio o femmina) dell'attuale [ruler|e]." #OLD
  absolute_cognatic_primogeniture_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] che segue la linea più anziana della famiglia regnante indipendentemente dal genere. I discendenti di un [heir|e] defunto ereditano il posto del loro genitore nella linea di successione prima degli altri figli del [ruler|e]." 
  salic_law_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] in cui il [ruler|e] è il figlio maschio più anziano del precedente [ruler]. Le figlie femmine non possono mai ereditare, né trasferire il diritto al trono ai loro figli maschi."
  semi_salic_law_desc: "È un tipo di [heir_selection|e] di una [ShowGovernmentTypeName('monarchy')] in cui il [ruler|e] è il figlio maschio più anziano del precedente [ruler]. Le figlie femmine non possono mai ereditare, ma possono trasferire il diritto al trono ai loro figli maschi."
@@ -191,8 +190,8 @@
  
  #
  # Heir Selection custom rules
-# supported_heirs_rule: "• I personaggi devono essere sostenuti da un paese straniero utilizzando [ShowCountryInteractionName('support_heir_interaction')] o è da noi preferito attraverso [ShowCharacterInteractionName('favor_heir')]" #OLD
  supported_heirs_rule: "• I personaggi devono essere sostenuti da un paese straniero usando [ShowRelationTypeName('support_heir')] oppure favoriti da noi tramite [ShowCharacterInteractionName('favor_heir')]" 
+ no_female_heirs_for_poland: "• L'erede NON può essere donna per [GetCountry('POL').Custom('IT_La')][GetCountry('POL').GetName]" 
 
  #
  # Heir Selection Calculation Descriptions
@@ -214,6 +213,7 @@
  HEIR_SELECTION_TOO_YOUNG_DESC: "• Punteggio per età inferiore a 10 anni"
  HEIR_SELECTION_TOO_OLD_DESC: "• Punteggio per età superiore a 40 anni"
  HEIR_SELECTION_FEMALE_DESC: "• Punteggio per Genere Femminile"
+ HEIR_SELECTION_POLAND_FEMALE_DESC: "• Punteggio per donna in Polonia" 
  HEIR_SELECTION_MALE_DESC: "• Punteggio per Genere Maschile"
  HEIR_SELECTION_MATRILINEAL: "• Punteggio per Matrilinearità"
  HEIR_SELECTION_APPOINTED_HEIR_DESC: "• Punteggio per l'Erede Designato"
@@ -282,7 +282,7 @@
  ESTATE_OPINION_ENTRY_FORMAT: "$KEY$: $VALUE|+=2$"
  ESTATE_OPINION_OF: "[ESTATE.GetNameWithNoTooltip] ha un opinione di $VAL$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithNoTooltip]"
  GRANT_PRIVILEDGE_ALREADY: "@trigger_no! Abbiamo già concesso [ESTATE_PRIVILEGE.GetName] a [ESTATE.GetName]"
- GRANT_PRIVILEDGE_TT: "Questa concessione a [ESTATE.GetName] costa $COST$ e fornisce\n[ESTATE_PRIVILEGE.GetEffectText]\n\nE avrà il seguente impatto sulla [estate_satisfaction|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$"
+ GRANT_PRIVILEDGE_TT: "Concedere a [ESTATE.GetName] avrà il seguente impatto su [estate_satisfaction|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$" 
  ANNOY_OTHER_ESTATE: "[ESTATE.GetName]: $VAL|+=2%$ ([ESTATE.GetSatisfaction|%]@satisfaction!)"
  ESTATE_LOCATIONS_POWER_TITLE: "Potere delle località di [ESTATE.GetName] in [COUNTRY.GetName]" 
  ESTATE_LOCATIONS_POWER_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L$#!" 
@@ -294,14 +294,12 @@
  ESTATE_SATISFACTION_PRE_HIT: "$VAL|%$@satisfaction_neutral!" 
  ESTATE_SATISFACTION_PRE_HIT_G: "$VAL|+%$@satisfaction_happy!" 
  ESTATE_SATISFACTION_PRE_HIT_R: "$VAL|-%$@satisfaction_sad!" 
-# ESTATE_SATISFACTION_POST_HIT: " @button_simple! $VAL|%$@satisfaction_neutral!" #OLD
  ESTATE_SATISFACTION_POST_HIT: " (@button_simple!$VAL|%$@satisfaction_neutral!)" 
-# ESTATE_SATISFACTION_POST_HIT_G: " @button_simple! $VAL|+%$@satisfaction_happy!" #OLD
  ESTATE_SATISFACTION_POST_HIT_G: " (@button_simple!$VAL|+%$@satisfaction_happy!)" 
-# ESTATE_SATISFACTION_POST_HIT_R: " @button_simple! $VAL|-%$@satisfaction_sad!" #OLD
  ESTATE_SATISFACTION_POST_HIT_R: " (@button_simple!$VAL|-%$@satisfaction_sad!)" 
  INSTANTLY_ALSO: "E subito dopo..."
  GRANT_PRIVILEDGE: "Concedi Privilegio"
+ GRANT_PRIVILEGE_ACTION: "Concedi $NAME$" 
  REVOKE_PRIVILEDGE: "Revoca Privilegio"
  REVOKE_PRIVILEDGE_ALREADY: "@trigger_no! Non abbiamo concesso [ESTATE_PRIVILEGE.GetName] a [ESTATE.GetName], quindi non possiamo revocarlo"
  REVOKE_PRIVILEDGE_STABILITY: "@trigger_no! Abbia bisogno che la [stability|e] del nostro Paese sia al di sopra di $VAL|Y$ per revocare [ESTATE_PRIVILEGE.GetName] a [ESTATE.GetName]."
@@ -351,6 +349,10 @@
  ESTATE_OPINION_OUR_MARKET_LANGUAGE: "Stessa [market_language|e]"
  ESTATE_OPINION_RIVAL: "[rival|e]"
  ESTATE_OPINION_PEASANT_REPUBLIC: "[ShowGovernmentReformName('peasant_republic_reform')]"
+ ESTATE_OPINION_SAME_ESTATE_CULTURE: "[culture|e] condivisa con il nostro [estate|e]" 
+ ESTATE_OPINION_ACCEPTED_ESTATE_CULTURE: "Accetta la [culture|e] del nostro [estate|e]" 
+ ESTATE_OPINION_TOLERATED_ESTATE_CULTURE: "Tollera la [culture|e] del nostro [estate|e]" 
+ ESTATE_OPINION_SAME_ESTATE_RELIGION: "[religion|e] condivisa con il nostro [estate|e]" 
  
  
  REFORM_SOCIAL_VALUE_TITLE: "#T Requisito Speciale per [GOVERNMENT_REFORM.GetNameWithNoTooltip]#!"
@@ -369,12 +371,27 @@
  ESTATE_TYPE_TAX_SPLIT: "$BULLET_WITH_TAB$Ogni #G 1.000#! [pops|e] conferiscono al ceto $VAL|+=2$ di [tax_base|e]"
  ESTATE_TYPE_POPTYPE: "$BULLET_WITH_TAB$I [pops|e] [POP_TYPE.GetName] possono appartenere a questo [estate|e]"
  TARGET_SATISFACTION_BUREAUCRACY: "[bureaucracy_icon|e] $NAME$ [bureaucracy|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_CULTURE_MISMATCH_TOLERATED: "[CULTURE.GetName] è solo [tolerated_culture_short|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_CULTURE_MISMATCH_ACCEPTED: "[CULTURE.GetName] è solo [accepted_culture_short|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_CULTURE_MISMATCH_DISCRIMINATED: "[CULTURE.GetName] è [non_accepted_culture_short|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_RELIGION_SAME: "[RELIGION.GetName] è la [state_religion|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_RELIGION_MISMATCH_HERETIC: "[RELIGION.GetName] è [heretic|e]: $VAL|+2V%$" 
+ TARGET_SATISFACTION_RELIGION_MISMATCH_HEATHEN: "[RELIGION.GetName] è [heathen|e]: $VAL|+2V%$" 
+ ESTATE_CULTURE_STATUS_PRIMARY: "[primary_culture_short|e]" 
+ ESTATE_CULTURE_STATUS_ACCEPTED: "[accepted_culture_short|e]" 
+ ESTATE_CULTURE_STATUS_TOLERATED: "[tolerated_culture_short|e]" 
+ ESTATE_CULTURE_STATUS_DISCRIMINATED: "[non_accepted_culture_short|e]" 
+ ESTATE_RELIGION_STATUS_PRIMARY: "[primary_religion_short|e]" 
+ ESTATE_RELIGION_STATUS_HERETIC: "[heretic|e]" 
+ ESTATE_RELIGION_STATUS_HEATHEN: "[heathen|e]" 
+ ESTATE_CULTURE_RELIGION_DISPLAY_FORMAT: "$NAME$ ($STATUS$)" 
  #
  # Reform Mechanics
  ADD_REFORM_TT_TITLE: "Istituire una [reform|e]"
  REFORMS_SCROLL_LIST_EMPTY: "Nessuna riforma disponibile con questi criteri di ricerca."
  ADD_REFORM_TT: "Istituire [GOVERNMENT_REFORM.GetName] come parte del nostro Governo"
  ADD_REFORM_TT_UNIQUE: "[government_reform|e] Unica per [Player.Custom('IT_La')][Player.GetName]"
+ GOVERNMENT_REFORM_EXCLUSIVE_FOR_COUNTRY: "Questa riforma è esclusiva per [Country.Custom('IT_La')][Country.GetName]" 
  ADD_REFORM_MAJOR: "@trigger_no! Abbiamo già una [major_reform|e], [GOVERNMENT_REFORM.GetName]."
  ADD_REFORM_ALREADY: "@trigger_no! Abbiamo già [GOVERNMENT_REFORM.GetName]."
  ADD_REFORM_AGE_NOT_YET: "@trigger_no! [GOVERNMENT_REFORM.GetName] è troppo complessa per quest'epoca, dobbiamo essere nel [AGE.GetName] prima che possa essere aggiunta. "
@@ -386,14 +403,15 @@
  REMOVE_REFORM_TITLE: "Rimuovi $game_concept_government_reform$"
  REMOVE_REFORM_NOT_CHANGE: "@trigger_no! Non possiamo rimuovere [GOVERNMENT_REFORM.GetName] a causa di #TOOLTIP:$WHY_TAG$ #L uno o più elementi bloccanti#!#!"
  CHANGE_REFORM_TITLE: "Cambia $game_concept_government_reform$"
+ CHANGE_REFORM_PER_AGE_TITLE: "Cambia $game_concept_government_reform$ dall'Esploratore delle Riforme" 
  MAJOR_REFORM: "[major_reform|e]"
  FULLY_IMPLEMENTED_TT: "$OBJECT$ implementato il #V $DATE$#!\nStato di Implementazione: 100%\n"
  NEWLY_IMPLEMENTED_TT: "$OBJECT$ implementato il #V $DATE$#!\nStato di Implementazione: #V $PERCENTAGE|2%$#!\nCompletamento previsto: #V $COMPLETED_DATE$#!\n"
  IO_POLICY_IMPLEMENTED_ON: "Implementato #V $DATE$#!" 
- TIME_TO_IMPLEMENT: "Ci vogliono $DAYS$ giorni per implementarla completamente."
+ TIME_TO_IMPLEMENT: "@time! Richiede #W $DAYS$#! giorni per essere implementato completamente." 
  TIME_TO_REFORM_TITLE: "Tempo necessario per implementare [GovernmentReformItem.GetReform.GetNameWithNoTooltip]"
- TIME_TO_REFORM: "[GovernmentReformItem.GetReform.GetTimeToImplementText]"
- MAJOR_REFORM_content: "Un Paese può averne solo una $game_concept_major_reform$ alla volta"
+ TIME_TO_REFORM: "[GovernmentReformItem.GetTimeToImplementText]" 
+ MAJOR_REFORM_content: "#G [major_reform]#!: Solo una $game_concept_major_reform$ alla volta" 
  ADD_BUREAUCRACY_NOT_ALLOWED: "@trigger_no! Non ci sono consentite [bureaucracies|e]." 
  ADD_BUREAUCRACY_ALREADY_HAVE: "@trigger_no! Abbiamo già questa [bureaucracy|e]." 
  ADD_BUREAUCRACY_ALREADY_HAVE_ENOUGH: "@trigger_no! Abbiamo già riempito la nostra assegnazione di [bureaucracies|e]." 
@@ -457,7 +475,7 @@
  MODIFIER_INTERNATIONAL_ORGANIZATION_TITLE: "Sull'[international_organization|e]:"
  MODIFIER_REBEL_TITLE: "Sui [rebels|e]:" 
  MODIFIER_WHILE_RESEARCHING: "Durante la ricerca:"
- SET_LAW_ACTION: "Codificare [POLICY.GetName] per la legge [LAW.GetName] costerà $COST$"
+# SET_LAW_ACTION: "Codificare [POLICY.GetName] per la legge [LAW.GetName] costerà $COST$" #DELETE
  SET_LAW_ALREADY: "@trigger_no! Abbiamo già codificato [POLICY.GetName] per la legge [LAW.GetName]"
  LAW_CAN_NOT_CHANGE: "@trigger_no! Non possiamo cambiare [LAW.GetName] a causa di:\n$WHY$"
  LAW_CAN_NOT_CHANGE_NEVER: "@trigger_no! [LAW.GetName] non può mai essere cambiata!"
@@ -485,6 +503,7 @@
  ASSIMILATE_MERGED_CULTURE_GROUP: "La cultura [CULTURE.GetName] è un [merged_culture_group|e] della cultura [TARGET_CULTURE.GetName]: $VAL|+=%2$" 
  ASSIMILATE_TARGET_OPINION_OF_OWNER: "La cultura [TARGET_CULTURE.GetName] ha $OPINION$ [cultural_opinion_short|e] della cultura [CULTURE.GetName]: $VAL|+=%2$" 
  ASSIMILATE_OWNER_OPINION_OF_TARGET: "La cultura [CULTURE.GetName] ha $OPINION$ [cultural_opinion_short|e] della cultura [TARGET_CULTURE.GetName]: $VAL|+=%2$" 
+ ASSIMILATE_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] è la [primary_culture|e]: $VAL|+=%2$" 
  ASSIMILATE_ACCEPTED_CULTURE: "La cultura [TARGET_CULTURE.GetName] è una [accepted_culture|e]: $VAL|+=%2$" 
  ASSIMILATE_TOLERATED_CULTURE: "La cultura [TARGET_CULTURE.GetName] è una [tolerated_culture|e]: $VAL|+=%2$" 
  ASSIMILATE_SAME_LANGUAGE: "Entrambi utilizzano la [language|e] [LANGUAGE.GetName]: $VAL|+=%2$" 
@@ -495,7 +514,15 @@
  ASSIMILATE_SHARED_CULTURE_GROUPS: "$NUM$ [culture_groups|e] Condivisi su $TOTAL$: $VAL|+=%2$" 
  ASSIMILATE_ALREADY_CULTURE: "[CULTURE.GetName] è già l'unica [culture|e] in [LOCATION.GetName]" 
  INTEGRATE_BLOCKED_BY_OCCUPATION: "@trigger_no![LOCATION.GetName] è attualmente occupata, quindi l'integrazione è stata bloccata."
+ INTEGRATE_CLAMPED_NEGATIVE: "@trigger_no!I progressi restano bloccati finché questi modificatori non saranno di nuovo positivi." 
  ASSIMILATE_CULTURE_INDIVIDUAL: "[pops|e] di cultura [TARGET_CULTURE.GetName] si assimilano alla cultura [CULTURE.GetName]: $VAL|+=2$" 
+ ASSIMILATE_CULTURE_NON_PRIMARY_HEADER: "L'[assimilation_with_icon|e] mensile verso [CULTURE.GetName] è pari a $VAL$ per:" 
+ ASSIMILATE_CULTURE_DISCRIMINATED: "[TARGET_CULTURE.GetName] è [non_accepted_culture_short|e]: $VAL|+=%2$" 
+ ASSIMILATE_CULTURE_LOCKED_RELIGION: "@warning_icon! Alcuni [pops|e] di cultura [TARGET_CULTURE.GetName] seguono [RELIGION.GetName] e non possono cambiare [culture|e]." 
+ ASSIMILATE_CULTURE_PRIMARY_DESCRIPTION: "Questa è la [primary_culture_with_icon|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName]. I [pops|e] di altre [cultures|e] in questa [location|e] possono [assimilate|e] a [CULTURE.GetName] ogni mese." 
+ ASSIMILATE_CULTURE_ASSIMILATING_DESCRIPTION: "I [pops|e] di questa [location|e] possono essere [assimilated_with_icon|e] a questa [culture|e]. L'assimilazione è solitamente limitata alla [primary_culture|e] del proprietario, anche se [cabinet_actions|e] e altre fonti possono permettere anche [assimilation] verso [cultures] diverse." 
+ CONVERT_RELIGION_NON_PRIMARY_HEADER: "La [conversion_with_icon|e] mensile verso [RELIGION.GetName] è pari a $VAL$ per:" 
+ CONVERT_RELIGION_PRIMARY_DESCRIPTION: "Questa è la [state_religion_with_icon|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName]. I [pops|e] di altre [religions|e] in questa [location|e] possono convertirsi a [RELIGION.GetName] ogni mese." 
  #
  # Societal Values
  #
@@ -659,14 +686,13 @@
  cab_diplomatic_corps_action_progress_long_wordier: "@diplomatic_capacity! [SCOPE.sCountry('actor').GetDoubleModifierValueNoFormatNoSign('diplomatic_capacity','diplomatic_capacity_modifier')]"
  cab_diplomatic_corps_action_progress_tooltip: "[SCOPE.sCountry('actor').GetDoubleDescriptionFor('diplomatic_capacity','diplomatic_capacity_modifier')]"
  
- study_institutions: "Promuovere le Istituzioni"
- study_institutions_desc: "Questo tenterà di promuovere un'[institution|e] nella [province|e] selezionata. Questo è il modo principale per far diffondere le istituzioni più rapidamente nel nostro [country|e]."
- study_institutions_action: "Promuovi Istituzioni in [SCOPE.sProvince('target').GetNameWithNoTooltip]"
- study_institutions_select_province: "Seleziona la [province|e] in cui promuovere [institution|e]:"
- study_institutions_active: "Promozione di Istituzioni in [SCOPE.sProvince('target').GetNameWithHighlightOnly]"
+ study_institutions: "Promuovi le Istituzioni" 
+ study_institutions_desc: "Questo incarica il nostro gabinetto di accelerare la diffusione di un'[institution|e] che sta già raggiungendo la [province|e] selezionata tramite il commercio, le terre vicine o il nostro mercato. Accelera l'adozione laddove un'istituzione ha iniziato ad attecchire, ma non può farne comparire una in una [province|e] che non ha ancora raggiunto." 
+ study_institutions_action: "Promuovi le Istituzioni in [SCOPE.sProvince('target').GetNameWithNoTooltip]" 
+ study_institutions_select_province: "Seleziona la [province|e] in cui promuovere la diffusione dell'[institution|e]" 
+ study_institutions_active: "Promozione delle Istituzioni in [SCOPE.sProvince('target').GetNameWithHighlightOnly]" 
  study_institutions_action_progress: "[SCOPE.sProvince('target').GetInstitutionProgress]"
  study_institutions_action_progress_wordier: "[SCOPE.sProvince('target').GetInstitutionSummary]"
-# study_institutions_action_progress_long_wordier: "@political_power! [SCOPE.sProvince('target').GetInstitutionSummary]" #OLD
  study_institutions_action_progress_long_wordier: "@government! [SCOPE.sProvince('target').GetInstitutionSummary]" 
  study_institutions_action_progress_tooltip: "[SCOPE.sProvince('target').GetInstitutionDetails]"
  
@@ -703,13 +729,22 @@
 
  increase_control_province: "Aumentare il Controllo della Provincia"
  increase_control_province_desc: "Questo aumenterà lentamente il nostro [control|e] nella [province|e] selezionata. Può essere utile quando le circostanze sono cambiate e desideriamo aumentare rapidamente il controllo."
- increase_control_province_action: "Aumenta il Controllo in [SCOPE.sProvince('selected_province').GetName]"
+ increase_control_province_action: "Aumenta il Controllo in [SCOPE.sProvince('selected_province').GetName] (attualmente [SCOPE.sProvince('selected_province').GetAverageControl|%])." 
  increase_control_province_select_province: "Seleziona la [province|e] in cui aumentare il [control|e]:"
  increase_control_province_active: "Aumento del Controllo in [SCOPE.sProvince('selected_province').GetNameWithHighlightOnly]"
  increase_control_province_action_progress: "[SCOPE.sProvince('selected_province').GetAverageControl|V%2]"
  increase_control_province_action_progress_wordier: "[control|e] medio in [SCOPE.sProvince('selected_province').GetNameWithNoTooltip]: [SCOPE.sProvince('selected_province').GetAverageControl|V%2]"
  increase_control_province_action_progress_long_wordier: "@monthly_control! [SCOPE.sProvince('selected_province').GetAverageControl|V%2] \n\n@max_control! [SCOPE.sProvince('selected_province').GetProvinceLocationModifier('local_max_control')|+=2%]"
  increase_control_province_action_progress_tooltip: "[SCOPE.sProvince('selected_province').GetAverageControlInfo]"
+ noblesse_oblige_cabinet_action: "Noblesse Oblige" 
+ noblesse_oblige_cabinet_action_desc: "$increase_control_province_desc$" 
+ noblesse_oblige_cabinet_action_action: "Aumenta il Controllo in [SCOPE.sProvince('selected_province').GetName]" 
+ noblesse_oblige_cabinet_action_select_province: "Seleziona la [province|e] in cui aumentare il [control|e]:" 
+ noblesse_oblige_cabinet_action_active: "Aumento del Controllo in [SCOPE.sProvince('selected_province').GetNameWithHighlightOnly]" 
+ noblesse_oblige_cabinet_action_action_progress: "[SCOPE.sProvince('selected_province').GetAverageControl|V%2]" 
+ noblesse_oblige_cabinet_action_action_progress_wordier: "Media del [control|e] di [SCOPE.sProvince('selected_province').GetNameWithNoTooltip]: [SCOPE.sProvince('selected_province').GetAverageControl|V%2]" 
+ noblesse_oblige_cabinet_action_action_progress_long_wordier: "@monthly_control! [SCOPE.sProvince('selected_province').GetAverageControl|V%2] \n\n@max_control! [SCOPE.sProvince('selected_province').GetProvinceLocationModifier('local_max_control')|+=2%]" 
+ noblesse_oblige_cabinet_action_action_progress_tooltip: "[SCOPE.sProvince('selected_province').GetAverageControlInfo]" 
 
  increase_control_area: "Aumentare il Controllo dell'Area"
  increase_control_area_desc: "Questo aumenterà lentamente il nostro [control|e] nell'[area|e] selezionata. Può essere utile quando le circostanze sono cambiate e desideriamo aumentare rapidamente il controllo."
@@ -731,7 +766,6 @@
  reduce_inflation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetCurrencyTooltipValueDescription('inflation')]"
 
  promote_religion: "Convertire la Provincia"
-# promote_religion_desc: "Questo aumenterà la quantità di [pops|e] che si [Concept('convert', 'Convertono')|e] alla [religion|e] selezionata ogni mese." #OLD
  promote_religion_desc: "Questo aumenterà ogni mese la quantità di [pops|e] che si [convert|e] alla [religion|e] selezionata.\n\nPossono essere selezionate solo la [primary_religion|e] del paese e le religioni all'interno dello stesso [religion_group|e] che abbiano almeno l'1% di presenza nel paese." 
  promote_religion_action: "Converti [SCOPE.sProvince('target_province').GetNameWithNoTooltip] a [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]"
  promote_religion_select_religion: "Seleziona la [religion|e] a cui [Concept('convert', 'Convertire')|e] i [pops|e] nella [province|e]:"
@@ -757,10 +791,10 @@
  frustrate_annexation_desc: "Ostacolando i loro delegati con una legislazione costituzionale arcaica e ostruendoli ad ogni passo, possiamo aumentare il tempo necessario al nostro [overlord|e] per [Concept('annex', 'Annetterci')|e]."
  frustrate_annexation_action: "Rallentare l'Annessione"
  frustrate_annexation_active: "Rallentamento dell'Annessione"
- frustrate_annexation_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_cost')]"
- frustrate_annexation_action_progress_wordier: "Costo dell'Annessione: [SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_cost')]"
- frustrate_annexation_action_progress_long_wordier: "@annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_cost')]"
- frustrate_annexation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_cost')]"
+ frustrate_annexation_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" 
+ frustrate_annexation_action_progress_wordier: "Efficienza dell'Annessione: [SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" 
+ frustrate_annexation_action_progress_long_wordier: "@annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" 
+ frustrate_annexation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" 
 
  sow_disloyalty: "Promuovere la Slealtà"
  sow_disloyalty_desc: "Diffondendo voci crudeli sul nostro [overlord|e] e sostenendo i benefici dell'autogoverno, possiamo diminuire la nostra stessa [subject_loyalty|e], diventando potenzialmente un [disloyal_subject|e]."
@@ -794,11 +828,8 @@
  pop_promote_action_desc: "Questo farà in modo che la nostra [population|e] venga [promoted|e] più velocemente."
  pop_promote_action_action: "Incoraggia Urbanizzazione"
  pop_promote_action_active: "Urbanizzazione in [SCOPE.sProvince('target').GetNameWithHighlightOnly]" 
-# pop_promote_action_action_progress: "[SCOPE.sProvince('target').GetMissingWorkers]" #OLD
  pop_promote_action_action_progress: "[SCOPE.sProvince('target').GetMissingWorkersRaw]" 
-# pop_promote_action_action_progress_wordier: "[SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]" #OLD
  pop_promote_action_action_progress_wordier: "@employees! [SCOPE.sProvince('target').GetMissingWorkersRaw]" 
-# pop_promote_action_action_progress_long_wordier: "@population! [SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]\n@employees! [SCOPE.sProvince('target').GetMissingWorkers]" #OLD
  pop_promote_action_action_progress_long_wordier: "@employees! [SCOPE.sProvince('target').GetMissingWorkersRaw]\n@population! [SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]" 
  pop_promote_action_action_progress_tooltip: "Urbanizzazione in @province! [SCOPE.sProvince('target').GetName]:\n@local_pop_promotion_speed_positive! [Localize('MODIFIER_TYPE_NAME_local_pop_promotion_speed')]: [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect]\nDipendenti mancanti: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!"
 
@@ -818,8 +849,8 @@
  strengthen_government_active: "Rafforzamento del Governo"
  strengthen_government_action_progress: "[SCOPE.sCountry('actor').GetCurrencyValue('government_power')|2%]"
  strengthen_government_action_progress_wordier: "[government_power|e]: [SCOPE.sCountry('actor').GetCurrencyValue('government_power')|2%]"
- strengthen_government_action_progress_long_wordier: "@legitimacy! #W [SCOPE.sCountry('actor').GetCurrencyValue('government_power')|2%]#!"
- strengthen_government_action_progress_tooltip: "Dà [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect] @[SCOPE.sCountry('actor').GetGovernmentPowerKey]! [SCOPE.sCountry('actor').GetGovernmentPowerConcept] ogni mese, con un cambiamento totale di [SCOPE.sCountry('actor').GetCurrencyBalance('government_power')|+=2].\nCi vorrebbero #W [SCOPE.sCountry('actor').GetCurrencyMonthsToMax('government_power')]#! mesi per raggiungere il massimo."
+ strengthen_government_action_progress_long_wordier: "@[SCOPE.sCountry('actor').GetGovernmentPowerKey]! #W [SCOPE.sCountry('actor').GetCurrencyValue('government_power')|2%]#!" 
+ strengthen_government_action_progress_tooltip: "Fornisce [SCOPE.sCabinet('cabinet').GetGovernmentPowerMonthlyModifier|+=2] @[SCOPE.sCountry('actor').GetGovernmentPowerKey]! [SCOPE.sCountry('actor').GetGovernmentPowerConcept] ogni mese, con una variazione totale di [SCOPE.sCountry('actor').GetCurrencyBalance('government_power')|+=2].\nCi vorrebbero #W [SCOPE.sCountry('actor').GetCurrencyMonthsToMax('government_power')]#! mesi per raggiungere il massimo." 
 
  integrate_province: "Integrare la Provincia"
  integrate_province_desc: "Quando conquistiamo una [province|e], dobbiamo [Concept('integrate', 'Integrarla')|e] prima che diventi parte del nostro [country|e]. Se non viene integrata, i [pops|e] nella provincia potrebbero [Concept('rebel', 'Ribellarsi')|e]."
@@ -830,7 +861,6 @@
  integrate_province_action_progress_wordier: "L'[integration|e] sarà completata il [SCOPE.sProvince('target').GetIntegrationETA]"
  integrate_province_action_progress_long_wordier: "@province_integration_speed! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!"
  integrate_province_action_progress_tooltip: "L'[integration|e] è a #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nL'integrazione dovrebbe essere completata il [SCOPE.sProvince('target').GetIntegrationETA|Y]"
-# integrate_province_action_progress_tooltip_1: "La crescita del progresso provinciale è di [SCOPE.sProvince('target').GetIntegrationModifiers|+=2] ogni mese a causa di:\n[SCOPE.sProvince('target').GetIntegrationModifiersBreakdown]" #OLD
  integrate_province_action_progress_tooltip_1: "La crescita del progresso della Provincia è [SCOPE.sProvince('target').GetIntegrationSpeed|+=2] ogni mese a causa di:\n[SCOPE.sProvince('target').GetIntegrationSpeedBreakdown]" 
  integrate_province_action_progress_tooltip_2: "Crescita del progresso in [SCOPE.sProvince('target').GetNumIntegrationLocations|V0] [locations]:\n[SCOPE.sProvince('target').GetNumIntegrationLocationsBreakdown]"
 
@@ -856,7 +886,6 @@
 
  recovery_effort: "Attività di Recupero"
  recovery_effort_desc: "Questo è il modo migliore per recuperare dalla [prosperity|e] negativa nella [province|e] selezionata. Potrebbe essere vitale dopo una guerra o una pestilenza."
-# recovery_effort_action: "Aiuta [SCOPE.sProvince('target').GetName] a Recuperare.\n\n[SCOPE.sProvince('target').GetAverageProsperityInfo]" #OLD
  recovery_effort_action: "Aiuta [SCOPE.sProvince('target').GetName] a riprendersi" 
  recovery_effort_select_province: "Seleziona la [province|e] in cui aumentare la [prosperity|e]:"
  recovery_effort_active: "Assistenza al Recupero di [SCOPE.sProvince('target').GetNameWithHighlightOnly]"
@@ -941,6 +970,26 @@
  appease_estate_hover_tribes: "Concederà a [ShowEstateTypeName('tribes_estate')] bonus di recupero di [estate_satisfaction|e] e di [estate_satisfaction_equilibrium|e]." 
  appease_estate_hover_cossacks: "Concederà a [ShowEstateTypeName('cossacks_estate')] bonus di recupero di [estate_satisfaction|e] e di [estate_satisfaction_equilibrium|e]." 
  appease_estate_active_modifier: "Bonus dell'[estate|e] selezionato:" 
+ tyranny_of_the_capital_action: "Allinea Ceto" 
+ tyranny_of_the_capital_rebel_growth_tt: "I [rebels|e] associati all'[estate|e] riceveranno una riduzione della loro crescita." 
+ tyranny_of_the_capital_action_desc: "Questo aumenterà la [estate_satisfaction|e] dell'[estate|e]." 
+ tyranny_of_the_capital_action_action: "Allinea Ceti" 
+ tyranny_of_the_capital_action_active: "Allineamento dei Ceti" 
+ tyranny_of_the_capital_action_action_progress: "[SCOPE.sEstate('target').GetSatisfaction|2%]" 
+ tyranny_of_the_capital_action_action_progress_wordier: "[estate_satisfaction|e] è [SCOPE.sEstate('target').GetSatisfaction|2%]" 
+ tyranny_of_the_capital_action_action_progress_long_wordier: "La [estate_satisfaction|e] di [SCOPE.sEstate('target').GetName] è [SCOPE.sEstate('target').GetSatisfaction|2%]" 
+ tyranny_of_the_capital_action_action_progress_tooltip: "Il [estate|e] [SCOPE.sEstate('target').GetName] ha attualmente [SCOPE.sEstate('target').GetSatisfaction|2%] [estate_satisfaction|e] con un obiettivo di [SCOPE.sEstate('target').GetTargetSatisfaction|2%]" 
+ tyranny_of_the_capital_action_tt: "Il Ceto scelto riceverà una riduzione della propria crescita dei ribelli" 
+ peasant_labor_rights_action: "Sorveglia i Diritti del Lavoro" 
+ peasant_labor_rights_action_desc: "Pur avendo garantito i diritti dei nostri lavoratori e contadini, possiamo assicurarne il benessere solo con una supervisione diretta in una [province|e]." 
+ peasant_labor_rights_action_select_province: "$recovery_effort_select_province$" 
+ peasant_labor_rights_action_no_provinces: "$no_valid_provinces$" 
+ peasant_labor_rights_action_action: "Sorveglia i Diritti del Lavoro" 
+ peasant_labor_rights_action_active: "Sostegno alla prosperità di [SCOPE.sProvince('target').GetNameWithHighlightOnly]" 
+ peasant_labor_rights_action_action_progress: "[SCOPE.sProvince('target').GetAverageProsperity|%V2]" 
+ peasant_labor_rights_action_action_progress_wordier: "Media della [prosperity|e] di [SCOPE.sProvince('target').GetNameWithNoTooltip]: [SCOPE.sProvince('target').GetAverageProsperity|%V2]" 
+ peasant_labor_rights_action_action_progress_long_wordier: "@prosperity! [SCOPE.sProvince('target').GetAverageProsperity|%V2]" 
+ peasant_labor_rights_action_action_progress_tooltip: "[SCOPE.sProvince('target').GetAverageProsperityInfo]" 
 # if_nobles_estate_selected: "Se la [ShowEstateTypeName('nobles_estate')] è selezionata:" #DELETE
 # if_clergy_estate_selected: "Se il [ShowEstateTypeName('clergy_estate')] è selezionato:" #DELETE
 # if_burghers_estate_selected: "Se la [ShowEstateTypeName('burghers_estate')] è selezionata:" #DELETE
@@ -950,11 +999,9 @@
 # if_cossacks_estate_selected: "Se i [ShowEstateTypeName('cossacks_estate')] sono selezionati:" #DELETE
 
  encourage_migration: "Incoraggiare la Migrazione"
-# encourage_migration_desc: "Questo renderà la [pops|e] più propensa a [migrate|e] in questa [location|e]." #OLD
  encourage_migration_desc: "Questo renderà più probabile che i [pops|e] [migrate|e] verso questa [location|e].\n\nNota: l'assegnazione del gabinetto accelera anche la [migration|e] in tutte le località possedute, non solo in quella selezionata." 
  encourage_migration_action: "Incoraggia Migrazione verso [SCOPE.sLocation('target').GetName]"
  encourage_migration_select_province: "Seleziona la [location|e] verso cui incoraggiare la [migration|e]:"
-# encourage_migration_active: "Incoraggiare la Migrazione verso [SCOPE.sLocation('target').GetNameWithNoTooltip]" #OLD
  encourage_migration_active: "Incoraggiamento della migrazione verso [SCOPE.sLocation('target').GetName]" 
  encourage_migration_action_progress: "[SCOPE.sLocation('target').GetTotalPopulation] ([SCOPE.sLocation('target').GetMigrationChange]@population!)"
  encourage_migration_action_progress_wordier: "[SCOPE.sLocation('target').GetMigrationChange] popolazioni sono migrate il mese scorso."
@@ -1026,7 +1073,7 @@
  mlo_restore_kingdom_lombardy_desc: "La nostra impresa di unire le antiche terre del Regno Longobardo è nobile e legittima."
  mlo_restore_kingdom_lombardy_action: "$mlo_restore_kingdom_lombardy$"
  mlo_restore_kingdom_lombardy_active: "Integrazione delle Rivendicazioni Longobarde"
- mlo_restore_kingdom_lombardy_action_progress: "$mlo_restore_kingdom_lombardy_active$"
+ mlo_restore_kingdom_lombardy_action_progress: "[Cabinet.GetActionNumProgress|%]" 
  mlo_restore_kingdom_lombardy_action_progress_wordier: "$mlo_restore_kingdom_lombardy_active$"
  mlo_restore_kingdom_lombardy_action_progress_long_wordier: "@restore_lombardy! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!"
  mlo_restore_kingdom_lombardy_action_progress_tooltip: "$mlo_restore_kingdom_lombardy_active$"
@@ -1075,7 +1122,7 @@
  bironovshchina_action_progress_wordier: "Applicazione dell'influenza straniera"
  bironovshchina_action_progress_tooltip: "Applicazione dell'influenza straniera"
  office_of_new_converts: "Ufficio dei Nuovi Convertiti"
- office_of_new_converts_desc: "Un membro del [cabinet|e] è assegnato alla gestione dell'Ufficio dei Nuovi Convertiti, dedicato alla conversione delle anime pagane. Operando a [ShowLocationName('kazan')], adotta un approccio assertivo per accelerare la conversione con ogni mezzo necessario, inviando un messaggio potente e provocatorio che tutti devono aderire alla fede [ShowReligionAdjective('orthodox')]."
+ office_of_new_converts_desc: "Un [cabinet_member|e] è assegnato alla gestione dell'Ufficio dei Nuovi Convertiti, dedicato alla conversione delle anime pagane. Operando a [ShowLocationName('kazan')], adotta un approccio deciso per accelerare la conversione con ogni mezzo necessario, inviando un messaggio potente e provocatorio: tutti devono aderire alla fede [ShowReligionAdjective('orthodox')]." 
  office_of_new_converts_action: "Converti le anime perdute"
  office_of_new_converts_active: "Conversione delle anime perdute"
  office_of_new_converts_action_progress: "Conversione delle anime perdute"
@@ -1101,9 +1148,9 @@
  bolster_bureaucratic_efficiency_action_progress_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('maintain_bureaucracy_price_cost_modifier')]" 
  bolster_bureaucratic_efficiency_action_progress_long_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('maintain_bureaucracy_price_cost_modifier')]" 
  bolster_bureaucratic_efficiency_action_progress_tooltip: "Riduce $MODIFIER_TYPE_NAME_maintain_bureaucracy_price_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('maintain_bureaucracy_price_cost_modifier')]" 
- increase_bureaucratic_entrenchment: "Aumenta il radicamento burocratico" 
+ increase_bureaucratic_entrenchment: "Aumenta il Radicamento Burocratico" 
  increase_bureaucratic_entrenchment_desc: "Il nostro governo può essere incaricato di spingere attivamente le strutture burocratiche verso un consolidamento, accelerando il rafforzamento del nostro ordine amministrativo e rendendo queste istituzioni più difficili da smantellare." 
- increase_bureaucratic_entrenchment_action: "Rafforzamento della burocrazia" 
+ increase_bureaucratic_entrenchment_action: "Rafforzamento della Burocrazia" 
  increase_bureaucratic_entrenchment_active: "$increase_bureaucratic_entrenchment_action$" 
  increase_bureaucratic_entrenchment_active_action_title: "$increase_bureaucratic_entrenchment_action$" 
  increase_bureaucratic_entrenchment_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('global_bureaucracy_entrenchment_speed_modifier')]" 
@@ -1133,7 +1180,7 @@
 
  pru_deal_with_robber_barons: "Occuparsi dei Baroni Ladri"
  pru_deal_with_robber_barons_desc: "I Baroni Ladri locali sono una minaccia al nostro controllo sulla provincia e ancora di più al nostro prestigio. Dobbiamo liberarcene per il bene del nostro splendore! E forse anche per il bene dei contadini locali."
- pru_deal_with_robber_barons_active: "Occupati dei Baroni Ladri"
+ pru_deal_with_robber_barons_active: "Gestione dei Baroni Predoni in [SCOPE.sProvince('target').GetNameWithNoTooltip]" 
  pru_deal_with_robber_barons_action: "Occuparsi dei Baroni Ladri"
  pru_deal_with_robber_barons_action_progress: "[SCOPE.sCabinet('cabinet').GetDaysUntilFullyImplementedInDays]"
  pru_deal_with_robber_barons_action_progress_wordier: "Occupati dei Baroni Ladri"
@@ -1146,11 +1193,11 @@
  posolsky_action: "Gestione del $posolsky$ prikaz"
  posolsky_active: "Gestione del $posolsky$ prikaz"
  posolsky_active_action_title: "Gestione del $posolsky$ prikaz"
- posolsky_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
- posolsky_action_progress_wordier: "[diplomatic_reputation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')] [annexation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
- posolsky_action_progress_long_wordier: "@diplomatic_reputation! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')]\n  @annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_annexation_cost')]"
+ posolsky_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('annexation_speed_modifier')]" 
+ posolsky_action_progress_wordier: "[diplomatic_reputation|e]: [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')] [annexation|e]: [SCOPE.sCountry('actor').GetModifierValue('annexation_speed_modifier')]" 
+ posolsky_action_progress_long_wordier: "@diplomatic_reputation! [SCOPE.sCountry('actor').GetModifierValue('diplomatic_reputation')]\n@annexation_speed! [SCOPE.sCountry('actor').GetModifierValue('annexation_speed_modifier')]" 
  posolsky_action_progress_tooltip: "Migliora $MODIFIER_TYPE_NAME_diplomatic_reputation$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_reputation')]"
- posolsky_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_diplomatic_annexation_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('diplomatic_annexation_cost')]"
+ posolsky_action_progress_tooltip_1: "Migliora $MODIFIER_TYPE_NAME_annexation_speed_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('annexation_speed_modifier')]" 
 
  razryadny: "Razryadny"
  razryadny_desc: "Questo permetterà al nostro gabinetto di concentrarsi sul prikaz degli affari militari, supervisionando la distribuzione di rifornimenti e armi militari e l'organizzazione dell'[army|e]."
@@ -1191,13 +1238,9 @@
  kazenny_active: "Gestione del $kazenny$ prikaz" 
  kazenny_active_action_title: "Gestione del $kazenny$ prikaz" 
  kazenny_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]" 
-# kazenny_action_progress_wordier: "@tax_efficiency!: [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')] @proximity_cost!: [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" #OLD
  kazenny_action_progress_wordier: "@tax_efficiency!: [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')] @proximity_cost!: [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_speed_propagation')]" 
-# kazenny_action_progress_long_wordier: "@tax_efficiency! [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]\n  @proximity_cost! [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" #OLD
  kazenny_action_progress_long_wordier: "@tax_efficiency! [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]\n @proximity_cost! [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_speed_propagation')]" 
-# kazenny_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_tax_income_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" #OLD
  kazenny_action_progress_tooltip: "Questa azione del gabinetto aumenta [ShowModifierTypeName('tax_income_efficiency')]:\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" 
-# kazenny_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_global_distance_from_capital_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_cost_modifier')]" #OLD
  kazenny_action_progress_tooltip_1: "Questa azione del gabinetto aumenta [ShowModifierTypeName('global_distance_from_capital_speed_propagation')]:\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_speed_propagation')]" 
 
  aptekarsky: "Aptekarsky"
@@ -1209,18 +1252,17 @@
  aptekarsky_action_progress_wordier: "@disease_resistance!: [SCOPE.sCountry('actor').GetModifierValue('global_disease_resistance')]" 
  aptekarsky_action_progress_long_wordier: "@disease_resistance! [SCOPE.sCountry('actor').GetModifierValue('global_disease_resistance')]" 
  aptekarsky_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_global_disease_resistance$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_disease_resistance')]" 
+ aptekarsky_select_province: "Seleziona la [province|e] in cui aumentare la [disease_resistance|e]:" 
+ aptekarsky_no_provinces: "$no_valid_provinces$" 
 
  bolshogo_dvortsa: "Bolshogo Dvortsa"
  bolshogo_dvortsa_desc: "Questo permetterà al nostro gabinetto di concentrarsi sulla manutenzione dei palazzi e sulla riduzione delle spese legate alla corte. Vengono anche supervisionati i monasteri religiosi per garantire che siano allineati con la dottrina statale e che rispettino la legge."
  bolshogo_dvortsa_action: "Gestione del $bolshogo_dvortsa$ prikaz" 
  bolshogo_dvortsa_active: "Gestione del $bolshogo_dvortsa$ prikaz" 
  bolshogo_dvortsa_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]" 
-# bolshogo_dvortsa_action_progress_wordier: "@religious_influence!: [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n@court_spending!: [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" #OLD
  bolshogo_dvortsa_action_progress_wordier: "@religious_influence!: [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n@court_spending!: [SCOPE.sCountry('actor').GetCourtSpendingCost]" 
-# bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" #OLD
  bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetCourtSpendingCost]" 
  bolshogo_dvortsa_action_progress_tooltip: "Aumenta $MODIFIER_TYPE_NAME_monthly_religious_influence$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_religious_influence')]" 
-# bolshogo_dvortsa_action_progress_tooltip_1: "Riduce $MODIFIER_TYPE_NAME_court_spending_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('court_spending_cost')]" #OLD
  bolshogo_dvortsa_action_progress_tooltip_1: "Riduce il costo della spesa di corte\n[SCOPE.sCountry('actor').GetCourtSpendingCostDetails]" 
 
 #China Cabinet Actions
@@ -1275,7 +1317,6 @@ maintain_trunk_road_cabinet_action_desc: "Questo indirizzerà il nostro [cabinet
  settle_the_frontier_desc: "Il [cabinet|e] si impegnerà a colonizzare la [province|e] non colonizzata con un gruppo di [pops|e]."
  settle_the_frontier_action: "Colonizza [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]"
  settle_the_frontier_select_province_definition: "Seleziona la [province|e] da colonizzare:"
-# settle_the_frontier_no_provinces: "$no_valid_provinces$" #OLD
  settle_the_frontier_no_provinces: "@trigger_no! Non riusciamo a trovare alcun luogo adatto in cui espanderci. Un bersaglio deve:\nNon essere già colonizzato da noi o da almeno altri 3 paesi;\nAvere località vivibili;\nEssere scoperto;\nEssere adiacente a noi o a uno dei nostri soggetti, oppure entro raggio." 
  settle_the_frontier_select_character: "Seleziona il [character|e] da inviare:"
  settle_the_frontier_no_character: "$NO_POSSIBLE_CHARACTERS$"

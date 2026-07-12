@@ -1,6 +1,6 @@
 ﻿l_english:
  flavor_oma.1.title: "Struggle for Power"
- flavor_oma.1.entry: "$flavor_oma.1.title$" #NEW
+ flavor_oma.1.entry: "$flavor_oma.1.title$"
  flavor_oma.1.desc: "With the increasing instability in [ROOT.GetCountry.GetName], the A'immah have decided to make their play against the nation, hoping to restore the old Imamate and the authority of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] over the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the common people."
  flavor_oma.1.historical_info: "The Nabhanite dynasty held power for over three centuries, but in the 15th century its authority begun being questioned by elected A'immah. This struggle continued until the dynasty had lost control over the country."
  flavor_oma.1.a: "Submit to the Imām."
@@ -9,16 +9,16 @@
 
  flavor_oma_portugal_historical_info: "In the late 15th century explorers from Portugal discovered the way around the Cape of Good Hope to reach India. In order to protect their sea lanes and ensure their dominance of trade, they invaded Oman and occupied Suhar and Muscat for almost 150 years."
  flavor_oma.2.title: "The Portuguese Have Arrived!"
- flavor_oma.2.entry: "$flavor_oma.2.title$" #NEW
+ flavor_oma.2.entry: "$flavor_oma.2.title$"
  flavor_oma.2.desc: "Merchants from [GetCountry('POR').GetName] have arrived in our shores. They have established themselves in [ShowLocationName('masqat')], hoping to further secure their control there in order to strengthen their hold over the Spice Trade."
  flavor_oma.2.historical_info: "$flavor_oma_portugal_historical_info$"
  flavor_oma.2.a: "We will fight them."
  mam_por_confronted: "Confrontation over Trade"
  flavor_oma.2.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
- flavor_oma.2.b.entry: "$common_string_nothing_we_can_do_about_it$" #NEW
+ flavor_oma.2.b.entry: "$common_string_nothing_we_can_do_about_it$"
 
  flavor_oma.3.title: "Protecting the Indian Trade"
- flavor_oma.3.entry: "$flavor_oma.3.title$" #NEW
+ flavor_oma.3.entry: "$flavor_oma.3.title$"
  flavor_oma.3.desc: "If we are to ever stand a chance against competing powers for the rice of the trade in $india$, we must establish naval outposts that will allow us to base our navies at. One of these ports is the [target_location.GetRank.GetName] of [target_location.GetName], owned by the people of [target_country.GetName]. We could launch an invasion on the [target_location.GetRank.GetNameWithNoTooltip], but perhaps there are other ways to go about acquiring such exquisite spot."
  flavor_oma.3.historical_info: "$flavor_oma_portugal_historical_info$"
  flavor_oma.3.a: "We are in need of more outposts."
@@ -54,13 +54,13 @@
  flavor_oma.6.c.entry: "[ShowLocationNameWithNoTooltip('bahla')] does not need any support." #NEW
  
  flavor_oma.7.title: "Strengthening the Frankincense Trade"
- flavor_oma.7.entry: "$flavor_oma.7.title$" #NEW
+ flavor_oma.7.entry: "$flavor_oma.7.title$"
  flavor_oma.7.desc: "Whilst the farms of [target_location.GetName] have served our [ShowGoodsName('incense')] trade quite well, its demand has been increasing as our high-quality perfumes are sought out by the rest of the world. Perhaps, by investing more into this trade, we can make a big profit in no time."
  flavor_oma.7.a: "Let us sell even more perfumes to the world."
  flavor_oma.7.b: "It is too costly."
  
  flavor_oma.8.title: "Rise of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Fleet"
- flavor_oma.8.entry: "$flavor_oma.8.title$" #NEW
+ flavor_oma.8.entry: "$flavor_oma.8.title$"
  flavor_oma.8.desc: "With many more nations competing over the [ShowRegionName('indian_ocean_region')] and its vast trade, we too need to join this race lest our ports are at the mercy of other powers. By expanding the [ShowBuildingTypeName('dock')] in [target_location.GetName], and by sending [target_character2.GetName] to plan out such armada, we can perhaps rule our seas."
  flavor_oma.8.a: "To the seas, brave [ROOT.GetCountry.GetAdjectiveWithNoTooltip] sailors!"
  flavor_oma.8.a.entry: "To the seas, brave sailors!" #NEW
@@ -95,7 +95,7 @@
  flavor_oma.11.b: "It is not worth the effort."
  
  flavor_oma.12.title: "The Pirate Coast"
- flavor_oma.12.entry: "$flavor_oma.12.title$" #NEW
+ flavor_oma.12.entry: "$flavor_oma.12.title$"
  flavor_oma.12.desc: "The [ShowAreaName('oman_sea_zones_area')] is slowly becoming home to much privateer action, where shipments heading from $india$ to either [ShowContinentName('europe')] or [ShowContinentName('africa')] would be intercepted by pirates wishing to make a fortune. We can try to combat them, or we can invite them to serve us."
  flavor_oma.12.a: "Let us invite these pirates into our ports."
  flavor_oma.12.b: "A pirate's life for [ROOT.GetCountry.GetNameWithNoTooltip]!"
@@ -117,29 +117,30 @@
  flavor_oma.14.b.entry: "Let us develop the capital instead." #NEW
  
  flavor_oma.15.title: "A New Imamate"
- flavor_oma.15.entry: "$flavor_oma.15.title$" #NEW
-# flavor_oma.15.desc: "[ROOT.GetCountry.GetName|U] has yet again become unstable. [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [target_character.GetName] are now stuck in a power struggle, with [target_character2.GetName] planning to restore the [ShowGovernmentTypeName('theocracy')]. Perhaps we can deal with [target_character2.GetHimHer] by banishing [target_character2.GetHerHis] outside of [ROOT.GetCountry.GetName], although that is certain to upset our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]." #OLD
+ flavor_oma.15.entry: "$flavor_oma.15.title$"
  flavor_oma.15.desc: "[ROOT.GetCountry.GetName|U] has yet again become unstable. [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [target_character.GetName] are now stuck in a power struggle, with [target_character2.GetName] planning to restore the [ShowGovernmentTypeName('theocracy')]. Perhaps we can deal with him by banishing his outside of [ROOT.GetCountry.GetName], although that is certain to upset our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]." #NEW
  flavor_oma.15.a: "We support the new regime under [target_character2.GetNameWithNoTooltip]."
  flavor_oma.15.a.entry: "We support the new regime under him." #NEW
  flavor_oma.15.b: "Exile [target_character2.GetNameWithNoTooltip] for plotting against [target_character.GetNameWithNoTooltip]."
  flavor_oma.15.b.entry: "Exile him for plotting against the character." #NEW
+ variable_oma_theocracy_event_flag_tt: "A New Imamate has been Proclaimed" #NEW
  
  flavor_oma.16.title: "Populating the Coast"
- flavor_oma.16.entry: "$flavor_oma.16.title$" #NEW
+ flavor_oma.16.entry: "$flavor_oma.16.title$"
  flavor_oma.16.desc: "Whilst a fraction of our population is living away from the coast in places such as [target_location.GetName], the only way for us to expand our maritime influence is by populating our coasts. [target_character.GetName] and [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetCourtTitle] are already making plans for this."
  flavor_oma.16.a: "Let us start populating our coastal areas."
  flavor_oma.16.b: "The only locations that need support are the ones away from the coast."
  flavor_oma.16.c: "We do not have enough funds for this."
  
  flavor_oma.17.title: "Expanding the Falaj"
- flavor_oma.17.entry: "$flavor_oma.17.title$" #NEW
+ flavor_oma.17.entry: "$flavor_oma.17.title$"
  flavor_oma.17.historical_info: "$flavor_oma_falaj_historical_info$"
  flavor_oma.17.desc: "Our past efforts to supply [ShowLocationName('nizwa')] using the [ShowBuildingTypeName('oma_falaj')] system have proven to be successful. Much of the populace there is now content with their new water supplies, living a luxurious life. [target_character.GetName] has already made plans to expand this system to other locations, though they are certainly costly."
  flavor_oma.17.a: "A worthy endeavor."
  flavor_oma.17.b: "Just the plans alone will make us go bankrupt."
+ variable_oma_unlock_later_falaj_event_tt: "The Falaj Irrigation may be Expanded" #NEW
  
  flavor_oma.18.title: "Overseas Ambitions"
- flavor_oma.18.entry: "$flavor_oma.18.title$" #NEW
+ flavor_oma.18.entry: "$flavor_oma.18.title$"
  flavor_oma.18.desc: "With our mightly fleet constructed and our might recognized by other powers, [target_character.GetName] and [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetCabinetTitle] have been making plans as to what part of the world they will claim for themselves. Many argue that the [ShowGoodsName('pepper')] in $india$ are what they need to secure, whilst others argue that the lands of [ShowRegionName('swahili_coast_region')] are more viable to control. Whatever the case, history will remember [ROOT.GetCountry.GetName] as an $rank_empire$."
  flavor_oma.18.a: "Like the rest, we too shall carve our place in the sun."

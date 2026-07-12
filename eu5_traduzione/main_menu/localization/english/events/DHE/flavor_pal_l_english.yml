@@ -1,21 +1,18 @@
 ﻿l_english:
  flavor_pal.1.title: "Una Buona Scelta"
- flavor_pal.1.entry: "$flavor_pal.1.title$" #NEW
+ flavor_pal.1.entry: "$flavor_pal.1.title$"
  flavor_pal.1.desc: "Il nostro supporto del vero [GetCountry('PAP').GetGovernment.GetRulerTitle] nello [ShowSituationName('western_schism')] ci ha messo nelle grazie di [ShowLocationName('rome')], che ha indotto il glorioso [pope_ruler.GetName] a concederci una nuova bolla papale che consenta la costruzione di una nuova [ShowBuildingTypeName('university')] a [ShowLocationName('heidelberg')] seguendo il modello dell'università di [ShowLocationName('paris')]."
  flavor_pal.1.a: "Inizia la costruzione."
  flavor_pal.1.b: "Non possiamo permetterci la spesa."
 
  flavor_pal.2.title: "La Persecuzione di [target_character.GetNameWithNoTooltip]"
  flavor_pal.2.entry: "The Persecution of Johannes Reuchlin" #NEW
-# flavor_pal.2.desc: "[target_character.GetName], mentre è uno studioso e umanista rispettato, ha anche un talento per entrare in conflitto con altri teologi [ShowReligionAdjective('catholic')]. [target_character.GetSheHe|U] di recente ha dovuto lasciare il suo precedente datore di lavoro a causa di uno scontro personale con altri consiglieri.\n\nFortunamente per noi, [target_character.GetSheHe] è molto interessato a servirci ed è già in [target_character.GetHerHis] viaggio verso [ROOT.GetCountry.GetCapital.GetName]. Grazie alla sua natura umanista potrebbe beneficiare notevolmente la reputazione della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #OLD
  flavor_pal.2.desc: "[target_character.GetName], while being a respected scholar and humanist, also has a talent for clashing with other [ShowReligionAdjective('catholic')] theologian. He recently had to leave his previous employee due to a personal clash with other advisors.\n\nFortunately for us, he is very interested in serving us and is already on his journey into [ROOT.GetCountry.GetCapital.GetName]. Due to his humanist nature he could greatly benefit the reputation of our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
-# flavor_pal.2.a: "[target_character.GetSheHe|U] avrà un nuovo posto da chiamare casa." #OLD
  flavor_pal.2.a: "He will have a new place to call home." #NEW
-# flavor_pal.2.b: "[target_character.GetSheHe|U] dovrebbe tornare indietro e andare da qualche altra parte." #OLD
  flavor_pal.2.b: "He should turn around and go somewhere else." #NEW
 
  flavor_pal.3.title: "Trasferimento della $game_concept_capital$"
- flavor_pal.3.entry: "$flavor_pal.3.title$" #NEW
+ flavor_pal.3.entry: "$flavor_pal.3.title$"
  flavor_pal.3.desc: "A causa delle continue tensioni religiose a [ShowLocationName('heidelberg')], [target_ruler.GetName] considera il trasferimento della $game_concept_capital$ verso il vicino $mannheim$. Questa mossa potrebbe fornire un nuovo inizio e ridurre i conflitti, ma potrebbe turbare il popolo e caricare le risorse."
  flavor_pal.3.a: "Sposta la capitale a $mannheim$."
  flavor_pal.3.b: "Mantieni [ShowLocationNameWithNoTooltip('heidelberg')] come $game_concept_capital$."

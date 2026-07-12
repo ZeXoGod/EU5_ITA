@@ -36,15 +36,17 @@
  turmoil_in_brandenburg.2.a.tt: "$bra_wittelsbacher_investment_var$ e $bra_wittelsbacher_neglect_var$ saranno disabilitati."
 
  turmoil_in_brandenburg.3.title: "Il Falso $name_waldemar$"
- turmoil_in_brandenburg.3.entry: "$turmoil_in_brandenburg.3.title$" #NEW
+ turmoil_in_brandenburg.3.entry: "$turmoil_in_brandenburg.3.title$" 
  turmoil_in_brandenburg.3.desc: "All'inizio, la sua storia sembrava realistica, anche se un po' strana: un governante che aveva inscenato il proprio funerale per poter intraprendere un pellegrinaggio senza essere disturbato, per poi tornare. Ma mentre la sua nuova campagna per il trono continuava, la sua storia cominciò a mostrare delle crepe. Coloro che conoscevano [GetCharacter('bra_waldemar_askanier').GetName] prima del 1320 avevano notato i suoi inspiegabili cambiamenti di personalità...\n\nMa con grande sorpresa di tutti, è stato finalmente rivelato che [target_character.GetName] non è altro che un semplice impostore che si finge l'illustre Margravio!\n\nIn un istante, qualsiasi forma di sostegno di cui godeva il pretendente è svanita, e il dominio [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.GetName] è ancora una volta indiscusso."
  turmoil_in_brandenburg.3.a: "Un impostore tra noi... chi avrebbe mai potuto immaginarlo?"
+ false_waldemar_imposter_protection_tt: "Waldemar sta raccogliendo sostegno" 
 
  turmoil_in_brandenburg.4.title: "La Tirannia dei Baroni Ladri"
  turmoil_in_brandenburg.4.desc: "Protetti dallo status giuridico del loro feudo, i Baroni Ladri [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] sono membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] che impongono pedaggi e tasse paralizzanti alla popolazione locale. Anche se le loro ragioni potrebbero essere dettate dalla disperazione, le loro azioni ostacoleranno lo sviluppo delle terre [ROOT.GetCountry.Custom('IT_ADJ_FP')] se lasciamo che questo continui ad accadere..."
  turmoil_in_brandenburg.4.a: "Combattere i Baroni Ladri."
  turmoil_in_brandenburg.4.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
  bra_peasants_revolt: "Rivolta Contadina"
+ PRU_robber_barons_active_tt: "I baroni predoni sono attivi" 
 
  turmoil_in_brandenburg.5.title: "Rivolta [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Revolt"
  turmoil_in_brandenburg.5.desc: "La spirale economica discendente [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] ha lasciato molti membri [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] amareggiati e contrariati. Si rifiutano di lavorare nei campi a meno che non vengano soddisfatte le loro richieste di miglioramento della loro situazione sotto la tirannia degli egoisti cavalieri ladri..."
@@ -102,13 +104,11 @@
  turmoil_in_brandenburg.13.b: "Concentrate i nostri sforzi su [target_location.GetNameWithNoTooltip]."
  turmoil_in_brandenburg.13.c: "Non possiamo permetterci tale generosità."
  
-# every_location_in_target_province_gains_center_of_urbanization_modifier_tt: "Ogni [location|e] in [target_province.GetName] riceverà il [modifier|e] [GetModifier('center_of_urbanization_modifier').GetNameWithTooltip]" #OLD
- every_location_in_target_province_gains_center_of_urbanization_modifier_tt: "Every [location|e] in [target_province.GetName] will receive the [GetModifier('center_of_urbanization_modifier').GetNameWithTooltip] [modifier|e] for [ShowNamedValue('modifier_duration_years_very_short')] years" #NEW
-# every_location_in_target_province_gains_flourishing_capital_modifier: "Ogni [location|e] in [target_province.GetName] riceverà il [modifier|e] [GetModifier('flourishing_capital_modifier').GetNameWithTooltip]" #OLD
- every_location_in_target_province_gains_flourishing_capital_modifier: "Every [location|e] in [target_province.GetName] will receive the [GetModifier('flourishing_capital_modifier').GetNameWithTooltip] [modifier|e] for [ShowNamedValue('modifier_duration_years_very_short')] years" #NEW
+ every_location_in_target_province_gains_center_of_urbanization_modifier_tt: "Ogni [location|e] in [target_province.GetName] riceverà il [modifier|e] [GetModifier('center_of_urbanization_modifier').GetNameWithTooltip] per [ShowNamedValue('modifier_duration_years_very_short')] anni" 
+ every_location_in_target_province_gains_flourishing_capital_modifier: "Ogni [location|e] in [target_province.GetName] riceverà il [modifier|e] [GetModifier('flourishing_capital_modifier').GetNameWithTooltip] per [ShowNamedValue('modifier_duration_years_very_short')] anni" 
  every_location_in_target_province_gains_development_mild_bonus: "Ogni [location|e] in [target_province.GetName] otterrà [ShowNamedValue('development_weak_bonus')|+=] [development|e]"
  every_location_in_target_province_gains_prosperity_extreme_bonus: "Ogni [location|e] in [target_province.GetName] otterrà [ShowNamedValue('prosperity_severe_bonus')|+=2%] [prosperity|e]."
- turmoil_in_brandenburg.100.entry: "$turmoil_in_brandenburg.100.title$" #NEW
+ turmoil_in_brandenburg.100.entry: "$turmoil_in_brandenburg.100.title$" 
 
 
  turmoil_in_brandenburg.100.title: "I $bra_wittelsbach_hyperlink_no_tt$ Rivitalizzano [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip]"
@@ -120,12 +120,12 @@
  turmoil_in_brandenburg.200.a: "Com'è potuto accadere? Siamo più intelligenti di così..."
 
  turmoil_in_brandenburg.300.title: "Una Lunga Battaglia Giunge al Termine"
- turmoil_in_brandenburg.300.entry: "$turmoil_in_brandenburg.300.title$" #NEW
+ turmoil_in_brandenburg.300.entry: "$turmoil_in_brandenburg.300.title$" 
  turmoil_in_brandenburg.300.desc: "Dopo decenni, la nostra lotta per domare e soggiogare [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetLongName] è finalmente giunta al termine. Le dinastie rivali per il nostro trono sono state respinte e le ultime roccaforti dei Baroni Ladri sono state rase al suolo. La nostra azione decisa ci ha accordato l'opportunità di plasmare questo stato a nostro vantaggio, costruendo un'amministrazione in grado di resistere più facilmente a tali mali in futuro."
  turmoil_in_brandenburg.300.a: "Finalmente la pace."
 
  turmoil_in_brandenburg.1000.title: "Il Ritorno di [target_character.GetNameWithNoTooltip]"
- turmoil_in_brandenburg.1000.entry: "The Return of Target Character" #NEW
+ turmoil_in_brandenburg.1000.entry: "Il Ritorno del Personaggio Bersaglio" 
  turmoil_in_brandenburg.1000.desc: "Poiché nessun imperatore del $bra_hre_hyperlink$ è più connesso ai regnante $bra_wittelsbach_hyperlink$, la legittimità [bra_ruler.Custom('IT_DEL_TITOLO')][bra_ruler.GetName] è nuovamente in discussione. Il popolo [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] anela agli anni del governo $bra_askanier_hyperlink$.\n\nMa, come vuole il destino, il presunto defunto [target_character.GetName] ha compiuto una pubblica resurrezione! Affermando che il suo funerale era stato orchestrato per facilitare il suo pellegrinaggio in Terra Santa, [target_character.GetShortNameWithNoTooltip] è tornato a reclamare il trono [ROOT.GetCountry.GetAdjective] [bra_ruler.Custom('IT_DAL_TITOLO')][bra_ruler.GetShortNameWithNoTooltip]."
  turmoil_in_brandenburg.1000.desc.emperor_supports: "$turmoil_in_brandenburg.1000.desc$\n\nFortunamente, i rapporti tra [emperor_ruler.GetName] e [bra_ruler.GetShortNameWithNoTooltip] sono benevoli. Pertanto, il $bra_hre_emperor_hyperlink$ sostiene la casata $bra_wittelsbach_hyperlink_no_tt$ contro il pretendente."
  turmoil_in_brandenburg.1000.desc.emperor_rejects: "$turmoil_in_brandenburg.1000.desc$\n\nSfortunatamente, il $bra_hre_emperor_hyperlink$ favorisce la casata $bra_askanier_hyperlink_no_tt$ rispetto alla $bra_wittelsbach_hyperlink_no_tt$. Pertanto, [emperor_ruler.Custom('IT_ART_TITOLO')][emperor_ruler.GetName] ha concesso il diritto di governare [bra_country.Custom('IT_La')][bra_country.GetNameWithNoTooltip] a [target_character.GetShortNameWithNoTooltip]. Solo stringere un accordo con [emperor_ruler.Custom('IT_ART_TITOLO')][emperor_ruler.GetNameWithNoTooltip] potrebbe risolvere la minaccia di [target_character.GetShortNameWithNoTooltip]..."
@@ -195,10 +195,8 @@
  turmoil_in_brandenburg.1006.c: "Remove the imposter!"
 
  turmoil_in_brandenburg.1007.title: "Execution of the False [target_character.GetNameWithNoTooltip]"
-# turmoil_in_brandenburg.1007.desc.successful_execution: "[target_character.GetName] has been successfully captured and imprisoned by those loyal to [bra_ruler.GetName]. As it turns out, [target_character.GetShortNameWithNoTooltip] is no $bra_askanier_hyperlink$ - not even a member of our prestigious [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]! [target_character.GetSheHe|U] was accused of imposing, treason and threatening the stability of [bra_country.GetName], and was found guilty..." #OLD
- turmoil_in_brandenburg.1007.desc.successful_execution: "[target_character.GetName] has been successfully captured and imprisoned by those loyal to [bra_ruler.GetName]. Additionally, [emperor_ruler.GetName] has given [emperor_ruler.GetHisHer] consent to our actions retroactively, sparing us more dire consequences. As it turns out, [target_character.GetShortNameWithNoTooltip] is no $bra_askanier_hyperlink$ - not even a member of our prestigious [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]! [target_character.GetSheHe|U] was accused of imposing, treason and threatening the stability of [bra_country.GetName], and was found guilty..." #NEW
-# turmoil_in_brandenburg.1007.desc.failed_execution: "In the middle of the night, [target_character.GetName] was captured and imprisoned in [bra_country.GetCapital.GetName] to await [target_character.GetHisHer] supposed execution at first daylight. However, [target_character.GetShortNameWithNoTooltip] has proven [target_character.GetHerselfHimself] crafty, having anticipated our every move. Following the abduction, a great group of nobles - members of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] - assaulted the palace dungeons and freed the pretender.\n\nNow, [bra_country.GetName] now faces a civil war of unforeseeable dimensions..." #OLD
- turmoil_in_brandenburg.1007.desc.failed_execution: "In the middle of the night, [target_character.GetName] was captured and imprisoned in [bra_country.GetCapital.GetName] to await [target_character.GetHisHer] supposed execution at first daylight. However, [target_character.GetShortNameWithNoTooltip] has proven [target_character.GetHerselfHimself] crafty, having anticipated our every move. Following the abduction, a great group of nobles - members of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] - assaulted the palace dungeons and freed the pretender.\n\nNow, [bra_country.GetName] now faces a civil war of unforeseeable dimensions. As a mild benefit to our disastrous situation, [emperor_ruler.GetName] has decided to passively support our decision of execution." #NEW
+ turmoil_in_brandenburg.1007.desc.successful_execution: "[target_character.GetName] è stato catturato con successo e imprigionato da coloro che sono leali a [bra_ruler.GetName]. Inoltre, [emperor_ruler.GetName] ha dato retroattivamente il consenso di [emperor_ruler.GetHisHer] alle nostre azioni, risparmiandoci conseguenze più gravi. A quanto pare, [target_character.GetShortNameWithNoTooltip] non è affatto un $bra_askanier_hyperlink$, nemmeno un membro del nostro prestigioso [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]! [target_character.GetSheHe|U] è stato accusato di impostura, tradimento e minaccia alla stabilità [bra_country.Custom('IT_Di')][bra_country.GetName], ed è stato giudicato colpevole..." 
+ turmoil_in_brandenburg.1007.desc.failed_execution: "Nel cuore della notte, [target_character.GetName] è stato catturato e imprigionato a [bra_country.GetCapital.GetName] in attesa della presunta esecuzione di [target_character.GetHisHer] alle prime luci dell'alba. Tuttavia, [target_character.GetShortNameWithNoTooltip] ha dimostrato [target_character.GetHerselfHimself] più astuto, avendo previsto ogni nostra mossa. Dopo il rapimento, un grande gruppo di nobili, membri del nostro [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ha assaltato le prigioni del palazzo e liberato il pretendente.\n\nOra [bra_country.Custom('IT_La')][bra_country.GetName] affronta una guerra civile dalle dimensioni imprevedibili. Come lieve beneficio nella nostra disastrosa situazione, [emperor_ruler.GetName] ha deciso di sostenere passivamente la nostra decisione di procedere con l'esecuzione." 
  turmoil_in_brandenburg.1007.a: "Another crisis well averted."
  turmoil_in_brandenburg.1007.b: "To arms!"
  bra_true_waldemar_identity_reveal_tt: "#italic The true identity of [target_character.GetName] will be revealed...#!"
@@ -206,7 +204,7 @@
  false_waldemar_rebel: "Supporters of $name_waldemar$"
 
  turmoil_in_brandenburg.1100.title: "The Neglect of [root_country.GetNameWithNoTooltip]"
- turmoil_in_brandenburg.1100.entry: "The Neglect of Root Country" #NEW
+ turmoil_in_brandenburg.1100.entry: "L'Incuria del Paese Radice" 
  turmoil_in_brandenburg.1100.desc: "The lands of [root_country.GetName] have always been rather underdeveloped. Yet, even at its worst, [root_country.GetNameWithNoTooltip] has never been as run down as it was under the hands of the $bra_wittelsbach_hyperlink$.\n\nNews of this bad situation has reached the $bra_hre_emperor_hyperlink$. The fate of [root_ruler.GetName] and [root_ruler.GetHisHer] rule over these lands hang in the balance..."
  turmoil_in_brandenburg.1100.a: "Certainly, the $bra_hre_emperor_hyperlink$ will understand our situation."
  turmoil_in_brandenburg.1100.a.tt: "The $bra_hre_emperor_hyperlink$ will decide our fate. The $bra_hre_emperor_hyperlink$ could decide to appoint a new ruler from another dynasty for us."
@@ -266,7 +264,7 @@
  turmoil_in_brandenburg.1201.a: "May [hohenzollern_character.GetHeShe] rule with wisdom and strength."
 
  turmoil_in_brandenburg.1300.title: "Rise of Robber Barons"
- turmoil_in_brandenburg.1300.entry: "$turmoil_in_brandenburg.1300.title$" #NEW
+ turmoil_in_brandenburg.1300.entry: "$turmoil_in_brandenburg.1300.title$" 
  turmoil_in_brandenburg.1300.desc: "Weak control over [ROOT.GetCountry.GetGovernment.GetRulerTitle] and general lawlessness has led to the rise of the Robber Barons - nobles who live off lawlessness and lead a life of crime. Their presence only serves to weaken our control and undermine the authority of [target_ruler.GetName]. Currently, their hold is the strongest in [robber_baron_province.GetName]."
  turmoil_in_brandenburg.1300.a: "We will deal with them in due time."
  STATIC_MODIFIER_NAME_PRU_robber_barons: "Robber Barons"
@@ -287,12 +285,12 @@
  PRU_ROBBER_BARONS_PROVINCE_ENTRY_REST: "...and $AMOUNT|0$ more"
 
  turmoil_in_brandenburg.1301.title: "Robber Barons in [robber_baron_province.GetNameWithNoTooltip]"
- turmoil_in_brandenburg.1301.entry: "Robber Barons in Robber Baron Province" #NEW
+ turmoil_in_brandenburg.1301.entry: "Baroni Predoni nella Provincia dei Baroni Predoni" 
  turmoil_in_brandenburg.1301.desc: "The plague of Robber Barons has spread to the province of [robber_baron_province.GetName]. Their displays of criminality and arrogance are tantamount to spitting in our faces. Time to teach them a lesson — and to restore central authority in the country."
  turmoil_in_brandenburg.1301.a: "We will deal with them in due time."
 
  turmoil_in_brandenburg.1302.title: "The von Quitzow"
- turmoil_in_brandenburg.1302.entry: "$turmoil_in_brandenburg.1302.title$" #NEW
+ turmoil_in_brandenburg.1302.entry: "$turmoil_in_brandenburg.1302.title$" 
  turmoil_in_brandenburg.1302.desc: "Amongst all of the Robber Barons, there are few whose influence can compare to that of the von Quitzow family. Their possessions are plentiful throughout the [ShowProvinceDefinitionName('mittelmark_province')] area, and they hold vast estates. Yet, despite all of this wealth, they still turned to a life of crime. We will stomp down on them, and vanquish their holdings before they cause utter chaos."
  turmoil_in_brandenburg.1302.a: "We must deal with them!"
  turmoil_in_brandenburg.1302.b: "We had better take a careful approach."
@@ -302,13 +300,14 @@
  bra_quitzow_revolt: "Quitzow Revolt"
 
  turmoil_in_brandenburg.1303.title: "Ending Robber Baron Rule"
- turmoil_in_brandenburg.1303.entry: "$turmoil_in_brandenburg.1303.title$" #NEW
+ turmoil_in_brandenburg.1303.entry: "$turmoil_in_brandenburg.1303.title$" 
  turmoil_in_brandenburg.1303.desc: "Though it took many years and campaigns, we have finally managed to rein in the uppity [ShowEstateTypeName('nobles_estate')]. As of now, all trade routes in the country are safe from robbers of noble origin, and no common man has anything to fear. Moreover, most peasants will no longer be obliged to pay protection money to the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
  turmoil_in_brandenburg.1303.a: "The [ROOT.GetCountry.GetFlavorRank] is whole again."
  STATIC_MODIFIER_NAME_PRU_end_of_robber_barons: "End of the Robber Baron Era"
+ robber_barons_aftermath_tt: "I baroni predoni sono stati neutralizzati" 
  
  turmoil_in_brandenburg.1304.title: "Punishing the Robber Barons"
- turmoil_in_brandenburg.1304.entry: "$turmoil_in_brandenburg.1304.title$" #NEW
+ turmoil_in_brandenburg.1304.entry: "$turmoil_in_brandenburg.1304.title$" 
  turmoil_in_brandenburg.1304.desc: "Though we have managed to prevail in our struggle against the rebelling [ShowEstateTypeName('nobles_estate')], many at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] believe that simply defeating them achieves nothing, and that the [ROOT.GetCountry.GetGovernment.GetRulerTitle] should make them pay for their treachery. While many support this incentive, others believe that further alienation is not necessary, especially since we have already reasserted our control."
  turmoil_in_brandenburg.1304.a: "They shall pay for their treachery!"
  turmoil_in_brandenburg.1304.b: "Punish them mildly."

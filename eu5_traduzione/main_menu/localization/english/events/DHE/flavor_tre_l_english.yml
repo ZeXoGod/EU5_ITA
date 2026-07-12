@@ -8,20 +8,18 @@
  flavor_tre.1.b: "Lascia che muoiano di fame fuori dalle mura..."
 
  flavor_tre.2.title: "Insubordinazione degli Scholarioi"
- flavor_tre.2.entry: "$flavor_tre.2.title$" #NEW
+ flavor_tre.2.entry: "$flavor_tre.2.title$"
  flavor_tre.2.desc: "Motivati dalla scomparsa dell'autorità centrale e spinti dalla loro avidità insaziabile, molti membri delle milizie nobili locali sono venuti a controllare grandi fasce della scena politica in [target_location.GetName]. Mentre erano sempre felici di ricevere un nuovo ufficio, privilegi e proprietà preziose, molti membri [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] hanno oltrepassato il limite... Se non agiamo in modo decisivo contro di loro, la loro tendenza alla corruzione potrebbe gettare l'intero paese nelle fauci della guerra civile!"
  flavor_tre.2.a: "Frena questi cani rabbiosi!"
  flavor_tre.2.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
- flavor_tre.2.b.entry: "$common_string_nothing_we_can_do_about_it$" #NEW
+ flavor_tre.2.b.entry: "$common_string_nothing_we_can_do_about_it$"
  flavor_tre.2.historical_info: "Gli Scholarioi erano influenti #italic άρχοντες#! (nobili), e una delle famiglie più potenti a Trebisonda. Erano originariamente formati come un'unità di milizia reale incaricata di proteggere la città. Presto divennero corrotti e contestarono l'autorità della seduta Imperatrice Irene, nel 1340. La loro audacia e sete di controllo li portarono a porre il veto all'ascensione di Irene, gettando l'intero paese nella guerra civile, mentre allo stesso tempo, il confine meridionale di Trebisonda era molestato da razzie Turkmen. Questo culminò con i predoni che catturarono la città, dandole fuoco e introducendo un'epidemia, che nacque dal fetore ripugnante di cadaveri in decomposizione - uomini e cavalli allo stesso modo."
 
  flavor_tre.3.title: "L'Avvelenamento di [target_character1.GetNameWithNoTooltip]"
  flavor_tre.3.entry: "Poisoning of Basil Megas Komnenos" #NEW
-# flavor_tre.3.desc: "In una mossa disperata di odio passionale e gelosia, [target_character2.GetName] è andato avanti con l'avvelenamento e il sigillo del destino di [target_character1.GetShortName]. Esacerbato da [target_character1.GetShortNameWithNoTooltip] apparenti sentimenti freddi verso [target_character2.GetHerHim] e l'esistenza di molte amanti e amanti..." #OLD
  flavor_tre.3.desc: "In a desperate move of passionate hate and jealousy, [target_character2.GetName] went through with poisoning and sealing the fate of [target_character1.GetShortName]. Exacerbated by [target_character1.GetShortNameWithNoTooltip] seeming cold feelings towards her and the existence of many mistresses and lovers..." #NEW
  flavor_tre.3.a: "Tutto è permesso in amore e guerra."
  flavor_tre.3.b: "Non accetteremo questo!"
-# flavor_tre.3.historical_info: "Il matrimonio tra Irene e Basilio non era che un modo per i Komnenoi di assicurare un'alleanza con l'Imperatore di Bisanzio, poiché Irene era la figlia illegittima dell'Imperatore Andronikos III Palaiologos. Anche se non c'era affetto tra i due, Irene non produsse figli mentre Basilio trovò rifugio nelle braccia di un'amante di corte. Il risentimento tra la coppia reale alla fine portò all'assassinio di Basilio, e l'inizio del regno di Irene, un periodo turbolento per Trebisonda." #OLD
  flavor_tre.3.historical_info: "The marriage between Irene and Basil was naught but a way for the Komnenoi dynasty to secure an alliance with the Emperor of Byzantium, as Irene was the illegitimate daughter of Emperor Andronikos III Palaiologos. There was no affection between the two; Irene produced no children, while Basil found refuge in the arms of a courtier mistress. The resentment between the royal couple eventually led to the assassination of Basil and the beginning of the reign of Irene, a turbulent period for Trebizond." #NEW
  flavor_tre.4.title: "The Legacy of [target_character_2.GetNameWithNoTooltip]" #NEW
  flavor_tre.4.entry: "The Reign of Alexios II" #NEW
@@ -30,7 +28,7 @@
  flavor_tre.4.a: "Rest now, great [ROOT.GetCountry.GetGovernment.GetRulerTitle]..." #NEW
  flavor_tre.4.a.entry: "Rest now, great ruler..." #NEW
  flavor_tre.5.title: "Motherland of Cherries" #NEW
- flavor_tre.5.entry: "$flavor_tre.5.title$" #NEW
+ flavor_tre.5.entry: "$flavor_tre.5.title$"
  flavor_tre.5.desc: "The [target_location.GetRank.GetName] of [ShowLocationName('giresun')] has long served as a modest yet important port along the southern [ShowAreaName('black_sea_area')]. Its harbor links the inland routes of the [ROOT.GetCountry.GetAdjective] mountains with maritime trade, offering opportunities for growth if properly encouraged.\n\nWhether through direct investment or patient governance, the future of [target_location.GetNameWithNoTooltip] will influence both local prosperity and the wider commercial standing of [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
  flavor_TRE_5_historical_info: "Kerasous, known today as Giresun, was an established settlement in the Pontus region with strategic value as a coastal port. For the Empire of Trebizond, such towns provided access to Black Sea commerce and acted as intermediaries between mountain economies and international trade networks. It is said that the name #italic Kerasous#! would eventually be used to describe a local sweet fruit, the cherry." #NEW
  flavor_tre.5.a: "A wise investment." #NEW
@@ -41,7 +39,7 @@
  flavor_tre.6.a: "Impose new taxes." #NEW
  flavor_tre.6.b: "Let us not antagonize them." #NEW
  flavor_tre.7.title: "The Aspron" #NEW
- flavor_tre.7.entry: "$flavor_tre.7.title$" #NEW
+ flavor_tre.7.entry: "$flavor_tre.7.title$"
  flavor_tre.7.desc: "[ShowGoodsName('silver')] extracted from the lands around [ShowLocationName('gumushane')] offers more than material wealth. Indeed, it underpins confidence in coinage and authority of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] alike. By expanding mining and minting activity in the [target_location.GetRank.GetName], the [ROOT.GetCountry.GetFlavorRank] may reinforce its monetary system and stimulate local development.\n\nYet such efforts require firm administration and immediate expense, and the strain of intensified extraction may unsettle both land and people if pushed too far." #NEW
  flavor_tre.7.a: "Focus on expanded extraction!" #NEW
  flavor_tre.7.b: "Such greed is unwise." #NEW

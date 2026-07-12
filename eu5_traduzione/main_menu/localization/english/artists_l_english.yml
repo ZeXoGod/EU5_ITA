@@ -186,7 +186,7 @@
  WORK_OF_ART_LOCATION_MODS: "In ogni [location|e], se questa è la migliore [work_of_art|e] presente, si applica quanto segue:"
  WORK_OF_ART_MODIFIER_SCALE: "Tutti i modificatori sono scalati di $VAL|%+=Y$:"
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Da [art_quality|e]: $VAL|%+=Y$"
- WORK_OF_ART_MODIFIER_SCALE_DESC: "I benefici forniti da un [WORK_OF_ART_TYPE.GetName] sono influenzati da questi modificatori:" #NEW
+ WORK_OF_ART_MODIFIER_SCALE_DESC: "I benefici forniti da un [WORK_OF_ART_TYPE.GetName] sono influenzati da questi modificatori:" 
  WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Dal [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!"
  CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y].\nLo sviluppo dell'[work_of_art|e] dipende dal livello di [court_maintenance|e]"
  CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]"
@@ -217,7 +217,7 @@
  teotihuacan_temple_desc: "Il Tempio del Sole a Teotihuacan, costruito intorno al 200 d.C., è una delle maggiori piramidi precolombiane delle Americhe. Situato nel cuore dell'antica città presso l'attuale Città del Messico, era allineato con fenomeni astronomici e svolgeva un ruolo centrale nella vita rituale mesoamericana. Costruito in pietra vulcanica e rivestito in stucco, simboleggiava il potere politico e religioso di Teotihuacan, tanto da influenzare civiltà successive, come gli Aztechi, che lo veneravano come luogo sacro."
  # Unique art keys
  de_jure_belli_ac_pacis: "De Jure Belli Ac Pacis"
- book_of_kells: "Libro di Kells" #NEW
+ book_of_kells: "Libro di Kells" 
  bayeux_tapestry_key: "Arazzo di $bayeux$"
  two_icons_of_archangel_michael: "Le Due Icone dell'Arcangelo Michele"
  vladislav_hall: "Sala Vladislav"
@@ -1145,4 +1145,14 @@
  carta_monastery_desc: "Fondato nel XIII secolo come abbazia Cistercense nei Carpazi meridionali della Transilvania, il monastero fu istituito sotto il patrocinio della corona Ungherese e popolato da monaci che seguivano gli austeri ideali dei Monaci Bianchi. La sua chiesa, costruita in uno stile di transizione dal Romanico al Gotico, presentava una facciata slanciata, archi a sesto acuto e volte a crociera. La sua costruzione introdusse e contribuì allo sviluppo dell'arte Gotica francese nella regione. Il complesso comprendeva edifici monastici disposti attorno a un chiostro, riflettendo l'enfasi Cistercense sulla semplicità, il lavoro manuale e la contemplazione."
  
  gospels_of_tsar_ivan_alexander: "I Vangeli dello Zar Ivan Alessandro"
- gospels_of_tsar_ivan_alexander_desc: "I Vangeli dello Zar Ivan Alessandro sono un volume riccamente miniato che incarna l'ambizione culturale e la devozione religiosa del secondo periodo d'oro della Bulgaria."
+ gospels_of_tsar_ivan_alexander_desc: "I Vangeli dello Zar Ivan Alessandro sono un volume riccamente miniato che incarna l'ambizione culturale e la devozione religiosa del secondo periodo d'oro della Bulgaria." 
+ leaning_tower_of_pisa: "Torre Pendente di Pisa" 
+ leaning_tower_of_pisa_desc: "La $leaning_tower_of_pisa$ fu costruita su fondamenta instabili, causando la famosa inclinazione che le dà il nome. La sua sagoma pendente è diventata iconica ed è ora la caratteristica distintiva di [ShowLocationName('pisa')]." 
+ boccaccio_on_the_fates_of_famous_men: "Sulle sorti degli uomini famosi" 
+ boccaccio_on_the_fates_of_famous_men_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], quest'opera tratta le varie storie di uomini importanti, dalle figure bibliche a coloro che vissero nel [GetCharacter('nap_giovanni_boccaccio').GetHisHer] tempo." 
+ boccaccio_the_decameron: "Il Decameron" 
+ boccaccio_the_decameron_desc: "#italic $boccaccio_the_decameron$#! racconta la storia di dieci individui che fuggono in campagna, sottraendosi alla [ShowSituationNameWithNoTooltip('black_death')] per un breve periodo di tregua." 
+ boccaccio_concerning_famous_women: "Sulle donne famose" 
+ boccaccio_concerning_famous_women_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], #italic $boccaccio_concerning_famous_women$#! contiene una raccolta di storie associate a molte donne eminenti della storia, perlopiù figure dell'antichità classica." 
+ ARTIST_TYPE_NAME_doctor: "Medico" 
+ ARTIST_TYPE_DESC_doctor: "Medici, chirurghi e guaritori dotti che hanno studiato la natura del corpo umano e le cause delle malattie. Tra i medici rinomati dell'epoca figurano Ibn Sina, Paracelso e Andreas Vesalio." 

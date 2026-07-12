@@ -25,15 +25,15 @@
  cancel_agitate_for_liberty_happened_title: "Incitamento alla libertà interrotto"
  cancel_agitate_for_liberty_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] smesso di incitare alla libertà [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName], che ora è di nuovo più leale verso [SCOPE.sCountry('recipient').GetDiplomacy.GetOverlord.Custom('IT_La')][SCOPE.sCountry('recipient').GetDiplomacy.GetOverlord.GetName]."
  cancel_agitate_for_liberty_proposal_question: "Interrompere l'incitamento alla Libertà [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$"
- break_agitate_for_liberty: "End Liberty Agitation" #NEW
- break_agitate_for_liberty_CATEGORY: "CATEGORY_COVERT_ACTIONS" #NEW
- break_agitate_for_liberty_cta: "Force [SCOPE.sCountry('recipient').GetName] to stop agitating for liberty" #NEW
- break_agitate_for_liberty_desc: "This will force them to stop supporting the subject's disloyalty." #NEW
- break_agitate_for_liberty_cta_to_unknown: "Force a [country|e] to stop agitating for liberty" #NEW
- break_agitate_for_liberty_desc_to_unknown: "This will force them to stop supporting the subject's disloyalty." #NEW
- break_agitate_for_liberty_happened_title: "Ended Liberty Agitation" #NEW
- break_agitate_for_liberty_happened_desc: "[SCOPE.sCountry('actor').GetName] forced [SCOPE.sCountry('recipient').GetName] to stop agitating for liberty." #NEW
- break_agitate_for_liberty_proposal_question: "Force [TARGET_COUNTRY.GetName] to stop agitating for liberty?\n$INFO$" #NEW
+ break_agitate_for_liberty: "Termina l'agitazione per la libertà" 
+ break_agitate_for_liberty_CATEGORY: "CATEGORY_COVERT_ACTIONS" 
+ break_agitate_for_liberty_cta: "Costringi [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] a interrompere l'agitazione per la libertà" 
+ break_agitate_for_liberty_desc: "Questo li costringerà a smettere di sostenere la slealtà del suddito." 
+ break_agitate_for_liberty_cta_to_unknown: "Costringi un [country|e] a interrompere l'agitazione per la libertà" 
+ break_agitate_for_liberty_desc_to_unknown: "Questo li costringerà a smettere di sostenere la slealtà del suddito." 
+ break_agitate_for_liberty_happened_title: "Agitazione per la libertà terminata" 
+ break_agitate_for_liberty_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha costretto [SCOPE.sCountry('recipient').Custom('IT_La')][SCOPE.sCountry('recipient').GetName] a interrompere l'agitazione per la libertà." 
+ break_agitate_for_liberty_proposal_question: "Costringere [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] a interrompere l'agitazione per la libertà?\n$INFO$" 
  agitate_for_liberty_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] incita alla libertà [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  agitate_for_liberty_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] incitato alla libertà [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  diplomatic_status_giving_agitate_for_liberty_name: "Incitando alla Libertà"
@@ -101,9 +101,18 @@
  cancel_corrupt_officials_happened_title: "Tentativo di corruzione interrotto"
  cancel_corrupt_officials_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] smesso di corrompere i funzionari [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]."
  cancel_corrupt_officials_proposal_question: "Interrompere la corruzione dei funzionari [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$"
+ break_corrupt_officials: "Poni fine alla corruzione" 
+ break_corrupt_officials_CATEGORY: "CATEGORY_COVERT_ACTIONS" 
+ break_corrupt_officials_cta: "Sradica la corruzione dei nostri funzionari da parte [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName]" 
+ break_corrupt_officials_desc: "Epureremo i funzionari corrotti e arresteremo gli agenti responsabili." 
+ break_corrupt_officials_cta_to_unknown: "Sradica la corruzione in un [country|e]" 
+ break_corrupt_officials_desc_to_unknown: "Epureremo i funzionari corrotti e arresteremo gli agenti stranieri responsabili." 
+ break_corrupt_officials_happened_title: "Corruzione sradicata" 
+ break_corrupt_officials_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha epurato i funzionari corrotti [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetNameWithNoTooltip]." 
+ break_corrupt_officials_proposal_question: "Sradicare la corruzione dei nostri funzionari da parte [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$" 
  corrupt_officials_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] corrompe i funzionari [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  corrupt_officials_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] corrotto i funzionari [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
- corrupt_officials_ongoing_tooltip: "Corrupting Officials in [TARGET_COUNTRY.GetName] who get the following\n[ShowModifierEffect('receiving_corrupt_officials')]" #NEW
+ corrupt_officials_ongoing_tooltip: "Corruzione dei funzionari [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName], che riceve quanto segue\n[ShowModifierEffect('receiving_corrupt_officials')]" 
  diplomatic_status_giving_corrupt_officials_name: "Corruzione dei Funzionari"
  diplomatic_status_giving_corrupt_officials_tooltip: "#T Corruzione dei Funzionari#!\nQuesto paese sta attivamente corrompendo i funzionari nei seguenti [countries|e]."
  diplomatic_status_receiving_corrupt_officials_name: "Funzionari Corrotti"
@@ -265,7 +274,7 @@
  offer_fondaco_rights_happened_title: "Diritti di Fondaco Concessi"
  offer_fondaco_rights_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] è libera di costruire Fondachi nei nostri confini."
  offer_fondaco_rights_proposal_question: "Offrire il diritto di costruire Fondachi nel territorio [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\n$INFO$"
- offer_fondaco_rights_incoming_proposal_title: "Fondaco Rights Offer" #NEW
+ offer_fondaco_rights_incoming_proposal_title: "Offerta di diritti di fondaco" 
  offer_fondaco_rights_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto Diritti di Fondaco. Vogliamo accettare?"
  request_fondaco_rights: "Richiedi Diritti di Fondaco"
  request_fondaco_rights_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -276,7 +285,7 @@
  request_fondaco_rights_happened_title: "Diritti di Fondaco Concessi"
  request_fondaco_rights_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ora ci permette di costruire Fondachi nei loro confini."
  request_fondaco_rights_proposal_question: "Richiedere il diritto di costruire Fondachi nel territorio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_fondaco_rights_incoming_proposal_title: "Fondaco Rights Request" #NEW
+ request_fondaco_rights_incoming_proposal_title: "Richiesta di diritti di fondaco" 
  request_fondaco_rights_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto Diritti di Fondaco. Vogliamo accettare?"
  cancel_fondaco_rights: "Revoca Diritti di Fondaco"
  cancel_fondaco_rights_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -323,6 +332,14 @@
  cancel_support_loyalists_happened_title: "Supporto ai Lealisti Annullato"
  cancel_support_loyalists_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] non fornisce più supporto attivo ai lealisti [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]."
  cancel_support_loyalists_proposal_question: "Interrompere il supporto ai lealisti [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$"
+ break_support_loyalists: "Termina il sostegno ai lealisti" 
+ break_support_loyalists_cta: "Termina il sostegno [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName] ai nostri lealisti" 
+ break_support_loyalists_desc: "Smaschereremo gli agenti che sostengono i lealisti nella nostra corte." 
+ break_support_loyalists_cta_to_unknown: "Termina il sostegno ai lealisti da parte di un [country|e]" 
+ break_support_loyalists_desc_to_unknown: "Smaschereremo gli agenti stranieri che sostengono i lealisti nella nostra corte." 
+ break_support_loyalists_happened_title: "Sostegno ai lealisti terminato" 
+ break_support_loyalists_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha terminato il sostegno [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetNameWithNoTooltip] ai propri lealisti." 
+ break_support_loyalists_proposal_question: "Terminare il sostegno [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] ai nostri lealisti?\n$INFO$" 
  support_loyalists_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] supporta i lealisti [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]"
  support_loyalists_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] supportato i lealisti [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]"
  diplomatic_status_giving_support_loyalists_name: "Supporto ai Lealisti"
@@ -331,6 +348,40 @@
  diplomatic_status_receiving_support_loyalists_tooltip: "#T Lealisti Supportati#!\nQuesto stato cliente ha i lealisti supportati dai seguenti [countries|e]."
  giving_support_loyalists_list_who_tt: "$WHO$ sta supportando i lealisti in $LIST$"
  receiving_support_loyalists_list_who_tt: "$WHO$ ha i propri lealisti supportati da $LIST$"
+ strengthen_family_ties_relation: "Legami familiari rafforzati" 
+ strengthen_family_ties_relation_desc: "Un [country|e] rafforzerà i propri legami familiari con uno dei propri [subjects|e], aumentandone la [subject_loyalty|e]." 
+ offer_strengthen_family_ties: "Rafforza i legami familiari" 
+ offer_strengthen_family_ties_cta: "Rafforza i legami familiari [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ offer_strengthen_family_ties_desc: "Rafforzeremo la posizione della nostra famiglia, aiutando la nostra dinastia a governare queste terre con maggiore efficienza." 
+ offer_strengthen_family_ties_cta_to_unknown: "Rafforza i legami familiari in un [country|e]" 
+ offer_strengthen_family_ties_desc_to_unknown: "Sosterremo coloro che hanno legami con la nostra dinastia e approvano il nostro dominio su di loro." 
+ offer_strengthen_family_ties_happened_title: "Legami familiari rafforzati!" 
+ offer_strengthen_family_ties_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] sta rafforzando i propri legami familiari con [SCOPE.sCountry('recipient').GetName], aumentandone la [subject_loyalty|e]." 
+ offer_strengthen_family_ties_proposal_question: "Rafforzare i legami familiari [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$" 
+ cancel_strengthen_family_ties: "Annulla il rafforzamento dei legami familiari" 
+ cancel_strengthen_family_ties_cta: "Smetti di rafforzare i legami familiari [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ cancel_strengthen_family_ties_desc: "Interromperemo il nostro sostegno attivo alla nostra famiglia nel [country|e]." 
+ cancel_strengthen_family_ties_cta_to_unknown: "Smetti di sostenere la nostra famiglia in un [country|e]" 
+ cancel_strengthen_family_ties_desc_to_unknown: "Interromperemo il nostro sostegno attivo alla nostra famiglia nel [country|e]." 
+ cancel_strengthen_family_ties_happened_title: "Rafforzamento dei legami familiari annullato" 
+ cancel_strengthen_family_ties_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] non fornisce più sostegno attivo alla propria famiglia [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]." 
+ cancel_strengthen_family_ties_proposal_question: "Smettere di sostenere la nostra famiglia [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$" 
+ break_strengthen_family_ties: "Interrompi i legami familiari rafforzati" 
+ break_strengthen_family_ties_cta: "Rifiuta il rafforzamento dei legami familiari da parte [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName]" 
+ break_strengthen_family_ties_desc: "Non accetteremo più il sostegno della famiglia del nostro signore nella nostra corte." 
+ break_strengthen_family_ties_cta_to_unknown: "Rifiuta il rafforzamento dei legami familiari da parte di un [country|e]" 
+ break_strengthen_family_ties_desc_to_unknown: "Non accetteremo più l'interferenza del nostro signore nelle nostre questioni familiari." 
+ break_strengthen_family_ties_happened_title: "Legami familiari recisi" 
+ break_strengthen_family_ties_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] non accetta più i legami familiari rafforzati [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetNameWithNoTooltip]." 
+ break_strengthen_family_ties_proposal_question: "Rifiutare il rafforzamento dei legami familiari da parte [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$" 
+ strengthen_family_ties_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] sostiene la propria famiglia [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ strengthen_family_ties_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha sostenuto la propria famiglia [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ diplomatic_status_giving_strengthen_family_ties_name: "Rafforzamento dei legami familiari" 
+ diplomatic_status_giving_strengthen_family_ties_tooltip: "#T Sostegno alla famiglia#!\nQuesto paese sostiene la propria famiglia nei seguenti [subjects|e]." 
+ diplomatic_status_receiving_strengthen_family_ties_name: "Legami familiari rafforzati" 
+ diplomatic_status_receiving_strengthen_family_ties_tooltip: "#T Sostegno alla famiglia#!\nLa famiglia del signore di questo suddito riceve sostegno dai seguenti [countries|e]." 
+ giving_strengthen_family_ties_list_who_tt: "$WHO$ sostiene la propria famiglia in $LIST$" 
+ receiving_strengthen_family_ties_list_who_tt: "La famiglia del signore di $WHO$ riceve sostegno da $LIST$" 
  #
  appanage_grant_admin_autonomy_relation: "Autonomia Amministrativa Concessa"
  appanage_grant_admin_autonomy_relation_desc: "Un [country|e] concederà una certa autonomia a uno dei propri [subjects|e] [ShowSubjectTypeName('appanage')], aumentando la loro [subject_loyalty|e] ma impedendo che vengano chiamati in [war|e]."
@@ -350,6 +401,14 @@
  cancel_appanage_grant_admin_autonomy_happened_title: "Autonomia Amministrativa Revocata"
  cancel_appanage_grant_admin_autonomy_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] non concede più Autonomia Amministrativa [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]."
  cancel_appanage_grant_admin_autonomy_proposal_question: "Interrompere l'Autonomia Amministrativa [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$"
+ break_appanage_grant_admin_autonomy: "Restituisci l'autonomia amministrativa" 
+ break_appanage_grant_admin_autonomy_cta: "Restituisci le nostre responsabilità amministrative [SCOPE.sCountry('actor').Custom('IT_Alla')][SCOPE.sCountry('actor').GetName]" 
+ break_appanage_grant_admin_autonomy_desc: "Restituiremo la nostra autonomia amministrativa al nostro signore." 
+ break_appanage_grant_admin_autonomy_cta_to_unknown: "Restituisci le responsabilità amministrative a un [country|e]" 
+ break_appanage_grant_admin_autonomy_desc_to_unknown: "Restituiremo la nostra autonomia amministrativa al nostro signore." 
+ break_appanage_grant_admin_autonomy_happened_title: "Autonomia amministrativa restituita" 
+ break_appanage_grant_admin_autonomy_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha restituito la propria autonomia amministrativa [SCOPE.sCountry('actor').Custom('IT_Alla')][SCOPE.sCountry('actor').GetNameWithNoTooltip]." 
+ break_appanage_grant_admin_autonomy_proposal_question: "Restituire la nostra autonomia amministrativa [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$" 
  appanage_grant_admin_autonomy_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] concede autonomia amministrativa [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
  appanage_grant_admin_autonomy_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] concesso autonomia amministrativa [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]"
  diplomatic_status_giving_appanage_grant_admin_autonomy_name: "Concessione Autonomia Amministrativa"
@@ -370,7 +429,7 @@
  offer_military_sponsorship_happened_title: "Ordine Militare Patrocinato"
  offer_military_sponsorship_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] è libero di costruire una [ShowBuildingTypeName('order_commandery')] in cambio di [power_projection|e] e dei propri servigi nelle future guerre contro gli Infedeli."
  offer_military_sponsorship_proposal_question: "Concedere [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] il diritto di costruire e mantenere una [ShowBuildingTypeName('order_commandery')] nel territorio [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\n$INFO$"
- offer_military_sponsorship_incoming_proposal_title: "Military Sponsorship Offer" #NEW
+ offer_military_sponsorship_incoming_proposal_title: "Offerta di sponsorizzazione militare" 
  offer_military_sponsorship_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto un Patrocinio Militare. Vogliamo accettare?"
  request_military_sponsorship: "Richiedi Patrocinio Militare"
  request_military_sponsorship_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
@@ -381,7 +440,7 @@
  request_military_sponsorship_happened_title: "Ordine Militare Patrocinato"
  request_military_sponsorship_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ci permette di costruire una [ShowBuildingTypeName('order_commandery')] in cambio dei nostri servigi nelle future guerre contro gli Infedeli."
  request_military_sponsorship_proposal_question: "Richiedere il diritto di costruire e mantenere una [ShowBuildingTypeName('order_commandery')] nel territorio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_military_sponsorship_incoming_proposal_title: "Military Sponsorship Request" #NEW
+ request_military_sponsorship_incoming_proposal_title: "Richiesta di sponsorizzazione militare" 
  request_military_sponsorship_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto un Patrocinio Militare. Vogliamo accettare?"
  cancel_military_sponsorship: "Espelli Ordine Militare"
  cancel_military_sponsorship_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -417,7 +476,7 @@
  offer_wako_sponsorship_happened_title: "$wokou_name_wako$ Finanziati"
  offer_wako_sponsorship_happened_desc: "Non siamo più oggetto delle razzie del [country|e]. Inoltre, abbiamo ottenuto [ShowModifier('giving_wako_sponsorship')]."
  offer_wako_sponsorship_proposal_question: "Concedere il nostro finanziamento [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] per assicurarci che non razzino il territorio [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]?\n$INFO$"
- offer_wako_sponsorship_incoming_proposal_title: "$wokou_name_wako$ Sponsorship Offer" #NEW
+ offer_wako_sponsorship_incoming_proposal_title: "Offerta di sponsorizzazione $wokou_name_wako$" 
  offer_wako_sponsorship_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto Finanziamento agli $wokou_name_wako$. Vogliamo accettare?"
  request_wako_sponsorship: "Richiedi Finanziamento agli $wokou_name_wako$"
  request_wako_sponsorship_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
@@ -428,7 +487,7 @@
  request_wako_sponsorship_happened_title: "$wokou_name_wako$ Finanziati"
  request_wako_sponsorship_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ci sta finanziando. In cambio, non potremo più prenderli di mira."
  request_wako_sponsorship_proposal_question: "Richiedere il finanziamento [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_wako_sponsorship_incoming_proposal_title: "$wokou_name_wako$ Sponsorship Request" #NEW
+ request_wako_sponsorship_incoming_proposal_title: "Richiesta di sponsorizzazione $wokou_name_wako$" 
  request_wako_sponsorship_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto il Finanziamento agli $wokou_name_wako$. Vogliamo accettare?"
  cancel_wako_sponsorship: "Annulla Finanziamento agli $wokou_name_wako$"
  cancel_wako_sponsorship_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -649,20 +708,20 @@
  cancel_rein_in_junior_diplomacy_happened_title: "Terminato il Freno alla Diplomazia del Partner Minore "
  cancel_rein_in_junior_diplomacy_happened_desc: "Non controlliamo più gli affari diplomatici [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]."
  cancel_rein_in_junior_diplomacy_proposal_question: "Smettete di frenare la Diplomazia del Partner Minore [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$"
- break_rein_in_junior_diplomacy: "Grant Junior Diplomatic Autonomy" #NEW
- break_rein_in_junior_diplomacy_cta: "Stop Reining in Junior Diplomacy of [SCOPE.sCountry('recipient').GetName]" #NEW
- break_rein_in_junior_diplomacy_desc: "Their diplomatic affairs are not the attics we have to burden ourselves with." #NEW
- break_rein_in_junior_diplomacy_cta_to_unknown: "Stop Reining in Junior Diplomacy of a [country|e]" #NEW
- break_rein_in_junior_diplomacy_desc_to_unknown: "Their diplomatic affairs are not the attics we have to burden ourselves with." #NEW
- break_rein_in_junior_diplomacy_happened_title: "Junior Diplomatic Autonomy Granted" #NEW
- break_rein_in_junior_diplomacy_happened_desc: "[SCOPE.sCountry('recipient').GetName] shall no longer have its diplomacy be dictated by [SCOPE.sCountry('actor').GetName]." #NEW
- break_rein_in_junior_diplomacy_proposal_question: "Grant Diplomatic Autonomy to [TARGET_COUNTRY.GetName]?\n$INFO$" #NEW
+ break_rein_in_junior_diplomacy: "Concedi autonomia diplomatica al partner minore" 
+ break_rein_in_junior_diplomacy_cta: "Smetti di tenere a freno la diplomazia del partner minore [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]" 
+ break_rein_in_junior_diplomacy_desc: "I loro affari diplomatici non sono grane di cui dobbiamo farci carico." 
+ break_rein_in_junior_diplomacy_cta_to_unknown: "Smetti di tenere a freno la diplomazia del partner minore di un [country|e]" 
+ break_rein_in_junior_diplomacy_desc_to_unknown: "I loro affari diplomatici non sono grane di cui dobbiamo farci carico." 
+ break_rein_in_junior_diplomacy_happened_title: "Autonomia diplomatica del partner minore concessa" 
+ break_rein_in_junior_diplomacy_happened_desc: "La diplomazia [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName] non sarà più dettata [SCOPE.sCountry('actor').Custom('IT_Dalla')][SCOPE.sCountry('actor').GetName]." 
+ break_rein_in_junior_diplomacy_proposal_question: "Concedere autonomia diplomatica [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$" 
  rein_in_junior_diplomacy_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('recipient').Custom('IT_Sta')] frenando la diplomazia [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  rein_in_junior_diplomacy_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] iniziato a frenare la diplomazia [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  diplomatic_status_giving_rein_in_junior_diplomacy_name: "Frenare la Diplomazia del Partner Minore"
  diplomatic_status_giving_rein_in_junior_diplomacy_tooltip: "#T Frenare la Diplomazia#!\nQuesto Paese sta frenando gli affari diplomatici di questi partner nella loro [union|e]."
  diplomatic_status_receiving_rein_in_junior_diplomacy_name: "Frenata la Diplomazia"
- diplomatic_status_receiving_rein_in_junior_diplomacy_tooltip: "#T Frenata la Diplomazia#!\nLa diplomazia di questo partner dell'[union|e] è stata frenata dai seguenti [countries|e]."
+ diplomatic_status_receiving_rein_in_junior_diplomacy_tooltip: "#T Diplomazia tenuta a freno#!\nLa diplomazia di questo [union_partner|e] è stata tenuta a freno dai seguenti [countries|e]." 
  giving_rein_in_junior_diplomacy_list_who_tt: "$WHO$ sta frenando la diplomazia di $LIST$"
  receiving_rein_in_junior_diplomacy_list_who_tt: "La diplomazia di $WHO$ è franata da $LIST$"
  #
@@ -677,7 +736,7 @@
  offer_sound_toll_exemption_happened_title: "Esenzione Concessa"
  offer_sound_toll_exemption_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] concesso un'esenzione dai [sound_tolls|e] [SCOPE.sCountry('recipient').Custom('IT_Alla')][SCOPE.sCountry('recipient').GetName]."
  offer_sound_toll_exemption_proposal_question: "Offrire [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] un'esenzione dal pagamento dei [sound_tolls|e]?\n$INFO$"
- offer_sound_toll_exemption_incoming_proposal_title: "[sound_toll|e] Exemption Offer" #NEW
+ offer_sound_toll_exemption_incoming_proposal_title: "Offerta di esenzione dal [sound_toll|e]" 
  offer_sound_toll_exemption_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto un'esenzione dal pagamento dei [sound_tolls|e]. Vogliamo accettare?"
  request_sound_toll_exemption: "Richiedi Esenzione dal Pedaggio dello Stretto"
  request_sound_toll_exemption_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -688,7 +747,7 @@
  request_sound_toll_exemption_happened_title: "Esenzione Concessa"
  request_sound_toll_exemption_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] ottenuto un'esenzione dal pagamento dei [sound_tolls|e] nelle acque [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]!"
  request_sound_toll_exemption_proposal_question: "Chiedere [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] di concederci un'esenzione dal pagamento dei [sound_tolls|e]?\n$INFO$"
- request_sound_toll_exemption_incoming_proposal_title: "[sound_toll|e] Exemption Request" #NEW
+ request_sound_toll_exemption_incoming_proposal_title: "Richiesta di esenzione dal [sound_toll|e]" 
  request_sound_toll_exemption_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto un'esenzione dal pagamento dei [sound_tolls|e]. Vogliamo accettare?"
  cancel_sound_toll_exemption: "Revoca Esenzione dal Pedaggio dello Stretto"
  cancel_sound_toll_exemption_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -749,7 +808,7 @@
  break_sow_discontent_proposal_question: "Fermare [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] dal seminare malcontento?\n$INFO$"
  sow_discontent_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] semina malcontento [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]"
  sow_discontent_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] seminato malcontento [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]"
- sow_discontent_ongoing_tooltip: "Sowing Discontent in [TARGET_COUNTRY.GetName] who get the following\n[ShowModifierEffect('receiving_sow_discontent')]" #NEW
+ sow_discontent_ongoing_tooltip: "Semina malcontento [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName], che riceve quanto segue\n[ShowModifierEffect('receiving_sow_discontent')]" 
  diplomatic_status_giving_sow_discontent_name: "Seminando Malcontento"
  diplomatic_status_giving_sow_discontent_tooltip: "#T Seminando Malcontento#!\nQuesto paese sta seminando malcontento in questi [countries|e]."
  diplomatic_status_receiving_sow_discontent_name: "Destabilizzato"
@@ -858,7 +917,7 @@
  offer_trade_access_happened_title: "Accesso al Mercato"
  offer_trade_access_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] [SCOPE.sCountry('actor').Custom('IT_Ha')] concesso alle [locations|E] [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName] un accesso migliore ai propri [markets|E]."
  offer_trade_access_proposal_question: "Chiedere che i nostri [markets|E] ottengano la preferenza [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_trade_access_incoming_proposal_title: "[market|e] Access Offer" #NEW
+ offer_trade_access_incoming_proposal_title: "Offerta di accesso al [market|e]" 
  offer_trade_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto un accesso migliore ai propri [markets|e]. Vogliamo accettare?"
  request_trade_access: "Richiedi Accesso Preferenziale al Mercato"
  request_trade_access_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"                                                         
@@ -869,7 +928,7 @@
  request_trade_access_happened_title: "Accesso al Mercato"
  request_trade_access_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] [SCOPE.sCountry('recipient').Custom('IT_Ha')] concesso alle [locations|E] [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName] un accesso migliore ai propri [markets|E]."
  request_trade_access_proposal_question: "Chiedere che le nostre [locations|E] ottengano la preferenza nei [markets|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_trade_access_incoming_proposal_title: "[market|e] Access Request" #NEW
+ request_trade_access_incoming_proposal_title: "Richiesta di accesso al [market|e]" 
  request_trade_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto un accesso migliore ai nostri [markets|e]. Vogliamo accettare?"
  cancel_trade_access: "Annulla il loro Accesso Preferenziale al Mercato"
  cancel_trade_access_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -910,7 +969,7 @@
  offer_exclusive_trade_rights_with_isolated_happened_title: "Diritti Commerciali Esclusivi"
  offer_exclusive_trade_rights_with_isolated_happened_desc: "[SCOPE.sCountry('recipient').Custom('IT_ART_RANGO')|U][SCOPE.sCountry('recipient').GetLongName] ha accettato l'offerta di Diritti Commerciali Esclusivi [SCOPE.sCountry('actor').Custom('IT_DEL_RANGO')][SCOPE.sCountry('actor').GetLongName]."
  offer_exclusive_trade_rights_with_isolated_proposal_question: "Offrire Diritti Commerciali Esclusivi?\n$INFO$"
- offer_exclusive_trade_rights_with_isolated_incoming_proposal_title: "Exclusive Trade Rights Offer" #NEW
+ offer_exclusive_trade_rights_with_isolated_incoming_proposal_title: "Offerta di diritti commerciali esclusivi" 
  offer_exclusive_trade_rights_with_isolated_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto diritti commerciali esclusivi. Vogliamo accettare?"
  request_exclusive_trade_rights_with_isolated: "Richiedi Diritti Commerciali Esclusivi"
  request_exclusive_trade_rights_with_isolated_CATEGORY: "CATEGORY_ECONOMY_ACTIONS"
@@ -959,7 +1018,7 @@
  offer_alliance_happened_title: "Alleanza!"
  offer_alliance_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] siglato un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]."
  offer_alliance_proposal_question: "Offrire un'[alliance|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_alliance_incoming_proposal_title: "[alliance|e] Offer" #NEW
+ offer_alliance_incoming_proposal_title: "Offerta di [alliance|e]" 
  offer_alliance_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto un'[alliance|e]. Vogliamo accettare?"
  cancel_alliance: "Rompere l'Alleanza"
  cancel_alliance_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"                                                    
@@ -974,6 +1033,7 @@
  alliance_effect_text: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sigla un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]."
  alliance_effect_text_past: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] siglato un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]."
  NEEDS_ALLIES_AGAINST_STRONG_RIVALS_AND_NEIGHBOURS: "Minacce da rivali e vicini"
+ IN_OPPOSING_RELIGIOUS_FACTONS: "In fazioni religiose opposte" 
  NEEDS_ALLIES_AGAINST_DIFFICULT_CONQUEST_TARGETS: "Difficoltà di conquistare gli obiettivi"
  ACTOR_DESIRES_RECIPIENTS_LOCATIONS: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetNameWithNoTooltip] desidera le terre [SCOPE.sCountry('recipient').Custom('IT_Della')|U][SCOPE.sCountry('recipient').GetNameWithNoTooltip]"
  RECIPIENTS_DESIRES_ACTORS_LOCATIONS: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetNameWithNoTooltip] desidera le terre [SCOPE.sCountry('actor').Custom('IT_Della')|U][SCOPE.sCountry('actor').GetNameWithNoTooltip]"
@@ -987,7 +1047,7 @@
  ACTOR_WOULD_NEED_TO_PAY_FOR_DIPLOMACY: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetNameWithNoTooltip] dovrebbe pagare per mantenere la relazione"
  RELATIVE_STRENGTH_RECIPIENT_ACTOR: "Forza [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName] contro quella  [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName]"
  COALITION_GRADE_ANTAGONISM_TOWARDS_RECIPIENT: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetNameWithNoTooltip] è un probabile bersaglio di una coalizione"
- COMMON_RIVALS: "Common [rivals|e]" #NEW
+ COMMON_RIVALS: "[rivals|e] comuni" 
 #
  fleet_basing_rights_relation: "Diritti di Ormeggio"
  fleet_basing_rights_relation_desc: "$game_concept_fleet_basing_rights_desc$"
@@ -1000,7 +1060,7 @@
  offer_fleet_basing_rights_happened_title: "Diritti di Ormeggio!"
  offer_fleet_basing_rights_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] concesso [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]."
  offer_fleet_basing_rights_proposal_question: "Offrire [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_fleet_basing_rights_incoming_proposal_title: "[fleet_basing_rights|e] Offer" #NEW
+ offer_fleet_basing_rights_incoming_proposal_title: "Offerta di [fleet_basing_rights|e]" 
  offer_fleet_basing_rights_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto [fleet_basing_rights|e]. Vogliamo accettare?"
  request_fleet_basing_rights: "Richiedi Diritti di Ormeggio"
  request_fleet_basing_rights_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1011,7 +1071,7 @@
  request_fleet_basing_rights_happened_title: "Diritti di Ormeggio!"
  request_fleet_basing_rights_happened_desc: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] sono stati concessi [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  request_fleet_basing_rights_proposal_question: "Richiedere [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_fleet_basing_rights_incoming_proposal_title: "[fleet_basing_rights|e] Request" #NEW
+ request_fleet_basing_rights_incoming_proposal_title: "Richiesta di [fleet_basing_rights|e]" 
  request_fleet_basing_rights_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto [fleet_basing_rights|e] nei nostri [ports|e]. Vogliamo accettare?"
  buy_request_fleet_basing_rights: "Acquista Diritti di Ormeggio"
  buy_request_fleet_basing_rights_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1022,7 +1082,7 @@
  buy_request_fleet_basing_rights_happened_title: "Diritti di Ormeggio Acquistati!"
  buy_request_fleet_basing_rights_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] acquistato [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  buy_request_fleet_basing_rights_proposal_question: "Richiedere l'acquisto di [fleet_basing_rights|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] per $COST$[gold_i]?\n$INFO$"
- buy_request_fleet_basing_rights_incoming_proposal_title: "[fleet_basing_rights|e] Purchase Request" #NEW
+ buy_request_fleet_basing_rights_incoming_proposal_title: "Richiesta di acquisto di [fleet_basing_rights|e]" 
  buy_request_fleet_basing_rights_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] richiesto di acquistare [fleet_basing_rights|e] nei nostri [ports|e] per $COST$[gold_i]. Vogliamo accettare?"
  cancel_fleet_basing_rights: "Revoca Diritti di Ormeggio"
  cancel_fleet_basing_rights_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1062,7 +1122,7 @@
  offer_food_access_happened_title: "Accesso al Cibo!"
  offer_food_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] concesso [food_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]."
  offer_food_access_proposal_question: "Offrire [food_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_food_access_incoming_proposal_title: "[food_access|e] Offer" #NEW
+ offer_food_access_incoming_proposal_title: "Offerta di [food_access|e]" 
  offer_food_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto [food_access|e]. Vogliamo accettare?"
  request_food_access: "Richiesta di Accesso al Cibo"
  request_food_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1073,7 +1133,7 @@
  request_food_access_happened_title: "Accesso al Cibo"
  request_food_access_happened_desc: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] è stato concesso [food_access|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  request_food_access_proposal_question: "Richiedere [food_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_food_access_incoming_proposal_title: "[food_access|e] Request" #NEW
+ request_food_access_incoming_proposal_title: "Richiesta di [food_access|e]" 
  request_food_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] richiesto [food_access|e]. Vogliamo accettare?"
  cancel_food_access: "Revoca l'Accesso al Cibo"
  cancel_food_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1122,7 +1182,7 @@
  request_guarantee_happened_title: "Garantito!"
  request_guarantee_happened_desc: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] è stata concessa una [guarantee|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  request_guarantee_proposal_question: "Richiedere una [guarantee|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_guarantee_incoming_proposal_title: "[guarantee|e] Request" #NEW
+ request_guarantee_incoming_proposal_title: "Richiesta di [guarantee|e]" 
  request_guarantee_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] richiesto una [guarantee|e]. Vogliamo accettare?"
  cancel_guarantee: "Revoca Garanzia"
  cancel_guarantee_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -1162,20 +1222,18 @@
  offer_military_access_happened_title: "Accesso Militare!"
  offer_military_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] concesso [military_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]."
  offer_military_access_proposal_question: "Offrire [military_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_military_access_incoming_proposal_title: "[military_access|e] Offer" #NEW
+ offer_military_access_incoming_proposal_title: "Offerta di [military_access|e]" 
  offer_military_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto [military_access|e]. Vogliamo accettare?"
  request_military_access: "Richiesta di Accesso Militare"
  request_military_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
  request_military_access_cta: "Richiedi [military_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
-# request_military_access_desc: "Chiedi loro di permettere ai nostri [armies|e] di attraversare le loro terre." #OLD
- request_military_access_desc: "Ask them to allow our [armies|e] through their lands, spending [favors|e] to convince them." #NEW
+ request_military_access_desc: "Chiedi loro di consentire il passaggio dei nostri [armies|e] attraverso le loro terre, spendendo [favors|e] per convincerli." 
  request_military_access_cta_to_unknown: "Richiedi [military_access|e] a un [country|e]"
-# request_military_access_desc_to_unknown: "Chiedi a un [country|e] di permettere ai nostri [armies|e] di attraversare le loro terre." #OLD
- request_military_access_desc_to_unknown: "Ask a [country|e] to allow our [armies|e] through their lands, spending [favors|e] to convince them." #NEW
+ request_military_access_desc_to_unknown: "Chiedi a un [country|e] di consentire il passaggio dei nostri [armies|e] attraverso le sue terre, spendendo [favors|e] per convincerlo." 
  request_military_access_happened_title: "Accesso Militare!"
  request_military_access_happened_desc: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] è stato concesso [military_access|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  request_military_access_proposal_question: "Richiedere [military_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_military_access_incoming_proposal_title: "[military_access|e] Request" #NEW
+ request_military_access_incoming_proposal_title: "Richiesta di [military_access|e]" 
  request_military_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] richiesto [military_access|e]. Vogliamo accettare?"
  buy_request_military_access: "Acquista l'Accesso Militare"
  buy_request_military_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1186,7 +1244,7 @@
  buy_request_military_access_happened_title: "Accesso Militare Acquistato!"
  buy_request_military_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] acquistato l'[military_access|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  buy_request_military_access_proposal_question: "Richiedere di acquistare [military_access|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName] per $COST$[gold_i]?\n$INFO$"
- buy_request_military_access_incoming_proposal_title: "[military_access|e] Purchase Request" #NEW
+ buy_request_military_access_incoming_proposal_title: "Richiesta di acquisto di [military_access|e]" 
  buy_request_military_access_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] ci richiesto di acquistare l'[military_access|e] per $COST$[gold_i]. Vogliamo accettare?"
  cancel_military_access: "Revoca Accesso Militare"
  cancel_military_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS"
@@ -1235,15 +1293,15 @@
  cancel_guarantee_vassal_independence_happened_title: "Garanzia d'Indipendenza del Vassallo Revocata!"
  cancel_guarantee_vassal_independence_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] smesso di garantire l'indipendenza degli stati clienti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  cancel_guarantee_vassal_independence_proposal_question: "Revocare la garanzia sugli stati clienti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?"
- break_guarantee_vassal_independence: "Break Guarantee Vassal Independence" #NEW
- break_guarantee_vassal_independence_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" #NEW
- break_guarantee_vassal_independence_cta: "Break the guarantee independence of your subjects." #NEW
- break_guarantee_vassal_independence_desc: "[COUNTRY.GetName] will no longer defend your subjects if an annexation starts." #NEW
- break_guarantee_vassal_independence_cta_to_unknown: "Break guarantee independence of [country|e]'s subjects" #NEW
- break_guarantee_vassal_independence_desc_to_unknown: "[country|e] will no longer defend your subjects if an annexation starts." #NEW
- break_guarantee_vassal_independence_happened_title: "Subject guarantee broken!" #NEW
- break_guarantee_vassal_independence_happened_desc: "[TARGET_COUNTRY.GetName] broke the [guarantee|e] [COUNTRY.GetName] has given to their subjects." #NEW
- break_guarantee_vassal_independence_proposal_question: "Break the [guarantee|e] given by [COUNTRY.GetName] to your subjects?\n$INFO$" #NEW
+ break_guarantee_vassal_independence: "Infrangi la garanzia dell'indipendenza dei vassalli" 
+ break_guarantee_vassal_independence_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" 
+ break_guarantee_vassal_independence_cta: "Infrangi la garanzia dell'indipendenza dei tuoi sudditi." 
+ break_guarantee_vassal_independence_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non difenderà più i tuoi sudditi se inizia un'annessione." 
+ break_guarantee_vassal_independence_cta_to_unknown: "Infrangi la garanzia dell'indipendenza dei sudditi di un [country|e]" 
+ break_guarantee_vassal_independence_desc_to_unknown: "Un [country|e] non difenderà più i tuoi sudditi se inizia un'annessione." 
+ break_guarantee_vassal_independence_happened_title: "Garanzia dei sudditi infranta!" 
+ break_guarantee_vassal_independence_happened_desc: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha infranto la [guarantee|e] concessa [COUNTRY.Custom('IT_Dalla')][COUNTRY.GetName] ai propri sudditi." 
+ break_guarantee_vassal_independence_proposal_question: "Infrangere la [guarantee|e] concessa [COUNTRY.Custom('IT_Dalla')][COUNTRY.GetName] ai tuoi sudditi?\n$INFO$" 
  guarantee_vassal_independence_effect_text: "Gli stati clienti [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] sono garantiti [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  guarantee_vassal_independence_effect_text_past: "Gli stati clienti [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] erano garantiti [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]."
  diplomatic_status_giving_guarantee_vassal_independence_name: "Garanzia d'Indipendenza del Vassallo"  
@@ -1264,7 +1322,7 @@
  offer_anti_piracy_agreement_happened_title: "$anti_piracy_agreement_relation$ accettato!"
  offer_anti_piracy_agreement_happened_desc: "Abbiamo accettato di non inviare [privateers|e] nelle acque [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  offer_anti_piracy_agreement_proposal_question: "Offrire un $anti_piracy_agreement_relation$ [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- offer_anti_piracy_agreement_incoming_proposal_title: "$anti_piracy_agreement_relation$ Offer" #NEW
+ offer_anti_piracy_agreement_incoming_proposal_title: "Offerta di $anti_piracy_agreement_relation$" 
  offer_anti_piracy_agreement_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] offerto un $anti_piracy_agreement_relation$. Vogliamo accettare?"
  request_anti_piracy_agreement: "$anti_piracy_agreement_relation$"
  request_anti_piracy_agreement_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -1275,7 +1333,7 @@
  request_anti_piracy_agreement_happened_title: "$anti_piracy_agreement_relation$ accettato!"
  request_anti_piracy_agreement_happened_desc: "[TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] [TARGET_COUNTRY.Custom('IT_Ha')] accettato di non inviare [privateers|e] nelle acque [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]."
  request_anti_piracy_agreement_proposal_question: "Richiedere un $anti_piracy_agreement_relation$ [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]?\n$INFO$"
- request_anti_piracy_agreement_incoming_proposal_title: "$anti_piracy_agreement_relation$ Request" #NEW
+ request_anti_piracy_agreement_incoming_proposal_title: "Richiesta di $anti_piracy_agreement_relation$" 
  request_anti_piracy_agreement_incoming_proposal_question: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci [COUNTRY.Custom('IT_Ha')] richiesto un $anti_piracy_agreement_relation$. Vogliamo accettare?"
  break_anti_piracy_agreement: "Rompi l'$anti_piracy_agreement_relation$"
  break_anti_piracy_agreement_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
@@ -1322,39 +1380,71 @@
  cancel_anti_coalition_treaty_desc_to_unknown: "Non rispetteremo più il $anti_coalition_treaty_relation$."
  cancel_anti_coalition_treaty_happened_title: "$anti_coalition_treaty_relation$ Annullato!"
  cancel_anti_coalition_treaty_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] [COUNTRY.Custom('IT_Ha')] annullato il suo $anti_coalition_treaty_relation$ con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]."
- cancel_anti_coalition_treaty_proposal_question: "Annullare il $anti_coalition_treaty_relation$ con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]?" curb_pronoia_military_action: "$offer_curb_pronoia_military_action$" #NEW
- curb_pronoia_military_action_relation: "Military Action Curbed" #NEW
- curb_pronoia_military_action_relation_desc: "A [country|e] will curb the military actions of their [ShowSubjectTypeName('pronoia')], blocking them from declaring [wars|e] but reducing their [subject_loyalty|e]." #NEW
- offer_curb_pronoia_military_action: "Curb $pronoia$ Military Action" #NEW
- offer_curb_pronoia_military_action_cta: "Block any military action in [SCOPE.sCountry('recipient').GetName]" #NEW
- offer_curb_pronoia_military_action_desc: "We will block them from performing any offensive military action." #NEW
- offer_curb_pronoia_military_action_cta_to_unknown: "Curb the military actions of a [ShowSubjectTypeName('pronoia')]" #NEW
- offer_curb_pronoia_military_action_desc_to_unknown: "We will block them from performing any offensive military action." #NEW
- offer_curb_pronoia_military_action_happened_title: "Military Action Curbed" #NEW
- offer_curb_pronoia_military_action_happened_desc: "[SCOPE.sCountry('actor').GetName] is now curbing the military actions of [SCOPE.sCountry('recipient').GetName], blocking them from declaring wars." #NEW
- offer_curb_pronoia_military_action_proposal_question: "Curb Military Action in [TARGET_COUNTRY.GetName]?\n$INFO$" #NEW
- cancel_curb_pronoia_military_action: "Cancel Curb $pronoia$ Military Action" #NEW
- cancel_curb_pronoia_military_action_cta: "Stop curbing any military action in [SCOPE.sCountry('recipient').GetName]" #NEW
- cancel_curb_pronoia_military_action_desc: "We will stop our restricions of any military action in the [ShowSubjectTypeName('pronoia')]." #NEW
- cancel_curb_pronoia_military_action_cta_to_unknown: "Stop curbing any military actions in a [ShowSubjectTypeName('pronoia')]." #NEW
- cancel_curb_pronoia_military_action_desc_to_unknown: "We will stop our restricions of any military action in the [ShowSubjectTypeName('pronoia')]." #NEW
- cancel_curb_pronoia_military_action_happened_title: "Cancelled Curb $pronoia$ Military Action" #NEW
- cancel_curb_pronoia_military_action_happened_desc: "[SCOPE.sCountry('actor').GetName] no longer curbs the military actions of [SCOPE.sCountry('recipient').GetName]." #NEW
- cancel_curb_pronoia_military_action_proposal_question: "Stop curbing the military actions of [TARGET_COUNTRY.GetName]?\n$INFO$" #NEW
- curb_pronoia_military_action_effect_text: "[SCOPE.sCountry('actor').GetName] curb military actions in [SCOPE.sCountry('recipient').GetName]" #NEW
- curb_pronoia_military_action_effect_text_past: "[SCOPE.sCountry('actor').GetName] curbed military actions in [SCOPE.sCountry('recipient').GetName]" #NEW
- diplomatic_status_giving_curb_pronoia_military_action_name: "Curbing $pronoia$ Military Action" #NEW
- diplomatic_status_giving_curb_pronoia_military_action_tooltip: "#T Curbing $pronoia$ Military Action#!\nThis country is curbing the military actions of the following [ShowSubjectTypeName('pronoia')]." #NEW
- diplomatic_status_receiving_curb_pronoia_military_action_name: "Military Action Curbed" #NEW
- diplomatic_status_receiving_curb_pronoia_military_action_tooltip: "#T Military Action Curbed#!\nThis [ShowSubjectTypeName('pronoia')] has their military actions curbed by the following [countries|e]." #NEW
- giving_curb_pronoia_military_action_list_who_tt: "$WHO$ is Curbing $pronoia$ Military Action in $LIST$" #NEW
- receiving_curb_pronoia_military_action_list_who_tt: "$WHO$ has their military actions curbed by $LIST$" #NEW
- break_curb_pronoia_military_action: "Break $curb_pronoia_military_action$" #NEW
- break_curb_pronoia_military_action_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" #NEW
- break_curb_pronoia_military_action_cta: "Break $curb_pronoia_military_action$ with [TARGET_COUNTRY.GetName]." #NEW
- break_curb_pronoia_military_action_desc: "This will allow [TARGET_COUNTRY.GetName] to freely declare wars again." #NEW
- break_curb_pronoia_military_action_cta_to_unknown: "Break $curb_pronoia_military_action$ with [country|e]." #NEW
- break_curb_pronoia_military_action_desc_to_unknown: "This will allow them to freely declare wars again." #NEW
- break_curb_pronoia_military_action_happened_title: "$curb_pronoia_military_action$ broken!" #NEW
- break_curb_pronoia_military_action_happened_desc: "We have broken our $curb_pronoia_military_action$ with [TARGET_COUNTRY.GetName]." #NEW
- break_curb_pronoia_military_action_proposal_question: "Do we wish to break our $curb_pronoia_military_action$ with [TARGET_COUNTRY.GetName]?\n$INFO$" #NEW
+ cancel_anti_coalition_treaty_proposal_question: "Annullare il $anti_coalition_treaty_relation$ con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]?"
+ curb_pronoia_military_action: "$offer_curb_pronoia_military_action$" 
+ curb_pronoia_military_action_relation: "Azione militare limitata" 
+ curb_pronoia_military_action_relation_desc: "Un [country|e] limiterà le azioni militari del proprio [ShowSubjectTypeName('pronoia')], impedendogli di dichiarare [wars|e] e riducendone la [subject_loyalty|e]." 
+ offer_curb_pronoia_military_action: "Limita l'azione militare $pronoia$" 
+ offer_curb_pronoia_military_action_cta: "Blocca ogni azione militare [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ offer_curb_pronoia_military_action_desc: "Impediremo loro di compiere qualsiasi azione militare offensiva." 
+ offer_curb_pronoia_military_action_cta_to_unknown: "Limita le azioni militari di un [ShowSubjectTypeName('pronoia')]" 
+ offer_curb_pronoia_military_action_desc_to_unknown: "Impediremo loro di compiere qualsiasi azione militare offensiva." 
+ offer_curb_pronoia_military_action_happened_title: "Azione militare limitata" 
+ offer_curb_pronoia_military_action_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] sta ora limitando le azioni militari [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName], impedendogli di dichiarare guerra." 
+ offer_curb_pronoia_military_action_proposal_question: "Limitare l'azione militare [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]?\n$INFO$" 
+ cancel_curb_pronoia_military_action: "Annulla la limitazione dell'azione militare $pronoia$" 
+ cancel_curb_pronoia_military_action_cta: "Smetti di limitare ogni azione militare [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ cancel_curb_pronoia_military_action_desc: "Interromperemo le nostre restrizioni a qualsiasi azione militare nel [ShowSubjectTypeName('pronoia')]." 
+ cancel_curb_pronoia_military_action_cta_to_unknown: "Smetti di limitare ogni azione militare in un [ShowSubjectTypeName('pronoia')]." 
+ cancel_curb_pronoia_military_action_desc_to_unknown: "Interromperemo le nostre restrizioni a qualsiasi azione militare nel [ShowSubjectTypeName('pronoia')]." 
+ cancel_curb_pronoia_military_action_happened_title: "Limitazione dell'azione militare $pronoia$ annullata" 
+ cancel_curb_pronoia_military_action_happened_desc: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] non limita più le azioni militari [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]." 
+ cancel_curb_pronoia_military_action_proposal_question: "Smettere di limitare le azioni militari [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]?\n$INFO$" 
+ curb_pronoia_military_action_effect_text: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] limita le azioni militari [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ curb_pronoia_military_action_effect_text_past: "[SCOPE.sCountry('actor').Custom('IT_La')|U][SCOPE.sCountry('actor').GetName] ha limitato le azioni militari [SCOPE.sCountry('recipient').Custom('IT_In')][SCOPE.sCountry('recipient').GetName]" 
+ diplomatic_status_giving_curb_pronoia_military_action_name: "Limitazione dell'azione militare $pronoia$" 
+ diplomatic_status_giving_curb_pronoia_military_action_tooltip: "#T Limitazione dell'azione militare $pronoia$#!\nQuesto paese sta limitando le azioni militari dei seguenti [ShowSubjectTypeName('pronoia')]." 
+ diplomatic_status_receiving_curb_pronoia_military_action_name: "Azione militare limitata" 
+ diplomatic_status_receiving_curb_pronoia_military_action_tooltip: "#T Azione militare limitata#!\nQuesto [ShowSubjectTypeName('pronoia')] vede le proprie azioni militari limitate dai seguenti [countries|e]." 
+ giving_curb_pronoia_military_action_list_who_tt: "$WHO$ sta limitando l'azione militare $pronoia$ in $LIST$" 
+ receiving_curb_pronoia_military_action_list_who_tt: "$WHO$ vede le proprie azioni militari limitate da $LIST$" 
+ break_curb_pronoia_military_action: "Interrompi $curb_pronoia_military_action$" 
+ break_curb_pronoia_military_action_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" 
+ break_curb_pronoia_military_action_cta: "Interrompi $curb_pronoia_military_action$ con [TARGET_COUNTRY.GetName]." 
+ break_curb_pronoia_military_action_desc: "Questo permetterà [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] di dichiarare di nuovo guerra liberamente." 
+ break_curb_pronoia_military_action_cta_to_unknown: "Interrompi $curb_pronoia_military_action$ con un [country|e]." 
+ break_curb_pronoia_military_action_desc_to_unknown: "Questo permetterà loro di dichiarare di nuovo guerra liberamente." 
+ break_curb_pronoia_military_action_happened_title: "$curb_pronoia_military_action$ interrotto!" 
+ break_curb_pronoia_military_action_happened_desc: "Abbiamo interrotto il nostro $curb_pronoia_military_action$ con [TARGET_COUNTRY.GetName]." 
+ break_curb_pronoia_military_action_proposal_question: "Vogliamo interrompere il nostro $curb_pronoia_military_action$ con [TARGET_COUNTRY.GetName]?\n$INFO$" 
+ italian_wars_forced_access_relation: "Accesso forzato della Lega" 
+ italian_wars_forced_access_relation_desc: "Questo paese è stato costretto a concedere [military_access|e] e [food_access|e] a un capo della Lega." 
+ offer_italian_wars_forced_access_happened_title: "Accesso forzato imposto!" 
+ offer_italian_wars_forced_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha imposto [military_access|e] e [food_access|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]." 
+ cannot_break_unless_war_or_relation_expires_tt: "Questa relazione non può essere interrotta dal destinatario finché non scade" 
+ cancel_italian_wars_forced_access: "Revoca l'accesso forzato" 
+ cancel_italian_wars_forced_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS" 
+ cancel_italian_wars_forced_access_cta: "Revoca [military_access|e] e [food_access|e] forzati [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName]" 
+ cancel_italian_wars_forced_access_desc: "Non faremo più uso del loro territorio." 
+ cancel_italian_wars_forced_access_cta_to_unknown: "Revoca l'accesso forzato su un [country|e]" 
+ cancel_italian_wars_forced_access_desc_to_unknown: "Revoca [military_access|e] e [food_access|e] forzati." 
+ cancel_italian_wars_forced_access_happened_title: "Accesso forzato revocato!" 
+ cancel_italian_wars_forced_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha revocato l'accesso forzato [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName]." 
+ cancel_italian_wars_forced_access_proposal_question: "Revocare il nostro accesso forzato [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName]?" 
+ break_italian_wars_forced_access: "Espelli gli occupanti" 
+ break_italian_wars_forced_access_CATEGORY: "CATEGORY_ACCESS_ACTIONS" 
+ break_italian_wars_forced_access_cta: "Espelli le forze [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] dal nostro territorio" 
+ break_italian_wars_forced_access_desc: "Porremo fine a questo accesso imposto, a condizione che sia trascorso abbastanza tempo." 
+ break_italian_wars_forced_access_cta_to_unknown: "Espelli le forze di un [country|e] dal nostro territorio" 
+ break_italian_wars_forced_access_desc_to_unknown: "Termina un accordo di accesso forzato." 
+ break_italian_wars_forced_access_happened_title: "Accesso forzato terminato!" 
+ break_italian_wars_forced_access_happened_desc: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha espulso le forze [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] dal proprio territorio." 
+ break_italian_wars_forced_access_proposal_question: "Espellere [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] dal nostro territorio?" 
+ italian_wars_forced_access_effect_text: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] sono stati concessi [military_access|e] e [food_access|e] forzati [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName]." 
+ italian_wars_forced_access_effect_text_past: "[COUNTRY.Custom('IT_Alla')|U][COUNTRY.GetName] erano stati concessi [military_access|e] e [food_access|e] forzati [TARGET_COUNTRY.Custom('IT_Sulla')][TARGET_COUNTRY.GetName]." 
+ giving_italian_wars_forced_access_list_who_tt: "$WHO$ dispone di accesso forzato su $LIST$" 
+ receiving_italian_wars_forced_access_list_who_tt: "$WHO$ subisce accesso forzato da parte di $LIST$" 
+ diplomatic_status_giving_italian_wars_forced_access_name: "Accesso forzato ottenuto" 
+ diplomatic_status_giving_italian_wars_forced_access_tooltip: "#T Accesso forzato ottenuto#!\nQuesto paese ha estorto [military_access|e] e [food_access|e] ai seguenti [countries|e]:" 
+ diplomatic_status_receiving_italian_wars_forced_access_name: "Sottoposto ad accesso forzato" 
+ diplomatic_status_receiving_italian_wars_forced_access_tooltip: "#T Sottoposto ad accesso forzato#!\nQuesto paese è stato costretto a concedere [military_access|e] e [food_access|e] ai seguenti [countries|e]:" 

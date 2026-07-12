@@ -2,6 +2,8 @@
 
  HUMAN_PLAYER_RESPONSE: "In definitiva, poiché si tratta di un giocatore umano, la risposta effettiva dipenderà da loro."
  HUMAN_PLAYER_OVERLORD_RESPONSE: "In definitiva, poiché il loro [overlord|e] è un giocatore umano, la risposta effettiva dipenderà dal loro Signore Supremo."
+ HUMAN_PLAYER_DISPOSITION_LABEL: "Vista del giocatore sul tuo Paese" 
+ HUMAN_PLAYER_DISPOSITION_DESC: "Alla fine, poiché si tratta di un giocatore umano, la visione effettiva del tuo Paese dipenderà da lui." 
 
 
  not_possible_to_break_subject_in_truce: "@trigger_no! Non è possibile interrompere una relazione di [subject|e] quando è in corso una tregua. La tregua scadrà il $WHEN|Y$."
@@ -9,11 +11,9 @@
  country_lower_in_subject_chain: "@trigger_no![COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] è più in basso nella catena degli [subjects|e] rispetto [TARGET_COUNTRY.Custom('IT_AL_RANGO')][TARGET_COUNTRY.GetLongName|Y]!"
  country_is_at_war: "@trigger_no![COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] è in [war|e]!"
  THEY_ARE_THREAT_HEADER: "#T [COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithNoTooltip] è una Minaccia#!" 
-# THEY_ARE_NOT_THREAT_HEADER: "#T [COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithNoTooltip] NON è una [threat|e]" #OLD
  THEY_ARE_NOT_THREAT_HEADER: "#T [COUNTRY.GetNameWithNoTooltip] NON è una [threat|e]#!" 
- THREAT_DETAIL: "[COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] ha una [threat|e] di $VAL|2$, dovuta a\nL'impatto della distanza è $DIST|2%$" 
+ THREAT_DETAIL: "[TARGET_COUNTRY.GetLongName] percepisce una [threat|e] di $VAL|2$ da [COUNTRY.GetLongName]\nL'impatto della distanza è $DIST|2%$" 
  THREAT_LEVEL_BASE: "Valore Base: $VAL|-=2$" 
-# THREAT_LEVEL_DUE_TO_TAX: "$US|G0$ economia vs $THEM|R0$ economia a $DIST|V2%$: $VAL|-=2$" #OLD
  THREAT_LEVEL_DUE_TO_TAX: "Economia $US|G0$ contro economia $THEM|R0$ al $DIST|V2%$: $VAL|-=2$" 
  THREAT_LEVEL_DUE_TO_MP: "$US|G0$ militare vs $THEM|R0$ militare a $DIST|2V%$: $VAL|-=2$" 
  THREAT_LEVEL_DUE_TO_POP: "$US|G0$ popolazione vs $THEM|R0$ popolazione a $DIST|2V%$: $VAL|-=2$" 
@@ -41,8 +41,9 @@
  CATEGORY_UNION_ACTIONS: "Azioni Unione"
  CATEGORY_HRE_ACTIONS: "Azioni Imperiali"
  CATEGORY_CHINA_ACTIONS: "Azioni Celesti"
+ CATEGORY_MILITARY_ACTIONS: "Azioni Militari" 
  #
- DIPLOICON_TIP: "#T $TYPE$ #! $TYPE$ da $NATION|Y$.\nSe non rispondiamo prima del $DATE|Y$ rifiuteremo automaticamente."
+ DIPLOICON_TIP: "#T $TYPE$ #!\n$TYPE$ da $NATION|Y$.\nSe non rispondiamo prima del $DATE|Y$, rifiuteremo automaticamente." 
  spy_network: "Rete di Spionaggio"
  favors: "Favori"
  trust: "Fiducia"
@@ -65,19 +66,19 @@
 
  #
 
-# HEGEMONY_GAIN: "Sono necessari i seguenti requisiti per diventare l'[HEGEMONY.GetNameWithNoTooltip]\n$HOW$" #OLD
  HEGEMONY_GAIN: "[COUNTRY.GetName] ha bisogno di quanto segue per diventare [HEGEMONY.GetNameWithNoTooltip]:" 
-# HEGEMONY_LOSE: "Sono necessari i seguenti requisiti per perdere il titolo di [HEGEMONY.GetNameWithNoTooltip]\n$HOW$" #OLD
  HEGEMONY_LOSE: "[COUNTRY.GetName] detiene [HEGEMONY.GetNameWithNoTooltip] dal $DATE$ e la perderà automaticamente se accade quanto segue:" 
  HEGEMONY_LOSE_CONTESTING: "L'[hegemony|e] è contestata e potrebbe cambiare il $DATE$ a favore di un paese con un [great_power_score|e] più alto." 
 
  GREATPOWER_TITLE_HEADER: "La Grande Potenza [Country.Custom('IT_DEL_RANGO')][Country.GetLongNameWithNoTooltip]"
+ REGIONALPOWER_TITLE_HEADER: "La Potenza Regionale di [Country.GetLongNameWithNoTooltip]" 
  NORMALPOWER_TITLE_HEADER: "[Country.GetLongNameWithNoTooltip]"
- POWER_TEXT: "[Country.Custom('IT_La')|U][Country.GetName] è la #V ##[Country.GetGreatPowerRank]#! Potenza Mondiale con [Country.GetGreatPowerScore|V]." 
+ POWER_TEXT: "[Country.Custom('IT_La')|U][Country.GetName] è la #V ##[Country.GetGreatPowerRank]#! Potenza nel mondo con [Country.GetGreatPowerScore|V] [great_power_points|e]." 
  GREATPOWER_BENEFITS: "Essere la ##[Country.GetGreatPowerRank] Grande Potenza comporta i seguenti vantaggi:"
+ REGIONALPOWER_BENEFITS: "Essere una [regional_power|e] comporta i seguenti benefici:" 
  GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[Country.GetGreatPowerRank]#! con un [great_power_score|e] di $VAL|0V$."
  
- GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[COUNTRY.GetGreatPowerRank]#! con $HIGHEST_POWER|0V$ [great_power_score|e].\n\nAttualmente abbiamo bisogno di $THRESHOLD|0V$ più [great_power_score|e] per raggiungere lo status di [great_power|e], dato che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] è ultima con un punteggio di $LOWEST_GP|0V$." 
+ GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è #V ##[COUNTRY.GetGreatPowerRank]#! con $HIGHEST_POWER|0V$ [great_power_score|e].\n\nServe $THRESHOLD|0V$ [great_power_score|e] in più per ottenere lo status di [great_power|e].\n$BULLET$ Serve $GP|$ per essere una [great_power|e].\n$BULLET$ Serve $RP|$ per essere una [regional_power|e]." 
 
  CURENT_HEGEMENT: "Attualmente, [ActiveHegemonItem.GetHegemon.GetCurrent.Custom('IT_ART_RANGO')][ActiveHegemonItem.GetHegemon.GetCurrent.GetLongName]"
  PROCLAIM_HEGEMONY_TT: "Diventare l'[HEGEMONY.GetName]"
@@ -88,6 +89,12 @@
  GREAT_POWER_SCORE_SUBJECT: "$SUBJECT$: $VAL|+=0$"
  GREAT_POWER_SCORE_HEADER: "[great_power_score|e]:"
  GREAT_POWER_SCORE_INFO: "$WHY$"
+ GREAT_POWER_SCORE_POINTS: "[great_power_points|e]: $VAL$" 
+ GREAT_POWER_AREA_BREAKDOWN_HEADER: "Presenza nell'area:" 
+ GREAT_POWER_AREA_DOMINATED: "@trigger_yes![AREA.GetName] $COUNT$ di $THRESHOLD$ necessari: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|+=$#!" 
+ GREAT_POWER_AREA_PARTIAL: "@trigger_no![AREA.GetName] $COUNT$ di $THRESHOLD$ necessari: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|R$#!" 
+ GREAT_POWER_AREA_SCORE_BREAKDOWN: "#T [great_power_points|E] da [AREA.GetNameWithNoTooltip]#!\nBase Fiscale Totale dell'Area: $AREA_TAX_BASE|2V$\nMediana globale della [tax_base] delle Aree: $POINT_UNIT|2V$\n#italic Totale / Mediana: ($RAW_POINTS|2V$)#!\n$RAW_POINTS|2V$ limitato a 1-10: $PTS|V0$" 
+ REGIONAL_POWER_NOT_ADJACENT_REGION: "@trigger_no! Come [regional_power|e], possiamo usare questa azione solo contro i [countries|e] nelle nostre [regions|e] o in quelle adiacenti." 
  GREAT_POWER_SCORE_OVERLORD: "[SUBJECT_TYPE.GetName] Perde $PERCENT|+=0%$ a favore del [overlord|e] $OVERLORD$: $VAL|+=0$"
  GREAT_POWER_SCORE_EXEMPT_FROM_FORFEIT: "Esente da Perdita:"
  HEGEMONY_NO: "Non è possibile proclamarsi [HEGEMONY.GetName] a causa di:\n$WHY$"
@@ -147,7 +154,10 @@
  SCRIPTED_RELATION_MERCHANTS_PERCENT: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] perde $VAL|-2%$ di [merchant_power|e] e [merchant_capacity|e] a favore [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]."
  SCRIPTED_RELATION_LIFTS_TRADE_PROTECTION: "$EFFECT_LIST_BULLET$Rimuove la [trade_protection|e] tra i [countries|e]."
  SCRIPTED_RELATION_ALLOWS_MAP_SHARING: "$EFFECT_LIST_BULLET$Consente la condivisione delle mappe tra i [countries|e]."
- SCRIPTED_RELATION_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] diffonde $VAL|+=2%$ delle [institutions|e] [Concept('embraced', 'Adottate')|e] a [TARGET_COUNTRY.GetCapital.GetName]."
+ SCRIPTED_RELATION_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] diffonde $VAL|+=2$ [institutions|e] [Concept('embraced', 'Adottate')|e] verso [TARGET_COUNTRY.GetCapital.GetName]." 
+ SCRIPTED_RELATION_INSTITUTION_SPREAD_UNKNOWN: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] diffonde $VAL|+=2$ [institutions|e] [Concept('embraced', 'Adottate')|e] verso la Capitale del Paese Bersaglio." 
+ SCRIPTED_RELATION_FAVORS: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene $VAL|+=2$ [favors|e] [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]." 
+ SCRIPTED_RELATION_FAVORS_UNKNOWN: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene $VAL|+=2$ [favors|e] dal Paese Bersaglio." 
  SCRIPTED_RELATION_EMBARGO: "$EFFECT_LIST_BULLET$[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] blocca i [merchants|e] [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]."
  SCRIPTED_RELATION_EXEMPT_FROM_SOUND_TOLL: "$EFFECT_LIST_BULLET$[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] è esente dai [sound_tolls|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName]."
  SCRIPTED_RELATION_EXEMPT_FROM_ISOLATION: "$EFFECT_LIST_BULLET$[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] può [Concept('trade', 'Commerciare')|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName] nonostante l'isolamento [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]."
@@ -184,7 +194,6 @@
  FAVOR_CHANGE_TT: "Valore Base: $BASE|Y$\nL'[cultural_influence|e] [COUNTRY.GetCulture.Custom('IT_CUL_FS')] contro la [cultural_tradition|e] [TARGET_COUNTRY.GetCulture.Custom('IT_CUL_FS')]: $CULTURE|+=2%$"
  CURRY_FAVORSBUILD: "$ACTOR$ sta attivamente cercando [favors|e] dalla $RECIPIENT$, quindi $WHO$ ottiene $VAL|+=2$ ogni mese a causa di:\n"
  CURRY_FAVORSBUILD_NOT: "Attualmente non ci sono cambiamenti nei [favors|e] tra $ACTOR$ e $RECIPIENT$."
-# CURRY_FAVORS_DESC_TT: "Ciò aumenterà i [favors|e] che $COUNTRY$ ci dovrà di $VAL|+=2$ ogni mese, aumentando al contempo i favori che dobbiamo loro di $VAL2|+=.$" #OLD
  CURRY_FAVORS_DESC_TT: "Questo aumenterà i [favors|E] che $COUNTRY$ ci dovrà di $VAL|+=2$ ogni mese, aumentando al contempo i favori che noi dobbiamo a loro di $VAL2|+=$.\n$LIMIT_DESC$" 
  CURRY_FAVORSDESC: "Desideriamo cercare [favors|e] da $COUNTRY$? Otterremo $VAL|+=2$ ogni mese. Questi potranno poi essere utilizzati per ottenere il loro aiuto in varie iniziative diplomatiche."
  CANCEL_CURRY_FAVORS_DESC_TT: "Ciò interromperà i nostri tentativi di cercare [favors|e] dalla $COUNTRY$."
@@ -196,9 +205,7 @@
  SPY_NETWORK_NONE: "Non abbiamo una [spy_network|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetNameWithNoTooltip|V], né ne stiamo costruendo una."
  SPYNETWORK_BENEFITS_SIEGE: "• Velocizza i nostri assedi alle loro terre del $VAL|+=2%$"
  SPYNETWORK_REDUCE_ANTAGONISM: "• Riduce di $VAL|-=2%$ il modo in cui il nostro [antagonism|e] è percepito da loro"
-# ACTUAL_BUILD_SPY_TT: "Valore Base: $BASE|Y$\nCostruzione Rete di Spionaggio [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]: [COUNTRY.GetModifierValue('spy_network_construction')]\nControspionaggio [TARGET_COUNTRY.GetAdjective]: [TARGET_COUNTRY.GetModifierValueInverse('counter_espionage')]\n[cultural_influence|e] [COUNTRY.GetCulture.GetName] vs [cultural_tradition|e] [TARGET_COUNTRY.GetCulture.GetName]: $CULTURE|+=2%$" #OLD
  ACTUAL_BUILD_SPY_TT: "Valore base: $BASE|Y$\nCostruzione della rete spionistica di [COUNTRY.GetName]: [COUNTRY.GetModifierValue('spy_network_construction')]\nControspionaggio di [TARGET_COUNTRY.GetName]: [TARGET_COUNTRY.GetModifierValueInverse('counter_espionage')]\n[cultural_influence|e] [COUNTRY.GetCulture.GetName] contro [cultural_tradition|e] [TARGET_COUNTRY.GetCulture.GetName]: $CULTURE|+=2%$" 
-# ACTUAL_COUNTER_SPY_TT: "La probabilità di scoperta della Spia è del $CHANCE|2%$ all'anno una volta che la rete è almeno a [GetDefine('NDiplomacy','MIN_SPY_NETWORK_SIZE_FOR_DISCOVERY')][spy_network_i].\n\nValore Base: $BASE|%Y$\nControspionaggio [TARGET_COUNTRY.GetAdjective]: [COUNTRY.GetModifierValue('counter_espionage')]\n[cultural_influence|e] [COUNTRY.GetCulture.GetName] vs [cultural_tradition|e] [TARGET_COUNTRY.GetCulture.GetName]: $CULTURE|+=2%$" #OLD
  ACTUAL_COUNTER_SPY_TT: "La probabilità di scoperta della spia è $CHANCE|2%$ all'anno una volta che la rete è almeno a [GetDefine('NDiplomacy','MIN_SPY_NETWORK_SIZE_FOR_DISCOVERY')][spy_network_i].\n\nValore base: $BASE|%Y$\nControspionaggio di [TARGET_COUNTRY.GetName]: [TARGET_COUNTRY.GetModifierValue('counter_espionage')]\n[cultural_influence|e] [COUNTRY.GetCulture.GetName] contro [cultural_tradition|e] [TARGET_COUNTRY.GetCulture.GetName]: $CULTURE|+=2%$" 
  #
  SELECT_TRANSFER_OCCUPATION_TARGET: "Selezionare il [country|e] a cui trasferire il [control|e]"
@@ -210,21 +217,18 @@
  WAR_COMPLETE_VICTORY: "$SIDE$ ha una vittoria completa: $VAL|+=2%$"
  NO_WAR_DUE_TO_SCRIPTED: "@trigger_no! Non possiamo dichiarare [war|e] a una nazione con cui abbiamo un $NAME$."
  ANNUL_TREATIES_BLOCKS: "@trigger_fail! Siamo stati costretti ad annullare tutti i trattati con $NAME$ fino a $DATE|Y$"
-# ALREADY_GIVING_RELATION: "@trigger_no! Stiamo già concedendo [RELATION_TYPE.GetName] [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]." #OLD
  ALREADY_GIVING_RELATION: "@trigger_no! Stiamo già concedendo $RELATION$ a [TARGET_COUNTRY.GetName]." 
-# ALREADY_RECEIVING_RELATION: "@trigger_no! Stiamo già ricevendo [RELATION_TYPE.GetName] [COUNTRY.Custom('IT_Dalla')][COUNTRY.GetName]." #OLD
  ALREADY_RECEIVING_RELATION: "@trigger_no! Stiamo già ricevendo $RELATION$ da [TARGET_COUNTRY.GetName]." 
-# ALREADY_HAVE_RELATION: "@trigger_no! Abbiamo già una [RELATION_TYPE.GetName] con [COUNTRY.Custom('IT_La')][COUNTRY.GetName]." #OLD
  ALREADY_HAVE_RELATION: "@trigger_no! Abbiamo già una $RELATION$ con [TARGET_COUNTRY.GetName]." 
  CANNOT_CANCEL_NO_RELATION: "@trigger_no! Non abbiamo una [RELATION_TYPE.GetName] con [COUNTRY.Custom('IT_La')][COUNTRY.GetName]."
  CANNOT_BREAK_NO_RELATION: "@trigger_no! Non abbiamo una [RELATION_TYPE.GetName] con [COUNTRY.Custom('IT_La')][COUNTRY.GetName] da interrompere."
-# CANNOT_CANCEL_EXPIRY_DATE: "@trigger_no! Non possiamo annullare questa [RELATION_TYPE.GetName] prima di $DATE|Y$." #OLD
  CANNOT_CANCEL_EXPIRY_DATE: "@trigger_no! Non possiamo annullare questa $RELATION$ fino al $DATE|Y$." 
  CANNOT_CANCEL_LOCKED: "@trigger_no! Questa $RELATION$ è bloccata." 
  CANNOY_BUY_RELATION: "@trigger_no! Non possiamo comprare [RELATION_TYPE.GetName] a nessun prezzo."
  SCRIPT_DIP_MUTUAL: "$EFFECT_LIST_BULLET$Mentre questo trattato è attivo, entrambi ottengono $MODIFIER_NAME$."
  SCRIPT_DIP_GIVING: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene $MODIFIER_NAME$."
  SCRIPT_DIP_RECIEVES: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene $MODIFIER_NAME$."
+ SCRIPT_DIP_RECIEVES_UNKNOWN: "$EFFECT_LIST_BULLET$Il Paese Bersaglio ottiene $MODIFIER_NAME$." 
  SCRIPT_DIP_MUTUAL_OPINION_POS: "$EFFECT_LIST_BULLET$Mentre questo trattato è attivo, entrambi ottengono $VALUE|+0$ [opinion|e] l'uno dell'altro."
  SCRIPT_DIP_MUTUAL_OPINION_NEG: "$EFFECT_LIST_BULLET$Mentre questo trattato è attivo, entrambi perdono $VALUE|-0$ [opinion|e] l'uno dell'altro."
  SCRIPT_DIP_GIVING_OPINION_POS: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene $VALUE|+0$ [opinion|e] nei confronti [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
@@ -246,10 +250,9 @@
  ENEMY_RIVAL: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithNoTooltip] è nostro [enemy|e]!"
  TOO_MANY_RIVALS: "@trigger_no! Possiamo avere solo un massimo di $MAX$ rivali contemporaneamente."
  CAN_NOT_REPLACE_RIVAL_SELF: "@trigger_no! Non possiamo essere rivali di noi stessi."
- ADD_RIVAL: "Designa $NEW$ come nostro rivale"
- ADD_RIVAL_ALREADY: "@trigger_no!$NEW$ è già il nostro rivale"
+ ADD_RIVAL: "Designa $NEW$ come nostro rivale."
+ ADD_RIVAL_ALREADY: "@trigger_no!$NEW$ è già il nostro rivale."
  COUNTRY_DIPLOMACY_INFO: "Guadagniamo $GAIN$ [diplomats|e] ogni mese.\nÈ possibile accumulare fino a un massimo di $MAX$."
-# SUBJECT_PAYS_ENTRY: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName]($TYPE$): #TOOLTIP:$BREAKDOWN_TAG$ $CHANGE$#!" #OLD
  SUBJECT_PAYS_ENTRY: "[COUNTRY.GetName]($TYPE$): $CHANGE$" 
  SUBJECT_INCOME_BREAKDOWN_MODIFIER: "$MODIFIER_NAME$: [COUNTRY.GetModifierValueNoSign('subject_income_modifier')]"
  PAYMENT_TO_OVERLORD_BREAKDOWN_MODIFIER: "$MODIFIER_NAME$: [COUNTRY.GetModifierValueNoSign('payment_to_overlord_modifier')]"
@@ -292,6 +295,7 @@
  SHED_SHACKLES_OF_ILKHANATE_WAR_NAME: "La $NUM$$ORDER$ Guerra contro $SECONDNAME$ per la $cb_shed_shackles_of_the_ilkahante$"
  religious_superiority_WAR_NAME: "La Guerra delle Religioni"
  LATIN_RECONQUEST_WAR_NAME: "La $NUM$$ORDER$ Riconquista contro $SECONDNAME$" 
+ SECURE_ITALY_WAR_NAME: "La $NUM$$ORDER$ Guerra Italiana di $FIRSTNAME$ contro $SECONDNAME$" 
 
  LIST_OF_DEMANDS: "Lista delle Richieste:\n"
  LIST_OF_OFFERS: "Lista delle Offerte:\n"
@@ -308,7 +312,6 @@
  ANNEXATION_TARGET_OF_COUNTRY_TITLE: "Annessione in corso da parte [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
  SUBJECT_TYPE_TOOLTIP_TEXT: "[Country.Custom('IT_La')|U][Country.GetName] è un [Country.GetSubjectTypeLabel] [Country.Custom('IT_Della')][Country.GetDiplomacy.GetOverlord.GetName]."
  SUBJECT_TYPE2_TOOLTIP_TEXT: "[RelationDescItem.GetCountry.Custom('IT_La')|U][RelationDescItem.GetCountry.GetName] è un [RelationDescItem.GetCountry.GetSubjectTypeLabel] [RelationDescItem.GetCountry.GetDiplomacy.GetOverlord.Custom('IT_Della')][RelationDescItem.GetCountry.GetDiplomacy.GetOverlord.GetName]."
-# SUBJECT_TYPE_TOOLTIP_TEXT_TITLE: "[RelationTypeItem.GetName] [RelationTypeItem.GetCountry.Custom('IT_Della')][RelationTypeItem.GetCountry.GetNameWithNoTooltip]" #OLD
  SUBJECT_TYPE_TOOLTIP_TEXT_TITLE: "[RelationTypeItem.GetName] di [RelationTypeItem.GetCountry.GetNameWithNoTooltip]" 
  SUBJECTS_COUNTRY_TOOLTIP: "$game_concept_subjects$ [Country.Custom('IT_DEL_RANGO')][Country.GetLongNameWithNoTooltip]"
  COLONIAL_SUBJECTS_TOOLTIP_TEXT_TITLE: "Stati Clienti Coloniali [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
@@ -316,7 +319,6 @@
  RELATION_TYPE_ITEM_TOOLTIP_TITLE_DEFAULT: "[RelationTypeItem.GetName|e]"
  WARS_FROM_COUNTRY_TITLE: "Guerre [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]"
  WAR_WITH_COUNTRY_TITLE: "Guerra con [Country.Custom('IT_La')][Country.GetNameWithNoTooltip]"
-# COALITION_AGAINST_US_TITLE: "Coalizione contro [Country.Custom('IT_La')][Country.GetNameWithNoTooltip]" #OLD
  COALITION_AGAINST_US_TITLE: "Coalizione contro [Player.GetNameWithNoTooltip]" 
  COALITION_AGAINST_US_DESC: "[Country.Custom('IT_La')|U][Country.GetName] è in una [coalition|e] contro di noi."
  WAR_WITH_COUNTRY_DESC: "[Country.Custom('IT_La')|U][Country.GetName] è in guerra con [GetPlayer.Custom('IT_La')][GetPlayer.GetName]."
@@ -368,13 +370,17 @@
  PEACE_COST_SCRIPTED_ENTRY_FORMAT: "$KEY$: $VALUE|+=0$"
  AI_SCRIPTED_ENTRY_FORMAT: "$KEY$: $VALUE|+=5$"
  AI_WILL_ACCEPT_ENTRY_FORMAT: "$KEY$: $VALUE|+=0$"
+ ACCEPTANCE_CHANCE_ENTRY_FORMAT: "$KEY$: $VALUE|+=0%$" 
  SELECT_TARGET_SORT_BY_ACCEPTANCE_TOTAL: "Ordina per accettazione" 
+ ACCEPTANCE_CHANCE_TOOLTIP_TITLE: "Probabilità di Accettazione" 
+ ACCEPTANCE_CHANCE_TOOLTIP_FOOTER: "Questa è una probabilità e non è mai garantita." 
  AI_WILL_ATTACK_ENTRY_FORMAT: "$KEY$: $VALUE|-=2$" 
  DP_MODIFIER_SCALE_FORMAT: "$KEY$: $VALUE+="$" 
  TWO_DP_NEG_ENTRY_FORMAT: "$KEY$: $VALUE|-=2$"
  TWO_DP_ENTRY_FORMAT: "nostro $KEY$: $VALUE|+=2$"
  TWO_DP_ENTRY_FORMAT_PERCENT: "$KEY|Y$: $VALUE|+2%$"
  TWO_DP_ENTRY_FORMAT_MULTIPLIER: "$KEY|Y$: $VALUE|2$"
+ TWO_DP_ENTRY_FORMAT_MULTIPLIER_SIGNED: "$KEY|Y$: $VALUE|=$" 
  TWO_DP_ENTRY_FORMAT_PERCENT_MULTIPLIER: "$KEY|Y$: $VALUE|+=2%$"
  TWO_DP_ENTRY_FORMAT_PERCENT_MULTIPLIER_NEG: "$KEY|Y$: $VALUE|-=2%$" 
  DIPLOMATIC_ACTION_TT: "#T $TITLE$ #!\n$DESC$"
@@ -403,9 +409,7 @@
  DIPMAPMODE_TT_FLEET_BASING: "$OWNER|U$ concede [fleet_basing_rights|e] a $WHO$"
  DIPMAPMODE_TT_TRADING: "$OWNER|U$ sta commerciando con $WHO$"
  DIPMAPMODE_TT_TRUCE: "$OWNER|U$ ha una [truce|e] con $WHO$ fino al $DATE$"
-# DIPMAPMODE_TT_RANGE_INSIDE: "@$FLAG$! $OWNER|U$ è #G all'interno#! della [diplomatic_range|e] ($RANGE|V$) di $WHO$ grazie a: $WHY$." #OLD
  DIPMAPMODE_TT_RANGE_INSIDE: "@$FLAG$! $OWNER|U$ è #G all'interno#! della [diplomatic_range|e] ($RANGE|V$) di $WHO$ ($WHY$)." 
-# DIPMAPMODE_TT_RANGE_OUTSIDE: "@$FLAG$! $OWNER|U$ è #R al di fuori##! della [diplomatic_range|e] ($RANGE|V$) di $WHO$ a causa di: $WHY$." #OLD
  DIPMAPMODE_TT_RANGE_OUTSIDE: "@$FLAG$! $OWNER|U$ è #R fuori#! dalla [diplomatic_range|e] ($RANGE|V$) di $WHO$ ($WHY$)." 
  #
  WAR_ATTACKERS: "Attaccanti: $NAME$"
@@ -448,12 +452,12 @@
  TOTAL_PEACE_COST_HUMAN_TT: "Costo Totale della Pace"
  TOTAL_COST_OF_PEACEOFFER: "Costo Totale della Pace"
  TOTAL_COST_OF_PEACEOFFER_TT_TEXT: "Questo è il [Concept('peace_cost', 'Costo Totale della Pace')|e] di questo trattato:"
- TOTAL_COST_OF_PEACE_T: "#T Costo Totale della Pace#!"
- TOTAL_COST_OF_PEACE_TEXT: "L'[peace_offer|e] attuale ha un costo totale di [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0].\nSe è troppo alto, l'altra nazione potrebbe non accettare."
- TOTAL_COST_OF_PEACE_HUMAN_TEXT: "L'[peace_offer|e] attuale ha un costo totale di [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0].\nSe è troppo alto, l'altra nazione, che è controllata da un altro giocatore, potrebbe non accettare."
- TOTAL_COST_OF_PEACE_REQUIREMENTS_T: "@trigger_no!È necessaria almeno #Y 1#! ragione #G positiva#! in più rispetto alle ragioni #R negative#! per un'accettazione."
+ TOTAL_COST_OF_PEACE_T: "#T [peace_cost] Totale#!" 
+ TOTAL_COST_OF_PEACE_TEXT: "L'attuale [peace_offer|e] ha un valore totale di [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nSe è troppo alto rispetto al [war_score_with_icon|e], l'altra nazione potrebbe non accettarlo. Non può mai essere superiore a #W 100#!." 
+ TOTAL_COST_OF_PEACE_HUMAN_TEXT: "L'attuale [peace_offer|e] ha un $game_concept_peace_cost$ totale di [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nSe è troppo alto rispetto al [war_score_with_icon|e], l'altra nazione, controllata da un altro giocatore, potrebbe non accettarlo. Non può mai essere superiore a #W 100#!." 
+ TOTAL_COST_OF_PEACE_REQUIREMENTS_T: "Serve almeno #Y 1#! ragione #G positiva#! in più rispetto a quelle #R negative#! per ottenere un'accettazione." 
  TOTAL_COST_OF_PEACE_REQUIREMENTS: "Ci sono [PeaceOfferLateralView.GetPeaceOfferPositiveReasons|+0] ragioni positive e [PeaceOfferLateralView.GetPeaceOfferNegativeReasons|+0] negative, per un totale di [PeaceOfferLateralView.GetTotalPeaceOfferReasons|+0] a causa di:"
- TOTAL_COST_OF_PEACE: "#T Costo Totale della Pace#!\nQuesto è quanto costa l'[peace_offer|e] attuale. Se è troppo alto, l'altra nazione potrebbe non accettare.\nCosto Totale Attuale: $VAL|Y0$\n\n"
+ TOTAL_COST_OF_PEACE: "#T [peace_cost] Totale#!\nEcco quanto costa l'attuale [peace_offer|e]. Se è troppo alto rispetto al [war_score_with_icon|e], l'altra nazione potrebbe non accettarlo. Non può mai essere superiore a #W 100#!.\nCosto Totale Attuale: $VAL|Y0$\n\n" 
  PEACE_TREATY_INHERIT_WARS_TT: "Questo [peace_treaty|e] ci farà ereditare [wars|e] dal nostro nuovo stato cliente."
  PEACE_OFFER_INHERIT_WARS_TT: "Questa offerta di pace ci farà ereditare [wars|e] dai nostri nuovi stati clienti."
  ENEMY_ALLIES: "Alleati dei Nemici"
@@ -461,7 +465,6 @@
  CALL_ALLY: "Chiama [COUNTRY.Custom('IT_La')][COUNTRY.GetName]"
  CB_ON_COUNTRY_ENTRY: "• $CASUS_BELLI$ #Y fino al#! $DATE|Y$"
  CB_ON_COUNTRY_ENTRY_NO_EXPIRE: "• $CASUS_BELLI$"
-# NO_DECAY_IN_OFF_WAR: "@trigger_no! Non c'è un decadimento intrinseco della nostra attuale #Y Espansione Aggressiva#!, poiché siamo attualmente gli aggressori in una [war|e]." #OLD
  NO_DECAY_IN_OFF_WAR: "@trigger_no! Non c'è alcun decadimento intrinseco del nostro #Y Antagonismo#! attuale, poiché siamo attualmente gli aggressori in una [war|e]." 
  CHANGE_DIP_STANCE_TT: "#T Cambia Posizione#!\n$WHY$"
  CHANGE_DIP_STANCE: "Costerà $COST$ cambiare posizione a $NAME|Y$, il che avrà i seguenti effetti:\n$EFFECT$"
@@ -539,7 +542,6 @@
  ENFORCE_PEACE_FLAVOR: "Una potenza di rango appropriato può imporre la pace in una [war|e] che non coinvolge un'altra nazione potente."
  THREATEN_WAR_TOOLTIP_HEADER: "Minaccia [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] di [war|e]"
  THREATEN_WAR_TOOLTIP_HEADER_NO_TARGET: "Minaccia un [country|e] di [war|e]"
-# THREATEN_WAR_FLAVOR: "Minacciare [war|e] consente a un Paese di prendere un territorio da un altro senza combattere una [war|e] contro di loro. Se accettato, il territorio scelto sarà trasferito in cambio di Espansione Aggressiva." #OLD
  THREATEN_WAR_FLAVOR: "Minacciare [war|e] permette a un paese di prendere un territorio da un altro senza combattere una [war|e] contro di esso. Se accettato, il territorio scelto sarà trasferito in cambio di Antagonismo." 
  FORCED_MILITARY_ACCESS: "Accesso Militare Forzato che non può essere annullato finché abbiamo una tregua."
  FORCED_FLEET_BASING_RIGHTS: "[fleet_basing_rights|e] forzati che non possono essere annullati finché abbiamo una tregua."
@@ -591,12 +593,9 @@
  INVITE_EXISTING_IODESC: "Vogliamo invitare [COUNTRY.Custom('IT_La')][COUNTRY.GetName] [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][INTERNATIONAL_ORGANIZATION.GetName]?"
  INVITE_IO_ALREADY: "Questa [INTERNATIONAL_ORGANIZATION_TYPE.GetName] ha i seguenti membri:\n$LIST$"
  INVITE_IOREQTITLE: "Unisciti a un'[international_organization|e]" 
-# INVITE_IOREQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] offre di unirsi a noi in un $IO_NAME$. $OTHER$" #OLD
  INVITE_IOREQDESC: "[COUNTRY.GetName] ci invita a una $IO_NAME$. $OTHER$" 
  INVITE_COALITION_ALREADY: "Questa [INTERNATIONAL_ORGANIZATION_TYPE.GetName] ha i seguenti membri:\n$LIST$"
-# INVITE_COALITIONREQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] offre di unirsi a noi in un $IO_NAME$. $OTHER$" #OLD
  INVITE_COALITIONREQDESC: "[COUNTRY.GetName] ci invita a una $IO_NAME$. $OTHER$" 
-# INVITE_EXISTING_IOREQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] offre di unirsi a noi [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][INTERNATIONAL_ORGANIZATION.GetName]. $OTHER$" #OLD
  INVITE_EXISTING_IOREQDESC: "[COUNTRY.GetName] ci invita a [INTERNATIONAL_ORGANIZATION.GetName]. $OTHER$" 
  INVITE_IOTITLE: "Nuova [INTERNATIONAL_ORGANIZATION_TYPE.GetNameWithNoTooltip]"
  INVITE_IOTITLE_IO: "Invita in [INTERNATIONAL_ORGANIZATION.GetNameWithNoTooltip]"
@@ -682,6 +681,7 @@
  DIPLO_NOT_HAS_INNER: "Non ha opzioni disponibili"
  CALLENEMY_T: "Solo il leader nemico può chiamare i [countries] nemici."
  CALLALLY_SUBJECT_T: "Questo [country] è uno [subject]"
+ CALLALLY_IO_LEADER_T: "Questo [country] è a capo di un'[international_organization] che protegge il difensore" 
  GOOD_BAD_RATIO_T: "Necessita almeno di #Y 1#! ragione #G positiva#!."
  GOOD_BAD_RATIO: "È necessaria almeno $THRESHOLD|Y$ ragione #G positiva#! in più rispetto a quelle #R negative#! per l'accettazione.\nLe loro ragioni per accettare sono $RATIO|Y+=$ a causa di:"
  GOOD_BAD_RATIO_TRIGGER_FAIL: "@trigger_no!È necessaria almeno $THRESHOLD|Y$ ragione #G positiva#! in più rispetto a quelle #R negative#! per l'accettazione.\nLe loro ragioni per accettare sono $RATIO|Y+=$ a causa di:"
@@ -705,6 +705,7 @@
  DIPLOREASON_REBELS: "[rebels|e] Attivi"
  DIPLOREASON_BASE_RELUCTANCE: "Riluttanza di Base"
  DIPLOREASON_AI_SETTING: "Impostazioni AI"
+ DIPLOREASON_IO_SIZE: "Dimensione dell'[international_organization|e]" 
  DIPLOREASON_NO_ACCESS: "non raggiungibile!"
  DIPLOREASON_FEW_RELATIONS: "Poche Alleanze"
  DIPLOREASON_DEFEAT: "Sconfitta Totale"
@@ -725,9 +726,9 @@
  DIPLOREASON_TRUST: "La loro [trust|e] nei nostri confronti"
  DIPLOREASON_OPINION: "Opinione"
  DIPLOREASON_TARGET_OPINION: "Opinione del Bersaglio"
- DIPLOREASON_WARSCORE: "[war_score|e]"
+ DIPLOREASON_WARSCORE: "[war_score_icon|e] [war_score|e] Attuale" 
  DIPLOREASON_MONTHS_AT_WAR: "Mesi in [war|e]"
- DIPLOREASON_PEACEOFFER: "Offerta di Pace"
+ DIPLOREASON_PEACEOFFER: "[peace_cost_icon|e] [peace_cost|e] Attuale" 
  DIPLOREASON_PLANNING_DEMISE: "Pianificano la Nostra Fine"
  DIPLOREASON_CONFLICTING_INTERESTS: "Interessi Conflittuali"
  DIPLOREASON_STRONGER_THAN_CURRENT_ALLIES: "Più Forti degli Alleati Attuali"
@@ -742,12 +743,15 @@
  DIPLOREASON_GIVING_DEFENSIVE_SUPPORT: "Verremo in loro aiuto se saranno attaccati"
  DIPLOREASON_RECEIVING_DEFENSIVE_SUPPORT: "Verranno in nostro aiuto se veniamo attaccati"
  DIPLOREASON_BASE: "Base"
+ DIPLOREASON_ECONOMICAL_BASE_DIFFERENCE: "Differenza nella [economical_base|e]" 
+ DIPLOREASON_OCCUPATION_VALUE: "Valore delle [locations|e] [Concept('occupied', 'Occupate')|e]" 
  DIPLOREASON_IS_NOT_LEADER_COUNTRY: "Non è il leader di [SCOPE.sInternationalOrganization('recipient').GetName]"
  DIPLOREASON_TARGET_CHARACTER_TOTAL_ABILITIES: "[total_ability|e] di [SCOPE.sCharacter('target').GetName]"
  DIPLOREASON_TARGET_CHARACTER_AGE: "Età di [SCOPE.sCharacter('target').GetName]" 
  DIPLOREASON_TARGET_CHARACTER_CULTURE: "[SCOPE.sCharacter('target').GetName] è [SCOPE.sCharacter('target').GetCulture.Custom('IT_CUL_MS')]"
  DIPLOREASON_TARGET_CHARACTER_RELIGION: "[SCOPE.sCharacter('target').GetName] è [SCOPE.sCharacter('target').GetReligion.Custom('IT_REL_MS')]"
  DIPLOREASON_WOULD_CREATE_UNION_WITH_US: "Potrebbe portare a una [union|e] tra le nostre corone"
+ RECIPIENT_NEEDS_HEIR: "[SCOPE.sCountry('recipient').Custom('IT_La')|U][SCOPE.sCountry('recipient').GetName] ha bisogno di un [heir|e]" 
  DIPLOREASON_COUNTRY_COST: "Costo del [war_score|e] del Paese"
  DIPLOREASON_UNION_SUPPORTS_ORGANIZATION: "Qualsiasi membro dell'[union|e] è nell'Organizzazione"
  DIPLOREASON_UNION_OPPOSES_ORGANIZATION: "Qualsiasi membro dell'[union|e] è nell'Organizzazione Opposta"
@@ -823,6 +827,7 @@
  DIPLOREASON_INTEREST_RATE_VS_BANK: "Tasso di Interesse rispetto alle banche"
  DIPLOREASON_EXISTING_LOANS_FROM_COUNTRY: "[loans|e] Esistenti dal Paese"
  DIPLOREASON_TOO_MANY_LOANS: "Troppi [loans|e]"
+ DIPLOREASON_NUM_OF_LOANS: "Numero di [loans|e]" 
  DIPLOREASON_CANT_AFFORD_INTEREST: "Non può permettersi gli [interest|e]"
  DIPLOREASON_NEED_LOAN: "Necessità di un [loan|e]"
  DIPLOREASON_LOAN_IS_INSIGNIFICANT: "L'ammontare del [loan|e] è insignificante per [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
@@ -830,6 +835,7 @@
  DIPLOREASON_LOAN_TOTAL_INTEREST_IS_TOO_MUCH: "L'[interest|e] totale pagabile è eccessivo"
  DIPLOREASON_LOAN_SKINT: "Senza Soldi"
  DIPLOREASON_USING_FAVORS: "Utilizzo di favori"
+ DIPLOREASON_MARRIAGE_DESIRABILITY: "Desiderabilità Matrimoniale" 
  DIPLOREASON_UNBALANCED_FAVORS: "Perderà [diplomatic_reputation|e] se rifiuta"
  DIPLOREASON_RELATIVE_STRENGTH: "Forza [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] rispetto a quella [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  DIPLOREASON_REVERSE_RELATIVE_STRENGTH: "Forza [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] rispetto a quella [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]"
@@ -847,7 +853,6 @@
  DIPLOREASON_RECIPIENT_OVERLORD_IS_RIVAL: "Il [overlord|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] è un [rival|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  DIPLOREASON_ACTOR_OVERLORD_IS_RIVAL: "Il [overlord|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] è un [rival|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]"
  DIPLOREASON_HOSTILE_RELATIONS: "Relazioni ostili già consolidate"
-# DIPLOREASON_RECIPIENT_AT_WAR: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] è in guerra" #OLD
  DIPLOREASON_RECIPIENT_AT_WAR: "@trigger_no![TARGET_COUNTRY.GetName] è in guerra" 
  DIPLOREASON_RECIPIENT_IS_IN_A_DISASTER: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] sta vivendo un [disaster|e]" 
  DIPLOREASON_RECIPIENT_WAR_EXHAUSTION: "La loro [war_exhaustion|e]" 
@@ -878,6 +883,7 @@
  DIPLOREASON_INTEREST_RATE_TOO_HIGH: "Tasso di interesse troppo alto"
  DIPLOREASON_GOOD_INTEREST_RATE: "Tasso di interesse favorevole"
  DIPLOREASON_LOAN_ENDS_TOO_LATE: "Durata del prestito troppo lunga"
+ DIPLOREASON_ACTOR_CREDITWORTHINESS: "Affidabilità Creditizia del Debitore" 
  DIPLOREASON_CURRENT_CURIA_PROPOSAL_DESIRE: "Approvazione della Proposta della Curia da parte [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  DIPLOREASON_STRATEGIC_INTEREST: "Interessi Strategici"
  DIPLOREASON_SAME_COURT_LANGUAGE: "Stessa [court_language|e]"
@@ -894,7 +900,7 @@
  DIPLOREASON_ROYAL_TIES_WITH_TARGET: "[royal_marriage|e] con il bersaglio" 
  DIPLOREASON_COMPETING_MERCHANT_REPUBLIC: "Repubblica Mercantile Concorrente"
  DIPLOREASON_CALL_FOR_PEACE: "Richiesta di Pace"
- DIPLOREASON_WAR_ENTHUSIAM: "[war_enthusiasm|e] Attuale"
+ DIPLOREASON_WAR_ENTHUSIAM: "Il loro [war_enthusiasm|e]" 
  DIPLOREASON_BETRAYED_ALLY: "Ha recentemente rotto una promessa di cedere terre"
  DIPLOREASON_REJECT_SUBJUGATION_REASONS: "A causa delle loro [ShowModifierTypeNameWithBreakdown('reject_subjugation_reasons', TARGET_COUNTRY.GetCountry)]"
  DIPLOREASON_ACCEPT_SUBJUGATION_REASONS: "A causa delle nostre [ShowModifierTypeNameWithBreakdown('accept_subjugation_reasons', COUNTRY.GetCountry)]"
@@ -906,6 +912,7 @@
  DIPLOREASON_AVERAGE_CONQUEST_DESIRE: "Desiderio medio di conquista [SCOPE.sCountry('recipient').Custom('IT_Della')][SCOPE.sCountry('recipient').GetName]"
  DIPLOREASON_PEACEOFFER_SEEK_WHITE_PEACE: "Cercano una [white_peace|e]" 
  DIPLOREASON_RELATIVE_TAX_BASE: "[tax_base|e] relativa" 
+ DIPLOREASON_RELATIVE_ECONOMICAL_BASE: "[economical_base|e] Relativa" 
  DIPLOREASON_TRADE_INCOME_PERCENTAGE: "Reddito commerciale rispetto al reddito fiscale" 
  DIPLOREASON_LOCATION_COUNT: "Quantità di località" 
  DIPLOREASON_TOTAL_POPULATION: "Popolazione" 
@@ -980,7 +987,6 @@
  CURRY_FAVORS_ALREADY: "@trigger_no! Stiamo già cercando di guadagnare [favors|e] con [COUNTRY.Custom('IT_La')][COUNTRY.GetName]"
  CURRY_FAVORS_SUBJECT: "@trigger_no! [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è uno [subject|e] di $OVERLORD$, cerchiamo di guadagnare favori con loro invece"
  CURRY_FAVORS_LOW_OPINION: "@trigger_no! La loro opinione nei nostri confronti è inferiore a $LIMIT|-+$"
-# CURRY_FAVORS_FULL: "@trigger_no! Non possiamo guadagnare altri favori\nLimite: $LIMIT$; attuale: (Favori a noi dovuti $WE_OWE$) + (Favori che dobbiamo loro $THEY_OWE$)" #OLD
  CURRY_FAVORS_FULL: "@trigger_no! Non possiamo ottenere altri favori. Limite: $LIMIT$; attuale: (Favori dovuti a noi $WE_OWE$) + (Favori che dobbiamo a loro $THEY_OWE$)" 
  CURRY_FAVORS_LIMIT: "Il limite alla quantità di favori che possono coesistere è $LIMIT$. Attualmente dobbiamo $THEY_OWE$ e loro ci devono $WE_OWE$." 
  CURRY_FAVORS_LOW_TRUST: "@trigger_no! Non hanno abbastanza [trust|e] in noi per garantirci nuovi [favors|e]. I Favori possono essere guadagnati solo fino al livello di fiducia con quella nazione, che è attualmente $VALUE|+=2$."
@@ -1001,7 +1007,7 @@
  PROFESS_TRUST_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
  PROFESS_TRUST_TOOLTIP_HEADER: "Professa Fiducia [TARGET_COUNTRY.Custom('IT_In')][TARGET_COUNTRY.GetName]"
  PROFESS_TRUST_TOOLTIP_HEADER_NO_TARGET: "Professa Fiducia in un [country|e]"
- PROFESS_TRUST_FLAVOR: "Sfruttando la nostra [diplomatic_reputation|e], possiamo lusingarli per instaurare un rapporto di maggiore fiducia."
+ PROFESS_TRUST_FLAVOR: "Spendendo il nostro [prestige|e], possiamo impressionarli e costruire una relazione più fiduciosa." 
  PROFESS_TRUST_DESC: "La nostra [trust|e] reciproca aumenterà di $INCREASE|G$, costandoci:\n$COST$\nQuesti effetti possono accumularsi e decadranno nel corso dei prossimi $YEARS|0$ anni."
  PROFESSTRUSTDESC: "Aumentare la [trust|e] reciproca con $COUNTRY$."
  PROFESS_TRUST_ALREADY: "@trigger_no! Stiamo già aumentando la [trust|e] con [COUNTRY.Custom('IT_La')][COUNTRY.GetName]"
@@ -1030,7 +1036,7 @@
 
  #
  INTERVENE_IN_WARTITLE: "Intervenire in Guerra"
- INTERVENE_IN_WAR_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" 
+ INTERVENE_IN_WAR_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" 
  INTERVENE_IS_ALREADY_IN_WAR: "@trigger_no! Siamo già impegnati in un'altra [war|e]!"
  INTERVENE_IN_WAR_NOT_AT_WAR: "@trigger_no!$WHO$ non è in [war|e]."
  INTERVENE_IN_WAR_NOT_SUBJECT: "@trigger_no!$WHO$ è uno stato cliente."
@@ -1048,10 +1054,8 @@
  ENFORCE_PEACE_NOT_AT_WAR: "@trigger_no!$WHO$ non è in [war|e]."
  ENFORCE_PEACE_NOT_SUBJECT: "@trigger_no!$WHO$ è uno stato ciente."
  OFFER_PEACE_NOT_SUBJECT: "@trigger_no! Uno [subject|e] non può offrire la [peace|e] quando il suo [overlord|e] è ancora in [war|e]."
-# ENFORCE_PEACE_WAR_DESC: "Imporre loro la Pace, con la minaccia che ci uniremo ai loro nemici." #OLD
  ENFORCE_PEACE_WAR_DESC: "Impone loro la pace, con la minaccia che ci uniremo ai loro nemici. Intromettersi negli affari di altri paesi farà diminuire la nostra [diplomatic_reputation|e] di [ShowNamedValue('diplomatic_reputation_mild_penalty')|+] e, se rifiutano, perderemo [ShowNamedValue('prestige_mild_penalty')|+] [prestige|e]." 
  ENFORCE_PEACE_NOT_WARLEADER: "@trigger_no!$WHO$ non è il leader degli attaccanti in una [war|e]."
-# ENFORCE_PEACE_NOT_CIVIL_WAR: "@trigger_no!$WHO$ è in una [civil_war|e]." #OLD
  ENFORCE_PEACE_NOT_CIVIL_WAR: "@trigger_no!$WHO$ è in una [civil_war|e]." 
  ENFORCE_PEACE_AGAINST_NOT_WARLEADER: "@trigger_no!$WHO$ non è il leader degli attaccanti in una [war|e]."
  ENFORCEPEACE_INFORMTITLE: "Ultimatum di pace" 
@@ -1085,12 +1089,18 @@
  NO_WAR_ON_GUARANTEE: "@trigger_no! Non possiamo dichiarare una [war|e] a qualcuno che abbiamo [guaranteed|e]."
  NO_WAR_ON_SUBJECT: "@trigger_no! Non possiamo dichiarare una [war|e] ai nostri stati clienti."
  NO_WAR_ON_REVOLTER: "@trigger_no! Non possiamo dichiarare una [war|e] a un rivoltoso in una [civil_war|e]."
- NO_WAR_INTERNATIONAL_ORGANIZATION: "@trigger_no! Non possiamo dichiarare [war|e] a un Paese con cui siamo in un $TYPE$ a causa di #TOOLTIP:$WHY_TAG$ #L uno o più blocchi#!#!"
+ NO_WAR_INTERNATIONAL_ORGANIZATION: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché [INTERNATIONAL_ORGANIZATION.GetName] blocca questa dichiarazione a causa di #TOOLTIP:$WHY_TAG$ #L una o più condizioni#!#!" 
+ NO_WAR_INTERNATIONAL_ORGANIZATION_ALLIED_MEMBER: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché siamo alleati con [COUNTRY.Custom('IT_La')][COUNTRY.GetName], membro di [INTERNATIONAL_ORGANIZATION.GetName]." 
+ NO_WAR_INTERNATIONAL_ORGANIZATION_SHARED_MEMBERSHIP: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché entrambi i paesi sono membri di [INTERNATIONAL_ORGANIZATION.GetName]." 
+ NO_WAR_INTERNATIONAL_ORGANIZATION_MEMBER_SUBJECT: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché il loro Signore, [COUNTRY.Custom('IT_La')][COUNTRY.GetName], è membro di [INTERNATIONAL_ORGANIZATION.GetName]." 
+ NO_WAR_INTERNATIONAL_ORGANIZATION_ATTACKER_MEMBERSHIP: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché la nostra appartenenza a [INTERNATIONAL_ORGANIZATION.GetName] limita le guerre contro i paesi che non ne fanno parte." 
+ NO_WAR_INTERNATIONAL_ORGANIZATION_DEFENDER_MEMBERSHIP: "@trigger_no! Non possiamo dichiarare [war|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] perché la loro appartenenza a [INTERNATIONAL_ORGANIZATION.GetName] li protegge." 
  NO_WAR_ALLIED: "@trigger_no! Non possiamo dichiarare [war|e] a un Paese con cui abbiamo un'Alleanza. Rompiamo prima l'Alleanza."
  NO_WAR_UNION: "@trigger_no! Non possiamo dichiarare [war|e] a un Paese con cui abbiamo un'Unione. Sarebbe come dichiarare [war|e] contro noi stessi!"
  NO_WAR_TOGETHER: "@trigger_no! Non possiamo dichiarare [war|e] a un Paese con cui stiamo attualmente combattendo dalla stessa parte in un'altra [war|e]."
  NO_WAR_TOGETHER_OVERLORD: "@trigger_no! Non possiamo dichiarare [war|e] a uno #Y stato cliente#! di un Paese con cui stiamo attualmente combattendo dalla stessa parte in un'altra [war|e]."
  NO_WAR_ALREADY_OVERLORD: "@trigger_no! Non possiamo dichiarare [war|e] a uno #Y stato cliente#! di un Paese con cui siamo già in [war|e]."
+ NO_WAR_TRUCE_OVERLORD: "@trigger_no! Non possiamo dichiarare [war|e] a uno #Y stato cliente#! di un paese con cui abbiamo una [truce|e]." 
  NO_WAR_WEUNCONDITIONALLYSURRENDERED: "@trigger_no! Non possiamo dichiarare [war|e] quando ci siamo già [unconditionally_surrendered|e] a loro." 
  NO_WAR_OPINION: "@trigger_no! Non possiamo dichiarare [war|e] mentre la nostra opinione nei loro confronti è pari o superiore a $VAL|Y$. Insultali per ridurla."
  NO_WAR_CHAOS: "@trigger_no! Non possiamo dichiarare [war|e] al momento poiché il nostro Paese è troppo disorganizzato. Bisogna avere prima una [stability|e] superiore a $VAL|Y$"
@@ -1103,17 +1113,16 @@
  NO_UNJUSTIFIED_WAR_LIMITED_SUBJECT: "@trigger_no! Come $SUBJECT_TYPE$ non possiamo dichiarare una [war|e] senza un appropriato [casus_belli|e]."
  declaring_war: "Dichiarare Guerra"
  honoring_alliance_call: "Onorare la Chiamata dell'Alleanza"
-# WAR_DEC_PRICE_TARGET: "A causa del fatto che [COUNTRY.Custom('IT_La')][COUNTRY.GetName] è un [cobelligerent|e]" #OLD
  WAR_DEC_PRICE_TARGET: "Poiché [COUNTRY.GetName] è un [enemy|e]" 
  war_breaking_truce: "Rompi la Tregua"
  war_breaking_truce_with_guarantor: "Rompi la Tregua Attaccando un [country|e] con cui abbiamo una relazione che implica supporto difensivo"
  war_great_relations: "Dichiarare [war|e] con Ottime Relazioni"
  war_good_relations: "Dichiarare [war|e] con Buone Relazioni"
  war_when_military_acces: "Dichiarare [war|e] quando si ha Accesso Militare"
- war_no_cb: "[war|e] senza [casus_belli|e]"
+ war_no_cb: "Dichiarare [war|e] senza [casus_belli|e] a un paese con Religione diversa" 
  war_on_subject: "Dichiarare [war|e] al proprio Stato Cliente!"
  war_on_same_religion_cb: "Dichiarare [war|e] alla stessa Religione"
- war_on_same_religion_no_cb: "Dichiarare [war|e] ingiustificata alla stessa Religione"
+ war_on_same_religion_no_cb: "Dichiarare [war|e] senza [casus_belli|e] a un paese con la stessa Religione" 
  war_on_different_religion: "Dichiarare [war|e] ad una Religione diversa"
  STABHIT_FROM_TRUCE: "Rompere la Tregua con $TRUCE_COUNTRY$"
  STABHIT_FROM_TRUCE_GUARANTEE: "Rompere la Tregua con $TRUCE_COUNTRY$ (garantisce $TARGET_COUNTRY$)"
@@ -1157,7 +1166,7 @@
  ALREADY_RECEIVING_FLEET_RIGHTS: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] sta già ricevendo diritti di ormeggio da noi"
  NOT_RECEIVING_FLEET_RIGHTS: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] non sta fornendoci diritti di ormeggio"
  NOT_AT_WAR_WITH: "@trigger_no! Non siamo in guerra contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
- NOT_CIVIL_WAR_WITH: "@trigger_no! Questo è una [civil_war|e] che abbiamo con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName], e non puoi arrenderti in questo modo." #NEW                                                                                                                                                        
+ NOT_CIVIL_WAR_WITH: "@trigger_no! Questa è una [civil_war|e] che abbiamo con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName], e non puoi arrenderti in questo modo."                                                                                                                                                         
  PEACE_OFFER_PARTS_NOT_VALID: "@trigger_no! Alcune parti dell'offerta non sono valide"
  PEACE_OFFER_PARTS_NOT_EVER: "@trigger_no! [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non negozia un [peace_treaty|e]."
  NOT_AT_WAR_OR_REBELS: "@trigger_no! Non siamo in guerra e non abbiamo ribelli attivi."
@@ -1168,7 +1177,6 @@
  CANNOT_JOIN_YOU_IN_ANY_WARS: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] non può unirsi a noi in alcuna guerra"
  ALREADY_IN_WAR: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] sta già combattendo nella $WAR$"
  WAS_ALREADY_IN_WAR: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha già partecipato alla $WAR$"
-# CAN_JOIN_WAR_ALREADY_DECLINED: "@trigger_no![TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] ha già rifiutato la partecipazione a questa $WAR$" #OLD
  CAN_JOIN_WAR_ALREADY_DECLINED: "@trigger_no![TARGET_COUNTRY.GetName] ha già rifiutato di partecipare a questa $WAR$ e non potrà unirsi fino ad almeno il $DATE$." 
  POTENTIAL_WAR_NAME_LEADERS: "Potenziale Guerra [COUNTRY.GetName] - [TARGET_COUNTRY.GetName]"
  POTENTIAL_WAR_NAME_LEADER: "Potenziale Guerra contro [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
@@ -1178,6 +1186,8 @@
  UNCONDITIONAL_SURRENDER_OFFER_BLOCKED: "@trigger_no! Non puoi offrire nulla perché si sono [unconditionally_surrendered|e] a te." 
  UNCONDITIONALSURRENDER_REQUESTDESC: "Vuoi [unconditionally_surrender|e] a [TARGET_COUNTRY.GetName]? Questo darà loro il controllo di tutte le nostre terre e concederà loro $MONTHS$ mesi per presentare un [peace_treaty|e] prima che inizino ad accumulare [war_exhaustion|e] più rapidamente." 
  UNCONDITIONAL_UNSPORTING: "@trigger_no! È antisportivo [unconditionally_surrender|e] prima che siano trascorsi $VAL|Y$ mesi in una [war|e]. Potrai arrenderti incondizionatamente il $DATE|Y$." 
+ UNCONDITIONAL_SURRENDER_AUTO_CONQUER: "@trigger_no! Non possiamo negoziare con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]. Le loro conquiste sono assolute e si completano nel momento in cui i loro [armies|e] occupano una [location|e]." 
+ UNCONDITIONAL_SURRENDER_BLOCKED_BY_CB: "@trigger_no! Una [war|e] combattuta con [CASUS_BELLI.GetName] non può terminare con [unconditionally_surrender|e]." 
  UNCONDITIONALSURRENDER_EFFECT: "[unconditionally_surrender|e] a loro, dando loro $MONTHS$ mesi per inviarci un'offerta di pace." 
  UNCONDITIONALSURRENDER_DESC: "Siamo finiti. Deponiamo le spade e diamo loro qualunque cosa vogliano per porre fine a questo spargimento di sangue." 
  UNCONDITIONALSURRENDER_TOOLTIP_HEADER: "Arrenditi incondizionatamente a [TARGET_COUNTRY.GetName]." 
@@ -1205,7 +1215,7 @@
  NO_SEPARATE_PEACE_EARLY: "@trigger_no! Non possiamo abbandonare i nostri alleati finché non saranno passati $NUM|Y$ mesi. In questa [war|e], ciò avverrà il $WHEN|Y$."
  NO_SEPARATE_PEACE_EARLY_THEM: "@trigger_no! Non possiamo forzare un alleato ad abbandonare qualcuno in una [war|e] finché non saranno passati $NUM|Y$ mesi. In questa [war|e], ciò avverrà il $WHEN|Y$."
  NO_SEPARATE_PEACE_SUBJECT_REVOLT: "@trigger_no! Non possiamo negoziare la pace separata come signore in una guerra di rivolta di uno stato cliente."
- NO_SEPARATE_PEACE_OVERLORD_REVOLT: "@trigger_no! Non possiamo negoziare la pace separata con il signore come rivoltosi in una guerra di rivolta di uno stato cliente."
+ NO_SEPARATE_PEACE_OVERLORD_REVOLT: "@trigger_no! Non possiamo negoziare una pace separata con il Signore in una guerra di rivolta di uno Stato Cliente." 
  NO_SEPARATE_PEACE_LOYAL_SUBJECT: "@trigger_no! $WHO$ è un [subject|e] leale e non può negoziare una [peace|e] separata indipendentemente dal proprio [overlord|e]." 
  RANSOMOFFERDESCTITLE: "Offerta di riscatto" 
  #
@@ -1224,6 +1234,7 @@
  PEACE_ENEMY_PARTICIPANTS: "Partecipanti Nemici"
  PEACE_TREATY_SELECT_LOCATION: "Aggiungi $NAME$ al Trattato di Pace"
  PEACE_TREATY_DESELECT_LOCATION: "Rimuovi $NAME$ dal Trattato di Pace"
+ PEACE_TREATY_CHANGE_TARGET: "Cambia obiettivo della negoziazione in $NAME$" 
 
  PEACE_TREATY_RELEASE: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlag] [COUNTRY.GetCapital.GetOwner.Custom('IT_Dalla')][COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
  PEACE_TREATY_RELEASE_short: "Libera [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlagWithNoTooltip][COUNTRY.GetCapital.GetOwner.Custom('IT_Dalla')][COUNTRY.GetCapital.GetOwner.GetNameWithNoTooltip]"
@@ -1232,7 +1243,9 @@
  PEACE_TREATY_RELEASE_AREA_short: "Libera l'area [AREA.GetNameWithNoTooltip]"
 
  PEACE_TREATY_CEDE_PROVINCE: "La [PROVINCE.GetCountry.GetFlagIcon] [province|e] di [PROVINCE.GetDefinition.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]"
+ PEACE_TREATY_CEDE_PROVINCE_MIXED: "[PROVINCE.GetCountry.GetFlagIcon] [PROVINCE.GetDefinition.GetName] [province|e] agli attuali occupanti" 
  PEACE_TREATY_CEDE_PROVINCE_short: "@[PROVINCE.GetCountry.GetFlag]! [Localize('game_concept_province')] di [PROVINCE.GetDefinition.GetNameWithNoTooltip]"
+ PEACE_TREATY_CEDE_PROVINCE_MIXED_short: "@[PROVINCE.GetCountry.GetFlag]! [PROVINCE.GetDefinition.GetNameWithNoTooltip] [Localize('game_concept_province')]" 
 
  PEACE_TREATY_CEDE_AREA: "La Parte [COUNTRY.Custom('IT_ADJ_FP')] [COUNTRY.GetFlagIcon] di [AREA.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]"
  PEACE_TREATY_CEDE_AREA_short: "[AREA.GetNameWithNoTooltip] @[COUNTRY.GetFlag]! [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]"
@@ -1243,6 +1256,9 @@
  PEACE_TREATY_REVOKE_CORE: "Revoca status Centrale [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithFlag] in [LOCATION.GetName]"
  PEACE_TREATY_REVOKE_CORE_short: "Revoca status Centrale [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] in [LOCATION.GetNameWithNoTooltip]"
  PEACE_REVOKE_CORE_MULT: "Revoca status Centrale"
+ PEACE_TREATY_REMOVE_PROVINCE_FROM_INTERNATIONAL_ORGANIZATION: "Rimuovi [PROVINCE.GetName] da [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" 
+ PEACE_TREATY_REMOVE_PROVINCE_FROM_INTERNATIONAL_ORGANIZATION_short: "Rimuovi [PROVINCE.GetNameWithNoTooltip] da [TARGET_INTERNATIONAL_ORGANIZATION.GetNameWithNoTooltip]" 
+ PEACE_REMOVE_PROVINCE_FROM_INTERNATIONAL_ORGANIZATION_MULT: "Rimuovi le province dall'Organizzazione Internazionale" 
  PEACE_TREATY_RETURN_CORE: "Restituisci [LOCATION.GetName] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlag]" 
  PEACE_TREATY_RETURN_CORE_short: "Restituisci [LOCATION.GetNameWithNoTooltip] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" 
  PEACE_RETURN_CORE_MULT: "Restituisci Località Centrale" 
@@ -1261,9 +1277,7 @@
  PEACE_TREATY_UNION: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithFlag] insedia [Character.GetName] come [ruler|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithFlag], creando un'Unione Personale se necessario," 
  PEACE_TREATY_UNION_short: "[Character.GetShortNameWithNoTooltip] diventa [ruler] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" 
 
-# PEACE_TREATY_GAIN_RELATION: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetNameWithFlag] concede [RELATION_TYPE.GetNameWithContext(TARGET_COUNTRY.Self, COUNTRY.Self)] [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]" #OLD
  PEACE_TREATY_GAIN_RELATION: "[TARGET_COUNTRY.GetNameWithFlag] concede $RELATION$ a [COUNTRY.GetName]" 
-# PEACE_TREATY_GAIN_RELATION_short: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetNameWithFlag] concede [RELATION_TYPE.GetNameWithContext(TARGET_COUNTRY.Self, COUNTRY.Self)] [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]" #OLD
  PEACE_TREATY_GAIN_RELATION_short: "[TARGET_COUNTRY.GetNameWithFlag] concede $RELATION$ a [COUNTRY.GetName]" 
 
  PEACE_TREATY_WAR_REPARATIONS: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetNameWithFlag] paga [war_reparations|E] [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]"
@@ -1274,6 +1288,8 @@
 
  PEACE_TREATY_ANNUL_TREATIES: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithFlag] annulla tutti i #L #TOOLTIP:$TREATIES$ trattati#! #! con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetNameWithFlag] per #Y $MONTHS$#! mesi"
  PEACE_TREATY_ANNUL_TREATIES_short: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithFlag] annulla tutti i #L #TOOLTIP:$TREATIES$ trattati#! #! con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetNameWithFlag]"
+ PEACE_TREATY_ANNUL_TREATIES_LIST: "Trattati tra [COUNTRY.Custom('IT_La')][COUNTRY.GetName] e [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] che verrebbero annullati\n$TREATIES$" 
+ PEACE_TREATY_ANNUL_TREATIES_NONE: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] e [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] al momento non condividono trattati che possano essere annullati." 
 
 
  PEACE_TREATY_FORCE_MIGRATE: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithFlag] migra via da [PROVINCE.GetName]"
@@ -1301,7 +1317,6 @@
  PEACE_TREATY_NOT_SAME_RELIGION_GROUP: "@trigger_no![COUNTRY.Custom('IT_ART_RANGO')|U][COUNTRY.GetLongName] non segue la fede [RELIGION_GROUP.GetAdjective]."
  PEACE_TREATY_WAR_GOAL_TRIGGER_BLOCK_TAKE_LOCATIONS: "@trigger_no! Non possiamo prendere territori [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName] per le seguenti ragioni:\n$WHY$"
  PEACE_TREATY_BLOCKED_CANNOT_BE_SUBJUGATED: "@trigger_no! [COUNTRY.Custom('IT_La')|U][COUNTRY.GetLongName] non può essere assoggettata a causa del [modifier|e] $NAME$."
-# PEACE_TREATY_BLOCKED_NOT_CAPITAL: "@trigger_no! La [province_capital|e] $NAME|Y$ deve essere occupata per far parte di un [peace_treaty|e]." #OLD
  PEACE_TREATY_BLOCKED_NOT_CAPITAL: "@trigger_no! Sotto 100 [war_score|e] la [province_capital|e] $NAME|Y$ deve essere occupata perché faccia parte di un [peace_treaty|e]." 
  PEACE_TREATY_BLOCKED_NOT_CAPITAL_NO_WS: "@trigger_no! La [province_capital|e] $NAME|Y$ deve essere occupata perché faccia parte di un [peace_treaty|e]." 
  PEACE_TREATY_BLOCKED_NOT_TRADE: "@trigger_no! Questo trattato di pace non è valido con un [casus_belli|e] legato al commercio."
@@ -1354,7 +1369,11 @@
  UPKEEP_RANK: "Il loro [country_rank|e]"
  UPKEEP_TARGET_OPINION: "La loro [opinion|e]"
  UPKEEP_THEY_GREAT_POWER: "Sono una [great_power|e]" 
+ UPKEEP_THEY_REGIONAL_POWER: "Sono una [regional_power|e]" 
+ UPKEEP_BLOC_SATURATION: "[alliance_bloc|e]" 
  UPKEEP_NUM_MEMBERS: "Dal numero di membri" 
+ UPKEEP_UNION_PARTNER_WEIGHT: "Partner dell'[union|e]" 
+ UPKEEP_UNION_INTEGRATION: "Integrazione dell'[union|e]" 
  UPKEEP_TOTAL_ECO_BASE: "[economical_base|e] totale" 
 
 
@@ -1397,25 +1416,17 @@
  PEACECOST_PROV_BUILDINGS: "[buildings|e]: $VAL|<+=$"
  PEACECOST_INDEPENDENCE_BASE: "Base: $VAL|V$" 
  #
-# PEACE_ANNEX_PERC: "Questo è il $VAL|Y2%$ di tutti i Paesi in [revolt|e]." #OLD
  PEACE_ANNEX_PERC: "Questo è $VAL|Y2%$ di tutti i paesi in [revolt|e] e [subjects|e] che combattono per la loro indipendenza." 
  PEACE_COST_EFFICIENCY_MODIFIER: "Il totale di $VAL|2G$ è diviso per $DIV|V2$ a causa di un'efficienza di $EFF|+=2%$" 
  #
-# PEACE_COST_REVOLT_WAR: "Riottenuto dal Rivoltoso: $VAL|-=%$\n" #OLD
  PEACE_COST_REVOLT_WAR: "Ripresa dal ribelle: $VAL|+=%$\n" 
-# PEACE_COST_ON_SMALL_NATION: "[LOCATION.GetName] è una parte consistente [COUNTRY.Custom('IT_Della')][COUNTRY.GetNameWithFlag]: $VAL|-=%$\n" #OLD
  PEACE_COST_ON_SMALL_NATION: "[LOCATION.GetName] è una grande parte di [COUNTRY.GetNameWithFlag]: $VAL|+=%$\n" 
-# PEACE_COST_UNOCCUPIED: "[LOCATION.GetName] ha un [fort|e] e non è occupata: $VAL|-=%$\n" #OLD
  PEACE_COST_UNOCCUPIED: "[LOCATION.GetName] ha un [fort|e] e non è occupata: $VAL|+=%$\n" 
-# PEACE_COST_SAME_CULTURE: "Stessa [culture|e]: $VAL|-=%$\n" #OLD
  PEACE_COST_SAME_CULTURE: "Stessa [culture|e]: $VAL|+=%$\n" 
-# PEACE_COST_SAME_RELIGION: "Stessa [religion|e]: $VAL|-=%$\n" #OLD
  PEACE_COST_SAME_RELIGION: "Stessa [religion|e]: $VAL|+=%$\n" 
-# PEACE_COST_POWER_PROJECTION_DIFFERENCE: "[power_projection|e]: $VAL|-=%$\n" #OLD
  PEACE_COST_POWER_PROJECTION_DIFFERENCE: "[power_projection|e]: $VAL|+=%$\n" 
 # PEACE_COST_HAS_CLAIM: "Ha una Rivendicazione: $VAL|-=%$\n" #DELETE
 # PEACE_COST_ON_HIGHER_RANK: "$WHO_RANK$ contro $RANK$: $VAL|-=%$\n" #DELETE
-# PEACE_COST_NOT_TARGET: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetNameWithFlag] non è l'attaccante o il difensore originale nella [war|e]: $VAL|-=%$\n" #OLD
  PEACE_COST_NOT_TARGET: "[COUNTRY.GetNameWithFlag] non è un attaccante o difensore originale nella [war|e]: $VAL|+=%$\n" 
 # PEACE_COST_CASUS_BELLI: "Casus Belli: $VAL|-=%$\n" #DELETE
  PEACE_PROV_LIST: "$NAME$: #TOOLTIP:$PEACE_COST_BREAKDOWN_TAG$ $VAL|+=2$#!\n"
@@ -1431,6 +1442,7 @@
  #
  PEACE_GOLD_BASE: "Entrate Medie: $BASE|Y$"
  PEACE_GOLD_PER_MONTHLY: "Costo di Pace Per Entrate: $COST|2$"
+ PEACE_COST_FINAL_MODIFIERS: "Infine, questo è ulteriormente modificato da" 
 
  PEACE_WARGOAL_MODIFIER: "[war_goal|e] $NAME$: $VAL|2-=%$"
  PEACE_RETURN_CORE_MULTIPLIER: "Moltiplicatore Antagonismo Restituzione Località Centrale: $VAL|2-=%$" 
@@ -1510,6 +1522,8 @@
  ANNEX_SUBJECT_LOYALTY_SPEED: "Lealtà del soggetto di [COUNTRY.GetName]: $VAL|+=2%$" 
  ANNEX_MULTIPLE_PENALTY: "[annexations|e] multiple contemporanee: $VAL|+=2%$"
  ANNEX_TARGET_CIVIL_WAR_PENALTY: "@trigger_no! #R [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta attraversando una [civil_war|e] e non può essere annessa finché la pace non sarà ripristinata. #!"
+ ANNEX_TARGET_REVOLT_WAR_PENALTY: "@trigger_no! #R [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta attualmente affrontando una rivolta e il progresso dell'annessione è sospeso finché non sarà ristabilita la pace. #!" 
+ ANNEX_TARGET_DISLOYAL_PENALTY: "@trigger_no! #R [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è uno [disloyal_subject|e] e il progresso dell'annessione è sospeso finché non torneranno leali. #!" 
  #
  THE_NEW_SUBJECT: "[subject|e]"
  OVERLORD_NAME: "[overlord|e]"
@@ -1530,7 +1544,7 @@
 
 
 
- SUBJECT_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$$NAME$ diffonde il $VAL|+=2%$ delle [institutions|e] [Concept('embraced', 'Adottate')|e] a $CAPITAL$."
+ SUBJECT_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$$NAME$ diffonde $VAL|+=2$ [institutions|e] [Concept('embraced', 'Adottate')|e] verso $CAPITAL$." 
  SUBJECT_TYPE_SHARES_EXPLORATION: "$EFFECT_LIST_BULLET$$SUBJECT$ condivide ogni scoperta cartografica con $OVERLORD$." 
 
  SUBJECT_TYPE_GIVES_MERCHANT: "$EFFECT_LIST_BULLET dà il $VALUE|2%$ dei loro [merchants|e] al $OVERLORD$."
@@ -1540,7 +1554,7 @@
  SUBJECT_TYPE_OVERLORD_INHERITS: "$EFFECT_LIST_BULLET$$OVERLORD$ [Concept('annex', 'Annette')|e] istantaneamente lo $SUBJECT$ se non ha un [heir|e] quando il loro [ruler|e] muore."
  SUBJECT_TYPE_HAS_OVERLORD_RULER: "\n$EFFECT_LIST_BULLET$$SUBJECT$ ha lo stesso governante del $OVERLORD$."
  SUBJECT_TYPE_CAN_BE_ANNEXED: "$EFFECT_LIST_BULLET$$SUBJECT$ può essere [annexed|e] dal $OVERLORD$ in futuro."
- SUBJECT_TYPE_ANNEXATION_SPEED: "$EFFECT_LIST_BULLET$$SUBJECT$ può essere [annexed|e] con un progresso di $VAL|+=2$ ogni mese."
+ SUBJECT_TYPE_ANNEXATION_SPEED: "\n$EFFECT_LIST_BULLET$$SUBJECT$ può essere [annexed|e] con un progresso di $VAL|+=2$ ogni mese." 
  SUBJECT_TYPE_ANNEXATION_YEARS: "$EFFECT_LIST_BULLET$$SUBJECT$ può essere [annexed|e] solo dopo $VAL|V$ anni."
  SUBJECT_TYPE_OPINION: "$EFFECT_LIST_BULLET$$SUBJECT$ può essere [annexed|e] solo se ha almeno un'[opinion|e] di $VAL|+=$ verso il $OVERLORD$."
  SUBJECT_TYPE_COSTS_DIPLOMATIC_SLOT: "$EFFECT_LIST_BULLET$$OVERLORD$ necessita di $VAL|R2$ [diplomatic_capacity|e] per mantenere questa relazione."
@@ -1550,8 +1564,8 @@
  SUBJECT_TYPE_OVERLORD_CANNOT_CANCEL: "$EFFECT_LIST_BULLET$$OVERLORD$ NON può annullare questa relazione."
  SUBJECT_TYPE_OVERLORD_MODIFIER: "\n$EFFECT_LIST_BULLET$$OVERLORD$ ha i seguenti modificatori:\n$EFFECT$"
  SUBJECT_TYPE_SUBJECT_MODIFIER: "\n$EFFECT_LIST_BULLET$$SUBJECT$ ha i seguenti modificatori:\n$EFFECT$"
- SUBJECT_TYPE_LIMITED_DIPLOMACY: "$EFFECT_LIST_BULLET è [diplomatically_limited|e] dal $OVERLORD$."
- SUBJECT_TYPE_GIVES_FLEET_BASING: "$EFFECT_LIST_BULLET$$SUBJECT$ fornisce al $OVERLORD$ [fleet_basing_rights|e]."
+ SUBJECT_TYPE_LIMITED_DIPLOMACY: "$EFFECT_LIST_BULLET$$SUBJECT$ è [diplomatically_limited|e] dal $OVERLORD$."
+ SUBJECT_TYPE_GIVES_FLEET_BASING: "$EFFECT_LIST_BULLET$$SUBJECT$ fornisce a $OVERLORD$ [fleet_basing_rights|e]."
  SUBJECT_TYPE_GIVES_FOOD_ACCESS: "$EFFECT_LIST_BULLET$L'[food_access|e] è condiviso tra $SUBJECT$ e $OVERLORD$." 
  SUBJECT_TYPE_ALLOW_SUBJECT: "$EFFECT_LIST_BULLET$$SUBJECT$ è autorizzato a creare i propri [subjects|e]."
  SUBJECT_TYPE_PAYS: "$EFFECT_LIST_BULLET$$SUBJECT$ paga $COST$ ogni mese al $OVERLORD$." 
@@ -1580,25 +1594,17 @@
  DIPLOMACY_ACTOR_CANNOT_BE_SUBJUGATED: "Non possiamo diventare stati cliente di nessuno a causa del [modifier|e] $NAME$"
 
  # Vassal
-# OFFER_vassal_TOOLTIP_HEADER: "Richiedi [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName] di diventare un vassallo" #OLD
  OFFER_vassal_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un Vassallo" 
-# OFFER_vassal_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un vassallo" #OLD
  OFFER_vassal_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Vassallo" 
-# REQUEST_vassal_TOOLTIP_HEADER: "Chiedi di diventare un Vassallo [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_vassal_TOOLTIP_HEADER: "Offriti di diventare un Vassallo di [TARGET_COUNTRY.GetName]" 
-# REQUEST_vassal_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un Vassallo di un [country|e]" #OLD
  REQUEST_vassal_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un Vassallo di un [country|e]" 
  CANCEL_vassal_TOOLTIP_HEADER: "Annulla il Vassallaggio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_vassal_TOOLTIP_HEADER_NO_TARGET: "Annulla il Vassallaggio di un [country|e]"
  BREAK_vassal_TOOLTIP_HEADER: "Rifiuta di essere lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_vassal_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere il [subject|e] di un [country|e]"
-# OFFER_vassalTITLE: "Chiedi loro di diventare un nostro Vassallo" #OLD
  OFFER_vassalTITLE: "Richiedi che diventino nostri Vassalli" 
-# OFFER_vassal_FLAVOR: "Scegli un [country|e] a cui proporre lo status di [ShowSubjectTypeName('vassal')]" #OLD
  OFFER_vassal_FLAVOR: "Scegli un [country|e] a cui richiedere lo status [ShowSubjectTypeName('vassal')]" 
-# REQUEST_vassalTITLE: "Chiedi di diventare un loro Vassallo" #OLD
  REQUEST_vassalTITLE: "Offriti di diventare loro Vassallo" 
-# REQUEST_vassal_FLAVOR: "Scegli un [country|e] di cui diventare il [ShowSubjectTypeName('vassal')]" #OLD
  REQUEST_vassal_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('vassal')]" 
  CANCEL_vassalTITLE: "Revoca lo Status di Vassallo"
  CANCEL_vassal_FLAVOR: "Scegli un [country|e] per annullare il suo status di [ShowSubjectTypeName('vassal')]"
@@ -1607,27 +1613,18 @@
  REQUEST_vassal_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_vassal_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_vassal_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_vassal_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro vassallo?" #OLD
  OFFER_vassal_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro Vassallo?" 
-# REQUEST_vassal_NEWDESC: "Vogliamo chiedere di diventare un Vassallo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_vassal_NEWDESC: "Vogliamo offrirci di diventare un Vassallo di [COUNTRY.GetName]?" 
-# CANCEL_vassal_NEWDESC: "Vogliamo revocare lo status di Vassallo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  CANCEL_vassal_NEWDESC: "Vogliamo porre fine allo status di Vassallo di [COUNTRY.GetName]?" 
  BREAK_vassal_NEWDESC: "Vogliamo smettere di essere un Vassallo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_vassal_DESC: "Suggerisci loro di diventare nostro Vassallo, e li proteggeremo." #OLD
  OFFER_vassal_DESC: "Richiedi che diventino nostri Vassalli, e noi li proteggeremo." 
-# REQUEST_vassal_DESC: "Suggerisci di diventare un loro Vassallo, e ci proteggeranno." #OLD
  REQUEST_vassal_DESC: "Offriti di diventare loro Vassallo, e loro ci proteggeranno." 
-# CANCEL_vassal_DESC: "Revoca lo status di Vassallo." #OLD
  CANCEL_vassal_DESC: "Poni fine allo status di Vassallo con @[COUNTRY.GetFlag]! [COUNTRY.GetName]." 
-# CANCEL_appanage_DESC: "Revoca lo status di Appannaggio." #OLD
  CANCEL_appanage_DESC: "Poni fine allo status di Appannaggio." 
  BREAK_vassal_DESC: "Cessa di essere un Vassallo."
  OFFER_vassal_REQTITLE: "Richiesta di vassallizzarci" 
  REQUEST_vassal_REQTITLE: "Offerta di diventare nostro vassallo" 
-# OFFER_vassal_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_vassal_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_vassal_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_vassal_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_vassal_REQDESC: "$MONARCHTITLE$"
  BREAK_vassal_REQDESC: "$MONARCHTITLE$"
@@ -1643,24 +1640,17 @@
  REQUEST_vassal_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
  # March
-# OFFER_march_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi una Marca" #OLD
  OFFER_march_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi una Marca" 
-# OFFER_march_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una Marca" #OLD
  OFFER_march_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una Marca" 
-# REQUEST_march_TOOLTIP_HEADER: "Chiedi di diventare una Marca [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_march_TOOLTIP_HEADER: "Offriti di diventare una Marca di [TARGET_COUNTRY.GetName]" 
-# REQUEST_march_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare una Marca di un altro [country|e]" #OLD
  REQUEST_march_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare una Marca di un altro [country|e]" 
  CANCEL_march_TOOLTIP_HEADER: "Annulla lo stato di Marca [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_march_TOOLTIP_HEADER_NO_TARGET: "Annulla lo stato di Marca di un [country|e]"
  BREAK_march_TOOLTIP_HEADER: "Rifiuta di essere lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_march_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere lo [subject|e] di un [country|e]"
-# OFFER_marchTITLE: "Chiedi loro di diventare una nostra Marca" #OLD
  OFFER_marchTITLE: "Richiedi che diventino la nostra Marca" 
  OFFER_march_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('march')]"
-# REQUEST_marchTITLE: "Chiedi di diventare una loro Marca" #OLD
  REQUEST_marchTITLE: "Offriti di diventare la loro Marca" 
-# REQUEST_march_FLAVOR: "Scegli un [country|e] di cui diventare la [ShowSubjectTypeName('march')]" #OLD
  REQUEST_march_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('march')]" 
  CANCEL_marchTITLE: "Revoca lo Status di Marca"
  CANCEL_march_FLAVOR: "Scegli un [country|e] per annullare il loro status di [ShowSubjectTypeName('march')]"
@@ -1669,24 +1659,17 @@
  REQUEST_march_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_march_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_march_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_march_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare una nostra Marca?" #OLD
  OFFER_march_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi la nostra Marca?" 
-# REQUEST_march_NEWDESC: "Vogliamo chiedere di diventare una Marca [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_march_NEWDESC: "Vogliamo offrirci di diventare una Marca di [COUNTRY.GetName]?" 
  CANCEL_march_NEWDESC: "Vogliamo revocare lo status di Marca [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?"
  BREAK_march_NEWDESC: "Vogliamo smettere di essere una Marca [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_march_DESC: "Suggerisci loro di diventare una nostra Marca, e li proteggeremo." #OLD
  OFFER_march_DESC: "Richiedi che diventino la nostra Marca, e noi li proteggeremo." 
-# REQUEST_march_DESC: "Suggerisci di diventare una loro Marca, e ci proteggeranno." #OLD
  REQUEST_march_DESC: "Offriti di diventare la loro Marca, e loro ci proteggeranno." 
-# CANCEL_march_DESC: "Revoca lo status di Marca." #OLD
  CANCEL_march_DESC: "Poni fine allo status di Marca." 
  BREAK_march_DESC: "Cessa di essere una Marca."
  OFFER_march_REQTITLE: "Richiesta di diventare una Marca" 
  REQUEST_march_REQTITLE: "Offerta di diventare la nostra Marca" 
-# OFFER_march_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare una [SUBJECT_TYPE.GetName]" #OLD
  OFFER_march_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_march_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare una nostra [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_march_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_march_REQDESC: "$MONARCHTITLE$"
  BREAK_march_REQDESC: "$MONARCHTITLE$"
@@ -1702,21 +1685,15 @@
  REQUEST_march_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
  #generic change to strings - no need for all that duplication
-# OFFER_SUBJECT_TOOLTIP_HEADER: "Chiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi [SUBJECT_TYPE.GetName]" #OLD
  OFFER_SUBJECT_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi nostro [SUBJECT_TYPE.GetName]" 
-# REQUEST_SUBJECT_TOOLTIP_HEADER: "Chiedi di diventare [SUBJECT_TYPE.GetName] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_SUBJECT_TOOLTIP_HEADER: "Offriti di diventare un [SUBJECT_TYPE.GetName] di [TARGET_COUNTRY.GetName]" 
-# CHANGE_TO_TOOLTIP_HEADER_NO_TARGET: "Chiedi che un [country|e] diventi [SUBJECT_TYPE.GetName]" #OLD
  CHANGE_TO_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_SUBJECT_STATUS: "Revoca lo status di [SUBJECT_TYPE.GetNameWithNoTooltip] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  BREAK_SUBJECT_STATUS: "Rompi lo status di [SUBJECT_TYPE.GetNameWithNoTooltip] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  CHANGE_TOTITLE: "Cambia lo Status in [SUBJECT_TYPE.GetNameWithNoTooltip]"
  CHANGE_TO_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# CHANGE_TO_NEWDESC: "Vogliamo chiedere che [COUNTRY.Custom('IT_La')][COUNTRY.GetName] cambi status e diventi il nostro [SUBJECT_TYPE.GetName]!" #OLD
  CHANGE_TO_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] cambi status in [SUBJECT_TYPE.GetName]?" 
-# CHANGE_TO_DESC: "Suggerisci di cambiare status per diventare [SUBJECT_TYPE.GetName]." #OLD
  CHANGE_TO_DESC: "Richiedi che cambino status per diventare nostro [SUBJECT_TYPE.GetName]." 
-# CHANGE_TO_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di cambiare il suo status per diventare il nostro [SUBJECT_TYPE.GetName], questo avrà il seguente effetto:" #OLD
  CHANGE_TO_REQDESC: "[COUNTRY.GetName] sta richiedendo che cambiamo status in [SUBJECT_TYPE.GetName], con il seguente effetto:" 
  CHANGE_TO_TOO_LOW: "@trigger_no! Per rendere [COUNTRY.Custom('IT_La')][COUNTRY.GetName] un [SUBJECT_TYPE.GetName], la loro opinione nei nostri confronti deve essere di almeno $NEED|Y$, mentre attualmente è solo $VAL|Y0$."
  SUBJECT_TYPE_UTILITY: "Quanto [COUNTRY.Custom('IT_La')][COUNTRY.GetName] desidera un [SUBJECT_TYPE.GetName]"
@@ -1726,25 +1703,17 @@
  secessionists_subject_modifier: "È un Secessionista"
 
  # Dominion
-# OFFER_dominion_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un Dominion" #OLD
  OFFER_dominion_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un Dominion" 
-# OFFER_dominion_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Dominion" #OLD
  OFFER_dominion_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Dominion" 
-# REQUEST_dominion_TOOLTIP_HEADER: "Chiedi di diventare un Dominion [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_dominion_TOOLTIP_HEADER: "Offriti di diventare un Dominion di [TARGET_COUNTRY.GetName]" 
-# REQUEST_dominion_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un Dominion di un [country|e]" #OLD
  REQUEST_dominion_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un Dominion di un [country|e]" 
  CANCEL_dominion_TOOLTIP_HEADER: "Revoca lo status di Dominion [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_dominion_TOOLTIP_HEADER_NO_TARGET: "Revoca lo status di Dominion di un [country|e]"
  BREAK_dominion_TOOLTIP_HEADER: "Rifiuta di essere lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_dominion_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere lo [subject|e] di un [country|e]"
-# OFFER_dominionTITLE: "Chiedi loro di diventare un nostro Dominion" #OLD
  OFFER_dominionTITLE: "Richiedi che diventino nostro Dominion" 
-# OFFER_dominion_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('dominion')]" #OLD
  OFFER_dominion_FLAVOR: "Scegli un [country|e] a cui richiedere lo status [ShowSubjectTypeName('dominion')]" 
-# REQUEST_dominionTITLE: "Chiedi di diventare un loro Dominion" #OLD
  REQUEST_dominionTITLE: "Offriti di diventare loro Dominion" 
-# REQUEST_dominion_FLAVOR: "Scegli un [country|e] di cui diventare il [ShowSubjectTypeName('dominion')]" #OLD
  REQUEST_dominion_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('dominion')]" 
  CANCEL_dominionTITLE: "Revoca lo Status di Dominion"
  CANCEL_dominion_FLAVOR: "Scegli un [country|e] per annullare il loro status di [ShowSubjectTypeName('dominion')]"
@@ -1753,24 +1722,17 @@
  REQUEST_dominion_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_dominion_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_dominion_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_dominion_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro Dominion?" #OLD
  OFFER_dominion_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro Dominion?" 
-# REQUEST_dominion_NEWDESC: "Vogliamo chiedere di diventare un Dominion [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_dominion_NEWDESC: "Vogliamo offrirci di diventare un Dominion di [COUNTRY.GetName]?" 
  CANCEL_dominion_NEWDESC: "Vogliamo revocare lo status di Dominion [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?"
  BREAK_dominion_NEWDESC: "Vogliamo smettere di essere un Dominion [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_dominion_DESC: "Suggerisci loro di diventare un nostro Dominion, e li proteggeremo." #OLD
  OFFER_dominion_DESC: "Richiedi che diventino nostro Dominion, e noi li proteggeremo." 
-# REQUEST_dominion_DESC: "Suggerisci di diventare un loro Dominion, e ci proteggeranno." #OLD
  REQUEST_dominion_DESC: "Offriti di diventare loro Dominion, e loro ci proteggeranno." 
-# CANCEL_dominion_DESC: "Revoca lo status di Dominion." #OLD
  CANCEL_dominion_DESC: "Poni fine allo status di Dominion." 
  BREAK_dominion_DESC: "Cessare di essere un Dominion."
  OFFER_dominion_REQTITLE: "Richiesta di diventare un Dominion" 
  REQUEST_dominion_REQTITLE: "Offerta di diventare nostro Dominion" 
-# OFFER_dominion_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_dominion_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_dominion_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_dominion_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_dominion_REQDESC: "$MONARCHTITLE$"
  BREAK_dominion_REQDESC: "$MONARCHTITLE$"
@@ -1786,25 +1748,17 @@
  REQUEST_dominion_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
  # Fiefdom
-# OFFER_fiefdom_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un Feudo" #OLD
  OFFER_fiefdom_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un Feudo" 
-# OFFER_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Feudo" #OLD
  OFFER_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Feudo" 
-# REQUEST_fiefdom_TOOLTIP_HEADER: "Chiedi di diventare un Feudo [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_fiefdom_TOOLTIP_HEADER: "Offriti di diventare un Feudo di [TARGET_COUNTRY.GetName]" 
-# REQUEST_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un Feudo di un [country|e]" #OLD
  REQUEST_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un Feudo di un [country|e]" 
  CANCEL_fiefdom_TOOLTIP_HEADER: "Revoca lo Status di Feudo [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di Feudo di un [country|e]"
  BREAK_fiefdom_TOOLTIP_HEADER: "Rifiuta di essere lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere lo [subject|e] di un [country|e]"
-# OFFER_fiefdomTITLE: "Chiedi loro di diventare un nostro Feudo" #OLD
  OFFER_fiefdomTITLE: "Richiedi che diventino nostro Feudo" 
-# OFFER_fiefdom_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('fiefdom')]" #OLD
  OFFER_fiefdom_FLAVOR: "Scegli un [country|e] a cui richiedere lo status [ShowSubjectTypeName('fiefdom')]" 
-# REQUEST_fiefdomTITLE: "Chiedi di diventare un loro Feudo" #OLD
  REQUEST_fiefdomTITLE: "Offriti di diventare loro Feudo" 
-# REQUEST_fiefdomFLAVOR: "Scegli un [country|e] di cui diventare il [ShowSubjectTypeName('fiefdom')]" #OLD
  REQUEST_fiefdomFLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('fiefdom')]" 
  CANCEL_fiefdomTITLE: "Revoca lo Status di Feudo"
  CANCEL_fiefdom_FLAVOR: "Scegli un [country|e] per annullare il loro status di [ShowSubjectTypeName('fiefdom')]"
@@ -1813,24 +1767,17 @@
  REQUEST_fiefdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_fiefdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_fiefdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_fiefdom_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro Feudo?" #OLD
  OFFER_fiefdom_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro Feudo?" 
-# REQUEST_fiefdom_NEWDESC: "Vogliamo chiedere di diventare un Feudo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_fiefdom_NEWDESC: "Vogliamo offrirci di diventare un Feudo di [COUNTRY.GetName]?" 
  CANCEL_fiefdom_NEWDESC: "Vogliamo revocare lo status di Feudo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?"
  BREAK_fiefdom_NEWDESC: "Vogliamo smettere di essere un Feudo [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_fiefdom_DESC: "Suggerisci loro di diventare un nostro Feudo, e li proteggeremo." #OLD
  OFFER_fiefdom_DESC: "Richiedi che diventino nostro Feudo, e noi li proteggeremo." 
-# REQUEST_fiefdom_DESC: "Suggerisci di diventare un loro Feudo, e ci proteggeranno." #OLD
  REQUEST_fiefdom_DESC: "Offriti di diventare loro Feudo, e loro ci proteggeranno." 
-# CANCEL_fiefdom_DESC: "Revoca lo status di Feudo." #OLD
  CANCEL_fiefdom_DESC: "Poni fine allo status di Feudo." 
  BREAK_fiefdom_DESC: "Cessa di essere un Feudo."
  OFFER_fiefdom_REQTITLE: "Richiesta di diventare un Feudo" 
  REQUEST_fiefdom_REQTITLE: "Offerta di diventare nostro Feudo" 
-# OFFER_fiefdom_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_fiefdom_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_fiefdom_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_fiefdom_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_fiefdom_REQDESC: "$MONARCHTITLE$"
  BREAK_fiefdom_REQDESC: "$MONARCHTITLE$"
@@ -1856,7 +1803,6 @@
  CANCEL_hanseatic_member_TOOLTIP_HEADER: "Revoca l'adesione [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_hanseatic_member_TOOLTIP_HEADER_NO_TARGET: "Revoca l'adesione di un [country|e]"
  OFFER_hanseatic_memberTITLE: "Offri l'adesione alla Lega Anseatica"
-# REQUEST_hanseatic_memberTITLE: "Chiedi l'adesione alla Lega Anseatica" #OLD
  REQUEST_hanseatic_memberTITLE: "Richiedi che si uniscano alla Lega Anseatica" 
  CANCEL_hanseatic_memberTITLE: "Revoca l'adesione alla Lega Anseatica"
  OFFER_hanseatic_member_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
@@ -1890,25 +1836,17 @@
 
 
 #Tributary
-# OFFER_tributary_TOOLTIP_HEADER: "Richiedi che [COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un $tributary$" #OLD
  OFFER_tributary_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un $tributary$" 
-# OFFER_tributary_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $tributary$" #OLD
  OFFER_tributary_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $tributary$" 
-# REQUEST_tributary_TOOLTIP_HEADER: "Chiedi di diventare un $tributary$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_tributary_TOOLTIP_HEADER: "Offriti di diventare un $tributary$ di [TARGET_COUNTRY.GetName]" 
-# REQUEST_tributary_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un $tributary$ di un [country|e]" #OLD
  REQUEST_tributary_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un $tributary$ di un [country|e]" 
  CANCEL_tributary_TOOLTIP_HEADER: "Revoca lo Status di $tributary$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_tributary_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $tributary$ di un [country|e]"
  BREAK_tributary_TOOLTIP_HEADER: "Rifiuta di diventare il $tributary$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_tributary_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di diventare il $tributary$ di un [country|e]"
-# OFFER_tributaryTITLE: "Chiedi loro di diventare un nostro $tributary$" #OLD
  OFFER_tributaryTITLE: "Richiedi che diventino nostro $tributary$" 
-# OFFER_tributary_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('tributary')]" #OLD
  OFFER_tributary_FLAVOR: "Scegli un [country|e] a cui richiedere lo status [ShowSubjectTypeName('tributary')]" 
-# REQUEST_tributaryTITLE: "Chiedi di diventare un loro $tributary$" #OLD
  REQUEST_tributaryTITLE: "Offriti di diventare loro $tributary$" 
-# REQUEST_tributary_FLAVOR: "Scegli un [country|e] di cui diventare il [ShowSubjectTypeName('tributary')]" #OLD
  REQUEST_tributary_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('tributary')]" 
  CANCEL_tributaryTITLE: "Revoca lo Status di $tributary$"
  CANCEL_tributary_FLAVOR: "Scegli un [country|e] per annullare il loro status di [ShowSubjectTypeName('tributary')]"
@@ -1918,23 +1856,16 @@
  CANCEL_tributary_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_tributary_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  OFFER_tributary_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro $tributary$?"
-# REQUEST_tributary_NEWDESC: "Vogliamo chiedere di diventare un $tributary$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_tributary_NEWDESC: "Vogliamo offrirci di diventare un $tributary$ di [COUNTRY.GetName]?" 
-# CANCEL_tributary_NEWDESC: "Vogliamo revocare lo status di $tributary$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  CANCEL_tributary_NEWDESC: "Vogliamo porre fine allo status di $tributary$ di [COUNTRY.GetName]?" 
  BREAK_tributary_NEWDESC: "Vogliamo smettere di essere un $tributary$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_tributary_DESC: "Suggerisci loro di diventare un nostro $tributary$, e li proteggeremo." #OLD
  OFFER_tributary_DESC: "Richiedi che diventino nostro $tributary$, e noi li proteggeremo." 
-# REQUEST_tributary_DESC: "Suggerisci di diventare un loro $tributary$, e ci proteggeranno." #OLD
  REQUEST_tributary_DESC: "Offriti di diventare loro $tributary$, e loro ci proteggeranno." 
-# CANCEL_tributary_DESC: "Revoca lo status di $tributary$." #OLD
  CANCEL_tributary_DESC: "Poni fine allo status di $tributary$." 
  BREAK_tributary_DESC: "Cessa di essere un $tributary$."
  OFFER_tributary_REQTITLE: "Richiesta di diventare Tributario" 
  REQUEST_tributary_REQTITLE: "Offerta di diventare nostro Tributario" 
-# OFFER_tributary_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_tributary_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_tributary_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_tributary_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_tributary_REQDESC: "$MONARCHTITLE$"
  BREAK_tributary_REQDESC: "$MONARCHTITLE$"
@@ -1950,21 +1881,15 @@
  REQUEST_tributary_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
 #Tusi
-# OFFER_tusi_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un $tusi$" #OLD
  OFFER_tusi_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un $tusi$" 
-# OFFER_tusi_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $tusi$" #OLD
  OFFER_tusi_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $tusi$" 
-# REQUEST_tusi_TOOLTIP_HEADER: "Chiedi di diventare un $tusi$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_tusi_TOOLTIP_HEADER: "Offriti di diventare un $tusi$ di [TARGET_COUNTRY.GetName]" 
-# REQUEST_tusi_TOOLTIP_HEADER_NO_TARGET: "Richiedi di diventare un $tusi$ di un [country|e]" #OLD
  REQUEST_tusi_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un $tusi$ di un [country|e]" 
  CANCEL_tusi_TOOLTIP_HEADER: "Revoca lo Status di $tusi$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_tusi_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $tusi$ di un [country|e]"
  BREAK_tusi_TOOLTIP_HEADER: "Rifiuta di diventare il $tusi$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_tusi_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di diventare il $tusi$ di un [country|e]"
-# OFFER_tusiTITLE: "Chiedi loro di diventare nostro $tusi$" #OLD
  OFFER_tusiTITLE: "Richiedi che diventino nostro $tusi$" 
-# REQUEST_tusiTITLE: "Chiedi di diventare un loro $tusi$" #OLD
  REQUEST_tusiTITLE: "Offriti di diventare loro $tusi$" 
  CANCEL_tusiTITLE: "Revoca lo Status di $tusi$"
  BREAK_tusiTITLE: "Revoca lo Status di $tusi$"
@@ -1972,24 +1897,17 @@
  REQUEST_tusi_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_tusi_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_tusi_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_tusi_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro $tusi$?" #OLD
  OFFER_tusi_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro $tusi$?" 
-# REQUEST_tusi_NEWDESC: "Vogliamo chiedere di diventare un $tusi$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_tusi_NEWDESC: "Vogliamo offrirci di diventare un $tusi$ di [COUNTRY.GetName]?" 
  CANCEL_tusi_NEWDESC: "Vogliamo revocare lo status di $tusi$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?"
  BREAK_tusi_NEWDESC: "Vogliamo smettere di essere un $tusi$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_tusi_DESC: "Suggerisci loro di diventare un nostro $tusi$, e li proteggeremo." #OLD
  OFFER_tusi_DESC: "Richiedi che diventino nostro $tusi$, e noi li proteggeremo." 
-# REQUEST_tusi_DESC: "Suggerisci di diventare un loro $tusi$, e ci proteggeranno." #OLD
  REQUEST_tusi_DESC: "Offriti di diventare loro $tusi$, e loro ci proteggeranno." 
-# CANCEL_tusi_DESC: "Revoca lo status di $tusi$." #OLD
  CANCEL_tusi_DESC: "Poni fine allo status di $tusi$." 
  BREAK_tusi_DESC: "Cessa di essere un $tusi$."
  OFFER_tusi_REQTITLE: "Richiesta di diventare un $tusi$" 
  REQUEST_tusi_REQTITLE: "Offerta di diventare nostro $tusi$" 
-# OFFER_tusi_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_tusi_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_tusi_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_tusi_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_tusi_REQDESC: "$MONARCHTITLE$"
  BREAK_tusi_REQDESC: "$MONARCHTITLE$"
@@ -2005,21 +1923,15 @@
  REQUEST_tusi_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
 
  # Appanage
-# OFFER_appanage_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un Appannaggio" #OLD
  OFFER_appanage_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un appannaggio" 
-# OFFER_appanage_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un Appannaggio" #OLD
  OFFER_appanage_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un appannaggio" 
-# REQUEST_appanage_TOOLTIP_HEADER: "Chiedi di diventare un Appannaggio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_appanage_TOOLTIP_HEADER: "Offriti di diventare un appannaggio di [TARGET_COUNTRY.GetName]" 
-# REQUEST_appanage_TOOLTIP_HEADER_NO_TARGET: "Chiedi di diventare un Appannaggio di un [country|e]" #OLD
  REQUEST_appanage_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare un appannaggio di un [country|e]" 
  CANCEL_appanage_TOOLTIP_HEADER: "Revoca lo Status di Appannaggio [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_appanage_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di Appannaggio di un [country|e]"
  BREAK_appanage_TOOLTIP_HEADER: "Rifiuta di diventare lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_appanage_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di diventare lo [subject|e] di un [country|e]"
-# OFFER_appanageTITLE: "Chiedi loro di diventare un nostro Appannaggio" #OLD
  OFFER_appanageTITLE: "Richiedi che diventino nostro Appannaggio" 
-# REQUEST_appanageTITLE: "Chiedi di diventare un loro Appannaggio" #OLD
  REQUEST_appanageTITLE: "Offriti di diventare loro Appannaggio" 
  CANCEL_appanageTITLE: "Revoca lo Status di Appannaggio"
  BREAK_appanageTITLE: "Revoca lo Status di Appannaggio"
@@ -2027,17 +1939,13 @@
  REQUEST_appanage_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_appanage_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_appanage_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_appanage_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro Appannaggio? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_appanage_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro appannaggio? Questo avrà il seguente effetto:\n$INFO$" 
-# REQUEST_appanage_NEWDESC: "Vogliamo chiedere di diventare un Appannaggio [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]? Questo avrà il seguente effetto:\n$INFO$" #OLD
  REQUEST_appanage_NEWDESC: "Vogliamo offrirci di diventare un appannaggio di [COUNTRY.GetName]? Questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_appanage_NEWDESC: "Vogliamo revocare lo status di Appannaggio [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?"
  BREAK_appanage_NEWDESC: "Vogliamo smettere di essere un Appannaggio [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
  OFFER_appanage_REQTITLE: "Richiesta di diventare un Appannaggio" 
  REQUEST_appanage_REQTITLE: "Offerta di diventare nostro Appannaggio" 
-# OFFER_appanage_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_appanage_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_appanage_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_appanage_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_appanage_REQDESC: "$MONARCHTITLE$"
  BREAK_appanage_REQDESC: "$MONARCHTITLE$"
@@ -2056,9 +1964,7 @@
  BREAK_appanage_DESC: "Smetti di essere un $appanage$." 
 
 # Samanta subjects
-# OFFER_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un $samanta$" #OLD
  OFFER_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un $samanta$" 
-# OFFER_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $samanta$" #OLD
  OFFER_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $samanta$" 
  CANCEL_samanta_TOOLTIP_HEADER: "Revoca lo status di $samanta$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  CANCEL_samanta_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $samanta$ di un [country|e]"
@@ -2066,13 +1972,9 @@
  BREAK_samanta_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di diventare un $samanta$ di un [country|e]"
  OFFER_samanta_REQTITLE: "Richiesta di diventare un $samanta$" 
  REQUEST_samanta_REQTITLE: "Offerta di diventare nostro $samanta$" 
-# OFFER_samantaTITLE: "Chiedi loro di diventare un nostro $samanta$" #OLD
  OFFER_samantaTITLE: "Richiedi che diventino nostro $samanta$" 
-# OFFER_samanta_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('samanta')]" #OLD
  OFFER_samanta_FLAVOR: "Scegli un [country|e] a cui richiedere lo status [ShowSubjectTypeName('samanta')]" 
-# REQUEST_samantaTITLE: "Chiedi di diventare un loro $samanta$" #OLD
  REQUEST_samantaTITLE: "Offriti di diventare loro $samanta$" 
-# REQUEST_samanta_FLAVOR: "Scegli un [country|e] di cui diventare il [ShowSubjectTypeName('samanta')]" #OLD
  REQUEST_samanta_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('samanta')]" 
  CANCEL_samantaTITLE: "Revoca lo Status di $samanta$"
  CANCEL_samanta_FLAVOR: "Scegli un [country|e] a cui revocare lo status di [ShowSubjectTypeName('samanta')]"
@@ -2081,12 +1983,10 @@
  REQUEST_samanta_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_samanta_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro $samanta$? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_samanta_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro $samanta$, e questo avrà il seguente effetto:\n$INFO$" 
  REQUEST_samanta_NEWDESC: "Vogliamo offrirci di diventare un $samanta$ di [COUNTRY.GetName]?" 
  CANCEL_samanta_NEWDESC: "Vogliamo revocare lo status di $samanta$ [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]?"
  BREAK_samanta_NEWDESC: "Vogliamo smettere di essere un $samanta$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_samanta_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un $samanta$, cosa che avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_samanta_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro $samanta$, e questo avrà il seguente effetto:\n$INFO$" 
 REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_samanta_REQDESC: "$MONARCHTITLE$"
@@ -2099,24 +1999,18 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_samanta_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
  LEAD_samanta: "$LIST$ è un [SUBJECT_TYPE.GetName]"
  AM_samanta: "[SUBJECT_TYPE.GetName] di $LIST$."
-# OFFER_samanta_DESC: "Suggerisci loro di diventare un nostro $samanta$, e li proteggeremo." #OLD
  OFFER_samanta_DESC: "Richiedi che diventino nostro $samanta$, e noi li proteggeremo." 
-# REQUEST_samanta_DESC: "Suggerisci di diventare un loro $samanta$, e ci proteggeranno." #OLD
  REQUEST_samanta_DESC: "Offriti di diventare loro $samanta$, e loro ci proteggeranno." 
  CANCEL_samanta_DESC: "Revoca lo status di $samanta$."
  BREAK_samanta_DESC: "Cessa di essere un $samanta$."
 
-# OFFER_maha_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un $maha_samanta$" #OLD
  OFFER_maha_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un $maha_samanta$" 
-# OFFER_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $maha_samanta$" #OLD
  OFFER_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $maha_samanta$" 
  CANCEL_maha_samanta_TOOLTIP_HEADER: "Revoca lo Status di $maha_samanta$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  CANCEL_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $maha_samanta$ di un [country|e]"
  BREAK_maha_samanta_TOOLTIP_HEADER: "Rifiuta di essere un $maha_samanta$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  BREAK_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere un $maha_samanta$ di un [country|e]"
-# OFFER_maha_samantaTITLE: "Chiedi loro di diventare un nostro $maha_samanta$" #OLD
  OFFER_maha_samantaTITLE: "Richiedi che diventino nostro $maha_samanta$" 
-# REQUEST_maha_samantaTITLE: "Chiedi di diventare un loro $maha_samanta$" #OLD
  REQUEST_maha_samantaTITLE: "Offriti di diventare loro $maha_samanta$" 
  CANCEL_maha_samantaTITLE: "Revoca lo Status di $maha_samanta$"
  BREAK_maha_samantaTITLE: "Revoca lo Status di $maha_samanta$"
@@ -2124,11 +2018,9 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  REQUEST_maha_samanta_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_maha_samanta_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro $maha_samanta$? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_maha_samanta_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro $maha_samanta$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_maha_samanta_NEWDESC: "Vogliamo revocare lo status di $maha_samanta$ [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName]?"
  BREAK_maha_samanta_NEWDESC: "Vogliamo smettere di essere un $maha_samanta$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_maha_samanta_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un $maha_samanta$, cosa che avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_maha_samanta_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro $maha_samanta$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_maha_samanta_REQDESC: "$MONARCHTITLE$"
  BREAK_maha_samanta_REQDESC: "$MONARCHTITLE$"
@@ -2140,17 +2032,12 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_maha_samanta_AT_WAR: "$country_is_at_war$"
  LEAD_maha_samanta: "$LIST$ è un [SUBJECT_TYPE.GetName]"
  AM_maha_samanta: "[SUBJECT_TYPE.GetName] di $LIST$."
-# OFFER_maha_samanta_DESC: "Suggerisci loro di diventare un nostro $maha_samanta$, e li proteggeremo." #OLD
  OFFER_maha_samanta_DESC: "Richiedi che diventino nostro $maha_samanta$, e noi li proteggeremo." 
-# REQUEST_maha_samanta_DESC: "Suggerisci di diventare un loro $maha_samanta$, e ci proteggeranno." #OLD
  REQUEST_maha_samanta_DESC: "Offriti di diventare loro $maha_samanta$, e loro ci proteggeranno." 
-# CANCEL_maha_samanta_DESC: "Revoca lo status di $maha_samanta$." #OLD
  CANCEL_maha_samanta_DESC: "Poni fine allo status di $maha_samanta$." 
  BREAK_maha_samanta_DESC: "Cessa di essere un $maha_samanta$."
 
-# OFFER_pradhana_maha_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi un $pradhana_maha_samanta$" #OLD
  OFFER_pradhana_maha_samanta_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi un $pradhana_maha_samanta$" 
-# OFFER_pradhana_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $pradhana_maha_samanta$" #OLD
  OFFER_pradhana_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi un $pradhana_maha_samanta$" 
  CANCEL_pradhana_maha_samanta_TOOLTIP_HEADER: "Revoca lo Status di $pradhana_maha_samanta$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  CANCEL_pradhana_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $pradhana_maha_samanta$ di un [country|e]"
@@ -2158,9 +2045,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  BREAK_pradhana_maha_samanta_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere un $pradhana_maha_samanta$ di un [country|e]"
  OFFER_pradhana_maha_REQTITLE: "Richiesta di diventare un $pradhana_maha_samanta$" 
  REQUEST_pradhana_maha_REQTITLE: "Offerta di diventare nostro $pradhana_maha_samanta$" 
-# OFFER_pradhana_maha_samantaTITLE: "Chiedi loro di diventare un nostro $pradhana_maha_samanta$" #OLD
  OFFER_pradhana_maha_samantaTITLE: "Richiedi che diventino nostro $pradhana_maha_samanta$" 
-# REQUEST_pradhana_maha_samantaTITLE: "Chiedi di diventare un loro $pradhana_maha_samanta$" #OLD
  REQUEST_pradhana_maha_samantaTITLE: "Offriti di diventare loro $pradhana_maha_samanta$" 
  CANCEL_pradhana_maha_samantaTITLE: "Revoca lo Status di $pradhana_maha_samanta$"
  BREAK_pradhana_maha_samantaTITLE: "Revoca lo Status di $pradhana_maha_samanta$"
@@ -2168,12 +2053,9 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  REQUEST_pradhana_maha_samanta_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_pradhana_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_pradhana_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_pradhana_maha_samanta_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare un nostro $pradhana_maha_samanta$? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_pradhana_maha_samanta_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi nostro $pradhana_maha_samanta$, e questo avrà il seguente effetto:\n$INFO$" 
-# CANCEL_pradhana_maha_samanta_NEWDESC: "Vogliamo revocare lo status di $pradhana_maha_samanta$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?" #OLD
  CANCEL_pradhana_maha_samanta_NEWDESC: "Vogliamo porre fine allo status di $pradhana_maha_samanta$ di [COUNTRY.GetName]?" 
  BREAK_pradhana_maha_samanta_NEWDESC: "Vogliamo smettere di essere un $pradhana_maha_samanta$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_pradhana_maha_samanta_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un $pradhana_maha_samanta$, cosa che avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_pradhana_maha_samanta_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro $pradhana_maha_samanta$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_pradhana_maha_samanta_REQDESC: "$MONARCHTITLE$"
  BREAK_pradhana_maha_samanta_REQDESC: "$MONARCHTITLE$"
@@ -2185,9 +2067,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_pradhana_maha_samanta_AT_WAR: "$country_is_at_war$"
  LEAD_pradhana_maha_samanta: "$LIST$ is a [SUBJECT_TYPE.GetName]"
  AM_pradhana_maha_samanta: "[SUBJECT_TYPE.GetName] of $LIST$."
-# OFFER_pradhana_maha_samanta_DESC: "Suggerisci loro di diventare un nostro $pradhana_maha_samanta$, e li proteggeremo." #OLD
  OFFER_pradhana_maha_samanta_DESC: "Richiedi che diventino nostro $pradhana_maha_samanta$, e noi li proteggeremo." 
-# REQUEST_pradhana_maha_samanta_DESC: "Suggerisci di diventare un loro $pradhana_maha_samanta$, e ci proteggeranno." #OLD
  REQUEST_pradhana_maha_samanta_DESC: "Offriti di diventare loro $pradhana_maha_samanta$, e loro ci proteggeranno." 
  CANCEL_pradhana_maha_samanta_DESC: "Revoca lo status di $pradhana_maha_samanta$."
  BREAK_pradhana_maha_samanta_DESC: "Cessa di essere un $pradhana_maha_samanta$."
@@ -2196,9 +2076,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  pradhana_maha_samanta_tt: "Sono stati un nostro [ShowSubjectTypeName('maha_samanta')] per almeno #Y 15#! anni"
 
  # Free City Subjects
-# OFFER_imperial_free_city_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi una $imperial_free_city$" #OLD
  OFFER_imperial_free_city_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi una $imperial_free_city$" 
-# OFFER_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $imperial_free_city$" #OLD
  OFFER_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $imperial_free_city$" 
  CANCEL_imperial_free_city_TOOLTIP_HEADER: "Revoca lo Status di $imperial_free_city$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  CANCEL_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $imperial_free_city$ di un [country|e]"
@@ -2206,18 +2084,15 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  BREAK_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere una $imperial_free_city$ di un [country|e]"
  OFFER_imperial_free_REQTITLE: "Richiesta di diventare una $imperial_free_city$" 
  REQUEST_imperial_free_city_REQTITLE: "Offerta di diventare la nostra $imperial_free_city$ " 
-# OFFER_imperial_free_cityTITLE: "Chiedi loro di diventare una nostra $imperial_free_city$" #OLD
  OFFER_imperial_free_cityTITLE: "Richiedi che diventino la nostra $imperial_free_city$" 
  CANCEL_imperial_free_cityTITLE: "Revoca lo Status di $imperial_free_city$"
  BREAK_imperial_free_cityTITLE: "Revoca lo Status di $imperial_free_city$"
  OFFER_imperial_free_city_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_imperial_free_city_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare una nostra $imperial_free_city$? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_imperial_free_city_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi una $imperial_free_city$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_imperial_free_city_NEWDESC: "Vogliamo revocare lo status di $imperial_free_city$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?"
  BREAK_imperial_free_city_NEWDESC: "Vogliamo smettere di essere una $imperial_free_city$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_imperial_free_city_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare una $imperial_free_city$, cosa che avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_imperial_free_city_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare una $imperial_free_city$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_imperial_free_city_REQDESC: "$MONARCHTITLE$"
  BREAK_imperial_free_city_REQDESC: "$MONARCHTITLE$"
@@ -2229,34 +2104,27 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_imperial_free_city_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
  LEAD_imperial_free_city: "$LIST$ è un [SUBJECT_TYPE.GetName]"
  AM_imperial_free_city: "[SUBJECT_TYPE.GetName] di $LIST$."
-# OFFER_imperial_free_city_DESC: "Suggerisci loro di diventare una nostra $imperial_free_city$, e li proteggeremo." #OLD
  OFFER_imperial_free_city_DESC: "Richiedi che diventino una $imperial_free_city$, e noi li proteggeremo." 
-# CANCEL_imperial_free_city_DESC: "Revoca lo status di $imperial_free_city$." #OLD
  CANCEL_imperial_free_city_DESC: "Poni fine allo status di $imperial_free_city$." 
  BREAK_imperial_free_city_DESC: "Cessa di essere una $imperial_free_city$."
  imperial_free_city_overlord_modifier: "Signore della $imperial_free_city$"
  imperial_free_city_subject_modifier: "$imperial_free_city$"
 
-# OFFER_direct_imperial_free_city_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi una $direct_imperial_free_city$" #OLD
  OFFER_direct_imperial_free_city_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi una $direct_imperial_free_city$" 
-# OFFER_direct_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $direct_imperial_free_city$" #OLD
  OFFER_direct_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $direct_imperial_free_city$" 
  CANCEL_direct_imperial_free_city_TOOLTIP_HEADER: "Revoca lo Status di $direct_imperial_free_city$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  CANCEL_direct_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $direct_imperial_free_city$ di un [country|e]"
  BREAK_direct_imperial_free_city_TOOLTIP_HEADER: "Rifiuta di essere una $direct_imperial_free_city$ [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName]"
  BREAK_direct_imperial_free_city_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere una $direct_imperial_free_city$ di un [country|e]"
-# OFFER_direct_imperial_free_cityTITLE: "Chiedi loro di diventare una nostra $direct_imperial_free_city$" #OLD
  OFFER_direct_imperial_free_cityTITLE: "Richiedi che diventino una $direct_imperial_free_city$" 
  CANCEL_direct_imperial_free_cityTITLE: "Revoca lo Status di $direct_imperial_free_city$"
  BREAK_direct_imperial_free_cityTITLE: "Revoca lo Status di $direct_imperial_free_city$"
  OFFER_direct_imperial_free_city_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_direct_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
  BREAK_direct_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
-# OFFER_direct_imperial_free_city_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare una nostra $direct_imperial_free_city$? Questo avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_direct_imperial_free_city_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi una $direct_imperial_free_city$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_direct_imperial_free_city_NEWDESC: "Vogliamo revocare lo status di $direct_imperial_free_city$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?"
  BREAK_direct_imperial_free_city_NEWDESC: "Vogliamo smettere di essere una $direct_imperial_free_city$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?\nQuesto causerà un peggioramento delle nostre relazioni, e loro otterranno un [casus_belli|e] contro di noi!"
-# OFFER_direct_imperial_free_city_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare una $direct_imperial_free_city$, cosa che avrà il seguente effetto:\n$INFO$" #OLD
  OFFER_direct_imperial_free_city_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo una $direct_imperial_free_city$, e questo avrà il seguente effetto:\n$INFO$" 
  CANCEL_direct_imperial_free_city_REQDESC: "$MONARCHTITLE$"
  BREAK_direct_imperial_free_city_REQDESC: "$MONARCHTITLE$"
@@ -2268,33 +2136,24 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_direct_imperial_free_city_AT_WAR: "$country_is_at_war$"
  LEAD_direct_imperial_free_city: "$LIST$ è un [SUBJECT_TYPE.GetName]"
  AM_direct_imperial_free_city: "[SUBJECT_TYPE.GetName] di $LIST$."
-# OFFER_direct_imperial_free_city_DESC: "Suggerisci loro di diventare una nostra $direct_imperial_free_city$, e li proteggeremo." #OLD
  OFFER_direct_imperial_free_city_DESC: "Richiedi che diventino una $direct_imperial_free_city$, e noi li proteggeremo." 
-# CANCEL_direct_imperial_free_city_DESC: "Revoca lo status di $direct_imperial_free_city$." #OLD
  CANCEL_direct_imperial_free_city_DESC: "Poni fine allo status di $direct_imperial_free_city$." 
  BREAK_direct_imperial_free_city_DESC: "Cessa di essere una $direct_imperial_free_city$."
  direct_imperial_free_city_overlord_modifier: "Signore di $direct_imperial_free_city$"
  direct_imperial_free_city_subject_modifier: "$direct_imperial_free_city$"
 
  #State Bank
-# OFFER_state_bank_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] diventi una $state_bank$" #OLD
  OFFER_state_bank_TOOLTIP_HEADER: "Richiedi che [TARGET_COUNTRY.GetName] diventi una $state_bank$" 
-# OFFER_state_bank_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $state_bank$" #OLD
  OFFER_state_bank_TOOLTIP_HEADER_NO_TARGET: "Richiedi che un [country|e] diventi una $state_bank$" 
-# REQUEST_state_bank_TOOLTIP_HEADER: "Richiedi di diventare una $state_bank$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]" #OLD
  REQUEST_state_bank_TOOLTIP_HEADER: "Offriti di diventare una $state_bank$ di [TARGET_COUNTRY.GetName]" 
-# REQUEST_state_bank_TOOLTIP_HEADER_NO_TARGET: "Richiedere di diventare una $state_bank$ di un [country|e]" #OLD
  REQUEST_state_bank_TOOLTIP_HEADER_NO_TARGET: "Offriti di diventare una $state_bank$ di un [country|e]" 
  CANCEL_state_bank_TOOLTIP_HEADER: "Fai sì che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] smetta di essere una $state_bank$"
  CANCEL_state_bank_TOOLTIP_HEADER_NO_TARGET: "Fai sì che un [country|e] smetta di essere una $state_bank$"
  BREAK_state_bank_TOOLTIP_HEADER: "Rifiuta di essere una $state_bank$ [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_state_bank_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere una $state_bank$ di un [country|e]"
-# OFFER_state_bankTITLE: "Chiedi loro di diventare una nostra $state_bank$" #OLD
  OFFER_state_bankTITLE: "Richiedi che diventino la nostra $state_bank$" 
  OFFER_state_bank_FLAVOR: "Scegli un [country|e] a cui offrire lo status di [ShowSubjectTypeName('state_bank')]"
-# REQUEST_state_bankTITLE: "Chiedi di diventare una loro $state_bank$" #OLD
  REQUEST_state_bankTITLE: "Offriti di diventare la loro $state_bank$" 
-# REQUEST_state_bank_FLAVOR: "Scegli un [country|e] di cui diventare una [ShowSubjectTypeName('state_bank')]" #OLD
  REQUEST_state_bank_FLAVOR: "Scegli un [country|e] a cui offrire lo status [ShowSubjectTypeName('state_bank')]" 
  CANCEL_state_bankTITLE: "Revoca lo Status di $state_bank$"
  CANCEL_state_bank_FLAVOR: "Scegli un [country|e] a cui revocare lo status di [ShowSubjectTypeName('state_bank')]"
@@ -2303,9 +2162,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  REQUEST_state_bank_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_state_bank_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_state_bank_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
-# OFFER_state_bank_NEWDESC: "Vogliamo richiedere [COUNTRY.Custom('IT_Alla')][COUNTRY.GetName] di diventare una nostra $state_bank$?" #OLD
  OFFER_state_bank_NEWDESC: "Vogliamo richiedere che [COUNTRY.GetName] diventi la nostra $state_bank$?" 
-# REQUEST_state_bank_NEWDESC: "Vogliamo chiedere di diventare una $state_bank$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]?" #OLD
  REQUEST_state_bank_NEWDESC: "Vogliamo offrirci di diventare una $state_bank$ di [COUNTRY.GetName]?" 
  CANCEL_state_bank_NEWDESC: "Vogliamo revocare lo status di $state_bank$ [COUNTRY.Custom('IT_Di')][COUNTRY.GetName]?"
  BREAK_state_bank_NEWDESC: "Vogliamo smettere di essere una $state_bank$ di [COUNTRY.GetName]?\nQuesto peggiorerà le nostre relazioni e darà loro un [casus_belli|e] contro di noi!" 
@@ -2313,13 +2170,10 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_state_bank_DESC: "Suggerisci loro di diventare una nostra $state_bank$."
  OFFER_state_bank_REQTITLE: "Richiesta di diventare una $state_bank$" 
  REQUEST_state_bank_REQTITLE: "Offerta di diventare la nostra $state_bank$" 
-# REQUEST_state_bank_DESC: "Suggerisci di diventare una loro $state_bank$." #OLD
  REQUEST_state_bank_DESC: "Offriti di diventare la loro $state_bank$." 
  CANCEL_state_bank_DESC: "Revoca lo status di $state_bank$."
  BREAK_state_bank_DESC: "Cessa di essere una $state_bank$."
-# OFFER_state_bank_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare una [SUBJECT_TYPE.GetName]" #OLD
  OFFER_state_bank_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_state_bank_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare una [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_state_bank_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_state_bank_REQDESC: "$MONARCHTITLE$"
  BREAK_state_bank_REQDESC: "$MONARCHTITLE$"
@@ -2441,12 +2295,14 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OFFER_LOAN_SELECT: "Scegli i termini del prestito da offrire:"
  OFFER_LOAN_AMOUNT: "Importo ([gold_i])"
  OFFER_LOAN_INTEREST: "Interesse (%)"
- OFFER_LOAN_DURATION: "Durata (mesi)"
+ OFFER_LOAN_DURATION: "Durata" 
  OFFER_LOAN_TOOLTIP_HEADER: "Offri un [loan|e] [TARGET_COUNTRY.Custom('IT_Alla')][TARGET_COUNTRY.GetName]"
  OFFER_LOAN_TOOLTIP_HEADER_NO_TARGET: "Offri un [loan|e] a un [country|e]"
  OFFER_LOAN_FLAVOR: "Offri un [loan|e] a un altro paese che dovrà ripagarlo, con gli interessi."
  OFFER_LOAN_DURATION_YEAR: "$NUM$ Anno"
  OFFER_LOAN_DURATION_YEARS: "$NUM$ Anni"
+ OFFER_LOAN_SUGGEST_BUTTON: "Suggerisci Termini" 
+ OFFER_LOAN_SUGGEST_DESC: "#T $OFFER_LOAN_SUGGEST_BUTTON$#! Suggerisce i termini del [loan|e] con la maggiore probabilità di essere accettati. Offriremo la durata massima consentita, l'importo più alto che il debitore può sostenere (limitato dal nostro @gold! disponibile) e il tasso di interesse più alto che è disposto a pagare." 
  #
  IO_CONTRIBUTION_CHOOSE_AMOUNT: "Scegli l'importo con cui contribuire:"
  IO_CONTRIBUTION_CONFIRM_AMOUNT: "Contribuire con l'importo selezionato"
@@ -2474,7 +2330,6 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  SUPPORTREBSTOP_CATEGORY: "CATEGORY_COVERT_ACTIONS"
  SUPPORTREBTITLE: "Sostieni i Ribelli"
  SUPPORTREB_CATEGORY: "CATEGORY_COVERT_ACTIONS"
-# SUPPORTREBREQDESC: "Vogliamo sostenere i ribelli in $WHERE$?\nSaranno in grado di raggiungere più rapidamente i loro obiettivi, e ci uniremo automaticamente alla loro [war|e] d'indipendenza." #OLD
  SUPPORTREBREQDESC: "Vogliamo sostenere i ribelli in $WHERE$?\nPotranno raggiungere i loro obiettivi più rapidamente, e ci uniremo automaticamente alla loro [war|e] d'indipendenza." 
  SUPPORTREBINFORMDESC: "I popolani nella nostra nazione sono stati quasi incitati alla ribellione.\nAbbiamo catturato lo straniero che l'ha fatto, ed è chiaro che proviene da $WHO$!"
  SUPPORTREB_DESC: "Tentare di incitare una ribellione in $WHO$."
@@ -2506,7 +2361,6 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  generic_war_goal_destroy_army: "Distruggi l'Esercito"
  generic_war_goal_destroy_army_desc: "L'[war_goal|e] è distruggere gli [armies|e] nemici. Se uno schieramento ha un [army|e] e l'altra no, riceverà un [war_score|e] crescente."
  TAKE_PROVINCE: "Conquistare la Provincia" 
-# NAVAL_SUPERIORITY: "Superiorità Navale" #OLD
  NAVAL_SUPERIORITY: "Mostra superiorità navale" 
  SUPERIORITY: "Superiorità" 
  ENFORCE_MILITARY_ACCESS: "Imporre l'Accesso Militare" 
@@ -2530,9 +2384,10 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  war_goal_none_desc: "@trigger_no! Non c'è nessun [war_goal|e] per questa guerra."
  war_goal_take_country: "Prendi il controllo [COUNTRY.Custom('IT_Della')][COUNTRY.GetNameWithNoTooltip]"
  war_goal_take_province_tribal_feud: "$generic_war_goal_take_province$"
-# war_goal_take_province_nationalist: "$war_goal_take_province$" #OLD
  war_goal_take_province_nationalist: "$generic_war_goal_take_province$" 
  war_goal_take_capital: "$generic_war_goal_take_capital$"
+ war_goal_take_capital_sound_toll: "$generic_war_goal_take_capital$" 
+ war_goal_take_capital_sound_toll_desc: "$generic_war_goal_take_capital_desc$" 
  war_goal_defend_capital: "$generic_war_goal_defend_capital$"
 # war_goal_take_capital_coalition: "$generic_war_goal_take_capital$" #DELETE
  war_goal_take_capital_prevent_annexation: "$generic_war_goal_take_capital$"
@@ -2556,7 +2411,9 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  war_goal_superiority_against_hordes: "$generic_war_goal_superiority$"
  war_goal_superiority_against_hordes_desc: "$generic_war_goal_superiority_desc$"
  war_goal_superiority_coalition: "$generic_war_goal_superiority$" 
+ war_goal_superiority_coalition_scaliger_war: "$generic_war_goal_superiority$" 
  war_goal_superiority_coalition_desc: "$generic_war_goal_superiority_desc$" 
+ war_goal_superiority_coalition_scaliger_war_desc: "$generic_war_goal_superiority_desc$" 
  war_goal_superiority_livonian_wars: "$generic_war_goal_superiority$"
  war_goal_superiority_livonian_wars_desc: "$generic_war_goal_superiority_desc$"
  war_goal_humiliate: "Umiliazione"
@@ -2570,9 +2427,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  war_goal_jihad_conquest_desc: "$generic_war_goal_take_province_desc$"
  war_goal_excommunication_conquest: "$generic_war_goal_superiority$"
  war_goal_excommunication_conquest_desc: "$generic_war_goal_superiority_desc$"
-# war_goal_hundred_years_war_wargoal: "$generic_war_goal_take_capital$" #OLD
  war_goal_hundred_years_war_wargoal: "$generic_war_goal_superiority$" 
-# war_goal_hundred_years_war_wargoal_desc: "$generic_war_goal_take_capital_desc$" #OLD
  war_goal_hundred_years_war_wargoal_desc: "$generic_war_goal_superiority_desc$" 
  war_goal_take_shogunate_wargoal: "Distruggi lo Shogunato"
  war_goal_take_shogunate_wargoal_desc: "$war_goal_superiority_desc$"
@@ -2655,15 +2510,15 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  war_goal_great_northern_conflict_conquest_desc: "$great_northern_conflict_desc$"
 
  war_goal_high_kingship_subjugate_wargoal: "Sottomissione dell'Alta Regalità"
-# war_goal_high_kingship_subjugate_wargoal_desc: "$generic_war_goal_superiority_desc$" #OLD
  war_goal_high_kingship_subjugate_wargoal_desc: "$generic_war_goal_take_capital_desc$" 
 
  war_goal_take_capital_liberate_hre_member: "Liberazione del Sacro Romano Impero"
  war_goal_take_capital_liberate_hre_member_desc: "$generic_war_goal_take_capital_desc$"
 
  war_goal_high_kingship_reclamation_wargoal: "Riconquista dell'Alta Regalità"
-# war_goal_high_kingship_reclamation_wargoal_desc: "$generic_war_goal_take_capital_desc$" #OLD
  war_goal_high_kingship_reclamation_wargoal_desc: "$generic_war_goal_take_province$" 
+ war_goal_secure_italy_wargoal: "Metti in sicurezza [ShowRegionName('italy_region')]" 
+ war_goal_secure_italy_wargoal_desc: "Il [war_goal|e] è conquistare una provincia italiana. Ottieni un bonus di [war_score|e] occupando la [province|e] bersaglio. Riceveremo un [war_score|e] progressivo occupando e mantenendo ogni [location|e] della provincia.\n\n#Y La conquista è limitata a [ShowRegionName('italy_region')]#!" 
  war_goal_high_kingship_superiority_wargoal: "Superiorità dell'Alta Regalità" 
  war_goal_high_kingship_superiority_wargoal_desc: "$generic_war_goal_superiority_desc$" 
  war_goal_superiority_restore_roman_borders: "Ripristina i confini $ROM_ADJ$" 
@@ -2689,23 +2544,23 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  OCCUPATION_SCORE: "[occupations|e] e [blockades|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%/$#!"
  MAX_WAR_SCORE: "Il [war_score|e] massimo è $MAX$ in una richiesta di pace separata." 
  BATTLE_SCORE_ENTRY: "$NAME$: $VAL|+=2%/$#!"
- COMPLETE_VICTORY_REASON_UNCONDITIONAL_SURRENDER: "$SIDE$ si sono [unconditionally_surrendered|e]" 
- COMPLETE_VICTORY_REASON_WAR_EXHAUSTION: "$SIDE$ ha troppa [war_exhaustion|e]: $VAL|+=2%$"
- COMPLETE_VICTORY_REASON_OCCUPATION: "$SIDE$ è completamente occupato: $VAL|+=2%$"
- COMPLETE_VICTORY_REASON_NO_ARMY: "$SIDE$ non ha un esercito: $VAL|+=2%$"
- CB_WAR_GOAL: "[war_goal|e] $WG$"
+ COMPLETE_VICTORY_REASON_UNCONDITIONAL_SURRENDER: "$SIDE$ è [unconditionally_surrendered|e]\n" 
+ COMPLETE_VICTORY_REASON_WAR_EXHAUSTION: "$SIDE$ ha troppa [war_exhaustion|e]: $VAL|+=2%$\n" 
+ COMPLETE_VICTORY_REASON_OCCUPATION: "$SIDE$ è completamente occupato: $VAL|+=2%$\n" 
+ COMPLETE_VICTORY_REASON_NO_ARMY: "$SIDE$ non ha esercito: $VAL|+=2%$\n" 
+ CB_WAR_GOAL: "[war_goal|e] $WG$\n" 
  WAR_GOAL: "[war_goal|e]"
  WAR_GOAL_PROGRESS: "$PROGRESS|%Y$ dell'[war_goal|e] completato."
  WAR_GOALS: "[war_goals|e]"
- WARSCORE_FROM_TICKING: "Bonus Crescente $SIDE$: $VAL|+=2%/$"
- WARSCORE_FROM_BONUSES: "Bonus $SIDE$: $VAL|+=2%/$"
+ WARSCORE_FROM_TICKING: "$SIDE$ Progressivo: $VAL|+=2%/$\n" 
+ WARSCORE_FROM_BONUSES: "$SIDE$ Bonus: $VAL|+=2%/$\n" 
  WARSCORE_OCCUPATION: "Occupazione di $NAME$ da parte di $WHO$ $ADJ$: $VAL|+=2$\n"
  WARSCORE_B_OCCUPATION: "Controllo di $NAME$ da parte di $WHO$ $ADJ$: $VAL|+=2$\n"
  WAR_GOAL_NAVALSUPERIORITY_BONUS_WARSCORE_DESC: "L'attaccante riceve un bonus al punteggio battaglia di $ASCORE|Y$ dall'[war_goal|e].\nIl difensore riceve un bonus al punteggio battaglia $DSCORE|Y$ dall'[war_goal|e]."
  WAR_GOAL_SUPERIORITY_BONUS_WARSCORE_DESC: "L'attaccante riceve un bonus al punteggio battaglia $ASCORE$ dall'[war_goal|e].\nIl difensore riceve un bonus al punteggio battaglia $DSCORE|Y$ dall'[war_goal|e]."
- WAR_GOAL_CONTROLLER_ATTACKER: "[war_goal|e] L'Attaccante controlla $WHICH|Y$"
- WAR_GOAL_CONTROLLER_DEFENDER: "[war_goal|e] Il Difensore controlla $WHICH|Y$"
- WAR_GOAL_CONTROLLER_NOONE: "Nessuno controlla l'[war_goal|e]$WHICH|Y$"
+ WAR_GOAL_CONTROLLER_ATTACKER: "[war_goal|e]: l'Attaccante controlla $WHICH|Y$\n" 
+ WAR_GOAL_CONTROLLER_DEFENDER: "[war_goal|e]: il Difensore controlla $WHICH|Y$\n" 
+ WAR_GOAL_CONTROLLER_NOONE: "Nessuno controlla [war_goal|e]$WHICH|Y$\n" 
 
  WAR_GOAL_CONTROLLER_ATTACKER_HAS_ARMY: "[war_goal|e] I difensori non hanno [armies|e]"
  WAR_GOAL_CONTROLLER_DEFENDER_HAS_ARMY: "[war_goal|e] Gli attaccanti non hanno [armies|e]"
@@ -2766,7 +2621,6 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  ROYAL_MARRIAGE_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
  ROYAL_MARRIAGE_DESC: "Proponi quali due membri delle nostre famiglie reali dovrebbero sposarsi."
  ROYAL_MARRIAGETITLE: "Proposta di Matrimonio Reale"
-# ROYAL_MARRIAGE_TOOLTIP_HEADER: "Proponi un Matrimonio Reale con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]." #OLD
  ROYAL_MARRIAGE_TOOLTIP_HEADER: "Proponi un matrimonio reale con [TARGET_COUNTRY.GetName]. " 
  ROYAL_MARRIAGE_TOOLTIP_HEADER_NO_TARGET: "Proponi un Matrimonio Reale con un [country|e]."
  ROYAL_MARRIAGE_FLAVOR: "Questo unirà un membro della nostra famiglia reale con uno della loro famiglia reale, avvicinandoci."
@@ -2846,7 +2700,24 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  COALITION_DECLARE_WAR_TOTAL_COMPARISON_SLIGHTLY_STRONGER: "La Coalizione può vincere questa guerra"
  COALITION_DECLARE_WAR_TOTAL_COMPARISON_STRONGER: "La Coalizione probabilmente vincerà questa guerra"
  INDEPENDENCE_MOVEMENT_BACKING_TITLE: "Probabilità di vittoria di [InternationalOrganizationsView.GetInternationalOrganization.GetType.GetNameWithNoTooltip]" 
- INDEPENDENCE_MOVEMENT_BACKING_DESC: "[InternationalOrganizationsView.GetInternationalOrganization.GetType.GetName] stima le proprie probabilità di vittoria al [InternationalOrganizationsView.GetIndependenceMovementWinChance|%Y].\n\n[InternationalOrganizationsView.GetInternationalOrganization.GetName] può dichiarare una [war|e] quando la probabilità di vittoria raggiunge [InternationalOrganizationsView.GetAiIndependenceMovementThreshold|%Y].\n\n" 
+ INDEPENDENCE_MOVEMENT_BACKING_DESC: "[InternationalOrganizationsView.GetInternationalOrganization.GetType.GetName] stima le proprie probabilità di vittoria al [InternationalOrganizationsView.GetIndependenceMovementView.GetIndependenceMovementWinChance|%Y].\n\n[InternationalOrganizationsView.GetInternationalOrganization.GetName] può dichiarare [war|e] una volta che la probabilità di vittoria raggiunge [InternationalOrganizationsView.GetIndependenceMovementView.GetAiIndependenceMovementThreshold|%Y].\n\n" 
+ INDEPENDENCE_MOVEMENT_WAR_IMMINENT_WARNING: "@warning_icon! La probabilità di vittoria del movimento ha raggiunto la soglia.\nUna [war|e] d'indipendenza può essere dichiarata in qualsiasi momento!" 
+ INDEPENDENCE_AI_STATUS_HAS_WAR: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.Custom('IT_La')|U][InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] è già in [war|e] con il Signore — non è possibile dichiarare una nuova [war|e] d'indipendenza mentre una è già in corso." 
+ INDEPENDENCE_AI_STATUS_AT_OTHER_WAR: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.Custom('IT_La')|U][InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] è attualmente in [war|e] con un altro paese — l'IA non dichiarerà l'indipendenza mentre è già impegnata in un conflitto attivo." 
+ INDEPENDENCE_AI_STATUS_HAS_TRUCE: "@trigger_no! Una [truce|e] con il Signore è attualmente attiva — l'IA non può dichiarare una [war|e] d'indipendenza finché non scade." 
+ INDEPENDENCE_AI_STATUS_FIGHTING_TOGETHER: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.Custom('IT_La')|U][InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] sta attualmente combattendo una [war|e] al fianco del [overlord|e] — l'IA non dichiarerà l'indipendenza mentre è alleata in battaglia." 
+ INDEPENDENCE_AI_STATUS_SHORTTERM_WEAK: "@warning_icon! Le prospettive a lungo termine favoriscono l'indipendenza, ma l'attuale forza delle truppe è insufficiente perché l'IA rischi di dichiarare [war|e] adesso. Aumenta gli eserciti per favorire la dichiarazione." 
+ INDEPENDENCE_AI_STATUS_WAITING_FOR_CB: "@warning_icon! La probabilità di vittoria è sopra la soglia, ma il [casus_belli|e] d'indipendenza non è ancora stato attivato. L'IA lo otterrà prima di dichiarare [war|e]." 
+ INDEPENDENCE_AI_COND_WIN_CHANCE_MET: "@trigger_yes! La probabilità di vittoria è sopra la soglia dell'IA e l'attuale forza delle truppe è sufficiente" 
+ INDEPENDENCE_AI_COND_WIN_CHANCE_SHORTTERM_WEAK: "@warning_icon! La probabilità di vittoria a lungo termine è sopra la soglia, ma l'attuale forza delle truppe è troppo debole — l'IA sta aspettando di rafforzare le forze prima di dichiarare [war|e]" 
+ INDEPENDENCE_AI_COND_WIN_CHANCE_NOT_MET: "@trigger_no! La probabilità di vittoria non ha ancora raggiunto la soglia dell'IA" 
+ INDEPENDENCE_AI_COND_AT_OTHER_WAR: "@trigger_no! Attualmente in [war|e] con un altro paese — l'IA non dichiarerà l'indipendenza mentre è già impegnata in un conflitto attivo" 
+ INDEPENDENCE_AI_COND_HAS_WAR: "@trigger_no! Già in [war|e] con il Signore" 
+ INDEPENDENCE_AI_COND_HAS_TRUCE: "@trigger_no! [truce|e] attiva con il Signore" 
+ INDEPENDENCE_AI_COND_NO_WAR_OR_TRUCE: "@trigger_yes! Nessuna [war|e] o [truce|e] attiva con il Signore" 
+ INDEPENDENCE_AI_COND_HAS_CB: "@trigger_yes! Il [casus_belli|e] d'indipendenza è attivo" 
+ INDEPENDENCE_AI_COND_NO_CB: "@trigger_no! Il [casus_belli|e] d'indipendenza non è ancora stato attivato — l'IA lavorerà per ottenerlo" 
+ INDEPENDENCE_AI_COND_FIGHTING_TOGETHER: "@trigger_no! Attualmente in combattimento in una [war|e] al fianco del [overlord|e] — l'IA non può dichiarare l'indipendenza durante una [war|e] alleata attiva" 
 
  CASUS_BELLI_AND_WARGOAL: "[casus_belli|e] e [war_goal|e]"
  ATTACKER_WARGOAL: "[war_goal|e] dell'$game_concept_attacker$"
@@ -2904,9 +2775,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  CALLDESC: "[TARGET_COUNTRY.Custom('IT_La')|U][TARGET_COUNTRY.GetName] risponde alla chiamata [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] per aiutarli in questo conflitto."
  CALLNEWDESC: "Vogliamo chiamare i nostri Alleati in questi tempi di [war|e]?"
  CALL_TRUCE: "Hanno una tregua con i nostri nemici"
-# WCRD_ATT: "Questa è una [war|e] che hanno iniziato." #OLD
  WCRD_ATT: "Questa è una [war|e] che hanno iniziato loro.\nRifiutare la chiamata romperà i nostri trattati con il chiamante, ridurrà la loro opinione di [COUNTRY.GetBiasConfig('opinion_dishonored_alliance').GetValue|+=0] e la fiducia di [GetDefine('NDiplomacy', 'TRUST_CHANGE_CALL_TO_ARMS_REJECTED')|+=0]." 
-# WCRD_DEF: "Questa è una [war|e] difensiva" #OLD
  WCRD_DEF: "Questa è una [war|e] difensiva\nRifiutare la chiamata romperà i nostri trattati con il chiamante, ridurrà la loro opinione di [COUNTRY.GetBiasConfig('opinion_dishonored_alliance').GetValue|+=0] e la fiducia di [GetDefine('NDiplomacy', 'TRUST_CHANGE_CALL_TO_ARMS_REJECTED')|+=0]." 
  RELEASETITLE: "Rilascia Prigioniero"
  RELEASE_DESC: "Rilascia un prigioniero e rimandalo alla sua patria"
@@ -3032,7 +2901,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  NOT_GREAT_POWER_BANNER: "Questo paese non è una [great_power|e]"
  SELECT_ACTIONS: "Apri Tutte le Azioni Diplomatiche"
  DIPLOMATIC_REPUTATION: "Reputazione Diplomatica"
- VOTED_ENTRY: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName|Y] @[COUNTRY.GetFlag]! ha votato per [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] @[TARGET_COUNTRY.GetFlag]! con #TOOLTIP:$BREAKDOWN_TAG$ $AMOUNT|L0$#! voto/i"
+ VOTED_ENTRY: "@[COUNTRY.GetFlag]! [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] vota: #TOOLTIP:$BREAKDOWN_TAG$ $AMOUNT|L0$#!" 
  NOT_VOTED_ENTRY: "$EFFECT_LIST_BULLET$[COUNTRY.Custom('IT_La')][COUNTRY.GetName|Y] @[COUNTRY.GetFlag]! ha $AMOUNT|0$ voto/i non ancora utilizzati"
  VOTED_ENTRY_BREAKDOWN_FORMAT: "$KEY$: $VALUE|0$"
  ONE_VOTE_PER_COUNTRY: "Ogni paese ha un voto."
@@ -3041,10 +2910,16 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  THEY_ARE_BANKRUPT_TOOLTIP: "Sono in [bankrupt|e]!"
  WE_ARE_BANKRUPT_TOOLTIP: "Siamo in [bankrupt|e]!"
  IS_BANKRUPT_TOOLTIP: "È in [bankrupt|e]"
+ ART_SALE_VALUE: "Valore dell'[work_of_art|e]" 
+ LOW_TREASURY: "[treasury|e] Basso" 
+ HIGH_QUALITY_ART: "[art_quality|e] Alta" 
+ LOW_QUALITY_ART: "[art_quality|e] Bassa" 
+ WEALTHY_BUYER: "Ha abbondanza di [treasury|e]" 
  LENGTH_OF_WAR_TOOLTIP: "Durata della [war|e]"
  IN_DEFICIT: "Provoca un deficit"
  POPULATION_IN_DECLINE: "[population|e] in declino" 
  OPINION_OF_CURRENT_RESOLUTION_PROPOSAL: "Opinione sulla proposta di [resolution|e] attuale"
+ OPINION_OF_TARGET_PROPOSAL: "Opinione su [SCOPE.sPolicy('policy').GetName]" 
  OFFERED_GOLD: "[gold|e] offerto"
  IS_AT_WAR: "È in [war|e]"
  BIAS_FOR_VOTE_AGAINST_IT: "Pregiudizio per il voto contrario"
@@ -3137,6 +3012,15 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  RIVALS_NOT_ENOUGH_POPS: "@trigger_no! [COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha il 25% di [pops|e] in più rispetto a noi."
  RIVALS_ANY_OF_THESE: "@trigger_no! Uno qualsiasi dei seguenti:"
  RIVALS_CAPITALS_NOT_CLOSE_ENOUGH: "@trigger_no! Le nostre Capitali non sono abbastanza vicine."
+ RIVALS_TARGET_DOES_NOT_EXIST: "@trigger_no![COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non esiste." 
+ RIVALS_NO_NON_REAL_COUNTRIES: "@trigger_no![COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non può essere selezionato come [rival|e]." 
+ RIVALS_NO_REVOLTER_SELF: "@trigger_no!I Rivoltosi non possono selezionare [rivals|e]." 
+ RIVALS_NO_REVOLTER_TARGET: "@trigger_no![COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è un [revolter|e] e non può essere selezionato come [rival|e]." 
+ RIVALS_DIFFERENT_SUBJECT_STATUS_SELF: "@trigger_no!Siamo uno Stato Cliente, ma [COUNTRY.Custom('IT_La')][COUNTRY.GetName] non lo è." 
+ RIVALS_DIFFERENT_SUBJECT_STATUS_TARGET: "@trigger_no![COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è uno Stato Cliente, ma noi non lo siamo." 
+ RIVALS_NO_POP_COUNTRIES: "@trigger_no!I paesi Pop non possono selezionare o essere selezionati come [rivals|e]." 
+ RIVALS_TARGET_CAPITAL_NOT_DISCOVERED: "@trigger_no!Non abbiamo [Concept('discovered', 'Scoperto')|e] la [capital|e] [COUNTRY.Custom('IT_Della')][COUNTRY.GetName]." 
+ RIVALS_OUR_CAPITAL_NOT_DISCOVERED: "@trigger_no![COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non ha [Concept('discovered', 'Scoperto')|e] la nostra [capital|e]." 
 
  THEY_ARE_MONARCHY: "Sono una [ShowGovernmentTypeName('monarchy')]"
  THEY_ARE_REPUBLIC: "Sono una [ShowGovernmentTypeName('republic')]"
@@ -3223,9 +3107,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  CANCEL_uc_bey_TOOLTIP_HEADER_NO_TARGET: "Revoca lo Status di $uc_bey$ di un Paese"
  BREAK_uc_bey_TOOLTIP_HEADER: "Rifiuta di essere lo [subject|e] [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]"
  BREAK_uc_bey_TOOLTIP_HEADER_NO_TARGET: "Rifiuta di essere lo [subject|e] di un Paese"
-# OFFER_uc_beyTITLE: "Richiedi lo Status di $uc_bey$" #OLD
  OFFER_uc_beyTITLE: "Richiedi che diventino nostro $uc_bey$" 
-# REQUEST_uc_beyTITLE: "Chiedi lo Status di $uc_bey$" #OLD
  REQUEST_uc_beyTITLE: "Offriti di diventare loro $uc_bey$" 
  CANCEL_uc_beyTITLE: "Revoca lo Status di $uc_bey$"
  BREAK_uc_beyTITLE: "Revoca lo Status di $uc_bey$"
@@ -3241,9 +3123,7 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  REQUEST_uc_bey_DESC: "Suggerisci di diventare un loro $uc_bey$, e ci proteggeranno."
  CANCEL_uc_bey_DESC: "Revoca lo status di $uc_bey$."
  BREAK_uc_bey_DESC: "Cessa di essere un $uc_bey$."
-# OFFER_uc_bey_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ci sta chiedendo di diventare un [SUBJECT_TYPE.GetName]" #OLD
  OFFER_uc_bey_REQDESC: "[COUNTRY.GetName] sta richiedendo che diventiamo loro [SUBJECT_TYPE.GetName]" 
-# REQUEST_uc_bey_REQDESC: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta chiedendo di diventare un nostro [SUBJECT_TYPE.GetName]" #OLD
  REQUEST_uc_bey_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro [SUBJECT_TYPE.GetName]" 
  CANCEL_uc_bey_REQDESC: "$MONARCHTITLE$"
  BREAK_uc_bey_REQDESC: "$MONARCHTITLE$"
@@ -3260,3 +3140,83 @@ REQUEST_samanta_REQDESC: "[COUNTRY.GetName] si sta offrendo di diventare nostro 
  COST_OF_RELATION: "Costo della Relazione"
  REASONS_TO_KEEP_RELATION_TT: "#T Ragioni per Mantenerla#!"
  TEU_POL_BOH_truce: "@trigger_no! L'armistizio con [COUNTRY.Custom('IT_La')][COUNTRY.GetName] proibisce loro di intervenire nella guerra" 
+ INTEL_FOG_TOOLTIP_HEADER: "Dati Sconosciuti" 
+ INTEL_FOG_TOOLTIP_BODY: "Hai bisogno di almeno [SpyNetworkFogWrap.GetThreshold] [spy_network|e] [SpyNetworkFogWrap.GetTargetCountry.Custom('IT_In')][SpyNetworkFogWrap.GetTargetCountry.GetName] per rivelare questa informazione." 
+ INTEL_FOG_UNKNOWN_VALUE: "???" 
+ INTEL_FOG_AI_PERSONALITY_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_AI_PERSONALITY')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_COUNTRY_MODIFIERS_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_COUNTRY_MODIFIERS')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_ESTATES_POWER_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_ESTATES_POWER')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LEGITIMACY_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LEGITIMACY')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_INCOME_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_INCOME')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_MANPOWER_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_MANPOWER')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_SAILORS_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_SAILORS')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_STABILITY_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_STABILITY')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_ARMY_SIZE_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_ARMY_SIZE')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_ARMY_SIZE_IT_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_ARMY_SIZE')].[InteractionTarget.GetCountry.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LEVY_STRENGTH_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LEVY_STRENGTH')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_NAVY_STRENGTH_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_NAVY_STRENGTH')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_NAVY_STRENGTH_IT_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_NAVY_STRENGTH')].[InteractionTarget.GetCountry.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_NAVY_LEVY_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_NAVY_LEVY_STRENGTH')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_COMBAT_MODIFIERS')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_ARMY_TRADITION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_ARMY_TRADITION')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_NAVY_TRADITION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_NAVY_TRADITION')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_TOTAL_POPULATION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_TOTAL_POPULATION')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_TAX_BASE_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_TAX_BASE')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_FORT_COUNT_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_FORT_COUNT')].[Country.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_POPULATION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_POP_BREAKDOWN')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_TAX_BASE_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_TAX_BASE')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_GARRISON_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_GARRISON')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_FORT_LEVEL_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_FORT_LEVEL')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_SUPPLY_LIMIT_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_SUPPLY_LIMIT')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_INTEGRATION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_INTEGRATION')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_RGO_WORKERS_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_RGO_WORKERS')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_DEVELOPMENT_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_DEVELOPMENT')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_PROSPERITY_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_PROSPERITY')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_MIGRATION_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_MIGRATION')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_POP_BREAKDOWN_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_POP_BREAKDOWN')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_DISEASE_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_DISEASE')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ INTEL_FOG_LOC_WAR_WORTH_UNKNOWN: "#TOOLTIP:SPYNETWORK_FOG,[GetDefine('NDiplomacy','INTEL_THRESHOLD_LOCATION_WAR_WORTH')].[Location.GetOwner.GetID],X $INTEL_FOG_UNKNOWN_VALUE$#!" 
+ STABILITY_VALUE_EXISTS: "[ForeignCountryView.GetCountry.GetFixedPointCurrencyValue('stability')|2]" 
+ STABILITY_VALUE_DISPLAY: "[SelectLocalization(HasStabilityIntelOn(Country.Self), 'STABILITY_VALUE_EXISTS', 'INTEL_FOG_STABILITY_UNKNOWN')]" 
+ MANPOWER_VALUE_EXISTS: "[Country.GetCurrencyValue('manpower')]" 
+ MANPOWER_VALUE_DISPLAY: "[SelectLocalization(HasManpowerIntelOn(Country.Self), 'MANPOWER_VALUE_EXISTS', 'INTEL_FOG_MANPOWER_UNKNOWN')]" 
+ SAILORS_VALUE_EXISTS: "[Country.GetCurrencyValue('sailors')|0]" 
+ SAILORS_VALUE_DISPLAY: "[SelectLocalization(HasSailorsIntelOn(Country.Self), 'SAILORS_VALUE_EXISTS', 'INTEL_FOG_SAILORS_UNKNOWN')]" 
+ ARMY_SIZE_VALUE_EXISTS: "[Country.GetRegularArmySize|L]" 
+ ARMY_SIZE_VALUE_DISPLAY: "[SelectLocalization(HasArmySizeIntelOn(Country.Self), 'ARMY_SIZE_VALUE_EXISTS', 'INTEL_FOG_ARMY_SIZE_UNKNOWN')]" 
+ LEVY_RAISEDANDPOTENTIAL_EXISTS: "[Country.GetRaisedAndPotentialLevyStrength|L]" 
+ LEVY_STRENGTH_VALUE_DISPLAY: "[SelectLocalization(HasLevyStrengthIntelOn(Country.Self), 'LEVY_RAISEDANDPOTENTIAL_EXISTS', 'INTEL_FOG_LEVY_STRENGTH_UNKNOWN')]" 
+ ARMY_TRADITION_VALUE_EXISTS: "[Country.GetCurrencyValue('army_tradition')]%" 
+ ARMY_TRADITION_VALUE_DISPLAY: "[SelectLocalization(HasArmyTraditionIntelOn(Country.Self), 'ARMY_TRADITION_VALUE_EXISTS', 'INTEL_FOG_ARMY_TRADITION_UNKNOWN')]" 
+ NAVY_TRADITION_VALUE_EXISTS: "[Country.GetCurrencyValue('navy_tradition')|0]%" 
+ NAVY_TRADITION_VALUE_DISPLAY: "[SelectLocalization(HasNavyTraditionIntelOn(Country.Self), 'NAVY_TRADITION_VALUE_EXISTS', 'INTEL_FOG_NAVY_TRADITION_UNKNOWN')]" 
+ NAVY_SIZE_VALUE_EXISTS: "[Country.GetNavySizeValue]" 
+ NAVY_SIZE_VALUE_DISPLAY: "[SelectLocalization(HasNavyStrengthIntelOn(Country.Self), 'NAVY_SIZE_VALUE_EXISTS', 'INTEL_FOG_NAVY_STRENGTH_UNKNOWN')]" 
+ NAVY_LEVY_VALUE_EXISTS: "[Country.GetNavyLevyPower|L]" 
+ NAVY_LEVY_VALUE_DISPLAY: "[SelectLocalization(HasNavyLevyStrengthIntelOn(Country.Self), 'NAVY_LEVY_VALUE_EXISTS', 'INTEL_FOG_NAVY_LEVY_UNKNOWN')]" 
+ LEVY_COMBAT_EFFICIENCY_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('levy_combat_efficiency_modifier')]" 
+ LEVY_COMBAT_EFFICIENCY_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'LEVY_COMBAT_EFFICIENCY_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ DISCIPLINE_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('discipline')]" 
+ DISCIPLINE_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'DISCIPLINE_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ LAND_MORALE_VALUE_EXISTS: "[Country.GetDefaultLandMorale|+=2]" 
+ LAND_MORALE_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'LAND_MORALE_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ MILITARY_TACTICS_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('military_tactics')]" 
+ MILITARY_TACTICS_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'MILITARY_TACTICS_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ FORT_LIMIT_VALUE_EXISTS: "[Country.GetCurrentFortsAmount|2W]#medium /[Country.GetFortLimit|2]#!" 
+ FORT_LIMIT_VALUE_DISPLAY: "[SelectLocalization(HasFortCountIntelOn(Country.Self), 'FORT_LIMIT_VALUE_EXISTS', 'INTEL_FOG_FORT_COUNT_UNKNOWN')]" 
+ SIEGE_ABILITY_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('siege_ability')]" 
+ SIEGE_ABILITY_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'SIEGE_ABILITY_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ FORT_DEFENSE_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('global_defensive')]" 
+ FORT_DEFENSE_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'FORT_DEFENSE_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ NAVAL_DAMAGE_DONE_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('naval_damage_done')]" 
+ NAVAL_DAMAGE_DONE_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'NAVAL_DAMAGE_DONE_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ NAVAL_DAMAGE_TAKEN_VALUE_EXISTS: "[Country.GetModifierValueNoFormat('naval_damage_taken')]" 
+ NAVAL_DAMAGE_TAKEN_VALUE_DISPLAY: "[SelectLocalization(HasCombatModifiersIntelOn(Country.Self), 'NAVAL_DAMAGE_TAKEN_VALUE_EXISTS', 'INTEL_FOG_COMBAT_MODIFIERS_UNKNOWN')]" 
+ LOCATION_WAR_WORTH_VALUE_EXISTS: "[Location.GetWarWorth|2]" 
+ LOCATION_WAR_WORTH_VALUE_DISPLAY: "[SelectLocalization(HasWarWorthIntelOn(Location.Self), 'LOCATION_WAR_WORTH_VALUE_EXISTS', 'INTEL_FOG_LOC_WAR_WORTH_UNKNOWN')]" 
+ LOCATION_SUPPLY_VALUE_EXISTS: "[SelectLocalization(Location.IsHiddenByFoW, 'LOCATION_VIEW_USED_SUPPLY_IN_FOW', 'LOCATION_VIEW_USED_SUPPLY')]" 
+ LOCATION_SUPPLY_VALUE_DISPLAY: "[SelectLocalization(HasSupplyLimitIntelOn(Location.Self), 'LOCATION_SUPPLY_VALUE_EXISTS', 'INTEL_FOG_LOC_SUPPLY_LIMIT_UNKNOWN')]" 
+ WAR_ARMY_STRENGTH_VALUE_EXISTS: "[Country.GetRaisedAndPotentialLevyStrength] [levies_icon] / [Country.GetRegularArmySize|0L] [regulars_icon]" 
+ WAR_ARMY_STRENGTH_VALUE_DISPLAY: "[SelectLocalization(HasLevyStrengthIntelOn(Country.Self), 'WAR_ARMY_STRENGTH_VALUE_EXISTS', 'INTEL_FOG_LEVY_STRENGTH_UNKNOWN')]" 
+ WAR_NAVY_STRENGTH_VALUE_EXISTS: "[Country.GetNavyLevyPower|0L] [navy_levies_icon] ([Country.GetNavySizeValue|0L] @naval_regular!)" 
+ WAR_NAVY_STRENGTH_VALUE_DISPLAY: "[SelectLocalization(HasNavyLevyStrengthIntelOn(Country.Self), 'WAR_NAVY_STRENGTH_VALUE_EXISTS', 'INTEL_FOG_NAVY_LEVY_STRENGTH_UNKNOWN')]" 

@@ -1,12 +1,12 @@
 ﻿l_english:
  flavor_csu.100.title: "Il [ShowBuildingTypeNameWithNoTooltip('panaqa_building')] di [ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_csu.100.entry: "The Panaqa Building of $CSU$" #NEW
+ flavor_csu.100.entry: "The Panaqa Building of $CSU$"
  flavor_csu.100.desc: "Con la morte del nostro ultimo grande monarca, la famiglia reale ha distribuito le nostre terre ai vecchi [ShowBuildingTypeName('panaqa_building')]. Ancora una volta, il ciclo è ricominciato, e l'attuale [ROOT.GetCountry.GetGovernment.GetRulerTitle] deve stabilire [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] proprio eredità attraverso la conquista."
  flavor_csu.100.a: "Come è nostra tradizione."
  add_panaqas_to_every_location_tt: "#R Ogni [location|e] posseduta guadagna un [ShowBuildingTypeName('panaqa_building')].#!"
 
  flavor_csu.200.title: "Il Miglior #italic aqha#! nelle Ande"
- flavor_csu.200.entry: "$flavor_csu.200.title$" #NEW
+ flavor_csu.200.entry: "$flavor_csu.200.title$"
  flavor_csu.200.desc: "[concubine_poisoner.GetName], moglie del nostro sovrano, è conosciuta come una delle migliori #italic aqha#! produttrici di [ShowAreaName('acamama_area')], la sua abilità di trasformare i chicchi di mais in una bevanda deliziosa era uno dei dolcificanti di accordo che ha aiutato a firmare il matrimonio reale tra [ROOT.GetCountry.GetName] e [GetCountry('AYA').GetName] nonostante la loro lunga storia di rivalità e attrito ai confini.\n\nOggi, [concubine_poisoner.GetShortNameWithNoTooltip] ha di nuovo preparato il suo famoso #italic aqha#!. Dovrebbe [ROOT.GetCountry.GetGovernment.GetRuler.GetName] goderselo come sempre?"
  flavor_csu.200.a: "Bevi!"
  flavor_csu.200.b: "Sta tramando qualcosa! Espellila!"
@@ -15,20 +15,16 @@
 
  flavor_csu.201.title: "Tradimento!"
  flavor_csu_201_desc: "[concubine_poisoner.GetName] ha avvelenato il #italic aqha#! del nostro [qusqu_ruler.GetName] e nel momento in cui le guardie sono arrivate per aiutare [qusqu_ruler.GetHerHim], [qusqu_ruler.GetSheHe] giaceva già morto sul pavimento della sala del trono."
-# flavor_csu.201.desc.a: "$flavor_csu_201_desc$\n\nMa il tradimento non finisce qui, poiché il guerriero [usurper_inka.GetName] ha colto l'occasione e invece di punire l'avvelenatore [usurper_inka.GetSheHe] ha rubato il trono per [usurper_inka.GetHerselfHimself] e ha iniziato a chiamare [usurper_inka.GetHerselfHimself] #italic Sapa Inka#!" #OLD
  flavor_csu.201.desc.a: "$flavor_csu_201_desc$\n\nBut the treachery does not end there, as the warrior [usurper_inka.GetName] has seized the opportunity and instead of punishing the poisoner he has stolen the throne for [usurper_inka.GetHerselfHimself] and has started calling [usurper_inka.GetHerselfHimself] #italic Sapa Inka#!" #NEW
  flavor_csu.201.tt.a: "C'è un strano gusto residuo nella bevanda..."
  flavor_csu.201.desc.b: "$flavor_csu_201_desc$\n\nLa donna traditrice è stata catturata dalle guardie e solo il suo status di principessa di [GetCountry('AYA').GetName] l'ha salvata dal coltello.\nCosa dovrebbe essere fatto con lei?"
-# flavor_csu.201.a: "Il [ROOT.GetCountry.GetGovernment.GetRulerTitle] è morto, lunga vita al [ROOT.GetCountry.GetGovernment.GetRulerTitle]" #OLD
  flavor_csu.201.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is dead, long live the [ROOT.GetCountry.GetGovernment.GetRulerTitle]!" #NEW
  flavor_csu.201.a.entry: "The ruler is dead, long live him!" #NEW
-# flavor_csu.201.b: "Traditori! [old_heir.GetNameWithNoTooltip] è il vero [ROOT.GetCountry.GetGovernment.GetRulerTitle]" #OLD
  flavor_csu.201.b: "Traitors! [old_heir.GetNameWithNoTooltip] is the true [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #NEW
  flavor_csu.201.b.entry: "Traitors! the heir is the true ruler." #NEW
  hanan_qusqu_rebels: "Ribelli Hanan Qusqu"
  hurin_qusqu_rebels: "Ribelli Hurin Qusqu"
  flavor_csu.201.c: "Espellila!"
-# flavor_csu.201.d: "Vendica il nostro [ROOT.GetCountry.GetGovernment.GetRulerTitle]" #OLD
  flavor_csu.201.d: "Avenge our [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #NEW
  flavor_csu.201.d.entry: "Avenge our ruler." #NEW
 
@@ -43,7 +39,7 @@
  hurin_qusqu_privilege_desc: "L'Hurin Qusqu mantiene il dovere e il privilegio di servire Inti direttamente come il #italic Villaq Umu#!, il Gran Prete di Inti."
 
  flavor_csu.210.title: "Un Piano Subdolo"
- flavor_csu.210.entry: "$flavor_csu.210.title$" #NEW
+ flavor_csu.210.entry: "$flavor_csu.210.title$"
  flavor_csu.210.desc: "Il nostro consigliere [minister.GetName] ci ha presentato un'opportunità di colpire i nostri odiati vicini di [GetCountry('CSU').GetName]. [minister.GetHeShe|U] è riuscito a infiltrare un agente nella loro corte e ha ottenuto accesso al [heir|e] [kidnapped_heir.GetName]. Se decidiamo di procedere potremmo facilmente portare [kidnapped_heir.GetHimHer] nella nostra custodia e portarlo a [ROOT.GetCountry.GetCapital.GetName]. Una volta fatto il atto potremmo riscattare [kidnapped_heir.GetHimHer] a [GetCountry('CSU').GetGovernment.GetRuler.GetName]."
  flavor_csu.210.a: "Procedi."
  flavor_csu.210.b: "Non siamo mostri! Lascia la corte."

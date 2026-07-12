@@ -1,22 +1,22 @@
 ﻿l_english:
  flavor_nap.3.title: "Rinascimento a [ShowLocationNameWithNoTooltip('naples')]"
- flavor_nap.3.entry: "Renaissance in Naples" #NEW
+ flavor_nap.3.entry: "Rinascimento a Napoli" 
  flavor_nap.3.desc: "La grande città di [ShowLocationName('naples')] sta diventando uno dei centri più importanti del Rinascimento in Italia. Uomini brillanti ne sono attratti e la città sta diventando un centro nevralgico per nuovi artisti di spicco."
  flavor_nap.3.a: "Un'epoca di Cultura!"
  flavor_nap.3.b: "Un'epoca di Gloria!"
 
  flavor_nap.4.title: "La Grande Città del Barocco"
- flavor_nap.4.entry: "$flavor_nap.4.title$" #NEW
+ flavor_nap.4.entry: "$flavor_nap.4.title$"
  flavor_nap.4.desc: "I primi decenni del XVII secolo vengono descritti come un'Età d'Oro nella storia di [target_location.GetName]. La città si è trasformata in una città moderna ed è un esempio per tutte le altre città circostanti. La cultura è in forte espansione nella città, con il tempo libero e l'intrattenimento sempre più presenti e raffinati."
  flavor_nap.4.a: "Una città che rivaleggia con qualsiasi altra..."
 
  flavor_nap.6.title: "Il Destino [sold_country.Custom('IT_Di')][sold_country.GetNameWithNoTooltip]"
- flavor_nap.6.entry: "Fate of Prato" #NEW
+ flavor_nap.6.entry: "Il destino di Prato" 
  flavor_nap.6.desc: "Decenni fa, i cittadini [sold_country.Custom('IT_Di')][sold_country.GetName] affidarono il governo [sold_country.Custom('IT_DEL_RANGO')]loro [sold_country.GetFlavorRank] a [robert_scope.GetName]. Oggi, le loro sofferenze non sono altro che una distrazione per noi e la nostra sovranità [sold_country.Custom('IT_SUL_RANGO')][sold_country.GetFlavorRank] non ci porta altro che problemi. Forse potremmo venderlo [target_country.Custom('IT_Alla')][target_country.GetName]?"
  flavor_nap.6.historical_info: "All'inizio del XIV secolo, la città di Prato si pose sotto il dominio di Roberto d'Anjou per proteggersi dall'avanzata dei fiorentini. Tuttavia, solo pochi decenni dopo, nel 1351, la città sarebbe stata venduta alla Repubblica di Firenze dalla successora di Roberto, Giovanna."
  flavor_nap.6.a: "Facciamolo."
  flavor_nap.6.b: "[sold_country.GetNameWithNoTooltip] potrebbe ancora tornare utile."
- flavor_nap.6.b.entry: "They might still come in useful." #NEW
+ flavor_nap.6.b.entry: "Potrebbero ancora tornarci utili." 
 
  flavor_nap.7.title: "$flavor_nap.6.title$"
  flavor_nap.7.desc: "Un inviato da [nap_from.GetName] è appena arrivato. Dopo il nostro caloroso benvenuto, ci ha informato di un'offerta per l'acquisto [sold_country.Custom('IT_Di')][sold_country.GetName] a un prezzo non proprio esorbitante. Acquisire un[sold_country.Custom('IT_OA_RANGO')] [sold_country.GetFlavorRank] vicina e prospera a un prezzo modesto è un'ottima opportunità per espandere la nostra influenza."
@@ -25,135 +25,128 @@
  flavor_nap.7.b: "Se desiderano venderlo, probabilmente non è buono."
 
  flavor_nap.8.title: "$flavor_nap.6.title$"
- flavor_nap.8.entry: "$flavor_nap.8.title$" #NEW
+ flavor_nap.8.entry: "$flavor_nap.8.title$"
  flavor_nap.8.common_desc: "Abbiamo finalmente ricevuto la risposta [target_country.Custom('IT_Dalla')][target_country.GetName]."
  flavor_nap.8.desc_success: "$flavor_nap.8.common_desc$ La nostra solenne offerta è stata accolta con grande clamore e gioia alla [target_country.GetGovernment.GetCourtTitle] [target_country.Custom('IT_ADJ_FS')]."
  flavor_nap.8.desc_failure: "$flavor_nap.8.common_desc$ Purtroppo hanno respinto il nostro approccio onorevole. Peggio ancora, i nostri inviati sono stati accolti con una risata di scherno."
  flavor_nap.8.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_nap.8.a.entry: "$common_string_brilliant$" #NEW
+ flavor_nap.8.a.entry: "$common_string_brilliant$"
  flavor_nap.8.b: "La pagheranno!"
 
  flavor_nap.9.title: "[giambattista_della_porta_scope.GetNameWithNoTooltip]"
- flavor_nap.9.entry: "Giambattista della Porta" #NEW
-# flavor_nap.9.desc: "[giambattista_della_porta_scope.GetName] è un nobile abile e dai molti talenti. Molti membri della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] lo hanno già notato e hanno proposto di assumere [giambattista_della_porta_scope.GetShortNameWithNoTooltip] come uno dei nostri artisti." #OLD
- flavor_nap.9.desc: "[giambattista_della_porta_scope.GetName] is a skilled nobleman of many talents. Many of our [ROOT.GetCountry.GetGovernment.GetCourtTitle] members have already taken notice of him, proposing to get [giambattista_della_porta_scope.GetShortNameWithNoTooltip] employed as one of our artists." #NEW
+ flavor_nap.9.entry: "Giambattista della Porta" 
+ flavor_nap.9.desc: "[giambattista_della_porta_scope.GetName] è un nobile di talento dalle molteplici capacità. Molti membri della nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] lo hanno già notato e propongono di assumere [giambattista_della_porta_scope.GetShortNameWithNoTooltip] come uno dei nostri artisti." 
  flavor_nap.9.historical_info: "Giambattista della Porta era uno scienziato della seconda metà del XVI secolo, autore del libro incredibilmente popolare #italic Magia Naturalis#!, dove delinea molti fatti diversi dal mondo scientifico. Gli vengono anche attribuiti contributi alla crittografia, alla fisiognomica e alla tecnologia. Oltre ai suoi contributi alla scienza, ha anche scritto oltre 20 opere teatrali che appartengono alla tradizione della #italic commedia erudita#!."
-# flavor_nap.9.a: "Assumiamolo!" #OLD
- flavor_nap.9.a: "Hire him!" #NEW
+ flavor_nap.9.a: "Assumiamolo!" 
  flavor_nap.9.b: "Ignora quelle proposte."
 
  flavor_nap.10.title: "#italic Magia Naturalis#!"
- flavor_nap.10.entry: "$flavor_nap.10.title$" #NEW
+ flavor_nap.10.entry: "$flavor_nap.10.title$"
  flavor_nap.10.desc: "Uno dei nostri artisti, recentemente assunto, [target_character.GetName], ha prodotto un'opera di grande fama. The book, #italic $magia_naturalis$#!, has turned out to be massively popular, being printed en masse and with plans to translate it into other languages to make it more readily available. It has spread insofar that the average citizen is more aware of sciences than before."
  flavor_nap.10.a: "Veramente, la perfezione della filosofia naturale e della scienza più elevata."
 
  flavor_nap.11.title: "Simpatizzanti dei Fraticelli"
- flavor_nap.11.entry: "$flavor_nap.11.title$" #NEW
+ flavor_nap.11.entry: "$flavor_nap.11.title$"
  flavor_nap.11.desc: "Oggi è arrivata un'altra lettera da [the_pope.GetName] che ancora una volta implora [target_character.GetName] di smettere di provare simpatia per gli eretici Fraticelli. Sebbene le lettere precedenti abbiano avuto risultati contrastanti, forse questa volta, [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] cambierà idea."
  flavor_nap.11.desc_with_felip: "$flavor_nap.11.desc$ Al centro del conflitto c'è il fratello di [GetCharacter('nap_sancha_aragon').GetName], [brother_of_queen.GetName], che è un fervente sostenitore dei Fraticelli."
  flavor_nap.11.historical_info: "Sotto il regno di Re Roberto d'Anjou, il Regno di Napoli era un rifugio sicuro per i Fraticelli. Il Papa inviò diverse lettere a Roberto nel 1325, 1327, 1330 e 1331, ma nessuna di esse riuscì a convincere il Re a imprigionare o limitare la libertà dei Fraticelli nel suo dominio. Uno dei cortigiani napoletani, Filippo di Maiorca, era apertamente solidale con i francescani spirituali e condannava apertamente il papato."
  flavor_nap.11.a: "Ignora le lettere."
  flavor_nap.11.b: "Qualunque cosa [the_pope.GetNameWithNoTooltip] desidera."
- flavor_nap.11.b.entry: "Whatever he wants." #NEW
+ flavor_nap.11.b.entry: "Diamogli tutto ciò che desidera." 
  nap_banned_fraticelli: "Fraticelli Banditi"
  STATIC_MODIFIER_NAME_nap_fraticelli_sympathy: "Solidarietà ai Fraticelli"
 
  flavor_nap.12.title: "#italic Stato dei Presidi#!"
- flavor_nap.12.entry: "$flavor_nap.12.title$" #NEW
+ flavor_nap.12.entry: "$flavor_nap.12.title$"
  flavor_nap.12.desc: "Le fasce costiere lungo le coste di [target_location.GetName] E [target_location2.GetName] costituiscono una piccola ma necessaria componente della nostra egemonia in [ShowRegionName('italy_region')]. Le città portuali e l'isola d'Elba fungono da porti adeguati che ci consentono di controllare i poteri degli stati settentrionali e permettono ai nostri commercianti di svolgere attività commerciali più lontano dalla patria."
  flavor_nap.12.historical_info: "Sotto l'Unione personale con la Spagna, Napoli entrò in possesso di una stretta striscia di terra lungo la costa rimanente della Repubblica di Siena, in seguito denominata $flavor_nap.12.title$. Rimase sotto il dominio dei Napoletani dal 1557 fino al 1801, quando fu ceduta alla Francia Rivoluzionaria."
  flavor_nap.12.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_nap.12.a.entry: "$common_string_brilliant$" #NEW
+ flavor_nap.12.a.entry: "$common_string_brilliant$"
  STATIC_MODIFIER_NAME_nap_state_of_the_presidi: "Stato dei Presidi"
 
  flavor_nap.200.title: "Il Testamento di [target_character.GetNameWithNoTooltip]"
- flavor_nap.200.entry: "The Will of Robert" #NEW
-# flavor_nap.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U]nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sta invecchiando e purtroppo tutti i suoi discendenti maschi sono morti.\n\nLa tradizione vuole che il ramo della famiglia di [ROOT.GetCountry.GetGovernment.GetHeir.GetName] sia il prossimo [ROOT.GetCountry.GetGovernment.GetRulerTitle], ma cedere il paese a uno straniero farà infuriare la nobiltà locale e potrebbe porre fine alla stabilità che [target_character.GetShortName] ha impiegato una vita a costruire. In alternativa, [alternative_heir.GetName] potrebbe essere una ipotesi da prendere in considerazione..." #OLD
- flavor_nap.200.desc: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is growing older and unfortunately all his male descendants have perished.\n\nTradition dictates that [ROOT.GetCountry.GetGovernment.GetHeir.GetName]'s side of our family should be our next [ROOT.GetCountry.GetGovernment.GetRulerTitle], but giving the country to a foreigner will enrage the local nobility and may bring an end to the stability that [target_character.GetShortName] has spent his life constructing. Alternatively, [alternative_heir.GetName] could also be a possibility to consider..." #NEW
+ flavor_nap.200.entry: "Il testamento di Robert" 
+ flavor_nap.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')|U] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sta invecchiando e, purtroppo, tutti i suoi discendenti maschi sono morti.\n\nLa tradizione impone che il ramo della nostra famiglia cui appartiene [ROOT.GetCountry.GetGovernment.GetHeir.GetName] fornisca il nostro prossimo [ROOT.GetCountry.GetGovernment.GetRulerTitle], ma consegnare il paese a uno straniero farà infuriare la nobiltà locale e potrebbe porre fine alla stabilità che [target_character.GetShortName] ha trascorso la vita a costruire. In alternativa, si potrebbe prendere in considerazione anche [alternative_heir.GetName]..." 
  flavor_nap.200.a: "Non cederemo [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip], [alternative_heir.GetShortNameWithNoTooltip] governerà."
- flavor_nap.200.a.entry: "We will not give away our country, he will rule." #NEW
+ flavor_nap.200.a.entry: "Non cederemo il nostro paese: sarà lui a regnare." 
  flavor_nap.200.b: "Rispetteremo la tradizione, [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] erediterà."
- flavor_nap.200.b.entry: "We will respect tradition, he will inherit." #NEW
+ flavor_nap.200.b.entry: "Rispetteremo la tradizione: sarà lui a ereditare." 
 
  flavor_nap.201.title: "Leggi Napoletane"
- flavor_nap.201.entry: "Neapolitan Laws" #NEW
+ flavor_nap.201.entry: "Leggi napoletane" 
  flavor_nap.201.desc: "La volontà di [target_character.GetName] ha suscitato un grande sconvolgimento nel [GetCountry('NAP').GetLongName] modificando la legge di successione. Se vogliamo preservare la nostra unione con [GetCountry('NAP').GetNameWithNoTooltip], saremo costretti ad allineare le nostre leggi alle loro, il che potrebbe farci apparire come il partner minore dell'Unione."
  flavor_nap.201.a: "Preserveremo l'Unione."
-# flavor_nap.201.b: "[ROOT.GetCountry.Custom('IT_La')|U][ROOT.GetCountry.GetNameWithNoTooltip] non è sottomessa." #OLD
- flavor_nap.201.b: "[ROOT.GetCountry.GetNameWithNoTooltip] are not subservient." #NEW
- flavor_nap.201.b.entry: "We are not subservient." #NEW
+ flavor_nap.201.b: "Noi di [ROOT.GetCountry.GetNameWithNoTooltip] non siamo sottomessi." 
+ flavor_nap.201.b.entry: "Non siamo sottomessi." 
 
  flavor_nap.210.title: "L'Altro Figlio del Vecchio Re"
- flavor_nap.210.entry: "$flavor_nap.210.title$" #NEW
+ flavor_nap.210.entry: "$flavor_nap.210.title$"
  flavor_nap.210.desc: "[ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] non aveva discendenti maschi della sua stirpe, ma aveva un figlio, un figlio bastardo che non aveva diritto all'eredità [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName].\n\nÈ stato cresciuto come un bastardo reale e addestrato alla diplomazia e all'arte di governare, diventando uno dei membri più importanti della corte [ROOT.GetCountry.Custom('IT_ADJ_FS')]."
  flavor_nap.210.a: "Possiamo trarre vantaggio dalle sue abilità."
  flavor_nap.210.b: "Non seguiremo le orme del Vecchio Re, allontanatelo!"
 
  flavor_nap.220.title: "La Corona del Marito"
- flavor_nap.220.entry: "$flavor_nap.220.title$" #NEW
-# flavor_nap.220.desc: "[target_character.GetName] non è soddisfatto della sua posizione alla corte [ROOT.GetCountry.Custom('IT_ADJ_FS')], [target_character.GetHeShe] è [ROOT.GetCountry.GetGovernment.GetConsort.Custom('IT_ART_IL_LA')] [ROOT.GetCountry.GetGovernment.GetConsortTitle] [ROOT.GetCountry.GetGovernment.GetAdjective|U] ma la volontà del Vecchio [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] conferisce pieni poteri al[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_NULL_LA')] [ROOT.GetCountry.GetGovernment.GetRulerTitle], lasciandol[target_character.Custom('IT_ART_O_A')] come semplice figura simbolica..\n\n[target_character.GetShortName] vuole chiedere a [GetCountry('PAP').GetGovernment.GetRuler.GetName] una dispensa Papale che corregga questo grave errore e renda il suo titolo uguale a quello di [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]." #OLD
- flavor_nap.220.desc: "[target_character.GetName] is not satisfied with his position in the [ROOT.GetCountry.GetAdjective] court, he is the [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetConsortTitle] but the will of the Old [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] gives full powers to the [ROOT.GetCountry.GetGovernment.GetRulerTitle], leaving him as a mere figurehead.\n\n[target_character.GetShortName] wants to ask [GetCountry('PAP').GetGovernment.GetRuler.GetName] for a Papal dispensation that corrects this grave mistake and makes his title equal to [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]'s." #NEW
-# flavor_nap.220.a: "[target_character.GetHeShe|U] ha ragione a lamentarsi, [target_character.GetHeShe] e [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] sono uguali." #OLD
- flavor_nap.220.a: "He is right to complain, he and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] are equals." #NEW
- flavor_nap.220.a.entry: "He is right to complain, he and the ruler are equals." #NEW
+ flavor_nap.220.entry: "$flavor_nap.220.title$"
+ flavor_nap.220.desc: "[target_character.GetName] non è soddisfatto della sua posizione alla corte [ROOT.GetCountry.Custom('IT_ADJ_FS')]: è il [ROOT.GetCountry.GetGovernment.GetConsortTitle] [ROOT.GetCountry.GetGovernment.GetAdjective], ma il testamento del vecchio [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] conferisce pieni poteri [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], lasciandogli un ruolo puramente rappresentativo.\n\n[target_character.GetShortName] intende chiedere a [GetCountry('PAP').GetGovernment.GetRuler.GetName] una dispensa papale che corregga questo grave errore e renda il suo titolo pari a quello di [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]." 
+ flavor_nap.220.a: "Ha ragione a lamentarsi: lui e [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] sono pari." 
+ flavor_nap.220.a.entry: "Ha ragione a lamentarsi: lui e il sovrano sono pari." 
  flavor_nap.220.a.tt: "Se [GetCountry('PAP').GetGovernment.GetRuler.GetName] lo approva, [target_character.GetShortName] diventerà il nostro sovrano"
-# flavor_nap.220.b: "[target_character.GetHeShe|U] è solo la [ROOT.GetCountry.GetGovernment.GetConsortTitle] del [ROOT.GetCountry.GetGovernment.GetRulerTitle] e nient'altro!" #OLD
- flavor_nap.220.b: "He is just the [ROOT.GetCountry.GetGovernment.GetConsortTitle] of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and nothing more!" #NEW
- flavor_nap.220.b.entry: "He is just the consort of the ruler and nothing more!" #NEW
+ flavor_nap.220.b: "È soltanto il [ROOT.GetCountry.GetGovernment.GetConsortTitle] [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], nient'altro!" 
+ flavor_nap.220.b.entry: "È soltanto il consorte del sovrano, nient'altro!" 
  flavor_nap.220.b.tt: "[target_character.GetShortName] ricorderà questo insulto"
 
  flavor_nap.221.title: "Un Re Impotente"
  flavor_nap.221.desc: "Il giovane sovrano di [GetCountry('NAP').GetName], [nap_ruler.GetName] vuole informarci della situazione incerta della sua consorte [nap_consort.GetName] alla corte Napoletana. La volontà del precedente [GetCountry('NAP').GetGovernment.GetPreviousRuler.GetName] le impedisce di accedere al potere della Corona di [GetCountry('NAP').GetNameWithNoTooltip] che tradizionalmente dovrebbe essere conferito a [nap_consort.GetHimHer] e ci chiede di concedere a [nap_consort.GetShortName] il titolo completo di Re.\n\nD'altra parte, dobbiamo tenere conto del fatto che [nap_consort.GetShortNameWithNoTooltip] fa parte della famiglia reale [GetCountry('HUN').GetAdjective] e fornire loro più potere al nostro confine meridionale potrebbe ritorcersi contro di noi in futuro."
  flavor_nap.221.a: "Non permetteremo ai governanti Ungheresi di espandere la loro influenza."
- flavor_nap.221.a.entry: "We will not allow the $HUN_ADJ$ rulers to expand their influence." #NEW
+ flavor_nap.221.a.entry: "Non permetteremo ai sovrani $HUN_ADJ$ di espandere la loro influenza." 
  flavor_nap.221.b: "È un diritto Divino di [nap_consort.GetShortNameWithNoTooltip] governare [GetCountry('NAP').GetNameWithNoTooltip]."
- flavor_nap.221.b.entry: "It is her God-given right to rule $NAP$." #NEW
+ flavor_nap.221.b.entry: "È suo diritto divino regnare su $NAP$." 
 
  flavor_nap.222.title: "Il Torto è stato Riparato"
- flavor_nap.222.desc: "[pope_scope.GetRuler.GetName] ha riconosciuto la giustizia della nostra richiesta e ha avuto la misericordia di accoglierla. [ROOT.GetCountry.GetGovernment.GetRuler.GetFirstSpouse.GetName] riprenderà pienamente i suoi diritti e sarà incoronato Re [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]."
+ flavor_nap.222.desc: "[pope_scope.GetRuler.GetName] ha riconosciuto la giustezza della nostra supplica e ha avuto la misericordia di concedercela. A [ROOT.GetCountry.GetGovernment.GetConsort.GetName] verranno pienamente restituiti i suoi diritti e sarà incoronato Re di [ROOT.GetCountry.GetName]." 
  flavor_nap.222.a: "Lunga vita al Re!"
 
  flavor_nap.223.title: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] Rifiuta la Nostra Richiesta"
- flavor_nap.223.entry: "The Pope rejects our Request" #NEW
+ flavor_nap.223.entry: "Il Papa respinge la nostra richiesta" 
  flavor_nap.223.desc: "Un messaggero da [pope_scope.GetName] ci restituisce il nostro regalo e ci informa che Sua Santità ha respinto la nostra richiesta, la volontà del Vecchio Re sarà rispettata."
  flavor_nap.223.a: "Dannazione!"
 
  flavor_nap.230.title: "Il Principe Consorte [GetCountry('NAP').GetAdjectiveWithNoTooltip]"
- flavor_nap.230.entry: "The Neapolitan Prince Consort" #NEW
+ flavor_nap.230.entry: "Il Principe Consorte napoletano" 
  flavor_nap.230.desc: "Il Principe Consorte [GetCountry('NAP').GetAdjective] [target_character.GetName], membro della nostra Famiglia [ROOT.GetCountry.GetGovernment.GetAdjective], ha vissuto per molti anni alla corte Napoletana, sposato con [GetCountry('NAP').GetGovernment.GetRuler.GetName], Ma contro ogni senso di giustizia o logica, il suo diritto di governare come marito e come Re è stato negato e lui non ha alcun potere sulle questioni di Stato.\n\nCi chiede gentilmente di intercedere in suo nome davanti a [target_pope.GetName] per rivendicare i suoi diritti come Re di [GetCountry('NAP').GetNameWithNoTooltip]."
  flavor_nap.230.a: "Chiediamo a [target_pope.GetNameWithNoTooltip] di correggere questa ingiustizia."
- flavor_nap.230.a.entry: "Let us ask him to correct this injustice." #NEW
+ flavor_nap.230.a.entry: "Chiediamogli di correggere questa ingiustizia." 
  flavor_nap.230.a.tt: "Se [target_pope.GetName] approva, [target_character.GetName] diventerà il nuovo [ruler|e] di [GetCountry('NAP').GetName]"
  flavor_nap.230.b: "Non ci immischieremo nelle questioni di [GetCountry('NAP').GetNameWithNoTooltip]."
- flavor_nap.230.b.entry: "We will not meddle in the matters of $NAP$." #NEW
+ flavor_nap.230.b.entry: "Non interferiremo nelle questioni di $NAP$." 
 
  flavor_nap.231.title: "La Famiglia del Re Impotente"
  flavor_nap.231.desc: "La situazione del Principe Consorte [GetCountry('NAP').GetAdjective] [prince_consort.GetName] è stato portato alla nostra attenzione dal suo parente stretto [GetCountry('HUN').GetGovernment.GetRuler.GetName] d'[GetCountry('HUN').GetName].\n\nLa sua stirpe continua a subire l'umiliazione di non detenere alcun potere reale a [GetCountry('NAP').GetNameWithNoTooltip] anche se egli è il legittimo Re, poiché la corte e i nobili sono governati esclusivamente da [GetCountry('NAP').GetGovernment.GetRuler.GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetNameWithNoTooltip] ci chiede di porre fine a questa situazione ingiusta e di incoronare [prince_consort.GetNameWithNoTooltip]."
  flavor_nap.231.a: "Questa situazione non può continuare. [prince_consort.GetShortNameWithNoTooltip] sarà il Re."
- flavor_nap.231.a.entry: "This situation cannot be allowed to continue. the consort will be King." #NEW
+ flavor_nap.231.a.entry: "Non permetteremo che questa situazione continui: il consorte sarà Re." 
  flavor_nap.231.b: "Non permetteremo al[GetCountry('HUN').GetGovernment.GetRuler.Custom('IT_ART_NULL_LA')] [GetCountry('HUN').GetGovernment.GetRuler.GetShortNameWithNoTooltip] di immischiarsi negli affari altrui."
- flavor_nap.231.b.entry: "We will not allow him to meddle in the affairs of others." #NEW
+ flavor_nap.231.b.entry: "Non gli permetteremo di intromettersi negli affari altrui." 
 
  flavor_nap.232.title: "Il Re [GetCountry('HUN').GetAdjectiveWithNoTooltip] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_nap.232.desc: "Notizie Nere! Il Principe Consorte [prince_consort.GetName] ha cospirato con il suo parente stretto, [GetCountry('HUN').GetGovernment.GetRuler.GetName], e insieme hanno corrotto [GetCountry('PAP').GetGovernment.GetRuler.GetName] chiedendogli di incoronare [prince_consort.GetShortNameWithNoTooltip] Re di [GetCountry('NAP').GetName]. Accecato dalla moneta, [GetCountry('PAP').GetGovernment.GetRuler.GetShortNameWithNoTooltip] ha accettato e ha già annunciato la data dell'incoronazione.\n\nQuesto ha fatto infuriare [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_ADJ_FS')], che rifiuta di essere governata da uno straniero. Le nostre spie hanno scoperto che una fazione di quei membri arrabbiati [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] stanno tramando un complotto e raccogliendo risorse per assassinare [prince_consort.GetNameWithNoTooltip] prima che avvenga l'incoronazione.\n\nCosa dobbiamo fare?"
  flavor_nap.232.a: "[prince_consort.GetNameWithNoTooltip] ci ha costretti. Lascia che [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] vada avanti."
- flavor_nap.232.a.entry: "The consort has forced us. Let the $nobles_estate$ move forward." #NEW
+ flavor_nap.232.a.entry: "Il consorte ci ha costretti. Lasciamo avanzare $nobles_estate$." 
  flavor_nap.232.b: "Se [GetCountry('PAP').GetGovernment.GetRuler.GetShortNameWithNoTooltip] pensa che [prince_consort.GetShortNameWithNoTooltip] debba essere il Re, che così sia!"
- flavor_nap.232.b.entry: "If the ruler thinks the consort should be King, let it be so!" #NEW
+ flavor_nap.232.b.entry: "Se il sovrano ritiene che il consorte debba essere Re, sia così!" 
 
  flavor_nap.233.title: "Ingerenza [GetCountry('HUN').GetAdjectiveWithNoTooltip]"
  flavor_nap.233.desc: "I nostri informatori ci riferiscono che il sovrano [GetCountry('HUN').GetAdjective] [GetCountry('HUN').GetGovernment.GetRuler.GetName] non è riuscito a convincere [GetCountry('PAP').GetGovernment.GetRuler.GetName] a incoronare [prince_consort.GetName] Re di [ROOT.GetCountry.GetName]. Il nostro Principe Consorte traditore ha cospirato con i suoi parenti Ungheresi e insieme hanno cercato di corrompere [GetCountry('PAP').GetGovernment.GetRuler.GetShortNameWithNoTooltip], ma il loro piano era inutile, poiché il nostro [GetCountry('PAP').GetGovernment.GetRulerTitle] è troppo devoto per lasciarsi influenzare da tali tentazioni e le ha respinte."
  flavor_nap.233.a: "Dio benedica [GetCountry('PAP').GetGovernment.GetRuler.GetNameWithNoTooltip]!"
- flavor_nap.233.a.entry: "God bless him!" #NEW
+ flavor_nap.233.a.entry: "Che Dio lo benedica!" 
 
  flavor_nap.234.title: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] Rifiuta la Nostra Richiesta"
- flavor_nap.234.entry: "The Pope rejects our Request" #NEW
+ flavor_nap.234.entry: "Il Papa respinge la nostra richiesta" 
  flavor_nap.234.desc: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] ha respinto la sincera richiesta che abbiamo presentato a sostegno di [prince_consort.GetName], legittimo Re di [GetCountry('NAP').GetName]. A lui non importa se questa ingiustizia persiste e rimane impunita, quindi non ci lascia altra scelta che affrontare la questione da soli. Faremo lo stesso e chiuderemo un occhio o agiremo per rimediare?"
  flavor_nap.234.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
- flavor_nap.234.a.entry: "$common_string_curses$" #NEW
+ flavor_nap.234.a.entry: "$common_string_curses$"
 
  flavor_nap.240.title: "Il Sovrano di [target_location.GetNameWithNoTooltip]"
- flavor_nap.240.entry: "The Ruler of Avignon" #NEW
+ flavor_nap.240.entry: "Il sovrano di Avignon" 
  flavor_nap.240.desc: "La città di [target_location.GetName] e il suo entroterra è stato governato [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DAL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] fin dai tempi di [charles_lame.GetName]. Nel 1309 fu scelto da [GetCharacter('pap_clement_v').GetName] per diventare la nuova sede dello [GetCountry('PAP').GetLongName] e il Re di [ROOT.GetCountry.GetNameWithNoTooltip] lo ha gentilmente concesso, trasformando [target_location.GetNameWithNoTooltip] nella nuova capitale dello [GetCountry('PAP').GetNameWithNoTooltip] in tutti i sensi tranne quello legale.\n\nOra che la situazione si è ribaltata, potremmo fare buon uso di qualche scrigno d'oro e [GetCountry('PAP').GetGovernment.GetRuler.GetName] ne ha in abbondanza, vendiamo a [GetCountry('PAP').GetGovernment.GetRuler.GetHimHer] i diritti sulla città che già controlla"
  flavor_nap.240.a: "Abbiamo bisogno dell'oro. Vendete i diritti!"
  flavor_nap.240.a.tt: "Se [GetCountry('PAP').GetGovernment.GetRuler.GetName] approva, [target_location.GetName] non farà più parte dei nostri territori [cores|e]"
@@ -167,34 +160,35 @@
  flavor_nap.242.title: "La Città Papale"
  flavor_nap.242.desc: "[GetCountry('PAP').GetGovernment.GetRuler.GetName] ha accettato la nostra offerta di vendere la città di [target_location.GetName], Il pagamento è già stato effettuato."
  flavor_nap.242.a: "Questi fondi aiuterano [ROOT.GetCountry.GetNameWithNoTooltip] più di alcuni diritti inutili."
- flavor_nap.242.a.entry: "These funds will help us more than some useless rights." #NEW
+ flavor_nap.242.a.entry: "Questi fondi ci aiuteranno più di qualche inutile diritto." 
 
  flavor_nap.243.title: "Una Città Rubata"
- flavor_nap.243.entry: "$flavor_nap.243.title$" #NEW
+ flavor_nap.243.entry: "$flavor_nap.243.title$"
  flavor_nap.243.desc: "[pope_scope.GetName] ha rifiutato la nostra generosa offerta e intende continuare a controllare la città di [target_location.GetName] senza alcun diritto di farlo."
  flavor_nap.243.a: "Maledici il [GetCountry('PAP').GetGovernment.GetRulerTitle] ladro!"
- flavor_nap.243.a.entry: "Curse the thieving ruler!" #NEW
+ flavor_nap.243.a.entry: "Malediciamo il sovrano ladro!" 
 
  flavor_nap.250.title: "Il Processo [ROOT.GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- flavor_nap.250.entry: "$flavor_nap.250.title$" #NEW
+ flavor_nap.250.entry: "$flavor_nap.250.title$"
  flavor_nap.250.desc: "L'omicidio di [prince_consort.GetName] continua a perseguitarci anche a distanza di anni. La sua famiglia non ha smesso di diffondere vili voci sul legame del[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_NULL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] con i cospiratori e di accusarci di essere responsabili del suo omicidio, anche se i colpevoli sono già stati trovati, processati e condannati.\n\nHanno convinto [GetCountry('PAP').GetGovernment.GetRuler.GetName] per avere un altro processo e costringere [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] [ROOT.GetCountry.GetGovernment.GetRuler.GetName] a prendere posizione e difendere la sua innocenza.\n\nAnche se [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] ha un alibi solido e la sua assoluzione è praticamente garantita, la vergogna di essere processati per concorso in omicidio è più che sufficiente per rovinare i nostri rapporti con i sudditi e distruggere il nostro prestigio tra i vicini.\n\nCosa dovremmo fare?"
  flavor_nap.250.a: "La giustizia è dalla nostra parte. Andremo in tribunale e difenderemo la nostra innocenza."
  flavor_nap.250.a.tt: "[GetCountry('NAP').GetGovernment.GetRuler.GetName] viene assolt[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_O_A')]"
  flavor_nap.250.b: "Non parteciperemo a questa farsa!"
  flavor_nap.250.c: "La reputazione viene prima di tutto. Il [ROOT.GetCountry.GetGovernment.GetRulerTitle] si dimetterà e prenderà i voti."
- flavor_nap.250.c.entry: "The reputation comes first. The ruler will step down and take the vows." #NEW
+ flavor_nap.250.c.entry: "La reputazione viene prima di tutto. Il sovrano abdicherà e prenderà i voti." 
+ variable_andras_was_killed_flag_tt: "Andrew d'Ungheria è stato assassinato" 
 
  flavor_nap.260.title: "[luigi_durazzo.GetNameWithNoTooltip], una Spina nel Fianco"
- flavor_nap.260.entry: "Louis, a thorn in our side" #NEW
+ flavor_nap.260.entry: "Louis, una spina nel fianco" 
  flavor_nap.260.desc: "[luigi_durazzo.GetName] è membro [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] di [ShowAreaName('apulia_area')] che, dal momento del suo rilascio dal carcere, è stato un fastidio costante per [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]. Si oppone a [targer_character.GetName] in ogni questione e cerca costantemente di minare l'autorità di [ROOT.GetCountry.GetName] in [ShowAreaNameWithNoTooltip('apulia_area')].\n\nSta nuovamente minacciando di sollevare una rivolta se non concediamo a lui e ai suoi alleati maggiore autonomia e rispetto per alcuni diritti che solo loro sostengono di avere.\n\nCosa dovremmo fare?"
  flavor_nap.260.a: "Lo schiacceremo e la faremo finita una volta per tutte!"
  flavor_nap.260.b: "Dategli quello che vuole. Per ora."
 
  flavor_nap.270.title: "[elzear_sabran.GetNameWithNoTooltip] Il Pio"
- flavor_nap.270.entry: "The pious Elzéar of Sabran" #NEW
+ flavor_nap.270.entry: "Il pio Elzéar di Sabran" 
  flavor_nap.270.desc: "Il nostro vescovo ci ricorda la storia di [elzear_sabran.GetName], il tutore e castellano di [carlo_anjou.GetName]. Visse una vita esemplare e devota, concentrandosi sulla pratica della preghiera, sulla mortificazione della carne e sulla carità verso i poveri. Adempì al suo dovere verso la sua casata sposando Delphine di Glandèves e scelse persino di unirsi a lei nel voto di castità, che entrambi mantennero per tutta la vita."
  flavor_nap.270.a: "Proponiamolo alla Curia come nuovo Santo Napoletano."
- flavor_nap.270.a.entry: "Let us propose him to the Curia as a new $NAP_ADJ$ Saint." #NEW
+ flavor_nap.270.a.entry: "Proponiamolo alla Curia come nuovo santo $NAP_ADJ$." 
  flavor_nap.270.b: "We will not waste our time with these tales."
 
  flavor_nap.280.title: "Le Due Sicilie Riunite!"
@@ -210,16 +204,16 @@
  flavor_nap.290.c: "È il Principe Consorte, non si può fare nulla."
 
  flavor_nap.300.title: "La Volontà [GetCountry('NAP').Custom('IT_DEL_TITOLO')]Nostr[GetCountry('NAP').Custom('IT_ART_O_A')] [GetCountry('NAP').GetGovernment.GetRulerTitle]"
- flavor_nap.300.entry: "The Future of Naples" #NEW
+ flavor_nap.300.entry: "Il futuro di Napoli" 
  flavor_nap.300.desc: "[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_IL_LA')|U] nostr[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_O_A')] car[GetCountry('NAP').GetGovernment.GetRuler.Custom('IT_ART_O_A')] [GetCountry('NAP').GetGovernment.GetRuler.GetName] sta sentendo il peso dei lunghi anni di servizio a [GetCountry('NAP').GetName] sulle sue spalle, proprio come suo nonno, il Vecchio [old_king.GetName], ed è pronta a dimettersi, ma teme che la sua eredità possa andare sprecata, poiché non ha figli viventi da nominare come eredi indiscussi al trono. Considera il resto della sua famiglia come opportunisti e avvoltoi che distruggeranno [GetCountry('NAP').GetNameWithNoTooltip] nella loro lotta per la corona."
  flavor_nap.300.a: "[GetCountry('NAP').GetGovernment.GetHeir.GetNameWithNoTooltip] sarà [GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_IL_LA')] nostr[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')] nuov[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')] sovran[GetCountry('NAP').GetGovernment.GetHeir.Custom('IT_ART_O_A')]."
- flavor_nap.300.a.entry: "The heir will be our new ruler." #NEW
+ flavor_nap.300.a.entry: "L'erede sarà il nostro nuovo sovrano." 
  flavor_nap.300.b: "[queen_sister_spouse.GetNameWithNoTooltip] è la migliore successore possibile."
- flavor_nap.300.b.entry: "The consort is the best possible successor." #NEW
+ flavor_nap.300.b.entry: "Il consorte è il miglior successore possibile." 
  flavor_nap.300.c: "Le Due Sicilie saranno riunificate, [palermo_ruler.GetNameWithNoTooltip] ci succederà."
- flavor_nap.300.c.entry: "The Two Sicilies shall be reunited, he will succeed us." #NEW
+ flavor_nap.300.c.entry: "Le Due Sicilie saranno riunite: sarà lui a succederci." 
  flavor_nap.300.d: "[french_ruler.GetNameWithNoTooltip] di [GetCountry('FRA').GetNameWithNoTooltip] governerà [GetCountry('NAP').GetNameWithNoTooltip]."
- flavor_nap.300.d.entry: "The ruler of $FRA$ will rule $NAP$." #NEW
+ flavor_nap.300.d.entry: "Il sovrano di $FRA$ regnerà su $NAP$." 
 
  flavor_nap.301.title: "Decisione Napoletana"
  flavor_nap.301.desc: "Il [GetCountry('NAP').GetLongName] ha un nuovo sovrano e, dato che in passato eravamo uniti da un'unione personale, se vogliamo preservarla dovremo invitare [naples_ruler.GetName] a governare anche su [ROOT.GetCountry.GetName]. Così facendo potremmo garantire l'unione, ma potremmo anche sembrare il partner minore."
@@ -227,26 +221,26 @@
  flavor_nap.301.b: "È ora di percorrere la nostra strada."
 
  flavor_nap.2.title: "L'Abdicazione di [GetCountry('NAP').GetGovernment.GetPreviousRuler.GetNameWithNoTooltip]"
- flavor_nap.2.entry: "The Abdication of Nap" #NEW
+ flavor_nap.2.entry: "L'abdicazione di Nap" 
  flavor_nap.2.desc: "Il sovrano di [GetCountry('NAP').GetName], [GetCountry('NAP').GetGovernment.GetPreviousRuler.GetName], è diventato molto anziano ma non ha discendenti che possano essere nominati eredi. Poiché abbiamo diritti sul trono, ci hanno offerto la Corona di Napoli."
  flavor_nap.2.a: "Gloria [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetNameWithNoTooltip]!"
- flavor_nap.2.a.entry: "Glory to us!" #NEW
+ flavor_nap.2.a.entry: "Gloria a noi!" 
 
  flavor_nap.101.title: "La Distruzione di Amalfi"
- flavor_nap.101.entry: "$flavor_nap.101.title$" #NEW
+ flavor_nap.101.entry: "$flavor_nap.101.title$"
  flavor_nap.101.desc: "Amalfi, una città vicino [target_location.GetName], ha appena affrontato un'esplosione catastrofica proveniente dall'oceano. Provocata da un violento terremoto sotto il Mar Tirreno, un'enorme onda si abbatté sulla città ignara. Tra il fragore assordante, gli edifici crollarono, le navi furono sballottate e molte persone persero la vita. Le pittoresche stradine si trasformarono in un cimitero acquatico, mentre le acque ridefinivano per sempre il paesaggio. La vivace cultura marittima e il fiorente commercio di Amalfi sono stati ridotti in rovina, a ricordare in modo crudo la forza implacabile della natura. Le cicatrici della catastrofe del [GetCurrentYear] rimarrà per sempre impresso nella storia della città."
  flavor_nap.101.a: "[ROOT.GetCountry.GetReligion.GetGodName] abbi pietà di loro."
- flavor_nap.101.a.entry: "Our god have mercy on them." #NEW
+ flavor_nap.101.a.entry: "Che il nostro Dio abbia pietà di loro." 
  flavor_nap.101.b: "Inviate subito aiuti ai sopravvissuti!"
  flavor_nap.101.a.tt: "[target_location.GetName] e le [locations|E] costiere vicine perderanno [prosperity|e], [pops|e] e alcuni [buildings|e] saranno colpiti dallo tsunami"
  flavor_nap.101.b.tt: "[target_location.GetName] e le [locations|E] costiere vicine perderanno [prosperity|e], [pops|e] e alcuni [buildings|e] saranno colpiti dallo tsunami.\nPoiché stiamo investendo denaro, la devastazione sarà minore poiché inizieremo la ripresa prima."
  flavor_nap_treaty_villeneuve_common: "Il [GetCountry('PAP').GetGovernment.GetRulerTitle] mira a mediare un accordo che garantisca pace e stabilità nella regione.\n\nIl trattato proposto avrebbe delineato i territori, riconoscendo il controllo di [GetCountry('NAP').GetNameWithNoTooltip] sulla terraferma e quello di [GetCountry('SIC').GetNameWithNoTooltip] sull'isola. I termini includerebbero il pagamento di tributi annuali da parte di [GetCountry('SIC').GetNameWithNoTooltip], la fornitura di galee da guerra a [GetCountry('NAP').GetNameWithNoTooltip], e sostegno militare da parte di [GetCountry('SIC').GetNameWithNoTooltip] [GetCountry.Custom('IT_AL_RANGO')][ROOT.GetCountry.GetFlavorRank] di [target_ruler.GetNameWithNoTooltip]. Il [GetCountry('PAP').GetGovernment.GetRulerTitle] cerca di fondare un Regno di Sicilia unificato sotto la sovranità di [GetCountry('NAP').GetNameWithNoTooltip] e lo [GetCountry('PAP').GetLongName], garantendo la cooperazione ed evitando ulteriori conflitti."
 
  flavor_nap.102.title: "Trattato di Villeneuve"
- flavor_nap.102.entry: "$flavor_nap.102.title$" #NEW
+ flavor_nap.102.entry: "$flavor_nap.102.title$"
  flavor_nap.102.desc: "Un rappresentante di [target_pope.GetName] si avvicina al[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_NULL_LA')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName], [target_ruler.GetName], propone un trattato per risolvere la controversia in corso con il [GetCountry('SIC').GetLongName], governato da [target_sicily_ruler.GetName]. $flavor_nap_treaty_villeneuve_common$"
  flavor_nap.102.a: "[target_sicily_ruler.GetNameWithNoTooltip] può governare su [GetCountry('SIC').GetNameWithNoTooltip] se [target_sicily_ruler.GetSheHe] rende omaggio."
- flavor_nap.102.a.entry: "The ruler can rule over $SIC$ if he pays homage." #NEW
+ flavor_nap.102.a.entry: "Il sovrano può regnare su $SIC$ se rende omaggio." 
  flavor_nap.102.a.tt1: "[GetCountry('SIC').Custom('IT_La')|U][GetCountry('SIC').GetName] riceverà un evento da sottoporci. Deciderà se pagarci un tributo annuale a condizione che non entriamo mai in guerra l'uno contro l'altro né diventiamo vassalli."
  flavor_nap.102.a.tt2: "Perderemo tutti i nostri [cores|e] in [ShowAreaName('sicily_area')]."
  flavor_nap.102.b: "Mai. La [ShowAreaNameWithNoTooltip('sicily_area')] è nostra!"
@@ -254,17 +248,16 @@
  flavor_nap.103.title: "$flavor_nap.102.title$"
  flavor_nap.103.desc: "Un rappresentante di [target_pope.GetName] si avvicina al[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_NULL_LA')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName], [target_sicily_ruler.GetName], propone un trattato per risolvere la controversia in corso con il [GetCountry('NAP').GetLongName], governato da [target_ruler.GetName]. $flavor_nap_treaty_villeneuve_common$"
  flavor_nap.103.a: "Ci sottometteremo al [GetCountry('NAP').GetLongNameWithNoTooltip]. Per ora."
- flavor_nap.103.a.entry: "We will submit to $NAP$. For now." #NEW
+ flavor_nap.103.a.entry: "Ci sottometteremo a $NAP$. Per ora." 
  flavor_nap.103.b: "Le Sicilie saranno nuovamente unite."
  flavor_nap.103.c: "Hanno perso la guerra. Non ricevono nulla."
  flavor_nap.103.tt1: "[GetCountry('NAP').GetName] riceverà la nostra risposta"
-# flavor_nap.103.tt2: "[GetCountry('ARA').GetName] riceverà la nostra risposta e potrebbe cercare di forzare un'[union|E] su di noi." #OLD
- flavor_nap.103.tt2: "[GetCountry('ARA').GetName] will receive our answer and might try to force a [union|E] on us." #NEW
+ flavor_nap.103.tt2: "[GetCountry('ARA').GetName] riceverà la nostra risposta e potrebbe tentare di imporci un'[union|E]." 
 
  flavor_nap.104.title: "$flavor_nap.102.title$"
  flavor_nap.104.desc: "[GetCountry('SIC').GetGovernment.GetRuler.GetName] del [GetCountry('SIC').GetLongName] è diventato un vassallo del [GetCountry('NAP').GetLongName] con la mediazione di [GetCountry('PAP').GetGovernment.GetRuler.GetName]. Il [GetCountry('SIC').GetLongNameWithNoTooltip] appartiene alla nostra famiglia da quando [GetCharacter('ara_pere_iii_arago').GetName] d'[GetCountry('ARA').GetName] ha conquistato l'isola, dobbiamo fare qualcosa o diventerà [GetCountry('NAP').GetCulture.GetName] di nuovo."
  flavor_nap.104.a: "[GetCountry('SIC').Custom('IT_La')|U][GetCountry('SIC').GetNameWithNoTooltip] sarà di nuovo nostra."
- flavor_nap.104.a.entry: "$SIC$ will be ours once more." #NEW
+ flavor_nap.104.a.entry: "Ci riprenderemo $SIC$." 
  flavor_nap.104.b: "È quello che è."
 
  flavor_nap.105.title: "[GetCountry('SIC').Custom('IT_La')|U][GetCountry('SIC').GetNameWithNoTooltip] Diventa un Vassallo"
@@ -274,78 +267,77 @@
  flavor_nap.106.title: "[GetCountry('SIC').Custom('IT_La')|U][GetCountry('SIC').GetNameWithNoTooltip] Accetta di Rendere Omaggio."
  flavor_nap.106.desc: "[GetCountry('SIC').GetGovernment.GetRulerOrRegent.GetName] del [GetCountry('SIC').GetLongName] ha accettato di renderci omaggio."
  flavor_nap.106.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_nap.106.a.entry: "$common_string_brilliant$" #NEW
+ flavor_nap.106.a.entry: "$common_string_brilliant$"
 
  flavor_nap.107.title: "[GetCountry('SIC').Custom('IT_La')|U][GetCountry('SIC').GetNameWithNoTooltip] Denuncia il Trattato."
  flavor_nap.107.desc: "[GetCountry('SIC').GetGovernment.GetRulerOrRegent.GetName] del [GetCountry('SIC').GetLongName] non ha firmato il trattato."
-# flavor_nap.107.a: "La [GetCountry('SIC').GetNameWithNoTooltip] è tornata nel menu." #OLD
- flavor_nap.107.a: "[GetCountry('SIC').GetNameWithNoTooltip] are back on the menu." #NEW
- flavor_nap.107.a.entry: "$SIC$ are back on the menu." #NEW
+ flavor_nap.107.a: "Possiamo tornare a puntare [GetCountry('SIC').Custom('IT_Sulla')][GetCountry('SIC').GetNameWithNoTooltip]." 
+ flavor_nap.107.a.entry: "Possiamo tornare a puntare su $SIC$." 
 
  flavor_nap.108.title: "Il Tributo Annuale Al Regno di Napoli."
- flavor_nap.108.entry: "The Treaty of Villeneuve (Sicily pays yearly homage)" #NEW
+ flavor_nap.108.entry: "Il Trattato di Villeneuve (la Sicilia rende omaggio ogni anno)" 
  flavor_nap.108.desc: "Come ogni festa dei Santi Pietro e Paolo, dovremmo inviare il nostro omaggio al [GetCountry('NAP').GetLongName]."
  flavor_nap.108.a: "Pagheremo il nostro tributo come promesso."
  flavor_nap.108.b: "Il tempo della sottomissione è terminato."
 
  flavor_nap.109.title: "La [ShowBuildingTypeNameWithNoTooltip('library')] dei Re Angioini"
- flavor_nap.109.entry: "The Library of the Angevin Kings" #NEW
+ flavor_nap.109.entry: "La Biblioteca dei Re Angioini" 
  flavor_nap.109.desc: "Da quando la [ShowBuildingTypeName('library')] fu fondata da [charles_i.GetName], ogni sovrano Angioino al trono del [GetCountry('NAP').GetLongName] ha dedicato risorse per ampliare la collezione ospitata al suo interno. Studiosi provenienti da tutto il regno e dall'estero sono stati pagati per tradurre i testi antichi Greci e Romani."
  flavor_nap.109.a: "Non importa chi governa, la [ShowBuildingTypeNameWithNoTooltip('library')] non dovrebbe mai smettere di crescere."
  flavor_nap.109.b: "Assumeremo più persone per rendere la nostra collezione ancora più impressionante."
  flavor_nap.109.c: "I morti non hanno nulla da insegnarci."
 
  flavor_nap.110.title: "La Grande Corte del Vicario"
- flavor_nap.110.entry: "$flavor_nap.110.title$" #NEW
+ flavor_nap.110.entry: "$flavor_nap.110.title$"
  flavor_nap.110.desc: "La Grande Corte del Vicario, nata dalla fusione della #italic Magna Curia#! Normanna e della Corte del Vicario istituita da [target_character.GetName], funge da tribunale per le cause civili e penali nel [GetCountry('NAP').GetLongName].\n\nUltimamente, ci sono giunte notizie di alcuni scontri avvenuti a [target_location.GetName] tra i membri del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] e alcuni membri della [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] che sono stati risolti dalla Gran Corte. Forse dovremmo influenzare la corte affinché risolva la questione il prima possibile."
  flavor_nap.110.a: "Schierarsi con il [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
- flavor_nap.110.a.entry: "Side with the $clergy_estate$." #NEW
+ flavor_nap.110.a.entry: "Schieriamoci con il $clergy_estate$." 
  flavor_nap.110.b: "Schierarsi con la [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
- flavor_nap.110.b.entry: "Side with the $nobles_estate$." #NEW
+ flavor_nap.110.b.entry: "Schieriamoci con i $nobles_estate$." 
  flavor_nap.110.c: "Cerca di raggiungere un compromesso."
 
  flavor_nap.111.title: "La Basilica di Santa Chiara"
- flavor_nap.111.entry: "$flavor_nap.111.title$" #NEW
+ flavor_nap.111.entry: "$flavor_nap.111.title$"
  flavor_nap.111.desc: "Uno dei più grandi complessi monastici della città di [target_location.GetName], I lavori della Basilica di Santa Chiara iniziarono nel 1310 e furono completati nel 1328. Costruita in stile Gotico Provenzale, è stata commissionata da [GetCharacter('nap_robert_i_anjou').GetName] e da sua moglie, [GetCharacter('nap_sancha_aragon').GetName].\n\n[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_IL_LA')|U] nostr[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] [ROOT.GetCountry.GetGovernment.GetRulerTitle] dovrebbe decidere se vuole essere sepolt[ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_O_A')] lì o meno."
  flavor_nap.111.a: "Da ora in poi, questo sarà il luogo di riposo della nostra dinastia."
  flavor_nap.111.b: "Costruisci invece una statua dedicata al Papa."
 
  flavor_nap.112.title: "La Scuola Medica di Salerno"
- flavor_nap.112.entry: "$flavor_nap.112.title$" #NEW
+ flavor_nap.112.entry: "$flavor_nap.112.title$"
  flavor_nap.112.desc: "La Scuola Medica Salernitana, la prima nel suo genere, non è più quella di una volta. Quella che un tempo era un punto di riferimento per gli studiosi di tutto il mondo ha ormai perso importanza a favore di altre istituzioni ed è quasi caduta nell'oblio. E con essa, le future generazioni di medici qualificati che avrebbero potuto salvare centinaia di vite. Forse dovremmo dedicare risorse per ricostruirla."
  flavor_nap.112.a: "A qualsiasi costo, ricostruiscila."
  flavor_nap.112.b: "Stava comunque cadendo in rovina, lasciala così com'è."
  flavor_nap.113.title: "Il Palazzo [ROOT.GetCountry.GetGovernment.GetAdjective|U] di [ShowLocationNameWithNoTooltip('caserta')]"
- flavor_nap.113.entry: "The Palace of Caserta" #NEW
+ flavor_nap.113.entry: "La Reggia di Caserta" 
 
  flavor_nap.113.desc: "L'architetto [target_character.GetName] presenta il progetto di un grande palazzo per [targer_ruler.Custom('IT_ART_IL_LA')] [targer_ruler.GetName] che sarà situato alla periferia di [ShowLocationName('caserta')]. Sebbene il progetto sarà estremamente costoso, sarà anche il palazzo più grande di tutta l'[ShowContinentName('europe')], rendendo [ROOT.GetCountry.Custom('IT_ART_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] l'invidia di tutte le corti."
  flavor_nap.113.a: "Build it."
  flavor_nap.113.b: "We do not need another palace."
 
  flavor_nap.114.title: "La Pudizia (The Modesty)"
- flavor_nap.114.entry: "$flavor_nap.114.title$" #NEW
+ flavor_nap.114.entry: "$flavor_nap.114.title$"
  flavor_nap.114.desc: "Nel [GetCurrentYear], #italic La Pudizia #!, una magistrale scultura rococò che impreziosisce la Cappella Sansevero, è finita. L'autore, [target_artist.GetName], ha scolpito nel marmo con incomparabile maestria la madre del Principe di Sansevero."
  flavor_nap.114.a: "Che spettacolo meraviglioso!"
 
  flavor_nap.115.title: "Esperimento di San Leucio"
- flavor_nap.115.entry: "$flavor_nap.115.title$" #NEW
+ flavor_nap.115.entry: "$flavor_nap.115.title$"
  flavor_nap.115.desc: "Nel [GetCurrentYear], [target_character.GetName] ha scelto San Leucio, un'antica residenza di caccia reale situata a [target_location.GetName], per un innovativo esperimento sociale e tecnologico. Il complesso di San Leucio diventerà un centro dedicato al divertimento, alla caccia e alla produzione della [ShowGoodsName('silk')], con edifici industriali, un villaggio per i lavoratori e tecnologie avanzate."
  flavor_nap.115.a: "Qui verrà prodotta [ShowGoodsNameWithNoTooltip('silk')|U] della migliore qualità."
 
  flavor_nap.116.title: "Accademia Pontaniana Delizia il Mondo"
- flavor_nap.116.entry: "$flavor_nap.116.title$" #NEW
+ flavor_nap.116.entry: "$flavor_nap.116.title$"
  flavor_nap.116.desc: "L'Accademia Pontaniana, inizialmente nota come Accademia Antoniana, funge da società erudita per studiosi e umanisti, da cui nasce la conoscenza che arricchisce la nostra nazione."
  flavor_nap.116.a: "Usiamo questa conoscenza per approfondire ulteriormente i misteri del mondo."
  flavor_nap.116.b: "Questa accademia e i suoi saggi membri faranno sì che tutti ci guardino con ammirazione."
 
  flavor_nap.117.title: "Rifugiati Albanesi"
- flavor_nap.117.entry: "Albanians flee" #NEW
+ flavor_nap.117.entry: "Gli Albanesi fuggono" 
  flavor_nap.117.desc: "Di fronte al conflitto religioso, i rifugiati Albanesi Cattolici, spinti dalla paura e dalla disperazione, intraprendono una migrazione pericolosa, in fuga dagli eserciti [ShowReligionAdjective('muslim')] che avanzano. Le loro vite sono in bilico mentre percorrono sentieri insidiosi alla ricerca di rifugio e sicurezza, con il peso dell'incertezza profondamente impresso nelle loro anime."
  flavor_nap.117.a: "I nostri fratelli nella fede sono sempre i benvenuti."
 
  flavor_nap.117.b: "Dovranno cercare un altro posto dove fuggire."
  flavor_nap.118.title: "Rifugiati Croati"
- flavor_nap.118.entry: "Croatians flee" #NEW
+ flavor_nap.118.entry: "I Croati fuggono" 
  flavor_nap.118.desc: "In una drammatica lotta per la sopravvivenza, i rifugiati Croati fuggono angosciati dall'inarrestabile assalto degli invasori [ShowReligionAdjective('muslim')]. Con il cuore pesante e lo spirito messo a dura prova, arrivano sulle nostre coste alla disperata ricerca di un rifugio e di un barlume di speranza nel caos che avvolge la loro patria."
  flavor_nap.118.a: "Possono stare con noi tutto il tempo che vogliono."
  flavor_nap.118.b: "Purtroppo non possiamo accoglierli nelle nostre terre."
@@ -353,7 +345,7 @@
  flavor_nap.119.title: "[target_robert.GetNameWithNoTooltip] e [target_petrarca.GetNameWithNoTooltip]"
  flavor_nap.119.desc: "Con la morte di [target_robert.GetName], il [GetCountry('NAP').GetLongName] piange di dolore mentre la notizia della morte del re si diffonde come un sussurro funebre nelle sue corti. Le sale riecheggiano di un dolore collettivo, poiché un sovrano saggio e benevolo se n'è andato, lasciando dietro di sé un regno avvolto nella malinconia. "
  flavor_nap.119.a: "Porta [target_petrarca.GetNameWithNoTooltip], il famoso filosofo, alla sua sepoltura."
- flavor_nap.119.a.entry: "Bring $Petrarca$, the famous philosopher to his burial." #NEW
+ flavor_nap.119.a.entry: "Accompagniamo $Petrarca$, il celebre filosofo, alla sua sepoltura." 
  flavor_nap.119.b: "Abbiamo cose migliori da fare."
  flavor_nap.119.tt: "Lo [GetCountry('PAP').GetLongName] riceverà la nostra petizione. Se raggiungiamo un accordo, [target_petrarca.GetName] si unirà alla nostra [court|e]"
 
@@ -363,29 +355,29 @@
  flavor_nap.120.b: "Abbiamo bisogno di lui qui."
 
  flavor_nap.1201.title: "[target_petrarca.GetNameWithNoTooltip] Arriva"
- flavor_nap.1201.entry: "Robert and Petrarca (Petrarca Moves)" #NEW
+ flavor_nap.1201.entry: "Robert e Petrarca (Petrarca si trasferisce)" 
  flavor_nap.1201.desc: "Il grande [target_petrarca.GetName] è arrivato e si è unito alla nostra corte come avevamo richiesto, così che possa piangere la morte di [target_robert.GetName]."
  flavor_nap.1201.a: "Benvenuto, amico."
 
  flavor_nap.1202.title: "[target_petrarca.GetNameWithNoTooltip] non Verrà"
- flavor_nap.1202.entry: "Robert and Petrarca (Petrarca does not Move)" #NEW
+ flavor_nap.1202.entry: "Robert e Petrarca (Petrarca non si trasferisce)" 
  flavor_nap.1202.desc: "Nonostante la nostra richiesta, [target_petrarca.GetName] non parteciperà ai funerali in onore di [target_robert.GetName]."
  flavor_nap.1202.a: "Piangeremo la sua scomparsa."
 
  flavor_nap.121.title: "Il Debito di Famiglia di [target_character.GetNameWithNoTooltip]"
- flavor_nap.121.entry: "Boccaccio's family's debt" #NEW
+ flavor_nap.121.entry: "Il debito della famiglia di Boccaccio" 
  flavor_nap.121.desc: "Con il cuore pesante e lo spirito oppresso, [target_character.GetName], un artista di grande talento nella nostra corte, è stato costretto a partire improvvisamente, lasciando dietro di sé la sua amata [ROOT.GetCountry.GetName], per andare a [GetCountry('FLO').GetName]. I debiti di suo padre gettarono un'ombra di turbolenze finanziarie, costringendolo ad abbandonare il familiare abbraccio di casa e intraprendere un viaggio incerto, con la sua penna come compagna agrodolce lungo il percorso."
  flavor_nap.121.a: "$common_string_what_can_we_do$"
  flavor_nap.121.b: "Pagheremo il debito affinché lui rimanga con noi."
   
  flavor_nap.400.title: "Tassazione Elevata"
- flavor_nap.400.entry: "$flavor_nap.400.title$" #NEW
+ flavor_nap.400.entry: "$flavor_nap.400.title$"
  flavor_nap.400.desc: "Le recenti guerre hanno notevolmente prosciugato le nostre casse. Per contrastare il collasso economico e il calo del tenore di vita del nostro strato sociale più importante, la [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], dobbiamo agire rapidamente e imporre tasse supplementari ai [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], che chiaramente non hanno arato abbastanza i loro campi."
  flavor_nap.400.historical_info: "La rivolta di Tommaso Aniello del 1647 fu una breve ma vittoriosa rivolta del popolo contro il dominio del detestato duca di Arcos. La rivolta portò alla fondazione della Repubblica di Napoli, che ebbe vita breve."
  flavor_nap.400.a: "Sì, tassa i [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]."
- flavor_nap.400.a.entry: "Yes, tax the $peasants_estate$." #NEW
+ flavor_nap.400.a.entry: "Sì, tassiamo i $peasants_estate$." 
  flavor_nap.400.b: "Forse anche la [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] dovrebbe arare i campi?"
- flavor_nap.400.b.entry: "Maybe the $nobles_estate$ should plow the fields too?" #NEW
+ flavor_nap.400.b.entry: "Forse anche i $nobles_estate$ dovrebbero arare i campi?" 
  STATIC_MODIFIER_NAME_nap_heavy_taxation: "Pesante Tassazione sui Popolani"
  STATIC_MODIFIER_NAME_nap_insufficient_funds: "Fondi Insufficienti"
  nap_every_peasant_pop_loses_5_satisfaction: "Ogni [pop|e] del Ceto [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] perde [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]."
@@ -404,7 +396,7 @@
  flavor_nap.402.historical_info: "La Serenissima Repubblica di Napoli fu uno Stato di breve durata che esistette per alcuni mesi tra il 1647 e il 1648. Era modellata sul governo veneziano, da cui riprendeva il soprannome e il titolo del sovrano, pur avendo anche un aspetto monarchico."
  flavor_nap.402.a: "Li schiacceremo come gli emarginati che sono."
  flavor_nap.402.b: "Abbasso la [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip]!"
- flavor_nap.402.b.entry: "Down with our government!" #NEW
+ flavor_nap.402.b.entry: "Abbasso il nostro governo!" 
  STATIC_MODIFIER_NAME_nap_struggle_for_independence: "La Lotta per l'Indipendenza"
  STATIC_MODIFIER_NAME_nap_favor_monarchy: "Favorire i Monarchici"
  STATIC_MODIFIER_NAME_nap_favor_republic: "Favorire i Repubblicani"

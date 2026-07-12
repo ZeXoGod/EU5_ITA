@@ -8,18 +8,23 @@
  INTERNATIONAL_ORGANIZATION_TT_MEMBER: "Segue un elenco di tutti i membri appartenenti a questa organizzazione internazionale"
  MEMBERS: "Membri"
  MEMBERS_DESC: "Questi sono tutti i [countries|e] che fanno parte dell'[international_organization|e]."
- INT_ORG_HRE_RANK_FILTER: "Imperial Rank" #NEW
- INT_ORG_HRE_RANK_FILTER_BY: "Filter by the $NAME$ [special_status|e]." #NEW
- INT_ORG_HRE_SORT_MEMBER_TYPE: "Sort by [special_status|e] type" #NEW
- INT_ORG_HRE_SORT_NAME: "Sort by country name" #NEW
- INT_ORG_HRE_SORT_GREAT_POWER: "Sort by [great_power_score|e]" #NEW
- INT_ORG_HRE_SORT_OPINION: "Sort by [opinion|e]" #NEW
- INT_ORG_HRE_SORT_VOTE_STRENGTH: "Sort by imperial vote strength" #NEW
- INT_ORG_HRE_SORT_CULTURE: "Sort by [culture|e]" #NEW
- INT_ORG_HRE_SORT_RELIGION: "Sort by [religion|e]" #NEW
- HRE_MEMBERS_VIEW_LIST: "List Display" #NEW
- HRE_MEMBERS_VIEW_FLAGS: "Flags Display" #NEW
+ INT_ORG_HRE_RANK_FILTER: "Rango Imperiale" 
+ INT_ORG_HRE_RANK_FILTER_BY: "Filtra per $NAME$ [special_status|e]." 
+ INT_ORG_HRE_SORT_MEMBER_TYPE: "Ordina per tipo di [special_status|e]" 
+ INT_ORG_HRE_SORT_NAME: "Ordina per nome del paese" 
+ GAG_SORT_EXPERIENCE: "Ordina per contributo totale alla [tax_base|e]" 
+ GAG_SORT_PROGRESS: "Ordina per contributo mensile alla [tax_base|e]" 
+ GAG_GUELPHS_FILTER_TITLE: "Mostra i membri Guelfi" 
+ GAG_GHIBELLINES_FILTER_TITLE: "Mostra i membri Ghibellini" 
+ INT_ORG_HRE_SORT_GREAT_POWER: "Ordina per [great_power_score|e]" 
+ INT_ORG_HRE_SORT_OPINION: "Ordina per [opinion|e]" 
+ INT_ORG_HRE_SORT_VOTE_STRENGTH: "Ordina per forza del voto imperiale" 
+ INT_ORG_HRE_SORT_CULTURE: "Ordina per [culture|e]" 
+ INT_ORG_HRE_SORT_RELIGION: "Ordina per [religion|e]" 
+ HRE_MEMBERS_VIEW_LIST: "Visualizzazione a Elenco" 
+ HRE_MEMBERS_VIEW_FLAGS: "Visualizzazione a Bandiere" 
  IMPERIAL_VOTE_TITLE: "Voto Imperiale [Country.GetAdjectiveWithNoTooltip]"
+ IMPERIAL_VOTE_REQUIREMENTS_DESC: "Per essere eletto Imperatore, un regno deve essere una monarchia indipendente che segue la Religione Imperiale. Anche il suo governante regnante deve essere idoneo a governare l'Impero, oppure, se è già Imperatore, il suo erede come successore.\nLe condizioni complete sono elencate di seguito." 
  OTHER_INTERNATIONAL_ORGANIZATIONS: "Altre"
  INTERNATIONAL_ORGANIZATION_TT_CREATION_DATE: "Data di Creazione: [InternationalOrganization.GetCreationDate]"
  INTERNATIONAL_ORGANIZATION_TT_INFO: "Membri:"
@@ -30,11 +35,12 @@
  INTERNATIONAL_ORGANIZATION_TT_LEADER_MODIFIER_INFO: "Il [international_organization_leader_short|e] riceve:"
  INTERNATIONAL_ORGANIZATION_TT_TARGET_MODIFIER_INFO: "L'obiettivo dell'[international_organization|e] riceve:" 
  INTERNATIONAL_ORGANIZATION_TT_NON_LEADER_MODIFIER_INFO: "Gli altri [members|e] ricevono:"
+ INTERNATIONAL_ORGANIZATION_AUTO_DISBAND_REQUIREMENTS: "Si Scioglie Se" 
  INTERNATIONAL_ORGANIZATION_TT_CURRENCY_ENABLED_EFFECT: "Abilita l'accumulo di $CURRENCY$ nell'[international_organization|e]"
  INTERNATIONAL_ORGANIZATION_TT_CURRENCY_DISABLED_EFFECT: "Disabilita l'accumulo di $CURRENCY$ nell'[international_organization|e]"
  INTERNATIONAL_ORGANIZATION_TT_CURRENCY_EFFECT: "$CURRENCY$ Abilitata: $VAL$"
  INTERNATIONAL_ORGANIZATION_TT_HAS_PARLIAMENT: "Ha un Parlamento: $VAL$"
- INTERNATIONAL_ORGANIZATION_TT_GIVES_FOOD_ACCESS: "Fornisce accesso al [food|e] ad altri membri: $VAL$"
+ INTERNATIONAL_ORGANIZATION_TT_GIVES_FOOD_ACCESS: "Concede [food_access|e] agli altri membri: $VAL$" 
  INTERNATIONAL_ORGANIZATION_TT_HAS_DYNASTIC_POWER: "Rilevante per il [dynastic_power|e]: $VAL$"
  INTERNATIONAL_ORGANIZATION_TT_CAN_INVITE_COUNTRIES: "Può invitare nuovi [members|e]: $VAL$"
  INTERNATIONAL_ORGANIZATION_TT_CAN_ANNEX_MEMBERS: "Può [annex|e] diplomaticamente altri [members|e]: $VAL$"
@@ -45,13 +51,11 @@
  INTERNATIONAL_ORGANIZATION_TT_CAN_BUILD_RGOS_IN_MEMBERS: "Può espandere le [rgo|e] nei [members|e]: $VAL$"
  INTERNATIONAL_ORGANIZATION_TT_BONUS_OPINION: "Bonus di [opinion|e] tra i membri: $AMOUNT$"
  INTERNATIONAL_ORGANIZATION_TT_BONUS_TRUST: "Bonus di [trust|e] tra i membri: $AMOUNT$"
-# INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_STATIC: "Velocità di Annessione: $AMOUNT|Y$" #OLD
- INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_STATIC: "Annexation Speed Factor: ×$AMOUNT|Y$" #NEW
-# INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_DYNAMIC: "La Velocità di Annessione è determinata dai seguenti fattori:\n$HOW$" #OLD
- INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_DYNAMIC: "Annexation Speed Factor is determined by the following factors:\n$HOW$" #NEW
- ANNEX_SPEED_CONTRIBUTION_TT_BASE_VALUE: "Base Value: $VAL|Y$" #NEW
- ANNEX_SPEED_CONTRIBUTION_TT_DUE_TO: "$NAME$ $VAL$ due to:" #NEW
- ANNEX_SPEED_CONTRIBUTION_TT_INLINE_VALUE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" #NEW
+ INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_STATIC: "Fattore di Velocità di Annessione: ×$AMOUNT|Y$" 
+ INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED_DYNAMIC: "Il Fattore di Velocità di Annessione è determinato dai seguenti fattori:\n$HOW$" 
+ ANNEX_SPEED_CONTRIBUTION_TT_BASE_VALUE: "Valore Base: $VAL|Y$" 
+ ANNEX_SPEED_CONTRIBUTION_TT_DUE_TO: "$NAME$ $VAL$ dovuto a:" 
+ ANNEX_SPEED_CONTRIBUTION_TT_INLINE_VALUE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" 
  INTERNATIONAL_ORGANIZATION_TT_MIN_OPINION: "Se l'[opinion|e] di due paesi membri scende sotto $AMOUNT$, l'[international_organization|e] collasserà"
  INTERNATIONAL_ORGANIZATION_TT_MIN_TRUST: "Se la [trust|e] tra due paesi membri scende sotto $AMOUNT$, l'[international_organization|e] collasserà"
  INTERNATIONAL_ORGANIZATION_TT_LEADER_ANTAGONISATION_MODIFIER: "Qualsiasi [antagonism|e] causato dal [international_organization_leader_short|e] sarà scalato del $AMOUNT|-=0%$"
@@ -71,14 +75,13 @@
  INTERNATIONAL_ORGANIZATION_NO_LEADER_1: "[InternationalOrganizationsView.GetInternationalOrganization.GetName] è senza un leader."
  INTERNATIONAL_ORGANIZATION_NO_LEADER_2: "Nulla potrà essere realizzato fino a quando questa situazione non sarà risolta."
  INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_TITLE: "Lotta di Potere!"
- INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_1: "Non essendoci un voto conclusivo, [InternationalOrganizationsView.GetInternationalOrganization.Custom('IT_IO_IL')][InternationalOrganizationsView.GetInternationalOrganization.GetName] è senza un leader."
+ INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_1: "Senza un voto conclusivo, [InternationalOrganizationsView.GetInternationalOrganization.Custom('IT_IO_IL')][InternationalOrganizationsView.GetInternationalOrganization.GetName] è priva di un [international_organization_leader|e]." 
  INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_2: "Questo persisterà fino a che non saranno soddisfatti i seguenti criteri:\n[InternationalOrganizationsView.GetVoteFinalizationCriteria]"
-# INTERNATIONAL_ORGANIZATION_LEADER_TYPE_INFO: "Modifica il [leader_change_method|e] in $TYPE|Y$" #OLD
- INTERNATIONAL_ORGANIZATION_LEADER_TYPE_INFO: "Changes the [leader_type|e] to $TYPE|Y$" #NEW
+ INTERNATIONAL_ORGANIZATION_LEADER_TYPE_INFO: "Cambia il [leader_type|e] in $TYPE|Y$" 
  INTERNATIONAL_ORGANIZATION_LEADER_CHANGE_METHOD_INFO: "Modifica il [leader_change_method|e] in $TYPE|Y$"
  INTERNATIONAL_ORGANIZATION_LEADER_CHANGE_TRIGGER_TYPE_INFO: "Modifica l'[leader_change_trigger|e] in $TYPE|Y$"
  INTERNATIONAL_ORGANIZATION_MONTHS_BETWEEN_LEADER_CHANGE_INFO: "Modifica il periodo tra le [elections|e] a $VALUE|0Y$"
- INTERNATIONAL_ORGANIZATION_LEADERSHIP_ELECTION_RESOLUTION_INFO: "Changes the [resolution|e] to elect a new leader to [RESOLUTION.GetName]" #NEW
+ INTERNATIONAL_ORGANIZATION_LEADERSHIP_ELECTION_RESOLUTION_INFO: "Cambia la [resolution|e] per eleggere un nuovo leader in [RESOLUTION.GetName]" 
  INTERNATIONAL_ORGANIZATION_PAYMENTS_IMPLEMENTED_INFO: "I seguenti [payments|e] sono attivi:"
  INTERNATIONAL_ORGANIZATION_PAYMENTS_REPEALED_INFO: "I seguenti [payments|e] non sono più attivi:"
  INTERNATIONAL_ORGANIZATION_SPECIAL_STATUSES_IMPLEMENTED_INFO: "I seguenti [special_statuses|e] sono abilitati:"
@@ -104,6 +107,21 @@
  VOTE_NUM_WITH_BREAKDOWN_TT: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|0L$#!"
  VOTE_NUM_BREAKDOWN_TITLE: "Voti sulla Risoluzione\n$VOTE$ ha $VOTE_NUM|0V$ voto/i da:"
  VOTE_NUM_BREAKDOWN_ENTRY: "$VOTER$: #TOOLTIP:$BREAKDOWN_TAG$ $VOTE_NUM|0L$#!"
+ VOTE_CANDIDATE_SCORE_ENTRY: "$VOTE$: #TOOLTIP:$BREAKDOWN_TAG$ $SCORE|+=$#!" 
+ VOTE_CANDIDATE_SCORE_BREAKDOWN_TITLE: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ottiene un punteggio $VOTE$ di $SCORE|+=$" 
+ HIGH_KINGSHIP_CANNOT_LEAD_OVER_OVERLORD: "Sono uno [subject|e] di un membro affine" 
+ CURRENT_HIGH_KING: "Attualmente l'Alto Re" 
+ PREVIOUS_HIGH_KING: "Precedente Alto Re" 
+ HIGH_KINGSHIP_VOTES_LOCATIONS: "Località" 
+ HIGH_KINGSHIP_VOTES_FORT_LEVEL: "Livello del Forte" 
+ HIGH_KINGSHIP_VOTES_SUBJECTS: "Stati Clienti" 
+ HIGH_KINGSHIP_VOTES_COUNTRY_RANK: "Rango del Paese" 
+ HIGH_KINGSHIP_VOTE_NOT_RIVAL: "Sono un nostro [rival|e]" 
+ HIGH_KINGSHIP_VOTE_AT_WAR: "Sono in [war|e] con noi" 
+ HIGH_KINGSHIP_VOTE_ONLY_APEX_OVERLORD: "Possiamo sostenere solo il [overlord|e] più anziano della nostra catena" 
+ HIGH_KINGSHIP_VOTE_LOYAL_TO_APEX: "Come [subject|e] leale dobbiamo sostenere il nostro [overlord|e] più anziano" 
+ HIGH_KINGSHIP_VOTE_WE_ARE_DISLOYAL: "Siamo sleali e non sosterremo il nostro [overlord|e] più anziano" 
+ HIGH_KINGSHIP_VOTE_DISLOYAL_ABOVE: "Uno [subject|e] sleale sopra di noi ci vieta di votare per il nostro [overlord|e] più anziano" 
  RESOLUTION_PREDICTED_VOTE_OUTCOME: "Attualmente, il voto vincente previsto è [ResolutionGlue.GetHighestVote.GetVoteObject.GetName], con un totale di [ResolutionGlue.GetVoteNumWithBreakdown(ResolutionGlue.GetHighestVote)] voti."
  RESOLUTION_PREDICTED_VOTE_OUTCOME_NONE: "Al momento non ci sono risultati definitivi, poiché non è stata ancora espressa alcuna preferenza."
  RESOLUTION_PREDICTED_VOTE_OUTCOME_UNDECISIVE: "Al momento non c'è un risultato vincente, perché non c'è stata una maggioranza di voti." 
@@ -125,8 +143,8 @@
  SEAT_OF_DYNASTY_IN_IO: "Possiede un [ShowModifier('dynasty_seat')] nell'[international_organization|e]"
  THREATENED_BY_IO_MEMBERS: "Minacciato dai membri dell'[international_organization|e]" 
  THREATENED_BY_NON_IO_MEMBERS: "Minacciato da paesi al di fuori dell'[international_organization|e]" 
- CASUS_BELLI_TARGET_IO_MEMBERS_ENTRY: "Casus belli target (members): $VAL|0+=$" #NEW
- CASUS_BELLI_TARGET_NON_IO_MEMBERS_ENTRY: "Casus belli target (non-members): $VAL|0+=$" #NEW
+ CASUS_BELLI_TARGET_IO_MEMBERS_ENTRY: "Bersaglio casus belli (membri): $VAL|0+=$" 
+ CASUS_BELLI_TARGET_NON_IO_MEMBERS_ENTRY: "Bersaglio casus belli (non membri): $VAL|0+=$" 
  PRIMARY_OR_RULER_CULTURE_EQUAL_TO_LEADER_CULTURE: "[primary_culture|e] o [culture|e] del [ruler|e] uguale alla cultura del [international_organization_leader_short|e]"
  IS_LEADER_OF_AN_AP: "È già leader di un [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]"
  THREATENED_BY_LEADER_RIVALS_OR_ENEMIES: "È minacciato da [rivals|e] o [enemies|e] del [international_organization_leader_short|e]"
@@ -147,7 +165,7 @@
  LEADERSHIP_HAS_NO_RULER_OR_HEIR: "Non ha un [ruler|e] né un [heir|e]"
  LEADERSHIP_HAS_NO_RULER: "Il [international_organization_leader_short|e] non ha un [ruler|e]"
  LEADERSHIP_HAS_NO_HEIR: "Il [international_organization_leader_short|e] non ha un [heir|e]"
- LEADERSHIP_VOTE_SAME_AREA: "[capital|e] nell'[area|e] [COUNTRY.GetCapital.GetArea.GetName]"
+ LEADERSHIP_VOTE_SAME_AREA: "[capital|e] nella nostra stessa [area|e]" 
  LEADERSHIP_RIVAL_OF_RIVAL: "[rival|e] di un [rival|e]"
  LEADERSHIP_RIVAL_OF_ENEMY: "[rival|e] di un [enemy|e]"
  LEADERSHIP_ENEMY_OF_RIVAL: "[enemy|e] di un [rival|e]"
@@ -164,6 +182,8 @@
  TARGET_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è il bersaglio della [INTERNATIONAL_ORGANIZATION.GetName]"
  SPECIAL_STATUS_IN_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] ha lo status '$STATUS$' in [INTERNATIONAL_ORGANIZATION.GetName]"
  MEMBER_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è un membro di [INTERNATIONAL_ORGANIZATION.GetName]"
+ MEMBER_OF_IMPERIAL_CIRCLE_THIRD: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] appartiene a [IMPERIAL_CIRCLE.GetName] in [INTERNATIONAL_ORGANIZATION.GetName]" 
+ MODIFIER_CIRCLE_LEADER_OF_IO: "Leader di $CIRCLE_NAME$" 
  LAND_OWNED_BY_INTERNATIONAL_ORGANIZATION: "[LOCATION.GetName] è posseduta da [INTERNATIONAL_ORGANIZATION.GetName]"
  INERTIA: "Posso farlo più tardi?"
  WE_ALREADY_HAVE_A_BETTER_POLICY: "Abbiamo già una politica migliore"
@@ -200,9 +220,9 @@
  SUBTAB_IO_OVERVIEW: "$OVERVIEW$"
  SUBTAB_IO_OVERVIEW_TT_TEXT: "Mostra i membri con [special_status|e] nell'[international_organization|e] e le [actions|e]."
  SUBTAB_IO_OVERVIEW_TT_FLAVOR_TEXT: "'Nell'unità, c'è forza.'"
- SUBTAB_IO_TREASURY: "Treasury" #NEW
- SUBTAB_IO_TREASURY_TT_TEXT: "Shows the [payments|e] and contribution to the [international_organization|e] treasury." #NEW
- SUBTAB_IO_TREASURY_DISABLED_TT_TEXT: "This tab is not available because none of the following socioeconomic [laws|e] is in effect: [ShowPolicyName('only_treasury_payment')], [ShowPolicyName('only_emperor_payment')], or [ShowPolicyName('complete_imperial_contribution')]." #NEW
+ SUBTAB_IO_TREASURY: "Tesoro" 
+ SUBTAB_IO_TREASURY_TT_TEXT: "Mostra i [payments|e] e il contributo al tesoro dell'[international_organization|e]." 
+ SUBTAB_IO_TREASURY_DISABLED_TT_TEXT: "Questa scheda non è disponibile perché nessuna delle seguenti [laws|e] socioeconomiche è in vigore: [ShowPolicyName('only_treasury_payment')], [ShowPolicyName('only_emperor_payment')], oppure [ShowPolicyName('complete_imperial_contribution')]." 
 
  SUBTAB_IO_ALL_MEMBERS: "$game_concept_members$"
  SUBTAB_IO_ALL_MEMBERS_TT_TEXT: "Mostra tutti i [members|e] dell'[international_organization|e]."
@@ -251,7 +271,7 @@
  IO_LEADER_CHANGE_METHOD_VOTE_DESC: "Il Leader dell'Organizzazione Internazionale è scelto tramite un sistema di voto."
  IO_LEADER_CHANGE_METHOD_ROTATION_DESC: "Il Leader dell'Organizzazione Internazionale è scelto tramite un sistema di rotazione."
  IO_LEADER_CHANGE_METHOD_LOTTERY_DESC: "Il Leader dell'Organizzazione Internazionale è scelto tramite sorteggio."
- IO_LEADER_CHANGE_METHOD_SCORE_DESC: "Il Leader dell'Organizzazione Internazionale è il membro con il valore più alto di [great_power_score|e]."
+ IO_LEADER_CHANGE_METHOD_SCORE_DESC: "Il Leader dell'Organizzazione Internazionale è selezionato in base a quale membro ha il punteggio più alto, secondo i criteri dell'organizzazione stessa." 
  IO_LEADER_CHANGE_METHOD_VOTE_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_VOTE_DESC$ \nProssimo cambio di leader tra #Y $DATE$#!"
  IO_LEADER_CHANGE_METHOD_ROTATION_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_ROTATION_DESC$ \nProssimo cambio di leader tra #Y $DATE$#!"
  IO_LEADER_CHANGE_METHOD_LOTTERY_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_LOTTERY_DESC$ \nProssimo cambio di leader tra #Y $DATE$#!"
@@ -284,6 +304,17 @@
  hre_leaving_tt: "Non è possibile lasciare l'Impero pacificamente. Vinci una guerra contro [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_ART_RANGO')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetLongName] e imponi il trattato [ShowPeaceTreatyTypeName('peace_leave_the_hre')]!"
  hre_has_eligible_ruler_tt: "Ha un [ruler|e] idoneo"
  hre_has_eligible_heir_tt: "Ha un [heir|e] idoneo"
+ hre_eligible_via_ruler_context_tt: "Non siamo ancora Imperatore, quindi il nostro [ruler|e] deve essere idoneo" 
+ hre_ruler_not_regency_tt: "Non siamo sotto reggenza" 
+ hre_has_ruler_tt: "Abbiamo un [ruler|e]" 
+ hre_ruler_gender_eligible_tt: "Il [ruler|e] è maschio, oppure l'Impero permette Imperatrici" 
+ hre_ruler_not_blocked_tt: "Il [ruler|e] non è escluso dal governare il Sacro Romano Impero" 
+ hre_ruler_religion_aligns_tt: "La religione del [ruler|e] è allineata con la Religione Imperiale" 
+ hre_eligible_via_heir_context_tt: "Siamo l'attuale Imperatore, o lo siamo stati in precedenza, quindi il nostro [heir|e] deve essere idoneo" 
+ hre_has_heir_tt: "Abbiamo un [heir|e]" 
+ hre_heir_gender_eligible_tt: "L'[heir|e] è maschio, oppure l'Impero permette Imperatrici" 
+ hre_heir_not_blocked_tt: "L'[heir|e] non è escluso dal governare il Sacro Romano Impero" 
+ hre_heir_religion_aligns_tt: "La religione dell'[heir|e] è allineata con la Religione Imperiale" 
  emperor: "Imperatore"
  emperor_plural: "Imperatori"
  emperor_desc: "L'$emperor$ è il glorioso e prestigioso [international_organization_leader_short|e] del [GetUniqueInternationalOrganization('hre').GetName]. Può essercene solo uno, e la sua parola determina la direzione dell'Impero."
@@ -318,13 +349,16 @@
  CANDIDATES: "Candidati"
  IMPERIAL_DIET: "Dieta Imperiale"
  IMPERIAL_LAWS: "Leggi Imperiali"
- LAWS_COMPACTED_VIEW: "Compacted View" #NEW
- LAWS_EXPANDED_VIEW: "Expanded View" #NEW
- IMPERIAL_CONSTITUTION: "Imperial Constitution" #NEW
- POLICIES_BENEFITING_EMPEROR: "$count$ [policies|e] benefiting the Emperor" #NEW
- CALL_IMPERIAL_DIET_TO: "Call Imperial Diet to" #NEW
- GOLDEN_BULL_DEBATING: "Debating" #NEW
- GOLDEN_BULL_ENACTED: "Golden Bull Enacted" #NEW
+ LAWS_COMPACTED_VIEW: "Vista Compatta" 
+ LAWS_EXPANDED_VIEW: "Vista Estesa" 
+ IMPERIAL_CONSTITUTION: "Costituzione Imperiale" 
+ POLICIES_BENEFITING_EMPEROR: "$count$ [policies|e] a favore dell'Imperatore" 
+ POLICIES_BENEFITING_EMPEROR_SINGLE: "Politica Favorevole all'Imperatore" 
+ POLICIES_BENEFITING_EMPEROR_SINGLE_DESC: "Promulgare questa [policy|e] favorisce l'[hre_emperor|e], rafforzando l'autorità imperiale e spingendo il [hre|e] verso la centralizzazione." 
+ CALL_IMPERIAL_DIET_TO: "Convoca la Dieta Imperiale per" 
+ GOLDEN_BULL_DEBATING: "In Discussione" 
+ GOLDEN_BULL_ENACTED: "Bolla d'Oro Promulgata" 
+ GOLDEN_BULL_ENACTED_DESC: "Attualmente abbiamo promulgato #W $golden_bull_policy$#!" 
  IMPERIAL_LAWS_TITLE: "Il Potere dell'[InternationalOrganizationsView.GetInternationalOrganization.GetLeaderTitle]"
  IMPERIAL_LAWS_DESC: "Alcune [policies|e] della [InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] aumentano il potere politico dell'[hre_emperor|e]. Raggiungendo determinati livelli, l'[hre_emperor] potrà iniziare a centralizzare l'organizzazione in un [ShowFormableCountryName('HRE_f')].\n\nNumero attuale di politiche a favore dell'[hre_emperor]: [InternationalOrganizationsView.GetInternationalOrganization.GetModifierValue('hre_emperor_comfort_policies_counter')|Y0]"
  IMPERIAL_LAWS_GOLDEN_BULL_DESC: "Il [InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] è in uno stato di anarchia amministrativa. Non si possono proporre [laws|e] o [policies|e] finché la [ShowLawName('golden_bull')] non sarà codificata."
@@ -376,7 +410,9 @@
  VOTE_COUNTRY: "Vota un Paese"
  VOTE_COUNTRY_TOOLTIP: "Clicca per decidere per quale paese votare"
  FAVOR_VOTES: "Voti favorevoli"
- HRE_VOTE_FOR_CANDIDATE: "Vote for [Country.GetName] to be the next [hre_emperor|e]" #NEW
+ IO_VOTES_FOR_CANDIDATE: "Voti per [LeaderCandidate.GetCandidate.GetName]" 
+ IO_VOTE_FOR_CANDIDATE_BUTTON: "Vota per [LeaderCandidate.GetCandidate.GetName]" 
+ HRE_VOTE_FOR_CANDIDATE: "Vota [Country.Custom('IT_La')][Country.GetName] come prossimo [hre_emperor|e]" 
  VOTE_OF_COUNTRY: "Voto [Country.Custom('IT_Della')][Country.GetNameWithNoTooltip]" #QUI
  VARIABLE_MONTHLY_CHANGE: "$VARIABLE|Y$ cambia di $AMOUNT$ ogni mese:\n$DESC$"
  IO_VARIABLE_VALUE: "$VARIABLE|Y$ è attualmente pari a $AMOUNT$"
@@ -405,16 +441,16 @@
  IA_DYNASTIC_POWER: "[dynastic_power|e] dei [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip]"
  EMPEROR_ABILITIES: "[ability|e] di [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]"
  HRE_LEADER_MALE: "Sacro Romano Imperatore"
- HRE_LEADER_MALE.long: "Holy Roman Emperor" #NEW
- HRE_LEADER_MALE.short: "Emp." #NEW
+ HRE_LEADER_MALE.long: "Imperatore del Sacro Romano Impero" 
+ HRE_LEADER_MALE.short: "Imp." 
  HRE_LEADER_FEMALE: "Sacra Romana Imperatrice"
- HRE_LEADER_FEMALE.long: "Holy Roman Empress" #NEW
- HRE_LEADER_FEMALE.short: "Emp." #NEW
- HRE_NEXT_EMPEROR_ELECTION: "#T Next [hre_emperor|e] Election#!" #NEW
- HRE_LEADER_CANDIDATE_VOTES: "[LeaderCandidate.GetVotesAmount|0] Votes" #NEW
- HRE_FIRST_LEADER_CANDIDATE: "#T 1st#!: $HRE_LEADER_CANDIDATE_VOTES$" #NEW
- HRE_SECOND_LEADER_CANDIDATE: "#T 2nd#!: $HRE_LEADER_CANDIDATE_VOTES$" #NEW
- HRE_THIRD_LEADER_CANDIDATE: "#T 3rd#!: $HRE_LEADER_CANDIDATE_VOTES$" #NEW
+ HRE_LEADER_FEMALE.long: "Imperatrice del Sacro Romano Impero" 
+ HRE_LEADER_FEMALE.short: "Imp." 
+ HRE_NEXT_EMPEROR_ELECTION: "#T Prossima Elezione dell'[hre_emperor|e]#!" 
+ HRE_LEADER_CANDIDATE_VOTES: "[LeaderCandidate.GetVotesAmount|0] Voti" 
+ HRE_FIRST_LEADER_CANDIDATE: "#T 1°#!: $HRE_LEADER_CANDIDATE_VOTES$" 
+ HRE_SECOND_LEADER_CANDIDATE: "#T 2°#!: $HRE_LEADER_CANDIDATE_VOTES$" 
+ HRE_THIRD_LEADER_CANDIDATE: "#T 3°#!: $HRE_LEADER_CANDIDATE_VOTES$" 
  MEMBERS_SCROLL_LIST_EMPTY: "Nessun membro disponibile con questi criteri di ricerca"
  LATERALVIEW_IO_ENTRY_NAME: "$TYPE$"
  FROM_MODIFIERS: "Dai Modificatori"
@@ -456,6 +492,18 @@
  IO_PAYMENTS_DESC: "I seguenti pagamenti vengono effettuati all'interno di questa organizzazione:"
  IO_PAYMENT_DESC: "Ogni mese vengono effettuate le seguenti transazioni:"
  IO_PAYMENT_SPECIFIC: "Pagamenti $PAYMENT_NAME$"
+ IO_PAYMENT_PAYER_PRICE_TITLE: "$PAYER$ $PAYMENT$" 
+ IO_PAYMENT_BASE_PRICE: "Pagamento Base: $VALUE$" 
+ IO_PAYMENT_PAYER_CONTRIBUTION: "Contributo di $PAYER$: $VALUE|2Y$" 
+ IO_PAYMENT_PAYER_PROPORTION_ENTRY: "$PAYER$ $KEY$: $VALUE|=2Y$" 
+ IO_PAYMENT_FACTOR_LIST_SEPARATOR: "$LEFT$, $RIGHT$" 
+ IO_PAYMENT_FACTOR_LIST_FINAL_SEPARATOR: "$LEFT$ e $RIGHT$" 
+ IO_PAYMENT_FURTHER_SCALED_BY: "Questo è ulteriormente scalato da $FACTORS$" 
+ IO_PAYMENT_INFLATION: "[inflation|E]: $VALUE|-=2%$" 
+ IO_PAYMENT_MAINTENANCE: "Scala di Pagamento: $VALUE|%0Y$" 
+ IO_PAYMENT_PAYMENT_SCALE: "Scala di Pagamento" 
+ IO_PAYMENT_FINAL_PAYMENT: "Pagamento Finale: $VALUE$" 
+ IO_PAYMENT_CONTRIBUTION_RATE_LABEL: "Tasso di Contribuzione" 
  imperial_gold_contribution_desc: "I contributi in [gold|e] dai vari membri del [GetUniqueInternationalOrganization('hre').GetName]."
  imperial_contribution: "Contributo Imperiale"
  imperial_contribution_desc: "$imperial_gold_contribution_desc$ L'oro viene trasferito direttamente all'attuale [hre_emperor|e], o al precedente in caso di [regency|e] attiva. L'ammontare richiesto aumenta con una maggiore $imperial_authority$ dell'[hre_emperor|e]."
@@ -474,7 +522,7 @@
  tithe_desc: "Un pagamento effettuato dai [estates|e] al leader della [GetUniqueInternationalOrganization('catholic_church').GetName]."
  tithe_price: "$tithe$"
  papal_authority: "Autorità Papale"
- papal_authority_desc: "$game_concept_papal_authority_desc$" #NEW
+ papal_authority_desc: "$game_concept_papal_authority_desc$" 
  catholic_pope: "Papa"
  CATHOLIC_CHURCH_LEADER_MALE: "$catholic_pope$"
  CATHOLIC_CHURCH_LEADER_FEMALE: "$catholic_pope$"
@@ -511,6 +559,7 @@
  union_call_organization_parliament: "Convoca il Parlamento dell'Unione"
  union_call_organization_parliament_desc: "Convocherà il Parlamento collettivo dell'[GetInternationalOrganizationType('union').GetName] per ottenere supporto al fine di risolvere un [union_integration_level|e] sbilanciato."
  union_call_organization_parliament_tt: "L'[THIS.GetInternationalOrganization.GetName] ha almeno #Y 1#! [union_integration_level|e]"
+ union_call_parliament_not_on_failed_cd_tt: "Non in cooldown per un precedente dibattito fallito del Parlamento dell'Unione" 
 
  change_organization_parliament_type: "Cambia il Tipo di Parlamento"
  change_organization_parliament_type_header: "Cambia il Tipo di Parlamento"
@@ -539,11 +588,11 @@
  union_bribe_clergy: "Corrompi il Clero"
  union_bribe_burghers: "Corrompi la Borghesia"
  union_bribe_not_possible: "Non possibile per i seguenti motivi:\nSolo un [ShowSpecialStatusName('senior_partner')] può corrompere i [estates|e] per far approvare una [parliament_agenda|e] in un'[international_organization|e]."
- union_parliament_gold_bribe_cost: "Bribe Cost" #NEW
+ union_parliament_gold_bribe_cost: "Costo della Tangente" 
  parliament_bribe_no_country: "@trigger_no! Nessun [country|e] disponibile da corrompere"
  parliament_bribe_no_parliament_agenda: "@trigger_no! Nessuna [parliament_agenda|e] disponibile da usare come corruzione."
- bribe_estate_enough_government_power_tt: "Enough [government_power|e] to afford the bribe" #NEW
- NOT_bribe_estate_enough_government_power_tt: "Not enough [government_power|e] to afford the bribe" #NEW
+ bribe_estate_enough_government_power_tt: "[government_power|e] sufficiente per permettersi la tangente" 
+ NOT_bribe_estate_enough_government_power_tt: "[government_power|e] insufficiente per permettersi la tangente" 
  bribe_estate_tooltip: "Corromperemo il ceto [SCOPE.sEstate('estate').GetName] [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName] completando una [parliament_agenda|e]"
 
  vote_for_policy_vote: "Vota a favore della Politica"
@@ -565,8 +614,7 @@
  celestial_authority_DISPLAY: "$VAL|0$"
  NUMBER_OF_TRIBUTARIES: "Numero di Stati Tributari Amichevoli"
  num_of_celestial_governors: "Governatori Celesti"
-# num_of_celestial_governors_desc: "Il numero di paesi che sono stati nominati [ShowSpecialStatusName('celestial_governor')] all'interno del [GetInternationalOrganizationType('middle_kingdom').GetName]." #OLD
- num_of_celestial_governors_desc: "The number of countries that are appointed as [ShowSpecialStatusName('celestial_governor')] in the [GetInternationalOrganizationType('middle_kingdom').GetName]." #NEW
+ num_of_celestial_governors_desc: "Il numero di paesi nominati come [ShowSpecialStatusName('celestial_governor')] in [GetInternationalOrganizationType('middle_kingdom').GetName]." 
  NUM_OF_CELESTIAL_GOVERNORS_DISPLAY: "$VAL$"
  BASE_DECAY: "Decadimento Base"
 
@@ -585,7 +633,7 @@
  WANE_OVER_TIME: "Diminuisce nel tempo"
  OPINION_OF_TARGET: "[opinion|e] [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]"
  OPINION_OF_SUBJECT: "[opinion|e] [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.Custom('IT_Della')][SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]"
- ANTAGONISM_TOWARDS_TARGET: "$game_concept_antagonism$ towards [SCOPE.sInternationalOrganization('recipient').GetTarget.GetName]" #NEW
+ ANTAGONISM_TOWARDS_TARGET: "$game_concept_antagonism$ verso [SCOPE.sInternationalOrganization('recipient').GetTarget.GetName]" 
  DIPLOMATIC_REPUTATION_OF_TARGET: "[diplomatic_reputation|e] [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]"
  DIPLOMATIC_REPUTATION_OF_SUBJECT: "[diplomatic_reputation|e] [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.Custom('IT_Della')][SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]"
  TRUST_OF_TARGET: "[trust|e] [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]"
@@ -593,7 +641,8 @@
  SAME_UNION_AS_LEADER_COUNTRY: "In una [union|e] con [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]"
  INT_SENIOR_PARTNER_TITLE: "Anzianità"
  CONQUER_DESIRE: "Desiderio di conquistare il bersaglio"
- OPINION_OF_ACTOR: "[opinion|e] of [SCOPE.sCountry('actor').GetName]" #NEW
+ OPINION_OF_ACTOR: "[opinion|e] [SCOPE.sCountry('actor').Custom('IT_Della')][SCOPE.sCountry('actor').GetName]" 
+ OPINION_OF_OTHER_WAR_LEADER: "[opinion|e] del leader di guerra nemico" 
 
  INTERNATIONAL_ORGANIZATION_FLAVOR: "#F $TEXT$#!"
  ORGITEM_HEADER: "#T $NAME$#!"
@@ -612,22 +661,35 @@
  high_kingship: "Alto Regno"
  high_kingship_desc: "Nel corso dei millenni, quando il potere cresce o declina, talvolta un leader abbastanza forte ottiene potere e sostegno per rivendicare il titolo di Re Supremo, grande sovrano dei popoli celtici."
  high_kingship_LEADER_MALE: "Re Supremo"
- high_kingship_LEADER_MALE.short: "King" #NEW
+ high_kingship_LEADER_MALE.short: "Re" 
  high_kingship_LEADER_FEMALE: "Regina Suprema"
- high_kingship_LEADER_FEMALE.short: "Queen" #NEW
+ high_kingship_LEADER_FEMALE.short: "Regina" 
  high_king: "Re Supremo"
  high_king_desc: "Il $high_king$ è il [international_organization_leader_short|e] dell'[GetInternationalOrganizationType('high_kingship').GetName]. Può essercene solo uno."
 
  high_kingship_region: "Regione"
  high_kingship_region_desc: "Il territorio nel quale l'[GetInternationalOrganizationType('high_kingship').GetName] esercita la propria autorità."
  high_kingship_leader_title: "Privilegi e Doveri del $high_king$"
- high_kingship_leader_desc: "È dovere del [ShowSpecialStatusName('high_king')] mantenere unite le tribù celtiche contro l'oppressione straniera.\n\nPuò esserci un solo leader dell'$high_kingship$, e il suo dominio può essere contestato. Di conseguenza, ricoprire una posizione tanto cruciale porta con sé grande prestigio ma anche costante pericolo."
+ high_kingship_leader_desc: "È dovere del [ShowSpecialStatusName('high_king')] mantenere unite le tribù celtiche contro l'oppressione straniera.\n\nPuò esserci un solo leader del $high_kingship$, e il suo potere può essere contestato. Per questo, occupare una posizione così cruciale porta sia grande prestigio sia pericolo costante.\n\nIl [ShowSpecialStatusName('high_king')] può [ShowGenericActionName('reclaim_high_kingship_land')] contro qualsiasi estraneo che detenga terre nella [region|e].\n\nLa corona non è mai sicura. Ogni membro può contenderla con l'azione [ShowCasusBelliName('cb_high_kingship_overthrow')], muovendo guerra per conquistare il titolo con la forza." 
+ HIGH_KINGSHIP_OUR_DISPOSITION_FRIENDLY: "$AI_DISPOSITION_FRIENDLY$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_WARY: "$AI_DISPOSITION_WARY$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_ALARMED: "$AI_DISPOSITION_ALARMED$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_RIVALS: "$AI_DISPOSITION_RIVALS$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_COVETS: "$AI_DISPOSITION_COVETS$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_DOMINEERING: "$AI_DISPOSITION_DOMINEERING$ verso di loro" 
+ HIGH_KINGSHIP_OUR_DISPOSITION_PLANNING_WAR: "$AI_DISPOSITION_PLANNING_WAR$ verso di loro" 
+ high_kingship_members_title: "Opportunità Disponibili per i Membri" 
+ high_kingship_members_desc: "L'appartenenza al $high_kingship$ non è un mero onore; apre vie al potere precluse agli estranei.\n\nCon [ShowGenericActionName('subjugate_high_kingship_member')] un membro ottiene un [casus_belli|e] unico per sottomettere un membro affine, costringendolo a diventare uno [subject|e].\n\nAttraverso l'azione [ShowGenericActionName('overthrow_high_king')], un membro ambizioso ottiene un [casus_belli|e] per sfidare il regnante [ShowSpecialStatusName('high_king')] per il titolo stesso." 
+ high_kingship_voting_title: "Diventare $high_king$" 
+ high_kingship_voting_desc: "Il $high_kingship$ è elettivo e non ereditario. Il suo [international_organization_leader_short|e] viene votato ogni volta che il trono resta vacante e deve ottenere almeno #W 50%#! dei voti.\n\nIl voto di un [member|e] cresce con il suo potere: le sue terre, i forti, gli [subjects|e], e la ricchezza, e raddoppia dopo aver rovesciato uno [ShowSpecialStatusName('high_king')].\n\nI candidati sono giudicati principalmente sull'[opinion|e] del votante, sul loro [government_power|e], e sull'[ability|e] del loro [ruler|e]. Anche un alto [country_rank|e], un'[alliance|e], o un [rival|e] condiviso aiutano.\n\nIl paese dell'Alto Re regnante viene penalizzato nel voto. Nessuno può sostenere un Rivale o un paese con cui è in [war|e], uno [loyal_subject|e] deve sostenere il proprio [overlord|e], uno [disloyal_subject|e] chiunque altro, e uno Stato Cliente di un altro Membro non può candidarsi.\n\nSi può anche conquistare la corona con la forza tramite [ShowCasusBelliName('cb_high_kingship_overthrow')], che depone l'Alto Re e forza un nuovo voto che si è favoriti a vincere." 
+ HIGH_KINGSHIP_NOT_INCUMBENT_TT: "Non può essere l'attuale [ShowSpecialStatusName('high_king')]" 
+ HIGH_KINGSHIP_HIGHEST_TAX_BASE_IN_CAPITAL_AREA: "[tax_base|e] più alta nella loro [area|e] capitale" 
  high_kingship_hint_1: "L'Alto Regno è tenuto insieme da un giuramento di fedeltà tra i Tiarnas e i Rí, un giuramento che non può essere infranto su suolo irlandese."
  high_kingship_land_ownership: "Territorio dell'$high_kingship$"
  high_kingship_land_ownership_desc: "La [region|e] intrinsecamente legata all'Alto Regno."
  high_kingship_leadership: "Alto Regno"
  high_kingship_leadership_desc: "L'Alto Regno."
- OVER_HALF_OF_VOTES: "Un [candidate|e] possiede almeno il 50% dei voti."
+ OVER_HALF_OF_VOTES: "Un [candidate|e] ha almeno #W 50%#! dei voti." 
  HRE_ELECTORS_DEADLOCK: "gLI [electors|e] sono inesistenti o in una situazione di stallo elettorale." 
  HIGH_KINGSHIP_REGION_FORMAT: ""
  HIGH_KINGSHIP_NAME: "Alto Regno di [ROOT.GetVariable('high_kingship_region').GetRegion.GetNameWithNoTooltip]"
@@ -690,8 +752,7 @@
  AUTOCEPHALOUS_PATRIARCHATE_SEAT_NAME: "Patriarcato Autocefalo di [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]"
  autocephalous_patriarchate_desc: "Significando #italic auto-governato#!, un $autocephalous_patriarchate$ è un vescovo metropolitano delle confessioni cristiane orientali che agisce in modo indipendente e non è subordinato ad alcuna autorità ecclesiastica superiore. Ogni patriarcato ha un proprio sinodo di vescovi che decide le questioni relative alla propria giurisdizione religiosa."
  CATHOLIC_PATRIARCHATE_NAME: "Patriarcato Cattolico di [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]"
-# ECUMENICAL_PATRIARCHATE_NAME: "Patriarcato Ecumenico di [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]" #OLD
- ECUMENICAL_PATRIARCHATE_NAME: "Ecumenical Patriarchate of [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip|W]" #NEW
+ ECUMENICAL_PATRIARCHATE_NAME: "Patriarcato Ecumenico di [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip|W]" 
  AUTOCEPHALOUS_PATRIARCHY_NAME: "Patriarcato Autocefalo di [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]"
  seat: "Sede"
  seat_desc: "La $seat$ è il luogo in cui il [GetInternationalOrganizationType('autocephalous_patriarchate').GetName] ha il proprio centro di potere e autorità."
@@ -805,7 +866,7 @@
 
  # Leggi
  5_years_cd: "Abbiamo modificato questa legge negli ultimi #G 5#! anni."
- jurchen_confederation_law_cooldown_tt: "We won't be able to change another [law|e] for #G 5#! years." #NEW
+ jurchen_confederation_law_cooldown_tt: "Non potremo cambiare un'altra [law|e] per #G 5#! anni." 
  local_administration: "Legge Amministrativa"
  local_administration_desc: "Questa legge definisce il modo in cui il nostro popolo verrà amministrato."
  tribal_administration_policy: "Amministrazione Tribale"
@@ -813,8 +874,7 @@
  tribal_administration_policy_tt: "Tutti i membri riceveranno [ShowNamedValue('societal_value_minor_move_to_right')] verso [ShowSocietyDirectionName('decentralization')]" 
  sinicized_administration_policy: "Amministrazione Sinicizzata"
  sinicized_administration_policy_desc: "L'amministrazione sarà gestita a livello confederale, con il leader a dirigere il nostro popolo."
-# sinicized_administration_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_minor_move_to_left')] verso [ShowSocietyDirectionName('centralization')]" #OLD
- sinicized_administration_policy_tt: "All [members|e] will move #G [ShowNamedValue('societal_value_minor_move_to_right')]#! towards [ShowSocietyDirectionName('centralization')]" #NEW
+ sinicized_administration_policy_tt: "Tutti i [members|e] si sposteranno di #G [ShowNamedValue('societal_value_minor_move_to_right')]#! verso [ShowSocietyDirectionName('centralization')]" 
  tax_obligations: "Legge di Tassazione del Clan"
  tax_obligations_desc: "Questa legge definisce il livello di tassazione che sarà applicato al nostro popolo."
  no_tax_obligations_policy: "Nessuna Tassazione"
@@ -835,12 +895,10 @@
  formal_script_desc: "Questa legge determina quale sistema di scrittura dovrà essere utilizzato per la documentazione ufficiale."
  mongol_script_policy: "Scrittura Mongola"
  mongol_script_policy_desc: "Sarà utilizzata la scrittura mongola."
-# mongol_script_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_large_move_to_left')] verso [ShowSocietyDirectionName('traditionalist')]" #OLD
- mongol_script_policy_tt: "All [members|e] will move #G [ShowNamedValue('societal_value_large_move_to_right')]#! towards [ShowSocietyDirectionName('traditionalist')]" #NEW
+ mongol_script_policy_tt: "Tutti i [members|e] si sposteranno di #G [ShowNamedValue('societal_value_large_move_to_right')]#! verso [ShowSocietyDirectionName('traditionalist')]" 
  sinicized_script_policy: "Scrittura Sinicizzata"
  sinicized_script_policy_desc: "Sarà utilizzato il sistema di scrittura cinese."
-# sinicized_script_policy_tt: "Tutti i membri si sposteranno [ShowNamedValue('societal_value_move_to_left')] verso [ShowSocietyDirectionName('centralization')]" #OLD
- sinicized_script_policy_tt: "All [members|e] will move #G [ShowNamedValue('societal_value_move_to_right')]#! towards [ShowSocietyDirectionName('centralization')]" #NEW
+ sinicized_script_policy_tt: "Tutti i [members|e] si sposteranno di #G [ShowNamedValue('societal_value_move_to_right')]#! verso [ShowSocietyDirectionName('centralization')]" 
  legal_framework: "Legge sulla Burocrazia"
  legal_framework_desc: "Questa legge stabilisce il quadro giuridico adottato dalla nostra burocrazia."
  no_legal_framework_policy: "Nessun Quadro Giuridico"
@@ -890,7 +948,7 @@
  tatar_yoke_leader_payments: "Pagamento Tataro"
  tatar_yoke_leader_payments_desc: "Il pagamento in oro e uomini, consegnato al [GetInternationalOrganization('tatar_yoke').GetLeaderTitle] da parte del [ShowSpecialStatusName('tatar_tax_collector')]."
  TATAR_YOKE_TAX_COLLECTOR_TITLE: "Privilegi e Doveri del $tatar_tax_collector$"
- TATAR_YOKE_TAX_COLLECTOR_DESC: "È dovere del [ShowSpecialStatusName('tatar_tax_collector')] riscuotere le tasse per conto del [ShowSpecialStatusName('tatar_overlord')].\n\nIn cambio, il territorio del [ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')] sperimenta una significativa #Y $migration$#! proveniente dagli altri membri del Giogo, che cercano protezione dai raid mongoli."
+ TATAR_YOKE_TAX_COLLECTOR_DESC: "È dovere del [ShowSpecialStatusName('tatar_tax_collector')] riscuotere le tasse per conto del [ShowSpecialStatusName('tatar_overlord')].\n\nIn cambio, il territorio del [ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')] registra una significativa #Y $migration$#! dagli altri membri del Giogo, che cercano protezione dalle incursioni [ShowCultureGroupName('mongolian_group')]." 
  TATAR_YOKE_HINT_1: "Il Giogo Tartaro è un retaggio dei tempi medievali, che cementa il dominio mongolo sui principati dell'Europa orientale.\n\nNon è possibile unirsi ad esso.\n\n#T Azioni consigliate per i diversi ruoli del Giogo#!\n@arrow_bonus_tier_3!Il [ShowSpecialStatusName('tatar_overlord')] dovrebbe mantenere gli altri sotto controllo, impedendo loro di diventare troppo potenti.\n@arrow_bonus_tier_3!Il [ShowSpecialStatusName('tatar_tax_collector')] può sfruttare la propria posizione per accumulare ricchezza e potere, trovandosi in una posizione ideale per rovesciare il [ShowSpecialStatusNameWithNoTooltip('tatar_overlord')].\n@arrow_bonus_tier_3!Un membro normale aspira a ottenere il ruolo di [ShowSpecialStatusName('tatar_tax_collector')] o a spezzare il giogo da solo."
 
 
@@ -922,7 +980,9 @@
  marriage_union_tooltip_title: "[GetInternationalOrganizationType('marriage_union').GetNameWithNoTooltip]"
  union_integration_level_tooltip: "[union_integration_level|e]: [InternationalOrganizationsView.GetInternationalOrganization.GetModifierValueString('union_integration_level')]"
  marriage_union_mechanic_tooltip: "L'[GetInternationalOrganizationType('marriage_union').GetName] è una [GetInternationalOrganizationType('union').GetName] decentralizzata molto simile a una [GetInternationalOrganizationType('defensive_league').GetName], poiché ogni [member|e] difenderà gli altri contro aggressori esterni. Per creare un'unione, almeno due paesi devono avere lo stesso [heir|e] che sale al trono."
- union_mechanic_tooltip: "I membri lasciano l'[union|e] quando non hanno più lo stesso [ruler|e] o [heir|e] in caso di [regency|e]. Per consolidare l'unione, ogni [member|e] deve possedere lo stesso [union_integration_level_short|e] del [ShowSpecialStatusName('senior_partner')]. I membri con livello inferiore devono essere integrati tramite il [parliament|e].\n\nI [ShowSpecialStatusNamePlural('junior_partner')] possono usare l'[country_interaction|e] [ShowCountryInteractionName('take_over_seniority')] quando hanno #Y 125%#! o più di [great_power_score|e] rispetto all'attuale $senior_partner$.\n\nLa sede attuale dell'unione è a [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetCapital.GetName] in [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetName]."
+ union_mechanic_tooltip: "I membri lasciano l'[union|e] quando non hanno più lo stesso [ruler|e] o [heir|e] in caso di [regency|e]. Per consolidare l'unione, ogni [member|e] deve avere lo stesso [union_integration_level_short|e] del [ShowSpecialStatusName('senior_partner')]. I membri con un livello inferiore devono avere la propria integrazione imposta tramite il [parliament|e].\n\nI [ShowSpecialStatusNamePlural('junior_partner')] possono usare l'[country_interaction|e] [ShowCountryInteractionName('take_over_seniority')] quando hanno #Y 125%#! o più [great_power_score|e] rispetto all'attuale $senior_partner$.\n\n[SelectLocalization(InternationalOrganizationsView.HasSpecialStatusCountry('senior_partner'), 'union_current_seat', 'union_current_seat_unknown')]" 
+ union_current_seat: "L'attuale sede dell'unione è in [InternationalOrganizationsView.GetSpecialStatusCountry('senior_partner').GetCapital.GetName] in [InternationalOrganizationsView.GetSpecialStatusCountry('senior_partner').GetName]." 
+ union_current_seat_unknown: "L'attuale sede dell'unione è nella Capitale del Partner Maggiore." 
  union_member_integration_level_tooltip: "[union_integration_level_short]: [Country.MakeScope.GetVariable('integrated_in_union').GetValue|YV0]"
  INTEGRATED_UNION_TT: "[GetInternationalOrganizationType('union').GetName] Unificata"
  HABSBURG_UNION_NAME: "Unione Asburgica"
@@ -938,8 +998,8 @@
  MARRIAGE_UNION_COUNTRIES: "$marriage_union$ [ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetAdjectiveWithNoTooltip]–[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)1').GetCharacter.GetCourtCountry.Custom('IT_ADJ_FS')]"
  MARRIAGE_UNION_DYNASTIES: "$marriage_union$ [ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetDynasty.GetNameWithNoTooltip]–[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)1').GetCharacter.GetDynasty.GetNameWithNoTooltip]"
  MARRIAGE_UNION_SAME_DYNASTY: "$marriage_union$ [ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetDynasty.GetNameWithNoTooltip]"
- foreign_league_balkan: "Balkan League" #NEW
- foreign_league_balkan_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('foreign_league_balkan').GetLeaderCountry.GetName]. Hailing from centuries past, this league comes to [ShowRegionName('italy_region')] in order to press old claims or forge new ones." #NEW
+ foreign_league_balkan: "Lega Balcanica" 
+ foreign_league_balkan_desc: "Una lega formatasi attorno alla capitale [GetUniqueInternationalOrganization('foreign_league_balkan').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('foreign_league_balkan').GetLeaderCountry.GetName]. Proveniente da secoli passati, questa lega giunge in [ShowRegionName('italy_region')] per far valere vecchie pretese o formularne di nuove." 
 
  #Italian Wars Leagues
  foreign_league_france: "Lega Francese"
@@ -950,11 +1010,12 @@
  foreign_league_hre_desc: "Una lega formata attorno alla capitale [GetUniqueInternationalOrganization('foreign_league_hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('foreign_league_hre').GetLeaderCountry.GetName]. Nonostante i migliori tentativi dell'Imperatore, l'[ShowRegionName('italy_region')] è sempre stata un campo di battaglia conteso tra potenze esterne e membri del [GetUniqueInternationalOrganization('hre').GetName]."
  italian_league_1: "Prima Lega Italiana"
  italian_league_1_desc: "Una lega formata attorno alla capitale [GetUniqueInternationalOrganization('italian_league_1').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('italian_league_1').GetLeaderCountry.GetName].$italian_league_key_desc$"
- italian_league_key_desc: " Dedicata alla protezione dei confini sovrani dei suoi membri, gli stati all'interno di questa Lega sono pronti a resistere all'influenza e alle potenziali invasioni delle loro controparti straniere."
+ italian_league_key_desc: "Dedicata alla protezione dei confini sovrani dei suoi membri, gli stati all'interno di questa Lega sono pronti a resistere all'influenza e alle potenziali invasioni delle loro controparti straniere."
  italian_league_2: "Seconda Lega Italiana"
  italian_league_2_desc: "Una lega formata attorno alla capitale [GetUniqueInternationalOrganization('italian_league_2').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('italian_league_2').GetLeaderCountry.GetName].$italian_league_key_desc$"
  italian_league_3: "Terza Lega Italiana"
  italian_league_3_desc: "Una lega formata attorno alla capitale [GetUniqueInternationalOrganization('italian_league_3').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('italian_league_3').GetLeaderCountry.GetName].$italian_league_key_desc$"
+ league_subject_can_join_tt: "È uno [subject|e] leale di un membro attuale di [recipient.GetName]" 
  STRENGTH_OF_FOREIGN_LEAGUE: "Forza della Lega Straniera"
  NOT_NEIGHBORS_AI_WEIGHT: "Non siamo vicini"
  RECENTLY_JOINED_ANOTHER_LEAGUE: "Si è unito recentemente a un'altra Lega"
@@ -999,7 +1060,7 @@
  independence_movement_name: "Movimento Indipendentista [ROOT.GetInternationalOrganization.GetLeaderCountry.GetAdjectiveWithNoTooltip]"
  independence_movement_join_war_always_tt: "È stata dichiarata guerra contro il loro [overlord|e]"
  independence_movement_join_war_def_always_tt: "Il loro [overlord|e] dichiara Guerra"
- independence_movement_join_war_def_always_tt_during: "They are fighting the [overlord|e] for independence" #NEW
+ independence_movement_join_war_def_always_tt_during: "Stanno combattendo contro il [overlord|e] per l'indipendenza" 
 
  #Papal Holy League
  PAPAL_HOLY_LEAGUE_NAME: "Lega Santa"
@@ -1018,24 +1079,53 @@
  religious_league_name: "#Y Lega Religiosa#!"
  religious_leagues_join_offensive_war.tt: "Sono il leader della loro lega religiosa, O il bersaglio è il leader della lega religiosa avversaria."
  OPINION_OF_RELIGIOUS_LEAGUE_LEADER: "[opinion|e]"
- ALLIED_TO_RELIGIOUS_LEAGUE_LEADER: "We are allied to the leader" #NEW
+ ALLIED_TO_RELIGIOUS_LEAGUE_LEADER: "Siamo alleati del leader" 
  ESTIMATE_IO_SITUATION_FIRST: "Vuole prima valutare la situazione politica"
  VOTE_FOR: "Vota a favore"
  VOTE_AGAINST: "Vota contro"
  VOTE_FOR_ALREADY_SELECTED: "Vota a favore (già selezionato)"
  VOTE_AGAINST_ALREADY_SELECTED: "Vota contro (già selezionato)"
- PAPAL_AUTHORITY_DISPLAY: "$VAL|0$" #NEW
- PA_REFORM_DESIRE: "Catholic Reform Desire" #NEW
- PA_ULTRAMONTANISM: "Ultramontanism Doctrine" #NEW
- PA_GALLICANISM: "Gallicanism Doctrine" #NEW
- PA_CONCILIARISM: "Conciliarism Doctrine" #NEW
- PA_INVISIBLE_CHURCH: "Invisible Church Doctrine" #NEW
- PA_CONTROLS_ROME: "[GetCountry('PAP').GetName] Controls Rome" #NEW
- PA_CARDINALS: "[cardinal|e] Network" #NEW
- PA_EXCOMMUNICATED_RULERS: "Excommunicated [rulers|e] on Throne" #NEW
- PA_CAN_IGNORE_BULLS: "Members Ignoring [papal_bull|e]" #NEW
- PA_INTERREGNUM: "Interregnum — No [pope|e]" #NEW
- IO_MONTHLY_PAPAL_AUTHORITY: "Base [ShowModifierTypeNameWithBreakdown('monthly_papal_authority', GetUniqueInternationalOrganization('catholic_church').GetLeaderCountry.Self)]" #NEW
- PA_TOOLTIP_HIGH_ACTIVE: "#G High [papal_authority|e] is active:#!\n[ShowModifierEffect('high_papal_authority')]" #NEW
- PA_TOOLTIP_LOW_ACTIVE: "#R Low [papal_authority|e] is active:#!\n[ShowModifierEffect('low_papal_authority')]" #NEW
- PA_TOOLTIP_THRESHOLDS: "Effects apply to all [ShowReligionAdjective('catholic')] [countries|e]:\n• [papal_authority|e] ≥ 75: [ShowModifier('high_papal_authority')]\n• [papal_authority|e] < 25: [ShowModifier('low_papal_authority')]" #NEW
+ PAPAL_AUTHORITY_DISPLAY: "$VAL|0$" 
+ PA_REFORM_DESIRE: "Desiderio di Riforma Cattolica" 
+ PA_ULTRAMONTANISM: "Dottrina dell'Ultramontanismo" 
+ PA_GALLICANISM: "Dottrina del Gallicanesimo" 
+ PA_CONCILIARISM: "Dottrina del Conciliarismo" 
+ PA_INVISIBLE_CHURCH: "Dottrina della Chiesa Invisibile" 
+ PA_CONTROLS_ROME: "[GetCountry('PAP').GetName] Controlla Roma" 
+ PA_CARDINALS: "Rete dei [cardinal|e]" 
+ PA_EXCOMMUNICATED_RULERS: "[rulers|e] Scomunicati sul Trono" 
+ PA_CAN_IGNORE_BULLS: "Membri che Ignorano la [papal_bull|e]" 
+ PA_INTERREGNUM: "Interregno — Nessun [pope|e]" 
+ IO_MONTHLY_PAPAL_AUTHORITY: "Base [ShowModifierTypeNameWithBreakdown('monthly_papal_authority', GetUniqueInternationalOrganization('catholic_church').GetLeaderCountry.Self)]" 
+ PA_TOOLTIP_HIGH_ACTIVE: "#G [papal_authority|e] alta attiva:#!\n[ShowModifierEffect('high_papal_authority')]" 
+ PA_TOOLTIP_LOW_ACTIVE: "#R [papal_authority|e] bassa attiva:#!\n[ShowModifierEffect('low_papal_authority')]" 
+ PA_TOOLTIP_THRESHOLDS: "Gli effetti si applicano a tutti i [countries|e] [ShowReligionAdjective('catholic')]:\n• [papal_authority|e] ≥ 75: [ShowModifier('high_papal_authority')]\n• [papal_authority|e] < 25: [ShowModifier('low_papal_authority')]" 
+ IMPERIAL_CIRCLE_TT_LEADER: "Leader — [ImperialCircle.GetLeaderName]" 
+ IMPERIAL_CIRCLE_TT_SATISFACTION: "Soddisfazione — [ImperialCircle.GetSatisfaction|0]" 
+ IMPERIAL_CIRCLE_TT_SAT_EFFECTS: "#Y < 30#! — I membri diventano scontenti (−15 opinione verso il leader)\n#Y < 15#! — Le sfide alla leadership non richiedono [prestige|e]\n#R < 5#! — Un'elezione si attiva automaticamente" 
+ IMPERIAL_CIRCLE_TT_MEMBERS_HEADER: "Membri" 
+ IMPERIAL_CIRCLE_TT_MEMBERS_OVERFLOW: "...e altri [Subtract_int32(GetDataModelSize(ImperialCircle.GetActiveMembers), '(int32)8')] membri." 
+ IMPERIAL_CIRCLE_TT_MEMBER: "#G Siamo membri di questo Circolo.#!" 
+ IMPERIAL_CIRCLE_TT_DORMANT: "#R Questo Circolo Imperiale è dormiente.#!" 
+ IMPERIAL_CIRCLE_TT_FLAVOR: "I Circoli Imperiali sono suddivisioni geografiche del Sacro Romano Impero, ciascuna governata da un Leader di Circolo che coordina gli interessi e le leve dei principi davanti alla Dieta Imperiale." 
+ HRE_CIRCLES_TAB: "Circoli" 
+ HRE_CIRCLE_NO_LEADER: "Nessun Leader di Circolo" 
+ HRE_CIRCLE_MEMBERS_LABEL: "Membri" 
+ HRE_CIRCLE_SATISFACTION_LABEL: "Soddisfazione" 
+ HRE_CIRCLE_VOTING_POWER_TITLE: "Potere di Voto di [ImperialCircle.GetNameWithNoTooltip]" 
+ HRE_CIRCLE_VOTING_POWER_HEADER: "[ImperialCircle.GetCachedTotalVotingPower|0] Voti" 
+ HRE_CIRCLE_VOTING_POWER_BREAKDOWN_TITLE: "Potere di Voto Totale" 
+ HRE_CIRCLE_VOTING_POWER_BREAKDOWN_ROW: "[COUNTRY.GetName]: $POWER|+=0$" 
+ HRE_CIRCLE_FORMATION_IN_PROGRESS: "Formazione del Circolo in Corso — Scadenza" 
+ SUBTAB_IO_IMPERIAL_CIRCLES: "Circoli Imperiali" 
+ SUBTAB_IO_IMPERIAL_CIRCLES_TT_TEXT: "Visualizza i Circoli Imperiali che suddividono il Sacro Romano Impero." 
+ SUBTAB_IO_IMPERIAL_CIRCLES_DISABLED_TT_TEXT: "Questa scheda non è disponibile. I Circoli Imperiali devono prima essere istituiti approvando la [ShowPolicyName('imperial_circles_established')] nella Dieta Imperiale, il che richiede che la [ShowPolicyName('golden_bull_policy')] sia già stata promulgata." 
+ italian_league_sponsor: "Sponsor della Lega" 
+ italian_league_sponsor_plural: "Sponsor della Lega" 
+ italian_league_sponsor_desc: "Un [country|e] che sponsorizza una Lega Italiana fornendo mensilmente oro e manodopera al [international_organization_leader_short|e]. In cambio, lo sponsor ottiene [ShowModifierTypeName('research_speed_modifier')] e [ShowModifierTypeName('monthly_army_tradition')] in base all'entità dei suoi contributi." 
+ italian_league_sponsor_gold_contribution: "Patrocinio in Oro della Lega" 
+ italian_league_sponsor_gold_contribution_desc: "Il contributo in oro dello [ShowSpecialStatusName('italian_league_sponsor')] al [international_organization_leader_short|e] della Lega Italiana. Pagamenti più alti garantiscono [ShowModifierTypeName('research_speed_modifier')] allo sponsor." 
+ italian_league_sponsor_gold_price: "$italian_league_sponsor_gold_contribution$" 
+ italian_league_sponsor_manpower_contribution: "Patrocinio in Manodopera della Lega" 
+ italian_league_sponsor_manpower_contribution_desc: "Il contributo in manodopera dello [ShowSpecialStatusName('italian_league_sponsor')] al [international_organization_leader_short|e] della Lega Italiana. Pagamenti più alti garantiscono [ShowModifierTypeName('monthly_army_tradition')] allo sponsor." 
+ italian_league_sponsor_manpower_price: "$italian_league_sponsor_manpower_contribution$" 

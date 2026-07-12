@@ -126,7 +126,7 @@
  CLOCK_TYPE_12H_SHORT_SUFFIX_AFTERNOON: " pm"
  AGENDA_SKIP_AGENDA_SETTING: "Non mostrare l'agenda all'inizio della partita."
  AGENDA_HISTORICAL_CONTEXT: "Contesto Storico"
- AGENDA_COUNTRY_CONTENT: "Contenuto [Country.GetAdjective]" #NEW
+ AGENDA_COUNTRY_CONTENT: "Contenuto [Country.GetAdjective]" 
  AGENDA_WALKTHROUGH_DISABLED_MISSIONS: "@trigger_no! Non puoi eseguire la Guida di Base con le Missioni Disattivate. Attivale nelle Regole di Gioco del Menu Principale."
  AGENDA_WALKTHROUGH_IS_RUNNING: "@trigger_no! La Guida è attiva."
 
@@ -146,12 +146,12 @@
  SETTINGS_WEATHER_GRAPHIC_EFFECTS_TOOLTIP: "#T Attivare grafici meteorologici#!\nAttiva o disattiva gli effetti meteorologici per aumentare le prestazioni."
  SETTINGS_SINGLE_UNIT_ARMIES: "Eserciti di una singola unità"
  SETTINGS_SINGLE_UNIT_ARMIES_TOOLTIP: "#T Eserciti di una singola unità#! Gli eserciti vengono disegnati sulla mappa rappresentati da una singola unità."
- SETTING_SHOW_COMBAT_FLOATING_LOSSES: "Mostra i popup delle vittime in combattimento" #NEW
- SETTING_SHOW_COMBAT_FLOATING_LOSSES_TOOLTIP: "#T Mostra i popup delle vittime in combattimento#! Se questa opzione è attivata, durante le battaglie terrestri a cui partecipi vengono visualizzati dei numeri fluttuanti sopra gli eserciti. Disattivala per nascondere questi indicatori di perdita di forza." #NEW
+ SETTING_SHOW_COMBAT_FLOATING_LOSSES: "Mostra i popup delle perdite in combattimento" 
+ SETTING_SHOW_COMBAT_FLOATING_LOSSES_TOOLTIP: "#T Mostra i popup delle perdite in combattimento#! Se questa opzione è attivata, durante le battaglie terrestri a cui partecipi vengono visualizzati dei numeri fluttuanti sopra gli eserciti. Disattivala per nascondere questi indicatori di perdita di forza." 
  SETTINGS_GRID_TILE_SIZE_TEXT: "Dimensione degli edifici urbani"
  SETTINGS_GRID_TILE_SIZE_TEXT_TOOLTIP: "Controlla la dimensione degli edifici urbani sulla mappa 3D."
- SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE: "Mantieni aperta la barra delle modalità di mappa preferite" #NEW
- SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE_TOOLTIP: "#T Mantieni aperta la barra delle modalità di mappa preferite#!\nSe abilitata, la barra delle modalità mappa preferite nella parte inferiore dell'HUD rimane aperta anche quando non si sta utilizzando il selettore delle modalità mappa." #NEW
+ SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE: "Mantieni aperta la barra delle modalità di mappa preferite" 
+ SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE_TOOLTIP: "#T Mantieni aperta la barra delle modalità di mappa preferite#!\nSe abilitata, la barra delle modalità mappa preferite nella parte inferiore dell'HUD rimane aperta anche quando non si sta utilizzando il selettore delle modalità mappa." 
 
  # Categories
  SETTINGS_CATEGORY_INTERFACE: "Interfaccia"
@@ -179,6 +179,7 @@
  SETTING_INPUT_ACTION_CLOSE_LEFT: "Chiudi Pannello Sinistro"
  SETTING_INPUT_ACTION_CLOSE_RIGHT: "Chiudi Pannello Destro"
  SETTING_INPUT_ACTION_CONFIRM: "Conferma"
+ SETTING_INPUT_ACTION_DECLINE: "Rifiuta" 
  SETTING_INPUT_ACTION_TOGGLE_PAUSE: "Alterna Pausa"
  SETTING_INPUT_ACTION_PAUSE: "In Pausa"
  SETTING_INPUT_ACTION_UNPAUSE: "Togli Pausa"
@@ -314,6 +315,8 @@
  # MP Chat Position
  SETTING_MP_CHAT_POSITION: "Posizione della chat multigiocatore in gioco"
  SETTING_MP_CHAT_POSITION_LOBBY: "Posizione della chat multigiocatore nella schermata Selezione Paese"
+ SETTING_MP_CHAT_SOUND: "Suoni di notifica della chat multigiocatore" 
+ SETTING_MP_CHAT_SOUND_TOOLTIP: "#T $SETTING_MP_CHAT_SOUND$#!\nRiproduce un suono quando viene ricevuto un messaggio in chat o un messaggio privato mentre la finestra della chat è chiusa." 
 
  # Confirm
  SETTING_CONFIRM_MODE: "Modalità di conferma"
@@ -330,6 +333,11 @@
  # Graphics
  SETTING_SSR_QUALITY: "Riflessi"
  SETTING_SSR_QUALITY_TOOLTIP: "#T $SETTING_SSR_QUALITY$#!\nUna qualità inferiore può migliorare la frequenza dei fotogrammi."
+ SETTING_ICON_SCALING_QUALITY: "Qualità del ridimensionamento delle icone" 
+ SETTING_ICON_SCALING_QUALITY_TOOLTIP: "#T $SETTING_ICON_SCALING_QUALITY$#!\nDetermina come vengono filtrate le icone dell'interfaccia quando sono ridimensionate.\n\n#H Nessuna#! — Campionamento puntuale. La più economica e nitida, ma può apparire a blocchi.\n#H Morbida#! — Bilineare hardware. Può apparire sfocata su schermi 1080p. Ideale per il 4K. Obsoleta.\n#H Nitida#! — Bicubica Mitchell. Dettagli più puliti rispetto a Morbida senza l'effetto a blocchi di Nessuna. Consigliata per tutti gli schermi; i vantaggi sono particolarmente evidenti a 1080p. Predefinita." 
+ OPTION_NONE: "Nessuna" 
+ OPTION_SMOOTH: "Morbida" 
+ OPTION_SHARP: "Nitida" 
  SETTING_BLUR_QUALITY: "Qualità della sfocatura della GUI"
  SETTING_BLUR_QUALITY_TOOLTIP: "#T $SETTING_BLUR_QUALITY$#!\nInteressa la sfocatura applicata allo sfondo da alcune visualizzazioni dell'interfaccia. Una qualità inferiore può migliorare la frequenza dei fotogrammi con schede grafiche integrate o meno potenti."
  SETTING_FLATMAP_MODE: "Modalità Mappa Piatta"
@@ -347,6 +355,8 @@
  SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nDetermina se il terreno invalicabile è incluso nei confini di una nazione sulla mappa." #MOD OLD
  SETTING_CAMERA_ROTATION_RESET: "Ripristina Rotazione Telecamera"
  SETTING_CAMERA_ROTATION_RESET_TOOLTIP: "#T $SETTING_CAMERA_ROTATION_RESET$#!\nDetermina se la telecamera recupera automaticamente la sua posizione predefinita dopo averla ruotata."
+ SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW: "Visuale espansa delle riforme di governo" 
+ SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW_TOOLTIP: "#T $SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW$#!\nDetermina se il pannello delle riforme di governo si apre nella visuale espansa per età o nella visuale compatta." 
  SETTING_FLATMAP_WATER_COLOR: "Colore dell'acqua sulla mappa piatta"
  SETTING_FLATMAP_WATER_COLOR_TOOLTIP: "#T $SETTING_FLATMAP_WATER_COLOR$#!\nDetermina il colore che viene usato per rappresentare l'acqua sulla mappa piatta."
  SETTING_BLUE_WATER: "Blu"
@@ -410,4 +420,5 @@
  
  #Playsets
  SETTING_WARNING_PLAYSET: "Mostra finestra di dialogo per avvisare degli errori del playset"
- SETTING_WARNING_PLAYSET_TOOLTIP: "#T $SETTING_WARNING_PLAYSET$\n#!When enabled, shows a warning dialog if any mods in the active playset have errors." #NEW
+ SETTING_WARNING_PLAYSET_TOOLTIP: "#T $SETTING_WARNING_PLAYSET$\n#!Se abilitata, questa opzione mostra una finestra di dialogo di avviso qualora una delle mod presenti nel playset attivo contenga degli errori." 
+ DISABLED_BECAUSE_IS_SET: "Disabilitato perché '$SETTING_NAME$' è impostato su '$SETTING_VALUE$'" 

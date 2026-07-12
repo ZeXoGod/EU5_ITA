@@ -43,12 +43,13 @@
  convert_religion_desc: "Cambia la religione del nostro [country|e]"
  convert_religion_select_religion: "Seleziona [religion|e] a cui convertirti"
  convert_religion_tt: "La [religion|e] bersaglio fa parte della famiglia [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], o è presente per più del #Y 40.0%#! nel nostro paese"
- no_convert_religion_tt: "@trigger_fail!There is no available [religion|e] that is either part of [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], or is present by more than #Y 40.0%#! in our country" #NEW
+ no_convert_religion_tt: "@trigger_fail!Non esiste alcuna [religion|e] che faccia parte della famiglia [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName] o che sia presente nel nostro Paese in misura superiore al #Y 40.0%#!" 
+ theocracy_subject_cannot_convert_tt: "@trigger_fail!Siamo uno Stato cliente teocratico di una teocrazia" 
  change_liturgical_language: "Cambia Lingua Liturgica"
  change_liturgical_language_desc: "Cambia la [liturgical_language|e] del nostro [country|e]"
  change_liturgical_language_select_dailect: "Seleziona un nuovo [dialect|e]"
  change_court_language: "Cambia Lingua di Corte"
- change_court_language_desc: "Cambia la [court_language|e] del nostro [country|e]"
+ change_court_language_desc: "Cambia la [court_language|e] del nostro [country|e]\n\nPossiamo cambiare la nostra Lingua di Corte in:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[dominant_dialect|e],\n$BULLET$La [market_language|e] della nostra [capital],\n$BULLET$La lingua di una [accepted_culture|e],\n$BULLET$La lingua del nostro sovrano,\n$BULLET$La lingua del capo della nostra dinastia,\n$BULLET$La [court_language] di un [international_organization_leader|e],\n$BULLET$La [court_language] del nostro [overlord|e]." 
  orthodox_synod: "Sinodo Ortodosso"
  orthodox_synod_desc: "Convoca il Santo Sinodo. Questa è la massima autorità nella Chiesa e formula le regole e i regolamenti riguardanti l'organizzazione della Chiesa, la fede e l'ordine del servizio."
  periphora: "Perifora"
@@ -56,8 +57,8 @@
  periphora_select_icon: "Seleziona l'Icona con cui iniziare una Perifora"
  periphora_select_destination: "Seleziona la destinazione finale per la Perifora"
  PERIPHORA_NAME: "Perifora di [WORK_OF_ART.GetName] da [LOCATION.GetName] a [TARGET_LOCATION.GetName]"
- invite_patriarch_delegation: "Invite Patriarch Delegation" #NEW
- invite_patriarch_delegation_desc: "We will invite a delegation from our Patriarch, so that we can both improve our relations and also discuss various matters of faith and the government of our country." #NEW
+ invite_patriarch_delegation: "Invito alla Delegazione Patriarcale" 
+ invite_patriarch_delegation_desc: "Inviteremo una delegazione del nostro Patriarca, in modo da poter sia rafforzare i nostri rapporti sia discutere di varie questioni relative alla fede e al governo del nostro Paese." 
  canonize: "Canonizza"
  canonize_desc: "[canonize|e] un [character|e], dichiarandolo santo e conferendo benefici extra al nostro paese in base alle sue capacità quando era in vita."
  canonize_select_character: "Seleziona [character|e] da [canonize|e]"
@@ -81,7 +82,7 @@
  RESEARCH_QUEUE_SLOT: "In coda per la ricerca: Slot $SLOT$"
  HOLY_SITE_TT_RELIGION_INFO: "Luogo Sacro per: #subtle_name [RELIGION.GetNameNoUnderline]#![RELIGION.GetIcon]"
  HOLY_SITE_TT_GOD_INFO: "Associato al [god|e]: [GOD.GetName]."
- GOD_POSSIBLE_EFFECTS_HEADER: "#weak Possible Effects:#!" #NEW
+ GOD_POSSIBLE_EFFECTS_HEADER: "#weak Possibili effetti:#!" 
  HOLY_SITE_TT_AVATAR_INFO: "Associato all'[avatar|e]: [AVATAR.GetName]."
  HOLY_SITE_TT_RELIGION: "A causa del livello $LEVEL$ di [holy_site_importance|e], tutti i [countries|e] con $RELIGIONS$ guadagnano:\n$INFO$"
  HOLY_SITE_TT_COUNTRY: "A causa del livello $LEVEL$ di [holy_site_importance|e], [COUNTRY.Custom('IT_La')][COUNTRY.GetNameWithFlag] guadagna:\n$INFO$"
@@ -105,7 +106,7 @@
  excommunicate_resolution_desc: "Qualsiasi persona [ShowReligionAdjective('catholic')|U] posta sotto Scomunica dal [GetCountry('PAP').GetGovernment.GetRulerTitle] è tagliata fuori dalla struttura della Chiesa e le è vietato ricevere i sacramenti.\n\nQuesta risoluzione [Concept('excommunicate', 'Scomunica')|e] il [ruler|e] del paese bersaglio."
  excommunicate_resolution_specific: "Scomunica [SCOPE.sCountry('target').GetName]"
  excommunicate_resolution_specific_desc: "Qualsiasi persona [ShowReligionAdjective('catholic')|U] posta sotto Scomunica dal [GetCountry('PAP').GetGovernment.GetRulerTitle] è tagliata fuori dalla struttura della Chiesa e le è vietato ricevere i sacramenti.\n\nQuesto risoluzione [Concept('excommunicate', 'Scomunica')|e] il [ruler|e] [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]."
- excommunicate_resolution_no_pap_tt: "Is not the [GetCountry('PAP').GetName] - use the [ShowCountryInteractionName('excommunicate')] [country_interaction|e] instead" #NEW
+ excommunicate_resolution_no_pap_tt: "Non si tratta [GetCountry('PAP').Custom('IT_Della')][GetCountry('PAP').GetName] - usa invece l'[country_interaction|e] [ShowCountryInteractionName('excommunicate')]" 
  vote_in_excommunicate_resolution: "Voto sulla scomunica [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]"
  vote_in_excommunicate_resolution_desc: "Decidi se vogliamo sostenere la scomunica [SCOPE.sCountry('target').Custom('IT_Della')][SCOPE.sCountry('target').GetName]"
  excommunicate_select_country: "Seleziona il [country|e] da provare a [excommunicate|e]"
@@ -199,7 +200,7 @@
  vote_in_inter_gravissimas: "Voto su $inter_gravissimas$"
  vote_in_inter_gravissimas_desc: "Decidi se vogliamo sostenere o respingere la proposta $inter_gravissimas$."
  inter_gravissimas_active: "Introduci la Bolla Papale '$inter_gravissimas$'"
- custom_saints_concept: "[Religion.GetSaintsConcept(Country)]" #NEW
+ custom_saints_concept: "[Religion.GetSaintsConcept(Country)]" 
 
  #
  folk_african_group: "Religioni Popolari Africane"
@@ -540,21 +541,21 @@
  adopt_ometeotl_desc: "Nonostante la natura politeistica della nostra religione, tra le nostre classi più alte è comune il culto di un unico Dio onnipotente chiamato #italic Ōmeteōtl#!. Questo Dio ha le qualità di tutti gli Dei che sono solo la rappresentazione di queste qualità. Adoreremo #italic Ōmeteōtl#! come l'unico Dio."
  elevate_patron_god: "Eleva il nostro Dio Patrono"
  elevate_patron_god_desc: "Ogni regno [ShowCultureName('nahua_culture')] di solito adora un Dio sopra gli altri come suo dio patrono. Metteremo il nostro dio patrono non solo in cima alla nostra devozione, ma come dio principale della nostra religione."
- ruler_or_regent_total_abilities: "[ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] [total_ability|e]" #NEW
+ ruler_or_regent_total_abilities: "[total_ability|e] [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName]" 
  establish_cihuacoatl: "Stabilisci la posizione di Cihuacōātl"
  establish_cihuacoatl_desc: "Stabiliremo la figura del #italic Cihuacōātl#! (letteralmente 'Donna Serpente'), simile a quella di un visir. Questo aiuterà i nostri sovrani a gestire il nostro regno, facendo sì che il #italic Cihuacōātl#! gestisca il governo della città in modo che il sovrano possa occuparsi di questioni più importanti."
  expand_cuahpipiltin: "Espandi i Cuāhpipiltin"
  expand_cuahpipiltin_desc: "Creeremo una nuova casta nella nostra società: i #italic Cuāhpipiltin#! saranno i nobili per servizio, in opposizione ai #italic Pīpiltin#!, i nobili di sangue. Saranno elevati dal servizio militare, ma anche integrati da altre tribù o vassalli."
  increase_militarism: "Aumenta il Militarismo"
  increase_militarism_desc: "I nostri guerrieri sono quelli che ci forniscono prigionieri che possono essere usati per i sacrifici più importanti ai nostri dei. Dovremmo rendere la nostra società più militaristica per rafforzare questo afflusso di prigionieri."
- percentage_of_soldiers_in_country: "Percentage of [ShowPopTypeName('soldiers')] in our [country|e]" #NEW
+ percentage_of_soldiers_in_country: "Percentuale di [ShowPopTypeName('soldiers')] nel nostro [country|e]" 
  institute_flower_wars: "Istituisci le Guerre dei Fiori"
  institute_flower_wars_desc: "Poiché la nostra società dipende dai sacrifici, abbiamo bisogno di un modo per ottenerne di più. Istituendo le 'Guerre dei Fiori' possiamo accordarci con i nostri vicini su combattimenti leali e entrambe le parti possono sacrificare prigionieri per placare i nostri Dei."
  legal_reforms: "Riforme Legali"
  legal_reforms_desc: "Mentre le nostre città-stato hanno le loro regole codificate, poiché le società [ShowCultureName('nahua_culture')] cambiano, così dovrebbero fare i nostri codici legali. Inizieremo una serie di riforme nei nostri codici legali che si adattino meglio alle nostre nuove esigenze."
  raise_sacrifice_rate: "Aumenta il Tasso di Sacrificio"
  raise_sacrifice_rate_desc: "I nostri Dei hanno sacrificato il loro sangue per noi umani, e abbiamo un debito con loro. Ma la quantità di sangue non sembra essere sufficiente per saziare la loro sete. Aumenteremo il tasso e la prevalenza dei nostri sacrifici in modo che il sangue dei nostri Dei sia reintegrato più rapidamente."
- percentage_of_slaves_in_country: "Percentage of [ShowPopTypeName('slaves')] in our [country|e]" #NEW
+ percentage_of_slaves_in_country: "Percentuale di [ShowPopTypeName('slaves')] nel nostro [country|e]" 
 
  RELIGIOUS_FOCUS_NOT_IN_QUEUE: "Non nella coda di ricerca"
  NOT_RELIGIOUS_FOCUS_QUEUED: "Nessun [religious_focuses|e] in coda"
@@ -608,36 +609,23 @@
  catholic_influenced_rites: "Riti Influenzati dalla fede [ShowReligionAdjectiveWithNoTooltip('catholic')]"
  catholic_influenced_rites_desc: "Introduci riti come la messa, i sacramenti e la liturgia delle ore, in aggiunta alle pratiche della fede [ShowReligionAdjective('catholic')]."
  essence_tenet: "Essenza"
-# essence_tenet_desc: "Nota anche come ousia (#italic ουσία#!), questo principio rappresenta la presenza della Divinità come parte dell'architettura dell'universo intorno a noi, e la nostra lotta per abbracciarla completamente." #OLD
- essence_tenet_desc: "Known also as ousia (#italic ουσία#!), this tenet represents the interpretation of the Divinity of God as being the same as the Divinity of Christ." #NEW
+# essence_tenet_desc: "Nota anche come ousia (#italic ουσία#!), questo principio sostiene che la Divinità di Dio sia identica alla Divinità di Cristo."
  accept_essence_tenet: "Accetta il Principio di Essenza"
  accept_essence_tenet_desc: "$accept_aspect_key$"
  deny_essence_tenet: "Rifiuta il Principio di Essenza"
  deny_essence_tenet_desc: "$reject_aspect_key$"
-# person_tenet: "Persona" #OLD
- person_tenet: "Hypostasis" #NEW
-# person_tenet_desc: "Derivando dal concetto centrale di realtà concreta (#italic υπόστασις#!) questo principio approfondisce la realtà filosofica e fondamentale e la sostanza che supporta tutta la realtà. Apparsa in antichi dibattiti, riemerse come un importante sostenitore nel determinare la natura della Santa Trinità, dove descrive i suoi tre proponenti come condividenti un'unica essenza divina." #OLD
- person_tenet_desc: "Deriving from the core concept of concrete reality (#italic υπόστασις#!), this tenet delves into the essence and nature of Christ and God, and their divine essences taking a single or multiple manifestations." #NEW
-# accept_person_tenet: "Accetta il Principio di Persona" #OLD
- accept_person_tenet: "Single Hypostasis" #NEW
-# accept_person_tenet_desc: "$accept_aspect_key$" #OLD
- accept_person_tenet_desc: "The nature of Christ and God is one but the same." #NEW
-# deny_person_tenet: "Rifiuta il Principio di Persona" #OLD
- deny_person_tenet: "Multiple Hypostases" #NEW
-# deny_person_tenet_desc: "$reject_aspect_key$" #OLD
- deny_person_tenet_desc: "Christ and God are different manifestations of the divine essence." #NEW
-# prosopon_tenet: "Maschera" #OLD
- prosopon_tenet: "Prosopon" #NEW
-# prosopon_tenet_desc: "Nota anche come prosopon (#italic πρόσωπον#!), questo principio unisce il concetto di identità divina e persona (#italic υπόστασις#!). Il suo obiettivo è sottolineare l'unicità e il valore della persona sia nel divino che nei credenti." #OLD
- prosopon_tenet_desc: "Originally meaning Mask (#italic πρόσωπον#!), this tenet centers on the Person of Christ, and whether He is a single individual or includes two different divine and human individuals." #NEW
-# accept_prosopon_tenet: "Accetta il Principio di Maschera" #OLD
- accept_prosopon_tenet: "Monoprosopic Concept" #NEW
-# accept_prosopon_tenet_desc: "$accept_aspect_key$" #OLD
- accept_prosopon_tenet_desc: "Christ has only one person." #NEW
-# deny_prosopon_tenet: "Rifiuta il Principio di Maschera" #OLD
- deny_prosopon_tenet: "Dyoprosopic Concept" #NEW
-# deny_prosopon_tenet_desc: "$reject_aspect_key$" #OLD
- deny_prosopon_tenet_desc: "Christ has two persons, divine and human." #NEW
+ person_tenet: "Ipostasi" 
+ person_tenet_desc: "Derivando dal concetto centrale di realtà concreta (#italic υπόστασις#!), questo principio approfondisce l'essenza e la natura di Cristo e di Dio, nonché il modo in cui le loro essenze divine assumono una o più manifestazioni."
+ accept_person_tenet: "Ipostasi Singola" 
+ accept_person_tenet_desc: "La natura di Cristo e quella di Dio sono una e la stessa." 
+ deny_person_tenet: "Ipostasi Multipla" 
+ deny_person_tenet_desc: "Cristo e Dio sono diverse manifestazioni dell'essenza divina." 
+ prosopon_tenet: "Prosopon" 
+ prosopon_tenet_desc: "In origine significava "maschera" (#italic πρόσωπον#!), questo principio verte sulla Persona di Cristo e sulla questione se Egli sia un unico individuo o se comprenda due distinte persone, una divina e una umana." 
+ accept_prosopon_tenet: "Concetto Monoprosopico" 
+ accept_prosopon_tenet_desc: "Cristo è una sola persona." 
+ deny_prosopon_tenet: "Concetto Dioprosopico" 
+ deny_prosopon_tenet_desc: "Cristo ha due nature: quella divina e quella umana." 
  christological_debates_tenet: "Dibattiti Cristologici"
  christological_debates_tenet_desc: "I dibattiti sull'aspetto di Cristo, la nostra posizione verso le sette nostre sorelle e la nostra posizione sulla natura del culto sono il sangue vitale per mantenere viva e vibrante la nostra credenza!"
  allow_christological_debates_tenet: "Permetti Dibattiti Cristologici"
@@ -650,18 +638,18 @@
  allow_double_sabbath_tenet_desc: "Sia domenica che sabato sono considerati sacri."
  forbid_double_sabbath_tenet: "Proibisci il Doppio Sabbath"
  forbid_double_sabbath_tenet_desc: "L'osservanza del Sabbath non è più necessaria quando si celebra il Giorno del Signore di domenica."
- interpatriarchal_relations_tenet: "Interpatriarchal Relations" #NEW
- interpatriarchal_relations_tenet_desc: "Despite the different Patriarchs being autonomous in their decisions and not reporting to any higher authority, they are still part of the same faith. It is thus inevitable and even necessary to have some interaction and common discussions." #NEW
- cooperation_between_patriarchs_tenet: "Cooperation Between Patriarchs" #NEW
- cooperation_between_patriarchs_tenet_desc: "The Patriarchs should work together for the greater benefit of the Church as a whole, even if each one of them retains the full authority of their Patriarchy." #NEW
- independent_acting_patriarchs_tenet: "Independent Acting Patriarchs" #NEW
- independent_acting_patriarchs_tenet_desc: "The Patriarchs have full authority over their own Patriarchies, and thus can decide independently the best course of action for them without the need of any discussion with the other Patriarchs." #NEW
- ruler_and_patriarch_tenet: "Ruler and Patriarch Relations" #NEW
- ruler_and_patriarch_tenet_desc: "The Patriarch works for the souls of the people and that sometimes puts him in interaction with the earthly authority. What role should the countries rulers take when interacting with the Patriarch is also a matter of the faith." #NEW
- caesaropapism_tenet: "Caesaropapism" #NEW
- caesaropapism_tenet_desc: "The earthly rulers are the main guardians and guarantors of the Church, and as such their decisions affect how the Patriarch operates. They are the representatives of God, to rule His kingdom here on Earth." #NEW
- independent_authorities_tenet: "Independent Authorities" #NEW
- independent_authorities_tenet_desc: "Render unto Caesar the things that are Caesar's, and unto God the things that are God's." #NEW
+ interpatriarchal_relations_tenet: "Relazioni Interpatriarcali" 
+ interpatriarchal_relations_tenet_desc: "Sebbene i vari Patriarchi siano autonomi nelle loro decisioni e non facciano capo ad alcuna autorità superiore, fanno comunque parte della stessa fede. È quindi inevitabile, e persino necessario, che vi sia una certa interazione e che si tengano discussioni comuni." 
+ cooperation_between_patriarchs_tenet: "Collaborazione tra i Patriarchi" 
+ cooperation_between_patriarchs_tenet_desc: "I Patriarchi dovrebbero collaborare per il bene superiore della Chiesa nel suo insieme, pur se ciascuno di essi conserva la piena autorità sul proprio Patriarcato." 
+ independent_acting_patriarchs_tenet: "Patriarchi ad interim indipendenti" 
+ independent_acting_patriarchs_tenet_desc: "I Patriarchi hanno piena autorità sui propri Patriarcati e possono quindi decidere autonomamente la linea di condotta più opportuna per essi, senza bisogno di consultarsi con gli altri Patriarchi." 
+ ruler_and_patriarch_tenet: "Relazioni tra Sovrano e Patriarca" 
+ ruler_and_patriarch_tenet_desc: "Il Patriarca opera per il bene delle anime del popolo e questo lo porta talvolta a interagire con l'autorità terrena. Anche il ruolo che i governanti dei vari paesi dovrebbero assumere nei rapporti con il Patriarca è una questione di fede." 
+ caesaropapism_tenet: "Cesaro-papismo" 
+ caesaropapism_tenet_desc: "I governanti terreni sono i principali custodi e garanti della Chiesa e, in quanto tali, le loro decisioni influenzano il modo in cui opera il Patriarca. Essi sono i rappresentanti di Dio, incaricati di governare il Suo regno qui sulla Terra." 
+ independent_authorities_tenet: "Autorità Indipendenti" 
+ independent_authorities_tenet_desc: "Date a Cesare ciò che è di Cesare e a Dio ciò che è di Dio." 
  change_maintenance_tt: "Questo influenzerà la [maintenance|e] dei nostri monasteri"
  accept_aspect_key: "Il nostro patriarcato integrerà questo aspetto nelle sue credenze fondamentali, abbracciato da tutti i nostri membri."
  reject_aspect_key: "Il nostro patriarcato rifiuterà questo aspetto nelle sue credenze fondamentali, abbracciato da tutti i nostri membri."
@@ -671,18 +659,18 @@
  add_religious_aspect: "Aggiungi un Aspetto Religioso"
  add_religious_aspect_christian: "Aggiungi un Aspetto Religioso"
  add_religious_aspect_inti: "Adora Dio"
- add_religious_aspect_hellenism: "Add a Religious Aspect" #NEW
+ add_religious_aspect_hellenism: "Aggiungi un Aspetto Religioso" 
  add_religious_aspect_desc: "Aggiunge un [religious_aspect|e] alla versione della [religion|e] del nostro [country_s]."
  remove_religious_aspect: "Rimuovi Aspetto Religioso"
  remove_religious_aspect_christian: "Rimuovi Aspetto Religioso"
  remove_religious_aspect_inti: "Smetti di adorare Dio"
- remove_religious_aspect_hellenism: "Remove Religious Aspect" #NEW
+ remove_religious_aspect_hellenism: "Rimuovi Aspetto Religioso" 
  remove_religious_aspect_desc: "Rimuove un [religious_aspect|e] alla versione della [religion|e] del nostro [country_s]."
  remove_religious_aspect_select_which: "Seleziona quale [religious_aspect|e] rimuovere"
  change_religious_aspect: "Sostituisci Aspetto Religioso"
  change_religious_aspect_christian: "Sostituisci Aspetto Religioso"
  change_religious_aspect_inti: "Cambia Dio da adorare"
- change_religious_aspect_hellenism: "Replace Religious Aspect" #NEW
+ change_religious_aspect_hellenism: "Sostituisci Aspetto Religioso" 
  change_religious_aspect_desc: "Sostituisce un [religious_aspect|e] alla versione della [religion|e] del nostro [country_s]."
  change_religious_aspect_select_which: "Seleziona quale [religious_aspect|e] rimuovere"
  appease_the_gods: "Placa gli Dei"
@@ -718,6 +706,7 @@
  reform_society_action_desc: "È tempo che la nostra società subisca un grande cambiamento mentre ci sforziamo di difendere il nostro popolo dai nostri nemici. Abbandonando le obsolete credenze e i metodi di amministrazione del passato, abbracceremo il futuro attraverso questo periodo turbolento che verrà."
  commence_reform_society_disaster_tt: "#R Inizia#! il [disaster|e] [ShowDisasterName('reform_society')]. #Y Se ha successo, può verificarsi quanto segue:#!"
  eligible_for_reform_society_disaster_tt: "Abbiamo emanato l'[action|e] [ShowGenericActionName('reform_society_action')]"
+ reform_society_already_triggered_tt: "Abbiamo già promulgato l'[action|e] [ShowGenericActionName('reform_society_action')]" 
 #Inti
  inti_ceremonial_festivals: "Organizza una Cerimonia"
  inti_ceremonial_festivals_desc: "Una Festa Cerimoniale viene celebrata su base mensile, ogni volta ruotando attorno a un argomento diverso. Questa volta investiremo il potere del governo e lo renderemo più grande del solito."
@@ -818,8 +807,7 @@
  consolamentum: "Consolamentum"
  consolamentum_desc: "Poiché il processo di vivere comporta, inevitabilmente, il rimpianto per i nostri peccati, diventa ovvia la necessità di ricevere un consolamento per entrare in Paradiso puri e avvicinarci a Dio. Ricevendo il #italic Consolamentum#!, il nostro popolo è assolto dai suoi peccati in punto di morte."
  pescatarianism: "Pescetarianismo"
-# pescatarianism_desc: "Gli animali sono portatori di anime reincarnate, e per questo non possiamo mangiarli. I pesci, esseri generati spontaneamente, non possono essere considerati animali e possono essere mangiati." #OLD
- pescatarianism_desc: "Animals are carriers of reincarnated souls, and because of that we cannot eat them. Fishes, beings spontaneously generated, cannot be considered animals and can be eaten." #NEW
+ pescatarianism_desc: "Gli animali sono portatori di anime reincarnate, e per questo non possiamo mangiarli. I pesci, esseri generati spontaneamente, non possono essere considerati animali e possono essere mangiati."
  the_perfects: "I Perfetti"
  the_perfects_desc: "Quelli tra noi che sono particolarmente impegnati con Dio e le virtù che tutti gli umani dovrebbero perseguire sono chiamati Perfetti. Questi uomini e donne ricevono il #italic Consolamentum#! per la loro devozione e diventano Perfetti. Contrariamente alla gente comune, i Perfetti ricevono il #italic Consolamentum#! due volte nella loro vita: quando sono elevati al loro nuovo ruolo e prima di morire."
 
@@ -858,12 +846,14 @@
  #Anglican
  prima_scriptura: "Prima Scriptura"
  prima_scriptura_desc: "Sebbene la Sacra Scrittura debba essere considerata la fonte centrale di salvezza, non può essere considerata l'unica fonte di rivelazione divina."
- ritual_purification: "Ritual Purification" #NEW
- ritual_purification_desc: "Both the soul and the body of the faithful must be clean and free of impurities if they are to get closer to God." #NEW
- specialized_canon: "Specialized Canon" #NEW
- specialized_canon_desc: "Books inspired by God are all deserving to be revered and studied, even those of less spiritual quality that are outright rejected by other confessions." #NEW
- eastward_prayer: "Eastward Prayer" #NEW
- eastward_prayer_desc: "It is common practice in all Christendom to pray towards the East, to the rising sun of Christ. Some other confessions may be more loose with this orientation, but for us there is simply no other manner of praying, both in public and in private, and all our churches need to be accomodated to follow that orientation." #NEW
+ 
+ #Miaphysite
+ ritual_purification: "Rito di Purificazione" 
+ ritual_purification_desc: "Sia l'anima che il corpo dei fedeli devono essere puri e privi di impurità per potersi avvicinare a Dio." 
+ specialized_canon: "Canone Specializzato" 
+ specialized_canon_desc: "I libri ispirati da Dio meritano tutti di essere venerati e studiati, anche quelli di minore valore spirituale che vengono apertamente respinti da altre confessioni." 
+ eastward_prayer: "Preghiera verso Oriente" 
+ eastward_prayer_desc: "È prassi comune in tutta la Cristianità pregare rivolti verso Oriente, verso il sole nascente di Cristo. Alcune altre confessioni religiose possono essere più flessibili riguardo a questo orientamento, ma per noi non esiste semplicemente altro modo di pregare, sia in pubblico che in privato, e tutte le nostre chiese devono essere adattate in modo da seguire tale orientamento." 
 
 
  demand_church_tax: "Richiedi Tassa Apostolica"
@@ -977,36 +967,36 @@
  JUDAISM_GOD: "Yahweh"
  MUSLIM_GOD: "Allāh"
  god_desc: "Un dio è una divinità principale in una religione specifica. Mentre alcune religioni possono contenere molti dei e riverirli più o meno ugualmente, altre possono concentrare la loro fede in uno specifico, mentre altre ancora possono negare l'esistenza di altri dei oltre al proprio."
- god_monarch_power_desc_none: "This [GOD.GetGodOrGoddessWithNoTooltip] is not associated with any [ability|e]." #NEW
- god_monarch_power_desc_adm: "This [GOD.GetGodOrGoddessWithNoTooltip] is associated with [adm_short_with_icon|e] [ability|e]." #NEW
- god_monarch_power_desc_dip: "This [GOD.GetGodOrGoddessWithNoTooltip] is associated with [dip_short_with_icon|e] [ability|e]." #NEW
- god_monarch_power_desc_mil: "This [GOD.GetGodOrGoddessWithNoTooltip] is associated with [mil_short_with_icon|e] [ability|e]." #NEW
- OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName]'s [adm_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName]'s [dip_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName]'s [mil_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$'s [adm_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$'s [dip_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$'s [mil_short_with_icon|e] [ability|e]: $VAL|%+=2$" #NEW
- OMEN_POWER_PILL_TT_adm: "[omens|e] for [adm_short|e] [gods|e] are currently modified by $VAL|%+=2$ due to our [ruler|e]'s #W $SKILL$#! [adm|e]" #NEW
- OMEN_POWER_PILL_TT_dip: "[omens|e] for [dip_short|e] [gods|e] are currently modified by $VAL|%+=2$ due to our [ruler|e]'s #W $SKILL$#! [dip|e]" #NEW
- OMEN_POWER_PILL_TT_mil: "[omens|e] for [mil_short|e] [gods|e] are currently modified by $VAL|%+=2$ due to our [ruler|e]'s #W $SKILL$#! [mil|e]" #NEW
- OMEN_POWER_PILL_TITLE_adm: "Administrative Gods" #NEW
- OMEN_POWER_PILL_TITLE_dip: "Diplomatic Gods" #NEW
- OMEN_POWER_PILL_TITLE_mil: "Military Gods" #NEW
- OMEN_POWER_PILL_GODS_HEADING_adm: "Administrative Gods in our Religion" #NEW
- OMEN_POWER_PILL_GODS_HEADING_dip: "Diplomatic Gods in our Religion" #NEW
- OMEN_POWER_PILL_GODS_HEADING_mil: "Military Gods in our Religion" #NEW
- OMEN_POWER_PILL_GOD_ROW: "[GOD.GetName]" #NEW
- OMEN_POWER_MODIFIER_OMEN: "Effects increased by: $VAL|%+=2$" #NEW
- OMEN_POWER_MODIFIER_GOD: "[omens|e] modified by: $VAL|%2Y$" #NEW
- OMEN_RELATED_GOD: "This [omen|e] may be granted by [GOD.GetName]" #NEW
- OMEN_TIME_LEFT: "Expires in $TIME$" #NEW
- omen_monarch_power_scale_desc_none: "Effect of this [omen|e] is not modified by any [ability|e]." #NEW
- omen_monarch_power_scale_desc_adm: "Effect of this [omen|e] is modified by [adm_short_with_icon|e] [ability|e]." #NEW
- omen_monarch_power_scale_desc_dip: "Effect of this [omen|e] is modified by [dip_short_with_icon|e] [ability|e]." #NEW
- omen_monarch_power_scale_desc_mil: "Effect of this [omen|e] is modified by [mil_short_with_icon|e] [ability|e]." #NEW
- MONARCH_POWER_PERCENTAGE_IN_COUNTRY_SCALE_SCRIPT_DESC: "$POWER_NAME$ (omen scaling)" #NEW
- god_omens_desc: "This god may grant the following [omens|e]:" #NEW
+ god_monarch_power_desc_none: "Questo [GOD.GetGodOrGoddessWithNoTooltip] non è associato a nessuna [ability|e]." 
+ god_monarch_power_desc_adm: "Questo [GOD.GetGodOrGoddessWithNoTooltip] è associato all'[ability|e] [adm_short_with_icon|e]." 
+ god_monarch_power_desc_dip: "Questo [GOD.GetGodOrGoddessWithNoTooltip] è associato all'[ability|e] [dip_short_with_icon|e]." 
+ god_monarch_power_desc_mil: "Questo [GOD.GetGodOrGoddessWithNoTooltip] è associato all'[ability|e] [mil_short_with_icon|e]." 
+ OMEN_POWER_MODIFIER_RULER_adm: "[ability|e] [adm_short_with_icon|e] di [RULER.GetShortName]: $VAL|%+=2$" 
+ OMEN_POWER_MODIFIER_RULER_dip: "[ability|e] [dip_short_with_icon|e] di [RULER.GetShortName]: $VAL|%+=2$" 
+ OMEN_POWER_MODIFIER_RULER_mil: "[ability|e] [mil_short_with_icon|e] di [RULER.GetShortName]: $VAL|%+=2$" 
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "[ability|e] [adm_short_with_icon|e] di $RULER_NAME$: $VAL|%+=2$" 
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "[ability|e] [dip_short_with_icon|e] di $RULER_NAME$: $VAL|%+=2$" 
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "[ability|e] [mil_short_with_icon|e] di $RULER_NAME$: $VAL|%+=2$" 
+ OMEN_POWER_PILL_TT_adm: "I [omens|e] per gli [gods|e] [Concept('adm_short', 'Amministrativi')|e] sono attualmente modificati da $VAL|%+=2$ grazie all'[adm|e] #W $SKILL$#! del [ruler|e]" 
+ OMEN_POWER_PILL_TT_dip: "I [omens|e] per gli [gods|e] [Concept('dip_short', 'Diplomatici')|e] sono attualmente modificati da $VAL|%+=2$ grazie all'[dip|e] #W $SKILL$#! del [ruler|e]" 
+ OMEN_POWER_PILL_TT_mil: "I [omens|e] per gli [gods|e] [Concept('mil_short', 'Militari')|e] sono attualmente modificati da $VAL|%+=2$ grazie all'[mil|e] #W $SKILL$#! del [ruler|e]" 
+ OMEN_POWER_PILL_TITLE_adm: "Dei Amministrativi" 
+ OMEN_POWER_PILL_TITLE_dip: "Dei Diplomatici" 
+ OMEN_POWER_PILL_TITLE_mil: "Dei Militari" 
+ OMEN_POWER_PILL_GODS_HEADING_adm: "Gli Dei Amministrativi nella nostra Religione" 
+ OMEN_POWER_PILL_GODS_HEADING_dip: "Gli Dei Diplomatici nella nostra Religione" 
+ OMEN_POWER_PILL_GODS_HEADING_mil: "Gli Dei Militari nella nostra Religione" 
+ OMEN_POWER_PILL_GOD_ROW: "[GOD.GetName]" 
+ OMEN_POWER_MODIFIER_OMEN: "Effetti aumentati del: $VAL|%+=2$" 
+ OMEN_POWER_MODIFIER_GOD: "[omens|e] modificato da: $VAL|%2Y$" 
+ OMEN_RELATED_GOD: "Questo [omen|e] può essere concesso da [GOD.GetName]" 
+ OMEN_TIME_LEFT: "Scade tra $TIME$" 
+ omen_monarch_power_scale_desc_none: "L'effetto di questo [omen|e] non è influenzato da alcuna [ability|e]." 
+ omen_monarch_power_scale_desc_adm: "L'effetto di questo [omen|e] è modificato dall'[ability|e] [adm_short_with_icon|e]." 
+ omen_monarch_power_scale_desc_dip: "L'effetto di questo [omen|e]  è modificato dall'[ability|e] [dip_short_with_icon|e]." 
+ omen_monarch_power_scale_desc_mil: "L'effetto di questo [omen|e]  è modificato dall'[ability|e] [mil_short_with_icon|e]." 
+ MONARCH_POWER_PERCENTAGE_IN_COUNTRY_SCALE_SCRIPT_DESC: "$POWER_NAME$ (scalabilità del presagio)" 
+ god_omens_desc: "Questo dio può concedere i seguenti [omens|e]:" 
 
  inti: "Inti"
  inti_ADJ: "Inti"
@@ -1029,30 +1019,37 @@
  mama_cocha_desc: "[ShowGodName('mama_cocha')] è la dea del mare del popolo della [ShowRegionName('andes_region')]."
  urpihuachac_god: "Urpihuachac"
  urpihuachac_god_desc: "[ShowGodName('urpihuachac_god')] è la madre degli uccelli e dei pesci per il popolo delle [ShowRegionName('andes_region')]."
- zeus_god: "Zeus" #NEW
- zeus_god.latin_language: "Jupiter" #NEW
- zeus_god_desc: "[ShowGodNameWithNoTooltip('zeus_god')] is the king of the Olympian gods, ruler of the sky, thunder, law, and cosmic order." #NEW
- zeus_god_omen: "The air grows heavy with purpose, and thunder murmurs beyond the horizon. Birds circle strangely, as if awaiting heavenly command, and for a moment the world feels perfectly still. We have drawn the gaze of [ShowGodName('zeus_god')]..." #NEW
- aphrodite_god: "Aphrodite" #NEW
- aphrodite_god.latin_language: "Venus" #NEW
- aphrodite_god_desc: "[ShowGodNameWithNoTooltip('aphrodite_god')] is the goddess of love, desire, beauty, and social harmony." #NEW
- aphrodite_god_omen: "A tender warmth drifts through the streets. Lovers speak more boldly, old grudges seem to fade, and roses bloom where they should not. Even the most cold-hearted might think that [ShowGodName('aphrodite_god')] has graced us with her presence..." #NEW
- poseidon_god: "Poseidon" #NEW
- poseidon_god.latin_language: "Neptune" #NEW
- poseidon_god_desc: "[ShowGodNameWithNoTooltip('poseidon_god')] is the god of the sea, earthquakes, and the untamed forces of nature." #NEW
- poseidon_god_omen: "The tides shift, and ships groan with the weight of unseen forces. Superstituous sailors whisper of currents that guide rather than resist, and waves strike the shore like distant applause. It seems that [ShowGodName('poseidon_god')] has heard our prayer..." #NEW
- hermes_god: "Hermes" #NEW
- hermes_god.latin_language: "Mercury" #NEW
- hermes_god_desc: "[ShowGodNameWithNoTooltip('hermes_god')] is the messenger of the gods, patron of trade, travel, and cunning." #NEW
- hermes_god_omen: "Our neighbors send warm messages, coins change hands easily, and travellers feel like every road is going downhill. [ShowGodName('hermes_god')] once again walks among us..." #NEW
- ares_god: "Ares" #NEW
- ares_god.latin_language: "Mars" #NEW
- ares_god_desc: "[ShowGodNameWithNoTooltip('ares_god')] is the god of war in its violent and destructive form." #NEW
- ares_god_omen: "The sky grows red, and our generals awaken from dreams of conquest with fury in their hearts. Tempers flare, courage swells, and the very ground seems eager for marching feet. [ShowGodName('ares_god')] stirs impatiently." #NEW
- athena_god: "Athena" #NEW
- athena_god.latin_language: "Minerva" #NEW
- athena_god_desc: "[ShowGodNameWithNoTooltip('athena_god')] is the goddess of wisdom, strategy, and disciplined warfare." #NEW
- athena_god_omen: "A sudden clarity settles over councils and commanders alike, as if wisdom itself has taken a seat at the table. Plans align, quarrels quiet, and an owl's cry pierces the night with eerie certainty. Surely [ShowGodName('athena_god')] grants her favor." #NEW
+ 
+ 
+ zeus_god: "Zeus" 
+ zeus_god.latin_language: "Giove" 
+ zeus_god_desc: "[ShowGodNameWithNoTooltip('zeus_god')] è il re degli dei dell'Olimpo, sovrano del cielo, del tuono, della legge e dell'ordine cosmico." 
+ zeus_god_omen: "L'aria si fa densa di determinazione e il tuono mormora oltre l'orizzonte. Gli uccelli volteggiano in modo strano, come se attendessero un comando celeste, e per un attimo il mondo sembra perfettamente immobile. Abbiamo attirato lo sguardo di [ShowGodName('zeus_god')]..." 
+ 
+ aphrodite_god: "Afrodite" 
+ aphrodite_god.latin_language: "Venere" 
+ aphrodite_god_desc: "[ShowGodNameWithNoTooltip('aphrodite_god')] è la dea dell'amore, del desiderio, della bellezza e dell'armonia sociale." 
+ aphrodite_god_omen: "Un dolce tepore pervade le strade. Gli innamorati parlano con più disinvoltura, i vecchi rancori sembrano svanire e le rose sbocciano dove non dovrebbero. Persino i più freddi potrebbero pensare che [ShowGodName('aphrodite_god')] ci abbia onorato della sua presenza..." 
+ 
+ poseidon_god: "Poseidone" 
+ poseidon_god.latin_language: "Nettuno" 
+ poseidon_god_desc: "[ShowGodNameWithNoTooltip('poseidon_god')] è il dio del mare, dei terremoti e delle forze selvagge della natura." 
+ poseidon_god_omen: "Le maree cambiano e le navi gemono sotto il peso di forze invisibili. I marinai superstiziosi sussurrano di correnti che guidano anziché opporre resistenza, e le onde si infrangono sulla riva come un applauso in lontananza. Sembra che [ShowGodName('poseidon_god')] abbia esaudito la nostra preghiera..." 
+ 
+ hermes_god: "Hermes" 
+ hermes_god.latin_language: "Mercurio" 
+ hermes_god_desc: "[ShowGodNameWithNoTooltip('hermes_god')] è il messaggero degli dei, patrono del commercio, dei viaggi e dell'astuzia." 
+ hermes_god_omen: "I nostri vicini ci inviano messaggi cordiali, le monete passano di mano in mano con facilità e i viaggiatori hanno l'impressione che ogni strada sia in discesa. [ShowGodName('hermes_god')] è tornato tra noi..." 
+ 
+ ares_god: "Ares" 
+ ares_god.latin_language: "Marte" 
+ ares_god_desc: "[ShowGodNameWithNoTooltip('ares_god')] è il dio della guerra nella sua forma violenta e distruttiva." 
+ ares_god_omen: "Il cielo si tinge di rosso e i nostri generali si risvegliano dai sogni di conquista con la rabbia nel cuore. Gli animi si infiammano, il coraggio cresce e il suolo stesso sembra ansioso di accogliere i passi in marcia. [ShowGodName('ares_god')] si agita impaziente." 
+ 
+ athena_god: "Atena" 
+ athena_god.latin_language: "Minerva" 
+ athena_god_desc: "[ShowGodNameWithNoTooltip('athena_god')] è la dea della saggezza, della strategia e dell'arte della guerra disciplinata." 
+ athena_god_omen: "Un'improvvisa lucidità pervade sia i consigli che i comandanti, come se la saggezza stessa si fosse seduta al tavolo. I piani si allineano, le dispute si placano e il verso di un gufo squarcia la notte con inquietante certezza. Sicuramente [ShowGodName('athena_god')] concede il suo favore." 
  
  # Norse
 
@@ -2635,6 +2632,7 @@
  thunder_god: "Divinità del Tuono"
  thunder_god_desc: "La $thunder_god$ rappresenta l'immediatezza e l'indifferenza del destino."
  worship_thunder_god: "$worship_title1$ della $thunder_god$ $worship_title2$"
- worship_thunder_god_desc: "$worship_desc1$ la [ShowGodName('thunder_god')] $worship_desc2$" PERIPHORA_ENDED_CAPTURED: "It was captured by [COUNTRY.GetName]." #NEW
- PERIPHORA_ENDED_NO_PATH: "There is no way for it to reach its destination." #NEW
- PERIPHORA_ENDED_FINISHED: "The people are celebrating as it arrives at its destination." #NEW
+ worship_thunder_god_desc: "$worship_desc1$ la [ShowGodName('thunder_god')] $worship_desc2$" 
+ PERIPHORA_ENDED_CAPTURED: "È stata catturata [COUNTRY.Custom('IT_Dalla')][COUNTRY.GetName]." 
+ PERIPHORA_ENDED_NO_PATH: "Non c'è modo che raggiunga la sua destinazione." 
+ PERIPHORA_ENDED_FINISHED: "Il popolo festeggia mentre arriva a destinazione." 

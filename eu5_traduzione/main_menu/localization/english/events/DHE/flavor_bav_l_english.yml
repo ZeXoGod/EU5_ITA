@@ -1,12 +1,12 @@
 ﻿l_english:
  flavor_bav.1.title: "Elector at Last!"
- flavor_bav.1.entry: "$flavor_bav.1.title$" #NEW
+ flavor_bav.1.entry: "$flavor_bav.1.title$"
  flavor_bav.1.desc: "The efforts and loyalty of our [target_ruler.GetName] have finally been rewarded by [hre_emperor.GetName] who has acknowledged our importance and conceded us the rank of Elector. We should celebrate this turning point in the history of [ROOT.GetCountry.GetName] and organize a great ball."
  flavor_bav.1.a: "Spare no expense."
  flavor_bav.1.b: "No time for celebrations."
 
  flavor_bav.2.title: "A New Law for a New Country"
- flavor_bav.2.entry: "$flavor_bav.2.title$" #NEW
+ flavor_bav.2.entry: "$flavor_bav.2.title$"
  flavor_bav.2.desc: "The [ROOT.GetCountry.GetLongName] is finally reunited after many years broken apart. The joy brought by the unity to the citizens of the new country has created an opportunity for [ruler_scope.GetName] to seize the moment and change its most entrenched traditions. The time has come to proclaim a change in our succession law and ensure that the land of [ROOT.GetCountry.GetNameWithNoTooltip] will never be partitioned again."
  flavor_bav.2.a: "The old privileges must be revoked."
  flavor_bav.2.b: "End the tradition."
@@ -26,7 +26,7 @@
  flavor_bav.4.b: "They are our enemies for a reason!"
 
  flavor_bav.5.title: "The Southern Menace"
- flavor_bav.5.entry: "$flavor_bav.5.title$" #NEW
+ flavor_bav.5.entry: "$flavor_bav.5.title$"
  flavor_bav.5.desc: "The [target_rival.GetDynasty.GetName] make no secret of their ambitions to claim the imperial crown of the [GetUniqueInternationalOrganization('hre').GetName]. In times of our own ascension to the crown, our dynasty clashed fiercely with their armies and claimed a victory only with their defeat during the battle of [ShowLocationName('muhldorf')]. With the calm period of the last years maybe now is the time to overcome past conflicts and reconcile our relations."
  flavor_bav.5.a: "We shall ease our relations with them."
  flavor_bav.5.b: "The [target_rival.GetDynasty.GetNameWithNoTooltip] Dynasty must be contained!"
@@ -42,27 +42,27 @@
  bav_against_habsburg: "Dynastic Conflicts"
 
  flavor_bav.7.title: "Eight Questions on the Power of the Pope"
- flavor_bav.7.entry: "$flavor_bav.7.title$" #NEW
+ flavor_bav.7.entry: "$flavor_bav.7.title$"
  flavor_bav.7.desc: "The famous Franciscan friar [william_ockham_scope.GetName], excommunicated by the [GetCountry('PAP').GetGovernment.GetRulerTitle] and under the protection of [hre_emperor.GetName], has written another treaty on political philosophy, casting doubt on the authority of the [GetCountry('PAP').GetGovernment.GetRulerTitle]: #italic Eight Questions on the Power of the Pope#!.\n\nThe spread of these ideas might create dissent and rebellion against the religious authorities."
  flavor_bav.7.a: "Spread the ideas of [william_ockham_scope.GetNameWithNoTooltip]."
  flavor_bav.7.a.entry: "Spread the ideas of $name_william$ $Ockham$." #NEW
  flavor_bav.7.b: "We can not allow it."
 
  flavor_bav.8.title: "A New Map for the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
- flavor_bav.8.entry: "$flavor_bav.8.title$" #NEW
+ flavor_bav.8.entry: "$flavor_bav.8.title$"
  flavor_bav.8.desc: "We have been informed that the son of the known astronomer, mathematician, and cartographer Peter Apian, [philipp_apian_scope.GetName], has returned from his studies in [ShowLocationName('paris')] and is currently teaching in [ShowLocationName('tubingen')].\n\nWe can hire him to draw a new and more detailed map of our holdings, but his refusal to denounce [ShowReligionName('calvinist')] would probably anger part of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
  flavor_bav.8.a: "Hire the man."
  flavor_bav.8.b: "We will not hire a [ShowReligionAdjectiveWithNoTooltip('calvinist')]."
  flavor_bav.8.historical_info: "Philipp Apian was ordered to create a detailed map of the Bavarian Dukedom in 1554, a task he completed during the following seven years. After the creation of the original map, smaller copies, called #italic Bairische Landtafeln#!, were created and sold by Apian personally in Ingolstadt. His work was only surpassed in the 19th century, and was used to the detriment of Bavaria during the Napoleonic Wars when they were utilized by the French army to invade Bavaria."
 
  flavor_bav.9.title: "The Old Marienkapelle"
- flavor_bav.9.entry: "$flavor_bav.9.title$" #NEW
+ flavor_bav.9.entry: "$flavor_bav.9.title$"
  flavor_bav.9.desc: "The old Marienkapelle on the northwest side of the city, built beside the old city walls, has served as a loved parish church for the people of the city and provided a burial place for the Münchner [ShowDynastyName('wittelsbach_dynasty')] for centuries.\n\nNonetheless, a $BAV_ADJ$ architect called [george_halsbach_scope.GetName] has proposed a grandiose plan for a new cathedral made out of red brick and crowned by two massive towers that will be visible from any point in the city."
  flavor_bav.9.a: "Build that marvel."
  flavor_bav.9.b: "No, we will not replace a cherished monument."
 
  flavor_bav.10.title: "The Heresy Sanctuary"
- flavor_bav.10.entry: "$flavor_bav.10.title$" #NEW
+ flavor_bav.10.entry: "$flavor_bav.10.title$"
  flavor_bav.10.desc: "An ill-intended rumor has started to get traction on the many courts of the [ShowReligionAdjective('catholic')] kings. The rumor says that the court of [hre_emperor.GetName] is a haven for heretics and non-believers, where the laws of God are mocked and the teachings of the Church ignored.\n\nWe must put an end to this evil gossip and regain our prestige, we could expel the excommunicated friar [william_ockham_scope.GetName] and [michael_cesena_scope.GetName], such a gesture of zealotry will surely lay the rumor to rest."
  flavor_bav.10.a: "No, those men are under my protection."
  flavor_bav.10.b: "Expel them, show everybody our piety."
@@ -72,11 +72,11 @@
  flavor_bav.11.entry: "The History of Bavaria" #NEW
  flavor_bav.11.desc: "[target_artist.GetName] made a name for himself as the tutor at the court of [target_ruler.GetName], and wrote a [ShowLanguageName('latin_language')] grammar and other manuals during this time. As a favor for his services, he now asked [target_ruler.GetShortNameWithNoTooltip] to sponsor his effort to write a history of [ROOT.GetCountry.GetName] to document the achievement of our glorious predecessors."
  flavor_bav.11.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_bav.11.a.entry: "$common_string_brilliant$" #NEW
+ flavor_bav.11.a.entry: "$common_string_brilliant$"
  flavor_bav.11.b: "This is a waste of money!"
 
  flavor_bav.20.title: "The [ShowPolicyNameWithNoTooltip('bav_codex_bavarica')]"
- flavor_bav.20.entry: "$bav_codex_bavarica$" #NEW
+ flavor_bav.20.entry: "$bav_codex_bavarica$"
  flavor_bav.20.desc: "Inspired by the legal traditions of neighboring regions, [target_ruler.GetName] has proposed the creation of a unified code of laws, echoing previous efforts of [previous_ruler.GetName] to strengthen [target_country.GetGovernment.GetAdjective] authority. This codification of [target_country.GetAdjective] laws into the [ShowPolicyName('bav_codex_bavarica')] would enhance governance of the [target_country.GetAdjective] [target_country.GetFlavorRank]. Shall we proceed with the monumental task of [ShowSocietyDirectionName('centralization')]?"
  flavor_bav.20.a: "Let us craft the [ShowPolicyNameWithNoTooltip('bav_codex_bavarica')]!"
  flavor_bav.20.b: "The time is not yet right for such reforms."
@@ -89,12 +89,10 @@
  flavor_bav.23.b: "Invest instead in military advancements."
 
  flavor_bav.24.title: "A Murder in the Abbey"
- flavor_bav.24.entry: "$flavor_bav.24.title$" #NEW
-# flavor_bav.24.desc: "The [ShowBuildingTypeName('scriptorium')] in a small village near [ShowLocationName('garmisch')] is well known for its great illustrators and painters. Recently, a scandalous event shook the abbey, when a minor lord was murdered within the grounds of this respectable institution. Thankfully, [target_artist.GetName] who resided within the village for [target_artist.GetHerHis] masterwork, was able to assist with the investigation. Such a talented artists, combined with the sharp mind of a detective, would surely be an wonderful addition to our country." #OLD
+ flavor_bav.24.entry: "$flavor_bav.24.title$"
  flavor_bav.24.desc: "The [ShowBuildingTypeName('scriptorium')] in a small village near [ShowLocationName('garmisch')] is well known for its great illustrators and painters. Recently, a scandalous event shook the abbey, when a minor lord was murdered within the grounds of this respectable institution. Thankfully, [target_artist.GetName] who resided within the village for his masterwork, was able to assist with the investigation. Such a talented artists, combined with the sharp mind of a detective, would surely be an wonderful addition to our country." #NEW
  flavor_bav.24.a: "Send for [target_artist.GetNameWithNoTooltip] now!"
  flavor_bav.24.a.entry: "Send for him now!" #NEW
-# flavor_bav.24.b: "[target_artist.GetSheHe|U] will surely make a fortune on [target_artist.GetHerHis] own." #OLD
  flavor_bav.24.b: "He will surely make a fortune on his own." #NEW
 
  flavor_bav.25.title: "The Reinheitsgebot of [GetCurrentYear]"
@@ -141,12 +139,12 @@
  flavor_bav.30.a.entry: "A new era begins for them!" #NEW
 
  flavor_bav.31.title: "Request Denied by the [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
- flavor_bav.31.entry: "Request Denied by the $hre$" #NEW
+ flavor_bav.31.entry: "Request Denied by the $hre$"
  flavor_bav.31.desc: "[emperor_ruler.GetName] has chosen to deny the elevation of [bavaria_country.GetName] to the status of [ShowSpecialStatusName('elector')]. Despite [bavaria_country.GetNameWithNoTooltip]'s loyal support during the [ShowSituationName('war_of_religions')], the balance of power within the [GetInternationalOrganization('hre').GetName] will remain unchanged."
  flavor_bav.31.a: "We will strengthen ourselves regardless of this decision."
 
  flavor_bav.32.title: "We Lose our $elector$ Status!"
- flavor_bav.32.entry: "$flavor_bav.32.title$" #NEW
+ flavor_bav.32.entry: "$flavor_bav.32.title$"
  flavor_bav.32.desc: "The decision of [emperor_ruler.GetName] has stripped us of our title as [ShowSpecialStatusName('elector')]. The Electoral College of the [GetInternationalOrganization('hre').GetName] now welcomes [bavaria_country.GetName] as its newest [ShowSpecialStatusName('elector')]. This marks a significant change in the balance of power."
  flavor_bav.32.a: "Our reputation has been tarnished."
 
@@ -173,7 +171,7 @@
  flavor_bav.1001.c: "Rebuff them."
 
  flavor_bav.1002.title: "Rebuffed by [GetCountry('KOL').GetNameWithNoTooltip]"
- flavor_bav.1002.entry: "Rebuffed by $KOL$" #NEW
+ flavor_bav.1002.entry: "Rebuffed by $KOL$"
  flavor_bav.1002.desc: "Our kind gift and show of support to [GetCountry('KOL').GetName] has been rejected by the presumptuous [kol_ruler.GetName]."
  flavor_bav.1002.a: "That insolent!"
 
@@ -198,7 +196,7 @@
  flavor_bav.1102.b: "We do not need these expansions."
 
  flavor_bav.1200.title: "The Theatinerkirche"
- flavor_bav.1200.entry: "$flavor_bav.1200.title$" #NEW
+ flavor_bav.1200.entry: "$flavor_bav.1200.title$"
  flavor_bav.1200.desc: "[consort_scope.GetName] urges [ruler_scope.GetName] to pledge to fund a magnificent church for the Theatine Order in [ShowLocationName('munich')]. She has already chosen a Bolognese architect, [agostino_barelli_scope.GetName], to build the church in the [ShowCultureGroupName('italian_group')] high baroque style. Our aristocracy and wealthy [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are quite taken by the plans, which she has allowed to become widely known, as they are strong admirers of the fashionable [ShowCultureGroupNameWithNoTooltip('italian_group')] style."
  flavor_bav.1200.a: "Very well, do as she wishes."
  flavor_bav.1200.b: "No, this is unnecessary."
@@ -210,15 +208,15 @@
  flavor_bav.1201.b.entry: "Ignore the arguments and keep $Barelli$." #NEW
 
  flavor_bav.1300.title: "The Inheritance of [ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_bav.1300.entry: "$flavor_bav.1300.title$" #NEW
+ flavor_bav.1300.entry: "$flavor_bav.1300.title$"
  flavor_bav.1300.desc: "With the death of [old_ruler.GetName] we are now faced with the inheritance of [old_ruler.GetHerHis] lands between [old_ruler.GetHerHis] male heirs according to the laws of the [ShowCultureGroupName('german_group')]. [old_ruler.GetNameWithNoTooltip] death comes at an unfortunate time for our country, with [target_ruler.GetHerHis] project of reunifying $BAV$ failing at the final stages.\n\n[target_ruler.GetName] will now have to work against [target_ruler.GetHerHis] siblings to undo the damage of separation and proclaim [target_ruler.GetHerHis] sovereignty over Bavaria."
  flavor_bav.1300.a: "A difficult task!"
  
  flavor_bav.1301.title: "The Reunification of [ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_bav.1301.entry: "$flavor_bav.1301.title$" #NEW
+ flavor_bav.1301.entry: "$flavor_bav.1301.title$"
  flavor_bav.1301.desc: "[target_ruler.GetName] has finally triumphed over [target_ruler.GetHerHis] family and centralized enough power in [target_ruler.GetHerHis] own hands to proclaim [target_ruler.GetHerselfHimself] as the sole ruler of [ROOT.GetCountry.GetName]. The severe mistakes of splitting the [ROOT.GetCountry.GetCulture.GetName] lands between the sons of [target_ancestor.GetName] have been undone and the country will be able to move forward unified under the guiding hand of [target_ruler.GetNameWithNoTooltip]"
  flavor_bav.1301.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_bav.1301.a.entry: "$common_string_brilliant$" #NEW
+ flavor_bav.1301.a.entry: "$common_string_brilliant$"
 
  flavor_bav.1400.title: "The Founding of the [target_location.GetNameWithNoTooltip] Residenz"
  flavor_bav.1400.entry: "The Founding of the Munich Residenz" #NEW

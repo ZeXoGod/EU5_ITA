@@ -10,16 +10,14 @@
  flavor_hol.2.entry: "Synod of Dordrecht" #NEW
  flavor_hol.2.desc: "[ShowReligiousAspectName('arminianism')], un movimento all'interno del [ShowReligionName('calvinist')] fondato da [loc_jacobus_arminius.GetName] con vedute pluraliste e umanitarie, ha guadagnato sempre più popolarità tra i fedeli di [ROOT.GetCountry.GetName]. Ciò ha dato origine a un movimento contrario nella forma del [ShowReligiousAspectName('gomarism')], fondato da [loc_franciscus_gomarus.GetName], che cerca di difendere gli ideali e le vedute del [ShowReligionNameWithNoTooltip('calvinist')]. Per fermare l'accesa controversia prima che si aggravi ulteriormente, è stato tenuto un Sinodo Nazionale a [target_location.GetName] per risolvere questo conflitto religioso una volta per tutte."
  flavor_hol.2.historical_info: "L'ascesa dell'Arminianesimo spinse la Chiesa Riformata Olandese a convocare un Sinodo Nazionale a Dordrecht per dirimere la controversia. Il 13 novembre 1618, la Chiesa Riformata Olandese e i rappresentanti con diritto di voto di otto chiese riformate straniere si riunirono per la prima sessione. L'ultima riunione si tenne il 9 maggio 1619, e fu la 154ª sessione. Essa risolse la controversia sull'Arminianesimo, lo condannò, ne respinse le posizioni e stabilì la dottrina Riformata su ciascun punto: totale depravazione, elezione incondizionata, espiazione limitata, grazia irresistibile e perseveranza dei santi. I Remonstrants, come erano noti gli Arminiani, furono invitati ad astenersi dalle attività ministeriali come la predicazione, l'esortazione, l'amministrazione dei sacramenti e la visita agli infermi. Fu chiesto loro anche di firmare l'Atto di Cessazione, la legalizzazione dell'ordine di cessare il ministero, ma si rifiutarono e furono condannati come 'turbatori della pace pubblica' e costretti a lasciare le Province Unite. Il Sinodo condannò la dottrina religiosa dell'Arminianesimo come eresia."
-# flavor_hol.2.a: "Condanniamo [ShowReligiousAspectNameWithNoTooltip('arminianism')]" #OLD
  flavor_hol.2.a: "Condemn [ShowReligiousAspectNameWithNoTooltip('arminianism')]." #NEW
  flavor_hol.2.a.tt: "[ShowReligiousAspectName('gomarism')] viene sostituito con [ShowReligiousAspectName('instituionalized_gomarism')].\n[ShowReligiousAspectName('arminianism')] diventa inaccessibile per noi"
-# flavor_hol.2.b: "Rifiutiamo [ShowReligiousAspectNameWithNoTooltip('gomarism')]" #OLD
  flavor_hol.2.b: "Reject [ShowReligiousAspectNameWithNoTooltip('gomarism')]." #NEW
  flavor_hol.2.b.tt: "[ShowReligiousAspectName('arminianism')] viene sostituito con [ShowReligiousAspectName('instituionalized_arminianism')].\n[ShowReligiousAspectName('gomarism')] diventa inaccessibile per noi"
  flavor_hol.2.c: "Non è affar nostro."
 
  flavor_hol.3.title: "Statenvertaling"
- flavor_hol.3.entry: "$flavor_hol.3.title$" #NEW
+ flavor_hol.3.entry: "$flavor_hol.3.title$"
  flavor_hol.3.desc: "La religione [ROOT.GetCountry.GetReligion.GetAdjective] è la fede unificante [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName]. Tuttavia, la lingua del testo sacro, sebbene tradotta in [ROOT.GetCountry.GetCulture.GetLanguage.GetName], non trasmette il vero significato della parola. Si tratta di una trascrizione da [ShowLanguageName('latin_language')] a [ShowLanguageName('german_language')], poi adattata in [ROOT.GetCountry.GetCulture.GetLanguage.GetNameWithNoTooltip]. L'istituzione della Statenbijbel - #italic Bibbia degli Stati#! - garantirà una traduzione fedele del testo come il Signore intende."
  flavor_hol.3.historical_info: "Il Sinodo di Dort del 1618-1619 ritenne necessario tradurre la Bibbia in olandese, poiché le Bibbie olandesi esistenti erano semplici traduzioni di altre traduzioni. La nuova traduzione, la Statenbijbel, avrebbe dovuto basarsi sulle lingue originali, a imitazione della Bibbia del Re Giacomo del 1611. La sua prima pubblicazione avrebbe dovuto attendere fino al 1637, ma il suo impatto sull'identità culturale e l'unità dei Paesi Bassi avrebbe costituito la base dell'olandese standardizzato odierno."
  flavor_hol.3.a: "Finanziamo la Statenbijbel."
@@ -27,7 +25,6 @@
 
  flavor_hol.4.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.4.entry: "Simon Stevin, Mathematician" #NEW
-# flavor_hol.4.desc: "Un matematico e scienziato originario di [ShowLocationName('bruges')], [target_character.GetName] ha viaggiato in numerosi luoghi per ampliare le proprie conoscenze prima di decidere di stabilirsi a [ShowLocationName('the_hague')]. [target_character.GetHeShe|U] ha offerto i propri servigi come consigliere o come scienziato." #OLD
  flavor_hol.4.desc: "A mathmatician and scientist from [ShowLocationName('bruges')], [target_character.GetName] has traveled to a number of locations to expand his knowledge before deciding to settle in [ShowLocationName('the_hague')]. He has offered his services to us as either an advisor or as a scientist." #NEW
  flavor_hol.4.historical_info: "Il matematico e ingegnere militare fiammingo Simon Stevin fu attivo in numerosi campi della scienza e dell'ingegneria, sia teorici che pratici. La parola olandese per matematica, wiskunde o 'l'arte di ciò che è certo', era una traduzione dello stesso Stevin, e fa dell'olandese una delle poche lingue europee in cui 'matematica' non deriva dal greco attraverso il latino. Inventò un carro a vela propulso unicamente dalla forza del vento, capace di raggiungere una velocità superiore a quella dei cavalli."
  flavor_hol.4.a: "Le sue conoscenze saranno di grande valore scientifico."
@@ -35,14 +32,15 @@
  flavor_hol.4.b.tt: "[target_character.GetName] diventa disponibile per [cabinet|e]"
 
  flavor_hol.5.title: "Wilhelmus"
- flavor_hol.5.entry: "$flavor_hol.5.title$" #NEW
+ flavor_hol.5.entry: "$flavor_hol.5.title$"
  flavor_hol.5.desc: "L'inno nazionale è una rappresentazione dello spirito di un paese e del suo popolo. Mentre molti altri Stati hanno già adottato i propri inni in passato, [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] non ne [ROOT.GetCountry.Custom('IT_Ha')] ancora uno. Promuovere la creazione di un tale inno non solo aumenterà il nostro prestigio internazionale, ma darà anche alla popolazione [ROOT.GetCountry.GetCulture.GetName] un senso di orgoglio e unità."
  flavor_hol.5.historical_info: "L'inno #italic Wilhelmus#! o #italic Wilhelmus van Nassouwe#! era molto popolare tra la popolazione olandese e nel 1932 sarebbe stato riconosciuto come l'inno nazionale ufficiale dei Paesi Bassi. Willem van Oranje o William of Orange è il protagonista dell'inno, che narra di lui, della sua vita e del motivo per cui combatte contro il re di Spagna, scritto in prima persona. Per un inno nazionale, il testo e la melodia del canto sono straordinariamente pacifici."
  flavor_hol.5.a: "Finanziamo l'inno nazionale."
  flavor_hol.5.b: "Non possiamo permettercelo."
+ flavor_hol.6.ottoman_trade_tt: "A [ShowReligionGroupAdjective('muslim')] power controls [ShowLocationName('constantinople')]" #NEW
 
  flavor_hol.6.title: "La Mania dei Tulipani"
- flavor_hol.6.entry: "$flavor_hol.6.title$" #NEW
+ flavor_hol.6.entry: "$flavor_hol.6.title$"
  flavor_hol.6.desc: "Man mano che [target_country.Custom('IT_La')][target_country.GetName] si espande e collega il [ShowSubContinentName('middle_east')] con [ShowContinentName('europe')], il tulipano ha trovato la sua strada da [ShowLocationName('constantinople')] nelle mani dei mercanti [ROOT.GetCountry.GetAdjective]. I membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] si è affezionato molto al fiore, non solo per la sua bellezza ma anche per il suo valore. Di conseguenza, molti mercanti iniziarono a vendere e speculare sul valore del fiore. Tuttavia, la mano invisibile del mercato vi pose rapidamente fine quando il prezzo del tulipano crollò, e con esso la stabilità finanziaria di molti membri [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
  flavor_hol.6.historical_info: "Il tulipano fu introdotto in Europa negli anni 1550 dall'Impero Ottomano. Divenne rapidamente popolare tra i ricchi mercanti dei Paesi Bassi come articolo di lusso. Il mercato crebbe e nel 1634, quando la domanda aumentò in Francia, gli speculatori entrarono nel mercato. Nel 1636 fu creato un mercato a termine e durante l'autunno e l'inverno i prezzi salirono alle stelle, finché crollarono nel febbraio 1637. Il risultato fu il fallimento di molti e un disastro economico."
  flavor_hol.6.a: "Non avete che voi stessi da incolpare!"
@@ -50,23 +48,21 @@
 
  flavor_hol.7.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.7.entry: "Louis Elzevir, the Publisher" #NEW
-# flavor_hol.7.desc: "[target_character.GetName], [target_character.GetWomanMan] di talento nella creazione di libri, è giunto ad [ShowLocationName('amsterdam')] per fondare una [ShowBuildingTypeName('printing_press_shop')]." #OLD
  flavor_hol.7.desc: "[target_character.GetName], a talented [target_character.GetWomanMan] in regards to book creation has found his way to [ShowLocationName('amsterdam')] to establish a [ShowBuildingTypeName('printing_press_shop')]." #NEW
  flavor_hol.7.historical_info: "Ex rilegatore e mercante, Lodewijk Elzevir fu un famoso tipografo ed editore. Il suo primo libro fu pubblicato nel 1583 a Leida, e avrebbe poi costituito le fondamenta di un'attività di famiglia fino al 1791. Elzevir era noto per l'eleganza e la precisione, ma anche per i formati piccoli e molto portatili utilizzati, come il formato in duodecimo."
-# flavor_hol.7.a: "Permettiamoli di aprire la sua bottega." #OLD
  flavor_hol.7.a: "Allow him to establish his shop." #NEW
  flavor_hol.7.b: "La scrittura dovrebbe restare un privilegio [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
  flavor_hol.7.b.entry: "Writing should stay a right for the $clergy_estate$." #NEW
 
  flavor_hol.8.title: "Ambiziosi Piani Coloniali"
- flavor_hol.8.entry: "$flavor_hol.8.title$" #NEW
+ flavor_hol.8.entry: "$flavor_hol.8.title$"
  flavor_hol.8.desc: "Essendo arrivati relativamente tardi nella competizione per le colonie, abbiamo scoperto che molti dei possedimenti coloniali che desideriamo sono già stati presi da altri. Con una marina potente e un settore finanziario disponibile, disponiamo tuttavia ancora di risorse considerevoli. Queste circostanze hanno portato la Compagnia Olandese delle Indie Occidentali a elaborare il #italic Groot Desseyn Grand#! - il Piano su come la potenza [ROOT.GetCountry.GetCulture.GetName] possa alla fine superare i nostri concorrenti.\n\nSecondo il piano, piuttosto che cercare di fondare colonie proprie, sarebbe più efficiente conquistare quelle dei nostri concorrenti. Come concorrente naturale, l'impero coloniale [GetCountry('POR').GetAdjective] è stato ritenuto in particolare un buon bersaglio per questo piano, specialmente poiché gli investitori [ROOT.GetCountry.GetCulture.Custom('IT_CUL_MP')] sono già coinvolti in alcuni di essi."
  flavor_hol.8.a: "Sembra un piano grandioso!"
  ned_grand_design: "Groot Desseyn"
  flavor_hol.8.b: "No, la comunità internazionale ci odierebbe."
 
  flavor_hol.9.title: "Il Fluitschip"
- flavor_hol.9.entry: "$flavor_hol.9.title$" #NEW
+ flavor_hol.9.entry: "$flavor_hol.9.title$"
  flavor_hol.9.desc: "La vasta economia [ROOT.GetCountry.GetCulture.GetName] ha imposto grandi richieste alla nostra marina mercantile. Le acque [ROOT.GetCountry.GetCulture.Custom('IT_CUL_FP') molto basse fanno sì che le comuni navi mercantili, come le caravelle, non possano avvicinarsi a molti dei porti [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. Finora questo è stato gestito grazie all'uso di boeiers più piccoli, ma con il sostegno finanziario di [target_character.GetName], un mercante di [ShowLocationName('hoorn')], è stato sviluppato un nuovo tipo di nave.\nIl fluitschip o fluyt è più lungo e ha una poppa dalla caratteristica forma a pera, ed è costruito per essere efficacemente manovrato da un equipaggio ridotto. Poiché è in grado di trasportare carichi maggiori gestendo al contempo le acque basse olandesi e comportandosi molto bene in mare aperto, questa nave è una manna dal cielo per i nostri mercanti."
  flavor_hol.9.a: "È decisamente una buona idea!"
  flavor_hol.9.b: "Idea interessante, ma ora non è il momento. Forse più tardi?"
@@ -74,30 +70,23 @@
 
  flavor_hol.10.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.10.entry: "Desiderius Erasmus" #NEW
-# flavor_hol.10.desc: "[target_character.GetName], più comunemente noto come Erasmo, è un umanista e uno studioso in erba. Le sue visioni del mondo, così come le sue filosofie, sono celebrate in [ShowContinentName('europe')] per la loro natura tollerante. Inoltre, come [target_character.GetWomanMan] di compromesso, la sua influenza in teologia lo rende un punto di riferimento per coloro che valorizzano la libertà più dell'ortodossia." #OLD
  flavor_hol.10.desc: "[target_character.GetName], more commonly known as just Erasmus, is a humanist and an aspiring scholar. His world views as well as his philosophies are renowned in [ShowContinentName('europe')] for their tolerant nature. Additionally, as a [target_character.GetWomanMan] of the middle ground, his influence in the theology makes him a beacon for those who value liberty more than orthodoxy." #NEW
  flavor_hol.10.historical_info: "Desiderio Erasmo da Rotterdam, figura di spicco del Rinascimento settentrionale, fu un umanista olandese noto per i suoi numerosi contributi letterari in latino e greco. Ebbe un ruolo significativo negli studi classici ed è celebre per il suo stile latino naturale. Erasmo sostenne la tolleranza, la concordia e il libero pensiero all’interno della Chiesa cattolica, nonostante il contesto della Riforma religiosa europea. Le sue opere, tra cui #italic L'Elogio della Follia#! e #italic Sul Libero Arbitrio#!, affrontavano questioni teologiche e sociali, promuovendo spesso un approccio di compromesso che deluse sia la fazione cattolica che quella protestante. Nonostante abbia dovuto affrontare la povertà e le difficoltà spirituali in giovane età, gli scritti di Erasmo riflettono le sue convinzioni sull'istruzione, il matrimonio, la riforma sociale e l'importanza dell'autonomia individuale all'interno delle istituzioni religiose."
-# flavor_hol.10.a: "Che le sue idee creino un futuro migliore." #OLD
  flavor_hol.10.a: "May his ideas create a better future." #NEW
-# flavor_hol.10.b: "Le sue filosofie non possono restare a [ROOT.GetCountry.GetNameWithNoTooltip]." #OLD
  flavor_hol.10.b: "His philosophies cannot stay in [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
  flavor_hol.10.b.entry: "His philosophies cannot stay in us." #NEW
 
  flavor_hol.11.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.11.entry: "Hugo Grotius, Father of International Law" #NEW
-# flavor_hol.11.desc: "[target_character.GetName] è un erudito e avvocato noto per il [target_character.GetHisHer] celebre libro 'De Jure Belli ac Pacis'. Considerato un capolavoro giuridico, le sue opere sono ritenute le fondamenta del diritto futuro. [target_character.GetHeShe|U] è altresì noto per la sua celebre fuga dal carcere (dove era stato incarcerato a causa di conflitti politici e religiosi) nascosto in un baule di libri!" #OLD
  flavor_hol.11.desc: "[target_character.GetName] is a scholar and lawyer who is known for his famous book 'De Jure Belli ac Pacis'. Seen as a legal masterpiece, his works are said to lay the foundation for laws to come. He is also famous for his celebrated escape from prison (where he was incarcerated due to political and religious conflicts) in a bookchest!" #NEW
  flavor_hol.11.historical_info: "Hugo Grotius, polimata olandese nato a Delft nel 1583, diede contributi significativi alla filosofia, alla teoria politica e al diritto, in particolare nei campi del diritto internazionale e dei diritti naturali. Nonostante fosse stato incarcerato per il suo coinvolgimento in controversie religiose nella Repubblica Olandese, Grotius proseguì le sue ricerche intellettuali e scrisse opere influenti durante l'esilio in Francia. I suoi capolavori, #italic De jure belli ac pacis#! e #italic Mare Liberum#!, posero le basi del diritto internazionale moderno, valendogli il titolo di #italic padre del diritto internazionale#!. Le idee di Grotius su sovranità, diritto naturale e diritti influenzarono pensatori successivi come John Locke e contribuirono a plasmare sviluppi politici come la Gloriosa Rivoluzione in Inghilterra e la Rivoluzione Americana. Il suo fondamento teologico del diritto naturale, radicato sia nella rivelazione biblica sia nella ragione umana, rimane una pietra miliare del suo lascito."
  flavor_hol.11.a: "Che grand'uomo!"
 
  flavor_hol.12.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.12.entry: "Christiaan Huygens, the Mathematician" #NEW
-# flavor_hol.12.desc: "Il figlio di un diplomatico della nostra corte sta acquistando fama grazie al [target_character.GetHerHis] genio. Secondo alcuni dei nostri consiglieri, [target_character.GetSheHe] ha mostrato meravigliose doti in geometria e matematica. Le [target_character.GetHerHis|U] capacità potrebbero essere utili a corte e, con un adeguato finanziamento, [target_character.GetSheHe] potrebbe stupire noi e il mondo." #OLD
  flavor_hol.12.desc: "The son of one diplomat of our court is getting popular for his genius. According to some of our advisors, he has shown marvelous skills with geometry and maths. His abilities could be of use in the court and with a proper financing, he could marvel us and the world." #NEW
  flavor_hol.12.historical_info: "Huygens fu un matematico, astronomo e fisico olandese che fondò la teoria ondulatoria della luce, scoprì la vera forma degli anelli di Saturno e diede contributi originali alla scienza della dinamica, lo studio dell'azione delle forze sui corpi. Dimenticato fino all'inizio del XIX secolo, le sue teorie sulla luce appaiono oggi come uno dei contributi più brillanti e originali alla scienza moderna e saranno sempre ricordate grazie al principio che porta il suo nome."
-# flavor_hol.12.a: "Portiamo [target_character.GetHerHim] a corte." #OLD
  flavor_hol.12.a: "Bring him to the court." #NEW
-# flavor_hol.12.b: "[target_character.GetSheHe|U] è una persona comune." #OLD
  flavor_hol.12.b: "He is a regular man." #NEW
  NED_BUFFED_POLDERS: "L'[building|e] [ShowBuildingTypeName('polders')] avrà ora il #Y Livello Massimo#! dallo [development|e] #G Raddoppiato#!."
 
@@ -112,16 +101,13 @@
 
  flavor_hol.14.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.14.entry: "Gerard Mercator, the Cartographer" #NEW
-# flavor_hol.14.desc: "Di umili origini, [target_character.GetName] ha mostrato una straordinaria capacità di raffigurare il mondo su carta. Questa abilità potrebbe essere di grande utilità nelle operazioni militari, tuttavia vi è il rischio che le [target_character.GetHerHis] competenze vengano sottoutilizzate se [target_character.GetSheHe] venisse limitato alle mappe militari." #OLD
  flavor_hol.14.desc: "From a humble family, [target_character.GetName] has shown an impressive ability to depict the world on paper. This ability might be of great use in military operations, however there is a risk that his skills are being underused if he is limited to military maps." #NEW
  flavor_hol.14.historical_info: "Geografo, matematico e cartografo fiammingo. Studiò a Lovanio dove fondò uno stabilimento geografico (1534). Dal 1537 al 1540 rilevò e mappò le Fiandre. Nel 1538 produsse la sua prima mappa del mondo (basata sulla mappa di Tolomeo)."
-# flavor_hol.14.a: "Le [target_character.GetHerHis|U] mappe saranno di grande utilità per l'esercito." #OLD
  flavor_hol.14.a: "His maps will be of great use for the military." #NEW
-# flavor_hol.14.b: "Lasciamo che [target_character.GetHerHim] lavori ai [target_character.GetHerHis] miglioramenti cartografici." #OLD
  flavor_hol.14.b: "Let him work in his improvements to maps." #NEW
 
  flavor_hol.15.title: "[ShowReligionNameWithNoTooltip('calvinist')] [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_hol.15.entry: "Calvinist in $HOL$" #NEW
+ flavor_hol.15.entry: "Calvinist in $HOL$"
  flavor_hol.15.desc: "Per anni, la nostra nazione ha dibattuto tra una religione [ShowReligionName('calvinist')] più conservatrice o una più aperta, cercando di accomodare le diverse fedi che popolano il nostro paese.\n\nUn sinodo si sta celebrando a [ShowLocationName('dordrecht')], dove i due principali rappresentanti di entrambe le parti si sono incontrati per giudicare la dottrina dell'avversario. Questa potrebbe essere una grande opportunità per mostrare pubblicamente il nostro appoggio a uno dei due contendenti e, con esso, porre fine a questo dibattito una volta per tutte."
  flavor_hol.15.historical_info: "In una riunione clericale a Dordrecht (1618-1619) il Calvinismo intransigente fu fatto religione di Stato. Questa fu la fine di una lunga lotta tra una fazione pluralista e umanitaria, gli Arminiani, e una fazione dogmatica e di vedute ristrette, il 'vero Calvinismo', i Gomaristi. Moritz di Oranien sostenne i Gomaristi, composti principalmente da piccola borghesia e contadini, mentre Oldenbarneveld sostenne gli Arminiani, composti da intellettuali e ricca borghesia."
  flavor_hol.15.a: "Sosteniamo [target_character2.GetNameWithNoTooltip]."
@@ -131,10 +117,8 @@
 
  flavor_hol.16.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.16.entry: "Jan de Witt, the Pensionary" #NEW
-# flavor_hol.16.desc: "Nato in una delle famiglie più importanti della nostra nazione, [target_character.GetName] è un grande [target_character.GetWomanMan] i cui talenti non vengono impiegati correttamente nella [target_character.GetHerHis] posizione di Pensionario di [ShowLocationNameWithNoTooltip('dordrecht')]. Dovremmo assumerlo e impiegarlo nel nostro ufficio." #OLD
  flavor_hol.16.desc: "Born in one of the most important families of our nation, [target_character.GetName] is a great [target_character.GetWomanMan] whose talents are not being used correctly in his position as Pensionary of [ShowLocationNameWithNoTooltip('dordrecht')]. We should hire him and employ him in our office." #NEW
  flavor_hol.16.historical_info: "Jan de Witt divenne Raadpensionaris (Grande Pensionario) nel 1653. La Repubblica Olandese godette sotto la sua guida alcuni dei suoi anni più brillanti. Trascorse anche la vita combattendo l'influenza della Casa d'Orange, che tradizionalmente ricopriva la carica di Stadtholder, quindi responsabile degli affari militari della Repubblica, riuscendo a far approvare l'Atto di Esclusione contro di loro nel 1667. Tuttavia, le sconfitte del 1672 contro Francia e Inghilterra fecero tornare il partito Orangista, che lo fece imprigionare. Il 20 agosto 1672, lui e suo fratello Cornelis furono massacrati da una folla istigata dai suoi oppositori politici."
-# flavor_hol.16.a: "[target_character.GetSheHe|U] sarà un ministro eccellente!" #OLD
  flavor_hol.16.a: "He will make an Excellent Minister!" #NEW
  flavor_hol.16.b: "Non c'è bisogno di un altro consigliere."
 
@@ -157,14 +141,14 @@
  ned_friendly_towards_france: "Amicizia con la Francia"
 
  flavor_hol.19.title: "Le Prisonnier de Hollande"
- flavor_hol.19.entry: "$flavor_hol.19.title$" #NEW
+ flavor_hol.19.entry: "$flavor_hol.19.title$"
  flavor_hol.19.desc: "Dopo anni di, se non amicizia, almeno cooperazione amichevole, [root_country.Custom('IT_La')][root_country.GetName] ha iniziato ad agire in modo più ostile nei nostri confronti. Abbiamo ricevuto rapporti che stanno cercando alleati all'estero tra i nostri nemici e che intendono limitare la nostra influenza nei Paesi Bassi. Sebbene sia ingrato, è forse anche ben tempestivo. Senza la nostra buona volontà a proteggerli, i Paesi Bassi farebbero una buona aggiunta [target_country.Custom('IT_AL_NOSTRO_RANGO')]nostr[target_country.Custom('IT_OA_RANGO')] [target_country.GetFlavorRank]."
  flavor_hol.19.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
- flavor_hol.19.a.entry: "$common_string_alright$" #NEW
+ flavor_hol.19.a.entry: "$common_string_alright$"
  flavor_hol.19.a.tt: "[root_country.Custom('IT_ART_RANGO')|U][root_country.GetLongName] cercherà di migliorare le proprie relazioni con i nostri [rivals|e]"
 
  flavor_hol.20.title: "Riforme Militari [ROOT.GetCountry.GetCulture.Custom('IT_CUL_FP')]"
- flavor_hol.20.entry: "$flavor_hol.20.title$" #NEW
+ flavor_hol.20.entry: "$flavor_hol.20.title$"
  flavor_hol.20.desc: "Gli eserciti di [ShowContinentName('europe')] stanno avanzando in tecnologie e tattiche a un ritmo molto rapido. È diventato chiaro che dobbiamo riformare il nostro esercito il prima possibile affinché [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] possa mantenere qualsiasi influenza politica sul palcoscenico delle grandi potenze. Per fortuna, [target_character.Custom('IT_ART_TITOLO')][target_character.GetName] ha già dei piani per affrontare la questione..."
  flavor_hol.20.historical_info: "Johann, Conte di Nassau-Siegen, insieme al suo cugino, il Principe Maurits, e al fratello Willem, erano al centro delle riforme olandesi. Riacquisendo le competenze perdute degli eserciti classici dalla traduzione dei manuali militari romani, riorganizzarono le formazioni di battaglia per renderle più flessibili e aumentare la potenza di fuoco. Fu Johann il cervello dietro il più famoso di tutti i manuali di esercitazione, lo Wapenhandelinghe di de Gheyn, e il fondatore di una delle prime accademie militari a Siegen in Germania."
  flavor_hol.20.a: "Privilegiamo un approccio offensivo."
@@ -179,7 +163,7 @@
  STATIC_MODIFIER_DESC_hol_brilliant_minister: "Le capacità di questo personaggio a corte sono ben al di là dell'eccellenza. Le sue idee e azioni aprono un percorso verso un grande futuro per lo stato."
 
  flavor_hol.22.title: "Arumer Zwarte Hoop"
- flavor_hol.22.entry: "$flavor_hol.22.title$" #NEW
+ flavor_hol.22.entry: "$flavor_hol.22.title$"
  flavor_hol.22.desc: "Insoddisfatti del comportamento delle nostre truppe nella regione, i [ShowPopTypeName('peasants')] di [ShowAreaName('friesland_area')] hanno preso le armi contro di noi. Affiancati da soldati mercenari, questi rivoltosi hanno ottenuto successi limitati via terra, ma hanno già condotto alcune manovre sorprendenti via mare. In effetti, i rivoltosi sono tanti pirati quanti soldati, e a meno che non soffocassimo questa rivolta presto, il commercio marittimo ne subirà le conseguenze."
  flavor_hol.22.a: "Schiacciamo i traditori."
  frisian_independence_fighter: "$frisian$ Combattenti per l'Indipendenza"
@@ -195,9 +179,7 @@
  flavor_hol.24.entry: "Jacobus Arminius, Theologian" #NEW
  flavor_hol.24.desc: "Il [ShowReligionName('calvinist')] si diffonde [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] come un incendio. Mettendo da parte le vedute del [ShowReligionName('lutheran')], i fedeli calvinisti hanno un approccio significativamente più radicale contro il [ShowReligionName('catholic')].\n\nTuttavia, non tutti concordano con le loro ideologie. Il teologo [target_character.GetName] sfida le pratiche zelanti e propone un trattamento più umanistico degli eretici. Il suo modo di pensare portò alla fondazione del movimento dell'[ShowReligiousAspectName('arminianism')] all'interno del [ShowReligionNameWithNoTooltip('calvinist')]."
  flavor_hol.24.historical_info: "Jacobus Arminius, teologo riformato olandese, contestò il Calvinismo e sviluppò le basi teologiche dell'Arminianesimo, dando impulso al movimento Remostrant olandese. Nonostante avesse inizialmente difeso la predestinazione calvinista, Arminius cominciò a dubitare di alcuni suoi aspetti e propose modifiche, enfatizzando una grazia sufficiente per tutti a credere ed essere salvati. I suoi insegnamenti furono sistematizzati postumi nei Cinque Articoli dei Remonstrants, portando a persecuzioni da parte del Sinodo Calvinista di Dort; tuttavia l'Arminianesimo persistette e influenzò figure come John Wesley, che ne divenne il principale sostenitore all'interno del Movimento Metodista."
-# flavor_hol.24.a: "Adottiamo le sue filosofie." #OLD
  flavor_hol.24.a: "Adopt his philosophies." #NEW
-# flavor_hol.24.b: "Rifiutiamo [target_character.GetHimHer] e le sue idee." #OLD
  flavor_hol.24.b: "Reject him and his ideas." #NEW
  flavor_hol.24.c: "Esiliamo questo eretico!"
 
@@ -215,7 +197,7 @@
  flavor_hol.26.a: "Che il Signore ci aiuti a porre fine a questa eresia senza indugio."
 
  flavor_hol.27.title: "Pittura dell'Età dell'Oro [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip]"
- flavor_hol.27.entry: "$flavor_hol.27.title$" #NEW
+ flavor_hol.27.entry: "$flavor_hol.27.title$"
  flavor_hol.27.desc: "Prosperità e stabilità plasmano la storia attuale [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. Ispirati da questa Età dell'Oro [ROOT.GetCountry.GetCulture.GetName], artisti da ogni angolo della nostra nazione stanno producendo grandi dipinti mai visti prima dall'umanità."
  flavor_hol.27.historical_info: "La pittura dell'Età dell'Oro Olandese fiorì nel XVII secolo durante l'apice della Repubblica Olandese, caratterizzata da prosperità e innovazione nel commercio, nella scienza e nell'arte. Allontanandosi dai tradizionali temi religiosi, gli artisti olandesi abbracciarono soggetti laici con realismo dettagliato, dando forma a generi distinti come la ritrattistica, le scene di genere, i paesaggi, le marine e le nature morte. Questa specializzazione nei generi pittorici, osservata dalla fine degli anni 1620 al 1672, incarnava l'identità artistica dell'epoca e influenzò la traiettoria futura della pittura occidentale."
  flavor_hol.27.a: "Che la nostra arte raggiunga i cuori di chi la contempla."
@@ -225,7 +207,7 @@
  flavor_hol.28.desc: "Con la volatilità dei metalli preziosi utilizzati per coniare monete, in particolare [ShowGoodsName('silver')], la necessità di una stabile valuta bancaria argentea diventa evidente a molti. Alcuni [ShowPopTypeName('burghers')], ex membri del consiglio cittadino, hanno proposto di creare una banca di cambio che faccia da garante per questa tanto necessaria stabilità del valore monetario.\n\nNon tutti sono d'accordo con questa idea, soprattutto tra i [ShowPopTypeName('nobles')], che la vedono come un nuovo modo per i [ShowPopTypeNameWithNoTooltip('burghers')] di ottenere più potere. Sebbene ciò non sia necessariamente falso, vi è virtù nella proposta, poiché porterebbe a un migliore controllo sul valore delle valute con cui commerciamo."
  flavor_hol.28.a: "Costruiamo la banca di cambio."
  flavor_hol.28.b: "Non ne abbiamo bisogno."
- flavor_hol.28.historical_info: "Fondata nel 1609, la Banca di Amsterdam, o Wisselbank, era una prima banca di cambio patrocinata dalla città di Amsterdam. Considerata da alcuni come la prima vera banca centrale, svolse un ruolo cruciale nel difendere gli standard monetari e introdusse la prima valuta di riserva internazionale, il fiorino bancario. La Wisselbank influenzò le banche statali in tutta Europa, ma un cambiamento di politica e i default durante la Quarta Guerra Anglo-Olandese portarono alla sua insolvenza nel 1790. La Città di Amsterdam ne assunse il controllo nel 1791, e la Nederlandsche Bank subentrò nelle funzioni di emissione monetaria nel 1814, portando alla liquidazione della Wisselbank nel 1819."
+ flavor_hol.28.historical_info: "Established in 1609, the Bank of Amsterdam, also known as the Wisselbank, was an early exchange bank endorsed by the city of Amsterdam. Considered by some as the first true central bank, it played a crucial role in defending coinage standards and introduced the first international reserve currency, the bank guilder. The Wisselbank influenced state banks across Europe, but a shift in policy and defaults during the Fourth Anglo-Dutch War led to its insolvency in 1790. The City of Amsterdam assumed control in 1791, and the Nederlandsche Bank took over money issuance duties in 1814, leading to the Wisselbank's liquidation in 1819." #NEW
 
  flavor_hol.29.title: "Il [ShowInstitutionNameWithNoTooltip('renaissance')] del Nord"
  flavor_hol.29.entry: "The Northern Renaissance" #NEW
@@ -246,7 +228,7 @@
  flavor_hol.31.b: "Dovremmo concentrarci sulla terraferma."
 
  flavor_hol.32.title: "Il Fiorino [ROOT.GetCountry.GetAdjectiveWithNoTooltip]"
- flavor_hol.32.entry: "$flavor_hol.32.title$" #NEW
+ flavor_hol.32.entry: "$flavor_hol.32.title$"
  flavor_hol.32.desc: "Con il fiorino che raggiunge la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], molti mercanti chiedono che iniziamo a coniare questa nuova moneta, denominata [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] #italic Gulden#!, nella speranza che questa nuova moneta abbia più valore monetario della precedente."
  flavor_hol.32.a: "Creiamo questa nuova moneta."
  flavor_hol.32.b: "Non c'è bisogno di riforme monetarie."
@@ -262,5 +244,6 @@
  flavor_hol.34.entry: "Baltic Area Trade Secured" #NEW
  flavor_hol.34.desc: "Con il commercio nel [ShowAreaName('baltic_area')] ora assicurato, possiamo iniziare in modo più affidabile a inviare spedizioni di cibo verso i Paesi Bassi."
  flavor_hol.34.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_hol.34.a.entry: "$common_string_brilliant$" #NEW
+ flavor_hol.34.a.entry: "$common_string_brilliant$"
+ variable_ned_grain_trade_start_flag_tt: "The Baltic Grain Trade is Secured" #NEW
  NED_ALL_DUTCH_POPS_BECOME_HAPPIER: "Ogni [pop|e] che fa parte del [culture_group|e] [ShowCultureGroupName('netherlandish_group')] guadagnerà [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]."

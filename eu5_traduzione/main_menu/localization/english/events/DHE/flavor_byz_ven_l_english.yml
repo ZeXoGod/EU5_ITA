@@ -39,7 +39,7 @@
 
  flavor_byz_ven.6.title: "$flavor_byz_ven.4.title$"
  flavor_byz_ven.6.desc: "Il [target_army.GetName] ha finalmente riportato [target_woa.GetName] in nostro possesso. La nostra proprietà è stata ricondotta a [target.GetName], dove è stata accolta calorosamente dalla [ROOT.GetCountry.GetGovernment.GetCourtTitle]. I nostri nemici non potranno più usare questi gioielli per imporci la loro volontà!"
- flavor_byz_ven.6.desc_recovered: "The [target_woa.GetName] are once more in our possession, recovered along with [target.GetName]. Our property has been brought back to where it belongs, warmly received by the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. No longer can our enemies use these jewels to leverage their will upon us!" #NEW
+ flavor_byz_ven.6.desc_recovered: "I [target_woa.GetName] sono di nuovo in nostro possesso, recuperati insieme a [target.GetName]. I nostri beni sono stati riportati dove appartengono, accolti calorosamente dalla [ROOT.GetCountry.GetGovernment.GetCourtTitle]. I nostri nemici non possono più usare questi gioielli per imporci la loro volontà!"
  flavor_byz_ven.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_byz_ven.6.a.entry: "$common_string_brilliant$"
 
@@ -52,12 +52,39 @@
  flavor_byz_ven.8.desc: "Ci sono giunti rapporti dell'assoluta incompetenza dei nostri prestatori! Dopo averci prestato oro con il venerabile [target_woa.GetName] come garanzia, sono riusciti a farsi rubare quegli stessi gioielli proprio sotto il naso. Speriamo devotamente che recuperino i nostri beni. In caso contrario, dovremo riprenderceli da [target.GetName] da soli..."
  flavor_byz_ven.8.a: "C'è qualcosa che sappiano fare bene, oltre ad accumulare oro?"
 
- byz_woa_was_moved: "[target_woa.GetName] è stato spostato a [target.GetName]" flavor_byz_ven.9.title: "A Deal is Struck" #NEW
- flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$" #NEW
- flavor_byz_ven.9.desc: "Our envoys have returned from [target_country.GetName] with most welcome news: the [target_country.GetAdjective] merchants have agreed to our offer. In exchange for the [target_woa.GetName], a loan has been extended to us, giving our treasury the breathing room it so desperately needed. Let us make the most of this reprieve." #NEW
- flavor_byz_ven.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]" #NEW
- flavor_byz_ven.9.a.entry: "$common_string_brilliant$" #NEW
- flavor_byz_ven.10.title: "Refused by the Serenissima" #NEW
- flavor_byz_ven.10.entry: "$flavor_byz_ven.10.title$" #NEW
- flavor_byz_ven.10.desc: "Our envoys have returned empty-handed. The [target_country.GetLongName] has refused our offer, unwilling to provide a loan even with the [target_woa.GetName] as collateral. The insult stings almost as much as the blow to our finances. We must seek other means to weather this crisis." #NEW
- flavor_byz_ven.10.a: "So be it." #NEW
+ byz_woa_was_moved: "[target_woa.GetName] è stato spostato a [target.GetName]"
+ flavor_byz_ven.9.title: "Un Accordo è Stato Concluso"
+ flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$"
+ flavor_byz_ven.9.desc: "I nostri inviati sono tornati da [target_country.GetName] con notizie molto gradite: i mercanti [target_country.GetAdjective] hanno accettato la nostra offerta. In cambio del [target_woa.GetName], ci è stato concesso un prestito, dando al nostro tesoro il respiro di cui aveva disperatamente bisogno. Sfruttiamo al meglio questa tregua."
+ flavor_byz_ven.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_byz_ven.9.a.entry: "$common_string_brilliant$"
+ flavor_byz_ven.10.title: "Rifiutati dalla Serenissima"
+ flavor_byz_ven.10.entry: "$flavor_byz_ven.10.title$"
+ flavor_byz_ven.10.desc: "I nostri inviati sono tornati a mani vuote. Il [target_country.GetLongName] ha rifiutato la nostra offerta, non disposto a fornire un prestito nemmeno con il [target_woa.GetName] come garanzia. L'insulto brucia quasi quanto il colpo alle nostre finanze. Dobbiamo cercare altri mezzi per superare questa crisi."
+ flavor_byz_ven.10.a: "Così sia."
+ flavor_byz_ven.11.title: "Garanzia Perduta" #NEW
+ flavor_byz_ven.11.entry: "$flavor_byz_ven.11.title$"
+ flavor_byz_ven.11.desc: "Il nostro tesoro giace in rovina. Tra gli obblighi resi nulli dal nostro collasso finanziario vi è il prestito che abbiamo concesso [origin_country.Custom('IT_AL_RANGO')][origin_country.GetLongName], con [target_woa.GetName] come garanzia. Con l'annullamento del contratto, i gioielli tornano in mani [origin_country.Custom('IT_ADJ_FP')], e la leva che speravamo di esercitare su di loro ci sfugge tra le dita." #NEW
+ flavor_byz_ven.11.a: "Una perdita amara in una stagione amara." #NEW
+ flavor_byz_ven.12.title: "Un Collasso Veneziano" #NEW
+ flavor_byz_ven.12.entry: "$flavor_byz_ven.12.title$"
+ flavor_byz_ven.12.desc: "La notizia è giunta alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] dalla laguna. [target_country.Custom('IT_ART_RANGO')|U][target_country.GetLongName] è fallito, con i suoi creditori che si stringono attorno a quel che resta della ricchezza della Serenissima. Nel disordine, i [target_woa.GetName] tenuti [target_country.Custom('IT_Dalla')][target_country.GetNameWithNoTooltip] come garanzia contro il nostro prestito su pegno sono stati silenziosamente restituiti in nostro possesso. Il contratto è nullo, e i nostri gioielli sono di nuovo nostri." #NEW
+ flavor_byz_ven.12.a: "La Provvidenza ci ha risparmiato questa umiliazione." #NEW
+ flavor_byz_ven.13.title: "Inadempimento e Confisca" #NEW
+ flavor_byz_ven.13.entry: "$flavor_byz_ven.13.title$"
+ flavor_byz_ven.13.desc: "Le nostre casse sono vuote, i nostri debiti ripudiati. Il prestito che abbiamo contratto con [target_country.Custom('IT_ART_RANGO')][target_country.GetLongName] contro il [target_woa.GetName] è ora inadempiuto. Secondo i termini dell'accordo, i gioielli sono confiscati a favore [target_country.Custom('IT_Di')][target_country.GetNameWithNoTooltip], e la notizia della nostra vergogna si diffonde rapidamente nelle corti della Cristianità." #NEW
+ flavor_byz_ven.13.a: "Il nostro onore segue il nostro tesoro nell'abisso." #NEW
+ flavor_byz_ven.14.title: "L'Inadempimento del Debitore" #NEW
+ flavor_byz_ven.14.entry: "$flavor_byz_ven.14.title$"
+ flavor_byz_ven.14.desc: "Notizie angosciose raggiungono la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [origin_country.Custom('IT_DAL_RANGO')][origin_country.GetLongName], che ha ripudiato i propri debiti e portato rovina al proprio tesoro. Il prestito che abbiamo concesso contro il [target_woa.GetName] non sarà ripagato. Eppure la garanzia è nostra per diritto dell'accordo, e adorna la Serenissima come premio della nostra prudenza." #NEW
+ flavor_byz_ven.14.a: "La loro perdita è il nostro guadagno duraturo." #NEW
+ flavor_byz_ven.15.title: "Un'Opportunità contro la Minaccia [GetCountry('GEN').Custom('IT_ADJ_FS')]" #NEW
+ flavor_byz_ven.15.entry: "Un'Opportunità contro la Minaccia Genovese" #NEW
+ flavor_byz_ven.15.desc: "La conquista [GetCountry('GEN').Custom('IT_ADJ_FS')] di [ShowLocationName('chios')] e delle isole vicine ai danni [GetCountry('BYZ').Custom('IT_DEL_RANGO')][GetCountry('BYZ').GetLongName] ha profondamente preoccupato i mercanti della laguna. [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')|U]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] non può tollerare il predominio [GetCountry('GEN').GetAdjectiveWithNoTooltip] nel [ShowAreaName('aegean_sea_area')], e lo stato [GetCountry('BYZ').GetAdjectiveWithNoTooltip] ferito rappresenta il più naturale degli alleati.\n\nDovremmo tendere una mano di amicizia al [GetCountry('BYZ').GetAdjectiveWithNoTooltip] [GetCountry('BYZ').GetGovernment.GetCourtTitle]?" #NEW
+ flavor_byz_ven.15.a: "Inviamo emissari per proporre un patto congiunto." #NEW
+ flavor_byz_ven.15.b: "Perseguiremo i nostri interessi da soli." #NEW
+ flavor_byz_ven.16.title: "L'Apertura [GetCountry('VEN').Custom('IT_ADJ_FS')]" #NEW
+ flavor_byz_ven.16.entry: "L'Apertura Veneziana" #NEW
+ flavor_byz_ven.16.desc: "Gli inviati [GetCountry('VEN').Custom('IT_DEL_RANGO')][GetCountry('VEN').GetLongName] si presentano alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] recando una proposta quanto mai gradita, un'intesa congiunta contro [GetCountry('GEN').Custom('IT_ART_RANGO')][GetCountry('GEN').GetLongName], le cui flotte mercantili sono divenute troppo audaci nel [ShowAreaName('aegean_sea_area')] dopo la conquista di [ShowLocationName('chios')].\n\nSebbene i nostri recenti rapporti con [GetCountry('VEN').GetNameWithNoTooltip] non siano sempre stati amichevoli, essere entrambi contrari all'ambizione [GetCountry('GEN').Custom('IT_ADJ_FS')] costituisce un insolito allineamento di interessi." #NEW
+ flavor_byz_ven.16.a: "Un vecchio rivale diventa un alleato utile contro un nemico più grande." #NEW
+ flavor_byz_ven.16.b: "Nessuno di questi Latini è degno di fiducia." #NEW

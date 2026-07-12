@@ -1,5 +1,5 @@
 ﻿l_english:
- ASSIGN_LAW_POLICY_TITLE: "Assegna una Politica di Legge $STRING$"
+ ASSIGN_LAW_POLICY_TITLE: "Assegna una politica per $STRING$" 
  # Custom Tags
  forbids_no_policy: "È necessario avere una qualsiasi Politica"
  no_ai_propose_cd: "Può essere proposto senza penalità di tempo di recupero"
@@ -51,6 +51,7 @@
  #
  harem_law: "Leggi sull'Harem"
  harem_law_desc: "L'harem è un'istituzione significativa all'interno della casa reale e garantisce la produzione di eredi per la successione."
+ unlocks_harem_law_tt: "Sblocca la [law|e] [ShowLawName('harem_law')]" 
  secluded_harem_policy: "Harem Isolato"
  secluded_harem_policy_desc: "Il nostro harem non è destinato agli occhi delle masse al di fuori della corte reale. Per questo motivo mantiene un ruolo più appartato all'interno della casa reale ed è severamente proibito che interferisca direttamente negli affari del sovrano." 
  public_harem_policy: "Harem Pubblico"
@@ -308,6 +309,7 @@
  heir_religion_law: "Religione dell'Erede"
  heir_religion_law_desc: "La facoltà di decidere la religione dell'[heir|e] è di grande importanza per la successione e la governance. Permette di mantenere la stabilità religiosa, assicurando che le credenze del sovrano siano allineate con quelle della maggioranza dei sudditi. Tale potere è un elemento fondamentale nell'equilibrio tra libertà religiosa, governo e armonia sociale."
  act_of_settlement_tt: "Sbloccato tramite un [dynamic_historical_event|e]"
+ recently_negotiated_succession_law_locked_tt: "Il nostro [union_partner|e] ha recentemente imposto una modifica a questa legge" 
  heir_special_succession: "Successione Speciale"
  heir_special_succession_desc: "La religione dell'[heir|e] non è determinata dalle leggi, ma dal processo stesso di [heir_selection|e]."
  heir_same_religion: "Stessa Religione"
@@ -497,19 +499,15 @@
  authority_of_the_captain_desc: "L'autorità di ogni capitano al nostro servizio è indiscussa, a tal punto che gli equipaggi leali marciano verso il fuoco nemico ai loro ordini. Il loro obiettivo è il bottino e un'avventura leggendaria; i loro sogni si realizzano solo sotto la nostra guida inflessibile!"
  law_of_the_pious_emperor: "Legge del Pio Imperatore"
  law_of_the_pious_emperor_desc: "Un compendio di testi [greek_language] [BYZ] di legge e grandi opere dell'antica filosofia tradotte in serbo, emanato dall'imperatore [ser_stefan_dusan]."
-# zamanitchka_voyska: "Zamanitchka Voyska" #OLD
  zamanitchka_voyska: "Zamanička Vojska" 
  zamanitchka_voyska_desc: "Significa 'Tutti Insieme': questo sistema di obbligo militare universale richiede che tutti i cittadini abili, indipendentemente da età o genere, difendano la patria in caso di minaccia. A differenza degli eserciti professionali o delle leve feudali, mobilita l'intera popolazione per proteggere la propria indipendenza, riflettendo un impegno comunitario alla difesa della nazione."
  paik_system: "Sistema Paik"
  paik_system_desc: "Il $paik_system$ è un sistema di lavoro corvée in cui gli adulti abili, i cosiddetti #italic Paiks#!, sono obbligati a servire nella milizia statale in cambio di terreni agricoli."
  #
-# bureaucracy_law: "Burocrazia" #OLD
  bureaucracy_law: "Uffici burocratici" 
  bureaucracy_law_desc: "$modern_bureaucracy_desc$"
-# centralized_bureaucracy_policy: "Burocrazia Centralizzata" #OLD
  centralized_bureaucracy_policy: "Uffici centralizzati" 
  centralized_bureaucracy_policy_desc: "Una burocrazia centralizzata è radicata nella capitale del regno, dove la maggior parte delle decisioni viene presa dal sovrano o nelle sue vicinanze, per poi essere distribuita alle province."
-# decentralized_bureaucracy_policy: "Burocrazia Decentralizzata" #OLD
  decentralized_bureaucracy_policy: "Uffici decentralizzati" 
  decentralized_bureaucracy_policy_desc: "Una burocrazia decentralizzata lascia maggiori decisioni agli amministratori locali o ai governatori, che rispondono comunque al monarca."
  namestnik_policy: "Ufficio del Namestnik"
@@ -682,6 +680,8 @@
 
  scottish_civil_law: "Diritto Civile Scozzese"
  scottish_civil_law_desc: "Il College of Justice ha riformato il nostro Diritto Civile secondo un nuovo standard. Questa istituzione è composta da membri ben istruiti del nostro paese, che decidono su qualsiasi questione importante relativa allo #italic Scots Law#!."
+ carta_de_logu_policy: "Carta de Logu" 
+ carta_de_logu_policy_desc: "Nata dal Giudicato di Arborea, questa è una delle prime raccolte legislative complete d'Europa scritte in una lingua romanza vernacolare (il sardo). Stabilisce una cultura dello 'Stato di diritto' che protegge i diritti dei popolani e regola l'uso dei pascoli. Questa sofisticazione giuridica permette ai sardi di mantenere un tessuto sociale unificato. Favorisce un'identità culturale definita dai diritti civici e da un profondo rispetto per la proprietà collettiva del #italic Logu#!." 
 
  naval_doctrine_law: "Dottrina Navale"
  naval_doctrine_law_desc: "Le Dottrine Navali rappresentano competenze nelle quali la nostra [navy|e] può specializzarsi. Più a lungo lavoriamo su una dottrina, più essa si radica nelle nostre flotte e più diventiamo abili nel suo impiego. Con il tempo, questo può tradursi in potenti benefici per le nostre gloriose marine."
@@ -781,6 +781,7 @@
  pte_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #R Sì#!" 
  pte_no_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #R No#!" 
  pte_yes_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #G Sì#!" 
+ pte_no_imperial_circles: "Circoli Imperiali formati: #R No#!" 
 
 
  fleet_in_being: "Flotta in Essere"
@@ -1148,7 +1149,6 @@
  imperial_standing_army: "Esercito permanente imperiale" 
  imperial_standing_army_desc: "Con un'ulteriore espansione delle risorse disponibili per [ShowBuildingTypeName('hre_imperial_armory_foreign')], il [manpower|e] dell'Impero permetterà a [GetUniqueInternationalOrganization('hre').GetLeaderTitle] di creare un vero esercito permanente." 
  great_imperial_army: "Grande Esercito Imperiale"
-# great_imperial_army_desc: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] sono obbligati a fornire truppe aggiuntive al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]." #OLD
  great_imperial_army_desc: "Il livello legislativo finale per [ShowBuildingTypeName('hre_imperial_armory_foreign')]. Una volta promulgato, il potenziale dell'esercito sotto il controllo diretto di [GetUniqueInternationalOrganization('hre').GetLeaderTitle] raggiungerà un'altezza mai vista prima." 
  great_imperial_army_tt: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] devono contribuire con [manpower|e] al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
 
@@ -1199,6 +1199,7 @@
  princely_bishopric_electorate_policy_desc: "L'Elettorato di [GetUniqueInternationalOrganization('hre').GetName] rimane diviso tra [ShowSpecialStatusNamePlural('elector')] e [ShowSpecialStatusNamePlural('archbishop_elector')]." 
  secularized_electors_policy: "Elettorato secolarizzato" 
  secularized_electors_policy_desc: "Le precedenti posizioni dei [ShowSpecialStatusNamePlural('archbishop_elector')] sono state pienamente secolarizzate." 
+ ELECTORATE_ORG_COUNT_PREVIEW: "Dopo questa riforma ci saranno fino a #Y $PRINCE_MAX$#! $PRINCE_NAME$ (attualmente #Y $PRINCE_NOW$#!) e fino a #Y $ARCH_MAX$#! $ARCH_NAME$ (attualmente #Y $ARCH_NOW$#!)." 
 
  electorate_religion_law: "Legge Religiosa dell'Elettorato"
  electorate_religion_law_desc: "La religione è un pilastro fondamentale del [GetUniqueInternationalOrganization('hre').GetName], sia per gli Imperatori che per gli [ShowSpecialStatusNamePlural('elector')]."
@@ -1528,19 +1529,33 @@
  order_of_chivalry_law_desc: "Radicata in una fusione di tradizioni religiose e cortesi, questa legge incarna l'eredità di cavalieri dedicati agli ideali e alle missioni caritative del mondo cristiano. Fondata originariamente per proteggere i pellegrini diretti in Terra Santa e per sostenere voti di povertà, obbedienza e castità, nel tempo questa tradizione si è trasformata, arrivando a onorare individui distinti e divenendo un simbolo di prestigio."
  has_not_assumed_chivalric_order_in_last_25_years_tt: "Non abbiamo istituito un #Y $order_of_chivalry_law$#! negli ultimi #Y 25 anni#!"
  order_of_saint_george_policy: "Ordine di San Giorgio"
- order_of_saint_george_policy_desc: "Questa riforma governativa, nota come 'Compagnia Cavalleresca di San Giorgio', rappresenta un impegno verso gli ideali di cavalleria e onore, promuovendo tali valori attraverso tornei e festività cavalleresche."
+ order_of_saint_george_policy_desc: "$order_of_saint_george_desc$" 
  order_of_the_ermine_policy: "Ordine dell'Erminio"
- order_of_the_ermine_policy_desc: "L'Ordine dell'Erminio trae ispirazione dall'Ordine della Giarrettiera inglese. Con l'ermellino come simbolo — emblema di onore personale incorruttibile — l'ordine riconosce uomini e donne, indipendentemente dal rango sociale, per il loro servizio eccezionale al Ducato di [ShowAreaName('brittany_area')]."
+ order_of_the_ermine_policy_desc: "$order_of_the_ermine_desc$" 
  order_of_the_dragon_policy: "Ordine del Drago"
- order_of_the_dragon_policy_desc: "Conosciuto anche come '#italic Societas Draconica#!', questo Ordine era dedicato alla difesa della monarchia ungherese, della Chiesa Cattolica e del [ShowReligionGroupName('christian')] contro la minaccia [GetCountry('TUR').Custom('IT_DEL_RANGO')][GetCountry('TUR').GetLongName], degli eretici e dei pagani. Modellato sull'Ordine di San Giorgio e ispirato dallo spirito crociato del periodo, unisce la [ShowEstateTypeName('nobles_estate')] e la [ShowEstateTypeName('crown_estate')] sotto i simboli dell'ouroboros e della croce rossa, promuovere una difesa collettiva contro le minacce esterne e interne, offrendo in cambio alla $nobles_estate$ protezione reale e onori in cambio della loro fedeltà." 
+ order_of_the_dragon_policy_desc: "$order_of_the_dragon_desc$" 
  order_of_the_band_policy: "Ordine della Banda"
- order_of_the_band_policy_desc: "L'Ordine della Banda è costituito dai cavalieri più eccellenti, che giurano fedeltà e obbedienza al sovrano di [GetCountry('CAS').GetName]. I suoi membri osservano rigorosi standard di comportamento cortese, partecipano regolarmente a giostre e devono mostrare dedizione assoluta al proprio sovrano."
+ order_of_the_band_policy_desc: "$order_of_the_band_desc$" 
  order_of_the_swan_policy: "Ordine del Cigno"
- order_of_the_swan_policy_desc: "L'Ordine del Cigno è dedicato alla pietà e alla diffusione del culto della Vergine Maria. Ne fanno parte molti principi della dinastia regnante e membri della nobiltà, uniti nella perseveranza religiosa."
+ order_of_the_swan_policy_desc: "$order_of_the_swan_desc$" 
  order_of_the_black_eagle_policy: "Ordine dell'Aquila Nera"
- order_of_the_black_eagle_policy_desc: "L'Ordine secolare dell'Aquila Nera è più militare che spirituale. Ne fanno parte membri della famiglia reale, sovrani stranieri in visita e generali distinti ricompensati per merito."
+ order_of_the_black_eagle_policy_desc: "$order_of_the_black_eagle_desc$" 
  order_of_the_white_eagle_policy: "Ordine dell'Aquila Bianca"
- order_of_the_white_eagle_policy_desc: "Il militare $order_of_the_white_eagle_policy$ è conferito ai più vicini sostenitori dello stato e ai cittadini più brillanti per ricompensarne il servizio. È inoltre assegnato agli ospiti illustri che onorano il paese con la loro presenza."
+ order_of_the_white_eagle_policy_desc: "$order_of_the_white_eagle_desc$" 
+ order_of_saint_george: "Ordine di San Giorgio" 
+ order_of_saint_george_desc: "Questo ordine, noto come 'Società Cavalleresca di San Giorgio', incarna un impegno verso gli ideali di cavalleria e onore, promuovendo tali valori attraverso tornei cavallereschi e festività." 
+ order_of_the_ermine: "Ordine dell'Ermellino" 
+ order_of_the_ermine_desc: "L'Ordine dell'Ermellino trae ispirazione dall'Ordine della Giarrettiera [GetCountry('ENG').GetAdjective]. Con l'ermellino come simbolo, a rappresentare un incrollabile onore personale, l'ordine riconosce uomini e donne, a prescindere dallo status sociale, per servizi eccezionali al Ducato di [ShowAreaName('brittany_area')]." 
+ order_of_the_dragon: "Ordine del Drago" 
+ order_of_the_dragon_desc: "Noto anche come '#italic Societas Draconica#!', quest'Ordine era dedicato alla difesa della monarchia [GetCountry('HUN').Custom('IT_ADJ_FS')], della Chiesa [ShowReligionAdjective('catholic')] e dei [ShowReligionGroupName('christian')] contro la minaccia [GetCountry('TUR').Custom('IT_Della')][GetCountry('TUR').GetLongName], degli eretici e dei pagani. Modellato sull'Ordine di San Giorgio e ispirato dallo spirito crociato dell'epoca, unisce [ShowEstateTypeName('nobles_estate')] e [ShowEstateTypeName('crown_estate')] sotto i simboli dell'uroboro e della croce rossa, favorendo una difesa collettiva contro minacce straniere e interne, offrendo al contempo ai $nobles_estate$ protezione e onori reali in cambio della loro lealtà." 
+ order_of_the_band: "Ordine della Banda" 
+ order_of_the_band_desc: "L'Ordine della Banda è composto dai cavalieri più eccellenti, che giurano lealtà e obbedienza al sovrano [GetCountry('CAS').Custom('IT_Di')][GetCountry('CAS').GetName]. I suoi membri sono tenuti a standard elevati di comportamento cortese, scrupoloso e impeccabile, partecipano regolarmente a giostre e devono essere soprattutto solidali e leali verso il loro sovrano." 
+ order_of_the_swan: "Ordine del Cigno" 
+ order_of_the_swan_desc: "L'Ordine del Cigno è dedicato alla promozione della pietà e alla diffusione del culto della Vergine Maria. I membri di quest'Ordine includono molti principi della dinastia regnante, nonché [ShowEstateTypeName('nobles_estate')], tutti uniti nella perseveranza." 
+ order_of_the_black_eagle: "Ordine dell'Aquila Nera" 
+ order_of_the_black_eagle_desc: "L'Ordine secolare dell'Aquila Nera è più un ordine militare che spirituale. Tra i membri di quest'Ordine figurano spesso esponenti della famiglia reale, reali stranieri in visita e generali illustri premiati per i loro meriti." 
+ order_of_the_white_eagle: "Ordine dell'Aquila Bianca" 
+ order_of_the_white_eagle_desc: "L'ordine militare $order_of_the_white_eagle_policy$ viene conferito ai più stretti sostenitori dello stato e ai più brillanti tra i nostri cittadini come ricompensa per il loro servizio al paese. Viene anche conferito a visitatori di alto rango che ci hanno onorato con la loro presenza." 
  society_with_the_donkey: "$noble_society_baden_palatine$"
  society_with_the_donkey_desc: "$noble_society_baden_palatine_desc$"
  society_lion_nassau: "$noble_society_nassau$"
@@ -1561,8 +1576,10 @@
  chi_grand_chancellorship_desc: "I Sei Ministeri riferiranno alla Cancelleria, rappresentata dal Cancelliere di Sinistra e dal Cancelliere di Destra, il primo dei quali ricopre la posizione più elevata."
  chi_grand_secretariat: "Gran Segreteria"
  chi_grand_secretariat_desc: "I Sei Ministeri invieranno la loro documentazione alla Gran Segreteria, che analizzerà i rapporti e li preparerà per essere presentati al monarca."
+ six_boards_grand_secretariat_oversight_tt: "Migliora del #G 20%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]" 
  chi_direct_report: "Rapporti Diretti"
  chi_direct_report_desc: "I Sei Ministeri riferiranno direttamente al monarca. Questo rafforza l'autorità regia, ma può ridurre l'efficienza amministrativa."
+ six_boards_direct_report_oversight_tt: "Migliora del #G 10%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]" 
 
 #Ashta Pradham Council
  ashta_pradhan_council_law: "Consiglio dell'Ashta Pradhan"
@@ -1736,7 +1753,6 @@
 
 #Byzantium
  pronoia_system: "Sistema della Prónoia"
-# pronoia_system_desc: "Il sistema della Prónoia funziona come un mezzo per trasferire temporaneamente diritti fiscali imperiali — come tasse o rendite — a individui o istituzioni. A differenza del sistema feudale europeo, le concessioni di Prónoia non erano né ereditarie né trasferibili, e la proprietà ultima restava all'Imperatore. In cambio di tali privilegi, il sistema serviva allo scopo di permettere al sovrano di radunare un esercito in caso di necessità, con l'obbligo che i soldati sostenessero in gran parte le proprie spese." #OLD
  pronoia_system_desc: "Il $pronoia_system$ funziona come mezzo per trasferire temporaneamente diritti fiscali imperiali, come imposte o redditi da varie fonti, a individui o istituzioni. A differenza del sistema feudale prevalente in Europa all'epoca, le concessioni di Prónoia non erano né ereditarie né trasferibili, e la proprietà ultima rimaneva all'Imperatore. In cambio di questi privilegi, il sistema serviva in ultima analisi allo scopo di permettere al capo dello stato di radunare un esercito in tempi di bisogno, e comportava che le truppe dovessero per lo più coprire le proprie spese." 
  
  reformed_pronoia_system: "Sistema della Prónoia Riformato"
@@ -1751,6 +1767,8 @@
  byz_varangian_guard_policy_desc: "La Guardia variaga, composta da Norreni, [ShowCultureName('english')] e altri popoli settentrionali, vincolata da giuramento personale all'Imperatore, serve come guardia del corpo imperiale e truppe d'urto della casa. La loro lealtà è acquistata, non ereditata, rendendoli immuni agli intrighi di fazione che affliggono gli ufficiali nobili [ShowCultureName('greek_culture')]. Le loro asce hanno difeso il trono per generazioni, e la loro feroce disciplina stabilisce uno standard per l'intero esercito." 
  byz_megas_domestikos_policy: "Comando del Mégas Doméstikos" 
  byz_megas_domestikos_policy_desc: "L'ufficio di #italic $byz_megas_domestikos_policy$#! Grande Domestico delle Scuole pone il comando supremo sul campo di tutti gli eserciti imperiali nelle mani di un unico comandante nominato. Invece di disperdere l'autorità militare tra ufficiali tagmata concorrenti, il Mégas Doméstikos coordina la strategia sull'intero teatro di guerra. Il prestigio dell'ufficio attira i migliori [ShowPopTypeName('nobles')] a servire sotto il suo stendardo, e le battaglie vinte sotto il suo stendardo forgiano il nostro esercito in uno ben temprato al doppio della velocità delle campagne ordinarie." 
+ byz_tagmata_policy_upgraded: "Tágmata Riformati" 
+ byz_tagmata_policy_upgraded_desc: "Attraverso le ampie riforme nate dalla crisi, i Tágmata sono stati riforgiati in qualcosa di più vicino ai temibili soldati professionisti di un tempo. Un addestramento più rigoroso, il ripristino dei finanziamenti imperiali e un rinnovato senso di scopo hanno elevato i reggimenti al di sopra della forza indebolita che erano diventati. Questi soldati si distinguono dalla leva feudale non solo nel nome, ma anche per disciplina, coesione ed efficacia sul campo di battaglia." 
 
 #Rome
 
@@ -2166,6 +2184,7 @@
  mutual_offense_law_desc: "La politica che definisce come i membri si sosterranno reciprocamente nel caso in cui uno di essi dichiari guerra a un altro paese."
  assured_offense_policy: "Attacco Assicurato"
  assured_offense_policy_desc: "I membri entreranno automaticamente nelle guerre offensive dichiarate da altri membri."
+ SPONSOR_EXEMPT_FROM_OFFENSIVE_WARS: "Non è uno [ShowSpecialStatusName('italian_league_sponsor')] di questa Lega" 
  automatic_offense_policy: "Attacco Automatico"
  automatic_offense_policy_desc: "I membri saranno automaticamente chiamati nelle guerre offensive dichiarate da altri membri, ma non sono obbligati ad accettare."
  possible_offense_policy: "Attacco Possibile"
@@ -2390,18 +2409,13 @@
  khalsa_fauj_desc: "Solo organizzando le forze militari della [ShowLawName('khalsa_law')] in un esercito potente esse potranno adempiere al loro ruolo di protettrici del [ShowReligionName('sikhism')]."
  amrit_sanskar: "Amrit Sanskar"
  amrit_sanskar_desc: "I membri della [ShowLawName('khalsa_law')] non sono semplici combattenti, ma individui raffinati che osservano i riti di iniziazione, le regole di condotta e il codice di abbigliamento. Il prestigio della [ShowLawNameWithNoTooltip('khalsa_law')] non risiede nella forza delle armi ma nel fascino della loro purezza."
-# guru_granth_sahib_guruship: "Insegnamenti di [ShowWorkOfArtNameWithNoTooltip('guru_granth_sahib')]" #OLD
  guru_granth_sahib_guruship: "Insegnamenti di $guru_granth_sahib$" 
-# guru_granth_sahib_guruship_desc: "Gli insegnamenti contenuti nel [ShowWorkOfArtName('guru_granth_sahib')]." #OLD
  guru_granth_sahib_guruship_desc: "Gli insegnamenti stabiliti nel $guru_granth_sahib$." 
  eternally_living_guru: "$character_title_guru$ Immortale"
-# eternally_living_guru_desc: "Il [ShowWorkOfArtName('guru_granth_sahib')] è il definitivo e sovrano $character_title_guru$ eterno, luce guida per tutti i seguaci del [ShowReligionName('sikhism')]." #OLD
  eternally_living_guru_desc: "Il $guru_granth_sahib$ è il $character_title_guru$ eterno finale e sovrano, che sarà la luce guida per tutti i seguaci di [ShowReligionName('sikhism')]." 
  divine_justice: "Giustizia Divina"
-# divine_justice_desc: "Gli insegnamenti contenuti nel [ShowWorkOfArtName('guru_granth_sahib')] guidano la nostra società a vivere in pace e armonia, fondati su $sikhism_god_name$ e sulla sua giustizia." #OLD
  divine_justice_desc: "Gli insegnamenti codificati nel $guru_granth_sahib$ guidano la nostra società a vivere in pace e armonia, basandosi su $sikhism_god_name$ e sulla Sua giustizia." 
  unchanging_writing: "Scrittura Immutabile"
-# unchanging_writing_desc: "Il [ShowWorkOfArtName('guru_granth_sahib')] è stato composto nel corso di molti anni e da più di un $character_title_guru$, ma ora ha raggiunto la sua forma definitiva ed eterna. I suoi scritti non dovranno più essere modificati in alcun modo." #OLD
  unchanging_writing_desc: "Il $guru_granth_sahib$ fu composto nel corso di molti anni e da più di un $character_title_guru$, ma ora ha raggiunto la sua forma definitiva ed eterna. I suoi scritti non saranno più alterati in alcun modo." 
 
  tur_kanum_i_osmani: "Kanun-i-Osmani"
@@ -2427,4 +2441,27 @@
  act_of_navigation_desc: "La supremazia dei nostri nemici deve essere contrastata in tutti i mercati. Attraverso direttive centrali forti e pratiche mercantilistiche preferenziali, cercheremo di garantire ai nostri mercanti un chiaro vantaggio rispetto a quelli dei nostri rivali."
 
  lit_casimir_code_policy: "Sudebnik della Lituania"
- lit_casimir_code_policy_desc: "Per combattere la mancanza di un codice legale nel paese, così come le attività criminali condotte dagli strati più alti della società, il $lit_casimir_code_policy$ fu redatto per contenere il caos e conferire maggiore potere alla [GetEstateName('crown_estate')]."
+ lit_casimir_code_policy_desc: "Per combattere la mancanza di un codice legale nel paese, così come le attività criminali condotte dagli strati più alti della società, il $lit_casimir_code_policy$ fu redatto per contenere il caos e conferire maggiore potere alla [GetEstateName('crown_estate')]." 
+ imperial_circles_law: "Circoli Imperiali" 
+ imperial_circles_law_desc: "La legge $imperial_circles_law$ divide il [GetUniqueInternationalOrganization('hre').GetName] in regioni amministrative geografiche, ciascuna guidata da un [circle_leader|e] designato." 
+ no_imperial_circles: "Nessun Circolo Imperiale" 
+ no_imperial_circles_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] non ha suddivisioni geografiche formali." 
+ imperial_circles_established: "Circoli Imperiali Stabiliti" 
+ imperial_circles_established_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] è diviso in Circoli Imperiali, ciascuno governato da un [circle_leader|e] designato che coordina gli affari della propria regione." 
+ administration_of_italian_lands_law: "Amministrazione delle Terre Italiane" 
+ administration_of_italian_lands_law_desc: "Definisce come la corona governa i suoi territori italiani sulla scia delle Guerre d'Italia." 
+ locations_in_italy_gain_tt: "Le [locations|e] che possediamo in [ShowRegionName('italy_region')] ottengono:" 
+ italian_direct_rule_policy: "Governo Diretto" 
+ italian_direct_rule_policy_desc: "Governatori nominati dalla corona vengono insediati in tutti i nostri possedimenti italiani, mantenendo una presa salda sulle città e sui centri urbani della penisola e lasciando poco spazio alla resistenza locale." 
+ italian_local_autonomy_policy: "Autonomia Locale" 
+ italian_local_autonomy_policy_desc: "Comuni e nobili italiani sono lasciati a governare i propri affari. Liberate dal peso della supervisione centrale, le città investono in sé stesse e si arricchiscono nel processo." 
+ italian_tribute_system_policy: "Sistema Tributario" 
+ italian_tribute_system_policy_desc: "Le terre italiane vengono messe al servizio della corona. Le loro botteghe intensificano la produzione e le loro leve vengono mobilitate più liberamente, incanalando la produzione della penisola nelle nostre casse e nei nostri eserciti." 
+ italian_catepanate_policy: "Catepanato d'Italia" 
+ italian_catepanate_policy_desc: "Governatori provenienti dall'Oriente vengono insediati nelle terre italiane, riaffermando la presenza di una potenza straniera nella penisola e attirando gradualmente i suoi popoli nell'orbita del regno." 
+ italian_ordonnances_royales_policy: "Ordonnances Royales" 
+ italian_ordonnances_royales_policy_desc: "La corona amplia la propria portata amministrativa emanando nuove ordinanze per i suoi possedimenti italiani, creando uffici per estendere l'autorità regia e stringere la presa del re sul dominio." 
+ italian_adelantamiento_policy: "Adelantamiento d'Italia" 
+ italian_adelantamiento_policy_desc: "Gli adelantados governano le città italiane in nome della corona, inserendole nelle reti commerciali iberiche e attirandole sempre più nell'orbita del regno." 
+ italian_imperial_fiefs_policy: "Feudi Imperiali Italiani" 
+ italian_imperial_fiefs_policy_desc: "I territori italiani sono incorporati come feudi imperiali, e le loro popolazioni sono vincolate dall'obbligo feudale. La presenza dell'Imperatore placa il malcontento locale mentre ingrossa le file delle leve imperiali." 

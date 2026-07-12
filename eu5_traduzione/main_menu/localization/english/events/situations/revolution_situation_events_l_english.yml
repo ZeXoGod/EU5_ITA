@@ -23,8 +23,7 @@
  
  the_revolution.4.title: "Fomentare i Disordini in [target_province.GetNameWithNoTooltip]"
  the_revolution.4.desc: "Sembra che uno dei membri di [ROOT.GetCountry.GetGovernment.GetCourtTitle] abbia deciso di diffondere disordini in una delle nostre province. Non si sa quale sia il suo intento. Alcuni sostengono che [target_character.GetSheHe] nutra rabbia contro l'attuale stato delle cose, sia a causa della diffusione di idee rivoluzionarie o della lotta attuale del nostro popolo, è chiaro che il suo zelo si è spinto troppo oltre!"
-# the_revolution.4.a: "Non c'è nulla che possiamo fare." #OLD
- the_revolution.4.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" #NEW
+ the_revolution.4.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" 
  the_revolution.4.b: "La prigione attende [target_character.GetHerHim]."
  nobles_lose_10_pop_satisfaction_tt: "I [pops|e] [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in [target_province.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
  peasants_lose_10_pop_satisfaction_tt: "I [pops|e] [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] in [target_province.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
