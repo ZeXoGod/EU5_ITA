@@ -17,8 +17,8 @@
 
 > **Traduzione realizzata dal gruppo di traduttori amatoriali TWR**
 
-**Versione della mod: 1.1.0 (Costantinopoli)**  
-**Patch della mod: 1.2.2**
+**Versione della mod: 1.2.0 (Lodi)**  
+**Patch della mod: 1.3.x**
 
 È possibile seguire lo stato di completamento della traduzione su Discord, nel canale [#stato-traduzione](https://discordapp.com/channels/409048447468175370/1376322996381290536).
 
