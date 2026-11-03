@@ -1,53 +1,58 @@
 ﻿l_english:
  
- decline_of_empire.1.title: "Declino [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip]"
- decline_of_empire.1.desc: "Mentre [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetLongName] si estende troppo, iniziano a manifestarsi delle crepe. La [ROOT.GetCountry.GetGovernment.GetCourtTitle] è paralizzata da una leadership debole, le sue sale piene di corruzione e indecisione. Le province distanti, anche in [target_region.GetName], si lamentano per la negligenza, mentre il malcontento si diffonde attraverso il cuore del regno. I sussurri di ribellione riecheggiano nelle strade e la burocrazia un tempo potente sotto [target_character.GetName] lotta per mantenere il controllo.\n\n[ROOT.GetCountry.Custom('IT_ART_RANGO')|U][ROOT.GetCountry.GetFlavorRank] è sull'orlo del baratro. Il popolo è irrequieto, la carestia e il declino economico alimentano la sua rabbia e i rivali ambiziosi vedono la debolezza. Se l'ordine non viene ripristinato, il collasso è inevitabile. I prossimi anni metteranno alla prova la nostra resilienza come mai prima d'ora. Ciò che fu costruito con sangue e fatica affronta ora la rovina totale, mentre il tempo si scontra con l'ennesimo [ROOT.GetCountry.GetFlavorRank]."
- decline_of_empire.1.a: "Cadranno le stelle, insieme ai nostri cuori."
- during_decline_of_empire_explanation_tt: "Durante questo [disaster|e], le [provinces|e] con [pops|e] di [non_accepted_culture|e] o con [control|e] basso potrebbero cercare l'indipendenza. Nel frattempo, i rivali stranieri potrebbero sfruttare la nostra debolezza per espandere i loro confini."
- 
- decline_of_empire.2.title: "Fine del Declino"
- decline_of_empire.2.desc: "Mentre le fiamme della crisi svaniscono, [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] inizia a ricostruire. L'ordine è stato ripristinato e le fratture che un tempo minacciavano di lacerare [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] sono state sanate. Sia attraverso il rafforzamento del controllo che abbracciando l'unità culturale, il caos che ha attanagliato il nostro popolo è stato sedato.\n\nI sussurri di ribellione tacciono, le province un tempo irrequiete tornano all'ovile e la [ROOT.GetCountry.GetGovernment.GetCourtTitle] riafferma la sua autorità. Sebbene restino delle cicatrici, il peggio è passato. Abbiamo superato con successo la tempesta e ne siamo emersi, se non illesi, almeno non distrutti."
- decline_of_empire.2.a: "Il peggio è alle spalle!"
- pops_accepted_or_primary_culture_gain_10_satisfaction_home_region_tt: "Ogni [pop|e] di [primary_culture|e] o [accepted_culture|e] nella [region|e] di [target_region.GetName] guadagnerà [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
- 
- decline_of_empire.3.title: "Le Fiamme dell'Indipendenza"
- decline_of_empire.3.desc: "Il tumulto che ha attanagliato [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] ha finalmente avuto la sua inevitabile conseguenza: [target_country.GetName] si è liberato. Indebolita dalla lotta interna, la nostra presa sulla regione si è allentata e i governanti locali hanno colto l'opportunità di scrollarsi di dosso il nostro dominio. Le loro bandiere sventolano alte, i loro leader parlano di sovranità e i loro eserciti sono pronti a difendere la loro ritrovata libertà.\n\nOra, affrontiamo una scelta: radunare la forza rimasta per schiacciare questa ribellione e reclamare ciò che è nostro, o accettare la perdita e concentrare la nostra attenzione all'interno, assicurandoci che il resto del [ROOT.GetCountry.GetFlavorRank] non segua l'esempio."
- decline_of_empire.3.a: "Schiacciarli!"
- decline_of_empire.3.b: "Garantire loro la libertà, per ora."
- target_country_allowed_to_slip_from_grasp_tt: "[target_country.GetNameWithNoTooltip] proclamerà un'indipendenza incruenta.\n#R Perderemo#! le nostre [cores|e] nelle loro [locations|e]"
- 
- decline_of_empire.4.desc: "In mezzo al caos che ha attanagliato le nostre terre, [target_country.GetName] ha colto l'attimo e dichiarato la sua indipendenza. La nostra autorità indebolita si è dimostrata insufficiente a tenere insieme le loro province indisciplinate, e ora la ribellione si erge in modo provocatorio. Le loro forze si radunano sotto la propria bandiera e i loro leader rivendicano con audacia l'autonomia, abbandonando definitivamente il nostro dominio.\n\nLa questione di concedere loro l'indipendenza è un argomento difficile a causa della nostra attuale situazione. Cedere alle loro richieste potrebbe far svanire la nostra rivendicazione sulle loro terre, ma assicurerebbe anche che la nostra attenzione possa essere concentrata su questioni più urgenti altrove."
- decline_of_empire.4.a: "Hanno dimenticato chi servono, alle armi!"
- decline_of_empire.4.b: "Non ci interessano le meschine liti [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] distanti."
- 
- decline_of_empire.5.title: "[target_country.GetFlavorRank] Morente"
- decline_of_empire.5.desc: "I nostri vicini in [target_country.GetName] sono paralizzati dalla crisi e dal declino, il loro [target_country.GetFlavorRank] sta crollando sotto la ribellione e il disordine. I loro eserciti sono allo stremo, le loro province sfuggono alla loro presa e i loro leader lottano per tenere insieme la loro [target_country.GetGovernment.GetCourtTitle]. Con le loro forze divise e la loro attenzione altrove, abbiamo una rara opportunità. Una rapida campagna potrebbe garantire territori chiave prima che si riprendano, ma se agiamo troppo tardi, potremmo affrontare una guerra costosa."
- decline_of_empire.5.a: "Colpire finché il ferro è caldo!"
- decline_of_empire.5.b: "Aspetteremo il nostro momento, per ora."
- 
- decline_of_empire.6.title: "Richieste del Popolo"
- decline_of_empire.6.desc: "Sulla scia del tumulto, il popolo [target_culture.GetName] ha iniziato a esprimere le sue richieste di maggiore autonomia. L'agitazione che ha travolto il [ROOT.GetCountry.GetFlavorRank] ha alimentato il suo desiderio di maggiore controllo sui propri affari, e ora chiedono riforme che garantiscano loro una maggiore indipendenza dal nostro governo centrale.\n\nRifiutare la loro richiesta potrebbe rivelarsi pericoloso! Il risentimento sta crescendo e i semi della ribellione vengono seminati. Se ignoriamo la loro supplica, rischiamo di alienare una parte della nostra popolazione e di innescare ancora più disordini in tutto il [ROOT.GetCountry.GetFlavorRank]. In alternativa, offrire concessioni potrebbe allentare le tensioni e mantenere la stabilità, ma potrebbe avvenire a costo di indebolire il nostro controllo."
- decline_of_empire.6.a: "Concedere loro una certa autonomia."
- decline_of_empire.6.b: "Dimenticano il loro posto!"
- explain_decline_of_empires_events.6_tt: "Ridurre il nostro [control|e] in queste [locations|e] danneggerà il nostro controllo generale a breve termine. Tuttavia, l'aumento della [pop_satisfaction|e] delle nostre [pops|e] di [target_culture.GetNameWithNoTooltip] potrebbe portare a guadagni di [control|e] a lungo termine."
- 
- show_num_pops_affected_a_tt: "Circa [ROOT.GetVariable('pop_size_variable').GetValue|V0]#Y K#! [pops|e] della [culture|e] [target_culture.GetNameWithNoTooltip] guadagneranno [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
- showcase_affected_locations_num_tt: "Circa #Y [ROOT.GetVariable('num_locations_affected_variable').GetValue]#! [locations|e] con [pops|e] [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
- show_num_pops_affected_b_tt: "Circa [ROOT.GetVariable('pop_size_variable').GetValue|V0]#Y K#! [pops|e] della [culture|e] [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
- decline_of_empire.7.title: "Areal Inspections in [target_area.GetNameWithNoTooltip]"
- decline_of_empire.7.desc: "An extensive program of inspections has been launched to restore authority across [target_area.GetName]. By tightening oversight and enforcing existing statutes, we succeeded in strengthening our control and drawing the population closer to the authority of [ROOT.GetCountry.GetCapital.GetName]."
- decline_of_empire.7.a: "Dispatch the inspectors."
- area_size_and_legislative_efficiency_tt: "The effects scale with the [target_area.GetName] [population|e] and our [legislative_efficiency|e]."
- amount_of_provinces_receive_bonus_depends_legislative_efficiency_tt: "The number of [provinces|e] that receive the [ShowModifier('recent_inspection_modifier')] [modifier|e] scales based on our [ShowModifierTypeName('legislative_efficiency')]"
- removal_of_head_of_cabinet_takes_stab_tt: "Due to [target_character.GetShortName] serving as our [head_of_the_cabinet|e], this [action|e] will further cost us [ShowNamedValue('stability_mild_penalty')|+=2] [stability|e] while yielding a larger loss of [complacency|e]"
- decline_of_empire.8.title: "The Purge of [target_character.GetNameWithNoTooltip]"
- decline_of_empire.8.desc: "[target_character.GetName] has occupied [target_character.GetHerHis] position for far too long, allowing corruption and stagnation to take root. In the name of renewal and stability within the [ROOT.GetCountry.GetFlavorRank], the time has come to remove those who stand against the people and the authority of [target_character2.GetName]."
- decline_of_empire.8.a: "A necessary step."
- target_character_banned_tt: "The removal is bloodless yet effective"
- target_character_violently_purged_tt: "The purge turns violent"
- purging_entrenched_cabinet_member_tt: "Because [target_character.GetName] is an [ShowModifier('entrenched_cabinet_member')], significantly more [complacency|e] is lost"
- decline_of_empire.9.title: "The Growing Power of [target_character.GetNameWithNoTooltip]"
- decline_of_empire.9.desc: "Through a long and outwardly successful tenure in government, [target_character.GetName] has consolidated influence far beyond the limits of [target_character.GetHerHis] office. A network of loyal supporters and compliant officials now answers primarily to [target_character.GetHerHim], distorting central authority. In an era already marked by instability, this concentration of personal power threatens to further inflame the turmoil at the expense of our [ROOT.GetCountry.GetFlavorRank]."
- decline_of_empire.9.a: "This cannot be ignored."
- character_can_only_be_removed_via_purge_action_tt: "The growing influence of [target_character.GetShortName] can only be removed via the [ShowGenericActionName('cd_purge_cabinet_member')] [action|e] in the [disaster|e] panel"
+  decline_of_empire.1.title: "Declino [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongNameWithNoTooltip]"
+  decline_of_empire.1.desc: "Mentre [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetLongName] si estende troppo, iniziano a manifestarsi delle crepe. La [ROOT.GetCountry.GetGovernment.GetCourtTitle] è paralizzata da una leadership debole, le sue sale piene di corruzione e indecisione. Le province distanti, anche in [target_region.GetName], si lamentano per la negligenza, mentre il malcontento si diffonde attraverso il cuore del regno. I sussurri di ribellione riecheggiano nelle strade e la burocrazia un tempo potente sotto [target_character.GetName] lotta per mantenere il controllo.\n\n[ROOT.GetCountry.Custom('IT_ART_RANGO')|U][ROOT.GetCountry.GetFlavorRank] è sull'orlo del baratro. Il popolo è irrequieto, la carestia e il declino economico alimentano la sua rabbia e i rivali ambiziosi vedono la debolezza. Se l'ordine non viene ripristinato, il collasso è inevitabile. I prossimi anni metteranno alla prova la nostra resilienza come mai prima d'ora. Ciò che fu costruito con sangue e fatica affronta ora la rovina totale, mentre il tempo si scontra con l'ennesimo [ROOT.GetCountry.GetFlavorRank]."
+  decline_of_empire.1.a: "Cadranno le stelle, insieme ai nostri cuori."
+  during_decline_of_empire_explanation_tt: "Durante questo [disaster|e], le [provinces|e] con [pops|e] di [non_accepted_culture|e] o con [control|e] basso potrebbero cercare l'indipendenza. Nel frattempo, i rivali stranieri potrebbero sfruttare la nostra debolezza per espandere i loro confini."
+
+  decline_of_empire.2.title: "Fine del Declino"
+  decline_of_empire.2.desc: "Mentre le fiamme della crisi svaniscono, [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] inizia a ricostruire. L'ordine è stato ripristinato e le fratture che un tempo minacciavano di lacerare [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] sono state sanate. Sia attraverso il rafforzamento del controllo che abbracciando l'unità culturale, il caos che ha attanagliato il nostro popolo è stato sedato.\n\nI sussurri di ribellione tacciono, le province un tempo irrequiete tornano all'ovile e la [ROOT.GetCountry.GetGovernment.GetCourtTitle] riafferma la sua autorità. Sebbene restino delle cicatrici, il peggio è passato. Abbiamo superato con successo la tempesta e ne siamo emersi, se non illesi, almeno non distrutti."
+  decline_of_empire.2.a: "Il peggio è alle spalle!"
+  pops_accepted_or_primary_culture_gain_10_satisfaction_home_region_tt: "Ogni [pop|e] di [primary_culture|e] o [accepted_culture|e] nella [region|e] di [target_region.GetName] guadagnerà [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
+
+  decline_of_empire.3.title: "Le Fiamme dell'Indipendenza"
+  decline_of_empire.3.desc: "Il tumulto che ha attanagliato [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetLongName] ha finalmente avuto la sua inevitabile conseguenza: [target_country.GetName] si è liberato. Indebolita dalla lotta interna, la nostra presa sulla regione si è allentata e i governanti locali hanno colto l'opportunità di scrollarsi di dosso il nostro dominio. Le loro bandiere sventolano alte, i loro leader parlano di sovranità e i loro eserciti sono pronti a difendere la loro ritrovata libertà.\n\nOra, affrontiamo una scelta: radunare la forza rimasta per schiacciare questa ribellione e reclamare ciò che è nostro, o accettare la perdita e concentrare la nostra attenzione all'interno, assicurandoci che il resto del [ROOT.GetCountry.GetFlavorRank] non segua l'esempio."
+  decline_of_empire.3.a: "Schiacciarli!"
+  decline_of_empire.3.b: "Garantire loro la libertà, per ora."
+  target_country_allowed_to_slip_from_grasp_tt: "[target_country.GetNameWithNoTooltip] proclamerà un'indipendenza incruenta.\n#R Perderemo#! le nostre [cores|e] nelle loro [locations|e]"
+
+  decline_of_empire.4.desc: "In mezzo al caos che ha attanagliato le nostre terre, [target_country.GetName] ha colto l'attimo e dichiarato la sua indipendenza. La nostra autorità indebolita si è dimostrata insufficiente a tenere insieme le loro province indisciplinate, e ora la ribellione si erge in modo provocatorio. Le loro forze si radunano sotto la propria bandiera e i loro leader rivendicano con audacia l'autonomia, abbandonando definitivamente il nostro dominio.\n\nLa questione di concedere loro l'indipendenza è un argomento difficile a causa della nostra attuale situazione. Cedere alle loro richieste potrebbe far svanire la nostra rivendicazione sulle loro terre, ma assicurerebbe anche che la nostra attenzione possa essere concentrata su questioni più urgenti altrove."
+  decline_of_empire.4.a: "Hanno dimenticato chi servono, alle armi!"
+  decline_of_empire.4.b: "Non ci interessano le meschine liti [ROOT.GetCountry.Custom('IT_PEASANTS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] distanti."
+
+  decline_of_empire.5.title: "[target_country.GetFlavorRank] Morente"
+  decline_of_empire.5.desc: "I nostri vicini in [target_country.GetName] sono paralizzati dalla crisi e dal declino, il loro [target_country.GetFlavorRank] sta crollando sotto la ribellione e il disordine. I loro eserciti sono allo stremo, le loro province sfuggono alla loro presa e i loro leader lottano per tenere insieme la loro [target_country.GetGovernment.GetCourtTitle]. Con le loro forze divise e la loro attenzione altrove, abbiamo una rara opportunità. Una rapida campagna potrebbe garantire territori chiave prima che si riprendano, ma se agiamo troppo tardi, potremmo affrontare una guerra costosa."
+  decline_of_empire.5.a: "Colpire finché il ferro è caldo!"
+  decline_of_empire.5.b: "Aspetteremo il nostro momento, per ora."
+
+  decline_of_empire.6.title: "Richieste del Popolo"
+  decline_of_empire.6.desc: "Sulla scia del tumulto, il popolo [target_culture.GetName] ha iniziato a esprimere le sue richieste di maggiore autonomia. L'agitazione che ha travolto il [ROOT.GetCountry.GetFlavorRank] ha alimentato il suo desiderio di maggiore controllo sui propri affari, e ora chiedono riforme che garantiscano loro una maggiore indipendenza dal nostro governo centrale.\n\nRifiutare la loro richiesta potrebbe rivelarsi pericoloso! Il risentimento sta crescendo e i semi della ribellione vengono seminati. Se ignoriamo la loro supplica, rischiamo di alienare una parte della nostra popolazione e di innescare ancora più disordini in tutto il [ROOT.GetCountry.GetFlavorRank]. In alternativa, offrire concessioni potrebbe allentare le tensioni e mantenere la stabilità, ma potrebbe avvenire a costo di indebolire il nostro controllo."
+  decline_of_empire.6.a: "Concedere loro una certa autonomia."
+  decline_of_empire.6.b: "Dimenticano il loro posto!"
+  explain_decline_of_empires_events.6_tt: "Ridurre il nostro [control|e] in queste [locations|e] danneggerà il nostro controllo generale a breve termine. Tuttavia, l'aumento della [pop_satisfaction|e] delle nostre [pops|e] di [target_culture.GetNameWithNoTooltip] potrebbe portare a guadagni di [control|e] a lungo termine."
+  
+  show_num_pops_affected_a_tt: "Circa [ROOT.GetVariable('pop_size_variable').GetValue|V0]#Y K#! [pops|e] della [culture|e] [target_culture.GetNameWithNoTooltip] guadagneranno [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
+  showcase_affected_locations_num_tt: "Circa #Y [ROOT.GetVariable('num_locations_affected_variable').GetValue]#! [locations|e] con [pops|e] [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
+  show_num_pops_affected_b_tt: "Circa [ROOT.GetVariable('pop_size_variable').GetValue|V0]#Y K#! [pops|e] della [culture|e] [target_culture.GetNameWithNoTooltip] perderanno [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+
+  decline_of_empire.7.title: "Areal Inspections in [target_area.GetNameWithNoTooltip]"
+  decline_of_empire.7.desc: "È stato avviato un vasto programma di ispezioni per ripristinare l'autorità in tutta [target_area.GetName]. Inasprendo la sorveglianza e facendo rispettare gli statuti esistenti, siamo riusciti a rafforzare il nostro controllo e ad avvicinare la popolazione all'autorità di [ROOT.GetCountry.GetCapital.GetName]."
+  decline_of_empire.7.a: "Dispatch the inspectors."
+  area_size_and_legislative_efficiency_tt: "Gli effetti variano in base alla [population|e] di [target_area.GetName] e alla nostra [legislative_efficiency|e]."
+  amount_of_provinces_receive_bonus_depends_legislative_efficiency_tt: "Il numero di [provinces|e] che ricevono il [modifier|e] [ShowModifier('recent_inspection_modifier')] varia in base alla nostra [ShowModifierTypeName('legislative_efficiency')]"
+  removal_of_head_of_cabinet_takes_stab_tt: "Poiché [target_character.GetShortName] funge da nostro [head_of_the_cabinet|e], questa [action|e] ci costerà inoltre [ShowNamedValue('stability_mild_penalty')|+=2] [stability|e]"
+
+  decline_of_empire.8.title: "L'Epurazione di [target_character.GetNameWithNoTooltip]"
+  decline_of_empire.8.desc: "[target_character.GetName] ha occupato la propria posizione per fin troppo tempo, permettendo a corruzione e stagnazione di radicarsi. In nome del rinnovamento e della stabilità all'interno del [ROOT.GetCountry.GetFlavorRank], è giunto il momento di rimuovere chi si oppone al popolo e all'autorità di [target_character2.GetName]."
+  decline_of_empire.8.a: "A necessary step."
+
+  target_character_banned_tt: "La rimozione è incruenta ma efficace"
+  target_character_violently_purged_tt: "The purge turns violent"
+  purging_entrenched_cabinet_member_tt: "Poiché [target_character.GetName] è un [ShowModifier('entrenched_cabinet_member')], l'effetto è significativamente maggiore"
+
+  decline_of_empire.9.title: "Il Potere Crescente di [target_character.GetNameWithNoTooltip]"
+  decline_of_empire.9.desc: "Grazie a un lungo mandato di governo apparentemente di successo, [target_character.GetName] ha consolidato un'influenza che va ben oltre i limiti della propria carica. Una rete di sostenitori fedeli e funzionari compiacenti risponde ora principalmente a [target_character.GetHerHim], distorcendo l'autorità centrale. In un'epoca già segnata dall'instabilità, questa concentrazione di potere personale rischia di alimentare ulteriormente il tumulto a scapito del nostro [ROOT.GetCountry.GetFlavorRank]."
+  decline_of_empire.9.a: "This cannot be ignored."
+  character_can_only_be_removed_via_purge_action_tt: "La crescente influenza di [target_character.GetShortName] può essere rimossa solo tramite la [action|e] [ShowGenericActionName('cd_purge_cabinet_member')] nel pannello [disaster|e]"
+
  

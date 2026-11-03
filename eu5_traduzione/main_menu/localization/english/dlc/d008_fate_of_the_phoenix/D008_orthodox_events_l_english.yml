@@ -16,8 +16,10 @@
  d008_orthodox_events.4.title: "Prestito di [target_art.GetNameWithNoTooltip] Scaduto"
  d008_orthodox_events.4.desc: "Il [ShowWorkOfArtTypeName('icon')] che ci era stato prestato da [origin_country.GetName] è giunto alla fine del periodo di prestito stabilito. È dunque tempo che restituiamo [target_art.GetName] al suo proprietario originale, e ovviamente si aspettano che lo facciamo. Tuttavia, potremmo sostenere di averlo 'smarrito' e quindi non procedere alla restituzione."
  d008_orthodox_events.4.desc_no_country: "[target_art.GetName] è in nostro possesso da qualche tempo. In origine ci era stato prestato, ma poiché il proprietario originale non esiste più come nazione indipendente, non abbiamo alcun bisogno di restituirlo a qualcuno."
+ d008_orthodox_events.4.desc_destroyed: "[target_art.GetName] è stato distrutto mentre era sotto la nostra custodia e non esiste più per poter essere restituito a [origin_country.GetName]."
  d008_orthodox_events.4.a: "Restituiamolo come dovuto."
  d008_orthodox_events.4.b: "Ora è nostro!"
+ d008_orthodox_events.4.b_destroyed: "Non resta nulla da restituire."
 
  d008_orthodox_events.5.title: "$d008_orthodox_events.4.title$"
  d008_orthodox_events.5.desc: "Il prestito di [target_art.GetName] al [target_country.GetLongName] è giunto al termine. Di conseguenza, ce lo hanno restituito con la cerimonia appropriata, adempiendo correttamente ai termini del nostro accordo."
@@ -25,6 +27,7 @@
 
  d008_orthodox_events.6.title: "$d008_orthodox_events.4.title$"
  d008_orthodox_events.6.desc: "Il prestito di [target_art.GetName] al [target_country.GetLongName] è giunto al termine. Tuttavia, i porci di [target_country.GetName] si sono rifiutati di restituircelo, presentando solo povere scuse per tale rifiuto."
+ d008_orthodox_events.6.desc_destroyed: "Il prestito di [target_art.GetName] al [target_country.GetLongName] è giunto al termine. Tuttavia, [target_art.GetNameWithNoTooltip] è stato distrutto durante la loro custodia e non potrà mai esserci restituito."
  d008_orthodox_events.6.a: "Pagheranno per questo insulto!"
 
  d008_orthodox_events.7.title: "La Sede di [target_pentarchy.GetNameWithNoTooltip]"

@@ -12,7 +12,7 @@
  expensive_in_depth_education: "Educazione Costosa"
  balanced_education_desc: "La vita porta ogni sorta di sfida per coloro destinati a governare. Se vogliamo preparare adeguatamente la prole reale, essa deve ricevere un'educazione equilibrata."
  administrative_education_desc: "Le macchinazioni e gli affari politici dello Stato possono rivelarsi opprimenti per un aspirante leader. Per evitare inadeguatezza nella gestione dello Stato, sarebbe saggio concentrarsi su un'educazione amministrativa."
- diplomatic_education_desc: "La linfa vitale della nostra nazione è costituita dalla conclusione di accordi e da manovre diplomatiche mirate. Dobbiamo quindi infondere gli stessi valori nella nostra prole reale se vogliamo mantenere il nostro vantaggio diplomatico sui nostri nemici."
+ diplomatic_education_desc: "La linfa vitale della nostra nazione è costituita dalla conclusione di accordi e da manovre diplomatiche mirate. Dobbiamo quindi infondere gli stessi valori nella nostra prole reale se vogliamo mantenere il nostro vantaggio diplomatico sui nostri nemici." 
  military_education_desc: "Proiettare forza militare è la spina dorsale della nostra nazione. Concentrarsi sugli affari militari e sullo studio della natura della guerra, nonché sulla gestione delle nostre forze armate, è fondamentale ai fini educativi."
  expensive_in_depth_education_desc: "La nostra ricchezza è sufficiente per garantire un'educazione approfondita al nostro erede. L'accesso ad alcuni dei migliori tutor e fonti materiali ci garantirà una conoscenza unica, oltre alla migliore educazione che il denaro possa comprare."
  character_role: "Attuale [role|e]"
@@ -52,6 +52,7 @@
  CHARACTER_ROLE_GENERAL: "[general|e]"
  CHARACTER_ROLE_ADMIRAL: "[admiral|e]"
  CHARACTER_ROLE_EXPLORER: "[explorer|e]"
+ CHARACTER_ROLE_EXPEDITION_LEADER: "Capo di [expedition|e]"
  CHARACTER_ROLE_ARTIST: "[artist|e]"
  CHARACTER_ROLE_RELIGIOUS_FIGURE: "[religious_figure|e]"
  CHARACTER_ROLE_REBEL: "[rebel|e]"
@@ -149,9 +150,11 @@
  DEATH_REASON_their_own_exploding_cannon: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] quando è esploso un cannone di sua fabbricazione."
 
  DEATH_REASON_starvation: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] di fame."
- DEATH_REASON_wild_animal: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] dopo essere stat[CHARACTER.Custom('IT_ART_O_A')] attaccat[CHARACTER.Custom('IT_ART_O_A')] da un [CHARACTER.GetLocation.Custom('GetDangerousWildAnimalName')]."
+ DEATH_REASON_wild_animal: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] dopo essere stat[CHARACTER.Custom('IT_ART_O_A')] attaccat[CHARACTER.Custom('IT_ART_O_A')] da [CHARACTER.GetLocation.Custom('GetDangerousWildAnimalName')]."
  
+
  DEATH_REASON_cannibalism: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] cannibalizzat[CHARACTER.Custom('IT_ART_O_A')] dalla folla contadina."
+  
  CHAR_DIED_DATE: "[CHARACTER.GetDeathAndAgeInfo] il $DATE|Y$\n"
  DIED_ON_DATE: "il $DATE|Y$"
  DIED_OF_UNKNOWN_CAUSE: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] per cause sconosciute."
@@ -166,7 +169,7 @@
  DIED_MONTHS_AGO: "Decesso: $TIME|Y$ mesi fa"
  DIED_LAST_YEAR: "Decesso: l'anno scorso"
  DIED_YEARS_AGO: "Decesso: $TIME|Y$ anni fa"
- 
+
  HEIR_REASON_preferred_heir_of_ruler: "Scelta del Governante"
  HEIR_REASON_married_into_ruling_dynasty: "Matrimonio nella Dinastia Regnante"
  HEIR_REASON_designated_as_appanage: "Designato come $appanage$"
@@ -179,8 +182,8 @@
  DEATH_REASON_stray_fire: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] uccis[CHARACTER.Custom('IT_ART_O_A')] da un proiettile o una palla di cannone vagante."
  DEATH_REASON_hanged_by_mob: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] impiccat[CHARACTER.Custom('IT_ART_O_A')] da una folla inferocita."
  DEATH_REASON_hanged_by_mob_location: "[CHARACTER.GetSheHe|U] è stat[CHARACTER.Custom('IT_ART_O_A')] impiccat[CHARACTER.Custom('IT_ART_O_A')] da una folla inferocita a [SCOPE.sLocation('location').GetName]."
- 
- DEATH_REASON_poisoned: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] uccis[CHARACTER.Custom('IT_ART_O_A')] con del veleno." 
- DEATH_REASON_poisoned_killer: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] avvelenat[CHARACTER.Custom('IT_ART_O_A')] da [SCOPE.sCharacter('killer').GetName]." 
- 
- DEATH_REASON_sickly_death: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] a causa di problemi di salute." 
+
+ DEATH_REASON_poisoned: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] uccis[CHARACTER.Custom('IT_ART_O_A')] con del veleno."
+ DEATH_REASON_poisoned_killer: "[CHARACTER.GetHeSheFormal|U] è stat[CHARACTER.Custom('IT_ART_O_A')] avvelenat[CHARACTER.Custom('IT_ART_O_A')] da [SCOPE.sCharacter('killer').GetName]."
+
+ DEATH_REASON_sickly_death: "[CHARACTER.GetHeSheFormal|U] è mort[CHARACTER.Custom('IT_ART_O_A')] a causa di problemi di salute."

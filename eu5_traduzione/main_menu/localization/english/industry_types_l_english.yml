@@ -1,0 +1,71 @@
+﻿l_english:
+ textiles: "Tessuti"
+ textiles_desc: "Tessitura e produzione di tessuti, dalla comune lana ai tessuti di lusso più fini. Promuovere i tessuti aumenta la domanda di stoffa in tutto il regno e accelera l'insediamento di tessitori e laboratori nell'area scelta."
+ crafts: "Artigianato"
+ crafts_desc: "Produzione artigianale e corporativa di utensili, acciaio lavorato, pelle e opere murarie. La spina dorsale dei mestieri specializzati di una città."
+ arms: "Armi"
+ arms_desc: "La manifattura di armamenti e, col tempo, di armi da fuoco e cannoni. Un'industria delle armi promossa mantiene gli eserciti forniti dalle fucine nazionali."
+ luxury: "Beni di Lusso"
+ luxury_desc: "Manufatti di alto valore come vetro, gioielli, porcellana e lacche. Industrie di prestigio che arricchiscono i borghesi che le dominano."
+ paper_goods: "Prodotti di Carta"
+ paper_goods_desc: "Cartiere e stampa di libri. Alimenta l'alfabetizzazione e l'amministrazione tanto quanto il commercio."
+ furnishings: "Arredamento"
+ furnishings_desc: "Mobili e ceramiche per le case di ogni classe sociale."
+ naval: "Forniture Navali"
+ naval_desc: "Forniture navali e catrame, i materiali che costruiscono e mantengono le flotte."
+ beverages: "Bevande"
+ beverages_desc: "Vino, liquori e birra. Un mercato assetato che ricompensa le regioni che lo riforniscono."
+
+ game_industry_type_struct: "$KEY_LOC$"
+ game_industry_promotion_struct: "$KEY_LOC$"
+ game_concept_industry_promotion: "Promozioni Industriali"
+ game_concept_industry_promotions: "Promozioni Industriali"
+ game_concept_promote_industry: "Promuovi Industria"
+ game_concept_industry_promotion_desc: "Una Promozione Industriale dedica un'[area|e] a un singolo ramo dell'industria. Ogni industria comprende un insieme di [goods|e]: promuoverla aumenta la [output|e] di ogni [building|e] in quell'[area] che produce quei [goods], e aumenta la domanda che i tuoi [pops|e] hanno per essi in tutto il tuo [country|e].\n\nPromuovere un'industria richiede il [advance_icon][ShowAdvanceName('industry_promotion_advance')] [advance|e]. Il numero di industrie che puoi promuovere contemporaneamente è stabilito da $MODIFIER_TYPE_NAME_possible_industry_promotions$, che aumenta con il rango del tuo [country], le tue [government_reforms|e] e i successivi [advances]. Una promozione può essere revocata in qualsiasi momento per liberare il suo slot."
+ industry_promotion: "Promozione Industriale"
+
+ PROMOTE_INDUSTRY_HEADER: "Industrie Promosse"
+ BROWSE_INDUSTRIES: "Esplora Industrie"
+ BROWSE_INDUSTRIES_DESC: "Esamina ogni industria che puoi promuovere, poi scegli l'[area|e] da industrializzare."
+ INDUSTRY_STAT_AREA_TT_TITLE: "Questa Industria in [Area.GetNameWithNoTooltip]"
+ INDUSTRY_STAT_BUILDINGS_TT_TEXT: "[GetAreaIndustryLevels(InteractionTarget.GetArea, SelectInteractionTargetView.GetCurrentParams.GetTargetObjectFromFlag('target').GetIndustryType)|W0] [buildings_with_icon|e] in @area! [Area.GetName] producono attualmente [GetAreaIndustryTaxBase(InteractionTarget.GetArea, SelectInteractionTargetView.GetCurrentParams.GetTargetObjectFromFlag('target').GetIndustryType)|+=2] [tax_base_with_icon|e] e [GetAreaIndustryIncome(InteractionTarget.GetArea, SelectInteractionTargetView.GetCurrentParams.GetTargetObjectFromFlag('target').GetIndustryType)|+=2] [income_with_icon|e]."
+
+
+ INDUSTRY_SLOT_STATS_TT_TEXT: "Cosa produci in [IndustryPromotionSlot.GetAreaName] dai [goods|e] di questa industria:"
+ BEST_CANDIDATE: "L'Area Consigliata è [Area.GetNameWithNoTooltip]"
+ BEST_CANDIDATE_DESC: "L'[area_with_icon|e] attualmente più produttiva per questa categoria è [Area.GetName], con [GetAreaIndustryTaxBase(GetIndustryBestCandidateArea(InteractionTarget.GetIndustryType), InteractionTarget.GetIndustryType)|+=2] [tax_base_with_icon|e] e [GetAreaIndustryIncome(GetIndustryBestCandidateArea(InteractionTarget.GetIndustryType), InteractionTarget.GetIndustryType)|+=2] [income_with_icon|e] da un totale di [GetAreaIndustryLevels(GetIndustryBestCandidateArea(InteractionTarget.GetIndustryType), InteractionTarget.GetIndustryType)|0W] [buildings_with_icon|e]."
+ CHANGE_SELECTED_INDUSTRY: "Cambia Industria"
+
+ INDUSTRY_TYPE_NOT_ADVANCE: "@trigger_no! Dobbiamo aver ricercato il [advance|e] $ADVANCE_LIST$ per poter promuovere [INDUSTRY_TYPE.GetName]"
+
+ # Plain labels used by CIndustryType::GetTooltip (which appends a full BuildIconSummary itself).
+ INDUSTRY_PROMOTION_AREA_LABEL: "Per le località nell'area:"
+ INDUSTRY_PROMOTION_COUNTRY_LABEL: "Per il paese:"
+ # Bundled label + condensed one-line icon summary for the slot card rows; the caller computes the
+ # summary in C++ (BuildIconSummaryCondensedOneLine) and passes it as the EFFECTS string argument.
+ INDUSTRY_PROMOTION_FOR_AREA: "Per le località nell'area: $EFFECTS$"
+ INDUSTRY_PROMOTION_FOR_COUNTRY: "Per il paese: $EFFECTS$"
+
+ INDUSTRY_PROMOTION_NAME: "[INDUSTRY_TYPE.GetNameWithNoTooltip] in [AREA.GetNameWithNoTooltip]"
+ INDUSTRY_PROMOTION_TT: "[area|e]: [INDUSTRY_PROMOTION.GetArea.GetName]\n[INDUSTRY_PROMOTION.GetType.GetTooltip]"
+ INDUSTRY_PROMOTION_DEBUG: "Promozione Industriale $ID$"
+
+ INDUSTRY_PROMOTION_NOT_CAPABLE: "@trigger_no! Non siamo in grado di promuovere industrie."
+ INDUSTRY_PROMOTION_NOT_ALREADY: "@trigger_no! Stiamo già promuovendo [INDUSTRY_TYPE.GetName] in [AREA.GetName]."
+ INDUSTRY_PROMOTION_NOT_AMOUNT: "@trigger_no! Stiamo già promuovendo tutte le industrie che possiamo (#TOOLTIP:$BREAKDOWN_TAG$ $NUM$/$MAX$#!)."
+ INDUSTRY_PROMOTION_NOT_OWNED: "@trigger_no! Non possediamo alcuna [location|e] in [AREA.GetName]."
+
+ NO_POSSIBLE_INDUSTRY_TYPE: "Non ci sono industrie disponibili da promuovere."
+
+ # Per-good line in the area picker: how many building levels of this good the player has in the area.
+ INDUSTRY_AREA_GOODS_LEVELS: "$ICON$ $GOODS$: $TOTAL$ livelli (#G $CONSTRUCTION$#! in costruzione)" ### to add when establishment is back: ### #Y $ESTABLISHING$#! establishing
+ INDUSTRY_AREA_BUILDINGS_HEADER: "#T Edifici esistenti#!\n"
+ INDUSTRY_AREA_BUILDING_ENTRY: "[BUILDING.GetName] ([LOCATION.GetName]): $LEVELS|+=0$ livelli"
+ INDUSTRY_AREA_NO_BUILDINGS: "$INDUSTRY_AREA_BUILDINGS_HEADER$@trigger_no!Ancora nessun edificio produce questi beni in questa [area|e]."
+
+ PROMOTE_INDUSTRY: "Promuovi Industria"
+ UNPROMOTE_INDUSTRY_FROM: "Interrompi la Promozione dell'Industria"
+ PROMOTE_INDUSTRY_WHICH_AREA: "Seleziona un'[area|e] da industrializzare:"
+ PROMOTE_INDUSTRY_CONFIRM: "Promuovere [INDUSTRY_TYPE.GetNameWithNoTooltip] in [AREA.GetName]?"
+ PROMOTE_INDUSTRY_SELECT_LOCATION_DESC: "Industrializza l'[area|e] di [AREA.GetName]."
+ PROMOTE_INDUSTRY_WHICH_TYPE: "Seleziona l'industria da promuovere:"

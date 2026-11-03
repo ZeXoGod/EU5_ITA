@@ -17,44 +17,49 @@
  colonial_charter.5.title: "Amicizia con i Nativi"
  colonial_charter.5.desc: "I nostri coloni sono riusciti a stabilire un'intesa con i nativi del luogo. Questo accordo consente a [SCOPE.sColonialCharter('target').GetName] maggiori possibilità di crescita senza rischiare di irritarli."
  colonial_charter.5.a: "Questo merita una celebrazione!"
-
+ 
  colonial_charter.6.title: "Donne da Sposare"
  colonial_charter.6.desc: "Una colonia pionieristica è solitamente un luogo dominato dagli uomini, ma con lo sviluppo della colonia si mira più alla crescita tramite le nascite che tramite l'emigrazione. La compagnia coloniale responsabile del [SCOPE.sColonialCharter('target').GetName] ha organizzato il trasferimento di un gruppo di donne da sposare, perlopiù vedove, affinché possano formare nuove famiglie."
  colonial_charter.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
-
+ 
  colonial_charter.7.title: "Incoraggiare il Sistema dell'Encomienda"
  colonial_charter.7.desc: "La questione della popolazione nativa è per noi di massima importanza. Dobbiamo assicurarci che i nativi sotto la nostra tutela siano protetti dai vicini ostili, civilizzati adeguatamente e convertiti alla vera fede. Il nostro piano è affidare ai coloni questo compito, concedendo a ciascuno un gruppo di nativi da istruire e proteggere. Naturalmente non si tratta di un dovere gratuito, quindi i nativi forniranno un certo numero di giorni di lavoro in cambio."
  colonial_charter.7.a: "Questo è un ottimo sviluppo!"
  STATIC_MODIFIER_NAME_encomienda_system: "Sistema dell'Encomienda"
  STATIC_MODIFIER_DESC_encomienda_system: "Il sistema dell'Encomienda assegna a ciascun colono un numero di nativi da tutelare e istruire, i quali in cambio offriranno alcuni giorni di lavoro."
-
+ 
  colonial_charter.8.title: "Missione Evangelica"
  colonial_charter.8.desc: "Guidati dall'intento di compiere buone opere, uomini di fede hanno diffuso la vera religione nella popolazione di [SCOPE.sLocation('missionary_location').GetName]. Il nostro investimento nella missione si è rivelato fruttuoso."
  colonial_charter.8.a: "Diffondete la Buona Novella"
-
+ 
  colonial_charter.9.title: "Colonia in Difficoltà"
  colonial_charter.9.desc: "I nostri sforzi coloniali sono tirati al limite. Una delle nostre colonie è in difficoltà, poiché il cibo scarseggia. Molti sono morti e altri ancora hanno lasciato la colonia per tornare a casa."
  colonial_charter.9.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  colonial_charter.9.b: "Dobbiamo aiutarli!"
-
+ 
  colonial_charter.10.title: "Scarso Raccolto"
  colonial_charter.10.desc: "[SCOPE.sColonialCharter('target').GetName] ha subito una serie di raccolti deludenti, causando carenze alimentari. La colonia è diventata meno attraente per gli immigrati, mentre altri la stanno abbandonando per tornare a casa. Il suo futuro è compromesso."
  colonial_charter.10.a: "Non possiamo abbandonarli."
  colonial_charter.10.b: "Sapranno cavarsela."
 
 
- #
- colonial_charter.100.title: "La Colonia di [SCOPE.sProvince('target').GetNameWithNoTooltip]"
- colonial_charter.100.desc: "La compagnia fondata per colonizzare [SCOPE.sProvince('target').GetName] ha ormai compiuto la sua missione e la colonia è pienamente operativa. Dobbiamo decidere come amministrare questo territorio."
- colonial_charter.100.a: "Creiamo un nuovo Stato Cliente Coloniale."
- colonial_charter.100.b: "Lasciate che si unisca [SCOPE.sCountry('first_neighboring_country').Custom('IT_Alla')][SCOPE.sCountry('first_neighboring_country').GetNameWithNoTooltip]."
- colonial_charter.100.c: "Lasciate che si unisca [SCOPE.sCountry('second_neighboring_country').Custom('IT_Alla')][SCOPE.sCountry('second_neighboring_country').GetNameWithNoTooltip]."
- colonial_charter.100.d: "Mantenetela per ora parte [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetNameWithNoTooltip]."
- colonial_charter.100.e: "Perché non iniziare una nuova vita nelle colonie?"
- colonial_charter.100.f: "Lasciate che si unisca [SCOPE.sCountry('regional_subject').Custom('IT_Alla')][SCOPE.sCountry('regional_subject').GetNameWithNoTooltip]."
- colonial_charter.100.g: "Lasciate che si unisca [SCOPE.sCountry('scope_adjacent_area_subject').Custom('IT_Alla')][SCOPE.sCountry('scope_adjacent_area_subject').GetNameWithNoTooltip]."
- colonial_charter.100.h: "Lasciate che si unisca [SCOPE.sCountry('scope_area_subject').Custom('IT_Alla')][SCOPE.sCountry('scope_area_subject').GetNameWithNoTooltip]."
- colonial_charter.100.e.tt: "#R Gioca come il Nuovo Stato Cliente Coloniale.#!"
+
+
+ COLONIAL_CHARTER_COMPLETED: "La colonizzazione di $PROVINCE$ è completa. $GOAL$."
+
+ CHARTER_GOAL_NONE: "Esito: Non Impostato"
+ CHARTER_GOAL_FORM_NATION_LABEL: "Forma Nazione Coloniale"
+ CHARTER_GOAL_EXPAND_TO: "Cedi a $SUBJECT$"
+ CHARTER_GOAL_EXPAND_AUTO: "Cedi al Miglior Stato Cliente"
+ CHARTER_GOAL_KEEP_TERRITORY_LABEL: "Mantieni come Territorio"
+
+ CHARTER_GOAL_AUTO_NAME: "Automatizzato"
+ CHARTER_GOAL_FORM_NATION_NAME: "Forma Nazione Coloniale"
+ CHARTER_GOAL_EXPAND_SUBJECT_NAME: "Cedi allo Stato Cliente Coloniale"
+ CHARTER_GOAL_KEEP_TERRITORY_NAME: "Mantieni come Territorio"
+
+ set_colonial_charter_goal_form_nation: "Piano: Forma Nazione Coloniale"
+ set_colonial_charter_goal_keep_territory: "Piano: Mantieni come Territorio"
 
  colonial_charter.200.title: "La Colonia Fallita di [target.GetNameWithNoTooltip]"
  colonial_charter.200.desc: "La carta fondata per colonizzare [target.GetNameWithNoTooltip] ha completamente fallito. [attacker.GetLongName] è riuscito a prevalere, respingendo ogni nostro tentativo."

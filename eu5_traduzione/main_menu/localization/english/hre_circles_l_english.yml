@@ -77,7 +77,7 @@
  petition_imperial_diet_act: "Presenta una petizione alla Dieta Imperiale."
  petition_imperial_diet_effect_text: "[SCOPE.sCountry('actor').GetName] presenta una petizione alla Dieta Imperiale."
  petition_imperial_diet_effect_text_past: "[SCOPE.sCountry('actor').GetName] ha presentato una petizione alla Dieta Imperiale."
- INCOMING_OFFER_petition_imperial_diet: "[SCOPE.sCountry('actor').GetName] porta una petizione davanti a noi alla Dieta Imperiale.\n\n$INFO$"
+ INCOMING_OFFER_petition_imperial_diet: "[SCOPE.sCountry('actor').GetName] porta una petizione davanti a noi alla Dieta Imperiale, proponendo [SCOPE.sPolicy('vote').GetName] all'interno del [SCOPE.sInternationalOrganization('io_recipient').GetName].\n\n$INFO$"
  INCOMING_OFFER_TITLE_petition_imperial_diet: "Presenta una petizione alla Dieta Imperiale"
  petition_imperial_diet_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] respinge la petizione [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetName] alla Dieta Imperiale."
  petition_imperial_diet_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] ha respinto la petizione [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetName] alla Dieta Imperiale."
@@ -151,7 +151,7 @@
  appeal_to_circle_diet_timeout_tt: "Nessun paese ha usato $appeal_to_circle_diet$ [diplomatic_action|e] negli ultimi 2 anni"
 
  request_circle_infrastructure_expansion: "Richiedi l'espansione dell'infrastruttura militare"
- request_circle_infrastructure_expansion_desc: "Richiedi una sovvenzione al Capitano del Circolo per usare le nostre riserve esistenti come forza lavoro aggiuntiva nell'espansione della nostra infrastruttura."
+ request_circle_infrastructure_expansion_desc: "Richiedi una sovvenzione al Capo del Circolo per usare le nostre riserve esistenti come forza lavoro aggiuntiva nell'espansione della nostra infrastruttura."
  request_circle_infrastructure_expansion_act: "$request_circle_infrastructure_expansion_desc$"
  request_circle_infrastructure_expansion_effect_text: "[SCOPE.sCountry('actor').GetName] richiede l'espansione della propria infrastruttura militare."
  request_circle_infrastructure_expansion_effect_text_past: "[SCOPE.sCountry('actor').GetName] ha richiesto l'espansione della propria infrastruttura militare."

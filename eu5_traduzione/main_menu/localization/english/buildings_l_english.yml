@@ -1,11 +1,16 @@
 ﻿l_english:
- local_governor_tt: "Il totale combinato di [ShowBuildingTypeName('local_governor')] e [ShowBuildingTypeName('lieutenancy')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Governatori [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Luogotenenze [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])" 
- lieutenancy_tt: "Il totale combinato di [ShowBuildingTypeName('local_governor')] e [ShowBuildingTypeName('lieutenancy')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Governatori: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Luogotenenze: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])" 
- no_naval_governor_tt: "Può costruire almeno un [ShowBuildingTypeName('naval_governor')]" 
- naval_governor_tt: "Il numero di [ShowBuildingTypeName('naval_governor')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])" 
- no_local_bailiff_tt: "Può costruire almeno un [ShowBuildingTypeName('bailiff')]" 
- local_bailiff_tt: "Il numero di [ShowBuildingTypeName('bailiff')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])." 
- italian_administration_center_tt: "È possibile istituire solo un [ShowBuildingTypeName('italian_administration_center')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('italian_administration_center')|V])" 
+
+ local_governor_tt: "Il totale combinato di [ShowBuildingTypeName('local_governor')], [ShowBuildingTypeName('lieutenancy')] e [ShowBuildingTypeName('itinerant_court_seat')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Governatori [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Luogotenenze [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V], Seggi della Corte Itinerante [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('itinerant_court_seat')|V])"
+ lieutenancy_tt: "Il totale combinato di [ShowBuildingTypeName('local_governor')], [ShowBuildingTypeName('lieutenancy')] e [ShowBuildingTypeName('itinerant_court_seat')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Governatori: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Luogotenenze: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V], Seggi della Corte Itinerante: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('itinerant_court_seat')|V])"
+ local_governor_dlc_tt: "Il numero di [ShowBuildingTypeName('local_governor')] e [ShowBuildingTypeName('itinerant_court_seat')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Governatori Locali [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Seggi della Corte Itinerante [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('itinerant_court_seat')|V])"
+ lieutenancy_dlc_tt: "Il numero di [ShowBuildingTypeName('lieutenancy')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_lieutenancy')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])"
+ no_naval_governor_tt: "Può costruire almeno un [ShowBuildingTypeName('naval_governor')]"
+ naval_governor_tt: "Il numero di [ShowBuildingTypeName('naval_governor')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])"
+ no_local_bailiff_tt: "Può costruire almeno un [ShowBuildingTypeName('bailiff')]"
+ local_bailiff_tt: "Il numero di [ShowBuildingTypeName('bailiff')] in [SCOPE.sCountry('actor').GetNameWithNoTooltip] è inferiore a [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])."
+ italian_administration_center_tt: "È possibile istituire solo un [ShowBuildingTypeName('italian_administration_center')] (Attualmente [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('italian_administration_center')|V])"
+
+
  colonial_category: "Edifici Coloniali"
  colonial_category_desc: "Si tratta di edifici che possono essere costruiti in località straniere non occupate e che aiutano a espandere la propria influenza in quelle zone."
  cultural_category: "Edifici Culturali"
@@ -25,15 +30,16 @@
 
  trade_company_building: "Edificio della Compagnia Commerciale"
  satellite_trade_building: "Edificio Commerciale Satellite"
- colonial_administration: "Amministrazione coloniale" 
- colonial_administration_desc: "Le colonie d'oltremare sono spesso centri per lo scambio di un'ampia varietà di merci e prodotti. Di conseguenza, fioriscono anche le dipendenze amministrative, sostenendo e regolando le attività dei mercanti coloniali." 
- free_village: "Villaggio Libero" 
- free_village_desc: "Una comunità di contadini liberi fondata senza gli obblighi tipici della società rurale nei confronti dei proprietari terrieri." 
- merchant_guild_chapel: "Cappella della gilda mercantile" 
- merchant_guild_chapel_desc: "Una cappella annessa a una comunità urbanizzata, patrocinata dai ricchi mercanti che traggono profitto dal continuo traffico mercantile. È un luogo di culto dedicato a un santo patrono e funge da deposito di conoscenza tanto per i manoscritti quanto per le scritture." 
-
-
-
+ 
+ colonial_administration: "Amministrazione coloniale"
+ colonial_administration_desc: "Le colonie d'oltremare sono spesso centri per lo scambio di un'ampia varietà di merci e prodotti. Di conseguenza, fioriscono anche le dipendenze amministrative, sostenendo e regolando le attività dei mercanti coloniali."
+ 
+ free_village: "Villaggio Libero"
+ free_village_desc: "Una comunità di contadini liberi fondata senza gli obblighi tipici della società rurale nei confronti dei proprietari terrieri."
+ 
+ merchant_guild_chapel: "Cappella della gilda mercantile"
+ merchant_guild_chapel_desc: "Una cappella annessa a una comunità urbanizzata, patrocinata dai ricchi mercanti che traggono profitto dal continuo traffico mercantile. È un luogo di culto dedicato a un santo patrono e funge da deposito di conoscenza tanto per i manoscritti quanto per le scritture."
+ 
  guild: "Gilda"
  workshop: "Laboratorio"
  midgame_manufactory: "Manifattura"
@@ -51,24 +57,24 @@
 
  estate_category: "Edifici dei Ceti"
  estate_category_desc: "Si tratta di edifici che i [estates|e] costruiscono per i propri benefici."
-
+ 
  religious_category: "Edifici Religiosi"
  religious_category_desc: "Si tratta di edifici dedicati alla religione e che incidono sull'influenza del clero nel territorio."
  trade_category: "Edifici Commerciali"
  trade_category_desc: "Si tratta di edifici che migliorano il commercio nazionale, aiutando i mercanti ad essere più efficienti o ad entrare in nuovi mercati."
  village_category: "Villaggi"
  village_category_desc: "Questi sono i villaggi che possiamo costruire in campagna."
-
-
+ 
+ 
  # Common Buildings
  irrigation_systems: "Irrigazione"
  bridge_infrastructure: "Ponte"
-
+ 
  mason: "Officina dei Muratori"
-
+ 
  construction_center: "Centro di Costruzione"
  construction_center_desc: "Permette di realizzare più costruzioni contemporaneamente in un [town_or_city|e]."
-
+ 
  # Foreign Buildings
  trade_office: "Ufficio Commerciale"
  embassy: "Ambasciata"
@@ -80,10 +86,10 @@
  brothel_desc: "Fonte di vizio e dissolutezza, i bordelli sono luoghi di intrattenimento per pirati, corsari e altri furfanti."
  pirate_tavern: "Taverna del Porto"
  pirate_tavern_desc: "Centri vivaci e famigerati dove si riunivano uomini d'azione, marinai e mercanti. Situate nei porti chiave dei pirati e in varie città costiere, queste taverne svolgono un ruolo essenziale nella vita dei pirati. Qui gli equipaggi si rilassavano, spendevano il loro bottino in alcol, cibo, intrattenimento e reclutavano nuovi membri dell'equipaggio."
-
+ 
  building_trade_hq_only_one: "È possibile costruire solo una $trade_company_headquarters$ alla volta."
- trade_company_home_region_tt: "È una [ShowSubjectTypeName('trade_company')]" 
- trade_company_regions_tt: "Ha una presenza in questa regione" 
+ trade_company_home_region_tt: "È una [ShowSubjectTypeName('trade_company')]"
+ trade_company_regions_tt: "Ha una presenza in questa regione"
 
  trade_company_headquarters: "Sede Centrale della Compagnia"
  trade_company_headquarters_desc: "Sede di qualsiasi futura [ShowSubjectTypeName('trade_company')], la $trade_company_headquarters$ funge da base operativa principale per tutte le attività commerciali internazionali e d'oltremare per conto della madrepatria."
@@ -121,13 +127,13 @@
  elephant_hunting_grounds: "Zone di Caccia agli Elefanti"
  kilwan_shipwrights: "Maestri d'Ascia $ZAN_ADJ$"
  kilwan_shipwrights_desc: "Abili maestri nel plasmare il legno di palma e il cotone in imbarcazioni marittime, questo edificio favorisce l'espansione della nostra marina, supportando i nostri sforzi marittimi."
-
+ 
  bog_iron_smelter: "Fonderia di Ferro di Palude"
  bog_iron_smelter_desc: "Il ferro è la base di tutta la metallurgia e, sebbene le fonti adeguate e buone siano le migliori da avere, alcune possono essere estratte anche da luoghi vicini all'acqua, dove si accumula."
-
+ 
  protected_harbor: "Porto Protetto"
  protected_harbor_desc: "Alcuni luoghi sono naturalmente più adatti a fungere da porto rispetto ad altri, ma con le infrastrutture adeguate queste condizioni possono essere migliorate ovunque."
-
+ 
  #
  # City Buildings
  temple: "Tempio"
@@ -141,9 +147,10 @@
  grand_marketplace_desc: "Questo è un grande luogo di commercio, dove fioriscono gli affari e gli scambi."
  commerce_center: "Centro di Commercio"
  commerce_center_desc: "Questo vivace centro di commercio è il luogo in cui le merci provenienti da vicino e da lontano vengono scambiate con l'oro. Questo è il cuore pulsante del commercio locale."
-
-
+ 
+ 
  granary: "Granaio"
+ village_granary: "Granaio del Villaggio"
  qullqa: "Qullqa"
  minting_office: "Ufficio del Conio"
  port_authority: "Autorità Portuale"
@@ -167,16 +174,19 @@
  funduq: "Funduq"
  funduq_desc: "Un edificio pubblico che si trova in importanti città commerciali, dove i mercanti possono riposare, incontrarsi e conservare le loro merci."
  fortress_granary: "Agadir"
- fortress_granary_desc: "Un granaio comunale fortificato costruito tradizionalmente dai popoli del Nord Africa. Edificati sulle colline, forniscono protezione e punti difensivi per i terreni agricoli e le praterie circostanti." 
- grain_house: "Deposito del grano" 
- grain_house_desc: "Un deposito di grano separato dal normale granaio, il $grain_house$ potrà sostenere le nostre truppe nel caso abbiano bisogno di riposare nelle sue vicinanze." 
- aqueduct_system: "Sistema di acquedotti" 
- aqueduct_system_desc: "Attraverso canali in pietra disposti con cura e condotti alimentati dalla gravità, questa costruzione assicura una fornitura costante di acqua dolce. Pur semplici nella costruzione, queste opere segnano il primo passo verso una gestione urbana organizzata dell'acqua." 
- hippodrome: "Ippodromo" 
- hippodrome_desc: "L'Ippodromo è il cuore pulsante di [ShowLocationName('constantinople')], dove corse fragorose, cerimonie imperiali e volontà del popolo convergono sotto lo sguardo del sovrano. Qui, tifosi e concorrenti si scontrano non solo per la gloria sulla pista, ma per l'influenza nel reame stesso. Monumenti strappati da ogni costa del Mediterraneo adornano la sua spina, proclamando dominio ed eredità. Eppure questa grande arena è più di uno spettacolo; è infatti un crogiolo dell'opinione pubblica, dove l'acclamazione può esaltare un sovrano per generazioni a venire." 
- gymnasium_building: "Ginnasio" 
- gymnasium_building_desc: "$study_of_the_classics_desc$" 
+ fortress_granary_desc: "Un granaio comunale fortificato costruito tradizionalmente dai popoli del Nord Africa. Edificati sulle colline, forniscono protezione e punti difensivi per i terreni agricoli e le praterie circostanti."
 
+ grain_house: "Deposito del grano"
+ grain_house_desc: "Un deposito di grano separato dal normale granaio, il $grain_house$ potrà sostenere le nostre truppe nel caso abbiano bisogno di riposare nelle sue vicinanze."
+ 
+ aqueduct_system: "Sistema di acquedotti"
+ aqueduct_system_desc: "Attraverso canali in pietra disposti con cura e condotti alimentati dalla gravità, questa costruzione assicura una fornitura costante di acqua dolce. Pur semplici nella costruzione, queste opere segnano il primo passo verso una gestione urbana organizzata dell'acqua."
+
+ hippodrome: "Ippodromo"
+ hippodrome_desc: "L'Ippodromo è il cuore pulsante di [ShowLocationName('constantinople')], dove corse fragorose, cerimonie imperiali e volontà del popolo convergono sotto lo sguardo del sovrano. Qui, tifosi e concorrenti si scontrano non solo per la gloria sulla pista, ma per l'influenza nel reame stesso. Monumenti strappati da ogni costa del Mediterraneo adornano la sua spina, proclamando dominio ed eredità. Eppure questa grande arena è più di uno spettacolo; è infatti un crogiolo dell'opinione pubblica, dove l'acclamazione può esaltare un sovrano per generazioni a venire."
+
+ gymnasium_building: "Ginnasio"
+ gymnasium_building_desc: "$study_of_the_classics_desc$"
 
  #
  # Cultural Buildings
@@ -199,10 +209,10 @@
  sufi_lodge_desc: "Luogo di pratica spirituale Sufi e di educazione al misticismo religioso, una $sufi_lodge$ è un centro di devozione. Chiamato con nomi diversi, come khānaqāh, zāwiya, ribāṭ, dargāh e takya, la sua costruzione e il suo finanziamento rappresentano un atto di pietà e servono come prova del sostegno delle pratiche Sufi e della diffusione dell'[ShowReligionGroupName('muslim')]."
  #confucian_school_chinese: "Guānxué" #http://www.chinaknowledge.de/History/Terms/schools.html
  #confucian_school_korean: "Hyanggyo"
- confucian_school: "Scuola Confuciana"
+ confucian_school: "Scuola Confuciana" 
  #confucian_academy_chinese: "Shūyuàn"
  #confucian_academy_korean: "Seowon"
- confucian_academy: "Accademia Confuciana"
+ confucian_academy: "Accademia Confuciana" 
  nobility_fortifications: "Fortificazioni della Nobiltà"
  pirate_haven: "Rifugio dei Pirati"
  rotten_borough: "Borgo Putrido"
@@ -222,26 +232,51 @@
  peasants_hunting_grounds: "Terreni di Caccia dei Contadini"
  local_schools: "Scuole Locali"
  local_newspaper: "Giornale Locale"
- early_council_hall: "Consiglio locale" 
- early_council_hall_desc: "Un sovrano non può trovarsi in ogni luogo del paese nello stesso momento. Delegando il governo alle autorità locali, l'autorità della corte può manifestarsi anche nelle parti più remote del nostro paese." 
- council_hall: "Sala del consiglio" 
- council_hall_desc: "Ogni forma di governo locale necessita di un luogo adeguato per le proprie riunioni e il proprio funzionamento. Un edificio di dimensioni e dotazioni sufficienti, con una sala di dibattito abbastanza ampia, è essenziale." 
- modern_council_hall: "Sala del consiglio ampliata" 
- modern_council_hall_desc: "La crescita di città e borghi e le maggiori necessità di governo richiedono di conseguenza un'espansione dell'edificio che ospita le autorità locali, affinché possano continuare a svolgere adeguatamente la loro funzione. L'aumento delle dimensioni di archivi e registri serve interamente come estensione dell'autorità della corte stessa." 
- naval_governor: "Governatore Navale" 
- naval_governor_desc: "$local_governor_desc$" 
- local_governor: "Governatore Locale" 
- local_governor_desc: "Una sede dell'autorità regionale che estende il raggio d'azione dello Stato alle sue terre più lontane, espandendo la sua influenza oltre i confini immediati. Quando sono collegate alla capitale dalla rete stradale, fungono da centri nevralgici per il governo e l'amministrazione." 
- local_estates: "Ceti locali" 
- local_estates_desc: "La base di potere della Nobiltà risiede nelle sue vaste proprietà, generalmente terre agricole che i contadini sfruttano tramite servitù o affitto." 
- noble_courts: "Corti nobiliari" 
- noble_courts_desc: "Un aspetto fondamentale del potere nobiliare è la capacità di amministrare la giustizia nei propri domini. Ciò viene svolto da una rete di funzionari che applicano le leggi della nobiltà nelle sue terre." 
- nobles_mansion: "Dimora nobiliare" 
- nobles_mansion_desc: "I nobili usano di solito diverse residenze, sparse nei loro domini, ma situate anche in importanti centri di potere. Queste dimore sono la spina dorsale dei loro possedimenti e richiedono una manutenzione costante di proprietà e personale, pronti a servire i loro signori." 
- nobled_sponsored_temple: "Tempio patrocinato dai nobili" 
- nobled_sponsored_temple_desc: "Un modo in cui i nobili dimostrano pubblicamente la propria devozione è patrocinare templi nei loro territori. Questi sono di solito serviti da clero appartenente alla loro dinastia o da servitori molto vicini." 
+ 
+ early_council_hall: "Consiglio locale"
+ early_council_hall_desc: "Un sovrano non può trovarsi in ogni luogo del paese nello stesso momento. Delegando il governo alle autorità locali, l'autorità della corte può manifestarsi anche nelle parti più remote del nostro paese."
+ council_hall: "Sala del consiglio"
+ council_hall_desc: "Ogni forma di governo locale necessita di un luogo adeguato per le proprie riunioni e il proprio funzionamento. Un edificio di dimensioni e dotazioni sufficienti, con una sala di dibattito abbastanza ampia, è essenziale."
+ modern_council_hall: "Sala del consiglio ampliata"
+ modern_council_hall_desc: "La crescita di città e borghi e le maggiori necessità di governo richiedono di conseguenza un'espansione dell'edificio che ospita le autorità locali, affinché possano continuare a svolgere adeguatamente la loro funzione. L'aumento delle dimensioni di archivi e registri serve interamente come estensione dell'autorità della corte stessa."
+
+
+
+
+
+
+
+
+ 
+ naval_governor: "Governatore Navale"
+ naval_governor_desc: "$local_governor_desc$"
+ 
+ 
+ local_governor: "Governatore Locale"
+ local_governor_desc: "Una sede dell'autorità regionale che estende il raggio d'azione dello Stato alle sue terre più lontane, espandendo la sua influenza oltre i confini immediati. Quando sono collegate alla capitale dalla rete stradale, fungono da centri nevralgici per il governo e l'amministrazione."
+ itinerant_court_seat: "Seggio della Corte Itinerante"
+ itinerant_court_seat_desc: "Ovunque si trovi attualmente la corte regia itinerante, la sua autorità è più forte, poiché la prossimità è fonte di potere."
+ 
+ local_estates: "Ceti locali"
+ local_estates_desc: "La base di potere della Nobiltà risiede nelle sue vaste proprietà, generalmente terre agricole che i contadini sfruttano tramite servitù o affitto."
+ noble_courts: "Corti nobiliari"
+ noble_courts_desc: "Un aspetto fondamentale del potere nobiliare è la capacità di amministrare la giustizia nei propri domini. Ciò viene svolto da una rete di funzionari che applicano le leggi della nobiltà nelle sue terre."
+ nobles_mansion: "Dimora nobiliare"
+ nobles_mansion_desc: "I nobili usano di solito diverse residenze, sparse nei loro domini, ma situate anche in importanti centri di potere. Queste dimore sono la spina dorsale dei loro possedimenti e richiedono una manutenzione costante di proprietà e personale, pronti a servire i loro signori."
+ nobled_sponsored_temple: "Tempio patrocinato dai nobili"
+ nobled_sponsored_temple_desc: "Un modo in cui i nobili dimostrano pubblicamente la propria devozione è patrocinare templi nei loro territori. Questi sono di solito serviti da clero appartenente alla loro dinastia o da servitori molto vicini."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  #
- #
+ # 
  horse_breeders: "Allevamento di Cavalli"
  porcelain_guild: "Forno per la Porcellana"
  naval_supplies_guild: "Gilda delle Forniture Navali"
@@ -249,8 +284,8 @@
  wheat_liquor_guild: "Distilleria di Frumento"
  scriptorium: "Scriptorium"
  brewery: "Birreria"
-
-
+ 
+ 
  #Guilds
  saltpeter_guild: "Gilda dei Salnitrai"
  paper_guild: "Gilda dei Cartai"
@@ -267,28 +302,28 @@
  cannon_maker: "Fabbricante di Cannoni"
  distillers_guild: "Gilda dei Distillatori"
  dyes_guild: "Fabbricante di Coloranti"
-
+ 
  # workshops
  pottery_workshop: "Laboratorio di Ceramica"
  pottery_workshop_desc: "La ceramica è un elemento fondamentale per tutte le popolazioni, dai semplici contenitori agli oggetti di ornamento. La razionalizzazione della sua produzione in laboratori specializzati servirà a soddisfare il bisogno di ceramica della gente."
  tools_workshop: "Laboratorio di Utensili"
  tools_workshop_desc: "Con l'espansione della nostra economia, il nostro popolo non può più fare affidamento su utensili prodotti artigianalmente. La creazione di officine adeguate per la produzione di utensili per la nostra popolazione e le nostre imprese è diventata una necessità."
-
+ 
  dyes_workshop: "Laboratorio di Coloranti"
  dyes_workshop_desc: "I coloranti e i pigmenti possono essere creati da una varietà di fonti, ma devono essere lavorati in un certo modo, di solito noto solo a una cerchia ristretta di persone."
  dyesworks: "Tintoria"
  dyesworks_desc: "Una produzione di coloranti dedicata e ampliata garantirà alla nostra popolazione l'accesso alla varietà di pigmenti e colori che desidera."
  dyes_mill: "Fabbrica di Coloranti"
  dyes_mill_desc: "Solo grazie ad ampie manifatture dedicate alla produzione di vari coloranti, saremo in grado di soddisfare la crescente necessità di pigmenti e colori fantasiosi."
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  #Manufactories
  cloth_manufactory: "Manifattura Tessile"
  fine_cloth_manufactory: "Manifattura di Tessuti Pregiati"
@@ -315,9 +350,9 @@
  steel_mill: "Acciaieria"
  weapon_factory: "Fabbrica di Armi"
  fine_cloth_mill: "Fabbrica di Tessuti Pregiati"
-
-
-
+ 
+ 
+ 
  furniture_workshop: "Laboratorio di Mobili"
  furniture_workshop_desc: "Con l'aumento della ricchezza dei nostri cittadini, aumenta anche la loro domanda di beni come i $furniture$. Spostando la produzione in laboratori più grandi, sarà possibile produrre più $furniture$."
  glass_workshop: "Laboratorio di Vetro"
@@ -362,7 +397,7 @@
  paper_manufactory_desc: "La crescente domanda di $paper$ dovuta all'industria della stampa impone metodi innovativi per aumentare la produzione di $paper$."
  paper_mill: "Cartiera"
  paper_mill_desc: "Utilizzando $cloth$ ricavato dal $cotton$, una $paper_mill$ sarà in grado di produrre quantità maggiori di carta."
-
+ 
 
  winery: "Cantina"
  winery_desc: "Un'umile gilda in cui vari zuccheri grezzi vengono fatti fermentare in bevande ricche e inebrianti. Sebbene siano più semplici del tradizionale vino d'uva, queste bevande sono apprezzate sia dalla gente comune che dai nobili, e ogni regione perfeziona i propri sapori e le proprie tecniche."
@@ -389,8 +424,8 @@
  furniture_manufactory_desc: "La falegnameria artigianale potrebbe non essere sufficiente a soddisfare la domanda di mobili, soprattutto negli ambienti urbani pieni di borghesi desiderosi di prodotti più specifici. Per soddisfare questa domanda crescente, potrebbe essere necessario organizzare la produzione di mobili in laboratori più grandi."
  furniture_mill: "Mobilificio"
  furniture_mill_desc: "L'aumento della ricchezza sociale genera una domanda crescente di beni manifatturieri come i mobili. L'unico modo per continuare ad aumentare l'offerta potrebbe essere quello di produrli in fabbriche che utilizzano metodi industriali."
-
-
+ 
+ 
  mercury_patio: "Patio del Mercurio"
  mercury_patio_desc: "Un $mercury_patio$ è un complesso di edifici utilizzati per raffinare l'argento e l'oro estratti da minerali di qualità inferiore, rendendoli redditizi."
 
@@ -404,12 +439,12 @@
  shipyard: "Cantiere Navale"
  grand_shipyard: "Grande Cantiere Navale"
  naval_base: "Base Navale"
-
+ 
  #
  # Coastal Forts
  coastal_fort: "Forte Costiero"
  naval_battery: "Batteria Navale"
-
+ 
  #
  # Forts
  castle: "Castello"
@@ -417,8 +452,8 @@
  star_fort: "Forte a Stella"
  fortress: "Fortezza"
  stockade: "Palizzata"
- city_walls: "Mura cittadine" 
- city_walls_desc: "Grandi fortificazioni che circondano un'intera città, le $city_walls$ offrono protezione contro gli invasori e un senso di sicurezza ai suoi abitanti." 
+ city_walls: "Mura cittadine"
+ city_walls_desc: "Grandi fortificazioni che circondano un'intera città, le $city_walls$ offrono protezione contro gli invasori e un senso di sicurezza ai suoi abitanti."
 
  #
  # Manpower Buildings
@@ -426,21 +461,21 @@
  barracks: "Caserma"
  regimental_camp: "Accampamento Reggimentale"
  conscription_center: "Centro di Coscrizione"
-
+ 
  #
- # Colonial Buildings
-
+ # Colonial Buildings 
+ 
  missionary_building: "Missione"
  slave_center: "Centro per gli Schiavi"
  overseas_trading_post: "Stazione Commerciale"
 
 
-
+ 
  # Plantations
  sugar_plantation: "Piantagione di Zucchero"
  cotton_plantation: "Piantagione di Cotone"
  tobacco_plantation: "Piantagione di Tabacco"
-
+ 
  # Capital Buildings
  royal_court: "Corte Reale"
  admiralty: "Ammiragliato"
@@ -449,24 +484,29 @@
  supreme_court: "Corte Suprema"
  order_headquarters: "Sede Centrale dell'Ordine"
  sergeantry: "Caserma del Sergente"
- warrior_lodge: "Loggia dei guerrieri" 
+ warrior_lodge: "Loggia dei guerrieri"
  warrior_temple: "Tempio del Guerriero"
  arts_academy: "Accademia d'Arte"
  chancery: "Cancelleria"
  republican_assembly: "Assemblea della Repubblica"
+ sacred_council: "Concilio Sacro"
+ temple_militia: "Milizia del Tempio"
+ khan_ordu: "Ordu del Khan"
+ chieftain_hall: "Sala del Capo"
+ patrician_hall: "Sala Patrizia"
  uffizi: "Uffizi"
  alhambra: "Al-Ḥamrā'"
  royal_garden: "Giardino Reale"
  royal_garden_desc: "Il vasto Giardino Reale è un pezzo di paradiso sulla Terra, un luogo dove i nobili della corte possono rilassarsi e dedicarsi a passatempi superflui, godendo della magnifica natura coltivata del giardino."
  pirate_stronghold: "Roccaforte dei Pirati"
  pirate_stronghold_desc: "Un misero alveare di feccia e malvagità, dei corsari più audaci e illegali, questo edificio è il cuore della repubblica dei pirati."
- hre_imperial_armory: "Armeria imperiale" 
- hre_imperial_armory_foreign: "$hre_imperial_armory$ (all'estero)" 
- hre_imperial_armory_foreign_desc: "Un'$hre_imperial_armory$ fornisce all'Imperatore manodopera per i suoi eserciti.\n\n#Y Si trasforma in [ShowBuildingTypeName('hre_imperial_armory_own')] quando la [location|e] diventa posseduta da [ShowSpecialStatusName('emperor')].#!" 
- hre_imperial_armory_own: "$hre_imperial_armory$ (nazionale)" 
- hre_imperial_armory_own_desc: "Un'$hre_imperial_armory$ fornisce all'Imperatore manodopera per i suoi eserciti.\n\n#Y Si trasforma in [ShowBuildingTypeName('hre_imperial_armory_foreign')] quando la [location|e] non è più posseduta da [ShowSpecialStatusName('emperor')].#!" 
-
-
+ 
+ # HRE Buildings
+ hre_imperial_armory: "Armeria imperiale"
+ hre_imperial_armory_foreign: "$hre_imperial_armory$ (all'estero)"
+ hre_imperial_armory_foreign_desc: "Un'$hre_imperial_armory$ fornisce all'Imperatore manodopera per i suoi eserciti.\n\n#Y Si trasforma in [ShowBuildingTypeName('hre_imperial_armory_own')] quando la [location|e] diventa posseduta da [ShowSpecialStatusName('emperor')].#!"
+ hre_imperial_armory_own: "$hre_imperial_armory$ (nazionale)"
+ hre_imperial_armory_own_desc: "Un'$hre_imperial_armory$ fornisce all'Imperatore manodopera per i suoi eserciti.\n\n#Y Si trasforma in [ShowBuildingTypeName('hre_imperial_armory_foreign')] quando la [location|e] non è più posseduta da [ShowSpecialStatusName('emperor')].#!"
 
  # Market Center
  entrepot: "Entrepôt"
@@ -476,9 +516,9 @@
  clearing_house: "camera di Compensazione"
  market_warehouse: "Magazzino del Mercato"
 
-
- # Event Buildings
-
+ 
+ # Event Buildings 
+  
  cantonments: "Accantonamenti"
  grand_palace: "Grande Palazzo"
  great_madrasa: "Grande Madrasa"
@@ -496,7 +536,7 @@
  rock_of_monaco: "La Rocca di Monaco"
  camara_comptos: "Cámara de Comptos"
  camara_comptos_desc: "La #italic $camara_comptos$#! è un tribunale sovrano specializzato in affari finanziari. Si ispira all'omonima istituzione di Parigi."
- camara_comptos_why: "La $camara_comptos$ può essere costruita solo tramite evento." 
+ camara_comptos_why: "La $camara_comptos$ può essere costruita solo tramite evento."
  llotja_seda: "La Llotja de la Seda"
  llotja_seda_desc: "La Llotja, uno straordinario capolavoro architettonico, è composta da tre parti, tra cui la #italic 'Sala de Contratació'#!, una sala commerciale riccamente decorata con colonne tortili dove i mercanti possono negoziare i contratti, e il Padiglione del Consolato che funge da sede del #italic 'Tribunale del Mar'#!. La torre centrale di La Llotja è utilizzata come prigione per i debitori."
  zwinger: "Zwinger"
@@ -515,8 +555,8 @@
  archive_of_the_indies_desc: "Questo archivio è stato commissionato per ospitare tutta la documentazione relativa alle nostre attività all'estero."
  archive_of_the_indies_why: "L'$archive_of_the_indies$ può essere costruito solo tramite eventi."
  hsa_burgtor: "Burgtor"
- hsa_burgtor_desc: "Eretto presso la porta principale dell'insediamento, il $hsa_burgtor$ è una splendida testimonianza della nostra competenza in materia difensiva, nonché una straordinaria dimostrazione della nostra architettura e delle nostre capacità militari." 
- location_owner_same_culture_group_as_us_tt: "Questa [location|e] ha un [owner|e] la cui [culture|e] condivide un [culture_group|e] comune con la nostra cultura" 
+ hsa_burgtor_desc: "Eretto presso la porta principale dell'insediamento, il $hsa_burgtor$ è una splendida testimonianza della nostra competenza in materia difensiva, nonché una straordinaria dimostrazione della nostra architettura e delle nostre capacità militari."
+ location_owner_same_culture_group_as_us_tt: "Questa [location|e] ha un [owner|e] la cui [culture|e] condivide un [culture_group|e] comune con la nostra cultura"
  bodrum_castle: "Petronio"
  bodrum_castle_desc: "Il $bodrum_castle$ è la principale roccaforte [GetCountry('KNI').GetAdjective] sulla terraferma in [ShowRegionName('anatolia_region')]. Presenta 4 torri costruite da quattro diverse nazioni partecipanti, Inglesi, Francesi, Italiani e Tedeschi, ed è un rifugio per i cristiani della zona."
  chi_macau_port: "Porto del Trattato di Macao"
@@ -530,21 +570,21 @@
  college_of_poets_why: "Il $college_of_poets$ può essere costruito solo tramite eventi."
  bibliotheca_corviniana: "Bibliotheca Corviniana"
  bibliotheca_corviniana_desc: "La $bibliotheca_corviniana$ è una rinomata biblioteca rinascimentale, che contiene una vasta collezione di manoscritti e libri."
- bibliotheca_corviniana_why: "La $bibliotheca_corviniana$ può essere costruita solo tramite evento." 
+ bibliotheca_corviniana_why: "La $bibliotheca_corviniana$ può essere costruita solo tramite evento."
  the_cipher_secretary: "La Segretaria del Cifrario"
  the_cipher_secretary_desc: "La Segretaria del Cifrario è un ufficio statale che cripta i messaggi di mercanti e diplomatici per proteggere gli interessi della Repubblica."
  teatro_san_cassiano: "Teatro San Cassiano"
  teatro_san_cassiano_desc: "Il $teatro_san_cassiano$ è il primo teatro lirico pubblico al mondo, segnando una pietra miliare nella storia delle arti dello spettacolo e consolidando il ruolo di Venezia come centro culturale di primo piano."
- teatro_san_cassiano_why: "Il $teatro_san_cassiano$ può essere costruito solo tramite evento." 
+ teatro_san_cassiano_why: "Il $teatro_san_cassiano$ può essere costruito solo tramite evento."
  doges_palace: "Palazzo Ducale"
  doges_palace_desc: "Il Palazzo Ducale di Venezia è la residenza del Doge, il principale magistrato e guida della Repubblica di Venezia."
- doges_palace_why: "Il $doges_palace$ può essere costruito solo tramite evento." 
+ doges_palace_why: "Il $doges_palace$ può essere costruito solo tramite evento."
  piazza_san_marco: "Piazza San Marco"
  piazza_san_marco_desc: "Piazza San Marco, è la principale piazza pubblica di Venezia, in Italia. È rinomata per la sua splendida architettura, tra cui la Basilica di San Marco, il Campanile o il Palazzo Ducale, e funge da cuore sociale, religioso e politico della città."
- piazza_san_marco_why: "La $piazza_san_marco$ può essere costruita solo tramite evento." 
+ piazza_san_marco_why: "La $piazza_san_marco$ può essere costruita solo tramite evento."
  walls_of_ston: "Mura di Ston"
  walls_of_ston_desc: "Le $walls_of_ston$ sono una massiccia catena di fortificazioni che protegge la città commerciale di Ragusa."
- walls_of_ston_why: "Le $walls_of_ston$ possono essere costruite solo tramite evento." 
+ walls_of_ston_why: "Le $walls_of_ston$ possono essere costruite solo tramite evento."
  swi_collegium_helveticum: "Collegium Helveticum"
  swi_collegium_helveticum_desc: "Il $swi_collegium_helveticum$ forma gli ecclesiastici più talentuosi del popolo svizzero. Anche se non si trova direttamente in territorio svizzero, il Collegium è una destinazione privilegiata per gli aspiranti teologi."
  swi_collegium_helveticum_why: "Il $swi_collegium_helveticum$ può essere costruito solo tramite eventi."
@@ -554,7 +594,7 @@
  kronborg_desc: "Il Castello $kronborg$, situato all'ingresso dello Stretto di Öresund, è stato storicamente una fortezza chiave per il controllo e la riscossione dei diritti dello stretto da parte delle navi che navigavano tra il Mar Baltico e il Mare del Nord."
  husuni_kubwa: "Husuni Kubwa"
  husuni_kubwa_desc: "Un elaborato complesso reale originariamente commissionato da [GetCharacter('zan_abu_al_mawahib_al_hasan_ibn_suleiman').GetName]. Questa residenza è caratterizzata da una splendida architettura [ShowCultureName('swahili_culture')] ed è utilizzata sia per i doveri reali che per quelli mercantili, fungendo di fatto da sala di contrattazione e deposito della capitale per i numerosi mercanti del nostro dominio."
- husuni_kubwa_why: "La $husuni_kubwa$ può essere costruita solo tramite evento." 
+ husuni_kubwa_why: "La $husuni_kubwa$ può essere costruita solo tramite evento."
  magistrato_alla_sanita: "Magistrato alla Sanità"
  magistrato_alla_sanita_desc: "Il Magistrato alla Sanità è un'autorità sanitaria pubblica responsabile della supervisione e della gestione delle misure di prevenzione e controllo della diffusione delle malattie, in particolare della peste."
  imperial_city_of_hue: "Città Imperiale di $hue_location$"
@@ -567,10 +607,10 @@
  castel_sant_angelo_desc: "Originariamente costruito dall'imperatore Adriano come mausoleo per la sua famiglia, $castel_sant_angelo$ è stato ricostruito dai Papi per essere una delle fortezze più formidabili di [ShowLocationName('rome')]."
  quirinal_palace: "Palazzo del Quirinale"
  quirinal_palace_desc: "Il $quirinal_palace$ è la residenza estiva dei Papi, situata sull'omonima collina che domina la città di [ShowLocationName('rome')]."
- quirinal_palace_why: "Il $quirinal_palace$ può essere costruito solo tramite evento." 
+ quirinal_palace_why: "Il $quirinal_palace$ può essere costruito solo tramite evento."
  ambras_castle: "Castello di Ambras"
  ambras_castle_desc: "Il $ambras_castle$ è una fortezza medievale ricostruita per servire come sede della dinastia e come luogo cerimoniale e culturale, ospita una vasta collezione di oggetti rari raccolti dai nostri governanti."
- ambras_castle_why: "L'$ambras_castle$ può essere costruito solo tramite evento." 
+ ambras_castle_why: "L'$ambras_castle$ può essere costruito solo tramite evento."
  belvedere_palace: "Palazzo Belvedere"
  belvedere_palace_desc: "Il $belvedere_palace$ è un grande palazzo di Vienna rinomato per la sua grandezza architettonica e per il suo ruolo di centro culturale, che ospita una vasta collezione di arte europea."
  sco_palace_of_holyroodhouse: "Palazzo di Holyroodhouse"
@@ -617,6 +657,7 @@
  copenhagen_dockyard: "Cantiere Navale di Copenaghen"
  caravanserai: "Caravanserraglio"
  caravan_stop: "Sosta per Carovane"
+ maghreb_palm_irrigation: "Rete di Irrigazione delle Palme"
  cinque_port: "Porto Cinque"
  cinque_port_desc: "Uno degli antichi Cinque Porti, questo arsenale fornisce un supporto navale cruciale alla corona in cambio di un'autonomia storica."
  eng_royal_forest: "Foresta Reale"
@@ -631,7 +672,7 @@
  stannary_court_why: "Può essere costruito dall'[GetCountry('ENG').GetName] in [ShowProvinceDefinitionName('cornwall_province')] e [ShowProvinceDefinitionName('devon_province')] solo dopo l'approvazione della Legge Stannaria."
  stannary_court_destroy: "L'[event|e] $flavor_eng.67.title$ si è verificato dopo l'anno #Y 1601#!"
  lieutenancy: "Luogotenenza"
- lieutenancy_desc: "La Luogotenenza è la sede del luogotenente, un delegato reale che governa un territorio lontano in nome della corona. Condivide lo stesso limite di governatori di [ShowBuildingTypeName('local_governor')], riflettendo il suo ruolo di alternativa iberica all'amministrazione provinciale standard piuttosto che di ulteriore livello di governo." 
+ lieutenancy_desc: "La Luogotenenza è la sede del luogotenente, un delegato reale che governa un territorio lontano in nome della corona. Condivide lo stesso limite di governatori di [ShowBuildingTypeName('local_governor')], riflettendo il suo ruolo di alternativa iberica all'amministrazione provinciale standard piuttosto che di ulteriore livello di governo."
  not_in_capital_region: "Non può essere costruito nella [region|e] della [capital|e]"
  ostrog: "Ostrog"
  ostrog_desc: "L'$ostrog$ è una piccola fortificazione in legno che viene costruita nei territori remoti della Russia. Grazie al loro affidamento sul legname, gli Ostrog sono relativamente economici e rapidi da costruire."
@@ -642,8 +683,8 @@
  sofa_barracks: "Caserma Sofa"
  sofa_barracks_desc: "Una $sofa_barracks$ è una $barracks$ specializzata che permette al proprietario di reclutare [ShowUnitDefinitionName('a_sofa_infantry')] e [ShowUnitDefinitionName('a_mandekalu_cavalry')] nella [location|e]."
  viceroyalty: "Vicereame"
- viceroyalty_desc: "Il Vicereame è la sede amministrativa e commerciale della corona in una nazione coloniale soggetta, costruita dal signore supremo nella capitale del soggetto. Serve da residenza del viceré e organizza il commercio imperiale, incanalando le entrate coloniali verso il signore supremo e sostenendo al contempo la capitale coloniale come centro commerciale." 
- viceroyalty_in_colonial_capital_only: "Può essere costruito solo nella [capital|e] di un soggetto [ShowSubjectTypeName('colonial_nation')]." 
+ viceroyalty_desc: "Il Vicereame è la sede amministrativa e commerciale della corona in una nazione coloniale soggetta, costruita dal signore supremo nella capitale del soggetto. Serve da residenza del viceré e organizza il commercio imperiale, incanalando le entrate coloniali verso il signore supremo e sostenendo al contempo la capitale coloniale come centro commerciale."
+ viceroyalty_in_colonial_capital_only: "Può essere costruito solo nella [capital|e] di un soggetto [ShowSubjectTypeName('colonial_nation')]."
  barcelona_royal_shipyard: "Cantiere Reale di Barcellona"
  barcelona_royal_shipyard_desc: "Il Cantiere Reale di Barcellona, noto anche come 'Drassanes Reials de Barcelona', si trova vicino al porto di Barcellona. La storia del cantiere risale al XIII secolo e ha subito varie espansioni. Serve come centro di costruzione navale, arsenale navale e deposito di galee, svolgendo un ruolo significativo nelle attività marittime."
  royal_atarazanas_seville: "Atarazanas Reali di Siviglia"
@@ -725,7 +766,7 @@
  jurchen_barracks: "Caserma Jurchen"
  jurchen_barracks_desc: "Queste caserme servono come punto di incontro per i nostri soldati, per prepararsi alla battaglia, allenare le nostre abilità e mantenere le nostre orgogliose tradizioni."
  provincial_garrison: "Guarnigione Provinciale"
- provincial_garrison_desc: "Le province sono i pilastri che sostengono [GetInternationalOrganizationType('middle_kingdom').GetName]. Per difenderle da qualsiasi aggressore, occorre stabilire guarnigioni con una presenza permanente di soldati." 
+ provincial_garrison_desc: "Le province sono i pilastri che sostengono [GetInternationalOrganizationType('middle_kingdom').GetName]. Per difenderle da qualsiasi aggressore, occorre stabilire guarnigioni con una presenza permanente di soldati."
  kremlin: "Cremlino"
  kremlin_desc: "La fortezza del $kremlin$ funge da centro amministrativo e spirituale, oltre che da simbolo di autorità in linea con la nostra crescente influenza. Offre un riparo fondamentale alla popolazione contro le incursioni e gli assedi, grazie alle sue dimensioni imponenti e alle sue formidabili mura e torri."
  kremlin_why: "Può essere costruito solo a [ShowLocationName('moscow')]."
@@ -786,10 +827,10 @@
  tibetan_great_monastery_desc: "Un grande centro del [ShowReligionName('tibetan_buddhism')], è la fonte dell'autorità religiosa e dell'apprendimento [ShowReligionGroupAdjective('buddhist')], così come di tutta la vita monastica."
  schonbrunn_palace_desc: "Costruito al posto di un'antica residenza di caccia della nostra dinastia, questo palazzo servirà come residenza estiva per la famiglia del nostro sovrano."
  rural_clothmaker: "Tessitore Rurale"
-
+ 
  house_of_parliament: "Camera del Parlamento"
  house_of_parliament_desc: "Un edificio per ospitare un [parliament|e] permanente, per mantenerlo centrale e sotto un miglior controllo."
-
+ 
  royal_court_desc: "L'apice dello Stato, la $royal_court$ è il centro del potere e dello splendore dei monarchi."
  order_headquarters_desc: "La residenza del Gran Maestro funge da base delle operazioni dell'Ordine ed è il suo centro politico."
  admiralty_desc: "Il compito dell'$admiralty$ è quello di proteggere i nostri interessi marittimi. Con l'amministrazione militare e civile entrambe rappresentate in un unico organismo, l'equilibrio degli interessi sarà equamente rappresentato."
@@ -798,19 +839,25 @@
  supreme_court_desc: "Supervisionando la legge del nostro Paese, la $supreme_court$ è l'istituzione centrale che detta e applica la nostra legge."
  art_school_desc: "$art_school_advance_desc$"
  chancery_desc: "$chancery_advance_desc$"
- provincial_chancery: "Cancelleria provinciale" 
- provincial_chancery_desc: "Una sede distaccata della nostra $chancery$ nella capitale, questo ufficio di cancelleria assisterà sia la nostra diplomazia estera sia la popolazione locale nell'affrontare i suoi reclami." 
+
+ provincial_chancery: "Cancelleria provinciale"
+ provincial_chancery_desc: "Una sede distaccata della nostra $chancery$ nella capitale, questo ufficio di cancelleria assisterà sia la nostra diplomazia estera sia la popolazione locale nell'affrontare i suoi reclami."
 
 
  arts_academy_desc: "L'$arts_academy$ ospita alcuni degli artisti e degli uomini di penna più rinomati del nostro regno. Coltivare la nostra cultura è un ottimo modo per lasciare una traccia nei libri di storia."
  republican_assembly_desc: "Il cuore della nostra Repubblica e la pietra angolare della nostra amministrazione non è altro che l'$republican_assembly$, un luogo di deliberazione dove esercitiamo elegantemente il nostro potere."
+ sacred_council_desc: "Il $sacred_council$ è il luogo dove le più alte autorità religiose del nostro regno si riuniscono per deliberare, emettere giudizi e sostenere la fede, il cuore amministrativo di uno stato teocratico."
+ temple_militia_desc: "La $temple_militia$ leva un seguito armato permanente da laici devoti e chierici guerrieri, una forza stabile fedele prima alla chiesa, poi al trono."
+ khan_ordu_desc: "L'$khan_ordu$ è la grande corte itinerante tradotta in pietra, la sede del khanato, dove vengono emessi i decreti e viene preservata l'unità dell'orda."
+ chieftain_hall_desc: "La $chieftain_hall$ è dove i grandi capi della tribù si incontrano, giurano e vincolano il popolo a una causa comune."
+ patrician_hall_desc: "La $patrician_hall$ è la sede del nostro patriziato mercantile, dove le grandi famiglie commerciali che governano la repubblica si riuniscono per stabilire le politiche, risolvere le dispute e guidare il commercio dello stato."
  coastal_fort_desc: "Con l'avvicinarsi della minaccia dei pirati e delle flotte ostili, si richiede una serie di fortificazioni costiere rudimentali, per proteggerci dalle invasioni."
  naval_battery_desc: "La naturale evoluzione della guerra difensiva è culminata nello sviluppo di intricate difese costiere, pronte a respingere anche le maggiori invasioni ostili."
  irrigation_systems_desc: "La corretta coltivazione della nostra terra è fondamentale per nutrire il nostro popolo e raggiungere la prosperità. Una $irrigation_systems$ estensiva garantirà il cibo di cui c'è tanto bisogno."
  bridge_infrastructure_desc: "Collegare varie città e insediamenti è fondamentale per mantenere lo stato di diritto e l'autorità centrale. Con la costruzione di un $bridge_infrastructure$ miglioreremo la circolazione delle persone e delle merci."
  pound_lock_canal_infrastructure_desc: "La manipolazione delle maree e dei fiumi che attraversano il nostro regno è vitale per la nostra sopravvivenza. Un $pound_lock_canal_infrastructure$ ci garantirebbe la padronanza dell'acqua che dà la vita."
  university_desc: "Centro di pensiero e innovazione, l'$university$ ospita menti brillanti di scienziati e letterati, tutti desiderosi di promuovere la crescita e l'alfabetizzazione."
-
+ 
  trade_office_desc: "Il commercio e gli scambi sono la linfa vitale di ogni città prospera. L'$trade_office$ garantisce ai nostri mercanti maggiori opportunità di stabilire relazioni proficue con i mercanti stranieri."
  missionary_building_desc: "La $missionary_building$ è il centro locale per gli ambasciatori religiosi e i missionari che mirano a convertire i nativi locali all'unica vera fede."
  slave_center_desc: "Gli affari con gli schiavi sono gestiti nel $slave_center$. Gli imprenditori ricchi vengono qui per acquistare manodopera di schiavi, mentre i razziatori e i pirati vendono i loro prigionieri."
@@ -822,7 +869,7 @@
 
  fortress_desc: "La $fortress$ è la struttura difensiva più avanzata, creata dagli ingegneri militari per trattenere la potenza dell'artiglieria più avanzata. Si tratta di complessi composti, costituiti da bastioni e casematte interconnessi, progettati per massimizzare la potenza di fuoco difensiva."
  sergeantry_desc: "Una $sergeantry$ è l'edificio in cui i sergenti vivono e si addestrano. I sergenti, che derivano dal latino #italic serviens#!, 'servi', sono il seguito armato che i monarchi utilizzano nei sistemi feudali, rendendoli il nucleo dei soldati professionisti nei loro eserciti."
- warrior_lodge_desc: "La $warrior_lodge$ è un luogo di ritrovo dove i nostri guerrieri si addestrano, raccontano le loro imprese e si preparano alla prossima battaglia. Radicata nelle nostre tradizioni ancestrali, funge da centro locale di reclutamento dove possono essere addestrati [ShowUnitDefinitionName('a_war_party')] e [ShowUnitDefinitionName('a_lodge_warriors')]." 
+ warrior_lodge_desc: "La $warrior_lodge$ è un luogo di ritrovo dove i nostri guerrieri si addestrano, raccontano le loro imprese e si preparano alla prossima battaglia. Radicata nelle nostre tradizioni ancestrali, funge da centro locale di reclutamento dove possono essere addestrati [ShowUnitDefinitionName('a_war_party')] e [ShowUnitDefinitionName('a_lodge_warriors')]."
  warrior_temple_desc: "Il $warrior_temple$ è l'edificio da cui possono essere reclutati i [ShowUnitDefinitionName('a_jaguar_warrior')] e i [ShowUnitDefinitionName('a_eagle_warrior')], i guerrieri d'élite dei Paesi [ShowReligionAdjective('nahuatl')]."
  armory_desc: "Lo sviluppo degli [ShowInstitutionName('professional_armies')] ha comportato la necessità di trovare nuovi [manpower|e] per i nostri [armies|e]. L'$armory$ può essere costruita in [towns_and_cities|e] per incrementarli." #Renaissance #Urban
  training_fields_desc: "I $training_fields$ possono essere costruiti in [rural_location|e] come un'altra fonte di [manpower|e] per i nostri [armies|e]." #Discovery #Rural
@@ -854,7 +901,7 @@
  theater_desc: "Un edificio utilizzato dagli artisti per rappresentare opere teatrali, concerti e altri lavori teatrali. "
  toll_castle_desc: "Una piccola fortificazione collocata all'interno o nelle immediate vicinanze di una strada, di un passaggio fluviale o di un valico montano, dove un piccolo contingente di guardie può imporre il pagamento di un pedaggio per ottenere il passaggio."
  nobility_fortifications_desc: "Queste fortificazioni di medie dimensioni sono utilizzate dalla nobiltà locale per esercitare la propria influenza sulle loro terre ancestrali e controllare i contadini."
- rotten_borough_desc: "Rappresenta una circoscrizione parlamentare con un elettorato molto piccolo che può essere corrotto, estorto o ricattato per votare un determinato candidato."
+ rotten_borough_desc: "Rappresenta una circoscrizione parlamentare con un elettorato molto piccolo che può essere corrotto, estorto o ricattato per votare un determinato candidato." 
 
  noble_villa_desc: "La nobiltà è orgogliosa di essere separata e al di sopra della normale marmaglia. Per questo motivo, ama avere residenze lontane dalle principali aree urbane, magnifiche e riccamente arredate."
  local_noble_delegation_desc: "Anche se ama vivere lontano dai centri urbani per non dover condividere il loro spazio con i comuni cittadini, la nobiltà vuole comunque essere coinvolta attivamente negli eventi che si verificano all'interno delle città principali, soprattutto quando si tratta di governare. Per questo motivo, non è raro che possieda residenze ovunque possano avere un'influenza."
@@ -866,7 +913,7 @@
  warrior_monks_training_grounds_desc: "Dedicarsi alla fede non significa necessariamente rinunciare alla violenza. Per questo motivo, ci sono molti monaci che si dedicano non solo alla coltivazione della loro fede, ma anche alla loro abilità militare."
  guild_hall_desc: "Gli artigiani locali avranno sempre problemi a far sì che i loro prodotti raggiungano un numero sufficiente di persone se c'è troppa concorrenza. Per questo motivo, le loro associazioni tendono a creare delle gilde dove possono decidere come produrre e distribuire un determinato bene."
  merchants_guild_desc: "Il commercio e gli scambi sono ciò che fa muovere un'economia. Per farlo fluire in modo naturale e più efficiente, i mercanti si organizzano in gilde, in modo che non ci siano ostacoli tra le loro diverse rotte commerciali e che tutti contribuiscano a rendere il flusso più forte."
-
+ 
  local_markets_desc: "Indipendentemente dall'isolamento di un insediamento, ci sono sempre persone disposte a viaggiare da e verso di esso per trasportare qualsiasi merce e rifornimento di cui l'insediamento possa avere bisogno, e per trarre profitto da ciò che può produrre. Questi mercanti stabiliscono dei mercati a livello locale per consentire il flusso commerciale."
  burgher_mansion_desc: "Anche se non appartengono alla nobiltà, una volta che qualcuno ha accumulato abbastanza ricchezza, emulerà senza dubbio la vita di coloro che sono nati con essa. Per questo motivo, i ricchi borghesi si costruiscono ville sontuose come quelle della nobiltà superiore."
  artisan_guilds_desc: "Qualsiasi prodotto richiede esperienza e abilità per essere realizzato. Le persone in grado di farlo, quindi, fondano dei laboratori per potersi dedicare a questa produzione, e assumono degli apprendisti per trasmettere l'abilità."
@@ -877,7 +924,7 @@
  peasants_hunting_grounds_desc: "Se i popolani dispongono del permesso legale di cacciare, stabiliranno rapidamente dei terreni destinati a tale scopo, in modo da poter sfruttare la fauna selvatica di qualsiasi area boschiva locale."
  local_schools_desc: "Una popolazione istruita è una popolazione produttiva. Come tale, le scuole locali aiuteranno a educare i cittadini e a metterli alla pari con le classi superiori. Non sorprende quindi che vogliano promuovere queste scuole ovunque sia possibile."
  local_newspaper_desc: "L'informazione è conoscenza e la conoscenza è progresso. Le agenzie di stampa locali contribuiranno quindi a diffondere informazioni sulla situazione attuale alla popolazione, a beneficio di tutti."
-
+ 
  cantonments_desc: "Un'accantonamento servirà al nostro esercito come centro permanente di reclutamento del personale militare e offrirà alloggi alle nostre truppe."
  grand_palace_desc: "Il $grand_palace$ offre una grandiosa esposizione delle conquiste culturali della nostra società, tutte preparate per il nostro monarca e le persone più vicine."
  great_madrasa_desc: "Luogo di apprendimento superiore, la $great_madrasa$ offre un posto ai nostri studiosi più stimati per diffondere le loro conoscenze in materia di medicina, architettura e legge islamica."
@@ -898,9 +945,9 @@
  dip_vatican_library_desc: "$adm_vatican_library_desc$"
  mil_vatican_library_desc: "$adm_vatican_library_desc$"
  wisselbank_desc: "La Banca di $amsterdam$, nota anche come $wisselbank$ è una banca di scambio che svolge un ruolo significativo nella creazione e nella difesa degli standard di conio. Essendo la prima del suo genere, la $wisselbank$ influenza le nuove banche statali in tutta $europe$."
- riksbank: "Riksbank" 
- riksbank_desc: "La banca nazionale centrale di $SWE$ opera sotto supervisione parlamentare per garantire stabilità finanziaria e una valuta forte, aumentando il potenziale commerciale. La sua presenza garantirà la crescita dell'economia $SWE_ADJ$." 
-
+ riksbank: "Riksbank"
+ riksbank_desc: "La banca nazionale centrale di $SWE$ opera sotto supervisione parlamentare per garantire stabilità finanziaria e una valuta forte, aumentando il potenziale commerciale. La sua presenza garantirà la crescita dell'economia $SWE_ADJ$."
+ 
  entrepot_desc: "Situato nel cuore di un mercato vivace e animato, l'$entrepot$ è il luogo migliore per far fiorire i nostri sforzi mercantili."
  trading_hub_desc: "Punto vitale della nostra rete commerciale, uno $trading_hub$ costituisce un luogo ideale per vendere e acquistare molti prodotti esotici e locali."
  customs_house_desc: "Il nostro territorio ospita un mercato vivace, con molti mercanti che importano merci accattivanti da terre lontane. La regolamentazione di tali merci e il controllo di questo flusso rientrano nella giurisdizione dell'$customs_house$."
@@ -933,7 +980,7 @@
  tannery_desc: "Responsabile della lavorazione delle pelli, la $tannery$ produce articoli importanti come scarpe, selle e rilegature di libri. Utilizzando tecniche avanzate per manipolare le pelli animali, il conciatore assicura la durata e l'estetica del $leather$."
  paper_guild_desc: "La $paper$ è essenziale per ogni stato, in quanto viene utilizzata dovunque, dall'amministrazione all'istruzione e persino al commercio. Pertanto, la $paper_guild$ garantisce un adeguato standard di produzione e volume, oltre a una tecnica unica che prevede l'ammollo, la spremitura o la pressatura di materiali di base come il lino, il cotone o altre fibre vegetali."
  scriptorium_desc: "Un centro specializzato dove gli scribi copiano meticolosamente i manoscritti, lo $scriptorium$ produce una varietà di testi di natura religiosa, legale o addirittura letteraria, nel tentativo di preservare e diffondere la conoscenza."
-
+ 
  tools_guild_desc: "Dal semplice martello alle prime macchine utensili, gli $tools$ sono sempre stati una parte importante della nostra società. La $tools_guild$ è specializzata nella produzione di questi pratici strumenti."
  porcelain_guild_desc: "La $porcelain$ è un tipo di ceramica che si caratterizza per la sua resistenza e traslucenza dovuta alla vetrificazione dei materiali causata dalle alte temperature. Il $porcelain_guild$ è specializzato nella creazione e nella decorazione di questi oggetti."
  naval_supplies_guild_desc: "Le $naval_supplies$ rappresentano tutto ciò che è necessario per la costruzione di una nave, dal legno di base al catrame, alle corde, al lino, alle vele e a vari altri materiali. Pur essendo un bene commerciale vasto e diversificato, la $naval_supplies_guild$ copre tutti i materiali necessari per la costruzione di navi."
@@ -944,7 +991,7 @@
  fine_cloth_manufactory_desc: "I $fine_cloth$ sono tradizionalmente un indicatore di status per le élite e le classi più abbienti. La $fine_cloth_manufactory$ si concentra sulla lavorazione di questi tessuti preziosi utilizzando $cloth$ o $silk$."
  cloth_manufactory_desc: "I $cloth$ rappresentano le varie stoffe e indumenti realizzati in lana e lino. La $cloth_manufactory$ è specializzata nella produzione di $cloth$ da vari materiali come $wool$, $cotton$ e $fiber_crops$."
  paper_workshop_desc: "La $paper$ è una necessità per tutti i tipi di contabilità avanzata, amministrazione e per la diffusione della conoscenza. Il $paper_workshop$ è specializzato nella creazione di nuova $paper$ da $fiber_crops$ e $lumber$."
-
+ 
  printing_press_shop_desc: "Utilizzando parti facilmente producibili e sostituibili, una $printing_press_shop$ ridurrà i costi di manodopera e materiali per produrre e diffondere documenti scritti tra la popolazione."
  glassworks_desc: "Il perfezionamento delle tecniche tradizionali di soffiatura del vetro e l'aggiunta di nuovi materiali rendono più facile la produzione in massa di $glass$."
  perfumery_desc: "Coltivando i fiori ed estraendo la loro essenza, una $perfumery$ produce un bene di lusso per i ricchi."
@@ -955,7 +1002,7 @@
  textile_mill_desc: "Alimentata da ruote idrauliche, la $textile_mill$ può produrre in massa $cloth$ a velocità elevata."
  steel_mill_desc: "L'aumento dell'affidabilità dei nostri forni e del processo produttivo ha reso possibile la produzione di $steel$ su una scala economicamente vantaggiosa."
  iron_foundry_desc: "Gli $tools$ realizzati in $iron$ saranno più robusti di qualsiasi altra produzione conosciuta, e richiedono un processo di produzione più rapido."
-
+ 
  weapon_factory_desc: "L'importanza dell'aspetto militare è aumentato molto negli ultimi anni. Per questo motivo, sono necessari metodi migliori e nuovi per produrre armamenti per i nostri soldati, e si stanno creando intere fabbriche dedicate a questo scopo."
  monastery_desc: "Luogo di isolamento e contemplazione, i monasteri sono un rifugio per coloro che vogliono dedicare la propria vita alla comunione con il cielo. I loro terreni sono quindi destinati allo studio e alla riflessione, e una grande conoscenza è solitamente custodita dietro le loro mura."
  madrasa_desc: "Centro di conoscenza dedicato alla promozione degli studi, le Madrase raccolgono tra le loro mura numerosi studenti, molti dei quali vengono spesso da lontano. All'interno vengono discusse questioni terrene e religiose, e la loro saggezza è a disposizione di tutti."
@@ -966,7 +1013,7 @@
  farming_village_desc: "Il cibo è ciò che fa funzionare una civiltà. I campi e gli appezzamenti agricoli non solo possono nutrire la popolazione, ma permettono anche di nutrire molti altri animali e di ottenere altri prodotti da essi. Questa combinazione è fondamentale per far prosperare qualsiasi insediamento."
  forest_village_desc: "Le foreste e le terre selvagge non sono così inospitali come si potrebbe pensare, perché le loro terre sono ricche di animali che possono essere cacciati, sia per la loro carne che per le loro pelli. Per questo motivo, le persone sono solitamente desiderose di stabilirsi nei pressi di qualsiasi foresta con un'abbondante vita animale da poter sfruttare."
  tar_kiln_desc: "Il catrame è stato utilizzato fin dall'antichità, in quanto le sue proprietà sigillanti e impermeabili sono indispensabili. Pertanto, qualsiasi area boschiva è un terreno fertile per i forni, utilizzati per estrarre il catrame dal legno mediante il processo di distillazione a secco."
-
+ 
  horse_breeders_desc: "Sia per la guerra che per tirare i carri che trasportano i nostri commerci attraverso il Paese, i cavalli sono necessari ovunque. Per questo motivo, le famiglie hanno iniziato ad allevare questi magnifici destrieri per soddisfare queste esigenze."
  market_village_desc: "Gli snodi commerciali consentono di riunire tutti gli scambi in luoghi specifici, dando così origine a piccoli borghi."
  stone_quarry_desc: "La pietra è un eccellente materiale da costruzione utilizzato per case, acquedotti, templi, ponti e altro ancora. Purtroppo, deve essere estratta e la pietra da costruzione di alta qualità non è sempre abbondante. Per soddisfare le nostre esigenze, possiamo creare cave in aree con materiale di buona qualità."
@@ -985,6 +1032,7 @@
  counting_house_desc: "La $counting_house$ è un ufficio che tiene traccia dei libri finanziari delle aziende della città. Vengono gestiti anche gli appuntamenti e le corrispondenze relative alle aziende per quanto riguarda i pagamenti."
  minting_office_desc: "L'$minting_office$ è il principale edificio di produzione che crea la moneta dello Stato. Diversi metalli entrano nell'ufficio per essere forgiati in monete per il pubblico."
  granary_desc: "Il $granary$ è una struttura di stoccaggio che evita che il cibo conservato venga danneggiato da topi e altri animali. Inoltre, aumenta la capacità di cibo disponibile per la popolazione nei momenti di bisogno."
+ village_granary_desc: "Un modesto deposito comunale permette a un insediamento agricolo di accantonare parte di ogni raccolto, proteggendo la popolazione da inverni magri e cattivi raccolti senza bisogno di una città. Aumenta la capacità alimentare locale e rallenta il deperimento del cibo."
  wharf_desc: "Il $wharf$ è una struttura marittima in un porto dove le navi possono attraccare per trasferire il loro carico e ricevere manutenzione e riparazioni."
  medical_school_desc: "Con l'ascesa della $scientific_revolution$, si stanno facendo nuove scoperte nel campo della medicina e sta crescendo nei metodi e nelle conoscenze acquisite. La $medical_school$ assicura che questa conoscenza venga trasmessa alle nuove generazioni di medici."
  hospital_desc: "La storia dell'$hospital$ è antica, poiché molte civiltà antiche avevano la loro versione di un'istituzione che ospitava i malati. Durante il periodo medievale, l'$hospital$ si è evoluto ulteriormente, poiché ora si concentra anche sull'assistenza sanitaria e sul recupero dei suoi pazienti."
@@ -997,32 +1045,33 @@
  venetian_arsenal_desc: "Si tratta di un cantiere navale gestito dallo Stato, responsabile della costruzione rapida di una potente flotta navale, che svolge un ruolo chiave nel dominio marittimo."
  kurultai_desc: "Il $kurultai$ è il simbolo dell'autorità del consiglio locale, che funge da arbitro per le decisioni importanti e per il raduno degli uomini per l'esercito."
  order_stronghold_desc: "Una base fortificata degli ordini militari, posizionata strategicamente per la difesa e come punto di partenza per le crociate o il controllo territoriale."
-
+ 
  banking_office_desc: "Attraverso la $banking_office$ forniamo investimenti su piccola scala alla popolazione di altri Paesi. Allo stesso tempo, serve come base operativa per i nostri mercanti associati."
  copenhagen_dockyard_desc: "I $copenhagen_dockyard$ fornisce le navi e i marinai necessari per garantire il nostro dominio navale. Costruito all'interno dei ben adeguati porti di $copenhagen$, il cantiere navale è in grado di operare più velocemente della maggior parte degli altri concorrenti."
  caravanserai_desc: "Il $caravanserai$ è di grande importanza lungo la Via della Seta, offrendo riposo sia ai mercanti che agli animali che trasportano le preziose merci."
  caravan_stop_desc: "Una $caravan_stop$ è di grande importanza lungo le rotte commerciali del deserto, offrendo riposo sia ai mercanti che agli animali che trasportano le preziose merci."
+ maghreb_palm_irrigation_desc: "La $maghreb_palm_irrigation$ offre una forma praticabile di irrigazione anche nei deserti più ostili, specialmente nelle oasi, dove può contribuire a sostenere insediamenti in climi caldi."
  seat_of_cardinal_desc: "Un ecclesiastico, elevato al rango di cardinale, ci garantisce un'influenza significativa all'interno della $catholic_church$."
  galley_barracks_desc: "La $galley_barracks$ ospiterà gli schiavi utilizzati per spingere le nostre galee e offre spazio per la costruzione di nuove navi."
  uffizi_desc: "$tuscan_uffizi_desc$"
  polders_desc: "$polders_advance_desc$"
  hand_cannon_guild_desc: "$hand_cannon_guild_advance_desc$"
-
+ 
  ruined_great_wall_of_china_desc: "Gigantesca serie di mura e fortificazioni che si estende in maniera discontinua lungo i confini di un grande Impero, la $ruined_great_wall_of_china$ iniziò ad essere costruita secoli fa. Sebbene molte dinastie vi abbiano apportato riparazioni ed espansioni, secoli di abbandono hanno avuto il loro peso e la maggior parte di essa non è molto più che semplici rovine."
  repaired_great_wall_of_china_desc: "Una linea di fortificazioni riparata e ben mantenuta proteggerà i nostri confini da qualsiasi invasione di barbari stranieri."
  rural_clothmaker_desc: "Una piccola gilda in cui i tessuti vengono realizzati a mano con materiali locali. Svolge un ruolo vitale nelle economie locali, fornendo abbigliamento e beni commerciali."
- rural_glassmaker_desc: "Una piccola bottega rurale dove artigiani esperti trasformano la sabbia di provenienza locale in vetro attraverso l'arte della soffiatura. Il $rural_glassmaker$ rifornisce i mercati locali di prodotti in vetro e offre una modesta fonte di reddito alla comunità circostante." 
- rural_glassmaker_maintenance: "Attività di soffiatura del vetro" 
+ rural_glassmaker_desc: "Una piccola bottega rurale dove artigiani esperti trasformano la sabbia di provenienza locale in vetro attraverso l'arte della soffiatura. Il $rural_glassmaker$ rifornisce i mercati locali di prodotti in vetro e offre una modesta fonte di reddito alla comunità circostante."
+ rural_glassmaker_maintenance: "Attività di soffiatura del vetro"
  mason_desc: "Gestito da operai specializzati che tagliano e modellano la pietra per l'edilizia, la $mason$ è essenziale per la costruzione di strutture durature e resistenti."
  embassy_desc: "L'avanguardia della diplomazia e il luogo d'incontro in cui i rappresentanti delle nazioni straniere conducono trattative e forestano potenziali alleanze."
- embassy_max_rank_tt: "Può essere costruita solo nella capitale di un paese con un [country_rank|e] pari o superiore al nostro" 
+ embassy_max_rank_tt: "Può essere costruita solo nella capitale di un paese con un [country_rank|e] pari o superiore al nostro"
  firearms_manufactory_desc: "Spesso descritto come la linfa vitale del nostro complesso produttivo militare, la $firearms_manufactory$ produce armamenti di molte forme e dimensioni, come pistole, fucili e altro."
  cannon_foundry_desc: "In una $cannon_foundry$, questi vengono fusi e assemblati dal metallo incandescente. Sono fondamentali per dotare gli eserciti di artiglieria, migliorando le capacità militari di uno Stato."
  cannon_maker_desc: "Una gilda specializzata nella costruzione e nell'assemblaggio di cannoni. Queste potenti armi sono essenziali per gli assedi e la difesa."
  firearms_factory_desc: "Le crescenti esigenze di protezione dei nostri confini comportano un aumento delle quote di produzione e di richiesta da parte del nostro complesso produttivo militare. Questa esigenza viene soddisfatta dalla $firearms_factory$, dove vengono prodotte grandi quantità di armi."
  cannons_factory_desc: "Una fabbrica di grandi dimensioni dove i cannoni venivano fabbricati in grandi quantità. La sua capacità produttiva ampliata è un ottimo modo per facilitare le crescenti esigenze delle nostre forze militari."
 
-
+ 
  settlement_building_desc: "Questo rappresenta la creazione di un nuovo insediamento con elementi di base come negozi, supporto alla costruzione di base e posti di commercio, per incoraggiare i migranti a raggiungere la località."
  janissary_barracks_desc: "L'edificio dove i giovani schiavi ricevono l'addestramento militare per diventare Giannizzeri."
  ghilman_barracks_desc: "L'edificio dove i giovani schiavi ricevono l'addestramento militare per diventare $a_ghilman$."
@@ -1058,7 +1107,7 @@
 
  venkateswara_temple: "Tempio Venkaṭeśvara"
  venkateswara_temple_desc: "Venkaṭeśvara e Tirupati hanno visto aumentare l'influenza dopo le recenti donazioni, portandola a nuovi livelli all'interno di [ShowAreaName('tamil_land_area')]."
- constantinople_observatory: "Osservatorio di Taqī ad-Dīn"
+ constantinople_observatory: "Osservatorio di Taqī ad-Dīn" 
  constantinople_observatory_desc: "Questo magnifico osservatorio si trova su una collina con un'ottima vista sul cielo notturno. Se durerà, potrebbe portare grandi benefici alle scienze nelle terre musulmane."
 
 
@@ -1092,7 +1141,7 @@
  munich_residenz_baroque_expansion_desc: "L'espansione Barocca della Residenza di [ShowLocationName('munich')] riflette lo splendore dell'Illuminismo. Giardini sontuosi, grandiosi saloni e disegni intricati sottolineano il dominio artistico e politico della dinastia Wittelsbach in Baviera e oltre."
  munich_residenz_baroque_expansion_potential: "Può essere costruito solo dopo l'evento 'Espansione Barocca della Residenza' e il completamento dell'Espansione Rinascimentale."
 
- #Majapahit
+#Majapahit
 
  bajang_ratu: "Bajang Ratu"
  bajang_ratu_desc: "Cancello cerimoniale di proporzioni maestose, il $bajang_ratu$ segue lo stile architettonico di un #italic candi bentar#!, o portale diviso. Utilizzando mattoni rossi di alta qualità, il portale sarà una delle costruzioni più alte del dominio $MAJ_ADJ$. Il suo utilizzo è fondamentale, in quanto la struttura viene adoperato per grandi cerimonie di natura religiosa e politica."
@@ -1124,7 +1173,7 @@
  zazzau_walls_desc: "Una dimostrazione di forza contro le altre nazioni in [ShowRegionName('guinea_region')], queste mura mostrano la forza della località ai vicini."
 
  eghabho_nore_mansion: "Residenza dell'Eghabho N'ore"
- eghabho_nore_mansion_desc: "La casa del capo della città. È responsabile della gestione della località per conto del sovrano." 
+ eghabho_nore_mansion_desc: "La casa del capo della città. È responsabile della gestione della località per conto del sovrano."
 
  ribat: "Ribāṭ"
  ribat_desc: "Una piccola fortificazione destinata principalmente a proteggere le carovane o piccole aree dalle incursioni."
@@ -1135,13 +1184,15 @@
  #Orissa
  ori_portuguese_quarters: "Quartieri Portoghesi"
  ori_portuguese_quarters_desc: "Luogo di riposo per i ricchi mercanti provenienti da oltreoceano, questi quartieri fungono da residenza permanente in $india$."
-
+ 
  mahmud_gawan_madrasa: "Madrasa Mahmud Gawan"
  mahmud_gawan_madrasa_desc: "Costruita con l'intenzione di permettere a molti studiosi provenienti da tutto il mondo di sperimentare la nostra cultura, questa Madrasa è considerata uno dei più grandi collegi religiosi del [ShowRegionName('deccan_region')]."
 
  #Portugal
  por_feitoria: "Feitoria"
  por_feitoria_desc: "Armata di cannoni e batterie costiere, una $por_feitoria$ è in grado di assicurare la nostra influenza nell'area e di permettere ai nostri mercanti di commerciare più liberamente."
+ por_trading_post: "Emporio Commerciale Portoghese"
+ por_trading_post_desc: "Un emporio commerciale fortificato fondato dagli esploratori portoghesi in una location disabitata o di nuova conquista. Gestito da borghesi che organizzano il commercio locale, fornisce una base per il controllo portoghese e apre la location al commercio atlantico."
 
  rahdar: "Rahdar"
  rahdar_desc: "Per proteggere le rotte commerciali nel [ShowRegionName('hindustan_region')], è necessario istituire una pattuglia stradale. È nota come [ShowBuildingTypeName('rahdar')], con i suoi uomini che garantiscono la sicurezza del commercio all'interno dell'area."
@@ -1151,11 +1202,10 @@
  #Morocco
  guich_garrison: "Guarnigione Jayš"
  guich_garrison_desc: "Un presidio per le tribù di [ShowCultureGroupName('amazigh_group')] dove riposare, consentendo una migliore protezione dell'area."
- 
  #Sikhism
  gurgaddi: "Gurgaddi"
  gurgaddi_desc: "Guru Gaddi, che significa sede del $guru$, è il luogo in cui risiede la guida spirituale del [ShowReligionName('sikhism')]."
-
+ 
  #USA
  usa_academy_of_arts_and_sciences: "Accademia Americana delle Arti e delle Scienze"
  usa_academy_of_arts_and_sciences_desc: "L'$usa_academy_of_arts_and_sciences$ coltiverà ogni arte e scienza che possa tendere a far progredire l'interesse, l'onore, la dignità e la felicità di un popolo libero, indipendente e virtuoso."
@@ -1176,11 +1226,11 @@
  #Middle kingdom
  zhixian: "Zhīxiàn"
  zhixian_desc: "Sede di un magistrato locale che supervisiona l'amministrazione delle contee, esso è l'incaricato imperiale che estende l'autorità del Trono del Drago alle province."
-
+ 
  #Anatolia
  seljuk_mint: "Zecca Selgiuchide"
  seljuk_mint_desc: "La $seljuk_mint$ è un luogo funzionale e sicuro per la produzione di monete, che simboleggia l'autorità politica e la stabilità fiscale."
-
+ 
  tur_kodjabashi_office: "Ufficio Kocabaṣı"
  tur_kodjabashi_office_desc: "Utilizzando gli abitanti delle nostre terre conquistate nei [ShowRegionName('balkan_region')], possiamo alleviare la pressione della nostra burocrazia, a costo di dare potere agli abitanti della zona."
  tur_kodjabashi_office_is_in_balkans: "La [location|e] è nella [region|e] dei [ShowRegionName('balkan_region')]"
@@ -1200,33 +1250,108 @@
  woodhenge_of_cahokia: "Woodhenge di Cahokia"
  woodhenge_of_cahokia_desc: "Allineato con il movimento del sole, il $woodhenge_of_cahokia$ serve per tracciare gli eventi solari."
  cahokia_woodhenge_why: "Il $woodhenge_of_cahokia$ può essere costruito solo tramite eventi."
-
+ 
  #Prussia
  charite_of_berlin: "Charité"
  charite_of_berlin_desc: "Il $charite_of_berlin$ è un luogo di quarantena fuori dalle mura di Berlino che aiuta a contenere le piaghe ricorrenti."
 
- #Tlemcen
+#Tlemcen 
  qalat_al_mashwar: "Qal'at al-Mashwār"
- qalat_al_mashwar_desc: "Nel cuore di $tlemcen$ si trova un complesso di palazzi fortificati e splendidamente illustri. Simbolo del potere e della prosperità locale, il palazzo reale funge anche da centro amministrativo della dinastia regnante. Oltre alla sua bellezza senza pari, funge anche da struttura difensiva contro le minacce straniere e i potenziali conquistatori.." 
- german_river_toll_castle: "Castello Doganale Fluviale" 
- german_river_toll_castle_desc: "Un piccolo castello situato lungo il fiume facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota vitale delle entrate commerciali locali." 
- german_mountain_toll_castle: "Castello Doganale Montano" 
- german_mountain_toll_castle_desc: "Un piccolo castello situato su un importante passo di montagna facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota fondamentale delle entrate commerciali locali." 
- walls_of_lucca: "Mura di $lucca$" 
- walls_of_lucca_desc: "La difesa della popolazione è ciò che conta di più per la guardia. È per questo che esistono queste mura: per garantire che nessun civile muoia." 
- lucca_silk_production_guild: "Gilda lucchese della produzione della seta" 
- lucca_silk_production_guild_desc: "Potendo fornire colture da fibra ai bachi per creare seta, questa località è riuscita a sviluppare un metodo di produzione autonomo, che non dipende dalla Via della Seta." 
- fiber_crops_silk_guild_maintenance: "$lucca_silk_production_guild$" 
- porto_pisano: "Porto Pisano" 
- porto_pisano_desc: "Il grande porto di [ShowLocationName('pisa')] è la linfa vitale del suo proprietario. È il punto in cui la ricchezza dei mari lontani rifluisce nelle nostre casse, accogliendo mercanti e merci da ogni porto." 
- RECLAIMED_SARDINIAN_OUTPOSTS: "Avamposti riconquistati in [ShowAreaName('sardinia_area')]" 
- ECLIPSED_GENOA: "[ShowLocationName('genoa')] eclissata" 
- central_bank: "Banca centrale" 
- central_bank_desc: "$central_bank_advance_desc$" 
- central_bank_tt: "Deve essere costruita nella nostra [capital|e] e non può coesistere con [ShowBuildingTypeName('wisselbank')] o [ShowBuildingTypeName('riksbank')]." 
- central_bank_maintenance: "Operazioni della Banca centrale" 
- sie_sienese_port: "Porto senese" 
- sie_sienese_port_desc: "Con l'espansione dell'influenza marittima di [ShowLocationName('siena')], questo porto fu costruito per permettere ai mercanti di condurre i loro commerci." 
- italian_administration_center: "Centro amministrativo italiano" 
- italian_administration_center_desc: "Una sede della tradizione amministrativa italiana che estende la portata del governo sui territori lontani. Radicata nelle istituzioni civiche e nella cultura giuridica delle città-stato italiane, impone ordine e legittimità sulle terre che supervisiona." 
- italian_administration_center_maintenance: "Operazioni del Centro amministrativo italiano" 
+ qalat_al_mashwar_desc: "Nel cuore di $tlemcen$ si trova un complesso di palazzi fortificati e splendidamente illustri. Simbolo del potere e della prosperità locale, il palazzo reale funge anche da centro amministrativo della dinastia regnante. Oltre alla sua bellezza senza pari, funge anche da struttura difensiva contro le minacce straniere e i potenziali conquistatori.."
+
+#Maghreb Monuments
+ monument_bou_inania_madrasa: "Madrasa Bū 'Ināniyya"
+ monument_bou_inania_madrasa_desc: "Commissionata dal sultano marinide Abū ʿInān Fāris a metà del XIV secolo, la madrasa Bū 'Ināniyya di Fez rappresenta l'apice dell'arte decorativa marinide, con i suoi pannelli di stucco intagliato, le piastrelle #italic zellige#! e gli schermi di cedro annoverati tra i più pregevoli del mondo islamico. A differenza delle tipiche madrase, fungeva anche da moschea congregazionale, attirando studenti da tutto il Maghreb per studiare il diritto e la teologia malikiti nel suo magnifico cortile."
+
+ monument_chellah: "Necropoli di Chellah"
+ monument_chellah_desc: "La Chellah è una necropoli regale marinide costruita sulle rovine dell'antica città romana di Sala Colonia alla periferia di Rabat, i suoi mausolei, giardini, moschea e #italic zāwiya#! per gli studenti di teologia circondano le tombe dei sultani della dinastia e delle loro consorti. Le sue mura e i suoi minareti proiettano una visione di autorità regale sacralizzata che la dinastia marinide impiegò per legittimare il proprio governo in tutto il Maghreb."
+
+ monument_dar_al_makhzen: "Dār al-Maḵzan"
+ monument_dar_al_makhzen_desc: "Il Dār al-Maḵzan è il complesso del palazzo reale del sultano marocchino, un vasto insieme di sale di ricevimento, giardini e uffici amministrativi che incarna l'autorità del #italic maḵzan#!. Dai suoi cancelli, i ministri del sultano inviano ordini alle province, ricevono missioni tributarie e mantengono la rete di nomine e patronati che tiene unito lo stato marocchino."
+
+ monument_great_mosque_algiers: "Grande Moschea di Algeri"
+ monument_great_mosque_algiers_desc: "Fondata nel 1097 dal governatore Almoravide, la Grande Moschea di Algeri è la più antica moschea ancora in piedi della città, la sua sala di preghiera a colonnato di influenza andalusa e il suo sottile minareto hanno servito a lungo come ancora spirituale della comunità mercantile. Mentre Algeri cresceva fino a diventare un importante porto corsaro, la moschea rimase un legame con l'eredità almoravide e andalusa della città, dove i mercanti pregavano e arbitravano controversie secondo il diritto malikita."
+
+ monument_hassan_tower: "Torre Hassan"
+ monument_hassan_tower_desc: "Iniziata dal califfo almohade Yaʿqūb al-Manṣūr intorno al 1195, la Torre Hassan era destinata a essere il minareto della più grande moschea del mondo islamico occidentale. La morte di al-Manṣūr interruppe la costruzione a un terzo dell'altezza prevista, lasciando la torre e una selva circostante di colonne come monumento alla grandezza che la dinastia almohade raggiunse brevemente."
+
+ monument_kairouan_mosque: "Grande Moschea di Kairouan"
+ monument_kairouan_mosque_desc: "Fondata da ʿUqba ibn Nāfiʿ nel 670, questa moschea è la più antica del Maghreb e uno dei siti più venerati tanto nell'Islam sunnita quanto in quello ibadita. Il suo caratteristico minareto a costoloni e la selva di colonne romane e bizantine di recupero testimoniano una città che fu per secoli la capitale spirituale del Nord Africa, guadagnando a Kairouan la fama di una delle città più sacre dell'Islam."
+
+ monument_kasbah_udayas: "Kasbah degli Udaya"
+ monument_kasbah_udayas_desc: "La Kasbah degli Udaya è una cittadella fortificata almohade alla foce del fiume Bou Regreg, costruita nel XII secolo come #italic ribāṭ#! che crebbe fino a diventare il cuore urbano di Rabat. La sua porta elaboratamente scolpita domina gli accessi atlantici all'estuario, rendendo gli Udaya sia una roccaforte defensiva sia la base operativa per le incursioni corsare nelle acque cristiane."
+
+ monument_ksar_ait_benhaddou: "Ksar Aït Benhaddou"
+ monument_ksar_ait_benhaddou_desc: "Questo villaggio berbero fortificato — un #italic ksar#! — si trova nelle pendici presahariane del Marocco meridionale, le sue torri di terra battuta si innalzano sopra la via delle carovane tra il Sahara e Marrakech. L'insediamento esemplifica la tradizione indigena amazigh dei #italic ksour#! che ha riparato e incanalato il commercio transahariano di oro e sale nel corso dei secoli."
+
+ monument_mansourah_tlemcen: "Moschea di Mansūra"
+ monument_mansourah_tlemcen_desc: "La moschea di Mansūra fu costruita dal sultano marinide Abū Yaʿqūb Yūsuf durante il suo assedio di Tlemcen tra il 1299 e il 1307, come fulcro di una città-accampamento rivale eretta fuori dalle mura zayyanide. La morte del sultano pose fine all'assedio e l'accampamento fu abbandonato, lasciando la moschea e il suo minareto ispirato alla Kutubiyya come inquietanti rovine alla periferia di Tlemcen."
+
+ monument_qarawiyyin: "Al-Qarawiyyīn"
+ monument_qarawiyyin_desc: "Fondata nel 859 da Fāṭima al-Fihrī di Kairouan, questa moschea-università di Fez è la più antica istituzione di istruzione superiore in funzione ininterrotta al mondo. Generazioni di giuristi e teologi malikiti si formarono entro le sue mura, facendo di Fez un faro intellettuale rivale del Cairo e di Baghdad, mentre la sua biblioteca conserva manoscritti che non sopravvivono altrove nel mondo islamico occidentale."
+
+ #Germany
+ german_river_toll_castle: "Castello Doganale Fluviale"
+ german_river_toll_castle_desc: "Un piccolo castello situato lungo il fiume facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota vitale delle entrate commerciali locali."
+
+ german_mountain_toll_castle: "Castello Doganale Montano"
+ german_mountain_toll_castle_desc: "Un piccolo castello situato su un importante passo di montagna facilita il controllo sui commercianti di passaggio, garantendo al nostro Stato una quota fondamentale delle entrate commerciali locali."
+
+ #Lucca
+ walls_of_lucca: "Mura di $lucca$"
+ walls_of_lucca_desc: "La difesa della popolazione è ciò che conta di più per la guardia. È per questo che esistono queste mura: per garantire che nessun civile muoia."
+ silk_production_guild: "Corporazione della Produzione della Seta"
+ silk_production_guild_desc: "Nutrire i bombici con $fiber_crops$ permette alle nostre corporazioni di filare $silk$ in proprio, liberando il nostro regno dalla dipendenza dalle lunghe rotte commerciali della Via della Seta."
+ silk_production_guild_maintenance: "$silk_production_guild$"
+ #Pisa
+ porto_pisano: "Porto Pisano"
+ porto_pisano_desc: "Il grande porto di [ShowLocationName('pisa')] è la linfa vitale del suo proprietario. È il punto in cui la ricchezza dei mari lontani rifluisce nelle nostre casse, accogliendo mercanti e merci da ogni porto."
+ RECLAIMED_SARDINIAN_OUTPOSTS: "Avamposti riconquistati in [ShowAreaName('sardinia_area')]"
+ ECLIPSED_GENOA: "[ShowLocationName('genoa')] eclissata"
+ central_bank: "Banca centrale"
+ central_bank_desc: "$central_bank_advance_desc$"
+ central_bank_tt: "Deve essere costruita nella nostra [capital|e] e non può coesistere con [ShowBuildingTypeName('wisselbank')] o [ShowBuildingTypeName('riksbank')]."
+ central_bank_maintenance: "Operazioni della Banca centrale"
+
+ sie_sienese_port: "Porto senese"
+ sie_sienese_port_desc: "Con l'espansione dell'influenza marittima di [ShowLocationName('siena')], questo porto fu costruito per permettere ai mercanti di condurre i loro commerci."
+
+ italian_administration_center: "Centro amministrativo italiano"
+ italian_administration_center_desc: "Una sede della tradizione amministrativa italiana che estende la portata del governo sui territori lontani. Radicata nelle istituzioni civiche e nella cultura giuridica delle città-stato italiane, impone ordine e legittimità sulle terre che supervisiona."
+ italian_administration_center_maintenance: "Operazioni del Centro amministrativo italiano"
+ 
+
+ cas_royal_mint_of_segovia: "Zecca Reale di Segovia"
+ cas_royal_mint_of_segovia_desc: "La necessità di una monetazione modernizzata e di un controllo monetario centralizzato ci ha spinto a istituire una zecca reale ufficiale per l'intero regno. Questa istituzione ci permette di controllare direttamente la produzione di moneta, combattere la contraffazione e rafforzare la nostra presa sull'economia."
+
+ adu_jewish_community: "Comunità [ShowReligionAdjectiveWithNoTooltip('judaism')]"
+ adu_jewish_community_desc: "Sponsorizzate e accettate dallo stato, le comunità [ShowReligionAdjective('judaism')] all'interno di questa location possono prosperare."
+ adu_jewish_community_maintenance: "Operazioni della $adu_jewish_community$"
+
+ al_qaysariyya_market: "Al-Qaysariyya"
+ al_qaysariyya_market_desc: "L'$al_qaysariyya_market$ si erge come uno dei più grandi mercati in [ShowRegionName('iberia_region')], permettendoci di esportare i nostri beni in modo più efficiente."
+
+
+
+ #Iberian Monuments
+ monument_palau_generalitat: "Palau de la Generalitat"
+ monument_palau_generalitat_desc: "Il $monument_palau_generalitat$ è la sede della Diputació del General, il comitato permanente delle Corts catalane che amministra la fiscalità e difende le leggi e i privilegi del territorio. La sua presenza rafforza tanto la mano dei ceti urbani quanto quella dei funzionari della stessa corona a $barcelona$."
+ monument_palau_generalitat_maintenance: "Operazioni del Palau de la Generalitat"
+
+ monument_llotja_de_mar_barcelona: "Llotja de Mar"
+ monument_llotja_de_mar_barcelona_desc: "La $monument_llotja_de_mar_barcelona$ è la grande borsa commerciale di $barcelona$, dove i mercanti del Mediterraneo occidentale conducono i propri affari sotto la stessa sala a volta. Il suo pavimento di scambio attira navi e capitali verso il porto della città, ancorando il dominio commerciale catalano sulle rotte marittime."
+ monument_llotja_de_mar_barcelona_maintenance: "Operazioni della Llotja de Mar"
+
+ monument_sa_llotja_de_palma: "Sa Llotja de Palma"
+ monument_sa_llotja_de_palma_desc: "Costruita per i mercanti di $palma$, la $monument_sa_llotja_de_palma$ completa il triangolo degli scambi marittimi aragonese-catalani insieme a quelli di $barcelona$ e $valencia$. La sua elegante sala gotica gestisce il commercio del Mediterraneo centrale, arricchendo il ceto borghese della città."
+ monument_sa_llotja_de_palma_maintenance: "Operazioni della Sa Llotja de Palma"
+
+ monument_torre_de_hercules: "Torre di Ercole"
+ monument_torre_de_hercules_desc: "La $monument_torre_de_hercules$ di [ShowLocationName('coruna')] è un faro romano ancora funzionante, l'unico del suo genere ancora in uso, che guida le navi attorno agli insidiosi scogli della costa galiziana. Il suo faro estende la nostra portata marittima lungo le rotte atlantiche e attira marinai al porto."
+ monument_torre_de_hercules_maintenance: "Mantenimento della Torre di Ercole"
+
+ monument_consulado_de_bilbao: "Consulado de Bilbao"
+ monument_consulado_de_bilbao_desc: "Il $monument_consulado_de_bilbao$ è un tribunale commerciale borghese che gestisce le controversie mercantili e supervisiona il commercio della lana che scorre attraverso [ShowLocationName('bilbao')] verso i mercati dell'Europa settentrionale. I suoi ordinamenti formalizzano secoli di usanze commerciali basche, attirando più commercio verso il porto."
+ monument_consulado_de_bilbao_maintenance: "Operazioni del Consulado de Bilbao"
+ rgo_enhancement_category: "Potenziamento delle Materie Prime"
+ rgo_enhancement_category_desc: "Sono edifici che non producono nulla da soli, ma moltiplicano le [raw_materials|e] già estratte nella località. Vengono dotati di personale prima degli altri edifici, poiché lasciarli inattivi spreca la produzione che avrebbero moltiplicato."

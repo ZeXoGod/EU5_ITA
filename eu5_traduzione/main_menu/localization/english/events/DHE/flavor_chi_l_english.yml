@@ -15,7 +15,7 @@
  chi_adjust_pre_rtr_modifiers_base_text: "#Y This affects [ShowModifier('chi_factional_strife')] and [ShowModifier('rtr_red_turban_rebellions')]#!"
 
  flavor_chi.1.title: "The Strategic Decision after [target_explorer.GetNameWithNoTooltip]'s Journey"
- flavor_chi.1.entry: "The Strategic Decision after Zhèng Hé's Journey" #NEW
+ flavor_chi.1.entry: "The Strategic Decision after Zhèng Hé's Journey"
  flavor_chi.1.desc: "Although it is undeniable that we are the center of the world, and anything outside our borders is not really worthy of our attention, knowledge of those far-away places is nonetheless useful. As such, we have had [target_explorer.GetName] bring us information about such places, and [target_explorer.GetSheHe] is conducting explorations for us.\n\nHowever, many at [ROOT.GetCountry.GetGovernment.GetCourtTitle] argue that it is not worthy of the [ROOT.GetCountry.GetLongName] to worry about barbarian lands, while others have the opposite opinion and suggest that we should instead further direct our gaze outwards, as they foresee many benefits from it."
  flavor_chi.1.historical_info: "In the 14th century, China's relations with the outside world began to change. Under the Yuán Dynasty, China had made contact with the West by reopening the old silk routes and bringing Muslim, Christian, and Jewish traders into China. The expulsion of the Mongols in 1367 and the seizure of power by the Míng reversed the processes that were tying China more strongly to the outside. Following the seven expeditions (1405-1433) of admiral Zhèng Hé, who sailed the imperial fleet into the Indian Ocean and to the coast of Africa, China folded in on itself and closed off its external connections."
  flavor_chi.1.a: "Inward Perfection."
@@ -26,15 +26,15 @@
  flavor_chi.2.desc: "Ever since times of old, security on the northern frontier has been an important issue. One problem is the sorry state of the [ShowBuildingTypeName('ruined_great_wall_of_china')], built in ancient times, but left to crumble in recent centuries. We could repair it, but it would be expensive and the effort, both physical and fiscal, would likely cause some unrest among the people. However, with improved defenses, the provinces in the area would likely become more productive and secure, while without them, people may leave for safer havens. What shall we do?"
  flavor_chi.2.a: "Let us maintain the [ShowBuildingTypeNameWithNoTooltip('ruined_great_wall_of_china')] better."
  flavor_chi.2.b: "We could repair extensively the section in [target_province1.GetNameWithNoTooltip]."
- flavor_chi.2.b.entry: "We could repair extensively the section in the province." #NEW
+ flavor_chi.2.b.entry: "We could repair extensively the section in the province."
  flavor_chi.2.c: "[target_province2.GetNameWithNoTooltip] will benefit from substantial repairs."
- flavor_chi.2.c.entry: "The province will benefit from substantial repairs." #NEW
+ flavor_chi.2.c.entry: "The province will benefit from substantial repairs."
  flavor_chi.2.d: "Let us rebuilt [target_province3.GetNameWithNoTooltip]'s section of the wall."
- flavor_chi.2.d.entry: "Let us rebuilt the province's section of the wall." #NEW
+ flavor_chi.2.d.entry: "Let us rebuilt the province's section of the wall."
  flavor_chi.2.e: "Let it continue to crumble."
  
  flavor_chi.4.title: "[target_character.GetNameWithNoTooltip]'s Army Reforms"
- flavor_chi.4.entry: "A General's Army Reforms" #NEW
+ flavor_chi.4.entry: "A General's Army Reforms"
  flavor_chi.4.desc: "The noted [target_character.GetName] has proposed a series of military reforms which, if implemented, would make our armies stronger and our men fight more effectively. Unfortunately, a thorough overhaul of the military is quite an undertaking. It will take quite a bit of money and effort, and even then the armed forces may not appreciate the changes, leading to instability and desertions."
  flavor_chi.4.a: "Go with the reforms!"
  flavor_chi.4.b: "No, such reforms are too costly."
@@ -58,10 +58,10 @@
  flavor_chi.7.desc: "Due to recent events, it now seems that the Jesuits may have outlived their usefulness. Although their knowledge is great, it is foreign to us and sometimes causes much commotion among our scholars and the common folk, disrupting the stability of our realm. They have been for decades interfering in the internal affairs of our nation, even trying to meddle in the affairs of our [ROOT.GetCountry.GetGovernment.GetAdjective] succession. Perhaps it is time for them to go."
  flavor_chi.7.a: "Expel them!"
  flavor_chi.7.b: "They are too valuable!"
- variable_mng_accepted_jesuits_tt: "The Jesuits have been Accepted at Court" #NEW
+ variable_mng_accepted_jesuits_tt: "The Jesuits have been Accepted at Court"
  
  flavor_chi.8.title: "[target_character.GetNameWithNoTooltip]'s Mission"
- flavor_chi.8.entry: "British Diplomatic Mission" #NEW
+ flavor_chi.8.entry: "British Diplomatic Mission"
  flavor_chi.8.desc: "Reports have reached us that a diplomatic mission has arrived on our shores from the far-off western barbarian nation of [target_country.GetName], led by a certain [target_character.GetName]. [target_character.GetSheHe|U] is said to bring with [target_character.GetHerHim] the friendly greetings of [target_character.GetHerHis] [target_country.GetGovernment.GetRulerTitle], ideas for facilitating the trade between our nations, and various mechanical wonders."
  flavor_chi.8.a: "Reject the overtures of these rude western devils!"
  flavor_chi.8.b: "We are interested in hearing their ideas."
@@ -69,10 +69,10 @@
  
 
  flavor_chi.9.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.9.entry: "Matteo Ricci, Jesuit Scholar" #NEW
- flavor_chi.9.desc: "An unusual Jesuit has approached the [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetName] dresses like a [ShowCultureGroupName('chinese_group')] person, has adopted many [ShowCultureGroupNameWithNoTooltip('chinese_group')] customs, and talks in a way similar to the [ShowCultureGroupNameWithNoTooltip('chinese_group')] people. A scholar as well as a missionary, [target_character.GetLastNameWithNoTooltip] seems to be as interested in the customs, cartography, and science of the [ShowCultureGroupNameWithNoTooltip('chinese_group')] world as he is to inform us of his own one. This does mean that he has had a lot more success than many of his brethren when it comes to attracting converts, but his skills, especially relating to astronomy and cartography, could undoubtedly come of use to us." #NEW
+ flavor_chi.9.entry: "Matteo Ricci, Jesuit Scholar"
+ flavor_chi.9.desc: "An unusual Jesuit has approached the [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetName] dresses like a [ShowCultureGroupName('chinese_group')] person, has adopted many [ShowCultureGroupNameWithNoTooltip('chinese_group')] customs, and talks in a way similar to the [ShowCultureGroupNameWithNoTooltip('chinese_group')] people. A scholar as well as a missionary, [target_character.GetLastNameWithNoTooltip] seems to be as interested in the customs, cartography, and science of the [ShowCultureGroupNameWithNoTooltip('chinese_group')] world as he is to inform us of his own one. This does mean that he has had a lot more success than many of his brethren when it comes to attracting converts, but his skills, especially relating to astronomy and cartography, could undoubtedly come of use to us."
  flavor_chi.9.a: "Welcome [target_character.GetNameWithNoTooltip] to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
- flavor_chi.9.a.entry: "Welcome him to our court." #NEW
+ flavor_chi.9.a.entry: "Welcome him to our court."
  flavor_chi.9.b: "Go back to [ShowContinentNameWithNoTooltip('europe')]!"
  
  flavor_chi.10.title: "Kūnyú Wànguó Quántú"
@@ -102,25 +102,25 @@
  flavor_chi.14.title: "A [ShowReligionGroupAdjectiveWithNoTooltip('christian')] [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle]"
  flavor_chi.14.desc: "It seems that [target_character.GetName], one [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] at our [ROOT.GetCountry.GetGovernment.GetCourtTitle], has become fascinated by the culture and knowledge of the missionaries from the West. While we do stand to gain from the insights [target_character.GetSheHe] has gained through the contacts [target_character.GetSheHe] has made, [target_character.GetHerHis] recent conversion to [ShowReligionName('catholic')] is perhaps a bit too much to stomach."
  flavor_chi.14.a: "Dismiss [target_character.GetHerHim]."
- flavor_chi.14.a.entry: "Dismiss him." #NEW
+ flavor_chi.14.a.entry: "Dismiss him."
  flavor_chi.14.b: "As long as [target_character.GetSheHe] does [target_character.GetHerHis] job."
- flavor_chi.14.b.entry: "As long as he does his job." #NEW
+ flavor_chi.14.b.entry: "As long as he does his job."
 
  flavor_chi.15.title: "Rooted Incompetence"
  flavor_chi.15.desc: "Our administration is home to illustrious positions around the [ROOT.GetCountry.GetGovernment.GetCourtTitle] of [target_character.GetName]. Despite our attempts to promote and maintain a [ROOT.GetCountry.GetGovernment.GetCabinetTitle] of capable individuals, sometimes incompetence slips through.\n\nSuch is the case with [target_character2.GetName] who, despite [target_character2.GetHerHis] best efforts, has managed to cause issues and congestion in our bureaucratic process."
  flavor_chi.15.a: "End [target_character2.GetHerHis] tenure immediately."
- flavor_chi.15.a.entry: "End his tenure immediately." #NEW
+ flavor_chi.15.a.entry: "End his tenure immediately."
  flavor_chi.15.b: "Arrange a one-way trip for [target_character2.GetShortNameWithNoTooltip] to return home."
- flavor_chi.15.b.entry: "Arrange a one-way trip for him to return home." #NEW
+ flavor_chi.15.b.entry: "Arrange a one-way trip for him to return home."
  flavor_chi.15.c: "Give [target_character2.GetHerHim] another chance..."
- flavor_chi.15.c.entry: "Give him another chance..." #NEW
+ flavor_chi.15.c.entry: "Give him another chance..."
 
  flavor_chi.16.title: "Mistrust in the [ROOT.GetCountry.GetGovernment.GetCabinetTitle]"
  flavor_chi.16.desc: "Whispers and intrigue are no foreigners to the daily life of the palace. However, recent gossip has stirred the maids and the Eunuchs into a frenzy. It appears that [target_character2.GetName] has denounced the fine elegance of [ROOT.GetCountry.GetCulture.GetName] culture. In fact, [target_character2.GetSheHe] insists that [target_culture.GetName] is superior in every way. This scandalous behavior threatens the stability and health of our internal affairs, like a weed in the garden..."
  flavor_chi.16.a: "Away with [target_character2.GetHerHim]."
- flavor_chi.16.a.entry: "Away with him." #NEW
+ flavor_chi.16.a.entry: "Away with him."
  flavor_chi.16.b: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] fears no such criticisms!"
- flavor_chi.16.b.entry: "Our court fears no such criticisms!" #NEW
+ flavor_chi.16.b.entry: "Our court fears no such criticisms!"
  based_on_spiritualist_vs_humanist_tt: "Based on our current position between [ShowSocietyDirectionName('spiritualist')] and [ShowSocietyDirectionName('humanist')]:"
 
  flavor_chi.17.title: "Liquid Silver"
@@ -132,7 +132,7 @@
  flavor_chi.18.title: "Away from Home"
  flavor_chi.18.desc: "Life at [ROOT.GetCountry.GetGovernment.GetCourtTitle] is usually very busy. Courtiers preparing the next feast, ministers composing a new decree as the whole palace whistles along in an occupied tune. Whilst the type of life that involves a position in our [ROOT.GetCountry.GetGovernment.GetCabinetTitle] is coveted by many, it has come to our notice that [target_character2.GetShortName] has become very melancholic.\n\nWhen approached, [target_character2.GetSheHe] spoke of [target_location.GetName], where [target_character2.GetSheHe] was born, some [ROOT.GetVariable('character_age_display_variable').GetValue] years ago. [target_character2.GetHerHis|U] wish is to return, and take some time to reconnect with [target_character2.GetHerHis] family and enjoy the quiet life away from [ROOT.GetCountry.GetCapital.GetName], tending to the local administration matters in [target_location.GetNameWithNoTooltip]..."
  flavor_chi.18.a: "Family is important, let [target_character2.GetHerHim] go."
- flavor_chi.18.a.entry: "Family is important, let him go." #NEW
+ flavor_chi.18.a.entry: "Family is important, let him go."
  flavor_chi.18.b: "And who will tend to our bureaucracy?"
  target_province_gets_pop_sat_and_prosperity_tt: "Our [locations|e] in [target_province.GetName] will gain #G +[ROOT.GetVariable('character_prosperity_gain_variable_display').GetValue]%#! [prosperity|e] and their [pops|e] will gain #G +[ROOT.GetVariable('character_pop_satisfaction_gain_variable_display').GetValue]%#! [pop_satisfaction|e] according to the skills of [target_character2.GetShortNameWithNoTooltip]"
  based_on_the_abilities_of_cabinet_tt: "Based on the combined skills of [target_character.GetShortNameWithNoTooltip] and [target_character2.GetShortNameWithNoTooltip]:"
@@ -153,7 +153,7 @@
  flavor_chi.21.entry: "$flavor_chi.21.title$"
  flavor_chi.21.desc: "The people of [target_location.GetName] are blessed with a bustling and vibrant heartland, full of lush, fertile farmlands. Coupled with the locale's vital position in the heart of $china$, it is no wonder that it has attracted such growth and mercantile significance. To commemorate this and in an attempt to showcase our wealth, [target_character.GetName] has proposed the restoration of Prince Téng's pavilion, to serve as an illustrious symbol of our wealth and a powerful display of our superior architecture..."
  flavor_chi.21.a: "Let the complex grace the beauty of [target_province.GetNameWithNoTooltip]."
- flavor_chi.21.a.entry: "Let the complex grace the beauty of the province." #NEW
+ flavor_chi.21.a.entry: "Let the complex grace the beauty of the province."
  flavor_chi.21.b: "We cannot afford this."
  target_province_gets_20_prosperity: "Every owned [location|e] in the [target_province.GetNameWithNoTooltip] [province|e] will gain [ShowNamedValue('prosperity_severe_bonus')|+=2%] [prosperity|e]"
  every_pop_target_province_loses_25_satisfaction_tt: "Every peasant [pop|e] in the [target_province.GetNameWithNoTooltip] [province|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
@@ -161,30 +161,30 @@
 
  flavor_chi.22.title: "A Great Admiral"
  flavor_chi.22.entry: "$flavor_chi.22.title$"
- flavor_chi.22.desc: "More often than not, commoners and prisoners of war find it difficult to rise through the social ranks. Yet, it is quite remarkable when one such individual appears. This is the case of a eunuch by the name of [target_character.GetName]. Having been captured and castrated at a young age, [target_character.GetNameWithNoTooltip] began his servitude at the house of a local prince in [ShowAreaName('yunnan_area')]. After winning the prince's trust, he was sent to [ShowLocationName('dadu')] to hone his education, where he excelled. It is no miracle that such a man has made a great impression on [target_character2.GetName]. It is without a doubt that [target_character.GetNameWithNoTooltip] will make a fine admiral and leader for our glorious people." #NEW
+ flavor_chi.22.desc: "More often than not, commoners and prisoners of war find it difficult to rise through the social ranks. Yet, it is quite remarkable when one such individual appears. This is the case of a eunuch by the name of [target_character.GetName]. Having been captured and castrated at a young age, [target_character.GetNameWithNoTooltip] began his servitude at the house of a local prince in [ShowAreaName('yunnan_area')]. After winning the prince's trust, he was sent to [ShowLocationName('dadu')] to hone his education, where he excelled. It is no miracle that such a man has made a great impression on [target_character2.GetName]. It is without a doubt that [target_character.GetNameWithNoTooltip] will make a fine admiral and leader for our glorious people."
  flavor_chi.22.a: "An excellent addition to our military ranks."
  flavor_chi.22.b: "We cannot trust any eunuchs!"
 
  flavor_chi.23.title: "Rebellion of [target_character.GetNameWithNoTooltip]"
  flavor_chi.23.entry: "Rebellion of $name_fan.mandarin_language$ $name_meng4.mandarin_language$"
- flavor_chi.23.desc: "Our armies just quelled a minor rebellion led by a petty bureaucrat named [target_character.GetName]. Disgruntled by our policies, he led a brutal rebellion in which he took over the [target_location.GetRank.GetName] of [target_location.GetName] and executed many government officials.\n\nMost of the [ROOT.GetCountry.GetCulture.GetName] members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] agree that the lead cause of that tragedy was the disloyalty of the [ShowCultureGroupName('chinese_group')] officials, whose privileges must be limited in order to prevent another such tragedy." #NEW
+ flavor_chi.23.desc: "Our armies just quelled a minor rebellion led by a petty bureaucrat named [target_character.GetName]. Disgruntled by our policies, he led a brutal rebellion in which he took over the [target_location.GetRank.GetName] of [target_location.GetName] and executed many government officials.\n\nMost of the [ROOT.GetCountry.GetCulture.GetName] members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] agree that the lead cause of that tragedy was the disloyalty of the [ShowCultureGroupName('chinese_group')] officials, whose privileges must be limited in order to prevent another such tragedy."
  flavor_chi.23.a: "We will not let them spark another rebellion."
  flavor_chi.23.b: "We cannot afford to lose skilled bureaucrats."
 
  flavor_chi.24.title: "Coup of [recipient.GetNameWithNoTooltip]"
  flavor_chi.24.entry: "Coup of $name_toqta$"
- flavor_chi.24.desc: "The authoritarian policies of [couped_character.GetName] have significantly altered the political atmosphere of the [ROOT.GetCountry.GetLongName] in the last couple of years. He wields almost absolute control of the government and is feared even by the entire [ROOT.GetCountry.GetGovernment.GetCourtTitle] and even the [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ruler_scope.GetHerselfHimself].\n\nTo end [couped_character.GetShortNameWithNoTooltip]'s reign of terror, a plot has been forged by [recipient.GetName], who wishes to topple his uncle in a perfidious coup, perhaps even becoming the new Grand Chancellor [recipient.GetHerselfHimself]. Unsurprisingly, even [ruler_scope.GetName] is in on the plot, hoping to limit the power of this powerful aristocrat." #NEW
+ flavor_chi.24.desc: "The authoritarian policies of [couped_character.GetName] have significantly altered the political atmosphere of the [ROOT.GetCountry.GetLongName] in the last couple of years. He wields almost absolute control of the government and is feared even by the entire [ROOT.GetCountry.GetGovernment.GetCourtTitle] and even the [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ruler_scope.GetHerselfHimself].\n\nTo end [couped_character.GetShortNameWithNoTooltip]'s reign of terror, a plot has been forged by [recipient.GetName], who wishes to topple his uncle in a perfidious coup, perhaps even becoming the new Grand Chancellor [recipient.GetHerselfHimself]. Unsurprisingly, even [ruler_scope.GetName] is in on the plot, hoping to limit the power of this powerful aristocrat."
  flavor_chi.24.a: "Proceed with the plan."
  flavor_chi.24.b: "Reveal the plot of [recipient.GetNameWithNoTooltip]."
- flavor_chi.24.b.entry: "Reveal his plot." #NEW
+ flavor_chi.24.b.entry: "Reveal his plot."
  flavor_chi.24.c: "Have [couped_character.GetNameWithNoTooltip] deposed and pull the rug."
- flavor_chi.24.c.entry: "Have him deposed and pull the rug." #NEW
+ flavor_chi.24.c.entry: "Have him deposed and pull the rug."
 
  flavor_chi.25.title: "Appointment of [recipient.GetNameWithNoTooltip]"
  flavor_chi.25.entry: "Appointment of $name_toqta$"
- flavor_chi.25.desc: "The death of [dead_character.GetName] has left [ROOT.GetCountry.GetName] without a leading chancellor to take care of the courtly matters. It would seem that there is a natural successor though, for his nephew, [recipient.GetName], is a skilled statesman, who would be fit for the role. Many do fear his appointment though, for [dead_character.GetShortNameWithNoTooltip]'s tenure was absolute and brutal, and many are worried that [recipient.GetNameWithNoTooltip] could follow in his uncle's footsteps." #NEW
+ flavor_chi.25.desc: "The death of [dead_character.GetName] has left [ROOT.GetCountry.GetName] without a leading chancellor to take care of the courtly matters. It would seem that there is a natural successor though, for his nephew, [recipient.GetName], is a skilled statesman, who would be fit for the role. Many do fear his appointment though, for [dead_character.GetShortNameWithNoTooltip]'s tenure was absolute and brutal, and many are worried that [recipient.GetNameWithNoTooltip] could follow in his uncle's footsteps."
  flavor_chi.25.a: "Appoint [recipient.GetNameWithNoTooltip]."
- flavor_chi.25.a.entry: "Appoint him." #NEW
+ flavor_chi.25.a.entry: "Appoint him."
  flavor_chi.25.b: "We do not need another dictator."
  YUA_benefits_of_toqto: "When appointed, [recipient.GetName] will be sure to repeal the policies of his uncle, helping to push us towards a [ShowSocietyDirectionName('sinicized')] rule, while also repealing the [policy|e] of [ShowPolicyName('direct_appointment')] and [ShowPolicyName('limit_the_han_powers')]."
 
@@ -194,11 +194,11 @@
  flavor_chi.26.desc: "$flavor_chi.26_27.common_desc$\n\nOne of them is the [ShowPolicyName('direct_appointment')]. The result of this policy was detrimental to our bureaucracy, as it ended the one institution that, for centuries, promoted many skilled students to positions in the government of [ROOT.GetCountry.GetName] and its predecessors.\n\nNow that [target_character.GetShortNameWithNoTooltip] is looking into bringing back the [ShowLawName('keju_examination')], we can only hope the faith in the system will be restored and we will subsequently receive many new applicants."
  flavor_chi.26.a: "Follow through."
  flavor_chi.26.b: "Perhaps [dead_character.GetNameWithNoTooltip] was right."
- flavor_chi.26.b.entry: "Perhaps he was right." #NEW
+ flavor_chi.26.b.entry: "Perhaps he was right."
 
  flavor_chi.27.title: "[ShowLawNameWithNoTooltip('status_of_the_han_law')]"
- flavor_chi.27.entry: "Status Of The Han Law" #NEW
- flavor_chi.27.desc: "$flavor_chi.26_27.common_desc$\n\nAs his next target, he is set to reverse the policy of [ShowPolicyName('limit_the_han_powers')], which has alienated many [ShowCultureGroupName('chinese_group')] citizens and pushed them towards various rebellions aiming at overthrowing the [ROOT.GetCountry.GetFlavorRank]. Even during [dead_character.GetName]'s lifetime, the policy was secretly criticized as too harsh but noone could have opposed the powerful dictator." #NEW
+ flavor_chi.27.entry: "Status Of The Han Law"
+ flavor_chi.27.desc: "$flavor_chi.26_27.common_desc$\n\nAs his next target, he is set to reverse the policy of [ShowPolicyName('limit_the_han_powers')], which has alienated many [ShowCultureGroupName('chinese_group')] citizens and pushed them towards various rebellions aiming at overthrowing the [ROOT.GetCountry.GetFlavorRank]. Even during [dead_character.GetName]'s lifetime, the policy was secretly criticized as too harsh but noone could have opposed the powerful dictator."
  flavor_chi.27.a: "Reverse it!"
  flavor_chi.27.b: "It does suit us though."
 
@@ -210,17 +210,17 @@
  flavor_chi.28.a: "It is an excellent addition to the chronicles nevertheless."
 
  flavor_chi.29.title: "Elevation of [target_character.GetNameWithNoTooltip]"
- flavor_chi.29.entry: "Elevation of Empress Consort Gi" #NEW
- flavor_chi.29.desc: "For many years now, it has been abundantly clear that [target_character.GetName], the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s secondary consort, has been his true favorite. However, she could never gain the primacy in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] due to the scandal that would inevitably erupt, were she elevated to the status of a primary consort. Now, with the death of [deceased_wife.GetName], the [ROOT.GetCountry.GetGovernment.GetRulerTitle] has been given the most favorable time to elevate her to the status of Empress Consort." #NEW
+ flavor_chi.29.entry: "Elevation of Empress Consort Gi"
+ flavor_chi.29.desc: "For many years now, it has been abundantly clear that [target_character.GetName], the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s secondary consort, has been his true favorite. However, she could never gain the primacy in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] due to the scandal that would inevitably erupt, were she elevated to the status of a primary consort. Now, with the death of [deceased_wife.GetName], the [ROOT.GetCountry.GetGovernment.GetRulerTitle] has been given the most favorable time to elevate her to the status of Empress Consort."
  flavor_chi.29.a: "Opposition be damned!"
  flavor_chi.29.b: "We cannot stand for such a scandal."
 
  flavor_chi.30.title: "Catastrophic Rains in [target_province.GetNameWithNoTooltip]"
- flavor_chi.30.entry: "Catastrophic Rains and the Grand Canal" #NEW
- flavor_chi.30.desc: "A series of catastrophic weather events has struck [target_province.GetName], causing widespread devastation and suffering. That alone is a calamity, but the downpour has reached the [ShowScriptedGeographyName('chinese_canal_geography')], causing it to fill up and overflow. This unprecedented event has hampered the functioning of the canal, in turn severing the link between the south and the north.\n\nThough this damage can theoretically be repaired, it would come at a significant cost which we cannot possibly bear in our current state. But can [ROOT.GetCountry.GetName] survive without the Grand Canal?" 
+ flavor_chi.30.entry: "Catastrophic Rains and the Grand Canal"
+ flavor_chi.30.desc: "A series of catastrophic weather events has struck [target_province.GetName], causing widespread devastation and suffering. That alone is a calamity, but the downpour has reached the [ShowScriptedGeographyName('chinese_canal_geography')], causing it to fill up and overflow. This unprecedented event has hampered the functioning of the canal, in turn severing the link between the south and the north.\n\nThough this damage can theoretically be repaired, it would come at a significant cost which we cannot possibly bear in our current state. But can [ROOT.GetCountry.GetName] survive without the Grand Canal?"
  flavor_chi.30.a: "Tragedy has struck our nation."
- destroy_grand_canal_china_tt: "The [ShowScriptedGeographyName('chinese_canal_geography')] will be rendered practically unusable, weakening its effects from [ShowModifier('chi_grand_canal')] to [ShowModifier('chi_grand_canal_destruction')]" 
- repair_grand_canal_china_tt: "The [ShowScriptedGeographyName('chinese_canal_geography')] will be repaired, changing its effects from [ShowModifier('chi_grand_canal_destruction')] to [ShowModifier('chi_grand_canal')]" 
+ destroy_grand_canal_china_tt: "The [ShowScriptedGeographyName('chinese_canal_geography')] will be rendered practically unusable, weakening its effects from [ShowModifier('chi_grand_canal')] to [ShowModifier('chi_grand_canal_destruction')]"
+ repair_grand_canal_china_tt: "The [ShowScriptedGeographyName('chinese_canal_geography')] will be repaired, changing its effects from [ShowModifier('chi_grand_canal_destruction')] to [ShowModifier('chi_grand_canal')]"
 
  flavor_chi.32.title: "Capture of [target_location.GetNameWithNoTooltip]"
  flavor_chi.32.entry: "Capture of $dadu$"
@@ -235,7 +235,7 @@
  NORTHERN_YUA: "$YUA$ Settentrionale"
 
  flavor_chi.34.title: "Rise of the [ShowCultureNameWithNoTooltip('oirat_culture')] Confederation"
- flavor_chi.34.entry: "Rise of the $oirat_culture$ Culture Confederation" #NEW
+ flavor_chi.34.entry: "$flavor_chi.34.title$"
  flavor_chi.34.desc: "A powerful confederacy led by the [ShowCultureName('oirat_culture')] people has gained much influence in the western portions of our country and especially around their local capital of [target_location.GetName]. Our control has grown so weak in fact, that they and their tribal allies have formally declared independence. This threatens the integrity of our [ROOT.GetCountry.GetFlavorRank]."
  flavor_chi.34.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  flavor_chi.34.a.entry: "$common_string_curses$"
@@ -245,11 +245,11 @@
  flavor_chi.36.entry: "Fleeing to $shangdu$"
  flavor_chi.36.desc: "With the fall of [lost_capital.GetName], the state of [ROOT.GetCountry.GetName] has truly been humiliated. We are forced to retreat to [target_location.GetName], the last semblance of our pride, or to cower in fear in [current_capital.GetName]. Whatever we choose to do, we need to be prepared for the enemy onslaught."
  flavor_chi.36.a: "Open the gates to [target_location.GetNameWithNoTooltip]!"
- flavor_chi.36.a.entry: "Open the gates to [ShowLocationNameWithNoTooltip('shangdu')]!" #NEW
+ flavor_chi.36.a.entry: "Open the gates to [ShowLocationNameWithNoTooltip('shangdu')]!"
  flavor_chi.36.b: "Truly a terrible fate."
 
  flavor_chi.37.title: "Destruction of [target.GetNameWithNoTooltip]"
- flavor_chi.37.entry: "Destruction of the Summer Capital" #NEW
+ flavor_chi.37.entry: "Destruction of the Summer Capital"
  flavor_chi.37.desc: "We have captured the [target.GetRank.GetName] of [target.GetName], the summer capital of the [target_owner.GetLongName]. It would be customary to have the [target.GetRank.GetNameWithNoTooltip] razed so as to intimidate the enemy and have them yield faster. By doing such, we would also ensure that they shall not return anytime soon."
  flavor_chi.37.a: "Raze it to the ground!"
  flavor_chi.37.b: "Spare the settlement."
@@ -258,18 +258,18 @@
  flavor_chi.38.entry: "Retreat to $karakorum$"
  flavor_chi.38.desc: "The harsh decline of the [ROOT.GetCountry.GetLongName] continues. It would seem that not even in [current_capital.GetName] is the [ROOT.GetCountry.GetGovernment.GetRulerTitle] safe. With our foes breathing down our necks, perhaps it would be apt to do a strategic retreat towards the ancient capital of [target_location.GetName]."
  flavor_chi.38.a: "We will be back in [current_capital.GetNameWithNoTooltip]."
- flavor_chi.38.a.entry: "We will be back in the capital." #NEW
+ flavor_chi.38.a.entry: "We will be back in the capital."
  flavor_chi.38.b: "We cannot abandon our post."
 
  flavor_chi.39.title: "Fate of [subject_country.GetNameWithNoTooltip]"
- flavor_chi.39.entry: "Fate of Subject Country" #NEW
+ flavor_chi.39.entry: "Fate of Subject Country"
  flavor_chi.39.desc: "Our fall from grace sees our [chain_initiator.GetFlavorRank] lose its dependencies left and right. One of them could very soon become the [subject_country.GetLongName], under the joint control of [chain_initiator.GetName] and [target_country.GetName]. Due to our loss of crucial ports and the general chaos enveloping our state, we are unable to administer the island, not to mention quelling the rebellion that is currently brewing. Perhaps it would best to just pass it on to the [target_country.GetLongName] in turn also improving the relations between the two states."
- flavor_chi.39.a: "Pass it to the [target_country.GetLongNameWithNoTooltip]." #NEW
- flavor_chi.39.a.entry: "Pass it to them." #NEW
+ flavor_chi.39.a: "Pass it to the [target_country.GetLongNameWithNoTooltip]."
+ flavor_chi.39.a.entry: "Pass it to them."
  flavor_chi.39.b: "We will hold onto it, despite the problems."
  
  flavor_chi.40.title: "[chain_initiator.GetNameWithNoTooltip] Yields [subject_country.GetNameWithNoTooltip]"
- flavor_chi.40.entry: "$china$ Yields Subject Country" #NEW
+ flavor_chi.40.entry: "$china$ Yields Subject Country"
  flavor_chi.40.desc: "The [chain_initiator.GetLongName] is on the decline, which is putting our joint administration over [subject_country.GetName] into question.\n\nBefittingly, the recent unrest on the island has finally convinced them to finally cut their losses and to transfer the ownership over the island to us - the rightful owners!"
  flavor_chi.40.a: "As is expected."
  flavor_chi.40.b: "It does not, however, suit our agenda."
@@ -286,8 +286,8 @@
  flavor_chi.42.b: "We cannot afford it."
 
  flavor_chi.43.title: "[target_character.GetNameWithNoTooltip]'s Mission to $china$"
- flavor_chi.43.entry: "Lord Macartney's Mission to China" #NEW
- flavor_chi.43.desc: "Reports have reached us that a diplomatic mission has arrived at our shores from the far-off western barbarian nation of [target_country.GetName], led by a certain Lord, [target_character.GetName]. He is said to bring with him the friendly greetings of his [target_country.GetGovernment.GetRulerTitle], ideas for facilitating the trade between our nations, and various mechanical wonders." #NEW
+ flavor_chi.43.entry: "Lord Macartney's Mission to China"
+ flavor_chi.43.desc: "Reports have reached us that a diplomatic mission has arrived at our shores from the far-off western barbarian nation of [target_country.GetName], led by a certain Lord, [target_character.GetName]. He is said to bring with him the friendly greetings of his [target_country.GetGovernment.GetRulerTitle], ideas for facilitating the trade between our nations, and various mechanical wonders."
  flavor_chi.43.a: "Reject the overtures of these rude western devils!"
  flavor_chi.43.b: "Welcome this mission."
 
@@ -299,30 +299,30 @@
  chi_how_to_strengthen_the_reform: "The impact of the [ShowGovernmentReformName('empower_the_eunuchs')] [government_reform|e] can be increased with further [events|e] that give the [ShowModifierTypeName('eunuch_power')] [modifier|e]."
 
  flavor_chi.45.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.45.entry: "$name_yang.mandarin_language$ $name_shen4.mandarin_language$, Poet of the Ming" #NEW
- flavor_chi.45.desc: "One of the great poets of our era, [target_character.GetName] is the pride of his home province of [target_province.GetName]. Known by multiple art names like Shēng Ān, Bónán Shānrén and Diānnán Shùshǐ, he is a master writer and lyricist, having already produced great quantities of works, generally around the theme of nature and culture. Some of his works have already reached such widespread notoriety, that his name is sure to be etched forever in the pages of history." #NEW
+ flavor_chi.45.entry: "$name_yang.mandarin_language$ $name_shen4.mandarin_language$, Poet of the Ming"
+ flavor_chi.45.desc: "One of the great poets of our era, [target_character.GetName] is the pride of his home province of [target_province.GetName]. Known by multiple art names like Shēng Ān, Bónán Shānrén and Diānnán Shùshǐ, he is a master writer and lyricist, having already produced great quantities of works, generally around the theme of nature and culture. Some of his works have already reached such widespread notoriety, that his name is sure to be etched forever in the pages of history."
  flavor_chi.45.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_chi.45.a.entry: "$common_string_brilliant$"
 
  flavor_chi.46.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.46.entry: "$name_qin.mandarin_language$ $name_liang2.mandarin_language$ $name_yu4.mandarin_language$, General and Poet" #NEW
- flavor_chi.46.desc: "A battle-hardened general by the name of [target_character.GetName] has once again blessed us with her presence. Her father made sure that she got the same education as her brothers and she is well-learned in history, the classics, martial arts, archery, and riding, with a reputation for creating beautiful and thought-provoking poems. With her recent involvement in military matters, it is clear as day that she would be a great fit." #NEW
- flavor_chi.46.a: "We need her in the military!" #NEW
- flavor_chi.46.b: "Let her write us poems." #NEW
- flavor_chi.46.c: "She must serve in our [ROOT.GetCountry.GetGovernment.GetCabinetTitle]." #NEW
- flavor_chi.46.c.entry: "She must serve in our our cabinet." #NEW
+ flavor_chi.46.entry: "$name_qin.mandarin_language$ $name_liang2.mandarin_language$ $name_yu4.mandarin_language$, General and Poet"
+ flavor_chi.46.desc: "A battle-hardened general by the name of [target_character.GetName] has once again blessed us with her presence. Her father made sure that she got the same education as her brothers and she is well-learned in history, the classics, martial arts, archery, and riding, with a reputation for creating beautiful and thought-provoking poems. With her recent involvement in military matters, it is clear as day that she would be a great fit."
+ flavor_chi.46.a: "We need her in the military!"
+ flavor_chi.46.b: "Let her write us poems."
+ flavor_chi.46.c: "She must serve in our [ROOT.GetCountry.GetGovernment.GetCabinetTitle]."
+ flavor_chi.46.c.entry: "She must serve in our our cabinet."
 
  flavor_chi.47.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.47.entry: "$name_wang.mandarin_language$ $name_zhen.mandarin_language$ $name_yi2.mandarin_language$, Scientist and Scholar" #NEW
- flavor_chi.47.desc: "Word has reached us of a most curious and impressive character. [target_character.GetName] is a talented [ShowArtistTypeName('scientist')] of many skills that she has acquired over her lifetime. Since a young age, she has shown promise with an aptitude for quick learning. Throughout her childhood, she received an excellent education, mostly through her family, and was able to make a name for [target_character.GetHerselfHimself], defying many social norms present in the [ROOT.GetCountry.GetAdjective] society.\n\nShe would make a great fit in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
- flavor_chi.47.a: "We need her at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]!" #NEW
- flavor_chi.47.a.entry: "We need her at the court!" #NEW
+ flavor_chi.47.entry: "$name_wang.mandarin_language$ $name_zhen.mandarin_language$ $name_yi2.mandarin_language$, Scientist and Scholar"
+ flavor_chi.47.desc: "Word has reached us of a most curious and impressive character. [target_character.GetName] is a talented [ShowArtistTypeName('scientist')] of many skills that she has acquired over her lifetime. Since a young age, she has shown promise with an aptitude for quick learning. Throughout her childhood, she received an excellent education, mostly through her family, and was able to make a name for [target_character.GetHerselfHimself], defying many social norms present in the [ROOT.GetCountry.GetAdjective] society.\n\nShe would make a great fit in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_chi.47.a: "We need her at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ flavor_chi.47.a.entry: "We need her at the court!"
  flavor_chi.47.b: "We are not exactly interested."
 
  flavor_chi.48.title: "A Steadfast Defender"
  flavor_chi.48.entry: "$flavor_chi.48.title$"
  flavor_chi.48.desc: "A true miracle happened in one of our provincial garrisons! In the face of an imminent mutiny and rebellion, a [target_character.GetWomanMan] named [target_character.GetName] took up the mantle and took charge of the defense of the local garrison, successfully repelling the traitors and earning [target_character.GetHerselfHimself] military fame. This masterful display of martial prowess will be remembered for the decades to come."
- flavor_chi.48.a: "He is due for a promotion." #NEW
+ flavor_chi.48.a: "He is due for a promotion."
  flavor_chi.48.b: "Many such cases."
 
  flavor_chi.49.title: "The Great [ROOT.GetCountry.GetNameWithNoTooltip]'s Supervisory Agency"
@@ -352,19 +352,19 @@
  flavor_chi.52.a: "Truly magnificent!"
 
  flavor_chi.53.title: "[ShowBuildingTypeNameWithNoTooltip('forbidden_city')]"
- flavor_chi.53.entry: "Forbidden City" #NEW
+ flavor_chi.53.entry: "Forbidden City"
  flavor_chi.53.desc: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] are in need of a new palace to manage the [ROOT.GetCountry.GetFlavorRank]'s affairs from. After much deliberation, [target_location.GetName] has been chosen to host the new palace as it was deemed a most suitable site for a northern capital and a new seat of power.\n\nAs such, [target_character.GetName] had [target_character.GetHerHis] ministers and architects design a new palace to be placed there. After months of relentless work, their work is finally done and the result is the plan of the [ShowBuildingTypeName('forbidden_city')], a massive complex containing hundreds of buildings and housing thousands of ministers and servants."
  flavor_chi.53.a: "Have it built at once!"
  flavor_chi.53.b: "Could we spare the gold, we would."
- CHI_event_will_fire_within_10_to_20_years: "The construction finish will be marked by an [event|e] that will fire within 10 to 20 years, which will do the following:" #NEW
+ CHI_event_will_fire_within_10_to_20_years: "The construction finish will be marked by an [event|e] that will fire within 10 to 20 years, which will do the following:"
 
  flavor_chi.54.title: "$flavor_chi.53.title$ Built"
  flavor_chi.54.entry: "$flavor_chi.54.title$"
  flavor_chi.54.desc: "The construction of the magnificent [ShowBuildingTypeName('forbidden_city')] is finally complete. The complex is now ready for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to move in and it is certain that the palace will, at the very least, serve as the winter residence for the monarchs. What is certain, however, is that the [target_location.GetRank.GetName] of [target_location.GetName] has become a lot more important for our state."
  flavor_chi.54.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is more than delighted."
- flavor_chi.54.a.entry: "The ruler is more than delighted." #NEW
+ flavor_chi.54.a.entry: "The ruler is more than delighted."
  flavor_chi.54.b: "More important matters remain in [current_capital.GetNameWithNoTooltip]."
- flavor_chi.54.b.entry: "More important matters remain in the capital." #NEW
+ flavor_chi.54.b.entry: "More important matters remain in the capital."
 
  flavor_chi.55.title: "Yuán Shǐ"
  flavor_chi.55.entry: "$flavor_chi.55.title$"
@@ -408,7 +408,7 @@
  flavor_chi.60.desc: "One of the [new_ruler.GetName]'s ancestors, [ROOT.GetVariable('chi_ancestor').GetCharacter.GetName], once wrote a set of comprehensive recommendations for any future [ROOT.GetCountry.GetGovernment.GetRulerTitle] to uphold. Those rules have been compiled in a book titled $flavor_chi.56.title$ which contains a set of countries that are not to be invaded as well as thirteen sections dedicated to many aspects of statecraft. Should [new_ruler.GetShortNameWithNoTooltip] heed those warnings and suggestions?"
  flavor_chi.60.a: "Read into the book."
  flavor_chi.60.b: "Bah, [new_ruler.GetNameWithNoTooltip] knows better!"
- flavor_chi.60.b.entry: "Bah, he knows better!" #NEW
+ flavor_chi.60.b.entry: "Bah, he knows better!"
 
  flavor_chi.61.title: "Gatekeepers"
  flavor_chi.61.desc: "Since the empowerement of the Eunuchs, this powerful faction within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has gained considerable influence in the government. Whenever an appeal is made to the [ROOT.GetCountry.GetGovernment.GetRulerTitle], it has to go through the Eunuchs, who are sure to bar anyone even remotely against them from getting to converse with the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. In all of this, the Divine Emperor is none the wiser."
@@ -439,7 +439,7 @@
  flavor_chi.66.desc: "Today, one of the high-ranking eunuchs has been spotted talking to a leading minister of the [ShowGovernmentReformName('three_departments_system')]. Ordinarily, the minister would have been talking to the [ROOT.GetCountry.GetGovernment.GetRulerTitle], but in this scenario it was the eunuch secretary that was both receiving the envoy as well as making the crucial decision. That has prompted [target_character.GetName] to ask a vital question, have the palace eunuchs been given too many rights and privileges?"
  flavor_chi.66.a: "Perhaps some orders need to be reversed."
  flavor_chi.66.b: "The less work [target_character.GetNameWithNoTooltip] has, the better."
- flavor_chi.66.b.entry: "The less work he has, the better." #NEW
+ flavor_chi.66.b.entry: "The less work he has, the better."
 
  flavor_chi.67.title: "Governmental Purges in the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
  flavor_chi.67.desc: "The cycle of life and death is true for all things, including bureaucracy. For far too long, elements within our government have enjoyed the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s favor and wealth, enriching themselves and spreading their corruption upon anything they touch. We would best limit and crack down on these rogue bureaucrats lest their influence grows too large!"
@@ -472,14 +472,6 @@
  flavor_chi.72.desc: "Our military is identical to the one that we have defeated so many times in the [ShowSituationName('red_turban_rebellions')]. As such, we have inherited many unnecessary institutions that were derived from the nomadic roots of the [GetCountry('YUA').GetName]. Therefore, it would be worthwhile to reform the military into a system that could be more suited towards our contemporary needs. Our forces shall be grouped into guards and batallions, each consisting 5600 and 1120 men respectively. Our soldiers will also be forced to manage their own farms so as to lessen the strain on our logistics during peacetime."
  flavor_chi.72.a: "Proceed with the reforms."
  flavor_chi.72.b: "We cannot afford to make alterations right now."
-
- flavor_chi.73.title: "Grand Pronouncements"
- flavor_chi.73.entry: "$flavor_chi.73.title$"
- flavor_chi.73.desc: "[target_character.GetName|U] stipulates that the downfall of the previous dynasty was caused in its entirety by the corruption and overreach of the governmental ministers. In this vein, [target_character.GetHeShe] argues that a more strict and legalistic legal code should be enacted in order to prevent [ROOT.GetCountry.GetName] from suffering the same fate."
- flavor_chi.73.a: "Strike down on corruption."
- flavor_chi.73.b: "Corruption? In our government? Impossible."
- chi_ming_dynasty_code_will_be_changed: "[ShowPolicyName('chi_ming_dynasty_code_policy')] will be changed to include the modifiers of [ShowModifier('chi_grand_pronouncements')]."
- integrated_grand_prounouncements: "Has integrated the [ShowModifier('chi_grand_pronouncements')] into the [ShowPolicyName('chi_ming_dynasty_code_policy')]."
  
  flavor_chi.74.title: "Compiling New Legal Code"
  flavor_chi.74.entry: "$flavor_chi.74.title$"
@@ -488,10 +480,10 @@
  flavor_chi.74.b: "It still needs a few revisions."
 
  flavor_chi.75.title: "[target_character.GetNameWithNoTooltip]'s Plot?"
- flavor_chi.75.entry: "A Chancellor's Alleged Plot" #NEW
+ flavor_chi.75.entry: "A Chancellor's Alleged Plot"
  flavor_chi.75.desc: "Word has reached [ruler_scope.GetName] of an alleged plot, led by none other than [target_character.GetName], leader of the Grand Chancellery, supervisor and overseer of the [ShowGovernmentReformName('three_departments_system')]. As per the informant, [target_character.GetShortNameWithNoTooltip] is planning to overthrow the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Though there are several inconsistencies in the story, the whole ordeal seems pretty convincing and decreasing power of the chancellery might be beneficial to us."
  flavor_chi.75.a: "Execute [target_character.GetHerHim] and disband the Grand Chancellery!"
- flavor_chi.75.a.entry: "Execute him and disband the Grand Chancellery!" #NEW
+ flavor_chi.75.a.entry: "Execute him and disband the Grand Chancellery!"
  flavor_chi.75.b: "Have the bureaucrats of Hànlín Academy serve in the Secretariat."
  flavor_chi.75.c: "Just a rumor."
 
@@ -523,13 +515,13 @@
  flavor_chi.80.entry: "Expedition into $manchuria_region$"
  flavor_chi.80.desc: "The vast lands of [ShowRegionName('manchuria_region')] are still as sparsely populated as ever, with many barbarian tribes who have never even heard of the glorious [ROOT.GetCountry.GetLongName]. Perhaps it would be preferable to lead an expedition down the Amur river to convince the local chieftains to become part of our [ShowSubjectTypeName('tributary')] System. One of our generals, [target_character.GetName], has volunteered to do so."
  flavor_chi.80.a: "[target_character.GetSheHe|U] has our seal of approval."
- flavor_chi.80.a.entry: "He has our seal of approval." #NEW
+ flavor_chi.80.a.entry: "He has our seal of approval."
  flavor_chi.80.b: "Our resources are best spent elsewhere."
 
  flavor_chi.81.title: "Visit of the [expedition_country.GetAdjectiveWithNoTooltip] Expedition"
  flavor_chi.81.desc: "An expedition led by a certain [target_character.GetName] has arrived in our [ROOT.GetCountry.GetGovernment.GetAdjective] territories seeking audience with the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. We have reasons to believe that they are aiming to make a [ShowSubjectTypeName('tributary')] out of us! Should we heed their proposals?"
  flavor_chi.81.a: "Of the [expedition_country.GetLongNameWithNoTooltip]? We shall!"
- flavor_chi.81.a.entry: "Of our realm? We shall!" #NEW
+ flavor_chi.81.a.entry: "Of our realm? We shall!"
  flavor_chi.81.b: "We will not be subdued!"
 
  flavor_chi.82.title: "Nurgan Military Commission"
@@ -538,7 +530,7 @@
  flavor_chi.82.b: "Their job is done."
 
  flavor_chi.83.title: "The White Lotus in [target_province.GetNameWithNoTooltip]!"
- flavor_chi.83.desc: "A local member of the White Lotus, a dissident named [target_character.GetName], has started stirring up unrest from his home in [target_location.GetName]. Plenty of [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] of [target_province.GetName] got tricked into believing his millenarian lies that promise good for those who choose to follow him.\n\nWe need to face the reality that there might be a new rebellion brewing." #NEW
+ flavor_chi.83.desc: "A local member of the White Lotus, a dissident named [target_character.GetName], has started stirring up unrest from his home in [target_location.GetName]. Plenty of [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] of [target_province.GetName] got tricked into believing his millenarian lies that promise good for those who choose to follow him.\n\nWe need to face the reality that there might be a new rebellion brewing."
  flavor_chi.83.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  flavor_chi.83.a.entry: "$common_string_curses$"
  white_lotus_rebellion: "White Lotus Rebellion"
@@ -546,9 +538,9 @@
 
  flavor_chi.84.title: "The Eight Tigers"
  flavor_chi.84.entry: "$flavor_chi.84.title$"
- flavor_chi.84.desc: "Eunuch circles have at times accumulated much influence in both external and internal affairs. However, recent reports have circulated the palace about a group of 8 prominent Eunuchs whose power, it is said, rivals that of the [ruler_scope.GetName] [ruler_scope.GetHerselfHimself]! Going by the title 'Eight Tigers', these oligarchs are aiming for controlling the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and crushing all opposing factions within the [ROOT.GetCountry.GetFlavorRank].\n\nTheir leader is considered to be a prominent character named [target_character.GetName], a eunuch whose influence in politics has earned him a nickname implying he is the real monarch." #NEW
+ flavor_chi.84.desc: "Eunuch circles have at times accumulated much influence in both external and internal affairs. However, recent reports have circulated the palace about a group of 8 prominent Eunuchs whose power, it is said, rivals that of the [ruler_scope.GetName] [ruler_scope.GetHerselfHimself]! Going by the title 'Eight Tigers', these oligarchs are aiming for controlling the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and crushing all opposing factions within the [ROOT.GetCountry.GetFlavorRank].\n\nTheir leader is considered to be a prominent character named [target_character.GetName], a eunuch whose influence in politics has earned him a nickname implying he is the real monarch."
  flavor_chi.84.a: "Cease your illicit behavior, in the name of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]!"
- flavor_chi.84.a.entry: "Cease your illicit behavior, in the name of the ruler!" #NEW
+ flavor_chi.84.a.entry: "Cease your illicit behavior, in the name of the ruler!"
  flavor_chi.84.b: "Allow them the autonomy they demand."
  flavor_chi.84.historical_info: "During the Míng dynasty, particularly under the Zhèngdé Emperor, a group of influential eunuchs known as the Eight Tigers gained immense power at court. Headed by Liú Jǐn, they controlled imperial access, manipulated administration, and enriched themselves through corruption and intimidation. Their dominance provoked deep resentment among scholar-officials and contributed to instability within the government. In 1510, Liú Jǐn was accused of treason and executed, which led to the downfall of the group. The Eight Tigers came to symbolize the dangers of unchecked eunuch power in late Míng politics."
  
@@ -570,8 +562,8 @@
  flavor_chi.87.b: "We cannot afford it."
 
  flavor_chi.88.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.88.entry: "Michał Boym, Jesuit Naturalist" #NEW
- flavor_chi.88.desc: "The Jesuit mission is beneficial in bringing us many fascinating characters from across the seas. Worth the mention is the arrival of [target_character.GetName], who is a [target_character.GetWomanMan] truly fascinated with our rich culture and our beautiful land. Since his arrival, [target_character.GetShortNameWithNoTooltip] has compiled many records on our fascinating flora and fauna as well as our medicine." #NEW
+ flavor_chi.88.entry: "Michał Boym, Jesuit Naturalist"
+ flavor_chi.88.desc: "The Jesuit mission is beneficial in bringing us many fascinating characters from across the seas. Worth the mention is the arrival of [target_character.GetName], who is a [target_character.GetWomanMan] truly fascinated with our rich culture and our beautiful land. Since his arrival, [target_character.GetShortNameWithNoTooltip] has compiled many records on our fascinating flora and fauna as well as our medicine."
  flavor_chi.88.a: "Fascinating!"
 
  flavor_chi.89.title: "A Grand Fleet"
@@ -580,7 +572,7 @@
  flavor_chi.89.historical_info: "The turn of the 15th century saw the $MNG$ Emperor have a large fleet built for the purpose of Treasure Voyages. The first order was given in 1403 and numerous ships were either converted or constructed in order to fulfill that goal."
  flavor_chi.89.a: "Proceed with this construction."
  flavor_chi.89.b: "This but a vain proposal."
- variable_enabled_treasure_voyages_tt: "The Treasure Voyages have been Authorized" #NEW
+ variable_enabled_treasure_voyages_tt: "The Treasure Voyages have been Authorized"
 
  flavor_chi.90.title: "Flight from [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_chi.90.entry: "$flavor_chi.90.title$"
@@ -594,131 +586,131 @@
  
  flavor_chi.92.title: "[ShowWorkOfArtNameWithNoTooltip('hong_lu_meng')]"
  flavor_chi.92.entry: "$hong_lu_meng$"
- flavor_chi.92.desc: "Due to [target_character2.GetName]'s passion for book collecting, there has been a growing interest within the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] to gather the finest literature and the greatest writers in the [ROOT.GetCountry.GetFlavorRank]. Fortunately, a talented artist named [target_character.GetName] has emerged. Coming from a once-glorious [ROOT.GetCountry.GetAdjectiveWithNoTooltip] family now in decline, he has known sorrow, but plans to use these memories as inspiration for his new work, titled [ShowWorkOfArtName('hong_lu_meng')]. He seeks to tell the tale of a wealthy and influential family that eventually falls from grace due to political turmoil. While the novel is sure to bring us fame, the only way to ensure its completion is by supporting its author." #NEW
+ flavor_chi.92.desc: "Due to [target_character2.GetName]'s passion for book collecting, there has been a growing interest within the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] to gather the finest literature and the greatest writers in the [ROOT.GetCountry.GetFlavorRank]. Fortunately, a talented artist named [target_character.GetName] has emerged. Coming from a once-glorious [ROOT.GetCountry.GetAdjectiveWithNoTooltip] family now in decline, he has known sorrow, but plans to use these memories as inspiration for his new work, titled [ShowWorkOfArtName('hong_lu_meng')]. He seeks to tell the tale of a wealthy and influential family that eventually falls from grace due to political turmoil. While the novel is sure to bring us fame, the only way to ensure its completion is by supporting its author."
  flavor_chi.92.historical_info: "As one of China's four literary masterworks, the novel Dream of the Red Chamber, also known as The Story of the Stone, tells the story of Jiǎ Bǎoyù, a divine jade from the Wall of Heaven who wishes to understand what it means to be human. It follows the lives of the two branches of the Jiǎ clan, residing in the capital. Due to political upheaval, much of the family is eventually sent away, married off, or dies without an heir."
 
  flavor_chi.92.a: "Let us finance the completion of this novel."
- flavor_chi.92.b: "We will allow [target_character.GetNameWithNoTooltip] to write it on his own." #NEW
- flavor_chi.92.b.entry: "We will allow him to write it on his own." #NEW
+ flavor_chi.92.b: "We will allow [target_character.GetNameWithNoTooltip] to write it on his own."
+ flavor_chi.92.b.entry: "We will allow him to write it on his own."
 
  flavor_chi_four_masters_of_yuan_historical_info: "The Four Masters of the Yuán Dynasty are considered by many to be the major exponents of the literati painting style. Wishing to emulate the works of the ancient Chinese masters, they gained a reputation within Yuán that encouraged many other artists to experiment with novel brushstroke techniques."
  flavor_chi.93.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.93.entry: "$name_huang2.wu_language$ $name_gong1.wu_language$ $name_wang4.wu_language$, Master Painter" #NEW
- flavor_chi.93.desc: "Although the golden age of [ROOT.GetCountry.GetAdjective] culture has passed, artists continue to spread the literati painting style. One of the most prominent is [target_character.GetName]. Born during the Sòng dynasty, he is a devout follower of [ShowPolicyName('daoism_policy')], opposing our rule, yet his artistic talents are said to rival those of the ancient masters with his creation of numerous ink wash paintings. To reject such talent would be a shame, though embracing it might limit our [ROOT.GetCountry.GetCulture.GetName] influence over $china$." #NEW
+ flavor_chi.93.entry: "$name_huang2.wu_language$ $name_gong1.wu_language$ $name_wang4.wu_language$, Master Painter"
+ flavor_chi.93.desc: "Although the golden age of [ROOT.GetCountry.GetAdjective] culture has passed, artists continue to spread the literati painting style. One of the most prominent is [target_character.GetName]. Born during the Sòng dynasty, he is a devout follower of [ShowPolicyName('daoism_policy')], opposing our rule, yet his artistic talents are said to rival those of the ancient masters with his creation of numerous ink wash paintings. To reject such talent would be a shame, though embracing it might limit our [ROOT.GetCountry.GetCulture.GetName] influence over $china$."
 
- flavor_chi.93.a: "Let us invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
- flavor_chi.93.a.entry: "Let us invite him to our court." #NEW
+ flavor_chi.93.a: "Let us invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_chi.93.a.entry: "Let us invite him to our court."
  flavor_chi.93.b: "Ensure that $china$ grows larger instead."
  flavor_chi.93.historical_info: "$flavor_chi_four_masters_of_yuan_historical_info$"
 
  flavor_chi.94.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.94.entry: "$name_wu.mandarin_language$ $name_zhen4.mandarin_language$, Landscape Painter" #NEW
- flavor_chi.94.desc: "In an effort to expand the reach of literati painting, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has found [target_character.GetName], a master of landscape art. Though educated in philosophy and martial arts, he chose a simpler life as a painter, learning from friends and eventually surpassing them in skill. Now favored within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], he has the opportunity to paint for the most esteemed individuals in all of $china$." #NEW
- flavor_chi.94.a: "We will allow him in the [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
- flavor_chi.94.a.entry: "We will allow him in the court." #NEW
- flavor_chi.94.b: "He shall live a life away from [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." #NEW
- flavor_chi.94.b.entry: "He shall live a life away from the capital." #NEW
+ flavor_chi.94.entry: "$name_wu.mandarin_language$ $name_zhen4.mandarin_language$, Landscape Painter"
+ flavor_chi.94.desc: "In an effort to expand the reach of literati painting, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has found [target_character.GetName], a master of landscape art. Though educated in philosophy and martial arts, he chose a simpler life as a painter, learning from friends and eventually surpassing them in skill. Now favored within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], he has the opportunity to paint for the most esteemed individuals in all of $china$."
+ flavor_chi.94.a: "We will allow him in the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_chi.94.a.entry: "We will allow him in the court."
+ flavor_chi.94.b: "He shall live a life away from [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+ flavor_chi.94.b.entry: "He shall live a life away from the capital."
  flavor_chi.94.historical_info: "$flavor_chi_four_masters_of_yuan_historical_info$"
 
  flavor_chi.95.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.95.entry: "$name_ni.wu_language$ $name_zan$, Traditionalist Artist" #NEW
+ flavor_chi.95.entry: "$name_ni.wu_language$ $name_zan$, Traditionalist Artist"
  flavor_chi.95.desc: "Though the former dynasties of $china$ have fallen and we now dominate the region, their cultural legacy lives on in language, art, and values across every village and city. After our successful conquest of the Sòng dynasty, many traditionalist artists remained. One such artist is [target_character.GetName], who now travels across southern $china$ in search of inspiration. We must decide whether to let such artists flourish within our [ROOT.GetCountry.GetFlavorRank] or reinforce our [ROOT.GetCountry.GetCulture.GetName] values."
- flavor_chi.95.a: "Let us allow [target_character.GetNameWithNoTooltip] to distribute his art." #NEW
- flavor_chi.95.a.entry: "Let us allow him to distribute his art." #NEW
- flavor_chi.95.b: "He shall not follow the ways of the past." #NEW
+ flavor_chi.95.a: "Let us allow [target_character.GetNameWithNoTooltip] to distribute his art."
+ flavor_chi.95.a.entry: "Let us allow him to distribute his art."
+ flavor_chi.95.b: "He shall not follow the ways of the past."
  flavor_chi.95.historical_info: "$flavor_chi_four_masters_of_yuan_historical_info$"
 
  flavor_chi.96.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.96.entry: "$name_wang.wu_language$ $name_meng2.wu_language$, Literati Painter" #NEW
- flavor_chi.96.desc: "Despite the recent collapse of the Sòng dynasty, its cultural legacy persists in $china$. Among its remnants is [target_character.GetName], an accomplished literati-style painter. Already the creator of several masterpieces, he continues to uphold local traditions, diverging from our [ROOT.GetCountry.GetCulture.GetName] ways. We can choose to slowly adopt the customs of the people, pleasing [target_character.GetNameWithNoTooltip] and securing his loyalty, or we can remain steadfast in our traditions." #NEW
- flavor_chi.96.a: "Let us comply to his demands." #NEW
- flavor_chi.96.b: "If he wants to ruin our [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] heritage, he will have to do it alone." #NEW
- flavor_chi.96.b.entry: "If he wants to ruin our heritage, he will have to do it alone." #NEW
+ flavor_chi.96.entry: "$name_wang.wu_language$ $name_meng2.wu_language$, Literati Painter"
+ flavor_chi.96.desc: "Despite the recent collapse of the Sòng dynasty, its cultural legacy persists in $china$. Among its remnants is [target_character.GetName], an accomplished literati-style painter. Already the creator of several masterpieces, he continues to uphold local traditions, diverging from our [ROOT.GetCountry.GetCulture.GetName] ways. We can choose to slowly adopt the customs of the people, pleasing [target_character.GetNameWithNoTooltip] and securing his loyalty, or we can remain steadfast in our traditions."
+ flavor_chi.96.a: "Let us comply to his demands."
+ flavor_chi.96.b: "If he wants to ruin our [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] heritage, he will have to do it alone."
+ flavor_chi.96.b.entry: "If he wants to ruin our heritage, he will have to do it alone."
  flavor_chi.96.historical_info: "$flavor_chi_four_masters_of_yuan_historical_info$"
 
  flavor_chi_masters_of_the_ming_historical_info: "With the movement of the Míng capital from Nánjīng to Běijīng, many of the court painters moved there as well. The only few that did not were the masters of the Wú school from the old capital. Being the opposite of the Zhè school, it mainly consisted of amateur painters, the literati, and numerous scholars, of which it served as a way of self expression rather than their conservative counterparts, who focused on a more academic style."
 
  flavor_chi.97.title: "Birth of the [ShowCultureNameWithNoTooltip('wu_culture')] School"
- flavor_chi.97.entry: "Birth of the $wu_culture$ School" #NEW
+ flavor_chi.97.entry: "Birth of the $wu_culture$ School"
  flavor_chi.97.desc: "With $china$ freed from $YUA_ADJ$ rule, many artists have been drawn to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. However, a group of them wishes to forge their own path. Rather than serve in the capital, they plan to form a collective: the [ShowCultureName('wu_culture')] School. Led by [target_character.GetName], this movement emphasizes personal expression over ornamental artistry."
  flavor_chi.97.a: "These artists are better off in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
- flavor_chi.97.a.entry: "These artists are better off in our court." #NEW
+ flavor_chi.97.a.entry: "These artists are better off in our court."
  flavor_chi.97.b: "They can have their own group."
  flavor_chi.97.historical_info: "$flavor_chi_masters_of_the_ming_historical_info$"
 
  flavor_chi.98.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.98.entry: "$name_wen.wu_language$ $name_zheng1.wu_language$ $name_ming.wu_language$, $wu_culture$ School Painter" #NEW
- flavor_chi.98.desc: "As the [ShowCultureName('wu_culture')] school gains popularity in [ROOT.GetCountry.GetName], a new wave of artists has emerged. Among them is [target_character.GetName], a distant relative of the statesman Wén Tiānxiáng, who resisted [GetCharacter('kublai_khan').GetName]'s influence. Though His family served in the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] military, he now aspires to inspire fellow amateur artists through the style of his school." #NEW
+ flavor_chi.98.entry: "$name_wen.wu_language$ $name_zheng1.wu_language$ $name_ming.wu_language$, $wu_culture$ School Painter"
+ flavor_chi.98.desc: "As the [ShowCultureName('wu_culture')] school gains popularity in [ROOT.GetCountry.GetName], a new wave of artists has emerged. Among them is [target_character.GetName], a distant relative of the statesman Wén Tiānxiáng, who resisted [GetCharacter('kublai_khan').GetName]'s influence. Though His family served in the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] military, he now aspires to inspire fellow amateur artists through the style of his school."
  flavor_chi.98.a: "Let us bring [target_character.GetNameWithNoTooltip] to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
- flavor_chi.98.a.entry: "Let us bring him to our court." #NEW
- flavor_chi.98.b: "He will not have our support." #NEW
+ flavor_chi.98.a.entry: "Let us bring him to our court."
+ flavor_chi.98.b: "He will not have our support."
  flavor_chi.98.historical_info: "$flavor_chi_masters_of_the_ming_historical_info$"
 
  flavor_chi.99.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.99.entry: "$name_tang.wu_language$ $name_yin21.wu_language$, $wu_culture$ School Artist" #NEW
- flavor_chi.99.desc: "The growing influence of the [ShowCultureName('wu_culture')] school has drawn many [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] into its orbit. One such member is [target_character.GetName], a once-impoverished artist who now enjoys the patronage of elites thanks to his remarkable talent. Having profited greatly from his work, he now confidently pursues a distinctive style. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] seeks to employ him, showcasing his uniqueness to the world." #NEW
- flavor_chi.99.a: "We will allow the influence of the [ShowCultureNameWithNoTooltip('wu_culture')] school to reach [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
- flavor_chi.99.a.entry: "We will allow the influence of the [ShowCultureNameWithNoTooltip('wu_culture')] school to reach us." #NEW
+ flavor_chi.99.entry: "$name_tang.wu_language$ $name_yin21.wu_language$, $wu_culture$ School Artist"
+ flavor_chi.99.desc: "The growing influence of the [ShowCultureName('wu_culture')] school has drawn many [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] into its orbit. One such member is [target_character.GetName], a once-impoverished artist who now enjoys the patronage of elites thanks to his remarkable talent. Having profited greatly from his work, he now confidently pursues a distinctive style. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] seeks to employ him, showcasing his uniqueness to the world."
+ flavor_chi.99.a: "We will allow the influence of the [ShowCultureNameWithNoTooltip('wu_culture')] school to reach [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_chi.99.a.entry: "We will allow the influence of the [ShowCultureNameWithNoTooltip('wu_culture')] school to reach us."
  flavor_chi.99.b: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] will not be influenced by the ways of [ShowLocationNameWithNoTooltip('wuxian')]."
- flavor_chi.99.b.entry: "The court will not be influenced by the ways of [ShowLocationNameWithNoTooltip('wuxian')]." #NEW
+ flavor_chi.99.b.entry: "The court will not be influenced by the ways of [ShowLocationNameWithNoTooltip('wuxian')]."
  flavor_chi.99.historical_info: "$flavor_chi_masters_of_the_ming_historical_info$"
 
  flavor_chi.100.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.100.entry: "$name_qiu2.wu_language$ $name_ying.wu_language$, Versatile Painter" #NEW
- flavor_chi.100.desc: "[target_character.GetName] has risen to prominence as one of the greatest artists in [ROOT.GetCountry.GetName]. Though born to the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and supported by only a few patrons, his ability to replicate various art styles has earned him respect. he has even joined the [ShowCultureName('wu_culture')] school to further refine his craft. Perhaps [target_character.GetNameWithNoTooltip] belongs in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], even if it strengthens [ShowLocationName('wuxian')]'s cultural influence." #NEW
+ flavor_chi.100.entry: "$name_qiu2.wu_language$ $name_ying.wu_language$, Versatile Painter"
+ flavor_chi.100.desc: "[target_character.GetName] has risen to prominence as one of the greatest artists in [ROOT.GetCountry.GetName]. Though born to the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and supported by only a few patrons, his ability to replicate various art styles has earned him respect. he has even joined the [ShowCultureName('wu_culture')] school to further refine his craft. Perhaps [target_character.GetNameWithNoTooltip] belongs in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], even if it strengthens [ShowLocationName('wuxian')]'s cultural influence."
  flavor_chi.100.a: "Let us bring [target_character.GetNameWithNoTooltip] to serve us."
- flavor_chi.100.a.entry: "Let us bring him to serve us." #NEW
- flavor_chi.100.b: "He is not permitted in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." #NEW
- flavor_chi.100.b.entry: "He is not permitted in the capital." #NEW
+ flavor_chi.100.a.entry: "Let us bring him to serve us."
+ flavor_chi.100.b: "He is not permitted in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+ flavor_chi.100.b.entry: "He is not permitted in the capital."
  flavor_chi.100.historical_info: "$flavor_chi_masters_of_the_ming_historical_info$"
 
  flavor_chi_six_masters_of_the_qing: "During the early Qīng period, a group of six masters rose the ranks as some of the finest artists in all of China, those being the flower painter Yùn Shòupíng, the jesuit landscapist Wú Lì, as well as the four Wáng. Compared to their past counterparts, they were quite conservative in their ways of art, choosing to follow the teachings of Dǒng Qíchāng."
 
  flavor_chi.101.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.101.entry: "$name_yun4$ $name_shou.wu_language$ $name_ping.wu_language$, Innovative Painter" #NEW
- flavor_chi.101.desc: "Although the [ShowCultureName('wu_culture')] school continues to spread, some [ROOT.GetCountry.GetAdjective] officials are uneasy about the bold ideas of its artists. One of the more controversial figures is [target_character.GetName], who believes painting should express one's moral character. Though dismissed by many as a radical, he has captured the admiration of the youth. With the proper support, his movement could flourish, but at what cost?" #NEW
- flavor_chi.101.a: "[ROOT.GetCountry.GetNameWithNoTooltip] need him." #NEW
- flavor_chi.101.a.entry: "We need him." #NEW
+ flavor_chi.101.entry: "$name_yun4$ $name_shou.wu_language$ $name_ping.wu_language$, Innovative Painter"
+ flavor_chi.101.desc: "Although the [ShowCultureName('wu_culture')] school continues to spread, some [ROOT.GetCountry.GetAdjective] officials are uneasy about the bold ideas of its artists. One of the more controversial figures is [target_character.GetName], who believes painting should express one's moral character. Though dismissed by many as a radical, he has captured the admiration of the youth. With the proper support, his movement could flourish, but at what cost?"
+ flavor_chi.101.a: "[ROOT.GetCountry.GetNameWithNoTooltip] need him."
+ flavor_chi.101.a.entry: "We need him."
  flavor_chi.101.b: "We will choose to follow other artistic schools instead."
  flavor_chi.101.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
  flavor_chi.102.title: "Western Teachings"
  flavor_chi.102.entry: "$flavor_chi.102.title$"
- flavor_chi.102.desc: "Thanks to the efforts of [target_character.GetName], the [ShowCultureName('wu_culture')] school has become one of the most prestigious art movements in $china$. Once an outsider, he now sits at the pinnacle of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] culture. With a growing group of disciples, he seeks to create a more personal, emotionally driven form of literati painting, honoring tradition while forging a new path." #NEW
- flavor_chi.102.a: "Let us invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]." #NEW
- flavor_chi.102.a.entry: "Let us invite him to our court." #NEW
- flavor_chi.102.b: "Exile him from [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
- flavor_chi.102.b.entry: "Exile him from us." #NEW
+ flavor_chi.102.desc: "Thanks to the efforts of [target_character.GetName], the [ShowCultureName('wu_culture')] school has become one of the most prestigious art movements in $china$. Once an outsider, he now sits at the pinnacle of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] culture. With a growing group of disciples, he seeks to create a more personal, emotionally driven form of literati painting, honoring tradition while forging a new path."
+ flavor_chi.102.a: "Let us invite him to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_chi.102.a.entry: "Let us invite him to our court."
+ flavor_chi.102.b: "Exile him from [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_chi.102.b.entry: "Exile him from us."
  flavor_chi.102.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
  flavor_chi.103.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.103.entry: "$name_wang.wu_language$ $name_shi.wu_language$ $name_min.wu_language$, Qing Literati Painter" #NEW
- flavor_chi.103.desc: "Following the decline of the [ShowCultureName('wu_culture')] school, [target_character.GetName], a student of Dǒng Qíchāng, has emerged as a promising painter. Though not a revolutionary, he is respected for his refined techniques and serene compositions. Artists like [target_character.GetNameWithNoTooltip] serve as a bridge between eras, preserving our [ROOT.GetCountry.GetCulture.GetName] identity while appealing to traditional sensibilities." #NEW
+ flavor_chi.103.entry: "$name_wang.wu_language$ $name_shi.wu_language$ $name_min.wu_language$, Qing Literati Painter"
+ flavor_chi.103.desc: "Following the decline of the [ShowCultureName('wu_culture')] school, [target_character.GetName], a student of Dǒng Qíchāng, has emerged as a promising painter. Though not a revolutionary, he is respected for his refined techniques and serene compositions. Artists like [target_character.GetNameWithNoTooltip] serve as a bridge between eras, preserving our [ROOT.GetCountry.GetCulture.GetName] identity while appealing to traditional sensibilities."
  flavor_chi.103.a: "[target_character.GetNameWithNoTooltip] shall serve us."
- flavor_chi.103.a.entry: "The character shall serve us." #NEW
- flavor_chi.103.b: "Let him travel around instead, gain inspirations that way." #NEW
+ flavor_chi.103.a.entry: "The character shall serve us."
+ flavor_chi.103.b: "Let him travel around instead, gain inspirations that way."
  flavor_chi.103.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
  flavor_chi.104.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.104.entry: "$name_wang.wu_language$ $name_jian4$, Reclusive Painter" #NEW
- flavor_chi.104.desc: "The ways and influence of the previous dynasty remain within some of the scholars in $china$. Though many remain loyal to the ideals of the former court, some have turned to art to keep the styles of old alive. Among them is [target_character.GetName], a former government official who now lives in seclusion. he spends his days painting the forests and rivers of [ROOT.GetCountry.GetName], thinking of it as a way to connect with the ages of the past. Some believe that he might serve as a cultural bridge in these turbulent times." #NEW
+ flavor_chi.104.entry: "$name_wang.wu_language$ $name_jian4$, Reclusive Painter"
+ flavor_chi.104.desc: "The ways and influence of the previous dynasty remain within some of the scholars in $china$. Though many remain loyal to the ideals of the former court, some have turned to art to keep the styles of old alive. Among them is [target_character.GetName], a former government official who now lives in seclusion. he spends his days painting the forests and rivers of [ROOT.GetCountry.GetName], thinking of it as a way to connect with the ages of the past. Some believe that he might serve as a cultural bridge in these turbulent times."
  flavor_chi.104.a: "Let us employ [target_character.GetNameWithNoTooltip]."
- flavor_chi.104.a.entry: "Let us employ him." #NEW
+ flavor_chi.104.a.entry: "Let us employ him."
  flavor_chi.104.b: "We already have a collection of great artists."
  flavor_chi.104.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
  flavor_chi.105.title: "[target_character.GetNameWithNoTooltip]"
  flavor_chi.105.entry: "$name_wang.wu_language$ $name_yuan21.wu_language$ $name_qi21$, One of the Four $name_wang.mandarin_language$"
- flavor_chi.105.desc: "[target_character2.GetName] has been searching for talents to serve the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Thankfully, [target_character.GetName], a member of the Four Wáng, has approached us, wishing to be employed. His reason being that he seeks to spread the ideas of his conservative school by creating art inspired by the $YUA_ADJ$ Dynasty, creating an abstract design in his landscapes. Such offer is quite intriguing, but employing him will be seen as a sign of us favoring one artistic school over the others." #NEW
+ flavor_chi.105.desc: "[target_character2.GetName] has been searching for talents to serve the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Thankfully, [target_character.GetName], a member of the Four Wáng, has approached us, wishing to be employed. His reason being that he seeks to spread the ideas of his conservative school by creating art inspired by the $YUA_ADJ$ Dynasty, creating an abstract design in his landscapes. Such offer is quite intriguing, but employing him will be seen as a sign of us favoring one artistic school over the others."
  flavor_chi.105.a: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] would benefit with [target_character.GetNameWithNoTooltip] in it."
- flavor_chi.105.a.entry: "The court would benefit with him in it." #NEW
+ flavor_chi.105.a.entry: "The court would benefit with him in it."
  flavor_chi.105.b: "Let us not favor any schools."
  flavor_chi.105.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
  flavor_chi.106.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi.106.entry: "$name_wang.wu_language$ $name_hui12$, Literati Tradition Master" #NEW
- flavor_chi.106.desc: "As the latest great master of the literati tradition, [target_character.GetName] has earned the admiration of scholars and statesmen alike. Though born long after the style's golden age, his works embody its highest ideals: subtlety, serenity, and philosophical depth. With the support of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetNameWithNoTooltip] has established a new studio, where the next generation of painters can learn from the past while envisioning the future." #NEW
- flavor_chi.106.a: "Accept his offer." #NEW
+ flavor_chi.106.entry: "$name_wang.wu_language$ $name_hui12$, Literati Tradition Master"
+ flavor_chi.106.desc: "As the latest great master of the literati tradition, [target_character.GetName] has earned the admiration of scholars and statesmen alike. Though born long after the style's golden age, his works embody its highest ideals: subtlety, serenity, and philosophical depth. With the support of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetNameWithNoTooltip] has established a new studio, where the next generation of painters can learn from the past while envisioning the future."
+ flavor_chi.106.a: "Accept his offer."
  flavor_chi.106.b: "We do not need people copying old artstyles."
  flavor_chi.106.historical_info: "$flavor_chi_six_masters_of_the_qing$"
 
@@ -750,7 +742,7 @@
  flavor_chi.111.a: "It is politicized. Pay no heed to the critique."
  flavor_chi.111.b: "Enact harsher requirements."
  flavor_chi.111.c: "Beat [target_character.GetNameWithNoTooltip] with a heavy stick!"
- flavor_chi.111.c.entry: "Beat him with a heavy stick!" #NEW
+ flavor_chi.111.c.entry: "Beat him with a heavy stick!"
 
  flavor_chi.112.title: "[ShowCultureNameWithNoTooltip('mongolian_culture')] Rebels Caught"
  flavor_chi.112.desc: "Our garrisons in [target_province.GetName] have recently captured a band of [ShowCultureName('mongolian_culture')] vagabonds, sowing discontent and being a great nuisance to our control over the province. Having caught this band, we can use them as an example to other such rebels. Other dissidents like them shall think twice before disturbing peace on our borders!"
@@ -760,14 +752,14 @@
  flavor_chi.113.title: "[target_character.GetNameWithNoTooltip] Flees to [ShowAreaNameWithNoTooltip('taiwan_area')]"
  flavor_chi.113.desc: "[ROOT.GetCountry.GetName|U] are experiencing a period of unprecedented decline that is of great worry to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Believing the fate of the dynasty is sealed, [target_character.GetName], one of our generals, has fled the country to the island of [ShowAreaName('taiwan_area')], establishing [target_character.GetHerselfHimself] as a prince there who will carry on our legacy."
  flavor_chi.113.a: "It cannot be that bad?"
- flavor_chi.113.b: "[ROOT.GetCountry.GetNameWithNoTooltip] are truly lost." #NEW
- flavor_chi.113.b.entry: "We are truly lost." #NEW
+ flavor_chi.113.b: "[ROOT.GetCountry.GetNameWithNoTooltip] are truly lost."
+ flavor_chi.113.b.entry: "We are truly lost."
 
  flavor_chi.114.title: "Personal Recommendation"
  flavor_chi.114.desc: "Since the abolishment of the [ShowLawName('imperial_examination_law')], the [ROOT.GetCountry.GetLongName] has been reliant on personal recommendations to fill the cabinet and other government positions. Well, [recommending_character.GetName] has just made one such recommendation, openly vouching for [target_character.GetName] to be a competent clerk who could help aid the [ROOT.GetCountry.GetGovernment.GetAdjective] matters."
- flavor_chi.114.a: "Hire him." #NEW
+ flavor_chi.114.a: "Hire him."
  flavor_chi.114.b: "[recommending_character.GetNameWithNoTooltip] knows nothing about good candidates."
- flavor_chi.114.b.entry: "The character knows nothing about good candidates." #NEW
+ flavor_chi.114.b.entry: "The character knows nothing about good candidates."
 
  flavor_chi.115.title: "Proclamation of Accession"
  flavor_chi.115.desc: "After decades of bloody struggles to wrestle the control over the [GetInternationalOrganizationType('middle_kingdom').GetName], the [ROOT.GetCountry.GetLongName] finally stands triumphant above all other false pretenders. Having gone through all the necessary formalities, the time has come to send out the envoys to all of the subjects under the Mandate of Heaven. We shall be accepted as the Heaven's sons."
@@ -777,16 +769,16 @@
  flavor_chi.116.entry: "$flavor_chi.116.title$"
  flavor_chi.116.desc: "We have received an envoy from the [target_country.GetLongName]. After tumultous few decades, they managed to seize the control over the [GetInternationalOrganizationType('middle_kingdom').GetName] and have done the necessary rituals that would legitimize them as the next Sons of Heaven. However, putting our support behind them is not something that we would certainly want."
  flavor_chi.116.a: "Accept [target_country.GetNameWithNoTooltip] as the [GetInternationalOrganizationType('middle_kingdom').GetNameWithNoTooltip]."
- flavor_chi.116.a.entry: "Accept them as the [GetInternationalOrganizationType('middle_kingdom').GetNameWithNoTooltip]." #NEW
+ flavor_chi.116.a.entry: "Accept them as the [GetInternationalOrganizationType('middle_kingdom').GetNameWithNoTooltip]."
  flavor_chi.116.b: "They are nothing more than false pretenders!"
 
  flavor_chi.117.title: "Renegade Peasant"
  flavor_chi.117.entry: "$flavor_chi.117.title$"
  flavor_chi.117.desc: "Recent events in [target_area.GetName] have led to an increase in treasonous behavior amongst the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Robberies, violent disputes, formation of armed bands, are just a few tell-tale signs of a time of troubles that has engulfed the area. At the helm of this is [target_character.GetName], a [target_character.GetWomanMan] that has gained much fame and has earned [target_character.GetHerselfHimself] a reputation of taking away from the rich and giving to the poor. [target_character.GetShortNameWithNoTooltip] is a leader of a sizeable armed [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] band that is slowly taking over [target_area.GetRegion.GetName]."
  flavor_chi.117.a: "We will crush this lowly fiend!"
- flavor_chi.117.b: "He seems rather charismatic." #NEW
+ flavor_chi.117.b: "He seems rather charismatic."
 
- chi_we_will_continue_playing_as_target_country: "We will continue playing as the [target_rebels.GetName]."
+ chi_we_will_continue_playing_as_target_country: "Continueremo a giocare nei panni dei ribelli, che si trasformeranno in [ShowFormableCountryName('CSH_f')]"
 
  flavor_chi.118.title: "$CSH_ADJ$ Rebellion"
  flavor_chi.118.entry: "$flavor_chi.118.title$"
@@ -798,9 +790,9 @@
  flavor_chi.119.entry: "$CSH_ADJ$ Captures $beiping$"
  flavor_chi.119.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has fallen to the [ROOT.GetCountry.GetLongName]. This monumental victory has allowed the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetFlavorRank] to lay claim to the Mandate of Heaven and the [GetInternationalOrganizationType('middle_kingdom').GetName]. Unless [target_country.GetName] can halt the spread of this rebellion, soon their [ShowSubjectTypeName('tributary')] System will kowtow to us instead."
  flavor_chi.119.a: "Claim the Mandate of Heaven."
- flavor_chi.119.b: "We have no ambition to dethrone the [target_country.GetLongNameWithNoTooltip]." #NEW
- flavor_chi.119.b.entry: "We have no ambition to dethrone them." #NEW
- variable_li_zicheng_rebellion_var_tt: "Lǐ Zìchéng's Rebellion Rages" #NEW
+ flavor_chi.119.b: "We have no ambition to dethrone the [target_country.GetLongNameWithNoTooltip]."
+ flavor_chi.119.b.entry: "We have no ambition to dethrone them."
+ variable_li_zicheng_rebellion_var_tt: "Lǐ Zìchéng's Rebellion Rages"
 
  flavor_chi.120.title: "Peasant Legacy"
  flavor_chi.120.entry: "$flavor_chi.120.title$"
@@ -809,7 +801,7 @@
  flavor_chi.120.b: "Should we fail to adapt, we will undoubtedly fall."
 
  flavor_chi.121.title: "The [target_work_of_art.GetNameWithNoTooltip]"
- flavor_chi.121.entry: "The $huolongjing$ Treatise" #NEW
+ flavor_chi.121.entry: "The $huolongjing$ Treatise"
  flavor_chi.121.desc: "One of our most skilled generals, [target_character.GetName], has decided to write a [ShowWorkOfArtTypeName('treatise')] about the use of various gunpowder weapons. The name of the work is [target_work_of_art.GetName] and it describes many novel uses that have been in use during our recent wars.\n\n[target_work_of_art.GetNameWithNoTooltip] mentions the use of gunpowder in creating weaponry utilizing poisonous chemicals, elaborates on uses of weaponry like fire lances and fire arrows, and finally describes use of artillery."
  flavor_chi.121.a: "We will ensure it is never forgotten."
 
@@ -820,7 +812,7 @@
  until_yellow_river_works_are_complete: "until the Yellow River Works are complete"
 
  flavor_chi.123.title: "Yellow River Works Disrupted"
- flavor_chi.123.desc: "A vile agitator has been spreading wicked propaganda amongst the the workers currently working on rerouting the Yellow River. As per our records, the character in question is [target_character.GetName], a zealot of the White Lotus sect, who is prophesizing the imminent forthcoming of the Maitreya Buddha. We believe that he had his followers bury a one-eyed stone statue in the route of the project so that the workers would dig it up. The statue was inscribed with a text spelling the end of the [ROOT.GetCountry.GetName] dynasty.\n\nThough our forces did their best to stop this upstart from detracting workers from their project, many did defect. As of now, we are not sure of the whereabouts of the White Lotus chieftain." #NEW
+ flavor_chi.123.desc: "A vile agitator has been spreading wicked propaganda amongst the the workers currently working on rerouting the Yellow River. As per our records, the character in question is [target_character.GetName], a zealot of the White Lotus sect, who is prophesizing the imminent forthcoming of the Maitreya Buddha. We believe that he had his followers bury a one-eyed stone statue in the route of the project so that the workers would dig it up. The statue was inscribed with a text spelling the end of the [ROOT.GetCountry.GetName] dynasty.\n\nThough our forces did their best to stop this upstart from detracting workers from their project, many did defect. As of now, we are not sure of the whereabouts of the White Lotus chieftain."
  flavor_chi.123.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  flavor_chi.123.a.entry: "$common_string_curses$"
 
@@ -862,10 +854,10 @@
  flavor_chi.1000.entry: "$flavor_chi.1000.title$"
  flavor_chi.1000.desc: "Foreign western traders from [ShowContinentName('europe')] seemingly can be found everywhere in [ROOT.GetCountry.GetName]. They are draining the profits away from our own traders and driving them into bankruptcy, causing us to lose much revenue in taxes and tariffs. Perhaps we should ban them altogether or confine them to a single place for them to settle in order to better control them and make it easier to impose trade tariffs.\n\nOur experts believe that giving [target_location.GetName] to [target_foreign_country.GetName] and only allowing them to trade there might be the best solution. This will also give us the benefit of expanding trade in our southern regions of [ShowAreaName('guangdong_area')]. Then again, we could choose to shun outside trade altogether or to open our shores to free and unhindered trade by all."
  flavor_chi.1000.a: "Close [ROOT.GetCountry.GetNameWithNoTooltip] to the outside world."
- flavor_chi.1000.a.entry: "Close us to the outside world." #NEW
+ flavor_chi.1000.a.entry: "Close us to the outside world."
  flavor_chi.1000.b: "Keep trade open for all."
  flavor_chi.1000.c: "Offer them [target_location.GetNameWithNoTooltip]."
- flavor_chi.1000.c.entry: "Offer them the location." #NEW
+ flavor_chi.1000.c.entry: "Offer them the location."
  flavor_chi.1000.c.tt: "We will send them an offer to [target_foreign_country.GetName] for [target_location.GetName]. If they accept, they will belong the owners of it"
 
  flavor_chi.1001.title: "Offer for [target_location.GetNameWithNoTooltip]"
@@ -885,7 +877,7 @@
  flavor_chi.1003.a.entry: "$common_string_curses$"
 
  flavor_chi.1100.title: "Controversy over [ShowCultureGroupNameWithNoTooltip('chinese_group')] Rites"
- flavor_chi.1100.entry: "Controversy over Chinese Group Rites" #NEW
+ flavor_chi.1100.entry: "Controversy over Chinese Group Rites"
  flavor_chi.1100.desc: "So far, contacts between our Church and the people from [target_chinese_country.GetName] have been handled exclusively by the Jesuits. In order to approach the [ShowCultureGroupName('chinese_group')], the order has learned their customs and language, and in general tried to be a part of [target_chinese_country.GetAdjectiveWithNoTooltip] society.\n\nWith the arrival of Dominicans and Franciscans in $china$, however, disturbing reports have begun to reach us. It seems that the Jesuits are tolerating a very high degree of non-[ROOT.GetReligion.GetAdjective] rituals among the supposedly converted [target_chinese_country.GetAdjectiveWithNoTooltip] people. The other orders are abhorred by the Jesuit conduct and by their supposedly [ROOT.GetReligion.GetAdjectiveWithNoTooltip] converts and have urged us to make a clear statement that the [target_chinese_country.GetAdjectiveWithNoTooltip] Ancestor rites have no place among [target_chinese_country.GetAdjectiveWithNoTooltip] faithful and that anyone who wishes to join our Church must abandon such things."
  flavor_chi.1100.a: "Rule in favor of the Jesuits."
  flavor_chi.1100.b: "Rule in favor of the Dominicans."
@@ -905,7 +897,7 @@
  flavor_chi.1102.b: "$flavor_chi.1101.b$"
 
  flavor_chi_pap.1.title: "Delegation from [target_country.GetNameWithNoTooltip]"
- flavor_chi_pap.1.entry: "Delegation from Rome" #NEW
+ flavor_chi_pap.1.entry: "Delegation from Rome"
  flavor_chi_pap.1.desc: "An envoy from the faraway land of [target_country.GetName] has just arrived in [ROOT.GetCountry.GetCapital.GetName]. They inform us of the plight of the [target_pop_cath.GetName], who have been left without a spiritual leader in the faraway Cathay. Therefore, they implore us to send priests to [target_location.GetName] on their behalf.\n\nIt is what the [target_building.GetName] needs."
  flavor_chi_pap.1.a: "Very well, send them priests!"
  flavor_chi_pap.1.b: "We need them here."
@@ -920,6 +912,7 @@
  flavor_chi_por.1.desc: "The wealth and riches of $china$ are known across all of [ShowContinentName('europe')] and to get even a fraction of them in our grasp would be a monumental victory for us. Though there are multiple ways to achieve that, perhaps the best way is to acquire a bit of territory where we could conduct trade. For that reason, let us ask the [target_country.GetAdjective] to lease a portion of their territory in [target_location.GetName]. "
  flavor_chi_por.1.a: "Offer a lease."
  flavor_chi_por.1.b: "We do not need it."
+ flavor_chi_por.1.requirement_tt: "[ShowFormableCountryName('CHI_f')] possiede [ShowLocationName('xiangshan_xinhui')]"
 
  flavor_chi_por.2.title: "Lease in [target_location.GetNameWithNoTooltip]"
  flavor_chi_por.2.desc: "We have received an envoy from [offering_country.GetName] proposing a lease of [target_location.GetName]. As per the agreement, [offering_country.GetNameWithNoTooltip] would receive a portion of the territory and would be allowed to set up a [target_building_type.GetName] in order to conduct trade with [target_country.GetName]. Such trade with the faraway [ShowContinentName('europe')] would certainly push us into a more [ShowSocietyDirectionName('outward')] direction and would allow us to import many goods that are currently unheard of in $china$."
@@ -942,254 +935,8 @@
  expedition_leader_name_herhim: "[character_expedition_leader_target.GetHerHim]"
  expedition_leader_name_herhis: "[character_expedition_leader_target.GetHerHis]"
  expedition_leader_name_herselfhimself: "[character_expedition_leader_target.GetHerselfHimself]"
- expedition_location_name: "[expedition_initiator.MakeScope.GetVariable('chinese_treasure_fleet_location').GetLocation.GetName]"
- expedition_location_name_tooltipless: "[expedition_initiator.MakeScope.GetVariable('chinese_treasure_fleet_location').GetLocation.GetNameWithNoTooltip]"
-
- flavor_chi.2000.title: "Age of Treasure Voyages"
- flavor_chi.2000.entry: "$flavor_chi.2000.title$"
- flavor_chi.2000.desc: "The last prosperous decades have aided us with plenty of disposable gold and resources to spend on our diplomatic efforts. We could, and most certainly should, make use of those funds to further bolster the already strong position of the [GetInternationalOrganization('middle_kingdom').GetName] in the eyes of the world. To do so, we shall send forward various maritime expeditions full of the richest gifts that [ROOT.GetCountry.GetName] can afford, so as to convince more nations to become part of our [ShowSubjectTypeName('tributary')] network."
- flavor_chi.2000.a: "So, we shall!"
- chi_able_to_send_treasure_voyages: "[ROOT.GetCountry.GetName] will be able to use the [ShowGenericActionName('start_a_treasure_voyage')] [action|e] to expend their [gold|e] in order to get more nations to join their [ShowSubjectTypeName('tributary')] network. This will only be possible as long as they are the [international_organization_leader_short|e] of the [GetInternationalOrganizationType('middle_kingdom').GetName]."
-
- flavor_chi.2001.title: "The End of an Age"
- flavor_chi.2001.desc: "Today, the state of [ROOT.GetCountry.GetName] looks back on the achievements of the Treasure Voyages and it sees nothing more than vain squandering of funds done for nothing but a little bit of prestige. It would be best if historians simply ommitted the existence of those exploits."
- flavor_chi.2001.a: "It is what it is."
- chi_unable_to_send_treasure_voyages: "[ROOT.GetCountry.GetName] will no longer be able to use [ShowGenericActionName('start_a_treasure_voyage')]."
-
- flavor_chi.2002.title: "Start of an Expedition"
- flavor_chi.2002.desc: "After weeks of preparation, our grand navy is finally ready to set sail for the [target_area.GetName]. It is unknown what kind of adventures or misadventures $expedition_leader_name$ and $expedition_leader_name_herhis$ crew will encounter on the way, but, considering that [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] has entrusted them with such a responsibility, we are sure that they will not disappoint.\n\nAs per the plan, the fleet will set sail at daybreak from the port of [start_location.GetName] and it might take years until they return back to our shores. We bid them farewell!"
- flavor_chi.2002.a: "Good luck!"
-
- chinese_treasure_expeditions_send_tooltip: "The $expedition_name_treasure_voyage$ is sent towards [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] under the leadership of [target_character.GetName].\nThe fleet holds #g [ROOT.GetVariable('chinese_treasure_voyage_cargo').GetValue|2]#! [gold|e] worth in cargo intended for gifts to [countries|e] that they will visit."
-
- flavor_chi.2003.title: "Hidden Event"
- flavor_chi.2003.desc: "Hidden Event"
- flavor_chi.2003.a: "Hidden Event"
-
- flavor_chi.2004.title: "Arrival of the [expedition_initiator.GetAdjectiveWithNoTooltip] $expedition_name_treasure_voyage$"
- flavor_chi.2004.desc: "At daybreak, the [target_stop.GetRank.GetName] dwellers of [target_stop.GetName] were greeted with a most terrifying yet astounding sight. The entire horizon over the [coastal_sea_tile.GetName] was covered in ships of none other than the [GetInternationalOrganization('middle_kingdom').GetName], the [expedition_initiator.GetLongName]. The leader of the fleet, $expedition_leader_name$, promptly disembarked at our port and obtained permit to restock over at [target_stop.GetNameWithNoTooltip]. What followed next is truly bizarre, as the [expedition_initiator.GetAdjectiveWithNoTooltip] sailors got in contact with the local bailiffs, showering them in gifts and asking for an audience with the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
- flavor_chi.2004.a: "Welcome them to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
- flavor_chi.2004.a.entry: "Welcome them to the court!" #NEW
- 
- flavor_chi.2005.title: "Audience of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- flavor_chi.2005.desc: "$expedition_leader_name$ and $expedition_leader_name_herhis$ retinue have finally managed to get in contact with our benevolent [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Their massive fleet and a shower of gifts have made a great impression on us all and so we were most appalled when they offered us what amounts to a [ShowSubjectTypeName('tributary')] relationship under the [expedition_initiator.GetAdjective] rule. Perhaps, being subject to such a powerful state would offer us more good than it seems."
- flavor_chi.2005.a: "Friendship has a price."
- flavor_chi.2005.b: "We will have none of that!"
-
- 
-
- chinese_expedition_resolution_tt: "For the following months, the Chinese $expedition_name_treasure_voyage$ will stay in our port of [target_stop.GetName]. We will receive [events|e] allowing us to interact with them and that will modify their opinion of us. Depending on the opinion at the end of the stay, we will get different results:\n\nObedient (#y 67#! - #y 100#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_very_positive', ROOT.GetCountry.MakeScope.Self)]\nFavorable (#y 33#! - #y 66#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_positive', ROOT.GetCountry.MakeScope.Self)]\nLukewarm (#y -32#! - #y 32#!):\n$NOTHING_HAPPENS_EFFECT$\nDisrespectful (#y -66#! - #y -33#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_negative', ROOT.GetCountry.MakeScope.Self)]\nArrogant (#y -100#! - #y -67#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_very_negative', ROOT.GetCountry.MakeScope.Self)]"
-
- flavor_chi.2006.title: "Appropriate Gifts"
- flavor_chi.2006.desc: "With their mission in [ROOT.GetCountry.GetName] complete, the treasure fleet of [expedition_initiator.GetName] is currently restocking their supplies, anticipating to leave within a matter of several months. It would be customary to provide them with the best that our [ROOT.GetCountry.GetFlavorRank] can offer as a token of appreciation and as a confirmation of our [ShowSubjectTypeName('tributary')] relationship."
- flavor_chi.2006.a: "Show them our generosity."
- flavor_chi.2006.gift: "Give them our speciality."
- flavor_chi.2006.b: "We cannot afford it..."
-
- flavor_chi.2007.title: "Expedition Departs"
- flavor_chi.2007.desc: "At long last, the [expedition_initiator.GetAdjective] treasure fleet has finally departed [target_stop.GetName]. We have shown them great hospitality and we hope their journey will be full of good graces."
- flavor_chi.2007.a: "Farewell!"
- chi_fleet_will_depart: "[expedition_initiator.GetAdjective] expedition will depart from [ROOT.GetCountry.GetName]."
-
- chinese_expedition_opinion: "Treasure Expedition Trust"
- based_on_expedition_opinion: "Based on the $chinese_expedition_opinion$ (Currently: [ROOT.GetVariable('chinese_expedition_opinion').GetValue]), the following will happen:"
-
- flavor_chi.2008.title: "Return of the $expedition_name_treasure_voyage$"
- flavor_chi.2008.desc: "Our fleet that we sent out years ago to [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] has finally returned bearing many envoys and gifts that they have received during their long trip. $expedition_leader_name$ is now heading with the riches and the foreign representatives towards our capital."
- flavor_chi.2008.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_chi.2008.a.entry: "$common_string_brilliant$"
-
- flavor_chi.2009.title: "Audience with the [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
- flavor_chi.2009.desc: "$expedition_leader_name$ has finally returned to [ROOT.GetCountry.GetCapital.GetName] to much fanfare and cheer. As part of their delegation they bring many envoys from the countries they have visited who are ready to swear fealty to the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. We are much pleased with their decision to come here."
- flavor_chi.2009.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_chi.2009.a.entry: "$common_string_brilliant$"
-
- flavor_chi.2010.title: "End of Expedition"
- flavor_chi.2010.desc: "The $expedition_name_treasure_voyage$ has finally come to an end. Let us review whether our investment was worth it in the end and consider whether to send another one in the future as they are a costly matter."
- flavor_chi.2010.a: "We need more missions like those."
-
- flavor_chi.2011.title: "Discovered Routes"
- flavor_chi.2011.desc: "Though our expedition to [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] was not exploratory in nature, correspondence with local rulers along the way has allowed our voyagers to discover new routes. With their return, we can use this expertise to better map out the lands beyond the [GetInternationalOrganization('middle_kingdom').GetName]."
- flavor_chi.2011.a: "There is more to the world than just the [GetInternationalOrganization('middle_kingdom').GetNameWithNoTooltip]?"
- flavor_chi.2011.a.entry: "There is more to the world than just the $middle_kingdom$?" #NEW
-
- chi_we_will_gift_cloves: "We will give [expedition_initiator.GetName] a gift of [ShowGoodsName('cloves')]."
- chi_we_will_gift_giraffe: "We will give [expedition_initiator.GetName] a giraffe."
- chi_we_will_gift_persian_blue: "We will give [expedition_initiator.GetName] a gift of our local [ShowGoodsName('dyes')]."
-
- flavor_chi.2012.title: "An Exotic Beast"
- flavor_chi.2012.desc: "Our $expedition_name_treasure_voyage$ has brought a truly exceptional and outstanding creature back to the [ROOT.GetCountry.GetGovernment.GetCourtTitle] of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]! It is a massive beast with tall neck and covered in darker spots, and it has been labeled as a giraffe overseas. Our courtiers, however, have identified the creature with the legendary [ShowCultureGroupName('chinese_group')] #italic qílín#!, which signifies an oncoming golden era under the rule of an illustrious ruler. We could buy into the theory, bolstering our prestige, but setting higher expectations for our actions."
- flavor_chi.2012.a: "It is the mythical #italic qílín#!!"
- flavor_chi.2012.b: "A wonderful creature, for sure."
-
- flavor_chi.2013.title: "Color of Wonders"
- flavor_chi.2013.desc: "Our grand expedition has brought back an exotic dye from the [ShowSubContinentName('middle_east')]. An intensive blue, it has been identified as a perfect resource that could be used for the production of our renowned [ShowGoodsName('pottery')]. Enough of those [ShowGoodsName('dyes')] have been brought back for us to utilize them in our production."
- flavor_chi.2013.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_chi.2013.a.entry: "$common_string_brilliant$"
-
- flavor_chi.2014.title: "A Taste to Remember"
- flavor_chi.2014.desc: "While [ShowRegionName('indonesia_region')] is certainly known for its spices, our $expedition_name_treasure_voyage$ has visited an area where the exceptional [ShowGoodsName('cloves')] are grown in large amounts - the [ShowAreaName('moluccas_area')]. The locals there have welcomed our expedition graciously and have provided us many of those wonderful spices as tribute. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] will savor it for the months to come."
- flavor_chi.2014.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- flavor_chi.2014.a.entry: "$common_string_brilliant$"
-
- flavor_chi.2015.title: "Coward Found"
- flavor_chi.2015.desc: "During the $expedition_name_treasure_voyage$, $expedition_leader_name$ and $expedition_leader_name_herhis$ loyal sailors have managed to track down a high-profile dissident named [extradited_character.GetName]. [extradited_character.GetShortNameWithNoTooltip] escaped [ROOT.GetCountry.GetName] long time ago, fleeing from due justice. Our expedition however not only did manage to find [extradited_character.GetHerHim], but also to wrestle [extradited_character.GetHerHim] from [extradited_character.GetHerHis] asylum keepers in [asylum_country.GetName] and they brought [extradited_character.GetHerHim] back to $china$ for justice to be served."
- flavor_chi.2015.a: "Strangle this petty criminal!"
- flavor_chi.2015.b: "Have [extradited_character.GetHerHim] beheaded."
- flavor_chi.2015.b.entry: "Have him beheaded." #NEW
- flavor_chi.2015.c: "Issue the #italic língchí,#! slow slicing."
- flavor_chi.2015.d: "Pardon the dissident, [extradited_character.GetHerHis] skills might be useful."
- flavor_chi.2015.d.entry: "Pardon the dissident, his skills might be useful." #NEW
-
- flavor_chi.2016.title: "Execution of [executed_character.GetNameWithNoTooltip]"
- flavor_chi.2016.desc: "[executed_character.GetName] is a runaway from [executed_character.GetBirthLocation.GetArea.GetName] whose family turned to piracy after implementation of the [ShowPolicyName('haijin_policy')]. After [executed_character.GetHerHis] flight, [executed_character.GetShortNameWithNoTooltip] became a pirate chief in [loser_country.GetName] and subsequently waged battles against $expedition_leader_name$ off the coast of the [loser_country.GetFlavorRank]. Now, time has come to make an example out of [executed_character.GetNameWithNoTooltip]."
- flavor_chi.2016.a: "Justice is served."
-
- flavor_chi.2017.title: "A Defiant Ruler"
- flavor_chi.2017.desc: "During our $expedition_name_treasure_voyage$, $expedition_leader_name$ and $expedition_leader_name_herhis$ grand fleet managed to acquire a high profile prisoner - [loser_character.GetName], formerly the [loser_country.GetGovernment.GetRulerTitle] of the [loser_country.GetLongName]. However, the treason and disrespect of [loser_country.GetNameWithNoTooltip] has led [loser_character.GetHerHim] to a swift defeat, where [loser_character.GetSheHe] was taken prisoner."
- flavor_chi.2017.a: "Make an example out of [loser_character.GetHerHim]."
- flavor_chi.2017.a.entry: "Make an example out of him." #NEW
- flavor_chi.2017.b: "Show a benevolent attitude."
-
- flavor_chi.2018.title: "Fate of [loser_country.GetNameWithNoTooltip]"
- flavor_chi.2018.desc: "The foolish ruler of [loser_country.GetName] once stood defiant to the wishes of the [GetInternationalOrganization('middle_kingdom').GetName] represented by $expedition_leader_name$ and $expedition_leader_name_herhis$ expedition. After a fierce conflict, the [loser_country.GetLongNameWithNoTooltip] was defeated and a temporary [loser_country.GetGovernment.GetRulerTitle] was put in place while we decide on what to do with them."
- flavor_chi.2018.a: "Send [target_character_for_viceroyalty.GetNameWithNoTooltip] to rule as our viceroy."
- flavor_chi.2018.a.entry: "Send him to rule as our viceroy." #NEW
- flavor_chi.2018.b: "The local figurehead can stay."
-
- flavor_chi.2019.title: "Viceroy from [expedition_initiator.GetNameWithNoTooltip]"
- flavor_chi.2019.desc: "We have received news from [GetInternationalOrganization('middle_kingdom').GetName]. They have arranged for our state to be governed by their viceroy, [target_character_for_viceroyalty.GetName], who will proceed to rule us under a [ShowSubjectTypeName('tributary')] relationship for the foreseeable future. Such is the fate of ours, to be dominated by our enemy war victors."
- flavor_chi.2019.a: "We will throw off this yoke in due time."
-
- flavor_chi.2020.title: "Gifts from Afar"
- flavor_chi.2020.desc: "Over the course of the expedition, our sailors have been gifted many local wares and goods that have now been brought to $china$. Those hold little monetary use for us, but they do put the [GetInternationalOrganization('middle_kingdom').GetName] in a favorable light and are sure to enhance our prestige for years to come."
- flavor_chi.2020.a: "We expected no less."
-
- flavor_chi.2021.title: "Death of [target.GetNameWithNoTooltip]"
- flavor_chi.2021.desc: "Word has reached us that our $expedition_name_treasure_voyage$ leader, $expedition_leader_name$, has perished while on $expedition_leader_name_herhis$ journey. The second in command, [new_leader.GetName], has assumed command and will have to lead the journey on his own." #NEW
- flavor_chi.2021.a: "Let this not be an omen of what is to come."
- chi_new_expedition_leader: "[new_leader.GetName] is now the leader of our $expedition_name_treasure_voyage$."
-
- flavor_chi.2022.title: "Low on Funds"
- flavor_chi.2022.desc: "We have received information that the $expedition_name_treasure_voyage$ is on its way back to [ROOT.GetCountry.GetName] due to a shortage of gifts to conduct diplomacy with. Perhaps next time we should grant more appropriate funds to our expeditions."
- flavor_chi.2022.a: "This is embarrassing."
- chi_expedition_is_returning_to_china: "The $expedition_name_treasure_voyage$ is now on its route back to [ROOT.GetCountry.GetName]."
-
- show_current_chinese_expedition_amount: "[COUNTRY.MakeScope.GetVariable('chinese_expedition_opinion').GetValue]"
- change_amount_of_treasure_voyage_tt: "The amount of cargo carried by the $expedition_name_treasure_voyage$ is increased by $VALUE|+$."
- change_amount_of_treasure_voyage_tt_neg: "The amount of cargo carried by the $expedition_name_treasure_voyage$ is decreased by $VALUE|-$."
- change_opinion_of_expedition: "The $chinese_expedition_opinion$ towards us is increased by $VALUE|0Y$. (Currently: $show_current_chinese_expedition_amount$)"
- change_opinion_of_expedition_neg: "The $chinese_expedition_opinion$ towards us is decreased by $VALUE|0Y$. (Currently: $show_current_chinese_expedition_amount$)"
- give_gold_to_expedition: "$VALUE|2Y$ will be gifted to the $expedition_name_treasure_voyage$."
- chi_gift_received_count: "We have received [ROOT.GetVariable('gifts_received').GetValue|2+=] in [gold|e] which is converted into:"
-
- flavor_chi.2100.title: "Treasure Fleet Caught in a Storm"
- flavor_chi.2100.desc: "During their voyage, our most grand treasure fleet has encountered a most troubling foe during their sail: none other than the powerful forces of nature in the form of a massive storm that has taken our most experienced sailors by surprise. Numerous ships were lost during this calamity, losing many of our gifts and goods in the process."
- flavor_chi.2100.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
- flavor_chi.2100.a.entry: "$common_string_nothing_we_can_do_about_it$"
- 
- flavor_chi.2101.title: "Clash with a Pirate Fleet"
- flavor_chi.2101.desc: "While sailing through the [target_location.GetTopography.GetName] of [target_location.GetName], our glorious Treasure Fleet under the watchful eye of $expedition_leader_name$ has encountered a vile fleet of rowdy pirates. Our brave soldiers would not, of course, cower in fear, and promptly engaged the enemy in a decisive battle where the enemy ruffians were utterly defeated and their leaders captured. However, such an engagement was not without losses in manpower and ships, depriving our grand fleet of many resources."
- flavor_chi.2101.a: "This will earn us some appreciation."
-
- flavor_chi.2200.title: "Seeking an Interpreter"
- flavor_chi.2200.desc: "So far from home, the [ShowCultureGroupName('chinese_group')] Treasure Expedition's representatives are finding it quite difficult to efficiently converse with us and still, they aim to sail further, soon to meet with people of many cultures that they have never interacted with before. In order to continue their voyage, they have requested us to provide a local interpreter who could serve as a translator for them."
- flavor_chi.2200.a: "Find an interpreter right now!"
- flavor_chi.2200.b: "It is their problem, not ours."
-
- flavor_chi.2201.title: "Sharing Maps"
- flavor_chi.2201.desc: "The $expedition_name_treasure_voyage$ has requested us to share our maps of the local waterways with them. We are under no obligation to do so, but fulfilling their request would be seen as a gesture of goodwill and would be greatly appreciated by $expedition_leader_name$ and other [ShowCultureGroupName('chinese_group')] elites currently stationed in $expedition_location_name$."
- flavor_chi.2201.a: "Share what we have."
- flavor_chi.2201.b: "We have no such maps to share."
-
- flavor_chi.2202.title: "Exploitative Costs"
- flavor_chi.2202.desc: "Owing to the unfamiliarity of the $expedition_name_treasure_voyage$'s sailors, the local [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] have set up markets in the vicinity of the haven of $expedition_location_name$. Those markets offer the visitors local goods at a price, and therein lies the problem, for the more avaricious of our merchants have decided to use the sailors' desperation to raise the prices to exorbitant amounts. The prices have gone up so high in some places, that an armed fight has broken out on the street, causing unrest in the [fleet_loc.GetRank.GetName]."
- flavor_chi.2202.a: "Punish the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]!"
- flavor_chi.2202.a.entry: "Punish the $burghers_estate$!" #NEW
- flavor_chi.2202.b: "Hold the sailors accountable."
-
- flavor_chi.2203.title: "Perceived Humiliation"
- flavor_chi.2203.desc: "Our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are severely upset with the attention we have given to the $expedition_name_treasure_voyage$. They view the [ShowCultureGroupName('chinese_group')] as arrogant invaders who deserve none of the hospitality or privileges that we have given them during their stay. The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] demand, therefore, that we revoke some of the privileges and show them that they are not on their land."
- flavor_chi.2203.a: "Follow the requests of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
- flavor_chi.2203.a.entry: "Follow the requests of the $nobles_estate$." #NEW
- flavor_chi.2203.b: "We cannot risk to upset the [ShowCultureGroupNameWithNoTooltip('chinese_group')]."
-
- flavor_chi.2204.title: "A Religious Faux Pas"
- flavor_chi.2204.desc: "The [ShowCultureGroupName('chinese_group')] Treasure Expedition sailors, so unaccustomed with our [ROOT.GetCountry.GetReligion.GetAdjective] ways, have committed a sacrilegious act against our faith. This has sparked outrage amongst the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], who are calling for the leader of expedition, $expedition_leader_name$, to step up and apologize for such discourtesy."
- flavor_chi.2204.a: "Demand an apology from $expedition_leader_name_tooltipless$."
- flavor_chi.2204.b: "Let this faux pas slide."
-
- flavor_chi.2205.title: "Demand of Extradition"
- flavor_chi.2205.desc: "The $expedition_name_treasure_voyage$ has identified one of our courtiers, [target_escapee.GetName], as a renegade escapee from [expedition_initiator.GetName]. The [ShowCultureGroupName('chinese_group')] voyage elites, headed by $expedition_leader_name$, demand that the [target_escapee.GetShortNameWithNoTooltip] is handed over to them and extradited back to the [GetInternationalOrganization('middle_kingdom').GetName], where he can be tried." #NEW
- flavor_chi.2205.a: "Fulfill their request."
- flavor_chi.2205.b: "Preposterous demand!"
-
- flavor_chi.2206.title: "Joint Army Drills"
- flavor_chi.2206.desc: "During their extended stay, $expedition_leader_name$, the leader of the $expedition_name_chinese_expedition$, has offered for their forces and ours to partake in joint military exercises. Such drills could benefit both sides and would signify deep trust between the two parties. That being said, there might be some inherent risk in exercising with foreign soldiers and we must still tread carefully. The closest stationed army to the $expedition_location_name$ is [target_unit.GetName] would be the forces to jointly train with the Chinese."
- flavor_chi.2206.a: "Accept this proposal."
- flavor_chi.2206.b: "We can always refuse."
-
- flavor_chi.2207.title: "Offer of [ShowCultureGroupNameWithNoTooltip('chinese_group')] Help"
- flavor_chi.2207.desc: "When the [ShowCultureGroupNameWithNoTooltip('chinese_group')] $expedition_name_treasure_voyage$ arrived in $expedition_location_name$, they were not expecting to see the [ROOT.GetCountry.GetLongName] in the midst of a bloody war, and yet here they are. That being said, the [expedition_initiator.GetLongName] does not hold our war enemies in high regards and would, therefore, be willing to aid us in our conflict."
- flavor_chi.2207.a: "We will accept any help we can get."
- flavor_chi.2207.b: "It is our fight, not theirs."
-
- flavor_chi.2208.title: "[ShowCultureGroupNameWithNoTooltip('chinese_group')] Treasure Voyagers Aid [from.GetNameWithNoTooltip]"
- flavor_chi.2208.desc: "Our spies inform us of a sizeable $expedition_name_treasure_voyage$ led by $expedition_leader_name$ initiated by the [expedition_initiator.GetLongName]. Having arrived in the enemy port of $expedition_location_name$, they have decided to get their hands dirty and to support our foe [from.GetName] in their war against us!"
- flavor_chi.2208.a: "We will never forgive the [ShowCultureGroupNameWithNoTooltip('chinese_group')]!"
-
- flavor_chi.2209.title: "Request for Mosque Construction"
- flavor_chi.2209.desc: "The leader of the $expedition_name_chinese_expedition$, a certain sailor named $expedition_leader_name$, is also a devout follower of [target_religion.GetName]. With many of $expedition_leader_name_herhis$ fleet following the same faith, they requested to permit for a construction of a Mosque in order to support the local [target_religion.GetAdjectiveWithNoTooltip] community."
- flavor_chi.2209.a: "Permit the construction."
- flavor_chi.2209.b: "Warn them against such trespasses."
-
- flavor_chi.2210.title: "[ShowCultureGroupNameWithNoTooltip('chinese_group')] Diaspora in $expedition_location_name_tooltipless$"
- flavor_chi.2210.desc: "Home to $expedition_location_name$ is a considerable [ShowCultureGroupName('chinese_group')] diaspora that has grown here over the course of many decades. Originally having arrived here as traders, the [ShowCultureGroupNameWithNoTooltip('chinese_group')] merchants took wives from local women and settled here, adapting to the new environment and fulfilling a crucial role in our society. Now, with the arrival of the $expedition_name_treasure_voyage$ of [expedition_initiator.GetName], $expedition_leader_name$ has decided to give support to that diaspora."
- flavor_chi.2210.a: "Encourage this."
- flavor_chi.2210.b: "Stop them!"
-
- flavor_chi.2211.title: "Soldiers Settle Down"
- flavor_chi.2211.desc: "A handful of soldiers from the $expedition_name_chinese_expedition$ have been discharged and allowed to settle down in $expedition_location_name$. They have taken on native wives and their connections might prove useful to us in the long term."
- flavor_chi.2211.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
- flavor_chi.2211.a.entry: "$common_string_alright$"
-
- flavor_chi.2212.title: "Intervention from $expedition_name_treasure_voyage$"
- flavor_chi.2212.desc: "As the $expedition_name_chinese_expedition$ arrived at $expedition_location_name$, they found our [ROOT.GetCountry.GetFlavorRank] embroiled in a bloody civil war. Though such circumstances would usually ward off many visitors, $expedition_leader_name$ and $expedition_leader_name_herhis$ $expedition_name_treasure_voyage$ took a liking to the [ROOT.GetCountry.GetAdjective] cause, and are offering us military support in the name of the [GetInternationalOrganization('middle_kingdom').GetName]."
- flavor_chi.2212.a: "We will accept all the help we can get."
- flavor_chi.2212.b: "We do not need their help."
-
- flavor_chi.2213.title: "$flavor_chi.2212.title$"
- flavor_chi.2213.desc: "The vile $expedition_name_chinese_expedition$ has decided to pick a side in our [target_war.GetName]. And despite the wisdom of $expedition_leader_name$, their leader, they have made the wrong choice, opting to support [country_at_war_with.GetName] rather than helping [ROOT.GetCountry.GetName]. We will crush them on the battlefield."
- flavor_chi.2213.a: "We will not forget this!"
-
- flavor_chi.2214.title: "[ShowCultureGroupNameWithNoTooltip('chinese_group')] Contempt"
- flavor_chi.2214.desc: "The opinion between [ROOT.GetCountry.GetName] and our visitors, the $expedition_name_treasure_voyage$, has fallen to unprecedented levels. In recent days, there have been numerous clashes between our garrison and the foreign sailors, but nominally our visitors have still maintained relations, even if lukewarm. However, recent events have further deteriorated those ties and $expedition_leader_name$ has just denounced [ROOT.GetCountry.GetLongNameWithNoTooltip] and its values and the $expedition_name_chinese_expedition$ is preparing to leave $expedition_location_name$ before tensions escalate further."
- flavor_chi.2214.a: "We must repair our relations."
- flavor_chi.2214.b: "Good Riddance!"
-
- chinese_interregnum: "[THIS.GetCountry.GetName] will be placed under a [ShowCultureGroupName('chinese_group')] interregnum."
-
- flavor_chi.2215.title: "A Belligerent Request"
- flavor_chi.2215.desc: "The leader of the $expedition_name_treasure_voyage$ $expedition_leader_name_herselfhimself$, $expedition_leader_name$, has submitted a serious appeal to us, requesting a military intervention against [target_country.GetName]. From what we know, for a reason or another, the [target_country.GetAdjectiveWithNoTooltip] [target_country.GetFlavorRank] has become a target for the [ShowCultureGroupName('chinese_group')], and the expedition leaders are calling for us to execute the Heaven's punishment on the defiant [target_country.GetGovernment.GetRulerTitle]."
- flavor_chi.2215.a: "We will follow their recommendation."
- flavor_chi.2215.b: "They cannot expect us to do that."
-
- flavor_chi.2216.title: "Underwhelming Tribute Quality"
- flavor_chi.2216.desc: "Though they have not stated this publically, we can tell that the elites of the $expedition_name_treasure_voyage$ are not content with the quality of our gifts. We suspected this back during their audience with the [ROOT.GetCountry.GetGovernment.GetRulerTitle], but the reports of our spies who have overheard their conversations have confirmed it."
- flavor_chi.2216.a: "Compensate them."
- flavor_chi.2216.b: "We will not do anything unless they confront us about it."
-
- flavor_chi.2217.title: "Scandal at the [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
- flavor_chi.2217.desc: "During an audience with the [ROOT.GetCountry.GetGovernment.GetRulerTitle], a member of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has uttered most despicable words about our [ShowCultureGroupName('chinese_group')] visitors, causing them great offence. Unless something is done, the $expedition_name_treasure_voyage$ might report this incident to the [expedition_initiator.GetGovernment.GetRulerTitle]."
- flavor_chi.2217.a: "Make a solemn apology."
- flavor_chi.2217.b: "Bestow them with gifts of apology."
- flavor_chi.2217.c: "Who are we to punish our own?"
-
- flavor_chi.2218.title: "Fine Treatment"
- flavor_chi.2218.desc: "The elites leading the $expedition_name_treasure_voyage$ are quite pleased with our hospitality and various privileges that we have bestowed upon them. Besides the obvious tribute exchange, we have permitted and aided them in repairing their ships. They may not be showing it directly, but we know that they are quite satisfied with the treatment." 
- flavor_chi.2218.a: "Hospitality is the key!"
- flavor_chi.2218.b: "Do not let them get the wrong idea."
-
+ expedition_location_name: "[expedition_initiator.GetExpeditionOfType('treasure_fleet_expedition').GetCurrentLocation.GetName]"
+ expedition_location_name_tooltipless: "[expedition_initiator.GetExpeditionOfType('treasure_fleet_expedition').GetCurrentLocation.GetNameWithNoTooltip]"
 
  chi_neighboring_nations_might_get_cb_on_us: "Neighboring [nations|e] visited by the $expedition_name_treasure_voyage$ will be given a chance to declare [war|e] on [ROOT.GetCountry.GetName] with their support."
  not_is_treasure_voyage_active: "No $expedition_name_treasure_voyage$ is currently active."

@@ -1,0 +1,189 @@
+﻿l_english:
+ religious_orders.1.title: "Un Pio Lascito"
+ religious_orders.1.desc: "Un ricco benefattore è morto e il testamento lascia una piccola fortuna a [target_order.GetName]. I confratelli parlano già di nuovi tetti per le loro case capitolari e di pane per i poveri alle loro porte. Per consuetudine simili doni spettano a loro, sebbene denaro di questa entità sfugga di rado all'attenzione di [target_character.GetName]."
+ religious_orders.1.a: "Lasciamo che i confratelli lo tengano."
+ religious_orders.1.b: "Rivendichiamolo per il tesoro."
+
+ religious_orders.2.title: "[target_order.GetNameWithNoTooltip] Cerca un Punto d'Appoggio"
+ religious_orders.2.desc: "[target_order.GetName] ha superato le sue poche case, e i confratelli ci chiedono spazio per crescere. Hanno posato lo sguardo su [target_location.GetName], dove vorrebbero erigere una nuova casa capitolare e attirare novizi dalle campagne circostanti. La terra è nostra da concedere o da negare, ed essi attendono la nostra parola."
+ religious_orders.2.a: "Concediamo la terra."
+ religious_orders.2.b: "Dotiamo invece [ROOT.GetCountry.Custom('IT_CLERGY_IL')][GetEstateNameWithNoTooltip('clergy_estate')] locale."
+ religious_orders.2.c: "Rifiutiamo senz'altro."
+
+ locals_embrace_the_order_desc: "La gente si affeziona subito ai confratelli e, nel giro di una stagione, la nuova casa pare essere sempre stata lì in mezzo a loro"
+ order_works_to_bolster_local_wealth_desc: "I confratelli si mettono a drenare i campi e a riparare le strade, e il distretto si arricchisce grazie al loro lavoro"
+ order_projects_central_authority_desc: "Con l'ordine insediato a [target_location.GetName], l'autorità di [target_character.GetName] giunge ora un po' più lontano di prima"
+ order_appreciates_new_holding_desc: "I confratelli ricevono la concessione con gratitudine, e il favore di [target_character.GetName] viene menzionato con calore nelle case dell'ordine"
+
+ religious_orders.3.title: "[target_order.GetNameWithNoTooltip] Scuote i Fedeli"
+ religious_orders.3.desc: "[target_order.GetName] ha spinto le campagne a un tale grado di devozione, e i confratelli sono orgogliosi del fervore che hanno acceso. Alcuni vorrebbero indirizzare quello zelo verso le città dove la nostra fede deve ancora mettere radici, per conquistare le anime che i parroci non hanno mai potuto. Altri si limitano a borbottare che simili umori raramente restano miti nei confronti degli uomini facoltosi delle corporazioni."
+ religious_orders.3.a: "Benediciamo il fervore."
+ religious_orders.3.b: "Facciamo pressione su [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][GetEstateNameWithNoTooltip('burghers_estate')] per un contributo."
+ religious_orders.3.c: "Inviamo i confratelli a predicare dove la fede è più debole."
+
+ religious_orders.4.title: "Scandalo nel Chiostro"
+ religious_orders.4.desc: "Ci è giunta voce che alcuni confratelli di [target_order.GetName] vivano ben lontani dai loro voti, e i sussurri si stanno già diffondendo oltre le mura del chiostro. Il capitolo guarda a noi prima che lo scandalo faccia davvero danno."
+ religious_orders.4.a: "Epuriamo i colpevoli."
+ religious_orders.4.b: "Risolviamo la questione in silenzio."
+
+ scandal_kept_quiet_desc: "La questione viene messa a tacere, sebbene una lieve macchia rimanga sul nome dell'ordine"
+ scandal_breaks_open_desc: "Il silenzio non regge, e i confratelli incolpano [target_character.GetName] dello scandalo che trapela"
+
+ religious_orders.5.title: "Un Patrono si Ritira"
+ religious_orders.5.desc: "Una grande casata di [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][GetEstateName('nobles_estate')] ha a lungo finanziato [target_order.GetName], e ora quella borsa si è chiusa. I confratelli avvertono subito la mancanza e si sono presentati davanti a [target_character.GetName] nella speranza che [target_character.GetSheHe] non lasci languire la loro opera."
+ religious_orders.5.a: "Copriamo l'ammanco con il tesoro."
+ religious_orders.5.b: "Che si arrangino con meno."
+ religious_orders.5.c: "Pretendiamo che [ROOT.GetCountry.Custom('IT_NOBLES_IL')][GetEstateNameWithNoTooltip('nobles_estate')] trovino un nuovo patrono."
+
+ new_patron_steps_forward_desc: "Una casata rivale assume il patronato, e le casse dell'ordine tornano a riempirsi"
+ no_patron_steps_forward_desc: "Nessun nuovo patrono si fa avanti, e i confratelli prendono male la nostra ingerenza"
+
+ treasury_gift_entrenches_order_desc: "L'ordine fa buon uso del dono, e la sua presa sulle nostre terre si fa più salda"
+ treasury_gift_earns_gratitude_desc: "I confratelli accolgono il denaro come segno di favore, e la loro benevolenza verso [target_character.GetName] si approfondisce"
+
+ religious_orders.6.title: "Il Noviziato Vuoto"
+ religious_orders.6.desc_martial: "Pochi giovani vengono a prendere la spada e la croce con [target_order.GetName]. Le sue commende sono semivuote, e i confratelli veterani si chiedono ad alta voce chi presidierà la frontiera quando se ne saranno andati."
+ religious_orders.6.desc_monastic: "Ogni anno bussano ai cancelli di [target_order.GetName] meno novizi. Gli stalli del coro restano vuoti al Mattutino, e i confratelli anziani si preoccupano di chi manterrà le ore canoniche quando non ci saranno più."
+ religious_orders.6.a: "Apriamo i cancelli a chiunque voglia servire."
+ religious_orders.6.b: "Manteniamoci ai voti rigorosi."
+ religious_orders.6.c: "Finanziamo una campagna di reclutamento."
+
+ order_abandons_a_house_desc: "Senza novizi a riempirla, l'ordine abbandona discretamente una delle sue case"
+ order_withers_for_want_of_novices_desc: "L'ordine si aggrappa ai propri standard, ma la sua forza e il suo fervore calano entrambi per mancanza di nuovo sangue"
+
+ religious_orders.101.title: "Il Campione dell'Ordine"
+ religious_orders.101.desc: "Tra i confratelli di [target_order.GetName] cavalca un cavaliere che i villaggi di frontiera già nominano nei loro canti. I suoi superiori, consapevoli da dove viene il loro pane, hanno offerto la spada di [target_character.GetName] alle nostre insegne per tutto il tempo che le nostre guerre ne avranno bisogno."
+ religious_orders.101.a: "Diamogli un comando degno dei canti."
+ religious_orders.101.b: "Il suo posto è alla frontiera."
+
+ religious_orders.102.title: "Spade oltre il Confine"
+ religious_orders.102.desc: "I confratelli di [target_order.GetName] hanno cavalcato in [target_country.GetName] senza permesso e sono tornati a casa spingendo davanti a sé bestiame rubato. Non siamo in guerra. Gli emissari del nostro vicino sono già per strada, e non vengono a pregare."
+ religious_orders.102.a: "Risarciamo e rimproveriamo l'ordine."
+ religious_orders.102.b: "Ciò che viene preso all'infedele è ben preso."
+
+ religious_orders.103.title: "Pietra su Pietra"
+ religious_orders.103.desc: "È giunta una lettera dai custodi di [target_order.GetName], scritta come scrivono i soldati: le mura della loro casa a [target_location.GetName] sono più antiche del confine che sorvegliano, e la malta costa meno del lutto. Chiedono poco, e lo chiedono senza giri di parole."
+ religious_orders.103.a: "Paghiamo per pietra solida."
+ religious_orders.103.b: "Le mura possono attendere; che facciano pattuglie più ampie."
+
+ religious_orders.104.title: "I Fuochi di Segnalazione Rimasero Spenti"
+ religious_orders.104.desc_captives: "Quando fu dato l'allarme a [target_location.GetName], i razziatori stavano già cavalcando via, e non se ne andavano a mani vuote. Gli abitanti furono legati insieme e portati via per essere venduti in mercati che non vedremo mai. I fuochi di guardia di [target_order.GetName] bruciarono tutta la notte senza avvertire nessuno, e i custodi avevano fatto voto di impedire proprio questo."
+ religious_orders.104.desc_herds: "I pascoli attorno a [target_location.GetName] furono ripuliti in una sola notte, e non resta uno zoccolo né un corno nel distretto. I granai sentiranno la perdita ben prima che l'anno volga. I custodi di [target_order.GetName] continuano a chiedersi come mai i fuochi di segnalazione siano rimasti spenti."
+ religious_orders.104.desc_plate: "I razziatori sono sgusciati oltre i fuochi di guardia di [target_order.GetName] nella notte, e al mattino la chiesa di [target_location.GetName] era spogliata fino alla nuda pietra, il suo argento e le sue reliquie portati via in sacchi sopra una sella. I confratelli non riescono a sostenere il nostro sguardo."
+ religious_orders.104.a: "Sopportiamo la perdita."
+ religious_orders.104.b: "Mandiamo i confratelli all'inseguimento dei razziatori."
+
+ wardens_spoils_recovered_desc: "I confratelli cavalcano senza sosta e raggiungono i razziatori a un guado. Tornano con tutto tranne che con le scuse, e il racconto cresce già mentre viene narrato"
+ wardens_trail_cold_desc: "I confratelli cavalcano fuori e non trovano altro che impronte di zoccoli e ceneri fredde. La perdita resta, e con essa la vergogna"
+
+ religious_orders.105.title: "Inchiostro e Pergamena"
+ religious_orders.105.desc: "I confratelli di [target_order.GetName] tengono i registri più ordinati delle nostre terre, e lo sanno. I loro superiori ci hanno offerto scrivani il cui [ROOT.GetCountry.GetLiturgicalLanguage.GetName] è esatto e la cui aritmetica è spietata, chiedendo in cambio solo una stanza tranquilla e un modesto stipendio."
+ religious_orders.105.a: "Mettiamoli ai registri delle tasse."
+ religious_orders.105.b: "Mettiamoli alle lettere di stato."
+
+ religious_orders.106.title: "Il Sigillo Spezzato"
+ religious_orders.106.desc: "Una lettera recante il nostro sigillo privato è stata recitata in una casa capitolare di [target_order.GetName] tre giorni prima che il destinatario ne rompesse la ceralacca. I confratelli che servono nella nostra cancelleria non dimenticano nulla. A quanto pare, non lo tengono nemmeno per sé."
+ religious_orders.106.a: "Escludiamoli dalla cancelleria."
+ religious_orders.106.b: "Diamo loro in pasto un registro falso."
+ religious_orders.106.c: "Sopportiamolo in silenzio."
+
+ confidants_ruse_swallowed_desc: "Le cifre false viaggiano esattamente come speravamo, e annotiamo ogni mano che attraversano"
+ confidants_ruse_discovered_desc: "Un confratello dallo sguardo acuto scopre le cifre inventate nel giro di una settimana, e l'ordine non perdona di essere stato preso per sciocco"
+
+ religious_orders.107.title: "Ritorno dal Mare"
+ religious_orders.107.desc_crews: "Con i ponti affollati di marinai tratti in salvo da un naufragio sulle secche esterne, una galea di [target_order.GetName] è entrata zoppicando in porto, bassa sull'acqua. I superstiti giurano che i confratelli hanno remato attraverso un tempo che nessun capitano pagato avrebbe affrontato, e lo giurano a gran voce in ogni taverna della banchina."
+ religious_orders.107.desc_charts: "Una galea di [target_order.GetName] è tornata a casa da una lunga scorta, e il suo capitano scende a terra con portolani corretti di suo pugno: sondaggi e ancoraggi che i nostri stessi piloti non conoscevano, segnati chiaramente per chiunque sappia leggere."
+ religious_orders.107.desc_relic: "Mezza costa è accorsa a vedere una galea di [target_order.GetName] entrare in porto con ogni bandiera che possiede. I confratelli portano a terra una reliquia, acquistata in un lontano porto, e la banchina si accalca per scorgerla."
+ religious_orders.107.a: "Riceviamoli con onori."
+ religious_orders.107.b: "L'ordine tiene per sé le proprie cose."
+
+ religious_orders.108.title: "Perduti con Tutto l'Equipaggio"
+ religious_orders.108.desc: "La più bella galea di [target_order.GetName] si è spezzata sulla barra in una burrasca invernale, in vista del porto e oltre ogni aiuto. I confratelli a bordo sono annegati insieme ai piloti che avevano passato anni ad addestrare. Lungo la costa suonano le campane dell'ordine, e non vi sono corpi da seppellire."
+ religious_orders.108.a: "Riarmiamo la loro squadra a nostre spese."
+ religious_orders.108.b: "Il mare dà e il mare prende."
+
+ religious_orders.109.title: "Le Ore Mantenute"
+ religious_orders.109.desc: "Da più tempo di quanto la maggior parte dei viventi ricordi, i confratelli di [target_order.GetName] hanno mantenuto le ore canoniche senza un solo lapsus notturno. Mattutino nel gelo e Vespri nelle stagioni delle febbri, preghiera posata su preghiera come i corsi di un muro. La gente ha cominciato a dire ad alta voce che la [ROOT.GetCountry.GetFlavorRank] sta in piedi perché i confratelli si inginocchiano."
+ religious_orders.109.a: "Proclamiamo un giorno di ringraziamento."
+ religious_orders.109.b: "Mandiamo a chiedere la benedizione dell'abate."
+
+ religious_orders.110.title: "Una Voce dalla Cella"
+ religious_orders.110.desc: "Un anacoreta di [target_order.GetName], murato nella sua cella da vent'anni, ha cominciato a gridare attraverso la feritoia che fuoco e pestilenza pendono su di noi come una spada sguainata. I pellegrini portano le sue parole di parrocchia in parrocchia più in fretta di quanto potrebbe cavalcare qualsiasi araldo, e ogni racconto si fa un po' peggiore."
+ religious_orders.110.a: "Ordiniamo all'abate di zittirlo."
+ religious_orders.110.b: "Lasciamo che gridi il suo avvertimento."
+
+ doom_talk_fades_desc: "Per una stagione il paese trattiene il fiato. Poi il raccolto arriva abbondante e il cielo si rifiuta di cadere, e la profezia muore silenziosamente d'imbarazzo"
+ dread_takes_hold_desc: "Il terrore mette radici. I campi restano lavorati a metà mentre i penitenti percorrono le strade, e le cappelle dell'ordine non sono mai state così piene"
+
+ religious_orders.111.title: "Un Codice dall'Oscurità"
+ religious_orders.111.desc: "I confratelli di [target_order.GetName] a [target_location.GetName], rilegando un salterio rosicchiato dai tarli, hanno trovato un testo più antico nascosto sotto le assi: un codice copiato secoli fa e pianto come perduto da ogni studioso che l'abbia mai cercato. Il bibliotecario non dorme da allora, e la sua lettera a noi lascia intendere che non intenda farlo."
+ religious_orders.111.a: "Facciamone fare copie per i nostri uomini."
+ religious_orders.111.b: "Lasciamolo riposare nella loro biblioteca."
+
+ religious_orders.112.title: "Fuoco nello Scriptorium"
+ religious_orders.112.desc_chronicles: "Un mozzicone di candela e una corrente d'aria, e lo scriptorium di [target_order.GetName] a [target_location.GetName] era scomparso al Mattutino. Le cronache che i confratelli tenevano delle nostre imprese, anno dopo anno fin da prima della memoria dei viventi, sono andate in fumo con gli scaffali che le contenevano. Qualunque cosa abbiamo fatto, ora vi sono molte meno prove che l'abbiamo fatta."
+ religious_orders.112.desc_psalters: "Lo scriptorium di [target_order.GetName] a [target_location.GetName] è bruciato fino agli stipiti prima dell'alba, e con esso i grandi libri corali. I salteri e gli antifonari erano l'orgoglio della casa, miniati nel corso di generazioni. Gli uffici saranno ora cantati a memoria, e la memoria vacilla."
+ religious_orders.112.desc_charters: "Il fuoco ha preso lo scriptorium di [target_order.GetName] a [target_location.GetName] nella notte, e con esso le carte e i titoli di proprietà di metà del distretto. Ogni confine che i confratelli abbiano mai fissato sulla pergamena è ora una questione di opinione, e le opinioni in simili materie sono raramente umili."
+ religious_orders.112.a: "Ricostruiamolo, scaffale e scrittoio."
+ religious_orders.112.b: "Le ceneri insegnano l'umiltà."
+
+ religious_orders.113.title: "Campi dalla Brughiera"
+ religious_orders.113.desc: "I confratelli di [target_order.GetName] hanno trascorso tre inverni a drenare la palude sotto la loro grangia di [target_location.GetName], e questa primavera l'acqua ha finalmente ceduto. Dove nidificavano gli aironi vi è ora terra nera, più di quanto chiunque si aspettasse, e la questione di quale aratro la rivolterà è arrivata con la prima settimana asciutta."
+ religious_orders.113.a: "Lasciamo che le grange si estendano."
+ religious_orders.113.b: "Insediamo la nostra gente sui nuovi solchi."
+
+ religious_orders.114.title: "Moria nelle Stalle"
+ religious_orders.114.desc: "Una moria è scoppiata nelle stalle di [target_order.GetName] presso [target_location.GetName]. Le bestie stanno tremanti a testa china mentre i veterinari discutono tra loro, e i confratelli ci chiedono senza mezzi termini se ricorrere al coltello o alla litania."
+ religious_orders.114.a: "Macelliamo e bruciamo."
+ religious_orders.114.b: "Affidiamoci alla preghiera e alla paglia pulita."
+
+ murrain_passes_over_desc: "La malattia si spegne nel giro di un mese. I confratelli, che non hanno mai dubitato che sarebbe accaduto, sono abbastanza garbati da non dirlo troppo forte"
+ murrain_spreads_desc: "La moria salta dalle stalle dell'ordine a ogni gregge del distretto, e la litania non fa nulla per rallentarne il passo"
+
+ religious_orders.115.title: "Tuoni nella Piazza del Mercato"
+ religious_orders.115.desc: "Un frate di [target_order.GetName] ha preso a predicare nel mercato di [target_location.GetName] proprio nell'ora in cui i prestatori aprono i loro banchi. Non fa nomi, e non ne ha bisogno. I poveri gremiscono la piazza per ascoltarlo, e i prestatori hanno preso ultimamente l'abitudine di arrivare tardi e di andarsene presto."
+ religious_orders.115.a: "Lasciamo che tuoni."
+ religious_orders.115.b: "Consigliamo un sermone più mite."
+
+ religious_orders.116.title: "Il Pulpito si Volge"
+ religious_orders.116.desc: "Lo stesso dono che riempie una piazza può altrettanto facilmente svuotare una reputazione. Un frate di [target_order.GetName] ha rivolto la sua predicazione contro di noi a [target_location.GetName]: le nostre tasse e i nostri peccati, enumerati uno a uno dal pulpito mentre la folla tiene il conto ad alta voce."
+ religious_orders.116.a: "Rispondiamogli con clemenza."
+ religious_orders.116.b: "Trasciniamolo giù dal pulpito."
+
+ friar_recants_desc: "In custodia il fuoco lo abbandona, ed egli ritratta davanti a testimoni. L'ordine rimane con l'imbarazzo in mano"
+ martyr_of_the_square_desc: "Va nella sua cella cantando, e la piazza non lo dimentica. I confratelli già parlano di lui come di un martire, e la città parla con i confratelli"
+
+ religious_orders.117.title: "La Ruota degli Esposti"
+ religious_orders.117.desc: "I confratelli di [target_order.GetName] hanno collocato una ruota girevole nel muro della loro casa a [target_location.GetName], dove un neonato può essere lasciato senza nome e accolto senza domande. La ruota gira più spesso di quanto la città voglia ammettere, e le culle dell'ordine sono piene."
+ religious_orders.117.a: "Lodiamo la loro carità."
+ religious_orders.117.b: "Lasciamo che siano le parrocchie a prendere i bambini."
+
+ religious_orders.118.title: "L'Ospizio Affollato"
+ religious_orders.118.desc: "La febbre è giunta con il traffico delle strade, e l'ospizio di [target_order.GetName] a [target_location.GetName] ha spalancato le porte come ordina la sua regola. I malati giacciono in due per ogni branda e lungo il corridoio del chiostro tra di esse. I medici della città chiamano il luogo una lampada accesa per le falene."
+ religious_orders.118.a: "Sbarriamo le porte dell'ospizio."
+ religious_orders.118.b: "La carità non indietreggia."
+
+ hospice_spared_desc: "La febbre si spegne contro le mura dell'ospizio come per appuntamento. I confratelli seppelliscono i loro pochi morti e osservano che la regola ha dato prova di sé"
+ hospice_fever_spreads_desc: "Ciò che si è radunato nell'ospizio non rimane nell'ospizio. La febbre esce a piedi con i guariti e con i dolenti, e il distretto si ammala via per via"
+
+ religious_orders.119.title: "Assoluzione per le Marche"
+ religious_orders.119.desc: "La guerra è finita, e il suo conto non è ancora saldato. I confessori di [target_order.GetName] hanno chiesto licenza di percorrere i distretti più maltrattati, ascoltando ciò che gli uomini non vogliono dire ai vicini e assolvendo ciò che non riescono a dimenticare."
+ religious_orders.119.a: "Mandiamoli tra la gente."
+ religious_orders.119.b: "Il loro primo compito è con i potenti."
+
+ religious_orders.120.title: "Assoluzione, Comprata e Venduta"
+ religious_orders.120.desc_noble: "Uno dei confratelli di [target_order.GetName] ha fatto un tranquillo commercio nell'assolvere una grande casata di [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][GetEstateName('nobles_estate')] da peccati che non ha ancora finito di commettere, e una costante sfilata di doni ha tenuto il passo con le assoluzioni. Il capitolo arrossisce. La casata in questione no."
+ religious_orders.120.desc_merchant: "Un confratello di [target_order.GetName] ha venduto coscienze pulite alle case di contabilità, con l'assoluzione prezzata a registro come qualsiasi altra merce. Per [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][GetEstateName('burghers_estate')], un giusto prezzo onestamente pagato non è affatto un peccato, il che è in effetti il cuore del problema."
+ religious_orders.120.desc_prelate: "Tra i confessori di [target_order.GetName] ve n'è uno le cui penitenze si fanno sensibilmente più lievi man mano che i peccatori si fanno più illustri, e ognuno dei suoi penitenti è un uomo di chiesa assolto da peccati che le parrocchie conoscono a memoria. [ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][GetEstateName('clergy_estate')] preferirebbe che non guardassimo troppo da vicino."
+ religious_orders.120.a: "Pretendiamo che l'ordine lo consegni."
+ religious_orders.120.b: "Ciò che viene confessato appartiene a Dio."
+
+ religious_orders.201.title: "Dopo la Cabalgada"
+ religious_orders.201.desc: "I confratelli tornano dalla loro incursione con bottino e prigionieri al seguito, e la commenda è divisa su come celebrare l'occasione."
+ religious_orders.201.a: "Esibiamo il bottino e lasciamo che lo zelo dell'ordine per la frontiera arda più vivo."
+ religious_orders.201.b: "Integriamo discretamente i guadagni nelle difese del confine."
+
+ religious_orders.202.title: "Un Punto d'Appoggio tra gli Infedeli"
+ religious_orders.202.desc: "I nostri soldati hanno strappato [ro_conquest_location.GetName] a mani infedeli, e i confratelli di [ro_conquest_order.GetName] la guardano con uno scopo. Dove la fede non è ancora radicata, vorrebbero piantare una commenda, una casa di preghiera e di spada sulla nuova frontiera, e chiedono il nostro permesso per erigerla."
+ religious_orders.202.a: "Lasciamo che costruiscano la loro commenda."
+ religious_orders.202.b: "La frontiera non è ancora il posto per loro."

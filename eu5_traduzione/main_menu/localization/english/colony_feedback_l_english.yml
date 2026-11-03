@@ -1,0 +1,105 @@
+﻿l_english:
+
+ ####################################################
+ # M1 Forecast Row
+ ####################################################
+
+ COLONY_FORECAST_ETA_LINE: "#T In Attesa#! Circa $MONTHS|v0$ mesi fino al prossimo insediamento.\nLa stima segue il flusso attuale di [migration|e] verso questa colonia. Cambierà se quel flusso accelera o rallenta."
+ COLONY_FORECAST_ETA_LINE_SHORT: "~$MONTHS|v0$ mesi"
+ COLONY_FORECAST_ETA_UNKNOWN: "#T In Attesa#!\nQuesta colonia non ha ancora una fonte di [migration|e]. Una stima apparirà non appena i coloni inizieranno ad arrivare."
+ COLONY_FORECAST_ETA_UNKNOWN_SHORT: "In Attesa"
+
+ BOTTLENECK_SOURCE_DEPLETED: "@warning_icon! @peasants! Fonte Esaurita"
+ BOTTLENECK_SOURCE_DEPLETED_TT: "#T Rallentato: Fonte Esaurita#!\nLa nostra fonte di coloni si è prosciugata. La località che invia [ShowPopTypeName('peasants')] a questa colonia non ne ha più da offrire, quindi la [migration|e] rimarrà lenta finché non si troverà una nuova fonte."
+
+ BOTTLENECK_GOODS: "@warning_icon! @goods! Carenza di Beni"
+ BOTTLENECK_GOODS_TT: "#T Rallentato: Carenza di Beni#!\nLa colonia è a corto di forniture. Riceve meno del 75% dei [goods|e] di cui ha bisogno, quindi può sostenere meno nuovi coloni."
+
+ BOTTLENECK_MARITIME: "@warning_icon! @maritime_presence! Presenza Marittima Limitata"
+ BOTTLENECK_MARITIME_TT: "#T Rallentato: Presenza Marittima Limitata#!\nI coloni devono attraversare il mare per raggiungere questa colonia, e la nostra [maritime_presence|e] nella zona è troppo debole per trasportarli al ritmo massimo."
+
+ BOTTLENECK_LOW_MIGRATION: "@warning_icon! @migration! Migrazione Scarsa"
+ BOTTLENECK_LOW_MIGRATION_TT: "#T Rallentato: Migrazione Scarsa#!\nPochi dei nostri abitanti sono disposti a trasferirsi nelle colonie. La nostra [migration|e] è troppo scarsa per far arrivare coloni a un ritmo costante."
+
+ ####################################################
+ # M2 Milestone Messages
+ ####################################################
+
+ COLONIAL_CHARTER_FIRST_FLIP_SETUP: "Quando la prima località in una provincia coloniale viene colonizzata dai nostri coloni."
+ COLONIAL_CHARTER_FIRST_FLIP_HEADER: "$MESSENGER$"
+ COLONIAL_CHARTER_FIRST_FLIP_TITLE: "Primo Insediamento a $LOCATION$"
+ COLONIAL_CHARTER_FIRST_FLIP_DESC: "I nostri coloni in $PROVINCE$ hanno stabilito un punto d'appoggio a $LOCATION$, il primo pezzo della [colonial_charter|e] $CHARTER$ a cadere sotto la nostra corona."
+ COLONIAL_CHARTER_FIRST_FLIP_FLAVOR: "Da questa testa di ponte, il resto deve seguire."
+ COLONIAL_CHARTER_FIRST_FLIP_LOG: "Primo insediamento di $CHARTER$: $LOCATION$"
+ COLONIAL_CHARTER_FIRST_FLIP_BTN1: "Avanti!"
+ COLONIAL_CHARTER_FIRST_FLIP_BTN2: "OK"
+ COLONIAL_CHARTER_FIRST_FLIP_BTN3: "$common_string_go_to$"
+ COLONIAL_CHARTER_FIRST_FLIP_MAP: ""
+
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_SETUP: "Quando la prima località nella provincia coloniale di un altro paese viene colonizzata."
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_HEADER: "$MESSENGER$"
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_TITLE: "Primo Insediamento a $LOCATION$"
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_DESC: "$COUNTRY$ ha stabilito un punto d'appoggio a $LOCATION$ in $PROVINCE$, il primo pezzo della [colonial_charter|e] $CHARTER$ a cadere sotto la sua corona."
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_FLAVOR: "Da questa testa di ponte, il resto potrebbe seguire."
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_LOG: "Primo insediamento di $CHARTER$ da parte di $COUNTRY$: $LOCATION$"
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_BTN1: "Capisco."
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_BTN2: "OK"
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_BTN3: "$common_string_go_to$"
+ COLONIAL_CHARTER_FIRST_FLIP_OTHER_MAP: ""
+
+ COLONIAL_CHARTER_SOURCE_DEPLETED_SETUP: "Quando la fonte di migrazione di una carta coloniale esaurisce i Popolani e viene riassegnata."
+ COLONIAL_CHARTER_SOURCE_DEPLETED_HEADER: "$MESSENGER$"
+ COLONIAL_CHARTER_SOURCE_DEPLETED_TITLE: "Fonte di $CHARTER$ Esaurita"
+ COLONIAL_CHARTER_SOURCE_DEPLETED_DESC: "La fonte di migrazione che alimenta la [colonial_charter|e] $CHARTER$ in $PROVINCE$ ha esaurito i [ShowPopTypeName('peasants')]. È stata scelta una nuova fonte, ma i progressi potrebbero rallentare finché non si riprenderà."
+ COLONIAL_CHARTER_SOURCE_DEPLETED_FLAVOR: "Anche i pozzi più profondi si prosciugano."
+ COLONIAL_CHARTER_SOURCE_DEPLETED_LOG: "Fonte di migrazione di $CHARTER$ esaurita"
+ COLONIAL_CHARTER_SOURCE_DEPLETED_BTN1: "Che sfortuna."
+ COLONIAL_CHARTER_SOURCE_DEPLETED_BTN2: "OK"
+ COLONIAL_CHARTER_SOURCE_DEPLETED_BTN3: "$common_string_go_to$"
+ COLONIAL_CHARTER_SOURCE_DEPLETED_MAP: ""
+
+ COLONIAL_CHARTER_HALFWAY_SETUP: "Quando il progresso di una carta coloniale supera il 50%."
+ COLONIAL_CHARTER_HALFWAY_HEADER: "$MESSENGER$"
+ COLONIAL_CHARTER_HALFWAY_TITLE: "$PROVINCE$ Colonizzata a Metà"
+ COLONIAL_CHARTER_HALFWAY_DESC: "La nostra colonizzazione di $PROVINCE$ sotto la [colonial_charter|e] $CHARTER$ è completa a metà."
+ COLONIAL_CHARTER_HALFWAY_FLAVOR: "La metà più difficile ci attende, ma la strada del ritorno è ora più lunga di quella che resta da percorrere."
+ COLONIAL_CHARTER_HALFWAY_LOG: "$CHARTER$ a metà"
+ COLONIAL_CHARTER_HALFWAY_BTN1: "Proseguiamo."
+ COLONIAL_CHARTER_HALFWAY_BTN2: "OK"
+ COLONIAL_CHARTER_HALFWAY_BTN3: "$common_string_go_to$"
+ COLONIAL_CHARTER_HALFWAY_MAP: ""
+
+ COLONIAL_CHARTER_HALFWAY_OTHER_SETUP: "Quando la carta coloniale di un altro paese supera il 50%."
+ COLONIAL_CHARTER_HALFWAY_OTHER_HEADER: "$MESSENGER$"
+ COLONIAL_CHARTER_HALFWAY_OTHER_TITLE: "$PROVINCE$ Colonizzata a Metà"
+ COLONIAL_CHARTER_HALFWAY_OTHER_DESC: "La colonizzazione di $PROVINCE$ da parte di $COUNTRY$ sotto la [colonial_charter|e] $CHARTER$ è completa a metà."
+ COLONIAL_CHARTER_HALFWAY_OTHER_FLAVOR: "La metà più difficile li attende."
+ COLONIAL_CHARTER_HALFWAY_OTHER_LOG: "$CHARTER$ a metà ($COUNTRY$)"
+ COLONIAL_CHARTER_HALFWAY_OTHER_BTN1: "Capisco."
+ COLONIAL_CHARTER_HALFWAY_OTHER_BTN2: "OK"
+ COLONIAL_CHARTER_HALFWAY_OTHER_BTN3: "$common_string_go_to$"
+ COLONIAL_CHARTER_HALFWAY_OTHER_MAP: ""
+
+ ####################################################
+ # M3 Self-Sustaining Pill
+ ####################################################
+
+ COLONY_PILL_SELF_SUSTAINING: "#G Autosufficiente#!"
+ COLONY_PILL_OPERATING_AT_LOSS: "#R In Perdita#!"
+ COLONY_SELF_SUSTAINING_HEADER: "Autosufficiente"
+ COLONY_OPERATING_AT_LOSS_HEADER: "In Perdita"
+
+ COLONY_SELF_SUSTAINING_INCOME: "Entrate Mensili: $VAL|+=$@gold!"
+ COLONY_SELF_SUSTAINING_EXPENSE: "Spese Mensili: #R -$VAL|2$@gold!#!"
+ COLONY_SELF_SUSTAINING_RESULT: "#italic La colonia è autosufficiente perché il suo bilancio mensile di $BALANCE|+=2$@gold! raggiunge la soglia richiesta di #TOOLTIP:$BREAKDOWN_TAG$ $THRESHOLD|2L$@gold!#!.#!"
+ COLONY_OPERATING_AT_LOSS_RESULT: "#italic La colonia è in perdita perché il suo bilancio mensile di $BALANCE|+=2$@gold! è inferiore alla soglia richiesta di #TOOLTIP:$BREAKDOWN_TAG$ $THRESHOLD|2L$@gold!#!.#!"
+ COLONY_SELF_SUSTAINING_THRESHOLD_BREAKDOWN: "Spesa mensile × margine: $EXPENSE|2$@gold! × $BUFFER|%$ = $THRESHOLD|2$@gold!"
+
+ ####################################################
+ # M4/M5/M6 Helpful Actions Hints
+ ####################################################
+
+ COLONY_HELPFUL_ACTIONS_TITLE: "[cabinet_actions|e] Utili"
+ COLONY_HELPFUL_ACTIONS_CHARTER_DESC: "Tre [cabinet_actions|e] accelerano comunemente una carta coloniale:\n - Incoraggiare la Migrazione\n - Rafforzare la Carta Coloniale\n - Colonizzare la Frontiera\n\n#weak Clicca per andare direttamente a queste azioni.#!"
+ COLONY_HELPFUL_ACTIONS_LOCATION_DESC: "Tre [cabinet_actions|e] sviluppano comunemente una località appena colonizzata:\n - Aumentare il Controllo\n - Sviluppare la Provincia\n - Incoraggiare la Migrazione\n\n#weak Clicca per andare direttamente a queste azioni.#!"
+ COLONY_HELPFUL_ACTIONS_SUBJECT_DESC: "Due [cabinet_actions|e] aiutano comunemente una nazione coloniale a crescere:\n - Inviare Persone nelle Colonie\n - Sviluppare la Provincia\n\n#weak Clicca per andare direttamente a queste azioni.#!"

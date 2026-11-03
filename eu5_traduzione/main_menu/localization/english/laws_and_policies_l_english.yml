@@ -1,9 +1,9 @@
 ﻿l_english:
- ASSIGN_LAW_POLICY_TITLE: "Assegna una politica per $STRING$" 
+ ASSIGN_LAW_POLICY_TITLE: "Assegna una politica per $STRING$"
  # Custom Tags
  forbids_no_policy: "È necessario avere una qualsiasi Politica"
  no_ai_propose_cd: "Può essere proposto senza penalità di tempo di recupero"
- # 
+ #
  # Monarchy Laws
  #
  feudal_de_jure_law: "Leggi Feudali 'De Jure'"
@@ -22,7 +22,7 @@
  peasant_levies: "Leve Contadine"
  peasant_levies_desc: "I [ShowEstateTypeName('peasants_estate')] costituiscono la maggior parte delle nostre leve, quindi dobbiamo reclutarne quanti più possibile quando si presenta la necessità."
  longbow_competitions: "Competizione d'Archi"
- longbow_competitions_desc: "Nei giorni festivi, ogni uomo del paese impugnerà arco e frecce per esercitarsi nel tiro. Questo ci porterà grande onore in battaglia e ci garantirà successo nelle nostre imprese militari."
+ longbow_competitions_desc: "Nei giorni festivi, ogni uomo del paese impugnerà arco e frecce per esercitarsi nel tiro. Questo ci porterà grande onore in battaglia e ci garantirà successo nelle nostre imprese militari. Con la gente comune così addestrata, le nostre leve potranno marciare in guerra come abili arcieri lunghi invece che come semplice milizia."
  ton_ta_jon_ta_ni_woro: "Ton-ta-jon-ta-ni-woro"
  ton_ta_jon_ta_ni_woro_desc: "Nei primi giorni del nostro impero, il nostro esercito era composto da sedici clan i cui capi promisero di proteggere il grande $rank_empire_mali_ruler_male$ e lo Stato [GetCountry('MAL').GetAdjective]. Tradotto come '#italic i Sedici Schiavi che portano l'Arco#!', il $ton_ta_jon_ta_ni_woro$ rappresenta l'alta [ShowEstateTypeName('nobles_estate')] del paese e serve come comando della cavalleria [GetCountry('MAL').Custom('IT_ADJ_FS')]."
  alarde: "Alarde"
@@ -38,6 +38,10 @@
  court_of_culture_policy_desc: "La corte è anzitutto la casa della famiglia reale e funge da centro di cultura e prestigio. Gli affari governativi e amministrativi vengono separati dalla vita di corte."
  itinerant_court_policy: "Corte Itinerante"
  itinerant_court_policy_desc: "Per gestire meglio l'estensione del nostro regno, la corte reale non è vincolata a un'unica sede. Può spostarsi attraverso il territorio e amministrarlo localmente."
+ itinerant_court_capital_projection_tt: "#italic La fonte di [proximity|e] del [capital_with_icon|e] è ridotta mentre il [ShowBuildingTypeName('itinerant_court_seat')] è assente#!"
+ itinerant_court_reseat_tt: "Riposiziona il [ShowBuildingTypeName('itinerant_court_seat')] tramite la richiesta di [parliament|e] [ShowGenericActionName('seat_the_itinerant_court')]"
+ pte_itinerant_court_seat: "Può essere spostato tramite la richiesta di [parliament|e] [ShowGenericActionName('seat_the_itinerant_court')]"
+ itinerant_court_policy_at_risk_tt: "#italic Il [ShowBuildingTypeName('itinerant_court_seat')] sarà perduto se [ShowSocietyDirectionName('decentralization')] è inferiore a #W 10#! #!"
  military_court_policy: "Corte Militare"
  military_court_policy_desc: "Spendere denaro per la corte oltre allo stretto necessario è un'assurdità che incoraggia solo pigrizia e compiacenza. Il monarca vivrà in modo frugale e dedicherà una parte maggiore del bilancio all'esercito."
  humanist_court_policy: "Corte Umanista"
@@ -48,21 +52,21 @@
  valide_sultan_court_policy_desc: "'Il paradiso giace ai piedi di tua madre', e quindi la regina madre deve occupare la posizione più elevata a corte, con il diritto di supervisionare le riunioni del consiglio e, attraverso la sua saggezza e benevolenza, giocare un ruolo importante nella maggior parte degli affari di stato."
  harem_policy: "Harem Reale"
  harem_policy_desc: "Gran parte della vita di corte è segregata e separata per genere, concentrata intorno a un harem dove serve schiave e concubine competono per ottenere influenza sul sovrano."
- #
+  #
  harem_law: "Leggi sull'Harem"
  harem_law_desc: "L'harem è un'istituzione significativa all'interno della casa reale e garantisce la produzione di eredi per la successione."
- unlocks_harem_law_tt: "Sblocca la [law|e] [ShowLawName('harem_law')]" 
+ unlocks_harem_law_tt: "Sblocca la [law|e] [ShowLawName('harem_law')]"
  secluded_harem_policy: "Harem Isolato"
- secluded_harem_policy_desc: "Il nostro harem non è destinato agli occhi delle masse al di fuori della corte reale. Per questo motivo mantiene un ruolo più appartato all'interno della casa reale ed è severamente proibito che interferisca direttamente negli affari del sovrano." 
+ secluded_harem_policy_desc: "Il nostro harem non è destinato agli occhi delle masse al di fuori della corte reale. Per questo motivo mantiene un ruolo più appartato all'interno della casa reale ed è severamente proibito che interferisca direttamente negli affari del sovrano."
  public_harem_policy: "Harem Pubblico"
- public_harem_policy_desc: "Il nostro harem non si limita a fornire eredi legittimi, ma rappresenta anche un simbolo della ricchezza, del potere e del prestigio della famiglia reale. La bellezza e le doti delle sue membri vengono quindi mostrate con orgoglio al pubblico." 
+ public_harem_policy_desc: "Il nostro harem non si limita a fornire eredi legittimi, ma rappresenta anche un simbolo della ricchezza, del potere e del prestigio della famiglia reale. La bellezza e le doti delle sue membri vengono quindi mostrate con orgoglio al pubblico."
  powerful_harem_policy: "Harem Potente"
  powerful_harem_policy_desc: "Il sovrano è poco più che un burattino, che danza sulle dita di astute concubine ed eunuchi. Il vero potere dello Stato risiede nelle mani dell'harem, e gli affari politici sono gestiti dalle donne della corte reale."
  dispersed_harem_policy: "Harem Disperso"
  dispersed_harem_policy_desc: "L'harem è distribuito su diverse località e le concubine sono itineranti quanto la corte reale. Quando una concubina dà alla luce un figlio, viene mandata con lui in una sede provinciale per supervisionarne l'educazione e prepararlo a una futura carica di governo."
  luxurious_harem_policy: "Harem Stravagante"
  luxurious_harem_policy_desc: "L'harem è uno sfarzoso e ostentato simbolo di ricchezza, dedicato principalmente al piacere personale del sovrano. Le concubine devono essere di lignaggi tra i più raffinati, e trascorrono le giornate circondate dal massimo del lusso."
-  # Republic Laws
+ # Republic Laws
  #
  
  republican_foundation_law: "Fondazione della Repubblica"
@@ -105,7 +109,7 @@
  moral_principle: "Principio Morale"
  moral_principle_desc: "Una delle funzioni principali dello Stato è sostenere i valori morali. Poiché la nostra Repubblica si basa sul comportamento virtuoso dei cittadini, corruzione e immoralità devono essere smascherate ed eliminate per il bene dell'intero paese."
  protection_principle: "Principio di Protezione"
- protection_principle_desc: "Il principio più alto della nostra Repubblica è la protezione del suo popolo. Anche se non popolare, è importante mantenere una forza militare per l'autodifesa e per la stabilità interna." 
+ protection_principle_desc: "Il principio più alto della nostra Repubblica è la protezione del suo popolo. Anche se non popolare, è importante mantenere una forza militare per l'autodifesa e per la stabilità interna."
  military_principle: "Principio Militare"
  military_principle_desc: "La nostra Repubblica è circondata da nemici che vogliono distruggerci. La nostra priorità assoluta è usare la forza militare per espandere i nostri confini."
  enlightened_principle: "Principio Illuminato"
@@ -129,7 +133,7 @@
  military_rulership_policy_desc: "La repubblica è una spina nel fianco di molti potenziali nemici che desiderano distruggerci. Per il bene della sicurezza nazionale, abbiamo consegnato le redini del governo ai nostri generali. Che la loro esperienza e il loro amore per la patria proteggano la repubblica."
  #
  #
- # Leggi Teocratiche
+ # Theocratic Laws
  #
  theocratic_leadership: "Autorità Teocratica"
  theocratic_leadership_desc: "Una leadership teocratica governa questo paese: le autorità religiose detengono il potere politico e la legge religiosa spesso prevale su quella secolare."
@@ -191,6 +195,7 @@
  iqta_law_desc: "#italic $iqta_law$#! è la pratica [ShowReligionGroupAdjective('muslim')] della 'concessione d'imposta': la raccolta dei proventi fondiari dai [ShowEstateTypeName('peasants_estate')] come parte della #italic Zakāh#!, l'elemosina obbligatoria, che gli stati musulmani generalmente raccolgono come base delle loro entrate."
  efficient_tax_farming: "Appalto delle Imposte"
  efficient_tax_farming_desc: "Una riscossione efficace delle imposte fondiarie è la spina dorsale della nostra economia. Nonostante ciò che i [ShowEstateTypeName('peasants_estate')] possano sostenere, questi introiti sono fondamentali per finanziare i nostri progetti e le nostre campagne. La gestione delle entrate deve quindi essere affidata a meticolosi detentori dell'$iqta_law$."
+ reduces_diwan_al_jund_negative_tt: "Riduce del #G 20%#! l'effetto negativo della [bureaucracy|e] [ShowBureaucracyTypeName('diwan_al_jund_bureaucracy')]"
  jagir_taxation: "Tassazione Jāgir"
  jagir_taxation_desc: "Il sistema #italic Jāgir#! concede terre e il diritto di riscuotere le tasse a funzionari nominati dallo stato, noti come #italic Jagirdars#!. Nel corso dei decenni il sistema si è evoluto affinché l'autorità amministrativa e militare restasse allo Stato, mentre i Jagirdar riscuotono le tasse e ne consegnano una parte al tesoro."
  land_acquisition: "Acquisizione Fondiaria"
@@ -204,11 +209,31 @@
  jesuits_allowed_desc: "I Gesuiti sono un ordine religioso Cattolico, perlopiù di origine iberica, sviluppatosi durante la Controriforma. Tramite attività missionaria e conversioni aggressive, la loro preziosa influenza ci permetterà di accelerare la conversione dei pagani ed eretici, a costo però di ridurre la tolleranza religiosa."
  jesuits_not_allowed: "Gesuiti Non Autorizzati"
  jesuits_not_allowed_desc: "Pur potendo ricorrere agli ordini religiosi per convertire gli eretici, preferiamo invece tollerare tutti i nostri sudditi e trattarli come veri uguali indipendentemente dalla loro fede. Le interferenze gesuitiche non sono gradite nel nostro regno."
+ 
+ ibadi_shurat_law: "Lo Širā'"
+ ibadi_shurat_law_desc: "Sebbene il martirio sia riconosciuto in tutto il mondo [ShowReligionGroupAdjective('muslim')], la religione [ShowReligionAdjective('ibadi')] ha una visione unica di questa pratica. Questo concetto, lo Širā', rappresenta il 'vendere la propria anima' per la fede. Questa pia audacia incoraggia i comuni cittadini a dare la vita per il bene della comunità, anche se ciò significa opporsi al proprio 'Imām ingiusto."
+ ibadi_institutionalize_the_shurat_policy: "Istituzionalizza i $shurat$"
+ ibadi_institutionalize_the_shurat_policy_desc: "Lo Širā' è diventato istituzionalizzato nel nostro stato, ora più una burocrazia che un concetto religioso. I $shurat$ sono ora soldati legalmente dichiarati che hanno rinunciato ai loro beni terreni e si sono uniti a una compagnia di altre decine di martiri per dare la vita per la loro fede."
+ ibadi_maintain_the_status_of_imam_policy: "Mantieni lo Status di 'Imām aš-Šārī"
+ ibadi_maintain_the_status_of_imam_policy_desc: "I [ShowEstateTypeName('clergy_estate')] di questo stato riconoscono la [ShowPolicyName('ibadi_shari_imam_policy')] come uno stato distinto dell'Imamato."
+ ibadi_imamate_law: "'Imām della Comunità"
+ ibadi_imamate_law_desc: "La legge religiosa [ShowReligionAdjective('ibadi')] stabilisce che una comunità di fedeli debba sempre essere governata da un 'Imām, con la sola e notevole eccezione del Kitmān. Studiosi diversi interpretano questa regola in modo diverso: quelli in [ShowRegionName('maghreb_region')] tendono a distinguere 4 diversi stati dell'Imamato, mentre quelli in [ShowAreaName('oman_area')] ritengono che la [ShowPolicyName('ibadi_shari_imam_policy')] non sia un tipo distinto di Imamato. Questa differenza è dovuta alle storie divergenti delle due comunità [ShowReligionAdjectiveWithNoTooltip('ibadi')] — i Magrebini sono stati nello [ShowPolicyName('ibadi_kitman_imam_policy')] sin dalla caduta dei Rustamidi, e non hanno avuto occasione di sviluppare la propria visione dello Širā'."
+ ibadi_kitman_imam_policy: "Stato di Kitmān"
+ ibadi_kitman_imam_policy_desc: "Nei periodi in cui non esiste alcuna comunità [ShowReligionAdjective('ibadi')] indipendente o sufficientemente potente, la legge religiosa permette che nessun 'Imām governi la comunità. In tal caso, i rappresentanti del [ShowEstateTypeName('clergy_estate')] formano un consiglio per assumere le responsabilità della guida della comunità."
+ ibadi_zuhur_imam_policy: "'Imām aẓ-Ẕuhūr"
+ ibadi_zuhur_imam_policy_desc: "Il titolo di $ibadi_zuhur_imam_policy$ incarna il sovrano ideale della comunità nei suoi tempi più favorevoli. Un simile 'Imām dimostra le qualità desiderabili secondo gli studiosi [ShowReligionAdjective('ibadi')]: giustizia (#italic 'adl#!), ascetismo (#italic zuhd#!), e religiosità (#italic war'#!). La più importante è la giustizia, poiché i fedeli nominerebbero persino un leader pagano, se visto come eccezionalmente giusto."
+ ibadi_daif_imam_policy: "'Imām aḍ-Ḏa'īf"
+ ibadi_daif_imam_policy_desc: "I tempi di disperazione richiedono un $ibadi_daif_imam_policy$, un leader debole chiamato nei momenti difficili per la comunità [ShowReligionAdjective('ibadi')]. Un simile leader manca di conoscenza religiosa (#italic ilm#!), e si attende quindi che consulti il [ShowEstateTypeName('clergy_estate')] per tutte le decisioni importanti. Un simile leader viene anche chiamato 'difensivo' ('Imām ad-difā'ī), poiché viene scelto nei momenti di disperazione per le sue qualità mondane, specialmente le abilità militari."
+ ibadi_shari_imam_policy: "Imamato Šārī"
+ ibadi_shari_imam_policy_desc: "Nell'$ibadi_shari_imam_policy$, il sovrano è pronto a guidare un esercito di $shurat$ per stabilire il dominio della [ShowReligionName('ibadi')]. Questo 'Imām possiede tutte le qualità della [ShowPolicyName('ibadi_zuhur_imam_policy')], ma è anche disposto a scatenare guerre sante."
+ enables_ibadi_shari_imam_policy: "Abilita la [policy|e] [ShowPolicyName('ibadi_shari_imam_policy')], che può essere promulgata usando l'[action|e] [ShowGenericActionName('mobilize_the_shurat_action')]"
+ enables_shurat_bureaucracy: "Abilita la [bureaucracy|e] [ShowBureaucracyTypeName('shurat_bureaucracy')]"
+ can_be_changed_to_with_THIS_action: "Può essere impostato tramite [THIS.GetGenericAction.GetName]"
  #
  fra_reformation_tolerance_edicts: "Editti della Riforma"
- fra_reformation_tolerance_edicts_desc: "La Riforma sta attraversando l'[ShowContinentNameWithNoTooltip('europe')], e la [GetCountry('FRA').GetName] è in prima linea nella sua diffusione. La politica statale verso questi nuovi zeloti sarà decisiva nel trasformarli in alleati — o nemici."
- protestant_tolerance: "Editto sulla Tolleranza del Luterana" 
- protestant_tolerance_desc: "Sono stati concessi privilegi speciali alla popolazione [ShowReligionAdjective('lutheran')] in tutta la [GetCountry('FRA').GetName], impedendone la persecuzione. Tuttavia, questa politica del [GetCountry('FRA').GetGovernment.GetCourtTitle] è considerata eretica dal [ShowEstateTypeName('clero_estate')]." 
+ fra_reformation_tolerance_edicts_desc: "La Riforma sta attraversando l'[ShowContinentNameWithNoTooltip('europe')], e la [GetCountry('FRA').GetName] è in prima linea nella sua diffusione. La politica statale verso questi nuovi zeloti sarà decisiva nel trasformarli in alleati — o nemici." 
+ protestant_tolerance: "Editto sulla Tolleranza del Luterana"
+ protestant_tolerance_desc: "Sono stati concessi privilegi speciali alla popolazione [ShowReligionAdjective('lutheran')] in tutta la [GetCountry('FRA').GetName], impedendone la persecuzione. Tuttavia, questa politica del [GetCountry('FRA').GetGovernment.GetCourtTitle] è considerata eretica dal [ShowEstateTypeName('clero_estate')]."
  reformist_tolerance: "Editto sulla Tolleranza Religiosa"
  reformist_tolerance_desc: "Sono stati concessi privilegi speciali alla popolazione che segue le nuove fedi riformate in tutta la [GetCountry('FRA').GetName], impedendone la persecuzione."
  edict_of_fontainebleau: "Editto di Fontainebleau"
@@ -235,7 +260,7 @@
  jansenism_no_formal_law_desc: "La legalità del giansenismo esiste attualmente in uno stato di limbo, con il decreto #italic Unigenitus#! non applicato. I seguaci del giansenismo vengono trattati alla pari degli altri gruppi religiosi."
  unigenitus_codified: "Decreto Unigenitus"
  unigenitus_codified_desc: "Il Decreto *Unigenitus* è stato codificato nella legge, rendendo illegale qualunque pratica del giansenismo. I seguaci noti del giansenismo sono costretti a pagare la tassa del #italic Cinquantième#!."
- #
+ # 
  patriarchate_law: "Ruolo del Patriarcato"
  patriarchate_law_desc: "Il Patriarcato è un pilastro fondamentale della nostra fede e un'istituzione con una considerevole influenza sullo Stato."
  separated_patriarchate_policy: "Patriarcato Separato"
@@ -263,18 +288,18 @@
  christian_first: "Prima i Cristiani!"
  christian_first_desc: "Essere un vero Cristiano è l'unica cosa che conta per un cittadino di [GetCountry('VEN').GetName]."
  #
- 
+
  sumptuary_law: "Legge Suntuaria"
  sumptuary_law_desc: "L'abbigliamento nella società [ShowReligionAdjective('nahuatl')] riflette la nostra gerarchia sociale e contrassegna eventi importanti come matrimonio, nascita e morte. I [ShowEstateTypeName('peasants_estate')] indossano tipicamente abiti semplici di cotone, mentre le élite di alto rango vestono abiti molto più elaborati, decorati con colori vividi e piume preziose. I guerrieri, invece, possono indossare solo mantelli semplici.\n\nIl Cihuacóatl sta ora stabilendo Leggi Suntuarie che regolano come i sudditi devono vestirsi, cosa possono acquistare nei mercati e quali ornamenti possono indossare, tutto basato sul loro rango."
  sump_law_warrior_culture: "Cultura Guerriera"
  sump_law_warrior_culture_desc: "La sopravvivenza del nostro Stato dipende dalla forza dei nostri guerrieri. Ogni uomo è tenuto a combattere quando viene chiamato. Per rafforzare questa cultura guerriera, il Cihuacōātl sta stabilendo leggi che restringono ciò che le persone possono indossare, possedere e acquistare, oltre ai ruoli di governo che ogni ceto può ricoprire, basandosi sulla loro abilità in battaglia.\n\nSebbene queste leggi proteggano i diritti dei nostri [ShowEstateTypeName('nobles_estate')], premiano principalmente il valore marziale. Tra i [ShowEstateTypeName('peasants_estate')], l'abilità in combattimento determinerà vestiario e privilegi. Anche i $nobles_estate$ possono accedere alle cariche governative solo dimostrando coraggio in combattimento."
  sump_law_tradition: "Tradizione"
  sump_law_tradition_desc: "Le tradizioni del passato saranno le nostre guide!"
-
+ 
  eng_order_of_the_garter_law: "Ordine della Giarrettiera"
  eng_order_of_the_garter_law_desc: "L'Ordine della Giarrettiera è un prestigioso simbolo degli ideali più elevati del nostro regno, che trascende il tempo e unisce persone meritevoli di diversi talenti e origini.\n\nSia che sia composto dai favoriti del sovrano, da illustri dignitari stranieri, da devoti membri del clero, da artigiani talentuosi o da valorosi guerrieri, questo venerabile ordine rappresenta l'apice della nobiltà e della virtù."
  eng_order_of_the_garter_nobility_policy: "Cavalieri Compagni"
- eng_order_of_the_garter_nobility_policy_desc: "Come i più nobili e coraggiosi abitanti del regno, i Cavalieri Compagni incarnano coraggio, lealtà e cameratismo. Elevando i membri più fedeli della nobiltà, la [ShowEstateTypeName('crown_estate')] garantisce che questo prestigioso ordine rimanga un baluardo di cavalleria, con ogni membro che serve valorosamente sia il sovrano che la nazione." #MOD OLD
+ eng_order_of_the_garter_nobility_policy_desc: "Come i più nobili e coraggiosi abitanti del regno, i Cavalieri Compagni incarnano coraggio, lealtà e cameratismo. Elevando i membri più fedeli della nobiltà, la [ShowEstateTypeName('crown_estate')] garantisce che questo prestigioso ordine rimanga un baluardo di cavalleria, con ogni membro che serve valorosamente sia il sovrano che la nazione."
  eng_order_of_the_garter_foreign_policy: "Cavalieri Stranieri"
  eng_order_of_the_garter_foreign_policy_desc: "Attraverso l'inclusione di illustri sovrani, diplomatici e cavalieri stranieri, i Cavalieri Stranieri apportano una ricchezza di prospettive diverse e aiutano il [ShowEstateTypeName('crown_estate')] a estendere la propria influenza sulle nostre terre."
  eng_order_of_the_garter_clergy_policy: "Santa Confraternita"
@@ -309,7 +334,7 @@
  heir_religion_law: "Religione dell'Erede"
  heir_religion_law_desc: "La facoltà di decidere la religione dell'[heir|e] è di grande importanza per la successione e la governance. Permette di mantenere la stabilità religiosa, assicurando che le credenze del sovrano siano allineate con quelle della maggioranza dei sudditi. Tale potere è un elemento fondamentale nell'equilibrio tra libertà religiosa, governo e armonia sociale."
  act_of_settlement_tt: "Sbloccato tramite un [dynamic_historical_event|e]"
- recently_negotiated_succession_law_locked_tt: "Il nostro [union_partner|e] ha recentemente imposto una modifica a questa legge" 
+ recently_negotiated_succession_law_locked_tt: "Il nostro [union_partner|e] ha recentemente imposto una modifica a questa legge"
  heir_special_succession: "Successione Speciale"
  heir_special_succession_desc: "La religione dell'[heir|e] non è determinata dalle leggi, ma dal processo stesso di [heir_selection|e]."
  heir_same_religion: "Stessa Religione"
@@ -319,14 +344,15 @@
  heir_any_religion: "Qualsiasi Religione"
  heir_any_religion_desc: "La fede è una questione personale e non compromette la capacità di governare. L'[heir|e] può seguire qualsiasi religione. Questa politica promuove la libertà religiosa ma comporta un rischio maggiore di conflitti religiosi tra i vertici del potere."
  #
- precious_metal_distribution_law: "Distribuzione dei Metalli Preziosi" 
- precious_metal_distribution_law_desc: "[ShowGoodsName('goods_gold')|U] e [ShowGoodsName('silver')] sono materiali essenziali per la coniazione. Poiché il nostro stato è nella posizione invidiabile di estrarre autonomamente questi metalli preziosi, abbiamo il diritto di decidere chi può accedervi." #MOD OLD
+ precious_metal_distribution_law: "Distribuzione dei Metalli Preziosi"
+ precious_metal_distribution_law_desc: "[ShowGoodsName('goods_gold')|U] e [ShowGoodsName('silver')] sono materiali essenziali per la coniazione. Poiché il nostro stato è nella posizione invidiabile di estrarre autonomamente questi metalli preziosi, abbiamo il diritto di decidere chi può accedervi."
  gold_export_ban: "Divieto di Esportazione"
  gold_export_ban_desc: "Applicheremo un rigoroso divieto all'esportazione delle nostre riserve di [ShowGoodsName('goods_gold')] e [ShowGoodsName('silver')]. Ciò preserva la nostra ricchezza per l'uso interno e la protegge dagli occhi avidi delle potenze straniere. Tuttavia, questa misura limita le opportunità commerciali internazionali."
  regulated_gold_export: "Esportazione Regolamentata"
  regulated_gold_export_desc: "Il commercio dei nostri [ShowGoodsName('goods_gold')] e [ShowGoodsName('silver')] viene gestito con grande attenzione. Questo approccio bilanciato limita la quantità esportabile, mantenendo la maggior parte della ricchezza entro i nostri confini. Una scelta prudente per chi cerca stabilità finanziaria senza rinunciare all'influenza regionale."
  unlimited_gold_export: "Esportazione Illimitata"
  unlimited_gold_export_desc: "Apriremo completamente il commercio dei nostri [ShowGoodsName('goods_gold')] e [ShowGoodsName('silver')]. Questo passo audace potrebbe generare immense ricchezze tramite il commercio internazionale, ma espone i nostri tesori al rischio di dispersione e alle mire dei rivali."
+ #
  coin_laws: "Legge sulla Coniazione"
  coin_laws_desc: "Questa legge stabilisce le risorse che il nostro Paese utilizzerà per coniare la propria moneta. Le monete più comuni sono realizzate in oro, argento e rame, con diverse miscele di ciascun materiale e anche diversi valori monetari. Tuttavia, esistono altri sistemi di scambio in tutto il mondo che non dipendono da questo tipo di valuta, ma piuttosto da altri materiali, come bestiame, tessuti, conchiglie, cacao, ecc."
  gold_and_silver_coins: "Monete d'Oro e d'Argento"
@@ -345,8 +371,8 @@
  bullion_coins_desc: "I metalli selezionati per il conio della nostra moneta sono l'argento e il rame, utilizzando diverse miscele."
  barter_exchange: "Scambio di Beni"
  barter_exchange_desc: "Diversi beni e materiali, come bestiame, tessuti, conchiglie, cacao, ecc., possono essere utilizzati come moneta comune per il commercio."
- stavraton_coin_policy: "Monete Stavraton" 
- stavraton_coin_policy_desc: "Derivato da una mistura di argento puro e un po' di rame, lo Stavraton è destinato a sostituire il defunto #italic hyperpyron#! nel tentativo di ravvivare l'economia e modernizzare i tassi di cambio." 
+ stavraton_coin_policy: "Monete Stavraton"
+ stavraton_coin_policy_desc: "Derivato da una mistura di argento puro e un po' di rame, lo Stavraton è destinato a sostituire il defunto #italic hyperpyron#! nel tentativo di ravvivare l'economia e modernizzare i tassi di cambio."
 
  #
  # Estates specific
@@ -393,7 +419,7 @@
  equal_power_relation_policy: "Relazione di Potere Paritaria"
  equal_power_relation_policy_desc: "L'equilibrio di potere tra gli [estates|e] e il [ShowEstateTypeName('crown_estate')] è delicato. La scelta più saggia è mantenerlo intatto, senza favorire né limitare l'autorità del sovrano."
  figurehead_position_policy: "Posizione di Rappresentanza"
- figurehead_position_policy_desc: "Il sovrano rappresenta lo stato, ma detiene poco potere effettivo. Le azioni e le decisioni governative passano attraverso molteplici apparati burocratici, anziché dipendere da un singolo governante." #MOD OLD
+ figurehead_position_policy_desc: "Il sovrano rappresenta lo stato, ma detiene poco potere effettivo. Le azioni e le decisioni governative passano attraverso molteplici apparati burocratici, anziché dipendere da un singolo governante."
  #
  peasants_rights_laws: "Diritti dei $peasants_estate$"
  peasants_rights_laws_desc: "La posizione del [ShowEstateTypeName('peasants_estate')] non è rafforzata soltanto dai suoi privilegi, ma anche dalle nostre leggi."
@@ -402,28 +428,28 @@
  curtail_peasants_policy: "Limitare i $peasants_estate$"
  curtail_peasants_policy_desc: "La massa brulicante della nostra classe subalterna rappresenta una minaccia costante alla stabilità e alla sopravvivenza dello stato. Senza un sovrano forte e persuasivo che li tenga a freno, potremmo scivolare nell'anarchia. Non possiamo permettere loro di assaporare i diritti e i privilegi riservati ai loro superiori: li indurrebbe alla ribellione."
  #
- 
+
  #
  intelligence_agency: "Agenzia Informativa"
  intelligence_agency_desc: "L'agenzia informativa è un'organizzazione statale che conduce attività di spionaggio, crittografia e sicurezza contro minacce interne."
  home_security_policy: "Sicurezza Interna"
- home_security_policy_desc: "I nostri potenziali nemici sono molti, mentre gli alleati sono pochi. È essenziale per la sicurezza dello stato che le nostre spie contrastino qualunque minaccia segreta entro i nostri confini." #MOD OLD
+ home_security_policy_desc: "I nostri potenziali nemici sono molti, mentre gli alleati sono pochi. È essenziale per la sicurezza dello stato che le nostre spie contrastino qualunque minaccia segreta entro i nostri confini."
  secret_police_policy: "Polizia Segreta"
  secret_police_policy_desc: "Molti sovrani credono che le minacce principali provengano dall'esterno. In realtà, anche la nostra stessa popolazione potrebbe causare la caduta del governo. Una polizia segreta efficiente, che tenga d'occhio i membri più influenti della società, è indispensabile per mantenere l'autorità del vertice."
  jinyiwei_policy: "Jǐnyīwèi"
  jinyiwei_policy_desc: "I #italic Jǐnyīwèi#!, o 'Guardia dalla Veste Ricamata', sono la forza di protezione personale del sovrano. Hanno piena facoltà di scavalcare i procedimenti giudiziari quando perseguitano i nemici dello stato. Neppure i familiari del sovrano sono al sicuro dalla loro portata!"
  oprichnik_policy: "Oprichnik"
- oprichnik_policy_desc: "Gli #italic Oprichniki#!, o 'Uomini a parte', sono una polizia segreta incaricata di perseguitare qualsiasi elemento pericoloso all'interno dello stato. Sono incrollabilmente fedeli al sovrano, e le loro azioni li rendono temuti tra i civili — un eccellente deterrente contro comportamenti devianti." #MOD OLD
+ oprichnik_policy_desc: "Gli #italic Oprichniki#!, o 'Uomini a parte', sono una polizia segreta incaricata di perseguitare qualsiasi elemento pericoloso all'interno dello stato. Sono incrollabilmente fedeli al sovrano, e le loro azioni li rendono temuti tra i civili — un eccellente deterrente contro comportamenti devianti."
  spy_office_policy: "Ufficio di Spionaggio"
  spy_office_policy_desc: "L'informazione è un'arma a tutti gli effetti. Per restare sempre un passo avanti ai nostri nemici, è fondamentale stabilire una rete di spie e informatori al nostro servizio."
  cabinet_noir_policy: "Cabinet Noir"
  cabinet_noir_policy_desc: "Il #italic Cabinet Noir#!, o ‘Stanza Nera', è responsabile della ricognizione, dello spionaggio all'estero e della protezione del sovrano contro minacce interne ed esterne."
  secretnoye_byuro_policy: "Secretnoye Byuro"
  secretnoye_byuro_policy_desc: "Il $secretnoye_byuro_policy$ mira a punire i [ShowPopTypeName('nobles')] colpevoli di crimini politici, pur occupandosi occasionalmente anche di casi apolitici. Le pene inflitte sono spesso terribili e dolorose, così da scoraggiare qualsiasi critica al regime."
- secretnoye_byuro_policy_tt: "È stato scelto di istituire l'ufficio durante l'[event|e] #Y $flavor_rus.66.title$#!"
+ secretnoye_byuro_policy_tt: "È stato scelto di istituire l'ufficio durante la [decision|e] #Y $rus_secretnoye_byuro_decision.title$#!"
 
  #
- 
+
  #
  # Estates specific
  #
@@ -445,7 +471,7 @@
  military_slavery_policy_desc: "Le guerre sono costose, non solo in termini di risorse, ma anche di vite umane — le vite del nostro stesso popolo. Assegnare agli schiavi i doveri di guerriero contribuisce a mitigare questo problema. Inoltre, dopo aver ricevuto i compensi e i privilegi dovuti a uno dei nostri combattenti, questi schiavi-soldato saranno più propensi a giurare lealtà ai loro padroni."
  devshirme_system_policy: "Sistema Devşirme"
  devshirme_system_policy_desc: "Gli schiavi vengono acquisiti per la casa regnante attraverso la pratica del #italic devşirme#!: giovani non-musulmani selezionati con cura, solitamente cristiani tra i 12 e i 14 anni, vengono inviati a vivere con famiglie [turkish_culture] per impararne la lingua e i fondamenti della fede [muslim]. Successivamente vengono portati nella capitale. La maggior parte entra nei Giannizzeri, un esercito permanente altamente disciplinato, mentre coloro che dimostrano particolari doti di comando e intelligenza entrano direttamente nella corte reale come paggi."
- devshirme_system_policy_why_tt: "Non ha abolito il sistema attraverso un [event|e]"                                                                                   
+ devshirme_system_policy_why_tt: "Non ha abolito il sistema attraverso un [event|e]"
  black_army_policy: "Esercito Nero"
  black_army_policy_desc: "A prescindere dalle obiezioni aristocratiche, l'Esercito Nero è indiscutibilmente una forza militare efficace. Dobbiamo istituzionalizzare questa compagnia e garantire che ci sia sempre una riserva di soldati veterani pronta a unirsi ai suoi ranghi."
  early_standing_army_policy: "Esercito Permanente Primitivo"
@@ -467,6 +493,16 @@
  benefits_for_privateers_desc: "La pirateria è una prospettiva attraente per i corsari. La promessa di tesori, fama e più rum per riempirsi la pancia spinge molti marinai coraggiosi verso una vita piena di avventura — e pericolo..."
  mch_green_standard_army: "Esercito del Vessillo Verde"
  mch_green_standard_army_desc: "L'$mch_green_standard_army$ è un esercito ausiliario composto da cittadini Hàn del [chinese_group], che serve a rafforzare le nostre forze e a poliziare le nostre conquiste nell'[east_asia]."
+ mercenary_market_law: "Legge del Mercato dei Mercenari"
+ mercenary_market_law_desc: "Le compagnie mercenarie vengono levate tra la gente comune delle nostre terre, sia che le assumiamo noi stessi o no. Come trattiamo le potenze straniere che vengono a reclutare sul nostro stesso suolo, siano esse rivali o amiche, è una questione di politica."
+ unrestricted_mercenary_market_policy: "Mercato Senza Restrizioni"
+ unrestricted_mercenary_market_policy_desc: "Non imponiamo restrizioni formali su chi possa reclutare compagnie mercenarie levate dalle nostre terre. Che sia il mercato a decidere chi paga cosa."
+ open_mercenary_market_policy: "Mercato Aperto"
+ open_mercenary_market_policy_desc: "Accoglieremo reclutatori di ogni genere, anche quelli con cui siamo attualmente in guerra, e imporremo a ogni potenza straniera una tassa fissa per il privilegio di assumere compagnie levate sul nostro suolo."
+ restricted_mercenary_market_policy: "Mercato Limitato"
+ restricted_mercenary_market_policy_desc: "I nostri rivali troveranno molto più costoso sottrarre gli uomini d'arme delle nostre terre. Che cerchino altrove soldati a buon mercato."
+ condottieri_business_policy: "Affari dei Condottieri"
+ condottieri_business_policy_desc: "Il denaro non ha fedeltà. Le nostre compagnie di #italic condottieri#! si ingaggeranno con qualsiasi potenza disposta a pagare, amica o nemica che sia, e in cambio, il nostro tesoro riceverà una generosa quota di ogni contratto firmato."
  battle_leadership_law: "Legge sul Comando in Battaglia"
  battle_leadership_law_desc: "Un esercito è valido quanto la sua leadership. Un generale incompetente può essere la rovina della sua nazione, mentre un comandante di grande abilità sarà noto e temuto in ogni campo di battaglia."
  noble_command_policy: "Comando Nobiliare"
@@ -499,19 +535,20 @@
  authority_of_the_captain_desc: "L'autorità di ogni capitano al nostro servizio è indiscussa, a tal punto che gli equipaggi leali marciano verso il fuoco nemico ai loro ordini. Il loro obiettivo è il bottino e un'avventura leggendaria; i loro sogni si realizzano solo sotto la nostra guida inflessibile!"
  law_of_the_pious_emperor: "Legge del Pio Imperatore"
  law_of_the_pious_emperor_desc: "Un compendio di testi [greek_language] [BYZ] di legge e grandi opere dell'antica filosofia tradotte in serbo, emanato dall'imperatore [ser_stefan_dusan]."
- zamanitchka_voyska: "Zamanička Vojska" 
+ zamanitchka_voyska: "Zamanička Vojska"
  zamanitchka_voyska_desc: "Significa 'Tutti Insieme': questo sistema di obbligo militare universale richiede che tutti i cittadini abili, indipendentemente da età o genere, difendano la patria in caso di minaccia. A differenza degli eserciti professionali o delle leve feudali, mobilita l'intera popolazione per proteggere la propria indipendenza, riflettendo un impegno comunitario alla difesa della nazione."
  paik_system: "Sistema Paik"
  paik_system_desc: "Il $paik_system$ è un sistema di lavoro corvée in cui gli adulti abili, i cosiddetti #italic Paiks#!, sono obbligati a servire nella milizia statale in cambio di terreni agricoli."
  #
- bureaucracy_law: "Uffici burocratici" 
+ bureaucracy_law: "Uffici burocratici"
  bureaucracy_law_desc: "$modern_bureaucracy_desc$"
- centralized_bureaucracy_policy: "Uffici centralizzati" 
+ centralized_bureaucracy_policy: "Uffici centralizzati"
  centralized_bureaucracy_policy_desc: "Una burocrazia centralizzata è radicata nella capitale del regno, dove la maggior parte delle decisioni viene presa dal sovrano o nelle sue vicinanze, per poi essere distribuita alle province."
- decentralized_bureaucracy_policy: "Uffici decentralizzati" 
+ decentralized_bureaucracy_policy: "Uffici decentralizzati"
  decentralized_bureaucracy_policy_desc: "Una burocrazia decentralizzata lascia maggiori decisioni agli amministratori locali o ai governatori, che rispondono comunque al monarca."
  namestnik_policy: "Ufficio del Namestnik"
  namestnik_policy_desc: "Il #italic namestnik#! è una posizione burocratica paragonabile a quella di un viceré. È responsabile dell'amministrazione locale delle nostre province e stati."
+ disabled_namestnik_policy: "Non ha limitato il $namestnik_policy$ con la [decision|e] $mos_limit_namestnik_decision.title$"
  autonomous_offices: "Uffici Autonomi"
  autonomous_offices_desc: "I mercanti della nostra Lega godono di privilegi particolari concessi dalla nostra autorità. Pur essendo confederati in un'alleanza vaga basata su interessi comuni, non sono vincolati dalla burocrazia e dai suoi lacci."
  port_logs: "Registri Portuali"
@@ -524,14 +561,15 @@
  nobles_of_the_robe_policy: "$nobles_estate$ di Toga"
  nobles_of_the_robe_policy_desc: "Le famiglie aristocratiche del reame devono non solo offrire consiglio, ma anche giurare eterna lealtà al nostro sovrano. Tuttavia, poiché il nostro dominio si espande, diventa chiaro che devono servire non solo con la spada, ma anche con lo spirito.\n\nÈ tempo che una nuova generazione di [ShowEstateTypeName('nobles_estate')] presti servizio. Protetti da toghe e armati di penne, combatteranno per il nostro stato proprio come fanno i loro fratelli in armatura."
  meritocratic_recruitment_policy: "Reclutamento Meritocratico"
- meritocratic_recruitment_policy_desc: "Non possiamo lasciare che la tradizione decida chi meriti di servire la nostra crescente nazione. Dobbiamo invece valutare le capacità di ogni candidato. In un sistema meritocratico, gli amministratori vengono scelti per il loro talento, non per la loro nascita." #MOD OLD
+ meritocratic_recruitment_policy_desc: "Non possiamo lasciare che la tradizione decida chi meriti di servire la nostra crescente nazione. Dobbiamo invece valutare le capacità di ogni candidato. In un sistema meritocratico, gli amministratori vengono scelti per il loro talento, non per la loro nascita."
  dynastic_administration_policy: "Amministrazione Dinastica"
  dynastic_administration_policy_desc: "Gli stati non sono alleati affidabili per la [ShowEstateTypeName('crown_estate')], poiché cercheranno sempre di espandere la propria influenza. Solo i parenti del sovrano dovrebbero essere incaricati di gestire gli affari amministrativi del nostro dominio."
  yorkist_tradition_policy: "Tradizione degli York"
  yorkist_tradition_policy_desc: "Uomini istruiti di basso rango possono contribuire tanto quanto il [ShowEstateTypeName('clergy_estate')], e la loro esperienza pratica li rende eccellenti funzionari pubblici. La Tradizione degli York afferma che ogni uomo alfabetizzato e di origini rispettabili può entrare nel governo, insieme a coloro che hanno consacrato la loro vita al servizio divino."
+ yorkist_tradition_tt: "L'ha sbloccata tramite una [decision|e]"
  #
  #
- # Leggi Tribali
+ # Tribal ones
  #
  tribal_legal_basis_law: "Base Giuridica"
  tribal_legal_basis_law_desc: "Questa base giuridica sarà il fondamento del primo codice di leggi del nostro stato. Il suo obiettivo è semplice ma nobile: garantire una società giusta in cui tutti possano vivere in pace e prosperità."
@@ -610,14 +648,12 @@
  court_of_appeals: "Corte d'Appello"
  court_of_appeals_desc: "$flavor_swe.15.historical_info$"
 
-
-
  vlach_law_policy: "Diritto Valacco"
  vlach_law_policy_desc: "Fusione unica tra tradizioni pastorali e norme giuridiche, il $vlach_law_policy$ rappresenta un sistema distinto che regola le comunità del [ShowCultureGroupName('romanian_group')] nell'Europa medievale. Esso afferma i diritti di viaggiare, portare armi e cacciare, risparmiando tali comunità dal lavoro obbligatorio per i proprietari terrieri, permettendo invece tasse in bestiame o moneta. Inoltre, istituisce l'obbligo di servizio militare adattato a ciascun regno, creando una rete di ereditarietà culturale e giuridica [ShowCultureGroupNameWithNoTooltip('romanian_group')]."
 
  sharia_law_policy: "$sharia$"
  sharia_law_policy_desc: "La $sharia$ è un sistema legale completo e profondamente radicato nei paesi islamici che governa molti aspetti della vita, dalla condotta personale agli affari dello stato. Ha garantito stabilità e continuità per secoli, ma le sue pene severe e talvolta rigide possono essere controverse e divisive."
- 
+
  sharia_law: "Giurisprudenza della $sharia$"
  sharia_law_desc: "$sharia_law_policy_desc$"
  sharia_changed_through_main_school_tt: "Può essere modificata solo tramite l'[action|e] [ShowGenericActionName('change_main_school')] fintanto che apparteniamo a una delle principali #Y Scuole di Giurisprudenza#!"
@@ -639,8 +675,9 @@
  zaidi_policy_desc: "$zaidi_school_desc$"
  ibadi_policy: "Giurisprudenza $ibadi_school$"
  ibadi_policy_desc: "$ibadi_school_desc$"
- assizes_of_romania_policy: "Assise di Romania" 
- assizes_of_romania_policy_desc: "Le $assizes_of_romania_policy$ codificano il diritto feudale $french$ nell'Oriente latino, stabilendo una rigida gerarchia tra i governanti e i loro signori vassalli. Conferiscono potere all'Alta Corte per mediare le dispute su feudi e servizio militare, applicando al contempo un sistema sociale duale che mantiene la contadinanza $greek_culture$ in semi-servitù. Questo quadro giuridico fornisce la continuità strutturale che consente alla Frankokratia di resistere come società governata dai Latini." 
+
+ assizes_of_romania_policy: "Assise di Romania"
+ assizes_of_romania_policy_desc: "Le $assizes_of_romania_policy$ codificano il diritto feudale $french$ nell'Oriente latino, stabilendo una rigida gerarchia tra i governanti e i loro signori vassalli. Conferiscono potere all'Alta Corte per mediare le dispute su feudi e servizio militare, applicando al contempo un sistema sociale duale che mantiene la contadinanza $greek_culture$ in semi-servitù. Questo quadro giuridico fornisce la continuità strutturale che consente alla Frankokratia di resistere come società governata dai Latini."
 
  pyrenean_law_policy: "Diritto dei Pirenei"
  pyrenean_law_policy_desc: "Il Diritto dei Pirenei è un sistema giuridico originario dei popoli che vivono attorno ai Pirenei. Sebbene influenzato dal $civil_law_policy$ e dal Diritto Gotico, se ne distingue nettamente. Basato su usanze e pratiche tradizionali, è così radicato nella nostra cultura che i sovrani sono costretti ad adattarsi ad esso, piuttosto che sostituirlo con sistemi propri."
@@ -678,11 +715,15 @@
  chi_ming_dynasty_code_policy: "Il Grande Codice"
  chi_ming_dynasty_code_policy_desc: "Il $chi_ming_dynasty_code_policy$ sarà creato per affrontare tutti i problemi cruciali che la nostra dinastia affronta e quelli già incontrati dai nostri predecessori. Garantirà che non cadremo vittime di corruzione e abusi ministeriali!"
 
+ mll_leges_palatinae: "Leges Palatinae"
+ mll_leges_palatinae_desc: "Le $mll_leges_palatinae$ rafforzeranno il potere della nostra corte, legittimando al contempo il nostro diritto come stato indipendente."
+
  scottish_civil_law: "Diritto Civile Scozzese"
  scottish_civil_law_desc: "Il College of Justice ha riformato il nostro Diritto Civile secondo un nuovo standard. Questa istituzione è composta da membri ben istruiti del nostro paese, che decidono su qualsiasi questione importante relativa allo #italic Scots Law#!."
- carta_de_logu_policy: "Carta de Logu" 
- carta_de_logu_policy_desc: "Nata dal Giudicato di Arborea, questa è una delle prime raccolte legislative complete d'Europa scritte in una lingua romanza vernacolare (il sardo). Stabilisce una cultura dello 'Stato di diritto' che protegge i diritti dei popolani e regola l'uso dei pascoli. Questa sofisticazione giuridica permette ai sardi di mantenere un tessuto sociale unificato. Favorisce un'identità culturale definita dai diritti civici e da un profondo rispetto per la proprietà collettiva del #italic Logu#!." 
 
+ carta_de_logu_policy: "Carta de Logu"
+ carta_de_logu_policy_desc: "Nata dal Giudicato di Arborea, questa è una delle prime raccolte legislative complete d'Europa scritte in una lingua romanza vernacolare (il sardo). Stabilisce una cultura dello 'Stato di diritto' che protegge i diritti dei popolani e regola l'uso dei pascoli. Questa sofisticazione giuridica permette ai sardi di mantenere un tessuto sociale unificato. Favorisce un'identità culturale definita dai diritti civici e da un profondo rispetto per la proprietà collettiva del #italic Logu#!."
+ #
  naval_doctrine_law: "Dottrina Navale"
  naval_doctrine_law_desc: "Le Dottrine Navali rappresentano competenze nelle quali la nostra [navy|e] può specializzarsi. Più a lungo lavoriamo su una dottrina, più essa si radica nelle nostre flotte e più diventiamo abili nel suo impiego. Con il tempo, questo può tradursi in potenti benefici per le nostre gloriose marine."
  #
@@ -732,7 +773,7 @@
  cultural_traditions_law: "Tradizioni Culturali"
  cultural_traditions_law_desc: "Le antiche tradizioni sono le fondamenta di molte culture e civiltà. Pur essendo il progresso ciò che ci condurrà alla grandezza, le tradizioni rimarranno per noi un promemoria delle nostre origini e una fonte di unità."
  martial_society: "Società Marziale"
- martial_society_desc: "I valori marziali sono sempre stati importanti nella nostra società, e man mano che espandiamo i nostri confini, la necessità di una maggiore militarizzazione diventa evidente. Dobbiamo continuare su questa strada e costruire una nazione forte, con il potere militare al suo centro." #OLD ITA
+ martial_society_desc: "I valori marziali sono sempre stati importanti nella nostra società, e man mano che espandiamo i nostri confini, la necessità di una maggiore militarizzazione diventa evidente. Dobbiamo continuare su questa strada e costruire una nazione forte, con il potere militare al suo centro."
  civil_society: "Società Civile"
  civil_society_desc: "Una grande nazione non si costruisce solo con la forza militare — serve una società civile dinamica, dove artigiani, mercanti, clerici e istituzioni possano prosperare, generando ricchezza, mantenendo l'ordine e contribuendo allo sviluppo di uno stato sofisticato."
  pietism_society: "Virtù Prussiane"
@@ -741,7 +782,7 @@
  maritime_society_desc: "Le nostre tradizioni marittime sono parte integrante della nostra identità. Uniti dal desiderio di dominare il mare e raggiungere porti lontani, il nostro popolo è noto come maestro degli affari navali."
  plc_sarmatism: "Sarmatismo"
  plc_sarmatism_desc: "La nostra società trae origine dagli antichi Sarmati. Tuttavia, il $plc_sarmatism$ non è soltanto una teoria delle origini, ma un fenomeno culturale e politico che promuove gli ideali dell'[ShowSocietyDirectionName('aristocracy')] e il privilegio della [ShowEstatePrivilegeName('golden_liberty')]."
- 
+
 # Marriage laws
  marriage_law: "Legge sul Matrimonio"
  not_catholic_theocracies: "Una [ShowGovernmentTypeName('theocracy')] [ShowReligionAdjective('catholic')] non può avere questa [policy|e]."
@@ -771,18 +812,18 @@
  pte_slavery_allowed: "@slaves_goods! Schiavitù Consentita: #G Sì#!"
  pte_slavery_export_allowed: "@slaves_goods! Esportazioni di Schiavi Consentite: #G Sì#!"
  pte_slavery_export_import: "@slaves_goods! Importazioni di Schiavi Consentite: #G Sì#!"
- pte_no_parliamentary_system: "@has_a_parliamentary_system_negative! $MODIFIER_TYPE_NAME_has_a_parliamentary_system$: #R No#!" 
- pte_no_international_parliament: "@has_international_parliament_negative! $MODIFIER_TYPE_NAME_has_international_parliament$: #R No#!" 
- pte_no_propagating_zone_of_control: "@propagating_zone_of_control_negative! $MODIFIER_TYPE_NAME_propagating_zone_of_control$: #R No#!" 
- pte_not_blocked_from_conversion: "@blocked_from_conversion_negative! $MODIFIER_TYPE_NAME_blocked_from_conversion$: #R No#!" 
- pte_no_disallow_migration_beyond_borders: "@disallow_migration_beyond_borders_negative! $MODIFIER_TYPE_NAME_disallow_migration_beyond_borders$: #R No#!" 
- pte_no_allow_self_vote: "@allow_self_vote_negative! $MODIFIER_TYPE_NAME_allow_self_vote$: #R No#!" 
- pte_no_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #G No#!" 
- pte_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #R Sì#!" 
- pte_no_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #R No#!" 
- pte_yes_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #G Sì#!" 
- pte_no_imperial_circles: "Circoli Imperiali formati: #R No#!" 
 
+ pte_no_parliamentary_system: "@has_a_parliamentary_system_negative! $MODIFIER_TYPE_NAME_has_a_parliamentary_system$: #R No#!"
+ pte_no_international_parliament: "@has_international_parliament_negative! $MODIFIER_TYPE_NAME_has_international_parliament$: #R No#!"
+ pte_no_propagating_zone_of_control: "@propagating_zone_of_control_negative! $MODIFIER_TYPE_NAME_propagating_zone_of_control$: #R No#!"
+ pte_not_blocked_from_conversion: "@blocked_from_conversion_negative! $MODIFIER_TYPE_NAME_blocked_from_conversion$: #R No#!"
+ pte_no_disallow_migration_beyond_borders: "@disallow_migration_beyond_borders_negative! $MODIFIER_TYPE_NAME_disallow_migration_beyond_borders$: #R No#!"
+ pte_no_allow_self_vote: "@allow_self_vote_negative! $MODIFIER_TYPE_NAME_allow_self_vote$: #R No#!"
+ pte_no_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #G No#!"
+ pte_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #R Sì#!"
+ pte_no_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #R No#!"
+ pte_yes_imperial_armory: "Può costruire qualsiasi nuovo [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #G Sì#!"
+ pte_no_imperial_circles: "Circoli Imperiali formati: #R No#!"
 
  fleet_in_being: "Flotta in Essere"
  fleet_in_being_desc: "La nostra influenza navale sarà percepita senza la necessità che la flotta lasci il porto, se non nelle condizioni più favorevoli."
@@ -826,25 +867,28 @@
  protect_trade_routes_desc: "La marina scorterà e difenderà le nostre principali rotte commerciali, così da tenere pirati e altri indesiderabili lontani dalle nostre flotte mercantili."
  shipwright_standard_regulation: "Regolamenti e Criteri Navali"
  shipwright_standard_regulation_desc: "Promulgheremo una legge che definisca standard uniformi per i maestri d'ascia, così da rendere più efficiente la costruzione delle navi."
-
+ 
  ara_consulate_sea: "Consolato del Mare"
  ara_consulate_sea_desc: "Il Consolato del Mare è un nuovo organismo quasi-giudiziario incaricato di amministrare il diritto marittimo e commerciale."
+ unlocks_fondaco_rights_tt: "Sblocca il [relation_type|e] [ShowRelationTypeName('fondaco_rights')]"
  nav_maritime_code: "Codice Marittimo Navarrese"
  nav_maritime_code_desc: "Basato sul Fuero originario di San Sebastián, il più antico codice di diritto marittimo d'[ShowContinentName('europe')], questo codice si applica a ogni porto in nostro possesso e definisce diritti e doveri dei loro abitanti."
 
  piracy_law: "Legge sulla Pirateria"
  piracy_law_desc: "Le leggi sulla pirateria definiscono la posizione ufficiale che la nostra nazione adotta nell'affrontare le sfide poste dalla pirateria. Queste leggi comprendono statuti, regolamenti e dottrine giuridiche volte a combattere o gestire in modo efficace la pirateria. Esse incarnano la strategia complessiva e le misure che il nostro stato applica per mantenere la sicurezza marittima e proteggere le nostre acque dalle minacce dei pirati. O, forse, sono semplicemente le regole che seguiamo quando siamo noi a commettere atti di pirateria..."
- 
+
  state_piracy_policy: "Pirateria di Stato"
  state_piracy_policy_desc: "La nostra nazione abbraccia pienamente gli atti di pirateria contro i nostri nemici. La nostra reputazione potrà soffrirne, ma i vantaggi economici possono essere enormi."
+ state_piracy_policy_at: "L'opinione di ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('anti_piracy_policy')] nei nostri confronti cambia di [ShowBiasValue('allows_state_piracy_modifier')|+=0]."
+ state_piracy_policy_dt: "L'opinione di ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('anti_piracy_policy')] nei nostri confronti cambia di [ShowBiasValue('allows_state_piracy_modifier')|-=0]."
  has_state_piracy_policy_access: "Possiede l'[advance|e] [ShowAdvanceName('privateers')] o [ShowAdvanceName('letters_of_marque')], oppure è uno dei paesi idonei."
  issue_letter_of_marque_policy: "Lettere di Marca"
  issue_letter_of_marque_policy_desc: "Anche se la pirateria non è qualcosa che sosteniamo apertamente, rappresenta comunque un'ottima occasione per scatenare criminali di professione contro i nostri nemici. Emetteremo Lettere di Marca per i capitani corsari, così che possano attaccare liberamente le navi dei nostri avversari senza temere alcuna persecuzione."
  has_privateers_or_LoM_advances: "Possiede l'[advance|e] [ShowAdvanceName('privateers')] o [ShowAdvanceName('letters_of_marque')]."
  anti_piracy_policy: "Anti-Pirateria"
  anti_piracy_policy_desc: "La nostra nazione è votata a sradicare ogni minaccia dovuta alla pirateria. Qualsiasi atto di pirateria verrà punito e perseguito, e le navi che praticano queste attività illecite verranno attaccate senza pietà."
- anti_piracy_policy_at: "L'opinione di ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('state_piracy_policy')] nei nostri confronti cambia di [ShowBiasValue('allows_state_piracy_modifier')|+=0]."
- anti_piracy_policy_dt: "L'opinione di ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('anti_piracy_policy')] nei nostri confronti cambia di [ShowBiasValue('allows_state_piracy_modifier')|-=0]."
+ anti_piracy_policy_at: "La nostra opinione verso ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('state_piracy_policy')] cambia di [ShowBiasValue('allows_state_piracy_modifier')|+=0]."
+ anti_piracy_policy_dt: "La nostra opinione verso ogni [country|e] conosciuto che possiede la [policy|e] [ShowPolicyName('state_piracy_policy')] cambia di [ShowBiasValue('allows_state_piracy_modifier')|-=0]."
 
  witchcraft_act: "Legge sulla Stregoneria"
  witchcraft_act_desc: "Se vogliamo condurre una vita pia e sradicare la corruzione e il male tra di noi, dobbiamo affrontare le crescenti preoccupazioni circa l'esistenza delle streghe e la pratica dell'occulto."
@@ -852,7 +896,7 @@
  witchcraft_banned_desc: "L'empio esercizio della stregoneria e il ricorso alle streghe sono divenuti reati capitali. Chi trasgredisce mieterà ciò che ha seminato..."
  witchcraft_ignored: "Ignorata"
  witchcraft_ignored_desc: "La cosiddetta stregoneria non è altro che superstizione, o forse il risultato di una cattiva digestione. In ogni caso, il governo ha ben altro cui dedicare il proprio tempo."
-
+ #
  language_of_pleading: "Lingua Processuale"
  language_of_pleading_desc: "Gli usi della nostra gerarchia sociale e delle nostre procedure legali devono essere fissati in modo conciso e uniforme nella lingua che riteniamo più appropriata."
  language_of_pleading_court: "Lingua della Corte"
@@ -865,7 +909,7 @@
  statutes_of_lithuania_policy_desc: "Una serie di leggi codificate volte a confermare responsabilità e quadro giuridico delle élite, oltre a promuovere un'ondata di centralizzazione."
  articles_of_agreement: "Accordi Concordati"
  articles_of_agreement_desc: "Gli $articles_of_agreement$ sono il pilastro dell'ordine sociale a bordo di una nave pirata. Garantiscono a ogni membro dell'equipaggio un voto uguale in tutte le questioni e una quota equa di tutto il bottino. Articoli come questi dovrebbero essere stabiliti per l'intera repubblica, così che la libertà e l'uguaglianza di tutti i pirati siano assicurate."
-
+ #
  colonial_policy: "Politica Coloniale"
  colonial_policy_desc: "Questa legge stabilisce la linea politica che il nostro paese seguirà in materia di affari coloniali."
  settled_colonies: "Colonie Insediate"
@@ -886,7 +930,7 @@
  #
  native_policy: "Politica sui Nativi"
  native_policy_desc: "Questa legge stabilisce la politica che il nostro paese seguirà riguardo ai popoli nativi che abitano le nostre colonie."
- native_trade: "Commercio"
+ native_trade: "Commercio" 
  native_trade_desc: "Le nostre autorità coloniali incoraggeranno il commercio con la popolazione nativa, così da avviare un flusso regolare di beni redditizi nei nostri mercati."
  native_subjugation: "Sottomissione"
  native_subjugation_desc: "Le nostre autorità coloniali tenteranno di sottomettere la popolazione nativa, trasformandola in una nuova e redditizia fonte di lavoro per il nostro paese."
@@ -1007,8 +1051,8 @@
  dop_favor_the_burghers_desc: "Le corporazioni e i [ShowEstateTypeName('burghers_estate')] rappresentano il cuore pulsante della nostra economia — e del nostro tesoro. $dop_last_sentence$"
  dop_favor_the_clergy: "Favorire il $clergy_estate$"
  dop_favor_the_clergy_desc: "La nostra fede ha mantenuto unita la società più volte nel corso della storia, grazie alla guida saggia del [ShowEstateTypeName('clergy_estate')]. $dop_last_sentence$"
- dop_favor_the_clergy_catholic: "Favorisci la Chiesa" 
- dop_favor_the_clergy_catholic_desc: "[GetUniqueInternationalOrganization('catholic_church').GetName] è la pietra angolare del nostro reame. Elevando i nostri [ShowEstateTypeName('clergy_estate')] nelle questioni di governo, rafforziamo i nostri legami con $rome_holy_city$ e apriamo le casse dei fedeli. $dop_last_sentence$" 
+ dop_favor_the_clergy_catholic: "Favorisci la Chiesa"
+ dop_favor_the_clergy_catholic_desc: "[GetUniqueInternationalOrganization('catholic_church').GetName] è la pietra angolare del nostro reame. Elevando i nostri [ShowEstateTypeName('clergy_estate')] nelle questioni di governo, rafforziamo i nostri legami con $rome_holy_city$ e apriamo le casse dei fedeli. $dop_last_sentence$"
  dop_favor_the_commoners: "Favorire la Gente Comune"
  dop_favor_the_commoners_desc: "I [ShowEstateTypeName('peasants_estate')] sono coloro che lavorano ogni giorno per produrre le risorse essenziali di cui tutti abbiamo bisogno. Nessuno più di loro desidera vedere il nostro dominio prosperare. $dop_last_sentence$"
  dop_last_sentence: "Faremmo bene a coltivare la loro influenza."
@@ -1065,30 +1109,30 @@
  cordial_relations_desc: "Pur non riconoscendo apertamente la loro superiorità negli affari locali, mantenere un rapporto sano e rispettoso con le tribù locali porta vantaggi a entrambe le parti."
  refuse_recognition: "Riconoscimento Negato"
  refuse_recognition_desc: "I gruppi tribali che le nostre terre ospitano benevolmente hanno tentato troppo a lungo di minacciare la nostra autorità. Per consolidare il nostro potere dobbiamo dimostrare la nostra forza e ridurre all'obbedienza queste fazioni indisciplinate."
-
-
-
+ 
+ 
+ 
  # HRE Laws
- prince_very_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- prince_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- mild_prince_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- controversial_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- opposed_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- rebellious_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
+ prince_very_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ prince_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ mild_prince_friendly_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ controversial_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ opposed_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ rebellious_policy_opinion_impact_all_members: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
 
- prince_very_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- prince_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- mild_prince_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- controversial_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- opposed_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- rebellious_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
+ prince_very_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ prince_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ mild_prince_friendly_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ controversial_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ opposed_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ rebellious_policy_opinion_impact_free_cities: "Tutte le [ShowSpecialStatusNamePlural('free_city')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
 
- very_prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- mild_prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- controversial_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- opposed_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
- rebellious_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]\n"
+ very_prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_very_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ mild_prince_friendly_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] otterranno [ShowBiasValue('opinion_hre_passed_mild_prince_friendly_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ controversial_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_controversial_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ opposed_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_opposed_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
+ rebellious_policy_opinion_impact_electors: "Tutti gli [ShowSpecialStatusNamePlural('elector')] del [GetUniqueInternationalOrganization('hre').GetName] perderanno [ShowBiasValue('opinion_hre_passed_rebellious_law')|+=0] di [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]"
 
  hre_emperor_bonus_tt: "L'[hre_emperor|e] ottiene i seguenti modificatori:"
  hre_elector_bonus_tt: "Gli [electors|e] ottengono i seguenti modificatori:"
@@ -1142,16 +1186,16 @@
  manpower_from_princes: "Contributo dei Principi"
  manpower_from_princes_desc: "Gli [ShowSpecialStatusNamePlural('imperial_prince')] sono obbligati a fornire truppe al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]."
  manpower_from_princes_tt: "Gli [ShowSpecialStatusNamePlural('imperial_prince')] devono contribuire con [manpower|e] al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
- imperial_armory_implementation: "Implementazione di $hre_imperial_armory$" 
- imperial_armory_implementation_desc: "[GetUniqueInternationalOrganization('hre').GetLeaderTitle] ottiene il privilegio di costruire [ShowBuildingTypeName('hre_imperial_armory_foreign')] nelle terre dell'Impero." 
- imperial_armory_expanded: "Espansione delle armerie" 
- imperial_armory_expanded_desc: "Ogni [ShowBuildingTypeName('hre_imperial_armory_foreign')] otterrà risorse extra al fine di espandere la quantità di possibili soldati reclutati per l'Impero." 
- imperial_standing_army: "Esercito permanente imperiale" 
- imperial_standing_army_desc: "Con un'ulteriore espansione delle risorse disponibili per [ShowBuildingTypeName('hre_imperial_armory_foreign')], il [manpower|e] dell'Impero permetterà a [GetUniqueInternationalOrganization('hre').GetLeaderTitle] di creare un vero esercito permanente." 
- great_imperial_army: "Grande Esercito Imperiale"
- great_imperial_army_desc: "Il livello legislativo finale per [ShowBuildingTypeName('hre_imperial_armory_foreign')]. Una volta promulgato, il potenziale dell'esercito sotto il controllo diretto di [GetUniqueInternationalOrganization('hre').GetLeaderTitle] raggiungerà un'altezza mai vista prima." 
- great_imperial_army_tt: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] devono contribuire con [manpower|e] al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
 
+ imperial_armory_implementation: "Implementazione di $hre_imperial_armory$"
+ imperial_armory_implementation_desc: "[GetUniqueInternationalOrganization('hre').GetLeaderTitle] ottiene il privilegio di costruire [ShowBuildingTypeName('hre_imperial_armory_foreign')] nelle terre dell'Impero."
+ imperial_armory_expanded: "Espansione delle armerie"
+ imperial_armory_expanded_desc: "Ogni [ShowBuildingTypeName('hre_imperial_armory_foreign')] otterrà risorse extra al fine di espandere la quantità di possibili soldati reclutati per l'Impero."
+ imperial_standing_army: "Esercito permanente imperiale"
+ imperial_standing_army_desc: "Con un'ulteriore espansione delle risorse disponibili per [ShowBuildingTypeName('hre_imperial_armory_foreign')], il [manpower|e] dell'Impero permetterà a [GetUniqueInternationalOrganization('hre').GetLeaderTitle] di creare un vero esercito permanente."
+ great_imperial_army: "Grande Esercito Imperiale"
+ great_imperial_army_desc: "Il livello legislativo finale per [ShowBuildingTypeName('hre_imperial_armory_foreign')]. Una volta promulgato, il potenziale dell'esercito sotto il controllo diretto di [GetUniqueInternationalOrganization('hre').GetLeaderTitle] raggiungerà un'altezza mai vista prima."
+ great_imperial_army_tt: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] devono contribuire con [manpower|e] al [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
 
  perpetual_diet_policy_tt: "La [location|e] che ospita la #Y Dieta Perpetua#! riceve i seguenti modificatori:"
 
@@ -1167,7 +1211,7 @@
  emperor_dynastic_preference_policy: "Preferenza alla Dinastia dell'Imperatore"
  emperor_dynastic_preference_policy_desc: "Gli Elettori favoriscono candidati appartenenti alla dinastia dell'Imperatore, consolidando il potere dinastico sul sistema elettorale."
  emperor_dynastic_preference_policy_opinion_impact: "Tutti i membri del [GetUniqueInternationalOrganization('hre').GetName] perderanno #R 75#! [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]."
- same_dynasty_as_emperor_tt: "Stessa [dynasty|e] dell'Imperatore" 
+ same_dynasty_as_emperor_tt: "Stessa [dynasty|e] dell'Imperatore"
  erbkaisertum_policy: "Erbkaisertum"
  erbkaisertum_policy_desc: "La monarchia elettiva è abolita. L'Impero diventa una monarchia completamente ereditaria, rafforzando il potere dinastico al costo della legittimità imperiale."
 
@@ -1179,7 +1223,7 @@
  hre_pragmatic_sanction_policy: "Sanzione Pragmatica"
  hre_pragmatic_sanction_policy_desc: "Il genere del nostro sovrano è irrilevante. Le sovrane possono indossare la Corona Imperiale del [GetUniqueInternationalOrganization('hre').GetName] con la stessa legittimità dei loro colleghi maschi."
  hre_pragmatic_sanction_policy_opinion_impact: "I membri del [GetUniqueInternationalOrganization('hre').GetName] con [ShowHeirSelectionName('salic_law')] o [ShowHeirSelectionName('partition_inheritance')] perderanno #R 75#! [opinion|e] nei confronti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.Custom('IT_Della')][GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]."
-
+ 
  electorate_organization_law: "Organizzazione dell'Elettorato"
  electorate_organization_law_desc: "Gli [ShowSpecialStatusNamePlural('elector')] sono un gruppo di potenti membri della [ShowEstateTypeName('nobles_estate')] e della [ShowEstateTypeName('clergy_estate')] che hanno il privilegio di votare per il prossimo [GetUniqueInternationalOrganization('hre').GetLeaderTitle]."
  integrated_electors_policy: "Elettori Integrati"
@@ -1193,13 +1237,18 @@
  expanded_electors_policy_desc: "Gli [ShowSpecialStatusNamePlural('elector')] aggiungono due seggi supplementari e includono anche due [ShowSpecialStatusNamePlural('archbishop_elector')]. Solo promesse significative possono conquistare il favore di un [ShowSpecialStatusName('elector')]."
  elector_council_policy: "Consiglio degli Elettori"
  elector_council_policy_desc: "Gli [ShowSpecialStatusNamePlural('elector')] raggiungono il massimo della loro potenza, ampliando le loro fila con tre seggi aggiuntivi e tre ulteriori [ShowSpecialStatusNamePlural('archbishop_elector')]. Oltre a ciò, ottengono il diritto di eleggere un Anti-Re che può sostituire l'attuale [GetUniqueInternationalOrganization('hre').GetLeaderTitle] nella Dieta Imperiale se non contestato. Questo conferisce agli Elettori il potere de facto di forzare una nuova elezione."
- secularized_electors_law: "Secolarizzazione dell'elettorato" 
- secularized_electors_law_desc: "Tradizionalmente l'Elettorato è diviso tra [ShowSpecialStatusNamePlural('elector')] e [ShowSpecialStatusNamePlural('archbishop_elector')]. Nel caso in cui le dinamiche politiche minaccino le terre dei [ShowSpecialStatusNamePlural('archbishop_elector')], l'impero potrebbe prendere in considerazione una piena secolarizzazione delle loro posizioni." 
- princely_bishopric_electorate_policy: "Elettorato tradizionale" 
- princely_bishopric_electorate_policy_desc: "L'Elettorato di [GetUniqueInternationalOrganization('hre').GetName] rimane diviso tra [ShowSpecialStatusNamePlural('elector')] e [ShowSpecialStatusNamePlural('archbishop_elector')]." 
- secularized_electors_policy: "Elettorato secolarizzato" 
- secularized_electors_policy_desc: "Le precedenti posizioni dei [ShowSpecialStatusNamePlural('archbishop_elector')] sono state pienamente secolarizzate." 
- ELECTORATE_ORG_COUNT_PREVIEW: "Dopo questa riforma ci saranno fino a #Y $PRINCE_MAX$#! $PRINCE_NAME$ (attualmente #Y $PRINCE_NOW$#!) e fino a #Y $ARCH_MAX$#! $ARCH_NAME$ (attualmente #Y $ARCH_NOW$#!)." 
+
+ secularized_electors_law: "Secolarizzazione dell'elettorato"
+ secularized_electors_law_desc: "Tradizionalmente l'Elettorato è diviso tra [ShowSpecialStatusNamePlural('elector')] e [ShowSpecialStatusNamePlural('archbishop_elector')]. Nel caso in cui le dinamiche politiche minaccino le terre dei [ShowSpecialStatusNamePlural('archbishop_elector')], l'impero potrebbe prendere in considerazione una piena secolarizzazione delle loro posizioni."
+ princely_bishopric_electorate_policy: "Elettorato tradizionale"
+ princely_bishopric_electorate_policy_desc: "L'Elettorato di [GetUniqueInternationalOrganization('hre').GetName] rimane diviso tra [ShowSpecialStatusNamePlural('elector')] e [ShowSpecialStatusNamePlural('archbishop_elector')]."
+ secularized_electors_policy: "Elettorato secolarizzato"
+ secularized_electors_policy_desc: "Le precedenti posizioni dei [ShowSpecialStatusNamePlural('archbishop_elector')] sono state pienamente secolarizzate."
+ secularized_electors_policy_removes_archbishop_electors_tt: "Tutti gli [ShowSpecialStatusNamePlural('archbishop_elector')] perdono il loro [special_status|e] in [GetUniqueInternationalOrganization('hre').GetName] se non si secolarizzano"
+
+ #Electorate Organization - elector-count preview shown when hovering each policy.
+ #The sentence lives once in ELECTORATE_ORG_COUNT_PREVIEW; C++ (GetElectorateOrgCountPreviewForPolicy) fills the counts, resolves the Traditional/Secularized branch, and applies the engine clamp. Each policy just passes its own key.
+ ELECTORATE_ORG_COUNT_PREVIEW: "Dopo questa riforma ci saranno fino a #Y $PRINCE_MAX$#! $PRINCE_NAME$ (attualmente #Y $PRINCE_NOW$#!) e fino a #Y $ARCH_MAX$#! $ARCH_NAME$ (attualmente #Y $ARCH_NOW$#!)."
 
  electorate_religion_law: "Legge Religiosa dell'Elettorato"
  electorate_religion_law_desc: "La religione è un pilastro fondamentale del [GetUniqueInternationalOrganization('hre').GetName], sia per gli Imperatori che per gli [ShowSpecialStatusNamePlural('elector')]."
@@ -1252,7 +1301,6 @@
  landfriede_parliament_issue_rank_3: "La Pace del [ShowParliamentIssueTypeName('hre_demand_internal_peace')] [parliament_issue|e] durerà #G 5#! anni."
  landfriede_parliament_issue_rank_4: "La Pace del [ShowParliamentIssueTypeName('hre_demand_internal_peace')] [parliament_issue|e] durerà #G 10#! anni."
 
-
  imperial_diet_law: "Dieta Imperiale"
  imperial_diet_law_desc: "Il [ShowParliamentTypeName('hre_court_assembly')] è un sistema antico, e molte delle sue norme e procedure sono ormai superate. È giunto il momento di riformarlo e stabilire una vera [ShowLawNameWithNoTooltip('imperial_diet_law')] che protegga meglio gli interessi dei diversi membri del [GetInternationalOrganizationType('hre').GetName]."
  no_imperial_diet_policy: "Dieta Tradizionale"
@@ -1263,7 +1311,7 @@
  hre_bi_camerial_imperial_diet_policy_desc: "$hre_bi_camerial_imperial_diet_desc$"
  hre_tri_camerial_imperial_diet_policy: "$hre_tri_camerial_imperial_diet$"
  hre_tri_camerial_imperial_diet_policy_desc: "$hre_tri_camerial_imperial_diet_desc$"
- 
+
  perpetual_diet_law: "Dieta Perpetua"
  perpetual_diet_law_desc: "Un tempo le Diete Imperiali si riunivano in modo irregolare in diverse città del [GetInternationalOrganizationType('hre').GetName], obbligando il [GetUniqueInternationalOrganization('hre').GetLeaderTitle] e gli altri rappresentanti a continui spostamenti. Con l'istituzione di una Dieta permanente e in seduta continua, creeremo un'assemblea stabile che lavora attraverso deliberazioni costanti invece che tramite riunioni saltuarie."
  no_perpetual_diet_policy: "Dieta Itinerante"
@@ -1271,7 +1319,6 @@
  perpetual_diet_policy: "$perpetual_diet_law$"
  perpetual_diet_policy_desc: "$perpetual_diet_law_desc$"
  perpetual_diet: "Ospita la #Y Dieta Perpetua#!"
-
 
  power_of_the_emperor_law: "Potere dell'[GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
  power_of_the_emperor_law_desc: "Il potere dell'[GetUniqueInternationalOrganization('hre').GetLeaderTitle] è un tema complesso. I membri del [GetInternationalOrganizationType('hre').GetName] e gli [ShowSpecialStatusNamePlural('elector')] hanno interessi spesso in contrasto con quelli dell'[GetUniqueInternationalOrganization('hre').GetLeaderTitleWithNoTooltip], ma riconoscono che un sovrano privo di potere non sarebbe in grado di proteggere l'Impero."
@@ -1288,37 +1335,37 @@
 
  #Old HRE reforms
  #reichsreform: "Reichsreform"
- #reichsreform_desc: "Riformare l'Impero verso un modello più centralizzato."
- #reichsreform_policy: "Richiedi la Reichsreform"
- #reichsreform_policy_desc: "Riformare l'Impero verso un modello più centralizzato."
+ #reichsreform_desc: "Reform the Empire to a more centralized model."
+ #reichsreform_policy: "Call for Reichsreform"
+ #reichsreform_policy_desc: "Reform the Empire to a more centralized model." 
  #reichsregiment: "Reichsregiment"
- #reichsregiment_desc: "Consolidare la Dieta Imperiale e ridurre la complessità legislativa."
- #reichsregiment_policy: "Istituire il Reichsregiment"
- #reichsregiment_policy_desc: "Consolidare la Dieta Imperiale e ridurre la complessità legislativa."
- #reichsstabilitaet: "Reichsstabilità Assoluta"
- #reichsstabilitaet_desc: "Salvaguardare la stabilità dell'Impero assicurandosi i mezzi per la sua espansione."
- #reichsstabilitaet_policy: "Reichsstabilità Assoluta"
- #reichsstabilitaet_policy_desc: "Salvaguardare la stabilità dell'Impero assicurandosi i mezzi per la sua espansione."
+ #reichsregiment_desc: "Consolidate the Imperial Diet, and reduce the legislative complexity."
+ #reichsregiment_policy: "Institute Reichsregiment"
+ #reichsregiment_policy_desc: "Consolidate the Imperial Diet, and reduce the legislative complexity."
+ #reichsstabilitaet: "Absolute Reichsstabilität"
+ #reichsstabilitaet_desc: "Safeguard the stability of the Empire by securing the means for its expansion."
+ #reichsstabilitaet_policy: "Absolute Reichsstabilität"
+ #reichsstabilitaet_policy_desc: "Safeguard the stability of the Empire by securing the means for its expansion."
  #gemeinerpfennig: "Gemeiner Pfennig"
- #gemeinerpfennig_desc: "Richiedere agli stati membri del SRI di imporre una tassa speciale da versare direttamente all'Imperatore."
- #gemeinerpfennig_policy: "Promulgare il Gemeiner Pfennig"
- #gemeinerpfennig_policy_desc: "Richiedere agli stati membri del SRI di imporre una tassa speciale da versare direttamente all'Imperatore."
- #diet: "Dieta"
- #diet_desc: "Istituire una sessione permanente della Dieta Imperiale affinché le questioni importanti possano esservi portate quando si presentano."
- #perpetual_diet_policy: "Dieta Perpetua"
- #perpetual_diet_policy_desc: "Istituire una sessione permanente della Dieta Imperiale affinché le questioni importanti possano esservi portate quando si presentano."
+ #gemeinerpfennig_desc: "Require member states of the HRE to levy a special tax to be paid directly to the Emperor."
+ #gemeinerpfennig_policy: "Enact Gemeiner Pfennig"
+ #gemeinerpfennig_policy_desc: "Require member states of the HRE to levy a special tax to be paid directly to the Emperor."
+ #diet: "Diet"
+ #diet_desc: "Institute a permanent session of the Imperial Diet so that important matters can be brought before it as and when they happen."
+ #perpetual_diet_policy: "Perpetual Diet"
+ #perpetual_diet_policy_desc: "Institute a permanent session of the Imperial Diet so that important matters can be brought before it as and when they happen."
  #landsknechtswesen: "Landsknechtwesen"
- #landsknechtswesen_desc: "Organizzare le molteplici bande di mercenari tedesche in reggimenti ufficiali disponibili per la difesa dell'Impero."
- #landsknechtswesen_policy: "Creare il Landsknechtwesen"
- #landsknechtswesen_policy_desc: "Organizzare le molteplici bande di mercenari tedesche in reggimenti ufficiali disponibili per la difesa dell'Impero."
+ #landsknechtswesen_desc: "Organize Germany's many mercenary bands into official regiments available for the Empire's defense."
+ #landsknechtswesen_policy: "Create the Landsknechtwesen"
+ #landsknechtswesen_policy_desc: "Organize Germany's many mercenary bands into official regiments available for the Empire's defense."
  #hofgericht: "Hofgericht"
- #hofgericht_desc: "Ridurre l'indipendenza legislativa rendendo l'Imperatore l'autorità legale finale all'interno dell'Impero."
- #hofgericht_policy: "Riformare l'Hofgericht"
- #hofgericht_policy_desc: "Ridurre l'indipendenza legislativa rendendo l'Imperatore l'autorità legale finale all'interno dell'Impero."
- #imperial_estates: "Feudi Imperiali"
- #imperial_estates_desc: "Limitare le libertà dei Feudi Imperiali così che non possano più sfidare l'Imperatore."
- #curtail_imperial_estates_policy: "Limitare i Feudi Imperiali"
- #curtail_imperial_estates_policy_desc: "Limitare le libertà dei Feudi Imperiali così che non possano più sfidare l'Imperatore."
+ #hofgericht_desc: "Reduce legislative independence by making the Emperor the final legal authority within the Empire."
+ #hofgericht_policy: "Reform the Hofgericht"
+ #hofgericht_policy_desc: "Reduce legislative independence by making the Emperor the final legal authority within the Empire."
+ #imperial_estates: "Imperial Estates"
+ #imperial_estates_desc: "Curb the freedoms of the Imperial Estates so that they are no longer able to defy the Emperor."
+ #curtail_imperial_estates_policy: "Curtail the Imperial Estates"
+ #curtail_imperial_estates_policy_desc: "Curb the freedoms of the Imperial Estates so that they are no longer able to defy the Emperor."
 
  #Buddhism Sects
  main_philosophy_law: "Filosofia Principale"
@@ -1379,10 +1426,10 @@
  sakya_policy_desc: "Originata nel monastero di Sakya, si basa sul #italic Lamdré#!, un sistema di meditazione che sostiene che il risultato del percorso sia già contenuto nel cammino stesso. Gli insegnamenti derivano dal tantra di #italic Hevajra#! e includono numerose pratiche tantriche."
  jonang_policy: "$SECT_JONANG_NAME$"
  jonang_policy_desc: "La pratica principale del $SECT_JONANG_NAME$ è il Tantra del Kālacakra. La scuola difende la filosofia Shentong, secondo la quale la realtà fisica è vuota di esistenza intrinseca, mentre la realtà ultima — la natura di Buddha — non lo è, ed è colma delle proprie qualità risvegliate."
-
+ 
 
  hun_frontier_fortresses: "Le Fortezze di Frontiera"
- hun_frontier_fortresses_desc: "Il nostro dominio è circondato da molti vicini aggressivi. Per proteggere la nostra gente, dobbiamo investire in fortificazioni ai nostri confini, assicurandoci che siano adeguatamente finanziate e rifornite."
+ hun_frontier_fortresses_desc: "Il nostro dominio è circondato da molti vicini aggressivi. Per proteggere la nostra gente, dobbiamo investire in fortificazioni ai nostri confini, assicurandoci che siano adeguatamente finanziate e rifornite." 
  vegvar_system: "Sistema Végvár"
  vegvar_system_desc: "Il [GetEstateName('crown_estate')] fornisce contributi finanziari regolari per mantenere una rete di fortificazioni solide in tutto il nostro regno."
  not_maintained: "Nessuna Manutenzione"
@@ -1396,15 +1443,15 @@
  enclosure_disallowed_desc: "Le terre comuni sono protette dalla conversione in enclosure e non possono diventare proprietà privata."
  enclosure_act: "Atto sulle Enclosure"
  enclosure_act_desc: "Le terre comuni vengono ulteriormente recintate o privatizzate per sostenere l'ascesa dell'agricoltura commerciale e la crescita dell'industrializzazione."
-
-
+ 
+ 
  fra_taille: "Taille"
  fra_taille_desc: "La #italic taille#! è una tassa imposta su ogni famiglia in base alla quantità di terra che occupa. Il [GetEstateName('clergy_estate')] e il [GetEstateName('nobles_estate')] ne sono esenti."
  permanent_tax: "Imposta Permanente"
  permanent_tax_desc: "Stabilisce la #italic taille#! come tassa ordinaria, ampliando il potenziale di riscossione del gettito statale."
  exceptional_only: "Imposta Eccezionale"
  exceptional_only_desc: "Stabilisce la #italic taille#! come tassa eccezionale, riscuotibile solo in tempi di necessità."
-
+ 
  fra_5_percent_tax: "Imposta del cinque per cento di Machault"
  fra_5_percent_tax_desc: "Una nuova tassa proposta dal Ministro delle Finanze, pari a un ventesimo del reddito annuo."
  five_percent_tax: "Per tutti i Ceti"
@@ -1441,10 +1488,10 @@
  #Laws
  guilds_of_florence: "Primato delle Gilde Fiorentine"
  guilds_of_florence_desc: "Le potenti istituzioni mercantili che compongono il tessuto sociale della nostra Repubblica sono un pilastro della nostra prosperità. Sebbene tutte siano importanti, è innegabile che alcune siano più influenti di altre."
-
+ 
  consiglio_maggiore: "Consiglio Maggiore"
  consiglio_maggiore_desc: "Un organo composto da aristocratici e varie classi di cittadini, inclusi [GetEstateName('burghers_estate')], artigiani e banchieri. Il #italic Consiglio Maggiore#! gestisce l'apparato autocratico della nostra Repubblica."
- 
+
  #Policies
  arti_minori: "Arti Minori"
  arti_minori_desc: "Le #italic Arti Minori#! rappresentano le associazioni artigiane di scala ridotta. Raccolgono mestieri come sellai, fabbri serraturieri o carpentieri, e costituiscono il livello più basso della sfera mercantile."
@@ -1456,7 +1503,7 @@
  ordinances_of_justice_desc: "Un insieme di leggi volto a limitare il potere dei [GetEstateName('nobles_estate')] che non si allineano con l'autorità centrale."
 
  #Portugal
- 
+
  por_estudo_geral_law: "Estudo Geral"
  por_estudo_geral_law_desc: "La [ShowModifier('por_estudo_geral')] è un'[ShowBuildingTypeName('university')] nazionale destinata a educare i cittadini del nostro Stato. La sua posizione è una questione cruciale."
  por_estudo_in_coimbra: "Estudo Geral in [ShowLocationNameWithNoTooltip('coimbra')]"
@@ -1465,7 +1512,7 @@
  por_estudo_in_lisbon_desc: "Collocare l'università presso la corte ci consentirà di centralizzare il potere e controllare più da vicino le sue operazioni."
 
  # Teutonic Order
- 
+
  teu_amber_monopoly_law: "Monopolio sull'[ShowGoodsNameWithNoTooltip('amber')]"
  teu_amber_monopoly_law_desc: "[ShowGoodsName('amber')] è una delle risorse più pregiate del nostro stato. Il suo commercio è di primaria importanza e deve essere regolato con attenzione."
  state_controlled_amber_gathering: "Raccolta Controllata dallo Stato"
@@ -1475,7 +1522,7 @@
  peasant_controlled_amber_gathering: "Raccolta da Parte dei [GetEstateNameWithNoTooltip('peasants_estate')]"
  peasant_controlled_amber_gathering_desc: "L'[ShowGoodsName('amber')] dovrebbe essere controllata da coloro che la raccolgono con le proprie mani. La gestione della risorsa è affidata alla [ShowEstateTypeName('peasants_estate')]."
 
-# Japan
+ #japan
 
  jap_sakoku_law: "Interazione con l'Estero"
  jap_sakoku_law_desc: "$japan_region$ ha sempre avuto il vantaggio di essere separato dagli altri paesi dal mare. Questa distanza rende estremamente semplice chiudere i nostri confini al resto del mondo."
@@ -1483,7 +1530,6 @@
  sakoku_enabled_desc: "Liberi dalle influenze esterne, il nostro territorio è destinato a migliorare la propria produttività e crescita economica."
  sakoku_disabled: "Apertura del Paese"
  sakoku_disabled_desc: "Con i nostri confini aperti al mondo, sia il commercio sia le nuove idee possono fluire liberamente."
-
 
  jap_buke_shohatto: "Buke Shohatto"
  jap_buke_shohatto_desc: "Una serie di editti che definiscono il comportamento appropriato dei samurai. Sono concepiti per ispirarli a migliorare se stessi."
@@ -1503,8 +1549,8 @@
  established_domains_policy_desc: "I clan possiedono domini propri, sui quali detengono diritti ereditari. Questo alleggerirà la burocrazia dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName], permettendole di dedicarsi a questioni più importanti, ma rafforzerà anche il potere dei clan."
  sankin_kotai_policy: "Sankin-kōtai"
  sankin_kotai_policy_desc: "Il $sankin_kotai_policy$ è un sistema in cui i vassalli dello [GetUniqueInternationalOrganization('japanese_shogunate').GetName] alternano la loro residenza tra la capitale e le loro terre. Quando sono in capitale, è previsto che mostrino la loro ricchezza, e tale onere economico consuma abbastanza delle loro risorse da prevenire qualsiasi tentativo di ribellione."
-
- # Navarra
+ 
+ #Navarra
 
  #Laws
  nav_adaptability: "Adattabilità Navarrese"
@@ -1520,7 +1566,7 @@
  offensive_stance: "Atteggiamento Offensivo"
  offensive_stance_desc: "Non temiamo nessuno, e come dice il vecchio adagio: ‘la miglior difesa è l'attacco'. Colpiremo per primi, e con maggiore ferocia di chiunque minacci la nostra esistenza!"
 
- # Bohemia
+ #Bohemia
  maiestas_carolina: "Maiestas Carolina"
  maiestas_carolina_desc: "Un insieme di leggi e articoli ideati per limitare drasticamente il potere della [ShowEstateTypeName('nobles_estate')]. Il codice prevede il passaggio delle proprietà nobiliari allo stato in determinate circostanze, oltre a restringere i poteri arbitrari della $nobles_estate$ in tutto il nostro regno."
 
@@ -1529,33 +1575,35 @@
  order_of_chivalry_law_desc: "Radicata in una fusione di tradizioni religiose e cortesi, questa legge incarna l'eredità di cavalieri dedicati agli ideali e alle missioni caritative del mondo cristiano. Fondata originariamente per proteggere i pellegrini diretti in Terra Santa e per sostenere voti di povertà, obbedienza e castità, nel tempo questa tradizione si è trasformata, arrivando a onorare individui distinti e divenendo un simbolo di prestigio."
  has_not_assumed_chivalric_order_in_last_25_years_tt: "Non abbiamo istituito un #Y $order_of_chivalry_law$#! negli ultimi #Y 25 anni#!"
  order_of_saint_george_policy: "Ordine di San Giorgio"
- order_of_saint_george_policy_desc: "$order_of_saint_george_desc$" 
+ order_of_saint_george_policy_desc: "$order_of_saint_george_desc$"
  order_of_the_ermine_policy: "Ordine dell'Erminio"
- order_of_the_ermine_policy_desc: "$order_of_the_ermine_desc$" 
+ order_of_the_ermine_policy_desc: "$order_of_the_ermine_desc$"
  order_of_the_dragon_policy: "Ordine del Drago"
- order_of_the_dragon_policy_desc: "$order_of_the_dragon_desc$" 
+ order_of_the_dragon_policy_desc: "$order_of_the_dragon_desc$"
  order_of_the_band_policy: "Ordine della Banda"
- order_of_the_band_policy_desc: "$order_of_the_band_desc$" 
+ order_of_the_band_policy_desc: "$order_of_the_band_desc$"
  order_of_the_swan_policy: "Ordine del Cigno"
- order_of_the_swan_policy_desc: "$order_of_the_swan_desc$" 
+ order_of_the_swan_policy_desc: "$order_of_the_swan_desc$"
  order_of_the_black_eagle_policy: "Ordine dell'Aquila Nera"
- order_of_the_black_eagle_policy_desc: "$order_of_the_black_eagle_desc$" 
+ order_of_the_black_eagle_policy_desc: "$order_of_the_black_eagle_desc$"
  order_of_the_white_eagle_policy: "Ordine dell'Aquila Bianca"
- order_of_the_white_eagle_policy_desc: "$order_of_the_white_eagle_desc$" 
- order_of_saint_george: "Ordine di San Giorgio" 
- order_of_saint_george_desc: "Questo ordine, noto come 'Società Cavalleresca di San Giorgio', incarna un impegno verso gli ideali di cavalleria e onore, promuovendo tali valori attraverso tornei cavallereschi e festività." 
- order_of_the_ermine: "Ordine dell'Ermellino" 
- order_of_the_ermine_desc: "L'Ordine dell'Ermellino trae ispirazione dall'Ordine della Giarrettiera [GetCountry('ENG').GetAdjective]. Con l'ermellino come simbolo, a rappresentare un incrollabile onore personale, l'ordine riconosce uomini e donne, a prescindere dallo status sociale, per servizi eccezionali al Ducato di [ShowAreaName('brittany_area')]." 
- order_of_the_dragon: "Ordine del Drago" 
- order_of_the_dragon_desc: "Noto anche come '#italic Societas Draconica#!', quest'Ordine era dedicato alla difesa della monarchia [GetCountry('HUN').Custom('IT_ADJ_FS')], della Chiesa [ShowReligionAdjective('catholic')] e dei [ShowReligionGroupName('christian')] contro la minaccia [GetCountry('TUR').Custom('IT_Della')][GetCountry('TUR').GetLongName], degli eretici e dei pagani. Modellato sull'Ordine di San Giorgio e ispirato dallo spirito crociato dell'epoca, unisce [ShowEstateTypeName('nobles_estate')] e [ShowEstateTypeName('crown_estate')] sotto i simboli dell'uroboro e della croce rossa, favorendo una difesa collettiva contro minacce straniere e interne, offrendo al contempo ai $nobles_estate$ protezione e onori reali in cambio della loro lealtà." 
- order_of_the_band: "Ordine della Banda" 
- order_of_the_band_desc: "L'Ordine della Banda è composto dai cavalieri più eccellenti, che giurano lealtà e obbedienza al sovrano [GetCountry('CAS').Custom('IT_Di')][GetCountry('CAS').GetName]. I suoi membri sono tenuti a standard elevati di comportamento cortese, scrupoloso e impeccabile, partecipano regolarmente a giostre e devono essere soprattutto solidali e leali verso il loro sovrano." 
- order_of_the_swan: "Ordine del Cigno" 
- order_of_the_swan_desc: "L'Ordine del Cigno è dedicato alla promozione della pietà e alla diffusione del culto della Vergine Maria. I membri di quest'Ordine includono molti principi della dinastia regnante, nonché [ShowEstateTypeName('nobles_estate')], tutti uniti nella perseveranza." 
- order_of_the_black_eagle: "Ordine dell'Aquila Nera" 
- order_of_the_black_eagle_desc: "L'Ordine secolare dell'Aquila Nera è più un ordine militare che spirituale. Tra i membri di quest'Ordine figurano spesso esponenti della famiglia reale, reali stranieri in visita e generali illustri premiati per i loro meriti." 
- order_of_the_white_eagle: "Ordine dell'Aquila Bianca" 
- order_of_the_white_eagle_desc: "L'ordine militare $order_of_the_white_eagle_policy$ viene conferito ai più stretti sostenitori dello stato e ai più brillanti tra i nostri cittadini come ricompensa per il loro servizio al paese. Viene anche conferito a visitatori di alto rango che ci hanno onorato con la loro presenza." 
+ order_of_the_white_eagle_policy_desc: "$order_of_the_white_eagle_desc$"
+ order_of_saint_george: "Ordine di San Giorgio"
+ order_of_saint_george_desc: "Questo ordine, noto come 'Società Cavalleresca di San Giorgio', incarna un impegno verso gli ideali di cavalleria e onore, promuovendo tali valori attraverso tornei cavallereschi e festività."
+ order_of_the_ermine: "Ordine dell'Ermellino"
+ order_of_the_ermine_desc: "L'Ordine dell'Ermellino trae ispirazione dall'Ordine della Giarrettiera [GetCountry('ENG').GetAdjective]. Con l'ermellino come simbolo, a rappresentare un incrollabile onore personale, l'ordine riconosce uomini e donne, a prescindere dallo status sociale, per servizi eccezionali al Ducato di [ShowAreaName('brittany_area')]."
+ order_of_the_dragon: "Ordine del Drago"
+ order_of_the_dragon_desc: "Noto anche come '#italic Societas Draconica#!', quest'Ordine era dedicato alla difesa della monarchia [GetCountry('HUN').Custom('IT_ADJ_FS')], della Chiesa [ShowReligionAdjective('catholic')] e dei [ShowReligionGroupName('christian')] contro la minaccia [GetCountry('TUR').Custom('IT_Della')][GetCountry('TUR').GetLongName], degli eretici e dei pagani. Modellato sull'Ordine di San Giorgio e ispirato dallo spirito crociato dell'epoca, unisce [ShowEstateTypeName('nobles_estate')] e [ShowEstateTypeName('crown_estate')] sotto i simboli dell'uroboro e della croce rossa, favorendo una difesa collettiva contro minacce straniere e interne, offrendo al contempo ai $nobles_estate$ protezione e onori reali in cambio della loro lealtà."
+ order_of_the_band: "Ordine della Banda"
+ order_of_the_band_desc: "L'Ordine della Banda è composto dai cavalieri più eccellenti, che giurano lealtà e obbedienza al sovrano [GetCountry('CAS').Custom('IT_Di')][GetCountry('CAS').GetName]. I suoi membri sono tenuti a standard elevati di comportamento cortese, scrupoloso e impeccabile, partecipano regolarmente a giostre e devono essere soprattutto solidali e leali verso il loro sovrano."
+ order_of_the_swan: "Ordine del Cigno"
+ order_of_the_swan_desc: "L'Ordine del Cigno è dedicato alla promozione della pietà e alla diffusione del culto della Vergine Maria. I membri di quest'Ordine includono molti principi della dinastia regnante, nonché [ShowEstateTypeName('nobles_estate')], tutti uniti nella perseveranza."
+ order_of_the_black_eagle: "Ordine dell'Aquila Nera"
+ order_of_the_black_eagle_desc: "L'Ordine secolare dell'Aquila Nera è più un ordine militare che spirituale. Tra i membri di quest'Ordine figurano spesso esponenti della famiglia reale, reali stranieri in visita e generali illustri premiati per i loro meriti."
+ order_of_the_white_eagle: "Ordine dell'Aquila Bianca"
+ order_of_the_white_eagle_desc: "L'ordine militare $order_of_the_white_eagle_policy$ viene conferito ai più stretti sostenitori dello stato e ai più brillanti tra i nostri cittadini come ricompensa per il loro servizio al paese. Viene anche conferito a visitatori di alto rango che ci hanno onorato con la loro presenza."
+ order_of_lebrel_blanco: "Ordine del Levriero Bianco"
+ order_of_lebrel_blanco_desc: "L'Ordine del Levriero Bianco fu istituito da Carlo III il Nobile come massima onorificenza cavalleresca della Corona di $NAV$, selezionando tra i cavalieri più leali e distinti del regno. I suoi membri, legati da un giuramento di reciproca fratellanza e fedeltà, devono incarnare in ogni loro azione la rapidità e la lealtà del levriero. L'ordine rappresenta un segno di prestigio e fiducia regale, vincolando gli alleati più stretti della Corona a un servizio e un onore perpetui."
  society_with_the_donkey: "$noble_society_baden_palatine$"
  society_with_the_donkey_desc: "$noble_society_baden_palatine_desc$"
  society_lion_nassau: "$noble_society_nassau$"
@@ -1568,18 +1616,20 @@
  society_elephant_tyrol_desc: "$noble_society_tyrol_desc$"
  society_hubertus_cologne: "$noble_society_cologne$"
  society_hubertus_cologne_desc: "$noble_society_cologne_desc$"
- 
-#Six Ministries Overseer 
+ order_of_the_jar: "Ordine della Giara"
+ order_of_the_jar_desc: "Sfruttando il fervore del popolo in [ShowRegionName('iberia_region')], l'$order_of_the_jar$ è pensato per premiare i cavalieri fedeli al [ShowEstateTypeName('crown_estate')], svolgendo al contempo un ruolo di rilievo nelle cerimonie di corte."
+
+#Six Ministries Overseer
  six_ministries_overseer_law: "Supervisione di Sei Ministeri"
  six_ministries_overseer_law_desc: "Il lavoro dei [ShowLawName('six_ministries')] deve essere supervisionato da un'ulteriore istituzione, o persino dal monarca."
  chi_grand_chancellorship: "Gran Cancelleria"
  chi_grand_chancellorship_desc: "I Sei Ministeri riferiranno alla Cancelleria, rappresentata dal Cancelliere di Sinistra e dal Cancelliere di Destra, il primo dei quali ricopre la posizione più elevata."
  chi_grand_secretariat: "Gran Segreteria"
  chi_grand_secretariat_desc: "I Sei Ministeri invieranno la loro documentazione alla Gran Segreteria, che analizzerà i rapporti e li preparerà per essere presentati al monarca."
- six_boards_grand_secretariat_oversight_tt: "Migliora del #G 20%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]" 
+ six_boards_grand_secretariat_oversight_tt: "Migliora del #G 20%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]"
  chi_direct_report: "Rapporti Diretti"
  chi_direct_report_desc: "I Sei Ministeri riferiranno direttamente al monarca. Questo rafforza l'autorità regia, ma può ridurre l'efficienza amministrativa."
- six_boards_direct_report_oversight_tt: "Migliora del #G 10%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]" 
+ six_boards_direct_report_oversight_tt: "Migliora del #G 10%#! l'effetto positivo della [bureaucracy|e] [ShowBureaucracyTypeName('six_boards_bureaucracy')]"
 
 #Ashta Pradham Council
  ashta_pradhan_council_law: "Consiglio dell'Ashta Pradhan"
@@ -1685,8 +1735,7 @@
  ministry_of_works: "Ministero dei Lavori Pubblici"
  ministry_of_works_desc: "Il Gōngbù gestisce tutte le costruzioni del paese: edifici, strade, canali, così come la gestione delle risorse e la standardizzazione di pesi e misure. Assicurando che questo ministero lavori senza ostacoli, manterremo solide le fondamenta della nostra infrastruttura."
  better_infrastructure_works_results_tt: "Produrrà risultati migliori quando si proclama il decreto [ShowPolicyName('commence_infrastructure_works_decree')]."
- 
- 
+
 #Middle Kingdom Decrees
  middle_kingdom_decrees: "$middle_kingdom$"
  middle_kingdom_decrees_desc: "I decreti imperiali sono la chiave del corretto funzionamento del [GetUniqueInternationalOrganization('middle_kingdom').GetName], garantendo che l'autorità del [GetUniqueInternationalOrganization('middle_kingdom').GetLeaderTitle] venga applicata ovunque."
@@ -1703,7 +1752,6 @@
  reinforce_fortifications_decree: "Rafforzare le Fortificazioni"
  reinforce_fortifications_decree_desc: "Le nostre fortificazioni sono la chiave della nostra sopravvivenza. Occorre mantenerle in condizioni ottimali e garantire che tutti i punti vulnerabili del nostro territorio siano adeguatamente protetti."
  middle_kingdom_members: "Totale dei [members|e] del [GetUniqueInternationalOrganization('middle_kingdom').GetName]"
-
 
 #Sinicization and DOP
 
@@ -1737,7 +1785,7 @@
  slavophiles_desc: "Gli Slavofili sottolineano l'importanza dell'Ortodossia, del comunitarismo, della conservazione dei valori tradizionali e criticano il materialismo, l'individualismo e la superficialità della cultura occidentale. Favoriscono un percorso più isolato per preservare un patrimonio culturale e spirituale unico."
  westernizers: "Occidentalizzatori"
  westernizers_desc: "Gli Occidentalizzatori valorizzano legami più stretti con l'Europa e ritengono che tutti debbano allinearsi alla cultura occidentale. L'adozione di idee, istituzioni e tecnologie occidentali deve avere la priorità per consentire rapida modernizzazione, industrializzazione e riforme sociali. Concetti come identità culturale e unità religiosa hanno scarso valore ai loro occhi."
-
+ 
 #France
  fra_fouage_tax: "Tassa del Fouage"
  fra_fouage_tax_desc: "Una grande tassa del focolare imposta ai popolani per contribuire a coprire le crescenti spese del tesoro."
@@ -1750,40 +1798,42 @@
  couteume_de_normaundie: "Coutume de Normandie"
  couteume_de_normaundie_desc: "Le consuetudini codificate del [GetCountry('NRM').GetLongName] enfatizzano i diritti feudali sulla terra, i privilegi nobiliari e l'autonomia locale. Pur favorendo una società tradizionale e decentralizzata, queste leggi costituiscono un quadro giuridico solido che assicura il potere della nobiltà e preserva l'identità distinta del [GetCountry('NRM').GetFlavorRank]]."
 
-
 #Byzantium
  pronoia_system: "Sistema della Prónoia"
- pronoia_system_desc: "Il $pronoia_system$ funziona come mezzo per trasferire temporaneamente diritti fiscali imperiali, come imposte o redditi da varie fonti, a individui o istituzioni. A differenza del sistema feudale prevalente in Europa all'epoca, le concessioni di Prónoia non erano né ereditarie né trasferibili, e la proprietà ultima rimaneva all'Imperatore. In cambio di questi privilegi, il sistema serviva in ultima analisi allo scopo di permettere al capo dello stato di radunare un esercito in tempi di bisogno, e comportava che le truppe dovessero per lo più coprire le proprie spese." 
- 
+ pronoia_system_desc: "Il $pronoia_system$ funziona come mezzo per trasferire temporaneamente diritti fiscali imperiali, come imposte o redditi da varie fonti, a individui o istituzioni. A differenza del sistema feudale prevalente in Europa all'epoca, le concessioni di Prónoia non erano né ereditarie né trasferibili, e la proprietà ultima rimaneva all'Imperatore. In cambio di questi privilegi, il sistema serviva in ultima analisi allo scopo di permettere al capo dello stato di radunare un esercito in tempi di bisogno, e comportava che le truppe dovessero per lo più coprire le proprie spese."
  reformed_pronoia_system: "Sistema della Prónoia Riformato"
  reformed_pronoia_system_desc: "Invece di permettere ai governatori della Prónoia di rafforzare il loro controllo sulle terre, il sistema è stato modificato affinché ogni scappatoia che rendesse il titolo ereditario o trasferibile non possa più essere sfruttata."
- komnenian_formalization: "Prónoia komnena" 
- komnenian_formalization_desc: "Sotto gli imperatori Komneni, il sistema informale della Prónoia era stato codificato in un rigoroso strumento di politica imperiale. Le concessioni erano formalmente contrattate, con ogni titolare obbligato a fornire un contingente di cavalleria proporzionale alle entrate ricevute. L'Imperatore conservava il diritto di revoca, e un registro imperiale riorganizzato tracciava ogni concessione e il relativo obbligo militare, assicurando che le rendite fondiarie del reame si traducessero direttamente in forza di leva montata sotto il controllo diretto della corona." 
- palaeologan_hereditary_transition: "Prónoia ereditaria paleologa" 
- palaeologan_hereditary_transition_desc: "Di fronte a un tesoro esausto e alla pressione costante di guerra civile e invasione straniera, gli imperatori Paleologi hanno concesso l'irrevocabile: le concessioni di Prónoia d'ora in poi sono ereditarie. Le famiglie nobili che in precedenza servivano a piacere imperiale ora detengono le loro terre come patrimonio permanente, rafforzando la legittimità della dinastia attraverso la lealtà aristocratica ma al costo degli obblighi militari che un tempo davano scopo al sistema. La cavalleria che le concessioni dovevano finanziare deve essere sempre più spesso assunta a spese dello stato." 
- byz_porphyrogennetos_court_policy: "Corte Porphyrogénitus" 
- byz_porphyrogennetos_court_policy_desc: "Un imperatore nato nella sacra Camera Porpora del Grande Palazzo porta con sé un'aura di legittimità ineguagliata da qualsiasi rivale. Il nostro cerimoniale di corte, codificato nel #italic De Ceremoniis#!, proietta la maestà di un Impero romano vivente su ogni inviato che entra nella nostra capitale. L'elaborato protocollo è costoso, ma il prestigio che irradia consolida la pretesa della dinastia davanti al mondo." 
- byz_varangian_guard_policy: "Guardia variaga" 
- byz_varangian_guard_policy_desc: "La Guardia variaga, composta da Norreni, [ShowCultureName('english')] e altri popoli settentrionali, vincolata da giuramento personale all'Imperatore, serve come guardia del corpo imperiale e truppe d'urto della casa. La loro lealtà è acquistata, non ereditata, rendendoli immuni agli intrighi di fazione che affliggono gli ufficiali nobili [ShowCultureName('greek_culture')]. Le loro asce hanno difeso il trono per generazioni, e la loro feroce disciplina stabilisce uno standard per l'intero esercito." 
- byz_megas_domestikos_policy: "Comando del Mégas Doméstikos" 
- byz_megas_domestikos_policy_desc: "L'ufficio di #italic $byz_megas_domestikos_policy$#! Grande Domestico delle Scuole pone il comando supremo sul campo di tutti gli eserciti imperiali nelle mani di un unico comandante nominato. Invece di disperdere l'autorità militare tra ufficiali tagmata concorrenti, il Mégas Doméstikos coordina la strategia sull'intero teatro di guerra. Il prestigio dell'ufficio attira i migliori [ShowPopTypeName('nobles')] a servire sotto il suo stendardo, e le battaglie vinte sotto il suo stendardo forgiano il nostro esercito in uno ben temprato al doppio della velocità delle campagne ordinarie." 
- byz_tagmata_policy_upgraded: "Tágmata Riformati" 
- byz_tagmata_policy_upgraded_desc: "Attraverso le ampie riforme nate dalla crisi, i Tágmata sono stati riforgiati in qualcosa di più vicino ai temibili soldati professionisti di un tempo. Un addestramento più rigoroso, il ripristino dei finanziamenti imperiali e un rinnovato senso di scopo hanno elevato i reggimenti al di sopra della forza indebolita che erano diventati. Questi soldati si distinguono dalla leva feudale non solo nel nome, ma anche per disciplina, coesione ed efficacia sul campo di battaglia." 
+ komnenian_formalization: "Prónoia komnena"
+ komnenian_formalization_desc: "Sotto gli imperatori Komneni, il sistema informale della Prónoia era stato codificato in un rigoroso strumento di politica imperiale. Le concessioni erano formalmente contrattate, con ogni titolare obbligato a fornire un contingente di cavalleria proporzionale alle entrate ricevute. L'Imperatore conservava il diritto di revoca, e un registro imperiale riorganizzato tracciava ogni concessione e il relativo obbligo militare, assicurando che le rendite fondiarie del reame si traducessero direttamente in forza di leva montata sotto il controllo diretto della corona."
+
+ palaeologan_hereditary_transition: "Prónoia ereditaria paleologa"
+ palaeologan_hereditary_transition_desc: "Di fronte a un tesoro esausto e alla pressione costante di guerra civile e invasione straniera, gli imperatori Paleologi hanno concesso l'irrevocabile.\nLe concessioni di Prónoia d'ora in poi sono ereditarie. Le famiglie nobili che in precedenza servivano a piacere imperiale ora detengono le loro terre come patrimonio permanente, rafforzando la legittimità della dinastia attraverso la lealtà aristocratica ma al costo degli obblighi militari che un tempo davano scopo al sistema. La cavalleria che le concessioni dovevano finanziare deve essere sempre più spesso assunta a spese dello stato."
+
+ byz_porphyrogennetos_court_policy: "Corte Porphyrogénitus"
+ byz_porphyrogennetos_court_policy_desc: "Un imperatore nato nella sacra Camera Porpora del Grande Palazzo porta con sé un'aura di legittimità ineguagliata da qualsiasi rivale. Il nostro cerimoniale di corte, codificato nel #italic De Ceremoniis#!, proietta la maestà di un Impero romano vivente su ogni inviato che entra nella nostra capitale. L'elaborato protocollo è costoso, ma il prestigio che irradia consolida la pretesa della dinastia davanti al mondo."
+
+ byz_varangian_guard_policy: "Guardia variaga"
+ byz_varangian_guard_policy_desc: "La Guardia variaga, composta da Norreni, [ShowCultureName('english')] e altri popoli settentrionali, vincolata da giuramento personale all'Imperatore, serve come guardia del corpo imperiale e truppe d'urto della casa. La loro lealtà è acquistata, non ereditata, rendendoli immuni agli intrighi di fazione che affliggono gli ufficiali nobili [ShowCultureName('greek_culture')]. Le loro asce hanno difeso il trono per generazioni, e la loro feroce disciplina stabilisce uno standard per l'intero esercito."
+
+ byz_megas_domestikos_policy: "Comando del Mégas Doméstikos"
+ byz_megas_domestikos_policy_desc: "L'ufficio di #italic $byz_megas_domestikos_policy$#! Grande Domestico delle Scuole pone il comando supremo sul campo di tutti gli eserciti imperiali nelle mani di un unico comandante nominato. Invece di disperdere l'autorità militare tra ufficiali tagmata concorrenti, il Mégas Doméstikos coordina la strategia sull'intero teatro di guerra. Il prestigio dell'ufficio attira i migliori [ShowPopTypeName('nobles')] a servire sotto il suo stendardo, e le battaglie vinte sotto il suo stendardo forgiano il nostro esercito in uno ben temprato al doppio della velocità delle campagne ordinarie."
+
+ byz_tagmata_policy_upgraded: "Tágmata Riformati"
+ byz_tagmata_policy_upgraded_desc: "Attraverso le ampie riforme nate dalla crisi, i Tágmata sono stati riforgiati in qualcosa di più vicino ai temibili soldati professionisti di un tempo. Un addestramento più rigoroso, il ripristino dei finanziamenti imperiali e un rinnovato senso di scopo hanno elevato i reggimenti al di sopra della forza indebolita che erano diventati. Questi soldati si distinguono dalla leva feudale non solo nel nome, ma anche per disciplina, coesione ed efficacia sul campo di battaglia."
 
 #Rome
 
  new_corpus_juris_civilis: "Corpus Juris Civilis"
  new_corpus_juris_civilis_desc: "La grande compilazione del diritto romano, ordinata dall'imperatore Giustiniano, ha raccolto secoli di sentenze, editti e saggezza in un unico corpo. Il Codice, il Digesto, le Istituzioni e le Novelle sono tornati a costituire la spina dorsale del governo e della giustizia, garantendo la nostra autorità, la coerenza giuridica e il corretto funzionamento dello stato."
 
-
-#Poland
+#Poland 
  council_of_three_lands_policy: "Consiglio delle Tre Terre"
  council_of_three_lands_policy_desc: "Un organismo centrale dell'Autorità Ebraica, questo consiglio è incaricato degli affari religiosi e giudiziari, con l'obiettivo di diffondere la tolleranza religiosa e proteggere il suo popolo dalla persecuzione."
 
 #Poland
  piotrokow_wislica_statutes: "Statuti di Piotrków-Wiślica"
  piotrokow_wislica_statutes_desc: "Un insieme di statuti che modellano la nostra legislazione e offrono una solida cornice per il futuro del nostro popolo; questi statuti sono completi ed estremamente influenti. La loro giurisdizione impatta vari aspetti della nostra società, dal diritto privato a quello pubblico e ai doveri di ciascuna classe sociale."
-
+ 
 #Denmark
  rentekammer_policy: "Rentekammeret"
  rentekammer_policy_desc: "La Tesoreria, o #italic Rentekammeret#!, amministrerà le nostre finanze e il #italic Rentemester#! risponderà direttamente al Sovrano. Questo ci permette un maggiore controllo sulle finanze del nostro paese."
@@ -1792,7 +1842,7 @@
  dan_danske_lov: "Danske Lov"
  dan_danske_lov_desc: "Un codice giuridico unificato per il nostro paese introdurrà una cornice legale standardizzata per il funzionamento del governo e a cui i nostri sudditi potranno appellarsi."
 
-#$china$
+#$china$ 
  examination_system_policy_korean: "Gwageo"
  examination_system_policy_chinese: "Kējǔ"
  examination_system_policy_shu_language: "Kōjǔ"
@@ -1859,7 +1909,7 @@
  cas_mita_system_desc: "Il $cas_mita_system$ è un adattamento della leva lavorativa incaica che obbliga le comunità indigene a fornire lavoro a rotazione per le nostre imprese, specialmente nelle miniere d'argento come quelle di Potosí."
  nueva_recopilacion_policy: "Nueva Recopilación"
  nueva_recopilacion_policy_desc: "Una nuova compilazione delle numerose leggi del nostro regno, che ci permetterà di centralizzare adeguatamente e garantire il controllo sui nostri territori."
- spa_reformed_nueva_recopilacion_policy_tt: "Ha modellato la Nueva Recopilación nell'evento $flavor_cas.50.title$." 
+ spa_reformed_nueva_recopilacion_policy_tt: "Ha modellato la Nueva Recopilación nell'[event|e] $cas_altered_nueva_recopilacion_decision.title$."
  leyes_de_toro_policy: "Leyes de Toro"
  leyes_de_toro_policy_desc: "Una compilazione delle leggi del regno, elaborata per soddisfare i diversi ceti sociali, in particolare la nobiltà, poiché stabilisce il “mayorazgo” come principale sistema successorio."
  ordenamiento_de_alcala_policy: "Ordenamiento de Alcalá"
@@ -1868,13 +1918,13 @@
  sea_beggars_policy: "Pezzenti del Mare"
  sea_beggars_policy_desc: "Concedendo numerose lettere di corsa a chiunque desideri servire la nostra causa, possiamo ampliare la nostra marina senza costruire nuove navi."
 
-#Kilwa
+ #Kilwa
  kilwan_merchant_navy: "Marina Mercantile $ZAN_ADJ$"
  kilwan_merchant_navy_desc: "Secoli di conoscenza marittima e l'accesso a cotone e legname di alta qualità hanno dato vita a una flotta mercantile formidabile. Dotate di progetti all'avanguardia e nuove configurazioni delle vele, queste imbarcazioni sono l'orgoglio del nostro popolo."
  smugglers_haven: "Rifugio dei Contrabbandieri"
  smugglers_haven_desc: "Un'impresa piratesca non può funzionare senza un modo per vendere la merce rubata. Dobbiamo assicurarci che le condizioni nella Repubblica siano favorevoli alle operazioni di contrabbando."
 
-#Scotland
+ #Scotland
  sco_clan_holdings: "Distribuzione dei Possedimenti dei Clan Scozzesi"
  sco_clan_holdings_desc: "L'eredità dei possedimenti [GetCountry('SCO').Custom('IT_ADJ_MP')] è divisa in proporzione all'influenza dei clan, con i clan più grandi che ricevono più proprietà. I possedimenti dei clan passano direttamente all'erede, a meno che un titolo non venga revocato o la linea non si estingua."
  inherited_clan_holdings: "Eredità Diretta"
@@ -1899,15 +1949,16 @@
  sco_limited_colonial_ventures_desc: "Le iniziative coloniali sono state considerate un rischio economico accettabile per lo stato e sono state ufficialmente autorizzate."
  sco_colonial_administration: "Amministrazione Coloniale Esperta"
  sco_colonial_administration_desc: "Grazie agli sforzi continui di esploratori e investitori, la [GetCountry('SCO').GetName] ha conquistato il proprio posto tra le potenze coloniali e trae grandi benefici dai suoi possedimenti oltremare."
- lat_orthodox_status_with_the_empire: "Status [ShowReligionAdjectiveWithNoTooltip('orthodox')] all'interno di [GetCountry('LAT').GetLongNameWithNoTooltip]" 
- lat_orthodox_status_with_the_empire_desc: "Per ottenere sostegno al ripristino di [GetCountry('LAT').GetLongName], è stato raggiunto un compromesso con [GetCountry('PAP').GetLongName] riguardo al rafforzamento della supremazia [ShowReligionAdjective('catholic')] sul ramo locale [ShowReligionAdjective('orthodox')]." 
- lat_tolerance_orthodox_faith: "Tolleranza della fede [ShowReligionAdjectiveWithNoTooltip('orthodox')]" 
- lat_tolerance_orthodox_faith_desc: "Le politiche di conversione di [GetCountry('PAP').GetLongName] sono state ampiamente ignorate al fine di formare una coesistenza pacifica con la popolazione locale [ShowReligionAdjective('orthodox')]." 
- lat_limited_conversion_efforts: "Sforzi limitati di riconversione" 
- lat_limited_conversion_efforts_desc: "Le politiche di riconversione di [GetCountry('PAP').GetLongName] verso gli [ShowReligionAdjective('orthodox')] sono istituite nel codice legale di [GetCountry('LAT').GetLongName], ma non sono applicate." 
- lat_papal_sanctioned_conversion_efforts: "Sforzi di riconversione sanzionati dal Papa" 
- lat_papal_sanctioned_conversion_efforts_desc: "Le politiche di riconversione verso la popolazione [ShowReligionAdjective('orthodox')] sono applicate con rigore con il pieno sostegno di [GetCountry('PAP').GetLongName]." 
 
+ lat_orthodox_status_with_the_empire: "Status [ShowReligionAdjectiveWithNoTooltip('orthodox')] all'interno di [GetCountry('LAT').GetLongNameWithNoTooltip]"
+ lat_orthodox_status_with_the_empire_desc: "Per ottenere sostegno al ripristino di [GetCountry('LAT').GetLongName], è stato raggiunto un compromesso con [GetCountry('PAP').GetLongName] riguardo al rafforzamento della supremazia [ShowReligionAdjective('catholic')] sul ramo locale [ShowReligionAdjective('orthodox')]."
+ lat_tolerance_orthodox_faith: "Tolleranza della fede [ShowReligionAdjectiveWithNoTooltip('orthodox')]"
+ lat_tolerance_orthodox_faith_desc: "Le politiche di conversione di [GetCountry('PAP').GetLongName] sono state ampiamente ignorate al fine di formare una coesistenza pacifica con la popolazione locale [ShowReligionAdjective('orthodox')]."
+ lat_limited_conversion_efforts: "Sforzi limitati di riconversione"
+ lat_limited_conversion_efforts_desc: "Le politiche di riconversione di [GetCountry('PAP').GetLongName] verso gli [ShowReligionAdjective('orthodox')] sono istituite nel codice legale di [GetCountry('LAT').GetLongName], ma non sono applicate."
+ lat_papal_sanctioned_conversion_efforts: "Sforzi di riconversione sanzionati dal Papa"
+ lat_papal_sanctioned_conversion_efforts_desc: "Le politiche di riconversione verso la popolazione [ShowReligionAdjective('orthodox')] sono applicate con rigore con il pieno sostegno di [GetCountry('PAP').GetLongName]."
+ 
  #CATEGORIES
  feudal_de_jure_law_CATEGORY: "ADMINISTRATIVE_LAW_CATEGORY"
  medieval_levy_law_CATEGORY: "MILITARY_LAW_CATEGORY"
@@ -1999,7 +2050,7 @@
  mam_fluid_system_desc: "Un sistema fluido di ranghi farà sì che i nostri soldati si sentano parte integrante delle nostre forze. La prospettiva di avanzamento e ascesa nella gerarchia militare è una forte motivazione per chi proviene da povertà o servitù."
  mam_refined_furusiyya: "Furūsiyya Perfezionato"
  mam_refined_furusiyya_desc: "Attraverso secoli di tradizione marziale, abbiamo perfezionato la Furūsiyya, il codice cavalleresco e militare musulmano, fondendo equitazione, tiro con l'arco e tattiche di guerra con formazione etica e intellettuale."
-
+ 
  mamluk_army_law: "Legge Militare Mamelucca"
  mamluk_army_law_desc: "Il cuore della nostra amministrazione stratocratica è l'esercito stesso. Redigendo leggi e regolamenti per strutturarlo con cura, potremo difendere il nostro popolo in modo efficace dalle minacce esterne."
  al_mamalik_al_sultaniyya: "Al-Mamālik al-Sulṭāniyya"
@@ -2010,7 +2061,7 @@
  ajnad_al_halqa_desc: "Un esercito non può funzionare adeguatamente senza solide truppe ausiliarie e linee di rifornimento ben mantenute."
  awlad_al_nas_policy: "Awlād al-Nās"
  awlad_al_nas_policy_desc: "Nonostante le rigide conversioni e manomissioni a cui erano sottoposti i vecchi $mamluks$, essi tentano costantemente di minare l'autorità centrale. Deve essere fondato un nuovo corpo, i cui uomini siano addestrati secondo criteri diversi."
-
+ 
  mamluk_promotion_law: "Legge sulla Promozione Mamelucca"
  mamluk_promotion_law_desc: "Le norme che regolano le promozioni all'interno dei ranghi militari sono una pietra angolare importante del nostro Stato."
  merit_basis: "Basata sul Merito"
@@ -2043,7 +2094,7 @@
  sc_clear_religious_chaos_tt: "[ShowLawName('sc_internal_politics')] e [ShowLawName('sc_war_politics')] ora si applicano a tutti i membri indipendentemente dalla [religion|e]."
  sc_mending_schism: "Ricomporre lo Scisma"
  sc_mending_schism_desc: "La stabilità e sicurezza della [GetInternationalOrganizationType('swiss_confederation').GetName] sono prioritarie rispetto alle dispute religiose della [ShowSituationName('reformation')]. Ogni membro dovrà interrompere ostilità contro membri di fede diversa."
-
+ 
  sc_enforcing_religious_unity: "Imporre l'Unità Religiosa"
  sc_enforcing_religious_unity_desc: "La religione gioca un ruolo fondamentale nella vita dei membri della Confederazione, e la sua unità è quindi una priorità. Tutti i cantoni dovranno seguire la stessa fede, in un modo o nell'altro."
  sc_only_defending_same_religion_allies_tt: "Solo i membri della stessa [religion|e] beneficeranno della politica attuale di [ShowLawName('sc_war_politics')]."
@@ -2135,17 +2186,17 @@
 
  sc_unification: "Unificazione $SWI_ADJ$"
  sc_unification_desc: "Le terre degli [ShowCultureGroupName('swiss_group')] sono state frammentate per troppo tempo. Se i popoli delle Alpi desiderano prosperità e sicurezza, devono unirsi sotto un'unica bandiera."
- sc_unification_movement_event_happened_tt: "L'[event|e] '#Y $flavor_swi.999.title$#!' è avvenuto e presenta le seguenti condizioni:\n\n[ShowTriggerConditions('flavor_swi_999_trigger',PlayerScope.Self)]"
+ sc_unification_movement_event_happened_tt: "L'[event|e] '#Y $flavor_swi.999.title$#!' è avvenuto e presenta le seguenti condizioni:\n[ShowTriggerConditions('flavor_swi_999_trigger',PlayerScope.Self)]"
  sc_unification_same_religion_tt: "Ogni membro segue la fede [ShowReligionName('catholic')], [ShowReligionName('lutheran')] o [ShowReligionName('calvinist')]"
- sc_found_swiss_republic: "Found the $SWI_ADJ$ $republic$"
+ sc_found_swiss_republic: "Fonda la $SWI_ADJ$ $republic$"
  sc_found_swiss_republic_desc: "I principi e i metodi della [GetInternationalOrganizationType('swiss_confederation').GetName] sono ampiamente apprezzati, poiché ogni Cantone gode del diritto di far sentire la propria voce. Tuttavia, la natura decentralizzata della Confederazione mette sempre a rischio la sicurezza del popolo [ShowCultureGroupName('swiss_group')]. È giunto il momento di unificare la Confederazione in uno stato unico mantenendo il sistema [ShowGovernmentTypeName('republic')]."
  sc_found_swiss_republic_specific_tt: "[THIS.GetCountry.Custom('IT_La')|U][THIS.GetCountry.GetName] unifica la [GetInternationalOrganizationType('swiss_confederation').GetName] per formare la [ShowGovernmentTypeName('republic')] [GetCountry('SWI').Custom('IT_ADJ_FS')]"
  sc_found_swiss_republic_tt: "La [GetInternationalOrganizationType('swiss_confederation').GetName] si unifica nella [ShowGovernmentTypeName('republic')] [GetCountry('SWI').Custom('IT_ADJ_FS')]"
- sc_found_swiss_monarchy: "Found the $SWI_ADJ$ $monarchy$"
+ sc_found_swiss_monarchy: "Fonda la $SWI_ADJ$ $monarchy$"
  sc_found_swiss_monarchy_desc: "Anche se nata come unione repubblicana, le sfide affrontate dalla [GetInternationalOrganizationType('swiss_confederation').GetName] hanno dimostrato la superiorità di un governo forte sotto un singolo Consigliere. Il futuro del popolo [ShowCultureGroupName('swiss_group')] può essere garantito solo da una vera [ShowGovernmentTypeName('monarchy')] che sostituisca la vecchia Confederazione."
  sc_found_swiss_monarchy_specific_tt: "[THIS.GetCountry.Custom('IT_La')|U][THIS.GetCountry.GetName] unifica la [GetInternationalOrganizationType('swiss_confederation').GetName] per formare la [ShowGovernmentTypeName('monarchy')] [GetCountry('SWI').Custom('IT_ADJ_FS')]"
  sc_found_swiss_monarchy_tt: "La [GetInternationalOrganizationType('swiss_confederation').GetName] si unifica nella [ShowGovernmentTypeName('monarchy')] [GetCountry('SWI').Custom('IT_ADJ_FS')]"
- sc_found_swiss_theocracy: "Found the $SWI_ADJ$ $theocracy$"
+ sc_found_swiss_theocracy: "Fonda la $SWI_ADJ$ $theocracy$"
  sc_found_swiss_theocracy_desc: "Non la volontà repubblicana né il potere autoritario di una monarchia hanno portato la [GetInternationalOrganizationType('swiss_confederation').GetName] alla sua attuale posizione, bensì la volontà del divino. Solo come [ShowGovernmentTypeName('theocracy')] unificata il popolo [ShowCultureGroupName('swiss_group')] potrà prosperare."
  sc_found_swiss_theocracy_specific_tt: "[THIS.GetCountry.Custom('IT_La')|U][THIS.GetCountry.GetName] unifica la [GetInternationalOrganizationType('swiss_confederation').GetName] per formare una [ShowGovernmentTypeName('theocracy')]"
  sc_found_swiss_theocracy_tt: "La [GetInternationalOrganizationType('swiss_confederation').GetName] si unifica nella [ShowGovernmentTypeName('theocracy')] [GetCountry('SWI').Custom('IT_ADJ_FS')]"
@@ -2184,7 +2235,7 @@
  mutual_offense_law_desc: "La politica che definisce come i membri si sosterranno reciprocamente nel caso in cui uno di essi dichiari guerra a un altro paese."
  assured_offense_policy: "Attacco Assicurato"
  assured_offense_policy_desc: "I membri entreranno automaticamente nelle guerre offensive dichiarate da altri membri."
- SPONSOR_EXEMPT_FROM_OFFENSIVE_WARS: "Non è uno [ShowSpecialStatusName('italian_league_sponsor')] di questa Lega" 
+ SPONSOR_EXEMPT_FROM_OFFENSIVE_WARS: "Non è uno [ShowSpecialStatusName('italian_league_sponsor')] di questa Lega"
  automatic_offense_policy: "Attacco Automatico"
  automatic_offense_policy_desc: "I membri saranno automaticamente chiamati nelle guerre offensive dichiarate da altri membri, ma non sono obbligati ad accettare."
  possible_offense_policy: "Attacco Possibile"
@@ -2192,7 +2243,7 @@
  no_offense_policy: "Nessun Attacco"
  no_offense_policy_desc: "I membri non potranno essere chiamati nelle guerre offensive dichiarate da altri membri."
 
-
+ 
  lordship_of_ireland_rule_law: "Governo d'Irlanda"
  lordship_of_ireland_rule_law_desc: "La forma di governo in Irlanda può essere tanto selvaggia quanto l'Atlantico che si infrange contro le scogliere frastagliate, o tanto salda quanto le brughiere."
  lordship_of_ireland_rule_laudabiliter_policy: "Laudabiliter"
@@ -2204,9 +2255,9 @@
  lordship_of_ireland_rule_ascendancy_policy: "Ascendenza Religiosa"
  lordship_of_ireland_rule_ascendancy_policy_desc: "Possiamo imporre ai membri del Lordship di convertirsi alla nostra religione."
  lordship_of_ireland_rule_ascendancy_policy_tt: ""
- apply_pu_estate_satisfaction_hit_tt: "I [estates|e] della $nobles_estate$, del $clergy_estate$, e della $burghers_estate$ di tutti gli oppositori della [resolution|e] guadagnano [ShowNamedValue('estate_satisfaction_severe_penalty')|+=2%] di [estate_satisfaction|E]"
 
  #Personal Unions
+ apply_pu_estate_satisfaction_hit_tt: "I [estates|e] della $nobles_estate$, del $clergy_estate$, e della $burghers_estate$ di tutti gli oppositori della [resolution|e] guadagnano [ShowNamedValue('estate_satisfaction_severe_penalty')|+=2%] di [estate_satisfaction|E]"
  UNION_TREASURY_COST: "Costo del Tesoro dell'Unione"
  union_foundation_law: "Fondazione dell'Unione"
  union_foundation_law_desc: "La legge dell'[GetInternationalOrganizationType('union').GetName] che ne determina la natura e se debba seguire un futuro centralizzato o federale — qualora possa resistere alla prova del tempo."
@@ -2216,10 +2267,10 @@
  union_maintain_federal_status_policy_desc: "La sovranità di ogni membro dell'[GetInternationalOrganizationType('union').GetName] è intoccabile e indiscutibile. Anche se ogni trono è governato da un unico sovrano, non spetta al monarca interferire negli affari degli altri membri dell'unione."
  union_senior_partner_policy_at: "Abilita il lo status speciale [ShowSpecialStatusName('senior_partner')] e [ShowSpecialStatusName('junior_partner')]"
  union_senior_partner_policy_tt: "[ROOT.GetInternationalOrganization.GetCountryWithHighestGreatPower.Custom('IT_La')|U][ROOT.GetInternationalOrganization.GetCountryWithHighestGreatPower.GetName] diventa il [ShowSpecialStatusName('senior_partner')] (il paese è selezionato poiché possiede il [great_power_score|e] più alto nell'[union|e])"
- union_senior_partner_policy_specific_tt: "[ROOT.GetInternationalOrganization.MakeScope.GetVariable('pre_selected_senior_partner').GetCountry.Custom('IT_La')|U] [ROOT.GetInternationalOrganization.MakeScope.GetVariable('pre_selected_senior_partner').GetCountry.GetName] diventa il [ShowSpecialStatusName('senior_partner')]"
+ union_senior_partner_policy_specific_tt: "[ROOT.GetInternationalOrganization.MakeScope.GetVariable('pre_selected_senior_partner').GetCountry.Custom('IT_La')|U][ROOT.GetInternationalOrganization.MakeScope.GetVariable('pre_selected_senior_partner').GetCountry.GetName] diventa il [ShowSpecialStatusName('senior_partner')]"
  union_unlocks_independence_casus_belli_tt: "Sblocca il [casus_belli|e] [ShowCasusBelliName('cb_union_independence')] per ogni $game_concept_junior_partner$ che sia #Y più debole#! del [ShowSpecialStatusName('senior_partner')]"
- union_unlocks_war_for_seniority_casus_belli_tt: "Sblocca il [casus_belli|e] [ShowCasusBelliName('cb_union_war_for_seniority')] per ogni $game_concept_junior_partner$ che sia #Y uguale o più forte#! del [ShowSpecialStatusName('senior_partner')]" 
-
+ union_unlocks_war_for_seniority_casus_belli_tt: "Sblocca il [casus_belli|e] [ShowCasusBelliName('cb_union_war_for_seniority')] per ogni $game_concept_junior_partner$ che sia #Y uguale o più forte#! del [ShowSpecialStatusName('senior_partner')]"
+ 
  union_codified_inheritance_law: "Eredità Codificata"
  union_codified_inheritance_law_desc: "Per garantire la stabilità dell'[GetInternationalOrganizationType('union').GetName], le leggi successorie di ogni membro devono essere codificate affinché tutti gli stati condividano la stessa linea di successione."
  union_senior_succession_law: "Legge Unificata sulla Successione"
@@ -2229,7 +2280,8 @@
  union_codified_inheritance_policy_at: "Ogni membro dell'[GetInternationalOrganizationType('union').GetName] adotta l'[heir_selection|e] del [ShowSpecialStatusName('senior_partner')] se possibile"
  union_codified_inheritance_policy_bt: "#R Le [heir_selections|e] bloccate non possono essere applicate né superate#!"
  union_codified_inheritance_policy_ct: "Ogni membro dell'[GetInternationalOrganizationType('union').GetName] adotta la [ShowLawName('heir_religion_law')] del [ShowSpecialStatusName('senior_partner')] se possibile"
- union_codified_inheritance_policy_dt: "#R [senior_partner_country.GetGovernment.GetHeirSelection.GetName] NON può essere applicato ad altri membri#!" 
+ union_codified_inheritance_policy_dt: "#R [senior_partner_country.GetGovernment.GetHeirSelection.GetName] NON può essere applicato ad altri membri#!"
+ union_codified_inheritance_policy_no_sp_dt: "#R Non esiste alcun [ShowSpecialStatusName('senior_partner')]#!"
 
  union_economic_law: "Economia dell'Unione"
  union_economic_law_desc: "Un monarca può governare più troni, ma i membri dell'[GetInternationalOrganizationType('union').GetName] restano economicamente molto separati. Questa legge li avvicinerà tra loro."
@@ -2239,12 +2291,13 @@
  union_cooperative_investment_policy_desc: "Le tesorerie dei membri dell'[GetInternationalOrganizationType('union').GetName] non servono alcun singolo sovrano. Sono parte della comune regalità e devono essere usate per migliorare l'infrastruttura di ogni membro."
 
  union_diplomatic_law: "Libertà Diplomatiche"
- union_diplomatic_law_desc: "Poiché l'[GetInternationalOrganizationType('union').GetName] è guidata da un unico trono, sorge la questione di come debba essere gestita la diplomazia dell'$union$.\n\n#Y Le questioni relative alla guerra, tuttavia, sono comunque nelle mani dei Ceti dei nostri partner dell'Unione.#!" 
+ union_diplomatic_law_desc: "Poiché l'[GetInternationalOrganizationType('union').GetName] è guidata da un unico trono, sorge la questione di come debba essere gestita la diplomazia dell'$union$.\n\n#Y Le questioni relative alla guerra, tuttavia, sono comunque nelle mani dei Ceti dei nostri partner dell'Unione.#!"
  union_unified_external_diplomacy_policy: "Diplomazia Estera Unificata"
- union_unified_external_diplomacy_policy_desc: "Gli affari diplomatici dell'[GetInternationalOrganizationType('union').GetName] sono centralizzati nel [ShowSpecialStatusName('senior_partner')], mentre gli altri membri sono limitati nella loro diplomazia esterna. Le questioni relative alla guerra, tuttavia, sono ancora nelle mani dei Ceti, anche se ora sono significativamente più incentivati a correre meno rischi nelle loro imprese." 
+ union_unified_external_diplomacy_policy_desc: "Gli affari diplomatici dell'[GetInternationalOrganizationType('union').GetName] sono centralizzati nel [ShowSpecialStatusName('senior_partner')], mentre gli altri membri sono limitati nella loro diplomazia esterna. Le questioni relative alla guerra, tuttavia, sono ancora nelle mani dei Ceti, anche se ora sono significativamente più incentivati a correre meno rischi nelle loro imprese."
+ union_unified_external_diplomacy_policy_limited_diplomacy_tt: "la loro unione ha un [ShowSpecialStatusName('senior_partner')] attivo e non lo sono loro"
  union_organized_diplomats_policy: "Diplomazia Organizzata"
  union_organized_diplomats_policy_desc: "I diplomatici dell'[GetInternationalOrganizationType('union').GetName] non servono un singolo vessillo, ma l'intera $union$. Ogni membro ha accesso alle loro capacità e può utilizzarle per i propri affari esteri."
-
+ 
  union_legislature_law: "Legislatura dell'Unione"
  union_legislature_law_desc: "L'amministrazione della [GetInternationalOrganizationType('union').GetName] richiede un assetto coerente. Un sistema unitario e approvato di legislazione è indispensabile per garantire la stabilità dell'$union$."
  union_aligned_legislature_policy: "Legislatura Allineata"
@@ -2252,7 +2305,7 @@
  union_aligned_legislature_policy_at: "Ogni membro dell'[GetInternationalOrganizationType('union').GetName], se possibile, adotta le [government_reforms|e] e le [policies|e] implementate dal [ShowSpecialStatusName('senior_partner')]"
  union_federal_legislature_policy: "Legislatura Federale"
  union_federal_legislature_policy_desc: "Le differenze in usi e leggi non sono un difetto, ma un tratto fondamentale dei diversi membri dell'[GetInternationalOrganizationType('union').GetName]. Per questo, la definizione delle politiche resta una responsabilità inviolabile degli stati membri, e non del sovrano."
-
+ 
  union_mutual_offense_law: "Attacco Reciproco"
  union_mutual_offense_law_desc: "Sebbene sia principalmente difensiva per natura, la forza militare dell'[GetInternationalOrganizationType('union').GetName] può essere chiamata a sostenere campagne offensive — se gli stati membri accettano tale obbligo."
  union_assured_offense_policy: "Attacco Assicurato"
@@ -2272,6 +2325,8 @@
  union_crown_unification_policy_desc: "È giunto il momento di centralizzare finalmente l'[GetInternationalOrganizationType('union').GetName]! Sotto l'occhio vigile del [ShowSpecialStatusName('senior_partner')], gli stati membri hanno accettato i processi di annessione diplomatica."
  union_federal_union_policy: "Unione Federale"
  union_federal_union_policy_desc: "L'[GetInternationalOrganizationType('union').GetName] è, prima di tutto, un'alleanza difensiva. Nessuno stato membro desidera unificare i troni in un'unica entità politica, e la sovranità di ciascun stato è protetta."
+ union_pace_of_unification_law: "Ritmo dell'Unificazione"
+ union_pace_of_unification_law_desc: "Con l'unificazione delle corone ora in corso, il [ShowSpecialStatusName('senior_partner')] può decidere con quale rapidità i [ShowSpecialStatusNamePlural('junior_partner')] vengano assorbiti in un unico regno."
 
  #Austria
  dop_rudolfine_house_rules: "Leggi di Casa Riformate"
@@ -2288,12 +2343,12 @@
  colonial_representation_law_no_desc: "Non ci è permesso partecipare al parlamento e il nostro sovrano mantiene un forte controllo sulla nostra economia."
  colonial_representation_law_yes: "Rappresentanza in Parlamento"
  colonial_representation_law_yes_desc: "Ci è stata concessa una voce nelle decisioni parlamentari del nostro territorio, limitando al contempo l'influenza del nostro sovrano."
-
+ 
  #Timurids
  mongol_law_policy: "Legge mongola"
  mongol_law_policy_desc: "Sebbene segreta al pubblico, la $mongol_law_policy$ perseguiva tre obiettivi: obbedienza al sovrano vigente, unificazione del popolo e punizione severa di ogni crimine contro lo stato. Tenendola nascosta, essa può essere modificata più facilmente per adattarsi a nuove necessità."
 
- #Mughals
+ #Mughals:
  dahsala_system: "Dahsala"
  dahsala_system_desc: "Invece di consentire lo sviluppo disomogeneo di leggi fiscali locali per la popolazione comune dell'$india$, organizzarle tutte all'interno del $dahsala_system$ ci permetterà di tassarle correttamente."
 
@@ -2409,19 +2464,19 @@
  khalsa_fauj_desc: "Solo organizzando le forze militari della [ShowLawName('khalsa_law')] in un esercito potente esse potranno adempiere al loro ruolo di protettrici del [ShowReligionName('sikhism')]."
  amrit_sanskar: "Amrit Sanskar"
  amrit_sanskar_desc: "I membri della [ShowLawName('khalsa_law')] non sono semplici combattenti, ma individui raffinati che osservano i riti di iniziazione, le regole di condotta e il codice di abbigliamento. Il prestigio della [ShowLawNameWithNoTooltip('khalsa_law')] non risiede nella forza delle armi ma nel fascino della loro purezza."
- guru_granth_sahib_guruship: "Insegnamenti di $guru_granth_sahib$" 
- guru_granth_sahib_guruship_desc: "Gli insegnamenti stabiliti nel $guru_granth_sahib$." 
+ guru_granth_sahib_guruship: "Insegnamenti di $guru_granth_sahib$"
+ guru_granth_sahib_guruship_desc: "Gli insegnamenti stabiliti nel $guru_granth_sahib$."
  eternally_living_guru: "$character_title_guru$ Immortale"
- eternally_living_guru_desc: "Il $guru_granth_sahib$ è il $character_title_guru$ eterno finale e sovrano, che sarà la luce guida per tutti i seguaci di [ShowReligionName('sikhism')]." 
+ eternally_living_guru_desc: "Il $guru_granth_sahib$ è il $character_title_guru$ eterno finale e sovrano, che sarà la luce guida per tutti i seguaci di [ShowReligionName('sikhism')]."
  divine_justice: "Giustizia Divina"
- divine_justice_desc: "Gli insegnamenti codificati nel $guru_granth_sahib$ guidano la nostra società a vivere in pace e armonia, basandosi su $sikhism_god_name$ e sulla Sua giustizia." 
+ divine_justice_desc: "Gli insegnamenti codificati nel $guru_granth_sahib$ guidano la nostra società a vivere in pace e armonia, basandosi su $sikhism_god_name$ e sulla Sua giustizia."
  unchanging_writing: "Scrittura Immutabile"
- unchanging_writing_desc: "Il $guru_granth_sahib$ fu composto nel corso di molti anni e da più di un $character_title_guru$, ma ora ha raggiunto la sua forma definitiva ed eterna. I suoi scritti non saranno più alterati in alcun modo." 
+ unchanging_writing_desc: "Il $guru_granth_sahib$ fu composto nel corso di molti anni e da più di un $character_title_guru$, ma ora ha raggiunto la sua forma definitiva ed eterna. I suoi scritti non saranno più alterati in alcun modo."
 
  tur_kanum_i_osmani: "Kanun-i-Osmani"
  tur_kanum_i_osmani_desc: "Una raccolta di legislazioni che insieme costituiscono le leggi di [GetCountry('TUR').GetName], focalizzate nel fornire stabilità interna alle numerose etnie piuttosto che nel conquistare nuove terre."
- tur_has_not_first_option_in_flavor_tur_208_event: "NON ha scelto la prima opzione nell'evento #Y $flavor_tur.208.title$#! [event|e]"
- tur_has_picked_first_option_in_flavor_tur_208_event: "Ha scelto la prima opzione nell'evento #Y $flavor_tur.208.title$#! [event|e]"
+ tur_has_not_first_option_in_flavor_tur_208_event: "NON ha scelto la prima opzione nella [decision|e] #Y $tur_kanum_i_osmani_decision.title$#!"
+ tur_has_picked_first_option_in_flavor_tur_208_event: "Ha scelto la prima opzione nella [decision|e] #Y $tur_kanum_i_osmani_decision.title$#!"
 
 #Hussite Military Reform
  reformed_hussite_armies_policy: "Tattiche Hussite Riformate"
@@ -2441,27 +2496,38 @@
  act_of_navigation_desc: "La supremazia dei nostri nemici deve essere contrastata in tutti i mercati. Attraverso direttive centrali forti e pratiche mercantilistiche preferenziali, cercheremo di garantire ai nostri mercanti un chiaro vantaggio rispetto a quelli dei nostri rivali."
 
  lit_casimir_code_policy: "Sudebnik della Lituania"
- lit_casimir_code_policy_desc: "Per combattere la mancanza di un codice legale nel paese, così come le attività criminali condotte dagli strati più alti della società, il $lit_casimir_code_policy$ fu redatto per contenere il caos e conferire maggiore potere alla [GetEstateName('crown_estate')]." 
- imperial_circles_law: "Circoli Imperiali" 
- imperial_circles_law_desc: "La legge $imperial_circles_law$ divide il [GetUniqueInternationalOrganization('hre').GetName] in regioni amministrative geografiche, ciascuna guidata da un [circle_leader|e] designato." 
- no_imperial_circles: "Nessun Circolo Imperiale" 
- no_imperial_circles_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] non ha suddivisioni geografiche formali." 
- imperial_circles_established: "Circoli Imperiali Stabiliti" 
- imperial_circles_established_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] è diviso in Circoli Imperiali, ciascuno governato da un [circle_leader|e] designato che coordina gli affari della propria regione." 
- administration_of_italian_lands_law: "Amministrazione delle Terre Italiane" 
- administration_of_italian_lands_law_desc: "Definisce come la corona governa i suoi territori italiani sulla scia delle Guerre d'Italia." 
- locations_in_italy_gain_tt: "Le [locations|e] che possediamo in [ShowRegionName('italy_region')] ottengono:" 
- italian_direct_rule_policy: "Governo Diretto" 
- italian_direct_rule_policy_desc: "Governatori nominati dalla corona vengono insediati in tutti i nostri possedimenti italiani, mantenendo una presa salda sulle città e sui centri urbani della penisola e lasciando poco spazio alla resistenza locale." 
- italian_local_autonomy_policy: "Autonomia Locale" 
- italian_local_autonomy_policy_desc: "Comuni e nobili italiani sono lasciati a governare i propri affari. Liberate dal peso della supervisione centrale, le città investono in sé stesse e si arricchiscono nel processo." 
- italian_tribute_system_policy: "Sistema Tributario" 
- italian_tribute_system_policy_desc: "Le terre italiane vengono messe al servizio della corona. Le loro botteghe intensificano la produzione e le loro leve vengono mobilitate più liberamente, incanalando la produzione della penisola nelle nostre casse e nei nostri eserciti." 
- italian_catepanate_policy: "Catepanato d'Italia" 
- italian_catepanate_policy_desc: "Governatori provenienti dall'Oriente vengono insediati nelle terre italiane, riaffermando la presenza di una potenza straniera nella penisola e attirando gradualmente i suoi popoli nell'orbita del regno." 
- italian_ordonnances_royales_policy: "Ordonnances Royales" 
- italian_ordonnances_royales_policy_desc: "La corona amplia la propria portata amministrativa emanando nuove ordinanze per i suoi possedimenti italiani, creando uffici per estendere l'autorità regia e stringere la presa del re sul dominio." 
- italian_adelantamiento_policy: "Adelantamiento d'Italia" 
- italian_adelantamiento_policy_desc: "Gli adelantados governano le città italiane in nome della corona, inserendole nelle reti commerciali iberiche e attirandole sempre più nell'orbita del regno." 
- italian_imperial_fiefs_policy: "Feudi Imperiali Italiani" 
- italian_imperial_fiefs_policy_desc: "I territori italiani sono incorporati come feudi imperiali, e le loro popolazioni sono vincolate dall'obbligo feudale. La presenza dell'Imperatore placa il malcontento locale mentre ingrossa le file delle leve imperiali." 
+ lit_casimir_code_policy_desc: "Per combattere la mancanza di un codice legale nel paese, così come le attività criminali condotte dagli strati più alti della società, il $lit_casimir_code_policy$ fu redatto per contenere il caos e conferire maggiore potere alla [GetEstateName('crown_estate')]."
+#Imperial Circles Law
+ imperial_circles_law: "Circoli Imperiali"
+ imperial_circles_law_desc: "La legge $imperial_circles_law$ divide il [GetUniqueInternationalOrganization('hre').GetName] in regioni amministrative geografiche, ciascuna guidata da un [circle_leader|e] designato."
+ no_imperial_circles: "Nessun Circolo Imperiale"
+ no_imperial_circles_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] non ha suddivisioni geografiche formali."
+ imperial_circles_established: "Circoli Imperiali Stabiliti"
+ imperial_circles_established_desc: "Il [GetUniqueInternationalOrganization('hre').GetName] è diviso in Circoli Imperiali, ciascuno governato da un [circle_leader|e] designato che coordina gli affari della propria regione."
+
+#Italian Wars Law
+ administration_of_italian_lands_law: "Amministrazione delle Terre Italiane"
+ administration_of_italian_lands_law_desc: "Definisce come la corona governa i suoi territori italiani sulla scia delle Guerre d'Italia."
+ locations_in_italy_gain_tt: "Le [locations|e] che possediamo in [ShowRegionName('italy_region')] ottengono:"
+ italian_direct_rule_policy: "Governo Diretto"
+ italian_direct_rule_policy_desc: "Governatori nominati dalla corona vengono insediati in tutti i nostri possedimenti italiani, mantenendo una presa salda sulle città e sui centri urbani della penisola e lasciando poco spazio alla resistenza locale."
+
+ italian_local_autonomy_policy: "Autonomia Locale"
+ italian_local_autonomy_policy_desc: "Comuni e nobili italiani sono lasciati a governare i propri affari. Liberate dal peso della supervisione centrale, le città investono in sé stesse e si arricchiscono nel processo."
+
+ italian_tribute_system_policy: "Sistema Tributario"
+ italian_tribute_system_policy_desc: "Le terre italiane vengono messe al servizio della corona. Le loro botteghe intensificano la produzione e le loro leve vengono mobilitate più liberamente, incanalando la produzione della penisola nelle nostre casse e nei nostri eserciti."
+
+ italian_catepanate_policy: "Catepanato d'Italia"
+ italian_catepanate_policy_desc: "Governatori provenienti dall'Oriente vengono insediati nelle terre italiane, riaffermando la presenza di una potenza straniera nella penisola e attirando gradualmente i suoi popoli nell'orbita del regno."
+
+ italian_ordonnances_royales_policy: "Ordonnances Royales"
+ italian_ordonnances_royales_policy_desc: "La corona amplia la propria portata amministrativa emanando nuove ordinanze per i suoi possedimenti italiani, creando uffici per estendere l'autorità regia e stringere la presa del re sul dominio."
+
+ italian_adelantamiento_policy: "Adelantamiento d'Italia"
+ italian_adelantamiento_policy_desc: "Gli adelantados governano le città italiane in nome della corona, inserendole nelle reti commerciali iberiche e attirandole sempre più nell'orbita del regno."
+
+ italian_imperial_fiefs_policy: "Feudi Imperiali Italiani"
+ italian_imperial_fiefs_policy_desc: "I territori italiani sono incorporati come feudi imperiali, e le loro popolazioni sono vincolate dall'obbligo feudale. La presenza dell'Imperatore placa il malcontento locale mentre ingrossa le file delle leve imperiali."
+ would_not_break_truces_tt: "NON ha una [truce|e] con il nemico"
+ would_no_stability_hit_from_high_opinion_tt: "Ha un'[opinion|e] inferiore a [GetDefine('NDiplomacy','OPINION_GOOD_RELATIONS')|=] nei confronti del nemico"

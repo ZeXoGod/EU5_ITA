@@ -17,7 +17,6 @@
  laborers_desc: "Rappresentano le persone che svolgono lavori manuali nelle nostre [towns_and_cities|e] e [rural_locations|e]. Lavorano la terra per creare, coltivare e raccogliere le [raw_materials|e] che costituiscono la spina dorsale del Paese, oppure lavorano come manodopera non qualificata nelle fabbriche."
  soldiers_desc: "Rappresentano la gente comune che forniscono le [manpower|e] per i nostri [armies|e] e [garrisons|e] e i [sailors|e] per le nostre [navies|e]."
 
-
  
  #
  nobles_literacy_impact: "[literacy|e] Media dei [ShowPopTypeName('nobles')]"
@@ -53,5 +52,6 @@
  POP_TYPE_SCALE_FOR_ASS_CON_PRO: "[Concept('assimilates', 'Assimilato')|e] e [Concept('converts', 'Convertito')|e] al $VAL|2%V$ della velocità."
  POP_TYPE_SCALE_FOR_PROMOTE_PRO: "[Concept('promotes', 'Promosso')|e] al $VAL|2%V$ della velocità."
  POP_TYPE_SCALE_FOR_MIGRATE_PRO: "[Concept('migrates', 'Migra')|e] al $VAL|2%V$ della velocità."
- POP_TYPE_SCALE_FOR_PROMOTE_PRO_BY_TYPE: "[POP_TYPE.GetName] [Concept('promotes', 'Promossi')|e] al $SPEED|2%V$ della velocità..\n" 
- 
+ POP_TYPE_SCALE_FOR_PROMOTE_PRO_BY_TYPE: "[POP_TYPE.GetName] [Concept('promotes', 'Promossi')|e] al $SPEED|2%V$ della velocità..\n"
+ POP_TYPE_SCALE_FOR_PROMOTE_PRO_BY_TYPE_MODIFIED: "[POP_TYPE.GetName] [promote|e] a velocità #TOOLTIP:$BREAKDOWN_TAG$ $SPEED|2%L$#!.\n"
+

@@ -1,12 +1,13 @@
 ﻿l_english:
  reformation_is_enabled_tt: "La #Y Riforma#! è iniziata"
  casus_belli_forbids_non_french_location_conquest_tt: "L'[war_goal|e] della 'Guerra dei Cent'Anni' permette di conquistare territori solo all'interno della [region|e] [ShowRegionName('france_region')] o territori posseduti da uno [subject|e] di [GetCountry('FRA').GetNameWithNoTooltip] o [GetCountry('ENG').GetNameWithNoTooltip]"
- superiority_lat_reconquest_reconquest_valid_locations: "Può acquisire solo terreni situati all'interno del [ShowScriptedGeographyName('frankokratia_geography')] con [ShowCasusBelliName('cb_lat_reconquest')]" 
+ superiority_lat_reconquest_reconquest_valid_locations: "Può acquisire solo terreni situati all'interno del [ShowScriptedGeographyName('frankokratia_geography')] con [ShowCasusBelliName('cb_lat_reconquest')]"
  casus_belli_forbids_location_conquest_tt: "Questa guerra ci vieta di conquistare qualsiasi [location|e] direttamente"
  casus_belli_forbids_normal_subjugation_tt: "Questa guerra ci vieta di [subjugate|e] normalmente il nostro nemico"
  casus_belli_forbids_normal_subjugation_tributary_tt: "$casus_belli_forbids_normal_subjugation_tt$\nPer rendere uno stato [ShowSubjectTypeName('tributary')], usa il [peace_treaty|e] [ShowPeaceTreatyTypeName('force_tributary')]"
- has_enabled_hre_treasury_tt: "[GetUniqueInternationalOrganization('hre').GetName] ha sbloccato il Tesoro Imperiale avendo promulgato [ShowPolicyName('only_treasury_payment')] oppure [ShowPolicyName('complete_imperial_contribution')]" 
-
+ has_enabled_hre_treasury_tt: "[GetUniqueInternationalOrganization('hre').GetName] ha sbloccato il Tesoro Imperiale avendo promulgato [ShowPolicyName('only_treasury_payment')] oppure [ShowPolicyName('complete_imperial_contribution')]"
+ country_has_no_other_copy_of_building_tt: "Non possiede già questo edificio in un'altra [location|e]"
+ #DYNAMIC TRIGGER LOC#
  INTERNATIONAL_ORGANIZATION_HAS_LOCKED_LAW: "La [law|e] [TARGET_LAW.GetName] è bloccata e non può più essere modificata"
  NOT_INTERNATIONAL_ORGANIZATION_HAS_LOCKED_LAW: "La [law|e] [TARGET_LAW.GetName] NON è bloccata e può essere modificata"
  THIRD_INTERNATIONAL_ORGANIZATION_HAS_LOCKED_LAW: "La [law|e] [TARGET_LAW.GetName] [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_DEL')][INTERNATIONAL_ORGANIZATION.GetName] è bloccata e non può più essere modificata"
@@ -279,7 +280,7 @@
  NOT_FIRST_HAS_LOCKED_RELIGIOUS_ASPECT_TRIGGER: "NON abbiamo bloccato l'[religious_aspect|e] [RELIGIOUS_ASPECT.GetName]"
  THIRD_HAS_LOCKED_RELIGIOUS_ASPECT_TRIGGER: "[RELIGION.GetName] ha bloccato l'[religious_aspect|e] [RELIGIOUS_ASPECT.GetName]"
  NOT_THIRD_HAS_LOCKED_RELIGIOUS_ASPECT_TRIGGER: "[RELIGION.GetName] NON ha bloccato l'[religious_aspect|e] [RELIGIOUS_ASPECT.GetName]"
- 
+
  HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "Ha una politica di [ShowLawName('heir_religion_law')] compatibile con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  NOT_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "NON ha una politica di [ShowLawName('heir_religion_law')] compatibile con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  FIRST_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "Abbiamo una politica di [ShowLawName('heir_religion_law')] compatibile con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
@@ -398,7 +399,6 @@
  NOT_FIRST_HRE_CAN_SELECT_ADJACENT_REFORM_LEVEL_LOW: "L'[international_organization|e] NON ha un [hre_law_level|e] per la [law|e] [TARGET_LAW.GetName] di $VALUE|Y0$ o inferiore"
  THIRD_HRE_CAN_SELECT_ADJACENT_REFORM_LEVEL_LOW: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] ha un [hre_law_level|e] per la [law|e] [TARGET_LAW.GetName] di $VALUE|Y0$ o inferiore"
  NOT_THIRD_HRE_CAN_SELECT_ADJACENT_REFORM_LEVEL_LOW: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_IL')|U][INTERNATIONAL_ORGANIZATION.GetName] NON ha un [hre_law_level|e] per la [law|e] [TARGET_LAW.GetName] di $VALUE|Y0$ o inferiore"
-
 
  LOCATION_AND_OWNER_CAN_BUILD: "[LOCATION.GetOwner.GetName] può costruire [BUILDING_TYPE.GetName]"
  NOT_LOCATION_AND_OWNER_CAN_BUILD: "[LOCATION.GetOwner.GetName] NON può costruire [BUILDING_TYPE.GetName]"
@@ -598,6 +598,13 @@
  THIRD_WAS_RECENTLY_UNDER_INTERDICT_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è stato posto sotto [ShowModifier('interdict')] negli ultimi #Y 30 anni#!"
  NOT_THIRD_WAS_RECENTLY_UNDER_INTERDICT_TRIGGER: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] NON è stato posto sotto [ShowModifier('interdict')] negli ultimi #Y 30 anni#!"
 
+ HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "Ha preso parte in modo significativo all'attuale guerra santa"
+ NOT_HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "NON ha preso parte in modo significativo all'attuale guerra santa"
+ FIRST_HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "Abbiamo preso parte in modo significativo all'attuale guerra santa"
+ NOT_FIRST_HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "NON abbiamo preso parte in modo significativo all'attuale guerra santa"
+ THIRD_HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "[COUNTRY.GetName] ha preso parte in modo significativo all'attuale guerra santa"
+ NOT_THIRD_HAS_MEANINGFUL_HOLY_WAR_PARTICIPATION_TRIGGER: "[COUNTRY.GetName] NON ha preso parte in modo significativo all'attuale guerra santa"
+
  HAS_ACCESS_TO_GOD_HOLY_SITE: "Ha accesso a un [holy_site|e] di [TARGET_GOD.GetName]"
  NOT_HAS_ACCESS_TO_GOD_HOLY_SITE: "NON ha accesso a un [holy_site|e] di [TARGET_GOD.GetName]"
  FIRST_HAS_ACCESS_TO_GOD_HOLY_SITE: "Abbiamo accesso a un [holy_site|e] di [TARGET_GOD.GetName]"
@@ -657,14 +664,52 @@
  FIRST_CAN_CREATE_SUBJECT_ALLIANCE: "Il nostro status diplomatico permette la creazione di un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  NOT_FIRST_CAN_CREATE_SUBJECT_ALLIANCE: "Il nostro status diplomatico NON permette la creazione di un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  THIRD_CAN_CREATE_SUBJECT_ALLIANCE: "Lo status diplomatico [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] permette la creazione di un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
- NOT_THIRD_CAN_CREATE_SUBJECT_ALLIANCE: "Lo status diplomatico [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] NON permette la creazione di un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]" 
- CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "A [cabinet_member|e] is already performing the same [cabinet_action|e] su questo obiettivo"
+ NOT_THIRD_CAN_CREATE_SUBJECT_ALLIANCE: "Lo status diplomatico [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] NON permette la creazione di un'[alliance|e] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
+
+ CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Un [cabinet_member|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  NOT_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Nessun [cabinet_member|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  FIRST_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Uno dei nostri [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  NOT_FIRST_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Nessuno dei nostri [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Uno dei loro [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
  NOT_THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "Nessuno dei loro [cabinet_members|e] sta già eseguendo la stessa [cabinet_action|e] su questo obiettivo"
- CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e]" 
- NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e]" 
- CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y affine#!" 
- NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y affine#!" 
+
+ CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e]"
+ NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e]"
+
+ CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "Deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y affine#!"
+ NOT_CAN_CHANGE_PRIMARY_CULTURE_MUST_MATCH_OVERLORD_OR_KINDRED_CULTURE: "NON deve essere la [primary_culture|e] del [overlord|e] o una cultura #Y affine#!"
+
+ HAJJ_CARAVAN_ROUTES_VIA_DAMASCUS_TRIGGER: "La capitale si trova lungo la rotta di Damasco per la Mecca"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_DAMASCUS_TRIGGER: "La capitale NON si trova lungo la rotta di Damasco per la Mecca"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_DAMASCUS_TRIGGER: "La nostra capitale si trova lungo la rotta di Damasco per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_DAMASCUS_TRIGGER: "La nostra capitale NON si trova lungo la rotta di Damasco per la Mecca"
+
+ HAJJ_CARAVAN_ROUTES_VIA_BAGHDAD_TRIGGER: "La capitale si trova lungo la rotta di Baghdad per la Mecca"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_BAGHDAD_TRIGGER: "La capitale NON si trova lungo la rotta di Baghdad per la Mecca"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_BAGHDAD_TRIGGER: "La nostra capitale si trova lungo la rotta di Baghdad per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_BAGHDAD_TRIGGER: "La nostra capitale NON si trova lungo la rotta di Baghdad per la Mecca"
+
+ HAJJ_CARAVAN_ROUTES_VIA_CAIRO_TRIGGER: "La capitale si trova lungo la rotta del Cairo per la Mecca"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_CAIRO_TRIGGER: "La capitale NON si trova lungo la rotta del Cairo per la Mecca"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_CAIRO_TRIGGER: "La nostra capitale si trova lungo la rotta del Cairo per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_CAIRO_TRIGGER: "La nostra capitale NON si trova lungo la rotta del Cairo per la Mecca"
+
+ HAJJ_CARAVAN_ROUTES_VIA_JEDDAH_TRIGGER: "La capitale si trova lungo la rotta di Jeddah per la Mecca"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_JEDDAH_TRIGGER: "La capitale NON si trova lungo la rotta di Jeddah per la Mecca"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_JEDDAH_TRIGGER: "La nostra capitale si trova lungo la rotta di Jeddah per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_JEDDAH_TRIGGER: "La nostra capitale NON si trova lungo la rotta di Jeddah per la Mecca"
+
+ HAJJ_CARAVAN_ROUTES_VIA_BAB_EL_MANDEB_TRIGGER: "La capitale si trova lungo la rotta di Bab el-Mandeb per la Mecca"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_BAB_EL_MANDEB_TRIGGER: "La capitale NON si trova lungo la rotta di Bab el-Mandeb per la Mecca"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_BAB_EL_MANDEB_TRIGGER: "La nostra capitale si trova lungo la rotta di Bab el-Mandeb per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_BAB_EL_MANDEB_TRIGGER: "La nostra capitale NON si trova lungo la rotta di Bab el-Mandeb per la Mecca"
+
+ HAJJ_CARAVAN_ROUTES_VIA_ARABIA_TRIGGER: "La capitale si trova in Arabia"
+ NOT_HAJJ_CARAVAN_ROUTES_VIA_ARABIA_TRIGGER: "La capitale NON si trova in Arabia"
+ FIRST_HAJJ_CARAVAN_ROUTES_VIA_ARABIA_TRIGGER: "La nostra capitale si trova in Arabia"
+ NOT_FIRST_HAJJ_CARAVAN_ROUTES_VIA_ARABIA_TRIGGER: "La nostra capitale NON si trova in Arabia"
+
+ HAJJ_CARAVAN_CAPITAL_HAS_ROUTE_TO_MECCA_TRIGGER: "La capitale si trova lungo una rotta consolidata per la Mecca"
+ NOT_HAJJ_CARAVAN_CAPITAL_HAS_ROUTE_TO_MECCA_TRIGGER: "La capitale NON si trova lungo una rotta consolidata per la Mecca"
+ FIRST_HAJJ_CARAVAN_CAPITAL_HAS_ROUTE_TO_MECCA_TRIGGER: "La nostra capitale si trova lungo una rotta consolidata per la Mecca"
+ NOT_FIRST_HAJJ_CARAVAN_CAPITAL_HAS_ROUTE_TO_MECCA_TRIGGER: "La nostra capitale NON si trova lungo una rotta consolidata per la Mecca"

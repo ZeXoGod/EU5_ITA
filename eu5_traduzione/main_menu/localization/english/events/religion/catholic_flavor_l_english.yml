@@ -120,6 +120,18 @@
  catholic_flavor.1002.desc: "Il [GetInternationalOrganization('catholic_church').GetLeaderTitle] purtroppo ha respinto la nostra richiesta di concederci una [ShowBuildingTypeName('seat_of_cardinal')]. Non possiamo far altro che sperare in una maggiore benevolenza futura."
  catholic_flavor.1002.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
 
+ catholic_flavor.1003.title: "Un Candidato alla Santità"
+ catholic_flavor.1003.desc: "[canonization_proposer.GetName] ci supplica di canonizzare [canonization_candidate.GetName], lodando [canonization_candidate.GetHerHis] pietà e devozione alla fede."
+ catholic_flavor.1003.a: "Concediamo loro la santità."
+ catholic_flavor.1003.b: "La loro pietà non giustifica un tale onore."
+
+ opinion_venerated_folk_saint_in_defiance: "Venerazione di un Santo Popolare per Sfida"
+
+ catholic_flavor.1004.title: "Una Petizione Respinta"
+ catholic_flavor.1004.desc: "Il [GetInternationalOrganization('catholic_church').GetLeaderTitle] ha rifiutato di canonizzare [canonization_candidate.GetName]. Il nostro [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] è deluso, sebbene alcuni tra il popolo sussurrino che il giudizio sia stato un errore."
+ catholic_flavor.1004.a: "Sottomettiamoci al giudizio del Papa."
+ catholic_flavor.1004.b: "Veneriamolo comunque come santo popolare."
+
  catholic_flavor.9000.title: "La [ShowGovernmentReformNameWithNoTooltip('papacy_reform')]"
  catholic_flavor.9000.desc: "A causa di circostanze fuori dal nostro controllo, abbiamo perso la [ShowGovernmentReformName('papacy_reform')]. Questa situazione è inaccettabile e dobbiamo immediatamente reintegrare il [GetInternationalOrganization('catholic_church').GetLeaderTitle] come nostro sovrano."
  catholic_flavor.9000.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

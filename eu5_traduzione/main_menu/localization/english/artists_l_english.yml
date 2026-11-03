@@ -1,13 +1,20 @@
 ﻿l_english:
+ holy_relic: "Reliquia Sacra"
+ holy_relic_desc: "Una reliquia sacra recuperata in Terra Santa. La sua presenza santifica il nostro regno e attira i fedeli alla nostra causa."
+ holy_relic_name_0: "Reliquia di $ORIGIN$"
+ holy_relic_name_1: "Sacra Reliquia di $ORIGIN$"
+ holy_relic_name_2: "Reliquia Sacra di $ORIGIN$"
+ holy_relic_name_3: "Reliquie di $ORIGIN$"
  #
  # Artist Types
+ ARTIST_MODIFIER_SOURCE: "[CHARACTER.GetName] ([ARTIST.GetName])"
  ARTIST_TYPE_NAME_: "(dilettante)"
  ARTIST_TYPE_DESC_: "Non è un artista professionista."
 
 
  ARTIST_TYPE_NAME_painter: "Pittore"
  ARTIST_TYPE_DESC_painter: "Questo tipo di artista crea immagini raffigurando il mondo o attingendo unicamente alla propria immaginazione. Lo fa applicando pigmenti, carbone o altre fonti di colore su una superficie solida come una tela o un muro. Pittori celebri dell'epoca includono Leonardo da Vinci, Rembrandt e Raffaello."
-
+ 
  ARTIST_TYPE_NAME_sculptor: "Scultore"
  ARTIST_TYPE_DESC_sculptor: "Uno scultore modella argilla, pietra, marmo, legno e altri materiali per trasformarli in opere d'arte. Scultori celebri dell'epoca includono Donatello, Michelangelo e Gianlorenzo Bernini."
 
@@ -16,16 +23,16 @@
 
  ARTIST_TYPE_NAME_scientist: "Scienziato"
  ARTIST_TYPE_DESC_scientist: "Una persona di sapere e uno studioso del pensiero, che mette in discussione aspetti della natura dati per scontati in passato. Scienziati celebri dell'epoca includono Isaac Newton, Leonardo da Vinci e Joseph Fourier."
-
+  
  ARTIST_TYPE_NAME_composer: "Compositore"
  ARTIST_TYPE_DESC_composer: "È un artista che crea musica, da un mottetto a una sinfonia. Compositori celebri dell'epoca includono Johann Sebastian Bach, Wolfgang Amadeus Mozart e Carl Michael Bellman."
-
+ 
  ARTIST_TYPE_NAME_writer: "Scrittore"
  ARTIST_TYPE_DESC_writer: "Uno scrittore è un artista capace di comporre qualsiasi cosa, da una poesia a un romanzo, fino a intere opere teatrali. Scrittori celebri dell'epoca includono William Shakespeare e molti altri di minor talento."
-
+ 
  ARTIST_TYPE_NAME_architect: "Architetto"
  ARTIST_TYPE_DESC_architect: "Gli architetti sono gli artisti che progettano gli edifici che danno bellezza alle nostre città. Ciò include anche monumenti, dimore e palazzi. Architetti celebri dell'epoca includono Mimar Sinan, Christopher Wren e Michelangelo."
-
+ 
  ARTIST_TYPE_NAME_philosopher: "Filosofo"
  ARTIST_TYPE_DESC_philosopher: "Questo tipo di artista definisce la realtà e aiuta a plasmare la nostra comprensione dell'esistenza. Filosofi celebri dell'epoca includono René Descartes, Immanuel Kant e Baruch Spinoza."
 
@@ -44,60 +51,60 @@
  # Work of Arts
  painting: "Dipinto"
  painting_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
- painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$"
- painting_name_1: "$ADJECTIVE|U$ $FEMALE|U$"
- painting_name_scandinavian_language_0: "Vackra Drottning $FEMALE|U$"
-
+ painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$" 
+ painting_name_1: "$ADJECTIVE|U$ $FEMALE|U$" 
+ painting_name_scandinavian_language_0: "Vackra Drottning $FEMALE|U$" 
+ #
  miniature_painting: "Miniatura"
  miniature_painting_desc: "Le miniature sono piccole illustrazioni usate per decorare manoscritti e libri. Sebbene molte siano integrate nelle opere degli scrittori, alcune miniature sono create indipendentemente da qualsiasi testo, diventando così opere d'arte autonome."
  miniature_painting_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
- miniature_painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$"
-
+ miniature_painting_name_0: "$FIRST_NOUN|U$ o $SECOND_NOUN|U$" 
+ #
  icon: "Icona"
  icon_name_0: "L'Icona del $ADJECTIVE|U$ $SAINT|U$"
  icon_name_1: "L'Icona di $SAINT|U$ il $ADJECTIVE|U$"
-
+ #
  scripture: "Scrittura"
  scripture_name_0: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
  scripture_name_1: "Libro $ADJECTIVE|U$"
  scripture_name_2: "Scrittura $ADJECTIVE|U$"
  scripture_name_3: "Vangelo $ADJECTIVE|U$"
-
+ #
  statue: "Statua"
  statue_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
-
+ #
  motet: "Mottetto"
  motet_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
-
+ #
  symphony: "Sinfonia"
  symphony_name: "$NUM$$SUFFIX$ Sinfonia di $LASTNAME|U$"
-
+ #
  hymnal: "Innario"
  hymnal_name: "$NUM$$SUFFIX$ Innario di $LASTNAME|U$"
-
+ #
  novel: "Romanzo"
  novel_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
-
+ #
  chronicle: "Cronaca"
  chronicle_name_0: "Le Cronache di $ORIGIN$"
  chronicle_name_1: "Le Cronache $ADJECTIVE|U$"
  chronicle_name_2: "Gli Annali di $ORIGIN$"
  chronicle_name_3: "Gli Annali $ADJECTIVE|U$"
-
+ #
  poem: "Poesia"
  poem_name_0: "Lamentazione per $FIRST_NOUN|U$"
  poem_name_1: "$ADJECTIVE|U$ $FEMALE|U$"
  poem_name_2: "Ode a $FIRST_NOUN|U$"
-
+ #
  play: "Opera Teatrale"
  play_name: "$FIRST_NOUN|U$ $ADJECTIVE|U$"
-
+ #
  monument: "Monumento"
  monument_name: "La Colonna di $FIRST_NOUN|U$ $ADJECTIVE|U$"
-
+ #
  mansion: "Magione"
  mansion_name: "La Magione $ADJECTIVE|U$ di $ORIGIN|U$"
-#
+ #
  palace: "Palazzo"
  palace_name: "Il Palazzo $ADJECTIVE|U$ di $ORIGIN|U$"
  #
@@ -105,7 +112,7 @@
  temple_tower_name: "La $temple_tower$ $ADJECTIVE|U$ di $ORIGIN|U$"
  #
  treatise: "Trattato"
- treatise_name_0: "Un'Analisi del $ADJECTIVE|U$"
+ treatise_name_0: "Un'Analisi del $ADJECTIVE|U$" 
  treatise_name_1: "Critica di $FIRST_NOUN|U$ $ADJECTIVE|U$"
  treatise_name_2: "Lode a $FIRST_NOUN|U$"
  treatise_name_3: "Elogio a $FIRST_NOUN|U$"
@@ -186,9 +193,9 @@
  WORK_OF_ART_LOCATION_MODS: "In ogni [location|e], se questa è la migliore [work_of_art|e] presente, si applica quanto segue:"
  WORK_OF_ART_MODIFIER_SCALE: "Tutti i modificatori sono scalati di $VAL|%+=Y$:"
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Da [art_quality|e]: $VAL|%+=Y$"
- WORK_OF_ART_MODIFIER_SCALE_DESC: "I benefici forniti da un [WORK_OF_ART_TYPE.GetName] sono influenzati da questi modificatori:" 
+ WORK_OF_ART_MODIFIER_SCALE_DESC: "I benefici forniti da un [WORK_OF_ART_TYPE.GetName] sono influenzati da questi modificatori:"
  WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Dal [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!"
- CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y].\nLo sviluppo dell'[work_of_art|e] dipende dal livello di [court_maintenance|e]"
+ CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] sta lavorando a una nuova [CHARACTER.GetArtInProgress.GetName], ed è al [CHARACTER.GetArtProgress|%0Y].\nLo sviluppo dell'[work_of_art|e] dipende dal livello di [cultural_maintenance|e]."
  CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]"
  CHAR_WORK_OF_ART_HEADER_S: "Ha creato un'opera chiamata"
  CHAR_WORK_OF_ART_HEADER_P: "Ha creato le seguenti opere"
@@ -205,19 +212,19 @@
  stonehenge_desc: "Situato nella piana di Salisbury in Inghilterra, Stonehenge è un monumento preistorico risalente approssimativamente tra il 3000 e il 2000 a.C. Composto da massicci monoliti disposti in forma circolare, probabilmente serviva come sito cerimoniale o astronomico. La sua costruzione richiese un notevole coordinamento e il trasporto di pietre da cave distanti. Questo complesso misterioso rimase poco considerato per la maggior parte del nostro periodo."
  colosseum_of_rome: "Il Colosseo di $ORIGIN$"
  colosseum_of_rome_desc: "Completato nell'80 d.C. sotto l'imperatore Tito, il Colosseo di Roma fu il più grandioso anfiteatro dell'Impero Romano. Poteva ospitare fino a 50.000 spettatori per combattimenti gladiatori, spettacoli pubblici e perfino battaglie navali simulate. Costruito in pietra e cemento, rappresenta un esempio sublime dell'ingegneria romana e della sua organizzazione sociale. Nel Medioevo fu spesso utilizzato come cava."
- parthenon_of_athens: "Il Partenone di $ORIGIN$"
- parthenon_of_athens_desc: "Costruito tra il 447 e il 432 a.C. sull'Acropoli di Atene, il Partenone era dedicato alla dea Atena, patrona della città. Progettato dagli architetti Ictino e Callicrate sotto la supervisione dello scultore Fidia, segue gli ideali dell'architettura greca classica. Le sue proporzioni e decorazioni scultoree riflettevano orgoglio civico e devozione religiosa. Nel Medioevo fu usato sia come chiesa sia come fortezza."
+ parthenon_of_athens_work_of_art: "Il Partenone di $ORIGIN$"
+ parthenon_of_athens_work_of_art_desc: "Costruito tra il 447 e il 432 a.C. sull'Acropoli di Atene, il Partenone fu dedicato alla dea Atena, divinità patrona della città. Progettato dagli architetti Ictino e Callicrate sotto la supervisione dello scultore Fidia, il suo disegno segue gli ideali dell'architettura classica greca. Le proporzioni del tempio e la sua decorazione scultorea rispecchiavano tanto l'orgoglio civico quanto la devozione religiosa. Durante il Medioevo fu utilizzato sia come chiesa che come fortezza."
  pyramid_art_key: "Piramidi di $ORIGIN$"
  pyramid_art_key_desc: "Costruite con milioni di blocchi di calcare durante la IV dinastia egizia (circa 2600–2500 a.C.), le Piramidi di Giza fungevano da tombe reali per i faraoni Cheope, Chefren e Micerino. La Grande Piramide di Cheope, la maggiore, rimase la struttura più alta del mondo per oltre 3.000 anni."
  sanchi_stupa: "Stupa di Sanchi"
  sanchi_stupa_desc: "Il Grande Stupa di Sanchi, nell'India centrale, risale al III secolo a.C. e fu originariamente commissionato dall'imperatore Aśoka, rimanendo in uso fino al XIII secolo d.C. È una delle più antiche strutture in pietra dell'India e un monumento fondamentale dell'arte e dell'architettura buddhista primitiva. La cupola simboleggia l'universo, mentre i portali scolpiti raffigurano la vita del Buddha. Diventò un importante sito di pellegrinaggio e influenzò l'architettura buddhista di tutta l'Asia."
  leshan_giant_buddha: "Grande Buddha di Lèshān"
  leshan_giant_buddha_desc: "Scolpito in una parete rocciosa nel Sichuan, in Cina, il Grande Buddha di Lèshān risale all'VIII secolo durante la dinastia Tang. Con i suoi 71 metri d'altezza, è il più grande Buddha in pietra del mondo. L'opera fu iniziata da un monaco di nome Hǎi Tōng, che sperava di placare le acque turbolente dei fiumi sottostanti."
- teotihuacan_temple: "Complesso templare di $ORIGIN$"
- teotihuacan_temple_desc: "Il Tempio del Sole a Teotihuacan, costruito intorno al 200 d.C., è una delle maggiori piramidi precolombiane delle Americhe. Situato nel cuore dell'antica città presso l'attuale Città del Messico, era allineato con fenomeni astronomici e svolgeva un ruolo centrale nella vita rituale mesoamericana. Costruito in pietra vulcanica e rivestito in stucco, simboleggiava il potere politico e religioso di Teotihuacan, tanto da influenzare civiltà successive, come gli Aztechi, che lo veneravano come luogo sacro."
+ teotihuacan_temple_work_of_art: "Complesso del Tempio di $ORIGIN$"
+ teotihuacan_temple_work_of_art_desc: "Il Templo del Sole a Teotihuacan, costruito intorno al 200 d.C., è una delle più grandi piramidi precolombiane delle Americhe. Situato nel cuore dell'antica città vicino all'odierna Città del Messico, era allineato con fenomeni astronomici e svolgeva un ruolo centrale nella vita rituale mesoamericana. Costruito in pietra vulcanica e rivestito di stucco, serviva a mostrare il predominio politico e religioso di Teotihuacan, ed era così maestoso da influenzare le civiltà successive, inclusi gli Aztechi, che lo veneravano come terra sacra."
  # Unique art keys
  de_jure_belli_ac_pacis: "De Jure Belli Ac Pacis"
- book_of_kells: "Libro di Kells" 
+ book_of_kells: "Libro di Kells"
  bayeux_tapestry_key: "Arazzo di $bayeux$"
  two_icons_of_archangel_michael: "Le Due Icone dell'Arcangelo Michele"
  vladislav_hall: "Sala Vladislav"
@@ -225,6 +232,169 @@
  work_of_art_mons_meg: "Mons Meg"
  the_prince: "Il Principe"
  stone_of_scone: "Pietra di Scone"
+ relic_true_cross_found: "La Vera Croce"
+ relic_holy_lance_found: "La Sacra Lancia di Antiochia"
+ relic_holy_shroud_found: "La Sacra Sindone"
+ relic_holy_nail_found_1: "Un Chiodo della Crocifissione"
+ relic_holy_nail_found_2: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_3: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_4: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_5: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_6: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_7: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_8: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_9: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_10: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_11: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_12: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_13: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_14: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_15: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_16: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_17: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_18: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_19: "$relic_holy_nail_found_1$"
+ relic_holy_nail_found_20: "$relic_holy_nail_found_1$"
+ relic_true_cross_fragment_found_1: "Un Frammento della Vera Croce"
+ relic_true_cross_fragment_found_2: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_3: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_4: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_5: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_6: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_7: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_8: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_9: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_10: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_11: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_12: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_13: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_14: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_15: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_16: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_17: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_18: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_19: "$relic_true_cross_fragment_found_1$"
+ relic_true_cross_fragment_found_20: "$relic_true_cross_fragment_found_1$"
+ relic_regional_saint_bones_found_1: "Le Ossa di un Santo Dimenticato"
+ relic_regional_saint_bones_found_2: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_3: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_4: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_5: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_6: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_7: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_8: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_9: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_10: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_11: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_12: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_13: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_14: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_15: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_16: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_17: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_18: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_19: "$relic_regional_saint_bones_found_1$"
+ relic_regional_saint_bones_found_20: "$relic_regional_saint_bones_found_1$"
+ relic_baptist_head_found_1: "Una Testa di San Giovanni Battista"
+ relic_baptist_head_found_2: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_3: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_4: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_5: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_6: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_7: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_8: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_9: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_10: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_11: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_12: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_13: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_14: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_15: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_16: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_17: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_18: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_19: "$relic_baptist_head_found_1$"
+ relic_baptist_head_found_20: "$relic_baptist_head_found_1$"
+ relic_virgin_milk_found_1: "Una Fiala del Latte della Vergine"
+ relic_virgin_milk_found_2: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_3: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_4: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_5: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_6: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_7: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_8: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_9: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_10: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_11: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_12: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_13: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_14: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_15: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_16: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_17: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_18: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_19: "$relic_virgin_milk_found_1$"
+ relic_virgin_milk_found_20: "$relic_virgin_milk_found_1$"
+ relic_holy_thorn_found_1: "Una Spina della Corona di Spine"
+ relic_holy_thorn_found_2: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_3: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_4: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_5: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_6: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_7: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_8: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_9: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_10: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_11: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_12: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_13: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_14: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_15: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_16: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_17: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_18: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_19: "$relic_holy_thorn_found_1$"
+ relic_holy_thorn_found_20: "$relic_holy_thorn_found_1$"
+ relic_holy_chalice_found_1: "Un Sacro Calice"
+ relic_holy_chalice_found_2: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_3: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_4: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_5: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_6: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_7: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_8: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_9: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_10: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_11: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_12: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_13: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_14: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_15: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_16: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_17: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_18: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_19: "$relic_holy_chalice_found_1$"
+ relic_holy_chalice_found_20: "$relic_holy_chalice_found_1$"
+ relic_titulus_crucis_found_1: "Un Titulus Crucis"
+ relic_titulus_crucis_found_2: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_3: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_4: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_5: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_6: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_7: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_8: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_9: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_10: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_11: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_12: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_13: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_14: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_15: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_16: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_17: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_18: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_19: "$relic_titulus_crucis_found_1$"
+ relic_titulus_crucis_found_20: "$relic_titulus_crucis_found_1$"
  cross_of_neith: "Croce di Neith"
  llywelyns_coronet: "Coroncina di Llywelyn"
  st_augustine_gospels: "Vangeli di Sant'Agostino"
@@ -253,10 +423,10 @@
  annales_ianuenses: "Annales Ianuenses"
  doges_palace_genoa: "Palazzo Ducale di Genova"
  moreneta_key: "Vergine di Montserrat"
- basilica_pilar: "Basilica del Pilar"
+ zaragoza_basilica_del_pilar_work_of_art: "Basilica del Pilar"
  swe_makalos: "Makalös, Palazzo De la Gardie"
  poblet_abbey: "Abbazia di Poblet"
- montserrat_abbey: "Abbazia di Santa Maria di Montserrat"
+ montserrat_work_of_art: "Abbazia di Santa Maria di Montserrat"
  ripoll_abbey: "Abbazia di Ripoll"
  palma_cathedral: "Cattedrale di Palma"
  tirant_blanch: "Tirant Lo Blanch"
@@ -275,7 +445,7 @@
  djenne_mosque: "Grande Moschea di Djenné"
  sankore_madrasa: "Madrasa di Sankoré"
  djinguereber_mosque: "Moschea di Djinguereber"
- lalibela_church_st_george: "San Giorgio a Lalibela"
+ lalibela_church_st_george_work_of_art: "San Giorgio di Lalibela"
  king_ezana_stele: "Stele del Re Ezana"
  lalibela_cross: "Croce di Lalibela"
  kebra_nagast: "Kebra Nagast"
@@ -324,7 +494,7 @@
  yata_no_kagami: "Yata no Kagami"
  yasakani_no_magatama: "Yasakani no Magatama"
  palais_des_papes: "Palazzo dei Papi"
- holy_trinity_st_sergius_lavra: "Lavra della Trinità di San Sergio"
+ trinity_lavra_st_sergius_work_of_art: "Lavra della Trinità di San Sergio"
  st_sergius_relics: "Le Venerate Reliquie di San Sergio di Radonež"
  holy_trinity: "Santa Trinità"
  uspensky_sobor: "Cattedrale dell'Assunzione"
@@ -356,7 +526,6 @@
  the_lusiads: "Os Lusíadas"
  convent_christ: "Convento di Cristo"
  alcobaca_monastery: "Monastero di Alcobaça"
- batalha_monastery: "Monastero di Batalha"
  saint_mark_horses: "Cavalli di San Marco"
  saint_mark_basilica: "Basilica di San Marco"
  bucentaur: "Bucintoro"
@@ -409,7 +578,7 @@
  gaude_mater_polonia_desc: "#italic Gaude Mater Polonia#! è un innario composto nel 1253 da Vincenzo di Kielcza. È dedicato a San Stanislao di Szczepanów, divenuto martire dopo essere stato catturato e ucciso su ordine del re Boleslao II. Servì come uno degli inni non ufficiali della Polonia medievale e, più tardi, della Confederazione Polacco-Lituana."
  pol_annals_of_poland: "Annali di Polonia"
  new_chemical_light: "Nuova Luce Chimica"
- pol_brief_discussion: "Breve Discussione tra Tre Persone: un Signore, un Capo Comune e un Sacerdote"
+ pol_brief_discussion: "Breve Discussione tra Tre Persone; un Signore, un Capo Comune e un Sacerdote"
  pol_royal_column: "Colonna Reale"
  pol_threnodies: "Lamenti"
  revolution_spheres: "Sulle Rivoluzioni delle Sfere Celesti"
@@ -476,6 +645,9 @@
  tablas_alfonsies: "Tablas Alfonsíes"
  libros_saber_astrologia: "Libros del Saber de Astrología"
  libro_de_los_juegos: "Libro de los Juegos"
+ santiago_de_compostela_work_of_art: "Cattedrale di Santiago de Compostela"
+ alcazar_segovia: "Alcázar di Segovia"
+ alhambra_palace: "Alhambra"
  maja_vestida: "La Maja Vestida"
  las_lanzas: "Las Lanzas"
  chronicle_of_alfonso_xi: "Crónica de Alfonso Onceno"
@@ -498,9 +670,9 @@
  sahib_ata_kulliyesi: "Sâhib Atâ Külliyesi"
  gokmedrese: "Gökmedrese"
  ulu_beden: "Ulu Beden"
- yedi_kardes: "Yedi Kardeş"
- illuminated_chronicle: "Cronaca Illustrata"
- maqamat_al_hariri: "Maqāmāt al-Ḥarīrī"
+ yedi_kardes: "Yedi Kardeş" 
+ illuminated_chronicle: "Cronaca Illustrata" 
+ maqamat_al_hariri: "Maqāmāt al-Ḥarīrī" 
  great_iwan: "Grande Iwan"
  qalawun_complex: "Complesso di Qalāwūn"
  al_nasir_mosque: "Moschea di Al-Nāṣir Muḥammad"
@@ -511,7 +683,16 @@
  dalai_al_khayarat: "Dalā'il al-Ḵayrāt"
  rawd_al_qirtas: "Rawḍ al-Qirṭās"
  ait_ben_haddou: "Qṣar di 'Āyt bin Ḥaddū"
- kutubiyya_mosque: "Moschea Koutoubia"
+ koutoubia_marrakesh_work_of_art: "Moschea della Kutubiyya"
+ rock_of_gibraltar: "Rocca di Gibilterra"
+ qarawiyyin_fez_work_of_art: "Moschea di al-Qarawiyyin"
+ cervera_bible: "Bibbia di Cervera"
+ golden_haggadah: "Haggadah d'Oro"
+ itinerary_benjamin_tudela: "Itinerario di Beniamino di Tudela"
+ kuzari: "Kuzari"
+ milhamot_hashem: "Milhamot ha-Shem"
+ perpignan_bible: "Bibbia di Perpignano"
+ sefer_hazohar: "Sefer ha-Zohar"
  hypatian_codex: "Codice Ipaziano"
  gediminas_cap: "Copricapo di Gediminas"
  dai_viet_su_ky: "Đại Việt sử ký"
@@ -604,7 +785,7 @@
  faust_desc: "Il dramma narra la storia di Faust, un alchimista, astrologo e mago del gruppo $german_group$, talmente assetato di conoscenza da stringere un patto con il demone Mefistofele. Racconta della sua anima data in pegno in cambio di 24 anni di servizio del demonio, della vita di piaceri che ne seguì, e del suo pentimento finale quando il demonio venne a riscuotere."
  old_town_hall_leipzig_desc: "$flavor_mei.100.historical_info$"
  dalai_al_khayarat_desc: "#italic Dalā'il al-Ḵayrāt wa-šawāriq al-anwār fī dhikr al-ṣalāt 'alā al-Nabī al-muḵtār#!, che significa #italic Segni dei Benefici e lo Splendente Scoppio di Luci nel Ricordo delle Benedizioni sul Profeta Prescelto#!, è una raccolta di preghiere e benedizioni per il profeta Muḥammad."
- holy_trinity_st_sergius_lavra_desc: "Centro di spiritualità per la Chiesa Slava Orientale $orthodox_ADJ$, è un monastero dedicato alla Santissima Trinità. Nel tempo, venne ampliato rispetto alle sue umili origini in legno, attirando fedeli da ogni dove."
+ trinity_lavra_st_sergius_work_of_art_desc: "Centro di spiritualità per la Chiesa $russian_group$ $orthodox_ADJ$, è un monastero dedicato alla Santissima Trinità. Nel tempo, si è ampliato rispetto alle sue umili origini in legno, attirando gente da ogni dove."
  st_sergius_relics_desc: "$flavor_mos.7.historical_info$"
  holy_trinity_desc: "Considerata una delle meraviglie dell'arte $russian_group$, raffigura i tre angeli che visitarono Abramo secondo il Libro della Genesi, ma può anche essere interpretata come simbolo della Santissima Trinità."
  uspensky_sobor_desc: "Significa 'Cattedrale della Dormizione' ed è anche chiamata 'Cattedrale dell'Assunzione'. La $uspensky_sobor$ è dedicata all'ascesa della Vergine Maria al Cielo. Pilastro della Chiesa $russian_group$ $orthodox_ADJ$, è il cuore spirituale della fede."
@@ -633,19 +814,19 @@
  san_zanipolo_desc: "San Zanipolo, abbreviazione di Santi Giovanni e Paolo, è una grande chiesa gotica di Venezia e tradizionale luogo di sepoltura di molti Dogi della città."
  ca_foscari: "Ca' Foscari"
  ca_foscari_desc: "Il palazzo del $ca_foscari$ è un magnifico edificio gotico affacciato sul Canal Grande, simbolo della ricchezza e del potere della famiglia Foscari."
- fra_mauro_map: "Fra Mauro's Map of the World"
+ fra_mauro_map: "Mappamondo di Fra Mauro"
  fra_mauro_map_desc: "$fra_mauro_map$ è una mappa del mondo altamente dettagliata e innovativa, che sintetizza conoscenze geografiche europee, mediorientali e oltre, offrendo una delle rappresentazioni più avanzate del mondo conosciuto all'epoca."
  tintorettos_crucifixion_desc: "$tintorettos_crucifixion$ è una rappresentazione monumentale e drammatica della crocifissione di Cristo, che mostra intensa emotività, composizione dinamica e magistrale uso di luce e ombra."
  de_honesta_voluptate_et_valetudine_desc: "#italic De Honesta Voluptate et Valetudine#!, scritto da Bartolomeo Platina, è uno dei primi libri di cucina a stampa, con ricette e consigli dietetici."
  eight_questions_on_the_power_of_the_pope_desc: "Sostenendo la separazione tra potere spirituale e temporale, afferma che Papa e clero non dovrebbero possedere proprietà, diritto che spetterebbe solo all'autorità secolare."
- frauenkirche_desc: "#italic Tintoretto's Crucifixion#! è un dipinto monumentale conservato nella Scuola Grande di San Rocco a Venezia, raffigurante la crocifissione di Cristo con intensa drammaticità e composizione dinamica."
+ frauenkirche_desc: "Il #italic Dom zu Unserer Lieben Frau#!, Cattedrale di Nostra Cara Signora, è una chiesa costruita in stile tardo gotico che si erge imponente sulla città di Monaco. È costruita in mattoni rossi ed è coronata da due insolite cupole in stile rinascimentale sopra le due torri della chiesa."
  diarii: "The Diarii"
  diarii_desc: "$diarii$ è una cronaca in 58 volumi di Marino Sanuto che descrive vita politica, sociale e diplomatica della Venezia rinascimentale tra il 1496 e il 1533."
  annales_bojorum_desc: "Scritto in diversi volumi, racconta la storia del $BAV$ unita alla storia generale europea. Include inoltre la lotta tra Papato e Impero."
  theatinerkirche_art_desc: "Costruita nello stile Barocco $italian_group$, è divenuta un simbolo della città e ha influenzato notevolmente l'architettura barocca in tutto il $south_german_region$."
  bng_nabibangsha_desc: "Una delle prime traduzioni delle #italic Qaṣaṣ al-anbiyā'#! nella lingua $bengali_language$, consiste in una raccolta di storie sui profeti e i messaggeri del $muslim$."
  brandenburger_tor_desc: "Costruita al centro della città per celebrare una vittoria in battaglia, è in stile neoclassico, con numerosi rilievi raffiguranti scene della mitologia romana. In cima, una quadriga bronzea rappresenta la dea Vittoria, sebbene inizialmente dovesse essere Eirene, dea greca della pace."
- the_prize_essay_desc: "Chiamato #italic Inquiry Concerning the Distinctness of the Principles of Natural Theology and Morality#!, o nell'originale $german_language$ #italic Untersuchung über die Deutlichkeit der Grundsätze der natürlichen Theologie und der Moral#!, fu presentato all'Accademia Reale delle Scienze che gli assegnò un premio, da cui deriva il nome $the_prize_essay$."
+ the_prize_essay_desc: "Chiamato #italic Indagine sulla Chiarezza dei Principi della Teologia Naturale e della Morale#!, o nell'originale $german_language$ #italic Untersuchung über die Deutlichkeit der Grundsätze der natürlichen Theologie und der Moral#!, fu presentato all'Accademia Reale delle Scienze che gli assegnò un premio, da cui deriva il nome $the_prize_essay$."
  prutenic_tables_desc: "Quest'opera, chiamata anche Tavole Prussiane, si basa sui lavori di Copernico, ma riconduce il suo lavoro matematico a un sistema geocentrico."
  praxis_pietatis_melica_desc: "Significante #italic Pratica della Pietà nel Canto#!, è un innario Luterano destinato all'uso sia nelle chiese sia in ambito privato. Contiene numerosi inni, la cui popolarità li ha resi parte integrante della vita religiosa."
  phaedon_desc: "Difesa dell'immortalità dell'anima, è presentata come una serie di dialoghi di Socrate, che si prepara alla propria morte e giustifica la semplicità — e quindi immortalità — dell'anima."
@@ -689,7 +870,8 @@
  pol_annals_of_poland_desc: "La #italic $pol_annals_of_poland$#! è una cronaca che descrive la storia del Regno di Polonia dalle sue fondazioni leggendarie fino ai giorni nostri. L'opera è divisa in dodici volumi che trattano differenti capitoli della storia polacca."
  pol_brief_discussion_desc: "Il #italic $pol_brief_discussion$#! è un dialogo che commenta le molte questioni sociali contemporanee alla vita dell'autore, scritto nello spirito dell'anticlericalismo nobiliare."
  the_lusiads_desc: "I Lusiadi sono una raccolta di poemi epici, scritti in stile omerico, che narrano i viaggi Portoghesi che portarono alle grandi scoperte del XV e XVI secolo. Scritti durante l'esilio di Camões a Macao, collegano il popolo $POR_ADJ$ ai Lusitani, gli antichi abitanti della Penisola Iberica occidentale."
- batalha_monastery_desc: "Il monastero fu costruito in un periodo di 131 anni, sotto la supervisione di ben 15 architetti diversi, combinando molti stili artistici ed è considerato uno dei più belli e importanti del $POR$."
+ batalha_monastery_work_of_art: "Monastero di Batalha"
+ batalha_monastery_work_of_art_desc: "Il monastero fu costruito nell'arco di 131 anni, sotto la direzione di non meno di 15 architetti, combinando diversi stili artistici, ed è considerato uno dei monasteri più belli e importanti del $POR$."
  TEU_swords_of_grunwald_desc: "Le due #italic $TEU_swords_of_grunwald$#! furono presentate al re di Polonia prima della Battaglia di Grunwald come provocazione. Le spade vennero accettate e, dopo la vittoria, entrarono a far parte dei gioielli regali."
  zafarnama_desc: "Significando #italic Libro delle Vittorie#!, è una cronaca che loda la vita e le imprese di [GetCharacter('chg_timur_lame_borjigin').GetName]. Vi sono esaltate tutte le sue abilità militari e di comando, risultando estremamente influente nella diffusione della sua fama."
  telugu_ramayana_desc: "Traduzione nell'[ShowLanguageName('telugu_language')] dell'epopea [ShowLanguageName('sanskrit_language')] $ramayana$, con linguaggio semplice e diretto."
@@ -708,6 +890,169 @@
  two_icons_of_archangel_michael_desc: "Saccheggiate da [ShowLocationName('constantinople')] durante la Quarta Crociata, le due icone adornano oggi le sale della cattedrale di [ShowLocationName('venice')]."
  stone_of_scone_desc: "La Pietra di Scone, conosciuta anche come Pietra del Destino, è un antico simbolo della regalità scozzese. Tradizionalmente utilizzata nelle cerimonie di incoronazione dei sovrani di Scozia, rimase nell'Abbazia di Scone fino al 1296, quando fu requisita da Edoardo I d'Inghilterra dopo la sua vittoria nella Prima Guerra d'Indipendenza Scozzese. Edoardo fece collocare la pietra sotto la Sedia dell'Incoronazione a Westminster, integrandola così nella tradizione coronazionale inglese."
  llywelyns_coronet_desc: "La Corona di Llywelyn, conosciuta come #italic Talaith Llywelyn#! in gallese, è un simbolo della sovranità principesca del Galles. L'ultimo principe nativo, Llywelyn ap Gruffudd, affidò la corona ai monaci dell'Abbazia di Cymer per proteggerla prima della sua sconfitta contro Edoardo I d'Inghilterra. Il re la confiscò e la portò a Londra, dove venne esposta nell'Abbazia di Westminster come simbolo della sottomissione del Galles."
+ relic_true_cross_found_desc: "La Vera Croce stessa, perduta per il mondo cristiano sin dalla catastrofe di Hattin un secolo e mezzo fa, finalmente riportata a casa."
+ relic_holy_lance_found_desc: "La lancia del centurione Longino, che si dice abbia trafitto il costato di Cristo durante la crocifissione, ritrovata durante l'assedio di Antiochia al tempo della Prima Crociata, e poi di nuovo perduta dopo che i crociati marciarono oltre. È riemersa qui."
+ relic_holy_shroud_found_desc: "Un lenzuolo di lino ripiegato che porta l'impronta tenue e inspiegabile di un uomo crocifisso. Nessuna cronaca può dire dove sia stato per tredici secoli, e il mistero che lo circonda attira i fedeli con la stessa forza di qualsiasi provenienza accertata."
+ relic_holy_nail_found_1_desc: "Uno dei chiodi di ferro che si dice abbiano trafitto le mani o i piedi di Cristo durante la Crocifissione. Decine di chiese in tutta la Cristianità rivendicano indipendentemente di possederne uno autentico, e non c'è mai stato modo di confutare nessuna di queste affermazioni."
+ relic_holy_nail_found_2_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_3_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_4_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_5_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_6_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_7_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_8_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_9_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_10_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_11_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_12_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_13_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_14_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_15_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_16_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_17_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_18_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_19_desc: "$relic_holy_nail_found_1_desc$"
+ relic_holy_nail_found_20_desc: "$relic_holy_nail_found_1_desc$"
+ relic_true_cross_fragment_found_1_desc: "Una scheggia di legno venerata come un pezzo della Vera Croce. Centinaia di chiese europee rivendicarono simili frammenti dopo la scoperta della reliquia da parte di Elena nel IV secolo; questo è solo uno in più, non meno sinceramente venerato degli altri."
+ relic_true_cross_fragment_found_2_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_3_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_4_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_5_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_6_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_7_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_8_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_9_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_10_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_11_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_12_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_13_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_14_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_15_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_16_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_17_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_18_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_19_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_true_cross_fragment_found_20_desc: "$relic_true_cross_fragment_found_1_desc$"
+ relic_regional_saint_bones_found_1_desc: "I resti di un santo minore, venerato per generazioni nel distretto in cui erano custoditi, ma mai ampiamente conosciuto al di fuori di esso. La devozione, come le reliquie, non ha bisogno di essere famosa per essere autentica."
+ relic_regional_saint_bones_found_2_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_3_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_4_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_5_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_6_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_7_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_8_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_9_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_10_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_11_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_12_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_13_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_14_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_15_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_16_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_17_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_18_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_19_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_regional_saint_bones_found_20_desc: "$relic_regional_saint_bones_found_1_desc$"
+ relic_baptist_head_found_1_desc: "Un cranio venerato come la testa di Giovanni Battista. Almeno quattro chiese in tutta la Cristianità avanzano indipendentemente la stessa pretesa; questa è semplicemente un'altra."
+ relic_baptist_head_found_2_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_3_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_4_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_5_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_6_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_7_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_8_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_9_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_10_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_11_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_12_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_13_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_14_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_15_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_16_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_17_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_18_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_19_desc: "$relic_baptist_head_found_1_desc$"
+ relic_baptist_head_found_20_desc: "$relic_baptist_head_found_1_desc$"
+ relic_virgin_milk_found_1_desc: "Una fiala sigillata contenente un residuo pallido e gessoso, venerata come latte della Vergine Maria. Decine di santuari in tutta l'Europa medievale custodivano simili fiale contemporaneamente."
+ relic_virgin_milk_found_2_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_3_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_4_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_5_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_6_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_7_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_8_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_9_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_10_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_11_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_12_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_13_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_14_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_15_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_16_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_17_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_18_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_19_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_virgin_milk_found_20_desc: "$relic_virgin_milk_found_1_desc$"
+ relic_holy_thorn_found_1_desc: "Una singola spina, che si dice provenga dalla Corona di Spine stessa. Luigi IX e i suoi successori regalarono molte spine simili dopo che la corona raggiunse Parigi nel 1239, e questa è una di quelle che ha trovato la sua strada fin qui."
+ relic_holy_thorn_found_2_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_3_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_4_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_5_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_6_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_7_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_8_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_9_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_10_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_11_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_12_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_13_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_14_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_15_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_16_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_17_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_18_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_19_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_thorn_found_20_desc: "$relic_holy_thorn_found_1_desc$"
+ relic_holy_chalice_found_1_desc: "Una coppa semplice, che i suoi custodi affermano essere il vero calice dell'Ultima Cena, qualunque cosa dicano i più celebri calici di Genova o d'Aragona. Più pretese simili coesistettero durante tutto il periodo medievale, nessuna mai confutata."
+ relic_holy_chalice_found_2_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_3_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_4_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_5_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_6_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_7_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_8_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_9_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_10_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_11_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_12_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_13_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_14_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_15_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_16_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_17_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_18_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_19_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_holy_chalice_found_20_desc: "$relic_holy_chalice_found_1_desc$"
+ relic_titulus_crucis_found_1_desc: "Una tavola di legno con un'iscrizione, che si afferma essere il cartiglio inchiodato sopra la Croce durante la Crocifissione. La tradizione locale sostiene che più di una tale tavola sia sopravvissuta, ognuna portata via in una direzione diversa dopo la Crocifissione."
+ relic_titulus_crucis_found_2_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_3_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_4_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_5_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_6_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_7_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_8_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_9_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_10_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_11_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_12_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_13_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_14_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_15_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_16_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_17_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_18_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_19_desc: "$relic_titulus_crucis_found_1_desc$"
+ relic_titulus_crucis_found_20_desc: "$relic_titulus_crucis_found_1_desc$"
  cross_of_neith_desc: "La Croce di Neith è una reliquia venerata che custodisce un frammento della Vera Croce di Gesù Cristo. Il re gallese Hywel Dda la portò da Roma nel Galles, e successivamente venne tramandata di principe in principe fino al regno di Llywelyn ap Gruffudd. Dopo aver sconfitto Llewelyn nel 1283, Edoardo I la sequestrò e la fece sfilare per Londra come simbolo della sua dominazione sul Galles."
  st_augustine_gospels_desc: "I Vangeli di Sant'Agostino sono un manoscritto miniato del VI secolo, parzialmente conservato, portato in Britannia nell'ambito della missione papale per convertire gli anglosassoni pagani. Per questo motivo è considerato un oggetto sacro dai cristiani inglesi."
  st_louis_toulouse_crowning_robert_anjou_desc: "Questo trittico del XIV secolo raffigura il momento in cui San Ludovico di Tolosa rinunciò alla pretesa sul trono $NAP_ADJ$ a favore del fratello minore, [GetCharacter('nap_robert_i_anjou').GetName], per diventare vescovo francescano."
@@ -715,7 +1060,7 @@
  torrazzo_di_cremona_desc: "Il $torrazzo_di_cremona$, completato nel 1309, è uno dei più alti campanili in muratura d'Europa e sorge accanto al Duomo di Cremona. È un importante punto di riferimento sia civile che religioso. Il suo orologio astronomico, installato nel XIV secolo, è uno dei più grandi del suo genere."
  lalibela_cross_desc: "La $lalibela_cross$, realizzata durante il regno della dinastia Zagwe (XII–XIII secolo), è un capolavoro dell'oreficeria etiopica. La croce ha avuto un ruolo centrale nelle pratiche liturgiche della Chiesa Ortodossa Etiopica."
  kebra_nagast_desc: "Il $kebra_nagast$, scritto nel XIV secolo, è un testo fondamentale $ETH_ADJ$ che narra le origini della dinastia [ShowDynastyName('solomonid_dynasty')]. Rivendicando una discendenza da Re Salomone e dalla Regina di Saba, offre una giustificazione divina al potere dei sovrani Etiopi e rafforza l'identità cristiana del paese."
- lalibela_church_st_george_desc: "La Chiesa di San Giorgio, scolpita durante il regno del re Lalibela nel XII secolo, rappresenta l'apice dell'architettura monolitica etiope. Realizzata in risposta al desiderio di creare una #italic Nuova Gerusalemme#!, riflette le aspirazioni religiose dell'epoca e il patrimonio cristiano distintivo di $ETH$."
+ lalibela_church_st_george_work_of_art_desc: "La Chiesa di San Giorgio, scavata durante il regno di re Lalibela nel XII secolo, rappresenta un punto culminante dell'architettura monolitica etiope. Costruita in risposta al desiderio di creare una #italic Nuova Gerusalemme#!, riflette le aspirazioni religiose dell'epoca e la distinta eredità cristiana di $ETH$."
  king_ezana_stele_desc: "La $king_ezana_stele$, eretta nel IV secolo, è un monumentale stele dell'Impero di Axum. Riflette la ricchezza e la potenza del regno nel suo periodo di massimo splendore. La conversione al cristianesimo del re Ezana, anch'essa documentata da iscrizioni, rese Axum uno dei primi stati cristiani della storia."
  lanterna_di_genoa_desc: "La $lanterna_di_genoa$, costruita originariamente nel XII secolo, servì come faro cruciale per il porto di [ShowLocationName('genoa')]. Essendo uno dei fari più antichi e più alti del mondo, la sua luce guidò per secoli le navi verso il porto. La Lanterna servì anche da fortificazione, contribuendo alla difesa della città da minacce navali."
  palazzo_san_giorgio_desc: "Costruito nel 1260 dal podestà $GEN$ Guglielmo Boccanegra, il Palazzo San Giorgio ospitò uffici amministrativi e, successivamente, la celebre Banca di San Giorgio. Il suo ruolo nella gestione delle finanze e del debito pubblico di $GEN$ fu cruciale nell'ascesa della città come grande potenza commerciale medievale."
@@ -727,10 +1072,10 @@
  saint_george_in_yuriev_desc: "Il Monastero di Yuriev, fondato nel 1030 da [GetCharacter('kie_yaroslav_the_wise_rurikovich').GetName], è uno dei monasteri più antichi della Russia. Fu fondamentale nella cristianizzazione della regione di Novgorod e rimane un simbolo della crescita dell'Ortodossia nella Rus' settentrionale."
  palma_cathedral_desc: "La costruzione del $palma_cathedral$ iniziò nel 1229 sotto il re [GetCharacter('ara_jacme_i_arago').GetName], dopo la conquista di Maiorca durante la Reconquista. Edificata sul sito di una precedente moschea, la cattedrale gotica riflette le influenze architettoniche dell'Europa continentale. I lavori si protrassero per secoli."
  ripoll_abbey_desc: "Fondata nell'888 da [GetCharacter('cat_guifre_i_barcelona').GetName], divenne il centro culturale e spirituale della cultura [ShowCultureName('catalan')] e dei suoi sovrani, e rimane un luogo cruciale per l'identità Catalana."
- montserrat_abbey_desc: "Situata sulla montagna di Montserrat, custodisce la [ShowWorkOfArtName('moreneta_key')] ed è un importantissimo centro di spiritualità e pellegrinaggio. È inoltre un simbolo centrale dell'identità culturale [ShowCultureName('catalan')]."
+ montserrat_work_of_art_desc: "Situata sul monte di Montserrat, custodisce la [ShowWorkOfArtName('moreneta_key')] ed è anche un importantissimo centro di spiritualità e pellegrinaggio. È inoltre un simbolo dell'identità culturale [ShowCultureName('catalan')]."
  poblet_abbey_desc: "Un imponente complesso monastico costruito nel XII secolo, è il pantheon dei re [ShowCultureName('catalan')] fin dai tempi di [GetCharacter('ara_jacme_i_arago').GetName]."
- basilica_pilar_desc: "Dedicata alla Vergine Maria, la Basilica del Pilar avrebbe avuto origine da un'apparizione della Vergine a San Giacomo Apostolo durante la sua predicazione del $christian$ nella Penisola Iberica. La chiesa venne ampliata nel tempo e la struttura romanica iniziò a essere edificata dopo la conquista di [ShowLocationName('zaragoza')] nel XII secolo."
- moreneta_key_desc: "Raffigurante la Vergine Maria, è custodita nell'[ShowWorkOfArtName('montserrat_abbey')]. Secondo la leggenda, la statua fu trovata da alcuni pastori in una grotta di Montserrat. Quando tentarono di trasportarla in città, il carro si bloccò: interpretarono l'evento come un segno che la Vergine desiderasse restare sulla montagna, dando così origine all'abbazia."
+ zaragoza_basilica_del_pilar_work_of_art_desc: "Dedicata alla Vergine Maria, la Basilica del Pilar si ritiene sia stata fondata in origine in seguito a un'apparizione della Vergine a San Giacomo Apostolo, che si crede stesse predicando $christian$ nella Penisola Iberica. La chiesa fu ampliata nel tempo, e la costruzione romanica ebbe inizio dopo la conquista di [ShowLocationName('zaragoza')] nel XII secolo."
+ moreneta_key_desc: "Raffigurante la Vergine Maria, è custodita nell'[ShowWorkOfArtName('montserrat_work_of_art')]. Secondo la leggenda, la statua fu trovata da alcuni pastori in una grotta di Montserrat. Quando tentarono di trasportarla in città, il carro si bloccò: interpretarono l'evento come un segno che la Vergine desiderasse restare sulla montagna, dando così origine all'abbazia."
  girgam_desc: "La cronaca reale di $KBO$, contiene la lista dei suoi re con date e durate dei rispettivi regni."
  djenne_mosque_desc: "Presente come moschea fin dal XIII secolo, il suo edificio in adobe ha contribuito per generazioni alla diffusione e al prestigio dell'[ShowReligionGroupName('muslim')] in $MAL$."
  sankore_madrasa_desc: "Uno dei più importanti centri di studio della fede [ShowReligionGroupAdjective('muslim')] di $MAL$, segue una lunga tradizione d'insegnamento in $guinea_region$."
@@ -770,7 +1115,7 @@
  hagia_sophia_desc: "L'$hagia_sophia$ fu originariamente costruita intorno al 346 durante il regno di Costanzo II, poi bruciata nella Rivolta di Nika del 532, e completamente ricostruita e consacrata nel 537 da Giustiniano. Divenne la più grande cattedrale della cristianità. Progettata da Antemio di Tralles e Isidoro di Mileto, è celebre per l'enorme cupola, le tecniche ingegneristiche innovative e i mosaici che rappresentano il culmine della spiritualità ortodossa."
  paris_psalter_desc: "Il $paris_psalter$, creato nel X secolo durante la #italic Rinascenza Macedone#!, è un sontuoso manoscritto $BYZ_ADJ$ contenente 14 illustrazioni a piena pagina a corredo dei Salmi. Il suo stile classico riflette la rinascita delle tradizioni artistiche greco-romane nell'arte $BYZ_ADJ$."
  syntagma_canonum_desc: "Il $syntagma_canonum$ è una compilazione $BYZ_ADJ$ di leggi ecclesiastiche che regolano la struttura e le pratiche della Chiesa. Riflette l'integrazione tra il diritto canonico e la società $BYZ_ADJ$."
- ecclesiastica_historia_desc: "L'$ecclesiastica_historia$ è un'opera in 23 volumi sulla storia della Chiesa scritta da Nikephoros Kallistos Xanthopoulos, sacerdote della Basilica di Santa Sofia a Costantinopoli. Copre un arco temporale che va dall'epoca di Cristo al regno dell'imperatore Foca ed è stata dedicata all'imperatore Andronico II Paleologo." 
+ ecclesiastica_historia_desc: "L'$ecclesiastica_historia$ è un'opera in 23 volumi sulla storia della Chiesa scritta da Nikephoros Kallistos Xanthopoulos, sacerdote della Basilica di Santa Sofia a Costantinopoli. Copre un arco temporale che va dall'epoca di Cristo al regno dell'imperatore Foca ed è stata dedicata all'imperatore Andronico II Paleologo."
  historia_polonica_desc: "La #italic Historia Polonica#! (Kronika Polski), scritta da Wincenty Kadłubek su ordine del duca Casimiro II il Giusto nei primi anni del XIII secolo, è una delle più antiche cronache storiche della Polonia. Combinando fatti storici e leggende, traccia la storia della Polonia dalle origini leggendarie fino all'epoca dell'autore."
  gesta_principum_polonorum_desc: "La #italic Gesta Principum Polonorum#! (Cronica et gesta ducum sive principum Polonorum) è la più antica cronaca sopravvissuta della Polonia, scritta da un autore ignoto noto come Gallus Anonimo. Descrive la storia della Polonia dal leggendario fondatore della dinastia Piast fino al 1114, anno in cui il testo termina bruscamente."
  bogurodzica_desc: "La Bogurodzica è il più antico inno polacco conosciuto, risalente al XIII secolo. Dedicata alla Vergine Maria, funge sia da canto religioso sia da inno di battaglia per i cavalieri polacchi, e la sua forma lirica e musicale riflette antiche tradizioni liturgiche. Nei secoli è diventata un simbolo dell'identità e della spiritualità polacca."
@@ -781,18 +1126,21 @@
  gravensteen_castle_desc: "$gravensteen_castle$, costruito nel XII secolo, è la fortezza dei Conti di $FLA$. La #italic Rocca dei Conti#! testimonia l'autorità dei sovrani sulla potente classe dei borghesi della città di [ShowLocationName('ghent')]."
  belfry_bruges_desc: "Il $belfry_bruges$ è un campanile nella piazza centrale di [ShowLocationName('bruges')] che, fin dalla sua costruzione, ha svolto un ruolo fondamentale informando la cittadinanza tramite il suono delle sue campane."
  portico_de_la_gloria_desc: "Il $portico_de_la_gloria$ è un portico romanico della cattedrale di [ShowLocationName('santiago_compostela')]. Le sue sculture rappresentano scene bibliche ed è ricco di simbolismi spirituali."
+ santiago_de_compostela_work_of_art_desc: "La $santiago_de_compostela_work_of_art$ è il culmine del #italic Camino de Santiago#!, la rotta di pellegrinaggio cristiano più battuta del mondo medievale, che si crede custodisca la tomba dell'Apostolo Giacomo il Maggiore. La costruzione iniziò nel 1075 sotto Alfonso VI di Castiglia, e la grande navata romanica fu sostanzialmente completata nei primi anni del XIII secolo. Il suo #italic Botafumeiro#! sempre oscillante — un gigantesco turibolo d'argento — purifica i fedeli che completano il lungo viaggio da ogni angolo della Cristianità."
  cantigas_santa_maria_desc: "Le $cantigas_santa_maria$ sono una raccolta del XIII secolo di canzoni in lode della Vergine Maria, scritte in lingua galiziano-portoghese. I manoscritti miniati sono considerati la più grande collezione di brani monodici medievali."
  general_estoria_desc: "La $general_estoria$, commissionata da [GetCharacter('cas_alfonso_x_burgundy').GetName], mira a compilare una storia universale del mondo. Combina fonti bibliche, classiche e medievali in un'unica narrazione."
  cantar_mio_cid_desc: "Il più antico poema epico in $castilian_dialect$, il $cantar_mio_cid$ narra le avventure di Rodrigo Díaz de Vivar, noto come #italic El Cid#!, durante il periodo di lotta tra i regni cristiani iberici e i principati Taifa di al-Andalus."
  estoria_de_espana_desc: "L'$estoria_de_espana$ è considerata la prima ampia [ShowWorkOfArtTypeName('chronicle')] storica della Spagna. L'opera copre la storia della nazione dai tempi biblici al regno di [GetCharacter('cas_fernando_iii_burgundy').GetName] ed è divisa in quattro parti."
  florentine_codex: "Storia Generale delle Vicende della Nuova Spagna"
  florentine_codex_desc: "Il $florentine_codex$ è un resoconto etnografico completo della cultura, religione, società e vita quotidiana dei popoli nativi della Mesoamerica."
- mosque_cordoba_desc: "La #italic Cattedrale di Nostra Signora dell'Assunzione#! di [ShowLocationName('cordoba')], meglio nota come $mosque_cordoba$, è un grandioso esempio dei diversi stadi attraversati dalla Penisola Iberica. Originariamente basilica visigota, divenne moschea dopo la conquista omayyade e fu trasformata in cattedrale dopo la riconquista cristiana della città."
+ mosque_cordoba_desc: "La #italic Cattedrale di Nostra Signora dell'Assunzione#! di [ShowLocationName('cordoba')], meglio nota come $mosque_cordoba$, è un grandioso esempio dei diversi stadi attraversati dalla Penisola Iberica. Originariamente basilica visigota, divenne moschea dopo la conquista omayyade e fu trasformata in cattedrale dopo la riconquista cristiana della città." 
  giralda_desc: "Costruita durante il dominio almohade, questa torre — nata come minareto e poi trasformata in campanile — si erge in [ShowLocationName('sevilla')] come parte della cattedrale della città (un tempo la Grande Moschea). È uno degli esempi più raffinati dell'architettura moresca in Iberia."
  codex_calixtinus_desc: "Creato come guida per i pellegrini del Cammino di Santiago, il $codex_calixtinus$ è un'enciclopedia illustrata che tratta dei popoli che abitano la rotta, delle opere d'arte lungo il percorso e di questioni religiose."
  tablas_alfonsies_desc: "Le #italic $tablas_alfonsies$#! sono tabelle astronomiche di grande importanza per calcolare la posizione dei corpi celesti — il sole, la luna e gli altri pianeti — rispetto alle stelle fisse."
  libros_saber_astrologia_desc: "Una serie di trattati che descrivono i corpi celesti e gli strumenti astronomici dell'epoca. Questi libri hanno avuto un ruolo fondamentale nell'astronomia e nell'astrologia medievale, fornendo materiali utili persino per la redazione di oroscopi."
  libro_de_los_juegos_desc: "Una disamina [ShowCultureName('castilian')] su scacchi, tavole e giochi di dadi. Il #italic $libro_de_los_juegos$#! raccoglie la conoscenza [ShowLanguageName('arabic_language')] sui giochi da tavolo e la combina con quella [ShowLanguageName('latin_language')]."
+ alcazar_segovia_desc: "Elevandosi da un promontorio roccioso alla confluenza dei fiumi Eresma e Clamores, l'$alcazar_segovia$ ha dominato gli accessi a [ShowLocationName('segovia')] sin dai tempi dei Mori. Ricostruito dalla Corona di Castiglia nel corso del XII e XIII secolo, divenne una delle residenze reali preferite dai re di Castiglia, ospitando matrimoni reali e fungendo da tesoreria per i beni più preziosi del regno."
+ alhambra_palace_desc: "Iniziata da Muhammad I della dinastia Nasride nel 1238 sopra [ShowLocationName('granada')], l'$alhambra_palace$ si erge come il più grande monumento sopravvissuto dell'arte palaziale andalusa. I sultani che si succedettero ampliarono il complesso in un labirinto di fortificazioni, giardini e sale del trono adornate da intricate volte a #italic muqarnas#!, fregi calligrafici e le celebri corti delle fontane del Serraglio. Poche residenze reali al mondo possono rivaleggiare con la raffinatezza dei suoi stucchi intagliati e delle sue decorazioni geometriche."
  marienkapelle_desc: "La $marienkapelle$ è una chiesa romanica costruita a [ShowLocationName('munich')] che funge da luogo di sepoltura per la dinastia [ShowDynastyName('wittelsbach_dynasty')], da quando [GetCharacter('ubv_ludwig_iv_wittelsbach').GetName] lo stabilì."
  sahib_ata_kulliyesi_desc: "Il $sahib_ata_kulliyesi$ è un complesso costruito a [ShowLocationName('konya')] per ospitare le spoglie di Sahip Ata Fahrettin Ali e della sua famiglia, comprendente anche un hammam e una moschea."
  gokmedrese_desc: "Questa madrasa a due piani è il principale centro educativo di [ShowLocationName('sivas')] dalla sua commissione nel XIII secolo da parte di Sahip Ata Fahrettin Ali, visir del sultano selgiuchide. Il nome deriva dalle piastrelle turchesi ('del cielo') che ne ornano la facciata."
@@ -805,7 +1153,16 @@
  al_karimi_mosque_desc: "La $al_karimi_mosque$, edificio del XIV secolo, si erge nel centro di [ShowLocationName('damascus')] ed è considerata uno dei migliori esempi di arte $mamluk$ nella regione."
  rawd_al_qirtas_desc: "Questa [ShowWorkOfArtTypeName('chronicle')] descrive lo sviluppo della città di [ShowLocationName('fez')] e i sovrani del [ShowAreaName('morocco_area')], dagli Idrisidi alla dinastia [ShowDynastyName('marinid_dynasty')]."
  ait_ben_haddou_desc: "Il #italic ksar#! o #italic ighrem#! ('villaggio fortificato' in arabo e amazigh, rispettivamente) di $ait_ben_haddou$ si trova lungo un'importante rotta commerciale che unisce le terre al di là del Sahara con il cuore del [ShowAreaName('morocco_area')]."
- kutubiyya_mosque_desc: "Moschea costruita due volte a [ShowLocationName('marrakesh')], la $kutubiyya_mosque$ è un esempio eminente dell'architettura almoravide ed è un importante punto di riferimento nel centro della città. Il nome di questa moschea deriva dai librai che commerciavano attorno all'edificio."
+ koutoubia_marrakesh_work_of_art_desc: "Una moschea costruita due volte a [ShowLocationName('marrakesh')], la $koutoubia_marrakesh_work_of_art$ è un esempio eccellente dell'architettura almoravide e un importante punto di riferimento nel centro della città. Il nome di questa moschea deriva dai librai che commerciavano attorno all'edificio."
+ rock_of_gibraltar_desc: "Il promontorio calcareo che si innalza, noto agli Arabi come #italic Jabal Ṭāriq#! — la Montagna di Tariq — sorveglia lo stretto che separa la Penisola Iberica dall'Africa settentrionale. Il generale omayyade Ṭāriq ibn Ziyād ne fortificò le alture nel 711 come testa di ponte per la conquista della Penisola, e da allora potenze moresche e cristiane si sono contese il controllo di questo passaggio tra il Mediterraneo e l'Atlantico."
+ qarawiyyin_fez_work_of_art_desc: "Fondata nell'859 da Fāṭima al-Fihrī, una pia donna di una famiglia di mercanti ifriqidi stabilitasi a [ShowLocationName('fez')], la $qarawiyyin_fez_work_of_art$ è uno dei più antichi centri di apprendimento ancora attivi al mondo. Crescendo da una modesta moschea a una grande università nel corso dei secoli successivi, attirò studiosi, giuristi e teologi da tutto il mondo islamico per studiare sotto i suoi rinomati maestri di diritto malikita, teologia e scienze razionali."
+ perpignan_bible_desc: "Realizzata a Perpignano nel 1299, la $perpignan_bible$ è una Bibbia ebraica sontuosamente decorata, la cui illuminazione prevalentemente aniconica — radicata nella cultura visiva islamica e resa in stile gotico — stabilì un modello che influenzò almeno altre tre Bibbie prodotte nella stessa regione. Il suo frontespizio dell'Arca dell'Alleanza, con le Tavole della Legge e gli strumenti del Tempio resi in oro e colore, è una delle rappresentazioni più straordinarie dell'iconografia religiosa ebraica nell'Occidente medievale. La consideriamo il culmine della tradizione scribale ebraica maiorchina, prima che venisse spazzata via."
+ cervera_bible_desc: "Completata a Cervera nel maggio del 1300, la $cervera_bible$ è tra le più antiche Bibbie sefardite sopravvissute e un capolavoro dell'illuminazione manoscritta ebraica. I suoi 451 fogli di pergamena furono vergati da Samuel ben Abraham ibn Nathan e adornati per intero dall'illuminatore Josef ha-Zarfati, un ebreo francese stabilitosi in Castiglia, che firmò la propria opera più di venti volte in oro. Rappresenta la testimonianza più completa della tradizione scribale sefardita sopravvissuta alla distruzione delle comunità sefardite che seguì."
+ golden_haggadah_desc: "Prodotta a Barcellona intorno al 1320, la $golden_haggadah$ è il massimo risultato dell'illuminazione manoscritta sefardita. Le sue quattordici miniature a piena pagina — dipinte con pigmenti opachi e foglia d'oro scintillante in stile gotico maturo, con un'evidente influenza italianizzante — illustrano la storia dell'Esodo con una ricchezza che rivaleggia con qualsiasi salterio cristiano dell'epoca. Ne prendiamo il nome dai suoi sfolgoranti sfondi in foglia d'oro, che conferiscono alle pagine una luminosità senza pari tra quanto prodotto nell'Iberia medievale."
+ sefer_hazohar_desc: "Composto e diffuso a Guadalajara a partire dagli anni 1280 da Mosè di León, il $sefer_hazohar$ — #italic Il Libro dello Splendore#! — è il testo fondante della tradizione mistica ebraica nota come #italic Qabbalah#!. Attingendo all'artificio letterario di un midrash perduto proveniente dalla cerchia del saggio del II secolo Shimon bar Yochai, svela la struttura interiore del divino in una prosa aramaica di grande potenza poetica. Nessun'altra opera prodotta nell'Iberia medievale eserciterà un'influenza altrettanto profonda e duratura sulla vita spirituale ebraica nei secoli a venire."
+ milhamot_hashem_desc: "Completato a Orange nel 1329 dopo dodici anni di composizione, il $milhamot_hashem$ — #italic Le Guerre del Signore#! — è il capolavoro filosofico di Levi ben Gershom, noto al mondo latino come Gersonide. In sei volumi che abbracciano astronomia, conoscenza divina, profezia, provvidenza e creazione, concilia la scienza di Aristotele con le esigenze della Scrittura ebraica in un modo ineguagliato per profondità e rigore sin da Maimonide. Le sue sezioni astronomiche furono lette da studiosi cristiani e le sue tavole circolarono in traduzione latina sotto il titolo #italic Prognostica#!."
+ itinerary_benjamin_tudela_desc: "Tra il 1165 e il 1173, il mercante Beniamino di Tudela partì dalla Navarra e viaggiò attraverso Provenza, Italia, Grecia, il Levante, la Persia e l'Egitto, annotando le comunità che incontrava lungo il cammino nel suo #italic Sefer ha-Massa'ot#! — il #italic Libro dei Viaggi#!. Il suo racconto è la prima indagine sistematica sulla vita ebraica nel mondo conosciuto: popolazioni contate, capi nominati, rotte commerciali descritte, curiosità annotate con l'occhio di un mercante e la cura di uno studioso. L'$itinerary_benjamin_tudela$ è l'unica fonte che ci restituisce la forma della diaspora com'era realmente nel XII secolo."
+ kuzari_desc: "Scritto a Toledo negli anni prima che Judah Halevi partisse per la Terra Santa nel 1141, il $kuzari$ — #italic Il Libro del Khazaro#! — è l'opera più celebre della filosofia sefardita. Ambientato come una disputa dinanzi al re dei Khazari tra un filosofo, un cristiano, un musulmano e uno studioso ebreo, è al tempo stesso una difesa della religione rivelata contro i filosofi razionalisti e la più profonda espressione della convinzione di Halevi secondo cui la Terra d'Israele e la lingua ebraica sono canali insostituibili dell'esperienza divina. Nessun'altra opera affronta con altrettanta onestà la tensione tra la filosofia greca e la fede ebraica, e nessuna si è dimostrata più duratura come racconto di ciò in cui gli ebrei credono e del perché."
  song_of_armouris_desc: "Il racconto di uno dei più grandi Akritai. La #italic $song_of_armouris$#! è la più famosa di queste storie cavalleresche bizantine, seguendo Armouris Armouropoulos, un uomo dalla forza erculea che uccise migliaia di Saraceni per vendicare suo padre."
  gediminas_cap_desc: "Questa magnifica corona è stata consacrata come la più importante [ShowWorkOfArtTypeName('regalia')] del reame [GetCountry('LIT').GetAdjective], dal fondatore della dinastia [ShowDynastyName('gediminid_dynasty')] [GetCharacter('lit_gediminas_gediminids').GetName]."
  chronica_jutensis_desc: "La #italic Chronica Jutensis#! è una cronaca danese che fornisce una narrazione della storia della Danimarca, focalizzandosi in particolare sul Jutland."
@@ -825,16 +1182,16 @@
 
  imperial_crown_hre: "Corona Imperiale"
  imperial_crown_hre_desc: "Forgiata da 8 placche d'oro decorate con varie pietre preziose, l'$imperial_crown_hre$ è utilizzata come corona dell'incoronazione sin dai tempi di Ottone I."
- 
+
  imperial_orb_hre: "Imperial Orb"
  imperial_orb_hre_desc: "L'$imperial_orb_hre$ del Sacro Romano Impero rappresenta il mandato divino dell'imperatore come massimo monarca dell'Europa occidentale."
- 
+
  saint_stephans_purse: "Borsa di Santo Stefano"
  saint_stephans_purse_desc: "Contenente terra della Terra Santa intrisa del sangue di Santo Stefano, questa borsa è una parte essenziale dell'incoronazione imperiale."
-  
+
  coronation_gospel_hre: "Coronation Evangeliar"
  coronation_gospel_hre_desc: "Il $coronation_gospel_hre$ contiene l'intero Vangelo scritto con inchiostro d'oro e d'argento. Il testo è illuminato da illustrazioni degli Evangelisti. Come Carlo Magno, durante la cerimonia di incoronazione l'imperatore poserà la mano sul $coronation_gospel_hre$ e presterà giuramento."
- 
+
  sergius_sive_capitis_caput: "Sergius Sive Capitis Caput"
  sergius_sive_capitis_caput_desc: "Scritto come una satira del culto delle reliquie, questo testo è una critica pungente del cattolicesimo e delle sue tendenze più estreme."
 
@@ -856,13 +1213,13 @@
 
  timbuktu_palace: "Timbuktu Palace"
  timbuktu_palace_desc: "Costruito per preservare la prosperità di [ShowLocationName('timbuktu')], il $timbuktu_palace$ è una delle maggiori opere architettoniche realizzate nel luogo."
-
+ 
  lateran_palace: "Palazzo Lateranense"
  lateran_palace_desc: "Originariamente residenza dei Papi per secoli, il Palazzo Lateranense fu distrutto da un incendio. Dopo essere stato ricostruito, il $lateran_palace$ divenne un importante punto di riferimento spirituale, simbolo dell'autorità papale."
 
  simplicius_simplicissimus: "Simplicissimus Teutsch"
  simplicius_simplicissimus_desc: "Il resoconto della vita di un bizzarro vagabondo di nome Melchior Sternfels von Fuchshain: dove e come venne al mondo, cosa vide, apprese ed esperì, e perché infine scelse di ritirarsene volontariamente."
-
+ 
  el_criticon: "El Criticón"
  el_criticon_desc: "$el_criticon$ è un romanzo allegorico e filosofico che esplora la condizione umana attraverso il viaggio simbolico di due personaggi. Critica i difetti della società offrendo al contempo profonde riflessioni su moralità e saggezza."
  cronica_de_aragon: "Crónica de Aragón"
@@ -873,65 +1230,68 @@
 
  st_stephens_cathedral: "Saint Stephen's Cathedral"
  st_stephens_cathedral_desc: "$st_stephens_cathedral$ a Vienna è un magnifico capolavoro gotico ed uno degli edifici religiosi più iconici dell'Austria, simbolo della storia e del patrimonio culturale della città."
-
- tomb_of_the_first_emperor: "The Tomb of the First Emperor"
+ 
+ tomb_of_the_first_emperor: "La Tomba del Primo Imperatore"
  tomb_of_the_first_emperor_desc: "Racchiuso nelle sacre navate di $st_stephens_cathedral$, il $tomb_of_the_first_emperor$ si erge come grandioso testimone della nostra eredità imperiale, riflettendo la venerazione e l'ambizione del sovrano che pose le basi dell'ascesa dell'Austria."
-
+ 
  frauenstein_madonna: "Frauenstein Madonna"
  frauenstein_madonna_desc: "La $frauenstein_madonna$ del Mantello Protettivo è un capolavoro tardo-gotico che raffigura la Vergine Maria mentre protegge figure inginocchiate sotto il suo ampio manto, simbolo di protezione divina e devozione umana."
-
+ 
  hofburg: "Wiener Hofburg"
  hofburg_desc: "L'$hofburg$ iniziò come una fortezza medievale, ma fu trasformata nel corso dei secoli in un grandioso palazzo imperiale, diventando la sede del potere degli Asburgo."
-
+ 
  tabula_hungariae: "Tabula Hungariae"
  tabula_hungariae_desc: "La $tabula_hungariae$ è una mappa rivoluzionaria dell'Ungheria, che rappresenta più di 1.300 insediamenti ed è uno dei primi tentativi di cartografia accurata su scala regionale."
-
+ 
  landtafel: "Landtafel Hall"
  landtafel_desc: "Il $landtafel$ fu ricostruito per ospitare documenti e sentenze dei tribunali regionali, privilegi, proprietà nobiliari e diritti."
-
+ 
  kaiserkrone: "Imperial Crown of Austria"
  kaiserkrone_desc: "La $kaiserkrone$, ovvero la Corona Imperiale Austriaca, è una corona sontuosa creata per riflettere il prestigio, lo splendore e la ricchezza dell'Austria. È anche un simbolo dell'autorità imperiale austriaca."
-
+ 
+ compultensian_polyglot_bible: "Bibbia Poliglotta Complutense"
+ compultensian_polyglot_bible_desc: "La $compultensian_polyglot_bible$ è una monumentale edizione in sei volumi delle Sacre Scritture, che presenta la Bibbia in ebraico, greco, aramaico e latino, creata per unire i testi antichi con l'erudizione rinascimentale." 
+ 
  chronicles_of_castile: "Crónicas de los Reyes de Castilla"
  chronicles_of_castile_desc: "$chronicles_of_castile$ è una cronaca scritta per preservare l'eredità dei monarchi che governarono il paese alla fine del XIV secolo."
-
+ 
  capilla_de_los_reyes_nuevos: "Capilla de los Reyes Nuevos"
  capilla_de_los_reyes_nuevos_desc: "La $capilla_de_los_reyes_nuevos$ è la cappella dinastica della nostra casata, intesa come continuazione del precedente stabilito da dinastie passate, che costruivano cappelle come rappresentazione della loro autorità divina."
-
+ 
  coplas_por_la_muerte_de_su_padre: "Coplas por la Muerte de su Padre"
  coplas_por_la_muerte_de_su_padre_desc: "Le $coplas_por_la_muerte_de_su_padre$ sono un'elegia profondamente meditativa che riflette sulla fugacità della vita, sulla ricerca dell'onore eterno e sull'inevitabilità della morte."
-
+ 
  laberinto_de_fortuna: "Laberinto de Fortuna"
  laberinto_de_fortuna_desc: "Il $laberinto_de_fortuna$ è un poema scritto per celebrare la monarchia, protetta e guidata dalla provvidenza divina. Incoraggia l'unità sotto l'autorità del sovrano."
-
+ 
  chronicle_of_peru: "Cronaca del Perù"
  chronicle_of_peru_desc: "La $chronicle_of_peru$ è un'opera completa che registra informazioni etnografiche sulle culture native delle Ande."
-
+ 
  elegies_of_illustrious_men: "Elegie degli Uomini Illustri delle Indie"
  elegies_of_illustrious_men_desc: "Le $elegies_of_illustrious_men$ sono un lungo poema epico che fonde poesia e storia e descrive la conquista spagnola del Nuovo Mondo."
-
+ 
  de_la_cosa_map: "Mappa di De La Cosa"
  de_la_cosa_map_desc: "La $de_la_cosa_map$ è la prima mappa che raffigura le terre appena scoperte delle Americhe, oltre all'Equatore e al Tropico del Cancro, rendendola una mappa inestimabile per la navigazione."
-
+ 
  padron_real: "Padrón Real"
  padron_real_desc: "Il $padron_real$ è la mappa ufficiale della nostra marina, prodotta come modello per tutte le mappe future. Ogni nave che salpa sotto la nostra bandiera è obbligata a tenerne una a bordo."
-
+ 
  book_of_women: "Zenanname"
  book_of_women_desc: "Un poema di lunga forma nella tradizione del Dîvân, che descrive gli attributi positivi e negativi delle donne provenienti da tutto il mondo."
  abduction_from_the_seraglio: "Die Entführung aus dem Serail"
- abduction_from_the_seraglio_desc: "L'Abduction from the Seraglio, un'opera che narra di due uomini di diversa classe sociale che tentano di salvare le loro amate dalla prigionia in un harem turco."
+ abduction_from_the_seraglio_desc: "La $abduction_from_the_seraglio$, un'opera che narra di due uomini di diversa classe sociale che tentano di salvare le loro amate dalla prigionia in un harem turco."
  cariye_painting: "Dipinto di una Bellezza Circassa"
  cariye_painting_desc: "Un ritratto di una splendida Cariye circassa, una concubina dell'harem imperiale ottomano."
 
  marian_column: "La Colonna Mariana"
  marian_column_desc: "La $marian_column$ è un monumento eretto dagli austriaci come celebrazione della loro vittoria contro la Svezia. È dedicato alla Vergine Maria come simbolo della sua protezione divina."
-
+ 
  triumphal_arch: "L'Arco Trionfale"
  triumphal_arch_desc: "Il $triumphal_arch$ fu costruito per celebrare un matrimonio reale e riflettere il prestigio e lo splendore della nostra dinastia."
-
+ 
  kaiserhymne: "Inno Imperiale Austriaco"
  kaiserhymne_desc: "La $kaiserhymne$ è un inno patriottico composto da Joseph Haydn, con testi di Lorenz Leopold Haschka. Celebra l'Austria e il suo sovrano, simbolizzando unità nazionale e orgoglio."
- # Ethiopia
+ #Ethiopia
  the_book_of_the_mysteries_of_the_heavens_and_the_earth: "Mashafa Mestira Samay Wamedr"
  the_book_of_the_mysteries_of_the_heavens_and_the_earth_desc: "Spiegando come tutto sia stato creato secondo il [ShowReligionName('miaphysite')], il $the_book_of_the_mysteries_of_the_heavens_and_the_earth$ ha rafforzato la teologia della nazione."
  book_of_light_nativity_and_trinity_shared: "Parte dei tre libri che promuovono riforme ecclesiastiche e difendono le visioni religiose dello scrittore, fungono da forza contrapposta al clero."
@@ -944,13 +1304,13 @@
  confession_of_faith: "Confessione di Fede"
  confession_of_faith_desc: "Scritto in difesa della fede [ShowReligionAdjective('miaphysite')], questo libro sostiene il rafforzamento delle idee religiose, come l'osservanza del Sabato e il divieto del consumo di carne di maiale."
 
- # Orissa
+ #Orissa
  kapilesvara_siva_temple: "Tempio Kapilesvara di [ShowGodNameWithNoTooltip('shiva_god')]"
  kapilesvara_siva_temple_desc: "Dedicato a [ShowGodName('shiva_god')], questo tempio è considerato uno dei più grandi dell'[ShowAreaName('orissa_area')]."
  kanchi_kaveri: "Kanchi Kaveri"
  kanchi_kaveri_desc: "Un poema che descrive Jagannātha come una potenza invisibile che guida i re dell'[ShowAreaName('orissa_area')] alla vittoria."
-
- # Bengal
+ 
+ #Bengal:
  firoz_minar: "Firoz Minar"
  firoz_minar_desc: "Costruito per mostrare il prestigio di [ShowLocationName('gaur')], il $firoz_minar$ è una delle più grandi torri del [ShowRegionName('bengal_region')]. Si dice che la sua prima versione non fosse abbastanza grande, spingendo il sovrintendente dei lavori a gettare l'architetto dalla cima."
  dakhil_darwaza: "Dakhil Darwaza"
@@ -958,7 +1318,7 @@
  kusumba_mosque: "Moschea di Kusumba"
  kusumba_mosque_desc: "Uno dei più grandi santuari sufi dell'$india$, il $kusumba_mosque$ è spesso chiamato la Gemma Nera del Bengala. Essendo uno dei pochi a non essere stato influenzato dallo stile architettonico Suri, divenne un modello per i futuri santuari della regione."
 
- # Delhi
+ #Delhi
  hisar_e_firoza: "Ḥiṣār-e-Fīrūzā"
  hisar_e_firoza_desc: "Un palazzo costruito dai sultani di Delhi che serviva anche da forte. Contiene una moschea per i fedeli, un altro palazzo per la moglie del sultano, appartamenti sotterranei in caso di guerra e un granaio per rifornire la popolazione. L'architettura del forte riflette una fusione tra elementi islamici e indiani."
  lahdjat_sikandar_shahi_wa_lata_if_i_la_mutanahi: "Lahdjat Sikandar Shahi wa-lata'if-i la-mutanahi"
@@ -970,7 +1330,7 @@
  takht_i_firoza: "Takht-e-Fīrozā"
  takht_i_firoza_desc: "Meglio noto come il Trono Turchese, il $takht_i_firoza$ è un trono reale tempestato di gioielli, creato a [ShowLocationName('warangal')]. Commissionato per i sovrani di [ShowLocationName('delhi')], la loro perdita di controllo sulla regione lo rese un semplice oggetto ornamentale."
 
- # Timurids
+ #Timurids
  gur_e_amir: "Gūr-i Amīr"
  gur_e_amir_desc: "Costruito come tomba di [GetCharacter('chg_timur_lame_borjigin').GetName], questo mausoleo serve anche come luogo di sepoltura familiare per i successori."
  goharshad_mosque: "Moschea di Goharshad"
@@ -978,29 +1338,29 @@
  majma_al_tawarikh: "Mojmal al-Tawārīkh"
  majma_al_tawarikh_desc: "Il $majma_al_tawarikh$ è una cronaca dello stato $TIM_ADJ$ e dei paesi vicini, contenente le loro storie e geografie."
 
- # Mughals
+ #Mughals
  taj_mahal: "Taj Mahal"
  taj_mahal_desc: "Luogo di riposo del suo committente, il $taj_mahal$ è forse uno dei più grandiosi mausolei mai costruiti. Ispirato al Gūr-i Amīr di Samarcanda, ha superato la sua funzione commemorativa per Shāh Jahān e sua moglie, affermandosi come una delle sette grandi meraviglie del mondo."
-
+ 
  peacock_throne: "Trono del Pavone"
  peacock_throne_desc: "Un trono decorato dello stato $MUG_ADJ$, simbolo del potere nell'[ShowRegionName('hindustan_region')]."
- # Morocco
+ #Morocco
  el_badi_palace: "Palazzo el-Badi'"
  el_badi_palace_desc: "Un grandioso palazzo costruito con materiali provenienti dall'[ShowRegionName('italy_region')] fino alla [ShowRegionName('guinea_region')], è una delle strutture più ornate del [ShowRegionName('maghreb_region')]."
 
  ben_youssef_mosque: "Moschea Ibn Yūsuf"
  ben_youssef_mosque_desc: "Una moschea costruita durante l'era almoravide, uno dei pochi simboli rimasti del loro dominio nel [ShowRegionName('maghreb_region')]."
- # Sikhism
+ #Sikhism
  guru_granth_sahib: "Guru Granth Sahib"
  guru_granth_sahib_desc: "Considerato il $guru$ eterno dai fedeli del [ShowReligionName('sikhism')], fu compilato ed espanso da vari $guru$ attraverso i secoli e contiene tutti gli insegnamenti che guidano i credenti [ShowReligionAdjective('sikhism')]."
- # USA
+ #USA
  common_sense: "Common Sense"
  common_sense_desc: "Un opuscolo creato durante le lotte del $colonial_revolution$, il $common_sense$ è un'opera fondamentale per le idee di governo egualitario e di resistenza all'oppressione coloniale."
 
-# Ottomans
+#Ottomans
  genealogy_osman_dynasty: "Genealogia della Dinastia Ottomana"
  genealogy_osman_dynasty_desc: "Una cronaca di un'incredibilmente influente dinastia, con pagine adornate d'oro e iscrizioni che la collegano ai giorni dell'Oghuz $rank_empire_horde_ruler_suffix_male$, figura mitica tra le tribù turciche."
- 
+
  gabriel_the_archangel: "L'Arcangelo Gabriele"
  gabriel_the_archangel_desc: "Un'icona di $gabriel_the_archangel$, santo della fede [ShowReligionGroupAdjective('christian')], e simbolo religioso per [ShowLocationName('kyiv')]."
  st_andrew_church: "Chiesa di Sant'Andrea"
@@ -1017,7 +1377,7 @@
  imamzadeh_hossein_desc: "Una moschea-sepolcro dedicata a Imamzadeh Hossein, figlio dell'Imām ‘Alī al-Riḍā."
  ali_qapu_palace: "'Ālī Qāpū"
  ali_qapu_palace_desc: "Un palazzo costruito in [ShowRegionName('persia_region')]. Il suo scopo principale era espandere l'influenza della dinastia che lo edificò."
-
+ 
  #Knights
  history_of_the_hospitallers: "Storia degli Ospitalieri"
  history_of_the_hospitallers_desc: "Questa cronaca di grande valore è una dettagliata raccolta che narra la storia, le battaglie e l'eredità dei Cavalieri Ospitalieri, dalle loro origini fino al loro dominio su Malta."
@@ -1027,7 +1387,7 @@
 
  blue_mosque: "Moschea Blu"
  blue_mosque_desc: "Una moschea decorata in maniera estremamente ricca, con le pareti dipinte di blu per farla risaltare."
-
+ 
  church_of_saint_nicholas: "Chiesa di San Nicola"
  church_of_saint_nicholas_desc: "Una delle prime chiese costruite durante la conversione di [ShowLocationName('vilnius')] al [ShowReligionGroupName('christian')], rimane il luogo dove ogni devoto cristiano si reca a pregare."
 
@@ -1036,16 +1396,16 @@
 
  tale_of_the_palemonids: "Racconto dei Palemonidi"
  tale_of_the_palemonids_desc: "La cronaca dei Palemonidi, che spiega come essi fuggirono da [ShowLocationName('rome')] durante l'invasione di Attila l'Unno, e come raggiunsero $LIT$."
-
+ 
  simple_words_of_catechism: "Parole semplici di catechismo"
  simple_words_of_catechism_desc: "Uno dei primi libri scritti in [ShowDialectName('lithuanian_dialect')], con l'obiettivo di insegnare al popolo i valori della fede [ShowReligionAdjective('lutheran')]."
  dynastic_history_of_the_dynasty: "Cronaca dinastica"
  dynastic_history_of_the_dynasty_desc: "Le pagine dorate della storia adornano la nostra ascesa al potere. Con opulenza e ricchezza, abbiamo redatto un passato elaborato che lega saldamente la nostra dinastia all'autorità che deteniamo. Quest'opera d'arte è la prova che la nostra legittimità non può essere contestata da alcun pretendente che tenti di rubarci il posto al sole."
-
+ 
  hong_lu_meng: "Hóng Lóu Mèng"
  hong_lu_meng_desc: "Un romanzo che segue la storia di Jiǎ Bǎoyù, incarnazione di un giada proveniente dal Muro del Cielo, desideroso di sperimentare la vita umana. Fornendo dettagli sulle due famiglie del clan fittizio Jiǎ, la maggior parte dei suoi membri scompare gradualmente a causa di dispute familiari, politica o morte."
 
- #Japan
+ # Japan
  hana_no_gosho_palace: "Hana-no-Gosho"
  hana_no_gosho_palace_desc: "Istituito come simbolo del prestigio e dello splendore $ASK_ADJ$, $hana_no_gosho_palace$ è uno dei palazzi più elaborati presenti a [ShowLocationName('kyoto')]."
  kinkaku_ji: "Kinkaku-ji"
@@ -1068,7 +1428,7 @@
  the_tragedy_of_hiawatha_desc: "Originariamente un uomo selvaggio, Hiawatha divenne un uomo nuovo, intraprendendo un viaggio per diffondere gli insegnamenti della Grande Legge della Pace. Sebbene fallisse, i suoi sforzi furono decisivi nel processo di unificazione della Confederazione [ShowCultureGroupName('haudenosaunee_group')]."
  the_cleansing_of_tadodaho: "La purificazione di Tadodaho"
  the_cleansing_of_tadodaho_desc: "Benché tirannico, Tadodaho venne infine ‘purificato' dal male e divenne l'ultimo tassello necessario per l'unificazione del popolo [ShowCultureGroupName('haudenosaunee_group')], servendo come capo principale."
-
+ 
  #Prussia
  humboldts_cosmos: "Cosmos"
  humboldts_cosmos_desc: "Il $humboldts_cosmos$ è un capolavoro in più volumi che presenta una visione unificata del mondo naturale, combinando osservazione scientifica dettagliata e riflessione filosofica. Mira a dimostrare l'interconnessione di tutti i fenomeni fisici."
@@ -1093,8 +1453,8 @@
  ivanovsky_monastery_desc: "Fondato alla fine del XIII secolo, il Monastero di Ivanovsky a Pskov svolse un ruolo importante nella vita religiosa e difensiva della città. Situato vicino al fiume Pskova, faceva parte del sistema fortificato della città, tipico delle istituzioni monastiche nella frontiera nordoccidentale della Rus'. Il monastero divenne noto per le sue severe tradizioni ascetiche e per i suoi santi locali. Le sue strutture medievali riflettono l'architettura lapidea distintiva della scuola di Pskov."
 
  #Kyiv
- kyiv_pechersk_lavra: "Pechersk Lavra di $ORIGIN$"
- kyiv_pechersk_lavra_desc: "Fondata nel 1051 dai monaci Antonio e Teodosio, la Pechersk Lavra di Kyiv, o #italic Monastero delle Grotte#!, è uno dei più antichi e importanti centri del cristianesimo ortodosso orientale. Costruita in parte nel sottosuolo, le sue grotte fungevano sia da abitazioni monastiche sia da luoghi di sepoltura. Nel tempo, si sviluppò in un vasto complesso religioso e culturale, dedicato allo studio teologico e alla produzione di manoscritti. Entro il XIV secolo, la Lavra era un elemento centrale della spiritualità e dell'apprendimento della Rus' di Kiev."
+ kyiv_pechersk_lavra_work_of_art: "Lavra delle Grotte di $ORIGIN$"
+ kyiv_pechersk_lavra_work_of_art_desc: "Fondata nel 1051 dai monaci Antonio e Teodosio, la Lavra delle Grotte di Kyiv, o #italic Monastero delle Grotte#!, è uno dei più antichi e importanti centri del Cristianesimo ortodosso orientale. Costruita in parte sottoterra, i suoi complessi di grotte servirono sia come dimore monastiche che come luoghi di sepoltura. Nel tempo si espanse in un vasto complesso religioso e culturale, dedicato allo studio teologico e alla produzione di manoscritti. Nel XIV secolo, la Lavra era parte centrale della spiritualità e della cultura della Rus' di Kiev."
 
  #China
  art_of_war: "L'Arte della Guerra"
@@ -1121,16 +1481,18 @@
  cluny_abbey_desc: "Fondata nel 910 in Borgogna, l'Abbazia di Cluny divenne il cuore spirituale di un vasto movimento di riforma monastica che trasformò la cristianità occidentale. La sua influenza si diffuse attraverso centinaia di monasteri affiliati, promuovendo rigore liturgico e indipendenza papale. La terza chiesa abbaziale, completata all'inizio del XII secolo, fu la più grande d'Europa fino alla costruzione di San Pietro a Roma."
  aachen_cathedral: "Cattedrale di Aquisgrana"
  aachen_cathedral_desc: "Commissionata da Carlo Magno intorno al 796, la Cattedrale di $ORIGIN$ (Aix-la-Chapelle) è un capolavoro dell'architettura carolingia e una delle prime grandi chiese cupolate d'Europa. Servì come luogo di incoronazione dei re tedeschi dal 936 al 1531. La Cappella Palatina, con la sua pianta ottagonale e i suoi mosaici, trae ispirazione da Ravenna e Bisanzio. Nel XIV secolo rimaneva un importante simbolo del potere imperiale e un centro di pellegrinaggio per le reliquie di Carlo Magno."
- 
- codex_balduini_trevirensis: "#italic Codex Balduini Trevirensis#!" 
- codex_balduini_trevirensis_desc: "Questa Cronaca, chiamata anche #italic Kaiser Heinrichs Romfahrt#!, non solo raffigura la campagna italiana di Enrico VII di Lussemburgo, dove fu incoronato re d'Italia e imperatore, ma mostra anche raffigurazioni del Collegio degli Elettori del Sacro Romano Impero, legittimando la loro pretesa ai prestigiosi ruoli." 
- codex_manesse: "#italic Codex Manesse#!" 
- codex_manesse_desc: "Questo manoscritto contiene alcune delle opere più famose di #italic Minnesang#! in dialetto $central_german_dialect$. Le canzoni raccolte sono accompagnate da splendide illustrazioni, che ritraggono non solo personaggi importanti della nobiltà tedesca medievale, come i membri della dinastia degli Hohenstaufen, ma anche i singoli poeti che hanno scritto le canzoni." 
- sistine_chapel: "Cappella Sistina" 
- sistine_chapel_desc: "Inizialmente nota come la #italic Capella Magna#!, la 'Grande Cappella', la $sistine_chapel$ è la cappella principale della Corte Papale. Divenne la sede dei conclavi papali e il suo interno si trasformò col tempo in uno degli spazi artistici più straordinari mai realizzati. All'inizio del 1500, Michelangelo trasformò il soffitto con scene drammatiche tratte dalla Bibbia, riempiendolo di figure potenti ed espressive che cambiarono il corso dell'arte occidentale, e in seguito tornò per dipingere il travolgente Giudizio Universale dietro l'altare." 
 
- rila_monastery_art: "Monastero di Rila"
- rila_monastery_art_desc: "Fondato nel X secolo dall'eremita San Giovanni di Rila e incastonato tra le aspre montagne che portano lo stesso nome, questo monastero Ortodosso divenne ben presto un faro spirituale per il Cristianesimo Slavo. Il monastero era un importante luogo di pellegrinaggio e, sin dalla sua fondazione, ricevette ingenti donazioni da ogni sovrano della Bulgaria. Ha rappresentato un centro vitale per la conservazione della lingua, della letteratura e delle tradizioni religiose bulgare durante i periodi di difficoltà, mentre i monaci mantenevano una ricca tradizione di trascrizione di manoscritti, pittura di icone e composizione di inni."
+ codex_balduini_trevirensis: "#italic Codex Balduini Trevirensis#!"
+ codex_balduini_trevirensis_desc: "Questa Cronaca, chiamata anche #italic Kaiser Heinrichs Romfahrt#!, non solo raffigura la campagna italiana di Enrico VII di Lussemburgo, dove fu incoronato re d'Italia e imperatore, ma mostra anche raffigurazioni del Collegio degli Elettori del Sacro Romano Impero, legittimando la loro pretesa ai prestigiosi ruoli."
+
+ codex_manesse: "#italic Codex Manesse#!"
+ codex_manesse_desc: "Questo manoscritto contiene alcune delle opere più famose di #italic Minnesang#! in dialetto $central_german_dialect$. Le canzoni raccolte sono accompagnate da splendide illustrazioni, che ritraggono non solo personaggi importanti della nobiltà tedesca medievale, come i membri della dinastia degli Hohenstaufen, ma anche i singoli poeti che hanno scritto le canzoni."
+ 
+ sistine_chapel: "Cappella Sistina"
+ sistine_chapel_desc: "Inizialmente nota come la #italic Capella Magna#!, la 'Grande Cappella', la $sistine_chapel$ è la cappella principale della Corte Papale. Divenne la sede dei conclavi papali e il suo interno si trasformò col tempo in uno degli spazi artistici più straordinari mai realizzati. All'inizio del 1500, Michelangelo trasformò il soffitto con scene drammatiche tratte dalla Bibbia, riempiendolo di figure potenti ed espressive che cambiarono il corso dell'arte occidentale, e in seguito tornò per dipingere il travolgente Giudizio Universale dietro l'altare."
+
+ rila_monastery_work_of_art: "Monastero di Rila"
+ rila_monastery_work_of_art_desc: "Fondato nel X secolo dall'eremita San Giovanni di Rila e annidato tra le aspre montagne omonime, questo monastero ortodosso divenne presto un faro spirituale per la Cristianità slava. Il monastero fu un importante luogo di pellegrinaggio, e riceveva donazioni significative da ogni sovrano di Bulgaria sin dalla sua fondazione. Servì come centro vitale per la preservazione della lingua, della letteratura e delle tradizioni religiose bulgare nei periodi di difficoltà, mentre i monaci mantenevano una ricca tradizione di trascrizione di manoscritti, pittura di icone e composizione di inni."
 
  boyana_church_frescoes: "Affreschi della Chiesa di Boyana"
  boyana_church_frescoes_desc: "Dipinti nel 1259, questi affreschi medievali adornano la piccola Chiesa di Boyana, nei pressi di $ORIGIN$. Essi segnano una svolta nell'arte Bizantina, anticipando l'umanesimo Rinascimentale con ritratti personalizzati e composizioni dinamiche, e raffigurano diverse figure religiose, tra cui Cristo e la Vergine. Questi affreschi si distinguono per il loro vivace realismo, la modellazione sottile dei volti, i gesti espressivi e un senso di carattere individuale che conferisce alle figure una presenza quasi realistica, segnando un significativo progresso artistico nei Balcani medievali."
@@ -1145,14 +1507,31 @@
  carta_monastery_desc: "Fondato nel XIII secolo come abbazia Cistercense nei Carpazi meridionali della Transilvania, il monastero fu istituito sotto il patrocinio della corona Ungherese e popolato da monaci che seguivano gli austeri ideali dei Monaci Bianchi. La sua chiesa, costruita in uno stile di transizione dal Romanico al Gotico, presentava una facciata slanciata, archi a sesto acuto e volte a crociera. La sua costruzione introdusse e contribuì allo sviluppo dell'arte Gotica francese nella regione. Il complesso comprendeva edifici monastici disposti attorno a un chiostro, riflettendo l'enfasi Cistercense sulla semplicità, il lavoro manuale e la contemplazione."
  
  gospels_of_tsar_ivan_alexander: "I Vangeli dello Zar Ivan Alessandro"
- gospels_of_tsar_ivan_alexander_desc: "I Vangeli dello Zar Ivan Alessandro sono un volume riccamente miniato che incarna l'ambizione culturale e la devozione religiosa del secondo periodo d'oro della Bulgaria." 
- leaning_tower_of_pisa: "Torre Pendente di Pisa" 
- leaning_tower_of_pisa_desc: "La $leaning_tower_of_pisa$ fu costruita su fondamenta instabili, causando la famosa inclinazione che le dà il nome. La sua sagoma pendente è diventata iconica ed è ora la caratteristica distintiva di [ShowLocationName('pisa')]." 
- boccaccio_on_the_fates_of_famous_men: "Sulle sorti degli uomini famosi" 
- boccaccio_on_the_fates_of_famous_men_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], quest'opera tratta le varie storie di uomini importanti, dalle figure bibliche a coloro che vissero nel [GetCharacter('nap_giovanni_boccaccio').GetHisHer] tempo." 
- boccaccio_the_decameron: "Il Decameron" 
- boccaccio_the_decameron_desc: "#italic $boccaccio_the_decameron$#! racconta la storia di dieci individui che fuggono in campagna, sottraendosi alla [ShowSituationNameWithNoTooltip('black_death')] per un breve periodo di tregua." 
- boccaccio_concerning_famous_women: "Sulle donne famose" 
- boccaccio_concerning_famous_women_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], #italic $boccaccio_concerning_famous_women$#! contiene una raccolta di storie associate a molte donne eminenti della storia, perlopiù figure dell'antichità classica." 
- ARTIST_TYPE_NAME_doctor: "Medico" 
- ARTIST_TYPE_DESC_doctor: "Medici, chirurghi e guaritori dotti che hanno studiato la natura del corpo umano e le cause delle malattie. Tra i medici rinomati dell'epoca figurano Ibn Sina, Paracelso e Andreas Vesalio." 
+ gospels_of_tsar_ivan_alexander_desc: "I Vangeli dello Zar Ivan Alessandro sono un volume riccamente miniato che incarna l'ambizione culturale e la devozione religiosa del secondo periodo d'oro della Bulgaria."
+ leaning_tower_of_pisa: "Torre Pendente di Pisa"
+ leaning_tower_of_pisa_desc: "La $leaning_tower_of_pisa$ fu costruita su fondamenta instabili, causando la famosa inclinazione che le dà il nome. La sua sagoma pendente è diventata iconica ed è ora la caratteristica distintiva di [ShowLocationName('pisa')]."
+
+ boccaccio_on_the_fates_of_famous_men: "Sulle sorti degli uomini famosi"
+ boccaccio_on_the_fates_of_famous_men_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], quest'opera tratta le varie storie di uomini importanti, dalle figure bibliche a coloro che vissero nel [GetCharacter('nap_giovanni_boccaccio').GetHisHer] tempo."
+ 
+ boccaccio_the_decameron: "Il Decameron"
+ boccaccio_the_decameron_desc: "#italic $boccaccio_the_decameron$#! racconta la storia di dieci individui che fuggono in campagna, sottraendosi alla [ShowSituationNameWithNoTooltip('black_death')] per un breve periodo di tregua."
+
+ boccaccio_concerning_famous_women: "Sulle donne famose"
+ boccaccio_concerning_famous_women_desc: "Scritta da [GetCharacter('nap_giovanni_boccaccio').GetNameWithNoTooltip], #italic $boccaccio_concerning_famous_women$#! contiene una raccolta di storie associate a molte donne eminenti della storia, perlopiù figure dell'antichità classica."
+
+ illuminated_manuscrpt_of_the_legas_palatinae: "Manoscritto Illuminato delle [ShowPolicyNameWithNoTooltip('mll_leges_palatinae')]"
+ illuminated_manuscrpt_of_the_legas_palatinae_desc: "Commissionato da [GetCharacter('mll_james_iii_mallorca').GetNameWithNoTooltip], questo manoscritto decorativo illustra le [ShowPolicyNameWithNoTooltip('mll_leges_palatinae')] con una scrittura immacolata."
+
+ ARTIST_TYPE_NAME_doctor: "Medico"
+ ARTIST_TYPE_DESC_doctor: "Medici, chirurghi e guaritori dotti che hanno studiato la natura del corpo umano e le cause delle malattie. Tra i medici rinomati dell'epoca figurano Ibn Sina, Paracelso e Andreas Vesalio."
+ 
+ saint_vincent_panels: "Pannelli di San Vincenzo"
+ saint_vincent_panels_desc: "Creati da Nuno Gonçalves, i $saint_vincent_panels$ sono una monumentale ancona che raffigura vari elementi della società portoghese su sei pannelli di quercia."
+
+ #Iberian Works of Art
+ aljaferia_palace: "Aljafería"
+ aljaferia_palace_desc: "L'Aljafería è un palazzo fortificato costruito dal re taifa Al-Muqtadir di Saragozza nell'XI secolo, che fonde l'artigianato ispano-musulmano con le ambizioni di una corte minore desiderosa di rivaleggiare con Cordova. Successivamente conquistato dalla Corona d'Aragona, divenne una residenza reale e simbolo della stratificata eredità islamica e cristiana della valle dell'Ebro."
+
+ santa_maria_del_mar: "Santa Maria del Mar"
+ santa_maria_del_mar_desc: "Costruita dai mercanti e dai marinai del quartiere della Ribera di $barcelona$, la chiesa di Santa Maria del Mar è un capolavoro dell'architettura gotica catalana, notevole per il disegno unitario della sua navata e per la rapidità con cui fu costruita."

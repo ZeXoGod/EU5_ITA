@@ -1,0 +1,37 @@
+﻿l_english:
+
+ flavor_tle.8.title: "La [ShowDecisionNameWithNoTooltip('oran_fatwa_decision')]"
+ flavor_tle.8.desc: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] [ROOT.GetCountry.Custom('IT_CLERGY_HA')] recentemente emesso una nuova fatwā, che permette ai nostri fratelli di fede di praticare la #italic Taqiyya#! di fronte alla persecuzione. Prende il nome dal luogo in cui fu proclamata: la [ShowDecisionName('oran_fatwa_decision')] è giunta in [ShowRegionName('iberia_region')] e viene ampiamente diffusa tra i nostri oppressi correligionari di fede [ShowReligionAdjective('sunni')].\n\nQuesto permesso di praticare la Taqiyya consente l'esercizio nascosto dell'[ShowReligionGroupName('muslim')] fingendo di appartenere a un'altra fede. Normalmente vietata nell'#italic 'Umma#!, questa fatwā consente tale pratica in [ShowRegionNameWithNoTooltip('iberia_region')]."
+ flavor_tle.8.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_tle.8.a.entry: "$common_string_great$"
+
+ oran_fatwa_decision.title: "Fatwā di [ShowLocationNameWithNoTooltip('oran')]"
+ oran_fatwa_decision.desc: "$flavor_tle.8.desc$"
+ oran_fatwa_decision.desc.entry: "I nostri fratelli di fede [ShowReligionAdjective('sunni')] in [ShowRegionName('iberia_region')] sono oppressi. Non possiamo lasciare che restino nella #italic Taqiyya#! e che la loro fede vacilli. Occorre emettere una fatwā per aiutarli nelle loro lotte."
+ oran_fatwa_decision.a: "$flavor_tle.8.a$"
+
+ has_most_prestige_out_of_all_maghrebi_sunni_countries: "Ha più [prestige|e] di tutti i paesi di fede [ShowReligionAdjective('sunni')] con [capital|e] in [ShowRegionName('maghreb_region')]"
+ tle_enable_free_the_mudejar_cb_tt: "I [countries|e] di fede [ShowReligionAdjective('sunni')] con [capital|e] in [ShowRegionName('maghreb_region')] potranno fabbricare il [casus_belli|e] [ShowCasusBelliName('cb_free_the_mudejar')] contro bersagli di fede [ShowReligionGroupAdjective('christian')] che possiedono [provinces|e] con [pops|e] di fede [ShowReligionAdjective('sunni')] in [ShowRegionName('iberia_region')]"
+ tle_enable_events_for_liberating_mudejar_tt: "I [countries|e] di fede [ShowReligionAdjective('sunni')] che [Concept('occupy', 'occupano')|e] [locations|e] con [pops|e] di fede [ShowReligionAdjective('sunni')] in una [war|e] [ShowCasusBelliName('cb_free_the_mudejar')] riceveranno [events|e] sulla liberazione della popolazione locale"
+
+ flavor_tle.9.title: "Liberazione di [target.GetNameWithNoTooltip]"
+ flavor_tle.9.desc: "I tempi dell'oppressione per i nostri fratelli di fede [ROOT.GetCountry.GetReligion.GetAdjective] a [target.GetName] potrebbero finalmente essere finiti. Da decenni quelle povere anime subivano maltrattamenti sotto il dominio tirannico [target.GetOwner.Custom('IT_Della')][target.GetOwner.GetLongName]. Ora però, liberati dalle nostre forze, possono finalmente praticare in pace l'[ShowReligionGroupName('muslim')]. Non dovranno più nascondere la loro fede."
+ flavor_tle.9.a: "Rallegriamoci, fratelli!"
+
+ tle_fires_for_all_locations: "Questo [effect|e] vale per ogni [location|e] liberata, ma questa notifica di [event|e] riguarda solo le [province_capitals|e]"
+
+ flavor_tle.10.title: "Arabizzazione [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_tle.10.entry: "Arabizzazione di $TLE$"
+ flavor_tle.10.desc: "[ShowAreaName('algiers_area')] è solo una delle aree del [ShowRegionName('maghreb_region')] che si stanno arabizzando profondamente sotto l'influenza del ceto delle [ShowEstateTypeName('tribes_estate')] del gruppo culturale [ShowCultureGroupName('arabic_group')]. Con il progredire di questo processo, la lingua [ShowLanguageName('tamazight_language')] cade in disuso, e le élite urbane abbracciano con convinzione la variante locale [ShowLanguageName('arabic_language')]. In effetti, con la crescente immigrazione dall'[ShowRegionName('iberia_region')], vediamo la nostra [ShowEstateTypeName('nobles_estate')] adottare appieno quei costumi. Il nostro stato potrebbe presto abbracciare l'identità [ShowCultureName('algerian')]."
+ flavor_tle.10.a: "Dobbiamo rafforzare le nostre radici."
+ flavor_tle.10.b: "Quello è il nostro futuro!"
+
+ flavor_tle.12.title: "Scrollarsi di Dosso le Nostre Radici Tribali"
+ flavor_tle.12.entry: "$flavor_tle.12.title$"
+ flavor_tle.12.desc: "Le fondamenta dello stato [target_country.GetAdjective] poggiano su [target_government_reform.GetName], la tribù più numerosa nei pressi di [target_location.GetName]. È da questa tribù che ebbe origine la dinastia [target_dynasty.GetName], che a sua volta ha dato vita al [target_country.GetFlavorRank] che siamo oggi. Negli ultimi tempi, tuttavia, si è assistito a un graduale indebolimento di [target_estate.GetName], che minaccia l'equilibrio di potere nella [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Se non si farà nulla per rafforzare i $banu_al_wad$, i loro privilegi politici svaniranno nelle pagine della storia."
+ flavor_tle.12.a: "Dobbiamo cercare legittimità in qualcosa di più delle sole tribù."
+ flavor_tle.12.b: "La supremazia dei $banu_al_wad$ deve essere mantenuta!"
+ tle_empower_banu_al_wad_reform: "[ShowGovernmentReformName('tle_support_of_banu_al_wad')] fornirà inoltre il [modifier|e] non scalato [ShowNamedValue('small_stability_investment')|+=] [ShowModifierTypeName('stability_investment')]"
+
+ tle_empower_banu_al_wad_reform_unlock_tt: "Sbloccato con l'[event|e] #Y $flavor_tle.12.title$#!"
+ has_more_prestige_than_root_tt: "Ha più [prestige|e] di [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName]"

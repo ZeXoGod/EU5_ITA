@@ -1,9 +1,9 @@
 ﻿l_english:
  flavor_dan_skane_war.1.title: "La Ribellione di [target_character.GetNameWithNoTooltip]"
- flavor_dan_skane_war.1.entry: "The Rebellion of Johan Offesson" #NEW
+ flavor_dan_skane_war.1.entry: "The Rebellion of Johan Offesson"
  flavor_dan_skane_war.1.desc: "[target_character.GetName], uno dei membri più stimati [ROOT.GetCountry.Custom('IT_CROWN_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], è stato scoperto a cospirare contro il Dominio [GetCountry('SWE').GetAdjective]. Le sue ragioni di malcontento con i nostri Signori non sono prive di verità, poiché [target_ruler.GetName] trascura frequentemente le questioni del nostro stato a favore [GetCountry('SWE').Custom('IT_NOBLES_DEL')][GetCountry('SWE').GetGovernment.GetEstateName('nobles_estate')] [GetCountry('SWE').GetCulture.GetNameWithNoTooltip]. Con i recenti sviluppi in [GetCountry('DAN').GetName], potrebbe essere vantaggioso per noi proclamare ancora una volta la nostra lealtà allo stato [GetCountry('DAN').GetAdjectiveWithNoTooltip]."
  flavor_dan_skane_war.1.a: "Esiliamolo in [GetCountry('DAN').GetNameWithNoTooltip]."
- flavor_dan_skane_war.1.a.entry: "Exile him to $DAN$." #NEW
+ flavor_dan_skane_war.1.a.entry: "Exile him to $DAN$."
  flavor_dan_skane_war.1.b: "Sosteniamo la sua ribellione."
  flavor_dan_skane_war.1.b.tt: "Questo potrebbe portare alla nostra annessione da parte della [GetCountry('DAN').GetName]"
 
@@ -32,6 +32,11 @@
  flavor_dan_skane_war.6.desc: "[GetCountry('DAN').Custom('IT_La')|U][GetCountry('DAN').GetName] ci ha inviato una proposta per acquistare i diritti di signoria [GetCountry('SKE').Custom('IT_Sulla')][GetCountry('SKE').GetName]. Accettare l'offerta ci porterebbe un afflusso d'oro che potrebbe essere messo a grande uso, ma ci costerebbe anche l'accesso immediato a [ShowLocationName('oresund')]."
  flavor_dan_skane_war.6.a: "Accettiamo!"
  flavor_dan_skane_war.6.b: "Rifiutiamo la proposta!"
+
  flavor_dan_skane_war.7.title: "[GetCountry('SWE').Custom('IT_La')|U][GetCountry('SWE').GetNameWithNoTooltip] Accetta la nostra Offerta"
  flavor_dan_skane_war.7.desc: "[GetCountry('SWE').Custom('IT_La')|U][GetCountry('SWE').GetName] ha accettato la nostra offerta di acquistare la signoria [GetCountry('SKE').Custom('IT_Sulla')][GetCountry('SKE').GetName]. Mentre alcune formalità sono ancora in corso di completamento, il trattato è ratificato e già in vigore."
- flavor_dan_skane_war.7.a: "$common_string_brilliant$"
+ flavor_dan_skane_war.7.a: "[ROOT.GetCountry.Custom('common_string_brilliant')]"
+
+ flavor_dan_skane_war.8.title: "[GetCountry('SWE').GetNameWithNoTooltip] rifiuta la nostra offerta"
+ flavor_dan_skane_war.8.desc: "[GetCountry('SWE').GetName] ha rifiutato la nostra offerta di acquistare la sovranità su [GetCountry('SKE').GetName]. Questo spiacevole sviluppo non ci lascerà altra scelta che trovare altri mezzi, se vogliamo continuare a perseguire l'acquisizione di [GetCountry('SKE').GetNameWithNoTooltip]."
+ flavor_dan_skane_war.8.a: "[ROOT.GetCountry.Custom('common_string_negative')]"

@@ -7,7 +7,7 @@
  court_flavor_events.1.a: "Facciamolo."
  court_flavor_events.1.A.tooltip: "[advisor.GetName] contatterà [advisor_liaisons_target_country.Custom('IT_ART_RANGO')][advisor_liaisons_target_country.GetLongName] per cercare migliori relazioni."
  court_flavor_events.1.b: "Non abbiamo bisogno di migliori relazioni con loro."
- 
+
  court_flavor_events.2.title: "Riavvicinamento con [from.Custom('IT_ART_RANGO')][from.GetLongNameWithNoTooltip]?"
  court_flavor_events.2.desc: "[advisor.GetName], un abile [from.GetGovernment.GetCabinetMemberTitle] di cultura [advisor.GetCulture.GetName] impiegato presso la [from.GetGovernment.GetCourtTitle] [from.Custom('IT_ADJ_FS')], ha contattato i suoi vecchi associati nel nostro Paese con un piano per promuovere migliori relazioni tra [from.GetLongNameWithNoTooltip] e [ROOT.GetCountry.GetLongName]. Un [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] si è presentato [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRuler.GetName] con il messaggio [from.GetAdjective], che parla del loro desiderio di amicizia tra i nostri popoli."
  court_flavor_events.2.a: "Migliori relazioni potrebbero in effetti portarci beneficio."
@@ -37,7 +37,7 @@
  court_flavor_events.10.b: "Meglio non rischiare. Arrestatelo!"
  court_flavor_events.10.B.tt: "[advisor_liaisons_target_country.Custom('IT_ART_RANGO')|U][advisor_liaisons_target_country.GetLongName] potrebbe protestare per questa linea d'azione."
  
- court_flavor_events.11.title: "Tradimento" #QUI
+ court_flavor_events.11.title: "Tradimento"
  court_flavor_events.11.desc: "[advisor.GetName] ci ha traditi! Uno dei suoi rivali ha scoperto prove inconfutabili del fatto che ha rivelato diversi segreti di Stato [advisor_liaisons_target_country.Custom('IT_AL_RANGO')][advisor_liaisons_target_country.GetLongName] mentre fingeva di rappresentare i nostri interessi. Purtroppo, è fuggito oltre il confine prima che potessimo arrestarlo."
  court_flavor_events.11.a: "$common_string_this_is_not_good$"
  
@@ -65,11 +65,11 @@
  court_flavor_events.16.b: "Non agiremo in spregio alla giustizia."
  opinion_court_events_held_compatriot: "Compatriota tenuto prigioniero"
  
- court_flavor_events.17.title: "La Risposta [from.GetAdjective]"
+ court_flavor_events.17.title: "La Risposta [from.GetAdjectiveWithNoTooltip]"
  court_flavor_events.17.desc: "Il [from.GetGovernment.GetRulerTitle] [from.GetAdjectiveWithNoTooltip] ha risposto alle nostre richieste: 'Come segno di buona volontà, nonostante le considerevoli prove incriminanti a suo carico, abbiamo rilasciato [advisor.GetName]. Speriamo che guarderete con favore a Noi per questo atto'."
  court_flavor_events.17.a: "Era solo giustizia."
  
- court_flavor_events.18.title: "La Risposta [from.GetAdjective]"
+ court_flavor_events.18.title: "La Risposta [from.GetAdjectiveWithNoTooltip]"
  court_flavor_events.18.desc: "Il [from.GetGovernment.GetRulerTitle] [from.GetAdjectiveWithNoTooltip] ha risposto alle nostre richieste: 'Non rilasciamo coloro che sono colpevoli di tradimento. [advisor.GetName] rimarrà in custodia'."
  court_flavor_events.18.a: "Ve ne pentirete."
  
@@ -98,11 +98,11 @@
  court_flavor_events.27.title: "Disertore [from.GetAdjectiveWithNoTooltip]!"
  court_flavor_events.27.desc: "Un individuo si è presentato davanti [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], insistendo per essere ascoltato. Afferma di essere stato impiegato al servizio del [from.GetGovernment.GetRulerTitle] [from.GetAdjectiveWithNoTooltip] e di aver appreso i dettagli dei piani di guerra [from.GetAdjective] contro [ROOT.GetCountry.GetLongName], la sua patria. Come sedicente patriota [ROOT.GetCountry.GetAdjectiveWithNoTooltip], ci offre ora i suoi servigi insieme a queste informazioni che, a suo dire, sono state abilmente raccolte dalle cerchie più ristrette della corte [from.GetAdjectiveWithNoTooltip] e portate a Noi con considerevole rischio per la sua vita."
  court_flavor_events.27.a: "I suoi servigi saranno ricordati – e premiati."
- 
+
  court_flavor_events.28.title: "Tradimento"
  court_flavor_events.28.desc: "[advisor.GetName] ci ha traditi! Nonostante gli occhi vigili dei suoi nemici, è riuscito a scivolare oltre il confine con copie di importanti documenti relativi ai nostri piani di guerra!"
  court_flavor_events.28.a: "$common_string_this_is_not_good$"
- 
+
  court_flavor_events.30.title: "Un Cambio di Politica?"
  court_flavor_events.30.desc: "[advisor.GetName] si è guadagnato molti amici nella corte [ROOT.GetCountry.GetAdjective] grazie al suo servizio dedicato come [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]. Tuttavia, sembra che l'esatto opposto accada tra i suoi compatrioti al servizio del [advisor_antiliaisons_target_country.GetGovernment.GetGovernmentType.GetName] [advisor_antiliaisons_target_country.GetAdjective]: invidiosi della sua posizione, Lo rimproverano per aver accettato un impiego tra i nemici del suo popolo e hanno iniziato a diffondere voci che mettono in dubbio la sua affidabilità.\nPreoccupato per la sua reputazione nella corte [ROOT.GetCountry.GetAdjectiveWithNoTooltip], [advisor.GetNameWithNoTooltip] è diventato un acceso oppositore del [advisor_antiliaisons_target_country.GetGovernment.GetRulerTitle] [advisor_antiliaisons_target_country.GetAdjectiveWithNoTooltip]. Ha fatto causa comune con diversi individui che la pensano allo stesso modo per chiedere una linea più dura contro [advisor_antiliaisons_target_country.Custom('IT_ART_RANGO')][advisor_antiliaisons_target_country.GetLongNameWithNoTooltip]."
  court_flavor_events.30.a: "Ha ragione – è necessario un cambio di politica."
@@ -132,9 +132,10 @@
  court_flavor_events.36.b: "Non abbiamo spazio per altri esuli."
  
  court_flavor_events.37.title: "Esuli [from.Custom('IT_NEL_RANGO')][from.GetLongNameWithNoTooltip]"
- court_flavor_events.37.desc: "I nostri occhi e orecchie [from.Custom('IT_NEL_RANGO')][from.GetLongName] riferiscono che hanno accolto molti dei nemici politici [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] che erano stati precedentemente esiliati dalla corte [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] o hanno scelto di cercare opportunità altrove. Ora stanno spingendo per un'azione forte contro l'attuale 'regime' [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fornendo assistenza attiva [from.Custom('IT_AL_TITOLO')][from.GetGovernment.GetRulerTitle] [from.Custom('IT_Di')][from.GetNameWithNoTooltip] per il raggiungimento di tale scopo."
+ court_flavor_events.37.desc: "I nostri occhi e orecchie [from.Custom('IT_NEL_RANGO')][from.GetLongName] riferiscono che hanno accolto molti dei nemici politici [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] che erano stati precedentemente esiliati dalla corte [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] o hanno scelto di cercare opportunità altrove. Ora stanno spingendo per un'azione forte contro l'attuale 'regime' [ROOT.GetCountry.GetAdjectiveWithNoTooltip] e stanno fornendo assistenza attiva [from.Custom('IT_AL_TITOLO')][from.GetGovernment.GetRulerTitle] [from.Custom('IT_Di')][from.GetNameWithNoTooltip] per il raggiungimento di tale scopo."regime" and are providing active assistance to the [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] towards the achievement of that aim."
  court_flavor_events.37.a: "Come osano!"
  opinion_hosting_exiles: "Ospita esuli"
+ 
  
  court_flavor_events.39.title: "Eresia [heathen_advisor_country.Custom('IT_NEL_RANGO')][heathen_advisor_country.GetLongNameWithNoTooltip]"
  court_flavor_events.39.desc: "Siamo stati informati che il [heathen_advisor_country.GetGovernment.GetRulerTitle] [heathen_advisor_country.GetAdjective] sta dando rifugio a un eretico nella sua corte. Il suo [heathen_advisor_country.GetGovernment.GetCabinetMemberTitle], [advisor.GetName], si è allontanato dagli insegnamenti del Papa e professa apertamente l'adesione alla fede [advisor.GetReligion.GetName] – diffondendo nel frattempo vili menzogne contro Sua Santità."

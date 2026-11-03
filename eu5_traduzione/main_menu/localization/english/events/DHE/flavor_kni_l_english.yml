@@ -1,30 +1,30 @@
 ﻿l_english:
  flavor_kni.3.title: "The Great Carrack of [ShowLocationNameWithNoTooltip('alexandria')]"
- flavor_kni.3.entry: "The Great Carrack of Alexandria" #NEW
+ flavor_kni.3.entry: "The Great Carrack of Alexandria"
  flavor_kni.3.desc: "The small but proficient fleet of the [ROOT.GetCountry.GetName] was the scourge of various [ShowReligionAdjective('muslim')] foes for hundreds of years. Keeping the waters clear of enemy privateers, as well as capturing [ShowReligionAdjective('muslim')] trade ships, kept the coffers on [ROOT.GetCountry.GetCapital.GetName] full and [ShowReligionAdjective('muslim')] sailors in terror. One of the most famous events was the capturing of the Great Carrack from [ShowLocationName('alexandria')] in [GetCurrentYear], filled with enormous riches."
  flavor_kni.3.a: "Divinity favors us!"
  opinion_captured_alexandria_great_carrack: "Captured the Great Carrack of Alexandria"
  flavor_kni.4.title: "[target_character.GetNameWithNoTooltip]"
- flavor_kni.4.entry: "Gabriel Tadino, the Engineer" #NEW
- flavor_kni.4.desc: "[target_character.GetName] is regarded as one of the best fortification engineers of [target_location.GetRegion.GetSubContinent.GetContinent.GetName] and was authorized to improve the fortresses on [ShowLocationName('rodos')]. In [GetCurrentYear], when he had just arrived in our capital to begin his work, he was so enamored with our people and their ideals that he kneeled in front of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and begged him to make him a Knight. Pressure has been mounting for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to accept him in account for his brave determination and engineering skills." #NEW
- flavor_kni.4.a: "He will make a fine addition..." #NEW
+ flavor_kni.4.entry: "Gabriel Tadino, the Engineer"
+ flavor_kni.4.desc: "[target_character.GetName] is regarded as one of the best fortification engineers of [target_location.GetRegion.GetSubContinent.GetContinent.GetName] and was authorized to improve the fortresses on [ShowLocationName('rodos')]. In [GetCurrentYear], when he had just arrived in our capital to begin his work, he was so enamored with our people and their ideals that he kneeled in front of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and begged him to make him a Knight. Pressure has been mounting for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to accept him in account for his brave determination and engineering skills."
+ flavor_kni.4.a: "He will make a fine addition..."
  flavor_kni.5.title: "[target_character.GetNameWithNoTooltip]"
- flavor_kni.5.entry: "Fortifying Malta" #NEW
+ flavor_kni.5.entry: "Fortifying Malta"
  flavor_kni.5.desc: "After it was acquired by our people, [ShowLocationName('malta')] became as strong a fortress as [ShowLocationName('rodos')] had been. Under [target_character.GetName], the city has withstood enemy invaders on several occasions owing to the valiant defense of its disciplined garrison. This new stronghold has become a town of splendid palaces and unparalleled fortifications. It will grow in power and wealth mainly due to our maritime raiding adventures against various foes."
  flavor_kni.5.a: "A sign of our faith and resilience!"
  flavor_kni.100.title: "[GetCountry('KNI').GetNameWithNoTooltip]"
  flavor_kni.100.desc: "A band of legendary knights, their metal tested in the fiery pits of battlefields across the Mediterranean have arrived at our court with a petition at hand. Being driven from the island of [ShowLocationName('rodos')] by [target_rodos_owner.GetLongName], [GetCountry('KNI').GetName] have wandered homeless, seeking a new home to continue their pious defense of our faith until in [GetCurrentYear] the [GetUniqueInternationalOrganization('hre').GetLeaderTitle], [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetGovernment.GetRuler.GetName], agreed to confer upon them the sovereignty of the island of [ShowLocationName('malta')], pending our approval."
  flavor_kni.100.a: "Give [ShowLocationNameWithNoTooltip('malta')] to the [GetCountry('KNI').GetNameWithNoTooltip]."
- flavor_kni.100.a.entry: "Give [ShowLocationNameWithNoTooltip('malta')] to $KNI$." #NEW
+ flavor_kni.100.a.entry: "Give [ShowLocationNameWithNoTooltip('malta')] to $KNI$."
  spa_ceded_malta: "Ceded Malta"
  spa_ceded_malta_pap: "Ceded Malta to the Knights"
  flavor_kni.100.b: "Do not give them anything."
  spa_refused_ceding_malta: "Refused Ceding Malta to the Knights"
 
-#New Events
+#New Events 
  flavor_kni.7.title: "Translating the Chronicle"
  flavor_kni.7.entry: "$flavor_kni.7.title$"
- flavor_kni.7.desc: "The #italic Chronicle of Morea#! is a chronicle detailing the establishment of the #italic Frankokratia#! in [ShowScriptedGeographyName('greece_geography')], covering much of the 13th century following the Fourth Crusade. Though the [GetCountry('LAT').GetLongName] may have fallen to the [GetCountry('BYZ').GetLongName], other various states still stand, including [ROOT.GetCountry.GetName]. Let us have it translated into our language while simultaneously extending the work itself to cover our history." 
+ flavor_kni.7.desc: "The #italic Chronicle of Morea#! is a chronicle detailing the establishment of the #italic Frankokratia#! in [ShowScriptedGeographyName('greece_geography')], covering much of the 13th century following the Fourth Crusade. Though the [GetCountry('LAT').GetLongName] may have fallen to the [GetCountry('BYZ').GetLongName], other various states still stand, including [ROOT.GetCountry.GetName]. Let us have it translated into our language while simultaneously extending the work itself to cover our history."
  flavor_kni.7.a: "Have it translated."
  flavor_kni.7.b: "Do not bother with it."
 
@@ -42,7 +42,7 @@
  flavor_kni.9.b: "We need not stay on the defensive."
 
  flavor_kni.10.title: "[target_country.GetCulture.GetNameWithNoTooltip] Piracy"
- flavor_kni.10.entry: "Turkish Piracy in the Aegean" #NEW
+ flavor_kni.10.entry: "Turkish Piracy in the Aegean"
  flavor_kni.10.desc: "With the establishment of the #italic Frankokratia#! in Southern [ShowRegionName('balkan_region')] and the subsequent trade expansion of the Merchant Republics of [ShowRegionName('italy_region')], the quantity of commercial ships passing through the [ShowProvinceDefinitionName('aegean_sea_province')] has been growing steadily for the past decades. However, such prosperity does attract our foes, who seek to harm us with any means necessary. As such, our religious enemies in [target_country.GetName] have decided to enlist privateers who are now openly attacking the [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] shipping."
  flavor_kni.10.a: "We will punish them!"
 
@@ -50,7 +50,7 @@
  flavor_kni.11.entry: "$flavor_kni.11.title$"
  flavor_kni.11.desc: "One of our generals, [target_character.GetName], has been granted the title of #italic Fidei Defensor#! - Defender of the Faith. It seems like our solemn appeal to the Holy See for the grant of the title has worked. We believe that the efforts of [target_character.GetNameWithNoTooltip] to protect Christendom are outstanding and that under [target_character.GetHerHis] leadership, the armies of [target_religion.GetName] will spread our faith to all corners of the world."
  flavor_kni.11.a: "Well deserved!"
- variable_knights_battles_won_tt: "The Order has Won Many Battles" #NEW
+ variable_knights_battles_won_tt: "The Order has Won Many Battles"
  
  #The Knights of the New World
  flavor_kni.12.title: "The Knights of the New World"
@@ -61,24 +61,24 @@
  flavor_kni.12.historical_info: "$flavor_kni.1000.historical_info$"
  #Philippe de Longvilliers de Poincy
  flavor_kni.13.title: "[target_character.GetNameWithNoTooltip]"
- flavor_kni.13.entry: "Philippe de Longvilliers de Poincy" #NEW
- flavor_kni.13.desc: "[target_character.GetName] has risen through the ranks of our [ROOT.GetCountry.GetFlavorRank] and has caught the attention of many who now consider giving him a more prominent position. He is an experienced leader with a firm hand, and he has already set his sights on expanding our control over the [ShowRegionName('caribbean_region')] islands, fortifying our defenses, and ensuring the prosperity of our colony." #NEW
- flavor_kni.13.a: "Appoint him the governor of the isles." #NEW
- flavor_kni.13.b: "We are in no need of his service." #NEW
+ flavor_kni.13.entry: "Philippe de Longvilliers de Poincy"
+ flavor_kni.13.desc: "[target_character.GetName] has risen through the ranks of our [ROOT.GetCountry.GetFlavorRank] and has caught the attention of many who now consider giving him a more prominent position. He is an experienced leader with a firm hand, and he has already set his sights on expanding our control over the [ShowRegionName('caribbean_region')] islands, fortifying our defenses, and ensuring the prosperity of our colony."
+ flavor_kni.13.a: "Appoint him the governor of the isles."
+ flavor_kni.13.b: "We are in no need of his service."
  flavor_kni.13.historical_info: "Phillippe de Longvilliers de Poincy was a French knight of the Order of Saint John who served as the governor of Saint Kitts from 1639 until his death in 1660. He ruled the island with near-autonomous authority, expanding its fortifications and defending it against rival colonial powers."
  #Giovanni Paolo Lascaris
  flavor_kni.14.title: "[target_character.GetNameWithNoTooltip]"
- flavor_kni.14.entry: "Giovanni Paolo Lascaris" #NEW
- flavor_kni.14.desc: "[target_character.GetName] is a prominent member of the [ROOT.GetCountry.GetFlavorRank], famed for his reputation of both unwavering resolve and skillful diplomacy. A steadfast defender of the [ROOT.GetCountry.GetFlavorRank]'s strongholds, he is committed to reinforcing our Mediterranean possessions and ensuring that we remain a formidable force against our enemies. At the same time, he has proven adept at navigating the political landscape of [ShowContinentName('europe')], securing vital alliances and financial support." #NEW
- flavor_kni.14.a: "Put him in the charge of the [ROOT.GetCountry.GetFlavorRank]." #NEW
- flavor_kni.14.a.entry: "Put him in the charge of the realm." #NEW
- flavor_kni.14.b: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] would benefit from his wisdom." #NEW
- flavor_kni.14.b.entry: "Our court would benefit from his wisdom." #NEW
+ flavor_kni.14.entry: "Giovanni Paolo Lascaris"
+ flavor_kni.14.desc: "[target_character.GetName] is a prominent member of the [ROOT.GetCountry.GetFlavorRank], famed for his reputation of both unwavering resolve and skillful diplomacy. A steadfast defender of the [ROOT.GetCountry.GetFlavorRank]'s strongholds, he is committed to reinforcing our Mediterranean possessions and ensuring that we remain a formidable force against our enemies. At the same time, he has proven adept at navigating the political landscape of [ShowContinentName('europe')], securing vital alliances and financial support."
+ flavor_kni.14.a: "Put him in the charge of the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_kni.14.a.entry: "Put him in the charge of the realm."
+ flavor_kni.14.b: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] would benefit from his wisdom."
+ flavor_kni.14.b.entry: "Our court would benefit from his wisdom."
  flavor_kni.14.c: "We are not interested."
  flavor_kni.14.historical_info: "Giovanni Paolo Lascaris served as Grand Master of the Knights Hospitaller from 1636 to 1657. His rule was marked by efforts to reinforce Mediterranean fortifications to ensure proper defense against the Ottomans. Lascaris also skillfully managed diplomatic relations, securing financial aid from European monarchs to support the Order's activities. His rule strengthened the Order's position in the Mediterranean, though he also faced internal struggles regarding the administration of the Order's overseas possessions."
  #Carib Tribes Attack Our Settlement
  flavor_kni.15.title: "The [ShowCultureNameWithNoTooltip('carib')] Natives Raid [target_location.GetNameWithNoTooltip]"
- flavor_kni.15.entry: "Natives Attack Our Colonies" #NEW
+ flavor_kni.15.entry: "Natives Attack Our Colonies"
  flavor_kni.15.desc: "Bands of [ShowCultureName('carib')] warriors have launched devastating raids on [target_location.GetName], pillaging homes, burning crops, and slaughtering many of our people. These fierce warriors have long resisted European encroachment, and their attacks have left our island holdings in turmoil. Some within our [ROOT.GetCountry.GetFlavorRank] argue that responding with force would only escalate the bloodshed and provoke even fiercer retaliation. Others insist that we must strike back, raiding their villages to ensure they can no longer threaten our settlements."
  flavor_kni.15.a: "We are powerless in this situation."
  flavor_kni.15.b: "Launch a counter-attack!"
@@ -93,7 +93,7 @@
  flavor_kni.16.historical_info: "As the Knights Hospitaller settled on Malta, they faced increasing economic difficulties. Their traditional sources of income dwindled, and the financial burdens of maintaining a fleet to patrol the Mediterranean grew heavier. In response, many turned to privateering, raiding Muslim merchant ships under the guise of defending Christendom. Over time, some knights took this further, embracing piracy as a way of life, living in luxury off their plunder, and even joining the navies of France and Spain in search of wealth and adventure."
  #The Capture of Tripoli
  flavor_kni.17.title: "The Capture of [ShowLocationNameWithNoTooltip('tripoli')]"
- flavor_kni.17.entry: "The Capture of Tripoli" #NEW
+ flavor_kni.17.entry: "The Capture of Tripoli"
  flavor_kni.17.desc: "The banners of the [ROOT.GetCountry.GetFlavorRank] now fly over [ShowLocationName('tripoli')], a hard-won bastion of Christendom on the coast of [ShowContinentName('africa')]. Though securing [ShowLocationNameWithNoTooltip('tripoli')] was a great victory, ruling it might be a far greater challenge. [ShowLocationNameWithNoTooltip('tripoli')] is surrounded by hostile powers, and its defenses remain weak against the ever-present threat of pirates and corsairs. Its garrison is stretched thin, and some question whether we can truly hold this distant outpost."
  flavor_kni.17.a: "Do nothing."
  flavor_kni.17.b: "Refine its fortifications instead."
@@ -103,9 +103,9 @@
  #The History of the Hospitallers
  flavor_kni.18.title: "The History of the Hospitallers"
  flavor_kni.18.entry: "$flavor_kni.18.title$"
- flavor_kni.18.desc: "[target_character.GetName], a devoted member of our [ROOT.GetCountry.GetFlavorRank], has expressed an interest in preserving our past for future generations. He envisions a grand [ShowWorkOfArtTypeName('chronicle')] detailing the history of the [ROOT.GetCountry.GetFlavorRank], its struggles, and its triumphs. However, such an endeavor requires significant funding for research, travel, and the publication of his work." #NEW
+ flavor_kni.18.desc: "[target_character.GetName], a devoted member of our [ROOT.GetCountry.GetFlavorRank], has expressed an interest in preserving our past for future generations. He envisions a grand [ShowWorkOfArtTypeName('chronicle')] detailing the history of the [ROOT.GetCountry.GetFlavorRank], its struggles, and its triumphs. However, such an endeavor requires significant funding for research, travel, and the publication of his work."
  flavor_kni.18.a: "A history worthy of our [ROOT.GetCountry.GetFlavorRank] must be written!"
- flavor_kni.18.a.entry: "A history worthy of our realm must be written!" #NEW
+ flavor_kni.18.a.entry: "A history worthy of our realm must be written!"
  flavor_kni.18.b: "We cannot spare the funds for such luxuries."
  flavor_kni.18.historical_info: "Giacomo Bosio was an Italian historian and a member of the Knights Hospitaller who dedicated much of his life to documenting the Order's history. His most renowned work, #italic Dell'Istoria della Sacra Religione et Illustrissima Militia di San Giovanni Gierosolimitano#!, was published in 1594. This monumental chronicle provided an extensive account of the Order's origins, its role in the Crusades, its struggles against the Ottomans, and its establishment in Malta."
  
@@ -131,13 +131,13 @@
  flavor_kni.112.a: "Has he fallen from grace?"
 
  flavor_kni.120.title: "The Development of [target_location.GetNameWithNoTooltip]"
- flavor_kni.120.entry: "The Development of Rhodes" #NEW
+ flavor_kni.120.entry: "The Development of Rhodes"
  flavor_kni.120.desc: "For decades our capital has been the base of operations for many assaults against the enemies of our faith. As time went by, it became apparent that for our struggle to be realized, we must develop a stronghold to match our ambitions and elevate our prestige in the eyes of other [ROOT.GetCountry.GetReligion.GetAdjective] statesmen. [target_location.GetName] shall be dressed in our banners and populated by our prosperous people, eager to etch our names in the annals of history."
  flavor_kni.120.a: "Grant citizenship to foreign merchants."
  flavor_kni.120.b: "Let us develop our infrastructure instead."
 
  flavor_kni.121.title: "Naval Business in [target_location.GetNameWithNoTooltip]"
- flavor_kni.121.entry: "Naval Business in Rhodes" #NEW
+ flavor_kni.121.entry: "Naval Business in Rhodes"
  flavor_kni.121.desc: "[target_location.GetName] is an island in a very advantageous position. Its proximity to the coast of [target_location.GetRegion.GetName] elevates it to a valuable anchorage for our naval activities across the neighboring coasts. At the same time, serving as a passage between East and West, many merchants from abroad have sought to make [target_location.GetNameWithNoTooltip] a stop in their voyages to and from the Near East."
  flavor_kni.121.a: "We will favor the production of [ShowGoodsNameWithNoTooltip('naval_supplies')]!"
  flavor_kni.121.b: "We must accommodate more merchants."
@@ -149,25 +149,25 @@
  flavor_kni.130.a: "Is this holy commendation or condemnation?"
 
  flavor_kni.131.title: "Earthquake Strikes [target_location.GetNameWithNoTooltip]"
- flavor_kni.131.entry: "Earthquake Strikes a Besieged City" #NEW
+ flavor_kni.131.entry: "Earthquake Strikes a Besieged City"
  flavor_kni.131.desc: "During our siege of [target_location.GetName] a highly unfortunate turn of events has happened. The ground started shaking violently, above and beyond what we had ever seen before, causing widespread destruction and death. Moreover, the tsunami that followed has wiped out our food supplies making our siege unsustainable in the long run."
  flavor_kni.131.a: "Damnation!"
 
  flavor_kni.150.title: "Castle in [target_location.GetNameWithNoTooltip]"
- flavor_kni.150.entry: "Castle in Bodrum" #NEW
+ flavor_kni.150.entry: "Castle in Bodrum"
  flavor_kni.150.desc: "The [target_location.GetOwner.GetAdjective] hold over the [target_location.GetRank.GetName] of [target_location.GetName] is weak at best. It is common knowledge that we could reasonably have our knightly brothers land on the peninsula in order to build a castle. For the construction, we could utilize the remnants of the ancient Mausoleum of Halicarnassus in order to cut the risks and the cost."
  flavor_kni.150.a: "Take control and utilize the remnants of the Halicarnassus."
  flavor_kni.150.b: "Construct the castle with our own materials instead."
  flavor_kni.150.c: "We do not need a stronghold on the mainland."
 
  flavor_kni.151.title: "Foreign Castle in [target_location.GetNameWithNoTooltip]"
- flavor_kni.151.entry: "Foreign Castle in Bodrum" #NEW
+ flavor_kni.151.entry: "Foreign Castle in Bodrum"
  flavor_kni.151.desc: "Those dastardly [kni_from.GetAdjective] brothers have landed on the shores of [target_location.GetName] and began construction of a castle. Though the [target_location.GetRank.GetName] is nominally ours, our closest bailiffs are miles away and were unable to respond to the threat in a reasonable time. We believe that the only way to teach [kni_from.GetNameWithNoTooltip] a lesson is with a military campaign."
  flavor_kni.151.a: "We will teach them a lesson."
  
  #Expanding the Caribbean Possessions
  flavor_kni.1000.title: "Expanding the [ShowRegionNameWithNoTooltip('caribbean_region')] Possessions"
- flavor_kni.1000.entry: "Expanding the Caribbean Region Possessions" #NEW
+ flavor_kni.1000.entry: "$flavor_kni.1000.title$"
  flavor_kni.1000.desc: "Our [ROOT.GetCountry.GetFlavorRank] has long stood as a bastion against heathen threats in the Mediterranean, but our ambitions need not be limited to these shores. Having already established presence in the [ShowRegionName('caribbean_region')], we know that the islands there are rich in resources and strategically placed along key trade routes. Some among the [ROOT.GetCountry.GetFlavorRank] propose expanding our reach by acquiring an island from the [target_country.GetLongName]. Prominent members of the [ROOT.GetCountry.GetGovernment.GetCabinetTitle] were particularly interested in the purchase of [target_location.GetName]."
  flavor_kni.1000.a: "Send an offer to purchase the island."
  kni_if_target_agrees: "If [target_country.GetName] agrees:"
@@ -180,7 +180,7 @@
  flavor_kni.1001.b: "Out of question!"
  #Target Country Agrees
  flavor_kni.1002.title: "The Purchase of [target_location.GetNameWithNoTooltip]"
- flavor_kni.1002.entry: "A Caribbean Island Purchased" #NEW
+ flavor_kni.1002.entry: "A Caribbean Island Purchased"
  flavor_kni.1002.desc: "Our negotiations have borne fruit - [target_location.GetName] is now under our control! This [ShowRegionName('caribbean_region')] stronghold will serve as a base for our [ROOT.GetCountry.GetFlavorRank], allowing us to extend our influence into the New World."
  flavor_kni.1002.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_kni.1002.a.entry: "$common_string_brilliant$"

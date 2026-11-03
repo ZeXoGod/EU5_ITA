@@ -3,6 +3,20 @@
  DISASTER_BREAKDOWN: "Analisi Disastro"
  no_event_occurs_tt: "Non si verifica nessun [event|e]"
  an_event_occurs_tt: "Potrebbe verificarsi un [event|e] relativo a questo [disaster|e]"
+#Oligarchic Capture
+ #Disaster
+ oligarchic_capture: "Presa Oligarchica"
+ oligarchic_capture_desc: "La presa della corona sulla nostra repubblica si è allentata, e una fazione potente ora si muove per impadronirsi delle leve dello stato. La riforma delle leggi si arresta, le voci dell'opposizione vengono silenziate, e a meno che non agiamo gli oligarchi si trincereranno sopra la volontà del popolo..."
+ oligarchic_faction_name: "Fazione Oligarchica"
+ oligarchic_capture_faction_won_civil_war_tt: "La #Y Fazione Oligarchica#! ha vinto la guerra civile e ha preso il controllo dello stato"
+ oligarchic_faction_not_active_tt: "Non ci sono [rebels|e] attivi della #Y Fazione Oligarchica#!"
+#Crisis of Faith
+ #Disaster
+ crisis_of_faith: "Crisi di Fede"
+ crisis_of_faith_desc: "La devozione verso la chiesa di stato è crollata, e predicatori rivali riempiono il vuoto con scisma e riforma. Il clero si frattura tra chi vorrebbe epurare gli eretici e chi vorrebbe trattare con loro. La nostra posizione di regno sancito divinamente pende in bilico..."
+ schismatic_clergy_name: "Clero Scismatico"
+ crisis_of_faith_schismatic_clergy_won_civil_war_tt: "Il #Y Clero Scismatico#! ha vinto la guerra civile"
+ schismatic_clergy_not_active_tt: "Non ci sono [rebels|e] attivi del #Y Clero Scismatico#!"
 #Succession Crisis
  #Disaster
  succession_crisis: "Crisi di Successione"
@@ -22,7 +36,7 @@
  sc_ask_help_from_the_nobility: "Richiedere l'Aiuto della Nobiltà"
  sc_ask_help_from_the_nobility_desc: "I numerosi membri della nobiltà presenti [actor.Custom('IT_NEL_RANGO')]nostr[actor.Custom('IT_OA_RANGO')] [actor.GetFlavorRank] detengono un'influenza considerevole. Se conquistassimo il loro favore, saremmo certi di sconfiggere qualsiasi pretendente intenzionato a detronizzarci."
  sc_ask_help_from_the_clergy: "Richiedere l'Aiuto del Clero"
- sc_ask_help_from_the_clergy_desc: "Grazie alla fede devota, la nostra incrollabile devozione [actor.GetReligion.GetGroup.GetAdjective] rimarrà salda mentre cerchiamo il favore e il sostegno del clero durante l'attuale crisi."
+ sc_ask_help_from_the_clergy_desc: "Grazie alla fede devota, la nostra incrollabile devozione [actor.GetReligion.GetGroup.GetAdjective] rimarrà salda mentre cerchiamo il favore e il sostegno del clero durante l'attuale crisi." 
  sc_ask_help_from_the_burghers: "Richiedere l'Aiuto della Borghesia"
  sc_ask_help_from_the_burghers_desc: "I maestri del denaro, che detengono un'enorme influenza, devono essere convocati per sostenere gli sforzi militari qualora i pretendenti ci trascinassero in una guerra civile. Le loro borse colme farebbero un'ottima aggiunta al nostro tesoro..."
  choose_writer: "Scegli uno [ShowArtistTypeNameWithNoTooltip('writer')]"
@@ -52,7 +66,7 @@
  #Disaster
  war_of_the_roses: "Guerra delle Due Rose"
  war_of_the_roses_desc: "L'[GetCountry('ENG').GetName] è dilaniata da un feroce conflitto tra due rami cadetti della dinastia regnante — la 'rosa bianca' degli [ShowDynastyName('york_dynasty')] e la 'rosa rossa' dei [ShowDynastyName('lancaster_dynasty')]. La loro controversia riguarda la validità delle rispettive rivendicazioni ereditarie alla corona. Questo conflitto potrebbe durare decenni e influenzare l'intera [GetCountry('ENG').GetGovernment.GetEstateName('nobles_estate')], minando completamente la stabilità del [GetCountry('ENG').GetFlavorRank]!"
- 
+
  #Actions
  wotr_bribe_garrison: "Corrompere una Guarnigione"
  wotr_bribe_garrison_desc: "Durante una guerra civile, le lealtà vengono messe a dura prova e l'instabilità attraversa [actor.Custom('IT_ART_RANGO')]nostr[actor.Custom('IT_OA_RANGO')] [actor.GetFlavorRank]. Dovremmo sfruttare questo caos offrendo denaro e garanzie alle fortezze nemiche, convincendo i loro comandanti ad arrendersi pacificamente invece di cadere sotto il nostro assedio."
@@ -90,12 +104,12 @@
  #Disaster
  peasants_war: "Guerra Contadina"
  peasants_war_desc: "Nelle campagne la tensione continua a crescere e la condizione della gente comune si fa sempre più grave. Tasse ingiuste, padroni nobili oppressivi e una disperazione crescente hanno spinto i contadini sull'orlo della rivolta. Una marea montante di furia ha preso forma, dando origine al cataclisma noto come Guerra dei Contadini."
- 
+
  pw_push_for_serfdom: "Promuovere la [ShowSocietyDirectionNameWithNoTooltip('serfdom')]"
  pw_push_for_serfdom_desc: "I contadini ribelli che hanno osato sollevarsi contro la nostra autorità devono essere schiacciati con la massima brutalità dai loro padroni locali. Non possiamo permettere che il nostro controllo svanisca, o rischieremmo di cadere vittime dell'anarchia!"
  pw_push_for_free_subjects: "Promuovere [ShowSocietyDirectionNameWithNoTooltip('free_subjects')]"
  pw_push_for_free_subjects_desc: "Per troppo tempo la popolazione ha portato le catene della servitù feudale, imposte con brutalità dai signori locali. È nostro dovere morale elevare l'uomo comune e ottenere la libertà per il ceto dei contadini!"
- 
+
  pw_crush_rebellion: "Reprimere la Ribellione"
  pw_crush_rebellion_desc: "Il popolo si solleva contro di noi, reclamando diritti e privilegi a spese di [actor.GetGovernment.GetRulerOrRegent.GetName] e dell'ordine sociale stabilito. Non possiamo permettere che ciò avvenga! Qualsiasi sostegno a tali movimenti deve essere immediatamente represso."
  pw_crush_rebellion_tt: "I [pops|e] che sostengono la [rebellion|e] selezionata perderanno [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
@@ -173,9 +187,9 @@
  #Disaster
  decline_of_majapahit: "Il Declino di $MAJ$"
  decline_of_majapahit_desc: "Il nostro [GetCountry('MAJ').GetFlavorRank] non è più prospero come un tempo. Lacerati da conflitti dinastici interni, i nostri rivali attendono con impazienza l'occasione per approfittare della nostra debolezza. Ora, con l'ascesa dell'[ShowReligionGroupName('muslim')] nella regione dell'[ShowRegionName('indonesia_region')], potremmo facilmente cadere nell'oscurità dei regni dimenticati..."
- 
+
  demak_progress: "Dominio [ShowReligionAdjectiveWithNoTooltip('sunni')]"
- 
+
  SUNNI_POPS: "Popolazione Sunnita"
  HINDU_POPS: "Popolazione Indù"
  SUNNI_DOMINANCE_MAJAPAHIT: "$demak_progress$"
@@ -205,7 +219,7 @@
  court_and_country_12_tt: "Potremmo trovare sostenitori nell'esercito e nel governo a seguito di un [event|e]"
 
 
-#Aspiration for Liberty
+#Aspiration for Liberty Disaster
  #Disaster
  aspiration_for_liberty: "Aspirazione alla Libertà"
  aspiration_for_liberty_desc: "La sete di libertà e il desiderio di ideali illuminati rendono ormai inevitabile la ribellione. L'ira della popolazione verso la nostra incapacità di governare minaccia di trasformarsi in una fiamma rivoluzionaria incontrollabile! D'ora in avanti le difficoltà saranno molto maggiori..."
@@ -221,7 +235,14 @@
  #Disaster
  rise_of_the_szlachta: "Ascesa della $nobles_estate_szlachta$"
  rise_of_the_szlachta_desc: "Non siamo estranei alle ambizioni della $nobles_estate_szlachta$. Con l'aumento della loro influenza, le loro richieste di privilegi crescono incessantemente. I loro intrighi politici ricordano una belva della giungla in agguato, pronta a colpire. Se ne avessero l'occasione, sfiderebbero immediatamente la nostra autorità!"
- 
+ rise_of_the_szlachta_crown_triumphant: "Corona Trionfante"
+ rise_of_the_szlachta_crown_triumphant_desc: "Concede #Y $STATIC_MODIFIER_NAME_pol_supremacy_over_the_nobles_modifier$#! per 20 anni, scalando con il nostro [crown_power|e]. Revoca fino a tre [estate_privilege|e] detenuti dalla $nobles_estate_szlachta$ e aumenta nettamente la nostra [stability|e]."
+ rise_of_the_szlachta_nobles_ascendant: "Nobili Ascendenti"
+ rise_of_the_szlachta_nobles_ascendant_desc: "Sostituisce la nostra [government_reform|e] maggiore con il [ShowGovernmentReformName('rule_of_the_sejm')], trasformandoci in una [ShowGovernmentTypeName('monarchy')] se non lo siamo già. La $nobles_estate_szlachta$ ottiene il [ShowEstatePrivilegeName('golden_liberty')] e la nostra corona passerà da quel momento tramite [ShowHeirSelectionName('elective_succession')]."
+ rise_of_the_szlachta_burghers_empowered: "Borghesi Rafforzati"
+ rise_of_the_szlachta_burghers_empowered_desc: "Ci sposta decisamente verso la [ShowSocietyDirectionName('plutocracy')], e verso il [ShowSocietyDirectionName('mercantilism')] una volta iniziata la [ShowAgeName('age_4_reformation')]. Il [ShowEstateTypeName('burghers_estate')] ottiene fino a tre diversi [estate_privilege|e]. Da quel momento in poi avremo bisogno di molto meno [societal_value|e], [legitimacy|e] ed [estate_power|e] del [ShowEstateTypeName('burghers_estate')] per diventare una [ShowGovernmentTypeName('republic')]."
+ variable_rise_of_szlachta_burghers_outcome_variable_tt: "Il [ShowEstateTypeName('burghers_estate')] ha preso il potere"
+
  #Actions
  pw_push_for_aristocracy: "Promuovere l'[ShowSocietyDirectionNameWithNoTooltip('aristocracy')]"
  pw_push_for_aristocracy_desc: "Le nostre direttive favoriscono sempre più i privilegi della [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] e la gerarchia tradizionale. La spada e il sangue definiscono il rango nella società, e le antiche famiglie devono rafforzare la loro presa sul potere. Tuttavia, questa concentrazione di autorità potrebbe irritare i membri più influenti della [SCOPE.sCountry('actor').GetGovernment.GetEstateName('burghers_estate')]..."
@@ -238,6 +259,7 @@
  death_of_hayan_wuruk: "Morte di [GetCharacter('maj_hayam_wuruk').GetNameWithNoTooltip]"
  death_of_hayan_wuruk_desc: "La scomparsa del nostro grande leader [GetCharacter('maj_hayam_wuruk').GetName] ha gettato [GetCountry('MAJ').Custom('IT_ART_NOSTRO_RANGO')]nostr[GetCountry('MAJ').Custom('IT_OA_RANGO')] [GetCountry('MAJ').GetFlavorRank] nel caos. Questo periodo difficile potrebbe protrarsi per molti anni, mentre coloro che un tempo ci tributavano fedeltà ora si sollevano contro la nostra autorità. La successione contestata e il declino del nostro potere [GetCountry('MAJ').GetAdjective] sono questioni urgenti che dobbiamo affrontare immediatamente se vogliamo sopravvivere."
  hayan_wuruk_has_passed_tt: "[GetCharacter('maj_hayam_wuruk').GetName] è morto negli ultimi #Y 10#! anni"
+ death_of_hayan_wuruk_time_limit_tt: "Se il [disaster|e] dura #Y 20#! anni o più, terminarlo causerà la liberazione di tutti i nostri [subjects|e] (#Y [THIS.GetVariable('maj_death_of_hayan_wuruk_timer').GetValue]#!/#Y 240#! mesi)"
 
 #Curse of Stefan Uros III
  #Disaster
@@ -272,14 +294,15 @@
 
 #Decline of the Empire
  #Disaster
- decline_of_empire: "Declino Compiacente"
+ decline_of_empire: "Declino dell'Impero"
  decline_of_empire_desc: "Un tempo potente e incrollabile, il nostro dominio ora vacilla sull'orlo del collasso. La corruzione dilaga nelle nostre istituzioni, le nostre province sono in fermento sotto il peso dell'incuria e le potenze straniere volteggiano come avvoltoi, desiderose di spartirsi ciò che resta della nostra gloria. L'età dell'oro che un tempo ci caratterizzava è ormai solo un ricordo, e le crepe nelle nostre fondamenta si allargano ogni giorno di più. Se non agiamo rapidamente per affrontare il marciume interno e ripristinare il controllo, il nostro impero crollerà, lasciando solo rovine e rimpianti, un'ombra della nostra gloria passata..."
  has_not_had_decline_of_empire_last_25_years: "Non ha subito questo [disaster|e] negli ultimi #Y 25#! anni"
  not_recently_become_empire_tt: "Ha avuto il [country_rank|e] [ShowCountryRankName('rank_empire')] per almeno #Y 15#! anni"
- complacent_decline_actions_price: "Costo delle Azioni del $decline_of_empire$"
+ decline_of_empire_actions_price: "Prezzo delle Azioni di $decline_of_empire$"
+
  cd_inspect_area: "Ispezionare un'Area"
  cd_inspect_area_desc: "[actor.GetGovernment.GetRuler.Custom('IT_ART_NOSTRO_RANGO')]nostr[actor.Custom('IT_OA_RANGO')] [actor.GetFlavorRank] si è adagiata sugli allori per troppo tempo. È ora di ricordare alle aree all'interno dei nostri confini che siamo noi ad avere il controllo, schiacciando ogni loro ambizione."
- selected_area_inspected_tt: "L'[area|e] selezionata sarà sottoposta a un'ispezione, che ridurrà la [pop_satisfaction|e] e il [complacency|e], aumentando al contempo il [control|e] sulle [provinces|e] chiave al suo interno.\n#italic L'efficacia di questa ispezione dipende in gran parte dalla [population|e] dell'[area|e] e dalla nostra [ShowModifierTypeName('legislative_efficiency')]#!"
+ selected_area_inspected_tt: "L'[area|e] selezionata sarà sottoposta a un'ispezione, che ridurrà la [pop_satisfaction|e], aumentando al contempo il [control|e] sulle [provinces|e] chiave al suo interno.\n#italic L'efficacia di questa ispezione dipende in gran parte dalla [population|e] dell'[area|e] e dalla nostra [ShowModifierTypeName('legislative_efficiency')]#!"
  cd_purge_cabinet_member: "Espellere un Membro del Gabinetto"
  cd_purge_cabinet_member_desc: "Il potere assoluto corrompe in modo assoluto, e i membri del nostro gabinetto lo sanno fin troppo bene. Se vogliamo combattere la decadenza, dobbiamo effettuare le necessarie epurazioni all'interno del nostro stesso governo."
  selected_character_banned_or_executed_tt: "Il [character|e] selezionato verrà rimosso dal nostro [cabinet|e] con ogni mezzo necessario."
@@ -305,11 +328,13 @@
 #Castilian Civil War
  #Disaster
  castilian_civil_war: "Guerra Civile [GetCountry('CAS').Custom('IT_ADJ_FS')]"
- castilian_civil_war_desc: "I nostri nemici cercano continuamente il modo di intervenire nella nostra politica, alimentando instabilità o sostenendo pretendenti rivali al trono. Questo periodo turbolento svelerà sicuramente chi desidera porre fine al nostro dominio e cancellarci dalla storia. Le ricchezze dell'[ShowRegionName('iberia_region')] hanno sempre attirato sguardi famelici oltre i nostri confini, ma non possiamo permettere che ne approfittino!" 
+ castilian_civil_war_desc: "I nostri nemici cercano continuamente il modo di intervenire nella nostra politica, alimentando instabilità o sostenendo pretendenti rivali al trono. Questo periodo turbolento svelerà sicuramente chi desidera porre fine al nostro dominio e cancellarci dalla storia. Le ricchezze dell'[ShowRegionName('iberia_region')] hanno sempre attirato sguardi famelici oltre i nostri confini, ma non possiamo permettere che ne approfittino!"
+
+#Turmoil in Brandenburg
  turmoil_in_brandenburg: "Tumulti in [GetCountry('BRA').GetNameWithNoTooltip]"
  turmoil_in_brandenburg_desc: "[ROOT.GetCountry.Custom('IT_ART_RANGO')|U][GetCountry('BRA').GetLongName] si trova in un momento difficile da quando il potere dei [ShowDynastyName('askanier_dynasty')] è crollato e i [ShowDynastyName('wittelsbach_dynasty')] hanno assunto il controllo del $margraviate$. Con gli sforzi degli [ShowDynastyNameWithNoTooltip('wittelsbach_dynasty')] limitati altrove, il giovane [GetCountry('BRA').GetGovernment.GetRulerTitle] [GetCountry('BRA').GetGovernment.GetRuler.GetName] deve lottare da solo per riaffermare l'autorità centrale nella Marca [GetCountry('BRA').GetAdjectiveWithNoTooltip]. Di fronte a feudi ribelli, una popolazione che rimpiangeva i giorni del dominio dei [ShowDynastyNameWithNoTooltip('askanier_dynasty')] e gli spietati Baroni Ladri si prefigura un compito difficile per [GetCountry('BRA').GetGovernment.GetRuler.GetName].\n\nMentre è occupato con gli affari interni, [ROOT.GetCountry.Custom('IT_ART_RANGO')][GetCountry('BRA').GetLongName] potrebbe anche attirare l'interesse di altre dinastie che rivendicano il titolo modesto ma prestigioso del [GetUniqueInternationalOrganization('hre').GetName]."
  turmoil_in_brandenburg_investment_tt: "Raggiungere 100 punti nell'$bra_wittelsbacher_investment_var$, manterrà la nostra attuale [dynasty|e] al potere."
- turmoil_in_brandenburg_neglect_tt: "Raggiungere 100 punti nella $bra_wittelsbacher_neglect_var$, metterà al potere una nuova [dynasty|e]."
+ turmoil_in_brandenburg_neglect_tt: "Raggiungere un punteggio di -100 punti nella $bra_wittelsbacher_neglect_var$, metterà al potere una nuova [dynasty|e]."
  turmoil_in_brandenburg_dynastic_struggle_resolved_tt: "Abbiamo risolto la lotta dinastica per il nostro trono"
  robber_barons_resolved_tt: "Abbiamo affrontato le questioni relative ai Baroni Ladri"
  wittelsbacher_event_occurs_tt: "Si verifica un Evento relativo al governo dei Wittelsbach"
@@ -317,5 +342,7 @@
  robber_barons_spread_tt: "I Baroni Ladri hanno ampliato la loro influenza"
  robber_barons_stay_put_tt: "I Baroni Ladri rimangono inattivi"
  TURMOIL_IN_BRANDENBURG_DISASTERS_MODIFIERS_TT_LIST: "Per tutta la durata del [disaster|e], il Paese ottiene:"
- twilight_of_the_tsardom: "Crepuscolo dello [ShowGovernmentReformNameWithNoTooltip('tsardom')]" 
- twilight_of_the_tsardom_desc: "Sin dalla morte di Ivan Asen II, [GetCountry('BUL').Custom('IT_La')][GetCountry('BUL').GetName] lotta contro un governo debole, lotte intestine nobiliari e intrusioni straniere. Gravato da divisioni interne e minacce esterne, il [GetCountry('BUL').GetFlavorRank] affronta ora un crepuscolo pericoloso, dal quale potrebbe emergere rinnovato o crollare in rovina." 
+ 
+ #Twilight of the Tsardom
+ twilight_of_the_tsardom: "Crepuscolo dello [ShowGovernmentReformNameWithNoTooltip('tsardom')]"
+ twilight_of_the_tsardom_desc: "Sin dalla morte di Ivan Asen II, [GetCountry('BUL').Custom('IT_La')][GetCountry('BUL').GetName] lotta contro un governo debole, lotte intestine nobiliari e intrusioni straniere. Gravato da divisioni interne e minacce esterne, il [GetCountry('BUL').GetFlavorRank] affronta ora un crepuscolo pericoloso, dal quale potrebbe emergere rinnovato o crollare in rovina."

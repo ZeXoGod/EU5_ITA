@@ -1,0 +1,323 @@
+﻿l_english:
+
+ treasure_fleet_events.1.title: "L'Era dei Viaggi del Tesoro"
+ treasure_fleet_events.1.entry: "$treasure_fleet_events.1.title$"
+ treasure_fleet_events.1.desc: "Gli ultimi decenni prosperi ci hanno fornito abbondante oro e risorse di cui disporre per i nostri sforzi diplomatici. Potremmo, e di certo dovremmo, servircene per rafforzare ulteriormente la già solida posizione di [GetInternationalOrganization('middle_kingdom').GetName] agli occhi del mondo. A tal fine, invieremo varie spedizioni marittime cariche dei doni più ricchi che [ROOT.GetCountry.GetName] possa permettersi, così da convincere altre nazioni a entrare nella nostra rete di [ShowSubjectTypeName('tributary')]."
+ treasure_fleet_events.1.a: "E così faremo!"
+ treasure_fleet_events.1.zheng_he_owned_tt: "Zhèng Hé deve attualmente essere al nostro servizio"
+ chi_able_to_send_treasure_voyages: "[ROOT.GetCountry.GetName] potrà usare l'[action|e] [ShowGenericActionName('start_a_treasure_voyage')] per spendere i propri [gold|e] allo scopo di far entrare altre nazioni nella propria rete di [ShowSubjectTypeName('tributary')]. Ciò sarà possibile solo finché sarà il [international_organization_leader_short|e] di [GetInternationalOrganizationType('middle_kingdom').GetName]."
+
+ treasure_fleet_events.2.title: "La Fine di un'Era"
+ treasure_fleet_events.2.desc: "Oggi lo stato di [ROOT.GetCountry.GetName] guarda ai risultati dei Viaggi del Tesoro e non vi vede altro che un vano sperpero di fondi, compiuto per nient'altro che un po' di prestigio. Sarebbe meglio che gli storici omettessero semplicemente l'esistenza di quelle imprese."
+ treasure_fleet_events.2.a: "È quello che è."
+ chi_unable_to_send_treasure_voyages: "[ROOT.GetCountry.GetName] non potrà più usare [ShowGenericActionName('start_a_treasure_voyage')]."
+
+ treasure_fleet_events.3.title: "L'Inizio di una Spedizione"
+ treasure_fleet_events.3.desc: "Dopo settimane di preparativi, la nostra grande flotta è finalmente pronta a salpare verso [target_area.GetName]. Non sappiamo quali avventure o disavventure $expedition_leader_name$ e il suo equipaggio incontreranno lungo la strada, ma, considerato che [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] ha affidato loro una simile responsabilità, siamo certi che non deluderanno.\n\nSecondo il piano, la flotta salperà all'alba dal porto di [start_location.GetName] e potrebbero passare anni prima che tornino alle nostre coste. Porgiamo loro il nostro addio!"
+ treasure_fleet_events.3.a: "Buona fortuna!"
+
+ chinese_treasure_expeditions_send_tooltip: "Il $expedition_name_treasure_voyage$ viene inviato verso [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] sotto la guida di [character_expedition_leader_target.GetName].\nLa flotta trasporta un carico del valore di #g [ROOT.GetVariable('chinese_treasure_voyage_cargo').GetValue|2]#! [gold|e] destinato a doni per i [countries|e] che visiterà"
+
+ treasure_fleet_events.4.title: "Notizie dal $expedition_name_treasure_voyage$"
+ treasure_fleet_events.4.desc: "Una giunca ha fatto scalo in uno dei porti meridionali con notizie dal $expedition_name_treasure_voyage$. La flotta guidata da $expedition_leader_name$ ha raggiunto il porto di [port_location.GetName] nel paese di [port_country.GetName], e la [port_country.GetGovernment.GetCourtTitle] l'ha ricevuta con la dovuta formalità. I nostri inviati hanno scambiato merci e presentato i doni consueti al [port_country.Custom('GetRulerOrRegentTitle')]. Il cronista della flotta riferisce che vento e stagione sono favorevoli alla prossima tappa del viaggio. Non c'è, nota il capitano, alcuna ragione immediata per cui la [ROOT.GetCountry.GetGovernment.GetCourtTitle] debba aspettarsi cattive notizie."
+ treasure_fleet_events.4.a: "Che il vento continui a esserci favorevole."
+
+ treasure_fleet_events.5.title: "L'Arrivo del $expedition_name_treasure_voyage$ [expedition_initiator.GetAdjectiveWithNoTooltip]"
+ treasure_fleet_events.5.desc: "All'alba, gli abitanti di [target_stop.GetName], [target_stop.Custom('IT_ART_LOCATION')][target_stop.GetRank.GetName], sono stati accolti da uno spettacolo terrificante e insieme stupefacente. L'intero orizzonte sopra [coastal_sea_tile.GetName] era coperto dalle navi di nientemeno che [GetInternationalOrganization('middle_kingdom').GetName], [expedition_initiator.GetLongName]. Il comandante della flotta, $expedition_leader_name$, è sbarcato subito nel nostro porto e ha ottenuto il permesso di rifornirsi a [target_stop.GetNameWithNoTooltip]. Ciò che è seguito è davvero bizzarro: i marinai [expedition_initiator.GetAdjectiveWithNoTooltip] hanno preso contatto con i balivi locali, ricoprendoli di doni e chiedendo un'udienza presso il [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ treasure_fleet_events.5.a: "Accogliamoli presso la [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ treasure_fleet_events.5.a.entry: "Accogliamoli a corte!"
+ 
+ treasure_fleet_events.6.title: "Udienza del [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ treasure_fleet_events.6.desc: "$expedition_leader_name$ e il suo seguito sono finalmente riusciti a entrare in contatto con il nostro benevolo [ROOT.GetCountry.GetGovernment.GetRulerTitle]. La loro imponente flotta e una pioggia di doni hanno fatto grande impressione su tutti noi, e siamo rimasti molto sbigottiti quando ci hanno offerto quella che equivale a una relazione di [ShowSubjectTypeName('tributary')] sotto il dominio [expedition_initiator.GetAdjective]. Forse, essere soggetti a uno stato così potente ci offrirebbe più bene di quanto sembri."
+ treasure_fleet_events.6.a: "L'amicizia ha un prezzo."
+ treasure_fleet_events.6.b: "Non ne vogliamo sapere nulla!"
+
+ 
+
+ chinese_expedition_resolution_tt: "Per i mesi a venire, il $expedition_name_treasure_voyage$ cinese resterà nel nostro porto di [target_stop.GetName]. Riceveremo degli [events|e] che ci permetteranno di interagire con loro e che modificheranno la loro opinione su di noi. A seconda dell'opinione al termine della sosta, otterremo risultati diversi:\n\nObbediente (#y 67#! - #y 100#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_very_positive', ROOT.GetCountry.MakeScope.Self)]\nFavorevole (#y 33#! - #y 66#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_positive', ROOT.GetCountry.MakeScope.Self)]\nTiepida (#y -32#! - #y 32#!):\n$NOTHING_HAPPENS_EFFECT$\nIrrispettosa (#y -66#! - #y -33#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_negative', ROOT.GetCountry.MakeScope.Self)]\nArrogante (#y -100#! - #y -67#!):\n[ShowScriptedEffectForScope('chi_expedition_resolution_very_negative', ROOT.GetCountry.MakeScope.Self)]"
+
+ treasure_fleet_events.7.title: "Doni Appropriati"
+ treasure_fleet_events.7.desc_shared: "Conclusa la loro missione a [ROOT.GetCountry.GetName], la flotta del tesoro di [expedition_initiator.GetName] sta rifornendo le proprie scorte, e prevede di partire nel giro di alcuni mesi. Sarebbe consuetudine offrire loro il meglio che [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] possa offrire come segno di apprezzamento"
+ treasure_fleet_events.7.desc: "$treasure_fleet_events.7.desc_shared$ e come conferma della nostra relazione di [ShowSubjectTypeName('tributary')]."
+ treasure_fleet_events.7.desc_no_tributary: "$treasure_fleet_events.7.desc_shared$ per la loro visita."
+ treasure_fleet_events.7.a: "Mostriamo loro la nostra generosità."
+ treasure_fleet_events.7.gift: "Diamo loro la nostra specialità."
+ treasure_fleet_events.7.b: "Non possiamo permettercelo..."
+
+ treasure_fleet_events.8.title: "La Spedizione Parte"
+ treasure_fleet_events.8.desc: "Finalmente la flotta del tesoro [expedition_initiator.GetAdjective] è partita da [target_stop.GetName]. Abbiamo mostrato loro grande ospitalità e speriamo che il loro viaggio sia ricco di buone grazie."
+ treasure_fleet_events.8.a: "Addio!"
+ chi_fleet_will_depart: "La spedizione [expedition_initiator.GetAdjective] partirà da [ROOT.GetCountry.GetName]"
+
+ chinese_expedition_opinion: "Fiducia della Spedizione del Tesoro"
+ based_on_expedition_opinion: "In base alla $chinese_expedition_opinion$ (attualmente [ROOT.GetVariable('chinese_expedition_opinion').GetValue]), accadrà quanto segue:"
+
+ treasure_fleet_events.9.title: "Il Ritorno del $expedition_name_treasure_voyage$"
+ treasure_fleet_events.9.desc: "La flotta che abbiamo inviato anni fa a [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] è finalmente tornata portando molti inviati e doni ricevuti durante il lungo viaggio. $expedition_leader_name$ si sta ora dirigendo con le ricchezze e i rappresentanti stranieri verso la nostra capitale."
+ treasure_fleet_events.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ treasure_fleet_events.9.a.entry: "$common_string_brilliant$"
+
+ treasure_fleet_events.10.title: "Udienza con il [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ treasure_fleet_events.10.desc: "$expedition_leader_name$ ha finalmente fatto ritorno a [ROOT.GetCountry.GetCapital.GetName] tra grandi fanfare e festeggiamenti. Come parte della sua delegazione porta molti inviati dei paesi visitati, pronti a giurare fedeltà al [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Siamo molto lieti della loro decisione di venire qui."
+ treasure_fleet_events.10.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ treasure_fleet_events.10.a.entry: "$common_string_brilliant$"
+
+ treasure_fleet_events.11.title: "Fine della Spedizione"
+ treasure_fleet_events.11.desc: "Il $expedition_name_treasure_voyage$ è finalmente giunto al termine. Valutiamo se l'investimento sia valso la pena e consideriamo se inviarne un altro in futuro, trattandosi di imprese costose."
+ treasure_fleet_events.11.a: "Servono più missioni come queste."
+
+ chi_we_will_gift_cloves: "Doneremo a [expedition_initiator.GetName] un regalo di [ShowGoodsName('cloves')]"
+ chi_we_will_gift_giraffe: "Doneremo a [expedition_initiator.GetName] una giraffa"
+ chi_we_will_gift_persian_blue: "Doneremo a [expedition_initiator.GetName] un regalo dei nostri [ShowGoodsName('dyes')] locali"
+
+ treasure_fleet_events.12.title: "Una Bestia Esotica"
+ treasure_fleet_events.12.desc: "Il nostro $expedition_name_treasure_voyage$ ha portato una creatura davvero eccezionale e straordinaria alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] del [ROOT.GetCountry.GetGovernment.GetRulerTitle]! È una bestia imponente dal collo lungo e ricoperta di macchie più scure, e oltremare è stata etichettata come giraffa. I nostri cortigiani, tuttavia, hanno identificato la creatura con il leggendario #italic qílín#! [ShowCultureGroupName('chinese_group')], che preannuncia un'età dell'oro sotto il governo di un sovrano illustre. Potremmo accogliere la teoria, rafforzando il nostro prestigio, ma ponendo aspettative più alte sulle nostre azioni."
+ treasure_fleet_events.12.a: "È il mitico #italic qílín#!!"
+ treasure_fleet_events.12.b: "Una creatura meravigliosa, di certo."
+
+ treasure_fleet_events.13.title: "Colore di Meraviglie"
+ treasure_fleet_events.13.desc: "La nostra grande spedizione ha riportato un colorante esotico dal [ShowSubContinentName('middle_east')]. Un blu intenso, identificato come risorsa perfetta per la produzione della nostra rinomata [ShowGoodsName('pottery')]. Ne sono stati riportati abbastanza [ShowGoodsName('dyes')] da poterli utilizzare nella nostra produzione."
+ treasure_fleet_events.13.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ treasure_fleet_events.13.a.entry: "$common_string_brilliant$"
+
+ treasure_fleet_events.14.title: "Un Sapore da Ricordare"
+ treasure_fleet_events.14.desc: "Sebbene [ShowRegionName('indonesia_region')] sia certamente nota per le sue spezie, il nostro $expedition_name_treasure_voyage$ ha visitato una zona in cui i pregiati [ShowGoodsName('cloves')] crescono in grandi quantità: [ShowAreaName('moluccas_area')]. La gente del posto ha accolto con garbo la nostra spedizione e ci ha fornito molte di quelle meravigliose spezie in tributo. La [ROOT.GetCountry.GetGovernment.GetCourtTitle] e il [ROOT.GetCountry.GetGovernment.GetRulerTitle] le assaporeranno per i mesi a venire."
+ treasure_fleet_events.14.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ treasure_fleet_events.14.a.entry: "$common_string_brilliant$"
+
+ treasure_fleet_events.15.title: "Codardo Trovato"
+ treasure_fleet_events.15.desc: "Durante il $expedition_name_treasure_voyage$, $expedition_leader_name$ e i suoi marinai fedeli sono riusciti a rintracciare un dissidente di alto profilo di nome [extradited_character.GetName]. [extradited_character.GetShortNameWithNoTooltip] è fuggito da [ROOT.GetCountry.GetName] molto tempo fa, sottraendosi alla giusta giustizia. La nostra spedizione non solo è riuscita a trovare il fuggiasco, ma anche a strapparlo ai suoi custodi d'asilo a [asylum_country.GetName] e a riportarlo in $china$ perché giustizia sia fatta."
+ treasure_fleet_events.15.a: "Strangoliamo questo piccolo criminale!"
+ treasure_fleet_events.15.b: "Facciamolo decapitare."
+ treasure_fleet_events.15.b.entry: "Facciamolo decapitare."
+ treasure_fleet_events.15.c: "Ordiniamo il #italic língchí#!, la lenta recisione."
+ treasure_fleet_events.15.d: "Perdoniamo il dissidente: le sue capacità potrebbero esserci utili."
+ treasure_fleet_events.15.d.entry: "Perdoniamo il dissidente: le sue capacità potrebbero esserci utili."
+
+ treasure_fleet_events.16.title: "L'Esecuzione di [executed_character.GetNameWithNoTooltip]"
+ treasure_fleet_events.16.desc: "[executed_character.GetName] fuggì da [executed_character.GetBirthLocation.GetArea.GetName], dove la famiglia si era data alla pirateria dopo l'attuazione della [ShowPolicyName('haijin_policy')]. Dopo la fuga, [executed_character.GetShortNameWithNoTooltip] divenne capo pirata a [loser_country.GetName] e in seguito combatté battaglie contro $expedition_leader_name$ al largo della costa [loser_country.Custom('IT_DEL_RANGO')][loser_country.GetFlavorRank]. Ora è giunto il momento di fare di [executed_character.GetNameWithNoTooltip] un esempio."
+ treasure_fleet_events.16.a: "Giustizia è fatta."
+
+ treasure_fleet_events.17.title: "Un Sovrano Ribelle"
+ treasure_fleet_events.17.desc: "Durante il nostro $expedition_name_treasure_voyage$, la grande flotta di $expedition_leader_name$ è riuscita a catturare un prigioniero di alto profilo: [loser_character.GetName], già [loser_country.GetGovernment.GetRulerTitle] di [loser_country.GetLongName]. Tuttavia, il tradimento e la mancanza di rispetto di [loser_country.GetNameWithNoTooltip] hanno condotto a una rapida sconfitta, in cui il sovrano è stato fatto prigioniero."
+ treasure_fleet_events.17.a: "Facciamone un esempio."
+ treasure_fleet_events.17.a.entry: "Facciamone un esempio."
+ treasure_fleet_events.17.b: "Mostriamo un atteggiamento benevolo."
+
+ treasure_fleet_events.18.title: "Il Destino di [loser_country.GetNameWithNoTooltip]"
+ treasure_fleet_events.18.desc: "Lo stolto sovrano di [loser_country.GetName] si oppose un tempo ai desideri di [GetInternationalOrganization('middle_kingdom').GetName] rappresentati da $expedition_leader_name$ e dalla sua spedizione. Dopo un aspro conflitto, [loser_country.GetLongNameWithNoTooltip] è stata sconfitta ed è stato insediato un [loser_country.GetGovernment.GetRulerTitle] temporaneo mentre decidiamo cosa farne."
+ treasure_fleet_events.18.a: "Inviamo [target_character_for_viceroyalty.GetNameWithNoTooltip] a governare come nostro viceré."
+ treasure_fleet_events.18.a.entry: "Inviamolo a governare come nostro viceré."
+ treasure_fleet_events.18.b: "Il fantoccio locale può restare."
+
+ treasure_fleet_events.19.title: "Un Viceré da [expedition_initiator.GetNameWithNoTooltip]"
+ treasure_fleet_events.19.desc: "Abbiamo ricevuto notizie da [GetInternationalOrganization('middle_kingdom').GetName]. Hanno disposto che il nostro stato sia governato dal loro viceré, [target_character_for_viceroyalty.GetName], che ci governerà in una relazione di [ShowSubjectTypeName('tributary')] per il prossimo futuro. Tale è il nostro destino: essere dominati dal nostro nemico vincitore della guerra."
+ treasure_fleet_events.19.a: "Ci scrolleremo di dosso questo giogo a tempo debito."
+
+ treasure_fleet_events.20.title: "Doni da Lontano"
+ treasure_fleet_events.20.desc: "Nel corso della spedizione, i nostri marinai hanno ricevuto in dono molte merci e prodotti locali, che sono stati ora portati in $china$. Hanno per noi poco valore monetario, ma mettono [GetInternationalOrganization('middle_kingdom').GetName] in buona luce e di certo accresceranno il nostro prestigio per gli anni a venire."
+ treasure_fleet_events.20.a: "Non ci aspettavamo di meno."
+
+ treasure_fleet_events.21.title: "La Morte di [target.GetNameWithNoTooltip]"
+ treasure_fleet_events.21.desc: "Ci è giunta notizia che il comandante del nostro $expedition_name_treasure_voyage$, $expedition_leader_name$, ha perso la vita durante il viaggio. Il secondo in comando, [new_leader.GetName], ha assunto il comando e dovrà guidare il viaggio da solo."
+ treasure_fleet_events.21.a: "Che questo non sia un presagio di ciò che verrà."
+ chi_new_expedition_leader: "[new_leader.GetName] è ora il comandante del nostro $expedition_name_treasure_voyage$"
+
+ treasure_fleet_events.22.title: "Fondi Scarsi"
+ treasure_fleet_events.22.desc: "Abbiamo ricevuto informazioni secondo cui il $expedition_name_treasure_voyage$ ha esaurito i doni con cui condurre la diplomazia. Senza doni adeguati da offrire, la flotta rinuncerà a ulteriori visite di cortesia nei porti stranieri per il resto del viaggio. Forse la prossima volta dovremmo concedere fondi più adeguati alle nostre spedizioni."
+ treasure_fleet_events.22.a: "È imbarazzante."
+ chi_expedition_is_returning_to_china: "Il $expedition_name_treasure_voyage$ ha esaurito i doni e non farà più scalo nei porti stranieri per il resto del viaggio"
+
+ show_current_chinese_expedition_amount: "[COUNTRY.MakeScope.GetVariable('chinese_expedition_opinion').GetValue]"
+ change_amount_of_treasure_voyage_tt: "La quantità di carico trasportata dal $expedition_name_treasure_voyage$ aumenta di $VALUE|+$"
+ change_amount_of_treasure_voyage_tt_neg: "La quantità di carico trasportata dal $expedition_name_treasure_voyage$ diminuisce di $VALUE|-$"
+ change_opinion_of_expedition: "La $chinese_expedition_opinion$ nei nostri confronti aumenta di $VALUE|0Y$. (Attualmente $show_current_chinese_expedition_amount$)"
+ change_opinion_of_expedition_neg: "La $chinese_expedition_opinion$ nei nostri confronti diminuisce di $VALUE|0Y$. (Attualmente $show_current_chinese_expedition_amount$)"
+ give_gold_to_expedition: "$VALUE|2Y$ verranno donati al $expedition_name_treasure_voyage$."
+ chi_gift_received_count: "Abbiamo ricevuto [ROOT.GetVariable('gifts_received').GetValue|2+=] in [gold|e], che vengono convertiti in:"
+
+ treasure_fleet_events.23.title: "La Flotta del Tesoro Sorpresa dalla Tempesta"
+ treasure_fleet_events.23.desc: "Durante il viaggio, la nostra grandiosa flotta del tesoro ha incontrato un nemico assai preoccupante: nientemeno che le potenti forze della natura, sotto forma di una tempesta enorme che ha colto di sorpresa i nostri marinai più esperti. Numerose navi sono andate perdute in questa calamità, con la perdita di molti dei nostri doni e delle nostre merci."
+ treasure_fleet_events.23.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+ treasure_fleet_events.23.a.entry: "$common_string_nothing_we_can_do_about_it$"
+ 
+ treasure_fleet_events.24.title: "Scontro con una Flotta Pirata"
+ treasure_fleet_events.24.desc: "Navigando attraverso [target_location.GetTopography.GetName] di [target_location.GetName], il nostro glorioso $expedition_name_treasure_voyage$, sotto lo sguardo vigile di $expedition_leader_name$, si è imbattuto in una vile flotta di chiassosi pirati. I nostri coraggiosi soldati non si sono certo lasciati intimorire e hanno ingaggiato subito il nemico in una battaglia decisiva in cui i furfanti nemici sono stati completamente sconfitti e i loro capi catturati. Tuttavia, tale scontro non è stato privo di perdite in uomini e navi, privando la nostra grande flotta di molte risorse."
+ treasure_fleet_events.24.a: "Questo ci procurerà un po' di apprezzamento."
+
+ treasure_fleet_events.25.title: "Una Vela Lontana"
+ treasure_fleet_events.25.desc: "Le vedette segnalano una vela all'orizzonte: una flotta mercantile riccamente carica, che solca le nostre stesse acque. $expedition_leader_name$ ordina ai nostri capitani di salutarli in pace, e segue un vivace scambio: rotoli di [ShowGoodsName('silk')] e [ShowGoodsName('porcelain')] pregiata barattati con spezie, pietre preziose e rarità dei mari meridionali.\n\nLe stive del $expedition_name_treasure_voyage$ procedono ora più cariche di prima."
+ treasure_fleet_events.25.a: "Buon vento e buon affare."
+
+ treasure_fleet_events.30.title: "Un Banchetto a Corte"
+ treasure_fleet_events.30.desc: "Mentre la flotta è all'ancora al largo di [target_stop.GetName], la corte locale offre un grande banchetto in onore del $expedition_name_treasure_voyage$. Musicisti, danzatori e piatti di cento tipi vengono posti davanti a $expedition_leader_name$ e ai capitani, che presentano i doni consueti e parlano della grandezza di [GetInternationalOrganization('middle_kingdom').GetName].\n\nLa notizia del condotto splendido della flotta all'estero giungerà di certo in patria."
+ treasure_fleet_events.30.a: "Siano testimoni del nostro splendore."
+
+ treasure_fleet_events.31.title: "Curiosità per il [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ treasure_fleet_events.31.desc: "I mercati di [target_stop.GetName] traboccano di meraviglie sconosciute nelle nostre terre: uccelli in gabbia dai colori impossibili, bestie strane, legni aromatici e gioielli tagliati alla foggia straniera. I mercanti del $expedition_name_treasure_voyage$ potrebbero riempire una stiva di curiosità degne di rallegrare il [ROOT.GetCountry.GetGovernment.GetRulerTitle], anche se ciò significherebbe separarsi da una parte dell'oro messo da parte per i doni.\n\nApriamo le casse?"
+ treasure_fleet_events.31.a: "Compriamo il meglio che il mercato offre."
+ treasure_fleet_events.31.b: "Il nostro oro è meglio conservarlo per i tributi."
+
+ treasure_fleet_events.26.title: "Una Prova di Comando"
+ treasure_fleet_events.26.desc: "Il mare aperto e una carta incerta mettono gli ufficiali del $expedition_name_treasure_voyage$ a litigare. Alcuni esortano $expedition_leader_name$ a mantenere una rotta prudente; altri spingono per un passaggio più rapido e rischioso. Tutti gli occhi si volgono all'ammiraglio, e il modo in cui eserciterà ora il suo comando sarà a lungo ricordato."
+ treasure_fleet_events.26.a: "Manteniamo una rotta prudente e ordinata."
+ treasure_fleet_events.26.b: "Osiamo il passaggio più rapido."
+
+ treasure_fleet_events.27.title: "Una Meraviglia degli Abissi"
+ treasure_fleet_events.27.desc: "Per un giorno e una notte, la flotta naviga in compagnia di una creatura di dimensioni enormi, con il dorso che spezza le onde come un'isola in movimento. I cronisti del $expedition_name_treasure_voyage$ riempiono i loro rotoli con la vista, e i marinai la prendono per un segno quanto mai propizio. I racconti della meraviglia verranno narrati in ogni casa da tè quando la flotta tornerà a casa."
+ treasure_fleet_events.27.a: "Una meraviglia per stupire la corte."
+
+ treasure_fleet_events.28.title: "Un Presagio nei Cieli"
+ treasure_fleet_events.28.desc: "Gli astronomi della flotta notano una strana luce che attraversa il cielo notturno e scrutano le loro carte per divinarne il significato. Qualunque sia la sua vera natura, i marinai leggono i cieli come un messaggio dall'alto, e un solenne silenzio cala sui ponti del $expedition_name_treasure_voyage$."
+ treasure_fleet_events.28.a: "Diamo ascolto a ciò che i cieli presagiscono."
+
+ treasure_fleet_events.29.title: "In Bonaccia"
+ treasure_fleet_events.29.desc: "Il vento cala fino a spegnersi, e le grandi navi del $expedition_name_treasure_voyage$ restano immobili su un mare vitreo. Giorno dopo giorno le vele pendono flosce, e $expedition_leader_name$ e gli ufficiali non possono far altro che attendere e scrutare l'orizzonte in cerca di un alito di vento. Il viaggio ne sarà più lungo."
+ treasure_fleet_events.29.a: "Attendiamo il ritorno del vento."
+
+ treasure_fleet_events.32.title: "Incendio sui Moli"
+ treasure_fleet_events.32.desc: "Scoppia un incendio tra i magazzini affollati di [target_stop.GetName], dove era stipata una parte delle merci della flotta. I marinai del $expedition_name_treasure_voyage$ si uniscono alle catene di secchi, ma non prima che le fiamme si portino via casse di [ShowGoodsName('silk')] e [ShowGoodsName('porcelain')] messe da parte come doni."
+ treasure_fleet_events.32.a: "Una notte di lavoro costosa."
+
+ treasure_fleet_events.33.title: "Un Pilota Locale"
+ treasure_fleet_events.33.desc: "Un marinaio navigato di [target_stop.GetName], esperto delle scogliere e delle correnti di queste acque, si offre di guidare il $expedition_name_treasure_voyage$ nel passaggio che li attende. $expedition_leader_name$ valuta se affidare la rotta della flotta a una mano straniera."
+ treasure_fleet_events.33.a: "Accogliamo a bordo la sua conoscenza."
+ treasure_fleet_events.33.b: "I nostri navigatori bastano."
+
+ treasure_fleet_events.34.title: "Un Dono per l'Ammiraglio"
+ treasure_fleet_events.34.desc: "Mentre la flotta si prepara a levare l'ancora a [target_stop.GetName], la corte locale presenta a $expedition_leader_name$ un dono d'addio di raro valore, un segno di stima che [GetInternationalOrganization('middle_kingdom').GetName] porterà a casa al [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ treasure_fleet_events.34.a: "Un'aggiunta degna del tributo."
+
+ treasure_fleet_events.35.title: "Alla Ricerca di un Interprete"
+ treasure_fleet_events.35.desc: "Così lontani da casa, i rappresentanti della $expedition_name_chinese_expedition$ trovano assai difficile conversare con noi in modo efficiente, e tuttavia intendono navigare più lontano, presto per incontrare genti di molte culture con cui non hanno mai avuto a che fare. Per proseguire il loro viaggio, ci hanno chiesto di fornire un interprete locale che possa fare loro da traduttore."
+ treasure_fleet_events.35.a: "Troviamo subito un interprete!"
+ treasure_fleet_events.35.b: "È un problema loro, non nostro."
+
+ treasure_fleet_events.36.title: "Condividere le Mappe"
+ treasure_fleet_events.36.desc: "Il $expedition_name_treasure_voyage$ ci ha chiesto di condividere con loro le nostre mappe dei corsi d'acqua locali. Non siamo tenuti a farlo, ma soddisfare la loro richiesta sarebbe visto come un gesto di buona volontà e sarebbe molto apprezzato da $expedition_leader_name$ e dalle altre élite [ShowCultureGroupName('chinese_group')] attualmente di stanza a $expedition_location_name$."
+ treasure_fleet_events.36.a: "Condividiamo ciò che abbiamo."
+ treasure_fleet_events.36.b: "Non abbiamo mappe simili da condividere."
+
+ treasure_fleet_events.37.title: "Costi Esorbitanti"
+ treasure_fleet_events.37.desc: "A causa della scarsa familiarità dei marinai del $expedition_name_treasure_voyage$, [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] locale [ROOT.GetCountry.Custom('IT_BURGHERS_HA')] allestito dei mercati nei pressi del rifugio di $expedition_location_name$. Quei mercati offrono ai visitatori merci locali a pagamento, e qui sta il problema, poiché i più avidi tra i nostri mercanti hanno deciso di sfruttare la disperazione dei marinai per portare i prezzi a cifre esorbitanti. I prezzi sono saliti così in alto in alcuni punti che è scoppiata una rissa armata in strada, e [fleet_loc.Custom('IT_ART_LOCATION')][fleet_loc.GetRank.GetName] è in preda ai disordini."
+ treasure_fleet_events.37.a: "Puniamo [ROOT.GetCountry.Custom('IT_BURGHERS_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]!"
+ treasure_fleet_events.37.a.entry: "Puniamo la $burghers_estate$!"
+ treasure_fleet_events.37.b: "Riteniamo responsabili i marinai."
+
+ treasure_fleet_events.38.title: "Umiliazione Percepita"
+ treasure_fleet_events.38.desc: "L'attenzione che abbiamo riservato al $expedition_name_treasure_voyage$ ha gravemente turbato [ROOT.GetCountry.Custom('IT_NOBLES_IL_NOSTRO')][ROOT.GetCountry.Custom('IT_NOBLES_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Agli occhi [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], i [ShowCultureGroupName('chinese_group')] sono invasori arroganti che non meritano nessuna delle ospitalità o dei privilegi che abbiamo concesso loro durante la sosta. È dunque loro richiesta che revochiamo alcuni privilegi e mostriamo loro che non sono a casa propria."
+ treasure_fleet_events.38.a: "Accogliamo le richieste [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
+ treasure_fleet_events.38.a.entry: "Accogliamo le richieste della $nobles_estate$."
+ treasure_fleet_events.38.b: "Non possiamo rischiare di turbare i [ShowCultureGroupNameWithNoTooltip('chinese_group')]."
+
+ treasure_fleet_events.39.title: "Una Gaffe Religiosa"
+ treasure_fleet_events.39.desc: "I marinai della $expedition_name_chinese_expedition$, così poco abituati ai nostri costumi [ROOT.GetCountry.GetReligion.GetAdjective], hanno compiuto un atto sacrilego contro la nostra fede. Ciò ha suscitato l'indignazione [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], con la richiesta che il comandante della spedizione, $expedition_leader_name$, si faccia avanti e porga scuse per tale scortesia."
+ treasure_fleet_events.39.a: "Esigiamo delle scuse da $expedition_leader_name_tooltipless$."
+ treasure_fleet_events.39.b: "Lasciamo correre questa gaffe."
+
+ treasure_fleet_events.40.title: "Richiesta di Estradizione"
+ treasure_fleet_events.40.desc: "Il $expedition_name_treasure_voyage$ ha identificato uno dei nostri cortigiani, [target_escapee.GetName], come un evaso ribelle da [expedition_initiator.GetName]. Le élite [ShowCultureGroupName('chinese_group')] del viaggio, guidate da $expedition_leader_name$, esigono che [target_escapee.GetShortNameWithNoTooltip] sia consegnato a loro ed estradato a [GetInternationalOrganization('middle_kingdom').GetName], dove potrà essere processato."
+ treasure_fleet_events.40.a: "Soddisfiamo la loro richiesta."
+ treasure_fleet_events.40.b: "Richiesta assurda!"
+
+ treasure_fleet_events.41.title: "Esercitazioni Militari Congiunte"
+ treasure_fleet_events.41.desc: "Durante la loro lunga sosta, $expedition_leader_name$, comandante della $expedition_name_chinese_expedition$, ha proposto che le loro forze e le nostre prendano parte a esercitazioni militari congiunte. Tali esercitazioni potrebbero giovare a entrambe le parti e indicherebbero una profonda fiducia reciproca. Detto ciò, potrebbe esserci un rischio intrinseco nell'esercitarsi con soldati stranieri e dobbiamo comunque procedere con cautela. L'esercito di stanza più vicino a $expedition_location_name$, [target_unit.GetName], sarebbe la forza incaricata di addestrarsi congiuntamente con i [ShowCultureGroupNameWithNoTooltip('chinese_group')]."
+ treasure_fleet_events.41.a: "Accettiamo questa proposta."
+ treasure_fleet_events.41.b: "Possiamo sempre rifiutare."
+
+ treasure_fleet_events.42.title: "Offerta di Aiuto [ShowCultureGroupNameWithNoTooltip('chinese_group')]"
+ treasure_fleet_events.42.desc: "Quando il $expedition_name_treasure_voyage$ [ShowCultureGroupNameWithNoTooltip('chinese_group')] è giunto a $expedition_location_name$, non si aspettava di vedere [ROOT.GetCountry.GetLongName] nel mezzo di una guerra sanguinosa, eppure eccoli qui. Detto ciò, [expedition_initiator.GetLongName] non nutre grande stima per i nostri nemici di guerra e sarebbe quindi disposta ad aiutarci nel nostro conflitto."
+ treasure_fleet_events.42.a: "Accetteremo qualunque aiuto possiamo ottenere."
+ treasure_fleet_events.42.b: "È la nostra battaglia, non la loro."
+
+ treasure_fleet_events.43.title: "I Viaggiatori del Tesoro [ShowCultureGroupNameWithNoTooltip('chinese_group')] Aiutano [from.GetNameWithNoTooltip]"
+ treasure_fleet_events.43.desc: "Le nostre spie ci informano di un cospicuo $expedition_name_treasure_voyage$ guidato da $expedition_leader_name$ e avviato da [expedition_initiator.GetLongName]. Giunti nel porto nemico di $expedition_location_name$, hanno deciso di sporcarsi le mani e di sostenere il nostro avversario [from.GetName] nella sua guerra contro di noi!"
+ treasure_fleet_events.43.a: "Non perdoneremo mai i [ShowCultureGroupNameWithNoTooltip('chinese_group')]!"
+
+ treasure_fleet_events.44.title: "Richiesta di Costruzione di una Moschea"
+ treasure_fleet_events.44.desc: "Il comandante della $expedition_name_chinese_expedition$, un marinaio di nome $expedition_leader_name$, è anche un devoto seguace di [target_religion.GetName]. Poiché molti membri della sua flotta professano la stessa fede, hanno chiesto il permesso di costruire una moschea per sostenere la comunità [target_religion.GetAdjectiveWithNoTooltip] locale."
+ treasure_fleet_events.44.a: "Permettiamo la costruzione."
+ treasure_fleet_events.44.b: "Avvertiamoli contro simili intromissioni."
+
+ treasure_fleet_events.45.title: "La Diaspora [ShowCultureGroupNameWithNoTooltip('chinese_group')] a $expedition_location_name_tooltipless$"
+ treasure_fleet_events.45.desc: "$expedition_location_name$ ospita una considerevole diaspora [ShowCultureGroupName('chinese_group')] cresciuta qui nel corso di molti decenni. Giunti in origine come commercianti, i mercanti [ShowCultureGroupNameWithNoTooltip('chinese_group')] presero in moglie donne del posto e si stabilirono qui, adattandosi al nuovo ambiente e assumendo un ruolo cruciale nella nostra società. Ora, con l'arrivo del $expedition_name_treasure_voyage$ di [expedition_initiator.GetName], $expedition_leader_name$ ha deciso di dare sostegno a quella diaspora."
+ treasure_fleet_events.45.a: "Incoraggiamo questo."
+ treasure_fleet_events.45.b: "Fermiamoli!"
+
+ treasure_fleet_events.46.title: "I Soldati si Stabiliscono"
+ treasure_fleet_events.46.desc: "Una manciata di soldati della $expedition_name_chinese_expedition$ è stata congedata e autorizzata a stabilirsi a $expedition_location_name$. Hanno preso mogli native e i loro legami potrebbero rivelarsi utili a lungo termine."
+ treasure_fleet_events.46.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+ treasure_fleet_events.46.a.entry: "$common_string_alright$"
+
+ treasure_fleet_events.47.title: "Intervento dal $expedition_name_treasure_voyage$"
+ treasure_fleet_events.47.desc: "Quando la $expedition_name_chinese_expedition$ è giunta a $expedition_location_name$, ha trovato [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] invischiat[ROOT.GetCountry.Custom('IT_OA_RANGO')] in una sanguinosa guerra civile. Sebbene simili circostanze di solito allontanino molti visitatori, $expedition_leader_name$ e il suo $expedition_name_treasure_voyage$ si sono affezionati alla causa [ROOT.GetCountry.GetAdjective] e ci offrono sostegno militare in nome di [GetInternationalOrganization('middle_kingdom').GetName]."
+ treasure_fleet_events.47.a: "Accetteremo tutto l'aiuto possibile."
+ treasure_fleet_events.47.b: "Non abbiamo bisogno del loro aiuto."
+
+ treasure_fleet_events.48.title: "$treasure_fleet_events.47.title$"
+ treasure_fleet_events.48.desc: "La vile $expedition_name_chinese_expedition$ ha deciso di schierarsi nella nostra [target_war.GetName]. E nonostante la saggezza di $expedition_leader_name$, il loro comandante, hanno compiuto la scelta sbagliata, optando per sostenere [country_at_war_with.GetName] anziché aiutare [ROOT.GetCountry.GetName]. Li schiacceremo sul campo di battaglia."
+ treasure_fleet_events.48.a: "Non lo dimenticheremo!"
+
+ treasure_fleet_events.49.title: "Disprezzo [ShowCultureGroupNameWithNoTooltip('chinese_group')]"
+ treasure_fleet_events.49.desc: "L'opinione tra [ROOT.GetCountry.GetName] e i nostri visitatori, il $expedition_name_treasure_voyage$, è scesa a livelli senza precedenti. Negli ultimi giorni ci sono stati numerosi scontri tra la nostra guarnigione e i marinai stranieri, ma nominalmente i nostri visitatori hanno mantenuto le relazioni, anche se tiepide. Tuttavia, gli eventi recenti hanno ulteriormente deteriorato quei legami e $expedition_leader_name$ ha appena denunciato [ROOT.GetCountry.GetLongNameWithNoTooltip] e i suoi valori, e la $expedition_name_chinese_expedition$ si prepara a lasciare $expedition_location_name$ prima che le tensioni si aggravino ulteriormente."
+ treasure_fleet_events.49.a: "Dobbiamo ricucire i nostri rapporti."
+ treasure_fleet_events.49.b: "Buon viaggio!"
+
+ chinese_interregnum: "[THIS.GetCountry.GetName] sarà posto sotto un interregno [ShowCultureGroupName('chinese_group')]."
+
+ treasure_fleet_events.50.title: "Una Richiesta Bellicosa"
+ treasure_fleet_events.50.desc: "Il comandante del $expedition_name_treasure_voyage$, $expedition_leader_name$, ci ha presentato un serio appello, chiedendo un intervento militare contro [target_country.GetName]. Da quanto sappiamo, per una ragione o per l'altra, [target_country.Custom('IT_ART_RANGO')][target_country.GetFlavorRank] di [target_country.GetNameWithNoTooltip] è diventato un bersaglio dei [ShowCultureGroupName('chinese_group')], e i capi della spedizione ci chiedono di eseguire la punizione del Cielo sul [target_country.GetGovernment.GetRulerTitle] ribelle."
+ treasure_fleet_events.50.a: "Seguiremo la loro raccomandazione."
+ treasure_fleet_events.50.b: "Non possono aspettarsi che lo facciamo."
+
+ treasure_fleet_events.51.title: "Qualità Deludente del Tributo"
+ treasure_fleet_events.51.desc: "Sebbene non lo abbiano dichiarato pubblicamente, ci accorgiamo che le élite del $expedition_name_treasure_voyage$ non sono soddisfatte della qualità dei nostri doni. Lo sospettavamo già durante la loro udienza con il [ROOT.GetCountry.GetGovernment.GetRulerTitle], ma i rapporti delle nostre spie che hanno origliato le loro conversazioni lo hanno confermato."
+ treasure_fleet_events.51.a: "Compensiamoli."
+ treasure_fleet_events.51.b: "Non faremo nulla a meno che non ci affrontino al riguardo."
+
+ treasure_fleet_events.52.title: "Scandalo alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
+ treasure_fleet_events.52.desc: "Durante un'udienza con il [ROOT.GetCountry.GetGovernment.GetRulerTitle], un membro della [ROOT.GetCountry.GetGovernment.GetCourtTitle] ha pronunciato parole assai spregevoli sui nostri visitatori [ShowCultureGroupName('chinese_group')], offendendoli gravemente. A meno che non si faccia qualcosa, il $expedition_name_treasure_voyage$ potrebbe riferire l'incidente al [expedition_initiator.GetGovernment.GetRulerTitle]."
+ treasure_fleet_events.52.a: "Porgiamo solenni scuse."
+ treasure_fleet_events.52.b: "Offriamo loro doni di scuse."
+ treasure_fleet_events.52.c: "Chi siamo noi per punire i nostri?"
+
+ treasure_fleet_events.53.title: "Un Buon Trattamento"
+ treasure_fleet_events.53.desc: "Le élite che guidano il $expedition_name_treasure_voyage$ sono assai soddisfatte della nostra ospitalità e dei vari privilegi che abbiamo concesso loro. Oltre all'ovvio scambio di tributi, abbiamo permesso e aiutato la riparazione delle loro navi. Forse non lo mostrano direttamente, ma sappiamo che sono assai soddisfatte del trattamento."
+ treasure_fleet_events.53.a: "L'ospitalità è la chiave!"
+ treasure_fleet_events.53.b: "Non lasciamo che si facciano un'idea sbagliata."
+
+ treasure_fleet_events.54.title: "Un Affronto ai Nostri Inviati"
+ treasure_fleet_events.54.desc: "Giunge alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] la notizia che alla corte di [insulting_court.GetName], gli inviati del $expedition_name_treasure_voyage$ sono stati accolti non con la deferenza dovuta a [GetInternationalOrganization('middle_kingdom').GetName], ma con aperto scherno, e [insulting_court.GetGovernment.GetRulerTitle] ha lasciato correre l'insulto.\n\n$expedition_leader_name$ attende la nostra parola. Dobbiamo rispondere a tale disprezzo, o è al di sotto di noi prenderne nota?"
+ treasure_fleet_events.54.a: "Un simile disprezzo non resterà impunito."
+ treasure_fleet_events.54.b: "È al di sotto di noi prenderne nota."
+ treasure_fleet_events.54.a.tt: "Le [nations|e] vicine visitate in seguito dal $expedition_name_treasure_voyage$ avranno la possibilità di dichiarare [war|e] a [insulting_court.GetName] con il nostro sostegno"
+
+ treasure_fleet_events.55.title: "Invischiati all'Estero"
+ treasure_fleet_events.55.desc: "I dispacci della [ROOT.GetCountry.GetGovernment.GetCourtTitle] recano notizie inattese. Lontano da casa, $expedition_leader_name$ ha gettato le armi e il tesoro del $expedition_name_treasure_voyage$ a sostegno del sovrano di [country_at_war_with.GetName], un regno ora dilaniato da una guerra di successione.\n\nAlcuni alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] si meravigliano di quanto lontano si estenda ormai la portata di [GetInternationalOrganization('middle_kingdom').GetName]. Altri borbottano che le contese di regni lontani non siano affar nostro."
+ treasure_fleet_events.55.a: "Che il mondo veda quanto lontano si estende la nostra portata."
+ treasure_fleet_events.55.b: "Le guerre lontane non ci riguardano."
+
+ treasure_fleet_events.56.title: "Una Spada Sguainata all'Estero"
+ treasure_fleet_events.56.desc: "Giunge dal $expedition_name_treasure_voyage$ la notizia che $expedition_leader_name$ ha prestato soldati imperiali alla guerra di una corte ospitante. [target_country.GetName], che ha trovato i nostri uomini schierati contro di sé, annovera ora [GetInternationalOrganization('middle_kingdom').GetName] tra i propri nemici.\n\nLa [ROOT.GetCountry.GetGovernment.GetCourtTitle] è divisa. Per alcuni è la prova che la portata del trono si estende ormai fino all'altro capo del mondo. Per altri è un nemico inutile guadagnato in una guerra che non è mai stata nostra."
+ treasure_fleet_events.56.a: "Imparino a temere la nostra portata."
+ treasure_fleet_events.56.b: "Una simile inimicizia ci serve male così lontano da casa."
+
+ treasure_fleet_events.57.title: "Respinti con Disprezzo"
+ treasure_fleet_events.57.desc: "Gravi notizie giungono alla [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Alla corte di [contemptuous_court.GetName], gli inviati del $expedition_name_treasure_voyage$ sono stati accolti con un tale aperto disprezzo che $expedition_leader_name$ ha levato l'ancora e lasciato le loro acque, con le cortesie consuete scagliateci in faccia.\n\nIl cronista della flotta ha iscritto [contemptuous_court.GetNameWithNoTooltip] nel proprio registro di coloro che hanno offeso [GetInternationalOrganization('middle_kingdom').GetName]. L'affronto sarà ricordato, o perdonato?"
+ treasure_fleet_events.57.a: "L'affronto sarà ricordato."
+ treasure_fleet_events.57.b: "È al di sotto di noi serbare un simile rancore."
+ treasure_fleet_events.57.a.tt: "Una corte vicina visitata in seguito dal $expedition_name_treasure_voyage$ potrebbe essere chiamata a dichiarare [war|e] a [contemptuous_court.GetName]"
+
+ treasure_fleet_events.58.title: "L'Insulto Vendicato"
+ treasure_fleet_events.58.desc: "Giunge alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] la notizia di un trionfo. Spinta dalla presenza del $expedition_name_treasure_voyage$, la corte di [avenging_court.GetName] ha preso le armi contro [target_country.GetName], proprio il regno che un tempo teneva in disprezzo i nostri inviati.\n\nIl disappunto del Cielo, a quanto pare, non ha bisogno di un esercito imperiale per farsi sentire. La portata di [GetInternationalOrganization('middle_kingdom').GetName] si spinge fin nelle guerre di re lontani."
+ treasure_fleet_events.58.a: "Prendano nota tutti coloro che ci disprezzano."
+
+ treasure_fleet_events.59.title: "Parenti Oltre i Mari"
+ treasure_fleet_events.59.desc: "Giungono alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] notizie di una fiorente comunità di nostri connazionali nella lontana [diaspora_port.GetName]. Mercanti e marinai che vi si stabilirono generazioni fa hanno preso mogli del posto e prosperato, e ora $expedition_leader_name$ ha teso la mano del $expedition_name_treasure_voyage$ a questi lontani parenti.\n\nAlcuni alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] si gonfiano d'orgoglio che il sangue di [GetInternationalOrganization('middle_kingdom').GetName] scorra in ogni porto dei mari meridionali. Altri vedono con disapprovazione sudditi che fanno la propria casa così lontano dalle tombe dei loro antenati."
+ treasure_fleet_events.59.a: "I nostri parenti all'estero portino il nostro nome con orgoglio."
+ treasure_fleet_events.59.b: "Il loro posto è a casa, tra i loro antenati."
+
+ treasure_fleet_events.60.title: "Il Passo Falso di un Inviato"
+ treasure_fleet_events.60.desc: "Giunge alla [ROOT.GetCountry.GetGovernment.GetCourtTitle] la notizia di un increscioso incidente alla corte di [offended_court.GetName]. $expedition_leader_name$, ignaro dei riti di una fede straniera, ha dato grave offesa, e il [offended_court.GetGovernment.GetRulerTitle] esige ora che il nostro inviato faccia ammenda.\n\nLa [ROOT.GetCountry.GetGovernment.GetCourtTitle] è combattuta. Alcuni sostengono che gli inviati di [GetInternationalOrganization('middle_kingdom').GetName] non debbano alcuna deferenza agli altari stranieri. Altri temono che una simile sbadataggine macchi il nostro nome in ogni porto a venire."
+ treasure_fleet_events.60.a: "I nostri inviati non rispondono ad alcun altare straniero."
+ treasure_fleet_events.60.b: "L'ammiraglio farà ammenda."

@@ -1,5 +1,61 @@
 ﻿l_english:
- flavor_tle.1.title: "La Caduta di [capital_scope.GetNameWithNoTooltip]"
- flavor_tle.1.desc: "La capitale [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] car[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], [capital_scope.GetName], è tristemente caduta nelle mani dei nostri atroci nemici e, per aggiungere ulteriore tragedia, il nostro amato sovrano [ruler_scope.GetName] e i suoi figli sono stati uccisi durante l'assalto.\n\nQuesta tragedia ha inviato un'ondata di disperazione in tutto [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank] e ha reso la continuazione della lotta contro i nostri assalitori ancora più difficile."
- flavor_tle.1.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
- flavor_tle.1.a.entry: "$common_string_curses$"
+ banu_al_wad: "Bānu 'Abd āl-Wād"
+ FATE_OF_TLEMCEN: "Il Destino di [ShowLocationNameWithNoTooltip('tlemcen')]"
+
+ flavor_tle.1.title: "[target_war.GetNameWithNoTooltip]"
+ flavor_tle.1.desc: "[ShowRegionName('maghreb_region')] si trova sull'orlo del precipizio — con [target_siege.GetName] ormai ben avviato e la forza di soccorso [tle_scope.Custom('IT_ADJ_FS')] in procinto di arrivare, è plausibile che il futuro del [ShowSubContinentName('north_africa')] possa decidersi nel giro di pochi giorni. Il [target_location.GetRank.GetName] riuscirà a resistere contro [mor_ruler.GetName] e le sue truppe [mor_scope.Custom('IT_ADJ_FP')], oppure [target_location.GetName] cadrà, suggellando il destino di [tle_ruler.GetName] e del [tle_ruler.GetHerHis] [tle_scope.GetFlavorRank]?"
+ flavor_tle.1.a: "Alle armi!"
+
+ tle_morrocan_tlemcen_war: "Se [target_location.GetName] viene occupata dal [mor_scope.GetLongName] durante [target_war.GetName], [mor_scope.GetName] potrà trasformare con la forza [tle_scope.GetName] in un [ShowSubjectTypeName('fiefdom')]"
+ tle_additional_warning: "Il [target_siege.GetName] deve essere revocato al più presto!"
+
+ flavor_tle.2.title: "La Caduta di [target.GetNameWithNoTooltip]"
+ flavor_tle.2.desc: "[target.GetName], la perla di [target.GetArea.GetName], è finalmente caduta sotto il nostro assedio e si è arresa ai nostri potenti eserciti. Non appena le porte si sono aperte, le nostre forze si sono riversate nel [target.GetRank.GetName], cercando di assicurarsi la cittadella principale nella speranza di ottenere bottino e prigionieri. All'interno della cittadella si trovavano numerosi membri della famiglia [target_country.Custom('IT_ADJ_FS')], che i nostri soldati hanno rapidamente catturato e condotto fuori dai generali [from_country.Custom('IT_ADJ_MP')]. Potrebbe essere, questa, la fine di [target_war.GetName]?"
+ flavor_tle.2.a: "Assicuriamoci che i [target_dynasty.GetNameWithNoTooltip] non siano un ostacolo."
+ flavor_tle.2.b: "Avanti, verso [ShowLocationNameWithNoTooltip('oran')]!"
+ TLE_once_truce_ends_zayyanid_pretenders_tt: "Una volta terminata la [truce|e] con [target_country.GetName], essi avranno accesso alla [decision|e] [ShowDecisionName('zayyanid_pretenders_decision')], che permetterà loro di dichiarare una speciale [war|e] [ShowCasusBelliName('cb_independence_war')]"
+
+ flavor_tle.3.title: "$flavor_tle.2.title$"
+ flavor_tle.3.desc: "La capitale [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] amat[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank], [target.GetName], è caduta nelle mani dei nostri odiosi nemici [from_country.Custom('IT_Dalla')][from_country.GetLongName]. Ad aggravare questa tragedia, molti membri della nostra amata famiglia [target_dynasty.GetName] sono stati uccisi durante l'assalto.\n\nQuesta calamità ha diffuso un'ondata di disperazione in tutto [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetLongName], e ha reso la prosecuzione della guerra praticamente impossibile. Sebbene le uccisioni da sole non bastino a paralizzare il paese, la perdita di fiducia nella leadership di certo lo fa. Abbandonati dai nostri alleati tribali, il nostro morale è ai minimi storici, e in assenza di un movimento di resistenza organizzato, questo segna la fine di [target_war.GetName]."
+ flavor_tle.3.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ TLE_as_per_the_warning: "Non abbiamo ascoltato gli avvertimenti, e abbiamo permesso che la nostra amata [target.GetName] venisse occupata. La famiglia [target_dynasty.GetName] è stata massacrata, e siamo ora un [ShowSubjectTypeName('fiefdom')] [from_country.Custom('IT_Di')][from_country.GetName]."
+ 
+ zayyanid_pretenders_decision.title: "Intronizzare un Principe [ShowDynastyNameWithNoTooltip('zayyanid_dynasty')]"
+ zayyanid_pretenders_decision.desc: "Il governo di [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetName] è tirannico nel peggiore dei casi e scomodo per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetLongName] nel migliore. Invitiamo un principe [ShowDynastyName('zayyanid_dynasty')] a governarci di nuovo, e uniamo tutta la [ShowEstateTypeName('tribes_estate')] contro un nemico comune."
+ zayyanid_pretenders_decision.desc.entry: "Il governo del nostro sovrano è davvero tirannico. Scuote nel profondo la supremazia delle tribù $banu_al_wad$. Invitiamo un principe [ShowDynastyName('zayyanid_dynasty')] a governarci di nuovo, e uniamo tutta la [ShowEstateTypeName('tribes_estate')] contro un nemico comune."
+ zayyanid_pretenders_decision.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ zayyanid_pretenders_decision.a.entry: "$common_string_great$"
+ zayyanid_prince_takes_over: "Un principe della [dynasty|e] [ShowDynastyName('zayyanid_dynasty')] prende il potere"
+
+ flavor_tle.4.title: "$flavor_tle.7.title$"
+ flavor_tle.4.desc: "La situazione in [from_country.GetName] sta diventando sempre più insostenibile di giorno in giorno. Molti dei pretendenti [target_dynasty.GetName] sono usciti allo scoperto e cercano attivamente sostegno tra le tribù [ShowCultureName('zenati')] della zona. Se non riusciremo a placare i ceti locali, [target_location.GetName] potrebbe diventare un focolaio di ribellione popolare, ponendo fine alla nostra egemonia sul [ShowRegionName('maghreb_region')]. [target_country.GetName] riuscirà a resistere a una simile tempesta?"
+ flavor_tle.4.a: "Prestiamo ascolto a questi avvertimenti."
+ tle_rules_for_zayyanid_pretenders: "Se [target_country.GetName] non riuscirà a mantenere la [subject_loyalty|e] [from_country.Custom('IT_Della')][from_country.GetLongName] al di sopra del #Y 30#! durante uno qualsiasi dei successivi #Y 20#! anni, [from_country.GetName] potrà dichiarare [war|e] [ShowCasusBelliName('cb_independence_war')] tramite la [decision|e] [ShowDecisionName('zayyanid_pretenders_decision')]"
+ tle_rules_part_two: "Se ciò accadrà, [from_country.GetName] riceverà significativi bonus alla propria forza militare e [target_country.GetName] riceverà quanto segue:"
+
+ flavor_tle.5.title: "I [ShowDynastyNameWithNoTooltip('zayyanid_dynasty')] Ritornano a [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]!"
+ flavor_tle.5.desc: "[target_character.GetName], un pretendente al trono [from_country.GetAdjective], è appena entrato in [ROOT.GetCountry.GetCapital.GetName] tra gli applausi [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] e dei rappresentanti [ROOT.GetCountry.Custom('IT_TRIBES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('tribes_estate')]. Questo atto costituisce un'aperta dichiarazione di guerra da parte di [from_country.GetName] contro [target_country.Custom('IT_La')][target_country.GetLongName], lo stato che ha governato [ROOT.GetCountry.GetCapital.GetName] per fin troppo tempo. [target_character.GetShortNameWithNoTooltip] gode di un vasto sostegno in [from_country.GetNameWithNoTooltip], ma, soprattutto, ha ottenuto [ShowModifier('tle_zayyanid_tribe_support')]: l'appoggio della tribù [ShowCultureName('zenati')] più grande e potente [ROOT.GetCountry.Custom('IT_NEL_RANGO')] [ROOT.GetCountry.GetFlavorRank], nonché tribù natia dei [target_dynasty.GetName].\n\nMostreremo a quei bastardi [target_country.Custom('IT_ADJ_MP')] chi sarà vittorioso in [target_war.GetName]!"
+ flavor_tle.5.a: "Gloria sia a [ROOT.GetCountry.GetReligion.GetGodName]!"
+
+ zayyanid_pretender_effect: "Dichiareremo [ShowCasusBelliName('cb_independence_war')] contro il nostro [overlord|e] e riceveremo ulteriori benefici dal seguente evento:"
+ 
+ flavor_tle.6.title: "Ribellione [from_country.Custom('IT_In')][from_country.GetLongNameWithNoTooltip]!"
+ flavor_tle.6.desc: "I nostri fervidi sforzi — privilegi concessi, missioni diplomatiche, doni sontuosi, cariche assegnate — sono stati tutti vani, poiché le tribù di [from_country.GetName] continuano a scegliere di sostenere il tirannico [target_character.GetName] dei [target_dynasty.GetName], anziché il più benevolo governo [target_country.GetAdjective].\n\nE sia dunque! Che affrontino l'ira dei nostri eserciti! Infliggeremo loro la punizione divina di [ROOT.GetCountry.GetReligion.GetGodName] e conquisteremo la vittoria in [target_war.GetName]!"
+ flavor_tle.6.a: "La nostra egemonia nel [ShowRegionNameWithNoTooltip('maghreb_region')] non sarà rovesciata!"
+ 
+ flavor_tle.7.title: "Pretendenti dei [target_dynasty.GetNameWithNoTooltip]"
+ flavor_tle.7.entry: "Pretendenti dei [ShowDynastyNameWithNoTooltip('zayyanid_dynasty')]"
+ flavor_tle.7.desc: "Negli ultimi anni, molti membri superstiti della dinastia [target_dynasty.GetName] sono usciti allo scoperto, tentando di reclamare [target_location.GetName] e il trono [from_country.GetAdjective]. Godono di un sostegno tiepido tra la popolazione e [target_country.Custom('IT_TRIBES_IL')][target_country.GetGovernment.GetEstateName('tribes_estate')], e il sentimento popolare si sta lentamente volgendo a loro favore. Se i nostri sovrani [target_country.Custom('IT_In')][target_country.GetLongName] continueranno ad aggravare la crisi a [target_location.GetProvince.GetName], potremmo assistere al ritorno al potere dei [target_dynasty.GetNameWithNoTooltip]."
+ flavor_tle.7.a: "Questo potrebbe esserci utile."
+ 
+ flavor_tle.11.title: "Fedeltà Assicurata"
+ flavor_tle.11.desc: "Sono trascorsi decenni dalla sottomissione [target_country.Custom('IT_ADJ_FS')] di [from_country.GetName], e le voci di un ritorno [ShowDynastyName('zayyanid_dynasty')] si sono ormai in gran parte spente. Sembra che siamo finalmente riusciti a sottomettere [from_country.Custom('IT_TRIBES_IL')][from_country.GetGovernment.GetEstateName('tribes_estate')] [ShowCultureName('zenati')] e il capo $banu_al_wad$ tra loro. Una volta integrati i loro territori, inaugureremo una nuova era di prosperità per il [ShowRegionName('maghreb_region')]."
+ flavor_tle.11.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ tle_secured: "[from_country.GetName] non potrà più ribellarsi tramite [ShowDecisionName('zayyanid_pretenders_decision')]"
+
+ flavor_tle.13.title: "Crescita di [ShowLocationNameWithNoTooltip('oran')]"
+ flavor_tle.13.entry: "$flavor_tle.13.title$"
+ flavor_tle.13.desc: "Se [target_location2.GetName] è la nostra porta d'accesso ai commerci nel [ShowScriptedGeographyName('sahara_desert_geography')], allora [target_location.GetName] è la nostra finestra sul commercio con [ShowContinentName('europe')]. Nessun altro porto svolge un ruolo altrettanto importante quanto quello di [target_location.GetNameWithNoTooltip], poiché rappresenta il principale approdo che ci collega ai nostri partner marittimi nel [ShowScriptedGeographyName('mediterranean_sea_geography')]. Forse il [target_location.GetRank.GetName] merita privilegi aggiuntivi per rafforzare il locale [target_estate.GetName]."
+ flavor_tle.13.a: "Un'idea splendida!"
+ flavor_tle.13.b: "[target_location.GetNameWithNoTooltip] non merita un trattamento speciale."

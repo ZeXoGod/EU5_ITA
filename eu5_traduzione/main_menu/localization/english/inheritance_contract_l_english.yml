@@ -1,0 +1,91 @@
+﻿l_english:
+ # Scripted relation — display name and description
+ inheritance_contract_relation: "Contratto di Successione"
+ inheritance_contract_relation_desc: "Un paese paga per assicurarsi il diritto di ereditare un altro regno nel caso in cui il suo sovrano muoia senza eredi."
+
+ # Offer UI keys (never visible -- offer_visible = always = no -- but required by the engine)
+ offer_inheritance_contract: "Offri Contratto di Successione"
+ offer_inheritance_contract_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
+ offer_inheritance_contract_cta: "Offri un [inheritance_contract|e] a [TARGET_COUNTRY.GetName]"
+ offer_inheritance_contract_desc: "Concedi a [TARGET_COUNTRY.GetName] il diritto di ereditare il nostro regno nel caso in cui il nostro sovrano muoia senza eredi."
+ offer_inheritance_contract_cta_to_unknown: "Offri un [inheritance_contract|e] a un [country|e]"
+ offer_inheritance_contract_desc_to_unknown: "Concedi a un [country|e] il diritto di ereditare il nostro regno nel caso in cui il nostro sovrano muoia senza eredi."
+ offer_inheritance_contract_happened_title: "Contratto di Successione Offerto"
+ offer_inheritance_contract_happened_desc: "[COUNTRY.GetName] ha offerto un [inheritance_contract|e] a [TARGET_COUNTRY.GetName], concedendo il diritto di ereditare il proprio regno nel caso in cui il suo sovrano muoia senza eredi."
+ offer_inheritance_contract_proposal_question: "Offrire un [inheritance_contract|e] a [TARGET_COUNTRY.GetName]?\n$INFO$"
+ offer_inheritance_contract_incoming_proposal_title: "Offerta di [inheritance_contract|e]"
+ offer_inheritance_contract_incoming_proposal_question: "[COUNTRY.GetName] desidera offrirci un [inheritance_contract|e], concedendoci il diritto di ereditare il proprio regno nel caso in cui il suo sovrano muoia senza eredi. Accettiamo?"
+
+ # Request UI keys (non-buy -- disabled since can_get_without_buying = no -- but required by the engine)
+ request_inheritance_contract: "Richiedi Contratto di Successione"
+ request_inheritance_contract_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
+ request_inheritance_contract_cta: "Richiedi un [inheritance_contract|e] a [TARGET_COUNTRY.GetName]"
+ request_inheritance_contract_desc: "Chiedi a [TARGET_COUNTRY.GetName] di concederci il diritto di ereditare il proprio regno nel caso in cui il suo sovrano muoia senza eredi."
+ request_inheritance_contract_cta_to_unknown: "Richiedi un [inheritance_contract|e] a un [country|e]"
+ request_inheritance_contract_desc_to_unknown: "Chiedi a un [country|e] di concederci il diritto di ereditare il proprio regno nel caso in cui il suo sovrano muoia senza eredi."
+ request_inheritance_contract_happened_title: "Contratto di Successione Stabilito"
+ request_inheritance_contract_happened_desc: "[COUNTRY.GetName] ha ottenuto un [inheritance_contract|e] con [TARGET_COUNTRY.GetName], assicurandosi il diritto di ereditare il suo regno nel caso in cui il suo sovrano muoia senza eredi."
+ request_inheritance_contract_proposal_question: "Richiedere un [inheritance_contract|e] a [TARGET_COUNTRY.GetName]?\n$INFO$"
+ request_inheritance_contract_incoming_proposal_title: "Richiesta di [inheritance_contract|e]"
+ request_inheritance_contract_incoming_proposal_question: "[COUNTRY.GetName] desidera stabilire un [inheritance_contract|e] con noi, ottenendo il diritto di ereditare il nostro regno nel caso in cui il nostro sovrano muoia senza eredi. Accettiamo?"
+
+ # Buy request UI keys
+ buy_request_inheritance_contract: "Acquista Contratto di Successione"
+ buy_request_inheritance_contract_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS"
+ buy_request_inheritance_contract_cta: "Acquista un [inheritance_contract|e] da [TARGET_COUNTRY.GetName]"
+ buy_request_inheritance_contract_desc: "Paga in [gold|e] per assicurarti il diritto di ereditare [TARGET_COUNTRY.GetName] nel caso in cui il suo sovrano muoia senza eredi."
+ buy_request_inheritance_contract_cta_to_unknown: "Acquista un [inheritance_contract|e] da un [country|e]"
+ buy_request_inheritance_contract_desc_to_unknown: "Paga in [gold|e] per assicurarti il diritto di ereditare un regno senza eredi nel caso in cui il suo sovrano muoia."
+ buy_request_inheritance_contract_happened_title: "Contratto di Successione Stabilito"
+ buy_request_inheritance_contract_happened_desc: "[COUNTRY.GetName] ha acquistato un [inheritance_contract|e] con [TARGET_COUNTRY.GetName], assicurandosi il diritto di ereditare il suo regno nel caso in cui il suo sovrano muoia senza eredi."
+ buy_request_inheritance_contract_proposal_question: "Acquistare un [inheritance_contract|e] da [TARGET_COUNTRY.GetName] per $COST$?\n$INFO$"
+ buy_request_inheritance_contract_incoming_proposal_title: "Proposta di [inheritance_contract|e]"
+ buy_request_inheritance_contract_incoming_proposal_question: "[COUNTRY.GetName] desidera acquistare un [inheritance_contract|e] per $COST$, assicurandosi il diritto di ereditare il nostro regno nel caso in cui il nostro sovrano muoia senza eredi. Accettiamo?"
+ inheritance_contract_effect_text: "[COUNTRY.GetName] si assicura un [inheritance_contract|e] con [TARGET_COUNTRY.GetName]."
+ inheritance_contract_effect_text_past: "[COUNTRY.GetName] si è assicurato un [inheritance_contract|e] con [TARGET_COUNTRY.GetName]."
+ giving_inheritance_contract_list_who_tt: "$WHO$ ha concesso un [inheritance_contract|e] a $LIST$"
+ receiving_inheritance_contract_list_who_tt: "$WHO$ detiene un [inheritance_contract|e] con $LIST$"
+
+ # Cancel UI keys
+ cancel_inheritance_contract: "Annulla Contratto di Successione"
+ cancel_inheritance_contract_cta: "Annulla il nostro [inheritance_contract|e] con [SCOPE.sCountry('recipient').GetName]"
+ cancel_inheritance_contract_desc: "Annulleremo il nostro accordo e perderemo il diritto di successione per cui abbiamo pagato."
+ cancel_inheritance_contract_cta_to_unknown: "Annulla il nostro [inheritance_contract|e] con un [country|e]"
+ cancel_inheritance_contract_desc_to_unknown: "Annulleremo il nostro accordo e perderemo il diritto di successione per cui abbiamo pagato."
+ cancel_inheritance_contract_happened_title: "Contratto di Successione Annullato"
+ cancel_inheritance_contract_happened_desc: "[SCOPE.sCountry('actor').GetName] ha annullato il proprio [inheritance_contract|e] con [SCOPE.sCountry('recipient').GetName]."
+ cancel_inheritance_contract_proposal_question: "Annullare [inheritance_contract|e] con [TARGET_COUNTRY.GetName]?\n$INFO$"
+
+ # Break UI keys
+ break_inheritance_contract: "Rompi Contratto di Successione"
+ break_inheritance_contract_CATEGORY: "CATEGORY_HOSTILE_ACTIONS"
+ break_inheritance_contract_cta: "Rompi il nostro [inheritance_contract|e] con [SCOPE.sCountry('recipient').GetName]"
+ break_inheritance_contract_desc: "Porremo fine al nostro [inheritance_contract|e], perdendo il diritto di successione che deteniamo."
+ break_inheritance_contract_cta_to_unknown: "Rompi il nostro [inheritance_contract|e] con un [country|e]"
+ break_inheritance_contract_desc_to_unknown: "Porremo fine al nostro [inheritance_contract|e], perdendo il diritto di successione che deteniamo."
+ break_inheritance_contract_happened_title: "Contratto di Successione Rotto"
+ break_inheritance_contract_happened_desc: "[SCOPE.sCountry('actor').GetName] ha rotto il proprio [inheritance_contract|e] con [SCOPE.sCountry('recipient').GetName], perdendo il diritto di successione che aveva acquistato."
+ break_inheritance_contract_proposal_question: "Rompere il nostro [inheritance_contract|e] con [TARGET_COUNTRY.GetName]?\n$INFO$"
+
+ # Diplomatic status panel keys
+ diplomatic_status_giving_inheritance_contract_name: "Contratto di Successione Concesso"
+ diplomatic_status_giving_inheritance_contract_tooltip: "#T Contratto di Successione Concesso#!\nQuesto paese ha concesso diritti di successione tramite un [inheritance_contract|e] ai seguenti [countries|e]."
+ diplomatic_status_receiving_inheritance_contract_name: "Contratto di Successione"
+ diplomatic_status_receiving_inheritance_contract_tooltip: "#T Contratto di Successione#!\nQuesto paese detiene un [inheritance_contract|e] con i seguenti [countries|e], assicurandosi il diritto di ereditarli nel caso in cui il loro sovrano muoia senza eredi."
+
+ # AI wants_to_give reason descs
+ inheritance_contract_same_culture_group: "Un'eredità culturale condivisa rafforza la fiducia in questo accordo."
+ inheritance_contract_hre_members: "Entrambe le parti sono membri del [holy_roman_empire|e], dove gli [inheritance_contracts|e] sono una tradizione legale consolidata."
+
+ # Event strings
+ inheritance_contract.1.title: "Contratto di Successione Assicurato"
+ inheritance_contract.1.desc: "Abbiamo pagato [SCOPE.sCountry('contract_partner').GetName] per il diritto di ereditare il suo regno nel caso in cui [SCOPE.sCountry('contract_partner').GetGovernment.GetRuler.GetName] muoia senza eredi. Si tratta di un investimento significativo, ma i potenziali guadagni sono considerevoli."
+ inheritance_contract.1.a: "Un investimento degno."
+
+ inheritance_contract.3.title: "Contratto di Successione Invocato"
+ inheritance_contract.3.desc: "Il sovrano di [SCOPE.sCountry('dead_ruler_country').GetName] è morto senza lasciare eredi. Il nostro [inheritance_contract|e] è entrato in vigore, e il suo regno cade ora sotto la nostra corona."
+ inheritance_contract.3.a: "La nostra pazienza è stata ricompensata."
+
+ inheritance_contract.4.title: "Contratto di Successione Decaduto"
+ inheritance_contract.4.desc: "Il nostro sovrano è morto, e con lui è decaduto il [inheritance_contract|e] che avevamo con [SCOPE.sCountry('dead_paying_country').GetName]. L'investimento che abbiamo fatto per assicurarci quel diritto di successione è ora perso."
+ inheritance_contract.4.a: "Una disgrazia costosa."

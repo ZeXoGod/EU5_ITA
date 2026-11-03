@@ -1,0 +1,72 @@
+﻿l_english:
+
+ flavor_ara.31.entry: "$flavor_ara.31.title$"
+ flavor_ara.31.title: "Debolezza a [ShowLocationNameWithNoTooltip('athens')]"
+ flavor_ara.31.desc: "Nonostante la nostra passata influenza su [ShowProvinceDefinitionName('attica_province')], l'un tempo grande compagnia che proteggeva la regione dei [ShowRegionName('balkan_region')] è ora l'ombra della sua antica gloria e sfugge sempre più al nostro controllo. Anziché lasciare che diventi sempre più debole e meno obbediente, forse dovremmo finalmente intervenire e rimuoverla dal potere a [ShowLocationName('athens')], ripristinando in quell'area l'ordine [ROOT.GetCountry.GetAdjective]."
+ flavor_ara.31.a: "'Ricordiamo' loro il loro dovere."
+ flavor_ara.31.b: "La politica della regione dei [ShowRegionNameWithNoTooltip('balkan_region')] non ci riguarda."
+
+ flavor_ara.32.entry: "$flavor_ara.32.title$"
+ flavor_ara.32.title: "Il Trono di [ShowLocationNameWithNoTooltip('naples')]"
+ flavor_ara.32.desc: "Cerchiamo di estendere la nostra influenza in [ShowRegionName('italy_region')] e di rafforzare i nostri commerci nel Mediterraneo; tuttavia, [GetCountry('NAP').Custom('IT_La')][GetCountry('NAP').GetLongName] ci sbarra la strada, detenendo molti porti preziosi che sono vitali per i nostri piani. Avendo già rivendicato per noi la [ShowAreaName('sicily_area')], abbiamo ora un'ulteriore giustificazione per unirla alla sua controparte settentrionale a [ShowLocationName('naples')]. Forse questo potrebbe persino segnare l'ascesa di una nuova [ROOT.GetCountry.GetGovernment.GetCourtTitle] nell'[ShowRegionNameWithNoTooltip('italy_region')]..."
+ flavor_ara.32.a: "Le corone devono essere unite."
+ flavor_ara.32.b: "Non dobbiamo aggravare la situazione nell'[ShowRegionNameWithNoTooltip('italy_region')]."
+ ara_allows_naples_fiefdom_regardless_of_warscore_cost: "Potremo rendere [GetCountry('NAP').Custom('IT_La')][GetCountry('NAP').GetName] un nostro [ShowSubjectTypeName('fiefdom')] con il [casus_belli|e] [ShowCasusBelliName('cb_claim_throne_of_naples')]"
+
+ flavor_ara.33.title: "Vittoria a [ShowLocationNameWithNoTooltip('naples')]"
+ flavor_ara.33.desc: "Le nostre forze hanno trionfato nel recente conflitto con i governanti di [ShowLocationName('naples')]!\n\nLe sue un tempo grandiose mura sono ridotte a un cumulo di rovine, e la sua antica sede di potere è ora per noi uno strumento per legittimare ulteriormente il nostro dominio su queste terre. Sebbene sacche di resistenza persistano in tutta l'[ShowRegionName('italy_region')] meridionale, nessuno osa sfidare la nostra recente conquista.\n\nForse dovremmo ora rivolgere la nostra attenzione alle questioni che riguardano il popolo [ShowCultureGroupName('italian_group')], introducendo presso di esso i nostri costumi, le nostre leggi e la nostra cultura."
+ flavor_ara.33.a: "Questo trionfo sarà celebrato!"
+
+ flavor_ara.35.entry: "$flavor_ara.35.title$"
+ flavor_ara.35.title: "I Nostri Parenti in [ShowAreaNameWithNoTooltip('sicily_area')]"
+ flavor_ara.35.desc: "Con i Vespri del popolo [ShowCultureName('sicilian')] che hanno assicurato il trono alla dinastia [target_character.GetDynasty.GetName], la nostra influenza in [ShowRegionName('italy_region')] è cresciuta. Nonostante ciò, la [ShowAreaName('sicily_area')] conserva ancora la propria sovranità, tenendosi a distanza dalla nostra politica dinastica. Anziché lasciarci sfuggire questa opportunità, forse possiamo contattare i nostri parenti laggiù, stabilendo un'unione dinastica più salda e dando potenzialmente il via alle nostre ambizioni nell'[ShowRegionNameWithNoTooltip('italy_region')]."
+ flavor_ara.35.a: "Uniremo entrambi i rami."
+ flavor_ara.35.b: "Forse possiamo sfruttare questa occasione per salvare la faccia [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
+ ara_unlock_decision_to_unite_sicily_and_aragon_crowns_tt: "Sbloccheremo la [decision|e] [ShowDecisionName('ara_unite_barcelona_dynasty')], che ci permetterà di stabilire un'[union|e] su [GetCountry('SIC').Custom('IT_Sulla')][GetCountry('SIC').GetName] se la nostra [opinion|e] presso di essa è abbastanza alta"
+
+ flavor_ara.36.entry: "La Seconda Corte"
+ flavor_ara.36.title: "La Seconda [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
+ flavor_ara.36.desc: "Il prestigio e la fama di cui gode l'[ShowRegionName('italy_region')] sono qualcosa che nessun governante d'[ShowContinentName('europe')] può ignorare. Con il nostro controllo sulla [ShowAreaName('sicily_area')] e su [ShowLocationName('naples')], [target_character.GetName] ha iniziato a valutare la creazione di una capitale secondaria per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], basata sulle ricche città dell'[ShowRegionNameWithNoTooltip('italy_region')]. Ciò ci permetterebbe inoltre di controllare la nobiltà locale, offrendo al contempo ai membri più giovani della famiglia [target_character.GetDynasty.GetName] l'opportunità di fare esperienza."
+ flavor_ara.36.a: "Questa nuova [ROOT.GetCountry.GetGovernment.GetCourtTitle] porterà di certo un'ondata di prosperità."
+ flavor_ara.36.b: "Non c'è bisogno di concentrarsi sull'[ShowRegionNameWithNoTooltip('italy_region')]."
+ ara_all_italian_pops_become_satisfied_tt: "Ogni [pop|e] [ShowCultureGroupName('italian_group')] otterrà [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] di [pop_satisfaction|e]"
+
+ flavor_ara.37.entry: "$flavor_ara.37.title$"
+ flavor_ara.37.title: "Fortificare l'[ShowRegionNameWithNoTooltip('italy_region')]"
+ flavor_ara.37.desc: "Per mantenere il controllo militare sull'[ShowRegionName('italy_region')], c'è molto lavoro da fare.\n\nIl [ROOT.GetCountry.GetGovernment.GetCourtTitle] di [italian_court.GetName] ha rilevato una debolezza lungo il confine, in particolare presso [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName] di [target_location.GetName], che non ha ricevuto da [ROOT.GetCountry.Custom('IT_CROWN_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] l'attenzione che merita. Per questo motivo, molti sostengono che dovremmo rafforzarne le fortificazioni e garantire la sicurezza dell'[ShowRegionNameWithNoTooltip('italy_region')], inaugurando una nuova era di sicurezza."
+ flavor_ara.37.a: "Fortifichiamo il nostro confine."
+ flavor_ara.37.b: "Ogni sforzo dovrebbe invece essere dedicato alla nostra capitale."
+
+ flavor_ara.38.entry: "Un Palazzo per la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ShowCultureGroupNameWithNoTooltip('italian_group')]"
+ flavor_ara.38.title: "Un Palazzo per la [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ShowCultureGroupNameWithNoTooltip('italian_group')]"
+ flavor_ara.38.desc: "Stabilire una presenza nell'[ShowRegionName('italy_region')] ci ha permesso di esercitare un controllo molto più diretto sulla regione. Eppure, mentre chi si trova a [ROOT.GetCountry.GetCapital.GetName] gode del lusso, la seconda [ROOT.GetCountry.GetGovernment.GetCourtTitle] ritiene di meritare la stessa attenzione. Anziché tradire la fiducia [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] del popolo [ShowCultureGroupName('italian_group')], [target_character.GetName] ha deciso di commissionare un grande palazzo, finanziato in parte dalle ricche famiglie di mercanti e in parte [ROOT.GetCountry.Custom('IT_CROWN_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], come mezzo per proiettare la nostra autorità sulle ricche città della penisola."
+ flavor_ara.38.a: "Un grande palazzo per una grande [italian_court.GetRank.GetNameWithNoTooltip]."
+ flavor_ara.38.a.entry: "Un grande palazzo per una grande città."
+ flavor_ara.38.b: "Dovremmo rimandare questo progetto."
+
+ flavor_ara.39.entry: "$flavor_ara.39.title$"
+ flavor_ara.39.title: "Intervento nel [ShowRegionNameWithNoTooltip('maghreb_region')]"
+ flavor_ara.39.desc: "Garantire i nostri commerci richiede a volte più della penna.\n\nI nostri partner commerciali [GetCountry('TUN').Custom('IT_In')][GetCountry('TUN').GetName] si sono fatti più distanti con il passare del tempo, e non abbiamo dimenticato il loro sostegno alla ribellione di [ShowLocationName('ajim')]. Anziché restare con le mani in mano e lasciare che le nostre rivendicazioni svaniscano col tempo, dovremmo guidare una spedizione militare per riprendere questo porto un tempo importante per [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]."
+ flavor_ara.39.a: "Salpiamo per [ShowLocationNameWithNoTooltip('ajim')]."
+
+ flavor_ara.42.common_desc: "I nostri legami con [from_country.Custom('IT_La')][from_country.GetName] hanno intrecciato i nostri regni, consentendo a quel paese di influenzare la nostra politica. Facendo leva sul suo status di nazione della stessa dinastia [target_character.GetDynasty.GetName], oltre che di grande potenza d'[ShowContinentName('europe')],"
+ flavor_ara.42.title: "I Nostri Parenti"
+ flavor_ara.42.desc: "$flavor_ara.42.common_desc$ ora cerca di rivendicare il nostro trono, esigendo che il ruolo di [target_character2.GetName] sia ridotto a poco più che quello di governatore [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]."
+ flavor_ara.42.a: "Ci sottometteremo alla loro volontà."
+ flavor_ara.42.b: "Perché dovremmo cedere il trono a chi non ha fatto nulla per meritarlo?"
+
+ flavor_ara.43.title: "$flavor_ara.42.title$"
+ flavor_ara.43.desc: "$flavor_ara.42.common_desc$ ora cerca di renderci suoi vassalli, privando [target_character2.GetName] di ogni autorità [ROOT.GetCountry.Custom('IT_Sulla')][ROOT.GetCountry.GetName]."
+ flavor_ara.43.a: "$flavor_ara.42.a$"
+ flavor_ara.43.b: "$flavor_ara.42.b$"
+
+ flavor_ara.1100.entry: "$flavor_ara.1100.title$"
+ flavor_ara.1100.title: "Notizie [GetCountry('BOS').Custom('IT_Dalla')][GetCountry('BOS').GetNameWithNoTooltip]"
+ flavor_ara.1100.desc: "Da tempo [target_character.GetName] [GetCountry('BOS').Custom('IT_Di')][GetCountry('BOS').GetName] lotta per difendere la propria sovranità contro vicini assetati di potere. Incapaci di difendersi da soli, diversi esponenti [GetCountry('BOS').Custom('IT_NOBLES_DEL')][GetCountry('BOS').GetGovernment.GetEstateName('nobles_estate')] si sono rivolti a [target_character2.GetName] e alla [ROOT.GetCountry.GetGovernment.GetCourtTitle], chiedendo che li proteggiamo da ogni invasione. Preferirebbero diventare nostri sudditi piuttosto che cadere in mani pagane, e noi possiamo sfruttare la cosa a nostro vantaggio."
+ flavor_ara.1100.a: "Vediamo che cosa possiamo fare."
+ ara_unlock_decision_to_demand_vassalization_of_bosnia_tt: "Sbloccheremo la [decision|e] [ShowDecisionName('ara_vassalize_bosnia')]"
+
+ flavor_ara.1101.title: "Diplomatici [from_country.Custom('IT_Dalla')][from_country.GetNameWithNoTooltip]"
+ flavor_ara.1101.desc: "Desiderosi di proteggerci dalle minacce straniere, [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_HA')] chiesto aiuto [from_country.Custom('IT_Alla')][from_country.GetName], e in risposta [from_country.Custom('IT_La')][from_country.GetName] [from_country.Custom('IT_Ha')] inviato una delegazione per discutere la questione. Sapendo che sceglieremmo il disonore piuttosto che la morte, ci [from_country.Custom('IT_Ha')] chiesto di diventare suoi sudditi. In questo modo, le sue truppe e [from_country.Custom('IT_NOBLES_IL')][from_country.GetGovernment.GetEstateName('nobles_estate')] potranno proteggerci in modo più diretto, anziché affidarsi a una labile alleanza tra i nostri due paesi."
+ flavor_ara.1101.a: "Ci sottometteremo a loro."
+ flavor_ara.1101.b: "Allora la morte ci prenda, ma sappiano che moriremo liberi!"

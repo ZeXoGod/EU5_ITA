@@ -3,8 +3,11 @@
  revoke_town_rights: "Revoca Diritti Urbani"
  revoke_town_rights_desc: ""
  REVOKE_TOWN_RIGHTS_FROM: "Revoca [town_rights|E] da [TownRightsItem.GetFirstLocationName]"
- REVOKE_LOCATION_TOWN_RIGHT: "Revoca [town_rights|E] da [Location.GetName]" 
+ REVOKE_LOCATION_TOWN_RIGHT: "Revoca [town_rights|E] da [Location.GetName]"
 
+ upgrade_town_rights: "Aggiorna i Diritti Urbani"
+ UPGRADE_TOWN_RIGHTS_TO: "Aggiorna a [TownRightsItem.GetType.GetUpgradesTo.GetName] in [TownRightsItem.GetFirstLocationName]"
+ UPGRADE_LOCATION_TOWN_RIGHT: "Aggiorna a [TownRights.GetType.GetUpgradesTo.GetName] in [TownRights.GetLocation.GetName]"
 
 #######################################
 #   Non-production Rights    ##########
@@ -13,19 +16,30 @@
  staple_port_desc: "Questa [location|e] ha ottenuto privilegi legali che conferiscono ai [ShowEstateTypeName('burghers_estate')] maggiori diritti sul [trade|e] locale."
  granary_town: "Città Granaio"
  granary_town_desc: "Questa [location|e] ha ottenuto privilegi legali e normative volte ad aumentare la propria produzione e lo stoccaggio di [food|e]."
- market_charter: "Carta di Mercato" 
- market_charter_desc: "A questa [location|e] è stato concesso il diritto di tenere mercati regolari, attirando mercanti e commercianti ed espandendo la capacità del suo [ShowBuildingTypeName('marketplace')] locale." 
- free_town_charter: "Carta di Città Libera" 
- free_town_charter_desc: "A questa [location|e] sono stati concessi diritti di autogoverno, riducendo l'autorità diretta del [ShowEstateTypeName('crown_estate')] in cambio di maggiore libertà nell'attrarre coloni e condurre commerci." 
- fortress_town: "Città Fortezza" 
- fortress_town_desc: "Questa [location|e] è stata designata come guarnigione militare, ricevendo investimenti nelle sue fortificazioni e nelle [manpower|e]. La presenza militare permanente sottrae spazio al commercio civile." 
- mining_charter: "Carta Mineraria" 
- mining_charter_desc: "A questa [location|e] sono stati concessi diritti formali per condurre ed espandere le attività minerarie, aumentando la scala dell'estrazione. Di conseguenza, il [ShowEstateTypeName('peasants_estate')] è soggetto a obblighi più severi." 
- mining_charter_rgo_tt: "Ha una [raw_material|e] mineraria o produce [ShowGoodsName('salt')] nell'entroterra" 
- studium_privileges: "Privilegi dello Studium" 
- studium_privileges_desc: "Questa [location|e] è stata riconosciuta come centro di apprendimento, ottenendo il diritto di mantenere scuole e attrarre studiosi. Tali attività favoriscono la diffusione di [literacy|e] e [institution|e], anche se raramente arricchiscono direttamente il tesoro." 
- studium_privileges_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]" 
 
+ market_charter: "Carta di Mercato"
+ market_charter_desc: "A questa [location|e] è stato concesso il diritto di tenere mercati regolari, attirando mercanti e commercianti ed espandendo la capacità del suo [ShowBuildingTypeName('marketplace')] locale."
+
+ free_town_charter: "Carta di Città Libera"
+ free_town_charter_desc: "A questa [location|e] sono stati concessi diritti di autogoverno, riducendo l'autorità diretta del [ShowEstateTypeName('crown_estate')] in cambio di maggiore libertà nell'attrarre coloni e condurre commerci."
+
+ fortress_town: "Città Fortezza"
+ fortress_town_desc: "Questa [location|e] è stata designata come guarnigione militare, ricevendo investimenti nelle sue fortificazioni e nelle [manpower|e]. La presenza militare permanente sottrae spazio al commercio civile."
+
+ mining_charter: "Carta Mineraria"
+ mining_charter_desc: "A questa [location|e] sono stati concessi diritti formali per condurre ed espandere le attività minerarie, aumentando la scala dell'estrazione. Di conseguenza, il [ShowEstateTypeName('peasants_estate')] è soggetto a obblighi più severi."
+ mining_charter_rgo_tt: "Ha una [raw_material|e] mineraria o produce [ShowGoodsName('salt')] nell'entroterra"
+
+ plantation_charter: "Statuto delle Piantagioni"
+ plantation_charter_desc: "Questa [location|e] ha ottenuto diritti formali per espandere le sue piantagioni, aumentando la scala di produzione. Di conseguenza, i [ShowEstateTypeName('peasants_estate')] sono soggetti a obblighi più rigidi."
+ plantation_charter_rgo_tt: "Possiede una piantagione o una [raw_material|e] di spezie"
+
+ novo_brdo_charter: "Diritti Minerari di Novo Brdo"
+ novo_brdo_charter_desc: "Questa [location|e] opera secondo il Codice di Novo Brdo, un corpo di leggi che regola la sicurezza mineraria, la proprietà e il lavoro, redatto in origine dai minatori sassoni (Sasi) che si stabilirono su queste colline. Le sue miniere ben gestite crescono costantemente in prosperità, sebbene i [ShowEstateTypeName('peasants_estate')] rispondano alla più rigida supervisione del Codice, e la sua applicazione in tutto il regno gravi sui legislatori."
+
+ studium_privileges: "Privilegi dello Studium"
+ studium_privileges_desc: "Questa [location|e] è stata riconosciuta come centro di apprendimento, ottenendo il diritto di mantenere scuole e attrarre studiosi. Tali attività favoriscono la diffusione di [literacy|e] e [institution|e], anche se raramente arricchiscono direttamente il tesoro."
+ studium_privileges_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]"
 
  
 #######################################
@@ -59,8 +73,41 @@
  
  royal_masonry_rights: "Diritti di Muratura"
  royal_masonry_rights_desc: "Questa [location|e] ha ottenuto l'esclusiva legale sulla produzione e la distribuzione di [ShowGoodsName('masonry')] e [ShowGoodsName('glass')], che conferisce un notevole vantaggio competitivo."
- 
- 
+
+ royal_market_rights: "Diritti di Grande Mercato"
+ royal_market_rights_desc: "Questa [location|e] ha ottenuto il diritto di tenere grandi mercati regolamentati, attirando mercanti e commercianti da tutto il regno ed espandendo la capacità dei suoi edifici di [trade|e] in ogni fase del loro sviluppo."
+
+ royal_staple_rights: "Grande Porto di Staple"
+ royal_staple_rights_desc: "Questa [location|e] ha ottenuto ampi privilegi legali come porto di staple, concedendo ai [ShowEstateTypeName('burghers_estate')] diritti molto maggiori sul [trade|e] locale ed espandendo la capacità dei suoi edifici di [trade|e] in ogni fase del loro sviluppo."
+
+ tooling_charter: "Statuto degli Attrezzi"
+ tooling_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('tools')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ jewelry_charter: "Statuto dell'Oreficeria"
+ jewelry_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('jewelry')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ naval_charter: "Statuto delle Forniture Navali"
+ naval_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('naval_supplies')] e [ShowGoodsName('tar')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ textile_charter: "Statuto Tessile"
+ textile_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('cloth')] e [ShowGoodsName('fine_cloth')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ weaponry_charter: "Statuto delle Armi"
+ weaponry_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('weaponry')], [ShowGoodsName('firearms')] e [ShowGoodsName('cannons')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ book_charter: "Statuto della Stampa"
+ book_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('paper')], [ShowGoodsName('books')] e [ShowGoodsName('dyes')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ artisan_charter: "Statuto Artigiano"
+ artisan_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('leather')], [ShowGoodsName('pottery')] e [ShowGoodsName('furniture')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ brewing_charter: "Statuto degli Spiriti"
+ brewing_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('liquor')], [ShowGoodsName('beer')] e [ShowGoodsName('wine')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+ masonry_charter: "Statuto della Muratura"
+ masonry_charter_desc: "Questa [location|e] ha ottenuto uno statuto sulla produzione e distribuzione di [ShowGoodsName('masonry')] e [ShowGoodsName('glass')]. Diritti urbani pieni e completi potranno seguire una volta che la corona formalizzerà privilegi più ampi."
+
+
  
  
  #######################################
@@ -81,12 +128,12 @@
  
  upper_bergregal: "Upper Bergregal"
  upper_bergregal_desc: "Cedere al governo della città il diritto di svolgere attività minerarie aumenterà i fondi disponibili per la prospezione di nuovi giacimenti minerari e renderà la zona più attraente per i potenziali nuovi coloni. Purtroppo, ciò comporta restrizioni più severe per i cittadini comuni del luogo e limita la loro possibilità di trarre beneficio direttamente dalle miniere."
- upper_bergregal_raw_material_tt: "Produce [ShowGoodsName('silver')], [ShowGoodsName('goods_gold')], [ShowGoodsName('gems')] o [ShowGoodsName('salt')] nell'entroterra" 
+ upper_bergregal_raw_material_tt: "Produce [ShowGoodsName('silver')], [ShowGoodsName('goods_gold')], [ShowGoodsName('gems')] o [ShowGoodsName('salt')] nell'entroterra"
  unlock_bergregal_rights_tt: "Sblocca i [town_rights] [ShowTownRightsName('upper_bergregal')] e [ShowTownRightsName('lower_bergregal')]"
- 
+
  lower_bergregal: "Lower Bergregal"
  lower_bergregal_desc: "$upper_bergregal_desc$"
- lower_bergregal_raw_material_tt: "Produce [ShowGoodsName('iron')], [ShowGoodsName('copper')], [ShowGoodsName('lead')], [ShowGoodsName('tin')], [ShowGoodsName('alum')], [ShowGoodsName('marble')], [ShowGoodsName('mercury')], [ShowGoodsName('coal')], [ShowGoodsName('stone')] o [ShowGoodsName('saltpeter')]" 
+ lower_bergregal_raw_material_tt: "Produce [ShowGoodsName('iron')], [ShowGoodsName('copper')], [ShowGoodsName('lead')], [ShowGoodsName('tin')], [ShowGoodsName('alum')], [ShowGoodsName('marble')], [ShowGoodsName('mercury')], [ShowGoodsName('coal')], [ShowGoodsName('stone')] o [ShowGoodsName('saltpeter')]"
  
  stapelrecht_town_rights: "Diritti Base della [ShowSpecialStatusNameWithNoTooltip('free_city')]"
  stapelrecht_town_rights_desc: "Il titolo di [ShowSpecialStatusName('free_city')] concessa dall'[ShowSpecialStatusName('emperor')] ci garantisce la libertà di istituire determinati privilegi all'interno delle nostre città, a vantaggio dei mercanti locali e costringendo un maggior numero di mercanti stranieri a commerciare attraverso i nostri territori."
@@ -105,7 +152,7 @@
  bohemian_royal_cities_town_rights: "Diritti Città Reale"
  bohemian_royal_cities_town_rights_desc: "Concedere alle città il privilegio di essere dichiarate proprietà diretta del nostro sovrano indebolirà la [ShowEstateTypeName('nobles_estate')], e potrebbe aiutare il nostro Stato a trarne direttamente un maggiore valore."
  
- swedish_city_rights: "Diritti Stadsrättigheter"
+ swedish_city_rights: "Stadsrättigheter"
  swedish_city_rights_desc: "I commercianti di questa località godranno di privilegi ampliati che consentiranno loro di svolgere la propria attività senza concorrenza straniera."
  
  norwegian_city_rights: "Diritti Kjøpstad"
@@ -148,6 +195,10 @@
  borgo_franco_town_rights: "Diritti di Borgo Franco"
  borgo_franco_town_rights_desc: "La diffusione dei comuni in tutta $italy_region$ è ormai una realtà e costituisce la spina dorsale del Paese. Questi sono spesso considerati #italic Borgo Franco#! (città libere) e godono di numerosi privilegi rispetto alla campagna."
 
+ ara_consulate_sea_town_rights: "Consolato del Mare"
+ ara_consulate_sea_town_rights_desc: "Per garantire che esista un sistema equo e giusto per i mercanti, lo Stato ha concesso a questa location l'autonomia di stabilire le proprie leggi in materia, piuttosto che dipendere dalla Corona per risolvere tali questioni."
+ consulate_sea_no_province_has_the_town_right: "Nessuna [location|e] nella [region|e] possiede i [town_rights|e] [ShowTownRightsName('ara_consulate_sea_town_rights')]"
+
  #######################################
  #   Scandinavian Rights    ############
  #######################################
@@ -168,22 +219,24 @@
 
  imperial_breadbasket_rights: "Granaio dell'Impero"
  imperial_breadbasket_rights_granary_tt: "Ha un [ShowBuildingTypeName('granary')] di livello 5 o superiore"
- imperial_breadbasket_rights_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]" 
+ imperial_breadbasket_rights_rank_tt: "La località è una [ShowLocationRankName('city')] o una [ShowLocationRankName('megalopolis')]"
  imperial_breadbasket_rights_desc: "Questa [location|e] è stata incaricata di provvedere all'approvvigionamento dell'intero regno, e i suoi granai sono stati ampliati per far fronte ai nostri ambiziosi progetti. Il grano affluisce e defluisce sotto la supervisione imperiale, garantendo abbondanza sia ai cittadini che all'esercito."
 
  constantinopolitan_silk_monopoly_rights: "Monopolio della Seta di [ShowLocationNameWithNoTooltip('constantinople')]"
- constantinopolitan_silk_monopoly_rights_tt: "La località è [ShowLocationName('constantinople')] con una [raw_material|e] completamente espansa" 
+ constantinopolitan_silk_monopoly_rights_tt: "La località è [ShowLocationName('constantinople')] con una [raw_material|e] completamente espansa"
  constantinopolitan_silk_monopoly_rights_desc: "All'interno di [ShowLocationName('constantinople')], la produzione di [ShowGoodsName('silk')] è caratterizzata da standard elevati, una lunga tradizione che attraversa le generazioni. Le botteghe artigiane prosperano sotto la supervisione imperiale, anche se l'intera produzione è soggetta al monopolio."
 
  scholai_literacy_rights: "Privilegi Scholai"
- scholai_literacy_rights_tt: "La cultura dominante appartiene al [ShowCultureGroupName('greek_group')] e la [literacy|e] locale non supera il 125% della media del paese" 
+ scholai_literacy_rights_tt: "La cultura dominante appartiene al [ShowCultureGroupName('greek_group')] e la [literacy|e] locale non supera il 125% della media del paese"
  scholai_literacy_rights_desc: "Questa [location|e] è riconosciuta come un centro di cultura, dove le lettere vengono promosse sotto il patrocinio delle autorità. La conoscenza si diffonde rapidamente, anche se tali attività raramente arricchiscono le casse dello Stato. La mente oziosa è il terreno fertile del diavolo."
 
  municipia_privilegia: "Privilegi Municipia"
- municipia_privilegia_latin_tt: "Il proprietario tende verso [ShowSocietyDirectionName('latinization')] o ha [ShowLanguageName('latin_language')] come lingua di corte o dominante" 
- municipia_privilegia_desc: "Questa [location|e] è stata elevata al rango di municipium e ai suoi cittadini sono stati concessi i diritti previsti dalla nostra legislazione. Le élite locali esercitano una maggiore influenza, legando il territorio più strettamente alle tradizioni di [ShowSocietyDirectionName('latinization')]." 
- agrarian_community_town_right: "Carta della libertà religiosa" 
- agrarian_community_town_right_desc: "Questa [location|e] ha ricevuto diritti speciali, riconoscendo la libertà religiosa di ogni individuo in cambio della destinazione di ampie parti del suo territorio alla produzione di cibo e materie prime." 
- agrarian_community_raw_material_tt: "Produce [ShowGoodsName('wheat')], [ShowGoodsName('maize')], [ShowGoodsName('rice')], [ShowGoodsName('millet')], [ShowGoodsName('legumes')], [ShowGoodsName('potato')], [ShowGoodsName('livestock')], [ShowGoodsName('olives')], [ShowGoodsName('fruit')] o [ShowGoodsName('beeswax')]" 
- enlightened_leadership_reform_town_right: "Diritti del consiglio dei popolani" 
- enlightened_leadership_reform_town_right_desc: "A questa [location|e] è stato concesso il diritto di aprire il proprio consiglio locale ai popolani. Ciò dà alla classe contadina una voce negli affari locali e le consente di richiedere maggiori diritti per sé." 
+ municipia_privilegia_latin_tt: "Il proprietario tende verso [ShowSocietyDirectionName('latinization')] o ha [ShowLanguageName('latin_language')] come lingua di corte o dominante"
+ municipia_privilegia_desc: "Questa [location|e] è stata elevata al rango di municipium e ai suoi cittadini sono stati concessi i diritti previsti dalla nostra legislazione. Le élite locali esercitano una maggiore influenza, legando il territorio più strettamente alle tradizioni di [ShowSocietyDirectionName('latinization')]."
+
+ agrarian_community_town_right: "Carta della libertà religiosa"
+ agrarian_community_town_right_desc: "Questa [location|e] ha ricevuto diritti speciali, riconoscendo la libertà religiosa di ogni individuo in cambio della destinazione di ampie parti del suo territorio alla produzione di cibo e materie prime."
+ agrarian_community_raw_material_tt: "Produce [ShowGoodsName('wheat')], [ShowGoodsName('maize')], [ShowGoodsName('rice')], [ShowGoodsName('millet')], [ShowGoodsName('legumes')], [ShowGoodsName('potato')], [ShowGoodsName('livestock')], [ShowGoodsName('olives')], [ShowGoodsName('fruit')] o [ShowGoodsName('beeswax')]"
+
+ enlightened_leadership_reform_town_right: "Diritti del consiglio dei popolani"
+ enlightened_leadership_reform_town_right_desc: "A questa [location|e] è stato concesso il diritto di aprire il proprio consiglio locale ai popolani. Ciò dà alla classe contadina una voce negli affari locali e le consente di richiedere maggiori diritti per sé."

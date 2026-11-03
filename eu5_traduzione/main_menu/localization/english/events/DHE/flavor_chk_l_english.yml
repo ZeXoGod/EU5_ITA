@@ -1,14 +1,14 @@
 ﻿l_english:
 
 flavor_chk.1.title: "The Sunset of [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.1.entry: "The Sunset of Cahokia" #NEW
+ flavor_chk.1.entry: "The Sunset of Cahokia"
 flavor_chk.1.desc: "Though [ShowLocationName('cahokia')] has long served as the central capital for our people, the recent centuries have brought great decline to it. Sprawling dwellings across the woodlands and large scale construction projects have slowly faded into obscurity in recent centuries, and the main central population of [ShowLocationNameWithNoTooltip('cahokia')] is all that remains.\n\nIn recent years, as more of the population of [ShowLocationNameWithNoTooltip('cahokia')] have taken to leaving, some have encouraged [our_ruler.GetName] to officially call for a mass migration to resettle elsewhere, although others feel that, with considerable effort, [ShowLocationNameWithNoTooltip('cahokia')]'s old glory can be restored."
 flavor_chk.1.a: "It is time we moved on from the remains of this once great city."
 flavor_chk.1.b: "Our Golden Age has not yet ended, we can resurrect ailing [ShowLocationNameWithNoTooltip('cahokia')]!"
 events_to_weaken_cahokia_downfall: "Enables additional [events|e] to lessen the downfall of [ShowLocationName('cahokia')]."
 events_to_strengthen_cahokia: "Enables additional [events|e] to stabilize [ShowLocationName('cahokia')] and make it a sprawling [ShowLocationRankName('city')] once more!"
-cahokia_conditions_to_gain_golden_age: "Maintaining [stability|e] above #G +60.00#!, along with restoring [ShowLocationName('cahokia')] to 35,000 [pops|e] and 15.00 [development|e] will allow the ushering of a new Golden Age." #NEW
-cahokia_conditions_to_avoid_migrations: "Should [ROOT.GetCountry.GetName] suffer further instability through reaching below #R -20.00#! [stability|e],  #R 50.00#! [tribal_cohesion|e] or $flavor_chk.35.title$ [dynamic_historical_event|e], large swathes of [pops|e] may [migrate|e] from our [locations|e]." #NEW
+cahokia_conditions_to_gain_golden_age: "Maintaining [stability|e] above #G +60.00#!, along with restoring [ShowLocationName('cahokia')] to 35,000 [pops|e] and 15.00 [development|e] will allow the ushering of a new Golden Age."
+cahokia_conditions_to_avoid_migrations: "Should [ROOT.GetCountry.GetName] suffer further instability through reaching below #R -20.00#! [stability|e],  #R 50.00#! [tribal_cohesion|e] or $flavor_chk.35.title$ [dynamic_historical_event|e], large swathes of [pops|e] may [migrate|e] from our [locations|e]."
 
 flavor_chk.2.title: "Partial Rebuilding of the Woodhenges"
  flavor_chk.2.entry: "$flavor_chk.2.title$"
@@ -51,39 +51,39 @@ flavor_chk.8.desc: "The rivers that flow in the woodlands around [ShowLocationNa
 flavor_chk.8.a: "We will have to look for a new source of water."
 
 flavor_chk.9.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Reliance on [ShowGoodsNameWithNoTooltip('maize')]"
- flavor_chk.9.entry: "Cahokian reliance on Maize" #NEW
+ flavor_chk.9.entry: "Cahokian reliance on Maize"
 flavor_chk.9.desc: "Throughout the generations of our people, [ShowGoodsName('maize')] has grown to become one of our staple foods. However, in recent times, the people of [ShowLocationName('cahokia')] have grown to abandon the process of nixtamalization of [ShowGoodsNameWithNoTooltip('maize')] in favor of simpler consumption, which while easier to maintain, has severely affected the health of the population.\n\nSeeking to readopt the practice of nixtamalization of [ShowGoodsNameWithNoTooltip('maize')], [our_ruler.GetName] has requested support from [our_ruler.GetHisHer] inner circle to determine the viability of a return to such a practice."
 flavor_chk.9.a: "[ShowGoodsNameWithNoTooltip('maize')] serves as our primary food, we cannot risk a longer process!"
 flavor_chk.9.b: "Strive for a return to this practice."
 chk_reliance_on_maize: "Populace Reliant on Maize"
 
 flavor_chk.10.title: "Reintroduction of Nixtamalized [ShowGoodsNameWithNoTooltip('maize')]"
- flavor_chk.10.entry: "Resurrection of Nixtamalized Maize" #NEW
+ flavor_chk.10.entry: "Resurrection of Nixtamalized Maize"
 flavor_chk.10.desc: "Despite some initial resistance from the population of [ShowLocationName('cahokia')], the reintroduction of nixtamalized [ShowGoodsName('maize')] has proven to be quite successful, with growing signs of improved health across the populace. However, some within the populace have also expressed resentment, as the process has led to a noticeable decrease in the amount of available [ShowGoodsNameWithNoTooltip('maize')]."
 flavor_chk.10.a: "This should hopefully lead to a reinvigorated population."
 chk_nixtamalized_maize_demand: "Nixtamalized Maize"
 
 flavor_chk.11.title: "Renewed Rejection of Nixtamalized [ShowGoodsNameWithNoTooltip('maize')]"
- flavor_chk.11.entry: "Renewed Rejection of Nixtamalized Maize" #NEW
+ flavor_chk.11.entry: "Renewed Rejection of Nixtamalized Maize"
 flavor_chk.11.desc: "While the reintroduction of nixtamalized [ShowGoodsName('maize')] proved an improvement for the overall wellbeing of the populace of [ShowLocationName('cahokia')], resentment towards the forceful adoption of the process has now led to a surge of unrest throughout the [target_location.GetRank.GetName]. Though the process has improved the health of those who adopted the process, the reduction in the availability of [ShowGoodsNameWithNoTooltip('maize')] has reached a boiling point."
 flavor_chk.11.a: "Refuse to give up the practice."
 flavor_chk.11.b: "Concede to the populace demands, and forbid further nixtamalized [ShowGoodsNameWithNoTooltip('maize')]."
 chk_maize_cravings: "Maize Cravings"
 
-flavor_chk.12.title: "Veneration of [our_ruler.GetName]"
- flavor_chk.12.entry: "Veneration of Our Ruler" #NEW
+flavor_chk.12.title: "Venerazione di [our_ruler.GetNameWithNoTooltip]"
+ flavor_chk.12.entry: "Veneration of Our Ruler"
 flavor_chk.12.desc: "Throughout [our_ruler.GetHisHer] rule, [our_ruler.GetName] has grown to have a religious-like following amongst the people of [ShowLocationName('cahokia')]. Through [our_ruler.GetHisHer] efforts to restore portions of the [target_location.GetRank.GetName], while also laying the foundation to facilitate the return of lost trading ties, [our_ruler.GetNameWithNoTooltip] has only seen [our_ruler.GetHisHer] following grow. Praising the sudden resurgence of the [target_location.GetRank.GetNameWithNoTooltip] that had been on a steep decline has caused many to see [our_ruler.GetNameWithNoTooltip] as its savior."
 flavor_chk.12.a: "Accept the acts of worship."
 flavor_chk.12.b: "[our_ruler.GetNameWithNoTooltip] did not save [ShowLocationNameWithNoTooltip('cahokia')], but instead her people."
 
 flavor_chk.20.title: "Repopulation of Outer [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.20.entry: "Repopulation of Outer Cahokia" #NEW
+ flavor_chk.20.entry: "Repopulation of Outer Cahokia"
 flavor_chk.20.desc: "The resurgence of growth within [ShowLocationName('cahokia')] has led to the emergence of a new discussion within [our_ruler.GetName]'s inner circle, about repopulating the outer regions of [ShowLocationNameWithNoTooltip('cahokia')]. Though these regions were home to a sprawling [target_location.GetRank.GetName] in the past, in recent generations they have grown to be little more than an extension of the [target_location.GetRank.GetNameWithNoTooltip] limit. While encouraging the resettlement of outer [ShowLocationNameWithNoTooltip('cahokia')] may lead the [target_location.GetRank.GetNameWithNoTooltip] reclaiming fragments of its old glory, it may also prove an expensive task."
 flavor_chk.20.a: "Encourage the resettling into outer [ShowLocationNameWithNoTooltip('cahokia')]."
 flavor_chk.20.b: "Concentrate the population into the main [target_location.GetRank.GetNameWithNoTooltip]."
 
 flavor_chk.21.title: "Rebuilding the Outer Region of [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.21.entry: "Rebuilding the Outer City" #NEW
+ flavor_chk.21.entry: "Rebuilding the Outer City"
 flavor_chk.21.desc: "With the regrowth of [ShowLocationName('cahokia')] reaching new levels, the existing settlements on the outer reaches of [ShowLocationNameWithNoTooltip('cahokia')] have now largely been repopulated. While the region has been prone to environmental hazards, such as flooding in the past, many have requested to [our_ruler.GetName] that the growing resurgence of [ShowLocationNameWithNoTooltip('cahokia')]'s population has laid the groundwork for rebuilding the outer [target_location.GetRank.GetName]."
 flavor_chk.21.a: "Begin the reconstruction of the outer region."
 flavor_chk.21.b: "Spare the resources for other projects."
@@ -133,10 +133,12 @@ flavor_chk.34.a: "We should instead focus on our preservation."
 flavor_chk.34.b: "In time, these communities ties will return to [ShowLocationNameWithNoTooltip('cahokia')]."
 
 flavor_chk.35.title: "The Shadow Over [ShowLocationNameWithNoTooltip('cahokia')]"
- flavor_chk.35.entry: "Shadow Over Cahokia" #NEW
+ flavor_chk.35.entry: "Shadow Over Cahokia"
 flavor_chk.35.desc: "Though attempts have been made by [our_ruler.GetName] and many others within [ShowLocationName('cahokia')], the increasing instability of the region along with the growing inhospitable nature with failed crops yields and worsening river conditions, many have taken to leaving [ShowLocationNameWithNoTooltip('cahokia')] for good. While [our_ruler.GetNameWithNoTooltip] and a portion of the [ROOT.GetCountry.GetAdjective] elite have chose to remain for now, the glory days of the [target_location.GetRank.GetName] are long gone."
 flavor_chk.35.a: "Our glory days are but a shadow of the past."
-variable_tt_chk_had_flood_happened: "The Great Flood has Struck the Woodlands" #NEW
-variable_tt_chk_enable_strengthening_events: "Strengthening of Cahokia" #NEW
-variable_tt_chk_enable_downfall_events: "Fall of Cahokia" #NEW
-variable_tt_chk_no_more_plight_events: "No More Plight Events" #NEW
+
+# has_variable custom tooltips
+variable_tt_chk_had_flood_happened: "The Great Flood has Struck the Woodlands"
+variable_tt_chk_enable_strengthening_events: "Strengthening of Cahokia"
+variable_tt_chk_enable_downfall_events: "Fall of Cahokia"
+variable_tt_chk_no_more_plight_events: "No More Plight Events"

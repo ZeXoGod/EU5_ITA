@@ -1,7 +1,7 @@
 ﻿l_english:
  HAS_PROP_FORTS_IN_LOC: "Ha $NUM|Y$ livelli di fortificazioni, che propagano una [zone_of_control|e] sulle [locations|e] adiacenti."
  HAS_FORTS_IN_LOC: "Ha $NUM|Y$ livelli di fortificazioni semplici."
- HAS_CITY_WALLS_IN_LOC: "Ha [city_walls|e] (Livello [fort|e] minimo: I). I muri non si sovrappongono a un vero [fort|e]."
+ HAS_CITY_WALLS_IN_LOC: "Ha [BUILDING_TYPE.GetName] (Livello [fort|e] minimo: $NUM|Y$). I muri non si sovrappongono a un vero [fort|e]."
  INFLUENCE_FORT_ENTRY: "Nella [zone_of_control|e] di [LOCATION.GetName]."
  FORT_FLIPPING: "#T Cambio del Controllore#!\nIl [controller] di @location!$PROV|Y$ sta cambiando in $FLIPPER|Y$ a causa del [fort|e] in $FLIPPINGLOCATION|Y$.\nProgresso: $PERCENT|Y2%$."
  CAPITAL_FLIPPING: "#T Cambio del Controllore#!\nIl [controller] di @location!$PROV|Y$ sta cambiando in $FLIPPER|Y$ a causa del loro controllo della [province_capital|e] in @location! $FLIPPINGLOCATION|Y$.\nProgresso: $PERCENT|Y2%$."
@@ -16,8 +16,8 @@
 
  aggressive_military_stance: "Aggressivo"
  aggressive_military_stance_desc: "Lo [subject|e] adotterà un approccio aggressivo alle tattiche militari, cercando di avviare assedi e inseguire unità in territorio nemico."
- aggressive_military_stance_desc_all: "Tutti i nostri [subjects|e] adotteranno un approccio aggressivo alle tattiche militari, cercando di avviare assedi e inseguire unità in territorio nemico." 
- 
+ aggressive_military_stance_desc_all: "Tutti i nostri [subjects|e] adotteranno un approccio aggressivo alle tattiche militari, cercando di avviare assedi e inseguire unità in territorio nemico."
+
  supportive_military_stance: "Di Supporto"
  supportive_military_stance_desc: "Lo [subject|e] adotterà un approccio di supporto alle tattiche militari, aiutando le nostre unità."
  supportive_military_stance_desc_all: "Tutti i nostri [subjects|e] adotteranno un approccio di supporto alle tattiche militari, aiutando le nostre unità."

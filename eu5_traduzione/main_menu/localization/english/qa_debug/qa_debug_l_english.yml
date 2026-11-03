@@ -173,7 +173,7 @@
  qa_debug.11.b: "Distruggi TUTTI i Ribelli!"
  qa_debug.11.c: "I ribelli si solleveranno!"
  qa_debug.11.d: "Basta perdere tempo, inizia una guerra civile ORA."
- qa_debug.11.e: "Stop all THAT dicking around, and just start a revolt IMMEDIATELY." #NEW
+ qa_debug.11.e: "Smettila di cazzeggiare e scatena SUBITO una rivolta."
  qa_debug.12.title: "Menu Località"
  qa_debug.12.desc: "Scegli l'aggiustamento alle tue località e province."
  qa_debug.12.a: "Rimuovi tutta l'autonomia nelle mie province."
@@ -240,8 +240,8 @@
  qa_debug.15.a: "[ShowDiseaseName('bubonic_plague')]"
  qa_debug.16.title: "Menu Esercito Terrestre"
  qa_debug.16.desc: "Che tipo di unità ti servono?"
- qa_debug.16.a: "[ShowUnitCategoryName('army_heavy_infantry')]" #NEW
- qa_debug.16.b: "[ShowUnitCategoryName('army_heavy_cavalry')]" #NEW
+ qa_debug.16.a: "[ShowUnitCategoryName('army_heavy_infantry')]"
+ qa_debug.16.b: "[ShowUnitCategoryName('army_heavy_cavalry')]"
  qa_debug.16.c: "[ShowUnitCategoryName('army_artillery')]"
  qa_debug.16.d: "[ShowUnitCategoryName('army_auxiliary')]"
  qa_debug.17.title: "Menu Flotta"
@@ -405,4 +405,9 @@
  qa_debug.101.g: "Decolonizza Europa"
  qa_debug_decolonize_europe_tt: "Tutti i paesi in Europa saranno completamente decolonizzati"
  qa_debug.close: "Chiudi Menu"
+
+ ###LOCATION BACKDROP SMOKE TEST### (engine: event location backdrop feature -- fire from console; fire as a north german country (Brandenburg, Hamburg, etc.) to also validate the overlay placeholder)
+ qa_debug_backdrop.1.title: "Test di Verifica Sfondo Località"
+ qa_debug_backdrop.1.desc: "Viene applicato il preset predefinito dello sfondo: la telecamera si riposiziona e gli eventuali hide_layers/show_only_layers del preset hanno effetto. Attivalo mentre giochi con un paese nordgermanico per vedere anche il placeholder overlay1 (soldato nordgermanico)."
+ qa_debug_backdrop.1.a: "OK"
  qa_debug.back: "Torna al Menu Precedente"

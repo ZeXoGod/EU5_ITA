@@ -44,7 +44,7 @@
  flavor_eng_diplomacy.1000.entry: "Suitable Daughter of $ARA$"
  flavor_eng_diplomacy.1000.desc: "The time has come to choose a suitable wife for [ROOT.GetCountry.GetGovernment.GetHeir.GetName] in order to maintain diplomatic relations and secure the line of succession. As agreed in the Treaty of Medina del Campo, the hand of a future daughter of the [GetCountry('ARA').GetGovernment.GetRulerTitle] of [GetCountry('ARA').GetName] is promised. It has therefore been agreed that [suitable_daughter.GetName] and [ROOT.GetCountry.GetGovernment.GetHeir.GetShortNameWithNoTooltip] will be joined in holy matrimony.\n\nThere is, however, the matter of the dowry which is yet to be paid..."
  flavor_eng_diplomacy.1000.a: "Dispatch an envoy to the [GetCountry('ARA').GetAdjectiveWithNoTooltip] court."
- flavor_eng_diplomacy.1000.a.entry: "Dispatch an envoy to the $ARA_ADJ$ court." #NEW
+ flavor_eng_diplomacy.1000.a.entry: "Dispatch an envoy to the $ARA_ADJ$ court."
  flavor_eng_diplomacy.1000.tt1: "An attempt is made to claim the outstanding dowry"
  flavor_eng_diplomacy.1000.b: "Forego the dowry."
  flavor_eng_diplomacy.1000.tt2: "The kind-hearted nature of [target_root_country.GetGovernment.GetRuler.GetName] is noted"
@@ -108,7 +108,7 @@
  flavor_eng_diplomacy.1300.a: "Prepare the necessary documents."
  flavor_eng_diplomacy.1300.a.custom: "The [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are not very satisfied with the proposed surrender of [ShowLocationNameWithNoTooltip('tangier')]"
  flavor_eng_diplomacy.1300.b: "Offer them the location of [overseas_location.GetNameWithNoTooltip] instead."
- flavor_eng_diplomacy.1300.b.entry: "Offer them the location instead." #NEW
+ flavor_eng_diplomacy.1300.b.entry: "Offer them the location instead."
  flavor_eng_diplomacy.1300.c: "There is no need for such an arrangement."
 
  flavor_eng_diplomacy.1301.title: "The Enduring Friendship Revived"
@@ -142,7 +142,7 @@
  flavor_eng_diplomacy.1500.tt: "A treaty is proposed"
  signed_tagilde_treaty: "Signed Tagilde Treaty"
  flavor_eng_diplomacy.1500.b: "We cannot risk conflict with [GetCountry('CAS').GetNameWithNoTooltip]."
- flavor_eng_diplomacy.1500.b.entry: "We cannot risk conflict with $CAS$." #NEW
+ flavor_eng_diplomacy.1500.b.entry: "We cannot risk conflict with $CAS$."
  declined_advantageous_treaty: "Declined Advantageous Treaty"
  flavor_eng_diplomacy.1500.historical_info: "The Treaty of Tagilde signed between Portugal and England is considered the first step towards signing the Anglo-Portuguese Alliance, which is still in effect today. It was a pressing matter for Portugal, who at the time was struggling to assert its independence from neighboring Castile, but the treaty was also important for England, who had few friends among the European monarchs on the continent."
 
@@ -150,24 +150,24 @@
  flavor_eng_diplomacy.1501.desc: "A diplomatic opportunity has arisen to secure a long-lasting peace and potential ally. [target_root_country.GetName], weary of isolation, has proposed a treaty that could aid in asserting our independence against interference from [GetCountry('CAS').GetName]."
  flavor_eng_diplomacy.1501.a: "Sign the treaty."
  flavor_eng_diplomacy.1501.b: "We cannot risk further conflict with [GetCountry('CAS').GetNameWithNoTooltip]."
- flavor_eng_diplomacy.1501.b.entry: "We cannot risk further conflict with $CAS$." #NEW
+ flavor_eng_diplomacy.1501.b.entry: "We cannot risk further conflict with $CAS$."
 
  flavor_eng_diplomacy.1600.title: "The Adventures of [robert_shirley.GetNameWithNoTooltip]"
- flavor_eng_diplomacy.1600.entry: "The Adventures of Robert Shirley" #NEW
- flavor_eng_diplomacy.1600.desc: "Globetrotter and charm offensive maestro [robert_shirley.GetName] has put forth the idea that he should lead a diplomatic envoy to the Far East. The primary goal of this endeavor is to bring about modernization and enhancement of the military forces of the [GetCountry('IRA').GetAdjective] army. The fledgling empire is facing a formidable neighbor in the form of the [GetCountry('TUR').GetName], an empire that also poses a significant threat to our European neighbors.\n\nIn return, we may press for favorable trade privileges and work towards establishing a regional presence for our merchants." #NEW
- flavor_eng_diplomacy.1600.a: "Send him on his merry way." #NEW
- flavor_eng_diplomacy.1600.tt1: "Robert Shirley is added as a [character|e]" #NEW
- flavor_eng_diplomacy.1600.tt2: "He attempts to curry favor with [GetCountry('IRA').GetGovernment.GetRulerOrRegent.GetName] in return for trade concessions" #NEW
+ flavor_eng_diplomacy.1600.entry: "The Adventures of Robert Shirley"
+ flavor_eng_diplomacy.1600.desc: "Globetrotter and charm offensive maestro [robert_shirley.GetName] has put forth the idea that he should lead a diplomatic envoy to the Far East. The primary goal of this endeavor is to bring about modernization and enhancement of the military forces of the [GetCountry('IRA').GetAdjective] army. The fledgling empire is facing a formidable neighbor in the form of the [GetCountry('TUR').GetName], an empire that also poses a significant threat to our European neighbors.\n\nIn return, we may press for favorable trade privileges and work towards establishing a regional presence for our merchants."
+ flavor_eng_diplomacy.1600.a: "Send him on his merry way."
+ flavor_eng_diplomacy.1600.tt1: "[robert_shirley.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_eng_diplomacy.1600.tt2: "[robert_shirley.GetSheHe|U] cerca di accattivarsi il favore di [GetCountry('IRA').GetGovernment.GetRulerOrRegent.GetName] in cambio di concessioni commerciali"
  flavor_eng_diplomacy.1600.b: "Out of the question."
- flavor_eng_diplomacy.1600.tt3: "Robert Shirley is added as a [character|e] and remains in [target_root_country.GetName]" #NEW
+ flavor_eng_diplomacy.1600.tt3: "[robert_shirley.GetNameWithNoTooltip] viene aggiunto come [character|e] e rimane in [target_root_country.GetName]"
  flavor_eng_diplomacy.1600.historical_info: "Robert Shirley was an English diplomat and adventurer who is remembered for his travels in the Middle East. He was instrumental in establishing relations between England and the Safavid Empire of Persia. He became a trusted advisor and diplomat to the Shah and helped modernize the Persian army, which resulted in the Safavids becoming an equal force to their nemesis, the Ottoman Empire."
 
- flavor_eng_diplomacy.1601.title: "The Reforms of Rouzbeh-e Shirazi"
- flavor_eng_diplomacy.1601.desc: "We are being paid a visit by military strategist and diplomat [robert_shirley.GetName], who has presented a truly intriguing proposal. [robert_shirley.GetSheHe] suggests the sharing of military advancements and that [robert_shirley.GetHisHer] fellow countrymen undertaking the important responsibility of retraining our great army to counter the expansionist ambitions of [GetCountry('TUR').GetName].\n\nIn return, we must provide a safe harbor for the heretics to conduct their business, no doubt an attempt to encroach on our trading relations with the East."
- flavor_eng_diplomacy.1601.a: "A necessary evil."
- flavor_eng_diplomacy.1601.tt1: "Robert Shirley is added as a [character|e]" #NEW
- STATIC_MODIFIER_NAME_modernizer: "Modernizer"
- flavor_eng_diplomacy.1601.tt2: "He will provide additional benefits if assigned a [cabinet|e] position" #NEW
- flavor_eng_diplomacy.1601.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] will be displeased to see a heretic serve at court"
- flavor_eng_diplomacy.1601.b: "No unsolicited advice is needed."
- enable_european_militia_reform: "Grants access to the [ShowGovernmentReformName('european_militia_reform')] [government_reform|e]"
+flavor_eng_diplomacy.1601.title: "The Reforms of Rouzbeh-e Shirazi"
+flavor_eng_diplomacy.1601.desc: "We are being paid a visit by military strategist and diplomat [robert_shirley.GetName], who has presented a truly intriguing proposal. [robert_shirley.GetSheHe] suggests the sharing of military advancements and that [robert_shirley.GetHisHer] fellow countrymen undertaking the important responsibility of retraining our great army to counter the expansionist ambitions of [GetCountry('TUR').GetName].\n\nIn return, we must provide a safe harbor for the heretics to conduct their business, no doubt an attempt to encroach on our trading relations with the East."
+flavor_eng_diplomacy.1601.a: "A necessary evil."
+flavor_eng_diplomacy.1601.tt1: "[robert_shirley.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+STATIC_MODIFIER_NAME_modernizer: "Modernizer"
+flavor_eng_diplomacy.1601.tt2: "[robert_shirley.GetSheHe|U] fornirà benefici aggiuntivi se ricopre una posizione nel [cabinet|e]"
+flavor_eng_diplomacy.1601.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] will be displeased to see a heretic serve at court"
+flavor_eng_diplomacy.1601.b: "No unsolicited advice is needed."
+enable_european_militia_reform: "Grants access to the [ShowGovernmentReformName('european_militia_reform')] [government_reform|e]"

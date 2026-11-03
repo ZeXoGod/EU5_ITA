@@ -1,0 +1,24 @@
+﻿l_english:
+ flavor_gen_tun.1.title: "Un Frutto Maturo da Cogliere"
+ flavor_gen_tun.1.entry: "$flavor_gen_tun.1.title$"
+ flavor_gen_tun.1.desc: "L'antica e splendida [target_location.GetRank.GetName] di [target_location.GetName] si erge sopra il [ShowLocationName('cape_tajura')]. Nonostante la sua importanza per l'economia del [ShowScriptedGeographyName('mediterranean_sea_geography')], essa rimane nelle mani di [target_country.GetLongName], uno stato troppo debole per resistere da solo alla nostra invasione. Potremmo sbarcare in [ShowProvinceDefinitionName('tripolitania_province')], saccheggiare la costa e mettere all'asta le nostre conquiste a uno stato vicino — o forse persino tenerle per noi."
+ flavor_gen_tun.1.a: "Un'idea eccellente!"
+ flavor_gen_tun.1.b: "Simili occasioni sono per i guerrafondai."
+
+ flavor_gen_tun.2.title: "Vendita di $tripoli$"
+ flavor_gen_tun.2.entry: "$flavor_gen_tun.1.title$"
+ flavor_gen_tun.2.desc: "Avendo conquistato e saccheggiato [target_location.GetName], la nostra [ROOT.GetCountry.GetFlavorRank] possiede ora una considerevole colonia nella zona di [target_location.GetArea.GetName] — una terra assai diversa, per cultura e religione, dalla nostra metropoli di [ROOT.GetCountry.GetCapital.GetName]. Forse dovremmo cederne la proprietà a una delle tribù vicine."
+ flavor_gen_tun.2.a: "Vendiamola ai vicini Banū Ṯābit."
+ flavor_gen_tun.2.b: "Forse i Banū Makkī sarebbero interessati a ricomprare i loro territori."
+ flavor_gen_tun.2.c: "Siamo certi che [tunis_location.GetOwner.GetLongNameWithNoTooltip] sarebbe interessato."
+ flavor_gen_tun.2.d: "[target_location.GetNameWithNoTooltip] ci appartiene!"
+ flavor_gen_tun.2.d.entry: "$tripoli$ ci appartiene!"
+
+ sale_of_tripoli_tt: "Venderemo le nostre colonie in [target_location.GetName] per [SCOPE.GetLocalVariable('proposed_price_of_sale').GetValue|+] [gold_i|e] [gold|e], trasferendo tutte le [locations|e] collegate — in totale, #Y [SCOPE.GetLocalVariable('num_of_locations_to_be_sold').GetValue]#! [locations|e]"
+
+ flavor_gen_tun.3.title: "$flavor_gen_tun.2.title$"
+ flavor_gen_tun.3.desc: "Un emissario di [from_country.GetName] è giunto a [ROOT.GetCountry.GetCapital.GetName], offrendoci di vendere i suoi territori a [target_location.GetName] a un prezzo considerevole. Il valore della [target_location.GetRank.GetName] non va tuttavia sottovalutato — sarebbe un buon acquisto per la [ROOT.GetCountry.GetFlavorRank]."
+ flavor_gen_tun.3.desc_banu_makki: "L'audacia mostrata da [from_country.GetLongName] merita una punizione direttamente da [ROOT.GetCountry.GetReligion.GetGodName]! Dopo aver conquistato la nostra bellissima [target_location.GetRankAndName], ci concedono ora l''opportunità' di pagarne la restituzione. La parte più irritante è che potremmo davvero accettare questa offerta..."
+ flavor_gen_tun.3.a: "Molto bene, accetteremo."
+ flavor_gen_tun.3.b: "Perché dovremmo pagare per qualcosa che possiamo conquistare?"
+ flavor_gen_tun.3.c: "Con tutto il rispetto, non ci interessa."

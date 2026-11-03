@@ -1,46 +1,46 @@
 ﻿l_english:
  flavor_mei.1.title: "Silver Rush in [ShowLocationNameWithNoTooltip('freiberg')]"
- flavor_mei.1.entry: "Second Freiberger Berggeschrey" #NEW
- flavor_mei.1.desc: "New-found deposists of [ShowGoodsName('silver')] have trigger a sheer storm of people moving into the area around [ShowLocationName('freiberg')], trying to profit from the booming mining industry in the [ShowProvinceDefinitionName('erzgebirge_province')]. This increase in interest for our mining towns can only be to our benefit."
+ flavor_mei.1.entry: "Second Freiberger Berggeschrey"
+ flavor_mei.1.desc: "I giacimenti di [ShowGoodsName('silver')] appena scoperti hanno scatenato una vera e propria ondata di persone che si riversano nell'area intorno a [ShowLocationName('freiberg')], cercando di trarre profitto dalla fiorente industria mineraria nella [ShowProvinceDefinitionName('erzgebirge_province')]. Questo crescente interesse per le nostre città minerarie non può che tornarci utile."
  flavor_mei.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_mei.1.a.entry: "$common_string_brilliant$"
  flavor_mei.1.a.tt: "Every [location|e] with a mining [raw_material|e] gains [ShowModifier('freiberger_berggeschrey')]."
  STATIC_MODIFIER_NAME_freiberger_berggeschrey: "Freiberger Berggeschrey"
 
  flavor_mei.2.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.2.entry: "Schiller" #NEW
- flavor_mei.2.desc: "The talented playwright and poet, [target_character.GetName] has decided to select our country as his residence and continue his writing efforts from our lands. He is already an accomplished writer but shows no sign of stopping." #NEW
+ flavor_mei.2.entry: "Schiller"
+ flavor_mei.2.desc: "The talented playwright and poet, [target_character.GetName] has decided to select our country as his residence and continue his writing efforts from our lands. He is already an accomplished writer but shows no sign of stopping."
  flavor_mei.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_mei.2.a.entry: "$common_string_brilliant$"
  flavor_mei.2.b: "He should better leave to [target_banish_country.GetNameWithNoTooltip]."
- flavor_mei.2.b.entry: "He should better leave to them." #NEW
+ flavor_mei.2.b.entry: "He should better leave to them."
 
  flavor_mei.10.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.10.entry: "Johann Sebastian Bach" #NEW
- flavor_mei.10.desc: "[target_character.GetName], a virtuous composer from [ShowLocationName('eisenach')] and now living in [ShowLocationName('leipzig')] has been heard complaining about the high costs of living in [ShowLocationNameWithNoTooltip('leipzig')] and the low salary he is receiving as #italic Thomaskantor#!. He has also shown his desire to be a court musician in our capital." #NEW
- flavor_mei.10.a: "Bring him to the court." #NEW
- flavor_mei.10.b: "We do not need him." #NEW
+ flavor_mei.10.entry: "Johann Sebastian Bach"
+ flavor_mei.10.desc: "[target_character.GetName], a virtuous composer from [ShowLocationName('eisenach')] and now living in [ShowLocationName('leipzig')] has been heard complaining about the high costs of living in [ShowLocationNameWithNoTooltip('leipzig')] and the low salary he is receiving as #italic Thomaskantor#!. He has also shown his desire to be a court musician in our capital."
+ flavor_mei.10.a: "Bring him to the court."
+ flavor_mei.10.b: "We do not need him."
  flavor_mei.10.historical_info: "Johann Sebastian Bach was a composer of the Baroque era and the most celebrated member of a large family of northern German musicians. Although he was admired by his contemporaries primarily as an outstanding harpsichordist, organist, and expert on organ building, Bach is now generally regarded as one of the greatest composers of all time."
  flavor_mei.20.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.20.entry: "Lucas Cranach the Elder" #NEW
+ flavor_mei.20.entry: "Lucas Cranach the Elder"
  flavor_mei.20.desc: "As a close friend of Luther, [target_character.GetName] has feverishly embraced [ShowReligionName('lutheran')] but has always been open to work with [ShowReligionName('catholic')] Maecenas.\n\nAs a court artist, we wonder if these interactions with both sides could not become a problem for us. All across the continent, [ShowReligionNameWithNoTooltip('lutheran')] and [ShowReligionNameWithNoTooltip('catholic')] are fighting each other in a bloody conflict that could affect us."
  flavor_mei.20.a: "We are all brothers in Christ."
- flavor_mei.20.b: "He should focus on one faith." #NEW
+ flavor_mei.20.b: "He should focus on one faith."
  flavor_mei.20.historical_info: "Lucas Cranach #italic the Elder#!, renowned for his exceptional artistic talents, was a German Renaissance painter and printmaker specializing in woodcutting and engraving. He was the court painter to the Electors of Saxony, and is famous for capturing the essence of German princes and prominent leaders of the Protestant Reformation.\n\nHe was also a close confidant of Martin Luther whose cause he passionately embraced. While his subjects ranged from religious themes in the Catholic tradition to innovative portrayals of Lutheran religious matters, he consistently incorporated mythological and religious nudes in his captivating artwork.\n\nHis vast workshop produced numerous versions of his masterpieces, and even after his death, his son Lucas Cranach the Younger and others continued to replicate his brilliant works, solidifying his legacy as one of the most influential and accomplished German artists of his time."
  flavor_mei.30.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.30.entry: "Gottfried Wilhelm Leibniz" #NEW
- flavor_mei.30.desc: "[target_character.GetName] has had a busy life, being a mathematician, philosopher, scientist, and diplomat. He has shined in every of those fields and has become the pride of the nation.\n\nUnfortunately, his character, curious and always looking for new challenges, makes him pretty much a nomad, moving continuously all across Germany. Should we want to retain his genius, we will need to finance his work and keep him in our nation." #NEW
- flavor_mei.30.a: "Finance his work." #NEW
+ flavor_mei.30.entry: "Gottfried Wilhelm Leibniz"
+ flavor_mei.30.desc: "[target_character.GetName] has had a busy life, being a mathematician, philosopher, scientist, and diplomat. He has shined in every of those fields and has become the pride of the nation.\n\nUnfortunately, his character, curious and always looking for new challenges, makes him pretty much a nomad, moving continuously all across Germany. Should we want to retain his genius, we will need to finance his work and keep him in our nation."
+ flavor_mei.30.a: "Finance his work."
  flavor_mei.30.b: "Our treasury should be used for other things."
  flavor_mei.30.historical_info: "Gottfried Wilhelm Leibniz, a brilliant polymath of the 17th and 18th centuries, made significant contributions to various fields of knowledge, including mathematics, philosophy, and science. Known for his pioneering work in calculus, he independently developed the principles of differential and integral calculus, laying the groundwork for modern mathematics. Leibniz also delved into metaphysics, proposing the concept of monads and advocating for the idea of a pre-established harmony in the universe."
  flavor_mei.40.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.40.entry: "Georg Bartisch" #NEW
- flavor_mei.40.desc: "[target_character.GetName] is a renowned itinerant surgeon that has been offering his services through [ShowAreaName('upper_saxony_area')], [ShowAreaName('bohemia_area')], and [ShowAreaName('silesia_area')].\n\nHis skills are undoubtedly impressive, but he is also known for believing in magic, which he considers linked to medicine, and that could be the cause of a scandal." #NEW
- flavor_mei.40.a: "Make him our court oculist." #NEW
- flavor_mei.40.b: "He believes in weird things and he should not come close to our ruler." #NEW
+ flavor_mei.40.entry: "Georg Bartisch"
+ flavor_mei.40.desc: "[target_character.GetName] is a renowned itinerant surgeon that has been offering his services through [ShowAreaName('upper_saxony_area')], [ShowAreaName('bohemia_area')], and [ShowAreaName('silesia_area')].\n\nHis skills are undoubtedly impressive, but he is also known for believing in magic, which he considers linked to medicine, and that could be the cause of a scandal."
+ flavor_mei.40.a: "Make him our court oculist."
+ flavor_mei.40.b: "He believes in weird things and he should not come close to our ruler."
  flavor_mei.40.historical_info: "Georg Bartisch, a prominent German physician and surgeon, is renowned for his significant contributions to ophthalmology. In the 16th century, he authored one of the earliest comprehensive books on eye diseases and their treatment, titled "Ophthalmodouleia," which became a seminal work in the field. Bartisch's pioneering observations and innovative surgical techniques advanced the understanding and care of various eye conditions, leaving a lasting impact on the development of ophthalmology as a medical discipline."
  flavor_mei.50.title: "The Rise of [ShowLocationNameWithNoTooltip('dresden')]"
- flavor_mei.50.entry: "The Rise of Dresden" #NEW
+ flavor_mei.50.entry: "The Rise of Dresden"
  flavor_mei.50.desc: "From an insignificant settlement, [ShowLocationName('dresden')] has been slowly but steadily growing since it received the staple right in 1455.\n\nIts position in the Elbe river makes it an interesting place for commerce and it is close to the rich mines in the Ore Mountains. Some wonder if this could not be a good opportunity to build a new capital."
  flavor_mei.50.a: "[ShowLocationNameWithNoTooltip('dresden')] will be our new capital."
  flavor_mei.50.b: "[ShowLocationNameWithNoTooltip('dresden')] has become important enough!"
@@ -59,9 +59,9 @@
  flavor_mei.70.historical_info: "During the pre-Reformation era, the Frauenkirche served as an archpriest's seat in the Meissen Diocese. However, with the advent of the Reformation, it transformed into a Protestant church. The original Frauenkirche was demolished in 1727, making way for a grander replacement with increased capacity. The citizens took charge of rebuilding it as a Lutheran parish church, receiving unexpected support from Saxony's Prince-elector, Frederick August I, who had converted to Catholicism to become the King of Poland. His backing not only enhanced Dresden's skyline with an impressive cupola but also reassured the people of Saxony that they would not be coerced into the principle of #italic cuius regio, eius religio#!."
  flavor_mei.80.title: "The Sorrows of Young Werther"
  flavor_mei.80.entry: "$flavor_mei.80.title$"
- flavor_mei.80.desc: "A young writer, named [target_character.GetName], has become a celebrity in literary circles after the publishing of his work #italic The Sorrows of Young Werther#!. This novel has been criticized by some for the reaction some lectors have had after reading it. Trying to emulate the protagonist of the novel and his tragic unrequited love, several people have killed themselves in the same fashion as him. From a literary point of view, the novel is undisputedly an excellent work but the influence it has on impressionable people can be dangerous." #NEW
- flavor_mei.80.a: "Bring him to our court, regardless." #NEW
- flavor_mei.80.b: "He has bad fame, we do not need him." #NEW
+ flavor_mei.80.desc: "A young writer, named [target_character.GetName], has become a celebrity in literary circles after the publishing of his work #italic The Sorrows of Young Werther#!. This novel has been criticized by some for the reaction some lectors have had after reading it. Trying to emulate the protagonist of the novel and his tragic unrequited love, several people have killed themselves in the same fashion as him. From a literary point of view, the novel is undisputedly an excellent work but the influence it has on impressionable people can be dangerous."
+ flavor_mei.80.a: "Bring him to our court, regardless."
+ flavor_mei.80.b: "He has bad fame, we do not need him."
  flavor_mei.80.historical_info: "Goethe's #italic The Sorrows of Young Werther#! is a novel that portrays the intense emotions and tragic fate of its protagonist, Werther. Published in 1774, it became a literary sensation, inspiring a cultural phenomenon known as the #italic Werther Effect#!. This term refers to a surge in suicides and imitative behaviors triggered by the novel's romantic portrayal of self-destructive love. The book's profound impact on readers' emotions and actions sparked discussions on the responsibility of art and literature in society."
  flavor_mei.90.title: "The Tragedy of Faust"
  flavor_mei.90.entry: "$flavor_mei.90.title$"
@@ -81,8 +81,8 @@
  flavor_mei.110.b: "Another palace?"
  flavor_mei.110.historical_info: "The Zwinger, a palatial complex with gardens in Dresden, Germany, stands as a crowning achievement of the Baroque period. Designed by architect Matthäus Daniel Pöppelmann, it shares renown with the iconic Frauenkirche as one of Dresden's most celebrated architectural monuments. Originally serving as an orangery, garden, and festive gathering spot during Augustus the Strong's rule, the Zwinger's grand pavilions, galleries adorned with sculptures, and ornate vases show the opulence from that era.\n\nWhile initially conceived as the forecourt for a new castle that was never realized, the Zwinger evolved over time, eventually gaining significance as a museum complex in the 19th century, especially with the addition of the Semper Gallery facing the Elbe River.\n\nDevastated during the 1945 Bombing of Dresden, the Zwinger underwent meticulous reconstruction in the subsequent decades. Today, it houses the renowned Gemäldegalerie Alte Meister, the Dresden Porcelain Collection, and the Mathematisch-Physikalischer Salon, opening its doors to visitors and immersing them in the splendor of history and culture."
  flavor_mei.120.title: "The Acquisition of [GetCountry('LDB').GetNameWithNoTooltip]"
- flavor_mei.120.entry: "The Acquisition of Landsberg" #NEW
- flavor_mei.120.desc: "[target_character.GetName] inherited the [GetCountry('LDB').GetLongName] after his marriage with [target_spouse.GetName] and wants to sell it to us.\n\nThe Lands of [GetCountry('LDB').GetNameWithNoTooltip] belonged to us not long ago and this could be an opportunity to get them back. What should we do?" #NEW
+ flavor_mei.120.entry: "The Acquisition of Landsberg"
+ flavor_mei.120.desc: "[target_character.GetName] inherited the [GetCountry('LDB').GetLongName] after his marriage with [target_spouse.GetName] and wants to sell it to us.\n\nThe Lands of [GetCountry('LDB').GetNameWithNoTooltip] belonged to us not long ago and this could be an opportunity to get them back. What should we do?"
  flavor_mei.120.a: "The land belongs with us."
  flavor_mei.120.b: "It was sold for a reason."
  flavor_mei.120.historical_info: "Originally a Wettin land, the Margraviate of Landsberg was sold to the House of Ascania in 1291. In 1347, the Duke Magnus I of Brunswick-Lüneburg sold the Margraviate that he inherited after his marriage with Sophia of Brandenburg-Stendal, Margrave of Landsberg, back to Margrave Frederick II of Meissen, reuniting the Wettin lands again."
@@ -97,26 +97,26 @@
  flavor_mei.122.a.entry: "$common_string_curses$"
 
  flavor_mei.130.title: "An Imperial Offer"
- flavor_mei.130.desc: "[GetCountry('SWB').GetName]'s [target_character.GetName] has died without a direct heir to assume [target_character.GetHerHis] duties and the [GetCountry('SWB').GetFlavorRank] has been left vacant.\n\nBecause that seat is something that cannot be left unoccupied, we need a new holder of this dignity.\n\nAmong the several candidates, our advisors have proposed the [GetCountry('MEI').GetGovernment.GetRulerTitle] of [GetCountry('MEI').GetName] as a good choice. Should we decide to elevate [GetCountry('MEI').GetGovernment.GetRuler.GetHerHim] to [GetCountry('SWB').GetGovernment.GetRulerTitle] we could get a new friend in the area." #NEW
+ flavor_mei.130.desc: "[GetCountry('SWB').GetName]'s [target_character.GetName] has died without a direct heir to assume [target_character.GetHerHis] duties and the [GetCountry('SWB').GetFlavorRank] has been left vacant.\n\nBecause that seat is something that cannot be left unoccupied, we need a new holder of this dignity.\n\nAmong the several candidates, our advisors have proposed the [GetCountry('MEI').GetGovernment.GetRulerTitle] of [GetCountry('MEI').GetName] as a good choice. Should we decide to elevate [GetCountry('MEI').GetGovernment.GetRuler.GetHerHim] to [GetCountry('SWB').GetGovernment.GetRulerTitle] we could get a new friend in the area."
  flavor_mei.130.a: "Good idea!"
  flavor_mei.130.b: "They are not worthy."
  flavor_mei.130.historical_info: "In 1423, Friedrich the Quarrelsome, Margrave of Meissen, acquired the Duchy of Saxony-Wittenberg, along with the electoral dignity, resulting in the merger of the Margraviate of Meissen into the Electorate of Saxony, losing its status as an independent principality."
  flavor_mei.131.title: "An Imperial Offer"
- flavor_mei.131.desc: "The ruler of the [GetCountry('SWB').GetLongName] has died without a direct heir, leaving the [GetCountry('SWB').GetFlavorRank] empty. The Emperor [target_emperor.GetName] has offered us being the new elector." #NEW
+ flavor_mei.131.desc: "The ruler of the [GetCountry('SWB').GetLongName] has died without a direct heir, leaving the [GetCountry('SWB').GetFlavorRank] empty. The Emperor [target_emperor.GetName] has offered us being the new elector."
  flavor_mei.131.a: "We accept it with honor."
  flavor_mei.131.tt: "We will become the Electorate of Saxony"
 
  flavor_mei.140.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.140.entry: "Heinrich von Brühl" #NEW
- flavor_mei.140.desc: "[target_ruler.GetName] has been advocating for employing [target_character.GetName], one of [target_ruler.GetHisHer] closest personal advisors, to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. However, many at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] are worried, since it is rumoured that [target_character.GetLastNameWithNoTooltip] wields more power than [target_ruler.GetNameWithNoTooltip] [target_ruler.GetHerselfHimself], which could give [target_character.GetLastNameWithNoTooltip] unmatched diplomatic leverage and lead to the abuse of power to fulfill his ambitions." #NEW
- flavor_mei.140.a: "Let his guide our affairs." #NEW
- flavor_mei.140.b: "We cannot allow him to become the power behind the throne." #NEW
+ flavor_mei.140.entry: "Heinrich von Brühl"
+ flavor_mei.140.desc: "[target_ruler.GetName] has been advocating for employing [target_character.GetName], one of [target_ruler.GetHisHer] closest personal advisors, to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. However, many at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] are worried, since it is rumoured that [target_character.GetLastNameWithNoTooltip] wields more power than [target_ruler.GetNameWithNoTooltip] [target_ruler.GetHerselfHimself], which could give [target_character.GetLastNameWithNoTooltip] unmatched diplomatic leverage and lead to the abuse of power to fulfill his ambitions."
+ flavor_mei.140.a: "Let his guide our affairs."
+ flavor_mei.140.b: "We cannot allow him to become the power behind the throne."
  flavor_mei.140.historical_info: "Heinrich von Brühl was the influential chief minister of Saxony and Poland during the reign of Frederick August II, also known as Augustus III of Poland. As a diplomat and courtier, Brühl effectively controlled Saxon and Polish politics for decades, managing alliances and state appointments. He managed to centralize the court under his rule so much that the King could only be accessed through him."
 
  flavor_mei.150.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mei.150.entry: "Gottfried Silbermann" #NEW
- flavor_mei.150.desc: "[target_character.GetName] has been gaining renown for his masterfully crafted organs which are said to possess unmatched clarity and are gaining fame across the nation. Many members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have expressed desire to employ [target_character.GetLastNameWithNoTooltip] to elevate our churches and glorify our faith, but they lack the funds required to commission him." #NEW
- flavor_mei.150.a: "His art will exalt our piety." #NEW
+ flavor_mei.150.entry: "Gottfried Silbermann"
+ flavor_mei.150.desc: "[target_character.GetName] has been gaining renown for his masterfully crafted organs which are said to possess unmatched clarity and are gaining fame across the nation. Many members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have expressed desire to employ [target_character.GetLastNameWithNoTooltip] to elevate our churches and glorify our faith, but they lack the funds required to commission him."
+ flavor_mei.150.a: "His art will exalt our piety."
  flavor_mei.150.b: "We cannot afford such luxuries."
  flavor_mei.150.historical_info: "Gottfried Silbermann was one of the most renowned organ builders of the Baroque era. Working primarily in Saxony, Silbermann built over 50 organs known for their tonal brilliance and mechanical innovation. Silbermann refined earlier French and German designs by combining craftsmanship with acoustical engineering. His organs earned the admiration of many important personalities, including Johann Sebastian Bach and Frederick the Great."
 
@@ -128,7 +128,7 @@
  flavor_mei.160.historical_info: "The University of Wittenberg, also known as Leucorea, was founded in 1502 by Elector Frederick the Wise of Saxony, with the royal charter granted by Emperor Maximilian I. Intended to train administrators, theologians, and legal experts for the Ernestine Electorate, it would soon become the cradle of the Lutheran Reformation, especially after Martin Luther was appointed professor in 1508, and Philipp Melanchthon soon followed."
 
  flavor_mei.170.title: "[ShowBuildingTypeNameWithNoTooltip('university')] of [ShowLocationNameWithNoTooltip('freiberg')]"
- flavor_mei.170.entry: "University of Freiberg" #NEW
+ flavor_mei.170.entry: "University of Freiberg"
  flavor_mei.170.desc: "The wealth of our mountains lies not just in ore, but in the knowledge needed to extract it. As traditional mining techniques begin to falter before the challenges of deeper shafts and complex geology, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] suggest to refocus the [ShowModifier('freiberg_base')] and instead, establish a [ShowBuildingTypeName('university')] that will focus on modern industrial methods of mining and train the next generation of engineers."
  flavor_mei.170.a: "[ShowLocationNameWithNoTooltip('freiberg')] will become the forge of scientific mining!"
  flavor_mei.170.b: "Let us expand the traditional methods instead."
@@ -143,20 +143,20 @@
  flavor_mei.180.historical_info: "In 1556, Elector Augustus of Saxony closed the long-dominant mint of Freiberg and moved all minting operations to Dresden after discovering widespread debasement of currency across regional mints. The establishment of the mint near his residence asserted direct control over silver quality and financial policy."
 
  flavor_mei.190.title: "The [ShowLocationNameWithNoTooltip('leipzig')] Debate"
- flavor_mei.190.entry: "The Leipzig Debate" #NEW
+ flavor_mei.190.entry: "The Leipzig Debate"
  flavor_mei.190.desc: "An intense academic disputation has unfolded in [ShowLocationName('leipzig')] between [target_character.GetName], a radical theologian and professor from [ShowLocationName('wittenberg')], and the renowned scholastic [target_character2.GetName]. They discuss the new claims presented by the advocates of the Reformation, such as that authority should stem from Scripture rather than tradition, that the [GetUniqueInternationalOrganization('catholic_church').GetName] has erred in doctrine, and that the [GetCountry('PAP').GetGovernment.GetRulerTitle] does not wield supreme power by divine right."
  flavor_mei.190.a: "We should stay out of this."
  flavor_mei.190.b: "Support the traditional views of [target_character2.GetNameWithNoTooltip]."
- flavor_mei.190.b.entry: "Support the traditional views of the character." #NEW
+ flavor_mei.190.b.entry: "Support the traditional views of the character."
  flavor_mei.190.c: "[target_character.GetNameWithNoTooltip] raises valid concerns."
- flavor_mei.190.c.entry: "The character raises valid concerns." #NEW
+ flavor_mei.190.c.entry: "The character raises valid concerns."
  flavor_mei.190.historical_info: "The Leipzig Debate of 1519 was an academic dispute held at the University of Leipzig between Johann Eck and Andreas Karlstadt. The debate was initiated by Eck's negative commentary on Luther's 95 theses, and initially focused on questions of free will and ecclesial authority. It soon expanded into a full discussion of the Church's legitimacy, the supremacy of Scripture over tradition, and the nature of Papal power. Though no consensus was reached, the debate significantly raised the profile of reformist ideas and accelerated the growing theological and political divisions within the Holy Roman Empire."
 
  flavor_mei.200.title: "A Just Reward"
  flavor_mei.200.entry: "$flavor_mei.200.title$"
  flavor_mei.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis|U] majesty's son-in-law, [son_in_law.GetName] the ruler of [target_country.GetName], has been of great service in the recent troubles in [GetCountry('BRA').GetName]. It would be appropriate for the Emperor to generously reward those who serve the [GetUniqueInternationalOrganization('hre').GetName] well."
  flavor_mei.200.a: "Shower [son_in_law.GetHerHim] with riches."
- flavor_mei.200.a.entry: "Shower him with riches." #NEW
+ flavor_mei.200.a.entry: "Shower him with riches."
  flavor_mei.200.b: "Serving the Emperor is enough reward."
  flavor_mei.200.historical_info: "Friedrich II of the Wettin dynasty was a loyal ally of Emperor Ludwig IV during his reign. Married to Ludwig's daughter Mathilde, he was a key ally in the stabilization of the Margraviate of Brandenburg, after it was acquired by the Wittelsbach dynasty. For his work and steady support of the Wittelsbacher Emperorship, he was rewarded with support in his efforts in both Thuringia and Meissen."
 
@@ -169,32 +169,32 @@
  STATIC_MODIFIER_DESC_meissen_groschen: "The new coin improves the economy of [GetCountry('MEI').GetName] facilitating transactions and smoothening the transfer of capital."
 
  flavor_mei.210.title: "The [ShowGoodsNameWithNoTooltip('porcelain')] Manufactory of [ShowLocationNameWithNoTooltip('meissen')]"
- flavor_mei.210.entry: "The Meissen Porcelain Factory" #NEW
+ flavor_mei.210.entry: "The Meissen Porcelain Factory"
  flavor_mei.210.desc: "[ShowGoodsName('porcelain')] has long been a major point of interest, with many failed attempts to recreate the secret art of producing it in its true form. However, through many experiments of our best scientists and inventors, we have been able to reproduce the first [ShowGoodsNameWithNoTooltip('porcelain')] of [ShowContinentName('europe')]. To protect this precious innovation and to capitalize on it, many are suggesting to establish a state-funded manufactory in [ShowLocationName('meissen')]."
  flavor_mei.210.a: "Establish it!"
  flavor_mei.210.b: "We should focus on traditional production."
  flavor_mei.210.historical_info: "The Meissen Porcelain Manufactory was founded in 1710 and financed by Augustus the Strong in the castle of Albrechtsburg. It was the first in Europe to produce hard-paste porcelain, previously imported only from China. This innovation had vast economic and cultural impact, turning Saxony into a leading porcelain producer and bolstering its prestige across Europe."
 
  flavor_mei.220.title: "The Genius of [target_character.GetNameWithNoTooltip]"
- flavor_mei.220.entry: "Johann Melchior Dinglinger" #NEW
- flavor_mei.220.desc: "[target_character.GetName] has astonished the [ROOT.GetCountry.GetFlavorRank] with his elaborate and masterful creations, such as intricate goldsmithing that blends artistry with technical precision. Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] suggests we offer him patronage, as they believe that with adequate funding, [target_character.GetLastNameWithNoTooltip] would greatly elevate our cultural prestige." #NEW
- flavor_mei.220.a: "Offer him patronage." #NEW
- flavor_mei.220.b: "His service would be too expensive." #NEW
+ flavor_mei.220.entry: "Johann Melchior Dinglinger"
+ flavor_mei.220.desc: "[target_character.GetName] has astonished the [ROOT.GetCountry.GetFlavorRank] with his elaborate and masterful creations, such as intricate goldsmithing that blends artistry with technical precision. Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] suggests we offer him patronage, as they believe that with adequate funding, [target_character.GetLastNameWithNoTooltip] would greatly elevate our cultural prestige."
+ flavor_mei.220.a: "Offer him patronage."
+ flavor_mei.220.b: "His service would be too expensive."
  flavor_mei.220.historical_info: "Johann Melchior Dinglinger was one of the most extraordinary goldsmiths of his time. His opulent works, often inlaid with thousands of gemstones, were symbols of Saxon court splendor. He was often commissioned by Augustus the Strong, and he greatly contributed to the aesthetic of Baroque Saxony."
 
  flavor_mei.230.title: "The Theory of Neptunism"
  flavor_mei.230.entry: "$flavor_mei.230.title$"
- flavor_mei.230.desc: "At the Mining Academy of [ShowLocationName('freiberg')], Professor [target_character.GetName] has presented a revolutionary theory of geological formation which he calls Neptunism. According to him, all rocks were once precipitated from a primordial ocean through the process of crystallization. Though his lectures attract many people, many critics reject his ideas which are increasingly gaining academic traction." #NEW
+ flavor_mei.230.desc: "At the Mining Academy of [ShowLocationName('freiberg')], Professor [target_character.GetName] has presented a revolutionary theory of geological formation which he calls Neptunism. According to him, all rocks were once precipitated from a primordial ocean through the process of crystallization. Though his lectures attract many people, many critics reject his ideas which are increasingly gaining academic traction."
  flavor_mei.230.a: "Support the rise of Neptunism!"
  flavor_mei.230.b: "These are speculative ramblings."
  flavor_mei.230.historical_info: "Abraham Gottlob Werner was a pioneering geologist and one of the founding figures of modern mineralogy. His Neptunist theory, though eventually superseded by Plutonism that attributed the formation of rocks to volcanic activities, deeply influenced scientific thought across Europe and drew students to Freiberg." 
- variable_mei_werner_event_tt: "The Neptunist Theory is Being Studied" #NEW
+ variable_mei_werner_event_tt: "The Neptunist Theory is Being Studied"
 
  flavor_mei.240.title: "The Arrival of [target_character.GetLastNameWithNoTooltip]"
- flavor_mei.240.entry: "The Arrival of Hasse" #NEW
- flavor_mei.240.desc: "A remarkable occasion graced [ShowLocationName('dresden')] as [target_character.GetName], one of the most celebrated composers of opera seria in [ShowContinentName('europe')], arrived to present his latest work. As people flock to watch his performances, many at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] whisper that [target_character.GetLastNameWithNoTooltip] might be persuaded to stay, should we extend our patronage and honor his genius." #NEW
- flavor_mei.240.a: "We will do what we can to make him stay!" #NEW
- flavor_mei.240.b: "He is but another musician." #NEW
+ flavor_mei.240.entry: "The Arrival of Hasse"
+ flavor_mei.240.desc: "A remarkable occasion graced [ShowLocationName('dresden')] as [target_character.GetName], one of the most celebrated composers of opera seria in [ShowContinentName('europe')], arrived to present his latest work. As people flock to watch his performances, many at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] whisper that [target_character.GetLastNameWithNoTooltip] might be persuaded to stay, should we extend our patronage and honor his genius."
+ flavor_mei.240.a: "We will do what we can to make him stay!"
+ flavor_mei.240.b: "He is but another musician."
  flavor_mei.240.historical_info: "Johann Adolph Hasse was a significant composer of the German Baroque. His arrival in Dresden marked a golden age of music at the Saxon court, particularly under the patronage of the Electress Maria Josepha and the Elector Augustus III. He later served as Kapellmeister and was instrumental in making Dresden a center of Italian opera north in Germany."
 
 
@@ -210,7 +210,7 @@
  flavor_mei.1001.desc: "Ever since the [ShowDynastyName('wettin_dynasty')] dynasty secured [GetCountry('THU').GetName], tensions have simmered between them and the lesser lords of the region. [root_country.GetName] has recently openly declared their ambition to unite the region under their rule, and rumours are spreading that we might be one of their first targets. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] has assembled and is pressuring the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] to take an action before it is too late. They suggest sending envoys to neighboring countries and offer them alliance to counter the threat posed by [GetCountry('THU').GetNameWithNoTooltip]."
  flavor_mei.1001.a: "We must act swiftly."
  flavor_mei.1001.a.tt: "Our effort to form alliances against [root_country.GetName] might result in a pre-emptive war."
- flavor_mei.1001.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" #NEW
+ flavor_mei.1001.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
  flavor_mei.1001.b.entry: "$common_string_nothing_we_can_do_about_it$"
 
  flavor_mei.1002.title: "The [ShowDynastyNameWithNoTooltip('wettin_dynasty')] Threat"

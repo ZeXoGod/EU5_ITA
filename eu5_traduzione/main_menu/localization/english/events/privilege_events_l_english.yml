@@ -1,19 +1,19 @@
 ﻿l_english:
  privilege_events.100.title: "Invito ai Coloni Tedeschi"
  privilege_events.100.desc: "A causa della peste e della guerra, il nostro paese è in gran parte spopolato e il piccolo numero di contadini è distribuito in modo molto disperso sui nostri vasti territori, rendendo molto difficili da svolgere attività che richiedono enormi quantità di manodopera, come la mietitura o la bonifica di nuove terre.\n\nPossiamo invitare nuovi coloni e artigiani dalle terre tedesche a venire e creare nuove città nei nostri possedimenti, offrendo loro aiuto e privilegi speciali, come il diritto di essere governati da proprie leggi e tasse più basse."
- privilege_events.100.desc.kulm_law: "La sovraffollata [german_province.GetName] è diventata un ambiente troppo competitivo in cui vivere. Ecco perché molti abitanti di [german_province.GetNameWithNoTooltip] e dintorni hanno scelto di cercare una vita migliore a [target_province.GetName], attratti dai nostri generosi privilegi offerti come parte del [ShowEstatePrivilegeName('kulm_law')].
+ privilege_events.100.desc.kulm_law: "[german_province.GetName], piuttosto sovraffollata, è diventata un ambiente troppo competitivo in cui vivere. Per questo motivo, molti abitanti di [german_province.GetNameWithNoTooltip] e dei dintorni hanno scelto di cercare una vita migliore a [target_province.GetName], attirati dai nostri generosi privilegi concessi nell'ambito della [ShowEstatePrivilegeName('kulm_law')]."
  privilege_events.100.a: "Diamo loro il benvenuto."
  privilege_events.100.b: "Aiutatiamoli a stabilirsi direttamente."
  privilege_events.100.c: "Non abbiamo bisogno di altri stranieri."
  privilege_events.100.d: "Non riusciamo a trovare più persone disposte a migrare."
  enough_migrants_tt: "Ci sono abbastanza migranti"
  not_enough_migrants_tt: "Non ci sono più migranti"
- 
+
  privilege_events.101.title: "Migrazione Verso [target_province.GetNameWithNoTooltip]"
  privilege_events.101.desc: "Ispirati dai privilegi concessi [migration_destination_country.Custom('IT_DAL_RANGO')][migration_destination_country.GetLongName], molti coloni provenienti da [scope_german_location.GetProvinceDefinition.GetName] hanno abbandonato le loro famiglie nella speranza di costruirsi una vita migliore a [target_province.GetName]. Sebbene tali spostamenti di popolazione siano consentiti dalle nostre leggi, molte di queste migrazioni potrebbero portare all'esaurimento della nostra popolazione."
  privilege_events.101.a: "Non c'è niente che possiamo fare?"
  privilege_events.101.tt: "Questo [event|e] è stato attivato perché [german_province.GetName] ha soddisfatto:\n[ShowTriggerConditionsForScope('privilege_events_100_is_in_bad_shape', SCOPE.sProvince('german_province').GetProvince.MakeScope.Self)]"
- 
+
  privilege_events.110.title: "Una Nuova Famiglia Emergente per il Libro"
  privilege_events.110.desc: "La famiglia [target_dynasty.GetName], recentemente arricchita, è diventata molto influente nella sua patria di [location_scope.GetName], ma le sue origini umili impediranno loro di raggiungere cariche di vero potere in [ROOT.GetCountry.GetName].\n\nHanno inviato un emissario alla nostra corte chiedendoci di consentire l'aggiunta della loro famiglia nel #italic Libro d'Oro#!, che li nobiliterebbe e li renderebbe #italic Patrizi#! di [ROOT.GetCountry.GetNameWithNoTooltip].\n\nAggiungere in questo modo una nuova famiglia [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sicuramente non piacerà agli altri membri, ma la famiglia [target_dynasty.GetNameWithNoTooltip] ha anche inviato un grande forziere pieno d'oro per aiutarci a prendere una decisione."
  privilege_events.110.a: "Accettiamo ed invitiamo uno di loro a corte."

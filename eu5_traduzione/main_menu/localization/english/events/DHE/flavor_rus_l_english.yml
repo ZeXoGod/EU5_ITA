@@ -1,18 +1,18 @@
-﻿l_english: 
+﻿l_english:
  flavor_rus.1.title: "La Riforma della Pomjestija"
  flavor_rus.1.entry: "$flavor_rus.1.title$"
  flavor_rus.1.desc: "La conquista [GetCountry('NOV').Custom('IT_Della')][GetCountry('NOV').GetName] comporta ancora il rischio di rivolte a causa della forte opposizione locale. Sono state effettuate deportazioni forzate di cittadini e i capi locali della Chiesa [GetCountry('NOV').GetAdjectiveWithNoTooltip] sono stati sostituiti con capi [ROOT.GetCountry.GetAdjective] [target_religion.GetName]. Per reprimere ulteriori rivolte, potremmo istituire una riforma della gestione delle terre che confisca le proprietà ai [ShowPopTypeName('nobles')] locali e le trasferisce all'esercito, centralizzando il potere e assicurando la lealtà nel processo."
  flavor_rus.1.a: "Introdurre la Pomjestija."
  flavor_rus.1.b: "Diventiamo più simili [GetCountry('NOV').Custom('IT_Alla')][GetCountry('NOV').GetNameWithNoTooltip]."
- flavor_rus.1.b.entry: "Let us become more like $NOV$." #NEW
+ flavor_rus.1.b.entry: "Let us become more like $NOV$."
  flavor_rus.1.c: "Fate radunare e giustiziare tutti gli oppositori."
  flavor_rus.1.historical_info: "Dopo l'invasione di Novgorod da parte della Moscovia nel 1471 e il mancato aiuto della Lituania, Novgorod fu costretta ad accettare il Trattato di Korostyn, che ne limitava ulteriormente l'indipendenza. Ivan III, ancora diffidente nei confronti delle rivolte a causa di quanto accaduto al padre, deportò molti cittadini di Novgorod. Sostituì anche i capi della Chiesa novgorodiana con capi ortodossi russi. Le terre furono sottratte agli indigeni e date ai cavalleggeri in cambio del servizio militare. Dopo aver stabilito la riforma della gestione della terra, chiamata sistema delle pomestie, la introdusse in Moscovia. Impadronendosi delle proprietà dei nobili locali, chiamati boiardi, e dandole al suo esercito, contribuì a rafforzare e centralizzare il suo potere e a creare lealtà nel suo esercito e negli altri servitori. Nel 1489, Novgorod era ormai un guscio del suo passato e faceva parte dello Stato russo in continua crescita."
   
  flavor_rus.2.title: "[malyuta_skuratov.GetNameWithNoTooltip]"
- flavor_rus.2.entry: "Malyuta Skuratov" #NEW
- flavor_rus.2.desc: "Formidable strategist [malyuta_skuratov.GetName] is currently seeking employment at court. He has a rich understanding of political intrigue, a demonstrated unwavering loyalty and a reputation as a merciless executor. Referred to as the 'Black Dog' and 'Iron Fist', he is likely to strike fear into our opponents, ensuring the precise execution of every royal command." #NEW
+ flavor_rus.2.entry: "Malyuta Skuratov"
+ flavor_rus.2.desc: "Formidable strategist [malyuta_skuratov.GetName] is currently seeking employment at court. He has a rich understanding of political intrigue, a demonstrated unwavering loyalty and a reputation as a merciless executor. Referred to as the 'Black Dog' and 'Iron Fist', he is likely to strike fear into our opponents, ensuring the precise execution of every royal command."
  flavor_rus.2.a: "Un ministro eccellente!"
- flavor_rus.2.tt1: "The extreme brutality demonstrated by Malyuta Skuratov resonates well with [target_root_country.GetGovernment.GetRuler.GetName]" #NEW
+ flavor_rus.2.tt1: "L'estrema brutalità dimostrata da [malyuta_skuratov.GetNameWithNoTooltip] trova forte riscontro in [target_root_country.GetGovernment.GetRuler.GetName]"
  flavor_rus.2.b: "Uno spietato guerrafondaio."
  flavor_rus.2.historical_info: "Malyuta Skuratov fu uno dei leader più importanti durante l'Oprichnina, quando Ivan il Terribile e la sua polizia segreta eseguirono migliaia di esecuzioni e confische di terre. Skuratov si era fatto un nome nel 1569, quando partecipò al processo e all'esecuzione dell'unico cugino di Ivan, Vladimir di Staritsa, possibile pretendente al trono. Più tardi, nello stesso anno, strangolò il metropolita di Mosca, Filippo II, per aver criticato i processi, e nel 1570 fu responsabile dell'uccisione di migliaia di cittadini durante una spedizione punitiva a Novgorod. Skuratov fu ucciso nel 1573 nell'assedio di Weissenstein durante la Guerra di Livonia."
  
@@ -25,7 +25,7 @@
  flavor_rus.3.historical_info: "Nel 1552, lo zar Ivan IV il Terribile lanciò una spedizione contro il khanato di Kazan, a est di Nižnij-Novgorod e punto di blocco sul Volga. L'uso di pesanti cannoni da bombarda fece breccia nelle mura della città tartara, che fu prontamente sopraffatta e annessa. Nel 1556, sulla scia del successo ottenuto quattro anni prima contro Kazan, Ivan lanciò una nuova spedizione contro il khanato di Astrakhan, a sud del Volga. La conquista di Astrakhan aprì un accesso al Mar Caspio e pose l'intero bacino del Volga sotto il controllo russo. Città come Samara, Saratov e Tsaritsyne furono fondate lungo il fiume per garantire un controllo adeguato."
  
  flavor_rus.4.title: "L'Ostacolo [GetCountry('PLC').Custom('IT_Della')][GetCountry('PLC').GetNameWithNoTooltip]"
- flavor_rus.4.entry: "The $PLC$ Hindrance" #NEW
+ flavor_rus.4.entry: "The $PLC$ Hindrance"
  flavor_rus.4.desc: "Il successo dell'espansione a ovest ci ha garantito il pieno controllo dell'area dell'[ShowAreaName('smolensk_area')], ma rimangono sacche di resistenza nell'[ShowAreaName('white_ruthenia_area')] che impediscono il nostro continuo sconfinamento nelle terre [GetCountry('PLC').Custom('IT_Della')][GetCountry('PLC').GetName]. Dobbiamo mantenere il vantaggio e assicurarci il territorio rimanente se vogliamo riunire tutte le terre slave sotto un unico grande [ROOT.GetCountry.GetFlavorRank]."
  flavor_rus.4.a: "Andiamo avanti."
  rus_claimed_land: "Rivendicare la nostra terra"
@@ -43,17 +43,8 @@
  flavor_rus.5.b: "Nient'altro che pascoli per il bestiame."
  flavor_rus.5.historical_info: "Subito dopo la caduta di Astrakhan, lo zar Ivan IV lanciò una campagna nelle steppe a sud di Kazan, dove risiedeva l'Orda Nogaï. Si trattava del primo trampolino di lancio per una continua espansione verso est; la campagna fu condotta dai cosacchi e finanziata dalla potente famiglia di mercanti Stroganov. Seguì la conquista del khanato di Sibir e la successiva distruzione dell'ultimo khanato, che permise l'esplorazione e il controllo del vasto entroterra. che avrebbe visto i cosacchi costruire città dai loro Ostrog (semplici fortificazioni per garantire il transito) e raggiungere l'oceano Pacifico a Okhotsk nel 1645."
  
- flavor_rus.6.title: "Il Consiglio Eletto"
- flavor_rus.6.entry: "$flavor_rus.6.title$"
- flavor_rus.6.desc: "Il potere [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] impedisce la centralizzazione del potere necessaria per prendere decisioni rapide. È stato proposto di creare un consiglio esecutivo di persone scelte per contribuire a velocizzare le procedure governative e a limitare l'influenza dei nobili, offrendo la possibilità di affrontare diverse questioni e di attuare le riforme necessarie. [alexi_adashev.GetName] e [sylvestr_the_priest.GetName] sono amici intimi [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] e dovrebbero far parte del Consiglio."
- flavor_rus.6.a: "Una forza formidabile di uomini capaci."
- flavor_rus.6.b: "Un tale consiglio non avrà alcuna influenza."
- flavor_rus.6.tt3: "Alexander Adashev and Silvester are hunted down and executed to the delight of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" #NEW
- enable_chosen_rada_reform: "Grants access to the [ShowGovernmentReformName('chosen_rada_reform')] [government_reform|e]" #DA TRADURRE
- flavor_rus.6.historical_info: "Il Consiglio scelto era un gruppo di consiglieri che svolse un ruolo significativo nei primi anni di regno di Ivan IV. Era composto da persone come Alexi Adashev e il sacerdote Sylvestr, che erano consiglieri fidati del Gran Principe Ivan IV ed erano necessari per gli sforzi di Ivan di centralizzare il potere, riformare il sistema legale e affrontare varie questioni che riguardavano lo Stato."
- 
  flavor_rus.7.title: "Il Saccheggio di [ShowLocationNameWithNoTooltip('moscow')]"
- flavor_rus.7.entry: "DEVASTATION" #NEW
+ flavor_rus.7.entry: "DEVASTATION"
  flavor_rus.7.desc: "Il conflitto in corso con [moscow_sacker.GetName] ha preso una piega devastante: le loro forze hanno fatto irruzione alle porte di [ShowLocationName('moscow')] lasciando una scia di distruzione. Gli edifici sono stati incendiati e tragiche notizie di vittime civili giungono ai sopravvissuti. Questo è il disastro più terribile per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName]!"
  flavor_rus.7.a: "Dirottare gli sforzi di soccorso."
  rus_sacked_moscow: "Mosca saccheggiata"
@@ -68,7 +59,7 @@
  flavor_rus.8.historical_info: "Il sistema Kormlenije era un sistema per provvedere alle necessità finanziarie e materiali della nobiltà e della burocrazia russa durante il regno di Ivan il Terribile. Questo sistema era una componente importante dei suoi sforzi per consolidare il potere e il controllo all'interno dello Stato russo. I nobili che beneficiarono del sistema Kormlenije divennero finanziariamente dipendenti dallo zar. Questa dipendenza contribuì a garantire la loro fedeltà e a scoraggiare una potenziale opposizione."
   
  flavor_rus.9.title: "L'Indipendenza della Chiesa [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ShowReligionNameWithNoTooltip('orthodox')]"
- flavor_rus.9.entry: "The Independence of the $RUS_ADJ$ Orthodox Church" #NEW
+ flavor_rus.9.entry: "The Independence of the $RUS_ADJ$ Orthodox Church"
  flavor_rus.9.desc: "La caduta di [ShowLocationName('constantinople')], storicamente sede del potere ecclesiastico degli [ShowReligionName('orthodox')], ci offre un'opportunità significativa. Dobbiamo ora decidere se mantenere l'eredità e sostenere il trasferimento del controllo della Chiesa [ShowReligionAdjectiveWithNoTooltip('orthodox')] ad [ShowLocationName('moscow')] o perseguire l'alternativa di reclamare l'ex capitale imperiale dai pagani [ShowReligionGroupAdjective('muslim')|U]."
  flavor_rus.9.a: "Un obiettivo ambizioso, senza dubbio."
  rus_aspires_to_lead_orthodoxy: "Aspira a guidare l'Ortodossia"
@@ -87,18 +78,18 @@
  flavor_rus.11.title: "Sinodo dei Cento Capitoli"
  flavor_rus.11.entry: "$flavor_rus.11.title$"
  flavor_rus.11.desc: "Nel 1551 il metropolita Mascario convocò la Chiesa in quello che divenne noto come Sinodo dei Cento Capitoli, al fine di unificare le cerimonie e i doveri della Chiesa in tutta la Russia. Chiesero anche che il governo annullasse la sua giurisdizione sulla Chiesa."
- flavor_rus.11.a: "Affirm these changes." #NEW
- flavor_rus.11.b: "Prohibit these ideas." #NEW
+ flavor_rus.11.a: "Affirm these changes."
+ flavor_rus.11.b: "Prohibit these ideas."
   
  flavor_rus.12.title: "[boris_morozov.GetNameWithNoTooltip]"
- flavor_rus.12.entry: "Boris Morozov" #NEW
- flavor_rus.12.desc: "Frugal financier [boris_morozov.GetName] is considered an ambitious and skilled statesman who could greatly benefit the daily operations of the [ROOT.GetCountry.GetAdjective] state. His aspirations to increase the treasury's income would likely result in sweeping cuts to state employee salaries and streamlining of the management of government affairs. No doubt an asset in managing the country, he is expected to champion the positions of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in addition to his other duties at court." #NEW
- flavor_rus.12.a: "Invite him to court." #NEW
+ flavor_rus.12.entry: "Boris Morozov"
+ flavor_rus.12.desc: "Frugal financier [boris_morozov.GetName] is considered an ambitious and skilled statesman who could greatly benefit the daily operations of the [ROOT.GetCountry.GetAdjective] state. His aspirations to increase the treasury's income would likely result in sweeping cuts to state employee salaries and streamlining of the management of government affairs. No doubt an asset in managing the country, he is expected to champion the positions of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in addition to his other duties at court."
+ flavor_rus.12.a: "Invite him to court."
  STATIC_MODIFIER_NAME_steamroll_administrator: "Amministratore di Steamroll"
- flavor_rus.12.tt2: "His powerful influence as regent favors the interests of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" #NEW
- flavor_rus.12.tt3: "He may implement additional reforms if serving as [regent|e] or assigned to [cabinet|e]" #NEW
+ flavor_rus.12.tt2: "[boris_morozov.GetHisHer|U] potente influenza come reggente favorisce gli interessi dei [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ flavor_rus.12.tt3: "[boris_morozov.GetSheHe|U] potrebbe attuare ulteriori riforme se funge da [regent|e] o viene assegnato al [cabinet|e]"
  flavor_rus.12.b: "Una plebe impoverita non può governare [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank]."
- flavor_rus.12.b.entry: "An impoverished pleb cannot rule the realm." #NEW
+ flavor_rus.12.b.entry: "An impoverished pleb cannot rule the realm."
  flavor_rus.12.historical_info: "Boris Morozov era cognato e precettore dello zar Alessio e guidò il governo durante i primi anni del suo regno. Supervisore del libro paga e del Gran Tesoro, Morozov cercò di aumentare le entrate dello Stato abbassando i salari e introducendo nuove tasse. L'elevata tassa sul sale causò e diede il nome alla rivolta del sale del 1648. Dopo un breve esilio in un monastero, Morozov poté tornare a Mosca dove mantenne un basso profilo pur controllando gran parte del governo."
  
  flavor_rus.13.title: "Il Codice Legale di Sobornoye Ulozheniye"
@@ -113,17 +104,18 @@
  flavor_rus.14.desc: "Le pratiche delle Chiese [ShowCultureName('greek_culture')] e [ShowCultureGroupName('russian_group')] si sono ampliate nel tempo ed esistono diverse discrepanze nei libri di servizio, nei rituali e nel disegno delle icone. Dovremmo prendere provvedimenti per modernizzare la Chiesa e portare armonia tra le nostre due comunità autocefale."
  flavor_rus.14.a: "Modernizziamo la Chiesa."
  flavor_rus.14.b: "Seguite il consiglio dei Raskolnik."
- flavor_rus.14.tt2: "He may expedite religious reform if assigned to [cabinet|e]" #NEW
+ flavor_rus.14.tt2: "[nikita_minin.GetSheHe|U] potrebbe accelerare la riforma religiosa se assegnato al [cabinet|e]"
  flavor_rus.14.historical_info: "Nikon, patriarca della Chiesa ortodossa russa, attuò riforme radicali per purificare la disciplina e i rituali della Chiesa, correggendo i libri di servizio dei greci. Di fronte alla forte opposizione, Nikon fu bandito e infine deposto. Nonostante la sua rimozione, le sue riforme durarono a lungo."
  
  flavor_rus.15.title: "Raskol"
  flavor_rus.15.entry: "$flavor_rus.15.title$"
  flavor_rus.15.desc: "Le recenti riforme hanno agitato le acque ecclesiastiche della Chiesa [ROOT.GetCountry.GetAdjective] [ShowReligionAdjective('orthodox')], provocando una spaccatura tra chi è favorevole e chi è contrario a qualsiasi cambiamento che viene percepito come radicale e di vasta portata. Dobbiamo decidere se tornare indietro rispetto ai recenti cambiamenti o se rimanere fermi nel nostro impegno verso i nuovi principi che guidano la trasformazione della Chiesa."
  flavor_rus.15.a: "Queste riforme sono necessarie."
- flavor_rus.15.tt1: "The energetic and eloquent Nicetas Minin launches bold reforms to the great dismay of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" #NEW
+ flavor_rus.15.tt1: "L'energico ed eloquente [nikita_minin.GetName] avvia riforme audaci, con grande costernazione del [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]"
  flavor_rus.15.b: "Sostenere le vecchie tradizioni."
- flavor_rus.15.c: "Have Nicetas Minin deprived of power." #NEW
- flavor_rus.15.tt2: "Nicetas Minin is tried by a synod and reduced to the position of a monk" #NEW
+ flavor_rus.15.c: "Priviamo [nikita_minin.GetNameWithNoTooltip] del potere."
+ flavor_rus.15.c.entry: "Priviamo $name_nicetas.east_slavic_language$ $Minin$ del potere."
+ flavor_rus.15.tt2: "[nikita_minin.GetName] viene processato da un sinodo e ridotto al rango di monaco"
  flavor_rus.15.historical_info: "Il Raskol è stato un importante scisma all'interno della Chiesa ortodossa russa, avvenuto in seguito alle riforme ecclesiastiche del patriarca Nikon. Molti consideravano i cambiamenti troppo estesi e una deviazione dalla vera Ortodossia, con la conseguente formazione di comunità religiose separate per continuare a praticare i vecchi metodi. Conosciuta come setta dei Raskolniki, era sostenuta da gruppi come i Dukhobor e si aggrappava alle vecchie pratiche vietate da Nikon."
  
  flavor_rus.16.title: "Le Grandi Riforme"
@@ -160,15 +152,15 @@
  
  flavor_rus.19.title: "La Rivolta Cosacca di Stenka Razin"
  flavor_rus.19.entry: "$flavor_rus.19.title$"
- stenka_razin_tt: "[rebel_origin.GetName] [pops|e] in the [ShowRegionNameWithNoTooltip('steppes_region')] join [stenka_razin.GetName]" #DA TRADURRE
+ stenka_razin_tt: "[rebel_origin.GetName] [pops|e] in the [ShowRegionNameWithNoTooltip('steppes_region')] join [stenka_razin.GetName]"
  flavor_rus.19.desc: "Di fronte all'ingiustizia sociale e alle difficoltà economiche, i cosacchi [rebel_origin.GetName] della regione dell'[ShowRegionName('steppes_region')] si sono sollevati nel tentativo di affermare la loro indipendenza. Potremmo tentare di colpire l'insurrezione con la forza delle nostre forze armate, oppure tentare una soluzione diplomatica proponendo una soluzione autonoma."
  flavor_rus.19.a: "Sedare tutti i movimenti separatisti."
  flavor_rus.19.b: "Offrire un'autonomia limitata."
  flavor_rus.19.c: "Tentare una soluzione spirituale."
  flavor_rus.19.tt1: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] si rivolgono ai leader dei ribelli, che si presentano come difensori della fede [ShowReligionAdjective('orthodox')], facendo appello ai loro valori comuni per accettare un compromesso."
  stenka_razin: "L'insurrezione cosacca di Stenka Razin"
- stenka_razin_gives_up_tt1: "Every owned [location|e] in the [ShowRegionName('steppes_region')] [region|e] lose [ShowNamedValue('control_ultimate_penalty')|+=2%] [control|e]" #DA TRADURRE
- stenka_razin_gives_up_tt2: "Every owned [location|e] in the [ShowRegionName('steppes_region')] [region|e] lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]" #DA TRADURRE
+ stenka_razin_gives_up_tt1: "Every owned [location|e] in the [ShowRegionName('steppes_region')] [region|e] lose [ShowNamedValue('control_ultimate_penalty')|+=2%] [control|e]"
+ stenka_razin_gives_up_tt2: "Every owned [location|e] in the [ShowRegionName('steppes_region')] [region|e] lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
  flavor_rus.19.historical_info: "Stenka Razin guadagnò fama e ricchezza grazie a incursioni di successo negli insediamenti persiani e russi. Nel 1670 lanciò una campagna contro le città fortezza del Volga dello zar, conquistando Tsaritsyn e Astrakhan con una forza di 7.000 cosacchi. Impegnato in dissolutezze e atrocità, Razin sostituì i governi locali con l'autogoverno cosacco. La sua ribellione si diffuse, catturando Saratov e avanzando fino a Simbirsk. Di fronte a un esercito lealista, Razin subì una sconfitta decisiva nel 1671, che lo portò alla cattura, alla tortura e all'esecuzione nella Piazza Rossa di Mosca."
   
  flavor_rus.20.title: "Trattato di Nerchinsk"
@@ -190,34 +182,6 @@
  rus_enemy_of_sweden: "Nemico della Svezia"
  flavor_rus.21.b: "Lasciate che gli altri si arrangino da soli."
  flavor_rus.21.historical_info: "Alla fine del XVII secolo la Svezia si affermò come una grande potenza in seguito a diverse battaglie con le potenze del Mar Baltico. Ma nel 1697 salì al trono il quindicenne Carlo XII. Percependo la debolezza, lo zar russo Pietro I si alleò con la Danimarca e la Polonia-Sassonia. Tuttavia, con l'assistenza navale britannica e olandese, Carlo XII sbarcò in Zelanda e sconfisse prontamente i danesi, poi si spostò in Estlandia dove il suo esercito, in forte inferiorità numerica, ottenne una vittoria decisiva sui russi. Carlo decise infine di marciare su Mosca, ma il rigido inverno e le incursioni russe decimarono il suo esercito, che fu infine sconfitto nella battaglia di Poltava del 1709."
- 
- flavor_rus.22.title: "La Revisione Assoluta della Governance"
- flavor_rus.22.entry: "$flavor_rus.22.title$"
- flavor_rus.22.desc: "È giunto il momento di modernizzare la governance [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], eliminando le tradizioni arcaiche e i mezzi di governo inefficienti. Rafforzando il potere legislativo [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] e assicurando che i suoi decreti siano rapidamente attuati da un organo governativo coordinato e centralizzato, possiamo procedere e garantire che qualsiasi riforma non sia ostacolata dalla corruzione e da lunghi ricorsi."
- flavor_rus.22.a: "Un nuovo inizio."
- enable_russian_absolutism_reform: "Grants access to the [ShowGovernmentReformName('russian_absolutism')] [government_reform|e]" #DA TRADURRE
- flavor_rus.22.tt1: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_SONO')] infuriati per il palese disprezzo dei loro privilegi e dei loro diritti."
- flavor_rus.22.b: "Il vecchio metodo è migliore!"
- flavor_rus.22.historical_info: "Durante il regno di Pietro 'il Grande', egli sostituì le forme di governo medievali e obsolete con un'efficace autocrazia. Nel 1711 abolì il consiglio dei boiardi e istituì il Senato come organo supremo dello Stato, che coordinava le azioni centrali e locali, controllava le entrate e redigeva le leggi. La disciplina marziale fu applicata alle istituzioni civili, con un ufficiale di guardia in Senato."
-  
- flavor_rus.23.title: "La Tutela Governativa"
- flavor_rus.23.entry: "$flavor_rus.23.title$"
- flavor_rus.23.desc: "Il Patriarcato conserva un potere e un'influenza considerevoli, ma continua a ostacolare il progresso e l'innovazione a favore della tradizione e dell'accaparramento del potere ecclesiastico. Deve essere abolito e al suo posto deve essere introdotto un nuovo sistema che rafforzi il controllo governativo sulla Chiesa e ne garantisca l'obbedienza allo Stato."
- flavor_rus.23.a: "Abolire il Patriarcato."
- flavor_rus.23.tt1: "Il Santo Sinodo applica una severa censura su tutte le pubblicazioni."
- flavor_rus.23.b: "$common_string_leave_them_be$"
- flavor_rus.23.c: "Affari come al solito, a un prezzo."
- flavor_rus.23.historical_info: "Nel 1721, Pietro 'il Grande' abolì il Patriarcato di Mosca per subordinare la Chiesa ortodossa allo Stato. Il Santo Sinodo, un collegio spirituale che rappresentava la volontà dello zar, sostituì il patriarca. Un ober-prokuror fu nominato per supervisionare il Santo Sinodo, che perseguitò ferocemente i dissidenti e impose la censura sulle pubblicazioni."
-
- flavor_rus.24.title: "Accademia delle Scienze"
- flavor_rus.24.entry: "$flavor_rus.24.title$"
- flavor_rus.24.desc: "È importante coltivare la conoscenza e le ricerche scientifiche per garantire che [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] rimanga all'avanguardia sulla scena internazionale. Proponiamo l'istituzione di un'Accademia delle Scienze nella nostra nuova capitale dell'illuminazione e trasformiamola in un bastione dell'innovazione in campi come la matematica, l'astronomia, la fisica, la chimica e altri ancora."
- flavor_rus.24.a: "L'abilità intellettuale deve essere all'altezza della potenza militare."
- flavor_rus.24.tt1: "The contributions of Basil Tatishchev to the academy significantly expedites its establishment, adding to its contributions towards [ShowLocationName('neva')]" #NEW
- flavor_rus.24.tt2: "The litterary works of James Bruce are added to the academy's collection, enriching its scholarly resources" #NEW
- flavor_rus.24.b: "Progredire attraverso il dialogo."
- flavor_rus.24.tt3: "Le migliori menti [target_root_country.Custom('IT_Di')][target_root_country.GetName] intrattengono una fitta corrispondenza con altre istituzioni educative in Europa, scambiando idee e favorendo la via della diplomazia."
- flavor_rus.24.historical_info: "L'Accademia delle Scienze di San Pietroburgo fu istituita da Pietro 'il Grande', dopo il suo lungo viaggio in Europa come parte della 'Grande Ambasciata'. L'Accademia si ispirò all'Accademia di Parigi e alla Royal Society di Londra, che condividevano l'obiettivo di promuovere la ricerca scientifica e accademica. L'accademia svolse un ruolo importante nel promuovere la conoscenza scientifica e lo sviluppo culturale in Russia."
   
  flavor_rus.25.title: "La Commissione Ambiziosa"
  flavor_rus.25.entry: "$flavor_rus.25.title$"
@@ -235,12 +199,12 @@
  flavor_rus.26.b: "Optate per il libero scambio."
  flavor_rus.26.historical_info: "Alla fine del XVIII secolo la Russia adottò una politica sempre più mercantilista come conseguenza della crescente monopolizzazione del potere dell'aristocrazia. Le riforme misero in discussione le norme e gli interessi consolidati, provocando la resistenza di gruppi che percepivano i cambiamenti come un'alterazione del loro status e della loro influenza."
  
- flavor_rus.27.title: "La Rivolta di Pugatchev"
- flavor_rus.27.entry: "$flavor_rus.27.title$"
- flavor_rus.27.desc: "Widespread dissatisfaction with the harsh conditions faced by the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and general opposition toward any attempt to modernize and diversify the economy have sparked a revolt in the [ShowRegionName('ural_region')] region. Led by a charismatic rebel named [yemelyan_pugatchev.GetName], he is promising the abolition of serfdom, reduction of taxes, and an end to administrative reforms." #NEW
+ flavor_rus.27.title: "La Rivolta di [yemelyan_pugatchev.GetLastNameWithNoTooltip]"
+ flavor_rus.27.entry: "La Rivolta di $pugatchev$"
+ flavor_rus.27.desc: "Widespread dissatisfaction with the harsh conditions faced by the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and general opposition toward any attempt to modernize and diversify the economy have sparked a revolt in the [ShowRegionName('ural_region')] region. Led by a charismatic rebel named [yemelyan_pugatchev.GetName], he is promising the abolition of serfdom, reduction of taxes, and an end to administrative reforms."
  flavor_rus.27.a: "Le masse si muovono."
  pugatchev_uprising: "Rivolta di Pugatchev"
- pugatchev_uprising_tt: "Many [pops|e] in then [ShowRegionName('ural_region')] join [pugatchev_uprising.GetName]" #DA TRADURRE
+ pugatchev_uprising_tt: "Many [pops|e] in then [ShowRegionName('ural_region')] join [pugatchev_uprising.GetName]"
  flavor_rus.27.tt1: "La ribellione si estende alla regione dell'[ShowRegionName('russian_region')] a causa di un ampio malcontento tra i [ShowPopTypeName('peasants')]."
  flavor_rus.27.b: "Offrire concessioni sostanziali."
  flavor_rus.27.historical_info: "La Rivolta di Pugatchev ebbe inizio nel 1773 nella regione degli Urali. Guidata da Emeliano Pugatchev, fu una rivolta di cosacchi e contadini sfollati, al seguito di un leader che sosteneva di essere Pietro III, il marito assassinato della zarina Caterina II. Nell'inverno 1773-1774, la rivolta aveva preso il controllo di gran parte del bacino del Volga e aveva persino minacciato Mosca, portando il regno di Caterina sull'orlo del collasso. Alla fine, le truppe regolari al comando di Suvarow riuscirono a catturare Pugatchev nei pressi di Zaritsyn, che fu giustiziato a Mosca."
@@ -251,7 +215,7 @@
  flavor_rus.28.a: "Emettere una Carta di Nobiltà."
  flavor_rus.28.b: "Consentire una certa libertà."
  flavor_rus.28.historical_info: "Dopo la rivolta di Pugachev, Caterina II cambiò la sua posizione sulla servitù della gleba. Inizialmente progettando l'emancipazione, si rese conto dell'opposizione che avrebbe incontrato da parte degli influenti proprietari terrieri, fondamentali per il suo sostegno. Temendo il caos, abbandonò l'idea, rafforzando invece il sistema oppressivo. Caterina estese la servitù della gleba agli ucraini, precedentemente liberi, e aggravò la situazione dei contadini concedendo terre della corona ai suoi alleati. Alla fine del suo regno, la Russia aveva pochi contadini liberi, in netto contrasto con le sue intenzioni iniziali."
- variable_rus_pugachev_uprising_tt: "Pugachev's Uprising Threatens the Realm" #NEW
+ variable_rus_pugachev_uprising_tt: "Pugachev's Uprising Threatens the Realm"
   
  flavor_rus.29.title: "La Legislazione un po' Liberale"
  flavor_rus.29.entry: "$flavor_rus.29.title$"
@@ -262,54 +226,45 @@
  flavor_rus.29.b: "È perfetto così com'è."
  flavor_rus.29.historical_info: "Lo zar Paolo I, con l'obiettivo di rafforzare l'autocrazia, invertì molte delle politiche di Caterina 'la Grande', tra cui il ripristino di agenzie amministrative centralizzate, l'aumento del controllo burocratico sul governo locale e la limitazione dell'autorità nobiliare. A differenza di Caterina, che perpetuò la servitù della gleba, Paolo fu il primo zar a ridurre gli oneri per i russi comuni."
  
- flavor_rus.30.title: "Le Scintille del Cambiamento"
- flavor_rus.30.entry: "$flavor_rus.30.title$"
- flavor_rus.30.desc: "L'attuazione di un nuovo sistema costituzionale rimane una priorità assoluta per il pioniere progressista [mikhail_speransky.GetName], che rimane nel gabinetto per guidare qualsiasi cambiamento adeguato. Accogliamo i venti del cambiamento e navighiamo in acque inesplorate con la sola bussola liberale a guidarci."
- flavor_rus.30.a: "Venti in arrivo!"
- enable_speransky_liberalization_reform: "Grants access to the [ShowGovernmentReformName('speransky_liberalization_reform')] [government_reform|e]" #DA TRADURRE
- flavor_rus.30.tt1: "Vengono compiuti passi avanti per modernizzare l'amministrazione [target_root_country.Custom('IT_Della')][target_root_country.GetName] nonostante l'opposizione [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
- flavor_rus.30.b: "Controverso e pericoloso."
- flavor_rus.30.historical_info: "Lo zar Alessandro I, guidato da una visione di riforma, intraprese cambiamenti sostanziali durante il suo governo. Nel 1802 introdusse un'amministrazione più organizzata istituendo otto ministeri, una mossa che dimostrava il suo impegno per un governo efficiente. Quest'epoca vide l'influenza di Mikhail Speransky, un consigliere chiave dello zar e un sostenitore della modernizzazione."
- 
  flavor_rus.31.title: "La Cospirazione di Anjala"
  flavor_rus.31.entry: "$flavor_rus.31.title$"
  flavor_rus.31.desc: "Un consistente gruppo di soldati finlandesi al servizio di [johan_jagerhorn.GetNameWithNoTooltip], un membro dei [GetCountry('SWE').GetGovernment.GetEstateName('nobles_estate')] [GetCountry('SWE').GetAdjective], ci ha inviato un dispaccio in cui dichiara illegale la guerra in corso e ci chiede di considerare la possibilità di aiutarli a formare una nazione indipendente [GetCountry('FIN').Custom('IT_Della')][GetCountry('FIN').GetName]. Potrebbe essere utile come stato cuscinetto e fungere da terreno di sosta per ulteriori incursioni nel territorio [GetCountry('SWE').GetAdjectiveWithNoTooltip]."
  flavor_rus.31.a: "Diamo loro il nostro sostegno."
- flavor_rus.31.a.custom: "All [ShowPopTypeName('peasants')] in [ShowAreaName('finland_area')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and join [anjala_conspirators.GetName]" #DA TRADURRE
+ flavor_rus.31.a.custom: "All [ShowPopTypeName('peasants')] in [ShowAreaName('finland_area')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and join [anjala_conspirators.GetName]"
  anjala_conspirators: "I cospiratori di Anjala"
  flavor_rus.31.b: "Respingete le loro suppliche."
  rus_rejected_anjala_league: "Bocciata la Lega Anjala"
- flavor_rus.31.tt1: "The followers of John Jägerhorn are unlikely to muster enough support to stage an uprising" #NEW
+ flavor_rus.31.tt1: "I seguaci di [johan_jagerhorn.GetNameWithNoTooltip] difficilmente riusciranno a raccogliere sostegno sufficiente per organizzare una rivolta"
  flavor_rus.31.historical_info: "La cospirazione di Anjala fu un complotto di un gruppo di ufficiali e politici svedesi insoddisfatti della guerra in corso contro la Russia. I cospiratori cercarono di negoziare una pace separata con la Russia, ritenendo che il proseguimento della guerra avrebbe comportato perdite significative per la Svezia. L'evento ebbe un forte impatto sulla politica svedese. Anche se i negoziati di pace si svolsero senza il coinvolgimento diretto dei cospiratori, le loro azioni evidenziarono il malcontento e la frustrazione nei confronti del governo del re."
 
  flavor_rus.32.title: "[michailo_shcherbatov.GetNameWithNoTooltip]"
- flavor_rus.32.entry: "Michailo Shcherbatov" #NEW
- flavor_rus.32.desc: "Conservative intellectual [michailo_shcherbatov.GetName] writes extensively on cultural, social, and political matters, expressing conventional views that criticize the influence of Enlightenment ideas in [ROOT.GetCountry.GetName]. His work generally expresses concerns about the erosion of morality and social order in the face of Western European influences, yet he may prove a valuable asset if we desire a return to conventional values." #NEW
+ flavor_rus.32.entry: "Michailo Shcherbatov"
+ flavor_rus.32.desc: "Conservative intellectual [michailo_shcherbatov.GetName] writes extensively on cultural, social, and political matters, expressing conventional views that criticize the influence of Enlightenment ideas in [ROOT.GetCountry.GetName]. His work generally expresses concerns about the erosion of morality and social order in the face of Western European influences, yet he may prove a valuable asset if we desire a return to conventional values."
  flavor_rus.32.a: "Invitatelo in tribunale."
- flavor_rus.32.tt2: "His literary works greatly influence [target_root_country.GetAdjective] society and steer it towards conservative thought" #NEW
- flavor_rus.32.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] expresses delight over the increasing influence of Michael Shcherbatov, as his thoughts align closely with the [ShowPolicyName('strict_censorship')] [policy|e]." #NEW
+ flavor_rus.32.tt2: "[michailo_shcherbatov.GetHisHer|U] opere letterarie influenzano profondamente la società [target_root_country.GetAdjective] e la orientano verso il pensiero conservatore"
+ flavor_rus.32.tt3: "Il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] esprime soddisfazione per la crescente influenza di [michailo_shcherbatov.GetNameWithNoTooltip], poiché le [michailo_shcherbatov.GetHisHer] idee si allineano strettamente con la [policy|e] [ShowPolicyName('strict_censorship')]."
  STATIC_MODIFIER_NAME_literary_moralist: "Moralista letterario"
  flavor_rus.32.b: "I nostri valori non sono allineati."
  flavor_rus.32.historical_info: "Mikhail Shcherbatov fu un importante statista, storico e filosofo della Russia del XVIII secolo. Divenne membro del Board of Trade nel 1768, presidente del Collegium of State Income nel 1778 e senatore nel 1779. Pur essendo uno dei principali rappresentanti del conservatorismo russo e un critico del movimento illuminista russo, è ricordato come autore di diverse opere che criticano il decadimento dei valori morali."
  
  flavor_rus.33.title: "[vasily_tatishchev.GetNameWithNoTooltip]"
- flavor_rus.33.entry: "Vasily Tatishchev" #NEW
- flavor_rus.33.desc: "Enlightened reformer and savvy historian [vasily_tatishchev.GetName] has served in the military for some time, rising fast in the ranks only to take on an administrative position within a government bureau. He has requested to retire from active service and pursuit his writing instead, a request we must ponder since he could be of continued use by remaining at his governmental post." #NEW
- flavor_rus.33.a: "Encourage his penmanship." #NEW
- flavor_rus.33.b: "He must remain in an advisory capacity." #NEW
+ flavor_rus.33.entry: "Vasily Tatishchev"
+ flavor_rus.33.desc: "Enlightened reformer and savvy historian [vasily_tatishchev.GetName] has served in the military for some time, rising fast in the ranks only to take on an administrative position within a government bureau. He has requested to retire from active service and pursuit his writing instead, a request we must ponder since he could be of continued use by remaining at his governmental post."
+ flavor_rus.33.a: "Encourage his penmanship."
+ flavor_rus.33.b: "He must remain in an advisory capacity."
  flavor_rus.33.c: "Sparisci dalla nostra vista!"
  STATIC_MODIFIER_NAME_exiled: "Esiliato"
- flavor_rus.33.tt2: "He is dismissed from service and exiled to [ShowRegionName('east_siberia_region')] for the remainder of his life, reducing the likelihood of any litterary work being created" #NEW
+ flavor_rus.33.tt2: "[vasily_tatishchev.GetSheHe|U] viene destituito dal servizio ed esiliato in [ShowRegionName('east_siberia_region')] per il resto della [vasily_tatishchev.GetHisHer] vita, riducendo la probabilità che venga creata qualsiasi opera letteraria"
  flavor_rus.33.historical_info: "Statista ed etnografo russo, Vasilij Tatishcev si laureò alla scuola di ingegneria di Mosca e partecipò alla Grande Guerra del Nord contro la Svezia. Divenne una figura importante del Ministero degli Esteri durante il regno di Pietro 'il Grande' e in seguito sostenne l'ascesa di Anna di Russia in opposizione al Supremo Consiglio Privato. Fu autore di diverse opere storiografiche, tra cui una delle prime opere complete sulla storia russa."
  
  flavor_rus.34.title: "[mikhail_lomonosov.GetNameWithNoTooltip]"
- flavor_rus.34.entry: "Mikhail Lomonosov" #NEW
- flavor_rus.34.desc: "Academic visionary and pro-autocrat [mikhail_lomonosov.GetName] has demonstrated a great aptitude for the arts of science, philosophy, and polymathy. However, his humble background denies him access to higher education. Offering a scholarship could allow him to study at the Slavic Greek Latin Academy in [ShowLocationName('moscow')], an investment from which we are likely to reap benefits in the coming years. In addition, we could influence the field of studies depending on which area we wish to excel in." #NEW
+ flavor_rus.34.entry: "Mikhail Lomonosov"
+ flavor_rus.34.desc: "Academic visionary and pro-autocrat [mikhail_lomonosov.GetName] has demonstrated a great aptitude for the arts of science, philosophy, and polymathy. However, his humble background denies him access to higher education. Offering a scholarship could allow him to study at the Slavic Greek Latin Academy in [ShowLocationName('moscow')], an investment from which we are likely to reap benefits in the coming years. In addition, we could influence the field of studies depending on which area we wish to excel in."
  flavor_rus.34.a: "Un uomo di scienza e di illuminazione."
  flavor_rus.34.b: "Un sostenitore delle riforme educative."
- flavor_rus.34.tt2: "Michael Lomonosov devotes his time to contributions toward [target_root_country.GetAdjective] culture and education." #NEW
- enable_imperatorskiy_moskovskiy_universitet_advance: "Grants access to the [ShowAdvanceName('imperatorskiy_moskovskiy_universitet')] [advance|e]" #DA TRADURRE
- flavor_rus.34.tt3: "The contributions of Michael Lomonosov are instrumental in the establishment of the Imperial [ShowLocationNameWithNoTooltip('moscow')] University" #NEW
+ flavor_rus.34.tt2: "[mikhail_lomonosov.GetNameWithNoTooltip] dedica il [mikhail_lomonosov.GetHisHer] tempo al contributo verso la cultura e l'istruzione [target_root_country.GetAdjective]."
+ enable_imperatorskiy_moskovskiy_universitet_advance: "Grants access to the [ShowAdvanceName('imperatorskiy_moskovskiy_universitet')] [advance|e]"
+ flavor_rus.34.tt3: "I contributi di [mikhail_lomonosov.GetNameWithNoTooltip] sono fondamentali per la fondazione dell'Università Imperiale di [ShowLocationNameWithNoTooltip('moscow')]"
  flavor_rus.34.c: "L'autoritarismo draconiano non ha posto qui."
  flavor_rus.34.historical_info: "Mikhail Lomonosov fu uno scienziato e intellettuale russo che a diciannove anni entrò nell'Accademia slavo-greco-latina di Mosca fingendosi figlio di un sacerdote. Dopo aver ottenuto una borsa di studio all'Università di San Pietroburgo, studiò all'estero all'Università di Marburgo sotto la guida del filosofo illuminista tedesco Christian Wolff. Lomonosov diede contributi significativi in vari campi scientifici, in particolare scoprendo l'atmosfera di Venere."
  
@@ -319,7 +274,7 @@
  flavor_rus.35.a: "È la volontà del nostro Sovrano."
  flavor_rus.35.tt1: "I membri di [cabinet|U] vengono portati via, per non essere mai più rivisti"
  flavor_rus.35.b: "Fate rinchiudere [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] in una torre."
- flavor_rus.35.b.entry: "Have him locked up in a tower." #NEW
+ flavor_rus.35.b.entry: "Have him locked up in a tower."
  flavor_rus.35.historical_info: "Dopo la morte della prima moglie Anastasia, Ivan accusò i suoi amici del consiglio di averla avvelenata, provocando il loro esilio. In questo periodo, senza nessuno che lo trattenesse, la brutalità di Ivan si intensificò."
 
  flavor_rus.36.title: "La Camera delle Finanze"
@@ -337,21 +292,21 @@
  flavor_rus.37.historical_info: "La pratica di ricavare il sostentamento dalla terra era un sistema attuato nella Russia medievale, dove spettava alla popolazione locale sostenere i governatori provinciali. I contadini non potevano sempre fornire i beni richiesti, costringendoli a offrire pagamenti in natura direttamente alla classe dirigente. L'abolizione del sistema di pagamento faceva parte delle più ampie riforme amministrative attuate dallo zar Ivan IV."
 
  flavor_rus.38.title: "Le Misure di Austerità di [boris_morozov.GetNameWithNoTooltip]"
- flavor_rus.38.entry: "The Austerity Measures of Boris Morozov" #NEW
+ flavor_rus.38.entry: "The Austerity Measures of Boris Morozov"
  flavor_rus.38.desc: "Il sovrintendente finanziario [boris_morozov.GetName] sta preparando una serie di licenziamenti e tagli agli stipendi per rafforzare l'erario e garantire che l'apparato governativo sia proporzionato alle esigenze del Paese. Queste misure potrebbero avere effetti negativi sulla capacità amministrativa [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] e un effetto negativo sull'esercito, poiché sia gli impiegati statali che i soldati vedranno ridotti i loro guadagni."
  flavor_rus.38.a: "Tutti dobbiamo fare dei sacrifici."
  STATIC_MODIFIER_NAME_reduced_government_expenses: "Riduzione delle spese governative"
  flavor_rus.38.b: "Delegare le responsabilità ai [ShowPopTypeNameWithNoTooltip('nobles')]."
- flavor_rus.38.tt1: "The hands of Boris Morozov become somewhat tied as power is shifted away from the state" #NEW
+ flavor_rus.38.tt1: "Le mani di [boris_morozov.GetNameWithNoTooltip] restano in parte legate, mentre il potere viene sottratto allo stato"
  flavor_rus.38.historical_info: "Boris Morozov era deciso a migliorare le disastrate finanze della Russia e aveva come priorità quella di aumentare le entrate dell'erario con ogni mezzo. Furono aumentate diverse tasse, alcune delle quali sfociarono nella famigerata rivolta del sale del 1648, ma furono anche effettuati tagli all'amministrazione generale del Paese."
  
  flavor_rus.39.title: "Il Diplomatico mal Interpretato"
  flavor_rus.39.entry: "$flavor_rus.39.title$"
- flavor_rus.39.desc: "Unconventional Attaché [fyodor_baikov.GetName] has extensive experience in dealing with foreign dignitaries in far-away lands, and is expected to return to active duty following a lengthy journey. We must utilize his wealth of knowledge to secure beneficial treaties with other powers, tapping into his unique insights to boost positive international relations and advance our interests on the global stage." #NEW
+ flavor_rus.39.desc: "Unconventional Attaché [fyodor_baikov.GetName] has extensive experience in dealing with foreign dignitaries in far-away lands, and is expected to return to active duty following a lengthy journey. We must utilize his wealth of knowledge to secure beneficial treaties with other powers, tapping into his unique insights to boost positive international relations and advance our interests on the global stage."
  flavor_rus.39.a: "Invitatelo in tribunale."
- flavor_rus.39.tt2: "He may carry out high-stake diplomatic missions if assigned to [cabinet|e]" #NEW
+ flavor_rus.39.tt2: "[fyodor_baikov.GetSheHe|U] potrebbe condurre missioni diplomatiche ad alto rischio se assegnato al [cabinet|e]"
  flavor_rus.39.b: "Un noioso incarico alla scrivania ci aspetta."
- flavor_rus.39.tt3: "He is tasked with completing ambassador reports from previous journeys, greatly adding to the knowledge of foreign courts" #NEW
+ flavor_rus.39.tt3: "[fyodor_baikov.GetSheHe|U] viene incaricato di completare i rapporti diplomatici dei viaggi precedenti, arricchendo notevolmente la conoscenza delle corti straniere"
  flavor_rus.39.c: "Incline ai lapsus."
  flavor_rus.39.historical_info: "Fyodor Baikov fu il primo ambasciatore russo in Cina. È ricordato per il tentativo di negoziare un trattato che avrebbe dovuto incoraggiare il commercio tra i due imperi emergenti e risolvere ogni potenziale disputa territoriale sorta durante l'espansione della Russia verso est."
 
@@ -370,28 +325,15 @@
  flavor_rus.41.b: "Un'impresa costosa come una lontra."
  flavor_rus.41.historical_info: "La RAC, o Compagnia Russo-Americana, fu creata per gestire gli affari russi in Nord America. La regione dell'Alaska era ricca di lontre marine e la costante richiesta di pellicce fece sì che gli esploratori ritenessero redditizio stabilire insediamenti per il commercio di pellicce e l'estrazione delle risorse. La compagnia continuò a operare fino al suo scioglimento, avvenuto a metà del XVIII secolo, a causa della caccia eccessiva e delle mutate condizioni di mercato."
 
- flavor_rus.42.title: "Società Economica Libera"
- flavor_rus.42.entry: "$flavor_rus.42.title$"
- flavor_rus.42.desc_common1: "L'agricoltura rimane un punto fermo della nostra società, ma i metodi di coltivazione e le tecniche agricole utilizzate dai [ShowPopTypeName('peasants')] sono statiche e poco produttive rispetto alle potenze concorrenti."
- flavor_rus.42.desc_orlov: "$flavor_rus.42.desc_common1$ Per un costo modesto, l'architetto del potere [grigory_orlov.GetName] ha proposto la creazione di un'organizzazione economica per far progredire le conoscenze in campo agricolo e commerciale, offrendosi anche di assumere un ruolo di primo piano nella sua amministrazione. $flavor_rus.42.desc_common2$"
- flavor_rus.42.desc_ruler: "$flavor_rus.42.desc_common1$ Il nostro illuminato Sovrano [target_character.GetName] si è offerto di sponsorizzare la creazione di un'organizzazione economica per far progredire le conoscenze in campo agricolo e commerciale. $flavor_rus.42.desc_common2$"
- flavor_rus.42.desc_both: "L'Architetto del Potere di $flavor_rus.42.desc_common1$ [grigory_orlov.GetName] ha proposto la creazione di un'organizzazione economica per far progredire le conoscenze nel campo dell'agricoltura e del commercio, e si è offerto di assumere un ruolo di primo piano nella sua amministrazione. Il nostro illuminato Sovrano [target_character.GetName] si è offerto di sponsorizzare questa impresa per assicurarne la realizzazione. $flavor_rus.42.desc_common2$"
- flavor_rus.42.desc_common2: "\n\nSe l'organizzazione avrà successo, dovrà anche puntare a migliorare l'istruzione degli agricoltori e a promuovere la formazione di lavoratori qualificati, fornendo consigli pratici e pubblicando riviste e ricerche sull'argomento."
- flavor_rus.42.a: "Dopotutto, dobbiamo nutrirci."
- STATIC_MODIFIER_NAME_potato_varieties_introduced: "Varietà di patate introdotte"
- flavor_rus.42.tt1: "La Società introduce nuove varietà di [ShowGoodsName('potato')] e metodi di coltivazione all'avanguardia, che contribuiscono ad aumentare la resa dei raccolti."
- flavor_rus.42.b: "Non è questa la strada."
- flavor_rus.42.tt2: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] plaudono agli sforzi per mantenere la loro posizione di potere sui [ShowPopTypeName('peasants')]"
- flavor_rus.42.historical_info: "La Società Economica Libera fu fondata da Grigorij Orlov con il sostegno dell'imperatrice Caterina II, che riteneva che le pratiche agricole della Russia fossero obsolete e in ritardo rispetto alle altre grandi potenze, in particolare la Gran Bretagna. La società pubblicò diversi documenti sulle nuove tecniche agricole, introdusse colture e organizzò iniziative educative per gli agricoltori, affinché potessero lavorare la terra in modo più efficiente e produrre più cibo."
-
  flavor_rus.43.title: "[grigory_orlov.GetNameWithNoTooltip]"
- flavor_rus.43.entry: "Grigory Orlov" #NEW
+ flavor_rus.43.entry: "Grigory Orlov"
  flavor_rus.43.desc_empress: "A dashing officer and wealthy land-owner has caught the attention of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], who has invited him to serve at [ROOT.GetCountry.GetGovernment.GetRuler.GetHimHer] whim. $flavor_rus.43.desc_common$"
  flavor_rus.43.desc_artillery_yard: "A highly skilled officer and wealthy land-owner stationed at the [ShowBuildingTypeName('moscow_artillery_yard')] has stimulated the curiosity of senior figures, who have invited him to take on additional responsibilities. $flavor_rus.43.desc_common$"
+ flavor_rus.43.desc_default: "Un affascinante ufficiale e ricco proprietario terriero ha attirato l'attenzione di importanti figure di corte, che lo hanno invitato ad assumere ulteriori responsabilità. $flavor_rus.43.desc_common$"
  flavor_rus.43.desc_common: "Con un'attitudine già dimostrata per la guerra navale e gli affari di Stato, [grigory_orlov.GetName] sarebbe un'ottima aggiunta al Gabinetto o alla Marina."
  flavor_rus.43.a: "Un burocrate nel cuore."
- flavor_rus.43.tt2: "He may champion several initiatives if assigned to [cabinet|e]" #NEW
- flavor_rus.43.b: "The sea awaits him." #NEW
+ flavor_rus.43.tt2: "[grigory_orlov.GetSheHe|U] potrebbe promuovere diverse iniziative se assegnato al [cabinet|e]"
+ flavor_rus.43.b: "The sea awaits him."
  flavor_rus.43.c: "Non abbastanza elegante."
  flavor_rus.43.historical_info: "Grigorij Orlov divenne il favorito e l'amante di Caterina II e contribuì a orchestrare il colpo di stato che vide il marito deporre in suo favore. Appassionato mecenate delle arti e dell'apprendimento, collezionò dipinti di artisti di fama mondiale e sostenne il miglioramento delle condizioni di vita e dell'istruzione dei servi della gleba."
 
@@ -419,21 +361,21 @@
  flavor_rus.46.b: "Favorisce un uomo dai valori liberali."
  flavor_rus.46.tt1: "Il giornale inizia a pubblicare riviste satiriche che deridono le consuetudini sociali consolidate, che potrebbero avere ramificazioni future."
  flavor_rus.46.historical_info: "Il #italic Moskovskiye Vedomosti#! è stato il più grande giornale russo del XVIII e XIX secolo e ha svolto un ruolo importante nella distribuzione di notizie, informazioni e commenti relativi a Mosca e agli eventi internazionali. Utilizzava la stampa universitaria e veniva pubblicato settimanalmente, fino alla sua chiusura da parte dei bolscevichi in seguito alla Rivoluzione d'Ottobre."
- variable_the_first_vedomosti_tt: "The First Vedomosti has been Printed" #NEW
+ variable_the_first_vedomosti_tt: "The First Vedomosti has been Printed"
 
  flavor_rus.47.title: "[mikhail_speransky.GetNameWithNoTooltip]"
- flavor_rus.47.entry: "Mikhail Speransky" #NEW
- flavor_rus.47.desc: "Reformist intellectual [mikhail_speransky.GetName] has wholeheartedly embraced the ideals of liberalism during his tenure at [university_location.GetName] [ShowBuildingTypeName('university')], ideals which he now eagerly wishes to infuse into the governing apparatus of [ROOT.GetCountry.GetName]. Let us seek out a fitting role for him to shake up the administration and pave the way for a new era of modernity." #NEW
+ flavor_rus.47.entry: "Mikhail Speransky"
+ flavor_rus.47.desc: "Reformist intellectual [mikhail_speransky.GetName] has wholeheartedly embraced the ideals of liberalism during his tenure at [university_location.GetName] [ShowBuildingTypeName('university')], ideals which he now eagerly wishes to infuse into the governing apparatus of [ROOT.GetCountry.GetName]. Let us seek out a fitting role for him to shake up the administration and pave the way for a new era of modernity."
  flavor_rus.47.a: "Un vero influenzatore di menti."
- flavor_rus.47.tt2: "He is elected an honorary member of the [ShowBuildingTypeName('academy_of_sciences')], further sharpening his intellectual standing and influence" #NEW
- flavor_rus.47.tt3: "He joins the [ShowBuildingTypeName('free_economic_society')], further adding to his field of expertise" #NEW
+ flavor_rus.47.tt2: "[mikhail_speransky.GetSheHe|U] viene eletto membro onorario del [ShowBuildingTypeName('academy_of_sciences')], rafforzando ulteriormente il [mikhail_speransky.GetHisHer] prestigio intellettuale e la sua influenza"
+ flavor_rus.47.tt3: "[mikhail_speransky.GetSheHe|U] entra a far parte della [ShowBuildingTypeName('free_economic_society')], ampliando ulteriormente il [mikhail_speransky.GetHisHer] campo di competenza"
  flavor_rus.47.b: "Un agente di disturbo."
- flavor_rus.47.tt4: "Michael Speransky seeks employment elsewhere" #NEW
+ flavor_rus.47.tt4: "[mikhail_speransky.GetNameWithNoTooltip] cerca impiego altrove"
  flavor_rus.47.historical_info: "Mikhail Speransky fu uno statista e riformatore durante il regno di Alessandro I e fu determinante per l'attuazione delle riforme globali volute dall'imperatore. L'obiettivo generale era un sistema amministrativo modernizzato e centralizzato che riducesse il potere della nobiltà e creasse un governo più efficiente. Questo obiettivo fu raggiunto principalmente attraverso le carte, che introdussero principi legali più uniformi. Alla fine cadde dal potere a causa dell'opposizione interna alle riforme proposte, ma le sue idee ebbero un impatto duraturo sui governi futuri."
 
  flavor_rus.48.title: "L'Usurpatore Illuminato"
  flavor_rus.48.entry: "$flavor_rus.48.title$"
- flavor_rus.48.desc: "A wealthy family of [target_culture.GetName] descent is proposing a marriage to [ROOT.GetCountry.GetGovernment.GetRuler.GetName] to secure a continued friendship and ensure the continuation of the esteemed [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. Somewhat of a tomboy, [sophie_of_anhalt_zerbst.GetName] has mastered the art of sword-fighting and is considered a well-educated and outspoken young lady with a flair for wordy exchanges. Despite a somewhat assertive demeanor, she will no doubt assume her role as a dutiful wife and fulfill the contractual responsibilities, blending tradition with her unique qualities." #NEW
+ flavor_rus.48.desc: "A wealthy family of [target_culture.GetName] descent is proposing a marriage to [ROOT.GetCountry.GetGovernment.GetRuler.GetName] to secure a continued friendship and ensure the continuation of the esteemed [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. Somewhat of a tomboy, [sophie_of_anhalt_zerbst.GetName] has mastered the art of sword-fighting and is considered a well-educated and outspoken young lady with a flair for wordy exchanges. Despite a somewhat assertive demeanor, she will no doubt assume her role as a dutiful wife and fulfill the contractual responsibilities, blending tradition with her unique qualities."
  flavor_rus.48.a: "Approvare l'abbinamento proposto."
  flavor_rus.48.b: "Un comportamento che non si addice a una signora."
  flavor_rus.48.historical_info: "La principessa Sofia di Anhalt-Zerbst, comunemente nota come Caterina 'la Grande', era una principessa di origine tedesca che sposò l'imperatore russo Pietro III. Spesso in contrasto con il marito, a causa della sua immaturità mentale, finì per rovesciarlo con l'aiuto dei consiglieri reali dopo una serie di decisioni politiche che le alienarono la maggior parte della nobiltà. Il governo di Caterina fu segnato dall'illuminismo e da una rinascita della cultura e della scienza, facendo finalmente riconoscere la Russia come Grande Potenza d'Europa."
@@ -444,34 +386,23 @@
  flavor_rus.49.a: "Lasciate che si svolga in modo pacifico."
  flavor_rus.49.tt1: "[target_ruler.GetNameWithNoTooltip] viene dichiarato inadatto a governare, rimosso dal potere e messo in cattività."
  flavor_rus.49.b: "Rob [target_ruler.GetNameWithNoTooltip] della sua vita."
- flavor_rus.49.b.entry: "Rob him of his life." #NEW
+ flavor_rus.49.b.entry: "Rob him of his life."
  flavor_rus.49.c: "Eseguire i cospiratori."
  flavor_rus.49.tt2: "I mercenari vengono rapidamente ingaggiati per salvaguardare il [target_root_country.GetGovernment.GetRulerTitle]"
- flavor_rus.49.tt3: "Catherine Askanier sees her freedom curtailed by the unfolding events" #NEW
+ flavor_rus.49.tt3: "[sophie_of_anhalt_zerbst.GetNameWithNoTooltip] vede la [sophie_of_anhalt_zerbst.GetHisHer] libertà limitata dagli eventi in corso"
  flavor_rus.49.historical_info: "Il colpo di Stato orchestrato da Caterina 'la Grande' contro il marito, l'imperatore Pietro III, fu motivato dal calo di consensi che egli era riuscito a suscitare nella nobiltà a causa delle sue eccentricità, delle sue decisioni militari e dell'attuazione di politiche impopolari. Caterina vedeva poche possibilità di autoconservazione e si sentì costretta ad agire di conseguenza."
- variable_rus_manifesto_of_freedom_tt: "The Manifesto of Freedom has been Issued" #NEW
-
- flavor_rus.50.title: "Accademia Imperiale delle Arti"
- flavor_rus.50.entry: "$flavor_rus.50.title$"
- flavor_rus.50.desc: "Il riformatore visionario [ivan_shuvalov.GetName] sta portando avanti le sue riforme del sistema educativo e continua a sostenere le arti. [ivan_shuvalov.GetSheHe|U] sta cercando di istituire un'accademia dedicata al raggiungimento dei più alti standard nelle arti e nell'architettura, di coltivare e sviluppare il talento artistico [ROOT.GetCountry.GetAdjective] sponsorizzando i suoi studenti più promettenti in città innovative in Europa per ulteriori studi. Facciamo nostra questa iniziativa e costruiamo una roccaforte del progresso culturale per trasformare l'[ShowLocationName('neva')] in un faro del classicismo."
- flavor_rus.50.a: "Una proposta cavalleresca."
- flavor_rus.50.tt1: "The esteemed Gregory Orlov donates a significant share of his art collection to the newly formed academy" #NEW
- flavor_rus.50.b: "Le responsabilità del Gabinetto hanno la precedenza."
- flavor_rus.50.tt2: "John Shuvalov solely focuses on [cabinet|e] duties, excelling at [ivan_shuvalov.GetHisher] post and raising the bar for public service" #NEW
- flavor_rus.50.c: "Se non è rotto."
- flavor_rus.50.tt3: "Gli stili architettonici attuali vengono rafforzati e godono di una seconda rinascita"
- flavor_rus.50.historical_info: "L'Accademia Imperiale delle Arti era un'accademia d'arte situata lungo il fiume Neva a San Pietroburgo. Fondata nel 1757 da Ivan Shuvalov, statista e appassionato d'arte, promuoveva lo stile e la tecnica neoclassica, mirava a emulare le accademie d'arte europee e invitava artisti stranieri a insegnare agli studenti russi."
+ variable_rus_manifesto_of_freedom_tt: "The Manifesto of Freedom has been Issued"
 
  flavor_rus.51.title: "Il Gentiluomo Mecenate"
  flavor_rus.51.entry: "$flavor_rus.51.title$"
- flavor_rus.51.desc: "A globetrotting nobleman with a profound interest in the arts and a vision of emulating European institutions as a means to spur artistic innovation is requesting to become directly involved with the cultural development of [ROOT.GetCountry.GetName]. Well-versed in etiquette and commanding a stable presence, [ivan_shuvalov.GetName] would rejoice at any opportunity granted to him that supports cultural and educational initiatives." #NEW
+ flavor_rus.51.desc: "A globetrotting nobleman with a profound interest in the arts and a vision of emulating European institutions as a means to spur artistic innovation is requesting to become directly involved with the cultural development of [ROOT.GetCountry.GetName]. Well-versed in etiquette and commanding a stable presence, [ivan_shuvalov.GetName] would rejoice at any opportunity granted to him that supports cultural and educational initiatives."
  flavor_rus.51.a: "L'abilità statale diventa lui."
- flavor_rus.51.tt2: "He might set the stage for artistic ventures if assigned to [cabinet|e]" #NEW
+ flavor_rus.51.tt2: "[ivan_shuvalov.GetSheHe|U] potrebbe gettare le basi per iniziative artistiche se assegnato al [cabinet|e]"
  flavor_rus.51.b: "Un attore chiave per mantenere un'eredità culturale."
- flavor_rus.51.tt3: "He works tirelessly to ensure the promotion and dissemination of art produced within the country" #NEW
- flavor_rus.51.tt4: "He joins the faculty of the [ShowLocationName('moscow')] [ShowBuildingTypeName('university')] as a curator and may attract the finest scholars" #NEW
+ flavor_rus.51.tt3: "[ivan_shuvalov.GetSheHe|U] lavora instancabilmente per garantire la promozione e la diffusione dell'arte prodotta nel paese"
+ flavor_rus.51.tt4: "[ivan_shuvalov.GetSheHe|U] entra a far parte del corpo docente dell'[ShowBuildingTypeName('university')] di [ShowLocationName('moscow')] come curatore e potrebbe attrarre i migliori studiosi"
  flavor_rus.51.c: "Emulare l'arte è inutile."
- flavor_rus.51.tt5: "John Shuvalov is refused a position" #NEW
+ flavor_rus.51.tt5: "A [ivan_shuvalov.GetNameWithNoTooltip] viene rifiutata una posizione"
  flavor_rus.51.historical_info: "Ivan Shuvalov era un nobile russo che ricoprì diverse cariche governative legate all'istruzione e alla cultura nel corso del XVIII secolo. Aveva ricevuto un'istruzione completa e cercò di riportare le influenze illuminate di Paesi come l'Italia e la Francia per promuovere la ragione, l'istruzione e lo scambio culturale."
 
  flavor_rus.52.title: "Membro della Royal Society"
@@ -482,49 +413,24 @@
  STATIC_MODIFIER_NAME_magnet_for_scholars: "Magnete per studiosi"
  STATIC_MODIFIER_NAME_gazette_subscription_surge: "Aumento degli abbonamenti alla Gazette"
  flavor_rus.52.tt1: "Il [ShowBuildingTypeName('imperial_academy_of_arts')] vede un afflusso di artisti che cercano di iscriversi"
- flavor_rus.52.tt2: "The [ShowLocationName('moscow')] [ShowBuildingTypeName('university')] attracts a wealth of students who seek the mentorship and curating of John Shuvalov" #NEW
- flavor_rus.52.tt3: "The [ShowLocationName('moscow')] Gazette sees a spike in subscriptions as its readers are keen to read the editorials of come-to-fame John Shuvalov, who frequently writes articles for the paper" #NEW
+ flavor_rus.52.tt2: "L'[ShowBuildingTypeName('university')] di [ShowLocationName('moscow')] attira una moltitudine di studenti in cerca del mentorato e della cura di [ivan_shuvalov.GetNameWithNoTooltip]"
+ flavor_rus.52.tt3: "La Gazzetta di [ShowLocationName('moscow')] registra un'impennata negli abbonamenti, poiché i suoi lettori sono ansiosi di leggere gli editoriali del neo-famoso [ivan_shuvalov.GetNameWithNoTooltip], che scrive spesso articoli per il giornale"
  flavor_rus.52.b: "Accettare, ma con un programma diverso."
- flavor_rus.52.tt4: "John Shuvalov seizes the award ceremony as a platform for promoting [target_root_country.GetName] as a beacon of enlightenment" #NEW
+ flavor_rus.52.tt4: "[ivan_shuvalov.GetNameWithNoTooltip] coglie l'occasione della cerimonia di premiazione per promuovere [target_root_country.GetName] come faro dell'illuminismo"
  flavor_rus.52.historical_info: "La Fellowship of the Royal Society è un prestigioso riconoscimento concesso dalla Royal Society di Londra. Considerata un'onorificenza di prestigio, viene spesso assegnata a scienziati, ricercatori e studiosi affermati. Nel 1758, Ivan Shuvalov ricevette questa onorificenza per il suo ruolo fondamentale nella creazione del primo teatro e della prima università russi, oltre che per il suo contributo all'istituzione dell'Accademia Imperiale delle Arti."
- variable_shuvalov_the_teacher_tt: "Ivan Shuvalov Patronizes Learning" #NEW
-
- flavor_rus.53.title: "L'Orfanotrofio ben Voluto"
- flavor_rus.53.entry: "$flavor_rus.53.title$"
- flavor_rus.53.desc_ivan_betskoy_sole_contributor: "Un'idea degna di nota è stata presentata dal membro del gabinetto [ivan_betskoy.GetName] $flavor_rus.53.desc$"
- flavor_rus.53.desc_common_initiative: "Un'idea degna di nota e generosa è stata presentata congiuntamente dal membro del gabinetto [ivan_betskoy.GetName] e da [target_character.GetName] $flavor_rus.53.desc$."
- flavor_rus.53.desc_ruler_sole_contributor: "Un'idea ben congegnata è stata presentata da [target_character.GetName] $flavor_rus.53.desc$"
- flavor_rus.53.desc: "per affrontare quella che viene percepita come una delle più grandi tragedie in atto, ovvero l'abbandono dei bambini appena nati. Si suggerisce di istituire un rifugio sicuro per i meno fortunati e di fornire loro nutrimento e letteratura per garantire che crescano e diventino membri produttivi della società. La questione dei finanziamenti rimane un problema irrisolto, ma si stanno valutando diverse opzioni praticabili per sostenere questa iniziativa."
- flavor_rus.53.a: "Un investimento redditizio."
- flavor_rus.53.tt1: "L'orfanotrofio ha creato diverse filiali bancarie private per gestire i prestiti e i risparmi per finanziare le operazioni."
- flavor_rus.53.b: "Una causa degna di nota."
- flavor_rus.53.tt2: "I finanziamenti sono generosamente forniti dalla tesoreria."
- flavor_rus.53.c: "Ognuno per conto suo."
- flavor_rus.53.historical_info: "L'orfanotrofio di Mosca fu fondato nel 1763 sotto la direzione dell'imperatrice Caterina 'la Grande' e di Ivan Betskoy, ministro del suo governo e grande sostenitore delle riforme educative. L'istituzione fu concepita quando gli ideali illuministi stavano prendendo piede in Russia e in Europa. Nonostante fosse ben finanziata, era afflitta da un alto tasso di mortalità infantile e aveva un impatto limitato sulla vita dei bambini abbandonati, anche se alcuni beneficiarono dell'istruzione fornita e furono in grado di ottenere un lavoro come risultato."
+ variable_shuvalov_the_teacher_tt: "Ivan Shuvalov Patronizes Learning"
 
  flavor_rus.54.title: "Le Istigazioni di [ivan_betskoy.GetNameWithNoTooltip]"
- flavor_rus.54.entry: "The Instigations of Ivan Betskoy" #NEW
- flavor_rus.54.desc: "A bastard of noble ancestry has been able to negotiate his release from captivity in [GetCountry('SWE').GetName] and is returning to [ROOT.GetCountry.GetName] seeking a position within governance. [ivan_betskoy.GetName] had already made a name for himself in the army before sustaining a fall, which saw him retire from service and instead pursue a career in matters of diplomacy. He burns for subjects encompassing education and social concerns, and is hoping to make great strides towards a more equal society." #NEW
+ flavor_rus.54.entry: "The Instigations of Ivan Betskoy"
+ flavor_rus.54.desc: "A bastard of noble ancestry has been able to negotiate his release from captivity in [GetCountry('SWE').GetName] and is returning to [ROOT.GetCountry.GetName] seeking a position within governance. [ivan_betskoy.GetName] had already made a name for himself in the army before sustaining a fall, which saw him retire from service and instead pursue a career in matters of diplomacy. He burns for subjects encompassing education and social concerns, and is hoping to make great strides towards a more equal society."
  flavor_rus.54.a: "Un'anima devota e visionaria."
- flavor_rus.54.tt2: "He may initiate educational and social reforms if assigned to [cabinet|e]" #NEW
- flavor_rus.54.b: "Restrict his work." #NEW
+ flavor_rus.54.tt2: "[ivan_betskoy.GetSheHe|U] potrebbe avviare riforme educative e sociali se assegnato al [cabinet|e]"
+ flavor_rus.54.b: "Restrict his work."
  STATIC_MODIFIER_NAME_barred_from_educational_ministry: "Interdizione dal ministero dell'Educazione"
- flavor_rus.54.tt3: "He sees his responsabilities limited to matters concerning public care and assistance to the amusement of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" #NEW
+ flavor_rus.54.tt3: "[ivan_betskoy.GetSheHe|U] vede le [ivan_betskoy.GetHisHer] responsabilità limitate alle questioni di assistenza pubblica, con grande divertimento dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]"
  flavor_rus.54.c: "Un eroe caduto di scarso valore."
- flavor_rus.54.tt4: "John Betskoy is refused a position" #NEW
+ flavor_rus.54.tt4: "A [ivan_betskoy.GetNameWithNoTooltip] viene rifiutata una posizione"
  flavor_rus.54.historical_info: "Ivan Betskoy fu uno dei principali consiglieri dell'imperatrice Caterina 'la Grande', posizione che ottenne grazie al suo sostegno durante il colpo di stato che la portò al trono. Partecipò a diverse riforme che unificarono il sistema educativo, tra cui la creazione di istituzioni per l'istruzione delle donne e degli orfani. Avversario delle classi sociali dominanti, Betskoy si dedicò anche a coltivare la nascita della classe media."
-
- flavor_rus.55.title: "Istituto delle Nobili Fanciulle"
- flavor_rus.55.entry: "$flavor_rus.55.title$"
- flavor_rus.55.desc: "L'educazione delle donne rimane un tema molto dibattuto ed è fortemente sostenuto dall'entusiasta sostenitore [ivan_betskoy.GetName], che ha convocato il gabinetto con l'intenzione di creare un'istituzione di coltivazione dedicata all'educazione delle donne doverose. Queste donne sono destinate a svolgere un ruolo di prezioso contributo alla famiglia e alla società. Mettiamo in piedi una struttura adeguata, dedicata alle idee progressiste e all'inclusione, e iniziamo a formare una nuova generazione, libera dall'impatto deleterio di una genitorialità ignorante."
- flavor_rus.55.a: "L'[ShowLocationNameWithNoTooltip('neva')] è adatto."
- flavor_rus.55.tt1: "Le carte stampate vengono spedite a tutte le fanciulle [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_BURGHERS_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
- rus_printed_charters: "Carte stampate"
- flavor_rus.55.b: "Il suo posto è a [target_location.GetNameWithNoTooltip]."
- flavor_rus.55.b.entry: "It belongs in the capital." #NEW
- flavor_rus.55.c: "Riutilizzare il [ShowBuildingTypeNameWithNoTooltip('novodevichy_convent')]."
- flavor_rus.55.d: "Una minaccia per l'ordine costituito."
- flavor_rus.55.historical_info: "L'Istituto delle Nobili Fanciulle, fondato da Ivan Betskoy con il forte sostegno dell'imperatrice Caterina 'la Grande', aveva lo scopo di esporre le donne ai pensatori intellettuali dell'epoca, tra cui Voltaire e Locke. Le bambine entravano nel convento in giovane età, sperimentando la separazione dai genitori per un periodo di sei anni. L'istituto cambiava più volte sede ed era finanziato da una tassa annuale per garantire l'esclusività e limitare l'ingresso ai membri di basso rango della società."
 
  flavor_rus.56.title: "Prestazioni Convenienti"
  flavor_rus.56.entry: "$flavor_rus.56.title$"
@@ -540,36 +446,24 @@
  flavor_rus.56.historical_info: "L'orfanotrofio di Mosca iniziò a mettere in scena spettacoli amatoriali nel bel mezzo di una rinascita culturale, osteggiata da Michael Maddox, il fondatore del teatro Bolshoi a cui era stato concesso il monopolio degli spettacoli teatrali a Mosca in cambio del finanziamento della sede. Alla fine, l'orfanotrofio interruppe le sue produzioni e ai bambini fu offerta la possibilità di partecipare agli spettacoli messi in scena da Maddox."
 
  flavor_rus.57.title: "[michael_maddox.GetNameWithNoTooltip]"
- flavor_rus.57.entry: "Michael Maddox" #NEW
- flavor_rus.57.desc: "Renowned theater entrepreneur [michael_maddox.GetName] is visiting [ShowLocationName('moscow')] as part of a touring show that has so far frequented the streets of [ShowLocationName('london')] and [ShowLocationName('paris')] to the delight of bypassers. Unimpressed by the local selection of performances, he is offering to co-found a permanent production company that regularly performs for the muscovites, provided that the company is granted an exclusive charter to entertain in a theatrical capacity." #NEW
+ flavor_rus.57.entry: "Michael Maddox"
+ flavor_rus.57.desc: "Renowned theater entrepreneur [michael_maddox.GetName] is visiting [ShowLocationName('moscow')] as part of a touring show that has so far frequented the streets of [ShowLocationName('london')] and [ShowLocationName('paris')] to the delight of bypassers. Unimpressed by the local selection of performances, he is offering to co-found a permanent production company that regularly performs for the muscovites, provided that the company is granted an exclusive charter to entertain in a theatrical capacity."
  flavor_rus.57.a: "Qualità più che quantità."
  STATIC_MODIFIER_NAME_theatrical_monopoly_granted: "Concesso il monopolio teatrale"
  flavor_rus.57.b: "L'audacia."
- flavor_rus.57.tt2: "Michael Maddox is refused an exclusive charter" #NEW
+ flavor_rus.57.tt2: "A [michael_maddox.GetNameWithNoTooltip] viene rifiutata una licenza esclusiva"
  flavor_rus.57.historical_info: "Michael Maddox è stato un impresario teatrale che ha creato diversi luoghi di successo, in particolare il Teatro Haymarket di Londra e il precursore del famoso Teatro Bolshoi di Mosca. Con una produzione artigianale girò l'Europa e arrivò in Russia alla fine del XVIII secolo. Noncurante della scarsa selezione di spettacoli d'opera e teatrali locali, fondò una compagnia teatrale e il primo teatro stabile di Mosca, per il quale gli fu concessa una generosa pensione."
 
  flavor_rus.58.title: "Il Teatro Bolshoi"
  flavor_rus.58.entry: "$flavor_rus.58.title$"
  flavor_rus.58.desc: "La Maddox Theater Company sta cercando una sede più stravagante per poter mettere in scena produzioni elaborate di opera e balletto. Un progetto neoclassico è stato proposto dall'aspirante architetto [joseph_bove.GetName], che ha dimostrato una notevole abilità nel migliorare l'estetica delle strutture. Il nuovo teatro servirà anche come palcoscenico principale per le rappresentazioni teatrali e sarà sicuramente un faro culturale dell'[ShowLocationName('moscow')] e un punto di riferimento e di ispirazione architettonica per le generazioni a venire."
  flavor_rus.58.a: "Una piroetta di perfezione."
- flavor_rus.58.tt1: "Joseph Bove is added as a [character|e]" #NEW
+ flavor_rus.58.tt1: "[joseph_bove.GetNameWithNoTooltip] viene aggiunto come [character|e]"
  flavor_rus.58.b: "Abbelliamo invece la [target_location.GetRank.GetNameWithNoTooltip]."
- flavor_rus.58.b.entry: "Let us beautify the city instead." #NEW
- flavor_rus.58.tt2: "He is assigned to the Department of Facades and tasked with uplifting the decaying state of crumbling house exteriors" #NEW
+ flavor_rus.58.b.entry: "Let us beautify the city instead."
+ flavor_rus.58.tt2: "[joseph_bove.GetSheHe|U] viene assegnato al Dipartimento delle Facciate, con l'incarico di risanare lo stato fatiscente delle facciate delle case in rovina"
  flavor_rus.58.c: "Una struttura così grandiosa è superflua."
  flavor_rus.58.historical_info: "Il Teatro Bolshoi, fondato nel 1776 dal principe Pëtr Urusov e da Michael Maddox, è famoso per le sue produzioni di balletto e opera. La costruzione iniziale che occupava lo stesso sito, nota come Teatro Petrovskij, fu distrutta quando Napoleone invase la Russia. Oggi ospita il Balletto del Bolshoi e l'Opera del Bolshoi, tra le compagnie di balletto e di opera più affermate e famose del mondo."
-
- flavor_rus.59.title: "Nakaz"
- flavor_rus.59.entry: "$flavor_rus.59.title$"
- flavor_rus.59.desc: "È sempre più importante spingere [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] in una nuova era di illuminazione e progresso. Una revisione visionaria del codice legale, in linea con i principi vivificanti che si stanno diffondendo in Europa, sarebbe l'ideale, in quanto comprende ideali come la ragione, la giustizia e l'umanitarismo. Abbracciando questi valori, possiamo finalmente liberarci delle pratiche legali obsolete che ostacolano lo sviluppo sociale. Intraprendiamo il cammino delle riforme e realizziamo l'uguaglianza di tutti i cittadini di fronte alla legge."
- flavor_rus.59.a: "Il progresso può essere doloroso."
- enable_nakaz_reform: "Grants access to the [ShowGovernmentReformName('nakaz_reform')] [government_reform|e]" #DA TRADURRE
- flavor_rus.59.tt1: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [ROOT.GetCountry.Custom('IT_NOBLES_SONO')] infuriati per la minaccia posta alla loro posizione di potere"
- flavor_rus.59.b: "Accontentarsi di una riforma penale."
- flavor_rus.59.tt2: "L'approccio più umano nei confronti dei criminali, senza affrontare la necessità di riforme sociali, porta a un aumento della criminalità nelle grandi città."
- flavor_rus.59.c: "Non osiamo."
- flavor_rus.59.tt3: "Il cedimento verso le forze conservatrici vede rafforzata la loro agenda"
- flavor_rus.59.historical_info: "Il 'Nakaz Pravilnosti', o 'Istruzione sulle leggi', fu un codice legale introdotto da Caterina 'la Grande' nel tentativo di modernizzare e riformare il sistema giuridico. Influenzato dalle idee illuministe, cercava di creare un sistema giuridico in linea con le filosofie progressiste dell'epoca, oltre a semplificare e chiarire le leggi. Introdusse punizioni più umane, limitò l'uso della tortura e sottolineò l'uguaglianza di tutti i cittadini di fronte alla legge. Il Nakaz non fu mai pienamente attuato a causa delle numerose forze conservatrici che vi si opposero, e Caterina finì per spostare la sua attenzione su altre priorità."
 
  flavor_rus.60.title: "La Rivolta Decembrina"
  flavor_rus.60.entry: "$flavor_rus.60.title$"
@@ -588,11 +482,11 @@
  flavor_rus.60.historical_info: "La Rivolta dei Decembristi fu una ribellione contro il governo autocratico dell'imperatore Nicola I. La rivolta fu guidata da un gruppo di ufficiali militari e nobili noti come Decembristi, che si ispiravano a ideali liberali e costituzionali. I Decembristi si riunirono a San Pietroburgo per inscenare una protesta e tentare di fare pressione su Nicola I affinché accettasse le loro richieste; questi optò invece per la repressione e diversi leader furono in seguito giustiziati o esiliati in Siberia. L'incidente servirà da ispirazione per i successivi movimenti di riforma del Paese."
 
  flavor_rus.61.title: "Le Critiche di [alexander_radishchev.GetNameWithNoTooltip]"
- flavor_rus.61.entry: "The Critiques of Alexander Radishchev" #NEW
- flavor_rus.61.desc: "A radicalized and influential writer has returned from studies abroad with an arsenal of social critique at his disposal. Eager to vent his grievances towards perceived injustices, [alexander_radishchev.GetName] will no doubt plant the seed of anarchy if left unchecked. However, we may need to tread carefully considering his popularity with the masses." #NEW
+ flavor_rus.61.entry: "The Critiques of Alexander Radishchev"
+ flavor_rus.61.desc: "A radicalized and influential writer has returned from studies abroad with an arsenal of social critique at his disposal. Eager to vent his grievances towards perceived injustices, [alexander_radishchev.GetName] will no doubt plant the seed of anarchy if left unchecked. However, we may need to tread carefully considering his popularity with the masses."
  flavor_rus.61.a: "Destinato a un luogo lontano."
- flavor_rus.61.tt2: "He is sent to a remote location in an attempt to limit the extent of his influence" #NEW
- flavor_rus.61.b: "His words hold little of value." #NEW
+ flavor_rus.61.tt2: "[alexander_radishchev.GetSheHe|U] viene inviato in un luogo remoto nel tentativo di limitare la portata della [alexander_radishchev.GetHisHer] influenza"
+ flavor_rus.61.b: "His words hold little of value."
  flavor_rus.61.historical_info: "Alexander Radishchev fu scrittore e critico sociale durante il regno di Caterina 'la Grande'. Studiò in Germania e portò con sé nuove idee sul governo e una critica della servitù della gleba, idee che non andavano a genio al governo autocratico della Russia. Il suo lavoro in #viaggioitalico da San Pietroburgo a Mosca#! gli valse una condanna all'esilio in Siberia, dove continuò a scrivere opere filosofiche."
 
  flavor_rus.62.title: "Un Viaggio Degno di Nota"
@@ -605,26 +499,15 @@
  flavor_rus.62.tt2: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si oppongono alla critica distorta del loro sostentamento"
  flavor_rus.62.historical_info: "Il #viaggioitalico da San Pietroburgo a Mosca#! è un'opera satirica pubblicata nel 1790, che rappresenta una sfida al governo dell'imperatrice Caterina 'la Grande'. Pur essendo a conoscenza delle tematiche affrontate nell'opera, Caterina la bandì e lo condannò a morte, nel tentativo di limitare l'impatto della sua pubblicazione. La sentenza fu poi convertita in esilio in Siberia. Il romanzo divenne una fonte di influenza per il movimento decembrista e finì per essere soppresso fino al 1905."
 
- flavor_rus.63.title: "Il Manifesto della Libertà"
- flavor_rus.63.entry: "$flavor_rus.63.title$"
- flavor_rus.63.desc: "La capacità di governare richiede un Paese stabile, con un sovrano forte che tenga saldamente le redini. Al momento, sta serpeggiando il malcontento per le scelte fatte da [ROOT.GetCountry.GetGovernment.GetRuler.GetName], e sarebbe prudente assicurarsi almeno il continuo sostegno [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] fino a quando la situazione non migliorerà. Offriamo generose concessioni che esentino i [ShowPopTypeName('nobles')] dal servizio di Stato e da altre libertà civili, permettendoci di concentrarci sulla stabilizzazione della fragile natura del dominio assolutistico di cui attualmente godiamo."
- flavor_rus.63.a: "Un male necessario."
- flavor_rus.63.tt1: "Gli ampi privilegi concessi [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] rimangono inamovibili durante il regno di [target_root_country.GetGovernment.GetRuler.GetName]"
- revoke_manifesto_of_freedom: "Gli ampi privilegi concessi [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] rimangono inamovibili durante il regno del sovrano che li ha concessi."
- flavor_rus.63.b: "Troviamo una via di mezzo."
- flavor_rus.63.c: "Un'idea offensiva."
- flavor_rus.63.tt2: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] approfittano della situazione disastrosa in cui versa il Paese e si adoperano attivamente per ostacolare il governo di [target_root_country.GetGovernment.GetRuler.GetName]"
- flavor_rus.63.historical_info: "Il #Manifesto della Libertà della Nobiltà#! fu concesso dall'imperatore Pietro III durante il suo breve e infruttuoso regno. Diversi fattori furono alla base della sua ideazione, in particolare il fatto che egli era riuscito ad alienarsi la maggior parte della nobiltà a causa delle mutevoli alleanze geopolitiche che privarono la Russia di una significativa vittoria militare contro la Prussia. Nel tentativo di stabilizzare il suo governo, Pietro ridusse gli obblighi della nobiltà e sequestrò le terre della Chiesa per pagarli, offendendo così il clero. La sua insistenza nell'implementare le esercitazioni militari prussiane nell'esercito provocò quasi una rivolta, spingendo la moglie, Caterina, a deporlo con un colpo di Stato."
-
  flavor_rus.64.title: "Bironovshchina"
  flavor_rus.64.entry: "$flavor_rus.64.title$"
- flavor_rus.64.desc: "A handsome and influential Duke has captured the interest of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], who is hoping to employ [ernst_von_biron.GetName] to [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] household. The Duke appears to exercise considerable influence already but to his benefit, he is also demonstrating an impressive ability to administer and lead, a quality that could surely be of great use to our cabinet. Let us rid any obstructions to his appointment and reap the benefits of foreign expertise for the greater good of [ROOT.GetCountry.GetName]." #NEW
+ flavor_rus.64.desc: "A handsome and influential Duke has captured the interest of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], who is hoping to employ [ernst_von_biron.GetName] to [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] household. The Duke appears to exercise considerable influence already but to his benefit, he is also demonstrating an impressive ability to administer and lead, a quality that could surely be of great use to our cabinet. Let us rid any obstructions to his appointment and reap the benefits of foreign expertise for the greater good of [ROOT.GetCountry.GetName]."
  flavor_rus.64.a: "Un affare fatto."
- flavor_rus.64.b: "A bedded [ROOT.GetCountry.GetGovernment.GetRulerTitle] is a happy [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #NEW
- flavor_rus.64.b.entry: "A bedded ruler is a happy ruler." #NEW
- flavor_rus.64.tt2: "It can only be performed by [cabinet_members|e] of non-[target_culture.GetNameWithNoTooltip] origin" #NEW
+ flavor_rus.64.b: "A bedded [ROOT.GetCountry.GetGovernment.GetRulerTitle] is a happy [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_rus.64.b.entry: "A bedded ruler is a happy ruler."
+ flavor_rus.64.tt2: "It can only be performed by [cabinet_members|e] of non-[target_culture.GetNameWithNoTooltip] origin"
  flavor_rus.64.c: "Un malfattore che si occupa di potere."
- flavor_rus.64.tt3: "Ernest von Biron is refused a position of influence" #NEW
+ flavor_rus.64.tt3: "A [ernst_von_biron.GetNameWithNoTooltip] viene rifiutata una posizione d'influenza"
  flavor_rus.64.historical_info: "Ernst Johan von Biron fu consigliere e forse amante dell'imperatrice Anna Ioannovna. Di nobili origini tedesche, esercitò un notevole potere alla corte russa e divenne un dipendente dell'imperatrice che cercava di affermare il suo dominio autoritario. Apprezzato per le sue capacità amministrative, rimase impopolare in Russia a causa della sua origine straniera combinata con il potere che deteneva sui possedimenti e la notevole ricchezza accumulata grazie alla sua posizione. Il suo periodo a corte fu soprannominato 'Bironovshchina', che significa 'giogo tedesco', in riferimento ai tempi della dominazione tartara."
 
  flavor_rus.65.title: "Il Balletto del Bolshoi"
@@ -633,80 +516,62 @@
  flavor_rus.65.a: "Un tour nazionale spettacolare vi aspetta."
  flavor_rus.65.b: "Devono promuovere l'essenza del nostro patrimonio."
  flavor_rus.65.tt1: "Il balletto intraprende una tournée continentale, rafforzando la reputazione internazionale [target_root_country.Custom('IT_Della')][target_root_country.GetName]."
- flavor_rus.65.tt2: "The well-established connections of entertainment mogul Michael Maddox ensures access to additional venues" #NEW
+ flavor_rus.65.tt2: "I ben consolidati legami del magnate dell'intrattenimento [michael_maddox.GetName] garantiscono l'accesso a ulteriori sedi"
  flavor_rus.65.historical_info: "Il Bolshoi Ballet è stato fondato nel 1776 dall'imperatrice Caterina II al Teatro Bolshoi, uno dei teatri più famosi e storici della Russia. Ha raggiunto un successo internazionale, effettuando tournée in tutto il mondo e mostrando le tradizioni del balletto russo al pubblico di tutto il mondo."
-
- flavor_rus.66.title: "L'Ufficio Segreto di Investigazione"
- flavor_rus.66.entry: "$flavor_rus.66.title$"
- flavor_rus.66.desc: "Sono state sollevate preoccupazioni riguardo alla capacità della [current_policy.GetName] di reprimere le sfide dell'élite al governo [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. Influenze straniere nel dipartimento [ShowCabinetActionName('bironovshchina')] hanno proposto un'agenzia specializzata che potrebbe essere più adatta al compito, con la forza bruta come metodo di dissuasione preferito. Resuscitiamo il knout e riorganizziamo la polizia segreta per infondere un rinnovato senso di autorità e sventare qualsiasi tentativo di far deragliare il nostro governo supremo."
- flavor_rus.66.a: "L'obbedienza richiede un sacrificio occasionale."
- enable_secretnoye_byuro_policy: "Grants access to the [ShowPolicyName('secretnoye_byuro_policy')] [policy|e]" #DA TRADURRE
- flavor_rus.66.tt1: "It is selectable only while a [cabinet_member|e] performs the [ShowCabinetActionName('bironovshchina')] [cabinet_action|e]" #NEW
- flavor_rus.66.b: "Siamo al di sopra di tutto questo."
- flavor_rus.66.historical_info: "L'Ufficio Segreto d'Investigazione ebbe un ruolo importante durante il governo dell'imperatrice Anna Ioannovna, che lo utilizzò per tenere sotto controllo i suoi oppositori politici come mezzo per garantire il suo governo autoritario. Le punizioni includevano il taglio del naso o le percosse a morte con il knout, una tipica frusta caratterizzata da un perizoma di cuoio o da una corda collegata a un manico di legno allungato. Si stima che circa ventimila nobili furono vittime delle purghe politiche."
 
  flavor_rus.67.title: "Il Battesimo Indotto da un Coltello"
  flavor_rus.67.entry: "$flavor_rus.67.title$"
  flavor_rus.67.desc: "L'area dell'[ShowAreaName('kazan_area')] ha una forte minoranza religiosa che può causare conflitti civili se non viene gestita correttamente. Per creare una [ROOT.GetCountry.GetName] unificata, dovremmo prendere provvedimenti per convertire in fretta questi pagani, con ogni mezzo necessario. Un approccio di conversione a bastone e carota potrebbe essere gestito da un nuovo ufficio istituito ad [ShowLocationName('kazan')], offrendo incentivi a coloro che accettano volontariamente Cristo nei loro cuori, riservando metodi più persuasivi a coloro che si oppongono alla vera fede."
  flavor_rus.67.a: "Un pugno persuasivo fa il suo effetto."
  STATIC_MODIFIER_NAME_office_of_new_converts: "Ufficio dei nuovi convertiti"
- enable_office_of_new_converts_cabinet_action: "The [ShowCabinetActionName('office_of_new_converts')] [cabinet_action|e] becomes available" #DA TRADURRE
+ enable_office_of_new_converts_cabinet_action: "The [ShowCabinetActionName('office_of_new_converts')] [cabinet_action|e] becomes available"
  flavor_rus.67.tt1: "Può essere eseguito solo quando l'[ShowLocationName('kazan')] ha un [ShowBuildingTypeName('orthodox_monastery')]"
  flavor_rus.67.b: "La fede è una questione personale."
  flavor_rus.67.historical_info: "L'Ufficio per gli affari dei nuovi convertiti fu istituito dall'imperatrice Anna Ioannovna per gestire il crescente numero di non ortodossi che passavano sotto il controllo della Russia con la rapida espansione dell'impero. La conversione fu spesso effettuata con la forza e portò alla distruzione di centinaia di templi e moschee, oltre che alla violenza e all'intimidazione per accelerare i tentativi di conversione. L'ufficio ha sede nel Monastero Bogoroditsky, situato a Kazan."
 
  flavor_rus.68.title: "[alexander_pushkin.GetNameWithNoTooltip]"
- flavor_rus.68.entry: "Alexander Pushkin" #NEW
- flavor_rus.68.desc: "A descendant of [abram_petrovich.GetName], a kammermohr who had been taken in during a prior reign and raised at court, has begun to publish well-crafted poems and novels. Provocative poet [alexander_pushkin.GetName] draws inspiration from some of the intellectual giants of writing, and will undoubtedly contribute heavily towards the development of [ROOT.GetCountry.GetAdjective] literature. He has expressed sympathy with nationalist movements, and may become a dangerous influence if left unsupervised." #NEW
+ flavor_rus.68.entry: "Alexander Pushkin"
+ flavor_rus.68.desc: "A descendant of [abram_petrovich.GetName], a kammermohr who had been taken in during a prior reign and raised at court, has begun to publish well-crafted poems and novels. Provocative poet [alexander_pushkin.GetName] draws inspiration from some of the intellectual giants of writing, and will undoubtedly contribute heavily towards the development of [ROOT.GetCountry.GetAdjective] literature. He has expressed sympathy with nationalist movements, and may become a dangerous influence if left unsupervised."
  flavor_rus.68.a: "Un talento impareggiabile deve essere libero di vagare."
  flavor_rus.68.b: "Una canaglia ribelle deve essere sorvegliata."
  flavor_rus.68.tt2: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si oppongono fermamente all'infrazione di un nobile di alto rango, ma rinunciano alle loro obiezioni una volta che lo [ShowPolicyName('secretnoye_byuro_policy')] presenta prove convincenti dell'attività di ribellione."
  flavor_rus.68.tt3: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si oppongono fermamente all'infrazione di un nobile d'alto rango"
  flavor_rus.68.historical_info: "Alexander Pushkin è considerato uno dei più grandi poeti russi e scrisse la sua prima poesia all'età di 15 anni. Fu fortemente influenzato dall'Illuminismo e dai movimenti nazionalisti che si stavano svolgendo in Europa, con un particolare interesse per il movimento greco per liberarsi dal dominio ottomano. Nonostante discendesse da una famiglia illustre, fu esiliato dopo aver pubblicato una poesia controversa che metteva in discussione la servitù della gleba e la mancanza di libertà personale."
- variable_alexander_pushkin_tt: "Alexander Pushkin Graces the Court" #NEW
+ variable_alexander_pushkin_tt: "Alexander Pushkin Graces the Court"
 
  flavor_rus.69.title: "L'Inno alla Libertà"
  flavor_rus.69.entry: "$flavor_rus.69.title$"
  flavor_rus.69.desc: "Il talentuoso [alexander_pushkin.GetName] ha recitato una poesia incendiaria che esprime forti sentimenti contro il dominio autocratico e sostiene la libertà e la giustizia. Il tono del suo messaggio è una chiamata all'azione e sottolinea la sofferenza della gente comune, la tirannia dei governanti e la necessità di riscrivere la legge tenendo conto dei valori libertari. È necessario prendere provvedimenti immediati per limitarne la diffusione e per arginare la sua musa prima che metta radici nei circoli più radicali."
  flavor_rus.69.a: "Mettete fine a questa farsa."
- flavor_rus.69.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] manages to intercept most copies of the misguided publication thanks to the [ShowPolicyName('strict_censorship')] [policy|e]" #DA TRADURRE
+ flavor_rus.69.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] manages to intercept most copies of the misguided publication thanks to the [ShowPolicyName('strict_censorship')] [policy|e]"
  flavor_rus.69.b: "Sono solo parole."
  flavor_rus.69.tt2: "Il poema è molto letto e ha un effetto profondo sui valori della società."
  flavor_rus.69.c: "Mettere in scena uno sfortunato incidente."
- flavor_rus.69.tt3: "The [ShowPolicyName('secretnoye_byuro_policy')] arranges an incidental fire which engulfed the [ShowBuildingTypeNameWithNoTooltip('printing_press_shop')] used by Alexander Pushkin, destroying the source material and killing its author in the process" #NEW
+ flavor_rus.69.tt3: "La [ShowPolicyName('secretnoye_byuro_policy')] organizza un incendio apparentemente accidentale che avvolge il [ShowBuildingTypeNameWithNoTooltip('printing_press_shop')] usato da [alexander_pushkin.GetNameWithNoTooltip], distruggendo il materiale originale e uccidendo l'autore nel processo"
  flavor_rus.69.historical_info: "L'Inno alla libertà è una famosa poesia scritta da Alexander Pushkin. Fu pubblicata poco dopo la sua laurea e portò al suo esilio a causa del suo contenuto. $ode_to_liberty_desc$ Questo fu particolarmente vero per il movimento decembrista, che lo utilizzò per raccogliere ulteriori seguaci alla propria causa."
 
  flavor_rus.70.title: "I Miglioramenti Meticolosi di [yury_felten.GetNameWithNoTooltip]"
- flavor_rus.70.entry: "The Meticulous Enhancements of Yury Felten" #NEW
- flavor_rus.70.desc: "Ambitious architect and tinkerer [yury_felten.GetName], of German ancestry, has successfully completed his studies at the [ShowBuildingTypeNameWithNoTooltip('academy_of_sciences')] and is currently employed as an assistant to other architects. Demonstrating a unique talent for building upon existing works, he could contribute significantly to enhancing our grandiose palaces for the benefit of the aristocracy. Moreover, he has gained a reputation for inventing and assembling peculiar gadgets and contraptions, some of which could be put to good use to advance our construction techniques." #NEW
+ flavor_rus.70.entry: "The Meticulous Enhancements of Yury Felten"
+ flavor_rus.70.desc: "Ambitious architect and tinkerer [yury_felten.GetName], of German ancestry, has successfully completed his studies at the [ShowBuildingTypeNameWithNoTooltip('academy_of_sciences')] and is currently employed as an assistant to other architects. Demonstrating a unique talent for building upon existing works, he could contribute significantly to enhancing our grandiose palaces for the benefit of the aristocracy. Moreover, he has gained a reputation for inventing and assembling peculiar gadgets and contraptions, some of which could be put to good use to advance our construction techniques."
  flavor_rus.70.a: "Redigere un contratto standard di quattordici ore."
- flavor_rus.70.tt2: "He is tutored by renowned architect Francis Rastrelli, gaining valuable insights" #NEW
- flavor_rus.70.tt3: "He adds additional artwork, frescos, and murals to existing palaces in [ShowLocationName('neva')]" #NEW
+ flavor_rus.70.tt2: "[yury_felten.GetSheHe|U] viene istruito dal rinomato architetto [francesco_rastrelli.GetName], acquisendo preziose conoscenze"
+ flavor_rus.70.tt3: "[yury_felten.GetSheHe|U] aggiunge ulteriori opere d'arte, affreschi e murales ai palazzi esistenti a [ShowLocationName('neva')]"
  flavor_rus.70.b: "Le competenze devono essere trasmesse."
- flavor_rus.70.tt4: "He secures a teaching position at the [ShowBuildingTypeNameWithNoTooltip('imperial_academy_of_arts')] in [ShowLocationName('neva')]" #NEW
+ flavor_rus.70.tt4: "[yury_felten.GetSheHe|U] ottiene una cattedra presso il [ShowBuildingTypeNameWithNoTooltip('imperial_academy_of_arts')] a [ShowLocationName('neva')]"
  flavor_rus.70.c: "La bellezza è soggettiva."
- flavor_rus.70.tt5: "George Felten seeks employment elsewhere" #NEW
+ flavor_rus.70.tt5: "[yury_felten.GetNameWithNoTooltip] cerca impiego altrove"
  flavor_rus.70.historical_info: "Yury Felten fu un famoso architetto che si guadagnò il favore dell'imperatrice Caterina 'la Grande'. Progettò diversi monumenti e chiese e partecipò alla costruzione del Palazzo d'Inverno e del Palazzo di Caterina. È ricordato anche per la macchina di sollevamento pesante creata per spostare la pietra necessaria per il Cavaliere di bronzo a San Pietroburgo. Divenne direttore dell'Accademia Imperiale delle Arti, carica che mantenne per il resto della sua vita."
 
  flavor_rus.71.title: "Gli Insediamenti Militari"
  flavor_rus.71.entry: "$flavor_rus.71.title$"
  flavor_rus.71.desc: "Il costo di schierare un esercito permanente è un salasso costante per l'erario, soprattutto in termini di rifornimenti e alloggi. Di conseguenza, la nostra capacità militare rimane al di sotto delle aspettative, nonostante le misure adottate per migliorarla. Introduciamo un nuovo sistema che prevede la suddivisione del tempo di un soldato tra attività agricole e servizio all'esercito, con l'obiettivo di creare un modello più autosufficiente. I soldati saranno ruotati per contrastare un calo sostanziale della produzione agricola e le famiglie dei soldati arruolati riceveranno un'educazione militare che li legherà al servizio delle forze armate per le generazioni a venire."
  flavor_rus.71.a: "Uno scenario vantaggioso per tutti."
- enable_military_settlements_policy: "Grants access to the [ShowPolicyName('military_settlements_policy')] [policy|e]" #DA TRADURRE
+ enable_military_settlements_policy: "Grants access to the [ShowPolicyName('military_settlements_policy')] [policy|e]"
  flavor_rus.71.b: "I difetti intrinseci sono troppi."
  flavor_rus.71.historical_info: "Gli insediamenti militari furono introdotti dall'imperatore Alessandro I nel tentativo di contrastare i crescenti costi associati al mantenimento di un vasto esercito, assicurando al contempo una fornitura continua di soldati validi e permettendo alle famiglie di trascorrere più tempo insieme. Il sistema si rivelò inefficiente perché l'organizzazione era scarsa e non si teneva conto della natura delicata della dipendenza stagionale dall'agricoltura stessa, il che significava che i soldati a volte non erano presenti quando c'era da lavorare. Invece di affrontare i problemi, vennero comminate punizioni severe, mentre la produzione alimentare si deteriorava, provocando rivolte diffuse."
 
- flavor_rus.72.title: "L'Inizio del Nazionalismo"
- flavor_rus.72.entry: "$flavor_rus.72.title$"
- flavor_rus.72.desc: "La definizione e la percezione della supremazia della cultura [ShowCultureGroupName('slavic_group')] è un argomento molto dibattuto tra gli studiosi. Le opinioni divergono sulla necessità di adottare una posizione più filo-occidentale per garantire che [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] non ristagni in un ciclo infinito di tradizioni, o se l'importanza della continuità sia sottovalutata e debba rimanere una parte centrale nella conservazione dell'identità [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. La divergenza ha stimolato la creazione di due distinti movimenti intellettuali che desiderano indirizzarci in direzioni opposte, e noi dobbiamo decidere il percorso che si allinea con la nostra visione del futuro."
- flavor_rus.72.a: "Sostenere gli slavofili."
- flavor_rus.72.custom1: "Grants access to the [ShowLawName('intellectual_movements')] [law|e]" #DA TRADURRE
- flavor_rus.72.custom2: "A [policy|e] under the [ShowLawName('intellectual_movements')] [law|e] may only be changed once every ten years" #DA TRADURRE
- flavor_rus.72.b: "Sostenere gli occidentali."
- flavor_rus.72.historical_info: "Gli occidentalizzatori e gli slavofili erano due movimenti intellettuali e ideologici distinti nella Russia del XIX secolo. Avevano opinioni diverse sul percorso di sviluppo della Russia, sul suo rapporto con l'Europa occidentale e sulla conservazione dell'identità culturale russa. Gli occidentalizzatori privilegiavano la modernizzazione attraverso l'adozione di idee, istituzioni e tecnologie occidentali, mentre gli slavofili enfatizzavano la conservazione dei valori tradizionali russi, della spiritualità e delle strutture comunitarie."
-
  flavor_rus.73.title: "La Corrispondenza di [francois_marie_voltaire.GetLastNameWithNoTooltip]"
- flavor_rus.73.entry: "The Francois Marie Voltaire Correspondence" #NEW
+ flavor_rus.73.entry: "The Francois Marie Voltaire Correspondence"
  flavor_rus.73.desc: "Lo scrittore e provocatore [GetCountry('FRA').GetAdjective] [francois_marie_voltaire.GetName] ha recentemente fatto visita a [target_ruler.GetName] e i due sembrano aver trovato un terreno comune su temi che vanno dalla libertà di parola alla critica della religione, in linea con le idee illuminate che stanno attraversando il continente. Prima della sua partenza, c'è stato un consenso sulla necessità di uno scambio epistolare continuo per proseguire lo scambio di idee e il dibattito filosofico. Questo scambio potrebbe avere effetti negativi sulla politica [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], permettendo al pensiero radicale di diffondersi ai livelli più alti della società, ma potrebbe anche accelerare il flusso di concetti nuovi e intriganti verso la nostra porta di casa."
  flavor_rus.73.a: "Incoraggiate la calligrafia."
  STATIC_MODIFIER_NAME_extensive_correspondence: "Corrispondenza estesa"
@@ -714,13 +579,13 @@
  flavor_rus.73.historical_info: "L'imperatrice Caterina 'la Grande' scambiò numerose lettere con Voltaire durante il suo regno. I due discutevano, esprimevano nuove idee e addirittura litigavano a seconda dell'argomento trattato, tra cui filosofia, letteratura, politica e questioni sociali. Voltaire, noto per la sua arguzia e i suoi ideali illuministi, lodò gli sforzi di Caterina per modernizzare la Russia e attuare le riforme. A sua volta, Caterina chiese consiglio a Voltaire su questioni di governo e sviluppo culturale."
  
  flavor_rus.74.title: "Le Scomode Verità di [nikolay_novikov.GetNameWithNoTooltip]"
- flavor_rus.74.entry: "The Uncomfortable Truths of Nikolay Novikov" #NEW
- flavor_rus.74.desc: "Philanthropist and transformative author [nikolay_novikov.GetName] has made a name for himself in cultural and literary circles, publishing a vast range of work to stimulate discussion on a multitude of topics. Most recently, he has taken over editing at the Moscow Gazette, a local newspaper, and has begun publishing satirical journals that are rapidly gaining popularity. We must act to stem the spread of dangerous thoughts, or we may find ourselves at the wrong end of the guillotine." #NEW
- flavor_rus.74.a: "Confiscate his work." #NEW
+ flavor_rus.74.entry: "The Uncomfortable Truths of Nikolay Novikov"
+ flavor_rus.74.desc: "Philanthropist and transformative author [nikolay_novikov.GetName] has made a name for himself in cultural and literary circles, publishing a vast range of work to stimulate discussion on a multitude of topics. Most recently, he has taken over editing at the Moscow Gazette, a local newspaper, and has begun publishing satirical journals that are rapidly gaining popularity. We must act to stem the spread of dangerous thoughts, or we may find ourselves at the wrong end of the guillotine."
+ flavor_rus.74.a: "Confiscate his work."
  flavor_rus.74.tt2: "La popolarità dell'opera sequestrata suscita risentimento tra i [ShowPopTypeName('peasants')] e i [ShowPopTypeName('burghers')]."
- flavor_rus.74.b: "Leave him be." #NEW
- flavor_rus.74.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are appalled that the revolutionary ideas of Nicholas Novikov are allowed to spread due to the [ShowPolicyName('strict_censorship')] [policy|e]." #NEW
- flavor_rus.74.c: "Force him to publish a retraction." #NEW
+ flavor_rus.74.b: "Leave him be."
+ flavor_rus.74.tt3: "Il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] è inorridito dal fatto che le idee rivoluzionarie di [nikolay_novikov.GetNameWithNoTooltip] possano diffondersi a causa della [policy|e] [ShowPolicyName('strict_censorship')]."
+ flavor_rus.74.c: "Force him to publish a retraction."
  flavor_rus.74.tt4: "La censura viene inasprita per rallentare l'ulteriore diffusione delle idee rivoluzionarie."
  flavor_rus.74.historical_info: "Nikolay Novikov fu scrittore, filantropo ed editore durante il regno dell'imperatrice Caterina 'la Grande'. Fondò una rivista letteraria e filosofica che ebbe un ruolo importante nella promozione delle idee illuministe in Russia e si impegnò anche in attività massoniche e filantropiche. Questo lo portò in conflitto con il governo, che lo fece imprigionare per diversi anni. Ciononostante, la sua opera continuò a circolare e contribuì al sentimento antigovernativo, ispirando future rivoluzioni."
- variable_moscow_gazette_tt: "The Moscow Gazette is in Print" #NEW
+ variable_moscow_gazette_tt: "The Moscow Gazette is in Print"

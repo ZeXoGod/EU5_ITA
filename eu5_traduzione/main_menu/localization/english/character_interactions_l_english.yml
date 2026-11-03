@@ -13,7 +13,7 @@
  make_regent_ruler: "Prendi il Trono"
  make_regent_ruler_concept: "[ruler|e]"
  make_regent_ruler_act: "$make_regent_ruler$"
- make_regent_ruler_desc_specific: "Dai il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName] a [SCOPE.sCharacter('recipient').GetName], in modo che diventi [SCOPE.sCountry('actor').GetGovernment.GetPossibleRulerTitle.Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetPossibleRulerTitle(SCOPE.sCharacter('recipient'),'(bool)no')]."
+ make_regent_ruler_desc_specific: "Dai il trono [SCOPE.sCountry('actor').Custom('IT_DEL_RANGO')][SCOPE.sCountry('actor').GetLongName] a [SCOPE.sCharacter('recipient').GetName], in modo che diventi [SCOPE.sCountry('actor').GetGovernment.GetPossibleRulerTitle.Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetPossibleRulerTitle(SCOPE.sCharacter('recipient'),'(bool)no')]."
  make_regent_ruler_desc: "Il [character|e] diventerà il nuovo [ruler|e] del [country|e]."
  make_regent_ruler_past: "[SCOPE.sCharacter('recipient').GetName] è diventato [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_IL_LA')] nuov[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_O_A')] [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle]!"
  make_regent_ruler_act_past: "[SCOPE.sCharacter('recipient').GetName] ha ottenuto il trono [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetNameWithNoTooltip], ed è ora [SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetLongName]."
@@ -27,7 +27,7 @@
  resign_as_grand_master_desc: "Il [character|e] rassegnerà le dimissioni come [ruler|e] del [country|e]."
  resign_as_grand_master_past: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U][SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] rassegna le dimissioni!"
  resign_as_grand_master_act_past: "[SCOPE.sCharacter('recipient').GetName] ha rassegnato le dimissioni come [ruler|e] [SCOPE.sCountry('actor').Custom('IT_Di')][SCOPE.sCountry('actor').GetName]."
- 
+
  dismiss_prince: "Destituisci Principe"
  dismiss_prince_concept: "[ruler|e]"
  dismiss_prince_act: "$dismiss_prince$"
@@ -43,15 +43,17 @@
  seppuku_desc: "Il [character|e] commetterà Seppuku."
  seppuku_past: "Commesse Seppuku!"
  seppuku_act_past: "[SCOPE.sCharacter('recipient').GetName] ha commesso Seppuku."
- 
+
  marry_noble: "Sposa un Nobile"
  marry_noble_concept: "[marriage|E]"
- marry_noble_act: "$marry_noble$"
  marry_noble_select_title: "Seleziona Nobile da Sposare"
- marry_noble_desc_specific: "[SCOPE.sCharacter('recipient').GetName] sposerà un nobile locale."
- marry_noble_desc: "Il [character|e] sposerà un nobile locale."
- marry_noble_past: "[SCOPE.sCharacter('recipient').GetName] si è sposato!"
- marry_noble_act_past: "Un matrimonio con un nobile per [SCOPE.sCharacter('recipient').GetName], è un modo vantaggioso per il nostro [country|e] per assicurare una successione senza influenza straniera!"
+ marry_noble_desc: "Faremo sposare [CHARACTER.GetName] con un nobile della nostra corte."
+ marry_noble_recipient_effect: "[CHARACTER.GetName] sarà [married|e] al nobile che scegliamo."
+ marry_noble_desc_specific: "[CHARACTER.GetName] sposerà [TARGET_CHARACTER.GetName]."
+ marry_noble_effect: "[CHARACTER.GetName] ha sposato [TARGET_CHARACTER.GetName]."
+ marry_noble_past: "[CHARACTER.GetName] si è sposato!"
+ marry_noble_act_past: "Un matrimonio con un nobile per [CHARACTER.GetName], è un modo vantaggioso per il nostro [country|e] per assicurare una successione senza influenza straniera!"
+ MARRY_NOBLE_SELECT_CHARACTER: "Sposa $CHARACTER$"
  
  marry_lowborn: "Sposa un Popolano"
  marry_lowborn_concept: "[marriage|E]"
@@ -60,16 +62,8 @@
  marry_lowborn_desc: "Il [character|e] sposerà una persona [lowborn|e]."
  marry_lowborn_past: "[SCOPE.sCharacter('recipient').GetName] ha disonorato [SCOPE.sCharacter('recipient').GetHerselfHimself]!"
  marry_lowborn_act_past: "[SCOPE.sCharacter('recipient').GetName] ha sposato una persona [lowborn|e]."
- 
- tribal_arrange_marriage: "Matrimonio Combinato"
- tribal_arrange_marriage_concept: "[marriage|E]"
- tribal_arrange_marriage_act: "$tribal_arrange_marriage$"
- tribal_arrange_marriage_select_title: "Seleziona chi Sposare"
- tribal_arrange_marriage_desc_specific: "[SCOPE.sCharacter('recipient').GetName] sposerà qualcuno importante della nostra stessa tribù."
- tribal_arrange_marriage_desc: "Il [character|e] sposerà qualcuno importante della nostra stessa tribù."
- tribal_arrange_marriage_past: "[SCOPE.sCharacter('recipient').GetName] si è sposato!"
- tribal_arrange_marriage_act_past: "le celebrazioni sono andate avanti per tutta la notte poiché un matrimonio tra due membri delle nostre tribù ha catturato l'immaginazione del pubblico."
- 
+ marry_lowborn_choose_estate: "In quale [estate|e] dovrebbero sposarsi?"
+
  move_child_to_court: "Sposta Figlio alla nostra Corte"
  move_child_to_court_concept: "[character|e]"
  move_child_to_court_act: "$move_child_to_court$"
@@ -77,6 +71,16 @@
  move_child_to_court_desc: "Il [character|e] si sposterà nel nostro [country|e]."
  move_child_to_court_past: "Il Figlio si unisce alla nostra Corte"
  move_child_to_court_act_past: "[SCOPE.sCharacter('recipient').GetName] si è spostato nel nostro [country|e]. Questo assicura che l'educazione di [SCOPE.sCharacter('recipient').GetName] sia saldamente sotto il nostro controllo."
+ 
+ assign_familial_governor: "Assegna [ShowSubjectTypeNameWithNoTooltip('familial_governor')]"
+ assign_familial_governor_desc: "Ci si aspetta che tutti i principi [ShowDynastyName('hafsid_dynasty')] ricevano un governatorato in una delle città del regno. Tali governatori tendono ad avere un alto grado di autonomia, ma contribuiscono comunque a mantenere [ShowScriptedGeographyName('ifriqiya_geography')] nelle mani della famiglia."
+ assign_familial_governor_concept: "[subject|e]"
+ select_a_location_to_make_capital: "Clicca per selezionare una città che diventerà la [capital|e] del governo"
+ assign_familial_governor_desc_specific: "[SCOPE.sCharacter('recipient').GetName] riceverà il governatorato come [ShowSubjectTypeName('familial_governor')] nella [location|e] obiettivo"
+ assign_familial_governor_past: "Assegnato [SCOPE.sCharacter('recipient').GetName] a un incarico di [ShowSubjectTypeName('familial_governor')]"
+ assign_familial_governor_act: "$assign_familial_governor$"
+ assign_familial_governor_act_past: "$assign_familial_governor_past$"
+ create_familial_governor_effect_tt: "Viene creato un [ShowSubjectTypeName('familial_governor')] nella [location|e] obiettivo governato da [recipient.GetName], e tutte le [locations|e] più vicine alla [ShowLocationRankName('city')] obiettivo rispetto a qualsiasi altra verranno trasferite al governatore"
  
  ennoble: "Nobilta"
  ennoble_concept: "[character|e]"
@@ -89,7 +93,7 @@
  enoble_founds_dynasty_no_location_tt: "Fonda una nuova [dynasty|e] nella [location|e] selezionata"
  ennoble_select_location_title: "Seleziona Sede della Nuova Dinastia"
  ennoble_map_tt: "Il [control|e] attuale in [SCOPE.sLocation('target').GetName] è [SCOPE.sLocation('target').GetControl|0%]"
- 
+
  pardon: "Perdona"
  pardon_concept: "[character|e]"
  pardon_act: "$pardon$"
@@ -105,7 +109,7 @@
  appoint_as_heir_desc: "Il [character|e] sarà scelto per essere l'erede designato della nazione."
  appoint_as_heir_past: "[recipient.GetName] è stato nominato erede"
  appoint_as_heir_act_past: "[recipient.GetName] è stato nominato erede."
- 
+
  grant_cabinet_right: "Concedi Diritto di Gabinetto"
  grant_cabinet_right_concept: "[cabinet|e]"
  grant_cabinet_right_act: "$grant_cabinet_right$"
@@ -131,15 +135,15 @@
  pap_reassign_cleric_past: "[recipient.GetNameWithNoTooltip] Riassegnato"
  pap_reassign_cleric_act_past: "[recipient.GetName] è stato riassegnato dal [actor.GetLongName]."
  pap_reassign_cleric_select_title: "Seleziona [country] di Destinazione"
- 
+
  commission_art: "Commissiona Opera d'Arte"
  commission_art_concept: "[work_of_art|e]"
  commission_art_act: "$commission_art$"
- commission_art_desc_specific: "[SCOPE.sCharacter('recipient').GetName] inizia a creare una [work_of_art|e]." 
+ commission_art_desc_specific: "[SCOPE.sCharacter('recipient').GetName] inizia a creare una [work_of_art|e]."
  commission_art_desc: "Il [character|e] creerà un [work_of_art|e]."
  commission_art_past: "Opera d'Arte Commissionata."
- commission_art_act_past: "[SCOPE.sCharacter('recipient').GetName] ha ricevuto l'incarico di creare una magnifica [work_of_art|e] per noi." 
- 
+ commission_art_act_past: "[SCOPE.sCharacter('recipient').GetName] ha ricevuto l'incarico di creare una magnifica [work_of_art|e] per noi."
+
  abdicate: "Abdica"
  abdicate_concept: "[ruler|e]"
  abdicate_act: "$abdicate$"
@@ -147,7 +151,7 @@
  abdicate_desc: "Il [character|e] abdicherà al trono."
  abdicate_past: "Abdicato!"
  abdicate_act_past: "[recipient.GetName] ha abdicato. [actor.GetGovernment.GetHeir.GetName] è [actor.GetGovernment.GetFutureRuler.Custom('IT_ART_TITOLO')] nuov[actor.GetGovernment.GetFutureRuler.Custom('IT_ART_O_A')] [actor.GetGovernment.GetFutureRulerTitle|w]."
- 
+
  choose_theologian_duelist: "Scegli Teologo Dibattente"
  choose_theologian_duelist_concept: "[character|e]"
  choose_theologian_duelist_act: "$choose_theologian_duelist$"
@@ -156,7 +160,7 @@
  choose_theologian_duelist_past: "[recipient.GetName] Scelto"
  choose_theologian_duelist_act_past: "[recipient.GetName] è stato scelto per rappresentarci nel dibattito religioso. Possa la sua abilità portare gloria al nostro stato. ([recipient.GetTotalAbility])"
  choose_theologian_duelist_ct: "[actor.GetName] NON ha selezionato un [character|e] come Teologo Dibattente."
- 
+
  aclla_distribution: "Sposa Aclla"
  aclla_distribution_concept: "[marriage|e]"
  aclla_distribution_act: "$aclla_distribution$"
@@ -168,7 +172,7 @@
  STATIC_MODIFIER_NAME_aclla_distributed: "Aclla Sposata"
  aclla_distributed: "Aclla Sposata"
  desc_aclla_distributed: "Un'Aclla è stata data in matrimonio al governatore locale della [province|e], assicurando la sua lealtà al suo signore supremo."
- 
+
  prefection: "Prefectio"
  prefection_concept: "[character|e]"
  prefection_act: "$prefection$"
@@ -177,27 +181,27 @@
  prefection_desc: "Il [character|e] $prefection_common_desc$"
  prefection_past: "[[SCOPE.sCountry('actor').GetGovernment.GetRuler.Custom('IT_ART_TITOLO')|U] [SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] ha onorato [SCOPE.sCharacter('recipient').GetName] con lo status di #italic praefecta#!!"
  prefection_act_past: "[SCOPE.sCharacter('recipient').GetName] è ora idoneo come [heir|e] per alcune [heir_selections|e] e [character_interactions|e] di nicchia."
- 
+
  join_foreign_order_of_chivalry: "Entra in un Ordine Cavalleresco Straniero"
  join_foreign_order_of_chivalry_concept: "[character|e]"
  join_foreign_order_of_chivalry_act: "$join_foreign_order_of_chivalry$"
  join_foreign_order_of_chivalry_select_title: "Seleziona un Paese per unirsi al loro Ordine"
  join_foreign_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] si unirà a un #Y Ordine Cavalleresco#! di un Paese bersaglio. I bonus ottenuti dipendono dall'Ordine stesso."
  join_foreign_order_of_chivalry_desc: "Il [character|e] si unirà a un #Y Ordine Cavalleresco#! di un Paese bersaglio. I bonus ottenuti dipendono dall'Ordine stesso."
- join_foreign_order_of_chivalry_past: "[SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]" 
- join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] ha fatto ingresso nel #Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]#! [SCOPE.sCountry('target').Custom('IT_Di')][SCOPE.sCountry('target').GetName]! Ora si applicano a [SCOPE.sCharacter('recipient').GetHimHer] i seguenti effetti:\n[SCOPE.sCountry('target').GetActiveChivalricOrder.GetCharacterModifierText]" 
+ join_foreign_order_of_chivalry_past: "[SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]"
+ join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] ha fatto ingresso nel #Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]#! [SCOPE.sCountry('target').Custom('IT_Di')][SCOPE.sCountry('target').GetName]!"
  character_can_join_order_of_chivalry_tt: "[SCOPE.sCharacter('recipient').GetName] può unirsi a un #Y Ordine Cavalleresco#! disponibile!"
  join_foreign_order_of_chivalry_no_countries: "@trigger_no! Nessun #Y Ordine Cavalleresco#! valido disponibile."
  order_of_chivalry_country_cooldown: "Nessun altro [character|e] si è unito a un #Y Ordine Cavalleresco#! negli ultimi #Y 10 anni#!."
- 
+
  invite_to_order_of_chivalry: "Invita in un Ordine Cavalleresco"
  invite_to_order_of_chivalry_concept: "[character|e]"
  invite_to_order_of_chivalry_act: "$invite_to_order_of_chivalry$"
- invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] riceverà un invito al nostro #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!. Se accetta, a [SCOPE.sCharacter('recipient').GetHimHer] si applicheranno i seguenti effetti:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" 
+ invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] riceverà un invito al nostro #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!. Se accetta, a [SCOPE.sCharacter('recipient').GetHimHer] si applicheranno i seguenti effetti:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]"
  invite_to_order_of_chivalry_desc: "Il [character|e] sarà invitato al nostro #Y Ordine Cavalleresco#!."
- invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] ha fatto ingresso nel #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!!" 
- invite_to_order_of_chivalry_act_past: "Ora si applicano a [SCOPE.sCharacter('recipient').GetHimHer] i seguenti effetti:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" 
- 
+ invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] ha fatto ingresso nel #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!!"
+ invite_to_order_of_chivalry_act_past: "Ora si applicano a [SCOPE.sCharacter('recipient').GetHimHer] i seguenti effetti:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]"
+
  banish_character: "Bandisci"
  banish_character_concept: "[character|e]"
  banish_character_act: "$banish_character$"
@@ -216,19 +220,7 @@
  execute_character_act_past: "[SCOPE.sCharacter('recipient').GetName] non sarà più un problema per [SCOPE.sCountry('actor').Custom('IT_La')][SCOPE.sCountry('actor').GetName]."
  increase_gov_power_cost_banished_character_tt: "$banish_execute_cost_increase_string_start$ #R 2.50#! $banish_execute_cost_increase_string_end$"
  increase_gov_power_cost_executed_character_tt: "$banish_execute_cost_increase_string_start$ #R 5.00#! $banish_execute_cost_increase_string_end$"
- 
- favor_heir: "Favorisci Erede"
- favor_heir_concept: "[heir|e]"
- favor_heir_act: "$favor_heir$"
- favor_heir_desc_specific: "Faremo di [SCOPE.sCharacter('recipient').GetName] la nostra preferenza personale per il nostro prossimo sovrano."
- favor_heir_desc: "Il [character|e] sarà favorito come nostro nuovo successore."
- favor_heir_past: "[SCOPE.sCharacter('recipient').GetName] è stato favorito!"
- favor_heir_act_past: "[SCOPE.sCharacter('recipient').GetName] è stat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] favorit[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] per essere [SCOPE.sCharacter('recipient').Custom('IT_ART_IL_LA')] nostr[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] successore, in competizione con altri candidati per il governo del nostro stato."
- favor_heir_at: "[SCOPE.sCharacter('recipient').GetName] è già un candidato sostenuto e valido erede al nostro trono"
- favor_heir_ct: "Stiamo già favorendo [SCOPE.sCountry('actor').MakeScope.GetVariable('favored_heir').GetCharacter.GetName] come nostr[SCOPE.sCountry('actor').MakeScope.GetVariable('favored_heir').Custom('IT_ART_O_A')] futur[SCOPE.sCountry('actor').MakeScope.GetVariable('favored_heir').Custom('IT_ART_O_A')] erede."
- favor_heir_tt: "[SCOPE.sCharacter('recipient').GetName] sarà [SCOPE.sCharacter('recipient').Custom('IT_ART_IL_LA')] nostr[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [heir|e], rendendol[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] idone[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] a diventare un[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] dei nostri eredi."
- favor_heir_bt: "#Y We can only favor a single heir#!"
- 
+
  promote_to_head_of_cabinet: "Promuovi a Capo di Gabinetto"
  promote_to_head_of_cabinet_concept: "[cabinet|e]"
  promote_to_head_of_cabinet_act: "$promote_to_head_of_cabinet$"
@@ -239,14 +231,14 @@
  promote_to_head_of_cabinet_timer: "Ha servito il [cabinet|e] per #Y 10 anni#!"
  promote_to_head_of_cabinet_effect_tt: "[SCOPE.sCharacter('recipient').GetName] ottiene [ShowModifier('head_of_the_cabinet_modifier')] finché lavora nel [cabinet|e]"
  head_of_cabinet_influence_effect_tt: "Poiché il personaggio fa parte del Ceto [ESTATE.GetName], si verificheranno i seguenti effetti:"
- head_of_cabinet_influence_desc: "tutta la durata della sua presenza nel [cabinet|e]"
+ head_of_cabinet_influence_desc: "finché il [character|e] rimane nel [cabinet|e]"
  head_of_cabinet_promotion: "Promozione a Capo di Gabinetto"
- 
+
  nobles_estate_head_of_cabinet_influence_effect_tt: "A causa del ceto di [SCOPE.sCharacter('recipient').GetName], otteniamo i seguenti effetti finché il [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] non lascia il [cabinet|e]:\n[ShowModifierEffect('nobles_estate_head_of_cabinet_influence')]"
  burghers_estate_head_of_cabinet_influence_effect_tt: "A causa del ceto di [SCOPE.sCharacter('recipient').GetName], otteniamo i seguenti effetti finché il [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] non lascia il [cabinet|e]:\n[ShowModifierEffect('burghers_estate_head_of_cabinet_influence')]"
  clergy_estate_head_of_cabinet_influence_effect_tt: "A causa del ceto di [SCOPE.sCharacter('recipient').GetName], otteniamo i seguenti effetti finché il [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] non lascia il [cabinet|e]:\n[ShowModifierEffect('clergy_estate_head_of_cabinet_influence')]"
  peasants_estate_head_of_cabinet_influence_effect_tt: "A causa del ceto di [SCOPE.sCharacter('recipient').GetName], otteniamo i seguenti effetti finché il [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] non lascia il [cabinet|e]:\n[ShowModifierEffect('peasants_estate_head_of_cabinet_influence')]"
- 
+
  assume_fort_command: "Assumi Comando Fortezza"
  assume_fort_command_concept: "[fort|e]"
  assume_fort_command_act: "$assume_fort_command$"
@@ -256,8 +248,8 @@
  assume_fort_command_act_past: "[SCOPE.sCharacter('recipient').GetName] ha assunto il controllo sulle difese di [SCOPE.sArea('target').GetName]."
  assume_fort_command_tt: "L'[area|e] bersaglio ottiene il [ShowModifier('assume_fort_command_modifier')] per #Y 10 anni#!\nL'effetto si basa sull'[ability|e] amministrativa di [SCOPE.sCharacter('recipient').GetName]"
  assume_fort_command_select_area_title: "Seleziona un'Area Bersaglio"
- 
- # Timurids
+
+  #Timurids
  assign_governor: "Concedi Governatorato"
  assign_governor_concept: "[character|e]"
  assign_governor_act: "$assign_governor$"
@@ -272,19 +264,29 @@
  tim_normal_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] ottenga [events|e] positivi che aumenteranno la [prosperity|e] e il [development|e] dell'[area|e] a seconda dell'[total_ability|e] del [character|e].\n\nL'[area|e] sarà annessa da noi dopo la morte di [SCOPE.sCharacter('recipient').GetName]."
  tim_banished_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] non potrà diventare [SCOPE.sCharacter('recipient').Custom('IT_ART_IL_LA')] nostr[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [heir|e], ma [SCOPE.sCharacter('recipient').GetSheHe] potrebbe ottenere [events|e] per raccogliere supporto contro di noi.\n\nL'[area|e] potrebbe essere ereditata dall'[heir|e] di [SCOPE.sCharacter('recipient').GetName] dopo la sua morte."
  tim_educational_governor_effects_tt: "Nomina [SCOPE.sCharacter('recipient').GetName] come [target_reform.GetName] nell'[area|e]. Questo assicurerà che [SCOPE.sCharacter('recipient').GetSheHe] otterrà più [total_ability|e] da [events|e], ma l'[area|e] potrebbe perdere [development|e] e [prosperity|e] nel processo.\n\nL'[area|e] potrebbe essere ereditata dopo che [SCOPE.sCharacter('recipient').GetName] avrà governato l'[area|e] per #Y 10#! anni, oppure [SCOPE.sCharacter('recipient').GetSheHe] potrebbe diventare un [ShowGovernmentReformName('soyurghal_governor_effective_governor_reform')]."
- tim_is_related_to_ruler_tt: "Il [character|e] è imparentato con il nostro [ruler|e]"
- 
+ tim_is_related_to_ruler_tt: "Il [character|e] è un antenato del nostro [ruler|e]"
+
  tur_appoint_dragoman: "Nomina Dragomanno"
  tur_appoint_dragoman_concept: "[character|e]"
  tur_appoint_dragoman_act: "$tur_appoint_dragoman$"
  tur_appoint_dragoman_desc: "Nomina un [character|e] nella posizione di Dragomanno, rafforzando l'[cultural_influence|e] e la [cultural_tradition|e] della sua cultura, oltre a darci i seguenti effetti:\n[ShowModifierEffect('head_of_the_cabinet_modifier')]"
  tur_appoint_dragoman_desc_specific: "Nomina un [character|e] alla posizione di Dragomanno, conferendogli il [modifier|e] [ShowModifier('dragoman_modifier')]."
  tur_appoint_dragoman_past: "[SCOPE.sCharacter('recipient').GetName] è stat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] nominat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [ShowModifier('dragoman_modifier')]"
- tur_appoint_dragoman_act_past: "[SCOPE.sCharacter('recipient').GetName] è stat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] nominat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [ShowModifier('dragoman_modifier')], rafforzando il popolo [SCOPE.sCharacter('recipient').GetCulture.Custom('IT_CUL_MS')]." 
- dismiss_artist: "Congeda Artista" 
- dismiss_artist_concept: "[artist|e]" 
- dismiss_artist_act: "$dismiss_artist$" 
- dismiss_artist_desc: "Rimuovi questo [artist|e] dalla nostra corte. Si spargerà la voce che siamo un mecenate difficile." 
- dismiss_artist_desc_specific: "Congeda [SCOPE.sCharacter('recipient').GetName] dalla nostra corte. Questo ci costerà [prestige|e] e potrebbe turbare il [estate|e] associato." 
- dismiss_artist_past: "Artista congedato" 
- dismiss_artist_act_past: "[SCOPE.sCharacter('recipient').GetName] ha lasciato la nostra corte." 
+ tur_appoint_dragoman_act_past: "[SCOPE.sCharacter('recipient').GetName] è stat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] nominat[SCOPE.sCharacter('recipient').Custom('IT_ART_O_A')] [ShowModifier('dragoman_modifier')], rafforzando il popolo [SCOPE.sCharacter('recipient').GetCulture.Custom('IT_CUL_MS')]."
+
+ dismiss_artist: "Congeda Artista"
+ dismiss_artist_concept: "[artist|e]"
+ dismiss_artist_act: "$dismiss_artist$"
+ dismiss_artist_desc: "Rimuovi questo [artist|e] dalla nostra corte. Si spargerà la voce che siamo un mecenate difficile."
+ dismiss_artist_desc_specific: "Congeda [SCOPE.sCharacter('recipient').GetName] dalla nostra corte. Questo ci costerà [prestige|e] e potrebbe turbare il [estate|e] associato."
+ dismiss_artist_past: "Artista congedato"
+ dismiss_artist_act_past: "[SCOPE.sCharacter('recipient').GetName] ha lasciato la nostra corte."
+ marry_lowborn_close_relative_tt: "È un parente stretto del [ruler|e], o dell'[heir|e] se il governante è un [regent|e]"
+ adapt_religion_for_ruler: "Adotta la Religione di Stato"
+ adapt_religion_for_ruler_concept: "[religion|e]"
+ adapt_religion_for_ruler_act: "$adapt_religion_for_ruler$"
+ adapt_religion_for_ruler_desc_specific: "[SCOPE.sCharacter('recipient').GetName] adotterà la [religion|e] [SCOPE.sCountry('actor').GetReligion.GetName] [SCOPE.sCountry('actor').Custom('IT_DEL_RANGO')][SCOPE.sCountry('actor').GetLongName]."
+ adapt_religion_for_ruler_desc: "Il [character|e] adotterà la [religion|e] del [country|e]."
+ adapt_religion_for_ruler_past: "[SCOPE.sCharacter('recipient').GetName] ha abbracciato la religione [SCOPE.sCountry('actor').GetReligion.GetName]!"
+ adapt_religion_for_ruler_act_past: "[SCOPE.sCharacter('recipient').GetName] ha adottato la [religion|e] [SCOPE.sCountry('actor').GetReligion.GetName] [SCOPE.sCountry('actor').Custom('IT_DEL_RANGO')][SCOPE.sCountry('actor').GetLongName]."
+ execute_character_not_pretender_tt: "Il [character|e] non è il pretendente di una crisi di successione in corso"

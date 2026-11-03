@@ -1,6 +1,6 @@
 ﻿l_english:
  flavor_eth.10.title: "[pero_covilha.GetNameWithNoTooltip]"
- flavor_eth.10.entry: "Pêro da Covilhã" #NEW
+ flavor_eth.10.entry: "Pêro da Covilhã"
  flavor_eth.10.desc: "A strange man has come onto our shores, but not by the [ShowAreaName('red_sea_area')] route by which foreigners usually travel to us. He claims he is part of a voyage from the south, a voyage that, to our knowledge, has never been attempted before. He brings greetings from fellow Christian monarchs, though his prayer is unlike that which we have seen before. How should we treat this man?"
  flavor_eth.10.a: "Honor him and bar him from leaving!"
  flavor_eth.10.a.desc: "More visitors will soon come from [GetCountry('POR').GetName]."
@@ -9,8 +9,8 @@
  flavor_eth.20.title: "An Embassy Is Here!"
  flavor_eth.20.entry: "$flavor_eth.20.title$"
  flavor_eth.20.desc: "[francisco_alvares.GetName], representing the same country that sent the previous emissary, wishes to discuss what our two regimes can do together. He says he was looking for a #italic Prester John#!, and we are apparently the country he seeks. Should we begin an exchange?"
- flavor_eth.20.a: "Seek aid against [GetCountry('MAM').GetNameWithNoTooltip]!" #NEW
- flavor_eth.20.a.entry: "Seek aid against the $MAM$!" #NEW
+ flavor_eth.20.a: "Seek aid against [GetCountry('MAM').GetNameWithNoTooltip]!"
+ flavor_eth.20.a.entry: "Seek aid against the $MAM$!"
  flavor_eth.20.tt: "[GetCountry('POR').GetName] will be asked for military aid"
  flavor_eth.20.b: "Ask for a cultural exchange?"
  flavor_eth.20.c: "Maybe a trade deal is in order?"
@@ -47,29 +47,29 @@
  flavor_eth.40.b: "Actively encourage the cultural conversion of the countryside."
 
  flavor_eth.50.title: "[ShowLocationNameWithNoTooltip('debra_berhan')] - The Mountain of Light"
- flavor_eth.50.entry: "Debre Berhan - The Mountain of Light" #NEW
+ flavor_eth.50.entry: "Debre Berhan - The Mountain of Light"
  flavor_eth.50.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has had a vision in which [ROOT.GetCountry.GetGovernment.GetRulerSheHe] has been shown a shining mountain on which to build the new capital of [ROOT.GetCountry.GetName]. A [ShowBuildingTypeName('temple')] has already been constructed at the site and now it is up to the state to realize the dream of our [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
  flavor_eth.50.a: "The time has come for a permanent Capital."
  flavor_eth.50.b: "Let us not break with Tradition."
 
- flavor_eth.60.title: "[ShowLocationName('debra_berhan')] Plundered"
- flavor_eth.60.entry: "Debre Berhan Plundered" #NEW
+ flavor_eth.60.title: "[ShowLocationNameWithNoTooltip('debra_berhan')] Saccheggiata"
+ flavor_eth.60.entry: "Debre Berhan Plundered"
  flavor_eth.60.desc: "Old traditions die hard and as the countryside of [ShowLocationName('debra_berhan')] is being plundered, the new capital is being abandoned by everyone from our courtiers to the lowliest stable boy. We have no choice but to resume the custom of having an itinerant court."
  flavor_eth.60.a: "We must move to the provinces."
 
  flavor_eth.70.title: "[ShowLocationNameWithNoTooltip('gonder')] - A new Capital"
- flavor_eth.70.entry: "Gondar - A new Capital" #NEW
+ flavor_eth.70.entry: "Gondar - A new Capital"
  flavor_eth.70.desc: "[target_character.GetName] finds [target_character.GetHerselfHimself] spending more and more time by the monasteries at [ShowLocationName('lake_tana')]. Due to this continued patronage of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], a small market town has begun to spring up in the area and some have started to name the city as a secondary capital of our [ROOT.GetCountry.GetFlavorRank].\n\nThis idea has grown on those who believe a permanent capital here might allow us to start a new spiritual and architectural legacy."
  flavor_eth.70.a: "Let us build our capital here."
  flavor_eth.70.b: "We must not bind ourselves to one place."
 
  flavor_eth.80.title: "The fate of the [ShowCultureNameWithNoTooltip('lower_egyptian_culture')] [ShowReligionAdjectiveWithNoTooltip('miaphysite')] people"
- flavor_eth.80.entry: "The fate of the Egyptian Copts" #NEW
+ flavor_eth.80.entry: "The fate of the Egyptian Copts"
  flavor_eth.80.desc: "Word has reached us from [ShowRegionName('egypt_region')] that the [GetCountry('MAM').GetAdjective] [GetCountry('MAM').GetGovernment.GetRulerTitle] is persecuting the [ShowReligionAdjective('miaphysite')] people in his lands. As a fellow realm under the Patriarchate of [ShowLocationName('alexandria')], it is our duty to act. The fact that the patriarch himself is in [GetCountry('MAM').GetAdjectiveWithNoTooltip] hands complicates things somewhat however, a direct attack might place the foundation of our Church at risk."
  flavor_eth.80.a: "Send a strongly worded letter to the [GetCountry('MAM').GetGovernment.GetRulerTitle]."
- flavor_eth.80.a.entry: "Send a strongly worded letter to him." #NEW
- flavor_eth.80.b: "Avoid the risk of angering [GetCountry('MAM').GetNameWithNoTooltip]." #NEW
- flavor_eth.80.b.entry: "Avoid the risk of angering the $MAM$." #NEW
+ flavor_eth.80.a.entry: "Send a strongly worded letter to him."
+ flavor_eth.80.b: "Avoid the risk of angering [GetCountry('MAM').GetNameWithNoTooltip]."
+ flavor_eth.80.b.entry: "Avoid the risk of angering the $MAM$."
  flavor_eth.80.c: "This is cause for war!"
 
  flavor_eth.81.title: "A letter arrives from [target_from_country.GetNameWithNoTooltip]"
@@ -89,7 +89,7 @@
  flavor_eth.83.c: "Let's just drop it."
 
  flavor_eth.84.title: "[target_mam.GetNameWithNoTooltip] Apologize"
- flavor_eth.84.entry: "Mamluks Apologize" #NEW
+ flavor_eth.84.entry: "Mamluks Apologize"
  flavor_eth.84.desc: "The [target_mam.GetAdjective] [target_mam.GetGovernment.GetRulerTitle] has sent word that [target_mam_ruler.GetSheHe] is looking into the situation of [ShowReligionAdjective('miaphysite')] people in [target_mam_ruler.GetHerHis] lands. [target_mam_ruler.GetSheHe|U] assures us that [target_mam_ruler.GetSheHe] has nothing but feelings of friendship towards the [ROOT.GetCountry.GetAdjective] people and the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] Church."
  flavor_eth.84.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
  flavor_eth.84.a.entry: "$common_string_alright$"
@@ -149,34 +149,34 @@
  flavor_eth.150.title: "$the_book_of_the_mysteries_of_the_heavens_and_the_earth$"
  flavor_eth.150.entry: "$flavor_eth.150.title$"
  flavor_eth.150.desc: "With theology rising in popularity within [ROOT.GetCountry.GetName], more monks have been inspired to write about their knowledge. One such monk is [target_artist.GetName], a prominent member of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], who wishes to write about the creation of mankind and how everything in this world came to be."
- flavor_eth.150.a: "Let us sponsor him." #NEW
+ flavor_eth.150.a: "Let us sponsor him."
  flavor_eth.150.b: "We are not able to afford it."
 
  flavor_eth.151.title: "Return of the Exiled Monks"
  flavor_eth.151.entry: "$flavor_eth.151.title$"
- flavor_eth.151.desc: "During the reign of [target_character3.GetName], he led an unorthodox life, one that invoked the hatred of monks such as [target_character.GetName], criticizing him for such lifestyle. Due to that, he was exiled with a few other monks. Now that [target_character3.GetNameWithNoTooltip] is dead, maybe [target_character2.GetName] can lift their exile." #NEW
- flavor_eth.151.a: "His exile was unjust. Let him return." #NEW
- flavor_eth.151.b: "He will not return as long as he is alive." #NEW
+ flavor_eth.151.desc: "During the reign of [target_character3.GetName], he led an unorthodox life, one that invoked the hatred of monks such as [target_character.GetName], criticizing him for such lifestyle. Due to that, he was exiled with a few other monks. Now that [target_character3.GetNameWithNoTooltip] is dead, maybe [target_character2.GetName] can lift their exile."
+ flavor_eth.151.a: "His exile was unjust. Let him return."
+ flavor_eth.151.b: "He will not return as long as he is alive."
 
  flavor_eth.153.title: "Debre Igziabher"
  flavor_eth.153.entry: "$flavor_eth.153.title$"
  flavor_eth.153.desc: "Debre Igziabher is an ancient church of [ROOT.GetCountry.GetName], but history has forgotten it. Overlooking the lake of [target_location.GetName], [target_character.GetName] has been thinking of rebuilding it to strengthen the [ROOT.GetCountry.GetReligion.GetAdjective] faith within the [ROOT.GetCountry.GetFlavorRank]."
  flavor_eth.153.a: "Let us rebuild this church."
  flavor_eth.153.b: "We refuse, even if it angers the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
- flavor_eth.153.b.entry: "We refuse, even if it angers the $clergy_estate$." #NEW
- flavor_eth.153.c: "It shall be one of the grandest churches in [ROOT.GetCountry.GetNameWithNoTooltip]." #NEW
- flavor_eth.153.c.entry: "It shall be one of the grandest churches in our country." #NEW
+ flavor_eth.153.b.entry: "We refuse, even if it angers the $clergy_estate$."
+ flavor_eth.153.c: "It shall be one of the grandest churches in [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_eth.153.c.entry: "It shall be one of the grandest churches in our country."
 
  flavor_eth.155.title: "Curtailing the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
  flavor_eth.155.entry: "$flavor_eth.155.title$"
  flavor_eth.155.desc: "Ever since the ascension of [target_character.GetName] to the throne of [ROOT.GetCountry.GetName], the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have controlled most of the lands. [target_character2.GetName] wishes to undo this, reducing their power significantly. This, however, might upset them."
  flavor_eth.155.a: "The lands belong to [ROOT.GetCountry.GetNameWithNoTooltip]."
- flavor_eth.155.a.entry: "The lands belong to us." #NEW
+ flavor_eth.155.a.entry: "The lands belong to us."
  flavor_eth.155.b: "We are not going to upset the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
- flavor_eth.155.b.entry: "We are not going to upset the $clergy_estate$." #NEW
+ flavor_eth.155.b.entry: "We are not going to upset the $clergy_estate$."
 
  flavor_eth.156.title: "Revolt of [rebels_scope.GetNameWithNoTooltip]"
- flavor_eth.156.entry: "Revolt of Beta Israel" #NEW
+ flavor_eth.156.entry: "Revolt of Beta Israel"
  flavor_eth.156.desc: "The [ShowReligionAdjective('judaism')] communities in [ROOT.GetCountry.GetName] have become rebellious. They rally behind a movement called [rebels_scope.GetName], wishing to rid themselves of our [ROOT.GetCountry.GetReligion.GetAdjective] ways."
  flavor_eth.156.a: "We need to prepare."
  flavor_eth.156.b: "They are right. Let us give them some religious rights."
@@ -194,9 +194,9 @@
  flavor_eth.160.entry: "$flavor_eth.160.title$"
  flavor_eth.160.desc: "Due to the scholarly nature of [target_character.GetName], [target_character.GetSheHe] has been inspired by several other treatises, specifically ones in [ShowContinentName('europe')], and wishes to spend [target_character.GetHerHis] time on writing a number a books, starting with $book_of_light$. [target_character.GetSheHe|U] hopes they will promote [ROOT.GetCountry.GetReligion.GetName] in [ROOT.GetCountry.GetName]. However, such practice will not allow [target_character.GetHerHim] to govern as effectively."
  flavor_eth.160.a: "[target_character.GetSheHe|U] shall make a masterpiece!"
- flavor_eth.160.a.entry: "He shall make a masterpiece!" #NEW
+ flavor_eth.160.a.entry: "He shall make a masterpiece!"
  flavor_eth.160.b: "[target_character.GetNameWithNoTooltip] shall rule, not write."
- flavor_eth.160.b.entry: "The character shall rule, not write." #NEW
+ flavor_eth.160.b.entry: "The character shall rule, not write."
 
  flavor_eth.161.title: "$book_of_nativity$"
  flavor_eth.161.desc: "After months of writing, [target_character.GetName] has produced yet another book for our collection. Dubbing it $book_of_nativity$, calling for reform in the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and defending [target_character.GetHerHis] beliefs on the matter."
@@ -206,21 +206,21 @@
  flavor_eth.162.entry: "$flavor_eth.162.title$"
  flavor_eth.162.desc: "With the remaining time [target_character.GetName] had dedicated to writing, [target_character.GetSheHe] produced [target_character.GetHerHis] final masterpiece. Calling it $books_of_trinity$, it serves as the conclusion of [target_character.GetHerHis] religious beliefs within [ROOT.GetCountry.GetName] that have been written in the $book_of_light$ and the $book_of_nativity$."
  flavor_eth.162.a: "Maybe [target_character.GetNameWithNoTooltip] can reform the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]?"
- flavor_eth.162.a.entry: "Maybe he can reform the $clergy_estate$?" #NEW
+ flavor_eth.162.a.entry: "Maybe he can reform the $clergy_estate$?"
 
  flavor_eth.163.title: "[ShowBuildingTypeNameWithNoTooltip('debere_meshwae')]"
- flavor_eth.163.entry: "Debre Meshwa'e" #NEW
+ flavor_eth.163.entry: "Debre Meshwa'e"
  flavor_eth.163.desc: "Due to the successful reign of [target_character.GetName], [target_character.GetSheHe] has been inspired to create [ShowBuildingTypeName('debere_meshwae')], a church greater than the rest. It may be costly to do so, but trying to contain [target_character.GetHerHim] on this project may result in the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] turning against us."
  flavor_eth.163.a: "Let us construct it."
- flavor_eth.163.b: "How many churches do [ROOT.GetCountry.GetNameWithNoTooltip] need?" #NEW
- flavor_eth.163.b.entry: "How many churches do we need?" #NEW
+ flavor_eth.163.b: "How many churches do [ROOT.GetCountry.GetNameWithNoTooltip] need?"
+ flavor_eth.163.b.entry: "How many churches do we need?"
 
  flavor_eth.164.title: "Foreign Inspirations"
  flavor_eth.164.entry: "$flavor_eth.164.title$"
  flavor_eth.164.desc: "Although [ROOT.GetCountry.GetCulture.GetName] has been the dominant force in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], there have been several debates to instead look outward and reshape it in ways that are inspired by foreign nations. Doing so will surely hit [ROOT.GetCountry.GetName] negatively, but it is a worthwhile endeavor if we are to invite more scholars."
  flavor_eth.164.a: "It is worthwhile."
  flavor_eth.164.b: "[ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] shall always lead the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
- flavor_eth.164.b.entry: "Our culture shall always lead the court." #NEW
+ flavor_eth.164.b.entry: "Our culture shall always lead the court."
 
  flavor_eth.165.title: "$confession_of_faith$"
  flavor_eth.165.entry: "$flavor_eth.165.title$"
@@ -230,12 +230,13 @@
  
 
  flavor_eth.200.title: "[ewostatewos.GetNameWithNoTooltip] the Monk" #senafe Debre Mariam https://en.wikipedia.org/wiki/Debre_Mariam
- flavor_eth.200.entry: "Ewostatewos the Monk" #NEW
- flavor_eth.200.desc: "During our travels around our country to visit our chiefs, we have encountered a wise man teaching to the common folk. [ewostatewos.GetName] is a monk and religious leader from the north of our [ROOT.GetCountry.GetFlavorRank], he has a monastery and a small following of disciples, but after just a few minutes of listening to his lesson, our bishop quickly became irritated with him.\n\n[ewostatewos.GetNameWithNoTooltip] proclaims to defend the ancient custom of the [GetCountry('ETH').GetAdjective] [ShowReligionName('miaphysite')] commonfolk to observe both Saturday and Sunday as Holy Days. Our bishop instead says that that doctrine goes against the mandate of our patriarch in [ShowLocationName('alexandria')] and may lead to all kinds of problems. In his mind, the only way is to punish [ewostatewos.GetNameWithNoTooltip] for teaching it, so it sets an example and nobody follows his misguided step." #NEW
+ flavor_eth.200.entry: "Ewostatewos the Monk"
+ flavor_eth.200.desc: "During our travels around our country to visit our chiefs, we have encountered a wise man teaching to the common folk. [ewostatewos.GetName] is a monk and religious leader from the north of our [ROOT.GetCountry.GetFlavorRank], he has a monastery and a small following of disciples, but after just a few minutes of listening to his lesson, our bishop quickly became irritated with him.\n\n[ewostatewos.GetNameWithNoTooltip] proclaims to defend the ancient custom of the [GetCountry('ETH').GetAdjective] [ShowReligionName('miaphysite')] commonfolk to observe both Saturday and Sunday as Holy Days. Our bishop instead says that that doctrine goes against the mandate of our patriarch in [ShowLocationName('alexandria')] and may lead to all kinds of problems. In his mind, the only way is to punish [ewostatewos.GetNameWithNoTooltip] for teaching it, so it sets an example and nobody follows his misguided step."
  flavor_eth.200.a: "Follow the bishop's advice."
- flavor_eth.200.b: "There is no need for punishment, he can go somewhere else." #NEW
- flavor_eth.200.c: "Ewostatewos seems wiser than our Bishop, he may get the position." #NEW
- flavor_eth.200.d: "Actually we are also interested in what he has to teach." #NEW
+ flavor_eth.200.b: "There is no need for punishment, he can go somewhere else."
+ flavor_eth.200.c: "[ewostatewos.GetShortNameWithNoTooltip] sembra più saggio del nostro Vescovo, [ewostatewos.GetSheHe] potrebbe ottenere la carica."
+ flavor_eth.200.c.entry: "$name_eustathius.ethiopic_language$ sembra più saggio del nostro Vescovo, potrebbe ottenere la carica."
+ flavor_eth.200.d: "Actually we are also interested in what he has to teach."
  
  flavor_eth.201.title: "[ewostatewos.GetNameWithNoTooltip], the [GetCountry('ETH').GetAdjectiveWithNoTooltip] Monk"
  flavor_eth.201.desc: "[ewostatewos.GetName] is a [ShowReligionAdjective('miaphysite')] monk from the north of [GetCountry('ETH').GetName]. We are being told that he has come to our [ROOT.GetCountry.GetFlavorRank] fleeing from persecution for his unorthodox teachings and is searching for the acceptance of the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] leaders in our capital."
@@ -248,15 +249,16 @@
  flavor_eth.202.title: "Seven Disciples of [ewostatewos.GetNameWithNoTooltip]"
  flavor_eth.202.desc: "The followers of [ewostatewos.GetName], the disgruntled monk, have all but vanished during the absence of their teacher and we had almost forgotten him, to the point that their return has gone unnoticed to us.\n\nIn the meantime, they have rebuilt his old monastery and started building others of their own. This new monastic faction has started to call itself the #italic House of [ewostatewos.GetNameWithNoTooltip]#!"
  house_of_ewostatewos_name: "House of Ewostatewos"
- flavor_eth.202.a: "Send a clergyman Anorewos, to talk to them." #NEW
+ flavor_eth.202.a: "Mandiamo il religioso [anorewos.GetNameWithNoTooltip] a parlare con loro."
+ flavor_eth.202.a.entry: "Mandiamo il religioso $name_anorewos$ a parlare con loro."
  flavor_eth.202.b: "They dared to disobey the [ROOT.GetCountry.GetGovernment.GetRulerTitle]! No second chances!"
- flavor_eth.202.b.entry: "They dared to disobey him! No second chances!" #NEW
+ flavor_eth.202.b.entry: "They dared to disobey him! No second chances!"
  flavor_eth.202.c: "We still do not care."
 
  flavor_eth.203.title: "The Breach Widens"
  flavor_eth.203.desc: "Disaster! Sending [anorewos.GetName] to discuss the tense situation with [ewostatewos.GetName] was a terrible mistake. We have been informed that the talks quickly degraded into a heated theological argument that bordered the confrontation with the monks. Luckily our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] were kicked out of the monastery before the situation escalated further."
  flavor_eth.203.a: "[anorewos.GetShortNameWithNoTooltip] will divide our [ROOT.GetCountry.GetFlavorRank] with his religious disputes."
- flavor_eth.203.a.entry: "$name_anorewos$ will divide our realm with his religious disputes." #NEW
+ flavor_eth.203.a.entry: "$name_anorewos$ will divide our realm with his religious disputes."
  flavor_eth.203.a.tt: "[anorewos.GetNameWithNoTooltip] will be punished publicly"
  flavor_eth.203.a.tt2: "The monk's influence extends only to lands surrounding their monasteries."
  flavor_eth.203.b: "Those who wrong my representatives, wrong me. Burn it to the ground!"
@@ -274,13 +276,13 @@
  flavor_eth.210.b: "We will build an even grander monument!"
 
  flavor_eth.220.title: "Saint George Church at [target_location.GetNameWithNoTooltip]"
- flavor_eth.220.entry: "Saint George Church at Lalibela" #NEW
+ flavor_eth.220.entry: "Saint George Church at Lalibela"
  flavor_eth.220.desc: "Several generations ago King Gebre Mesqel Lalibela had a vision for the city that bears his name, to be a mirror image of the Holy City of [ShowLocationName('jerusalem')] and to attract pilgrims from all around the Christendom. The churches he created are magnificent centers of faith but there is still much work to be done to reach Lalibela's dreams."
  flavor_eth.220.a: "Let's spare no expense."
  flavor_eth.220.b: "We cannot afford the investment."
 
  flavor_eth.230.title: "Codifying the [ShowLawNameWithNoTooltip('double_sabbath_tenet')]"
- flavor_eth.230.entry: "Codifying the Double Sabbath" #NEW
+ flavor_eth.230.entry: "Codifying the Double Sabbath"
  flavor_eth.230.desc: "Now that we have broken the shackles that tied us to the Patriarchate of [ShowLocationName('alexandria')], it is time to codify the tenets that are going to define the life of the [ROOT.GetCountry.GetAdjective] people under our new Patriarchate."
  flavor_eth.230.a: "Let us create this doctrine."
  flavor_eth.230.b: "No, we would keep our traditions as they are."
@@ -300,7 +302,7 @@
  flavor_eth.250.entry: "$flavor_eth.250.title$"
  flavor_eth.250.desc: "Although the [ROOT.GetCountry.GetCulture.GetName] culture has led to many great projects in [ROOT.GetCountry.GetName], sometimes asking for outside help is needed. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] has suggested that we request artisans from [target_country.GetName]."
  flavor_eth.250.a: "Even if it hurts the [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] culture, progress is more important."
- flavor_eth.250.a.entry: "Even if it hurts our culture, progress is more important." #NEW
+ flavor_eth.250.a.entry: "Even if it hurts our culture, progress is more important."
  flavor_eth.250.b: "We can do without them."
  eth_target_country_must_accept_tt: "[target_country.GetName] must accept for the effects to take place"
 
@@ -328,7 +330,7 @@
  flavor_eth_270_title_common: "[target_character2.GetNameWithNoTooltip] Revolts"
 
  flavor_eth.270.title: "$flavor_eth_270_title_common$"
- flavor_eth.270.entry: "Ruler of $IFA$ Revolts" #NEW
+ flavor_eth.270.entry: "Ruler of $IFA$ Revolts"
  flavor_eth.270.desc: "Due to our increasing [ShowReligionGroupAdjective('muslim')] population within [ROOT.GetCountry.GetName], the governor of these lands, [target_character2.GetName], a follower of [ShowReligionGroupNameWithNoTooltip('muslim')], wants to rise up against [GetCountry('ETH').GetName]. [target_character2.GetSheHe|U] is ready to yield the sword against [target_character2.GetHerHis] enemies."
  flavor_eth.270.a: "We shall break free."
  flavor_eth.270.b: "It is not a worthwhile endeavor."
@@ -336,8 +338,10 @@
  flavor_eth.271.title: "$flavor_eth_270_title_common$"
  flavor_eth.271.desc: "[target_character2.GetName] of [target_country.GetName] has declared [target_character2.GetHerHis] lands independent from ours, proclaiming [ShowReligionGroupName('muslim')] the official religion of the area."
  flavor_eth.271.a: "We shall never let them break free!"
- flavor_eth.271.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" 
+ flavor_eth.271.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
  flavor_eth.271.b.entry: "$common_string_nothing_we_can_do_about_it$"
- variable_tt_portuguese_embassy: "Portuguese Embassy Established in Ethiopia" #NEW
- variable_tt_not_eth_autonomous_church: "Ethiopian Orthodox Church is not Autonomous from Alexandria" #NEW
- variable_tt_not_abandoned_stele_construction: "Stele Construction at Aksum has not been Abandoned" #NEW
+
+ # has_variable custom tooltips
+ variable_tt_portuguese_embassy: "Portuguese Embassy Established in Ethiopia"
+ variable_tt_not_eth_autonomous_church: "Ethiopian Orthodox Church is not Autonomous from Alexandria"
+ variable_tt_not_abandoned_stele_construction: "Stele Construction at Aksum has not been Abandoned"

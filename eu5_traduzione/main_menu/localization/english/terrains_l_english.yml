@@ -1,12 +1,11 @@
 ﻿l_english:
- #Topography
+ # Topography
  flatland: "Pianura"
  mountains: "Montagne"
  hills: "Colline"
  plateau: "Altopiano"
  wetlands: "Zone Umide"
- 
- #Vegetation
+ # Vegetation
  desert: "Deserto"
  sparse: "Steppe"
  grasslands: "Praterie"
@@ -14,8 +13,7 @@
  woods: "Boschi"
  forest: "Foreste"
  jungle: "Giungla"
- 
- #Climate
+ # Climate
  arctic: "Artico"
  continental: "Continentale"
  mediterranean: "Mediterraneo"
@@ -24,8 +22,10 @@
  cold_arid: "Desertico Freddo"
  oceanic: "Oceanico"
  subtropical: "Subtropicale"
- 
- #Water & Wastelands
+ hot_semi_arid: "Semi-Arido Caldo"
+ cold_semi_arid: "Semi-Arido Freddo"
+ subpolar: "Subpolare"
+ # Water & Wastelands
  ocean: "Oceano"
  deep_ocean: "Abisso Oceanico"
  coastal_ocean: "Acque Costiere"
@@ -44,19 +44,21 @@
  flatland_wasteland: "Pianura Desolata"
  mesa_wasteland: "Mesa Desolata"
  atoll: "Atollo"
- 
- #Misc
+ # Misc
  TERRAIN_MOVEMENT_COST: "Costo di movimento per [units|e]: $VALUE|-=%V$"
- TERRAIN_PROXIMITY_COST: "Impatto sull'efficienza di prossimità: $VALUE|+=%$" 
+ TERRAIN_PROXIMITY_COST: "Impatto sull'efficienza di prossimità da qui: $VALUE|+=%$"
+ TERRAIN_PROXIMITY_COST_SPECIFIC: "Impatto sull'efficienza di prossimità da qui a [TOPOGRAPHY.GetName]: $VALUE|+=%$"
  TERRAIN_ATTACKER_PENALTY: "Penalità per l'Attaccante in [combat|e]: $VALUE|-=$"
  TERRAIN_ATTACKER_PENALTY_TT: "Questa [location|e] infligge una penalità di [Location.GetAttackerPenalty|-=] all'[attacker|e] in [combat|e]."
  TERRAIN_CAN_FREEZE_OVER: "Può gelare d'inverno, bloccando il movimento delle [ships|e] e permettendo il passaggio alle [armies|e]"
  TERRAIN_BLOCKS_IN_WINTER: "Le [armies|e] non possono entrare durante $STATIC_MODIFIER_NAME_winter_normal$ o $STATIC_MODIFIER_NAME_winter_severe$."
- TERRAIN_COLONIAL_MIGRATION: "[colonial_migration|e]: $VALUE|+=%$" 
- COLO_CLIMATE_IMP: "$NUM|V$ [locations|e] [CLIMATE.GetName]: $VAL|+=%$" 
- COLO_VEGETATION_IMP: "$NUM|V$ [locations|e] [VEGETATION.GetName]: $VAL|+=%$" 
- COLO_TOPOGRAPHY_IMP: "$NUM|V$ [locations|e] [TOPOGRAPHY.GetName]: $VAL|+=%$" 
+ TERRAIN_COLONIAL_MIGRATION: "[colonial_migration|e]: $VALUE|+=%$"
 
+
+ COLO_CLIMATE_IMP: "$NUM|V$ [locations|e] [CLIMATE.GetName]: $VAL|+=%$"
+ COLO_VEGETATION_IMP: "$NUM|V$ [locations|e] [VEGETATION.GetName]: $VAL|+=%$"
+ COLO_TOPOGRAPHY_IMP: "$NUM|V$ [locations|e] [TOPOGRAPHY.GetName]: $VAL|+=%$"
+ 
  flatland_desc: "La pianura è un terreno privo di dislivelli significativi, pertanto non pone ostacoli né al movimento dell'[army|e] né allo sviluppo degli [buildings|e]."
  mountains_desc: "Il terreno montano presenta altitudine elevata e pendii ripidi, con pochi e stretti passaggi. Attraversarlo e combattervi è arduo per le [armies|e], e anche lo sviluppo è fortemente ostacolato."
  hills_desc: "Un terreno collinare presenta dislivelli, ma i pendii non sono ripidi o elevati come in montagna, pertanto le penalità sono più contenute."
@@ -70,7 +72,7 @@
  narrows_desc: "Gli stretti sono passaggi marittimi angusti, come canali o le acque interne di un arcipelago, dove lo spazio di manovra è limitato."
  lakes_desc: "I laghi sono bacini d'acqua interni senza contatto diretto col mare aperto se non tramite eventuali fiumi, quindi nessuna [ships|e] di rilievo può solcarli."
  high_lakes_desc: "$lakes_desc$"
-
+ #
  plateau_wasteland_desc: "$plateau_desc$"
  mountain_wasteland_desc: "$mountains_desc$"
  hills_wasteland_desc: "$hills_desc$"
@@ -88,6 +90,9 @@
  cold_arid_desc: "Il clima $cold_arid$ indica un'area con grave scarsità d'acqua, ma caratterizzata da inverni freddi."
  oceanic_desc: "Il clima $oceanic$ indica aree con inverni miti ma elevata umidità."
  subtropical_desc: "Il clima $subtropical$ indica aree con temperature medie elevate e inverni miti."
+ hot_semi_arid_desc: "$hot_semi_arid$ rappresenta praterie e steppe calde che ricevono troppa poca pioggia per un'agricoltura affidabile, ma più di un vero deserto."
+ cold_semi_arid_desc: "$cold_semi_arid$ rappresenta praterie e steppe fredde con estati secche e inverni freddi, che ricevono più pioggia di un deserto freddo."
+ subpolar_desc: "$subpolar$ rappresenta aree con inverni lunghi e rigidi ed estati brevi, come le foreste boreali dell'estremo nord."
  
  desert_desc: "I deserti sono paesaggi brulli con scarse precipitazioni, dove la vita animale e vegetale è quasi assente."
  sparse_desc: "La vegetazione rada caratterizza vaste aree pianeggianti con pochi o nessun albero."

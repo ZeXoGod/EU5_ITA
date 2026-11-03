@@ -1,9 +1,9 @@
-﻿l_english: 
+﻿l_english:
  flavor_mos.1.title: "Le Campagne [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] Contro [GetCountry('NOV').Custom('IT_La')][GetCountry('NOV').GetNameWithNoTooltip]"
  flavor_mos.1.entry: "The Ruler's Campaigns against $NOV$"
  flavor_mos.1.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName] ha sviluppato nel corso degli anni l'idea che [GetCountry('NOV').Custom('IT_ART_RANGO')][GetCountry('NOV').GetLongName] dovesse essere umiliato, per affermare l'autorità della sua famiglia e mantenere il titolo di [GetCountry('NOV').GetGovernment.GetRulerTitle] [GetCountry('NOV').Custom('IT_Di')][GetCountry('NOV').GetNameWithNoTooltip].\n\nOra è giunto il momento di trasformare questa idea in realtà e dare una lezione indimenticabile ai signori indipendenti [GetCountry('NOV').Custom('IT_Della')][GetCountry('NOV').GetNameWithNoTooltip]."
  flavor_mos.1.a: "È ora di umiliare [GetCountry('NOV').Custom('IT_La')][GetCountry('NOV').GetNameWithNoTooltip]!"
- flavor_mos.1.a.entry: "It is time to humiliate $NOV$!" #NEW
+ flavor_mos.1.a.entry: "It is time to humiliate $NOV$!"
  flavor_mos.1.b: "Sono nostri fratelli."
 
  flavor_mos.2.title: "Trattato di Yazhelbitsy"
@@ -22,31 +22,12 @@
  flavor_mos.3.c: "Opporsi a qualsiasi influenza straniera."
  flavor_mos.3.historical_info: "La Moscovia e gli altri principati russi continuarono a pagare tributi ai Tartari per tutto il XIV secolo. Quando le lotte interne colpirono l'Orda d'Oro, si valutò se fosse meglio schierarsi con la potenza emergente della Lituania; tuttavia, si continuò a seguire la tradizionale politica estera fino a quando, a metà del XV secolo, divenne evidente che l'influenza tartara stava finalmente diminuendo."
 
- flavor_mos.4.title: "Il Cremlino"
- flavor_mos.4.entry: "$flavor_mos.4.title$"
- flavor_mos.4.desc: "Le terre della Rus' sono ripetutamente soggette a incursioni ed è fondamentale che siamo in grado di proteggere il nostro popolo nei momenti di difficoltà. Il sistema di fortificazioni che circonda [target_location.GetName] non è all'altezza del compito e potrebbe essere sopraffatto, rallentando il nostro progresso verso il raggiungimento dello status di potenza regionale.\n\nDovremmo costruire una potente fortificazione con sezioni di mura che possano competere con qualsiasi altra nella zona."
- flavor_mos.4.a: "Far portare lo [ShowGoodsNameWithNoTooltip('lumber')] migliore."
- threatened_by_military_expansion: "Minacciati dall'espansione militare"
- safe_haven_during_raids: "Fornisce un rifugio sicuro durante le incursioni"
- flavor_mos.4.tt1: "I vicini rivali percepiscono la costruzione di un potente [ShowBuildingTypeNameWithNoTooltip('kremlin')] come un atto ostile"
- flavor_mos.4.tt2: "I sudditi vicini considerano la costruzione di un potente [ShowBuildingTypeNameWithNoTooltip('kremlin')] un rifugio sicuro durante le incursioni"
- flavor_mos.4.a.custom1: "Every neighbor country loses [ShowBiasValue('threatened_by_military_expansion')|+=0] [opinion|e] of [target_root_country.GetName]" #DA TRADURRE
- flavor_mos.4.a.custom2: "Every neighbor [subject|e] gains [ShowBiasValue('safe_haven_during_raids')|+=0] [opinion|e] of [target_root_country.GetName]" #DA TRADURRE
- flavor_mos.4.b: "Non desideriamo provocare i nostri vicini."
- flavor_mos.4.b.custom1: "Every neighbor country gains #G 3#! [trust|e] of [target_root_country.GetName]" #DA TRADURRE
- flavor_mos.4.b.custom2: "Every neighbor [subject|e] loses [ShowBiasValue('lack_of_protection')|+=0] [opinion|e] of [target_root_country.GetName]" #DA TRADURRE
- lack_of_protection: "Mancanza di protezione"
- mos_kremlin_construction: "Costruzione del Cremlino"
- flavor_mos.4.c: "Saccheggiare un [ShowBuildingTypeNameWithNoTooltip('castle')] soggetto per ottenere materiali."
- flavor_mos.4.tt3: "Quasi tutto lo [ShowGoodsName('clay')] e lo [ShowGoodsName('lumber')] necessari vengono ottenuti demolendo con la forza il [ShowBuildingTypeNameWithNoTooltip('castle')] di [castle_location.GetName]"
- flavor_mos.4.historical_info: "Il Cremlino di Mosca originale era costruito principalmente in legno e comprendeva non solo mura e torri, ma anche molti edifici amministrativi. La sua costruzione fu un progetto costoso, ma ritenuto necessario a causa della comprovata inefficacia dei semplici bastioni di legno utilizzati fino ad allora contro le ripetute incursioni degli schiavisti tartari e gli assedi nemici."
-
  flavor_mos.5.title: "Sergio di Radonezh"
  flavor_mos.5.entry: "$flavor_mos.5.title$"
- flavor_mos.5.desc: "A secluded monk has formed a small monastic cell devoted to living by one's own labor. The cell is quickly developing into a posad, or settlement, with new followers arriving daily. The teachings have caught the attention of the Patriarch, who is hoping to grant a monastic charter to allow [sergius_of_radonezh.GetShortName] to spread his teachings across [ShowRegionName('russian_region')]." #NEW
+ flavor_mos.5.desc: "A secluded monk has formed a small monastic cell devoted to living by one's own labor. The cell is quickly developing into a posad, or settlement, with new followers arriving daily. The teachings have caught the attention of the Patriarch, who is hoping to grant a monastic charter to allow [sergius_of_radonezh.GetShortName] to spread his teachings across [ShowRegionName('russian_region')]."
  flavor_mos.5.a: "Un taumaturgo di tutta [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetNameWithNoTooltip]."
- flavor_mos.5.a.entry: "A miracle worker of all our country." #NEW
- flavor_mos.5.tt1: "Sergius Of Radonezh is added as a [character|e]" #NEW
+ flavor_mos.5.a.entry: "A miracle worker of all our country."
+ flavor_mos.5.tt1: "[sergius_of_radonezh.GetNameWithNoTooltip] viene aggiunto come [character|e]"
  flavor_mos.5.b: "Un ciarlatano riformista analfabeta."
  flavor_mos.5.historical_info: "Sergio di Radonezh era un monaco venerato, considerato una delle figure più significative della Chiesa ortodossa russa. Durante la sua vita fondò la Lavra della Trinità di San Sergio e fu determinante nella riforma della vita monastica in Russia. È venerato come santo e ricordato come leader spirituale in tempi incerti."
 
@@ -57,22 +38,22 @@
  flavor_mos.6.a.custom: "La rapida crescita dell'insediamento attira [ShowPopTypeName('clergy')] da tutta [ShowRegionName('russian_region')]"
  flavor_mos.6.tt: "La concentrazione dei credenti vicino alla capitale facilita la supervisione delle questioni religiose"
  flavor_mos.6.b: "La fede può essere praticata ovunque."
- mos_sergius_of_radonezh_alive_tt: "$name_sergius.east_slavic_language$ $of_Radonezh$ must be alive in the realm" #NEW
+ mos_sergius_of_radonezh_alive_tt: "$name_sergius.east_slavic_language$ $of_Radonezh$ must be alive in the realm"
  mos_holy_trinity_st_sergius_lavra_construction: "Costruzione della Lavra della Santissima Trinità di San Sergio"
  flavor_mos.6.historical_info: "La Lavra della Santissima Trinità di San Sergio fu fondata nel XIV secolo e si è continuamente evoluta dal punto di vista architettonico nel corso del tempo, vantando oggi diverse chiese e cattedrali. È considerata il monastero più importante dal punto di vista dell' e in Russia e funge da centro spirituale della Chiesa ortodossa russa. Funge da luogo di sepoltura per metropoliti e patriarchi e possiede una vasta collezione di arte sacra."
 
  flavor_mos.7.title: "Le Reliquie di San Sergio"
  flavor_mos.7.entry: "$flavor_mos.7.title$"
- flavor_mos.7.desc: "La scomparsa del venerato monaco e leader spirituale [sergius_of_radonezh.GetName] ha fatto piombare il Paese in un profondo periodo di lutto. Si sta discutendo se conservare le sue reliquie per la venerazione e il pellegrinaggio, con l'opzione preferita che è quella di esporle a [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')]. Sebbene più difficile da difendere, questa opzione riscuote grande consenso tra i fedeli e la Chiesa. Dopo tutto, le reliquie rimangono il collante spirituale e culturale che tiene unita la nostra società."
+ flavor_mos.7.desc: "La scomparsa del venerato monaco e leader spirituale [sergius_of_radonezh.GetName] ha fatto piombare il Paese in un profondo periodo di lutto. Si sta discutendo se conservare le sue reliquie per la venerazione e il pellegrinaggio, con l'opzione preferita che è quella di esporle a [ShowWorkOfArtName('trinity_lavra_st_sergius_work_of_art')]. Sebbene più difficile da difendere, questa opzione riscuote grande consenso tra i fedeli e la Chiesa. Dopo tutto, le reliquie rimangono il collante spirituale e culturale che tiene unita la nostra società."
  flavor_mos.7.a: "Non importa dove riposa quell'uomo."
- flavor_mos.7.b: "Have the relics brought to [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." #NEW
- flavor_mos.7.b.entry: "Have the relics brought to the capital." #NEW
+ flavor_mos.7.b: "Have the relics brought to [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+ flavor_mos.7.b.entry: "Have the relics brought to the capital."
  flavor_mos.7.c: "Hanno poco valore."
  flavor_mos.7.historical_info: "Dopo la morte di San Sergio, fu inizialmente sepolto in una modesta tomba nel monastero da lui fondato. Tre decenni dopo la sua morte, le reliquie furono riscoperte e trovate incorrotte, il che fu interpretato come un segno miracoloso della sua santità. Le reliquie hanno svolto un ruolo importante nel rendere la Lavra della Trinità di San Sergio uno dei luoghi di pellegrinaggio più importanti della Russia."
 
  flavor_mos.8.title: "[alexander_peresvet.GetNameWithNoTooltip]"
- flavor_mos.8.entry: "Alexander Peresvet" #NEW
- flavor_mos.8.desc: "Devote and disciplined warrior monk [alexander_peresvet.GetName] stands prepared to join the ranks of our formidable army as we confront the looming heathen threat once more. His presence on the battlefield brings not only exceptional martial skills but also a ritualized and chivalric fighting style that acts as a source of inspiration, encouraging our troops to fight with bravery and valor." #NEW
+ flavor_mos.8.entry: "Alexander Peresvet"
+ flavor_mos.8.desc: "Devote and disciplined warrior monk [alexander_peresvet.GetName] stands prepared to join the ranks of our formidable army as we confront the looming heathen threat once more. His presence on the battlefield brings not only exceptional martial skills but also a ritualized and chivalric fighting style that acts as a source of inspiration, encouraging our troops to fight with bravery and valor."
  flavor_mos.8.a: "Una fonte di ispirazione e valore."
  STATIC_MODIFIER_NAME_monomachia: "Monomachia"
  flavor_mos.8.b: "Ci sono molti leader."
@@ -84,10 +65,10 @@
  flavor_mos.9.desc: "Il titolo di [ShowSpecialStatusName('tatar_tax_collector')] continua a portare grandi benefici, ma c'è spazio per approfondire il rapporto con [GetCountry('GLH').Custom('IT_La')][GetCountry('GLH').GetName] aumentando il tributo riscosso dagli altri tributari di [GetUniqueInternationalOrganization('tatar_yoke').GetName]. Qualsiasi misura di questo tipo aumenterebbe sicuramente le nostre possibilità di mantenere il titolo e i suoi privilegi."
  flavor_mos.9.a: "Un male necessario per garantire la nostra importanza."
  flavor_mos.9.tt1: "Il [GetCountry('GLH').GetGovernment.GetRulerTitle] riceve un ulteriore tributo pari al #G 25,00%#!, riscosso per suo conto da [target_root_country.GetGovernment.GetRuler.GetName]"
- flavor_mos.9.at: "Every member of the [GetUniqueInternationalOrganization('tatar_yoke').GetName] (except for [GetCountry('GLH').GetName]) loses [ShowBiasValue('bleeding_us_dry')|+=0] [opinion|e] of [ROOT.GetCountry.GetName]" #DA TRADURRE
+ flavor_mos.9.at: "Ogni membro del [GetUniqueInternationalOrganization('tatar_yoke').GetName] (ad eccezione dell'[GetCountry('GLH').GetName]) perde [ShowBiasValue('bleeding_us_dry')|+=0] [opinion|e] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]"
  bleeding_us_dry: "Ci sta dissanguando"
  flavor_mos.9.b: "Hanno già sopportato abbastanza difficoltà."
- flavor_mos.9.tt2: "The efficient [spy_network|e] of the [GetCountry('GLH').GetNameWithNoTooltip] informs the [GetCountry('GLH').GetGovernment.GetRulerTitle] we are withholding information of great use" #DA TRADURRE
+ flavor_mos.9.tt2: "The efficient [spy_network|e] of the [GetCountry('GLH').GetNameWithNoTooltip] informs the [GetCountry('GLH').GetGovernment.GetRulerTitle] we are withholding information of great use"
  flavor_mos.9.tt3: "Il [GetCountry('GLH').GetGovernment.GetRulerTitle] scopre che stiamo nascondendo informazioni di grande utilità"
  flavor_mos.9.tt4: "Il [GetCountry('GLH').GetGovernment.GetRulerTitle] rimane all'oscuro"
  flavor_mos.9.historical_info: "La parola 'Kalita', che significa borsa dei soldi, fu coniata per il sovrano di Moscovia Ivan I, noto per la sua efficienza nel riscuotere tributi e tasse per conto dei signori mongoli. Assicurandosi il favore dell'Orda d'Oro del $rank_kingdom_horde_ruler_suffix_male$, Moscovia fu risparmiata dalle devastanti incursioni che spesso ostacolavano lo sviluppo dei principati vicini, il che a lungo termine contribuì in modo determinante all'ascesa di Moscovia come potenza regionale."
@@ -105,17 +86,17 @@
  flavor_mos.10.historical_info: "Gli srebrenik furono le prime monete coniate in argento nella Rus' di Kiev durante il X e l'XI secolo. Successivamente, durante il giogo tartaro, iniziò la produzione di un nuovo tipo di moneta chiamata denga, che imitava le monete d'argento dell'Orda d'Oro. Sebbene derivassero da influenze straniere, gradualmente iniziarono ad assumere una forma più russa, dando origine anche ad altri tipi di monete come la Grivna e il Rublo. Originariamente concepito come alternativa o addirittura derivato della Denga e della Grivna, il Rublo finì per diventare la valuta principale durante il XIV e il XV secolo."
 
  flavor_mos.11.title: "[andrei_rublev.GetNameWithNoTooltip]"
- flavor_mos.11.entry: "Andrei Rublev" #NEW
- flavor_mos.11.desc_common1: "Spiritual painter [andrei_rublev.GetName] has demonstrated an exceptional talent for religious iconography, as he is already producing several works that adorn the churches across our territory." #NEW
- flavor_mos.11.desc_common2: "His exceptional talent has been nurtured by the Byzantine scholar Theopanes the Greek, who originates from [ShowLocationNameWithNoTooltip('constantinople')], and it is believed that this influence has played a significant role in shaping his style of iconography\n\nHe resides at the [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')], where he abides by the virtues set out by the monastery and continues to enrich its churches and cathedrals." #NEW
- flavor_mos.11.desc_byzantine_master: "$flavor_mos.11.desc_common1$\n\nHis exceptional talent has been nurtured by the Byzantine scholar Theopanes the Greek, who originates from [ShowLocationNameWithNoTooltip('constantinople')], and it is believed that this influence has played a significant role in shaping his style of iconography." #NEW
- flavor_mos.11.desc_st_sergius_monk: "$flavor_mos.11.desc_common1$\n\nHe resides at the [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')], where he abides by the virtues set out by the monastery and continues to enrich its churches and cathedrals." #NEW
+ flavor_mos.11.entry: "Andrei Rublev"
+ flavor_mos.11.desc_common1: "Spiritual painter [andrei_rublev.GetName] has demonstrated an exceptional talent for religious iconography, as he is already producing several works that adorn the churches across our territory."
+ flavor_mos.11.desc_common2: "Il suo straordinario talento è stato coltivato dallo studioso bizantino Teofane il Greco, originario di [ShowLocationNameWithNoTooltip('constantinople')], e si ritiene che questa influenza abbia avuto un ruolo significativo nel plasmare il suo stile iconografico\n\nRisiede presso il [ShowWorkOfArtName('trinity_lavra_st_sergius_work_of_art')], dove osserva le virtù stabilite dal monastero e continua ad arricchirne le chiese e le cattedrali."
+ flavor_mos.11.desc_byzantine_master: "$flavor_mos.11.desc_common1$\n\nHis exceptional talent has been nurtured by the Byzantine scholar Theopanes the Greek, who originates from [ShowLocationNameWithNoTooltip('constantinople')], and it is believed that this influence has played a significant role in shaping his style of iconography."
+ flavor_mos.11.desc_st_sergius_monk: "$flavor_mos.11.desc_common1$\n\nRisiede presso il [ShowWorkOfArtName('trinity_lavra_st_sergius_work_of_art')], dove osserva le virtù stabilite dal monastero e continua ad arricchirne le chiese e le cattedrali."
  flavor_mos.11.desc_all_criteria_met: "\n\n$flavor_mos.11.desc_common1$: $flavor_mos.11.desc_common2$"
- flavor_mos.11.a: "The confines of the monastery suit him well." #NEW
- flavor_mos.11.tt2: "His talents are put to use in enriching the religious artwork of the [ShowWorkOfArtNameWithNoTooltip('holy_trinity_st_sergius_lavra')]" #NEW
- flavor_mos.11.tt3: "The teachings of his Byzantine master greatly enriches his skillset" #NEW
- flavor_mos.11.b: "Have him adorn our cathedrals." #NEW
- flavor_mos.11.tt4: "Working side by side with his Byzantine master significantly influences the development of [target_root_country.GetAdjective] religious art." #NEW
+ flavor_mos.11.a: "The confines of the monastery suit him well."
+ flavor_mos.11.tt2: "I [andrei_rublev.GetHisHer|U] talenti vengono messi al servizio dell'arricchimento delle opere d'arte religiosa del [ShowWorkOfArtNameWithNoTooltip('trinity_lavra_st_sergius_work_of_art')]"
+ flavor_mos.11.tt3: "Gli insegnamenti del [andrei_rublev.GetHisHer] maestro bizantino arricchiscono notevolmente le [andrei_rublev.GetHisHer] capacità"
+ flavor_mos.11.b: "Have him adorn our cathedrals."
+ flavor_mos.11.tt4: "Lavorare fianco a fianco con il [andrei_rublev.GetHisHer] maestro bizantino influenza significativamente lo sviluppo dell'arte religiosa [target_root_country.GetAdjective]."
  flavor_mos.11.c: "Non c'è bisogno di ulteriori affreschi."
  flavor_mos.11.historical_info: "Andrei Rublev è considerato uno dei più grandi pittori russi medievali ed è ricordato soprattutto per l'icona della Trinità, un famoso capolavoro dell'arte russa. Il suo lavoro è generalmente caratterizzato da una tavolozza di colori limitata, composizioni armoniose e l'uso di colori tenui. Divenne una fonte di ispirazione frequente per artisti e teologi e fu canonizzato nel 1988."
 
@@ -124,10 +105,10 @@
  flavor_mos.12.desc: "Il famoso pittore di icone [andrei_rublev.GetName] ha creato un capolavoro raffigurante la Santissima Trinità, con tre figure angeliche sedute a un tavolo, che simboleggiano il Padre, il Figlio e lo Spirito Santo. È squisitamente dettagliato e mette in mostra gli elementi distintivi che si trovano nelle sue altre opere, come l'uso armonioso dei colori e una tavolozza cromatica sobria."
  flavor_mos.12.a: "Una meta turistica."
  flavor_mos.12.b: "Focus sui siti religiosi esistenti."
- flavor_mos.12.tt1: "Andrew Rublev instead works on further enriching the religious art at the [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')]" #NEW
+ flavor_mos.12.tt1: "[andrei_rublev.GetNameWithNoTooltip] si dedica invece ad arricchire ulteriormente l'arte religiosa presso il [ShowWorkOfArtName('trinity_lavra_st_sergius_work_of_art')]"
  flavor_mos.12.tt2: "La devozione dimostrata per le questioni spirituali è profondamente apprezzata [ROOT.GetCountry.Custom('IT_CLERGY_DAL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]"
  flavor_mos.12.c: "È in contrasto con i tappeti."
- mos_andrei_rublev_alive_tt: "$name_andrew.east_slavic_language$ Rublev must be alive in the realm" #NEW
+ mos_andrei_rublev_alive_tt: "$name_andrew.east_slavic_language$ Rublev must be alive in the realm"
  flavor_mos.12.historical_info: "La Santissima Trinità, creata da Andrei Rublev intorno al 1410, è considerata una delle più grandi opere dell'arte religiosa. Ha ispirato gli artisti e continua a essere un simbolo della spiritualità ortodossa russa. L'opera incoraggia la contemplazione e la preghiera, e a riflettere sui suoi misteri."
 
  flavor_mos.13.title: "Il Testamento Cartaceo"
@@ -142,10 +123,11 @@
 
  flavor_mos.14.title: "Il Metropolita Alessio"
  flavor_mos.14.entry: "$flavor_mos.14.title$"
- flavor_mos.14.desc: "Newly elected Metropolitan [metropolitan_alexius.GetShortName] is keen to contribute towards the political ambitions of [ROOT.GetCountry.GetName], in addition to his role in administering and developing the [ShowReligionAdjective('orthodox')] Church. His notable experience could prove useful to the arts of rule and diplomacy, which are vital if we are to take our place as the rightful rulers of all Rus'." #NEW
- flavor_mos.14.a: "Invite Alexander to court." #NEW
- flavor_mos.14.tt2: "His influence inspires [ROOT.GetCountry.GetGovernment.GetRuler.GetName] and encourages a more devout way of living" #NEW
- flavor_mos.14.b: "Have him act as regent." #NEW
+ flavor_mos.14.desc: "Newly elected Metropolitan [metropolitan_alexius.GetShortName] is keen to contribute towards the political ambitions of [ROOT.GetCountry.GetName], in addition to his role in administering and developing the [ShowReligionAdjective('orthodox')] Church. His notable experience could prove useful to the arts of rule and diplomacy, which are vital if we are to take our place as the rightful rulers of all Rus'."
+ flavor_mos.14.a: "Invitiamo [metropolitan_alexius.GetShortNameWithNoTooltip] a corte."
+ flavor_mos.14.a.entry: "Invitiamo $name_alexis.east_slavic_language$ a corte."
+ flavor_mos.14.tt2: "La [metropolitan_alexius.GetHisHer|U] influenza ispira [ROOT.GetCountry.GetGovernment.GetRuler.GetName] e incoraggia uno stile di vita più devoto"
+ flavor_mos.14.b: "Have him act as regent."
  flavor_mos.14.c: "Un'influenza distruttiva."
  flavor_mos.14.tt3: "L'opposizione alla guida spirituale negli affari di governo offende [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
  STATIC_MODIFIER_NAME_spiritual_administrator: "Amministratore spirituale"
@@ -166,68 +148,43 @@
  flavor_mos.16.entry: "$flavor_mos.16.title$"
  flavor_mos.16.desc: "Dopo l'invasione mongola, la scelta dell'erede è stata fortemente influenzata dal $rank_kingdom_horde_ruler_suffix_male$, come mezzo per mettere i vari principati l'uno contro l'altro e preservare l'equilibrio di potere nella regione dell'[ShowRegionName('russian_region')].\n\nRecentemente, ci sono state richieste di cambiamento, dato che l'attuale sovrano ha ottenuto il potere tramite eredità, come stabilito in un testamento legale redatto da suo padre. Purtroppo, sembra che nel contratto fosse presente una clausola che prometteva la leadership a un parente stretto di [ROOT.GetCountry.GetGovernment.GetRuler.GetName], qualora [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] avesse ereditato il trono in giovane età. La regola è stata apertamente contestata da [pretender.GetName], che sembra aver già raccolto un notevole sostegno tra la popolazione."
  flavor_mos.16.a: "Cercare il sostegno [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
- flavor_mos.16.a.entry: "Seek support from the $clergy_estate$." #NEW
- flavor_mos.16.a.custom: "A significant amount of [ShowPopTypeName('nobles')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and side with [pretender.GetNameWithNoTooltip]." #DA TRADURRE
+ flavor_mos.16.a.entry: "Seek support from the $clergy_estate$."
+ flavor_mos.16.a.custom: "A significant amount of [ShowPopTypeName('nobles')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and side with [pretender.GetNameWithNoTooltip]."
  flavor_mos.16.b: "Cercare il sostegno [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
- flavor_mos.16.b.entry: "Seek support from the $nobles_estate$." #NEW
- flavor_mos.16.b.custom: "A significant amount of [ShowPopTypeName('clergy')] and [ShowPopTypeName('peasants')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and side with [pretender.GetNameWithNoTooltip]." #DA TRADURRE
+ flavor_mos.16.b.entry: "Seek support from the $nobles_estate$."
+ flavor_mos.16.b.custom: "A significant amount of [ShowPopTypeName('clergy')] and [ShowPopTypeName('peasants')] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and side with [pretender.GetNameWithNoTooltip]."
  flavor_mos.16.tt1: "[pretender.GetNameWithNoTooltip] si ritira da [target_location.GetName] in attesa della sua prossima mossa."
  flavor_mos.16.c: "Far circolare il documento legale."
  flavor_mos.16.tt2: "La legittimità di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] si rafforza grazie al testamento, conservato in modo straordinario e redatto interamente in [ShowGoodsNameWithNoTooltip('paper')]."
  flavor_mos.16.tt3: "[pretender.GetNameWithNoTooltip] si ritira da [target_location.GetName] e difficilmente riuscirà a raccogliere molti seguaci."
  flavor_mos.16.d: "Appello diretto a [GetCountry('GLH').GetGovernment.GetRuler.GetNameWithNoTooltip]."
- flavor_mos.16.d.entry: "Appeal directly to him." #NEW
+ flavor_mos.16.d.entry: "Appeal directly to him."
  flavor_mos.16.tt4: "[GetCountry('GLH').Custom('IT_Alla')][GetCountry('GLH').GetName] viene chiesto di riaffermare il proprio sostegno a [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip]."
  flavor_mos.16.tt5: "Il $rank_kingdom_horde_ruler_suffix_male$ potrebbe pronunciarsi a favore di [pretender.GetNameWithNoTooltip]"
  war_of_succession_pretender: "Pretendente Rurikovich"
  flavor_mos.16.historical_info: "Nel XIII secolo, i principati russi erano relativamente piccoli e deboli, e ogni sovrano doveva ottenere l'approvazione dell'Orda d'Oro del $rank_kingdom_horde_ruler_suffix_male$. Nel secolo successivo, la Moscovia crebbe in potere e tentò di sfidare l'autorità dei mongoli consentendo il passaggio del trono al figlio di Vasily I, il principe regnante. Dopo la sua morte, la mossa fu contestata dal fratello a causa di diverse interpretazioni del testamento, e la guerra civile che ne seguì portò a una lotta di potere durata decenni, nota come Guerra di successione moscovita."
 
- flavor_mos.21.title: "Prikazi"
- flavor_mos.21.entry: "$flavor_mos.21.title$"
- flavor_mos.21.desc: "L'assenza di un'amministrazione efficiente è vista come un ostacolo per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] nel prendere il posto che le spetta tra le grandi potenze. Potremmo migliorare la governance istituendo una serie di uffici per supervisionare diverse aree degli affari governativi, che a loro volta possono accelerare l'attuazione di vari decreti di [ROOT.GetCountry.GetGovernment.GetRuler.GetName] e aiutare a centralizzare il potere."
- flavor_mos.21.a: "Come potremmo funzionare altrimenti?"
- flavor_mos.21.tt1: "Several bureaus are set up, enabling [cabinet_members|e] to oversee them via [cabinet_action|e]" #NEW
- enable_prikazi_reform: "Grants access to the [ShowGovernmentReformName('prikazi_reform')] [government_reform|e]" #DA TRADURRE
- flavor_mos.21.b: "La libertà d'azione è la ricetta per il successo."
- flavor_mos.21.historical_info: "Prikazi si riferisce agli uffici amministrativi in vigore durante il periodo dello zarato e dei primi anni dell'Impero russo. Essi erano essenziali per l'attuazione delle politiche e delle decisioni dello zar, ma si occupavano anche delle funzioni quotidiane relative agli affari di Stato. Alcuni degli uffici più grandi si occupavano di questioni relative agli affari esteri ed erano fondamentali in un periodo in cui la Russia si vedeva circondata da nemici e ancora alle prese con la lotta per affermare la propria indipendenza dall'Orda d'Oro."
-
- flavor_mos.22.title: "[ShowGovernmentReformNameWithNoTooltip('razriadnyi_reform')]"
- flavor_mos.22.entry: "Razriadnyi Reform" #NEW
- flavor_mos.22.desc: "Esistono pochi dati disponibili sulla popolazione, sulla proprietà e sulla tassazione, il che rende più difficile controllare la spesa e finanziare l'espansione della nostra amministrazione. Potremmo condurre un censimento regolare, effettuato dal neocostituito [ShowGovernmentReformName('razriadnyi_reform')], che fornirebbe dati dettagliati sugli individui e sulle famiglie in tutta [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName], al fine di valutare le risorse e gli obblighi dei nostri sudditi."
- flavor_mos.22.a: "Esaminare ogni angolo."
- enable_razriadnyi_reform: "Grants access to the [ShowGovernmentReformName('razriadnyi_reform')] [government_reform|e]" #DA TRADURRE
- flavor_mos.22.b: "Una violazione della privacy e dell'integrità."
- flavor_mos.22.historical_info: "La Cancelleria Militare, #italic Razriadnyi Prikaz#!, introdusse un nuovo censimento come mezzo per determinare l'imponibilità fiscale della popolazione in base alla ricchezza, alla proprietà e alla posizione sociale. Era anche un modo per garantire che ogni tenuta fornisse la quantità richiesta di soldati e materiali bellici in conformità con i propri obblighi. I registri divennero fondamentali per governare un territorio vasto e diversificato."
-
  flavor_mos.23.title: "Trattato di Ugra"
  flavor_mos.23.entry: "$flavor_mos.23.title$"
  flavor_mos.23.desc: "La formidabile [GetCountry('LIT').GetName] è chiaramente una potenza emergente, che si trova in contrasto con [GetCountry('TEU').Custom('IT_La')][GetCountry('TEU').GetName] mentre persegue anche una politica di supremazia sui territori slavi orientali. L'area dell'[ShowAreaName('smolensk_area')] è attualmente sotto il nostro controllo, ma potrebbe forse essere ceduta a loro se venissero fornite determinate garanzie diplomatiche. In questo modo, [GetCountry('LIT').Custom('IT_La')][GetCountry('LIT').GetNameWithNoTooltip] potrebbe reindirizzare i propri sforzi verso la pacificazione dei cavalieri crociati senza interruzioni e noi potremmo assicurarci che non mirino a penetrare anche nelle nostre terre."
  flavor_mos.23.a: "Proponi i termini."
- enable_state_controlled_church_reform: "Grants access to the [ShowGovernmentReformName('state_controlled_church')] [government_reform|e]" #DA TRADURRE
+ enable_state_controlled_church_reform: "Grants access to the [ShowGovernmentReformName('state_controlled_church')] [government_reform|e]"
  flavor_mos.23.tt1: "Cediamo l'[ShowAreaNameWithNoTooltip('smolensk_area')] [GetCountry('LIT').Custom('IT_Alla')][GetCountry('LIT').GetNameWithNoTooltip] se il trattato viene accettato"
  flavor_mos.23.tt2: "Viene proposta un'alleanza"
  flavor_mos.23.b: "Perché indugiare quando possiamo colpire?"
  flavor_mos.23.c: "Le nostre posizioni devono essere consolidate altrove."
  flavor_mos.23.historical_info: "Il trattato di Ugra fu firmato nel 1408 tra il principato di Moscovia e il ducato di Lituania. Esso cedette la contesa area di Smolensk in cambio di relazioni diplomatiche rafforzate e di un'alleanza di breve durata, consentendo alla Lituania di rafforzare la propria posizione e influenza nella regione, facilitando al contempo la sua lotta contro l'Ordine Teutonico."
 
- flavor_mos.24.title: "Il Vestiarium"
- flavor_mos.24.entry: "$flavor_mos.24.title$"
- flavor_mos.24.desc: "Il tesoro reale rimane privo di documentazione e di qualsiasi tipo di inventario, rendendo difficile accertare il valore complessivo dei beni accumulati. È imperativo creare un sistema per gestire meglio la nostra ricchezza, poiché essa può essere utilizzata sia per promuovere gli obiettivi diplomatici che per contribuire a rafforzare la governance [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]."
- flavor_mos.24.a: "Una governance efficiente è la chiave del successo."
- flavor_mos.24.b: "È necessario tessere la rete della diplomazia."
- flavor_mos.24.custom: "Grants access to the [ShowLawName('vestiarium')] [law|e]" #DA TRADURRE
- flavor_mos.24.historical_info: "Il #italic Vestiarium#! di Vasili I era un inventario di oggetti di valore appartenenti al tesoro reale. Fu introdotto per creare un registro finanziario e un inventario di tutto ciò che andava dai metalli preziosi, ai gioielli, ai tessuti e agli abiti, agli oggetti che potevano essere utilizzati per cerimonie di Stato e doni diplomatici."
-
  flavor_mos.25.title: "Il [sender.GetGovernment.GetRulerTitle] di [sender.GetNameWithNoTooltip] Accetta i Termini Proposti"
  flavor_mos.25.desc_treaty_of_ugra: "I nostri tentativi di garantire un trattato vantaggioso con [sender.GetName] hanno avuto successo e entrambe le parti hanno firmato il Trattato di Ugra. La cessazione delle ostilità porterà forse a relazioni più prospere tra i nostri due paesi e garantirà la nostra sopravvivenza come [ROOT.GetCountry.GetFlavorRank] indipendente.\n\nI nostri sforzi diplomatici sembrano essere stati proficui."
  flavor_mos.25.desc_generic_treaty: "I nostri tentativi di garantire un trattato vantaggioso hanno avuto successo, poiché il [sender.GetGovernment.GetRulerTitle] di [sender.GetName] ha accettato di firmare.\n\nI nostri sforzi diplomatici sembrano essere stati proficui."
  flavor_mos.25.a: "Un inizio promettente."
  flavor_mos.25.tt1: "Cediamo l'[ShowAreaNameWithNoTooltip('smolensk_area')] [GetCountry('LIT').Custom('IT_Alla')][GetCountry('LIT').GetNameWithNoTooltip]"
- flavor_mos.25.tt2: "An [alliance|e] is signed with [GetCountry('LIT').GetNameWithNoTooltip]" #DA TRADURRE
+ flavor_mos.25.tt2: "An [alliance|e] is signed with [GetCountry('LIT').GetNameWithNoTooltip]"
  flavor_mos.25.b: "Nastrovye!"
 
  flavor_mos.26.title: "Il [sender.GetGovernment.GetRulerTitle] di [sender.GetNameWithNoTooltip] Rifiuta la Proposta Diplomatica"
- flavor_mos.26.entry: "A Ruler Declines the Diplomatic Proposal" #NEW
+ flavor_mos.26.entry: "A Ruler Declines the Diplomatic Proposal"
  flavor_mos.26.desc_treaty_of_ugra_declined: "Il trattato vantaggioso proposto al [sender.GetGovernment.GetRulerTitle] di [sender.GetName] è stato rifiutato. Evidentemente, non riconoscono i propri errori e devono continuare ad affrontare minacce da ogni parte.\n\nI nostri sforzi diplomatici sembrano essere stati vani."
  flavor_mos.26.desc_generic_treaty: "I nostri tentativi di garantire un trattato vantaggioso si sono rivelati inutili, poiché il [sender.GetGovernment.GetRulerTitle] di [sender.GetName] si rifiuta di firmare.\n\nI nostri sforzi diplomatici sembrano essere stati vani."
  flavor_mos.26.a: "Sarà la loro rovina."
@@ -235,12 +192,12 @@
  flavor_mos.26.tt: "La fiducia riposta in [sender.GetName] è perduta."
 
  flavor_mos.27.title: "[maria_borovsk.GetNameWithNoTooltip]"
- flavor_mos.27.entry: "Maria Borovsk" #NEW
- flavor_mos.27.desc: "A suitable candidate for marriage for [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been brought forward by the joint recommendation of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. [maria_borovsk.GetName], hailing from a prestigious noble lineage and renowned for her piety and charitable acts, would make an excellent match in both matters of state and matters of the heart." #NEW
+ flavor_mos.27.entry: "Maria Borovsk"
+ flavor_mos.27.desc: "A suitable candidate for marriage for [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been brought forward by the joint recommendation of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. [maria_borovsk.GetName], hailing from a prestigious noble lineage and renowned for her piety and charitable acts, would make an excellent match in both matters of state and matters of the heart."
  flavor_mos.27.a: "Un'unione benedetta."
- flavor_mos.27.tt1: "Mary Borovsk is added as a [character|e]" #NEW
- flavor_mos.27.tt2: "Her acts of charity and piety contributes to the foundation of the monastery of [ShowLocationNameWithNoTooltip('borovsk')]" #NEW
- flavor_mos.27.b: "Have her placed in a convent." #NEW
+ flavor_mos.27.tt1: "[maria_borovsk.GetNameWithNoTooltip] viene aggiunta come [character|e]"
+ flavor_mos.27.tt2: "I [maria_borovsk.GetHimHer|U] atti di carità e devozione contribuiscono alla fondazione del monastero di [ShowLocationNameWithNoTooltip('borovsk')]"
+ flavor_mos.27.b: "Have her placed in a convent."
  flavor_mos.27.tt3: "I numerosi figli di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] rendono superflua la necessità di un altro coniuge"
  flavor_mos.27.tt4: "La scarsità di figli di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] e il suo rifiuto di sposarsi preoccupano [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
  flavor_mos.27.historical_info: "Maria di Borovsk era una suora ortodossa russa ricordata per il suo matrimonio con il granduca Vasilij II. Vide la sua famiglia usurpare il potere durante la guerra di successione moscovita e fu inizialmente bandita da Mosca e successivamente catturata durante la lotta di potere in corso. Negli ultimi anni della sua vita si dedicò alla preghiera, al digiuno e al servizio dei poveri."
@@ -250,7 +207,7 @@
  flavor_mos.28.desc: "Il [ShowBuildingTypeName('kremlin')] di recente costruzione sta proteggendo il nostro popolo, ma la mancanza di vita spirituale all'interno di queste mura sta ostacolando lo sviluppo della nostra fede. Una grande cattedrale dedicata all'Assunzione della Vergine Maria potrebbe diventare il luogo delle incoronazioni e della sepoltura dei principi futuri e servire anche come simbolo delle nostre grandi aspirazioni di unire queste terre."
  flavor_mos.28.a: "Avrà un ruolo centrale."
  mos_uspensky_sobor_construction: "$uspensky_sobor$ Costruzione"
- flavor_mos.28.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are most impressed about the prospect of a major religious [building|e] work" #DA TRADURRE
+ flavor_mos.28.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are most impressed about the prospect of a major religious [building|e] work"
  flavor_mos.28.b: "Commissionare invece una serie di opere d'arte religiose."
  flavor_mos.28.c: "Probabile obiettivo delle incursioni dei Tartari."
  flavor_mos.28.tt2: "Si dedica molto tempo a rafforzare le difese esistenti"
@@ -258,24 +215,24 @@
 
  flavor_mos.29.title: "La Scrittura Permiana"
  flavor_mos.29.entry: "$flavor_mos.29.title$"
- flavor_mos.29.desc: "The lands surrounding our [ROOT.GetCountry.GetFlavorRank] are yet to see the light of Christ and abandon their erroneous ways. The role of missionary work is crucial for their conversion, yet it remains a challenge due to existing language barriers.\n\nOne dedicated missionary, [stephen_of_perm.GetName], originally hailing from distant western lands but now residing in [ShowLocationName('perm')], has embarked on a courageous mission to bring the teachings of Christianity to these unconverted souls. To aid him in this endeavor, he has begun the daunting task of creating a new language, based on the East Slavic alphabet and encompassing both Cyrillic and non-Cyrillic characters. If completed, it could be used to translate religious works into a language more accessible to those who have yet to embrace the faith." #NEW
+ flavor_mos.29.desc: "The lands surrounding our [ROOT.GetCountry.GetFlavorRank] are yet to see the light of Christ and abandon their erroneous ways. The role of missionary work is crucial for their conversion, yet it remains a challenge due to existing language barriers.\n\nOne dedicated missionary, [stephen_of_perm.GetName], originally hailing from distant western lands but now residing in [ShowLocationName('perm')], has embarked on a courageous mission to bring the teachings of Christianity to these unconverted souls. To aid him in this endeavor, he has begun the daunting task of creating a new language, based on the East Slavic alphabet and encompassing both Cyrillic and non-Cyrillic characters. If completed, it could be used to translate religious works into a language more accessible to those who have yet to embrace the faith."
  flavor_mos.29.a: "Scrivi, vicario."
  STATIC_MODIFIER_NAME_cyrilic_scripter: "Scrittore cirillico"
- flavor_mos.29.tt1: "Stephen of Perm is added as a [character|e]" #NEW
+ flavor_mos.29.tt1: "[stephen_of_perm.GetNameWithNoTooltip] viene aggiunto come [character|e]"
  flavor_mos.29.tt2: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_SONO')] entusiasti dell'iniziativa di convertire le anime perdute"
  flavor_mos.29.b: "Preservare la fede viene prima di tutto."
- flavor_mos.29.tt3: "Stephen of Perm devotes himself entirely to the transcribing of religious work." #NEW
+ flavor_mos.29.tt3: "[stephen_of_perm.GetNameWithNoTooltip] si dedica interamente alla trascrizione di opere religiose."
  flavor_mos.29.historical_info: "La scrittura permiana fu sviluppata da Stefano di Perm dopo aver appreso la lingua e le tradizioni dei Komi, un gruppo etnico indigeno che abitava i territori orientali periferici della Moscovia. Egli elaborò un sistema di scrittura distinto per loro uso, al fine di facilitare la conversione al cristianesimo, e nel processo finì per creare una delle più antiche scritture per una lingua uralica, che gli valse la nomina a primo vescovo di Perm."
 
  flavor_mos.30.title: "[prokhor_of_gorodets.GetNameWithNoTooltip]"
- flavor_mos.30.entry: "Prokhor of Gorodets" #NEW
- flavor_mos.30.desc: "The ascetic [prokhor_of_gorodets.GetName] devotes his time to the creation of beautiful religious iconography in between spiritual contemplation. His time could be better utilized adorning the recently consecrated [ShowWorkOfArtName('uspensky_sobor')], in order to further enrich the iconostasis between the nave and the sanctuary." #NEW
+ flavor_mos.30.entry: "Prokhor of Gorodets"
+ flavor_mos.30.desc: "The ascetic [prokhor_of_gorodets.GetName] devotes his time to the creation of beautiful religious iconography in between spiritual contemplation. His time could be better utilized adorning the recently consecrated [ShowWorkOfArtName('uspensky_sobor')], in order to further enrich the iconostasis between the nave and the sanctuary."
  flavor_mos.30.a: "Affare fatto!"
- flavor_mos.30.tt1: "Prokhor of Gorodets is added as a [character|e]" #NEW
- flavor_mos.30.tt2: "His gifts are applied in the creation of several frescos for the [ShowWorkOfArtNameWithNoTooltip('uspensky_sobor')]" #NEW
+ flavor_mos.30.tt1: "[prokhor_of_gorodets.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.30.tt2: "I [prokhor_of_gorodets.GetHisHer|U] doni vengono impiegati nella creazione di diversi affreschi per il [ShowWorkOfArtNameWithNoTooltip('uspensky_sobor')]"
  flavor_mos.30.b: "Non c'è bisogno di interferire."
- flavor_mos.30.tt3: "Prokhor of Gorodets is free to adorn as he pleases" #NEW
- flavor_mos.30.tt4: "He sets aside time to the mentoring of Andrew Rublev, and the duo collaboratively fosters the creation of several religious frescos" #NEW
+ flavor_mos.30.tt3: "[prokhor_of_gorodets.GetNameWithNoTooltip] è libero di decorare come [prokhor_of_gorodets.GetSheHe] preferisce"
+ flavor_mos.30.tt4: "[prokhor_of_gorodets.GetSheHe|U] dedica del tempo a fare da mentore a [andrei_rublev.GetNameWithNoTooltip], e i due collaborano nella creazione di diversi affreschi religiosi"
  flavor_mos.30.historical_info: "Prokhor di Gorodets era un monaco ortodosso russo ricordato per il suo lavoro sulle opere d'arte religiose della Cattedrale dell'Annunciazione di Mosca, in particolare gli affreschi che rappresentano la crocifissione, l'ascensione e l'assunzione. Ha dedicato la sua vita al servizio della Chiesa e ha fatto da mentore al talentuoso Andrew Rublev, che sarebbe diventato uno dei pittori più celebri della storia russa."
 
  flavor_mos.31.title: "Giorno di Yuri"
@@ -295,50 +252,39 @@
  flavor_mos.32.b: "Non ce n'è bisogno."
  flavor_mos.32.historical_info: "Il Pozhiloye fu introdotto nel 1550 come parte di una grande riforma della legge Sudebnik. Fu un passo verso il rafforzamento del potere dell'aristocrazia a scapito dei contadini, ma la revisione confermò anche il diritto di ogni lavoratore di lasciare il proprio datore di lavoro, a condizione che potesse pagare la tassa."
 
- flavor_mos.33.title: "[sophia_palaiologina.GetNameWithNoTooltip]"
- flavor_mos.33.entry: "Sophia Palaiologina" #NEW
- flavor_mos.33.desc: "La caduta di [ShowLocationName('constantinople')] ci ha offerto la possibilità di sposarci con l'ex classe dirigente [GetCountry('BYZ').Custom('IT_Della')][GetCountry('BYZ').GetName]. Il matrimonio di [sophia_palaiologina.GetName] introdurrebbe l'influenza della cultura bizantina a corte, rafforzerebbe la nostra pretesa di essere i naturali successori dell'Impero Romano e i portatori della fede [ShowReligionAdjective('orthodox')], e qualsiasi discendente [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] potrebbe rivendicare la propria discendenza dagli imperatori dell'impero caduto."
- flavor_mos.33.a: "Un matrimonio profetizzato."
- flavor_mos.33.tt1: "Sophia is added as a [character|e]" #NEW
- enable_byzantine_court_ceremonies_reform: "Grants access to the [ShowGovernmentReformName('byzantine_court_ceremonies_reform')] [government_reform|e]" #DA TRADURRE
- flavor_mos.33.tt2: "Her resentment shown towards certain diplomats sours diplomatic relations between [target_root_country.GetName] and its [heathen|e] neighbors" #NEW
- STATIC_MODIFIER_NAME_mongol_intolerance: "Intolleranza mongola"
- flavor_mos.33.b: "Offre pochi vantaggi."
- flavor_mos.33.historical_info: "Il matrimonio tra Ivan III e Sofia Paleologina introdusse elaborate cerimonie e un elaborato galateo alla corte moscovita, contribuendo a rafforzare la sua pretesa di essere la Terza Roma. Sofia avrebbe dato alla luce undici figli e sarebbe diventata la nonna del famigerato Ivan il Terribile. La sua intolleranza nei confronti della supremazia mongola causò diversi incidenti diplomatici e contribuì ad accelerare la rottura della Moscovia con l'Orda d'Oro nel 1480."
-
  flavor_mos.34.title: "[ridolfo_fioravanti.GetNameWithNoTooltip]"
- flavor_mos.34.entry: "Ridolfo Fioravanti" #NEW
- flavor_mos.34.desc: "Renaissance architect and master engineer [ridolfo_fioravanti.GetName] has embarked on a journey to [ShowLocationName('moscow')] at the invitation of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], who wishes to enhance the architectural splendor of the [ShowBuildingTypeName('kremlin')]. If put to work, his western influences will surely spread across the [ROOT.GetCountry.GetFlavorRank] and elevate our standing among European powers." #NEW
- flavor_mos.34.a: "Bring his genius here." #NEW
- flavor_mos.34.tt1: "Rudolph Fioravanti is added as a [character|e]" #NEW
- flavor_mos.34.tt2: "He brings with the latest construction techniques and influences of the Renaissance" #NEW
- flavor_mos.34.tt3: "He undertakes the redesign of the [ShowWorkOfArtName('uspensky_sobor')], incorporating the latest styles" #NEW
- flavor_mos.34.tt4: "He background in hydraulic engineering improves upon the infrastructure of [ShowLocationNameWithNoTooltip('moscow')]" #NEW
+ flavor_mos.34.entry: "Ridolfo Fioravanti"
+ flavor_mos.34.desc: "Renaissance architect and master engineer [ridolfo_fioravanti.GetName] has embarked on a journey to [ShowLocationName('moscow')] at the invitation of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], who wishes to enhance the architectural splendor of the [ShowBuildingTypeName('kremlin')]. If put to work, his western influences will surely spread across the [ROOT.GetCountry.GetFlavorRank] and elevate our standing among European powers."
+ flavor_mos.34.a: "Bring his genius here."
+ flavor_mos.34.tt1: "[ridolfo_fioravanti.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.34.tt2: "[ridolfo_fioravanti.GetHeShe|U] porta con sé le più recenti tecniche costruttive e le influenze del Rinascimento"
+ flavor_mos.34.tt3: "[ridolfo_fioravanti.GetHeShe|U] intraprende la riprogettazione del [ShowWorkOfArtName('uspensky_sobor')], incorporando gli stili più recenti"
+ flavor_mos.34.tt4: "Il [ridolfo_fioravanti.GetHeShe|U] background nell'ingegneria idraulica migliora le infrastrutture di [ShowLocationNameWithNoTooltip('moscow')]"
  flavor_mos.34.b: "Le influenze straniere non sono benvenute."
  flavor_mos.34.historical_info: "Ridolfo 'Aristotele' Fioravanti era un rinomato architetto e ingegnere italiano che lavorò a diversi progetti in Italia prima di trasferirsi a Mosca nel 1475. Ricevette un invito da Ivan III di Moscovia, che voleva elevare lo status di Mosca a quello delle altre città europee. Ridolfo è ricordato per aver progettato la Cattedrale della Dormizione all'interno delle mura del Cremlino."
 
  flavor_mos.35.title: "[marco_ruffo.GetNameWithNoTooltip]"
- flavor_mos.35.entry: "Marco Ruffo" #NEW
+ flavor_mos.35.entry: "Marco Ruffo"
  flavor_mos.35.desc_kremlin: "L'architetto militare [marco_ruffo.GetName] è arrivato dall'[ShowLocationName('milano')] e propone un contratto di lavoro per potenziare le capacità difensive del [ShowBuildingTypeName('kremlin')] attraverso la costruzione di una serie di torri che affiancheranno le mura di cinta. $flavor_mos.35.desc_common$"
  flavor_mos.35.desc_defensiveness: "L'architetto militare [marco_ruffo.GetName] è arrivato dall'[ShowLocationName('milano')] e propone un contratto di lavoro per attuare una serie di misure volte a migliorare le capacità difensive [ROOT.GetCountry.Custom('IT_DEL_RANGO')][ROOT.GetCountry.GetFlavorRank]. $flavor_mos.35.desc_common$"
  flavor_mos.35.desc_common: "Qualsiasi iniziativa di questo tipo contribuirebbe sicuramente al trasferimento di conoscenze dall'Occidente all'Oriente, oltre a rafforzare la nostra posizione in [ShowRegionName('russian_region')]."
  flavor_mos.35.a: "Tavole da disegno pronte."
- flavor_mos.35.tt1: "Mark Ruffo is added as a [character|e]" #NEW
- flavor_mos.35.tt2: "He enhances the defensive capabilities of the [ShowBuildingTypeName('kremlin')] by incorporating a series of towers into the wall sections surrounding [ShowLocationName('moscow')]" #NEW
- flavor_mos.35.tt3: "He introduces the latest defensive strategies and influences of the Renaissance" #NEW
+ flavor_mos.35.tt1: "[marco_ruffo.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.35.tt2: "[marco_ruffo.GetHeShe|U] potenzia le capacità difensive del [ShowBuildingTypeName('kremlin')] incorporando una serie di torri nei tratti di mura che circondano [ShowLocationName('moscow')]"
+ flavor_mos.35.tt3: "[marco_ruffo.GetHeShe|U] introduce le più recenti strategie difensive e le influenze del Rinascimento"
  flavor_mos.35.b: "La miglior difesa è un buon attacco."
- flavor_mos.35.c: "Have him teach our greatest minds." #NEW
- flavor_mos.35.tt4: "His expertise in the art of defense is shared with local architects, fostering the spread of knowledge." #NEW
- flavor_mos.35.d: "Have him design a banqueting palace instead." #NEW
+ flavor_mos.35.c: "Have him teach our greatest minds."
+ flavor_mos.35.tt4: "La [marco_ruffo.GetHerHis|U] competenza nell'arte della difesa viene condivisa con gli architetti locali, favorendo la diffusione della conoscenza."
+ flavor_mos.35.d: "Have him design a banqueting palace instead."
  flavor_mos.35.tt5: "Il nuovo palazzo, riccamente decorato, diventa il luogo privilegiato per incoronazioni, banchetti e ricevimenti formali."
  flavor_mos.35.historical_info: "Marco Ruffo fu invitato da Ivan III di Moscovia nell'ambito di un'iniziativa volta a migliorare la posizione internazionale del Principato e ad aiutare la Moscovia ad affermare la propria indipendenza dalla Orda d'Oro. La città era già stata saccheggiata con successo diverse volte e il principe era determinato a rafforzarne le difese. Ruffo, in questo contesto, è anche famoso per aver progettato il Palazzo delle Facce."
 
  flavor_mos.36.title: "La Madre Terribile"
  flavor_mos.36.entry: "$flavor_mos.36.title$"
- flavor_mos.36.desc: "The absence of heirs is a cause for concern, and there are few indications that [current_wife.GetName] will be able to bear one in the near future. While not wholeheartedly endorsed by the Church, it may still be wise to consider seeking a less infertile wife for [ROOT.GetCountry.GetGovernment.GetRuler.GetName], to secure the continuity of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. [eleanor_glinskaya.GetName], renowned for her beauty and youthfulness could potentially strengthen the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip], however, she follows the [ShowReligionAdjective('shamanism')] faith and such a marriage is likely to encounter strong opposition from the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]." #NEW
+ flavor_mos.36.desc: "The absence of heirs is a cause for concern, and there are few indications that [current_wife.GetName] will be able to bear one in the near future. While not wholeheartedly endorsed by the Church, it may still be wise to consider seeking a less infertile wife for [ROOT.GetCountry.GetGovernment.GetRuler.GetName], to secure the continuity of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. [eleanor_glinskaya.GetName], renowned for her beauty and youthfulness could potentially strengthen the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip], however, she follows the [ShowReligionAdjective('shamanism')] faith and such a marriage is likely to encounter strong opposition from the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
  flavor_mos.36.a: "La dinastia viene prima di tutto."
  STATIC_MODIFIER_NAME_terrible: "Terribile"
- flavor_mos.36.tt1: "Eleanor Glinski is added as a [character|e] and gives birth to John" #NEW
+ flavor_mos.36.tt1: "[eleanor_glinskaya.GetNameWithNoTooltip] viene aggiunta come [character|e] e dà alla luce [ivan_the_terrible.GetName]"
  flavor_mos.36.b: "La vecchia palla al piede potrebbe ancora dare alla luce un erede."
  flavor_mos.36.historical_info: "Elena Glinskaya era di origini tartare e faceva parte della nobile famiglia Glinsky della Lituania. Si sa poco della sua educazione ed è ricordata soprattutto per aver dato alla luce Ivan il Terribile, che sarebbe diventato il primo zar della Russia. Dopo la morte del marito, governò come reggente, ruolo in cui riuscì a far approvare diverse riforme e negoziò un armistizio con il ducato rivale della Lituania."
 
@@ -354,13 +300,15 @@
 
  flavor_mos.38.title: "Il Pellegrinaggio alla Lavra"
  flavor_mos.38.entry: "$flavor_mos.38.title$"
- flavor_mos.38.desc: "Il monastero di [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')] a Sergiyev Posad, vicino ad [ShowLocationName('pushkino')], è diventato un vero e proprio rifugio per i [ShowPopTypeName('clergy')], con un costante aumento di pellegrini attratti da questo luogo sacro. Dovremmo considerare la possibilità di designarlo ufficialmente come uno dei principali luoghi di culto della fede [ShowReligionAdjective('orthodox')] per sottolineare la crescente influenza [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]."
+ flavor_mos.38.desc: "Il monastero di [ShowWorkOfArtName('trinity_lavra_st_sergius_work_of_art')] a Sergiyev Posad, vicino ad [ShowLocationName('pushkino')], è diventato un vero e proprio rifugio per i [ShowPopTypeName('clergy')], con un costante aumento di pellegrini attratti da questo luogo sacro. Dovremmo considerare la possibilità di designarlo ufficialmente come uno dei principali luoghi di culto della fede [ShowReligionAdjective('orthodox')] per sottolineare la crescente influenza [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]."
  flavor_mos.38.a: "Un'occasione importante per i veri credenti."
  flavor_mos.38.b: "Potrebbe causare una frattura all'interno della Chiesa."
+ flavor_mos.38.tt1: "$trinity_lavra_st_sergius_work_of_art$ si trova a [ShowLocationName('pushkino')]"
+ flavor_mos.38.tt2: "$st_sergius_relics$ si trova a [ShowLocationName('pushkino')]"
  flavor_mos.38.historical_info: "La Lavra della Trinità di San Sergio è diventata un importante luogo di pellegrinaggio circa un secolo dopo la sua costruzione ed è considerata il centro spirituale e culturale dell'ortodossia russa. Non solo è un luogo religioso, ma ospita anche diversi tesori culturali e artistici. Nonostante la sua posizione vulnerabile, ha resistito a periodi di sconvolgimenti politici e sociali, tra cui il Tempo dei Disordini e l'era sovietica."
 
  flavor_mos.39.title: "La Spedizione [target_country.GetAdjectiveWithNoTooltip]"
- flavor_mos.39.entry: "The Crimean Khanate Expedition" #NEW
+ flavor_mos.39.entry: "The Crimean Khanate Expedition"
  flavor_mos.39.desc: "Le continue incursioni di schiavi orchestrate [target_country.Custom('IT_Dalla')][target_country.GetName] stanno mettendo a dura prova le nostre riserve di manodopera e devastando le zone rurali. Dobbiamo distruggere la capacità dei Tartari di compiere queste incursioni o rischiamo di non essere in grado di difendere adeguatamente i nostri confini."
  flavor_mos.39.a: "Un attacco preventivo."
  flavor_mos.39.b: "Un'occupazione è inutile."
@@ -376,7 +324,7 @@
  flavor_mos.40.b: "Esigete la loro sottomissione incondizionata."
  flavor_mos.40.tt2: "[GetCountry('LIT').Custom('IT_La')][GetCountry('LIT').GetNameWithNoTooltip] valuta le generose condizioni che le sono state presentate"
  flavor_mos.40.c: "Organizza il divorzio di [target_character.GetNameWithNoTooltip]."
- flavor_mos.40.c.entry: "Arrange a divorce for him." #NEW
+ flavor_mos.40.c.entry: "Arrange a divorce for him."
  flavor_mos.40.tt3: "Le capacità diplomatiche di [target_root_country.GetGovernment.GetRuler.GetName] assicurano il divorzio ed evitano la guerra"
  flavor_mos.40.historical_info: "Nel 1500, Ivan III riceve la notizia che sua figlia Yelena, sposata con il granduca Aleksandras di Lituania, è vittima di maltrattamenti e coercizioni affinché abbandoni la fede ortodossa, in violazione dei termini del loro accordo matrimoniale. Sfruttando questa informazione come pretesto, la Moscovia dichiarò guerra alla Lituania. Le ostilità si conclusero con un trattato di pace, in base al quale fu ceduta una parte significativa del territorio lituano, comprese regioni chiave come la storica città di Chernigov, appartenente alla Rus' di Kiev."
 
@@ -398,15 +346,15 @@
  flavor_mos.42.tt1: "[target_character.GetName] viene avvelenato a morte"
  flavor_mos.42.c: "Tendere un ramo d'ulivo."
  flavor_mos.42.tt2: "[target_character.GetName] sopravvive ai tentativi di ucciderlo"
- mos_eleanor_glinskaya_regent_tt: "$name_eleanor$ $glinski_dynasty$ must be alive and acting as regent" #NEW
+ mos_eleanor_glinskaya_regent_tt: "$name_eleanor$ $glinski_dynasty$ must be alive and acting as regent"
  flavor_mos.42.historical_info: "Elena Glinskaya governò come reggente durante i primi anni del regno di Ivan IV, dal 1533 al 1538. Il periodo fu caratterizzato da intrighi politici e lotte di potere all'interno della corte, ed Elena stessa dovette affrontare le sfide delle fazioni rivali dei boiardi e dei fratelli del defunto Vasili III. Fece arrestare entrambi i fratelli e riuscì a confiscare le loro terre in nome di suo figlio. Nonostante la loro cattura, morì nel 1538, molto probabilmente avvelenata da un boiardo."
 
  flavor_mos.43.title: "[ShowCultureGroupNameWithNoTooltip('tatar_group')] Sloboda"
- flavor_mos.43.entry: "Tatar Group Sloboda" #NEW
+ flavor_mos.43.entry: "Tatar Group Sloboda"
  flavor_mos.43.desc: "[target_location.Custom('IT_ART_LOCATION')|U][target_location.GetRank.GetName] di [target_location.GetName] continua ad espandersi, ma il processo di trasformazione in un centro di potere regionale potrebbe essere accelerato promuovendo la migrazione dai territori circostanti. I [ShowCultureGroupName('tatar_group')] potrebbero essere invogliati a partecipare a questa iniziativa assegnando loro un'area designata fuori dalle mura. Questo accordo consentirebbe loro di conservare la propria cultura e religione, contribuendo al contempo alla crescita economica attraverso l'aumento della popolazione."
  flavor_mos.43.a: "Incoraggiare l'immigrazione dei [ShowCultureGroupNameWithNoTooltip('tatar_group')]."
  flavor_mos.43.b: "Non è il momento né il luogo adatto."
- flavor_mos.43.a.custom: "[ShowCultureGroupNameWithNoTooltip('tatar_group')] [pops|e] from across the [ShowRegionName('steppes_region')] migrate to the recently established Tatar Sloboda in [target_location.GetNameWithNoTooltip]" #DA TRADURRE
+ flavor_mos.43.a.custom: "[ShowCultureGroupNameWithNoTooltip('tatar_group')] [pops|e] from across the [ShowRegionName('steppes_region')] migrate to the recently established Tatar Sloboda in [target_location.GetNameWithNoTooltip]"
  flavor_mos.43.historical_info: "La costruzione della Sloboda tatara a Mosca iniziò quando la città crebbe in dimensioni e importanza. Le sloboda fungevano da zone residenziali al di fuori delle mura della città, ma divennero anche centri di scambio economico e culturale, contribuendo alla prosperità economica della città."
 
  flavor_mos.44.title: "I Frutti del Sapere Occidentale"
@@ -419,7 +367,7 @@
  flavor_mos.44.historical_info: "Ivan III ampliò significativamente il territorio della Moscovia, contribuendo a porre fine al dominio dell'Orda d'Oro sulla Rus' e centralizzando il controllo sui governanti locali. Tuttavia, la posizione anticattolica di Ivan portò alla soppressione della libertà nei territori russi e creò una barriera tra la Moscovia e l'Occidente, rallentando la diffusione delle nuove idee e il progresso scientifico che stavano avvenendo in tutta Europa."
 
  flavor_mos.45.title: "[ivan_fyodorov.GetNameWithNoTooltip]"
- flavor_mos.45.entry: "Ivan Fyodorov" #NEW
+ flavor_mos.45.entry: "Ivan Fyodorov"
  flavor_mos.45.desc: "Il maestro dell'inchiostro e mago della carta [ivan_fyodorov.GetName] è ansioso di installare l'ultimo marchingegno proveniente da [GetInstitutionByKey('printing_press').GetOrigin.GetName]. Questo avrà un profondo effetto sulla società e rivoluzionerà il modo in cui produciamo qualsiasi cosa, dalla letteratura ai documenti ufficiali."
  flavor_mos.45.a: "Apri subito il negozio."
  flavor_mos.45.tt1: "Le tendenze xenofobe degli [target_root_country.GetAdjective] si oppongono all'introduzione di influenze straniere"
@@ -436,45 +384,27 @@
  flavor_mos.46.tt1: "Il libro tratta brevemente della fondazione della prima tipografia statale, suscitando interesse a [target_location.GetNameWithNoTooltip]."
  STATIC_MODIFIER_NAME_the_apostle: "L'Apostolo"
  flavor_mos.46.c: "Preparate il pennarello."
- flavor_mos.46.tt2: "The book undergoes substantial revisions to enhance its effectiveness in accordance with the [ShowPolicyName('strict_censorship')] [policy|e]" #DA TRADURRE
- mos_ivan_fyodorov_alive_tt: "$name_john.east_slavic_language$ Fyodorov must be alive in the realm" #NEW
+ flavor_mos.46.tt2: "The book undergoes substantial revisions to enhance its effectiveness in accordance with the [ShowPolicyName('strict_censorship')] [policy|e]"
+ mos_ivan_fyodorov_alive_tt: "$name_john.east_slavic_language$ Fyodorov must be alive in the realm"
  flavor_mos.46.historical_info: "La pubblicazione dell'Apostolo! fu un fattore determinante per lo sviluppo culturale della Russia. Reso possibile il passaggio dai manoscritti scritti a mano ai libri stampati, rendendo più accessibili i testi religiosi . Contribuì inoltre all'educazione religiosa del popolo, rafforzando la fede cristiana."
-
- flavor_mos.47.title: "Gli Insegnamenti di Nil Sorsky"
- flavor_mos.47.entry: "$flavor_mos.47.title$"
- flavor_mos.47.desc: "Il pioniere spirituale Nil Sorsky sta conducendo una campagna per la riforma all'interno della Chiesa in risposta alla ricchezza e al materialismo che si sono insinuati in alcuni monasteri [ROOT.GetCountry.GetAdjective]. Il suo movimento, noto come i Non Possessori, propone un ritorno ai principi di povertà e umiltà, ponendo l'accento su uno stile di vita semplice e completamente dedicato agli insegnamenti di Cristo. Qualsiasi tentativo in tal senso incontrerà probabilmente la resistenza della Chiesa ufficiale, che ritiene indispensabile conservare una certa ricchezza materiale per svolgere le proprie funzioni."
- flavor_mos.47.a: "Sostenete i Non Possessori."
- flavor_mos.47.b: "Sostenete i Possessori."
- flavor_mos.47.custom1: "Grants access to the [ShowLawName('monastic_reformation_movement')] [law|e]" #DA TRADURRE
- flavor_mos.47.custom2: "A [policy|e] under the [ShowLawName('monastic_reformation_movement')] [law|e] may only be changed once every ten years" #DA TRADURRE
- flavor_mos.47.historical_info: "Nil Sorsky era un monaco ortodosso russo che contribuì a dare forma al movimento noto come i Non Possessori. Esso era composto da monaci che cercavano una stretta adesione alla povertà monastica, criticando così il possesso di terre e ricchezze da parte dei monasteri. Gli insegnamenti incontrarono l'opposizione di alcuni membri della Chiesa che erano restii ai cambiamenti proposti. Tuttavia, il suo insegnamento lasciò un segno indelebile nella spiritualità russa e Nil Sorsky è oggi considerato un santo nella Chiesa ortodossa orientale."
-
- flavor_mos.48.title: "La Scuola Stroganov"
- flavor_mos.48.entry: "$flavor_mos.48.title$"
- flavor_mos.48.desc: "La ricca famiglia di mercanti [ShowDynastyName('stroganov_dynasty')] è una grande sostenitrice delle arti e sta valutando la possibilità di sponsorizzare una scuola locale per la creazione di icone religiose, molte delle quali vengono utilizzate per adornare i loro numerosi palazzi in tutto [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetFlavorRank]. Qualsiasi opera d'arte creata dalla scuola sarebbe progettata specificamente per uso privato e difficilmente andrebbe a beneficio dell'intero Paese, ma riaffermerebbe il sostegno della potente famiglia e contribuirebbe al benessere spirituale [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]."
- flavor_mos.48.a: "Ci aiutiamo a vicenda."
- flavor_mos.48.b: "Promuovere invece la loro attività."
- flavor_mos.48.c: "Fate in modo che esercitino la loro influenza a corte."
- enable_stroganov_influences_cabinet_action: "The [ShowCabinetActionName('stroganov_influences')] [cabinet_action|e] becomes available to members of the [ShowDynastyNameWithNoTooltip('stroganov_dynasty')] dynasty" #DA TRADURRE
- flavor_mos.48.historical_info: "La scuola di pittura di icone Stroganov fu fondata in un periodo in cui la pittura medievale prosperava in Russia, prima dell'inizio dell'occidentalizzazione dell'arte che in seguito si estese all'Europa orientale. L'arte creata rifletteva in larga misura i gusti dei mecenati reali e nobili, tra cui alla fine anche lo zar. La scuola godette di popolarità fino alla fondazione di San Pietroburgo, che ne accelerò il declino con il graduale affermarsi delle influenze occidentali."
 
  flavor_mos.49.title: "La Storia dei Principi di Vladimir"
  flavor_mos.49.entry: "$flavor_mos.49.title$"
  flavor_mos.49.desc: "Si ritiene che la dinastia [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] discenda dagli imperatori romani, ma questo legame rimane una leggenda popolare di scarsa rilevanza. La composizione di un trattato potrebbe fornire un background ideologico [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_AL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], sostenendo l'eredità imperiale degna di uno zar."
  flavor_mos.49.a: "La discendenza è indiscutibile."
- flavor_mos.49.tt1: "The translation skills of Demetrius Gerasimov facilitates the spread of the idea of [target_root_country.GetNameWithNoTooltip ] as the Third Rome" #NEW
+ flavor_mos.49.tt1: "Le capacità di traduzione di [dmitry_gerasimov.GetName] facilitano la diffusione dell'idea di [target_root_country.GetNameWithNoTooltip ] come Terza Roma"
  flavor_mos.49.b: "Sciocchezze superstiziose."
  flavor_mos.49.c: "Che la leggenda adori le pareti del [ShowWorkOfArtNameWithNoTooltip('uspensky_sobor')]."
  flavor_mos.49.historical_info: "Il racconto in corsivo dei principi di Vladimir! Fu scritto da Dmitry Gerasimov o da Pachomius il Serbo all'inizio del XVI secolo e fu creato per fornire una storia di fondo da utilizzare per lo zar durante le cerimonie di incoronazione. Il suo obiettivo principale era quello di stabilire un legame storico tra il principato di Moscovia e gli imperatori romani, in particolare Augusto, ma serviva anche come mezzo per concepire l'idea della Moscovia come Terza Roma e naturale successore dell'Impero Romano d'Oriente, crollato in seguito alla conquista di Costantinopoli."
 
  flavor_mos.50.title: "[dmitry_gerasimov.GetNameWithNoTooltip]"
- flavor_mos.50.entry: "Dmitry Gerasimov" #NEW
- flavor_mos.50.desc: "Linguistic luminary and skilled diplomat [dmitry_gerasimov.GetName], is fluent in several languages, a legacy from his scholarly years in [GetCountry('LIV').GetLongName]. This sought-after skill set could be of great use by having him appointed as ambassador to foreign courts, a position which surely entails meeting with other Renaissance scholars and forwarding the diplomatic reputation of [ROOT.GetCountry.GetName]. Alternatively, his expertise in languages may find better use in translating religious texts to support the continued spread of Christianity." #NEW
+ flavor_mos.50.entry: "Dmitry Gerasimov"
+ flavor_mos.50.desc: "Linguistic luminary and skilled diplomat [dmitry_gerasimov.GetName], is fluent in several languages, a legacy from his scholarly years in [GetCountry('LIV').GetLongName]. This sought-after skill set could be of great use by having him appointed as ambassador to foreign courts, a position which surely entails meeting with other Renaissance scholars and forwarding the diplomatic reputation of [ROOT.GetCountry.GetName]. Alternatively, his expertise in languages may find better use in translating religious texts to support the continued spread of Christianity."
  flavor_mos.50.a: "La fama internazionale è essenziale."
- flavor_mos.50.tt2: "He spends considerable time visiting foreign courts, where he relays details on the geography of [target_root_country.GetName]" #NEW
- flavor_mos.50.tt3: "He briefly visits [ShowLocationName('rome')] allowing him to document various scientific contraptions" #NEW
+ flavor_mos.50.tt2: "[dmitry_gerasimov.GetSheHe|U] trascorre molto tempo visitando corti straniere, dove [dmitry_gerasimov.GetSheHe] riferisce dettagli sulla geografia di [target_root_country.GetName]"
+ flavor_mos.50.tt3: "[dmitry_gerasimov.GetSheHe|U] visita brevemente [ShowLocationName('rome')], il che permette a [dmitry_gerasimov.GetHimHer] di documentare vari congegni scientifici"
  flavor_mos.50.b: "I metodi antichi sono di gran lunga superiori."
- flavor_mos.50.tt4: "He translates a significant amount of religious texts, strengthening the [ShowReligionAdjective('orthodox')] influence, much to the pleasure of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" #NEW
+ flavor_mos.50.tt4: "[dmitry_gerasimov.GetSheHe|U] traduce una notevole quantità di testi religiosi, rafforzando l'influenza [ShowReligionAdjective('orthodox')], con grande soddisfazione dei [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]"
  flavor_mos.50.historical_info: "Dmitry Gerasimov era un famoso traduttore e diplomatico che si ritiene abbia scritto il Racconto dei Principi di Vladimir. Ha anche servito come interprete presso le ambasciate moscovite nell'Europa centrale e settentrionale, ed è stato brevemente nominato ambasciatore durante una visita a Roma come parte degli sforzi del Papa per raccogliere sostegno per una coalizione anti-ottomana."
 
  flavor_mos.51.title: "Il Cappello di Monomakh"
@@ -490,45 +420,46 @@
  flavor_mos.52.entry: "$flavor_mos.52.title$"
  flavor_mos.52.desc: "È attualmente in corso un'opera storiografica che raccoglie le grandi cronache [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], traendo ispirazione da '[ShowWorkOfArtName('tale_of_the_princes_of_vladimir')]' e da altre fonti affidabili. Lo scopo di questa grande impresa è quello di creare una fonte scritta che confermi la nostra identità di Terza Roma, affermando l'eredità imperiale degli [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName]. Ogni sovrano sarà presentato come un santo e le sue azioni saranno riconosciute come atti sacri.\n\nLa compilazione del #italic Libro dei gradi reali#! è essenziale per preservare e consolidare la nostra narrazione storica nel momento presente."
  flavor_mos.52.a: "Si tratta solo di una semplice rivisitazione."
- flavor_mos.52.tt1: "The fear instilled by John ensures the scribers embellish the book out of fear of reprisals" #NEW
+ flavor_mos.52.tt1: "La paura instillata da [ivan_the_terrible.GetName] fa sì che gli scrivani abbelliscano il libro per timore di rappresaglie"
  STATIC_MODIFIER_NAME_imperial_descent: "Discendenza imperiale"
  flavor_mos.52.b: "Il merito va in gran parte alla Chiesa."
  flavor_mos.52.c: "Non c'è nulla di sacro in queste azioni."
  flavor_mos.52.historical_info: "Commissionato dal metropolita di Moscovia, il #italic Libro dei decreti reali#! era un'opera storica concepita per far coincidere i dati storici con le preferenze e le ambizioni dello zar. Il suo scopo era quello di consolidare il concetto di Moscovia come 'Terza Roma', rafforzando al contempo il potere di Ivan IV e guidando la nazione verso un percorso più autocratico."
+ flavor_mos.52.tt2: "In possesso di [ShowWorkOfArtName('tale_of_the_princes_of_vladimir')]"
 
  flavor_mos.53.title: "La Rivolta del Sale"
  flavor_mos.53.entry: "$flavor_mos.53.title$"
  flavor_mos.53.desc: "L'aumento del costo dello [ShowGoodsName('salt')] sta suscitando risentimento tra [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], che dipendono dalla sua disponibilità per conservare il cibo. Minacciano di prendere di mira i responsabili, principalmente [ROOT.GetCountry.Custom('IT_NOBLES_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e [ROOT.GetCountry.Custom('IT_CLERGY_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], il cui abuso di potere e le tasse ingiuste sono considerati i principali colpevoli. Per evitare che la situazione sfugga al controllo, dobbiamo affrontare con urgenza le specifiche lamentele della popolazione e alleggerire il carico fiscale per sedare la ribellione prima che sfugga di mano."
  flavor_mos.53.a: "Esentare [ROOT.GetCountry.Custom('IT_PEASANTS_IL')][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] dall'imposta."
- flavor_mos.53.a.entry: "Make the $peasants_estate$ exempt from the tax." #NEW
+ flavor_mos.53.a.entry: "Make the $peasants_estate$ exempt from the tax."
  salt_riot: "Rivoltosi del sale"
  flavor_mos.53.b: "Restare a guardare."
  flavor_mos.53.tt: "I ribelli prendono di mira i [ShowPopTypeName('nobles')] e le loro proprietà del [ShowPopTypeName('clergy')] in risposta all'inerzia di [target_root_country.GetGovernment.GetRuler.GetName] di fronte alla crisi"
  flavor_mos.53.historical_info: "La rivolta del sale del 1648 fu una grande insurrezione che ebbe luogo a Mosca. Il costo del sale era aumentato costantemente a causa di una serie di fattori, causando notevoli difficoltà economiche alla popolazione contadina. Il sale era all'epoca un ingrediente fondamentale per la conservazione degli alimenti e la sua inaccessibilità portò molti sull'orlo della fame. I rivoltosi presero di mira diverse proprietà dei boiardi e della Chiesa e la ribellione fu sedata solo dopo che lo zar fece arrestare diversi membri della nobiltà e accettò di regolamentare il prezzo del sale per alleviare temporaneamente le difficoltà economiche."
 
  flavor_mos.54.title: "Le Contromisure di [antonio_possevino.GetNameWithNoTooltip]"
- flavor_mos.54.entry: "The Counteractions of Antonio Possevino" #NEW
- flavor_mos.54.desc: "Clever quibbler and devout Jesuit [antonio_possevino.GetName] is visiting [ROOT.GetCountry.GetName] as part of an extended trip throughout Europe, in an attempt to promote [ShowReligionName('catholic')] and counter the spread of [ShowReligionName('lutheran')]. His presence will likely offend the Church but contribute greatly to our diplomatic ambitions, with [antonio_possevino.GetNameWithNoTooltip] having shown great skill at navigating the complex political and religious landscape." #NEW
- flavor_mos.54.a: "Embrace his views." #NEW
- flavor_mos.54.tt2: "He spends considerable time at the [target_root_country.GetAdjective] court, helping to mediate various internal and external disputes" #NEW
+ flavor_mos.54.entry: "The Counteractions of Antonio Possevino"
+ flavor_mos.54.desc: "Clever quibbler and devout Jesuit [antonio_possevino.GetName] is visiting [ROOT.GetCountry.GetName] as part of an extended trip throughout Europe, in an attempt to promote [ShowReligionName('catholic')] and counter the spread of [ShowReligionName('lutheran')]. His presence will likely offend the Church but contribute greatly to our diplomatic ambitions, with [antonio_possevino.GetNameWithNoTooltip] having shown great skill at navigating the complex political and religious landscape."
+ flavor_mos.54.a: "Embrace his views."
+ flavor_mos.54.tt2: "[antonio_possevino.GetSheHe|U] trascorre molto tempo presso la corte [target_root_country.GetAdjective], aiutando a mediare varie dispute interne ed esterne"
  STATIC_MODIFIER_NAME_controversial_nuncio: "Nunzio controverso"
  flavor_mos.54.b: "Incoraggiare gli scambi culturali."
- flavor_mos.54.tt3: "He remains in [target_root_country.GetName] for some time, partaking in the sharing of western knowledge, books, and ideas" #NEW
- flavor_mos.54.c: "His motives are suspiscious." #NEW
- flavor_mos.54.tt4: "He is refused access to court and restrictions to his missionary work" #NEW
+ flavor_mos.54.tt3: "[antonio_possevino.GetSheHe|U] rimane in [target_root_country.GetName] per qualche tempo, partecipando alla condivisione di conoscenze, libri e idee occidentali"
+ flavor_mos.54.c: "His motives are suspiscious."
+ flavor_mos.54.tt4: "A [antonio_possevino.GetSheHe|U] viene negato l'accesso a corte e vengono imposte restrizioni alla [antonio_possevino.GetHisHer] opera missionaria"
  flavor_mos.54.historical_info: "Antonio Possevino era un gesuita italiano che partecipò a diverse missioni diplomatiche in Europa. Nel 1581 fu inviato da papa Gregorio XIII a Mosca con la missione di stabilire un dialogo con lo zar. Gli obiettivi principali della sua missione erano garantire un'alleanza politica tra le potenze cattoliche e ortodosse e contrastare la rapida diffusione del protestantesimo."
 
  flavor_mos.55.title: "[joseph_volotsky.GetNameWithNoTooltip]"
- flavor_mos.55.entry: "Joseph Volotsky" #NEW
- flavor_mos.55.desc: "Pious proponent [joseph_volotsky.GetName] is seeking to strengthen the authority of the Church by introducing a set of rules to reduce corruption, while simultaneously allowing [ShowBuildingTypeName('orthodox_monastery')] throughout the [ROOT.GetCountry.GetFlavorRank] to own land as they please. In addition, he strongly opposes the followers of [ShowReligionName('strigolniki')] and may prove useful in limiting the spread of any heretical thinking." #NEW
+ flavor_mos.55.entry: "Joseph Volotsky"
+ flavor_mos.55.desc: "Pious proponent [joseph_volotsky.GetName] is seeking to strengthen the authority of the Church by introducing a set of rules to reduce corruption, while simultaneously allowing [ShowBuildingTypeName('orthodox_monastery')] throughout the [ROOT.GetCountry.GetFlavorRank] to own land as they please. In addition, he strongly opposes the followers of [ShowReligionName('strigolniki')] and may prove useful in limiting the spread of any heretical thinking."
  flavor_mos.55.a: "L'eresia deve essere sradicata."
- strigolniki_pops_tt: "All [ShowReligionAdjective('strigolniki')] [pops|e] lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%]" #DA TRADURRE
- flavor_mos.55.tt1: "Joseph Volotsky is added as a [character|e]" #NEW
- flavor_mos.55.tt2: "He diverts his attention towards limiting the spread of the [ShowReligionName('strigolniki')] faith" #NEW
+ strigolniki_pops_tt: "All [ShowReligionAdjective('strigolniki')] [pops|e] lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%]"
+ flavor_mos.55.tt1: "[joseph_volotsky.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.55.tt2: "[joseph_volotsky.GetSheHe|U] rivolge la [joseph_volotsky.GetHisHer] attenzione a limitare la diffusione della fede [ShowReligionName('strigolniki')]"
  flavor_mos.55.b: "Non rappresentano un pericolo."
- flavor_mos.55.tt3: "He focuses his efforts on strengthening the authority of the [target_root_country.GetGovernment.GetRulerTitle]" #NEW
+ flavor_mos.55.tt3: "[joseph_volotsky.GetSheHe|U] concentra i [joseph_volotsky.GetHisHer] sforzi nel rafforzare l'autorità del [target_root_country.GetGovernment.GetRulerTitle]"
  flavor_mos.55.c: "Tentativo di eliminare l'iniziativa di abolire la proprietà terriera monastica."
- flavor_mos.55.tt4: "The [ShowLawName('monastic_reformation_movement')] [law|e] is no longer locked" #DA TRADURRE
+ flavor_mos.55.tt4: "The [ShowLawName('monastic_reformation_movement')] [law|e] is no longer locked"
  flavor_mos.55.historical_info: "Joseph Volotsky era un monaco ortodosso che si opponeva alle iniziative dei Non Possessori, una fazione che cercava di ridurre la proprietà terriera monastica e tornare a una vita di ascetismo, preghiera e umiltà. In risposta a quella che percepiva come corruzione all'interno degli ordini monastici, contribuì a stabilire una serie di regolamenti volti a rafforzare la rigida disciplina monastica, che avrebbe avuto un impatto duraturo sul monachesimo russo."
 
  flavor_mos.56.title: "Le Conseguenze Infuocate"
@@ -536,14 +467,14 @@
  flavor_mos.56.desc: "Dopo il grande incendio di [ShowLocationName('moscow')], la colpa è stata rapidamente attribuita ai parenti materni [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] [eleanor_glinskaya.GetName], con la stregoneria sciamanica citata come causa dell'inferno. I [ShowPopTypeName('peasants')] sono scesi in strada e chiedono la resa immediata dei membri della dinastia [ShowDynastyName('glinskaya_dynasty')] per vendicare le numerose vittime attribuite al terribile incendio."
  flavor_mos.56.a: "Guardare dall'altra parte."
  flavor_mos.56.tt1: "I membri della dinastia [ShowDynastyNameWithNoTooltip('glinskaya_dynasty')] vengono perseguitati e uccisi da una folla inferocita."
- flavor_mos.56.tt2: "The onslaught of her family members causes great duress to Eleanor Glinski" #NEW
+ flavor_mos.56.tt2: "L'assalto dei [eleanor_glinskaya.GetHisHer] familiari provoca grande angoscia a [eleanor_glinskaya.GetNameWithNoTooltip]"
  flavor_mos.56.b: "Consegnate anche la signora."
- mos_eleanor_glinskaya_spouse_tt: "$name_eleanor$ $glinski_dynasty$ must be alive and married to the ruler" #NEW
+ mos_eleanor_glinskaya_spouse_tt: "$name_eleanor$ $glinski_dynasty$ must be alive and married to the ruler"
  flavor_mos.56.tt3: "Tutti i membri della famiglia [ShowDynastyNameWithNoTooltip('glinskaya_dynasty')] vengono radunati e uccisi da una folla inferocita"
  flavor_mos.56.c: "Colpisci duramente i mafiosi."
  flavor_mos.56.d: "Ogni uomo ha un prezzo."
  flavor_mos.56.historical_info: "L'incendio di Mosca del 1547 ebbe un profondo effetto sulla popolazione contadina, causando migliaia di morti o sfollati e costringendoli alla povertà. La popolazione civile cercò un capro espiatorio, rivolgendo la propria attenzione alla nonna dello zar, le cui origini sciamaniche erano percepite come la fonte della magia scatenata che colpiva la popolazione cristiana. Diversi parenti furono lapidati a morte; tuttavia, lo zar si rifiutò categoricamente di consegnare sua nonna alla folla inferocita."
- variable_great_fire_moscow_tt: "[ShowLocationName('moscow')] has Suffered a Great Fire" #NEW
+ variable_great_fire_moscow_tt: "[ShowLocationName('moscow')] has Suffered a Great Fire"
 
  flavor_mos.57.title: "L'Espansione del Cremlino"
  flavor_mos.57.entry: "$flavor_mos.57.title$"
@@ -565,7 +496,7 @@
  flavor_mos.58.historical_info: "Il campanile di Ivan il Grande fu costruito nel 1508 durante il regno di Ivan III e faceva parte del progetto di ristrutturazione e ampliamento del Cremlino di Mosca. Il campanile ospita ventidue campane ed è l'edificio più alto del complesso. Grazie alla sua imponente altezza, fungeva anche da punto di osservazione per individuare gli incendi e monitorare l'avvicinarsi di potenziali nemici."
 
  flavor_mos.59.title: "Il Decreto [ShowLocationNameWithNoTooltip('arkhangelsk')]"
- flavor_mos.59.entry: "The Arkhangelsk Decree" #NEW
+ flavor_mos.59.entry: "The Arkhangelsk Decree"
  flavor_mos.59.desc: "Il porto naturale di [ShowLocationName('arkhangelsk')] offre accesso al Mar Artico e, di conseguenza, alle principali rotte commerciali europee. Incoraggiamo un ulteriore insediamento ampliando le infrastrutture per accogliere il crescente volume del commercio marittimo e utilizziamo il porto come trampolino di lancio per l'eventuale creazione di [ShowBuildingTypeName('trade_office')] lungo le coste occidentali, assicurandoci una fetta del mercato."
  flavor_mos.59.a: "Non possiamo fare affidamento sulle opportunità interne."
  STATIC_MODIFIER_NAME_bustling_trade_hub: "Vivace centro commerciale"
@@ -574,21 +505,21 @@
  flavor_mos.59.historical_info: "Il regno di Ivan IV vide lo spostamento dell'attenzione verso la creazione di rotte commerciali marittime dirette verso l'Occidente. Ciò fu motivato dal desiderio di aggirare il dominio della Lega Anseatica e stabilire collegamenti commerciali diretti con l'Europa occidentale, rafforzando la posizione economica e politica della Russia."
 
  flavor_mos.60.title: "La Censura dell'[ShowGovernmentReformNameWithNoTooltip('oprichnina')]"
- flavor_mos.60.entry: "The Censorship of the Oprichnina" #NEW
+ flavor_mos.60.entry: "The Censorship of the Oprichnina"
  flavor_mos.60.desc: "La continua epurazione delle menti dissidenti prosegue ed è giunto il momento di rivolgersi a coloro che sono ritenuti responsabili della diffusione di idee contrarie all'ideologia promossa dall'[ShowGovernmentReformName('oprichnina')]. Dobbiamo schierare gli Oprichniki per rafforzare l'autorità centrale, limitando i testi e i trattati che mettono in discussione la nostra agenda politica, e garantire che la leadership della Chiesa sia in armonia con queste politiche."
  flavor_mos.60.a: "La libertà di parola è un privilegio da usare con saggezza."
  flavor_mos.60.b: "È tollerato un certo margine di manovra."
  flavor_mos.60.historical_info: "La repressione politica era diffusa durante l'Oprichnina e avrebbe raggiunto nuovi livelli con l'istituzione degli Oprichniki, la polizia politica dello zar. La Chiesa ortodossa in Russia, come altre istituzioni, fu influenzata dalle politiche dell'Oprichnina, con una rigorosa censura sui testi religiosi e alcuni libri e manoscritti vietati o distrutti."
 
  flavor_mos.61.title: "I Reinsediamenti dell'[ShowGovernmentReformNameWithNoTooltip('oprichnina')]"
- flavor_mos.61.entry: "The Oprichnina Resettlements" #NEW
+ flavor_mos.61.entry: "The Oprichnina Resettlements"
  flavor_mos.61.desc: "La ridistribuzione delle terre sottratte [ROOT.GetCountry.Custom('IT_NOBLES_AL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sleali a uomini e donne che non sono considerati una minaccia continua senza sosta, ma i sequestri stanno avendo un impatto negativo sulla produzione alimentare, poiché i [ShowPopTypeName('peasants')] sono sfollati e non possono coltivare i campi. Il rischio di carestia persiste e potrebbe essere necessario agire con maggiore clemenza se si vuole considerare il benessere generale della popolazione."
  flavor_mos.61.a: "La confisca delle terre continuerà."
  STATIC_MODIFIER_NAME_disruption_of_agricultural_activities: "Interruzione delle attività agricole"
  flavor_mos.61.tt1: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] continuano ad affrontare incertezza e sfollamento, con conseguente calo della produttività agricola"
  flavor_mos.61.b: "Evitare di confiscare le proprietà dei boiardi rurali."
  flavor_mos.61.c: "Legare i [ShowPopTypeNameWithNoTooltip('peasants')] alla tenuta."
- flavor_mos.61.tt2: "The brutal repression of John minimizes any disruption to the production of food at the expense of the rural population" #NEW
+ flavor_mos.61.tt2: "La brutale repressione di [ivan_the_terrible.GetName] riduce al minimo qualsiasi interruzione della produzione alimentare, a scapito della popolazione rurale"
  flavor_mos.61.historical_info: "L'Oprichnina ha avuto un impatto dirompente sull'agricoltura e sull'economia rurale in Russia. La confisca delle proprietà e l'interruzione delle normali pratiche agricole hanno contribuito alla carenza di cibo e all'instabilità economica, provocando una carestia diffusa e ulteriori difficoltà per i contadini."
 
  flavor_mos.62.title: "Cattedrale di San Basilio"
@@ -596,33 +527,18 @@
  flavor_mos.62.desc: "La conquista dell'[ShowAreaName('kazan_area')] è un grande trionfo per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] e dovrebbe essere commemorata. Si potrebbe prendere in considerazione la costruzione di una grande cattedrale dedicata a questa vittoria militare, utilizzando le più recenti influenze nelle tecniche di costruzione per mostrare lo splendore e l'innovatività dell'architettura [ROOT.GetCountry.GetAdjectiveWithNoTooltip]."
  flavor_mos.62.a: "Idea brillante."
  mos_st_basil_cathedral_construction: "Costruzione della Cattedrale di San Basilio"
- flavor_mos.62.tt1: "The meticulous craftsmanship of Postnik Yakovlev further enriches the cathedral" #NEW
+ flavor_mos.62.tt1: "La meticolosa maestria artigianale di [postnik_yakovlev.GetName] arricchisce ulteriormente la cattedrale"
  flavor_mos.62.b: "Un'esibizione superflua."
  flavor_mos.62.c: "È troppo presto per cantare vittoria."
  STATIC_MODIFIER_NAME_shoring_up_defenses: "Rafforzamento delle difese"
  flavor_mos.62.tt2: "Le risorse materiali vengono investite nel rinforzo delle pareti in [ShowGoodsName('stone')] del [ShowBuildingTypeName('kremlin')]."
  flavor_mos.62.historical_info: "La Cattedrale di San Basilio fu costruita durante il regno di Ivan il Terribile per celebrare la vittoriosa campagna militare contro il Khanato di Kazan. La costruzione fu considerata un'offerta di gratitudine alla Vergine Maria per la sua intercessione nella conquista. Oggi rimane un simbolo iconico della Russia e rappresenta la resistenza e la sopravvivenza dello Stato russo."
 
- flavor_mos.63.title: "Il Convento di Novodevichy"
- flavor_mos.63.entry: "$flavor_mos.63.title$"
- flavor_mos.63.desc: "Sulla scia della trionfale conquista dell'[ShowAreaName('smolensk_area')], si presenta l'occasione di commemorare la vittoria fortificando la cintura difensiva meridionale dell'[ShowLocationName('moscow')] per la sicurezza [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. L'idea di costruire un convento fortificato nasce da una necessità strategica, ma potrebbe anche essere utilizzata per ospitare le numerose donne [ShowPopTypeName('nobles')] che sono state costrette a prendere i voti, assicurandosi così il favore [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
- flavor_mos.63.a: "Più risultati con meno soldi."
- flavor_mos.63.b: "L'[ShowLocationNameWithNoTooltip('moscow')] è già adeguatamente difesa."
- flavor_mos.63.c: "Offrire uno stipendio alle donne colpite."
- flavor_mos.63.historical_info: "Il convento di Novodevichy fu fondato dal granduca Vasily III in onore della conquista della zona di Smolensk. Fu istituito come fortezza e istituzione religiosa per proteggere gli accessi occidentali alla città. Il convento forniva anche residenza alle donne delle famiglie reali russe che erano incoraggiate ad abbracciare la vita monastica."
-
- flavor_mos.64.title: "Arsenale dell'Artiglieria di [ShowLocationNameWithNoTooltip('moscow')]"
- flavor_mos.64.entry: "Moscow Artillery Yard" #NEW
- flavor_mos.64.desc: "Con il progresso della tecnologia dell'artiglieria sul campo di battaglia, è sempre più cruciale essere in grado di fornire all'esercito un'ampia scorta di munizioni per sostenere lo sforzo bellico. Dovremmo incaricare i nostri ingegneri di creare una struttura dedicata alla produzione di artiglieria, trasformando [ShowLocationName('moscow')] in un centro di innovazioni tecnologiche e in un fornitore affidabile."
- flavor_mos.64.a: "Un affare dinamite."
- flavor_mos.64.b: "Tempo meglio speso nelle esercitazioni militari."
- flavor_mos.64.historical_info: "Il deposito di artiglieria di Mosca fu costruito durante il regno di Ivan IV e svolse un ruolo importante nel potenziamento delle capacità militari della Russia. La produzione di cannoni e artiglieria fu fondamentale per l'espansione dell'influenza militare della Russia e contribuì ai suoi successi militari in diversi conflitti."
-
  flavor_mos.65.title: "La Frontiera Baltica"
  flavor_mos.65.entry: "$flavor_mos.65.title$"
  flavor_mos.65.desc: "La regione dell'[ShowAreaName('baltic_area')] ha goduto a lungo di una posizione commerciale favorevole grazie alla sua vicinanza al Mar Baltico, il vivace centro commerciale del Nord Europa. Tuttavia, raccogliere i frutti di questo commercio si è rivelato difficile a causa della distanza geografica. Dobbiamo sfruttare il nostro vantaggio e prendere il controllo della regione, se vogliamo convogliare parte della ricchezza verso [target_location.GetName]."
  flavor_mos.65.a: "Una fetta dell'azione."
- flavor_mos.65.a.custom: "[target_root_country.Custom('IT_La')|U][target_root_country.GetName] gains a [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] on every [province|e], and a [ShowCasusBelliName('cb_subjugation')] [casus_belli|e] on any [subject|e] in the [ShowAreaName('baltic_area')] area" #DA TRADURRE
+ flavor_mos.65.a.custom: "[target_root_country.Custom('IT_La')|U][target_root_country.GetName] gains a [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] on every [province|e], and a [ShowCasusBelliName('cb_subjugation')] [casus_belli|e] on any [subject|e] in the [ShowAreaName('baltic_area')] area"
  flavor_mos.65.b: "La pace fa bene agli affari."
  flavor_mos.65.historical_info: "I tentativi russi di conquistare la regione baltica portarono alla lunga e infruttuosa guerra di Livonia, che avrebbe devastato l'economia della Russia e portato a pochi guadagni territoriali. La guerra terminò con i trattati di Jam Zapolski nel 1582 e Plussa nel 1583, che consacrarono la divisione delle terre di Livonia ed Estonia tra la Confederazione polacco-lituana, la Svezia e la Danimarca."
 
@@ -632,16 +548,16 @@
  flavor_mos.66.a: "Rimanete in silenzio. È una questione di famiglia."
  flavor_mos.66.tt1: "[target_heir.GetNameWithNoTooltip] riceve un colpo mortale alla testa e muore tra le braccia di un [target_ruler.GetNameWithNoTooltip] in lacrime."
  flavor_mos.66.b: "Fai in modo che le guardie trattengano [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle]."
- flavor_mos.66.b.entry: "Have the guards restrain him." #NEW
+ flavor_mos.66.b.entry: "Have the guards restrain him."
  STATIC_MODIFIER_NAME_temporarily_incarcerated: "Temporaneamente incarcerato"
  flavor_mos.66.tt2: "[target_ruler.GetSheHe|U] viene rinchiuso finché la sua rabbia non passa"
  flavor_mos.66.c: "Liberiamoci di questo pazzo."
  flavor_mos.66.historical_info: "Nel 1581, in un momento di intensa rabbia, Ivan IV colpì a morte suo figlio ed erede, Ivan Ivanovich, usando un bastone appuntito. Questo atto di filicidio si svolse durante un periodo turbolento negli ultimi anni di Ivan, caratterizzato da una crescente paranoia e da una serie di brutali purghe."
 
  flavor_mos.67.title: "[postnik_yakovlev.GetNameWithNoTooltip]"
- flavor_mos.67.entry: "Postnik Yakovlev" #NEW
- flavor_mos.67.desc: "Visionary creator [postnik_yakovlev.GetName] is continuing to demonstrate an exceptional talent for pushing the architectural boundaries and blessing the [ShowLocationName('moscow')] skyline with his creations. Little is known of his background or social status, but it must not be allowed to stand in the way of utilizing such majestic skills. We should keep him close in the event of any major building works commissioned by the [ROOT.GetCountry.GetGovernment.GetRulerTitle]." #NEW
- flavor_mos.67.a: "Invite him to court." #NEW
+ flavor_mos.67.entry: "Postnik Yakovlev"
+ flavor_mos.67.desc: "Visionary creator [postnik_yakovlev.GetName] is continuing to demonstrate an exceptional talent for pushing the architectural boundaries and blessing the [ShowLocationName('moscow')] skyline with his creations. Little is known of his background or social status, but it must not be allowed to stand in the way of utilizing such majestic skills. We should keep him close in the event of any major building works commissioned by the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_mos.67.a: "Invite him to court."
  flavor_mos.67.b: "Ciò che conta è il presente."
  flavor_mos.67.historical_info: "Postnik Yakovlev era un architetto russo particolarmente ricordato per il suo coinvolgimento nella costruzione della Cattedrale di San Basilio a Mosca. La cattedrale fu commissionata da Ivan il Terribile per commemorare la conquista della città di Kazan dai mongoli."
 
@@ -649,38 +565,21 @@
  flavor_mos.68.entry: "$flavor_mos.68.title$"
  flavor_mos.68.desc: "Il giovane [target_character.GetName] sembra essere vittima delle influenze distruttive dell'influente famiglia Shuisky, che lo sottopone all'uso di alcol e altre sostanze abusive come mezzo per rafforzare il proprio controllo sulla [ROOT.GetCountry.GetName]. La situazione è degenerata al punto da influire sugli affari quotidiani di corte, e qualsiasi tentativo di frenare questo comportamento rischia di portare a conflitti interni."
  flavor_mos.68.a: "Combattere il fuoco con il fuoco."
- flavor_mos.68.tt1: "The strong-willed [target_character.GetNameWithNoTooltip] introduces the [ShowGovernmentReformName('oprichnina')] [government_reform|e] to curb the influence of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" #DA TRADURRE
+ flavor_mos.68.tt1: "The strong-willed [target_character.GetNameWithNoTooltip] introduces the [ShowGovernmentReformName('oprichnina')] [government_reform|e] to curb the influence of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]"
  flavor_mos.68.b: "Non possiamo rischiare un colpo di stato."
  STATIC_MODIFIER_NAME_drunkard: "Ubriacone"
  flavor_mos.68.tt2: "[target_character.GetNameWithNoTooltip] soccombe all'alcolismo, rafforzando il dominio [ROOT.GetCountry.Custom('IT_NOBLES_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]"
  flavor_mos.68.historical_info: "Gli Shuisky erano una potente famiglia di boiardi che esercitava un notevole potere durante la reggenza di Ivan IV. Da bambino, Ivan subì spesso abbandono e offese da parte degli Shuisky e divenne sempre più frustrato dal loro comportamento arrogante e indisciplinato, preparando il terreno per la sua imminente repressione della nobiltà russa."
 
- flavor_mos.69.title: "I Poteri dei Namestnik"
- flavor_mos.69.entry: "$flavor_mos.69.title$"
- flavor_mos.69.desc: "I viceré Namestnik esercitano un potere considerevole che permette loro di governare le regioni più remote [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName]. Questo sistema presenta una serie di sfide, come la perdita di una parte significativa delle entrate generate e la difficoltà di mantenere la loro obbedienza. Dovremmo lavorare per stabilire un controllo diretto sul governo regionale e centralizzare l'amministrazione, potenzialmente a scapito delle élite locali."
- flavor_mos.69.a: "Limitare la loro influenza."
- flavor_mos.69.b: "Non interferiamo con ciò che è indisturbato."
- flavor_mos.69.c: "È una cosa del passato."
- disable_namestnik_policy: "The [ShowPolicyName('namestnik_policy')] [policy|e] becomes unavailable" #DA TRADURRE
- flavor_mos.69.historical_info: "I Namestnik detenevano significativi poteri amministrativi ed esecutivi in Russia, agendo come rappresentanti del monarca in territori lontani. I loro poteri furono in qualche modo limitati durante il regno di Ivan IV, ma sarebbero durati fino a quando una serie di riforme furono avviate da Pietro il Grande, come parte dei cambiamenti generali alla struttura amministrativa della Russia."
-
  flavor_mos.70.title: "[ivan_viskovatiy.GetNameWithNoTooltip]"
- flavor_mos.70.entry: "Ivan Viskovatiy" #NEW
- flavor_mos.70.desc: "Diplomatic wordsmith [ivan_viskovatiy.GetName] is eager to serve and has several ideas on how to improve upon the bureaucracy introduced with the [ShowGovernmentReformName('prikazi_reform')] government reform. We must seize the moment and put his skills to good use, to help navigate the difficult terrain that is diplomacy." #NEW
+ flavor_mos.70.entry: "Ivan Viskovatiy"
+ flavor_mos.70.desc: "Diplomatic wordsmith [ivan_viskovatiy.GetName] is eager to serve and has several ideas on how to improve upon the bureaucracy introduced with the [ShowGovernmentReformName('prikazi_reform')] government reform. We must seize the moment and put his skills to good use, to help navigate the difficult terrain that is diplomacy."
  flavor_mos.70.a: "Invitalo a corte."
- flavor_mos.70.tt2: "He may set up additional bureaus if assigned to [cabinet|e]" #NEW
+ flavor_mos.70.tt2: "[ivan_viskovatiy.GetSheHe|U] può istituire uffici aggiuntivi se assegnato al [cabinet|e]"
  flavor_mos.70.b: "L'arte della diplomazia può essere insegnata."
- flavor_mos.70.tt3: "John Viskovatiy tutors [target_root_country.GetGovernment.GetRuler.GetName] in the skills of communication and negotiation" #NEW
+ flavor_mos.70.tt3: "[ivan_viskovatiy.GetNameWithNoTooltip] istruisce [target_root_country.GetGovernment.GetRuler.GetName] nelle abilità di comunicazione e negoziazione"
  flavor_mos.70.c: "Un ciarlatano senza talento."
  flavor_mos.70.historical_info: "Ivan Viskovatiy fu determinante per le ambizioni diplomatiche di Ivan IV e fu incaricato delle relazioni estere della Russia, carica che mantenne fino alla morte. Si ritiene che sia stato responsabile della creazione del ministero degli esteri Prikazi, comunemente noto come #italic Posolsky Prikaz#!. Durante i suoi ultimi anni, la sua lealtà fu messa in discussione dallo zar e fu giustiziato pubblicamente a seguito delle purghe di Ivan IV."
-
- flavor_mos.71.title: "Posolsky Prikaz"
- flavor_mos.71.entry: "$flavor_mos.71.title$"
- flavor_mos.71.desc: "Il lavoro diligente di [ivan_viskovatiy.GetName] ha dato i suoi frutti, portando a una gestione più efficiente degli affari esteri e a una burocrazia snellita. Ora si propone di istituire un ufficio separato per gestire le questioni relative alla diplomazia e simili, al fine di stabilire gli stessi standard applicabili ad altri settori governativi."
- flavor_mos.71.a: "Una scelta sensata."
- enable_posolsky_cabinet_action: "Grants access to the [ShowCabinetActionName('posolsky')] [cabinet_action|e]" #DA TRADURRE
- flavor_mos.71.b: "Un negozio per malizia internazionale."
- flavor_mos.71.historical_info: "Il #italic Posolsky Prikaz#! fungeva da ufficio governativo che sovrintendeva agli affari esteri e diplomatici. Svolgeva un ruolo importante nella gestione delle relazioni diplomatiche, nell'invio degli ambasciatori e nell'amministrazione degli affari internazionali."
 
  flavor_mos.72.title: "I Figli delle Tenebre"
  flavor_mos.72.entry: "$flavor_mos.72.title$"
@@ -690,30 +589,23 @@
  flavor_mos.72.b: "Indossano tutto ciò che riescono a rubare."
  flavor_mos.72.c: "Barbarici e inquietanti."
  flavor_mos.72.historical_info: "Gli Oprichniki indossavano abiti neri e avevano una testa mozzata di cane o di lupo attaccata alla sella. Questo simboleggiava il loro acuto senso di sradicare qualsiasi tradimento contro lo zar. Inoltre, portavano una scopa come metafora della caccia ai nemici dello zar e dell'atto di spazzarli via."
-
- flavor_mos.73.title: "Le Incursioni degli Oprichniki"
- flavor_mos.73.entry: "$flavor_mos.73.title$"
- flavor_mos.73.desc: "Gli Oprichnik continuano a giustiziare le persone ritenute sleali. Recentemente, diverse tenute [ShowPopTypeName('nobles')] nelle zone rurali sono state prese di mira, con la conseguente espulsione dei [ShowPopTypeName('peasants')] assegnati a quelle terre, ai quali è stato proibito di lasciare la famiglia a cui erano assegnati. Se questa situazione non viene risolta tempestivamente, rischiamo di andare incontro a una carenza endemica di cibo."
- flavor_mos.73.a: "Non è un nostro problema."
- STATIC_MODIFIER_NAME_displaced_farmers: "Contadini sfollati"
- flavor_mos.73.b: "Mettete fine agli Oprichnik."
- disable_oprichnik_policy: "The [ShowPolicyName('oprichnik_policy')] [policy|e] become unavailable" #DA TRADURRE
- flavor_mos.73.historical_info: "Gli Oprichnik erano coinvolti nella confisca dei beni di coloro che erano considerati nemici dello Stato. Questa pratica consolidò ulteriormente il potere economico dello zar e dei suoi fedeli sostenitori, ma ebbe l'effetto indesiderato di sfollare e allontanare i contadini, poiché i loro ex padroni venivano uccisi o catturati. Ciò a sua volta ebbe un effetto devastante sulla produzione alimentare, poiché i campi venivano lasciati incolti."
  
  flavor_mos.74.title: "La Questione della Successione"
  flavor_mos.74.entry: "$flavor_mos.74.title$"
  flavor_mos.74.desc: "Il nostro amato [ROOT.GetCountry.GetGovernment.GetRuler.GetName] potrebbe non avere molto tempo da vivere e il mancato reperimento di un erede adeguato rischia di gettare [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName] nel caos politico. È stato suggerito che un membro del consiglio [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_DEL_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] venga scelto per assumere la guida una volta che [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle] sarà deceduto.\n\nDue [ShowPopTypeName('nobles')] sono stati presi in considerazione per questo compito arduo, ovvero [boris_godunov.GetName] e [feodor_romanov.GetName]. Possiedono qualità simili, ma il primo gode di un forte sostegno da parte dell'assemblea nazionale. Dobbiamo decidere o rischiare una guerra civile al momento del passaggio del testimone."
- flavor_mos.74.a: "Boris Godunov is the better choice." #NEW
+ flavor_mos.74.a: "[boris_godunov.GetNameWithNoTooltip] è la scelta migliore."
+ flavor_mos.74.a.entry: "$name_boris$ $godunov_dynasty$ è la scelta migliore."
  STATIC_MODIFIER_NAME_by_grace_of_national_assembly: "Per grazia dell'Assemblea Nazionale"
  STATIC_MODIFIER_NAME_blocked_from_being_ruler: "Impedito di diventare sovrano"
- flavor_mos.74.b: "Theodore Romanov has our endorsement." #NEW
- flavor_mos.74.tt1: "Boris Godunov is added as a [character|e]" #NEW
- flavor_mos.74.tt2: "Theodore Romanov is added as a [character|e]" #NEW
- STATIC_MODIFIER_NAME_national_assembly_opposed: "L'Assemblea Nazionale si oppone"
+ flavor_mos.74.b: "[feodor_romanov.GetNameWithNoTooltip] ha il nostro sostegno."
+ flavor_mos.74.b.entry: "$name_theodore.east_slavic_language$ $romanov_dynasty$ ha il nostro sostegno."
+ flavor_mos.74.tt1: "[boris_godunov.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.74.tt2: "[feodor_romanov.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ STATIC_MODIFIER_NAME_national_assembly_opposed: "L'Assemblea Nazionale si oppone" 
  flavor_mos.74.c: "Mantenere entrambi come influenti consiglieri."
  flavor_mos.74.tt3: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip], uomo forte e carismatico, resiste ai tentativi di imporgli una decisione"
  flavor_mos.74.d: "Nessuno dei due è adatto."
- flavor_mos.74.tt4: "Boris Godunov and Theodore Romanov are executed to the great dismay of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" #NEW
+ flavor_mos.74.tt4: "[boris_godunov.GetNameWithNoTooltip] e [feodor_romanov.GetNameWithNoTooltip] vengono giustiziati, con grande costernazione dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] e dei [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]"
  flavor_mos.74.historical_info: "La morte di Ivan IV porta Fyodor I a diventare zar. Non era considerato un leader forte, privo della forza di suo padre, ed era descritto come debole e inefficace. Durante il regno di Fyodor, suo cognato, Boris Godunov, emerge come figura potente nella corte russa. Dopo la morte di Fyodor, senza eredi, Boris si assicurò il trono con l'appoggio dello Zemsky Sobor. Un contendente al trono era Feodor Romanov, un boiardo che fu il primo della dinastia dei Romanov, ma non godeva dello stesso sostegno e fu confinato in un monastero una volta che Boris assunse il controllo."
  feodor_romanov_becomes_a_monk_tt: "[feodor_romanov.GetShortNameWithNoTooltip] diventerà monaco e si asterrà dalla politica per il resto dei suoi giorni"
  boris_godunov_becomes_a_monk_tt: "[boris_godunov.GetShortNameWithNoTooltip] diventerà monaco e si asterrà dalla politica per il resto dei suoi giorni"
@@ -727,66 +619,46 @@
  flavor_mos.75.historical_info: "Lo zar Boris Godunov si rese presto conto che la Russia era rimasta indietro rispetto ai suoi vicini europei e fece della crescita degli standard educativi offerti ai bambini una priorità. Una delle misure adottate fu quella di incoraggiare attivamente gli insegnanti stranieri a stabilirsi in Russia, ma prese anche l'iniziativa di mandare i giovani russi a studiare all'estero."
 
  flavor_mos.76.title: "[ivan_gramotin.GetNameWithNoTooltip]"
- flavor_mos.76.entry: "Ivan Gramotin" #NEW
- flavor_mos.76.desc: "A diplomat of exceptional skill and extensive knowledge is offering his services, expressing a desire to be assigned to the foreign office. [ivan_gramotin.GetName] is recognized for his eloquence and intelligence, and it is recommended for us to seize his offer to help traverse the complex world of international relations, unless we seek a more confrontational approach." #NEW
+ flavor_mos.76.entry: "Ivan Gramotin"
+ flavor_mos.76.desc: "A diplomat of exceptional skill and extensive knowledge is offering his services, expressing a desire to be assigned to the foreign office. [ivan_gramotin.GetName] is recognized for his eloquence and intelligence, and it is recommended for us to seize his offer to help traverse the complex world of international relations, unless we seek a more confrontational approach."
  flavor_mos.76.a: "Invitalo a corte."
- flavor_mos.76.tt1: "John Gramotin is added as a [character|e]" #NEW
- flavor_mos.76.tt2: "He may perform great deeds of diplomacy if assigned to the [ShowCabinetActionName('posolsky')] [cabinet_action|e]" #NEW
+ flavor_mos.76.tt1: "[ivan_gramotin.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.76.tt2: "[ivan_gramotin.GetSheHe|U] può compiere grandi imprese diplomatiche se assegnato all'[ShowCabinetActionName('posolsky')] [cabinet_action|e]"
  flavor_mos.76.b: "Ancora un altro incapace senza talento."
  flavor_mos.76.historical_info: "Ivan Gramotin fu un diplomatico di successo durante il regno di Ivan IV e oltre, ricordato soprattutto per essere stato a capo del ministero degli Esteri. Divenne amico intimo del futuro patriarca durante una visita diplomatica in Polonia, dove era tenuto prigioniero. Questa amicizia aiutò Ivan ad assicurarsi un posto futuro a corte e diverse posizioni influenti, tra cui quella di boiardo della Duma. Verso la fine della sua vita, cadde in disgrazia e fu esiliato, per poi tornare dopo la morte del patriarca. Si ritirò in un convento pochi anni dopo, dove morì come monaco."
- variable_posolsky_prikaz_established_tt: "The Posolsky Prikaz has been Established" #NEW
+ variable_posolsky_prikaz_established_tt: "The Posolsky Prikaz has been Established"
 
  flavor_mos.77.title: "Il Diplomatico Eloquente"
  flavor_mos.77.entry: "$flavor_mos.77.title$"
  flavor_mos.77.desc: "Esperto amministrativo [ivan_gramotin.GetName] sta compiendo un vero e proprio miracolo al #italic Posolsky Prikaz#!, snellendo la burocrazia e tutti i processi direttamente collegati alle relazioni estere e interne. Ora possiamo decidere di raccogliere i frutti del suo lavoro o di distogliere la sua attenzione verso il miglioramento della stabilità interna [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], aiutando a costruire ponti tra fazioni rivali e risolvendo eventuali controversie irrisolte."
  flavor_mos.77.a: "Raccogliere ciò che è stato seminato."
  STATIC_MODIFIER_NAME_fine_tuned_diplomacy: "Diplomazia perfezionata"
- flavor_mos.77.tt1: "The unrelenting efforts of John Gramotin are put to good use in any foreign dealings" #NEW
+ flavor_mos.77.tt1: "Gli instancabili sforzi di [ivan_gramotin.GetNameWithNoTooltip] vengono impiegati proficuamente in ogni trattativa estera"
  flavor_mos.77.b: "Le dispute interne devono essere risolte."
  flavor_mos.77.historical_info: "Ivan Gramotin condusse con successo i negoziati con i principali rivali della Russia, ovvero Polonia, Svezia e Impero Ottomano, e il suo contributo aiutò a stabilizzare la Russia durante il Periodo dei Disordini. Sopravvisse alle turbolenze nonostante i cambiamenti di alleanze e gli intrighi, e continuò a guidare importanti missioni diplomatiche per molti anni."
 
- flavor_mos.78.title: "Aptekarsky Prikaz"
- flavor_mos.78.entry: "$flavor_mos.78.title$"
- flavor_mos.78.desc: "Gli uffici governativi istituiti in conformità con la riforma dell'[ShowGovernmentReformName('prikazi_reform')] svolgono ciascuno un ruolo distinto all'interno dell'apparato governativo, ma la recente pestilenza evidenzia la necessità di una rinnovata attenzione alle questioni riguardanti la salute e il benessere dei nostri sudditi. Dobbiamo istituire un ufficio separato per coordinare meglio qualsiasi risposta necessaria quando si verificherà la prossima punizione divina o epidemia mortale, o rischieremo una carenza di lavoratori capaci di coltivare le terre e difendere il nostro grande [ROOT.GetCountry.GetFlavorRank]."
- flavor_mos.78.a: "Sanguisughe e salassi per tutti."
- flavor_mos.78.tt1: "La corte gioisce per le cure mediche preferenziali offerte ai livelli più alti della società dall'Aptekarasky Prikaz"
- enable_aptekarsky_cabinet_action: "Grants access to the [ShowCabinetActionName('aptekarsky')] [cabinet_action|e]" #DA TRADURRE
- flavor_mos.78.b: "Tutto ciò di cui abbiamo bisogno è la preghiera."
- flavor_mos.78.historical_info: "L'Aptekarsky Prikaz era un ufficio governativo con una vasta gamma di responsabilità, tra cui la supervisione della produzione e della distribuzione di medicinali, la regolamentazione delle farmacie e la risoluzione di questioni relative alla salute pubblica. Aveva anche il compito di provvedere al benessere e alla salute dello zar e della sua corte. L'Aptekarsky Prikaz rimase una parte importante dell'amministrazione della Russia imperiale fino al suo scioglimento in seguito alla rivoluzione del 1917."
-
  flavor_mos.79.title: "La Sottomissione di [ivan_bolotnikov.GetNameWithNoTooltip]"
- flavor_mos.79.entry: "The Subjugation of Ivan Bolotnikov" #NEW
- flavor_mos.79.desc: "A rebellious Cossack slave assigned to court duty has run away to rejoin his brethren in defiance of a perceived life of servitude. However, his life as a free man away from court was cut short by a [ShowCultureGroupName('tatar_group')] raid originating from [ShowAreaName('crimea_area')], and he is now being held captive by them. We may wish to mount a rescue before he is sold off to slavery, or risk any overheard state secrets being revealed by a disgruntled servant." #NEW
+ flavor_mos.79.entry: "The Subjugation of Ivan Bolotnikov"
+ flavor_mos.79.desc: "A rebellious Cossack slave assigned to court duty has run away to rejoin his brethren in defiance of a perceived life of servitude. However, his life as a free man away from court was cut short by a [ShowCultureGroupName('tatar_group')] raid originating from [ShowAreaName('crimea_area')], and he is now being held captive by them. We may wish to mount a rescue before he is sold off to slavery, or risk any overheard state secrets being revealed by a disgruntled servant."
  flavor_mos.79.a: "Un'impresa costosa con poco da guadagnare."
- flavor_mos.79.tt1: "He is left to his own fate and may become radicalized" #NEW
- flavor_mos.79.b: "Purchase his freedom and safe return." #NEW
- flavor_mos.79.tt2: "John Bolotnikov is added as a [character|e] and is returned to court" #NEW
- flavor_mos.79.tt3: "His presence at court is questioned by the aristocracy due to his rebellious nature" #NEW
+ flavor_mos.79.tt1: "[ivan_bolotnikov.GetSheHe|U] viene abbandonato al [ivan_bolotnikov.GetHisHer] destino e potrebbe radicalizzarsi"
+ flavor_mos.79.b: "Purchase his freedom and safe return."
+ flavor_mos.79.tt2: "[ivan_bolotnikov.GetNameWithNoTooltip] viene aggiunto come [character|e] e fa ritorno a corte"
+ flavor_mos.79.tt3: "La [ivan_bolotnikov.GetHisHer|U] presenza a corte viene messa in discussione dall'aristocrazia a causa della [ivan_bolotnikov.GetHisHer] natura ribelle"
  flavor_mos.79.c: "Una fiamma potente che deve essere spenta."
- flavor_mos.79.tt4: "John Bolotnikov succumbs to a mysterious illness." #NEW
+ flavor_mos.79.tt4: "[ivan_bolotnikov.GetNameWithNoTooltip] soccombe a una misteriosa malattia."
  flavor_mos.79.historical_info: "Ivan Bolotnikov era un atamano cosacco che guidò le proteste contro lo zar per ridurre le ingiustizie sociali e le difficoltà economiche imposte ai cittadini comuni, ma anche ad alcuni segmenti della nobiltà. Dopo un breve periodo di libertà, fu catturato e venduto come schiavo dai tatari di Crimea. Fu salvato da mercenari tedeschi che gli permisero di tornare a Mosca, dove aiutò a organizzare le proteste."
  
- flavor_mos.80.title: "La Rivolta di Bolotnikov"
- flavor_mos.80.entry: "$flavor_mos.80.title$"
+ flavor_mos.80.title: "La Rivolta di [ivan_bolotnikov.GetLastNameWithNoTooltip]"
+ flavor_mos.80.entry: "La Rivolta di $Bolotnikov$"
  flavor_mos.80.desc: "Il rivoluzionario ribelle [ivan_bolotnikov.GetName] è fuggito dalla prigionia dei [ShowCultureGroupName('tatar_group')] ed è tornato a [target_location.GetName] sotto la copertura dell'oscurità nel tentativo di radunare la popolazione contro di noi. Si stanno diffondendo false voci di maltrattamenti e abusi di potere da parte del governo, con [ShowPopTypeName('nobles')] e [ShowPopTypeName('burghers')] di rilievo che si uniscono alle file dei ribelli."
  flavor_mos.80.a: "Saranno accolti con sciabole e forza bruta irriducibile."
- bolotnikov_uprising: "Rivolta di Bolotnikov"
+ bolotnikov_uprising: "Rivolta di Bolotnikov" 
  flavor_mos.80.b: "Offri clemenza e libertà limitata."
  flavor_mos.80.c: "Disarmarli con abili discorsi."
  flavor_mos.80.tt1: "Le tattiche negoziali di [ROOT.GeGovernment.GetRuler.GetName] convincono i capi ribelli a deporre le armi."
  flavor_mos.80.historical_info: "La ribellione di Bolotnikov ebbe luogo dal 1606 al 1607 durante il Periodo Tumultuoso. Fu istigata dal cosacco Ivan Bolotnikov, che cercava di combattere le ingiustizie sociali, gli abusi di potere e le difficoltà economiche. La ribellione ricevette un sostegno sostanziale da una serie di classi sociali, tra cui l' , i contadini, i cosacchi e i segmenti insoddisfatti della nobiltà. A un certo punto, la ribellione controllava oltre settanta città nella Russia meridionale e lo zar fu costretto a reprimerla brutalmente per riprendere il controllo."
- variable_bolotnikov_uprising_possible_tt: "The Bolotnikov Uprising Looms" #NEW
-
- flavor_mos.81.title: "L'Influente Maresciallo"
- flavor_mos.81.entry: "$flavor_mos.81.title$"
- flavor_mos.81.desc: "Governor [alexey_lvov.GetName] of [ShowLocationName('nizhny_novgorod')] has recently returned to court to take on the responsibilities of Okolnichy, a senior role which would allow him to take on additional administrative responsibilities. We could expand this role to also encompass a new prikaz bureau overseeing palace affairs and supervision of monasteries, per the [ShowGovernmentReformName('prikazi_reform')] reform. It would strive towards better management of court expenses and ensure the policies of the [ShowPolicyName('non_possessors')] are fully implemented." #NEW
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
- flavor_mos.81.a: "Una soluzione accettabile."
- enable_bolshogo_dvortsa_cabinet_action: "Grants access to the [ShowCabinetActionName('bolshogo_dvortsa')] [cabinet_action|e]" #DA TRADURRE
- flavor_mos.81.b: "Non è necessaria un'ulteriore supervisione."
- flavor_mos.81.tt2: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_SONO')] felicissimi della fiducia riposta in loro"
- flavor_mos.81.historical_info: "Il Principe Alexey Mikhaylovich era un vice governatore che scalò rapidamente i ranghi del governo zarista, guidando delegazioni diplomatiche e ricoprendo il ruolo di ambasciatore dopo essere stato nominato maggiordomo della corte dello zar. Ricoprì il ruolo di capo dell'ufficio degli affari di palazzo, che mantenne fino al suo pensionamento."
-                                                                                                                                                                                                                                                                                                                                                                       
+ variable_bolotnikov_uprising_possible_tt: "The Bolotnikov Uprising Looms"
  
  flavor_mos.82.title: "Le Faide del Mestnichestvo"
  flavor_mos.82.entry: "$flavor_mos.82.title$"
@@ -816,16 +688,16 @@
  flavor_mos.84.historical_info: "Il Domostroy è un insieme di istruzioni e regole per la gestione di una famiglia russa, la cui origine risale al XVI secolo, molto probabilmente alla città di Novgorod. Fornisce una visione unica delle norme sociali e culturali della Russia medievale ed è stato rivisto man mano che i valori e la morale dell'epoca cambiavano."
 
  flavor_mos.85.title: "[simon_ushakov.GetNameWithNoTooltip]"
- flavor_mos.85.entry: "Simon Ushakov" #NEW
+ flavor_mos.85.entry: "Simon Ushakov"
  flavor_mos.85.desc: "Icon Visionary [simon_ushakov.GetName] ha introdotto una nuova forma di pittura religiosa incentrata su figure secolari e una combinazione di elementi iconografici tradizionali con alcune influenze occidentali. La ricca tavolozza di colori utilizzata è in netto contrasto con le opere esistenti e rischia di urtare la sensibilità [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Tuttavia, l'afflusso di nuovi gusti e influenze barocche andrebbe a beneficio dell'intera comunità artistica e contribuirebbe alla diffusione di nuove idee."
  flavor_mos.85.a: "Invitarlo a corte."
  flavor_mos.85.tt2: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] considerano le nuove influenze opera del diavolo e in violazione della censura prevalente"
  flavor_mos.85.b: "Più adatto all'insegnamento."
  STATIC_MODIFIER_NAME_restricted_to_teaching: "Limitato all'insegnamento"
- flavor_mos.85.tt3: "He is offered a teaching position at the [ShowBuildingTypeName('stroganov_school_of_iconic_art')]" #NEW
+ flavor_mos.85.tt3: "A [simon_ushakov.GetSheHe|U] viene offerta una posizione di insegnante presso la [ShowBuildingTypeName('stroganov_school_of_iconic_art')]"
  flavor_mos.85.c: "Rinnovare il marchio e rivendere."
- flavor_mos.85.tt4: "His work is tolerated but domestic sales are prohibited" #NEW
- flavor_mos.85.d: "Have him imprisoned." #NEW
+ flavor_mos.85.tt4: "Il [simon_ushakov.GetHisHer|U] lavoro viene tollerato, ma le vendite interne sono proibite"
+ flavor_mos.85.d: "Have him imprisoned."
  flavor_mos.85.historical_info: "Simon Ushakov è stato uno dei principali artisti della scuola iconografica di Mosca, che ha contribuito allo sviluppo dello stile barocco nell'arte russa. È ricordato come uno dei più abili pittori di icone, che arrivò a includere illustrazioni e ritratti dello zar. Ha ricoperto per un breve periodo la carica di capo dell'Armeria del Cremlino, che ha rafforzato la sua influenza negli affari culturali e artistici."
 
  flavor_mos.86.title: "La Raccolta Fondi di Kuzma Minin"
@@ -845,50 +717,38 @@
  flavor_mos.87.tt1: "Vengono realizzate copie della Madonna per la grande gioia [ROOT.GetCountry.Custom('IT_CLERGY_DEL')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]"
  flavor_mos.87.c: "Una vecchia scatola polverosa merita poca considerazione."
  flavor_mos.87.historical_info: "La Madonna di Kazan è un'icona associata principalmente a diversi eventi miracolosi e riveste un grande significato culturale e religioso in Russia. Secondo la tradizione, l'icona apparve miracolosamente durante un incendio a Kazan dopo la sua conquista da parte dei Tartari. Sebbene l'icona originale sia andata perduta, riproduzioni e copie della Madonna di Kazan sono diffuse in tutta la Chiesa ortodossa."
-
- flavor_mos.88.title: "Il Primo Poeta"
- flavor_mos.88.entry: "$flavor_mos.88.title$"
- flavor_mos.88.desc: "A pious scholar originating from [ShowLocationName('polotsk')] has brought forward a proposal to establish a linguistic academy, focused mainly on educating governmental officials in the language of diplomacy, namely [latin.GetName]. [simon_sitnianowicz.GetName], being no stranger to controversial ideas, has also proposed that he be entrusted with teaching grammar, poetics, and rhetoric to the common people. Such an initiative ought to be commended by allocating funds to ensure it is brought to fruition." #NEW
- flavor_mos.88.a: "La comunicazione è fondamentale."
- flavor_mos.88.tt1: "Simon Sitnianowicz is added as a [character|e]" #NEW
- flavor_mos.88.b: "È meglio dedicare il tempo ai sermoni e alla predicazione."
- flavor_mos.88.tt2: "He dedicates his time to disseminating enlightened ideas and crafting poetry" #NEW
- flavor_mos.88.c: "Enlist him as private tutor." #NEW
- flavor_mos.88.d: "Il popolo deve rimanere all'oscuro."
- flavor_mos.88.tt3: "[ROOT.GetCountry.Custom('IT_CLERGY_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [ROOT.GetCountry.Custom('IT_CLERGY_SONO')] contenti di assistere all'esilio di un uomo dalle idee non ortodosse."
- flavor_mos.88.historical_info: "Simeone di Polotsk era un monaco ortodosso bielorusso, poeta e traduttore ricordato per i suoi contributi letterari, considerati fondamentali per l'affermarsi della tradizione cristiana ortodossa. Introdusse l'insegnamento del greco e del latino in Russia e, nel corso della sua vita, contribuì anche alla traduzione di diverse opere di teologi occidentali, facilitando la diffusione della conoscenza nella Chiesa ortodossa."
  
  flavor_mos.89.title: "I Successi Militari di [patrick_gordon.GetNameWithNoTooltip]"
- flavor_mos.89.entry: "The Military Achievements of Patrick Gordon" #NEW
+ flavor_mos.89.entry: "The Military Achievements of Patrick Gordon"
  flavor_mos.89.desc: "Uno stratega e ingegnere militare che combatte come mercenario per l'esercito [GetCountry('SWE').GetAdjective] si offre di cambiare schieramento e unirsi alle nostre fila, in cambio di un piccolo compenso. L'esperienza di [patrick_gordon.GetName] contribuirebbe sicuramente ai nostri sforzi per riformare e rafforzare l'esercito secondo gli standard dell'Europa occidentale."
  flavor_mos.89.a: "Offri uno stipendio generoso."
  STATIC_MODIFIER_NAME_military_influencer: "Influencer militare"
- flavor_mos.89.b: "The Iron Maiden will have him sing his secrets." #NEW
- flavor_mos.89.tt2: "He is captured and tortured for information" #NEW
+ flavor_mos.89.b: "The Iron Maiden will have him sing his secrets."
+ flavor_mos.89.tt2: "[patrick_gordon.GetSheHe|U] viene catturato e torturato per ottenere informazioni"
  flavor_mos.89.c: "Un voltagabbana è un investimento rischioso."
  flavor_mos.89.historical_info: "Patrick Gordon era un ingegnere militare e generale scozzese che prestò servizio nell'esercito russo. Iniziò la sua carriera militare nell'esercito svedese durante la seconda guerra del Nord, ma in seguito cambiò schieramento e si unì all'esercito russo. Divenne uno stretto collaboratore di Pietro il Grande, il che alla fine avrebbe portato a tensioni con la nobiltà russa."
  
- flavor_mos.90.title: "Il Viaggiatore in Incognito"
+ flavor_mos.90.title: "La Virtù di Passare Inosservati"
  flavor_mos.90.entry: "$flavor_mos.90.title$"
- flavor_mos.90.desc: "Rischiamo di rimanere indietro rispetto ai nostri avversari in termini di risultati scientifici e innovazione. È necessario adottare misure per introdurre un nuovo modo di pensare [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName], intraprendendo un viaggio diplomatico con l'obiettivo primario di conoscere le tecnologie, le culture e le pratiche di governo occidentali. I nostri rappresentanti potrebbero viaggiare in incognito, consentendo ai membri dell'alta società di accompagnare il seguito. Questa potrebbe essere davvero una preziosa esperienza diretta e contribuire a facilitare ulteriori negoziati diplomatici."
+ flavor_mos.90.desc: "Rischiamo di rimanere indietro rispetto a rivali che hanno già abbracciato le nuove scienze e migliori metodi di governo. Un viaggio attraverso le corti dell'Occidente potrebbe colmare questo divario, ma solo se condotto con discrezione. Una delegazione accolta come dignitari in visita riceverà cerimonie e lusinghe; una che passa inosservata potrà invece vedere le officine, i cantieri navali e i reali meccanismi del loro successo. Il problema è che la discrezione è difficile da mantenere. Le voci circolano, e una corte che scopre chi cammina davvero tra loro può chiudere le proprie porte con la stessa rapidità con cui le ha aperte."
  flavor_mos.90.a: "Un'avventura vantaggiosa."
- grand_embassy: "Grande ambasciata"
+ flavor_mos.90.tt5: "Sblocca la spedizione della Grande Ambasceria, che [ROOT.GetCountry.GetGovernment.GetRuler.GetName] può intraprendere in qualsiasi momento"
  flavor_mos.90.tt1: "Il viaggio di un anno verso ovest espone [target_root_country.Custom('IT_La')][target_root_country.GetNameWithNoTooltip] a nuove influenze e scoperte al momento opportuno"
  flavor_mos.90.tt2: "Il viaggio, guidato da [target_root_country.GetGovernment.GetRuler.GetName], promette di essere una grande esperienza di apprendimento"
  flavor_mos.90.b: "Organizziamo invece una fiera della scienza."
  flavor_mos.90.tt3: "La fiera attira ricercatori e pensatori di spicco da tutta Europa"
- flavor_mos.90.tt4: "Significant redevelopment takes place to be able to host the fair, adding to the [development|e] of [target_location.GetName]" #DA TRADURRE
+ flavor_mos.90.tt4: "Significant redevelopment takes place to be able to host the fair, adding to the [development|e] of [target_location.GetName]"
  flavor_mos.90.c: "Alla fine recupereremo il ritardo."
  flavor_mos.90.historical_info: "La Grande Ambasciata fu un viaggio intrapreso da Pietro il Grande nel tentativo di assicurarsi ulteriore sostegno per una coalizione contro l'Impero Ottomano. Tra gli obiettivi secondari c'erano l'assunzione di esperti militari stranier i e l'acquisizione di nuove tecnologie. Durante questo periodo, la Russia dovette affrontare sfide interne ed esterne, che motivarono la determinazione di Pietro a introdurre riforme e trasformare il paese in uno Stato più moderno e potente. Viaggiò sotto pseudonimo per confondersi con la popolazione locale, ma la sua altezza di 2,05 metri lo faceva comunque risaltare."
 
  flavor_mos.91.title: "[francesco_rastrelli.GetNameWithNoTooltip]"
- flavor_mos.91.entry: "Francesco Rastrelli" #NEW
+ flavor_mos.91.entry: "Francesco Rastrelli"
  flavor_mos.91.desc: "Un brillante architetto di umili origini residente in [ShowLocationName('paris')] si è trasferito in [ShowLocationName('neva')] alla ricerca di nuove opportunità. [francesco_rastrelli.GetName] ha una significativa esperienza nella progettazione in stile tardo barocco, che sarebbe fondamentale se volessimo trasformare l'[ShowLocationNameWithNoTooltip('neva')] in una metropoli grandiosa e opulenta."
  flavor_mos.91.a: "Una nuova influenza."
- flavor_mos.91.tt2: "He may go on to design magnificant buildings in [ShowLocationName('neva')], provided it is the capital of [target_root_country.GetName]" #NEW
+ flavor_mos.91.tt2: "[francesco_rastrelli.GetHeShe|U] potrebbe in seguito progettare magnifici edifici a [ShowLocationName('neva')], a condizione che sia la capitale di [target_root_country.GetName]"
  flavor_mos.91.b: "Finalmente un talento degno di nota."
  STATIC_MODIFIER_NAME_chief_architect: "Capo architetto"
- flavor_mos.91.tt3: "He enjoys the tutorage of [target_root_country.GetGovernment.GetRuler.GetName], elevating him to the position of Chief Architect" #NEW
+ flavor_mos.91.tt3: "[francesco_rastrelli.GetHeShe|U] gode del tutoraggio di [target_root_country.GetGovernment.GetRuler.GetName], che eleva [francesco_rastrelli.GetHimHer] alla carica di Architetto Capo"
  flavor_mos.91.c: "Il talento può essere trovato altrove."
  flavor_mos.91.historical_info: "Francesco Bartolomeo Rastrelli giunse in Russia con suo padre su invito dell'imperatore Pietro I. Il suo obiettivo era quello di migliorare l'ambiente culturale e artistico in Russia e riteneva che il talento della famiglia Rastrelli sarebbe stato prezioso per raggiungere questo obiettivo. Il suo primo grande progetto fu la ricostruzione del Palazzo d'Inverno, che in seguito sarebbe diventato la residenza reale principale."
 
@@ -897,7 +757,7 @@
  flavor_mos.92.desc: "Nella nuova capitale dell'[ShowLocationName('neva')] non abbiamo alcun edificio architettonico veramente magnifico. A testimonianza della grandezza [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName], [francesco_rastrelli.GetName] propone la costruzione di un Palazzo d'Inverno che ospiterà l'amministrazione e sarà un simbolo di potere e opulenza per i secoli a venire. Un vero riflesso della potenza e della raffinatezza [ROOT.GetCountry.Custom('IT_DEL_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank] che attirerà l'ammirazione da ogni angolo del mondo."
  flavor_mos.92.a: "Una testimonianza vivente della grandezza."
  mos_winter_palace_construction: "Costruzione del Palazzo d'Inverno"
- flavor_mos.92.tt1: "The generosity of Gregory Orlov sees an elaborate garden added to the palace in addition to a rich selection of frescos and murals" #NEW
+ flavor_mos.92.tt1: "La generosità di [grigory_orlov.GetName] porta all'aggiunta di un elaborato giardino al palazzo, oltre a una ricca selezione di affreschi e murales"
  flavor_mos.92.b: "La moneta deve essere all'altezza dell'ambizione."
  mos_catherine_palace_construction: "Costruzione del Palazzo di Caterina"
  flavor_mos.92.tt2: "Viene costruito un palazzo meno elaborato, adatto ai mesi estivi"
@@ -914,7 +774,7 @@
  flavor_mos.93.b: "I caftani sono il nuovo nero."
  flavor_mos.93.tt3: "Gli abiti tradizionali vengono mantenuti, consolidando ulteriormente qualsiasi resistenza al cambiamento"
  flavor_mos.93.historical_info: "Sotto il regno di Pietro il Grande, vengono apportati cambiamenti significativi all'abbigliamento della nobiltà nell'ambito dei suoi più ampi sforzi per modernizzare e occidentalizzare la Russia. Egli attua misure severe contro gli abiti tradizionali, come i lunghi caftani e le barbe comunemente indossati dai nobili."
- variable_grand_embassy_tt: "The Grand Embassy is Underway" #NEW
+ variable_grand_embassy_tt: "The Grand Embassy is Underway"
 
  flavor_mos.94.title: "Il Sinodo dei Folli e dei Giullari"
  flavor_mos.94.entry: "$flavor_mos.94.title$"
@@ -924,34 +784,34 @@
  flavor_mos.94.b: "Una vergognosa dimostrazione del peccato più grave."
  flavor_mos.94.tt2: "Lo scioglimento del club sociale crea attriti tra il [target_root_country.GetGovernment.GetRulerTitle] e i suoi amici più cari"
  flavor_mos.94.c: "Designare un capro espiatorio."
- flavor_mos.94.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] expel any implicated culprit with the backing of the [ShowPolicyName('strict_censorship')] [policy|e]" #DA TRADURRE
+ flavor_mos.94.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] expel any implicated culprit with the backing of the [ShowPolicyName('strict_censorship')] [policy|e]"
  flavor_mos.94.historical_info: "Il Sinodo degli sciocchi e dei giullari, tutto scherzi e ubriachi, fu creato da Pietro il Grande e dai suoi amici più cari Patrick Gordon e François Le Fort come esperimento sociale per sfidare le norme tradizionali. I membri della compagnia, tra cui nobili e funzionari di corte, si dedicavano ad attività che deridevano le tradizioni russe, adottando comportamenti e abiti in stile occidentale. Il bere era incoraggiato e svolgeva un ruolo importante nelle varie esibizioni e rituali in cui il gruppo era impegnato."
 
  flavor_mos.95.title: "Il Patrocinio di [bogdan_khitrovo.GetNameWithNoTooltip]"
- flavor_mos.95.entry: "The Patronage of Bogdan Khitrovo" #NEW
- flavor_mos.95.desc: "A powerful noble and astute businessman has expressed interest in securing a government posting suitable for his social standing. [bogdan_khitrovo.GetName] is deeply dedicated to artistic endeavors and seeks a position where he can directly contribute in return for the generous patronage provided by his family." #NEW
+ flavor_mos.95.entry: "The Patronage of Bogdan Khitrovo"
+ flavor_mos.95.desc: "A powerful noble and astute businessman has expressed interest in securing a government posting suitable for his social standing. [bogdan_khitrovo.GetName] is deeply dedicated to artistic endeavors and seeks a position where he can directly contribute in return for the generous patronage provided by his family."
  flavor_mos.95.a: "Un vero mecenate delle arti."
  STATIC_MODIFIER_NAME_artistic_encouragement: "Incoraggiamento artistico"
- flavor_mos.95.tt2: "He becomes a major overseer to leading artists, resulting in a shift towards the embracement of Western influences in works such as naturalism" #NEW
+ flavor_mos.95.tt2: "[bogdan_khitrovo.GetSheHe|U] diventa un importante supervisore dei maggiori artisti, favorendo una svolta verso l'adozione di influenze occidentali in opere come il naturalismo"
  flavor_mos.95.tt3: "Il [ShowBuildingTypeName('stroganov_school_of_iconic_art')] riceve una sostanziosa donazione, che catalizza la creazione di ulteriori opere d'arte"
  flavor_mos.95.b: "Offerta di un incarico governativo."
- flavor_mos.95.tt4: "The offices of the [ShowGovernmentReformName('prikazi_reform')] excel under the management of Bogdan Khitrovo" #NEW
+ flavor_mos.95.tt4: "Gli uffici della [ShowGovernmentReformName('prikazi_reform')] eccellono sotto la gestione di [bogdan_khitrovo.GetNameWithNoTooltip]"
  STATIC_MODIFIER_NAME_accomplished_overseeing: "Supervisione compiuta"
  flavor_mos.95.c: "I riflettori non saranno condivisi."
  flavor_mos.95.historical_info: "Bogdan Khitrovo era uno statista russo che eccelleva nella gestione di diversi uffici prikazi durante i regni di due zar consecutivi. Questa posizione gli permise di supervisionare i pittori di icone impiegati a corte, influenzandoli nel processo. Affascinato dalla cultura occidentale, Bogdan cercò di usare la sua influenza per introdurla nei principali circoli artistici dell'epoca, determinando un significativo afflusso di idee prevalenti come il naturalismo. Ciò inaugurò una nuova era per l'arte russa, segnando un allontanamento dalle tradizionali pratiche di pittura di icone in uso fin dal Medioevo."
 
  flavor_mos.96.title: "Il Diacono di Successo"
  flavor_mos.96.entry: "$flavor_mos.96.title$"
- flavor_mos.96.desc: "A rising star of a somewhat humble background has demonstrated a remarkable talent for negotiations with foreign powers, and is keen to continue advancing up the corporate ladder. [afanasy_nashchokin.GetName] boasts outstanding educational merits and may prove to be a formidable asset in any duty assigned provided we can look past his insignificant family connections." #NEW
+ flavor_mos.96.desc: "A rising star of a somewhat humble background has demonstrated a remarkable talent for negotiations with foreign powers, and is keen to continue advancing up the corporate ladder. [afanasy_nashchokin.GetName] boasts outstanding educational merits and may prove to be a formidable asset in any duty assigned provided we can look past his insignificant family connections."
  flavor_mos.96.a: "Un abile scrittore senza pari."
- flavor_mos.96.tt2: "His skillful wording sees him assigned to represent [target_root_country.GetName] abroad, navigating the treacherous terrain that diplomacy represents" #NEW
+ flavor_mos.96.tt2: "L'abile [afanasy_nashchokin.GetHisHer|U] eloquenza porta [afanasy_nashchokin.GetHimHer] a essere incaricato di rappresentare [target_root_country.GetName] all'estero, destreggiandosi nell'insidioso terreno che la diplomazia rappresenta"
  flavor_mos.96.b: "Un tessitore di arazzi burocratici."
- flavor_mos.96.tt3: "He oversees the [ShowCabinetActionName('posolsky')] Prikaz, greatly improving upon its intended function" #NEW
+ flavor_mos.96.tt3: "[afanasy_nashchokin.GetSheHe|U] supervisiona il Prikaz [ShowCabinetActionName('posolsky')], migliorandone notevolmente la funzione prevista"
  STATIC_MODIFIER_NAME_posolsky_prikaz_excelling: "Posolsky Prikaz eccellente"
  STATIC_MODIFIER_NAME_brilliant_diplomacy: "Diplomazia brillante"
  flavor_mos.96.c: "Un riformatore della capitale."
- flavor_mos.96.tt4: "He introduces modernities such as gazettes and bills of exchange to the [target_root_country.GetAdjective] economy" #NEW
- flavor_mos.96.d: "Refuse to acknowledge his contributions." #NEW
+ flavor_mos.96.tt4: "[afanasy_nashchokin.GetSheHe|U] introduce novità come gazzette e cambiali nell'economia [target_root_country.GetAdjective]"
+ flavor_mos.96.d: "Refuse to acknowledge his contributions."
  flavor_mos.96.tt5: "Il dipendente sovraccarico di lavoro, scoraggiato dall'assenza di rinforzi positivi, decide di cercare lavoro altrove"
  flavor_mos.96.historical_info: "Afanasy Nashchokin era uno statista e in seguito diplomatico che negoziò diversi trattati che portarono grandi benefici alla Russia. Fu incaricato di dirigere il #italic Posolsky Prikaz#!, una posizione in cui eccelleva, e salì di grado grazie alle sue capacità piuttosto che per eredità, come era pratica comune in Russia. Era costantemente invidiato dalla nobiltà e dovette respingere ripetutamente la loro ostilità."
 
@@ -962,22 +822,11 @@
  flavor_mos.97.tt1: "Le ambizioni giornalistiche di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] assicurano che [target_root_country.Custom('IT_La')][target_root_country.GetName] sia aggiornata sui drammi mondiali"
  STATIC_MODIFIER_NAME_briefed_on_current_events: "Informazioni sugli eventi attuali"
  flavor_mos.97.b: "Limitare le pubblicazioni ai successi militari."
- flavor_mos.97.tt2: "I resoconti delle epiche vittorie di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] vengono abilmente trasformati in narrazioni gloriose"
+ flavor_mos.97.tt2: "I resoconti delle epiche vittorie di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] vengono abilmente trasformati in narrazioni gloriose" 
  flavor_mos.97.c: "Riorganizzarlo come guida strategica."
- flavor_mos.97.tt3: "I resoconti dettagliati delle battaglie e le strategie militari meticolosamente elaborate durante i conflitti vengono presentati ai comandanti dell'esercito in formato scritto"
+ flavor_mos.97.tt3: "I resoconti dettagliati delle battaglie e le strategie militari meticolosamente elaborate durante i conflitti vengono presentati ai comandanti dell'esercito in formato scritto" 
  flavor_mos.97.d: "Non abbiamo bisogno di stupidi giornali."
  flavor_mos.97.historical_info: "Il Vedomosti era il più antico giornale della Russia, fondato dallo zar Pietro il Grande durante i primi anni del suo regno. Aveva una tiratura irregolare e forniva aggiornamenti sui conflitti in cui la Russia era attualmente coinvolta, mettendo in mostra i suoi successi sul campo di battaglia e descrivendo lo zar in una luce favorevole al grande pubblico. Le notizie dell'epoca erano spesso obsolete e superate, il che rappresentava una sfida significativa quando si trattava di negoziare trattati con gli avversari e gestire l'amministrazione generale dell'impero."
-
- flavor_mos.98.title: "Il Collegio"
- flavor_mos.98.entry: "$flavor_mos.98.title$"
- flavor_mos.98.desc: "La recente riorganizzazione degli organi di governo ha reso necessaria una governance ministeriale più efficiente per evitare sovrapposizioni di responsabilità tra le agenzie. Aboliamo l'attuale sistema [ShowGovernmentReformName('prikazi_reform')], sostituendolo con una serie di collegi. Ciascun collegio avrà compiti distinti e una separazione dei poteri, con l'ulteriore responsabilità di fornire consulenza sui casi irrisolti quando richiesto."
- flavor_mos.98.a: "Fuori il vecchio, dentro il nuovo."
- enable_collegium_reform: "Grants access to the [ShowGovernmentReformName('collegium_reform')] [government_reform|e]" #DA TRADURRE
- flavor_mos.98.tt1: "The [ShowGovernmentReformNameWithNoTooltip('prikazi_reform')] [government_reform|e] and any associated [cabinet_action|e] become unavailable" #DA TRADURRE
- flavor_mos.98.b: "La governance è delicata e non deve essere presa alla leggera."
- flavor_mos.98.tt2: "Steps are taken to enhance the administration of [ShowLocationName('neva')] in line with the [ShowPolicyName('dop_law_governing_senate')] [policy|e]" #DA TRADURRE
- flavor_mos.98.historical_info: "Dopo l'istituzione del Senato governativo, Pietro il Grande istituì vari collegi come organi amministrativi responsabili di diversi aspetti della governance, come il Sinodo e il Consiglio dell'Ammiragliato. L'ispirazione venne da riforme simili che erano state recentemente attuate nella vicina Svezia. L'urgenza della riforma fu accelerata dal crescente numero di territori dell'Impero russo."
- variable_prikazi_tt: "The Prikaz System Governs the State" #NEW
 
  flavor_mos.99.title: "Il Gettone della Barba"
  flavor_mos.99.entry: "$flavor_mos.99.title$"
@@ -993,15 +842,15 @@
 
  flavor_mos.100.title: "Il Primo Ammiraglio"
  flavor_mos.100.entry: "$flavor_mos.100.title$"
- flavor_mos.100.desc: "Maritime strategist [feodor_apraksin.GetName] has successfully governed the [target_location.GetRank.GetName] of [ShowLocationName('arkhangelsk')] for some time, a posting that has allowed him to simultaneously pursue other endeavors. Recently he has showcased an aptitude for military engineering, an area of which he is keen to explore further. We must contemplate his next posting as the current term is coming to an end, potentially a transfer to the [ShowBuildingTypeName('admiralty')] to help fortify our maritime ambitions and realize the dream of sovereign dominance over the seas" #NEW
+ flavor_mos.100.desc: "Maritime strategist [feodor_apraksin.GetName] has successfully governed the [target_location.GetRank.GetName] of [ShowLocationName('arkhangelsk')] for some time, a posting that has allowed him to simultaneously pursue other endeavors. Recently he has showcased an aptitude for military engineering, an area of which he is keen to explore further. We must contemplate his next posting as the current term is coming to an end, potentially a transfer to the [ShowBuildingTypeName('admiralty')] to help fortify our maritime ambitions and realize the dream of sovereign dominance over the seas"
  flavor_mos.100.a: "L'Ammiragliato ne trarrà grandi benefici."
- flavor_mos.100.tt2: "His technical expertise and the resources of the [ShowBuildingTypeNameWithNoTooltip('admiralty')] at his disposal allows for the development of new ship designs for a new line of storm-taming ships" #NEW
- enable_hurricane_hardy_advance: "Grants access to the [ShowAdvanceName('hurricane_hardy')] [advance|e]" #DA TRADURRE
+ flavor_mos.100.tt2: "La [feodor_apraksin.GetHisHer|U] competenza tecnica e le risorse del [ShowBuildingTypeNameWithNoTooltip('admiralty')] a [feodor_apraksin.GetHisHer] disposizione permettono lo sviluppo di nuovi progetti navali per una nuova linea di navi capaci di affrontare le tempeste"
+ enable_hurricane_hardy_advance: "Grants access to the [ShowAdvanceName('hurricane_hardy')] [advance|e]"
  flavor_mos.100.b: "Estendere il governatorato."
  STATIC_MODIFIER_NAME_tempest_engineer: "Ingegnere delle tempeste"
- flavor_mos.100.tt3: "The technical expertise and governance of Theodore Apraksin over the [ShowLocationName('arkhangelsk')] port allows for the rapid construction of new designs for a new line of storm-taming ships, including a promising prototype" #NEW
+ flavor_mos.100.tt3: "La competenza tecnica e la gestione di [feodor_apraksin.GetNameWithNoTooltip] sul porto di [ShowLocationName('arkhangelsk')] permettono la rapida costruzione di nuovi progetti per una nuova linea di navi capaci di affrontare le tempeste, incluso un promettente prototipo"
  flavor_mos.100.c: "La difesa della madrepatria ha la precedenza."
- flavor_mos.100.tt4: "The technical expertise and supervision of Theodore Apraksin enables the reinforcement of fortifications across [ROOT.GetCountry.GetNameWithNoTooltip]" #NEW
+ flavor_mos.100.tt4: "La competenza tecnica e la supervisione di [feodor_apraksin.GetNameWithNoTooltip] consentono il rafforzamento delle fortificazioni in tutto [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_mos.100.historical_info: "Feodor Apraksin ha preso parte a diverse campagne militari, guadagnandosi il governatorato del porto commerciale più importante della Russia, Arkhangelsk. Era un ingegnere esperto e alla fine gli è stato affidato l' e di costruire la prima marina militare della Russia, insieme a diverse fortificazioni, mentre lo zar era impegnato altrove. Gli sforzi di Apraksin hanno svolto un ruolo cruciale nella modernizzazione della marina militare, che ha lasciato un impatto duraturo sulle ambizioni imperiali della Russia."
 
  flavor_mos.101.title: "La Visita di Stato Informativa"
@@ -1012,13 +861,13 @@
  flavor_mos.101.tt2: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] partecipa a una parata della Royal Navy a Deptford"
  flavor_mos.101.tt3: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] riceve una laurea honoris causa all'università dell'[ShowLocationName('oxford')]"
  flavor_mos.101.tt4: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] partecipa a una sessione informativa ospitata dal [ShowBuildingTypeName('royal_society')]"
- flavor_mos.101.tt5: "A personal portrait of [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] is gifted by leading portraitist Geoffrey Kneller" #NEW
+ flavor_mos.101.tt5: "Un ritratto personale di [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] viene donato dal celebre ritrattista [godfrey_kneller.GetName]"
  opinion_gifted_magnificent_painting: "Riceve in dono un magnifico dipinto"
  flavor_mos.101.b: "Dedica il tempo allo studio privato e alla contemplazione."
  flavor_mos.101.c: "Un gufo osservatore si appollaia silenziosamente nell'ombra."
- flavor_mos.101.tt6: "The elaborate [spy_network|e] [target_country.Custom('IT_In')][target_country.GetNameWithNoTooltip] is used to gather information in liaison with the official visit" #DA TRADURRE
+ flavor_mos.101.tt6: "The elaborate [spy_network|e] [target_country.Custom('IT_In')][target_country.GetNameWithNoTooltip] is used to gather information in liaison with the official visit"
  flavor_mos.101.historical_info: "La Grande Ambasciata di Pietro il Grande lo porta infine sulle coste dell'Inghilterra, che all'epoca esercitava un'influenza crescente sugli affari mondiali ed era considerata un luogo di ritrovo per gli intellettuali che cercavano di sfuggire alle persecuzioni dell'Europa autocratica. Pietro visitò diverse istituzioni rinomate come la Zecca Reale, la Società e l'Osservatorio, partecipò a banchetti con il re inglese e studiò le tecniche inglesi di costruzione delle città che sarebbero state poi utilizzate nella costruzione della nuova capitale San Pietroburgo. Lo scopo principale della visita era quello di assicurarsi preziose risorse tecnologiche."
- variable_incognito_travels_in_progress_tt: "The Ruler Travels Incognito" #NEW
+ variable_incognito_travels_in_progress_tt: "The Ruler Travels Incognito"
 
  flavor_mos.102.title: "La Delegazione di Malta"
  flavor_mos.102.entry: "$flavor_mos.102.title$"
@@ -1029,22 +878,11 @@
  flavor_mos.102.c: "Gli uomini hanno bisogno solo di vodka e di una morte gloriosa."
  flavor_mos.102.historical_info: "Pietro il Grande inviò il diplomatico e feldmaresciallo Boris Petrovich Sheremetev a Malta per osservare l'addestramento e le abilità dei Cavalieri di Malta e delle loro forze navali. La Russia ha recentemente stabilito la sua prima base navale nel Mar d'Azov e il conflitto con l'Impero Ottomano sembrava inevitabile."
 
- flavor_mos.103.title: "Torre Sukharev"
- flavor_mos.103.entry: "$flavor_mos.103.title$"
- flavor_mos.103.desc: "La marina dipende da un approvvigionamento costante di marinai capaci e dal trasferimento di conoscenze da una generazione all'altra. Per soddisfare le nostre ambizioni nautiche, dovremmo istituire una scuola che fornisca un'istruzione tecnica per gettare le basi per una continua espansione delle nostre forze armate. Recentemente è stato presentato un progetto per una maestosa torre che potrebbe ospitare tale istituzione, contribuendo allo stesso tempo all'abbellimento del paesaggio urbano di [ShowLocationName('moscow')]."
- flavor_mos.103.a: "Un'ambizione degna di nota."
- flavor_mos.103.tt1: "The top floor is designated to James Bruce, who sets up an astronomical observatory with a stellar view" #NEW
- flavor_mos.103.b: "Non c'è bisogno di tali stravaganze."
- flavor_mos.103.c: "Deve soddisfare le esigenze della [target_location.GetRank.GetNameWithNoTooltip]."
- flavor_mos.103.c.entry: "It must meet the needs of the city." #NEW
- flavor_mos.103.tt2: "Al secondo piano viene costruito un sistema di approvvigionamento idrico all'avanguardia a beneficio di [ShowLocationName('moscow')]."
- flavor_mos.103.historical_info: "La Torre Sukharev fu costruita alla fine del XVII secolo per commemorare la vittoria di Pietro il Grande sugli Streltsy, che si erano ribellati contro di lui negli anni precedenti. La torre ha avuto vari scopi nel corso degli anni, come caserma, struttura educativa, infrastruttura e magazzino per i mercanti, fino alla sua definitiva distruzione da parte delle autorità sovietiche nel 1934."
-
  flavor_mos.104.title: "[francois_le_fort.GetNameWithNoTooltip]"
- flavor_mos.104.entry: "François Le Fort" #NEW
- flavor_mos.104.desc: "A former strategist and mercenary is seeking employment with the [ROOT.GetCountry.GetAdjective] army, hoping to make a name for himself. The merits of [francois_le_fort.GetName] are impressive but lacks leadership experience, yet he is insisting on the field rank of captain, a promotion which would not sit well with native-born generals on a similar career-path." #NEW
+ flavor_mos.104.entry: "François Le Fort"
+ flavor_mos.104.desc: "A former strategist and mercenary is seeking employment with the [ROOT.GetCountry.GetAdjective] army, hoping to make a name for himself. The merits of [francois_le_fort.GetName] are impressive but lacks leadership experience, yet he is insisting on the field rank of captain, a promotion which would not sit well with native-born generals on a similar career-path."
  flavor_mos.104.a: "Le regole sono fatte per essere infrante."
- flavor_mos.104.tt2: "He demonstrates a natural talent for entertaining the masses, noble and pleb alike, which may come in handy" #NEW
+ flavor_mos.104.tt2: "[francois_le_fort.GetSheHe|U] dimostra un talento naturale nell'intrattenere le masse, nobili e plebei allo stesso modo, il che potrebbe tornare utile"
  flavor_mos.104.b: "Un'idea assurda."
  flavor_mos.104.historical_info: "François Le Fort servì Pietro il Grande sia come diplomatico che come generale, partecipando a diverse campagne per garantire alla Russia l'accesso al Mar d'Azov. Divenne un caro amico dello zar e fu determinante nella formazione del Sinodo dei folli e dei giullari, oltre che principale organizzatore e partecipante di una serie di giochi militari organizzati per Pietro durante la sua reggenza, solitamente denominati Esercito dei giocattoli."
 
@@ -1056,8 +894,8 @@
  flavor_mos.105.desc_francois_le_fort: "$flavor_mos.105.desc_common1$ Il forte interesse per le questioni militari è stato notato dallo stratega militare e stretto confidente [francois_le_fort.GetName], che insiste non solo per partecipare, ma è $flavor_mos.105.desc_common2$"
  flavor_mos.105.desc_both: "$flavor_mos.105.desc_common1$ Il forte interesse per le questioni militari è stato notato dagli strateghi militari e stretti confidenti [patrick_gordon.GetName] e [francois_le_fort.GetName], che sono $flavor_mos.105.desc_common2$"
  flavor_mos.105.a: "Che i giochi abbiano inizio."
- training_with_gordon: "Gains #G 10#! [mil_short|e] [ability|e] from training with [patrick_gordon.GetName]" #DA TRADURRE
- training_with_le_fort: "Gains #G 10#! [mil_short|e] [ability|e] from training with [francois_le_fort.GetName]" #DA TRADURRE
+ training_with_gordon: "Gains #G 10#! [mil_short|e] [ability|e] from training with [patrick_gordon.GetName]"
+ training_with_le_fort: "Gains #G 10#! [mil_short|e] [ability|e] from training with [francois_le_fort.GetName]"
  flavor_mos.105.tt1: "La natura carismatica di [target_character.GetNameWithNoTooltip] lo aiuta a stringere strette amicizie con organizzatori e partecipanti di rango inferiore, facendo infuriare i [ShowPopTypeName('nobles')]"
  flavor_mos.105.tt2: "Vengono costruite caserme speciali per ospitare l'esercito giocattolo in espansione"
  mos_toy_army_components: "Componenti dell'esercito giocattolo"
@@ -1069,38 +907,38 @@
  flavor_mos.106.entry: "$flavor_mos.106.title$"
  flavor_mos.106.desc: "I giochi di guerra complessi e realistici svolti dall'esercito giocattolo hanno portato alla creazione di un reggimento d'élite pronto per la battaglia e fedele a [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Tuttavia, rimane un miscuglio di reclute provenienti da diversi contesti e classi sociali, ma questa incoerenza potrebbe essere superata riorganizzandolo in due compagnie. La prima compagnia sarebbe composta principalmente da [ShowPopTypeName('nobles')] e avrebbe il compito di proteggere [ROOT.GetCountry.GetGovernment.GetRuler.Custom('IT_ART_TITOLO')][ROOT.GetCountry.GetGovernment.GetRulerTitle], mentre la seconda avrebbe un ruolo più attivo nelle campagne militari e nelle guerre."
  flavor_mos.106.a: "Pronti, partenza, marcia."
- enable_preobrazhensky_semyonovsky_imperial_guard_advance: "Grants access to the [ShowAdvanceName('preobrazhensky_semyonovsky_imperial_guard')] [advance|e]" #DA TRADURRE
+ enable_preobrazhensky_semyonovsky_imperial_guard_advance: "Grants access to the [ShowAdvanceName('preobrazhensky_semyonovsky_imperial_guard')] [advance|e]"
  flavor_mos.106.b: "Superfluo all'ordine costituito."
  flavor_mos.106.historical_info: "I reggimenti Preobrazhensky e Semenovsky erano due delle unità militari più prestigiose ed elitarie dell'esercito imperiale russo, note per la loro importanza storica e gli stretti legami con i monarchi russi. Furono formati da Pietro il Grande nell'ambito di una profonda riforma della struttura militare complessiva e continuarono a proteggere la monarchia fino al loro scioglimento durante la Rivoluzione russa."
- variable_preobrazhensky_semenovsky_tt: "The Preobrazhensky and Semenovsky Guards are Formed" #NEW
+ variable_preobrazhensky_semenovsky_tt: "The Preobrazhensky and Semenovsky Guards are Formed"
 
  flavor_mos.107.title: "Lo Statista Eccezionalmente Alto"
  flavor_mos.107.entry: "$flavor_mos.107.title$"
- flavor_mos.107.desc: "The [ShowPolicyName('dop_law_governing_senate')] is fine-combing the country for talented individuals who may serve with distinction and valor. The turn has come for influential noble and governor [tikhon_streshnev.GetName] to join the other policymakers. He is no stranger to bureaucracy and is expected to blend in perfectly, unless accounting for his extreme height." #NEW
+ flavor_mos.107.desc: "The [ShowPolicyName('dop_law_governing_senate')] is fine-combing the country for talented individuals who may serve with distinction and valor. The turn has come for influential noble and governor [tikhon_streshnev.GetName] to join the other policymakers. He is no stranger to bureaucracy and is expected to blend in perfectly, unless accounting for his extreme height."
  flavor_mos.107.a: "Invitalo a prestare servizio."
- flavor_mos.107.tt2: "Standing at just over two meters tall, his unusual height facilitates a resemblance to that of [target_character.GetName], fueling rumors that Tycho Streshnev is [target_character.GetHisHer] true father" #NEW
+ flavor_mos.107.tt2: "Alto poco più di due metri, la [tikhon_streshnev.GetHisHer] insolita statura facilita una somiglianza con quella di [target_character.GetName], alimentando le voci secondo cui [tikhon_streshnev.GetNameWithNoTooltip] sarebbe il [target_character.GetHisHer] vero padre"
  flavor_mos.107.b: "Un punto di riferimento imponente distrarrà le sessioni."
  flavor_mos.107.historical_info: "Tikhon Streshnev è stato uno dei primi membri del Senato di governo appena istituito, ricoprendo anche brevemente la carica di capo del Razryadny Prikaz e guidando l'esercito. Era vicino alla famiglia reale, fungendo da mentore del giovane Pietro I, il che gli ha fatto guadagnare una notevole influenza. Insolitamente alto per l'epoca, una caratteristica che condivideva con Pietro, è stato suggerito che fosse, in realtà, il padre biologico del futuro zar."
 
  flavor_mos.108.title: "La Defezione dell'Erede"
  flavor_mos.108.entry: "$flavor_mos.108.title$"
- flavor_mos.108.desc: "There have been talks of distinct disagreement between [target_heir.GetName] and [target_ruler.GetName] regarding the sweeping reforms to the military, government, and society taking place in [ROOT.GetCountry.GetName], with the former resisting these changes and clinging to traditional [ROOT.GetCountry.GetAdjectiveWithNoTooltip] values. Unable to resolve the differences and feeling alienated, [target_heir.GetNameWithNoTooltip] has sought refuge in [target_country.GetName] in an attempt to escape the influence of his father's reforms." #NEW
- flavor_mos.108.a: "Apprehend him immediately." #NEW
+ flavor_mos.108.desc: "There have been talks of distinct disagreement between [target_heir.GetName] and [target_ruler.GetName] regarding the sweeping reforms to the military, government, and society taking place in [ROOT.GetCountry.GetName], with the former resisting these changes and clinging to traditional [ROOT.GetCountry.GetAdjectiveWithNoTooltip] values. Unable to resolve the differences and feeling alienated, [target_heir.GetNameWithNoTooltip] has sought refuge in [target_country.GetName] in an attempt to escape the influence of his father's reforms."
+ flavor_mos.108.a: "Apprehend him immediately."
  flavor_mos.108.tt1: "[target_heir.GetNameWithNoTooltip] è sottoposto a un'indagine approfondita dietro le quinte e potrebbe morire in circostanze misteriose"
  flavor_mos.108.b: "Offrire concessioni."
  flavor_mos.108.tt2: "A [target_heir.GetNameWithNoTooltip] viene offerta una leggera inversione di rotta in cambio del suo ritorno a casa."
  flavor_mos.108.c: "Risvegliare una spia per recuperare la nostra risorsa."
- flavor_mos.108.tt3: "[target_heir.GetNameWithNoTooltip] is returned home before his absence is noticed" #NEW
+ flavor_mos.108.tt3: "[target_heir.GetNameWithNoTooltip] is returned home before his absence is noticed"
  flavor_mos.108.d: "Diseredare lo sciocco."
  flavor_mos.108.historical_info: "Alexei Petrovich, figlio di Pietro il Grande, aveva un rapporto difficile con suo padre a causa delle loro diverse opinioni sulla occidentalizzazione della Russia. L'educazione tradizionale di Alexei, incentrata su valori religiosi e conservatori, era in netto contrasto con l'approccio più moderno di suo padre. Questa divisione lo portò a tentare di disertare verso il Sacro Romano Impero, ma Alexei fu arrestato e riportato in Russia, dove lo attendeva un processo pubblico. Morì poco dopo in circostanze misteriose."
 
  flavor_mos.109.title: "Il Kammermohr"
  flavor_mos.109.entry: "$flavor_mos.109.title$"
- flavor_mos.109.desc: "A rather unusual gift has been presented by the ambassador of the [GetCountry('TUR').GetLongName] in the form of a boy, originating from the distant lands of [ShowAreaName('northern_ethiopia_area')]. Originally captured and held as a slave, [abram_petrovich.GetName] is to be freed and raised at the court household so that he may learn our ways and serve [ROOT.GetCountry.GetName] in the future, potentially as part of the army or as a valet. Although demonstrating a high level of intelligence, [abram_petrovich.GetNameWithNoTooltip] lacks basic education, and it would be prudent to indulge him with the gift of literacy." #NEW
+ flavor_mos.109.desc: "A rather unusual gift has been presented by the ambassador of the [GetCountry('TUR').GetLongName] in the form of a boy, originating from the distant lands of [ShowAreaName('northern_ethiopia_area')]. Originally captured and held as a slave, [abram_petrovich.GetName] is to be freed and raised at the court household so that he may learn our ways and serve [ROOT.GetCountry.GetName] in the future, potentially as part of the army or as a valet. Although demonstrating a high level of intelligence, [abram_petrovich.GetNameWithNoTooltip] lacks basic education, and it would be prudent to indulge him with the gift of literacy."
  flavor_mos.109.a: "Il ragazzo deve essere istruito."
- flavor_mos.109.tt1: "Abraham Petrovich is added as a [character|e]" #NEW
- flavor_mos.109.tt2: "He is enrolled at the highest institutes available in [GetCountry('FRA').GetName]" #NEW
- flavor_mos.109.tt3: "He is enrolled at a pristine university in [target_location.GetName]" #NEW
+ flavor_mos.109.tt1: "[abram_petrovich.GetNameWithNoTooltip] viene aggiunto come [character|e]"
+ flavor_mos.109.tt2: "[abram_petrovich.GetSheHe|U] viene iscritto ai migliori istituti disponibili in [GetCountry('FRA').GetName]"
+ flavor_mos.109.tt3: "[abram_petrovich.GetSheHe|U] viene iscritto a una prestigiosa università a [target_location.GetName]"
  flavor_mos.109.tt4: "[ROOT.GetCountry.Custom('IT_NOBLES_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si oppongono al trattamento preferenziale offerto a un lavoratore a contratto."
  flavor_mos.109.b: "Un'impresa costosa con poco da guadagnare."
  flavor_mos.109.historical_info: "Il termine 'Kammermohr' era storicamente usato per designare un servitore di corte dalla pelle nera. Era consuetudine per i monarchi europei avere un servitore di origine africana, che fungesse da emblema esotico del prestigio della corte. Abram Petrovich fu donato dall'Impero Ottomano alla Russia e cresciuto come figlioccio di Pietro il Grande, il che gli permise di ricevere una prestigiosa educazione all'estero. In seguito tornò come ingegnere militare altamente qualificato, assumendo un incarico nell'esercito russo."
@@ -1109,28 +947,28 @@
  flavor_mos.110.entry: "$flavor_mos.110.title$"
  flavor_mos.110.desc: "[abram_petrovich.GetName] ha completato i suoi studi e torna [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] armato di una vasta conoscenza dell'ingegneria militare. Ora dobbiamo decidere il modo migliore per utilizzare il suo talento, sia come mentore che come membro fondamentale dell'apparato governativo."
  flavor_mos.110.a: "Condividere è prendersi cura."
- flavor_mos.110.tt1: "Abraham Petrovich becomes an engineer and mathematics tutor for the armed forces" #NEW
+ flavor_mos.110.tt1: "[abram_petrovich.GetNameWithNoTooltip] diventa ingegnere e tutor di matematica per le forze armate"
  STATIC_MODIFIER_NAME_fortress_forger: "Il falsario della fortezza"
  flavor_mos.110.b: "Un vero patriota combatte fino alla fine."
  STATIC_MODIFIER_NAME_gannibal: "Gannibal"
  flavor_mos.110.c: "Alla macchina ben oliata del governo."
  flavor_mos.110.d: "Non più interessato."
- flavor_mos.110.tt2: "Abraham Petrovich is exiled to the joyous satisfaction of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" #NEW
+ flavor_mos.110.tt2: "[abram_petrovich.GetNameWithNoTooltip] viene esiliato, con grande gioia dei [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]"
  flavor_mos.110.historical_info: "Abram Petrovich tornò in Russia dopo aver completato i suoi studi in Francia. Il suo padrino, Pietro il Grande, morì poco dopo e il nuovo reggente non amava Abram, esiliandolo in Siberia. In seguito, grazie alle sue eccezionali capacità ingegneristiche, fu graziato e incaricato di costruire diverse fortificazioni in tutta la Russia. I regni successivi videro il suo ritorno alla ribalta, culminato con la sua nomina a ingegnere militare capo dell'esercito russo."
- variable_gannibal_studies_abroad_tt: "Abram Gannibal Studies Abroad" #NEW
+ variable_gannibal_studies_abroad_tt: "Abram Gannibal Studies Abroad"
 
  flavor_mos.111.title: "Fortezza di Pietro e Paolo"
  flavor_mos.111.entry: "$flavor_mos.111.title$"
  flavor_mos.111.desc: "L'isola di Hare protegge strategicamente l'imboccatura del fiume Neva, una via navigabile strategica utilizzata per attraversare l'[ShowAreaName('eastern_baltic_sea')] e il lago Ladoga. Estendiamo il nostro potere su questa zona costruendo una cittadella all'avanguardia ad [ShowLocationName('neva')] e gettiamo le basi per una maestosa metropoli."
  flavor_mos.111.a: "Una posizione più che ideale."
  mos_st_peter_and_paul_construction: "Costruzione della Cattedrale dei Santi Pietro e Paolo"
- flavor_mos.111.tt1: "The engineering marvels of Abraham Petrovich streamline the construction process and reduce the overall cost of the mastodon project" #NEW
+ flavor_mos.111.tt1: "Le meraviglie ingegneristiche di [abram_petrovich.GetName] snelliscono il processo costruttivo e riducono il costo complessivo del colossale progetto"
  flavor_mos.111.b: "La casa è dove si trova il cuore."
  flavor_mos.111.historical_info: "La Fortezza di Pietro e Paolo è la struttura più antica di San Pietroburgo e fu fondata da Pietro il Grande come roccaforte militare durante la Guerra del Nord contro la Svezia. Ospita anche la Cattedrale di Pietro e Paolo, luogo di sepoltura di molti membri della famiglia imperiale russa. La città di San Pietroburgo si sarebbe evoluta da cittadella a capitale tentacolare in meno di 20 anni."
 
  flavor_mos.112.title: "L'Architetto Generale"
  flavor_mos.112.entry: "$flavor_mos.112.title$"
- flavor_mos.112.desc: "Landscape terraformer and Baroque architect [jean_baptiste_le_blond.GetName] has made significant contributions to the field of architecture and has recently arrived in [ShowLocationName('neva')] at the behest of local authorities. Originally from [ShowLocationName('paris')], his experience in grandeurism and the #italic Le Nôtre#! style would make him a fine addition to any unspoken ambition of transforming the [target_location.GetRank.GetName] into a modern urban center and cultural mecca." #NEW
+ flavor_mos.112.desc: "Landscape terraformer and Baroque architect [jean_baptiste_le_blond.GetName] has made significant contributions to the field of architecture and has recently arrived in [ShowLocationName('neva')] at the behest of local authorities. Originally from [ShowLocationName('paris')], his experience in grandeurism and the #italic Le Nôtre#! style would make him a fine addition to any unspoken ambition of transforming the [target_location.GetRank.GetName] into a modern urban center and cultural mecca."
  flavor_mos.112.a: "Deve essere costruito con grande rapidità."
  flavor_mos.112.a.custom: "La rapida costruzione dell'insediamento richiede la coscrizione obbligatoria di [ShowPopTypeName('peasants')] provenienti da tutta l'[ShowRegionName('russian_region')]"
  flavor_mos.112.tt2: "[ROOT.GetCountry.Custom('IT_PEASANTS_IL')|U][ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ROOT.GetCountry.Custom('IT_PEASANTS_SONO')] scontenti delle restrizioni imposte alla loro libertà di movimento"
@@ -1146,27 +984,27 @@
  st_petersburg: "San Pietroburgo"
  flavor_mos.113.tt1: "Diversi eventi potrebbero verificarsi una volta che l'[ShowLocationName('neva')] sarà designata capitale [target_root_country.Custom('IT_Della')][target_root_country.GetName]"
  flavor_mos.113.b: "Un piano errato e sconsiderato."
- flavor_mos.113.tt2: "Several [pops|e] leave [ShowLocationName('neva')] for the greener pastures of [capital.GetName]" #DA TRADURRE
+ flavor_mos.113.tt2: "Several [pops|e] leave [ShowLocationName('neva')] for the greener pastures of [capital.GetName]"
  flavor_mos.113.historical_info: "La fondazione di San Pietroburgo nel 1703 durante il regno di Pietro il Grande fu motivata dal suo desiderio di assicurarsi l'accesso al Mar Baltico, con l'obiettivo di spostare la capitale in una località con un porto marittimo attivo tutto l'anno, a differenza di Mosca, che era senza sbocco sul mare. Questa decisione faceva parte del più ampio obiettivo di Pietro di occidentalizzazione e modernizzazione. La costruzione della città dovette affrontare sfide significative, tra cui il terreno paludoso e le condizioni climatiche avverse. Per la costruzione furono impiegati lavoratori forzati, tra cui servi della gleba e prigionieri di guerra."
 
  flavor_mos.114.title: "La Moglie Perfetta"
  flavor_mos.114.entry: "$flavor_mos.114.title$"
- flavor_mos.114.desc: "The continuity of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty is of the utmost importance, and the odds of ensuring this would greatly improve should [ROOT.GetCountry.GetGovernment.GetRuler.GetName] take a wife. A recent inspection of eligible women was carried out, with [natalya_naryshkina.GetName] of the noble [ShowDynastyName('naryshkin_dynasty')] dynasty catching the attention of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. She is of fertile age and unattached, and is predicted to give birth to sons of greatness. The family however, in break with tradition, has requested their daughter be given a freer lifestyle to better suit her idealist upbringing." #NEW
+ flavor_mos.114.desc: "The continuity of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty is of the utmost importance, and the odds of ensuring this would greatly improve should [ROOT.GetCountry.GetGovernment.GetRuler.GetName] take a wife. A recent inspection of eligible women was carried out, with [natalya_naryshkina.GetName] of the noble [ShowDynastyName('naryshkin_dynasty')] dynasty catching the attention of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. She is of fertile age and unattached, and is predicted to give birth to sons of greatness. The family however, in break with tradition, has requested their daughter be given a freer lifestyle to better suit her idealist upbringing."
  flavor_mos.114.a: "Ma certo!"
  STATIC_MODIFIER_NAME_great: "Il Grande"
- flavor_mos.114.tt1: "Natalia Naryshkin is added as a [character|e] and gives birth to Peter" #NEW
- flavor_mos.114.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] voice their discontent over the outspoken nature of Natalia Naryshkin" #NEW
+ flavor_mos.114.tt1: "[natalya_naryshkina.GetNameWithNoTooltip] viene aggiunta come [character|e] e dà alla luce [peter_the_great.GetName]"
+ flavor_mos.114.tt2: "I [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] esprimono il proprio malcontento per il carattere schietto di [natalya_naryshkina.GetNameWithNoTooltip]"
  flavor_mos.114.b: "Si possono esprimere poche opinioni."
  flavor_mos.114.c: "Non c'è bisogno di matrimonio."
  flavor_mos.114.historical_info: "Natalya Naryshkina era la madre di Pietro il Grande e sposò lo zar dopo la morte della sua prima moglie. La famiglia cercò di impedire il matrimonio sostenendo che Natalya avesse praticato la magia nera sullo zar per attirare la sua attenzione, accuse che furono respinte dopo una breve indagine. Natalya era stata educata secondo i principi liberali occidentali e chiese ripetutamente al marito di concederle libertà insolite per le donne dell'epoca, come andare a teatro e apparire in chiesa senza velo. Tentò anche di introdurre diverse usanze occidentali nella corte russa."
 
  flavor_mos.115.title: "Le Osservazioni di [james_bruce.GetNameWithNoTooltip]"
- flavor_mos.115.entry: "The Observations of James Bruce" #NEW
- flavor_mos.115.desc: "Hailing from the [ShowAreaName('scottish_lowlands_area')] and an ancestral line with detailed records in Russia since 1647, [james_bruce.GetName] is a man of both sword and pencil with an impressive educational background and relevant field experience, particularly in the area of artillery. His impressive merits and penmanship are available for hire, and will indubitably contribute to whatever area he is designated for, whether it be administrative and scholarly pursuits, or geared towards military pursuits." #NEW
+ flavor_mos.115.entry: "The Observations of James Bruce"
+ flavor_mos.115.desc: "Hailing from the [ShowAreaName('scottish_lowlands_area')] and an ancestral line with detailed records in Russia since 1647, [james_bruce.GetName] is a man of both sword and pencil with an impressive educational background and relevant field experience, particularly in the area of artillery. His impressive merits and penmanship are available for hire, and will indubitably contribute to whatever area he is designated for, whether it be administrative and scholarly pursuits, or geared towards military pursuits."
  flavor_mos.115.a: "Invitarlo a corte."
- flavor_mos.115.tt2: "His literary works may prove beneficial in the future establishment of knowledge institutes" #NEW
+ flavor_mos.115.tt2: "Le [james_bruce.GetHisHer|U] opere letterarie potrebbero rivelarsi utili per la futura creazione di istituti del sapere"
  flavor_mos.115.b: "Esclusivamente per l'esercito."
  STATIC_MODIFIER_NAME_artillery_maestro: "Maestro di artiglieria"
- flavor_mos.115.tt3: "He is reserved for military service, enhancing the deployment and utilization of artillery" #NEW
+ flavor_mos.115.tt3: "[james_bruce.GetSheHe|U] viene destinato al servizio militare, migliorando lo schieramento e l'utilizzo dell'artiglieria"
  flavor_mos.115.c: "Discendenza discutibile."
  flavor_mos.115.historical_info: "James Bruce partecipò a diverse campagne militari contro l'Impero Ottomano come maggiore generale dell'artiglieria. È considerato uno degli individui più colti della Russia dell'epoca, avendo contribuito ai campi dell'astronomia e della scienza scrivendo diversi volumi, che in seguito donò all'Accademia delle Scienze. A lui si attribuisce l'apertura del primo osservatorio in Russia presso la Torre Sukharev, che gli valse la reputazione di praticante di alchimia e magia."

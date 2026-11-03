@@ -6,32 +6,32 @@
  WARGOAL_IS_CONQUEST: "#T Obiettivo di Guerra Imposto#!\n"
  WARGOAL_IS_SAFE: "#T Obiettivo di Guerra Protetto#!\n"
  WAR_LATERALVIEW_ANNEX_REVOLTER: "Annetti Ribelli"
- WAR_LATERALVIEW_ANNEX_ALL_REVOLTERS: "Annetti Tutti i Ribelli" 
+ WAR_LATERALVIEW_ANNEX_ALL_REVOLTERS: "Annetti Tutti i Ribelli"
  WAR_LATERALVIEW_GRANT_INDEPENDENCE: "Concedi Indipendenza"
- WAR_LATERALVIEW_REIN_IN_SUBJECT: "Limitare Vassalli" 
- WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Apri negoziati di pace per porre fine a questa guerra d'indipendenza mantenendo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come tuo stato cliente.\n\nSe concludi la pace senza concedere l'indipendenza, [COUNTRY.Custom('IT_La')][COUNTRY.GetName] tornerà al suo status di [subject|e]. Puoi anche negoziare semplicemente una [white_peace|e] per porre fine alla guerra senza cambiamenti territoriali.\n\n#S Hai sufficiente [war_score|e] per costringere [COUNTRY.Custom('IT_La')][COUNTRY.GetName] ad accettare la pace.#!" 
- WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Suggerimento: Questa non è la tua unica opzione. Se negozi la pace senza concedere l'indipendenza — o semplicemente vinci questa guerra — [COUNTRY.Custom('IT_La')][COUNTRY.GetName] tornerà a essere il tuo [subject|e].#!" 
-
+ WAR_LATERALVIEW_REIN_IN_SUBJECT: "Limitare Vassalli"
+ WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Apri negoziati di pace per porre fine a questa guerra d'indipendenza mantenendo [COUNTRY.Custom('IT_La')][COUNTRY.GetName] come tuo stato cliente.\n\nSe concludi la pace senza concedere l'indipendenza, [COUNTRY.Custom('IT_La')][COUNTRY.GetName] tornerà al suo status di [subject|e]. Puoi anche negoziare semplicemente una [white_peace|e] per porre fine alla guerra senza cambiamenti territoriali.\n\n#S Hai sufficiente [war_score|e] per costringere [COUNTRY.Custom('IT_La')][COUNTRY.GetName] ad accettare la pace.#!"
+ WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Suggerimento: Questa non è la tua unica opzione. Se negozi la pace senza concedere l'indipendenza — o semplicemente vinci questa guerra — [COUNTRY.Custom('IT_La')][COUNTRY.GetName] tornerà a essere il tuo [subject|e].#!"
+ 
  WARGOAL_IS_CONTESTED: "@trigger_no! L'obiettivo di guerra è ancora conteso."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_PEACE: "Quando saranno trascorsi $NEED|Y$ giorni, senza che l'obiettivo di guerra sia contestato, potrà essere firmata una pace bianca e $WHO|Y$ manterrà $NAME|Y$!\nAttualmente sono trascorsi $DAYS|G$ giorni."
  WARGOAL_TICKED_ENOUGH_DAYS_PEACE: "Sono trascorsi più di $NEED|Y$ giorni con $NAME|Y$ completamente difeso, $WHO|Y$ può ora imporre una pace bianca!"
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS: "Quando saranno trascorsi $NEED|Y$ giorni, senza che l'obiettivo di guerra sia contestato e quando sarà completamente controllato, $WHO|Y$ potrà ottenere $NAME|Y$ in una pace imposta.\nAttualmente sono trascorsi $DAYS|G$ giorni."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_INDEPENDENCE: "Quando saranno trascorsi $NEED|Y$ giorni, senza che l'obiettivo di guerra sia contestato, e quando sarà completamente controllato, $WHO|Y$ potrà ottenere la propria indipendenza in una pace imposta.\nAttualmente sono trascorsi $DAYS|G$ giorni."
- WARGOAL_TICKED_ENOUGH_DAYS: "Sono trascorsi più di $NEED|Y$ giorni e $NAME|Y$ è completamente controllato da by $WHO|Y$, che può ora imporre una pace per conquistarlo!" 
+ WARGOAL_TICKED_ENOUGH_DAYS: "Sono trascorsi più di $NEED|Y$ giorni e $NAME|Y$ è completamente controllato da by $WHO|Y$, che può ora imporre una pace per conquistarlo!"
  WARGOAL_TICKED_ENOUGH_DAYS_INDEPENDENCE: "Sono trascorsi più di $NEED|Y$ giorni da quando $NAME|Y$ è stato completamente controllato da $WHO|Y$, che può ora imporre una pace per ottenere la propria indipendenza!"
  WARGOAL_NOT_FULLY_OCCUPIED: "@trigger_no! L'Obiettivo di Guerra $NAME|Y$ non è ancora stato completamente controllato dagli attaccanti!"
  WARGOAL_NOT_FULLY_SAFE: "@trigger_no! L'Obiettivo di Guerra $NAME|Y$ è completamente controllato dagli attaccanti!"
  WARGOAL_NOT_TICKED_FUL: "@trigger_no! L'Obiettivo di Guerra non è stato controllato abbastanza a lungo, e fornisce solo un bonus di $VAL|+=2$ agli attaccanti, mentre ne servono $NEED|+=0$."
  WARGOAL_NOT_TICKED_FUL_SAFE: "@trigger_no! L'Obiettivo di Guerra non è stato mantenuto al sicuro abbastanza a lungo, e fornisce solo un bonus di $VAL|+=2$ ai difensori, mentre ne servono $NEED|+=0$."
- 
- WAR_FORBIDS_WHITE_PEACE_TOOLTIP: "#R [CASUS_BELLI.GetName] vieta la [white_peace|e]!#!" 
- WAR_REQUIRES_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere applicati per porre fine a questa guerra: $PEACE_TREATIES$" 
- WAR_REQUIRES_ATTACKER_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere rispettati dall'aggressore per porre fine a questa guerra: $PEACE_TREATIES$" 
- WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere rispettati dal difensore per porre fine a questa guerra: $PEACE_TREATIES$" 
+
+ WAR_FORBIDS_WHITE_PEACE_TOOLTIP: "#R [CASUS_BELLI.GetName] vieta la [white_peace|e]!#!"
+ WAR_REQUIRES_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere applicati per porre fine a questa guerra: $PEACE_TREATIES$"
+ WAR_REQUIRES_ATTACKER_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere rispettati dall'aggressore per porre fine a questa guerra: $PEACE_TREATIES$"
+ WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "I seguenti [peace_treaties|e] devono essere rispettati dal difensore per porre fine a questa guerra: $PEACE_TREATIES$"
 
  WAR_LATERALVIEW_DATE_TOOLTIP: "La guerra è iniziata il [WarLateralView.GetWar.GetStartDate]"
  WAR_LATERALVIEW_WAR_GOAL_TOOLTIP: "Questa guerra è stata dichiarata [WarLateralView.GetWar.GetOriginalAttacker.Custom('IT_Dalla')][WarLateralView.GetWar.GetOriginalAttacker.GetName] contro [WarLateralView.GetWar.GetOriginalDefendersList].\n[WarLateralView.GetWar.GetWarGoal.GetDescription]"
-
+ 
  WAR_OVERVIEW_WINLOSE_VS: "@[COUNTRY.GetFlag]! $NUM$ vs @[TARGET_COUNTRY.GetFlag]! $TARGET_NUM$"
  WAR_OVERVIEW_RESULT_WIN: "#G Vittoria#!"
  WAR_OVERVIEW_RESULT_LOSS: "#R Sconfitta#!"
@@ -47,10 +47,11 @@
 
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetLosses|Y]@army_strength!"
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE_NAVAL: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetNavalLosses|Y]@navy_strength!"
- WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_ARMY: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@army_strength!" 
- WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_NAVAL: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@navy_strength!" 
- WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER: "Suddivisione Perdite per [attrition|e]" 
- WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER_ENTRY: "[COUNTRY.GetNameWithFlag]: $VAL|V$" 
+
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_ARMY: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@army_strength!"
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_NAVAL: "Perdite Totali per [attrition|e] finora: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@navy_strength!"
+ WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER: "Suddivisione Perdite per [attrition|e]"
+ WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER_ENTRY: "[COUNTRY.GetNameWithFlag]: $VAL|V$"
 
  WAR_OVERVIEW_ATTACKERS_LEADER: "Leader degli Attaccanti"
  WAR_OVERVIEW_DEFENDERS_LEADER: "Leader dei Difensori"
@@ -97,30 +98,31 @@
  WAR_PARTICIPATION_TT: "[war_participation|e] [WarLateralViewParticipant.GetCountry.Custom('IT_Della')][WarLateralViewParticipant.GetCountry.GetName]: [WarLateralViewParticipant.GetWarParticipation|0%]"
  WAR_ARMY_LOSSES_TT: "Perdite dell'esercito"
  WAR_NAVAL_LOSSES_TT: "Perdite navali"
- WAR_PARTICIPATION_LABEL: "[war_participation|e]"
+ WAR_PARTICIPATION_LABEL: "[war_participation|e]" 
  WAR_SELECT_COUNTRY: "Selezionate questo paese per fare un'offerta di pace.\nSelezionando il leader di guerra verranno inclusi tutti i suoi alleati."
-
+ 
  WAR_FR_L_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalStrength]@army_strength!"
  WAR_FR_N_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalShips]@navy_strength!"
-
+ 
  NO_BATTLES_WON: "Questa fazione non ha vinto alcuna [battles|e] in questa [war|e]."
  BATTLE_WAR_LAT_ENTRY: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: $VAL|+=2$"
 
-
+ 
  BLOCKADED_LOC_TT_ENTRY: "[LOCATION.GetRank.GetIcon][LOCATION.GetName]: [LOCATION.GetTotalPopulationWithBreakDown]"
 
  WAR_BATTLE_TOOLTIP_H: "$NAME$, $DATE$"
  WAR_BATTLE_TOOLTIP_SIZE: "$WIN$@army_strength! vs $LOSS$@army_strength!"
+ WAR_BATTLE_TOOLTIP_SIZE_NAVAL: "$WIN$@navy_strength! vs $LOSS$@navy_strength!"
  WAR_BATTLE_TOOLTIP_SC: "Punteggio Battaglia: $SCORE|+=2$"
  WAR_BATTLE_TOOLTIP_W: "Vincitori: $WIN$\nPerdite: $WINUNITS$"
  WAR_BATTLE_TOOLTIP_L: "Sconfitti: $LOSS$\nPerdite: $LOSSUNITS$"
-
+ 
  WAR_BATTLE_ONGOING_TOOLTIP: "$NAME$.\n\nAttaccanti: $ATA$.\nMorale degli attaccanti: $ATAMORALE$ su $MAXATAMORALE$.\n\nDifensori: $DEF$\nMorale dei difensori: $DEFMORALE$ su $MAXDEFMORALE$."
  WAR_GO_TO: "Vai alla Battaglia"
  GO_TO: "Vai a"
 
  CANNOT_INTERVENE_WAR_ALLY: "$COUNTRY|Y$ non può intervenire in questa guerra perché $SUBJECT|Y$ si è schierato contro $DEFENDER|Y$ in questa guerra, e $COUNTRY|Y$ è alleato con $SUBJECT|Y$ in un'altra guerra."
- CANNOT_INTERVENE_WAR_UNION_PARTNER: "@trigger_no! $COUNTRY|Y$ non può intervenire in questa guerra perché $SUBJECT|Y$ è in un'[union|e] con $COUNTRY|Y$." #MOD OLD
+ CANNOT_INTERVENE_WAR_UNION_PARTNER: "@trigger_no! $COUNTRY|Y$ non può intervenire in questa guerra perché $SUBJECT|Y$ è in un'[union|e] con $COUNTRY|Y$."
  CANNOT_INTERVENE_WAR_ENEMY_IN_OTHER_WAR: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] non può intervenire in questa guerra essendo nemico [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName] in una guerra diversa"
  CANNOT_INTERVENE_WAR_ENEMY: "$COUNTRY|Y$ non può intervenire in questa guerra perché $SUBJECT|Y$ si è schierato con $DEFENDER|Y$ in questa guerra, e $COUNTRY|Y$ è già in guerra con $SUBJECT|Y$."
  ALLIED_TO_ENEMY: "Sono alleati del nemico."
@@ -140,16 +142,16 @@
  JOIN_WAR_REASON_DESC_Overlord: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è il signore [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  JOIN_WAR_REASON_SupportRevolt: "Sostiene i Ribelli"
  JOIN_WAR_REASON_DESC_SupportRevolt: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sostiene la rivolta [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
- JOIN_WAR_REASON_SupportRevoltToReunite: "Sostenere i nostri Ribelli Secessionisti" 
- JOIN_WAR_REASON_DESC_SupportRevoltToReunite: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] vuole che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] si separi e si unisca a loro." 
+ JOIN_WAR_REASON_SupportRevoltToReunite: "Sostenere i nostri Ribelli Secessionisti"
+ JOIN_WAR_REASON_DESC_SupportRevoltToReunite: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] vuole che [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName] si separi e si unisca a loro."
  JOIN_WAR_REASON_Intervene: "Intervento"
  JOIN_WAR_REASON_DESC_Intervene: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] sta intervenendo per conto [TARGET_COUNTRY.Custom('IT_Della')][TARGET_COUNTRY.GetName]."
  JOIN_WAR_REASON_InternationalOrganization: "[INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')|U][INTERNATIONAL_ORGANIZATION.GetType.GetName] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]"
  JOIN_WAR_REASON_DESC_InternationalOrganization: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] è [INTERNATIONAL_ORGANIZATION.Custom('IT_IO_NEL')][INTERNATIONAL_ORGANIZATION.GetName] con [TARGET_COUNTRY.Custom('IT_La')][TARGET_COUNTRY.GetName]."
  JOIN_WAR_REASON_RivalClaimant: "Pretendente Rivale al trono [TARGET_COUNTRY.GetAdjective]"
  JOIN_WAR_REASON_DESC_RivalClaimint: "[COUNTRY.Custom('IT_La')|U][COUNTRY.GetName] rivendica il trono [TARGET_COUNTRY.Custom('IT_Di')][TARGET_COUNTRY.GetName] ed è disposta a combattere per esso."
- JOIN_WAR_REASON_Scripted: "Eventi" 
- JOIN_WAR_REASON_DESC_Scripted: "Gli Eventi li hanno portati in guerra." 
+ JOIN_WAR_REASON_Scripted: "Eventi"
+ JOIN_WAR_REASON_DESC_Scripted: "Gli Eventi li hanno portati in guerra."
 
  LEAVE_WAR_REASON_WarEnded: "Guerra terminata"
  LEAVE_WAR_REASON_Annexed: "Annesso [TARGET_COUNTRY.Custom('IT_Dalla')][TARGET_COUNTRY.GetName]"
@@ -163,7 +165,21 @@
  LEAVE_WAR_REASON_Abandoned: "Ha abbandonato il proprio amico [TARGET_COUNTRY.GetName] nel suo momento di bisogno"
  LEAVE_WAR_REASON_ForcedAbandoned: "Costretta ad abbandonare il proprio amico [TARGET_COUNTRY.GetName] nel suo momento di bisogno dal proprio signore"
  LEAVE_WAR_REASON_BrokeFreeOfOverlord: "Si è liberata dal suo [overlord|e] [TARGET_COUNTRY.GetName]"
- LEAVE_WAR_REASON_Scripted: "Gli Eventi li hanno costretti ad andarsene" 
+ LEAVE_WAR_REASON_Scripted: "Gli Eventi li hanno costretti ad andarsene"
+
+ LEAVE_WAR_REASON_SENTENCE_WarEnded: "La guerra è terminata."
+ LEAVE_WAR_REASON_SENTENCE_Annexed: "Sono stati annessi da [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_CountryDoesNotExist: "Il paese non esiste più."
+ LEAVE_WAR_REASON_SENTENCE_PeacedOut: "Hanno stipulato la pace con [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_WasPeacedOut: "[TARGET_COUNTRY.GetName] ha stipulato un accordo di pace per loro conto."
+ LEAVE_WAR_REASON_SENTENCE_BecameSubject: "Sono diventati un soggetto di [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_CivilWar: "Sono caduti in Guerra Civile."
+ LEAVE_WAR_REASON_SENTENCE_Union: "Hanno formato una [union|e] con [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_Forced: "Sono stati costretti a lasciare la guerra da [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_Abandoned: "Hanno abbandonato i loro amici di [TARGET_COUNTRY.GetName] nel momento del bisogno."
+ LEAVE_WAR_REASON_SENTENCE_ForcedAbandoned: "Sono stati costretti dal loro sovrano ad abbandonare i loro amici di [TARGET_COUNTRY.GetName] nel momento del bisogno."
+ LEAVE_WAR_REASON_SENTENCE_BrokeFreeOfOverlord: "Si sono liberati dal loro [overlord|e] [TARGET_COUNTRY.GetName]."
+ LEAVE_WAR_REASON_SENTENCE_Scripted: "Gli eventi li hanno costretti ad uscire."
 
  REFUSE_TO_JOIN_WAR_REASON_HumanDeclined: "Un Giocatore ha rifiutato di unirsi."
  REFUSE_TO_JOIN_WAR_REASON_NotEnoughReasons: "Non ha ragioni sufficienti per unirsi."

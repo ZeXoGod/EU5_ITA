@@ -230,7 +230,8 @@
  artist_events.44.desc: "Le nostre leggi regolano con giustizia tutto [ROOT.GetCountry.Custom('IT_ART_NOSTRO_RANGO')]nostr[ROOT.GetCountry.Custom('IT_OA_RANGO')] [ROOT.GetCountry.GetFlavorRank]. Anche nei confronti di coloro che cercano di vanificare i nostri progressi e di distruggerci, la giurisprudenza offre una mano gentile senza pregiudizi.\n\nÈ il caso dei [target_rebel.GetName] e dei loro sostenitori. L'approccio ponderato alle tutele legali di [target_character.GetName] ha contribuito a distogliere molti dalle tendenze ribelli, dandoci la possibilità di influenzarli come riteniamo opportuno."
  artist_events.44.a: "Un buon pastore accoglie la pecora smarrita."
  artist_events.44.b: "Cogliamo l'occasione e imponiamo loro la nostra cultura!"
- every_supporter_pop_gains_20_satisfaction_tt: "Ogni [pop|e] a sostegno della [rebellion|e] [ROOT.GetRebel.GetName] otterrà [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" 
+ pacify_rebel_pops_surrender_tt: "La [rebellion|e] giunge al termine e i suoi sostenitori depongono le armi"
+ every_supporter_pop_gains_20_satisfaction_tt: "Ogni [pop|e] a sostegno della [rebellion|e] [ROOT.GetRebel.GetName] otterrà [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
 
  artist_events.45.title: "Una Piacevole Coincidenza Legale"
  artist_events.45.desc: "Sembra che [target_character.GetName] abbia recentemente rappresentato membri di spicco appartenenti al ceto [target_estate.GetName] in tribunale, ottenendo risultati favorevoli. Come ricompensa, hanno fatto una generosa donazione alle nostre casse. Sebbene questo beneficio monetario aumenterà sicuramente la nostra ricchezza, i nostri consulenti sono ansiosi di suggerire innumerevoli modi per investire correttamente i nostri nuovi soldi."
@@ -276,6 +277,7 @@
  artist_events.52.a: "È davvero un'attività molto spirituale."
  artist_events.52.b: "È un modo per creare splendida arte, niente di più."
 
+ 
  artist_events.53.title: "Il Maestro e l'Allievo"
  artist_events.53.desc: "In ogni attività artistica ci sono sempre due figure, un maestro e un apprendista, e l'obiettivo dell'apprendista è quello di superare il maestro. A tal fine, [target_apprentice.GetName] ha chiesto udienza alla [ROOT.GetCountry.GetGovernment.GetCourtTitle], infelice delle proprie capacità. Ci chiede di consentire a diventare apprendista di [target_artist.GetName], che è un più rinomato e abile [target_artist.GetArtistType.GetName]. Ciò aiuterebbe chiaramente a migliorare le proprie abilità, ma impedirebbe sicuramente a [target_artist.GetNameWithNoTooltip] di svolgere le sue altre mansioni."
  artist_events.53.a: "Consenti l'apprendistato."

@@ -1,14 +1,14 @@
 ﻿l_english:
  western_schism.1.title: "Uno Scisma nella Chiesa Cattolica"
- western_schism.1.desc: "Uno Scisma ha colpito il [ShowReligionName('catholic')] e ha gettato la $curia$ in un meschino fazionalismo!\n\nAnche se la Chiesa è stata divisa in passato, questo Scisma sembra essere di natura diversa. Dopo la morte dell'ultimo [GetInternationalOrganization('catholic_church').GetLeaderTitle], il gruppo [ShowCultureGroupName('italian_group')] dei cardinali sta spingendo per il ritorno della Santa Sede sotto il proprio controllo, qualcosa che desidera da quando il Papato è caduto sotto il controllo [ShowCultureGroupName('french_group')]. In opposizione, la fazione [ShowCultureGroupNameWithNoTooltip('french_group')] insiste affinché il nuovo [GetInternationalOrganization('catholic_church').GetLeaderTitle] rimanga sotto il loro controllo. Le richieste di entrambe le fazioni sembrano inconciliabili e il mondo Cattolico sta rapidamente sprofondando nella faziosità, lasciando il buon popolo della [GetInternationalOrganization('catholic_church').GetName] senza i suoi pastori. Finché questa divisione persisterà, dovranno navigare in un mondo privo della loro consueta autorità e decidere da soli chi sia il vero rappresentante della volontà divina.
+ western_schism.1.desc: "Uno Scisma ha colpito [ShowReligionName('catholic')] e ha gettato la $curia$ in un meschino fazionalismo!\n\nDopo la morte dell'ultimo [GetInternationalOrganization('catholic_church').GetLeaderTitle], una fazione di cardinali [ShowCultureGroupName('italian_group')] cerca di riconquistare la Santa Sede, a lungo sotto il controllo [ShowCultureGroupName('french_group')], mentre la fazione [ShowCultureGroupNameWithNoTooltip('french_group')] si rifiuta di cederla.\n\nNessuna delle due parti cede, e la [GetInternationalOrganization('catholic_church').GetName] resta priva dei suoi pastori. Finché la divisione non si sanerà, i fedeli dovranno decidere da soli chi parli davvero in nome della volontà divina."
  western_schism.1.a: "Questo non va bene."
 
  western_schism.3.title: "Insoddisfazione [ROOT.GetCountry.Custom('IT_CLERGY_OAI')][ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] per lo Scisma"
  western_schism.3.desc: "Non abbiamo ancora scelto uno schieramento nello Scisma tra [target_schism_pope_cardinal.GetName] e [target_schism_opponent_cardinal.GetName]. I nostri cardinali ci esortano a prendere una decisione ufficiale su chi sostenere."
  western_schism.3.a: "Questa decisione può aspettare ancora..."
-
+ 
  western_schism.4.title: "[jan_hus.GetNameWithNoTooltip]"
- western_schism.4.desc: "Nel cuore di [ROOT.GetCountry.GetCapital.GetArea.GetName], una fiamma di dissenso religioso si accende, alimentata dai potenti venti del cambiamento. [jan_hus.GetName], un carismatico sacerdote e studioso di cultura [ShowCultureName('czech')], ha preso posizione contro la corruzione percepita nella [GetInternationalOrganization('catholic_church').GetName]. Le sue parole risuonano tra la gente comune e una nuova fede, quella [ShowReligionAdjective('hussite')], inizia a mettere radici.\n\n[jan_hus.GetNameWithNoTooltip] predica contro l'opulenza e gli eccessi della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], invocando un ritorno alla semplicità e alla purezza del Cristianesimo primitivo. I suoi seguaci, noti come Hussiti, abbracciano i suoi insegnamenti, con un fervore crescente ogni giorno che passa. L'ordine costituito trema, poiché le parole di [jan_hus.GetLastNameWithNoTooltip] sfidano l'autorità della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip] e del [GetInternationalOrganization('hre').GetName]. 
+ western_schism.4.desc: "Nel cuore di [ROOT.GetCountry.GetCapital.GetArea.GetName], si accende una fiamma di dissenso religioso, alimentata dai potenti venti del cambiamento. [jan_hus.GetName], carismatico sacerdote e studioso [ShowCultureName('czech')], si è schierato contro la corruzione percepita della [GetInternationalOrganization('catholic_church').GetName]. Le [jan_hus.GetHerHis|U] parole trovano eco nel popolo, e una nuova fede, quella [ShowReligionAdjective('hussite')], inizia a mettere radici.\n\n[jan_hus.GetNameWithNoTooltip] predica contro lo sfarzo e gli eccessi della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], invocando un ritorno alla semplicità e alla purezza del cristianesimo delle origini. I [jan_hus.GetHerHis|U] seguaci, noti come [ShowReligionAdjectiveWithNoTooltip('hussite')], abbracciano i [jan_hus.GetHerHis] insegnamenti, con un fervore che cresce di giorno in giorno. L'ordine costituito trema, poiché le parole di [jan_hus.GetLastNameWithNoTooltip] sfidano l'autorità della [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip] e del [GetInternationalOrganization('hre').GetName]."
  western_schism.4.historical_info: "Jan Hus, noto anche come Johannes Hus, fu un teologo e filosofo che divenne uno dei primi riformatori del cattolicesimo. Fu l'ispiratore della fede Hussita, un predecessore del Luteranesimo. Nacque da genitori poveri, ma fu educato al sacerdozio nel tentativo di sfuggire alla povertà. Durante il suo servizio come sacerdote, si oppose a molti aspetti della Chiesa Cattolica in Boemia. Quando Alessandro V fu eletto Papa, emise una bolla papale per scomunicarlo e durante il Concilio di Costanza, che segnò la fine dello Scisma d'Occidente, Jan Hus partecipò per presentare le sue opinioni sul dissenso con la Chiesa, ma fu immediatamente arrestato e imprigionato. Si rifiutò di ritrattare le sue opinioni e il 6 luglio 1415 fu bruciato sul rogo per eresia. I suoi seguaci fondarono una nuova religione e combatterono contro cinque diverse crociate nei decenni successivi. La fede hussita durò per quasi due secoli in Boemia."
  western_schism.4.a: "Ha degli insegnamenti interessanti..."
 
@@ -105,13 +105,15 @@
  western_schism.1300.a.tt: "Ogni membro della fede [THIS.GetReligion.GetAdjective] cambia la propria opinione nei confronti [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] di [ShowBiasValue('schism_called_council')|+=0]"
 
  western_schism.1301.title: "Il Consiglio di [target_location.GetNameWithNoTooltip]"
- western_schism.1301.desc: "I diplomatici [council_country.Custom('IT_Della')][council_country.GetName] sono arrivati ​​alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], convocando i rappresentanti [ROOT.GetCountry.Custom('IT_CLERGY_DEL_NOSTRO')][ROOT.GetCountry.Custom('IT_CLERGY_NOSTRO')][ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] per partecipare a un consiglio a [target_location.GetName]. Sebbene la legittimità del concilio sia già stata messa in discussione dagli oppositori, potrebbe rappresentare una tappa importante nella risoluzione dello [ShowSituationName('western_schism')].
+ western_schism.1301.desc: "Diplomatici di [council_country.GetName] sono giunti alla nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle], per convocare rappresentanti del nostro [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a un concilio a [target_location.GetName]. Sebbene la legittimità del concilio sia già messa in discussione dai suoi oppositori, potrebbe rappresentare una tappa importante nella risoluzione della [ShowSituationName('western_schism')]."
  western_schism.1301.a: "Partecipiamo al concilio per sostenerlo."
  western_schism.1301.b: "Dobbiamo riconoscere l'autorità del concilio."
  western_schism.1301.c: "Respingiamo l'audacia di questi impostori."
 
  western_schism.2000.title: "La Chiesa Cattolica di Nuovo Unita!"
- western_schism.2000.desc: "Dopo il Concilio, la Chiesa è stata nuovamente riunita grazie agli sforzi di [winner_country.GetName], sotto una nuova autorità. [GetInternationalOrganization('catholic_church').GetName] rimane integra e indivisa, ma l'autorità del [GetInternationalOrganization('catholic_church').GetLeaderTitle] si è notevolmente indebolita durante questo periodo. Speriamo che ciò non abbia danneggiato permanentemente la nostra fede. Auspichiamo che il nuovo [GetInternationalOrganization('catholic_church').GetLeaderTitle] si dimostri capace." 
+ western_schism.2000.desc: "Dopo il Concilio, la Chiesa è stata nuovamente riunita grazie agli sforzi di [winner_country.GetName], sotto una nuova autorità. [GetInternationalOrganization('catholic_church').GetName] rimane integra e indivisa, ma l'autorità del [GetInternationalOrganization('catholic_church').GetLeaderTitle] si è notevolmente indebolita durante questo periodo. Speriamo che ciò non abbia danneggiato permanentemente la nostra fede. Auspichiamo che il nuovo [GetInternationalOrganization('catholic_church').GetLeaderTitle] si dimostri capace."
+ western_schism.2000.title.unresolved: "Lo Scisma si Spegne"
+ western_schism.2000.desc.unresolved: "Non è stato possibile riunire alcun Concilio per dirimere la questione, e le pretese rivali sono svanite per mancanza di sostegno. La [ShowSituationName('western_schism')] si conclude senza che alcun candidato venga acclamato come legittimo [GetInternationalOrganization('catholic_church').GetLeaderTitle], e l'autorità di quella carica ne esce fortemente ridimensionata per la [GetInternationalOrganization('catholic_church').GetName]. Speriamo che ciò non abbia danneggiato in modo permanente la nostra fede."
  western_schism.2000.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  western_schism.2100.title: "Un Nuovo [GetInternationalOrganization('catholic_church').GetLeaderTitle] per la Chiesa"
@@ -119,5 +121,109 @@
  western_schism.2100.desc.a: "$western_schism.2100.desc.common$\n\nGrazie al sostegno che abbiamo accumulato, sarà facile selezionare un candidato idoneo tra le nostre fila, restituendo l'autorità papale alla città eterna di [ShowLocationName('rome')]."
  western_schism.2100.desc.b: "$western_schism.2100.desc.common$\n\nGrazie alla nostra influenza sulla curia, saremo in grado di preservare la consuetudine consolidata del papato di [ShowLocationName('avignon')]."
  western_schism.2100.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ western_schism.20.title: "Due Vescovi, una Sola Diocesi"
+ western_schism.20.desc: "Un vescovado del nostro regno è rimasto vacante, e non appena la sede si è raffreddata, due uomini ne hanno rivendicato il possesso: uno recante il sigillo di Roma, l'altro quello del papa rivale. Ciascuno ha scagliato #R la scomunica#! contro l'altro; ciascuno pretende il nostro riconoscimento. Nel frattempo la diocesi resta senza guida, i suoi sacerdoti sono smarriti, e i suoi fedeli chiedono a [ROOT.GetCountry.GetGovernment.GetRuler.GetName] quale pastore debbano obbedire."
+ western_schism.20.a: "La sede spetta all'uomo di Roma."
+ western_schism.20.b: "La sede spetta all'altro pretendente."
+ western_schism.20.c: "Lasciamoli litigare: le rendite restino a noi."
+
+ western_schism.21.title: "Il Ritiro dell'Obbedienza"
+ western_schism.21.desc: "I nostri giuristi e i maestri delle scuole rivolgono a [ROOT.GetCountry.GetGovernment.GetRuler.GetName] un audace consiglio: non dobbiamo obbedienza a #Y nessuno#! dei due pretendenti finché due uomini indossano la tiara, e dovremmo negarla a entrambi finché la Cristianità non sarà di nuovo unita. Il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] è sgomento; i tesorieri della corona, liberati dalle esazioni papali, ne sono invece segretamente compiaciuti."
+ western_schism.21.a: "Non riconosceremo alcun papa finché la Chiesa non sarà di nuovo una sola."
+ western_schism.21.b: "Restiamo un figlio fedele della Chiesa."
+
+ western_schism.22.title: "Esattori Rivali delle Annate"
+ western_schism.22.desc: "Due esattori papali sono giunti nella stessa settimana, ciascuno recando lettere di autorità dal proprio signore, ciascuno pretendendo le #Y annate#! di ogni beneficio del nostro regno: la rendita del primo anno di ogni nomina ecclesiastica, dovuta, a loro dire, all'unico vero papa. Si squadrano con disprezzo nella nostra corte, ed entrambi guardano al nostro tesoro con bramosia."
+ western_schism.22.a: "Roma avrà quanto le spetta."
+ western_schism.22.b: "Paghiamo l'uomo dell'altro pretendente."
+ western_schism.22.c: "Mandiamoli via entrambi: le monete restano qui."
+
+ western_schism.23.title: "Un Giubileo Proclamato"
+ western_schism.23.desc: "Uno dei papi rivali ha proclamato un #Y Anno Giubilare#!, promettendo la remissione piena dei peccati a ogni pellegrino che venga a venerare le tombe degli apostoli. Il suo rivale ha denunciato l'intera faccenda come una frode ai danni dei fedeli e un tentativo spudorato di accaparrarsi l'argento dei pellegrini. Il nostro popolo sta già preparando i bastoni da viaggio e chiede la nostra benedizione per il cammino."
+ western_schism.23.a: "Lasciamo partire i fedeli, e il Cielo sorrida loro."
+ western_schism.23.b: "Una truffa travestita da grazia. Vietiamola."
+
+ western_schism.24.title: "I Venditori di Indulgenze"
+ western_schism.24.desc: "Venditori di indulgenze affollano le nostre piazze di mercato, spacciando pergamene munite del sigillo dell'uno o dell'altro papa, ciascuno giurando che solo la propria apre le porte del Paradiso. Il popolo svuota le proprie borse e torna a casa inquieto, mormorando che la salvezza è stata messa all'asta, e che una Chiesa con due teste difficilmente può concordare su quale chiave apra la serratura."
+ western_schism.24.a: "Concediamo loro una licenza, e prendiamoci la nostra parte del commercio."
+ western_schism.24.b: "Cacciamo questi ciarlatani dalle nostre strade."
+
+ western_schism.25.title: "Il Predicatore degli Ultimi Giorni"
+ western_schism.25.desc: "Una figura smunta, vestita di cilicio, percorre le strade del nostro regno. [apocalyptic_preacher.GetName] raduna folle in ogni villaggio, gridando che una Chiesa con due teste è il segno stesso predetto della Fine dei Tempi, e che solo la #Y flagellazione#! può purificare un clero corrotto. I contadini piangono e seguono [apocalyptic_preacher.GetHerHis|l] a piedi scalzi; il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] osserva con crescente allarme."
+ western_schism.25.a: "Lasciamolo predicare. In tempi come questi, il popolo ha bisogno di speranza."
+ western_schism.25.a.tt: "A #Y [apocalyptic_preacher.GetName]#! sarà consentito di predicare. Il suo movimento potrebbe crescere oltre il nostro controllo."
+ western_schism.25.b: "Mettiamo a tacere questo folle prima che ci danni tutti."
+
+ western_schism.26.title: "I Flagellanti si Radicalizzano"
+ western_schism.26.desc: "Ciò che era iniziato come penitenza si è trasformato in rivolta. I seguaci di [apocalyptic_preacher.GetName] si flagellano a sangue per le nostre strade e urlano che ogni sacerdote è servo dell'Anticristo e ogni papa un impostore. Il movimento non obbedisce più ai nostri ordini, e le strade sono piene di sguardi stravolti e flagelli."
+ western_schism.26.a: "Schiacciamoli, qualunque sia il prezzo di sangue da pagare."
+ western_schism.26.b: "Volgiamo la loro furia contro il falso papa."
+
+ western_schism.27.title: "Un Cardinale Vacilla"
+ western_schism.27.desc: "Uno dei nostri cardinali è stato segretamente corteggiato dalla curia rivale, che gli offre una sede più ricca di qualunque altra in nostro dono. Non si è ancora dichiarato apertamente, ma le sue lettere si fanno sempre più evasive, e la sua lealtà, a quanto pare, ha ormai un prezzo. [ROOT.GetCountry.GetGovernment.GetRuler.GetName] deve decidere se quel prezzo valga la pena di essere pagato."
+ western_schism.27.a: "Ricompriamo la sua coscienza prima che venga venduta."
+ western_schism.27.b: "Lasciamolo andare. Un uomo comprato non vale nulla."
+
+ western_schism.28.title: "La Lettera di una Santa"
+ western_schism.28.desc: "Una donna santa, venerata in tutta la regione per le sue visioni, ha inviato alla nostra corte una lettera infuocata, implorando [ROOT.GetCountry.GetGovernment.GetRuler.GetName] di schierarsi senza esitazione a fianco del legittimo pontefice romano e di prestare le voci dei nostri cardinali alla sua causa. Le copie passano di mano in mano tra i devoti, e il [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] attende di vedere se risponderemo al suo appello."
+ western_schism.28.a: "La santa dice il vero. Che tutta la Cristianità ci ascolti."
+ western_schism.28.b: "Non ci lasceremo governare dalle visioni di una donna."
+
+ western_schism.29.title: "La Generosità della Curia"
+ western_schism.29.desc: "Il papa da noi scelto, ansioso di mantenere i nostri cardinali nel proprio campo, ha colmato la nostra corte di doni: reliquie in reliquiari dorati, generose dispense e monete sufficienti a far girare la testa a chiunque. Le sue lettere grondano di gratitudine e di aspettative in egual misura. Accettare significa legarci ancor più alla sua obbedienza; rifiutare significa accusarlo apertamente di #R simonia#!."
+ western_schism.29.a: "Accettiamo con gratitudine, e rafforziamo il legame."
+ western_schism.29.b: "Questa è simonia. Non ne vogliamo sapere."
+
+ western_schism.30.title: "Il Dibattito dei Dottori"
+ western_schism.30.desc: "I maestri della facoltà di teologia della nostra università si sono divisi a metà su una questione tanto pericolosa quanto profonda: può un #Y concilio generale#! giudicare un papa e deporlo per il bene della Chiesa? I dottori più giovani la ritengono l'unico rimedio allo scisma; gli anziani la considerano la via della rovina. Entrambi si rivolgono a [ROOT.GetCountry.GetGovernment.GetRuler.GetName] perché dirima la questione."
+ western_schism.30.a: "Un concilio può giudicare anche un papa. Che sia detto apertamente."
+ western_schism.30.b: "Questa è eresia. Condanniamola da ogni pulpito."
+
+ western_schism.31.title: "Chi Dovranno Seguire i Nostri Cardinali?"
+ western_schism.31.desc: "I nostri cardinali stanno sellando i loro muli per recarsi al concistoro, e prima di partire si rivolgono a [ROOT.GetCountry.GetGovernment.GetRuler.GetName] per avere una parola: a quale obbedienza dovranno prestare il peso dei nostri cappelli rossi? Ogni giorno in cui lo scisma si trascina, la pressione cresce, e persino il silenzio comincia a sembrare una scelta."
+ western_schism.31.a: "Per Roma, e la città stessa dell'apostolo."
+ western_schism.31.b: "Per l'altro pretendente, e la riforma della Chiesa."
+ western_schism.31.c: "Che ciascuno segua la propria coscienza."
+
+ western_schism.32.title: "Le Casse Vuote di Roma"
+ western_schism.32.desc: "Il tesoro di San Pietro è vuoto. I nostri cardinali restano senza stipendio e brontolano nei corridoi, mentre ad Avignone la curia rivale ostenta le decime di metà della Cristianità in sete e banchetti. Se Roma non può pagare i propri servitori, teme [ROOT.GetCountry.GetGovernment.GetRuler.GetName], non li manterrà a lungo."
+ western_schism.32.a: "Vendiamo le cariche. Roma non deve ridursi a mendicare."
+ western_schism.32.b: "Appelliamoci ai principi fedeli per un sussidio."
+
+ western_schism.33.title: "La Plebe Romana"
+ western_schism.33.desc: "Il popolo di Roma ha riempito le strade, e il suo ruggito scuote persino le finestre del palazzo: il papato #Y deve restare italiano#!, gridano, e guai a qualunque cardinale pensi di portarlo di nuovo in Francia. La folla guarda la curia con aperta minaccia, e [ROOT.GetCountry.GetGovernment.GetRuler.GetName] deve scegliere tra la furia della folla e la dignità della Chiesa."
+ western_schism.33.a: "Pieghiamoci alla volontà del popolo romano."
+ western_schism.33.b: "Sgomberiamo le strade, e che l'ordine sia ristabilito."
+
+ western_schism.34.title: "Scomunica Reciproca"
+ western_schism.34.desc: "La notizia è giunta da entrambe le curie contemporaneamente: ciascun papa ha solennemente #R scomunicato#! l'altro, e con lui ogni principe, sacerdote e contadino che osi seguire il pastore sbagliato. Il nostro popolo si fa il segno della croce con terrore, sussurrando che in qualunque direzione si volgano sono dannati, e che i sacramenti stessi potrebbero ormai essere privi di valore in metà della Cristianità."
+ western_schism.34.a: "Rassicuriamoli con una grande cerimonia di fede."
+ western_schism.34.b: "La paura è una leva. Usiamola, e prendiamoci l'oro della Chiesa."
+
+ western_schism.35.title: "Una Reliquia di Autenticità Contestata"
+ western_schism.35.desc: "Un monastero nelle nostre terre ha svelato una reliquia che, a suo dire, benedirà chiunque sia il legittimo Vicario di Cristo tra i due papi, e i pellegrini già affollano i suoi cancelli. Chierici rivali gridano alla #R falsificazione#! e ne chiedono il rogo. [ROOT.GetCountry.GetGovernment.GetRuler.GetName] deve decidere se fare di questo prodigio il vessillo della nostra fede, o lasciare che studiosi dagli occhi freddi lo smontino pezzo per pezzo."
+ western_schism.35.a: "Un dono del Cielo. Veneriamola davanti a tutti."
+ western_schism.35.b: "Lasciamo che uomini dotti esaminino da vicino questo presunto 'miracolo'."
+
+ western_schism.36.title: "Mercenari per la Curia"
+ western_schism.36.desc: "Giunge una lettera disperata recante il sigillo del papa da noi scelto: egli implora armi, uomini e denaro per strappare lo Stato della Chiesa al pretendente con la forza delle armi, poiché parole e voti lo hanno deluso. Una compagnia di lance temprate è pronta a marciare, se solo [ROOT.GetCountry.GetGovernment.GetRuler.GetName] aprirà il tesoro per pagarla."
+ western_schism.36.a: "Inviamo una compagnia. Il nostro papa avrà i suoi soldati."
+ western_schism.36.b: "Abbiamo le nostre guerre da combattere. Che aspetti."
+
+ western_schism.37.title: "Il Principe Neutrale"
+ western_schism.37.desc: "I nostri consiglieri più scaltri si avvicinano e suggeriscono astuzia: non impegniamoci con nessuno dei due papi, dicono, ma facciamo balenare la nostra fedeltà davanti a entrambi, lasciando che ciascuno rilanci l'altro in oro e privilegi. È una strada che potrebbe riempire generosamente le nostre casse, sebbene i devoti avvertano che un principe di cui nessuno si fida non è amato da nessuno."
+ western_schism.37.a: "Promettiamo tutto, non impegniamoci con nessuno, e traiamo profitto da entrambi."
+ western_schism.37.b: "Non siamo tipi da restare in equilibrio. Dichiariamoci per il nostro papa."
+
+ western_schism.38.title: "Voci di un Concilio Generale"
+ western_schism.38.desc: "Una voce audace corre per tutta la Cristianità: i cardinali di #Y entrambe#! le obbedienze, stanchi dello scandalo, potrebbero convocare un grande concilio per giudicare i papi rivali e deporli entrambi in un sol colpo. Per alcuni è l'unica via verso la pace; per altri è pura eresia, poiché chi può porsi al di sopra del Vicario di Cristo? [ROOT.GetCountry.GetGovernment.GetRuler.GetName] è sollecitato a schierarsi ancor prima che il concilio venga convocato."
+ western_schism.38.a: "Un concilio potrebbe essere la nostra unica via verso la pace. Sosteniamolo."
+ western_schism.38.b: "Nessun concilio si pone al di sopra del vicario di Cristo. Denunciamolo."
+
+ western_schism.39.title: "Un Terzo Pretendente"
+ western_schism.39.desc: "L'impensabile si è compiuto. Un concilio di cardinali ha dichiarato deposti entrambi i papi e #Y ne ha eletto un terzo#! per sanare lo scisma, e ora la Cristianità ha tre padri e nessun capo. Nessuno dei due vecchi papi vuole cedere il trono, e ogni corte d'Europa deve chiedersi nuovamente dove risieda ora la vera Chiesa di Cristo."
+ western_schism.39.a: "Il concilio ha parlato. Riconosciamo il suo papa."
+ western_schism.39.b: "Manteniamo fede al papa che abbiamo sempre conosciuto."
 
  western_schism.2200.desc: "Con un ultimo sforzo, abbiamo trovato una soluzione semplice ma elegante ai problemi sollevati dallo [ShowSituationName('western_schism')]. Costringendo entrambe le parti a rinunciare alle loro pretese sulla Santa Sede e a indire nuove elezioni, possiamo istituire nuovamente un legittimo [GetInternationalOrganization('catholic_church').GetLeaderTitle] e concentrarci sulla guarigione delle ferite causate da questo periodo di conflitti. Il nuovo [GetInternationalOrganization('catholic_church').GetLeaderTitle] eccellerà sicuramente in questo compito, riunendo i sacerdoti divisi e riaffermando la vera dottrina della fede."

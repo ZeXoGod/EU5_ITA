@@ -9,7 +9,7 @@
  upset_both_estates_devastate_target_location_tt: "Le proteste potrebbero sfuggirci di mano, devastando [target_location.GetName] nel processo"
  protests_die_down_tt: "Le proteste si spengono rapidamente"
 
- generic_mission_events.5.title: "[target_character2.GetName] Richiede una Donazione"
+ generic_mission_events.5.title: "[target_character2.GetNameWithNoTooltip] Richiede una Donazione"
  generic_mission_events.5.desc: "[target_character2.GetName] si è avvicinato a [target_character1.GetName] con una proposta ben congeniata. Una donazione generosa al ceto [mission_target_estate.GetName], sostiene [target_character2.GetSheHe], creerebbe le condizioni necessarie per espandere il [target_character2.GetHerHis] ruolo nel [ROOT.GetCountry.GetGovernment.GetCabinetTitle].\n\nQuesta proposta riguarda tanto il miglioramento della [target_character2.GetHerHis] posizione personale quanto il miglioramento delle relazioni tra il nostro [ROOT.GetCountry.GetFlavorRank] e i ceti."
  generic_mission_events.5.a: "Fai a [target_character2.GetHerHim] una proposta che non può rifiutare."
  generic_mission_events.5.b: "Non possiamo permetterci queste donazioni."
@@ -58,14 +58,14 @@
  generic_mission_events.13.a: "I nostri sforzi ci stanno ripagando!"
  generic_mission_events.13.b: "Finanziamo questa nuova ondata di centralizzazione."
  generic_mission_events.13.c: "Non c’è necessità di interferire."
- valid_province_tt: "Esiste una [province|e] valida per questa [event_option|e]" 
+ valid_province_tt: "Esiste una [province|e] valida per questa [event_option|e]"
 
  generic_mission_events.14.title: "[target_province.GetNameWithNoTooltip] Resiste alla Centralizzazione"
  generic_mission_events.14.desc: "Nonostante la visione e la determinazione [target_character.Custom('IT_DEL_TITOLO')][target_character.GetName], la gente di [target_province.GetName] sono diventate diffidenti nei confronti dei nostri tentativi di centralizzazione. Gli anziani delle città si lamentano delle tradizioni perdute, i magistrati locali temporeggiano, e voci che richiedono più autonomia si diffondono tra le campagne. Ciò che è stato fatto per portare ordine viene invece visto come un’intrusione. La resistenza non mette radici in una rivolta aperta, ma in un silenzio ostinato e una sottile sfida, una corrente nascosta che minaccia di erodere le fondamenta della nostra autorità in tutto il [ROOT.GetCountry.GetFlavorRank]."
  generic_mission_events.14.a: "Dimenticano qual è il loro posto."
  generic_mission_events.14.b: "Ahimè, non riescono a capire le nostre intenzioni."
  generic_mission_events.14.c: "Dai tutta la colpa a [target_character2.GetShortNameWithNoTooltip]!"
- suitable_character_exists_tt: "Esiste un [character|e] adatto per questa [event_option|e]" 
+ suitable_character_exists_tt: "Esiste un [character|e] adatto per questa [event_option|e]"
 
  generic_mission_events.15.title: "Comunità Rurali Trascurate"
  generic_mission_events.15.desc: "La gente di [target_province.GetName], insieme agli abitanti del capoluogo di provincia, [target_location.GetName], lamentano un crescente malcontento. Mentre il nostro sguardo si volge sempre più verso le grandi città e l’espansione del governo centrale, queste comunità rurali si sentono emarginate, dimenticate all’ombra del progresso. Le loro petizioni prendono forza: bloccare le riforme, riportare l’attenzione ai terreni, e ricordarsi di coloro che coltivano la terra e sostengono il [ROOT.GetCountry.GetFlavorRank] dal basso."
@@ -100,7 +100,7 @@
  artist_will_be_promtly_defenestrated_tt: "#italic [target_character2.GetName] verrà prontamente e irreversibilmente defenestrato#!"
 
  generic_mission_events.20.title: "La Mente di [target_character2.GetNameWithNoTooltip]"
- generic_mission_events.20.desc: "Trattati scritti da [target_character2.GetName] hanno iniziato a circolare all’interno dei circoli letterari di [ROOT.GetCountry.GetCapital.GetName]. Audaci, controversi ma scritti in maniera elegante, essi sfidano i vecchi dogmi e propongono riforme radicali al sistema di governo, alle leggi e all’ordine spirituale. Alcuni sussurrano che sia un genio, altri gridano alla blasfemia. Qualunque sia la verità, questi scritti hanno infiammato il dibattito ben al di fuori delle sale accademiche, e ora si trovano di fronte a noi, in attesa di giudizio. Il modo in cui decideremo di rispondere potrebbe plasmare non solo il destino dell’autore, ma anche la traiettoria culturale del nostro [ROOT.GetCountry.GetFlavorRank] stesso." 
+ generic_mission_events.20.desc: "Trattati scritti da [target_character2.GetName] hanno iniziato a circolare all’interno dei circoli letterari di [ROOT.GetCountry.GetCapital.GetName]. Audaci, controversi ma scritti in maniera elegante, essi sfidano i vecchi dogmi e propongono riforme radicali al sistema di governo, alle leggi e all’ordine spirituale. Alcuni sussurrano che sia un genio, altri gridano alla blasfemia. Qualunque sia la verità, questi scritti hanno infiammato il dibattito ben al di fuori delle sale accademiche, e ora si trovano di fronte a noi, in attesa di giudizio. Il modo in cui decideremo di rispondere potrebbe plasmare non solo il destino dell’autore, ma anche la traiettoria culturale del nostro [ROOT.GetCountry.GetFlavorRank] stesso."
  generic_mission_events.20.a: "C’è del valore nei suoi scritti."
  generic_mission_events.20.b: "Questa è eresia, brucialo!"
  generic_mission_events.20.c: "Vendilo al miglior offerente."
@@ -121,7 +121,7 @@
  heir_gains_depend_on_inno_and_literacy_tt: "La [total_ability|e] ottenuta dipenderà molto dalla [literacy|e] media e dal [societal_value|e] [ShowSocietyDirectionName('innovative')] del nostro [ROOT.GetCountry.GetFlavorRank]"
 
  generic_mission_events.23.title: "Interferenza Straniera"
- generic_mission_events.23.desc: "Sussurri per le strade della nostra capitale e colloqui a porte chiuse sembrano indicare che i nostri nemici hanno messo in moto i loro piani. Insulti diplomatici, accordi sottobanco e la nostra apparente esclusione da diverse negoziazioni indicano che [target_country.GetName] ha danneggiato la nostra reputazione in patria e all’estero. Questa non è che l’ultima delle provocazioni nei nostri confronti e dobbiamo prenderla seriamente! La nostra sovranità nazionale non sarà messa in discussione, nemmeno da gente come [target_character2.GetName] e i suoi simili!" 
+ generic_mission_events.23.desc: "Sussurri per le strade della nostra capitale e colloqui a porte chiuse sembrano indicare che i nostri nemici hanno messo in moto i loro piani. Insulti diplomatici, accordi sottobanco e la nostra apparente esclusione da diverse negoziazioni indicano che [target_country.GetName] ha danneggiato la nostra reputazione in patria e all’estero. Questa non è che l’ultima delle provocazioni nei nostri confronti e dobbiamo prenderla seriamente! La nostra sovranità nazionale non sarà messa in discussione, nemmeno da gente come [target_character2.GetName] e i suoi simili!"
  generic_mission_events.23.a: "Una mossa subdola."
  already_destabilized_desc: "Stiamo già subendo gli effetti di questo [modifier|e]"
  target_country_sow_discontent_tt: "[target_country.GetName] ha usato la [diplomatic_action|e] [ShowRelationTypeName('sow_discontent')] contro di noi, seminando ulteriormente instabilità all’interno del nostro [ROOT.GetCountry.GetFlavorRank]"

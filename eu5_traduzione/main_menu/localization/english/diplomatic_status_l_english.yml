@@ -25,6 +25,8 @@
  diplomatic_status_marriage_union_tooltip: "#T Unioni Matrimoniali#!\nQuesto paese ha formato un'unione matrimoniale con questi [countries|e]."
  diplomatic_status_royal_marriage_name: "Matrimonio Reale"
  diplomatic_status_royal_marriage_tooltip: "#T Matrimonio Reale#!\nQuesto paese ha [royal_marriages|e] con questi [countries|e]."
+ diplomatic_status_betrothal_name: "Fidanzamento"
+ diplomatic_status_betrothal_tooltip: "#T Fidanzamento#!\nQuesto paese ha [betrothals|e] con questi [countries|e]."
  diplomatic_status_enemies_name: "Nemici"
  diplomatic_status_enemies_tooltip: "#T Nemici#!\nQuesto paese è considerato un [rival|e] da questi [countries|e]."
  diplomatic_status_rivals_name: "Rivali"
@@ -82,7 +84,7 @@
  diplomatic_status_rebels_being_supported_tooltip: "#T Ribelli Supportati#!\nQuesto [country|e] ha [rebels|e] supportati dai seguenti [countries|e]."
  diplomatic_status_has_food_access_name: "Accesso al Cibo"
  diplomatic_status_has_food_access_tooltip: "#T Accesso al Cibo#!\nQuesto paese ha [food_access|e] da questi [countries|e]!"
-
+ 
 
  #
  #############################################################################################################
@@ -94,6 +96,7 @@
  guaranteed_list_who_tt: "$WHO$ è [guaranteed|e] da $LIST$. Questo farà sì che $LIST$ si unisca a qualunque [wars|e] difensiva in cui $WHO$ finirà."
  guaranteeing_list_who_tt: "$WHO$ sta [guaranteeing|e] $LIST$. Questo farà sì che $WHO$ si unisca a qualunque [war|e] in cui $LIST$ viene attaccato."
  royal_marriage_list_who_tt: "Legami dinastici con $WHO$ grazie a un [royal_marriage|e] tra $FIRST$ e $SECOND$"
+ betrothal_list_who_tt: "Legami dinastici con $WHO$ dovuti a un [betrothal|e] tra $FIRST$ e $SECOND$"
  union_list_who_tt: "Unione con $LIST$, poiché condividono lo stesso [ruler|e]"
  marriage_union_list_who_tt: "Unione matrimoniale con $LIST$, poiché i sovrani hanno un [royal_marriage|e] tra loro"
  getting_economic_support_list_who_tt: "$WHO$ sta ricevendo [economic_support|e] da $LIST$"
@@ -129,10 +132,10 @@
  diplomatic_status_middle_kingdom_name: "Il Regno di Mezzo"
  diplomatic_status_middle_kingdom_tooltip: "#T Il Regno di Mezzo#!\nQuesto [country|e] è nella sfera del Regno di Mezzo."
  middle_kingdom_list_who_tt: "$WHO$ è nel Regno di Mezzo con $LIST$"
- diplomatic_status_high_kingship_name: "Alto Regno"
+ diplomatic_status_high_kingship_name: "Alto Regno" 
  diplomatic_status_high_kingship_tooltip: "#T Alto Regno#!\nQuesto [country|e] è membro di un Alto Regno."
  high_kingship_list_who_tt: "$WHO$ è in un Alto Regno con $LIST$"
- diplomatic_status_lordship_of_ireland_name: "Signoria d'Irlanda"
+ diplomatic_status_lordship_of_ireland_name: "Signoria d'Irlanda" 
  diplomatic_status_lordship_of_ireland_tooltip: "#T Signoria d'Irlanda#!\nQuesto [country|e] è membro della Signoria d'Irlanda."
  lordship_of_ireland_list_who_tt: "$WHO$ è nella [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] con $LIST$."
  diplomatic_status_autocephalous_patriarchate_name: "Patriarcato Autocefalo"
@@ -199,11 +202,11 @@
  diplomatic_status_swiss_confederation_name: "$swiss_confederation$"
  diplomatic_status_swiss_confederation_tooltip: "#T $swiss_confederation$#!\nQuesto paese è membro della $swiss_confederation$."
  swiss_confederation_list_who_tt: "$WHO$ è nell'[GetUniqueInternationalOrganization('swiss_confederation').GetName] con $LIST$"
+
+#Italian Wars Loc
  diplomatic_status_foreign_league_balkan_name: "$foreign_league_balkan$"
  diplomatic_status_foreign_league_balkan_tooltip: "#T $foreign_league_balkan$#!\nQuesto paese fa parte di una Lega straniera."
  foreign_league_balkan_list_who_tt: "$WHO$ si trova nella [GetUniqueInternationalOrganization('foreign_league_balkan').GetName] con $LIST$."
-
-#Italian Wars Loc
  diplomatic_status_foreign_league_france_name: "$foreign_league_france$"
  diplomatic_status_foreign_league_france_tooltip: "#T $foreign_league_france$#!\nQuesto paese è membro di una Lega straniera."
  foreign_league_france_list_who_tt: "$WHO$ è nella [GetUniqueInternationalOrganization('foreign_league_france').GetName] con $LIST$."
@@ -222,8 +225,8 @@
  diplomatic_status_italian_league_3_name: "$italian_league_3$"
  diplomatic_status_italian_league_3_tooltip: "#T $italian_league_3$#!\nQuesto paese è membro di una Lega Italiana."
  italian_league_3_list_who_tt: "$WHO$ è nella [GetUniqueInternationalOrganization('italian_league_3').GetName] con $LIST$."
- diplomatic_status_italian_league_sponsor_name: "$italian_league_sponsor$" 
- diplomatic_status_italian_league_sponsor_tooltip: "#T $italian_league_sponsor$#!\nQuesto Paese sponsorizza una Lega Italiana, fornendo oro e riserve al leader della Lega." 
+ diplomatic_status_italian_league_sponsor_name: "$italian_league_sponsor$"
+ diplomatic_status_italian_league_sponsor_tooltip: "#T $italian_league_sponsor$#!\nQuesto Paese sponsorizza una Lega Italiana, fornendo oro e riserve al leader della Lega."
  diplomatic_status_guelphs_io_name: "$guelphs_io$"
  diplomatic_status_guelphs_io_tooltip: "#T $guelphs_io$#!\nQuesto paese è membro dei $guelphs_io$."
  guelphs_io_list_who_tt: "$WHO$ è nei $guelphs_io$ con $LIST$"
@@ -237,3 +240,4 @@
  diplomatic_status_receiving_military_sponsorship_tooltip: "#T $diplomatic_status_receiving_military_sponsorship_name$ #!\nQuesto Ordine Militare è stato patrocinato dai seguenti paesi."
  giving_military_sponsorship_list_who_tt: "$WHO$ sta patrocinando $LIST$."
  receiving_military_sponsorship_list_who_tt: "$WHO$ è patrocinato da $LIST$."
+ 

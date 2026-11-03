@@ -14,16 +14,17 @@
 
  # General
  SETTING_VALUE_INT: "$VALUE|0$"
- 
+
  # Graphics
  SETTING_TRIPLANAR_UV_QUALITY: "Qualità UV triplanare"
  SETTING_TRIPLANAR_UV_QUALITY_TOOLTIP: "#T $SETTING_TRIPLANAR_UV_QUALITY$#!\nInteressa la qualità delle texture delle superfici scoscese."
  OPTION_VERY_LOW: "Molto Bassa"
+ OPTION_VERY_HIGH: "Molto Alto"
  SETTING_UNIT_COA_RESOLUTION: "Risoluzione dello Stemma"
  SETTING_UNIT_COA_RESOLUTION_TOOLTIP: "#T $SETTING_UNIT_COA_RESOLUTION$#!\nInteressa la risoluzione dello stemma sull'uniforme delle unità."
 
  # System
- SETTING_EDITOR_TOOLTIP: "#T Editor#!\nEditor di testo usato per aprire un file di gioco."
+ SETTING_EDITOR_TOOLTIP: "#T Editor #! Editor di testo usato per aprire un file di gioco."
  SETTING_HIDE_GAMECONTROLLER_CURSOR: "Nascondi Cursore Controller"
  SETTING_HIDE_GAMECONTROLLER_CURSOR_TOOLTIP: "#T $SETTING_HIDE_GAMECONTROLLER_CURSOR$#!\nNasconde il cursore quando si usa un controller invece del mouse."
 
@@ -33,32 +34,40 @@
 
  # Audio Volume Settings
  SETTING_Master: "Master"
- SETTING_Music: "@setting_immediatly!Musica" #OLD ITA
- SETTING_UI: " @setting_immediatly!Interfaccia" #OLD ITA
- SETTING_Ui_Clock: " @setting_immediatly!Tic Velocità di Gioco" #OLD ITA
- SETTING_Effects: "@setting_immediatly!Mondo" #OLD ITA
- SETTING_Ambient_Map: " @setting_immediatly!Mappa" #OLD ITA
- SETTING_Armies: "@setting_immediatly!Eserciti e Flotte" #OLD ITA
- SETTING_Ambient_Map_Background: "@setting_immediatly!Sfondo della Mappa Ambientale" #OLD ITA
- SETTING_Ambient_Objects: "@setting_immediatly!Oggetti della Mappa Ambientale" #OLD ITA
+ SETTING_Music: "@setting_immediatly!Musica"
+ SETTING_UI: " @setting_immediatly!Interfaccia"
+ SETTING_Ui_Clock: " @setting_immediatly!Tic Velocità di Gioco"
+ SETTING_Effects: "@setting_immediatly!Mondo"
+ SETTING_Ambient_Map: " @setting_immediatly!Mappa"
+ SETTING_Armies: "@setting_immediatly!Eserciti e Flotte"
+ SETTING_Ambient_Map_Background: "@setting_immediatly!Sfondo della Mappa Ambientale"
+ SETTING_Ambient_Objects: "@setting_immediatly!Oggetti della Mappa Ambientale"
+
  SETTING_Ambient_Panel: "@setting_immediatly!Illustrazioni Ambientali"
+
  SETTING_Master_TOOLTIP: "#T Volume Generale\n#!Determina il volume di tutti i suoni del gioco."
+
  SETTING_Music_TOOLTIP: "#T Volume della Musica\n#!Determina il volume di tutta la musica del gioco."
+
  SETTING_UI_TOOLTIP: "#T Volume dell'Interfaccia\n#!Determina il volume dei suoni dell'interfaccia utente."
  SETTING_Ui_Clock_TOOLTIP: "#T Tic Velocità di Gioco\n#!Determina il volume dei tic che indicano la velocità del gioco quando si gioca a velocità più elevate."
+
  SETTING_Effects_TOOLTIP: "#T Volume degli Effetti\n#!Determina il volume di tutti i suoni nel mondo di gioco, eccetto la musica e l'interfaccia."
  SETTING_Ambient_Map_TOOLTIP: "#T Volume Ambientale\n#!Determina il volume di tutti i suoni provenienti dalla vista della mappa."
  SETTING_Armies_TOOLTIP: "#T Volume di Eserciti e Flotte\n#!Determina il volume di tutti gli eserciti e le armate sulla mappa."
  SETTING_Ambient_Map_Background_TOOLTIP: "#T Volume ambientale\n#!Determina il volume di tutti i suoni ambientali di sottofondo sulla mappa."
  SETTING_Ambient_Objects_TOOLTIP: "#T Volume degli Oggetti della Mappa Ambientale\n#!Determina il volume di tutti i suoni provenienti da oggetti della mappa, come insediamenti e animali."
+
  SETTING_Ambient_Panel_TOOLTIP: "#T Volume delle Illustrazioni Ambientali\n#!Determina il volume di tutti i suoni ambientali correlati a pannelli e illustrazioni."
- SETTING_MUSIC_CATEGORY: "Musica" 
+
+ SETTING_MUSIC_CATEGORY: "Musica"
 
  # Audio Profiles Settings
+
  #SETTING_AUDIO_DEBUG_LOG_LEVEL: "Debug Log Level"
  SETTING_AUDIO_DEVICE_PROFILE: "Profilo Audio"
  SETTING_AUDIO_DEVICE_PROFILE_TOOLTIP: "#T $SETTING_AUDIO_DEVICE_PROFILE$\n#!Seleziona il profilo audio che meglio si adatta alla tua configurazione o alle tue preferenze in termini di dinamica e missaggio audio. Questa impostazione non influisce sull'assegnazione dei canali."
- SETTING_AUDIO_OPTION_OFF: "Disattivato"
+ SETTING_AUDIO_OPTION_OFF: "Disattivato" 
  SETTING_AUDIO_OPTION_OFF_TOOLTIP: "#T $SETTING_AUDIO_OPTION_OFF$\n#!Missaggio predefinito con gamma dinamica completa. Opzione consigliata per la maggior parte degli utenti e delle configurazioni di altoparlanti."
  SETTING_AUDIO_OPTION_HOMECINEMA: "Home Cinema"
  SETTING_AUDIO_OPTION_HOMECINEMA_TOOLTIP: "#T $SETTING_AUDIO_OPTION_HOMECINEMA$\n#!Profilo audio per $SETTING_AUDIO_OPTION_HOMECINEMA$. Livella la gamma dinamica e regola i suoni bassi, il che può aiutare i sistemi di altoparlanti che utilizzano un subwoofer."
@@ -72,24 +81,28 @@
  SETTING_AUDIO_OPTION_NIGHTMODE_TOOLTIP: "#T $SETTING_AUDIO_OPTION_NIGHTMODE$\n#!Profilo audio che attenua il volume per giocare di notte. Riduce la gamma dinamica in tutte le frequenze per migliorare la chiarezza a volumi bassi e attenua leggermente i bassi per minimizzare i fastidi."
 
  # Audio Music Settings
+
  SETTING_Music_Density: "Densità Musicale"
- SETTING_Music_Density_TOOLTIP: "#T Impostazione della densità musicale\n#!Determina la durata delle pause tra le tracce musicali, da pause lunghe a una riproduzione quasi continua. Il valore predefinito è 20."
- SETTING_Music_Intensity: "Intensità Musicale" 
- SETTING_Music_Intensity_TOOLTIP: "#T Intensità Musicale\n#!Controlla l'intensità complessiva dei mix musicali statici. Disponibile solo per le modalità musicali cinematografiche statiche o culturali statiche." 
- SETTING_MUSIC_SYSTEM_TYPE: "Tipo di Sistema Musicale" 
- SETTING_MUSIC_SYSTEM_TYPE_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE$\n#!Scegli come deve comportarsi il sistema musicale: playlist completamente dinamiche, selezioni cinematografiche o culturali più curate, playlist statiche o nessuna musica." 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL: "Dinamico - Tutti" 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL$\n#!Utilizza il sistema musicale completamente dinamico con accesso a tutti i brani." 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC: "Dinamico - Cinematografico" 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani più cinematografici." 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL: "Dinamico - Culturale" 
- SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani che si adattano al contesto culturale." 
- SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC: "Statico - Cinematografico" 
- SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC$\n#!Utilizza una playlist più statica e meno reattiva, orientata verso brani cinematografici." 
- SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL: "Statico - Culturale" 
- SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL$\n#!Utilizza una playlist più statica e meno reattiva, orientata al contesto culturale." 
- SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC: "Nessuna Musica" 
- SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC$\n#!Disattiva il sistema musicale." 
+ SETTING_Music_Density_TOOLTIP: "#T Impostazione della densità musicale\n#!Determina la durata delle pause tra le tracce musicali, da pause lunghe a una riproduzione quasi continua. Il valore predefinito è 20." 
+
+ SETTING_Music_Intensity: "Intensità Musicale"
+ SETTING_Music_Intensity_TOOLTIP: "#T Intensità Musicale\n#!Controlla l'intensità complessiva dei mix musicali statici. Disponibile solo per le modalità musicali cinematografiche statiche o culturali statiche."
+ 
+ SETTING_MUSIC_SYSTEM_TYPE: "Tipo di Sistema Musicale"
+ SETTING_MUSIC_SYSTEM_TYPE_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE$\n#!Scegli come deve comportarsi il sistema musicale: playlist completamente dinamiche, selezioni cinematografiche o culturali più curate, playlist statiche o nessuna musica."
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL: "Dinamico - Tutti"
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL$\n#!Utilizza il sistema musicale completamente dinamico con accesso a tutti i brani."
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC: "Dinamico - Cinematografico"
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani più cinematografici."
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL: "Dinamico - Culturale"
+ SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL$\n#!Utilizza il sistema musicale dinamico, concentrandosi su brani che si adattano al contesto culturale."
+ SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC: "Statico - Cinematografico"
+ SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC$\n#!Utilizza una playlist più statica e meno reattiva, orientata verso brani cinematografici."
+ SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL: "Statico - Culturale"
+ SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL$\n#!Utilizza una playlist più statica e meno reattiva, orientata al contesto culturale."
+ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC: "Nessuna Musica"
+ SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC$\n#!Disattiva il sistema musicale."
+
 
  # Game
  SETTING_DEBUG_SAVES: "Numero di salvataggi automatici"
@@ -99,7 +112,6 @@
  # Multiplayer
  SETTING_MAX_TICKS_AHEAD: "Vantaggio massimo di tic"
  SETTING_MAX_TICKS_AHEAD_TOOLTIP: "#T $SETTING_MAX_TICKS_AHEAD$#!\nQuantità massima di tic prima che Lei, come host, inizi ad aspettare che i client si aggiornino."
-
  # Override
  SETTINGS_FILE_TRANSFER_SPEED_TOOLTIP: "#T $SETTINGS_FILE_TRANSFER_SPEED$#!\nImposta la velocità massima di trasferimento dei file salvati nella schermata Selezione paese della modalità multigiocatore.\n\nI valori bassi possono migliorare la stabilità della rete quando ci si unisce a partite multigiocatore, ma hanno un effetto negativo sul tempo di caricamento."
 
@@ -112,24 +124,13 @@
  SETTING_LAST_PLAYER: "Ultimo giocatore"
  SETTING_DIFFICULTY: "Difficoltà"
  SETTING_DISABLED_ALERTS: "Avvisi disattivati"
- SETTING_CLOCK_TYPE: "Formato dell'orologio"
- SETTING_CLOCK_TYPE_TOOLTIP: "#T Formato dell'orologio#! Scegli tra il formato 12 o 24 ore."
- CLOCK_TYPE_24H: "24 ore digitale (19:00)"
- CLOCK_TYPE_24H_SHORT: "24 ore abbreviato (19 h)"
- CLOCK_TYPE_12H: "12 ore digitale (7:00 pm)"
- CLOCK_TYPE_12H_SHORT: "12 ore abbreviato (7 pm)"
- CLOCK_TYPE_24H_SUFFIX: ":00"
- CLOCK_TYPE_24H_SHORT_SUFFIX: " h"
- CLOCK_TYPE_12H_SUFFIX_MORNING: ":00 am"
- CLOCK_TYPE_12H_SUFFIX_AFTERNOON: ":00 pm"
- CLOCK_TYPE_12H_SHORT_SUFFIX_MORNING: " am"
- CLOCK_TYPE_12H_SHORT_SUFFIX_AFTERNOON: " pm"
+
+
  AGENDA_SKIP_AGENDA_SETTING: "Non mostrare l'agenda all'inizio della partita."
  AGENDA_HISTORICAL_CONTEXT: "Contesto Storico"
- AGENDA_COUNTRY_CONTENT: "Contenuto [Country.GetAdjective]" 
+ AGENDA_COUNTRY_CONTENT: "Contenuto [Country.GetAdjective]"
  AGENDA_WALKTHROUGH_DISABLED_MISSIONS: "@trigger_no! Non puoi eseguire la Guida di Base con le Missioni Disattivate. Attivale nelle Regole di Gioco del Menu Principale."
  AGENDA_WALKTHROUGH_IS_RUNNING: "@trigger_no! La Guida è attiva."
-
  # Map
  SETTING_DRAW_TERRAIN: "Visualizza terreno"
  SETTING_DRAW_WATER: "Visualizza acqua"
@@ -143,17 +144,17 @@
  SETTING_DRAW_CITYSPRAWL: "Visualizza espansione urbana"
  SETTING_DRAW_SHADOWS: "Visualizza ombre"
  SETTINGS_WEATHER_GRAPHIC_EFFECTS: "Attivare grafici meteorologici"
- SETTINGS_WEATHER_GRAPHIC_EFFECTS_TOOLTIP: "#T Attivare grafici meteorologici#!\nAttiva o disattiva gli effetti meteorologici per aumentare le prestazioni."
+ SETTINGS_WEATHER_GRAPHIC_EFFECTS_TOOLTIP: "#T Attivare grafici meteorologici #! Attiva o disattiva gli effetti meteorologici per aumentare le prestazioni."
  SETTINGS_SINGLE_UNIT_ARMIES: "Eserciti di una singola unità"
  SETTINGS_SINGLE_UNIT_ARMIES_TOOLTIP: "#T Eserciti di una singola unità#! Gli eserciti vengono disegnati sulla mappa rappresentati da una singola unità."
- SETTING_SHOW_COMBAT_FLOATING_LOSSES: "Mostra i popup delle perdite in combattimento" 
- SETTING_SHOW_COMBAT_FLOATING_LOSSES_TOOLTIP: "#T Mostra i popup delle perdite in combattimento#! Se questa opzione è attivata, durante le battaglie terrestri a cui partecipi vengono visualizzati dei numeri fluttuanti sopra gli eserciti. Disattivala per nascondere questi indicatori di perdita di forza." 
+ SETTING_SHOW_COMBAT_FLOATING_LOSSES: "Mostra i popup delle perdite in combattimento"
+ SETTING_SHOW_COMBAT_FLOATING_LOSSES_TOOLTIP: "#T Mostra i popup delle perdite in combattimento#! Se questa opzione è attivata, durante le battaglie terrestri a cui partecipi vengono visualizzati dei numeri fluttuanti sopra gli eserciti. Disattivala per nascondere questi indicatori di perdita di forza."
  SETTINGS_GRID_TILE_SIZE_TEXT: "Dimensione degli edifici urbani"
  SETTINGS_GRID_TILE_SIZE_TEXT_TOOLTIP: "Controlla la dimensione degli edifici urbani sulla mappa 3D."
- SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE: "Mantieni aperta la barra delle modalità di mappa preferite" 
- SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE_TOOLTIP: "#T Mantieni aperta la barra delle modalità di mappa preferite#!\nSe abilitata, la barra delle modalità mappa preferite nella parte inferiore dell'HUD rimane aperta anche quando non si sta utilizzando il selettore delle modalità mappa." 
 
  # Categories
+ SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE: "Mantieni aperta la barra delle modalità di mappa preferite"
+ SETTING_MAP_MODE_SELECTOR_FAVORITES_VISIBLE_TOOLTIP: "#T Mantieni aperta la barra delle modalità di mappa preferite#!\nSe abilitata, la barra delle modalità mappa preferite nella parte inferiore dell'HUD rimane aperta anche quando non si sta utilizzando il selettore delle modalità mappa."
  SETTINGS_CATEGORY_INTERFACE: "Interfaccia"
  SETTINGS_CATEGORY_MULTIPLAYER: "Multigiocatore"
  SETTINGS_CATEGORY_MAP: "Mappa"
@@ -163,29 +164,46 @@
  SETTINGS_CATEGORY_INPUT_LOCK: "Impostazioni di Blocco dell'Input"
  SETTINGS_CATEGORY_DYNAMIC_NAMES: "Nomi Dinamici"
  SETTINGS_CATEGORY_PLAYSETS: "Playset"
-
  # Hotkeys
  SETTING_INPUT_CONTEXT_COMMON: "Comuni"
- SETTING_INPUT_CONTEXT_COMMON_TOOLTIP: "#T Comuni#!\nLe assegnazioni di tasti più usate."
+ SETTING_INPUT_CONTEXT_COMMON_TOOLTIP: "#T Comuni #! Le assegnazioni di tasti più usate."
  SETTING_INPUT_CONTEXT_WINDOW_TAB: "Finestre"
- SETTING_INPUT_CONTEXT_WINDOW_TAB_TOOLTIP: "#T Finestre#!\nAssegnazione di tasti per finestre e schede."
+ SETTING_INPUT_CONTEXT_WINDOW_TAB_TOOLTIP: "#T Finestre #! Assegnazione di tasti per finestre e schede."
  SETTING_INPUT_CONTEXT_MAP: "Mappa"
- SETTING_INPUT_CONTEXT_MAP_TOOLTIP: "#T Mappa#!\nAssegnazione di tasti per la mappa."
+ SETTING_INPUT_CONTEXT_MAP_TOOLTIP: "#T Mappa #! Assegnazione di tasti per la mappa."
  SETTING_INPUT_CONTEXT_MAP_MODE: "Modalità della Mappa"
- SETTING_INPUT_CONTEXT_MAP_MODE_TOOLTIP: "#T Modalità della mappa#!\nAssegnazione di tasti per le modalità della mappa."
+ SETTING_INPUT_CONTEXT_MAP_MODE_TOOLTIP: "#T Modalità della mappa #! Assegnazione di tasti per le modalità della mappa."
  SETTING_INPUT_CONTEXT_PAUSE_MENU: "Menu Pausa"
  SETTING_INPUT_CONTEXT_PAUSE_MENU_TOOLTIP: "#T Menu Pausa#! Assegnazione di tasti per la pausa."
+ SETTING_INPUT_CONTEXT_TIMELINE: "Linea Temporale"
+ SETTING_INPUT_CONTEXT_TIMELINE_TOOLTIP: "#T Linea Temporale #! Associazioni dei tasti utilizzate nella Linea Temporale della Campagna"
+ SETTING_INPUT_ACTION_TIMELINE_TOGGLE_PLAY: "Riproduci/Pausa Replay"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_1: "Velocità Replay 1"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_2: "Velocità Replay 2"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_3: "Velocità Replay 3"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_4: "Velocità Replay 4"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_5: "Velocità Replay 5"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_6: "Velocità Replay 6"
+ SETTING_INPUT_ACTION_TIMELINE_SPEED_7: "Velocità Replay 7"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_BACK: "Passo Indietro"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_FORWARD: "Passo Avanti"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_BACK_MONTH: "Passo Indietro di un Mese"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_FORWARD_MONTH: "Passo Avanti di un Mese"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_BACK_YEAR: "Passo Indietro di un Anno"
+ SETTING_INPUT_ACTION_TIMELINE_STEP_FORWARD_YEAR: "Passo Avanti di un Anno"
+ SETTING_INPUT_ACTION_TIMELINE_JUMP_TO_START: "Salta all'Inizio"
+ SETTING_INPUT_ACTION_TIMELINE_JUMP_TO_END: "Salta alla Fine"
  SETTING_INPUT_ACTION_CLOSE: "Chiudi"
  SETTING_INPUT_ACTION_CLOSE_LEFT: "Chiudi Pannello Sinistro"
  SETTING_INPUT_ACTION_CLOSE_RIGHT: "Chiudi Pannello Destro"
  SETTING_INPUT_ACTION_CONFIRM: "Conferma"
- SETTING_INPUT_ACTION_DECLINE: "Rifiuta" 
+ SETTING_INPUT_ACTION_DECLINE: "Rifiuta"
  SETTING_INPUT_ACTION_TOGGLE_PAUSE: "Alterna Pausa"
  SETTING_INPUT_ACTION_PAUSE: "In Pausa"
  SETTING_INPUT_ACTION_UNPAUSE: "Togli Pausa"
  SETTING_INPUT_ACTION_RESUME: "Riprendi"
  SETTING_INPUT_ACTION_REPORT_ISSUE: "Comunica problema"
- SETTING_INPUT_ACTION_TOGGLE_ALERT_STASH: "Attiva/Disattiva Menu Avvisi" 
+ SETTING_INPUT_ACTION_TOGGLE_ALERT_STASH: "Attiva/Disattiva Menu Avvisi"
  SETTING_INPUT_ACTION_INCREASE_SPEED: "Aumenta Velocità"
  SETTING_INPUT_ACTION_DECREASE_SPEED: "Riduci Velocità"
  SETTING_INPUT_ACTION_SPEED_ONE: "Velocità 1"
@@ -193,15 +211,7 @@
  SETTING_INPUT_ACTION_SPEED_THREE: "Velocità 3"
  SETTING_INPUT_ACTION_SPEED_FOUR: "Velocità 4"
  SETTING_INPUT_ACTION_SPEED_FIVE: "Velocità 5"
- SETTING_INPUT_ACTION_SPEED_SIX: "Velocità 6" 
- SETTING_INPUT_ACTION_SPEED_SEVEN: "Velocità 7" 
  SETTING_INPUT_ACTION_SHOW_MENU: "Mostra Menu"
- SETTING_INPUT_ACTION_CAMERA_UP: "Telecamera Sù"
- SETTING_INPUT_ACTION_CAMERA_DOWN: "Telecamera Giù"
- SETTING_INPUT_ACTION_CAMERA_LEFT: "Telecamera Sinistra"
- SETTING_INPUT_ACTION_CAMERA_RIGHT: "Telecamera Destra"
- SETTING_INPUT_ACTION_CAMERA_DRAG: "Trascina telecamera"
- SETTING_INPUT_ACTION_CAMERA_ROTATE: "Ruota telecamera"
  SETTING_INPUT_ACTION_SAVE: "Salva"
  SETTING_INPUT_ACTION_LOAD: "Carica"
  SETTING_INPUT_ACTION_GO_TO_CAPITAL: "Vai alla Capitale"
@@ -215,7 +225,7 @@
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW: "Finestra Precedente"
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW_LEFT: "Finestra Sinistra Precedente"
  SETTING_INPUT_ACTION_PREVIOUS_WINDOW_RIGHT: "Finestra Destra Precedente"
- SETTING_INPUT_ACTION_TOGGLE_WINDOW_COLLAPSE: "Attiva/Disattiva Comprimi Finestra" 
+ SETTING_INPUT_ACTION_TOGGLE_WINDOW_COLLAPSE: "Attiva/Disattiva Comprimi Finestra"
  SETTING_INPUT_ACTION_NEXT_WINDOW: "Finestra Successiva"
  SETTING_INPUT_ACTION_NEXT_WINDOW_LEFT: "Finestra Sinistra Successiva"
  SETTING_INPUT_ACTION_NEXT_WINDOW_RIGHT: "Finestra Destra Successiva"
@@ -300,7 +310,7 @@
  SETTING_MAP_TOOLTIPS_ENABLE_NO_SEAZONES: "Senza zone marittime"
  SETTING_MAP_TOOLTIPS_ENABLE_ENABLED: "Attivato"
 
- # Player Proficiency
+ #Player Proficiency
  SETTING_PLAYER_PROFICIENCY: "Competenza del Giocatore"
  SETTING_PLAYER_PROFICIENCY_TOOLTIP: "#T $SETTING_PLAYER_PROFICIENCY$#!\nStabilisce il livello di aiuto che il giocatore riceve durante la partita."
  SETTING_PLAYER_PROFICIENCY_UNKNOWN: "Non Definito"
@@ -308,15 +318,18 @@
  SETTING_PLAYER_PROFICIENCY_EXPERIENCED: "Esperto"
  SETTING_PLAYER_PROFICIENCY_ADVANCED: "Veterano"
  SETTING_PLAYER_PROFICIENCY_EXPERT: "Esperto"
+
  SETTING_SKIP_WELCOME_NEW_GAME: "Salta la Finestra di Benvenuto della Nuova Partita"
  SETTING_SKIP_WELCOME_NEW_GAME_TOOLTIP: "#T $SETTING_SKIP_WELCOME_NEW_GAME$#!\n$SETTING_SKIP_WELCOME_NEW_GAME_POPUP$"
  SETTING_SKIP_WELCOME_NEW_GAME_POPUP: "Non visualizzare nuovamente la Finestra di Benvenuto e aprire invece la Mappa del Mondo."
 
- # MP Chat Position
+ #MP Chat Position
  SETTING_MP_CHAT_POSITION: "Posizione della chat multigiocatore in gioco"
  SETTING_MP_CHAT_POSITION_LOBBY: "Posizione della chat multigiocatore nella schermata Selezione Paese"
- SETTING_MP_CHAT_SOUND: "Suoni di notifica della chat multigiocatore" 
- SETTING_MP_CHAT_SOUND_TOOLTIP: "#T $SETTING_MP_CHAT_SOUND$#!\nRiproduce un suono quando viene ricevuto un messaggio in chat o un messaggio privato mentre la finestra della chat è chiusa." 
+
+ #MP Chat Sound
+ SETTING_MP_CHAT_SOUND: "Suoni di notifica della chat multigiocatore"
+ SETTING_MP_CHAT_SOUND_TOOLTIP: "#T $SETTING_MP_CHAT_SOUND$#!\nRiproduce un suono quando viene ricevuto un messaggio in chat o un messaggio privato mentre la finestra della chat è chiusa."
 
  # Confirm
  SETTING_CONFIRM_MODE: "Modalità di conferma"
@@ -324,20 +337,20 @@
  SETTING_CONFIRM_MODE_DIALOG: "Finestra di dialogo"
  SETTING_CONFIRM_MODE_TOOLTIP: "#T $SETTING_CONFIRM_MODE$#!\nDetermina il modo di confermare le azioni."
 
- # Dismiss
+ #Dismiss
  SETTING_EVENT_WINDOW_INPUT_LOCK_TIME: "Blocco dell'input della finestra evento"
  SETTING_EVENT_WINDOW_INPUT_LOCK_TIME_TOOLTIP: "#T $SETTING_EVENT_WINDOW_INPUT_LOCK_TIME$#!\nBlocca i pulsanti delle finestre evento per un determinato periodo di tempo."
  SETTING_POPUP_MESSAGE_INPUT_LOCK_TIME: "Blocco dell'input della finestra pop-up"
  SETTING_POPUP_MESSAGE_INPUT_LOCK_TIME_TOOLTIP: "#T $SETTING_POPUP_MESSAGE_INPUT_LOCK_TIME$#!\nBlocca i pulsanti delle finestre pop-up per un determinato periodo di tempo."
 
- # Graphics
+ #Graphics
  SETTING_SSR_QUALITY: "Riflessi"
  SETTING_SSR_QUALITY_TOOLTIP: "#T $SETTING_SSR_QUALITY$#!\nUna qualità inferiore può migliorare la frequenza dei fotogrammi."
- SETTING_ICON_SCALING_QUALITY: "Qualità del ridimensionamento delle icone" 
- SETTING_ICON_SCALING_QUALITY_TOOLTIP: "#T $SETTING_ICON_SCALING_QUALITY$#!\nDetermina come vengono filtrate le icone dell'interfaccia quando sono ridimensionate.\n\n#H Nessuna#! — Campionamento puntuale. La più economica e nitida, ma può apparire a blocchi.\n#H Morbida#! — Bilineare hardware. Può apparire sfocata su schermi 1080p. Ideale per il 4K. Obsoleta.\n#H Nitida#! — Bicubica Mitchell. Dettagli più puliti rispetto a Morbida senza l'effetto a blocchi di Nessuna. Consigliata per tutti gli schermi; i vantaggi sono particolarmente evidenti a 1080p. Predefinita." 
- OPTION_NONE: "Nessuna" 
- OPTION_SMOOTH: "Morbida" 
- OPTION_SHARP: "Nitida" 
+ SETTING_ICON_SCALING_QUALITY: "Qualità del ridimensionamento delle icone"
+ SETTING_ICON_SCALING_QUALITY_TOOLTIP: "#T $SETTING_ICON_SCALING_QUALITY$#!\nDetermina come vengono filtrate le icone dell'interfaccia quando sono ridimensionate.\n\n#H Nessuna#! — Campionamento puntuale. La più economica e nitida, ma può apparire a blocchi.\n#H Morbida#! — Bilineare hardware. Può apparire sfocata su schermi 1080p. Ideale per il 4K. Obsoleta.\n#H Nitida#! — Bicubica Mitchell. Dettagli più puliti rispetto a Morbida senza l'effetto a blocchi di Nessuna. Consigliata per tutti gli schermi; i vantaggi sono particolarmente evidenti a 1080p. Predefinita."
+ OPTION_NONE: "Nessuna"
+ OPTION_SMOOTH: "Morbida"
+ OPTION_SHARP: "Nitida"
  SETTING_BLUR_QUALITY: "Qualità della sfocatura della GUI"
  SETTING_BLUR_QUALITY_TOOLTIP: "#T $SETTING_BLUR_QUALITY$#!\nInteressa la sfocatura applicata allo sfondo da alcune visualizzazioni dell'interfaccia. Una qualità inferiore può migliorare la frequenza dei fotogrammi con schede grafiche integrate o meno potenti."
  SETTING_FLATMAP_MODE: "Modalità Mappa Piatta"
@@ -348,55 +361,64 @@
  SETTING_FLATMAP_MODE_ALWAYS: "Sempre"
  SETTING_FLATMAP_MODE_NEVER: "Mai"
  SETTING_MAXIMIZE_TICK_SPEED: "Massimizza Velocità di Tic"
- SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizza l'uso della CPU per la velocità di tic quando il gioco è a velocità massima, invece di mantenere una frequenza dei fotogrammi stabile. Attivandolo, la velocità 6 funzionerà come la velocità 7 quando è disattivato." #OLD ITA
+ SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizza l'uso della CPU per la velocità di tic quando il gioco è a velocità massima, invece di mantenere una frequenza dei fotogrammi stabile."
  SETTING_DISABLE_3D_TERRAIN: "Disattiva Terreno 3D"
  SETTING_DISABLE_3D_TERRAIN_TOOLTIP: "#T $SETTING_DISABLE_3D_TERRAIN$#!\nDisattiva il caricamento del terreno 3D per aumentare le prestazioni."
  SETTING_FILL_IN_IMPASSABLE_TERRAIN: "Riempi terreno invalicabile"
- SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nDetermina se il terreno invalicabile è incluso nei confini di una nazione sulla mappa." #MOD OLD
+ SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nDetermina se il terreno invalicabile è incluso nei confini di una nazione sulla mappa." 
  SETTING_CAMERA_ROTATION_RESET: "Ripristina Rotazione Telecamera"
  SETTING_CAMERA_ROTATION_RESET_TOOLTIP: "#T $SETTING_CAMERA_ROTATION_RESET$#!\nDetermina se la telecamera recupera automaticamente la sua posizione predefinita dopo averla ruotata."
- SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW: "Visuale espansa delle riforme di governo" 
- SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW_TOOLTIP: "#T $SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW$#!\nDetermina se il pannello delle riforme di governo si apre nella visuale espansa per età o nella visuale compatta." 
+ SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW: "Visuale espansa delle riforme di governo"
+ SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW_TOOLTIP: "#T $SETTING_GOVERNMENT_REFORMS_EXPANDED_VIEW$#!\nDetermina se il pannello delle riforme di governo si apre nella visuale espansa per età o nella visuale compatta."
  SETTING_FLATMAP_WATER_COLOR: "Colore dell'acqua sulla mappa piatta"
  SETTING_FLATMAP_WATER_COLOR_TOOLTIP: "#T $SETTING_FLATMAP_WATER_COLOR$#!\nDetermina il colore che viene usato per rappresentare l'acqua sulla mappa piatta."
  SETTING_BLUE_WATER: "Blu"
  SETTING_BROWN_WATER: "Marrone"
+
  SETTING_PROVINCE_NAMES: "Nomi delle Province"
  SETTING_PROVINCE_NAMES_TOOLTIP: "#T $SETTING_PROVINCE_NAMES$#!\nDetermina come appare sulla mappa il nome di città e province."
  MAPNAME_MODE_MOUSE_OVER: "Al passaggio del mouse"
  MAPNAME_MODE_ALWAYS_ON: "Sempre attivo"
  MAPNAME_MODE_ALWAYS_OFF: "Sempre disattivo"
+
  SETTING_SUBJECTS_USE_OVERLORD_NAME: "Gli Stati Clienti usano il nome del sovrano"
  SETTING_SUBJECTS_USE_OVERLORD_NAME_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_NAME$#!\nDetermina se gli Stati Clienti mostrano il nome del loro sovrano quando si allontana lo zoom della mappa politica."
- SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No (Default)" #OLD ITA
- SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Sì" #OLD ITA
+ SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "No (Default)"
+ SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Sì"
+
  SETTING_SUBJECTS_USE_OVERLORD_COLOR: "Gli Stati Clienti usano il colore del sovrano"
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_COLOR$#!\nDetermina come gli Stati Clienti mostrano il colore del loro sovrano sulla mappa politica."
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_NO: "No"
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_BLEND: "Mischia (predefinito)"
  SETTING_SUBJECTS_USE_OVERLORD_COLOR_YES: "Sì"
+
  SETTING_COUNTRY_NAMES: "Nome dei Paesi sulla Mappa"
  SETTING_COUNTRY_NAMES_TOOLTIP: "#T $SETTING_COUNTRY_NAMES$#!\nDetermina se il nome dei paesi appare sulla mappa sempre nella sua versione breve (Inghilterra), nella sua versione lunga (Regno di Inghilterra) o in modo dinamico, a seconda della dimensione."
  SETTING_COUNTRY_NAMES_SHORT: "Sempre Breve"
  SETTING_COUNTRY_NAMES_DYNAMIC: "Dinamico (predefinito)"
  SETTING_COUNTRY_NAMES_LONG: "Sempre Lungo"
+
  SETTING_IO_SHOW_AS_OVERLORDS: "Organizzazioni Internazionali mostrate come Sovrani"
  SETTING_IO_SHOW_AS_OVERLORDS_TOOLTIP: "#T $SETTING_IO_SHOW_AS_OVERLORDS$#!\nDetermina se alcune Organizzazioni Internazionali (come il Sacro Romano Impero) appaiono come sovrani sulla mappa politica."
  SETTING_IO_SHOW_AS_OVERLORDS_NO: "No (predefinito)"
  SETTING_IO_SHOW_AS_OVERLORDS_YES: "Sì"
+
  SETTING_LOCATION_NAME_LANGUAGE: "Lingua del Nome delle Località"
  SETTING_LOCATION_NAME_LANGUAGE_TOOLTIP: "#T $SETTING_LOCATION_NAME_LANGUAGE$#!\nDetermina se la lingua influisce sul nome delle ubicazioni.\n\n$SETTING_LOCATION_NAME_LANGUAGE_COMMON$: le ubicazioni prendono il loro nome dalla cultura principale del proprietario.\n\n$SETTING_LOCATION_NAME_LANGUAGE_DOMINANT$: le ubicazioni prendono il loro nome dalla lingua dominante delle comunità.\n\n$SETTING_LOCATION_NAME_LANGUAGE_UNTRANSLATED$: le ubicazioni utilizzano esclusivamente il loro nome base."
  SETTING_LOCATION_NAME_LANGUAGE_COMMON: "Proprietario (predefinito)"
  SETTING_LOCATION_NAME_LANGUAGE_DOMINANT: "Comunità"
  SETTING_LOCATION_NAME_LANGUAGE_UNTRANSLATED: "Non tradotto"
+
  SETTING_ESTATES_NAME_LANGUAGE: "Lingua del Nome degli Stati"
  SETTING_ESTATES_NAME_LANGUAGE_TOOLTIP: "#T $SETTING_ESTATES_NAME_LANGUAGE$#!\nDetermina se la lingua influisce sul nome degli stati.\n\n$SETTING_ESTATES_NAME_LANGUAGE_COMMON$: gli stati prendono il loro nome dalla cultura principale del paese.\n\n$SETTING_ESTATES_NAME_LANGUAGE_UNTRANSLATED$: gli stati utilizzano esclusivamente il loro nome base."
  SETTING_ESTATES_NAME_LANGUAGE_COMMON: "Proprietario (predefinito)"
  SETTING_ESTATES_NAME_LANGUAGE_UNTRANSLATED: "Non tradotto"
+
  SETTING_PARLIAMENT_NAME_LANGUAGE: "Lingua del nome del Parlamento"
  SETTING_PARLIAMENT_NAME_LANGUAGE_TOOLTIP: "#T $SETTING_PARLIAMENT_NAME_LANGUAGE$#!\nDetermina se la lingua influisce sul nome del Parlamento.\n\n$SETTING_PARLIAMENT_NAME_LANGUAGE_COMMON$: il Parlamento prende il suo nome dalla cultura principale del paese.\n\n$SETTING_PARLIAMENT_NAME_LANGUAGE_UNTRANSLATED$: il Parlamento utilizza esclusivamente il suo nome base."
  SETTING_PARLIAMENT_NAME_LANGUAGE_COMMON: "Proprietario (predefinito)"
  SETTING_PARLIAMENT_NAME_LANGUAGE_UNTRANSLATED: "Non tradotto"
+
  SETTING_LOW_QUALITY_SHADERS: "Shader di bassa qualità"
  SETTING_LOW_QUALITY_SHADERS_TOOLTIP: "#T $SETTING_LOW_QUALITY_SHADERS$#!\nSacrifica in parte la qualità per migliorare le prestazioni.\nQuesta impostazione può avere un impatto drastico sulla qualità visiva, ma i miglioramenti nelle prestazioni si noteranno unicamente nei sistemi con GPU di potenza inferiore o schede grafiche integrate."
  SETTING_MONTHLY_AUTOPAUSE: "Pausa mensile automatica"
@@ -405,20 +427,18 @@
  SETTING_GAME_SPEED_ON_WAR_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_WAR$#!\nDetermina come la velocità del gioco viene influenzata dall'entrata in guerra del nostro paese."
  SETTING_GAME_SPEED_ON_WAR_LEAVE: "Senza cambiamenti"
  SETTING_GAME_SPEED_ON_WAR_1: "Velocità Minima"
- SETTING_GAME_SPEED_ON_WAR_2: "Velocità Inferiore" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_3: "Velocità Bassa" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_4: "Velocità Media" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_5: "Velocità Alta" #OLD ITA
- SETTING_GAME_SPEED_ON_WAR_6: "Velocità Superiore" 
- SETTING_GAME_SPEED_ON_WAR_7: "Velocità Massima" 
+ SETTING_GAME_SPEED_ON_WAR_2: "Velocità Bassa"
+ SETTING_GAME_SPEED_ON_WAR_3: "Velocità Media"
+ SETTING_GAME_SPEED_ON_WAR_4: "Velocità Alta"
+ SETTING_GAME_SPEED_ON_WAR_5: "Velocità Massima"
  SETTING_GAME_SPEED_ON_UNIT_SELECT: "Velocità di gioco quando l'unità selezionata entra in battaglia"
  SETTING_GAME_SPEED_ON_UNIT_SELECT_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_UNIT_SELECT$#!\nDetermina come la velocità del gioco viene influenzata dalla selezione di un'unità che entra in un combattimento."
+
  SETTING_ENABLE_PARTICLES: "Attiva Particelle"
  SETTING_ENABLE_PARTICLES_TOOLTIP: "#T $SETTING_ENABLE_PARTICLES$#!\nPermette di disattivare gli effetti particellari per migliorare le prestazioni."
+
  SETTING_GUI_TEXTURE_STREAMING: "Streaming di Texture della GUI"
  SETTING_GUI_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_GUI_TEXTURE_STREAMING$\n#!Attiva o disattiva la trasmissione di elementi dell'interfaccia grafica utente.\nQuesta opzione riduce l'uso di VRAM, ma può abbassare temporaneamente la qualità."
- 
- #Playsets
- SETTING_WARNING_PLAYSET: "Mostra finestra di dialogo per avvisare degli errori del playset"
- SETTING_WARNING_PLAYSET_TOOLTIP: "#T $SETTING_WARNING_PLAYSET$\n#!Se abilitata, questa opzione mostra una finestra di dialogo di avviso qualora una delle mod presenti nel playset attivo contenga degli errori." 
- DISABLED_BECAUSE_IS_SET: "Disabilitato perché '$SETTING_NAME$' è impostato su '$SETTING_VALUE$'" 
+
+#Playsets
+ SETTING_WARNING_PLAYSET_TOOLTIP: "#T $SETTING_WARNING_PLAYSET$\n#!Se abilitata, questa opzione mostra una finestra di dialogo di avviso qualora una delle mod presenti nel playset attivo contenga degli errori."

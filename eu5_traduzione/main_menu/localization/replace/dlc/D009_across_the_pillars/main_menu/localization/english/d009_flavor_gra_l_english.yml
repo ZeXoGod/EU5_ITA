@@ -1,0 +1,42 @@
+﻿l_english:
+
+ flavor_gra.7.entry: "$flavor_gra.7.title$"
+ flavor_gra.7.title: "Riconquista di [ShowLocationNameWithNoTooltip('cordoba')]"
+ flavor_gra.7.desc: "[target_location.Custom('IT_ART_LOCATION')|U][target_location.GetRank.GetName] di [target_location.GetName] è stat[target_location.Custom('IT_OA_LOCATION')] riconquistat[target_location.Custom('IT_OA_LOCATION')] nel nome di [ROOT.GetCountry.GetReligion.GetGodName]. Un tempo località vitale per $ADU$, è un luogo in cui [target_character.GetName] e la [ROOT.GetCountry.GetGovernment.GetCourtTitle] desiderano ripristinare l'influenza [ROOT.GetCountry.GetReligion.GetAdjective] che un tempo possedeva."
+ flavor_gra.7.a: "Dobbiamo difendere il suo passato [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip]."
+ gra_convert_cordoba_to_root_religion: "Alcuni [pops|e] di [target_location.GetName] si convertono a [ROOT.GetCountry.GetReligion.GetName]"
+ gra_cordoba_province_gains_core: "Ogni [location|e] della [province|e] di [target_location.GetProvinceDefinition.GetName] diventa [core|e] di [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]"
+ flavor_gra.7.b: "Anziché convertire con la forza chicchessia, è meglio accettare e integrare queste persone."
+
+ flavor_gra.8.entry: "$flavor_gra.8.title$"
+ flavor_gra.8.title: "La Gemma dell'[ShowRegionNameWithNoTooltip('iberia_region')]"
+ flavor_gra.8.desc: "Al centro dell'[ShowRegionName('iberia_region')] si trova [target_location.Custom('IT_ART_LOCATION')][target_location.GetRank.GetName], da tempo crocevia di culture del mondo [ShowReligionGroupAdjective('christian')], [ShowReligionGroupAdjective('muslim')] ed [ShowReligionAdjective('judaism')]. Ora è sotto il nostro controllo, e [ROOT.GetCountry.Custom('IT_ART_RANGO')][ROOT.GetCountry.GetRank.GetName] potrà decidere il suo destino.\n\nIl [ROOT.GetCountry.GetGovernment.GetCourtTitle], così come [target_character.GetName], desidera vedere quest[target_location.Custom('IT_OA_LOCATION')] [target_location.GetRank.GetNameWithNoTooltip] raggiungere vette ancora più alte. Gli sforzi di tutti i ceti sono stati investiti per trasformare [target_location.GetName] nella gemma dell'[ShowRegionNameWithNoTooltip('iberia_region')]."
+ flavor_gra.8.a: "Che [ShowLocationNameWithNoTooltip('toledo')] prosperi!"
+
+ flavor_gra.17.entry: "$flavor_gra.17.title$"
+ flavor_gra.17.title: "Capitale dell'Antico Califfato"
+ flavor_gra.17.desc: "La sede di [ShowLocationName('cordoba')] ha da tempo un ruolo significativo per [ROOT.GetCountry.Custom('IT_La')][ROOT.GetCountry.GetName]. Un tempo era una fiorente [ShowLocationRankName('city')] e la capitale dell'[ShowRegionName('iberia_region')]; ora però le sue strade sono piene di criminalità, i suoi abitanti maledicono il degrado che si è abbattuto sul luogo e molti antichi siti restano in rovina dopo i nostri conflitti con i sovrani del mondo [ShowReligionGroupAdjective('christian')].\n\n[target_character.GetName] non è tipo da permettere che un simile deperimento continui. Questo era un tempo un luogo prestigioso, dove governavano le figure più potenti d'[ShowContinentName('europe')]: perché dunque [target_character.GetSheHe] non dovrebbe trasformarlo nella più grande capitale che il mondo abbia mai visto?"
+ flavor_gra.17.a: "[ShowLocationNameWithNoTooltip('cordoba')] prospererà ancora una volta!"
+ flavor_gra.17.b: "Dovremmo lasciare la nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] dov'è."
+
+ flavor_gra.21.entry: "$flavor_gra.21.title$"
+ flavor_gra.21.title: "La [ShowLocationRankNameWithNoTooltip('city')]-Palazzo di [ShowLocationNameWithNoTooltip('cordoba')]"
+ flavor_gra.21.desc: "La Fitna dell'XI secolo gettò nel caos la parte dell'[ShowRegionName('iberia_region')] sotto dominio [ShowReligionGroupAdjective('muslim')], e con essa andarono perduti molti siti importanti. Uno di questi era il [ShowBuildingTypeName('madinat_al_zahra')], un grande palazzo che occupava la periferia occidentale di [ShowLocationName('cordoba')]. Pieno di moschee sfarzose, ricchi giardini e caserme ben armate, fungeva da faro di superiorità per il $rank_empire_muslim_ruler_male$ sul resto del mondo [ShowReligionGroupAdjectiveWithNoTooltip('muslim')].\n\n[target_character.GetName] desidera ripristinare quella [ShowLocationRankName('city')], ponendo [target_character.GetHerselfHimself] al di sopra degli altri governanti e pretendenti che potrebbero voler sfidare [target_character.GetHerHim]."
+ flavor_gra.21.a: "Vedranno il nostro prestigio!"
+ flavor_gra.21.b: "Non c'è bisogno di restaurare vecchie rovine."
+
+ flavor_gra.22.entry: "$flavor_gra.22.title$"
+ flavor_gra.22.title: "[ShowBuildingTypeNameWithNoTooltip('library_cordoba')]"
+ flavor_gra.22.desc: "Con il restauro della [ShowBuildingTypeName('library_cordoba')], il popolo di [ShowLocationName('cordoba')] ha goduto di una nuova era di prosperità letteraria.\n\nCome ai vecchi tempi, studiosi di tutto il mondo [ShowReligionGroupAdjective('muslim')] visitano [ShowLocationNameWithNoTooltip('cordoba')] per la sua ricca collezione di libri su argomenti che spaziano dalla letteratura alla scienza e alla teologia. Ciò ha a sua volta portato prosperità ai cittadini, che apprendono di culture lontane e hanno incorporato molti dei loro costumi nella vita di ogni giorno."
+ flavor_gra.22.a: "Il popolo di [ShowLocationNameWithNoTooltip('cordoba')] conoscerà la vera prosperità!"
+ add_pop_satisfaction_based_on_literacy: "Ogni [pop|e] nella [location|e] otterrà [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] di [pop_satisfaction|e], in proporzione all'[literacy|e] del [pop]"
+
+ flavor_gra.23.entry: "$flavor_gra.23.title$"
+ flavor_gra.23.title: "Un Rifugio del Sapere per Tutti"
+ flavor_gra.23.desc: "Le nostre politiche liberali e innovative hanno permesso [ROOT.GetCountry.Custom('IT_Alla')][ROOT.GetCountry.GetName] di diventare un rifugio di conoscenza e saggezza. Elogiato dai sovrani stranieri, il nostro progresso negli studi è ora ben visibile, mentre sempre più ospiti accorrono a studiare nelle nostre prestigiose università.\n\nIl [ROOT.GetCountry.GetGovernment.GetCourtTitle] stessa è ora popolato da membri più istruiti, che desiderano ampliare questa accademia eliminando le restrizioni ridondanti all'interno del sistema educativo stesso."
+ flavor_gra.23.a: "Questo è un progresso per noi!"
+
+ flavor_gra.24.title: "Baluardo dell'[ShowReligionGroupNameWithNoTooltip('muslim')]"
+ flavor_gra.24.desc: "La notizia della nostra vittoria nella battaglia per l'[ShowRegionName('iberia_region')] si è diffusa in tutto il mondo [ShowReligionGroupAdjective('muslim')], un'impresa monumentale per la nostra continua sopravvivenza contro ogni tempesta in arrivo. [target_character.GetName] è ora lodato [ROOT.GetCountry.Custom('IT_In')][ROOT.GetCountry.GetName] come eroe, protettore e scudo contro i nemici che vogliono spegnere la nostra fiamma."
+ flavor_gra.24.a: "Festeggiamo."
+ conquest_of_andalusi_integration_tt: "Conquistare [locations|e] con [pops|e] di cultura [ShowCultureName('andalusi')] produce progressi di [integration|e] in base alla presenza di quella [culture|e]"

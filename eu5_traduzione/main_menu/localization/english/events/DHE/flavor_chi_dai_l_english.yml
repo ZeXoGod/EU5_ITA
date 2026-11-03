@@ -3,8 +3,8 @@
  DAI_NGU_ADJ: "$DAI_NGU$"
 
  flavor_chi_dai.1.title: "[target_character.GetNameWithNoTooltip]"
- flavor_chi_dai.1.entry: "Hồ Quý Ly a corte" 
- flavor_chi_dai.1.desc: "Attraverso attente manovre politiche e profonde conoscenze, un certo personaggio di nome [target_character.GetName] è riuscito a farsi strada nel [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]. È considerato un abile generale, ma la sua ambizione è qualcosa di cui diffidare. Molti credono che potrebbe diventare una minaccia per la stabilità [ROOT.GetCountry.Custom('IT_ADJ_FS')]. Speriamo che sia soltanto una diceria." 
+ flavor_chi_dai.1.entry: "Hồ Quý Ly a corte"
+ flavor_chi_dai.1.desc: "Attraverso attente manovre politiche e profonde conoscenze, un certo personaggio di nome [target_character.GetName] è riuscito a farsi strada nel [ROOT.GetCountry.GetGovernment.GetCourtTitle] [ROOT.GetCountry.Custom('IT_Di')][ROOT.GetCountry.GetName]. È considerato un abile generale, ma la sua ambizione è qualcosa di cui diffidare. Molti credono che potrebbe diventare una minaccia per la stabilità [ROOT.GetCountry.Custom('IT_ADJ_FS')]. Speriamo che sia soltanto una diceria."
  flavor_chi_dai.ho_quy_ly_historical_info: "La svolta del XV secolo ha visto la caduta della $tran_dynasty$ nelle mani di uno dei loro ministri, $ho_dynasty$ $name_quy$ $name_ly$. Il colpo di stato è stato seguito da una guerra con il $MNG$, dove i Cinesi sono stati in grado di stabilire il dominio in Vietnam sotto la provincia di $jiaozhi_province$. Questa occupazione è durata fino al 1428, quando l'esercito cinese è stato costretto al ritiro dopo anni di lotta con le Rivolte Vietnamite."
  flavor_chi_dai.1.a: "Interessante."
 
@@ -12,11 +12,11 @@
  flavor_chi_dai.2.entry: "$flavor_chi_dai.2.title$"
  flavor_chi_dai.2.desc: "Uno dei nostri ambiziosi cortigiani, [target_character.GetName], ha lanciato un colpo di stato senza precedenti contro [ousted_character.GetName] e la Casa [ousted_character.GetDynasty.GetName]. Se le nostre informazioni sono corrette, [ousted_character.GetShortNameWithNoTooltip] è stato invitato da [target_character.GetShortNameWithNoTooltip] a ispezionare un sito proposto per una nuova capitale. È allora che [ousted_character.GetSheHe] è stato improvvisamente attaccato dal ribelle, sfuggendo per poco all'imprigionamento.\n\nAvendo preso il trono, [target_character.GetNameWithNoTooltip] desidera riformare il [ROOT.GetCountry.GetFlavorRank] e ha deciso di rinominare lo stato in $DAI_NGU$. Nel frattempo, la caccia a [ousted_character.GetNameWithNoTooltip] continua."
  flavor_chi_dai.2.a: "[target_character.GetNameWithNoTooltip] riformerà questo paese!"
- flavor_chi_dai.2.a.entry: "Il personaggio riformerà questo paese!" 
+ flavor_chi_dai.2.a.entry: "Il personaggio riformerà questo paese!"
  flavor_chi_dai.2.b: "Dobbiamo assicurare che [ousted_character.GetNameWithNoTooltip] sfugga alla cattura."
- flavor_chi_dai.2.b.entry: "Assicuriamoci che sfugga alla cattura." 
+ flavor_chi_dai.2.b.entry: "Assicuriamoci che sfugga alla cattura."
 
- flavor_chi_dai.3.title: "Colpo di Stato in [target_country.GetNameWithNoTooltip]"
+ flavor_chi_dai.3.title: "Colpo di Stato in [ShowAreaNameWithNoTooltip('red_river_delta_area')]"
  flavor_chi_dai.3.desc: "Uno dei nostri tributari, il [target_country.GetLongName], ha recentemente subito un colpo di stato improvviso e disastroso. Uno dei loro cortigiani, [target_character.GetName], ha preso il controllo del [target_country.GetFlavorRank] e ha stabilito una nuova dinastia. Siamo stati piuttosto ignari a questo fatto fino a quando uno dei pretendenti al trono della vecchia dinastia, [claimant_character.GetName], è arrivato nella nostra [ROOT.GetCountry.GetGovernment.GetCourtTitle] in cerca di supporto per il ripristino del vecchio ordine."
  flavor_chi_dai.3.a: "Esigere il ripristino."
  flavor_chi_dai.3.b: "Non è nostro problema."
@@ -27,7 +27,7 @@
  flavor_chi_dai.4.b: "Ascoltare le loro richieste."
 
  flavor_chi_dai.5.title: "Mancanza di Rispetto di [target_country.GetNameWithNoTooltip]"
- flavor_chi_dai.5.entry: "Imboscata agli inviati cinesi" 
+ flavor_chi_dai.5.entry: "Imboscata agli inviati cinesi"
  flavor_chi_dai.5.desc: "Abbiamo ricevuto notizie inquietanti da [target_country.GetName]. Non solo le nostre richieste per il ripristino della dinastia [ShowDynastyName('tran_dynasty')] sono state ignorate, ma i nostri inviati sono stati imboscati mentre scortavano [claimant_character.GetName]. Una tale mancanza di rispetto verso [ROOT.GetCountry.GetName] non sarà tollerata."
  flavor_chi_dai.5.a: "Se non li distruggiamo, a cosa servono gli eserciti?"
  flavor_chi_dai.5.b: "Finché pagano il tributo, non interverremo."
@@ -47,13 +47,13 @@
  variable_has_province_of_jiaozhi_tt: "We Hold $jiaozhi_province$"
 
  flavor_chi_dai.8.title: "Ribellione di [target_character.GetNameWithNoTooltip]"
- flavor_chi_dai.8.entry: "Ribellione di Lê Lợi" 
+ flavor_chi_dai.8.entry: "Ribellione di Lê Lợi"
  flavor_chi_dai.8.desc: "Dopo molti anni di tentativo di integrare la cultura [ShowCultureName('vietnamese_culture')], dobbiamo concludere che questo sforzo non è stato così riuscito come speravamo. Di recente, un'altra ribellione è stata lanciata, questa volta da un novizio chiamato [target_character.GetName]. Sfortunatamente, la ribellione ha trovato grande successo nel sconfiggere le nostre guarnigioni locali. Forse potremmo voler terminare questa occupazione."
  flavor_chi_dai.8.a: "Tenere $jiaozhi_province$ è un'impresa senza senso."
  flavor_chi_dai.8.b: "Sconfiggi questo novizio!"
 
  flavor_chi_dai.9.title: "Rivolte Fedeli della [ShowDynastyNameWithNoTooltip('tran_dynasty')]"
- flavor_chi_dai.9.entry: "Rivolte dei lealisti della dinastia Trần" 
+ flavor_chi_dai.9.entry: "$flavor_chi_dai.9.title$"
  flavor_chi_dai.9.desc: "Il nostro governo nella provincia $jiaozhi_province$ non è apprezzato dalla popolazione locale che molto preferiva il dominio interno sotto la dinastia [ShowDynastyName('tran_dynasty')]. Molti di loro si sono quindi radunati sotto il stendardo di [target_character.GetName], che promette loro un ritorno al dominio tradizionale $DAI_ADJ$."
  flavor_chi_dai.9.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
  flavor_chi_dai.9.a.entry: "$common_string_curses$"
@@ -64,7 +64,7 @@
  flavor_chi_dai.10.b: "Abbiamo già abbastanza problemi."
 
  flavor_chi_dai.11.title: "Spezzare la Volontà della [ShowCultureNameWithNoTooltip('vietnamese_culture')]"
- flavor_chi_dai.11.entry: "Spezzare la volontà della cultura vietnamita" 
+ flavor_chi_dai.11.entry: "$flavor_chi_dai.11.title$"
  flavor_chi_dai.11.desc: "Un decreto è arrivato alle nostre forze a [ShowAreaName('red_river_delta_area')]. [target_character.GetName] decreta che i nostri soldati dovrebbero cercare le scritture [ShowCultureName('vietnamese_culture')] per farle bruciare con l'unica eccezione di questo essere i libri [ShowReligionGroupAdjective('buddhist')] e taoisti. Nonostante questo, molti soldati ancora esitano e tendono a leggerli prima di permettere infine alle fiamme di consumare i testi."
  flavor_chi_dai.11.a: "Dobbiamo aumentare la disciplina!"
  flavor_chi_dai.11.b: "Annulla il decreto!"
