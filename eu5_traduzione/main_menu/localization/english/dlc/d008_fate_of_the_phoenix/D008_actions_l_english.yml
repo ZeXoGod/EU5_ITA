@@ -8,6 +8,7 @@
  loan_icon_choose_icon: "Scegli il [ShowWorkOfArtTypeName('icon')] da prestare"
  not_already_receiving_icon_tt: "Non devono aver già ricevuto in prestito un [ShowWorkOfArtTypeName('icon')]"
  icon_not_already_loaned_tt: "Al momento non dovremmo prendere in prestito [ShowWorkOfArtTypeName('icon')] da un altro [country|e]"
+ icon_loan_pending_tt: "Non dobbiamo già avere in attesa di risposta un'offerta di prestito di una delle nostre [works_of_art|e]"
 
  mend_schism: "Risana lo Scisma"
  mend_schism_desc: "Per troppi secoli [ShowReligionGroupName('christian')] è stato diviso. Con tutte le sedi della Pentarchia sotto il nostro controllo, è tempo di esercitare la nostra influenza per sanare quella ferita e riconciliare le Chiese."
@@ -81,7 +82,7 @@
  panionia_tt_mod: "Riceveremo [ShowModifier('panionia_modifier')]."
 
 
- hire_advisor_eunuch_chance_tt: "Probabilità del 10-100% di assumere un [character|e] [ShowTraitName('eunuch')] con [abilities|e] medie più alte, proporzionata al radicamento della [ShowBureaucracyTypeName('court_eunuchs_bureaucracy')] e a [ShowModifierTypeName('eunuch_power')]."
+ hire_advisor_eunuch_chance_tt: "Probabilità del [actor.MakeScope.ScriptValue('hire_advisor_eunuch_chance')|V0]% di assumere un [character|e] [ShowTraitName('eunuch')] con [abilities|e] medie più alte. La probabilità è del 10% più il 9% ogni 10 punti di radicamento della [ShowBureaucracyTypeName('court_eunuchs_bureaucracy')] e il 10% ogni 0,5 di [ShowModifierTypeName('eunuch_power')], fino al 100%."
 
  grant_a_triumph: "Concedi un Trionfo"
  grant_a_triumph_desc: "I successi devono essere celebrati. Un valido comandante degli eserciti dovrebbe dunque essere presentato al popolo come vincitore in una spettacolare parata trionfale."

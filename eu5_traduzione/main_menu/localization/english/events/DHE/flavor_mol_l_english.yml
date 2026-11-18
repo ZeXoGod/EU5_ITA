@@ -5,6 +5,8 @@
  flavor_mol.1000.historical_info: "Dragoș Vodă, also known as Dragoș the Founder, was the first Voivode of Moldavia e vassal to the Hungarian Crown. After the resounding victory against the Golden Horde in 1345, Dragoș e other men from Maramureş made their way to the Moldova River to settle the le. Though the 'Dismounting' on the banks of the said river is shrouded in myth e as such the founding of Moldavia itself is a debated topic."
  flavor_mol.1000.a: "Let him found the [ShowSubjectTypeNameWithNoTooltip('march')]."
  flavor_mol.1000.a.at: "[target_character.GetName] will venture into [target_area.GetName] to establish the $MOL_ADJ$ [ShowSubjectTypeName('march')]"
+ flavor_mol.1000.trigger_subject: "[GetCountry('GLH').Custom('IT_La')|U][GetCountry('GLH').GetName] ha un [subject|e] [ShowCultureName('moldovan')] in [ShowAreaName('moldavia_area')] o con una presenza lì"
+ flavor_mol.1000.trigger_no_human_subject: "Nessun [subject|e] [ShowCultureName('moldovan')] [GetCountry('GLH').Custom('IT_Della')][GetCountry('GLH').GetName] in [ShowAreaName('moldavia_area')] o con una presenza lì è controllato da un giocatore"
  flavor_mol.1000.a.bt: "#R This might cause a conflict with [target_country.GetName]#!"
  flavor_mol.1000.b: "We cannot risk the wrath of [target_country.GetNameWithNoTooltip]."
  flavor_mol.1000.b.entry: "We cannot risk their wrath."

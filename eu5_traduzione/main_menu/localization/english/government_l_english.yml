@@ -580,6 +580,7 @@
  ASSIMILATE_CULTURE_PRIMARY_DESCRIPTION: "Questa è la [primary_culture_with_icon|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName]. I [pops|e] di altre [cultures|e] in questa [location|e] possono [assimilate|e] a [CULTURE.GetName] ogni mese."
  ASSIMILATE_CULTURE_ASSIMILATING_DESCRIPTION: "I [pops|e] di questa [location|e] possono essere [assimilated_with_icon|e] a questa [culture|e]. L'assimilazione è solitamente limitata alla [primary_culture|e] del proprietario, anche se [cabinet_actions|e] e altre fonti possono permettere anche [assimilation] verso [cultures] diverse."
  CONVERT_RELIGION_NON_PRIMARY_HEADER: "La [conversion_with_icon|e] mensile verso [RELIGION.GetName] è pari a $VAL$ per:"
+ CONVERT_RELIGION_BASE_PER_POP_NOTE: "#italic $BASE$ è il tasso base per ogni gruppo di [pops|e], scalato in base al suo [pop_type|e]. Sommandolo per tutte le [pops|e] di altre [religions|e] si ottengono i $TOTAL$ che si prevede si convertiranno il mese prossimo.#!"
  CONVERT_RELIGION_PRIMARY_DESCRIPTION: "Questa è la [state_religion_with_icon|e] [COUNTRY.Custom('IT_In')][COUNTRY.GetName]. I [pops|e] di altre [religions|e] in questa [location|e] possono convertirsi a [RELIGION.GetName] ogni mese."
  #
  # Societal Values
@@ -1211,7 +1212,7 @@
 
  #Korea Cabinet Actions
  send_secret_royal_inspectors: "Inviare Ispettori Reali Segreti"
- send_secret_royal_inspectors_desc: "Questo aumenterà drasticamente il nostro [control|e] nella provincia selezionata."
+ send_secret_royal_inspectors_desc: "Questo aumenterà il nostro [control|e] nella provincia selezionata."
  send_secret_royal_inspectors_select_province: "Seleziona la [province|e] in cui aumentare il [control|e]:"
  send_secret_royal_inspectors_action: "Gestisci Ispettori Reali Segreti in [SCOPE.sProvince('target').GetNameWithNoTooltip]"
  send_secret_royal_inspectors_active: "Gestione degli Ispettori Reali Segreti in [SCOPE.sProvince('target').GetNameWithHighlightOnly]"

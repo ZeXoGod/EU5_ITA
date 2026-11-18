@@ -140,10 +140,10 @@
  flavor_mor.26.a.entry: "The character will guide us to splendor."
  flavor_mor.26.b: "The lions are to be trusted with the future of our people."
 
- flavor_mor.27.title: "The Just Defense of the [GetCountry('TUN').GetLongNameWithNoTooltip]"
- flavor_mor.27.entry: "The Just Defense of the Tun"
+ flavor_mor.27.title: "La Giusta Difesa [GetCountry('TUN').Custom('IT_DEL_RANGO')][GetCountry('TUN').GetLongNameWithNoTooltip]"
+ flavor_mor.27.entry: "La Giusta Difesa di $TUN$"
  flavor_mor.27.desc: "Sin dal matrimonio del nostro amato sovrano [ruler_scope.GetName] con la principessa [ShowDynastyName('hafsid_dynasty')] [GetCharacter('tun_fatimah').GetName], tra le due dinastie si è formata un'alleanza.\n\nIgnorando tale alleanza, nel 1335 lo spregevole [tlemcen_country_scope.GetLongName] ha osato molestare i nostri alleati [GetCountry('TUN').GetAdjective]. In risposta, i nostri valorosi soldati hanno risposto alla chiamata alle armi e attaccato [tlemcen_country_scope.GetNameWithNoTooltip] da ovest, costringendolo a ritirarsi e a difendere la propria capitale [tle_capital_scope.GetName], mentre le nostre forze vi ponevano l'assedio.\n\nOra, due anni dopo, l'assedio è stato sospeso mentre [ruler_scope.GetNameWithNoTooltip] soffocava una ribellione istigata dal fratello ribelle.\n\nÈ giunto il momento di tornare al fronte e porre fine alla minaccia di [tlemcen_country_scope.GetNameWithNoTooltip]."
- flavor_mor.27.a: "To arms!"
+ flavor_mor.27.a: "Alle armi!"
  flavor_mor.27.b: "Il nostro giuramento a [GetCountry('TUN').GetNameWithNoTooltip] deve essere mantenuto, a qualunque costo."
  flavor_mor.27.b.entry: "Il nostro giuramento a Tunisi deve essere mantenuto, a qualunque costo."
  flavor_mor.27.c: "Due anni d'assedio sono sufficienti; riportiamo a casa i nostri soldati."
@@ -218,6 +218,7 @@
  flavor_mor.38.a: "They will maintain freedom only in their graves!"
  flavor_mor.38.b: "We are not ready yet."
  mor_deny_submission_may_lead_to_war_tt: "Denying this will lead to war with [prev_country.GetName]"
+ mor_granada_loses_strait_protection_tt: "Le [locations|e] [target_country.Custom('IT_Della')][target_country.GetName] non beneficeranno più del [modifier|e] $STATIC_MODIFIER_NAME_contested_in_the_battle_for_the_strait$"
 
  flavor_mor.1000.title: "Employing [target_country.GetAdjectiveWithNoTooltip] Mercenaries"
  flavor_mor.1000.entry: "Employing Ottoman Mercenaries"

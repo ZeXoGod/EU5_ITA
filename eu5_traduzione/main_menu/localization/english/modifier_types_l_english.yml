@@ -498,7 +498,7 @@
  MODIFIER_TYPE_NAME_movement_blocked: "Movimento Bloccato"
  MODIFIER_TYPE_DESC_movement_blocked: "Blocca la capacità delle [units|e] di spostarsi in questa [location|e]."
  MODIFIER_TYPE_NAME_retreat_delay: "Ritardo nella Ritirata"
- MODIFIER_TYPE_DESC_retreat_delay: "Influisce su quante ore un'[unit|e] resta bloccata in [combat|e] prima che sia consentita la [retreat|e]."
+ MODIFIER_TYPE_DESC_retreat_delay: "Influisce su quanto a lungo un'[unit|e] resta bloccata in [combat|e] prima che le sia consentita la [retreat|e]: un giorno per punto, oppure due ore per punto quando il gioco usa i tick orari."
  MODIFIER_TYPE_NAME_siege_ability: "Capacità d'Assedio"
  MODIFIER_TYPE_DESC_siege_ability: "Influisce su quanto rapidamente gli [armies|e] possono [Concept('siege', 'Assediare')|e]."
  MODIFIER_TYPE_NAME_assault_ability: "Capacità d'Assalto"
@@ -5714,7 +5714,7 @@
  MODIFIER_TYPE_DESC_unlocked_consulate_sea_town_right: "Abilita il [town_rights|e] [ShowTownRightsName('ara_consulate_sea_town_rights')], che è limitato a #Y 1#! per [region|e]"
 
  MODIFIER_TYPE_NAME_allow_appoint_adelantado_mayor: "Può Usare [ShowCharacterInteractionNameWithNoTooltip('cas_appoint_adelantado_mayor')]"
- MODIFIER_TYPE_DESC_allow_appoint_adelantado_mayor: "Abilita l'uso del [character_interaction|e] [ShowCharacterInteractionName('cas_appoint_adelantado_mayor')] che aumenterà il nostro [control|e] e rafforzerà le nostre [fortifications|e] in tutte le [locations|e] che possediamo in [ShowAreaName('andalusia_area')], [ShowAreaName('granada_area')] e [ShowAreaName('murcia_area')]."
+ MODIFIER_TYPE_DESC_allow_appoint_adelantado_mayor: "Abilita l'uso del [character_interaction|e] [ShowCharacterInteractionName('cas_appoint_adelantado_mayor')] che aumenterà il nostro [control|e] e rafforzerà le nostre [fortifications|e] in tutte le [locations|e] che possediamo in [ShowAreaName('andalusia_area')], [ShowAreaName('granada_area')] e [ShowAreaName('murcia_area')]. Richiede inoltre la prima tappa a nostro favore nella [situation|e] [ShowSituationName('battle_for_the_strait')]."
 
  MODIFIER_TYPE_NAME_num_lieutenancy: "Numero di Luogotenenze"
  MODIFIER_TYPE_DESC_num_lieutenancy: "Questo determina quante [ShowBuildingTypeName('lieutenancy')] un paese può costruire."

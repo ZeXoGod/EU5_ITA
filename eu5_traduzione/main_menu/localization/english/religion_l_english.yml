@@ -10,7 +10,7 @@
  
  
  CORE_TENETS_OF: "Dottrine Fondamentali di $NAME$"
- RELIGIOUS_UNITY_EFFECT: "L'$game_concept_religious_unity$ media [COUNTRY.Custom('IT_In')][COUNTRY.GetName] è $VAL|%2Y$, che ha il seguente effetto:\n\n$EFFECT$"
+ RELIGIOUS_UNITY_EFFECT: "L'$game_concept_religious_unity$ [COUNTRY.Custom('IT_Della')][COUNTRY.GetName] è $VAL|%2Y$, con ogni [pop|e] ponderata in base al [control|e] della propria [location|e]. Questo ha il seguente effetto:\n\n$EFFECT$"
  PROPOSE: "Proponi"
  RELIGIONS_CARDINAL: "Cardinali Attuali"
  CARDINAL_DESC: "[character|e]: [CHARACTER.GetNameToFit('(int32)30', '(bool)no')]\n[location|e]: [CHARACTER.GetLocation.GetName]\n[country|e]: [CHARACTER.GetCourtCountry.GetLongNameWithFlag]\n[religion|e]: [CHARACTER.GetReligion.GetName]"

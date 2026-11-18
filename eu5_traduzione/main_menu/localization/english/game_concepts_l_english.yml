@@ -412,7 +412,7 @@
  game_concept_capital_desc: "Questa è la [location|e] che rappresenta il centro politico di un [country|e], dove risiede il [government|e]. Se viene [occupied|e] in una [war|e] le conseguenze possono essere devastanti."
  game_concept_historical_capital: "Capitale Storica"
  game_concept_historical_capitals: "Capitali Storiche"
- game_concept_historical_capital_desc: "Questa è una [location|e] che ha servito come [capital|e] di un [country|e] in passato. Qualsiasi [buildings|e] che forniscono effetti speciali se costruiti nella [capital] conservano tali effetti anche dopo che la [location] diventa una [historical_capital]. Garantisce inoltre #G +50#! [proximity] di per sé, sebbene ciò non abbia effetto se la [location] sta già ricevendo una [proximity] più alta dalla [capital] attuale."
+ game_concept_historical_capital_desc: "Questa è una [location|e] che ha già servito come [capital|e] del [country|e] che la possiede. Solo un cambio di [capital] causato da un evento, una decisione o un'altra azione speciale crea una [historical_capital]; spostare noi stessi la [capital] non la crea. Un [country] può avere una sola [historical_capital] alla volta: quando la [capital] viene spostata di nuovo, la precedente [historical_capital] perde il suo status. Qualsiasi [buildings|e] che fornisca effetti speciali se costruito nella [capital] conserva tali effetti in una [historical_capital]. La [location] conserva inoltre una quota ridotta dei bonus della [capital], tra cui la fonte di [proximity|e], il [max_control|e], la [population_capacity|e], l'[migration_attraction|e], l'efficienza di [fort_maintenance|e] e i livelli di edificio gratuiti. La [proximity] non ha effetto se la [location] sta già ricevendo una [proximity] più alta dalla [capital] attuale."
  game_concept_price: "Prezzo"
  game_concept_prices: "Prezzi"
  game_concept_cost: "Costo"
@@ -2102,7 +2102,7 @@
  game_concept_maritime_presence: "Presenza Marittima"
  game_concept_maritime: "Marittima"
  game_concept_maritime_presence_power: "Potere della Presenza Marittima"
- game_concept_maritime_presence_desc: "La Presenza Marittima che si ha lungo le proprie coste è vitale sia per il [trade|e] che per il [control|e] del territorio.\n\nLa Presenza Marittima si accumula nel tempo, se si è in pace, solo per il fatto di avere [ports|e], mentre un [blockade|e] ridurrà rapidamente questa Presenza. Una [navy|e] in una [seazone|e] può rapidamente aumentare la presenza.\n\nUna $game_concept_maritime_presence$ alta riduce la [proximity|e] che si perde tra le [seazones|e] quando si calcola il $game_concept_control$. La $game_concept_maritime_presence$ nelle $game_concept_seazones$ costiera di un [market|e] è anche un'importante fonte di [merchant_power|e]."
+ game_concept_maritime_presence_desc: "La Presenza Marittima che si ha lungo le proprie coste è vitale sia per il nostro [merchant_power|e] sia per il [control|e] sul nostro territorio.\n\nLa Presenza Marittima si accumula nel tempo, se si è in pace, solo per il fatto di avere [ports|e], mentre un [blockade|e] ridurrà rapidamente questa Presenza. Una [navy|e] in una [seazone|e] può rapidamente aumentare la presenza.\n\nUna $game_concept_maritime_presence$ alta riduce la [proximity|e] che si perde tra le [seazones|e] quando si calcola il $game_concept_control$. La $game_concept_maritime_presence$ nelle $game_concept_seazones$ costiere di un [market|e] aumenta il nostro $game_concept_merchant_power$ in quel mercato."
  game_concept_merchant_maritime_power: "$game_concept_merchant_power$ Marittimo"
  game_concept_merchant_maritime_power_desc: "Il $game_concept_merchant_maritime_power$ rappresenta la capacità delle proprie [navies|e] di proteggere e influenzare efficacemente il commercio marittimo. Determina la quantità di [merchant_power|e] che un [country|e] genera dall'avere [maritime_presence|e] nella [seazones|e] costiera di un [market|e]."
  game_concept_blockade: "Blocco"
@@ -2111,9 +2111,9 @@
  game_concept_blockading: "Blocco"
  game_concept_blockade_desc: "\nUn blocco si verifica quando una [navy|e] [hostile|e] è presente nella [seazone|e] adiacente un [port|e], la quantità di [ships|e] necessaria dipende da [population|e] e [development|e] dei [ports|e] interessati.\n\nGli effetti più importanti del blocco:\n$BULLET_WITH_TAB$ Riduce la Produzione di [food|e]\n$BULLET_WITH_TAB$ Ridurre [maritime_presence|e]$BULLET_WITH_TAB$ Riduce lo [development]\n$BULLET_WITH_TAB$ Riduce il [control|e]\n$BULLET_WITH_TAB$ Riduce la [prosperity|e]"
  game_concept_religious_unity: "Unità Religiosa"
- game_concept_religious_unity_desc: "L'unità religiosa è la percentuale di [population|e] di un [country|e] che segue la [religion|e] ufficiale dello Stato."
+ game_concept_religious_unity_desc: "L'unità religiosa è la percentuale di [population|e] di un [country|e] che segue la [religion|e] ufficiale dello Stato. Ogni [pop|e] conta in proporzione al [control|e] della propria [location|e], quindi le terre appena conquistate o poco controllate hanno scarso effetto."
  game_concept_cultural_unity: "Unità Culturale"
- game_concept_cultural_unity_desc: "L'unità culturale è la percentuale di [population|e] di un [country|e] che appartiene alla [primary_culture|e]."
+ game_concept_cultural_unity_desc: "L'unità culturale è la percentuale di [population|e] di un [country|e] che appartiene alla [primary_culture|e]. Ogni [pop|e] conta in proporzione al [control|e] della propria [location|e], quindi le terre appena conquistate o poco controllate hanno scarso effetto."
  game_concept_transport_capacity: "Capacità di Trasporto"
  game_concept_transport_capacity_desc: "La capacità di trasporto descrive semplicemente quanti uomini, o [strength|e], dai [regiments|e] è possibile imbarcare sulle [ship|e]."
  game_concept_food_storage: "Riserve di Cibo"
@@ -2176,20 +2176,20 @@
 
  game_concept_phase: "Fase"
  game_concept_phases: "Fasi"
- game_concept_phase_desc: "Ci sono due Fasi di [combat|e], a partire dalla [bombard_phase|e] iniziale di [GetDefine('NCombat','BOMBARD_DAYS')|W] giorni (se qualche [regiment|e] è in grado di [bombard|e]), seguita dalla [combat_phase|e]."
+ game_concept_phase_desc: "Ci sono due Fasi di [combat|e], a partire dalla [bombard_phase|e] iniziale di [GetDefine('NCombat','BOMBARD_DURATION_DAILY')|W] giorni (se qualche [regiment|e] è in grado di [bombard|e]), seguita dalla [combat_phase|e]."
 
  game_concept_combat_phase: "Fase di Combattimento"
  game_concept_combat_phase_desc: "La Fase di Combattimento è la [phase|e] principale del [combat|e] che si svolge dopo la [bombard_phase|e] iniziale. I [regiments|e] o le [ships|e] tenteranno di [engage|e] le controparti del [enemy|e]."
 
  game_concept_bombard_phase: "Fase di Bombardamento"
- game_concept_bombard_phase_desc: "La Fase di Bombardamento è la [phase|e] di apertura del [combat|e] che avviene prima della [combat_phase|e] principale. Dura [GetDefine('NCombat','BOMBARD_DAYS')|W] giorno/i ed è utilizzata esclusivamente dai [regiments|e] che possono [bombard|e], ad esempio dall'[ShowUnitCategoryName('army_artillery')].\n\nOgni giorno della Fase di Bombardamento, i [regiments] hanno la possibilità di [bombard] infliggendo il loro [combat_power|e] come danno a un [regiment] nemico nella stessa [section|e]."
+ game_concept_bombard_phase_desc: "La Fase di Bombardamento è la [phase|e] di apertura del [combat|e] che avviene prima della [combat_phase|e] principale. Dura [GetDefine('NCombat','BOMBARD_DURATION_DAILY')|W] giorno/i ed è utilizzata esclusivamente dai [regiments|e] che possono [bombard|e], ad esempio dall'[ShowUnitCategoryName('army_artillery')].\n\nOgni giorno della Fase di Bombardamento, i [regiments] hanno la possibilità di [bombard] infliggendo il loro [combat_power|e] come danno a un [regiment] nemico nella stessa [section|e]."
 
  game_concept_bombard: "Bombardare"
  game_concept_bombarding: "Bombardamento"
  game_concept_bombard_desc: "I [regiments|e] che possono bombardare infliggeranno il loro [combat_power|e] come danno durante la [bombard_phase|e] di apertura del [combat|e]."
 
  game_concept_initiative: "Iniziativa"
- game_concept_initiative_desc: "L'iniziativa è la possibilità che un [regiment|e] [Concept('engage', 'ingaggi')|e] durante la [combat_phase|e].\n\nOgni giorno, supponendo che ci sia abbastanza [frontage|e] disponibile, tutti i [regiments] che non sono attualmente [Concept('engaged', 'ingaggiati')|e] tenteranno di unirsi alla mischia.\n\nLa possibilità è calcolata come (Iniziativa * [GetDefine('NCombat','INITIATIVE_CHANCE_EACH')]) + ([GetDefine('NCombat','INITIATIVE_CHANCE_PER_DAY')] * numero di giorni di combattimento); se la possibilità è più alta di [d100|e], allora il [regiment] diventa [engaged] nel combattimento.\n\nIn generale, i [regiments|e] leggeri e a distanza hanno l'Iniziativa più alta."
+ game_concept_initiative_desc: "L'iniziativa è la possibilità che un [regiment|e] [Concept('engage', 'ingaggi')|e] durante la [combat_phase|e].\n\nOgni giorno, supponendo che ci sia abbastanza [frontage|e] disponibile, tutti i [regiments] che non sono attualmente [Concept('engaged', 'ingaggiati')|e] tenteranno di unirsi alla mischia.\n\nLa possibilità è calcolata come (Iniziativa * [GetDefine('NCombat','INITIATIVE_CHANCE_EACH_DAILY')]) + ([GetDefine('NCombat','INITIATIVE_CHANCE_DURATION_DAILY')] * numero di giorni di combattimento); se la possibilità è più alta di [d100|e], allora il [regiment] diventa [engaged] nel combattimento.\n\nIn generale, i [regiments|e] leggeri e a distanza hanno l'Iniziativa più alta."
 
  game_concept_engagement: "Ingaggio"
  game_concept_engage: "Ingaggiare"

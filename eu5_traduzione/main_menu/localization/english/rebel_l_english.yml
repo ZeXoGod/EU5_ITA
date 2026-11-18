@@ -28,6 +28,9 @@
  RSI_HEADER: "Motivi per cui i [pops|e] sostengono questi ribelli."
  RSI_ESTATE: "$BULLET$Motivi del [estate|e] [ESTATE.GetNameWithNoTooltip]"
  RSI_ENTRY: "$NAME$: $VAL|2+=%$"
+ RSI_ESTATE_POP_SATISFACTION: "Le [pops|e] si uniscono a questi ribelli a causa della propria [pop_satisfaction|e], non della [estate_satisfaction|e] di [ESTATE.GetNameWithNoTooltip] ($SAT|1%$). Una [pop|e] continua a ribellarsi finché la sua [pop_satisfaction] non supera la soglia della sua [location|e]."
+ RSI_LOCATION_ENTRY: "$BULLET$[LOCATION.GetName]: $POP|V$@population! al $SAT|1%$, smette di ribellarsi sopra il $LEAVE|0%$"
+ RSI_MORE_LOCATIONS: "$BULLET$Altre $COUNT|V$ [locations|e]"
  rsi_separatism: "[separatism|e]"
  rsi_culture: "[cultural_opinion|e]"
  rsi_religion: "[religion|e]"
@@ -376,7 +379,7 @@
  dobrujan_revolt_country: "$dobrujan_revolt$"
  dobrujan_revolt_country_adjective: "$dobrujan_revolt$ $ADJ$"
 
- nikephoros_ii_orsini_revolt_country: "$orsini_revolt$"
+ nikephoros_ii_orsini_revolt_country: "$nikephoros_ii_orsini_revolt$"
  nikephoros_ii_orsini_revolt_country_adjective: "$Orsini$ $ADJ$"
  catalan_rebels_country: "$catalan_rebels$"
  catalan_rebels_country_adjective: "$catalan_rebels$"

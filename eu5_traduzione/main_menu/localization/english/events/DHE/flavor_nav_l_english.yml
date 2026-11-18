@@ -22,6 +22,7 @@
  flavor_nav.3.c: "Concentra il nostro governo da [evr_country.GetNameWithNoTooltip]."
  flavor_nav.3.c.entry: "Concentra il nostro governo da Évreux."
  nav_will_be_able_to_rally_other_appanages_tt: "Raggiungere #G 150#! relazioni con un suddito Appanage di [GetCountry('FRA').GetName] lo renderà più propenso a sostenerci in una guerra contro [GetCountry('FRA').GetNameWithNoTooltip] tramite la [decision|e] [ShowDecisionName('navarre_charles_ii_claim_to_france_appanage_route')]"
+ variable_nav_appanage_rights_granted_tt: "Ha ricevuto i diritti di appannaggio"
 
  flavor_nav.4.title: "La Pretesa dei [ShowDynastyNameWithNoTooltip('capet_dynasty')]"
  flavor_nav.4.entry: "La Pretesa Capetingia"
@@ -47,6 +48,7 @@
  flavor_nav.6.title: "Una Fine di Fuoco"
  flavor_nav.6.entry: "La Morte tra le Fiamme di Carlo di Navarra"
  flavor_nav.6.desc: "Sebbene la salute di [target_character.GetName] sia peggiorata negli ultimi anni, la [ROOT.GetCountry.GetGovernment.GetCourtTitle] fu comunque sconvolta dalla notizia che era morto nelle sue stanze in un incendio la notte precedente. Voci che circolavano nella [ROOT.GetCountry.GetGovernment.GetCourtTitle] sussurravano che, mentre veniva curato per la sua malattia, una candela fosse caduta sul letto di [target_character.GetNameWithNoTooltip] incendiandolo.\n\n[scope_our_heir.GetName] ascende ora al trono con ambizioni minori rispetto al suo predecessore, e molti si chiedono come gli scribi di [ROOT.GetCountry.GetName] ricorderanno il governo di [target_character.GetNameWithNoTooltip]."
+ flavor_nav.6.desc_no_succession: "Anche se la salute di [target_character.GetName] era peggiorata negli ultimi anni, il [ROOT.GetCountry.GetGovernment.GetCourtTitle] è rimasto comunque sconvolto dalla notizia che [target_character.GetSheHe] è morto in un incendio nelle [target_character.GetHerHis] stanze la notte precedente. Le voci che circolano nel [ROOT.GetCountry.GetGovernment.GetCourtTitle] sussurrano che, mentre veniva curato per la [target_character.GetHerHis] malattia, una candela sia caduta nel letto di [target_character.GetNameWithNoTooltip] e lo abbia dato alle fiamme.\n\nMentre la corte è in lutto, in molti si chiedono come gli scribi [ROOT.GetCountry.Custom('IT_Della')][ROOT.GetCountry.GetName] ricorderanno il regno di [target_character.GetNameWithNoTooltip]."
  flavor_nav.6.a: "Il suo regno sarà ricordato come ambizioso, ma terribile."
  flavor_nav.6.b: "Sarà ricordato come il Conquistatore di [GetCountry('FRA').GetNameWithNoTooltip]!"
  flavor_nav.6.c: "Sarà ricordato per il suo avvicinamento a [ROOT.GetCountry.GetNameWithNoTooltip], nonostante le sue origini [ShowCultureGroupNameWithNoTooltip('french_group')]."

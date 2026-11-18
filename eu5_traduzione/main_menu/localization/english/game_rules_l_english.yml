@@ -31,6 +31,11 @@
  setting_ai_normal_aggression_desc: "Questo è il modo normale di giocare. L'IA inizierà una [war|e] quando lo desidera, e talvolta ne avvia una senza un [casus_belli|e]."
  setting_ai_high_aggression: "Aggressività Elevata"
  setting_ai_high_aggression_desc: "Questo crea una sfida ancora più grande, poiché i paesi dotati di IA sono molto più propensi ad avviare una [war|e]."
+ rule_tick_rate: "Passo Temporale"
+ setting_tick_rate_daily: "Giornaliero"
+ setting_tick_rate_daily_desc: "Il tempo avanza un giorno alla volta."
+ setting_tick_rate_hourly: "Orario"
+ setting_tick_rate_hourly_desc: "Il tempo avanza ora dopo ora, con movimenti e combattimenti calibrati di conseguenza. Ogni giorno richiede più tempo per essere giocato."
 
  rule_ahistorical_formable_countries: "Paesi Formabili"
  setting_no_ahistorical_formable_countries: "Solo Storici"
@@ -152,6 +157,8 @@
 
  GAME_RULE_NOT_ENABLED_BLOCKS_IRONMAN: "$NAME$ può bloccare Ironman, quindi questa regola viene bloccata dopo l'inizio della partita."
  GAME_RULE_NOT_ENABLED_BLOCKS_ACHIEVEMENTS: "$NAME$ può bloccare gli achievement, quindi questa regola viene bloccata dopo l'inizio della partita."
+ GAME_RULE_LOCKED_IN_MULTIPLAYER: "Questa regola è bloccata una volta che l'host avvia la partita multigiocatore."
+ GAME_RULE_LOCKED_UNLESS_PAUSED: "Metti in pausa il gioco per modificare questa regola."
  GAME_RULE_UNLOCKED_ACHIEVEMENTS_LOST: "Gli achievement non sono disponibili in questa partita, quindi puoi modificare questa regola."
 
  GAME_RULES_PRESET_AI_BEHAVIOR: "Comportamento IA: [GameRuleSetting.GetName]"

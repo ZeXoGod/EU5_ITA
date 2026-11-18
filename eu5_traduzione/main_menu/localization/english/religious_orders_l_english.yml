@@ -38,7 +38,7 @@
  RELIGIOUS_ORDER_STANDING_OFFICE_RULER: "Membro dell'ordine come sovrano: $VALUE|0=+/%$"
  RELIGIOUS_ORDER_STANDING_OFFICE_REGENT: "Membro dell'ordine come reggente: $VALUE|0=+/%$"
  RELIGIOUS_ORDER_STANDING_OFFICE_CABINET: "Membri dell'ordine nel gabinetto: $VALUE|0=+/%$"
- RELIGIOUS_ORDER_STANDING_TOTAL: "[religious_order_standing_short|E]: #high $VALUE|0$%#!"
+ RELIGIOUS_ORDER_STANDING_TOTAL: "[religious_order_standing_short|E]: #high [ReligiousOrder.GetPlayerStanding|0]%#!"
  RELIGIOUS_ORDER_STANDING_EFFECTS_HEADER: "Effetti nelle nostre terre:"
 
  # Search-bar sort buttons
@@ -566,15 +566,15 @@
  PAST_THIRD_CHANGE_RELIGIOUS_ORDER_CALLING_EFFECT: "[RELIGIOUS_ORDER.GetName] ha adottato la [calling|e] [TARGET_CALLING.GetName]"
 
  # Monthly presence-drift messages
- RELIGIOUS_ORDER_PRESENCE_LOST: "$RELIGIOUS_ORDER$ si è ritirato da $ACTOR$. Nessuno dei suoi [holdings|E] rimane nelle nostre terre."
- RELIGIOUS_ORDER_PRESENCE_LOST_LOG: "$RELIGIOUS_ORDER$ si è ritirato da $ACTOR$."
- RELIGIOUS_ORDER_PRESENCE_LOST_MAP: "$RELIGIOUS_ORDER$ si è ritirato da $ACTOR$."
+ RELIGIOUS_ORDER_PRESENCE_LOST: "$RELIGIOUS_ORDER$ si è ritirato da $COUNTRY$. Nessuno dei suoi [holdings|E] rimane nelle nostre terre."
+ RELIGIOUS_ORDER_PRESENCE_LOST_LOG: "$RELIGIOUS_ORDER$ si è ritirato da $COUNTRY$."
+ RELIGIOUS_ORDER_PRESENCE_LOST_MAP: "$RELIGIOUS_ORDER$ si è ritirato da $COUNTRY$."
  RELIGIOUS_ORDER_PRESENCE_LOST_SETUP: "L'ordine religioso $RELIGIOUS_ORDER$ non ha più presenza in $ACTOR$."
  RELIGIOUS_ORDER_PRESENCE_LOST_HEADER: "Presenza dell'Ordine Religioso Persa"
  RELIGIOUS_ORDER_PRESENCE_LOST_TITLE: "$RELIGIOUS_ORDER$"
- RELIGIOUS_ORDER_PRESENCE_GAINED: "$RELIGIOUS_ORDER$ ora opera in $ACTOR$. Una sua proprietà è passata sotto la nostra amministrazione."
- RELIGIOUS_ORDER_PRESENCE_GAINED_LOG: "$RELIGIOUS_ORDER$ ora opera in $ACTOR$."
- RELIGIOUS_ORDER_PRESENCE_GAINED_MAP: "$RELIGIOUS_ORDER$ si è stabilito in $ACTOR$."
+ RELIGIOUS_ORDER_PRESENCE_GAINED: "$RELIGIOUS_ORDER$ ora opera in $COUNTRY$. Una sua proprietà è passata sotto la nostra amministrazione."
+ RELIGIOUS_ORDER_PRESENCE_GAINED_LOG: "$RELIGIOUS_ORDER$ ora opera in $COUNTRY$."
+ RELIGIOUS_ORDER_PRESENCE_GAINED_MAP: "$RELIGIOUS_ORDER$ si è stabilito in $COUNTRY$."
  RELIGIOUS_ORDER_PRESENCE_GAINED_SETUP: "L'ordine religioso $RELIGIOUS_ORDER$ ha ottenuto presenza in $ACTOR$."
  RELIGIOUS_ORDER_PRESENCE_GAINED_HEADER: "Presenza dell'Ordine Religioso Ottenuta"
  RELIGIOUS_ORDER_PRESENCE_GAINED_TITLE: "$RELIGIOUS_ORDER$"
